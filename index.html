@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        /* Gère l'image de fond pour tout le site */
+        /* Gère l'image de fond */
         body {
             background-image: url('img/ancre.jpg');
             background-repeat: no-repeat;
@@ -19,12 +19,22 @@
             background-size: contain;
         }
 
-        /* Gère la transition "douce" quand on clique sur le bouton "Entrer" */
-        html {
-            scroll-behavior: smooth;
+        /* Gère la boîte blanche */
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        /* Style de la page de présentation qui prend 100% de l'écran */
+        /* Gère la transition "douce" ET l'accrochage */
+        html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory; /* LIGNE AJOUTÉE */
+        }
+
+        /* Page de présentation (1er point d'accroche) */
         #presentation {
             height: 100vh;
             display: flex;
@@ -34,15 +44,12 @@
             text-align: center;
             color: #333;
             text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            scroll-snap-align: start; /* LIGNE AJOUTÉE */
         }
-        
-        /* Style du conteneur de contenu (la boîte blanche) */
-        .container {
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 8px;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+        /* Contenu (2e point d'accroche) */
+        #contenu {
+            scroll-snap-align: start; /* NOUVEAU BLOC AJOUTÉ */
         }
     </style>
 </head>
