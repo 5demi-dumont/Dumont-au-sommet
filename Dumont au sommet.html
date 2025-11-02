@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 5/2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            /* 1. L'image est appliquée au fond de TOUTE la page */
+            background-image: url('img/ancre.jpg'); /* Assurez-vous que le chemin est bon ! */
+
+            /* 2. L'image ne se répète pas ("une fois") */
+            background-repeat: no-repeat;
+
+            /* 3. L'image est centrée ("centrée") */
+            background-position: center center;
+
+            /* 4. L'image de fond reste fixe quand on scroll (meilleur effet) */
+            background-attachment: fixed;
+
+            /* 5. TAILLE AJUSTÉE : L'image est redimensionnée pour être
+               ENTIÈREMENT visible, sans être coupée. 
+            */
+            background-size: contain;
+        }
+
+        /* Le conteneur du texte est "devant", avec un fond 
+           blanc semi-transparent pour rester lisible.
+        */
+        .container {
+            /* Fond blanc (255,255,255) avec 95% d'opacité (0.95) */
+            background-color: rgba(255, 255, 255, 0.95);
+            
+            border-radius: 8px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+
+        <header class="text-center mb-5">
+            <h1 class="display-4">Projet 5/2</h1>
+            <p class="lead">On va mettre sur ce site les documents que l'on a créé, et divers trucs hésiter pas à fouiller vous devrez trouver votre bonheur d'une manière ou d'une autre.</p>
+        </header>
+
+        <main>
+            <div class="list-group shadow-sm rounded">
+
+                <a href="pdf/Analyse.pdf" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" download>
+                    <div>
+                        <i class="bi bi-file-earmark-pdf-fill me-2 text-danger"></i>
+                        <span class="fw-bold">Tome I : Algèbre</span>
+                    </div>
+                    <i class="bi bi-download text-primary"></i>
+                </a>
+
+               <a href="pdf/Algèbre.pdf" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" download>
+                    <div>
+                        <i class="bi bi-file-earmark-pdf-fill me-2 text-danger"></i>
+                        <span class="fw-bold">Tome II : Algèbre et Probabilité</span>
+                    </div>
+                    <i class="bi bi-download text-primary"></i>
+                </a>
+
+                <a href="pdf/Formulaire_Physique.pdf" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" download>
+                    <div>
+                        <i class="bi bi-file-earmark-pdf-fill me-2 text-danger"></i>
+                        <span class="fw-bold">Formulaire Physique</span>
+                    </div>
+                    <i class="bi bi-download text-primary"></i>
+                </a>
+
+                <a href="pdf/Fiche_Chimie.pdf" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" download>
+                    <div>
+                        <i class="bi bi-file-earmark-pdf-fill me-2 text-danger"></i>
+                        <span class="fw-bold">Fiche Chimie</span>
+                    </div>
+                    <i class="bi bi-download text-primary"></i>
+                </a>
+
+                <a href="pdf/Fiche_SII.pdf" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" download>
+                    <div>
+                        <i class="bi bi-file-earmark-pdf-fill me-2 text-danger"></i>
+                        <span class="fw-bold">Fiche SII</span>
+                    </div>
+                    <i class="bi bi-download text-primary"></i>
+                </a>
+
+            </div>
+        </main>
+        
+        <footer class="text-center text-muted mt-5">
+            <p>&copy; 2025 - Partage de documents</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
