@@ -6501,6 +6501,14 @@ Alors, on a l'équivalence :
 		\textcolor{blue}{\hyperref[Etude d'une fonction définie par une série alternée 2]{[Enoncé]}}\\
 	\subsection{Convergence vers une dérivée}\label{sec:convergence-vers-une-derivee}
 		\textcolor{blue}{\hyperref[Convergence vers une dérivée]{[Enoncé]}}\\
+		On sait que : \[\frac{f(x+h)-f(x)}{h}\underset{h\to 0}{\to}f'(x)\]
+		donc \[\frac{f\left(x+\frac{1}{n}\right)-f(x)}{\frac{1}{n}}\underset{n\to +\infty}{\to}f'(x)\]
+		Donc $(g_n)$ converge simplement vers $f'$ sur $\R$.\\
+		D'après l'inégalité de Taylor Lagrange, on a : 
+		\[\left|f\left(x+\frac{1}{n}\right)-f(x)-\frac{1}{n}f'(x)\right|\leq\frac{\normep{\infty}{f''}}{2n^2}\]
+		donc \[|g_n(x)-f'(x)|\leq\frac{\normep{\infty}{f''}}{2n}\]
+		d'où \[\normep{\infty}{g_n-f'}\leq \frac{\normep{\infty}{f''}}{2n}\to 0\]
+		Ainsi $(g_n)$ converge uniformément vers $f'$ sur $\R$.
 	\subsection{Limite ponctuelle et uniforme d'une suite de fonctions}\label{sec:limite-ponctuelle-et-uniforme-dune-suite-de-fonctions}
 		\textcolor{blue}{\hyperref[Limite ponctuelle et uniforme d'une suite de fonctions]{[Enoncé]}}\\
 	\subsection{Convergence des suites de polynômes}\label{sec:convergence-des-suites-de-polynomes}
@@ -7345,7 +7353,23 @@ Alors, on a l'équivalence :
 	\end{enumerate}
 	\subsection{Convexité de l'adhérence et de l'intérieur}\label{sec:convexite-de-ladherence-et-de-linterieur}
 		\textcolor{blue}{\hyperref[Convexité de l'adhérence et de l'intérieur]{[Enoncé]}}\\
-	
+	Montrons que $\overline{A}$ est convexe.\\
+	Soient $x,y\in \overline{A}$.\\
+	Il existe $(x_n)\in A^\N$ (resp. $(y_n)\in\A^\N$) tel que $\lim\limits_{n\to +\infty}x_n=x$ (resp. $\lim\limits_{n\to +\infty}y_n=y$)
+	On a : \[\forall \lambda \in[0,1], \forall n\in\N, \lambda x_n+(1-\lambda)y_n\in A \quad\text{(car $A$ est convexe)}\]
+	et \[\forall \lambda\in[0,1], \lambda x_n+(1-\lambda)y_n\underset{n\to+\infty}{\to}\lambda x+(1-\lambda)y\]
+	donc : \[\lambda x+(1-\lambda)y\in \overline{A}\]
+	Montrons que $\ring A$ est convexe.\\
+	Soit $x,y\in \ring{A}$.\\
+	Ils existent $\varepsilon_1$ et $\varepsilon_2$ tel que $B(x,\varepsilon_1)\subset A$ et $B(y,\varepsilon_2)\subset A$.\\
+	Posons $\varepsilon=\min(\varepsilon_1,\varepsilon_2)$.\\
+	Soit $\lambda\in[0,1]$. Posons $z=\lambda x +(1-\lambda)y$.\\
+	Soit $v\in B(z,\varepsilon)$.\\
+	On pose $x'= x+(v-z)$ et $y'=y+(v-z)$.\\
+	\[x'+\lambda(y'-x')=z\]
+	On a choisi $x'$ et $y'$ de sorte que $x'\in B(x,\varepsilon_1)$ donc $x'\in A$ et $y'\in B(y,\varepsilon_2)$ donc $y'\in A$.\\
+	Donc par convexité $v\in A$ et donc $B(z,\varepsilon)\subset A$.\\
+	Par conséquent $z\in \ring A$ d'où $\ring A$ est convexe.\\
 	\subsection{Fonctions positivement homogènes}\label{sec:fonctions-positivement-homogenes}
 		\textcolor{blue}{\hyperref[FOnctions positivement homogènes]{[Enoncé]}}\\
 	
