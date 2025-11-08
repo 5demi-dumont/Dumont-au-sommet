@@ -1,0 +1,153 @@
+\renewcommand{\thechapter}{\Roman{chapter}}	
+\renewcommand{\chaptermark}[1]{%
+	\markboth{\thechapter{} — #1}{}%
+}
+\makeatletter
+\renewcommand{\numberline}[1]{#1\hspace{0.7em}} % espace après le numéro
+\makeatother
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead{\leftmark}
+\chead{}
+\rhead{\copyright Arthur Esteve, Lorenzo Marconot}
+\lfoot{MP Dumont d'Urville}
+\cfoot{}
+\rfoot{\thepage/\pageref{LastPage}}
+
+\fancypagestyle{plain}{%
+	\fancyhf{}
+	\lhead{\leftmark}
+	\chead{}
+	\rhead{}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{\thepage/\pageref{LastPage}}
+}
+\setlength{\parindent}{0pt}
+
+
+
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\U}{\mathbb{U}}
+\newcommand{\p}{\mathbb{P}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\Or}{\mathcal{O}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\norme}[1]{\left\|#1\right\|}
+\newcommand{\normep}[2]{{\left\|#2\right\|}_{#1}}
+\newcommand{\normetriple}[1]{\mid\mid\mid #1 \mid\mid\mid}
+\newcommand{\ens}[1]{\lbrace#1\rbrace}
+\newcommand{\crblanc}[2]{\llbracket #1;#2 \rrbracket}
+\newcommand{\proscal}[2]{\langle #1,#2\rangle}
+\newcommand{\vect}{\text{Vect}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\rg}{\operatorname{rg}}
+\newcommand{\ch}{\operatorname{ch}}
+\newcommand{\sh}{\operatorname{sh}}
+\newcommand{\cotan}{\operatorname{cotan}}
+\newcommand{\pgcd}{\operatorname{pgcd}}
+\newcommand{\ppcm}{\operatorname{ppcm}}
+\newcommand{\Card}{\operatorname{Card}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Com}{\operatorname{Com}}
+\newcommand{\Fr}{\operatorname{Fr}}
+\newcommand{\Ker}{\text{Ker}}
+\newcommand{\Ima}{\text{Im}}
+\newcommand{\Vect}{\operatorname{Vect}}
+\newcommand{\T}{\text}
+\newcommand{\Mat}{\operatorname{Mat}}
+\newcommand{\fonction}[5]{
+	#1:\left \{
+	\begin{array}{rcl}
+		#2 & \longrightarrow & #3 \\
+		#4 & \longmapsto     & #5 \\
+	\end{array}
+	\right.}
+\newcommand{\bigO}[1]{\ensuremath{\mathop{}\mathopen{}\mathcal{O}\mathopen{}\left(#1\right)}}
+\newcommand{\smallo}[1]{\ensuremath{\mathop{}\mathopen{}{\scriptstyle\mathcal{O}}\mathopen{}\left(#1\right)}}
+\newcommand{\nfty}{n\to +\infty}
+\newcommand{\unfty}[1]{\underset{n\to +\infty}{#1}}
+\newcommand{\ukfty}[1]{\underset{k\to +\infty}{#1}}
+\newcommand{\upfty}[1]{\underset{p\to +\infty}{#1}}
+\newcommand{\uxfty}[1]{\underset{x\to +\infty}{#1}}
+\newcommand{\utfty}[1]{\underset{t\to +\infty}{#1}}
+\newcommand{\uxzero}[1]{\underset{x\to 0}{#1}}
+\newcommand{\utzero}[1]{\underset{t\to 0}{#1}}
+\newcommand{\independent}{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\newcommand{\dpartial}[3]{\displaystyle\frac{\partial^#2 #1}{\partial#3^#2}}
+\newcommand{\dpartials}[3]{\displaystyle\frac{\partial^2 #1}{\partial #2\partial #3}}
+\usetikzlibrary{shapes.geometric}
+
+\newcommand{\etoile}[2][fill=Yellow,draw=Orange]{
+	\begin{tikzpicture}[baseline=-0.35em,#1]
+		\foreach \X in {1,...,#2} {
+			\pgfmathsetmacro{\xfill}{min(1,max(1+#2-\X,0))}
+			\path (\X*1.1em,0)
+			node[star,draw,star point height=0.25em,minimum size=0.85em,inner sep=0pt,
+			path picture={\fill (path picture bounding box.south west)
+				rectangle  ([xshift=\xfill*1em]path picture bounding box.north west);}]{};
+		}
+\end{tikzpicture}}
+
+\newcommand{\ccinp}[2][fill=BurntOrange!50,draw=BurntOrange]{
+	\begin{tikzpicture}[baseline=-0.35em,#1]
+		\foreach \X in {1,...,#2} {
+			\pgfmathsetmacro{\xfill}{min(1,max(1+#2-\X,0))}
+			\path (\X*1.1em,0)
+			node[star,draw,star point height=0.25em,minimum size=0.85em,inner sep=0pt,
+			path picture={\fill (path picture bounding box.south west)
+				rectangle  ([xshift=\xfill*1em]path picture bounding box.north west);}]{};
+		}
+	\end{tikzpicture}
+}
+
+
+\newcommand{\centraleponts}[2][fill=Red!50,draw=Red]{
+	\begin{tikzpicture}[baseline=-0.35em,#1]
+		\foreach \X in {1,...,#2} {
+			\pgfmathsetmacro{\xfill}{min(1,max(1+#2-\X,0))}
+			\path (\X*1.1em,0)
+			node[star,draw,star point height=0.25em,minimum size=0.85em,inner sep=0pt,
+			path picture={\fill (path picture bounding box.south west)
+				rectangle  ([xshift=\xfill*1em]path picture bounding box.north west);}]{};
+		}
+	\end{tikzpicture}
+}
+\newcommand{\xens}[2][fill=MidnightBlue!50,draw=MidnightBlue]{
+	\begin{tikzpicture}[baseline=-0.35em,#1]
+		\foreach \X in {1,...,#2} {
+			\pgfmathsetmacro{\xfill}{min(1,max(1+#2-\X,0))}
+			\path (\X*1.1em,0)
+			node[star,draw,star point height=0.25em,minimum size=0.85em,inner sep=0pt,
+			path picture={\fill (path picture bounding box.south west)
+				rectangle  ([xshift=\xfill*1em]path picture bounding box.north west);}]{};
+		}
+	\end{tikzpicture}
+}
+
+\newcommand{\telecom}[2][fill=Green!50,draw=Green]{
+	\begin{tikzpicture}[baseline=-0.35em,#1]
+		\foreach \X in {1,...,#2} {
+			\pgfmathsetmacro{\xfill}{min(1,max(1+#2-\X,0))}
+			\path (\X*1.1em,0)
+			node[star,draw,star point height=0.25em,minimum size=0.85em,inner sep=0pt,
+			path picture={\fill (path picture bounding box.south west)
+				rectangle  ([xshift=\xfill*1em]path picture bounding box.north west);}]{};
+		}
+	\end{tikzpicture}
+}
