@@ -1,0 +1,824 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {I}Algèbre linéaire}{13}{chapter.1}%
+\contentsline {section}{\numberline {I.1}Extension de corps \etoile {2} (HP)}{13}{section.1.1}%
+\contentsline {section}{\numberline {I.2}Passage du complexe au réel}{13}{section.1.2}%
+\contentsline {section}{\numberline {I.3}Dimension de $\mathbb {R}$ en tant que $\mathbb {Q}$-espace vectoriel \etoile {2} (HP)}{14}{section.1.3}%
+\contentsline {section}{\numberline {I.4}Indépendance des fonctions}{14}{section.1.4}%
+\contentsline {section}{\numberline {I.5}L'ordre a son importance}{14}{section.1.5}%
+\contentsline {section}{\numberline {I.6}\underline {Centre de $\EuScript {M}_n(\mathbb {K})$} \centraleponts {2}}{14}{section.1.6}%
+\contentsline {section}{\numberline {I.7}Racine carrée de la dérivation \centraleponts {3}}{14}{section.1.7}%
+\contentsline {section}{\numberline {I.8}\underline {Produit de matrices nilpotentes} \xens {5}}{15}{section.1.8}%
+\contentsline {section}{\numberline {I.9}Suites périodiques \xens {4}}{15}{section.1.9}%
+\contentsline {section}{\numberline {I.10}Dimension du commutant (1)}{15}{section.1.10}%
+\contentsline {section}{\numberline {I.11}Etude de la comatrice \centraleponts {3}}{15}{section.1.11}%
+\contentsline {section}{\numberline {I.12}Lemme de Schur \ccinp {2}}{16}{section.1.12}%
+\contentsline {section}{\numberline {I.13}Espaces engendrés par les matrices inversibles et orthogonales \centraleponts {3}}{16}{section.1.13}%
+\contentsline {section}{\numberline {I.14}Espace engendré par les matrices nilpotentes \centraleponts {3}}{16}{section.1.14}%
+\contentsline {section}{\numberline {I.15}Transmission d'information \centraleponts {3}}{16}{section.1.15}%
+\contentsline {section}{\numberline {I.16}Noyau et Image supplémentaires \ccinp {2}}{16}{section.1.16}%
+\contentsline {section}{\numberline {I.17}Théorème de Maschke}{17}{section.1.17}%
+\contentsline {chapter}{\numberline {II}Réduction géométrique}{19}{chapter.2}%
+\contentsline {section}{\numberline {II.1}Matrices de rang $1$}{19}{section.2.1}%
+\contentsline {subsection}{\numberline {II.1.1}Réduction des matrices de rang $1$ \ccinp {1}}{19}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {II.1.2}Diagonalisabilité d'une matrice \centraleponts {3}}{19}{subsection.2.1.2}%
+\contentsline {section}{\numberline {II.2}\underline {Matrices réelles semblables} \centraleponts {2}}{20}{section.2.2}%
+\contentsline {section}{\numberline {II.3}Complément de Schur \telecom {2}}{20}{section.2.3}%
+\contentsline {section}{\numberline {II.4}Produit de Kronecker \ccinp {2}}{20}{section.2.4}%
+\contentsline {section}{\numberline {II.5}\underline {Disques de Gershgorin} \telecom {2}}{20}{section.2.5}%
+\contentsline {section}{\numberline {II.6}Spectre de $u\circ v$ et $v\circ u$ \ccinp {1}}{21}{section.2.6}%
+\contentsline {section}{\numberline {II.7}\underline {Endomorphismes qui commutent} \centraleponts {2}}{21}{section.2.7}%
+\contentsline {section}{\numberline {II.8}Vecteur propre commun \centraleponts {3}}{21}{section.2.8}%
+\contentsline {section}{\numberline {II.9}Eléments propres d'un endomorphisme (1) \telecom {2}}{21}{section.2.9}%
+\contentsline {section}{\numberline {II.10}\underline {Eléments propres d'un endomorphisme} (2) \centraleponts {3}}{21}{section.2.10}%
+\contentsline {section}{\numberline {II.11}Eléments propres d'un endomorphisme (3) \centraleponts {3}}{22}{section.2.11}%
+\contentsline {section}{\numberline {II.12}\underline {Eléments propres d'un endomorphisme (4)} \centraleponts {3}}{22}{section.2.12}%
+\contentsline {section}{\numberline {II.13}\underline {Loi de Hooke} \ccinp {2}}{22}{section.2.13}%
+\contentsline {section}{\numberline {II.14}Existence d'une valeur propre double \centraleponts {3}}{23}{section.2.14}%
+\contentsline {section}{\numberline {II.15}Détermination de spectre \centraleponts {3}}{23}{section.2.15}%
+\contentsline {section}{\numberline {II.16}Sommes et produits de valeurs propres}{23}{section.2.16}%
+\contentsline {section}{\numberline {II.17}\underline {Matrice compagnon (1)} \ccinp {2}}{23}{section.2.17}%
+\contentsline {section}{\numberline {II.18}\underline {Réduction de la transposée d'une matrice} \ccinp {1}}{23}{section.2.18}%
+\contentsline {section}{\numberline {II.19}\underline {Algorithme de Faddeev} \centraleponts {3}}{24}{section.2.19}%
+\contentsline {section}{\numberline {II.20}\underline {Endomorphisme de transposition} \ccinp {2}}{24}{section.2.20}%
+\contentsline {section}{\numberline {II.21}\underline {Exemple de matrice non diagonalisable} \ccinp {1}}{24}{section.2.21}%
+\contentsline {section}{\numberline {II.22}Diagonalisabilité d'une matrice (1) \centraleponts {3}}{25}{section.2.22}%
+\contentsline {section}{\numberline {II.23}Diagonalisabilité d'une matrice (2) \telecom {3}}{25}{section.2.23}%
+\contentsline {section}{\numberline {II.24}Diagonalisabilité d'une matrice (3) \centraleponts {3}}{25}{section.2.24}%
+\contentsline {section}{\numberline {II.25}\underline {Cotrigonalisation (1)} \centraleponts {3}}{25}{section.2.25}%
+\contentsline {section}{\numberline {II.26}Cotrigonalisation (2) \centraleponts {3}}{25}{section.2.26}%
+\contentsline {section}{\numberline {II.27}Cotrigonalisation (3) \centraleponts {4}}{26}{section.2.27}%
+\contentsline {section}{\numberline {II.28}Cotrigonalisation (4) \centraleponts {4}}{26}{section.2.28}%
+\contentsline {section}{\numberline {II.29}Cotrigonalisation (5) \centraleponts {3}}{26}{section.2.29}%
+\contentsline {section}{\numberline {II.30}Caractérisation des matrices nilpotente par la trace \telecom {3}}{26}{section.2.30}%
+\contentsline {section}{\numberline {II.31}Facteur commun dans le polynôme caractéristique \centraleponts {3}}{27}{section.2.31}%
+\contentsline {section}{\numberline {II.32}$\chi _{AB}=\chi _{BA}$ \centraleponts {3}}{27}{section.2.32}%
+\contentsline {section}{\numberline {II.33}Polynôme caractéristique de l'inverse \telecom {2}}{27}{section.2.33}%
+\contentsline {section}{\numberline {II.34}Commutativité et stabilité \ccinp {2}}{27}{section.2.34}%
+\contentsline {section}{\numberline {II.35}Dimension du commutant d'une matrice diagonalisable \centraleponts {3}}{28}{section.2.35}%
+\contentsline {section}{\numberline {II.36}\underline {Sous-espaces stables d'un endomorphisme diagonalisable} \centraleponts {3}}{28}{section.2.36}%
+\contentsline {section}{\numberline {II.37}Hyperplans stables \centraleponts {3}}{28}{section.2.37}%
+\contentsline {section}{\numberline {II.38}Endomorphisme qui stabilise un nombre fini de sous-espaces \centraleponts {3}}{29}{section.2.38}%
+\contentsline {section}{\numberline {II.39}Sous-espaces stables d'un endomorphisme nilpotent maximal \centraleponts {3}}{29}{section.2.39}%
+\contentsline {section}{\numberline {II.40}Sous-espaces stables par les endomorphismes de permutation \xens {4}}{29}{section.2.40}%
+\contentsline {section}{\numberline {II.41}Semi-simplicité \centraleponts {3}}{29}{section.2.41}%
+\contentsline {section}{\numberline {II.42}Endomorphismes diagonalisables d'un $\mathbb {R}$-espace vectoriel \telecom {3}}{29}{section.2.42}%
+\contentsline {section}{\numberline {II.43}\underline {Matrices à spectres disjoints} \centraleponts {3}}{30}{section.2.43}%
+\contentsline {chapter}{\numberline {III}Réduction algébrique}{31}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Equation matricielle polynomiale (1) \ccinp {2}}{31}{section.3.1}%
+\contentsline {section}{\numberline {III.2}Equation matricielle polynomiale (2) \telecom {2}}{31}{section.3.2}%
+\contentsline {section}{\numberline {III.3}Equation matricielle avec la comatrice \xens {4}}{31}{section.3.3}%
+\contentsline {section}{\numberline {III.4}Rang et spectre de la comatrice \xens {3}}{32}{section.3.4}%
+\contentsline {section}{\numberline {III.5}Racine $p$-ième d'une matrice \telecom {3}}{32}{section.3.5}%
+\contentsline {section}{\numberline {III.6}Diagonalisibilité de $f$ dans le cas $f^2$ diagonalisable \centraleponts {3}}{32}{section.3.6}%
+\contentsline {section}{\numberline {III.7}\underline {Endomorphismes diagonalisables non bijectifs} \ccinp {2}}{32}{section.3.7}%
+\contentsline {section}{\numberline {III.8}Valuation du polynôme minimal \centraleponts {3}}{33}{section.3.8}%
+\contentsline {section}{\numberline {III.9}Sous-espaces stables \centraleponts {3}}{33}{section.3.9}%
+\contentsline {section}{\numberline {III.10}Une formule sur les polynômes \centraleponts {3}}{33}{section.3.10}%
+\contentsline {section}{\numberline {III.11}Ordre de matrice \xens {4}}{33}{section.3.11}%
+\contentsline {section}{\numberline {III.12}\underline {Sous-groupes finis de GL$_2(\mathbb {Z})$} \centraleponts {4}}{33}{section.3.12}%
+\contentsline {section}{\numberline {III.13}\underline {Sous-groupes finis de GL$_n(\mathbb {Z})$} \centraleponts {4}}{34}{section.3.13}%
+\contentsline {section}{\numberline {III.14}\underline {Isomorphisme entre GL$_n(\mathbb {C})$ et GL$_m(\mathbb {C})$} \centraleponts {4}}{34}{section.3.14}%
+\contentsline {section}{\numberline {III.15}Inverse et conjugaison \xens {5}}{34}{section.3.15}%
+\contentsline {section}{\numberline {III.16}\underline {Matrice compagnon (2)} \ccinp {2}}{35}{section.3.16}%
+\contentsline {section}{\numberline {III.17}\underline {Polynôme minimal ponctuel} \centraleponts {3}}{35}{section.3.17}%
+\contentsline {section}{\numberline {III.18}\underline {Endomorphismes cycliques} \centraleponts {3}}{36}{section.3.18}%
+\contentsline {section}{\numberline {III.19}\underline {Commutant d'un endomorphisme cyclique} \centraleponts {3}}{36}{section.3.19}%
+\contentsline {section}{\numberline {III.20}Une démonstration de Cayley-Hamilton \centraleponts {3}}{37}{section.3.20}%
+\contentsline {section}{\numberline {III.21}Indépendance de corps du polynôme minimal \centraleponts {3}}{37}{section.3.21}%
+\contentsline {section}{\numberline {III.22}Polynôme minimal de l'inverse \xens {3}}{37}{section.3.22}%
+\contentsline {section}{\numberline {III.23}Polynôme minimal de la transposée \ccinp {1}}{38}{section.3.23}%
+\contentsline {section}{\numberline {III.24}Polynôme minimal imposé \centraleponts {3}}{38}{section.3.24}%
+\contentsline {section}{\numberline {III.25}\underline {Matrice de Gram} \centraleponts {3}}{38}{section.3.25}%
+\contentsline {section}{\numberline {III.26}\underline {Matrice circulante} \centraleponts {3}}{38}{section.3.26}%
+\contentsline {section}{\numberline {III.27}Diagonalisabilité du produit de deux matrices \centraleponts {3}}{39}{section.3.27}%
+\contentsline {section}{\numberline {III.28}Diagonalisation d'une matrice par bloc \telecom {3}}{39}{section.3.28}%
+\contentsline {section}{\numberline {III.29}Exponentielle matricielle \centraleponts {3}}{39}{section.3.29}%
+\contentsline {section}{\numberline {III.30}Exponentiel d'un endomorphisme nilpotent \telecom {3}}{39}{section.3.30}%
+\contentsline {section}{\numberline {III.31}Endomorphismes anticommutants \centraleponts {4}}{40}{section.3.31}%
+\contentsline {section}{\numberline {III.32}Trace entière \centraleponts {4}}{40}{section.3.32}%
+\contentsline {section}{\numberline {III.33}$P(A)$ nilpotente \centraleponts {3}}{40}{section.3.33}%
+\contentsline {chapter}{\numberline {IV}Déterminant}{41}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}Dimension de l'espace des formes multilinéaires alternées \xens {4}}{41}{section.4.1}%
+\contentsline {section}{\numberline {IV.2}Théorème de Bézout matriciel \telecom {2}}{41}{section.4.2}%
+\contentsline {section}{\numberline {IV.3}\underline {Déterminant tridiagonal} \centraleponts {3}}{42}{section.4.3}%
+\contentsline {section}{\numberline {IV.4}Déterminant bitriangulaire\centraleponts {3}}{42}{section.4.4}%
+\contentsline {section}{\numberline {IV.5}\underline {Déterminant de Vandermonde}\ccinp {1}}{42}{section.4.5}%
+\contentsline {subsection}{\numberline {IV.5.1}Utilisation du déterminant de Vandermonde}{42}{subsection.4.5.1}%
+\contentsline {section}{\numberline {IV.6}Déterminant de Hilbert\centraleponts {3}}{43}{section.4.6}%
+\contentsline {section}{\numberline {IV.7}\underline {Déterminant de Gram}\telecom {3}}{43}{section.4.7}%
+\contentsline {section}{\numberline {IV.8}\underline {Déterminant de Cauchy}\centraleponts {3}}{43}{section.4.8}%
+\contentsline {section}{\numberline {IV.9}Déterminant de Smith\centraleponts {3}}{44}{section.4.9}%
+\contentsline {section}{\numberline {IV.10}Déterminant de Cayley-Menger \xens {4}}{44}{section.4.10}%
+\contentsline {chapter}{\numberline {V}Groupes}{47}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Existence d'un idempotent \xens {3}}{47}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Sous-semi-groupes finis de $\EuScript {M}_n(\mathbb {K})$}{47}{section.5.2}%
+\contentsline {section}{\numberline {V.3}\underline {Groupe d'exposant inférieur à 2} \ccinp {1}}{47}{section.5.3}%
+\contentsline {section}{\numberline {V.4}\underline {Centre et Commutant} \ccinp {1}}{48}{section.5.4}%
+\contentsline {section}{\numberline {V.5}Théorème de Dixon \xens {4}}{48}{section.5.5}%
+\contentsline {section}{\numberline {V.6}\underline {Opérations sur les sous-groupes} \ccinp {2}}{48}{section.5.6}%
+\contentsline {section}{\numberline {V.7}\underline {Sous-groupes finis de $\mathbb {U}$} \telecom {2}}{48}{section.5.7}%
+\contentsline {section}{\numberline {V.8}Groupes quasi-cycliques de Prüfer \centraleponts {3}}{49}{section.5.8}%
+\contentsline {section}{\numberline {V.9}Sous-groupes de GL$_n(\mathbb {C})$ cyclique \centraleponts {3}}{49}{section.5.9}%
+\contentsline {section}{\numberline {V.10}\underline {Matrices inversibles à coefficients entiers} \telecom {2}}{49}{section.5.10}%
+\contentsline {section}{\numberline {V.11}\underline {Sous-groupes de $(\mathbb {Z},+)$} \ccinp {2}}{49}{section.5.11}%
+\contentsline {section}{\numberline {V.12}\underline {Sous-groupes de $(\mathbb {R},+)$} \centraleponts {3}}{50}{section.5.12}%
+\contentsline {subsection}{\numberline {V.12.1}Fonction (multi)périodique \centraleponts {3}}{50}{subsection.5.12.1}%
+\contentsline {subsection}{\numberline {V.12.2}$\cos (\mathbb {N})$ \centraleponts {3}}{50}{subsection.5.12.2}%
+\contentsline {subsection}{\numberline {V.12.3}Valeur d'adhérence du cercle unité \centraleponts {3}}{50}{subsection.5.12.3}%
+\contentsline {section}{\numberline {V.13}Sous-groupes distingué}{50}{section.5.13}%
+\contentsline {section}{\numberline {V.14}Nature d'une suite}{51}{section.5.14}%
+\contentsline {section}{\numberline {V.15}Une relation utile sur les morphismes de groupes}{51}{section.5.15}%
+\contentsline {section}{\numberline {V.16}Automorphisme d'inversion \ccinp {1}}{51}{section.5.16}%
+\contentsline {section}{\numberline {V.17}Automorphismes intérieurs \ccinp {1}}{51}{section.5.17}%
+\contentsline {section}{\numberline {V.18}Endomorphismes continus de $\mathbb {R}$ \telecom {2}}{51}{section.5.18}%
+\contentsline {section}{\numberline {V.19}Morphismes de $\mathbb {Q}$ dans $\mathbb {Z}$ \ccinp {1}}{52}{section.5.19}%
+\contentsline {section}{\numberline {V.20}Morphismes de $\mathbb {Z}/n\mathbb {Z}$ dans $\mathbb {Z}/m\mathbb {Z}$}{52}{section.5.20}%
+\contentsline {section}{\numberline {V.21}Morphismes de GL$_n(\mathbb {R})$ dans $\mathbb {Z}/m\mathbb {Z}$ \xens {5}}{52}{section.5.21}%
+\contentsline {section}{\numberline {V.22}Caractères algébriques de GL$_n(\mathbb {K})$}{52}{section.5.22}%
+\contentsline {section}{\numberline {V.23}Quasi-morphisme \centraleponts {3}}{52}{section.5.23}%
+\contentsline {section}{\numberline {V.24}Morphisme de $\mathbb {Z}^\mathbb {N}$ presque nul \centraleponts {3}}{52}{section.5.24}%
+\contentsline {section}{\numberline {V.25}Groupes de matrices}{53}{section.5.25}%
+\contentsline {section}{\numberline {V.26}Caractérisation de la finitude d'un groupe par ses sous-groupes \xens {3}}{53}{section.5.26}%
+\contentsline {section}{\numberline {V.27}Sous-groupe des éléments d'ordre fini \xens {4}}{53}{section.5.27}%
+\contentsline {section}{\numberline {V.28}Relations d'équivalence naturelles sur les groupes \etoile {1}}{53}{section.5.28}%
+\contentsline {section}{\numberline {V.29}\underline {Théorème de Lagrange} \centraleponts {3} (HP)}{54}{section.5.29}%
+\contentsline {section}{\numberline {V.30}Un cas particulier du lemme de Cauchy \xens {4} (HP)}{54}{section.5.30}%
+\contentsline {section}{\numberline {V.31}Groupe d'ordre premier \telecom {1}}{54}{section.5.31}%
+\contentsline {subsection}{\numberline {V.31.1}Plus petit groupe non commutatif \centraleponts {3}}{54}{subsection.5.31.1}%
+\contentsline {section}{\numberline {V.32}Sous-groupe d'un groupe cyclique \centraleponts {3}}{54}{section.5.32}%
+\contentsline {section}{\numberline {V.33}Exposant d'un groupe abélien fini \xens {4} (HP)}{54}{section.5.33}%
+\contentsline {section}{\numberline {V.34}Un groupe d'inversible non cyclique}{55}{section.5.34}%
+\contentsline {section}{\numberline {V.35}Ordre dans un groupe de cardinal pair}{55}{section.5.35}%
+\contentsline {section}{\numberline {V.36}\underline {Ordre dans $\mathbb {Z}/n\mathbb {Z}$} \telecom {2}}{55}{section.5.36}%
+\contentsline {section}{\numberline {V.37}Passage par les groupes}{55}{section.5.37}%
+\contentsline {section}{\numberline {V.38}Groupe infini non monogène \ccinp {1}}{56}{section.5.38}%
+\contentsline {section}{\numberline {V.39}Groupe non cyclique \telecom {2}}{56}{section.5.39}%
+\contentsline {section}{\numberline {V.40}Ordre dans le groupe symétrique \telecom {2}}{56}{section.5.40}%
+\contentsline {section}{\numberline {V.41}Sous-groupe engendré par les nombres premiers}{56}{section.5.41}%
+\contentsline {section}{\numberline {V.42}Sous-groupe engendré par le complémentaire d'un sous-groupe}{56}{section.5.42}%
+\contentsline {section}{\numberline {V.43}Partie génératrice}{56}{section.5.43}%
+\contentsline {section}{\numberline {V.44}Groupe alterné \centraleponts {3}}{57}{section.5.44}%
+\contentsline {section}{\numberline {V.45}Cardinal minimal d'une famille de transpositions engendrant $\EuScript S_n$ \centraleponts {3}}{57}{section.5.45}%
+\contentsline {section}{\numberline {V.46}Partie génératrice de $\EuScript {O}(E)$ \xens {4}}{57}{section.5.46}%
+\contentsline {section}{\numberline {V.47}Groupe dans un plan euclidien \centraleponts {3}}{57}{section.5.47}%
+\contentsline {section}{\numberline {V.48}\underline {Matrices de permutation} \telecom {1}}{57}{section.5.48}%
+\contentsline {section}{\numberline {V.49}Groupe dérivé \xens {4}}{58}{section.5.49}%
+\contentsline {section}{\numberline {V.50}Sous-groupe discret de $\mathbb {C}$ et de SL$_2(\mathbb {R})$ \xens {5}}{58}{section.5.50}%
+\contentsline {chapter}{\numberline {VI}Anneaux et corps}{59}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}Centre d'un anneau \etoile {1} (HP)}{59}{section.6.1}%
+\contentsline {section}{\numberline {VI.2}Calcul d'un inverse \centraleponts {3}}{59}{section.6.2}%
+\contentsline {section}{\numberline {VI.3}Anneau de Boole \telecom {2}}{59}{section.6.3}%
+\contentsline {subsection}{\numberline {VI.3.1}L'anneau de Boole est principal \centraleponts {3}}{60}{subsection.6.3.1}%
+\contentsline {section}{\numberline {VI.4}Condition suffisante pour qu'un anneau soit commutatif \centraleponts {3}}{60}{section.6.4}%
+\contentsline {section}{\numberline {VI.5}Anneaux commutatifs ou anti-commutatifs \centraleponts {4}}{60}{section.6.5}%
+\contentsline {section}{\numberline {VI.6}Anneau régulier \centraleponts {4}}{61}{section.6.6}%
+\contentsline {section}{\numberline {VI.7}Anneau intègre fini \telecom {1}}{61}{section.6.7}%
+\contentsline {section}{\numberline {VI.8}Anneau principal (1) \telecom {3}}{61}{section.6.8}%
+\contentsline {section}{\numberline {VI.9}Anneau principal (2) \etoile {3} (HP)}{61}{section.6.9}%
+\contentsline {section}{\numberline {VI.10}Anneau euclidien \centraleponts {2}}{62}{section.6.10}%
+\contentsline {section}{\numberline {VI.11}Entiers de Gauss}{62}{section.6.11}%
+\contentsline {subsection}{\numberline {VI.11.1}Structure et inversibles de $\mathbb {Z}[i]$ \ccinp {2}}{62}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {VI.11.2}$\mathbb {Z}[i]$ est euclidien \centraleponts {3}}{62}{subsection.6.11.2}%
+\contentsline {subsection}{\numberline {VI.11.3}Une somme \xens {4}}{62}{subsection.6.11.3}%
+\contentsline {subsection}{\numberline {VI.11.4}Irréductibles de $\mathbb {Z}[i]$ \centraleponts {4}}{63}{subsection.6.11.4}%
+\contentsline {section}{\numberline {VI.12}Anneau Noethérien \etoile {4} (HP)}{63}{section.6.12}%
+\contentsline {subsection}{\numberline {VI.12.1}$\mathbb {Z}$ et $\mathbb {K}[X]$ sont noethériens \telecom {2}}{63}{subsection.6.12.1}%
+\contentsline {section}{\numberline {VI.13}Morphismes d'anneaux de fonctions réelles}{63}{section.6.13}%
+\contentsline {section}{\numberline {VI.14}Caractérisation d'un corps par ses idéaux \telecom {2}}{64}{section.6.14}%
+\contentsline {section}{\numberline {VI.15}Opérations sur les idéaux, idéaux principaux \centraleponts {3}}{64}{section.6.15}%
+\contentsline {section}{\numberline {VI.16}Idéal premier \telecom {2}}{64}{section.6.16}%
+\contentsline {section}{\numberline {VI.17}Idéal maximal \centraleponts {4}}{64}{section.6.17}%
+\contentsline {section}{\numberline {VI.18}Idéaux d'un espace de fonction}{65}{section.6.18}%
+\contentsline {section}{\numberline {VI.19}\underline {Radical d'un idéal} \ccinp {1}}{65}{section.6.19}%
+\contentsline {section}{\numberline {VI.20}Nilradical \telecom {2}}{65}{section.6.20}%
+\contentsline {section}{\numberline {VI.21}Radical de Jacobson \centraleponts {2}}{66}{section.6.21}%
+\contentsline {section}{\numberline {VI.22}Idéaux de $\EuScript {M}_n(\mathbb {K})$}{66}{section.6.22}%
+\contentsline {subsection}{\numberline {VI.22.1}Idéaux bilatère \centraleponts {3}}{66}{subsection.6.22.1}%
+\contentsline {subsection}{\numberline {VI.22.2}Idéaux à droite \ccinp {2}}{67}{subsection.6.22.2}%
+\contentsline {subsection}{\numberline {VI.22.3}Idéaux à gauche \ccinp {2}}{67}{subsection.6.22.3}%
+\contentsline {section}{\numberline {VI.23}Caractéristique d'un anneau \etoile {2} (HP)}{68}{section.6.23}%
+\contentsline {section}{\numberline {VI.24}Anneau intègre \etoile {2} (HP)}{68}{section.6.24}%
+\contentsline {section}{\numberline {VI.25}Sous-corps minimal de $\mathbb {C}$ \etoile {1}}{68}{section.6.25}%
+\contentsline {section}{\numberline {VI.26}Corps d'Attila}{68}{section.6.26}%
+\contentsline {section}{\numberline {VI.27}\underline {Endomorphisme de corps de $\mathbb {R}$} \telecom {2}}{69}{section.6.27}%
+\contentsline {section}{\numberline {VI.28}Automorphismes de $\mathbb {Q}[\sqrt {2}]$ \centraleponts {3}}{69}{section.6.28}%
+\contentsline {section}{\numberline {VI.29}Algèbre des quaternions}{69}{section.6.29}%
+\contentsline {section}{\numberline {VI.30}Une définition de $\mathbb {C}$ \ccinp {2}}{69}{section.6.30}%
+\contentsline {section}{\numberline {VI.31}$\mathbb {R}$-algèbre commutative intègre de dimension finie \centraleponts {4}}{70}{section.6.31}%
+\contentsline {section}{\numberline {VI.32}Théorie algébrique des corps \xens {4} (HP)}{70}{section.6.32}%
+\contentsline {section}{\numberline {VI.33}Famille $\mathbb {Q}$-libre \etoile {4} (HP)}{70}{section.6.33}%
+\contentsline {section}{\numberline {VI.34}Corps des nombres algébriques \centraleponts {4}}{71}{section.6.34}%
+\contentsline {section}{\numberline {VI.35}Théorème de Kronecker \xens {4}}{71}{section.6.35}%
+\contentsline {section}{\numberline {VI.36}Irrationalité de $e$ (1) \centraleponts {2}}{72}{section.6.36}%
+\contentsline {section}{\numberline {VI.37}Irrationalité de $e$ (2) \telecom {2}}{72}{section.6.37}%
+\contentsline {section}{\numberline {VI.38}\underline {Irrationalité de $\pi $} \xens {4}}{72}{section.6.38}%
+\contentsline {section}{\numberline {VI.39}\underline {Critère de transcendance de Liouville} \xens {4}}{72}{section.6.39}%
+\contentsline {chapter}{\numberline {VII}Arithmétique}{73}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Infinité des nombres premiers \ccinp {2}}{73}{section.7.1}%
+\contentsline {section}{\numberline {VII.2}Version faible du théorème de progression arithmétique de Dirichlet \xens {3}}{73}{section.7.2}%
+\contentsline {section}{\numberline {VII.3}Racine carré d'un nombre premier \telecom {2}}{74}{section.7.3}%
+\contentsline {section}{\numberline {VII.4}Une suite périodique \centraleponts {3}}{74}{section.7.4}%
+\contentsline {section}{\numberline {VII.5}\underline {Racines de l'unité} \ccinp {2}}{74}{section.7.5}%
+\contentsline {section}{\numberline {VII.6}Plus petit nombre premier ne divisant pas un entier donné}{74}{section.7.6}%
+\contentsline {section}{\numberline {VII.7}Théorème de Kurshak \xens {4}}{74}{section.7.7}%
+\contentsline {section}{\numberline {VII.8}Valuation $p$-adique de $\displaystyle \binom {p^n}{k}$ \xens {3}}{75}{section.7.8}%
+\contentsline {section}{\numberline {VII.9}Une équation dans $\mathbb {N}$ \centraleponts {3}}{75}{section.7.9}%
+\contentsline {section}{\numberline {VII.10}Triplets pythagoriciens \ccinp {2}}{75}{section.7.10}%
+\contentsline {section}{\numberline {VII.11}Théorème de Sophie Germain \centraleponts {3}}{75}{section.7.11}%
+\contentsline {section}{\numberline {VII.12}Une équation diophantienne \centraleponts {3}}{76}{section.7.12}%
+\contentsline {section}{\numberline {VII.13}Calcul d'une somme \centraleponts {3}}{76}{section.7.13}%
+\contentsline {section}{\numberline {VII.14}\underline {Nombres de Mersenne} \ccinp {2}}{77}{section.7.14}%
+\contentsline {section}{\numberline {VII.15}\underline {Un exercice pour les années impaires} \xens {4}}{77}{section.7.15}%
+\contentsline {section}{\numberline {VII.16}\underline {Equation du second degré dans $\mathbb {Z}/n\mathbb {Z}$} \telecom {2}}{77}{section.7.16}%
+\contentsline {section}{\numberline {VII.17}Un problème de congruence \centraleponts {3}}{78}{section.7.17}%
+\contentsline {section}{\numberline {VII.18}Un multiple de 2026 qui ne s'écrit qu'avec des $2$ \xens {3}}{78}{section.7.18}%
+\contentsline {section}{\numberline {VII.19}Somme des puissances $k$-ièmes dans $\mathbb {Z}/p\mathbb {Z}$ \xens {3}}{78}{section.7.19}%
+\contentsline {section}{\numberline {VII.20}Théorème de Wilson \telecom {2}}{78}{section.7.20}%
+\contentsline {section}{\numberline {VII.21}Problème Putnam (2011) \xens {5}}{78}{section.7.21}%
+\contentsline {section}{\numberline {VII.22}Critère d'Euler \centraleponts {4}}{79}{section.7.22}%
+\contentsline {section}{\numberline {VII.23}\underline {Indicatrice d'Euler} \centraleponts {3}}{79}{section.7.23}%
+\contentsline {section}{\numberline {VII.24}Une minoration de l'indicatrice d'Euler \centraleponts {3}}{79}{section.7.24}%
+\contentsline {section}{\numberline {VII.25}\underline {Théorème d'interversion de Möbius} \centraleponts {3}}{80}{section.7.25}%
+\contentsline {section}{\numberline {VII.26}Probabilité que deux entiers soient premiers entre eux \xens {4}}{80}{section.7.26}%
+\contentsline {section}{\numberline {VII.27}Limite d'une fonction arithmétique multiplicative \centraleponts {3}}{81}{section.7.27}%
+\contentsline {section}{\numberline {VII.28}Fonctions arithmétiques réelles additives \centraleponts {4}}{81}{section.7.28}%
+\contentsline {section}{\numberline {VII.29}Une majoration de la somme des diviseurs d'un entier \centraleponts {2}}{82}{section.7.29}%
+\contentsline {section}{\numberline {VII.30}Entiers algébriques \centraleponts {2}}{82}{section.7.30}%
+\contentsline {section}{\numberline {VII.31}\underline {Majoration de la primorielle} \centraleponts {3}}{82}{section.7.31}%
+\contentsline {section}{\numberline {VII.32}\underline {Théorèmes de Mertens} \centraleponts {3}}{82}{section.7.32}%
+\contentsline {section}{\numberline {VII.33}\underline {Théorèmes de Tchebychev} \centraleponts {3}}{83}{section.7.33}%
+\contentsline {chapter}{\numberline {VIII}Dénombrement}{85}{chapter.8}%
+\contentsline {section}{\numberline {VIII.1}Identité de Vandermonde \centraleponts {2}}{85}{section.8.1}%
+\contentsline {subsection}{\numberline {VIII.1.1}Formule de Chu-Vandermonde}{85}{subsection.8.1.1}%
+\contentsline {section}{\numberline {VIII.2}Nombre de Fibonacci \xens {3}}{85}{section.8.2}%
+\contentsline {section}{\numberline {VIII.3}Matrices orthogonales à coefficients entiers \telecom {2}}{86}{section.8.3}%
+\contentsline {section}{\numberline {VIII.4}Nombre de carrés inférieur à un entier fixé \etoile {1}}{86}{section.8.4}%
+\contentsline {section}{\numberline {VIII.5}Dérangement \centraleponts {3}}{86}{section.8.5}%
+\contentsline {section}{\numberline {VIII.6}Dérangement partiel \centraleponts {3}}{87}{section.8.6}%
+\contentsline {section}{\numberline {VIII.7}Nombres de Bell \centraleponts {3}}{87}{section.8.7}%
+\contentsline {section}{\numberline {VIII.8}Nombres de Catalan \centraleponts {3}}{88}{section.8.8}%
+\contentsline {section}{\numberline {VIII.9}Nombres de parties \ccinp {2}}{88}{section.8.9}%
+\contentsline {section}{\numberline {VIII.10}Nombre de surjection \centraleponts {3}}{89}{section.8.10}%
+\contentsline {section}{\numberline {VIII.11}\underline {Formule de Legendre} \centraleponts {3}}{89}{section.8.11}%
+\contentsline {section}{\numberline {VIII.12}Théorème de Hall \xens {4}}{89}{section.8.12}%
+\contentsline {section}{\numberline {VIII.13}\underline {Formule du Crible} \xens {3}}{89}{section.8.13}%
+\contentsline {section}{\numberline {VIII.14}Cardinal de GL$_n(K)$ et SL$_n(K)$ \etoile {4} (HP)}{90}{section.8.14}%
+\contentsline {section}{\numberline {VIII.15}$\mathbb {Q}$ est dénombrable \ccinp {2}}{90}{section.8.15}%
+\contentsline {section}{\numberline {VIII.16}$\mathbb {R}$ n'est pas dénombrable \xens {3}}{90}{section.8.16}%
+\contentsline {section}{\numberline {VIII.17}Dénombrabilité des nombres algébriques \centraleponts {3}}{90}{section.8.17}%
+\contentsline {section}{\numberline {VIII.18}Théorème de Cantor \etoile {3}}{90}{section.8.18}%
+\contentsline {section}{\numberline {VIII.19}Fonction qui intervertit rationnels et irrationnels \centraleponts {3}}{91}{section.8.19}%
+\contentsline {section}{\numberline {VIII.20}Support d'une famille sommable \telecom {2}}{91}{section.8.20}%
+\contentsline {section}{\numberline {VIII.21}Théorème de Froda \centraleponts {3}}{91}{section.8.21}%
+\contentsline {section}{\numberline {VIII.22}Ensemble discret \telecom {2}}{91}{section.8.22}%
+\contentsline {section}{\numberline {VIII.23}Ensemble parfait}{91}{section.8.23}%
+\contentsline {subsection}{\numberline {VIII.23.1}Poussière de Cantor}{92}{subsection.8.23.1}%
+\contentsline {subsection}{\numberline {VIII.23.2}Ensemble parfait de $\mathbb {R}$}{92}{subsection.8.23.2}%
+\contentsline {subsection}{\numberline {VIII.23.3}Théorème de Cantor-Bendixson}{92}{subsection.8.23.3}%
+\contentsline {chapter}{\numberline {IX}Probabilités}{93}{chapter.9}%
+\contentsline {section}{\numberline {IX.1}Somme de variables de Bernoulli indépendantes \etoile {2}}{93}{section.9.1}%
+\contentsline {section}{\numberline {IX.2}Approximation d'une loi de Poisson par des lois binomiales \ccinp {1}}{93}{section.9.2}%
+\contentsline {section}{\numberline {IX.3}Inégalité de Markov et inégalité de Bienaymé-Tchébychev \ccinp {1}}{94}{section.9.3}%
+\contentsline {subsection}{\numberline {IX.3.1}Utilisation de l'inégalité de Bienaymé-Tchebychev}{94}{subsection.9.3.1}%
+\contentsline {section}{\numberline {IX.4}Paradoxe des anniversaires \ccinp {2}}{94}{section.9.4}%
+\contentsline {subsection}{\numberline {IX.4.1}Généralisation \centraleponts {3}}{94}{subsection.9.4.1}%
+\contentsline {section}{\numberline {IX.5}Variable aléatoire presque sûrement nulle/constante \ccinp {2}}{94}{section.9.5}%
+\contentsline {section}{\numberline {IX.6}Loi de Pascal \telecom {2}}{95}{section.9.6}%
+\contentsline {section}{\numberline {IX.7}\underline {Lemme de Borel-Cantelli et loi du zéro-un de Borel} \centraleponts {3}}{95}{section.9.7}%
+\contentsline {section}{\numberline {IX.8}\underline {Formule d'antirépartition} \telecom {3}}{95}{section.9.8}%
+\contentsline {section}{\numberline {IX.9}Loi de Poisson \ccinp {2}}{96}{section.9.9}%
+\contentsline {section}{\numberline {IX.10}Maximum de deux lois géométriques indépendantes \ccinp {1}}{96}{section.9.10}%
+\contentsline {section}{\numberline {IX.11}Max et min de lois géométriques iid \centraleponts {4}}{96}{section.9.11}%
+\contentsline {section}{\numberline {IX.12}\underline {Formule de Wald} \centraleponts {3}}{96}{section.9.12}%
+\contentsline {section}{\numberline {IX.13}Loi binomiale aléatoire \centraleponts {3}}{97}{section.9.13}%
+\contentsline {section}{\numberline {IX.14}\underline {Somme de lois de Poisson} \ccinp {1}}{97}{section.9.14}%
+\contentsline {section}{\numberline {IX.15}Obtenir trois pile consécutifs \centraleponts {3}}{98}{section.9.15}%
+\contentsline {section}{\numberline {IX.16}\underline {Lancer de dés équitable} \centraleponts {3}}{98}{section.9.16}%
+\contentsline {subsection}{\numberline {IX.16.1}Généralisation \etoile {4}}{98}{subsection.9.16.1}%
+\contentsline {section}{\numberline {IX.17}Espérance conditionnelle \centraleponts {3}}{98}{section.9.17}%
+\contentsline {section}{\numberline {IX.18}\underline {Problème du collectionneur} \ccinp {2}}{99}{section.9.18}%
+\contentsline {subsection}{\numberline {IX.18.1}Généralisation}{99}{subsection.9.18.1}%
+\contentsline {section}{\numberline {IX.19}Problème de la ruine du joueur}{99}{section.9.19}%
+\contentsline {section}{\numberline {IX.20}Passager d'un avion}{100}{section.9.20}%
+\contentsline {section}{\numberline {IX.21}Fonction de répartition \centraleponts {4}}{100}{section.9.21}%
+\contentsline {section}{\numberline {IX.22}\underline {Loi sans mémoire} \telecom {2}}{100}{section.9.22}%
+\contentsline {section}{\numberline {IX.23}Caractérisation de la loi de Poisson par l'espérance}{100}{section.9.23}%
+\contentsline {section}{\numberline {IX.24}\underline {Loi Zéta} \ccinp {2}}{101}{section.9.24}%
+\contentsline {section}{\numberline {IX.25}Taux de panne \centraleponts {2}}{101}{section.9.25}%
+\contentsline {section}{\numberline {IX.26}Matrice aléatoire (1) \ccinp {2}}{102}{section.9.26}%
+\contentsline {section}{\numberline {IX.27}Matrice aléatoire (2)}{102}{section.9.27}%
+\contentsline {section}{\numberline {IX.28}Matrice aléatoire (3)}{102}{section.9.28}%
+\contentsline {section}{\numberline {IX.29}Matrice aléatoire (4)}{103}{section.9.29}%
+\contentsline {section}{\numberline {IX.30}Matrice aléatoire (5)}{103}{section.9.30}%
+\contentsline {section}{\numberline {IX.31}Matrice aléatoire (6)}{103}{section.9.31}%
+\contentsline {section}{\numberline {IX.32}Matrice aléatoire (7)}{103}{section.9.32}%
+\contentsline {section}{\numberline {IX.33}Matrice de Rademacher}{103}{section.9.33}%
+\contentsline {section}{\numberline {IX.34}Vecteur propre aléatoire \centraleponts {3}}{104}{section.9.34}%
+\contentsline {section}{\numberline {IX.35}Equation différentielle à coefficients aléatoires}{104}{section.9.35}%
+\contentsline {section}{\numberline {IX.36}Série entière aléatoire}{104}{section.9.36}%
+\contentsline {section}{\numberline {IX.37}Permutation aléatoire}{104}{section.9.37}%
+\contentsline {section}{\numberline {IX.38}Permutations composées d'un grand cycle}{105}{section.9.38}%
+\contentsline {section}{\numberline {IX.39}Loi conjointe (1) \ccinp {2}}{105}{section.9.39}%
+\contentsline {section}{\numberline {IX.40}Loi conjointe (2) \centraleponts {3}}{105}{section.9.40}%
+\contentsline {section}{\numberline {IX.41}Fonction caractéristique \centraleponts {2}}{106}{section.9.41}%
+\contentsline {section}{\numberline {IX.42}Fonction génératrice des moments \centraleponts {5}}{106}{section.9.42}%
+\contentsline {section}{\numberline {IX.43}Inégalité de Jensen \ccinp {1}}{106}{section.9.43}%
+\contentsline {section}{\numberline {IX.44}Inégalité de Hölder \telecom {2}}{106}{section.9.44}%
+\contentsline {section}{\numberline {IX.45}Modes de convergences \centraleponts {3}}{107}{section.9.45}%
+\contentsline {section}{\numberline {IX.46}Marche aléatoire sur $\mathbb {Z}^d$ \etoile {3}}{107}{section.9.46}%
+\contentsline {subsection}{\numberline {IX.46.1}\underline {Le cas $d=1$} \etoile {2}}{108}{subsection.9.46.1}%
+\contentsline {subsection}{\numberline {IX.46.2}Le cas $d=2$}{109}{subsection.9.46.2}%
+\contentsline {subsection}{\numberline {IX.46.3}Le cas général}{109}{subsection.9.46.3}%
+\contentsline {section}{\numberline {IX.47}Matrice de covariances \telecom {2}}{109}{section.9.47}%
+\contentsline {section}{\numberline {IX.48}Maximisation de la variance sous contrainte \ccinp {2}}{109}{section.9.48}%
+\contentsline {section}{\numberline {IX.49}Inégalité de Kosmanek \ccinp {1}}{110}{section.9.49}%
+\contentsline {section}{\numberline {IX.50}\underline {Inégalité de Cantelli} \centraleponts {3}}{110}{section.9.50}%
+\contentsline {section}{\numberline {IX.51}\underline {Inégalité de Hoeffding} \centraleponts {3}}{110}{section.9.51}%
+\contentsline {section}{\numberline {IX.52}\underline {Théorème d'approximation de Weierstrass} \centraleponts {3}}{111}{section.9.52}%
+\contentsline {chapter}{\numberline {X}Endomorphismes d'un espace euclidien}{113}{chapter.10}%
+\contentsline {section}{\numberline {X.1}Equations matricielles \ccinp {2}}{113}{section.10.1}%
+\contentsline {section}{\numberline {X.2}\underline {Equation matricielle faisant intervenir la comatrice} \centraleponts {3}}{113}{section.10.2}%
+\contentsline {section}{\numberline {X.3}\underline {Matrice de rotation} \ccinp {2}}{113}{section.10.3}%
+\contentsline {section}{\numberline {X.4}Produit mixte et produit vectoriel \centraleponts {2}}{114}{section.10.4}%
+\contentsline {section}{\numberline {X.5}\underline {Hyperplan de $\EuScript {M}_n(\mathbb {K})$} \xens {4}}{114}{section.10.5}%
+\contentsline {section}{\numberline {X.6}Equation entre projecteurs \centraleponts {3}}{114}{section.10.6}%
+\contentsline {section}{\numberline {X.7}\underline {Exemple de symétrie orthogonale} \ccinp {1}}{114}{section.10.7}%
+\contentsline {section}{\numberline {X.8}\underline {Caractérisations des projections orthogonales} \ccinp {2}}{115}{section.10.8}%
+\contentsline {section}{\numberline {X.9}Norme d'une base orthogonale \xens {3}}{115}{section.10.9}%
+\contentsline {section}{\numberline {X.10}\underline {Matrice de Hilbert} \centraleponts {3}}{115}{section.10.10}%
+\contentsline {section}{\numberline {X.11}\underline {Racine carrée d'un endomorphisme auto-adjoint positif} \telecom {2}}{116}{section.10.11}%
+\contentsline {section}{\numberline {X.12}\underline {Inégalité de convexité} \telecom {2}}{116}{section.10.12}%
+\contentsline {section}{\numberline {X.13}\underline {Inégalité à propos des matrices orthogonales} \telecom {3}}{116}{section.10.13}%
+\contentsline {section}{\numberline {X.14}Inégalité de la trace}{116}{section.10.14}%
+\contentsline {section}{\numberline {X.15}\underline {Inégalité de Hadamard} \centraleponts {3}}{116}{section.10.15}%
+\contentsline {section}{\numberline {X.16}Perturbations}{117}{section.10.16}%
+\contentsline {section}{\numberline {X.17}Somme de Cesàro de matrices orthogonales}{117}{section.10.17}%
+\contentsline {section}{\numberline {X.18}\underline {Transformation de Cayley} \centraleponts {3}}{117}{section.10.18}%
+\contentsline {section}{\numberline {X.19}Optimisation (1) \telecom {2}}{118}{section.10.19}%
+\contentsline {section}{\numberline {X.20}Optimisation (2) \telecom {2}}{118}{section.10.20}%
+\contentsline {section}{\numberline {X.21}Optimisation (3)}{118}{section.10.21}%
+\contentsline {section}{\numberline {X.22}Caractérisation des isométries anti-involutives \telecom {2}}{118}{section.10.22}%
+\contentsline {section}{\numberline {X.23}Symétrie de l'espace \centraleponts {3}}{118}{section.10.23}%
+\contentsline {section}{\numberline {X.24}Réflexion et rotation dans un plan \centraleponts {3}}{119}{section.10.24}%
+\contentsline {section}{\numberline {X.25}Similitude entre matrices orthogonales \centraleponts {3}}{119}{section.10.25}%
+\contentsline {section}{\numberline {X.26}Propriété de l'adjoint \ccinp {2}}{119}{section.10.26}%
+\contentsline {section}{\numberline {X.27}Autour de l'adjoint \centraleponts {3}}{119}{section.10.27}%
+\contentsline {section}{\numberline {X.28}Somme d'une matrice orthogonale et de sa transposée \centraleponts {3}}{120}{section.10.28}%
+\contentsline {section}{\numberline {X.29}\underline {Déterminant d'une exponentielle} \ccinp {1}}{120}{section.10.29}%
+\contentsline {section}{\numberline {X.30}Exponentielle de matrices antisymétriques \xens {3}}{120}{section.10.30}%
+\contentsline {section}{\numberline {X.31}Théorème spectral \etoile {3}}{120}{section.10.31}%
+\contentsline {section}{\numberline {X.32}Réduction simultanée \xens {4}}{120}{section.10.32}%
+\contentsline {section}{\numberline {X.33}\underline {Réduction des matrices antisymétriques} \centraleponts {4}}{121}{section.10.33}%
+\contentsline {section}{\numberline {X.34}Caractérisation des matrices symétriques positives \centraleponts {3}}{121}{section.10.34}%
+\contentsline {section}{\numberline {X.35}Matrices entières positives}{121}{section.10.35}%
+\contentsline {section}{\numberline {X.36}Matrices binaires positives}{121}{section.10.36}%
+\contentsline {section}{\numberline {X.37}\underline {Inégalité de Hoffman-Wielandt} \centraleponts {3}}{122}{section.10.37}%
+\contentsline {section}{\numberline {X.38}Distance aux matrices de rang au plus $r$}{122}{section.10.38}%
+\contentsline {section}{\numberline {X.39}\underline {Théorème de Courant-Fischer} \centraleponts {3}}{123}{section.10.39}%
+\contentsline {section}{\numberline {X.40}Principe de Ky-Fan}{123}{section.10.40}%
+\contentsline {section}{\numberline {X.41}Théorème de Cartan-Dieudonnée \xens {4}}{123}{section.10.41}%
+\contentsline {section}{\numberline {X.42}Relation d'ordre des matrices symétriques}{124}{section.10.42}%
+\contentsline {chapter}{\numberline {XI}Décomposition matricielle}{125}{chapter.11}%
+\contentsline {section}{\numberline {XI.1}\underline {Décomposition de Dunford} \centraleponts {3}}{125}{section.11.1}%
+\contentsline {subsection}{\numberline {XI.1.1}Diagonalisabilité de l'exponentielle d'une matrice \centraleponts {3}}{125}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {XI.1.2}Surjectivité de l'exponentielle matricielle \centraleponts {4}}{126}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {XI.1.3}Opérateur de commutation \centraleponts {3}}{126}{subsection.11.1.3}%
+\contentsline {subsection}{\numberline {XI.1.4}Deux applications non continues}{126}{subsection.11.1.4}%
+\contentsline {section}{\numberline {XI.2}\underline {Décomposition polaire} \centraleponts {3}}{126}{section.11.2}%
+\contentsline {subsection}{\numberline {XI.2.1}Sous-groupe compact maximal de GL$_n(\mathbb {R})$ \centraleponts {3}}{127}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {XI.2.2}Enveloppe convexe des matrices orthogonales \centraleponts {3}}{127}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {XI.2.3}Points extrémaux des matrices orthogonales \centraleponts {3}}{127}{subsection.11.2.3}%
+\contentsline {subsection}{\numberline {XI.2.4}Matrice extraite d'une matrice orthogonale}{128}{subsection.11.2.4}%
+\contentsline {subsection}{\numberline {XI.2.5}Matrices qui respectent le volume de $k$-parallélépipèdes rectangles}{129}{subsection.11.2.5}%
+\contentsline {section}{\numberline {XI.3}\underline {Décomposition QR} \ccinp {2}}{129}{section.11.3}%
+\contentsline {subsection}{\numberline {XI.3.1}Matrice de Householder}{129}{subsection.11.3.1}%
+\contentsline {section}{\numberline {XI.4}Décomposition LU \centraleponts {3}}{130}{section.11.4}%
+\contentsline {subsection}{\numberline {XI.4.1}$\mathbb {K}=\mathbb {R}$ ou $\mathbb {C}$ \centraleponts {2}}{130}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {XI.4.2}$\mathbb {K}=\mathbb {Z}/p\mathbb {Z}$ \etoile {2} (HP)}{130}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {XI.4.3}Algorithme de calcul \ccinp {2}}{130}{subsection.11.4.3}%
+\contentsline {subsection}{\numberline {XI.4.4}Décomposition de Cholesky}{130}{subsection.11.4.4}%
+\contentsline {section}{\numberline {XI.5}Lemme de Fitting}{130}{section.11.5}%
+\contentsline {section}{\numberline {XI.6}\underline {Réduction de Jordan}}{131}{section.11.6}%
+\contentsline {subsection}{\numberline {XI.6.1}Application}{131}{subsection.11.6.1}%
+\contentsline {section}{\numberline {XI.7}\underline {Réduction de Frobenius}}{131}{section.11.7}%
+\contentsline {subsection}{\numberline {XI.7.1}$M\sim M^\top $}{132}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {XI.7.2}Matrices semblables à leur inverse}{132}{subsection.11.7.2}%
+\contentsline {subsection}{\numberline {XI.7.3}Bicommutant}{132}{subsection.11.7.3}%
+\contentsline {chapter}{\numberline {XII}Divers}{133}{chapter.12}%
+\contentsline {section}{\numberline {XII.1}Fonction $\mathbb {R}$-linéaire mais pas $\mathbb {C}$-linéaire \etoile {1}}{133}{section.12.1}%
+\contentsline {section}{\numberline {XII.2}Relation d'ordre \etoile {2}}{133}{section.12.2}%
+\contentsline {section}{\numberline {XII.3}Ordre lexicographique \etoile {1}}{133}{section.12.3}%
+\contentsline {section}{\numberline {XII.4}Sous-groupes de GL$_n(\mathbb {C})$ d'exposant fini \xens {5}}{134}{section.12.4}%
+\contentsline {section}{\numberline {XII.5}Formule de Burnside \xens {4}}{134}{section.12.5}%
+\contentsline {section}{\numberline {XII.6}Théorème de Fermat matriciel \xens {3} (HP)}{134}{section.12.6}%
+\contentsline {section}{\numberline {XII.7}Développement décimal propre d'un réel \xens {3}}{134}{section.12.7}%
+\contentsline {subsection}{\numberline {XII.7.1}Une caractérisation des rationnels \xens {3}}{135}{subsection.12.7.1}%
+\contentsline {section}{\numberline {XII.8}Distribution du premier chiffre des puissances de $2$ \xens {3}}{135}{section.12.8}%
+\contentsline {chapter}{\numberline {XIII}Correction}{137}{chapter.13}%
+\contentsline {section}{\numberline {XIII.1}Correction Algèbre linéaire}{137}{section.13.1}%
+\contentsline {subsection}{\numberline {XIII.1.1}Extension de corps \etoile {2}}{137}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {XIII.1.2}Passage du complexe au réel}{139}{subsection.13.1.2}%
+\contentsline {subsection}{\numberline {XIII.1.3}Dimension de $\mathbb {R}$ en tant que $\mathbb {Q}$-espace vectoriel \etoile {2}}{139}{subsection.13.1.3}%
+\contentsline {subsection}{\numberline {XIII.1.4}Indépendance des fonctions}{140}{subsection.13.1.4}%
+\contentsline {subsection}{\numberline {XIII.1.5}L'ordre a son importance}{140}{subsection.13.1.5}%
+\contentsline {subsection}{\numberline {XIII.1.6}Centre de $\EuScript {M}_n(\mathbb {K})$ \etoile {2}}{140}{subsection.13.1.6}%
+\contentsline {subsection}{\numberline {XIII.1.7}Racine carrée de la dérivation \etoile {3}}{140}{subsection.13.1.7}%
+\contentsline {subsection}{\numberline {XIII.1.8}Produit de matrices nilpotentes \etoile {5}}{141}{subsection.13.1.8}%
+\contentsline {subsection}{\numberline {XIII.1.9}Suites périodiques \etoile {4}}{141}{subsection.13.1.9}%
+\contentsline {subsection}{\numberline {XIII.1.10}Dimension du commutant (1)}{142}{subsection.13.1.10}%
+\contentsline {subsection}{\numberline {XIII.1.11}Etude de la comatrice \etoile {3}}{142}{subsection.13.1.11}%
+\contentsline {subsection}{\numberline {XIII.1.12}Lemme de Schur}{144}{subsection.13.1.12}%
+\contentsline {subsection}{\numberline {XIII.1.13}Espaces engendrés par les matrices inversibles et orthogonales}{144}{subsection.13.1.13}%
+\contentsline {subsection}{\numberline {XIII.1.14}Espace engendré par les matrices nilpotentes}{144}{subsection.13.1.14}%
+\contentsline {subsection}{\numberline {XIII.1.15}Transmission d'information \etoile {3}}{144}{subsection.13.1.15}%
+\contentsline {subsection}{\numberline {XIII.1.16}Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires}{145}{subsection.13.1.16}%
+\contentsline {subsection}{\numberline {XIII.1.17}Théorème de Maschle}{145}{subsection.13.1.17}%
+\contentsline {section}{\numberline {XIII.2}Correction Réduction géométrique}{148}{section.13.2}%
+\contentsline {subsection}{\numberline {XIII.2.1}Matrices de rang $1$}{148}{subsection.13.2.1}%
+\contentsline {subsubsection}{Réduction des matrices de rang $1$}{148}{subsection.13.2.1}%
+\contentsline {subsubsection}{Diagonalisabilité d'une matrice}{149}{Item.762}%
+\contentsline {subsection}{\numberline {XIII.2.2}Matrices réelles semblables}{149}{subsection.13.2.2}%
+\contentsline {subsection}{\numberline {XIII.2.3}Complément de Schur}{150}{subsection.13.2.3}%
+\contentsline {subsection}{\numberline {XIII.2.4}Produit de Kronecker}{150}{subsection.13.2.4}%
+\contentsline {subsection}{\numberline {XIII.2.5}Disques de Gershgorin}{151}{subsection.13.2.5}%
+\contentsline {subsection}{\numberline {XIII.2.6}Spectre de $u\circ v$ et $v\circ u$}{151}{subsection.13.2.6}%
+\contentsline {subsection}{\numberline {XIII.2.7}Endomorphismes qui commutent}{151}{subsection.13.2.7}%
+\contentsline {subsection}{\numberline {XIII.2.8}Vecteur propre commun}{151}{subsection.13.2.8}%
+\contentsline {subsection}{\numberline {XIII.2.9}Eléments propres d'un endomorphisme (1)}{151}{subsection.13.2.9}%
+\contentsline {subsection}{\numberline {XIII.2.10}Eléments propres d'un endomorphisme (2)}{151}{subsection.13.2.10}%
+\contentsline {subsection}{\numberline {XIII.2.11}Eléments propres d'un endomorphisme (3)}{151}{subsection.13.2.11}%
+\contentsline {subsection}{\numberline {XIII.2.12}Eléments propres d'un endomorphisme (4)}{152}{subsection.13.2.12}%
+\contentsline {subsection}{\numberline {XIII.2.13}Loi de Hooke}{152}{subsection.13.2.13}%
+\contentsline {subsection}{\numberline {XIII.2.14}Existence d'une valeur propre double}{152}{subsection.13.2.14}%
+\contentsline {subsection}{\numberline {XIII.2.15}Détermination de spectre}{152}{subsection.13.2.15}%
+\contentsline {subsection}{\numberline {XIII.2.16}Sommes et produits de valeurs propres}{152}{subsection.13.2.16}%
+\contentsline {subsection}{\numberline {XIII.2.17}Matrice compagnon (1)}{152}{subsection.13.2.17}%
+\contentsline {subsection}{\numberline {XIII.2.18}Réduction de la transposée d'une matrice}{153}{subsection.13.2.18}%
+\contentsline {subsection}{\numberline {XIII.2.19}Algorithme de Faddeev}{154}{subsection.13.2.19}%
+\contentsline {subsection}{\numberline {XIII.2.20}Endomorphisme de transposition}{154}{subsection.13.2.20}%
+\contentsline {subsection}{\numberline {XIII.2.21}Exemple de matrice non diagonalisable}{154}{subsection.13.2.21}%
+\contentsline {subsection}{\numberline {XIII.2.22}Diagonalisabilité d'une matrice (1)}{155}{subsection.13.2.22}%
+\contentsline {subsection}{\numberline {XIII.2.23}Diagonalisabilité d'une matrice (2)}{155}{subsection.13.2.23}%
+\contentsline {subsection}{\numberline {XIII.2.24}Diagonalisibilité d'une matrice (3)}{155}{subsection.13.2.24}%
+\contentsline {subsection}{\numberline {XIII.2.25}Cotrigonalisation (1)}{155}{subsection.13.2.25}%
+\contentsline {subsection}{\numberline {XIII.2.26}Cotrigonalisation (2)}{155}{subsection.13.2.26}%
+\contentsline {subsection}{\numberline {XIII.2.27}Cotrigonalisation (3)}{155}{subsection.13.2.27}%
+\contentsline {subsection}{\numberline {XIII.2.28}Cotrigonalisation (4)}{156}{subsection.13.2.28}%
+\contentsline {subsection}{\numberline {XIII.2.29}Cotrigonalisation (5)}{156}{subsection.13.2.29}%
+\contentsline {subsection}{\numberline {XIII.2.30}Caractérisation des matrices nilpotente par la trace}{156}{subsection.13.2.30}%
+\contentsline {subsection}{\numberline {XIII.2.31}Facteur commun dans le polynôme caractéristique}{156}{subsection.13.2.31}%
+\contentsline {subsection}{\numberline {XIII.2.32}$\chi _{AB}=\chi _{BA}$}{156}{subsection.13.2.32}%
+\contentsline {subsection}{\numberline {XIII.2.33}Polynôme caractéristique de l'inverse}{156}{subsection.13.2.33}%
+\contentsline {subsection}{\numberline {XIII.2.34}Commutativité et stabilité}{156}{subsection.13.2.34}%
+\contentsline {subsection}{\numberline {XIII.2.35}Dimension du commutant d'une matrice diagonalisable}{156}{subsection.13.2.35}%
+\contentsline {subsection}{\numberline {XIII.2.36}Sous-espaces stables d'un endomorphisme diagonalisable}{156}{subsection.13.2.36}%
+\contentsline {subsection}{\numberline {XIII.2.37}Hyperplans stables}{157}{subsection.13.2.37}%
+\contentsline {subsection}{\numberline {XIII.2.38}Endomorphisme qui stabilise un nombre fini de sous-espaces \etoile {3}}{157}{subsection.13.2.38}%
+\contentsline {subsection}{\numberline {XIII.2.39}Sous-espaces stables d'un endomorphisme nilpotent maximal \etoile {3}}{157}{subsection.13.2.39}%
+\contentsline {subsection}{\numberline {XIII.2.40}Sous-espaces stables par tous les endomorphismes de permutation \etoile {4}}{158}{subsection.13.2.40}%
+\contentsline {subsection}{\numberline {XIII.2.41}Semi-simplicité}{160}{subsection.13.2.41}%
+\contentsline {subsection}{\numberline {XIII.2.42}Endomorphismes diagonalisables d'un $\mathbb {R}$-espace vectoriel}{160}{subsection.13.2.42}%
+\contentsline {subsection}{\numberline {XIII.2.43}Matrices à spectres disjoints}{160}{subsection.13.2.43}%
+\contentsline {section}{\numberline {XIII.3}Correction Réduction algébrique}{162}{section.13.3}%
+\contentsline {subsection}{\numberline {XIII.3.1}Equation matricielle polynomiale (1)}{162}{subsection.13.3.1}%
+\contentsline {subsection}{\numberline {XIII.3.2}Equation matricielle polynomiale (2)}{162}{subsection.13.3.2}%
+\contentsline {subsection}{\numberline {XIII.3.3}Equation matricielle avec la comatrice}{162}{subsection.13.3.3}%
+\contentsline {subsection}{\numberline {XIII.3.4}Rang et spectre de la comatrice}{165}{subsection.13.3.4}%
+\contentsline {subsection}{\numberline {XIII.3.5}Racine $p$-ième d'une matrice}{166}{subsection.13.3.5}%
+\contentsline {subsection}{\numberline {XIII.3.6}Diagonalisabilité de $f$ dans le cas $f^2$ diagonalisable}{166}{subsection.13.3.6}%
+\contentsline {subsection}{\numberline {XIII.3.7}Endomorphismes diagonalisables non bijectifs}{167}{subsection.13.3.7}%
+\contentsline {subsection}{\numberline {XIII.3.8}Valuation du polynôme minimal}{168}{subsection.13.3.8}%
+\contentsline {subsection}{\numberline {XIII.3.9}Sous-espaces stables}{168}{subsection.13.3.9}%
+\contentsline {subsection}{\numberline {XIII.3.10}Une formule sur les polynômes}{168}{subsection.13.3.10}%
+\contentsline {subsection}{\numberline {XIII.3.11}Ordre de matrice}{169}{subsection.13.3.11}%
+\contentsline {subsection}{\numberline {XIII.3.12}Sous-groupes finis de GL$_2(\mathbb {Z})$}{170}{subsection.13.3.12}%
+\contentsline {subsection}{\numberline {XIII.3.13}Sous-groupes finis de GL$_n(\mathbb {Z})$}{171}{subsection.13.3.13}%
+\contentsline {subsection}{\numberline {XIII.3.14}Isomorphisme entre GL$_n(\mathbb {C})$ et GL$_m(\mathbb {C})$}{172}{subsection.13.3.14}%
+\contentsline {subsection}{\numberline {XIII.3.15}Inverse et conjugaison}{173}{subsection.13.3.15}%
+\contentsline {subsection}{\numberline {XIII.3.16}Matrice compagnon (2)}{174}{subsection.13.3.16}%
+\contentsline {subsection}{\numberline {XIII.3.17}Polynôme minimal ponctuel}{175}{subsection.13.3.17}%
+\contentsline {subsection}{\numberline {XIII.3.18}Endomorphismes cycliques}{175}{subsection.13.3.18}%
+\contentsline {subsection}{\numberline {XIII.3.19}Commutant d'un endomorphisme cyclique}{175}{subsection.13.3.19}%
+\contentsline {subsection}{\numberline {XIII.3.20}Une démonstration de Cayley-Hamilton}{176}{subsection.13.3.20}%
+\contentsline {subsection}{\numberline {XIII.3.21}Indépendance de corps du polynôme minimal}{176}{subsection.13.3.21}%
+\contentsline {subsection}{\numberline {XIII.3.22}Polynôme minimal de l'inverse}{176}{subsection.13.3.22}%
+\contentsline {subsection}{\numberline {XIII.3.23}Polynôme minimal de la transposée}{176}{subsection.13.3.23}%
+\contentsline {subsection}{\numberline {XIII.3.24}Polynôme minimal imposé}{176}{subsection.13.3.24}%
+\contentsline {subsection}{\numberline {XIII.3.25}Matrice de Gram}{176}{subsection.13.3.25}%
+\contentsline {subsection}{\numberline {XIII.3.26}Matrice circulante}{176}{subsection.13.3.26}%
+\contentsline {subsection}{\numberline {XIII.3.27}Diagonalisabilité du produit de deux matrices}{176}{subsection.13.3.27}%
+\contentsline {subsection}{\numberline {XIII.3.28}Diagonalisation d'une matrice par bloc}{176}{subsection.13.3.28}%
+\contentsline {subsection}{\numberline {XIII.3.29}Exponentielle matricielle}{177}{subsection.13.3.29}%
+\contentsline {subsection}{\numberline {XIII.3.30}Exponentiel d'un endomorphisme nilpotent}{177}{subsection.13.3.30}%
+\contentsline {subsection}{\numberline {XIII.3.31}Endomorphismes anticommutants}{177}{subsection.13.3.31}%
+\contentsline {subsection}{\numberline {XIII.3.32}Trace entière}{177}{subsection.13.3.32}%
+\contentsline {subsection}{\numberline {XIII.3.33}$P(A)$ nilpotente}{177}{subsection.13.3.33}%
+\contentsline {section}{\numberline {XIII.4}Correction Déterminant}{178}{section.13.4}%
+\contentsline {subsection}{\numberline {XIII.4.1}Dimension de l'espace des formes multilinéaires alternées}{178}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {XIII.4.2}Théorème de Bézout matriciel \etoile {2}}{178}{subsection.13.4.2}%
+\contentsline {subsection}{\numberline {XIII.4.3}Déterminant tridiagonal}{178}{subsection.13.4.3}%
+\contentsline {subsection}{\numberline {XIII.4.4}Déterminant bitriangulaire\etoile {3}}{178}{subsection.13.4.4}%
+\contentsline {subsection}{\numberline {XIII.4.5}Déterminant de Vandermonde\etoile {1}}{179}{subsection.13.4.5}%
+\contentsline {subsection}{\numberline {XIII.4.6}Déterminant de Hilbert \etoile {3}}{179}{subsection.13.4.6}%
+\contentsline {subsection}{\numberline {XIII.4.7}Déterminant de Gram\etoile {3}}{180}{subsection.13.4.7}%
+\contentsline {subsection}{\numberline {XIII.4.8}Déterminant de Cauchy \etoile {3}}{181}{subsection.13.4.8}%
+\contentsline {subsection}{\numberline {XIII.4.9}Déterminant de Smith \etoile {3}}{182}{subsection.13.4.9}%
+\contentsline {subsection}{\numberline {XIII.4.10}Déterminant de Cayley-Menger}{183}{subsection.13.4.10}%
+\contentsline {section}{\numberline {XIII.5}Correction Groupes}{184}{section.13.5}%
+\contentsline {subsection}{\numberline {XIII.5.1}Existence d'un idempotent \etoile {3}}{184}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {XIII.5.2}Sous-semi-groupes finis de $\EuScript {M}_n(\mathbb {K})$}{184}{subsection.13.5.2}%
+\contentsline {subsection}{\numberline {XIII.5.3}Groupe d'exposant inférieur à $2$ \etoile {1}}{184}{subsection.13.5.3}%
+\contentsline {subsection}{\numberline {XIII.5.4}Centre et Commutant \etoile {1}}{184}{subsection.13.5.4}%
+\contentsline {subsection}{\numberline {XIII.5.5}Théorème de Dixon \etoile {4}}{185}{subsection.13.5.5}%
+\contentsline {subsection}{\numberline {XIII.5.6}Opérations sur les sous-groupes \etoile {2}}{185}{subsection.13.5.6}%
+\contentsline {subsection}{\numberline {XIII.5.7}Sous-groupes finis de $\mathbb {U}$ \etoile {2}}{186}{subsection.13.5.7}%
+\contentsline {subsection}{\numberline {XIII.5.8}Groupes quasi-cycliques de Prüfer \etoile {3}}{186}{subsection.13.5.8}%
+\contentsline {subsection}{\numberline {XIII.5.9}Sous-groupes de GL$_n(\mathbb {C})$ qui intersectent trivialement le groupe spécial linéaire \etoile {3}}{187}{subsection.13.5.9}%
+\contentsline {subsection}{\numberline {XIII.5.10}Matrices inversibles à coefficients entiers}{187}{subsection.13.5.10}%
+\contentsline {subsection}{\numberline {XIII.5.11}Sous-groupes de $(\mathbb {Z},+)$ \etoile {2}}{188}{subsection.13.5.11}%
+\contentsline {subsection}{\numberline {XIII.5.12}Sous-groupes de $(\mathbb {R},+)$ \etoile {3}}{188}{subsection.13.5.12}%
+\contentsline {subsubsection}{Fonction (multi)périodique \etoile {3}}{189}{Item.842}%
+\contentsline {subsubsection}{$\cos (\mathbb {N})$ \etoile {3}}{189}{Item.842}%
+\contentsline {subsubsection}{Valeur d'adhérence du cercle unité \etoile {3}}{190}{Item.842}%
+\contentsline {subsection}{\numberline {XIII.5.13}Sous-groupes distingué}{190}{subsection.13.5.13}%
+\contentsline {subsection}{\numberline {XIII.5.14}Nature d'une suite}{190}{subsection.13.5.14}%
+\contentsline {subsection}{\numberline {XIII.5.15}Une relation utile sur les morphismes de groupes}{191}{subsection.13.5.15}%
+\contentsline {subsection}{\numberline {XIII.5.16}Automorphisme d'inversion \etoile {1}}{191}{subsection.13.5.16}%
+\contentsline {subsection}{\numberline {XIII.5.17}Automorphismes intérieurs \etoile {1}}{191}{subsection.13.5.17}%
+\contentsline {subsection}{\numberline {XIII.5.18}Endomorphismes continus de $\mathbb {R}$ \etoile {2}}{192}{subsection.13.5.18}%
+\contentsline {subsection}{\numberline {XIII.5.19}Morphismes de $\mathbb {Q}$ dans $\mathbb {Z}$ \etoile {1}}{192}{subsection.13.5.19}%
+\contentsline {subsection}{\numberline {XIII.5.20}Morphismes de $\mathbb {Z}/n\mathbb {Z}$ dans $\mathbb {Z}/m\mathbb {Z}$}{192}{subsection.13.5.20}%
+\contentsline {subsection}{\numberline {XIII.5.21}Morphismes de GL$_n(\mathbb {R})$ dans $\mathbb {Z}/m\mathbb {Z}$ \etoile {5}}{192}{subsection.13.5.21}%
+\contentsline {subsection}{\numberline {XIII.5.22}Caractères algébriques de $GL_n(\mathbb {K})$}{194}{subsection.13.5.22}%
+\contentsline {subsection}{\numberline {XIII.5.23}Quasi-morphisme \etoile {3}}{194}{subsection.13.5.23}%
+\contentsline {subsection}{\numberline {XIII.5.24}Morphisme de $\mathbb {Z}^\mathbb {N}$ presque nul \etoile {3}}{195}{subsection.13.5.24}%
+\contentsline {subsection}{\numberline {XIII.5.25}Groupes de matrices}{195}{subsection.13.5.25}%
+\contentsline {subsection}{\numberline {XIII.5.26}Caractérisation de la finitude d'un groupe par ses sous-groupes \etoile {3}}{195}{subsection.13.5.26}%
+\contentsline {subsection}{\numberline {XIII.5.27}Sous-groupe des éléments d'ordre fini \etoile {4}}{196}{subsection.13.5.27}%
+\contentsline {subsection}{\numberline {XIII.5.28}Relations d'équivalence naturelles sur les groupes \etoile {1}}{196}{subsection.13.5.28}%
+\contentsline {subsection}{\numberline {XIII.5.29}Théorème de Lagrange \etoile {3}}{197}{subsection.13.5.29}%
+\contentsline {subsection}{\numberline {XIII.5.30}Un cas particulier du lemme de Cauchy \etoile {4}}{197}{subsection.13.5.30}%
+\contentsline {subsection}{\numberline {XIII.5.31}Groupe d'ordre premier \etoile {1}}{198}{subsection.13.5.31}%
+\contentsline {subsubsection}{Plus petit groupe non commutatif}{198}{subsection.13.5.31}%
+\contentsline {subsection}{\numberline {XIII.5.32}Sous-groupe d'un groupe cyclique \etoile {3}}{199}{subsection.13.5.32}%
+\contentsline {subsection}{\numberline {XIII.5.33}Exposant d'un groupe abélien fini \etoile {4}}{199}{subsection.13.5.33}%
+\contentsline {subsection}{\numberline {XIII.5.34}Un groupe d'inversible non cyclique}{200}{subsection.13.5.34}%
+\contentsline {subsection}{\numberline {XIII.5.35}Ordre dans un groupe de cardinal pair}{200}{subsection.13.5.35}%
+\contentsline {subsection}{\numberline {XIII.5.36}Ordre dans $\mathbb {Z}/n\mathbb {Z}$ \etoile {2}}{200}{subsection.13.5.36}%
+\contentsline {subsection}{\numberline {XIII.5.37}Passage par les groupes}{201}{subsection.13.5.37}%
+\contentsline {subsection}{\numberline {XIII.5.38}Groupe infini non monogène \etoile {1}}{201}{subsection.13.5.38}%
+\contentsline {subsection}{\numberline {XIII.5.39}Groupe non cyclique \etoile {2}}{201}{subsection.13.5.39}%
+\contentsline {subsection}{\numberline {XIII.5.40}Ordre dans le groupe symétrique \etoile {1}}{201}{subsection.13.5.40}%
+\contentsline {subsection}{\numberline {XIII.5.41}Sous-groupe engendré par les nombres premiers}{202}{subsection.13.5.41}%
+\contentsline {subsection}{\numberline {XIII.5.42}Sous-groupe engendré par le complémentaire d'un sous-groupe}{202}{subsection.13.5.42}%
+\contentsline {subsection}{\numberline {XIII.5.43}Partie génératrice}{202}{subsection.13.5.43}%
+\contentsline {subsection}{\numberline {XIII.5.44}Groupe alterné $\etoile {3}$}{203}{subsection.13.5.44}%
+\contentsline {subsection}{\numberline {XIII.5.45}Cardinal minimal d'une famille de transpositions engendrant $\EuScript {S}_n$}{203}{subsection.13.5.45}%
+\contentsline {subsection}{\numberline {XIII.5.46}Partie génératrice de $\EuScript {O}(E)$}{204}{subsection.13.5.46}%
+\contentsline {subsection}{\numberline {XIII.5.47}Groupe dans un plan euclidien}{204}{subsection.13.5.47}%
+\contentsline {subsection}{\numberline {XIII.5.48}Matrices de permutation \etoile {1}}{204}{subsection.13.5.48}%
+\contentsline {subsection}{\numberline {XIII.5.49}Groupe dérivé \etoile {5}}{205}{subsection.13.5.49}%
+\contentsline {subsection}{\numberline {XIII.5.50}Sous-groupe discret de $\mathbb {C}$ et de SL$_2(\mathbb {R})$ \etoile {5}}{206}{subsection.13.5.50}%
+\contentsline {section}{\numberline {XIII.6}Correction Anneaux et corps}{208}{section.13.6}%
+\contentsline {subsection}{\numberline {XIII.6.1}Centre d'un anneau \etoile {1}}{208}{subsection.13.6.1}%
+\contentsline {subsection}{\numberline {XIII.6.2}Calcul d'un inverse \etoile {3}}{208}{subsection.13.6.2}%
+\contentsline {subsection}{\numberline {XIII.6.3}Anneau de Boole \etoile {2}}{209}{subsection.13.6.3}%
+\contentsline {subsubsection}{L'anneau de Boole est principal \etoile {3}}{210}{Item.890}%
+\contentsline {subsection}{\numberline {XIII.6.4}Condition suffisante pour qu'un anneau soit commutatif \etoile {3}}{211}{subsection.13.6.4}%
+\contentsline {subsection}{\numberline {XIII.6.5}Anneaux commutatifs ou anti-commutatifs \etoile {4}}{212}{subsection.13.6.5}%
+\contentsline {subsection}{\numberline {XIII.6.6}Anneau régulier \etoile {4}}{212}{subsection.13.6.6}%
+\contentsline {subsection}{\numberline {XIII.6.7}Anneau intègre fini \etoile {1}}{213}{subsection.13.6.7}%
+\contentsline {subsection}{\numberline {XIII.6.8}Anneau principal (1)\etoile {3}}{214}{subsection.13.6.8}%
+\contentsline {subsection}{\numberline {XIII.6.9}Anneau principal (2) \etoile {3}}{215}{subsection.13.6.9}%
+\contentsline {subsection}{\numberline {XIII.6.10}Anneau euclidien \etoile {2}}{216}{subsection.13.6.10}%
+\contentsline {subsection}{\numberline {XIII.6.11}Entiers de Gauss \etoile {5}}{216}{subsection.13.6.11}%
+\contentsline {subsection}{\numberline {XIII.6.12}Anneau Noethérien \etoile {4}}{218}{subsection.13.6.12}%
+\contentsline {subsection}{\numberline {XIII.6.13}Morphismes d'anneaux de fonctions réelles}{220}{subsection.13.6.13}%
+\contentsline {subsection}{\numberline {XIII.6.14}Caractérisation d'un corps par ses idéaux \etoile {2}}{220}{subsection.13.6.14}%
+\contentsline {subsection}{\numberline {XIII.6.15}Opérations sur les idéaux, idéaux principaux \etoile {3}}{220}{subsection.13.6.15}%
+\contentsline {subsection}{\numberline {XIII.6.16}Idéal premier \etoile {2}}{221}{subsection.13.6.16}%
+\contentsline {subsection}{\numberline {XIII.6.17}Idéal maximal \etoile {4}}{221}{subsection.13.6.17}%
+\contentsline {subsection}{\numberline {XIII.6.18}Idéaux d'un espace de fonction}{223}{subsection.13.6.18}%
+\contentsline {subsection}{\numberline {XIII.6.19}Radical d'un idéal \etoile {1}}{223}{subsection.13.6.19}%
+\contentsline {subsection}{\numberline {XIII.6.20}Nilradical \etoile {2}}{224}{subsection.13.6.20}%
+\contentsline {subsection}{\numberline {XIII.6.21}Radical de Jacobson \etoile {2}}{224}{subsection.13.6.21}%
+\contentsline {subsection}{\numberline {XIII.6.22}Idéaux de $\EuScript {M}_n(\mathbb {K})$}{225}{subsection.13.6.22}%
+\contentsline {subsubsection}{Idéaux bilatère}{225}{subsection.13.6.22}%
+\contentsline {subsubsection}{Idéaux à droite}{225}{subsection.13.6.22}%
+\contentsline {subsubsection}{Idéaux à gauche}{225}{subsection.13.6.22}%
+\contentsline {subsection}{\numberline {XIII.6.23}Caractéristique d'un anneau}{225}{subsection.13.6.23}%
+\contentsline {subsection}{\numberline {XIII.6.24}Anneau intègre \etoile {2}}{227}{subsection.13.6.24}%
+\contentsline {subsection}{\numberline {XIII.6.25}Sous-corps minimal de $\mathbb {C}$ \etoile {1}}{227}{subsection.13.6.25}%
+\contentsline {subsection}{\numberline {XIII.6.26}Corps d'Attila}{227}{subsection.13.6.26}%
+\contentsline {subsection}{\numberline {XIII.6.27}Endomorphisme de corps de $\mathbb {R}$ \etoile {2}}{228}{subsection.13.6.27}%
+\contentsline {subsection}{\numberline {XIII.6.28}Automorphismes de $\mathbb {Q}[\sqrt 2]$ \etoile {3}}{228}{subsection.13.6.28}%
+\contentsline {subsection}{\numberline {XIII.6.29}Algèbre des quaternions}{229}{subsection.13.6.29}%
+\contentsline {subsection}{\numberline {XIII.6.30}Une définition de $\mathbb {C}$ \etoile {2}}{229}{subsection.13.6.30}%
+\contentsline {subsection}{\numberline {XIII.6.31}$\mathbb {R}$-algèbre commutative intègre de dimension finie \etoile {4}}{230}{subsection.13.6.31}%
+\contentsline {subsection}{\numberline {XIII.6.32}Théorie algébrique des corps \etoile {4}}{231}{subsection.13.6.32}%
+\contentsline {subsection}{\numberline {XIII.6.33}Famille $\mathbb {Q}$-libre \etoile {4}}{232}{subsection.13.6.33}%
+\contentsline {subsection}{\numberline {XIII.6.34}Corps des nombres algébriques \etoile {4}}{234}{subsection.13.6.34}%
+\contentsline {subsection}{\numberline {XIII.6.35}Théorème de Kronecker \etoile {4}}{236}{subsection.13.6.35}%
+\contentsline {subsection}{\numberline {XIII.6.36}Irrationalité de e (1)}{236}{subsection.13.6.36}%
+\contentsline {subsection}{\numberline {XIII.6.37}Irrationalité de e (2)}{237}{subsection.13.6.37}%
+\contentsline {subsection}{\numberline {XIII.6.38}Irrationalité de $\pi $}{237}{subsection.13.6.38}%
+\contentsline {subsection}{\numberline {XIII.6.39}Critère de transcendance de Liouville \etoile {4}}{237}{subsection.13.6.39}%
+\contentsline {section}{\numberline {XIII.7}Correction Arithmétique}{239}{section.13.7}%
+\contentsline {subsection}{\numberline {XIII.7.1}Infinité des nombres premiers \etoile {2}}{239}{subsection.13.7.1}%
+\contentsline {subsection}{\numberline {XIII.7.2}Version faible du théorème de progression arithmétique de Dirichlet}{239}{subsection.13.7.2}%
+\contentsline {subsection}{\numberline {XIII.7.3}Racine carré d'un nombre premier \etoile {2}}{239}{subsection.13.7.3}%
+\contentsline {subsection}{\numberline {XIII.7.4}Une suite périodique}{240}{subsection.13.7.4}%
+\contentsline {subsection}{\numberline {XIII.7.5}Racines de l'unité}{240}{subsection.13.7.5}%
+\contentsline {subsection}{\numberline {XIII.7.6}Plus petit nombre premier ne divisant pas un entier donné}{240}{subsection.13.7.6}%
+\contentsline {subsection}{\numberline {XIII.7.7}Théorème de Kurshak}{240}{subsection.13.7.7}%
+\contentsline {subsection}{\numberline {XIII.7.8}Valuation $p$-adique de $\displaystyle \binom {p^n}{k}$}{240}{subsection.13.7.8}%
+\contentsline {subsection}{\numberline {XIII.7.9}Une équation dans $\mathbb {N}$}{240}{subsection.13.7.9}%
+\contentsline {subsection}{\numberline {XIII.7.10}Triplets pythagoriciens}{240}{subsection.13.7.10}%
+\contentsline {subsection}{\numberline {XIII.7.11}Théorème de Sophie Germain \etoile {3}}{240}{subsection.13.7.11}%
+\contentsline {subsection}{\numberline {XIII.7.12}Une équation diophantienne}{242}{subsection.13.7.12}%
+\contentsline {subsection}{\numberline {XIII.7.13}Calcul d'une somme}{242}{subsection.13.7.13}%
+\contentsline {subsection}{\numberline {XIII.7.14}Nombres de Mersenne}{242}{subsection.13.7.14}%
+\contentsline {subsection}{\numberline {XIII.7.15}Un exercice pour les années impaires}{242}{subsection.13.7.15}%
+\contentsline {subsection}{\numberline {XIII.7.16}Equation du second degré dans $\mathbb {Z}/n\mathbb {Z}$}{243}{subsection.13.7.16}%
+\contentsline {subsection}{\numberline {XIII.7.17}Un problème de congruence}{243}{subsection.13.7.17}%
+\contentsline {subsection}{\numberline {XIII.7.18}Un multiple de 2026 qui ne s'écrit qu'avec des $2$}{243}{subsection.13.7.18}%
+\contentsline {subsection}{\numberline {XIII.7.19}Somme des puissances $k$-ièmes dans $\mathbb {Z}/p\mathbb {Z}$}{243}{subsection.13.7.19}%
+\contentsline {subsection}{\numberline {XIII.7.20}Théorème de Wilson \etoile {2}}{243}{subsection.13.7.20}%
+\contentsline {subsection}{\numberline {XIII.7.21}Problème Putnam (2011) \etoile {5}}{243}{subsection.13.7.21}%
+\contentsline {subsection}{\numberline {XIII.7.22}Critère d'Euler}{245}{subsection.13.7.22}%
+\contentsline {subsection}{\numberline {XIII.7.23}Indicatrice d'Euler}{245}{subsection.13.7.23}%
+\contentsline {subsection}{\numberline {XIII.7.24}Une minoration de l'indicatrice d'Euler}{246}{subsection.13.7.24}%
+\contentsline {subsection}{\numberline {XIII.7.25}Théorème d'interversion de Möbius}{246}{subsection.13.7.25}%
+\contentsline {subsection}{\numberline {XIII.7.26}Probabilité que deux entiers soient premiers entre eux}{248}{subsection.13.7.26}%
+\contentsline {subsection}{\numberline {XIII.7.27}Limite d'une fonction arithmétique multiplicative}{248}{subsection.13.7.27}%
+\contentsline {subsection}{\numberline {XIII.7.28}Fonctions arithmétiques réelles additives}{248}{subsection.13.7.28}%
+\contentsline {subsection}{\numberline {XIII.7.29}Une majoration de la somme des diviseurs d'un entier}{249}{subsection.13.7.29}%
+\contentsline {subsection}{\numberline {XIII.7.30}Entiers algébriques}{249}{subsection.13.7.30}%
+\contentsline {subsection}{\numberline {XIII.7.31}Majoration de la primorielle}{249}{subsection.13.7.31}%
+\contentsline {subsection}{\numberline {XIII.7.32}Théorèmes de Mertens}{250}{subsection.13.7.32}%
+\contentsline {subsection}{\numberline {XIII.7.33}Théorèmes de Tchebychev}{250}{subsection.13.7.33}%
+\contentsline {section}{\numberline {XIII.8}Correction Dénombrement}{251}{section.13.8}%
+\contentsline {subsection}{\numberline {XIII.8.1}Identité de Vandermonde}{251}{subsection.13.8.1}%
+\contentsline {subsubsection}{Formule de Chu-Vandermonde}{251}{subsection.13.8.1}%
+\contentsline {subsection}{\numberline {XIII.8.2}Nombre de Fibonacci}{251}{subsection.13.8.2}%
+\contentsline {subsection}{\numberline {XIII.8.3}Matrices orthogonales à coefficients entiers}{251}{subsection.13.8.3}%
+\contentsline {subsection}{\numberline {XIII.8.4}Nombre de carrés inférieur à un entier fixé \etoile {1}}{251}{subsection.13.8.4}%
+\contentsline {subsection}{\numberline {XIII.8.5}Dérangement}{251}{subsection.13.8.5}%
+\contentsline {subsection}{\numberline {XIII.8.6}Dérangement partiel}{251}{subsection.13.8.6}%
+\contentsline {subsection}{\numberline {XIII.8.7}Nombres de Bell}{251}{subsection.13.8.7}%
+\contentsline {subsection}{\numberline {XIII.8.8}Nombres de Catalan}{251}{subsection.13.8.8}%
+\contentsline {subsection}{\numberline {XIII.8.9}Nombres de parties}{252}{subsection.13.8.9}%
+\contentsline {subsection}{\numberline {XIII.8.10}Nombre de surjection}{252}{subsection.13.8.10}%
+\contentsline {subsection}{\numberline {XIII.8.11}Formule de Legendre}{252}{subsection.13.8.11}%
+\contentsline {subsection}{\numberline {XIII.8.12}Théorème de Hall \etoile {4}}{252}{subsection.13.8.12}%
+\contentsline {subsection}{\numberline {XIII.8.13}Formule du Crible}{253}{subsection.13.8.13}%
+\contentsline {subsection}{\numberline {XIII.8.14}Cardinal de $GL_n(K)$ et $SL_n(K)$}{253}{subsection.13.8.14}%
+\contentsline {subsection}{\numberline {XIII.8.15}$\mathbb {Q}$ est dénombrable}{254}{subsection.13.8.15}%
+\contentsline {subsection}{\numberline {XIII.8.16}$\mathbb {R}$ n'est pas dénombrable}{254}{subsection.13.8.16}%
+\contentsline {subsection}{\numberline {XIII.8.17}Dénombrabilité des nombres algébriques}{254}{subsection.13.8.17}%
+\contentsline {subsection}{\numberline {XIII.8.18}Théorème de Cantor}{254}{subsection.13.8.18}%
+\contentsline {subsection}{\numberline {XIII.8.19}Fonction qui intervertit rationnels et irrationnels}{254}{subsection.13.8.19}%
+\contentsline {subsection}{\numberline {XIII.8.20}Support d'une famille sommable}{254}{subsection.13.8.20}%
+\contentsline {subsection}{\numberline {XIII.8.21}Théorème de Froda}{254}{subsection.13.8.21}%
+\contentsline {subsection}{\numberline {XIII.8.22}Ensemble discret}{254}{subsection.13.8.22}%
+\contentsline {subsection}{\numberline {XIII.8.23}Ensemble parfait}{254}{subsection.13.8.23}%
+\contentsline {subsubsection}{Poussière de Cantor}{255}{subsection.13.8.23}%
+\contentsline {subsubsection}{Ensemble parfait de $\mathbb {R}$}{255}{subsection.13.8.23}%
+\contentsline {subsubsection}{Théorème de Cantor-Berdixson}{255}{subsection.13.8.23}%
+\contentsline {section}{\numberline {XIII.9}Correction Probabilités}{256}{section.13.9}%
+\contentsline {subsection}{\numberline {XIII.9.1}Somme de variables de Bernoulli indépendantes \etoile {2}}{256}{subsection.13.9.1}%
+\contentsline {subsection}{\numberline {XIII.9.2}Approximation de la loi de Poisson par des lois binomiales \etoile {1}}{256}{subsection.13.9.2}%
+\contentsline {subsection}{\numberline {XIII.9.3}Inégalité de Markov et inégalité de Bienaymé-Tchébychev \etoile {1}}{257}{subsection.13.9.3}%
+\contentsline {subsection}{\numberline {XIII.9.4}Paradoxe des anniversaires \etoile {2}}{258}{subsection.13.9.4}%
+\contentsline {subsection}{\numberline {XIII.9.5}Variable aléatoire presque sûrement nulle/constante}{259}{subsection.13.9.5}%
+\contentsline {subsection}{\numberline {XIII.9.6}Loi de Pascal \etoile {2}}{259}{subsection.13.9.6}%
+\contentsline {subsection}{\numberline {XIII.9.7}Lemme de Borel-Cantelli et loi du zéro-un de Borel \etoile {3}}{260}{subsection.13.9.7}%
+\contentsline {subsection}{\numberline {XIII.9.8}Formule d'antirépartition \etoile {3}}{262}{subsection.13.9.8}%
+\contentsline {subsection}{\numberline {XIII.9.9}Loi de Poisson \etoile {2}}{262}{subsection.13.9.9}%
+\contentsline {subsection}{\numberline {XIII.9.10}Maximum de deux lois géométriques indépendantes \etoile {1}}{263}{subsection.13.9.10}%
+\contentsline {subsection}{\numberline {XIII.9.11}Max et min de lois géométriques iid \etoile {4}}{264}{subsection.13.9.11}%
+\contentsline {subsection}{\numberline {XIII.9.12}Formule de Wald \etoile {3}}{266}{subsection.13.9.12}%
+\contentsline {subsection}{\numberline {XIII.9.13}Loi binomiale aléatoire \etoile {3}}{267}{subsection.13.9.13}%
+\contentsline {subsection}{\numberline {XIII.9.14}Somme de lois de Poisson \etoile {1}}{268}{subsection.13.9.14}%
+\contentsline {subsection}{\numberline {XIII.9.15}Obtenir trois pile consécutifs}{268}{subsection.13.9.15}%
+\contentsline {subsection}{\numberline {XIII.9.16}Lancer de dés équitable \etoile {3}}{268}{subsection.13.9.16}%
+\contentsline {subsection}{\numberline {XIII.9.17}Espérance conditionnelle \etoile {3}}{269}{subsection.13.9.17}%
+\contentsline {subsection}{\numberline {XIII.9.18}Problème du collectionneur \etoile {2}}{269}{subsection.13.9.18}%
+\contentsline {subsubsection}{Généralisation}{271}{Item.1019}%
+\contentsline {subsection}{\numberline {XIII.9.19}Problème de la ruine du joueur}{271}{subsection.13.9.19}%
+\contentsline {subsection}{\numberline {XIII.9.20}Passager d'un avion}{271}{subsection.13.9.20}%
+\contentsline {subsection}{\numberline {XIII.9.21}Fonction de répartition \etoile {4}}{271}{subsection.13.9.21}%
+\contentsline {subsection}{\numberline {XIII.9.22}Loi sans mémoire \etoile {2}}{274}{subsection.13.9.22}%
+\contentsline {subsection}{\numberline {XIII.9.23}Caractérisation de la loi de Poisson par l'espérance}{275}{subsection.13.9.23}%
+\contentsline {subsection}{\numberline {XIII.9.24}Loi Zéta \etoile {2}}{275}{subsection.13.9.24}%
+\contentsline {subsection}{\numberline {XIII.9.25}Taux de panne \etoile {2}}{276}{subsection.13.9.25}%
+\contentsline {subsection}{\numberline {XIII.9.26}Matrice aléatoire (1) \etoile {2}}{277}{subsection.13.9.26}%
+\contentsline {subsection}{\numberline {XIII.9.27}Matrice aléatoire (2)}{278}{subsection.13.9.27}%
+\contentsline {subsection}{\numberline {XIII.9.28}Matrice aléatoire (3)}{278}{subsection.13.9.28}%
+\contentsline {subsection}{\numberline {XIII.9.29}Matrice aléatoire (4)}{278}{subsection.13.9.29}%
+\contentsline {subsection}{\numberline {XIII.9.30}Matrice aléatoire (5)}{278}{subsection.13.9.30}%
+\contentsline {subsection}{\numberline {XIII.9.31}Matrice aléatoire (6)}{278}{subsection.13.9.31}%
+\contentsline {subsection}{\numberline {XIII.9.32}Matrice aléatoire (7)}{278}{subsection.13.9.32}%
+\contentsline {subsection}{\numberline {XIII.9.33}Matrice de Rademacher}{278}{subsection.13.9.33}%
+\contentsline {subsection}{\numberline {XIII.9.34}Vecteur propre aléatoire}{278}{subsection.13.9.34}%
+\contentsline {subsection}{\numberline {XIII.9.35}Equation différentielle à coefficients aléatoires}{278}{subsection.13.9.35}%
+\contentsline {subsection}{\numberline {XIII.9.36}Série entière aléatoire}{279}{subsection.13.9.36}%
+\contentsline {subsection}{\numberline {XIII.9.37}Permutation aléatoire}{279}{subsection.13.9.37}%
+\contentsline {subsection}{\numberline {XIII.9.38}Permutations composées d'un grand cycle}{279}{subsection.13.9.38}%
+\contentsline {subsection}{\numberline {XIII.9.39}Loi conjointe (1) \etoile {2}}{279}{subsection.13.9.39}%
+\contentsline {subsection}{\numberline {XIII.9.40}Loi conjointe (2) \etoile {3}}{280}{subsection.13.9.40}%
+\contentsline {subsection}{\numberline {XIII.9.41}Fonction caractéristique \etoile {2}}{281}{subsection.13.9.41}%
+\contentsline {subsection}{\numberline {XIII.9.42}Fonction génératrice des moments \etoile {5}}{282}{subsection.13.9.42}%
+\contentsline {subsection}{\numberline {XIII.9.43}Inégalité de Jensen \etoile {1}}{284}{subsection.13.9.43}%
+\contentsline {subsection}{\numberline {XIII.9.44}Inégalité de Hölder \etoile {2}}{284}{subsection.13.9.44}%
+\contentsline {subsection}{\numberline {XIII.9.45}Modes de convergences}{285}{subsection.13.9.45}%
+\contentsline {subsection}{\numberline {XIII.9.46}Marche aléatoire sur $\mathbb {Z}^d$ \etoile {3}}{285}{subsection.13.9.46}%
+\contentsline {subsubsection}{Le cas $d=1$ \etoile {2}}{285}{subsection.13.9.46}%
+\contentsline {subsubsection}{Le cas $d=2$}{287}{Item.1060}%
+\contentsline {subsubsection}{Le cas général}{287}{Item.1060}%
+\contentsline {subsubsection}{Marche aléatoire auto-évitante}{287}{Item.1060}%
+\contentsline {subsection}{\numberline {XIII.9.47}Matrice de covariance \etoile {2}}{287}{subsection.13.9.47}%
+\contentsline {subsection}{\numberline {XIII.9.48}Maximisation de la variance sous-contrainte}{288}{subsection.13.9.48}%
+\contentsline {subsection}{\numberline {XIII.9.49}Inégalité de Kosmanek \etoile {1}}{289}{subsection.13.9.49}%
+\contentsline {subsection}{\numberline {XIII.9.50}Inégalité de Cantelli \etoile {3}}{289}{subsection.13.9.50}%
+\contentsline {subsection}{\numberline {XIII.9.51}Inégalité de Hoeffding \etoile {3}}{291}{subsection.13.9.51}%
+\contentsline {subsection}{\numberline {XIII.9.52}Théorème d'approximation de Weierstrass \etoile {3}}{292}{subsection.13.9.52}%
+\contentsline {section}{\numberline {XIII.10}Correction Endomorphismes d'un espace euclidien}{294}{section.13.10}%
+\contentsline {subsection}{\numberline {XIII.10.1}Equations matricielles \etoile {1}}{294}{subsection.13.10.1}%
+\contentsline {subsection}{\numberline {XIII.10.2}Equation matricielle faisant intervenir la comatrice}{294}{subsection.13.10.2}%
+\contentsline {subsection}{\numberline {XIII.10.3}Matrice de rotation}{295}{subsection.13.10.3}%
+\contentsline {subsection}{\numberline {XIII.10.4}Produit mixte et produit vectoriel}{295}{subsection.13.10.4}%
+\contentsline {subsection}{\numberline {XIII.10.5}Hyperplan de $\EuScript {M}_{n}(\mathbb {K})$}{296}{subsection.13.10.5}%
+\contentsline {subsection}{\numberline {XIII.10.6}Equation entre projecteurs}{296}{subsection.13.10.6}%
+\contentsline {subsection}{\numberline {XIII.10.7}Exemple de symétrie orthogonale}{296}{subsection.13.10.7}%
+\contentsline {subsection}{\numberline {XIII.10.8}Caractérisations des projecteurs orthogonales}{297}{subsection.13.10.8}%
+\contentsline {subsection}{\numberline {XIII.10.9}Norme d'une base orthogonale}{297}{subsection.13.10.9}%
+\contentsline {subsection}{\numberline {XIII.10.10}Matrice de Hilbert}{297}{subsection.13.10.10}%
+\contentsline {subsection}{\numberline {XIII.10.11}Racine carrée d'un endomorphisme auto-adjoint positif}{298}{subsection.13.10.11}%
+\contentsline {subsection}{\numberline {XIII.10.12}Inégalité de convexité}{298}{subsection.13.10.12}%
+\contentsline {subsection}{\numberline {XIII.10.13}Inégalité à propos des matrices orthogonales}{299}{subsection.13.10.13}%
+\contentsline {subsection}{\numberline {XIII.10.14}Inégalité de la trace}{299}{subsection.13.10.14}%
+\contentsline {subsection}{\numberline {XIII.10.15}Inégalité de Hadamard}{299}{subsection.13.10.15}%
+\contentsline {subsection}{\numberline {XIII.10.16}Perturbations}{299}{subsection.13.10.16}%
+\contentsline {subsection}{\numberline {XIII.10.17}Somme de Cesàro de matrices orthogonales}{299}{subsection.13.10.17}%
+\contentsline {subsection}{\numberline {XIII.10.18}Transformation de Cayley}{299}{subsection.13.10.18}%
+\contentsline {subsection}{\numberline {XIII.10.19}Optimisation (1)}{299}{subsection.13.10.19}%
+\contentsline {subsection}{\numberline {XIII.10.20}Optimisation (2)}{299}{subsection.13.10.20}%
+\contentsline {subsection}{\numberline {XIII.10.21}Optimisation (3)}{299}{subsection.13.10.21}%
+\contentsline {subsection}{\numberline {XIII.10.22}Caractérisation des isométries anti-involutives}{300}{subsection.13.10.22}%
+\contentsline {subsection}{\numberline {XIII.10.23}Symétrie de l'espace}{300}{subsection.13.10.23}%
+\contentsline {subsection}{\numberline {XIII.10.24}Réflexion et rotation dans un plan \etoile {3}}{300}{subsection.13.10.24}%
+\contentsline {subsection}{\numberline {XIII.10.25}Similitude entre matrices orthogonales}{300}{subsection.13.10.25}%
+\contentsline {subsection}{\numberline {XIII.10.26}Propriété de l'adjoint}{300}{subsection.13.10.26}%
+\contentsline {subsection}{\numberline {XIII.10.27}Autour de l'adjoint}{301}{subsection.13.10.27}%
+\contentsline {subsection}{\numberline {XIII.10.28}Somme d'une matrice orthogonale et de sa transposée}{301}{subsection.13.10.28}%
+\contentsline {subsection}{\numberline {XIII.10.29}Déterminant d'une exponentielle}{301}{subsection.13.10.29}%
+\contentsline {subsection}{\numberline {XIII.10.30}Exponentielle de matrices antisymétrique}{301}{subsection.13.10.30}%
+\contentsline {subsection}{\numberline {XIII.10.31}Théorème spectral}{301}{subsection.13.10.31}%
+\contentsline {subsection}{\numberline {XIII.10.32}Réduction simultanée}{301}{subsection.13.10.32}%
+\contentsline {subsection}{\numberline {XIII.10.33}Réduction des matrices antisymétriques}{301}{subsection.13.10.33}%
+\contentsline {subsection}{\numberline {XIII.10.34}Caractérisation des matrices symétriques positives}{301}{subsection.13.10.34}%
+\contentsline {subsection}{\numberline {XIII.10.35}Matrices entières positives}{302}{subsection.13.10.35}%
+\contentsline {subsection}{\numberline {XIII.10.36}Matrices binaires positives}{302}{subsection.13.10.36}%
+\contentsline {subsection}{\numberline {XIII.10.37}Inégalité de Hoffman-Wielandt}{302}{subsection.13.10.37}%
+\contentsline {subsection}{\numberline {XIII.10.38}Distance aux matrices de rang au plus r}{302}{subsection.13.10.38}%
+\contentsline {subsection}{\numberline {XIII.10.39}Théorème de Courant-Fischer \etoile {3}}{302}{subsection.13.10.39}%
+\contentsline {subsection}{\numberline {XIII.10.40}Principe de Ky-Fan}{303}{subsection.13.10.40}%
+\contentsline {subsection}{\numberline {XIII.10.41}Théorème de Cartan-Dieudonnée}{303}{subsection.13.10.41}%
+\contentsline {subsection}{\numberline {XIII.10.42}Relation d'ordre des matrices symétriques}{303}{subsection.13.10.42}%
+\contentsline {section}{\numberline {XIII.11}Correction Décompositions matricielles}{304}{section.13.11}%
+\contentsline {subsection}{\numberline {XIII.11.1}Décomposition de Dunford \etoile {2}}{304}{subsection.13.11.1}%
+\contentsline {subsubsection}{Diagonalisabilité de l'exponentielle d'une matrice \etoile {3}}{305}{Item.1096}%
+\contentsline {subsubsection}{Surjectivité de l'exponentielle matricielle \etoile {4}}{306}{Item.1096}%
+\contentsline {subsubsection}{Opérateur de commutation \etoile {3}}{308}{Item.1098}%
+\contentsline {subsubsection}{Deux applications non continues}{309}{Item.1100}%
+\contentsline {subsection}{\numberline {XIII.11.2}Décomposition polaire \etoile {3}}{309}{subsection.13.11.2}%
+\contentsline {subsubsection}{Sous-groupe compact maximal de GL$_n(\mathbb {R})$ \etoile {3}}{311}{Item.1107}%
+\contentsline {subsubsection}{Enveloppe convexe des matrices orthogonales}{312}{Item.1113}%
+\contentsline {subsubsection}{Points extrémaux des matrices orthogonales}{313}{Item.1119}%
+\contentsline {subsubsection}{Matrice extraite d'une matrice orthogonale}{313}{Item.1119}%
+\contentsline {subsubsection}{Matrices qui respectent le volume de $k$-parallélépipèdes rectangles}{313}{Item.1119}%
+\contentsline {subsection}{\numberline {XIII.11.3}Décomposition QR}{313}{subsection.13.11.3}%
+\contentsline {subsubsection}{Matrice de Householder}{313}{subsection.13.11.3}%
+\contentsline {subsection}{\numberline {XIII.11.4}Décomposition LU}{313}{subsection.13.11.4}%
+\contentsline {subsubsection}{$\mathbb {K}=\mathbb {R}$ ou $\mathbb {C}$}{313}{subsection.13.11.4}%
+\contentsline {subsubsection}{$\mathbb {K}=\mathbb {Z}/p\mathbb {Z}$}{313}{subsection.13.11.4}%
+\contentsline {subsubsection}{Algorithme de calcul}{313}{subsection.13.11.4}%
+\contentsline {subsubsection}{Décomposition de Cholesky}{313}{subsection.13.11.4}%
+\contentsline {subsection}{\numberline {XIII.11.5}Lemme de Fitting}{313}{subsection.13.11.5}%
+\contentsline {subsection}{\numberline {XIII.11.6}Réduction de Jordan}{313}{subsection.13.11.6}%
+\contentsline {subsubsection}{Application}{314}{Item.1122}%
+\contentsline {subsection}{\numberline {XIII.11.7}Réduction de Frobenius}{314}{subsection.13.11.7}%
+\contentsline {subsubsection}{$M\sim M^\top $}{314}{subsection.13.11.7}%
+\contentsline {subsubsection}{Matrices semblables à leur inverse}{314}{subsection.13.11.7}%
+\contentsline {subsubsection}{Bicommutant}{314}{subsection.13.11.7}%
+\contentsline {section}{\numberline {XIII.12}Correction Divers}{315}{section.13.12}%
+\contentsline {subsection}{\numberline {XIII.12.1}Fonction $\mathbb {R}$-linéaire mais pas $\mathbb {C}$-linéaire \etoile {1}}{315}{subsection.13.12.1}%
+\contentsline {subsection}{\numberline {XIII.12.2}Relation d'ordre}{315}{subsection.13.12.2}%
+\contentsline {subsection}{\numberline {XIII.12.3}Ordre lexicographique}{315}{subsection.13.12.3}%
+\contentsline {subsection}{\numberline {XIII.12.4}Sous-groupes de GL$_n(\mathbb {C})$ d'exposant fini \etoile {5}}{315}{subsection.13.12.4}%
+\contentsline {subsection}{\numberline {XIII.12.5}Formule de Burnside \etoile {4}}{316}{subsection.13.12.5}%
+\contentsline {subsection}{\numberline {XIII.12.6}Théorème de Fermat matriciel}{316}{subsection.13.12.6}%
+\contentsline {subsection}{\numberline {XIII.12.7}Développement décimal propre d'un réel}{317}{subsection.13.12.7}%
+\contentsline {subsubsection}{Une caractéristique des rationnels}{317}{subsection.13.12.7}%
+\contentsline {subsection}{\numberline {XIII.12.8}Distribution du premier chiffre des puissances de 2}{317}{subsection.13.12.8}%
