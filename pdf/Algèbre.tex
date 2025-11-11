@@ -562,7 +562,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Cotrigonalisation (5) corrigé]{[Corrigé]}}\\
 	Soit $(A,B)\in \M_n(\C)^2$ tel que $AB=0$. Montrer que $A$ et $B$ sont cotrigonalisables.
 	
-	\section{Caractérisation des matrices nilpotente par la trace \telecom{3}}
+	\section{Caractérisation des matrices nilpotentes par la trace \telecom{3}}
 	\label{Caractérisation des matrices nilpotente par la trace}
 	\textcolor{blue}{\hyperref[Caractérisation des matrices nilpotente par la trace corrigé]{[Corrigé]}}\\
 	Soit $A\in \M_n(\K)$ Montrer que $A$ est nilpotente si et seulement si $\forall k\in \N^*,\ \Tr{(A^k)}=0$.
@@ -2491,9 +2491,9 @@ On admettra le résultat des exercices \ref{Produit des nombres premiers inféri
 \label{Identité de Vandermonde}
 \textcolor{blue}{\hyperref[Identité de Vandermonde corrigé]{[Corrigé]}}\\
 Soient $r,m,n$ des entiers naturels. Montrer que : $$\sum_{k=0}^r\binom{n}{k}\binom{m}{r-k}=\binom{n+m}{r}$$
-\subsection{Formule de Chu-Vandermonde}
+\textit{Remarque : Formule de Chu-Vandermonde}\\
 Pour $\alpha\in\R$, on pose $$\forall n\in\N, \binom{\alpha}{n}=\frac{\alpha(\alpha-1)\dots(\alpha-n+1)}{n!}$$
-Etablir que : $$\forall (a,b)\in\R ,\sum_{k=0}^n\binom{a}{k}\binom{b}{n-k}=\binom{a+b}{n}$$
+On a également $$\forall n\in \N, \forall (a,b)\in\R ,\sum_{k=0}^n\binom{a}{k}\binom{b}{n-k}=\binom{a+b}{n}$$
 \section{Nombre de Fibonacci \xens{3}}
 \label{Nombre de Fibonacci}
 \textcolor{blue}{\hyperref[Nombre de Fibonacci corrigé]{[Corrigé]}}\\
@@ -3856,9 +3856,9 @@ Montrer que $S_n^{++}(\R)=\{A^\top A,\ A\in \text{GL}_n(\R)\}$.
 \textcolor{blue}{\hyperref[Lemme de Fitting corrigé]{[Corrigé]}}\\
 \begin{enumerate}
 	\item Soit $E$ un espace vectoriel de dimension $n$ et $u\in\mathcal{L}(E)$, il existe $p\in\N$ tel que : $$E=\text{Ker}(u^p)\oplus\text{Im}(u^p). $$
-	\item Soit $M\in\M_n(\K)$ est semblable à une matrice de la forme $\begin{pmatrix}
+	\item Soit $M\in\M_n(\K)$. Montrer que M est semblable à une matrice de la forme $\begin{pmatrix}
 		N&0\\0&P
-	\end{pmatrix}$ où $N$ est une matrice nilpotente et $C$ est une matrice carrée inversible.
+	\end{pmatrix}$ où $N$ est une matrice nilpotente et $P$ est une matrice carrée inversible.
 \end{enumerate}
 \textit{\underline{Remarque :} A l'aide de ce résultat, on peut calculer le cardinal du cône nilpotent sur un corps fini de cardinal 
 	Le cardinal $n_d$ de l'ensemble des matrices carrés nilpotentes de taille $d$ sur un corps de cardinal $q$ est :$$n_d=q^{d(d-1)}.$$ Il permet également de démontrer le théorème Krull-Schmidt, qui requis des connaissances sur les produits directs de groupes.}
@@ -4397,11 +4397,46 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Disques de Gershgorin}
 	\label{Disques de Gershgorin corrigé}
 	\textcolor{blue}{\hyperref[Disques de Gershgorin]{[Enoncé]}}\\
-	
+	\begin{enumerate}[leftmargin=*]
+			\item Soit $\lambda\in\text{Sp}(A)$ et $X=\begin{pmatrix}
+			x_1\\ \vdots \\ x_n
+				\end{pmatrix}$ un vecteur propre de $A$ associé à $\lambda$.
+			On a pour tout $i\in\crblanc{1}{n}$, \[(\lambda-a_{i,i})x_i=\sum_{j\ne i}^{a_{i,j}x_j}\]
+			On choisit un $i$ pour lequel $|x_i|$ est maximal. Ainsi, 
+			\begin{align*}
+				|\lambda-a_{i,i}|&=|\sum_{j\ne i}a_{i,j}\frac{x_j}{x_i}|\\
+				&\leq\sum_{j\ne i}|a_{i,j}|\frac{|x_j|}{|x_i|}\\
+				&\leq\sum_{j\ne i}|a_{i,j}|=R_i &\mbox{car $|x_i|$ est maximal}
+			\end{align*}
+			Par conséquent, on a : \[\lambda \in D(a_{i,i},R_i)\]
+			\item Montrons que $0\not\in D(a_{i,i},R_i)$ pour tout $i\in\crblanc{1}{n}$.
+			Soit $i\in\crblanc{1}{n}$.\\
+			\[|0-a_{i,i}|=|a_{i,i}|>R_i\]
+			donc $0\not\in D(a_{i,i},R_i)$.\\
+			Par conséquent, $0$ ne peut être une valeur propre de $A$, donc $A$ est  inversible.
+			
+	\end{enumerate}
+
+
 	\subsection{Spectre de $u\circ v$ et $v\circ u$}
 	\label{Spectre de uov et vou corrigé}
 	\textcolor{blue}{\hyperref[Spectre de uov et vou]{[Enoncé]}}\\
-	
+	Montrons que $\text{Sp}(u\circ v)\subset \text{Sp}(v\circ u)$. (L'autre inclusion se montrera de la même façon par inversion des rôles de $u$ et $v$).\\
+	Soit $\lambda\in\text{Sp}(u\circ v)$ non nul.\\
+	On prend $x$ un vecteur propre de $u\circ v$ associé à $\lambda$.\\
+	On a : \[u\circ v(x)=\lambda x\]
+	Par conséquent \[v\circ u\circ v (x)=\lambda v(x)\]
+	Montrons que $v(x)$ ne peut être nul.\\
+	Raisonnons par l'absurde que $v(x)=0$.\\
+	\[0=u(0)=u\circ v(x)=\lambda x \]
+	Puisque $\lambda\ne0$, $x=0$ ce qui est absurde car $x$ est un vecteur propre.\\
+	Donc $v(x)$ est un vecteur propre de $v\circ u$ associé à $\lambda$.\\
+	Il reste à montrer le cas quand $0$ est valeur propre de $u\circ v$.\\
+	\begin{align*}
+		0\in \text{Sp}(u\circ v)&\Leftrightarrow \det(u\circ v)=0\\
+		&\Leftrightarrow \det(v\circ u)=0\\
+		&\Leftrightarrow 0\in \text{Sp}(v\circ u)
+	\end{align*}
 	\subsection{Endomorphismes qui commutent}
 	\label{Endomorphismes qui commutent corrigé}
 	\textcolor{blue}{\hyperref[Endomorphismes qui commutent]{[Enoncé]}}\\
@@ -4558,7 +4593,37 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Cotrigonalisation (2)}
 	\label{Cotrigonalisation (2) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (2)]{[Enoncé]}}\\
-	
+	\begin{enumerate}[leftmargin=*]
+		\item Soient $\Phi_1,\Phi_2\in E^*$ et $\lambda\in \C$.\\
+		\[T_u(\Phi_1+\lambda\Phi_2)=(\Phi_1+\lambda\Phi_2)\circ u=\Phi_1\circ u +\lambda\Phi_2\circ u=T_u(\Phi_1)+\lambda T_u(\Phi_2)\]
+		Donc $T_u\in\mathcal{L}(E^*)$.
+		\item Montrons que si $u$ et $v$ commutent alors $T_u$ et $T_v$ commutent.
+		Supposons que $u$ et $v$ commutent.
+		Pour tout $\Phi\in E^*$, \[T_u\circ T_v(\Phi)=T_u(\Phi\circ v)=(\Phi\circ v)\circ u=(\Phi\circ u)\circ v=T_v(\Phi\circ u)=T_v\circ T_u(\Phi)\]
+		Donc $T_u$ et $T_v$ commutent.
+		\item Raisonnons par récurrence. \\
+		Le résultat est immédiat quand $n=1$.\\
+		Supposons que le résultat est vrai pour un certain $n\in \N$.
+		Soit $E$ un $\C$-espace vectoriel de dimension $n+1$.\\
+		Puisque $u$ et $v$ commutent, $T_u$ et $T_v$ commutent d'après la question précédente.\\
+		Puisque $T_u$ et $T_v$ commutent, ils admettent un vecteur propre commun.\\
+		En effet, puisque $T_u$ et $T_v$ commutent, les sous-espaces vectoriels $T_u$ sont stables par $T_v$, donc pour $\lambda\in \text{Sp}(T_u)$, $T_v$ induit un endomorphisme sur $E_\lambda(T_u)$ donc $T_v$ admet un vecteur propre sur $E_\lambda(T_u)$.\\
+		On note ce vecteur propre $\Phi$.\\
+		Il existe alors $\lambda,\mu\in \C$ tel que: \[\begin{cases}
+			T_u(\Phi)=\lambda\Phi\\
+			T_v(\Phi)=\mu\Phi
+		\end{cases}\]
+		On pose $H=\Ker(\Phi)$.\\
+		On sait que $H$ est un hyperplan de $E$, donc $\dim(H)=n$.
+		Montrons que $H$ est stable par $u$ et par $v$.\\
+		Soit $x\in H$.\\
+		On a alors $T_u(\Phi)(x)=\lambda\Phi(x)=0$ i.e. $\Phi\circ u(x)=0$.\\
+		Donc $u(x)\in H$.\\
+		De même, on a $v(x)\in H$.\\
+		Donc $u$ et $v$ induisent un endomorphisme sur $H$ ; $u_{|H}$ et $v_{|H}$ sont des endomorphismes qui commutent.\\
+		Ainsi, il existe une base $\B$ de $H$ telle que $\Mat_\B(u_{|H})$ et $\Mat_\B(v_{|H})$ sont triangulaires.\\
+		Ainsi, il suffit de compléter $\B$ en une base de $E$ pour avoir le résultat souhaité.
+	\end{enumerate}
 	\subsection{Cotrigonalisation (3)}
 	\label{Cotrigonalisation (3) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (3)]{[Enoncé]}}\\
@@ -4571,9 +4636,46 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Cotrigonalisation (5) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (5)]{[Enoncé]}}\\
 	
-	\subsection{Caractérisation des matrices nilpotente par la trace}
+	\subsection{Caractérisation des matrices nilpotentes par la trace}
 	\label{Caractérisation des matrices nilpotente par la trace corrigé}
 	\textcolor{blue}{\hyperref[Caractérisation des matrices nilpotente par la trace]{[Enoncé]}}\\
+	Il est clair que si $A$ est nilpotente alors $\forall k\in\N^*, \Tr(A^k)=0$.\\
+	Supposons que $\forall k\in \N^* \Tr(A^k)=0$.\\
+	On note $\lambda_1,\dots,\lambda_r$ les valeurs propres non nuls et distinctes de $A$ de multiplicités respectives $m_1,\dots, m_r$.\\
+	On a $A$ est semblable à une matrice triangulaire de coefficients diagonaux $$(0,\dots,0,\lambda_1,\dots, \lambda_1,\dots,\lambda_r,\dots,\lambda_r)$$,\\
+	et on a également $A^k$ est semblable à une matrice triangulaire de coefficients diagonaux $$(0,\dots,0,\lambda_1^k,\dots, \lambda_1^k,\dots,\lambda_r^k,\dots,\lambda_r^k)$$
+	Par conséquent pour tout $k\in \N^*$, 
+	et donc : \[\Tr(A^k)=\sum_{i=1}^rm_i\lambda_i^k=0\]
+	On peut réécrire ses équations par un produit matriciel : 
+	\[\begin{pmatrix}
+		\lambda_1&\lambda_1^2&\dots&\lambda_1^r\\
+		\lambda_2&\lambda_2^2&\dots&\lambda_2^r\\
+		\vdots&\vdots&&\vdots\\
+		\lambda_r&\lambda_r^2&\dots&\lambda_r^r\\
+	\end{pmatrix}\begin{pmatrix}
+	m_1\\m_2\\\vdots\\m_r
+	\end{pmatrix}=\begin{pmatrix}
+	0\\0\\ \vdots \\0
+	\end{pmatrix}\]
+	On remarque que : \[[\begin{vmatrix}
+		\lambda_1&\lambda_1^2&\dots&\lambda_1^r\\
+		\lambda_2&\lambda_2^2&\dots&\lambda2^r\\
+		\vdots&\vdots&&\vdots\\
+		\lambda_r&\lambda_r^2&\dots&\lambda_r^r\\
+	\end{vmatrix}= V(\lambda_1,\lambda_2,\dots,\lambda_r)\prod_{i=1}^{r}\lambda_i\]
+	où $V(\lambda_1,\lambda_2,\dots, \lambda_r)$ est le déterminant de Vandermonde des $\lambda_1,\lambda_2,\dots,\lambda_r$.\\
+	Puisque les $\lambda_i$ sont distincts et non nuls, on en déduit que \[\begin{pmatrix}
+		\lambda_1&\lambda_1^2&\dots&\lambda_1^r\\
+		\lambda_2&\lambda_2^2&\dots&\lambda2^r\\
+		\vdots&\vdots&&\vdots\\
+		\lambda_r&\lambda_r^2&\dots&\lambda_r^r\\
+	\end{pmatrix}\] est inversible \ref{Déterminant de Vandermonde} par conséquent, on a : \[\begin{pmatrix}
+	m_1\\m_2\\\vdots\\m_r
+	\end{pmatrix}=\begin{pmatrix}
+	0\\0\\ \vdots \\0
+	\end{pmatrix}\]
+	Donc $A$ admet une unique valeur propre qui est $0$.\\
+	A fortiori, $A$ est nilpotente.
 	
 	\subsection{Facteur commun dans le polynôme caractéristique}
 	\label{Facteur commun dans le polynôme caractéristique corrigé}
@@ -4582,7 +4684,35 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{$\chi_{AB}=\chi_{BA}$}
 	\label{chiAB=chiBA corrigé}
 	\textcolor{blue}{\hyperref[chiAB=chiBA]{[Enoncé}}\\
-	
+	On remarque que : 
+	\[\begin{pmatrix}
+		\lambda I_n& -A\\
+		-B&I_p
+	\end{pmatrix}=\begin{pmatrix}
+	I_n&0\\B&I_p
+	\end{pmatrix}=\begin{pmatrix}
+	\lambda I_n-AB&-A\\0&I_p-BA
+	\end{pmatrix}\]
+	Ainsi, en regardant les déterminants, on a : 
+	\[\begin{vmatrix}
+		\lambda I_n& -A\\
+		-B&I_p
+	\end{vmatrix}=\chi_{AB}(\lambda)\]
+	Remarquons maintenant que : 
+	\[\begin{pmatrix}
+		I_n&0\\B&\lambda I_p
+	\end{pmatrix}\begin{pmatrix}
+	\lambda I_n&-A\\-B&I_p\end{pmatrix}=\begin{pmatrix}
+	\lambda I_n&-A\\0&I_p-BA
+	\end{pmatrix}\]
+	De même, en considérant les déterminants, on a :
+	\[\lambda^p\begin{vmatrix}
+		\lambda I_n&-A\\-B&I_p
+	\end{vmatrix}=\lambda^n\chi_{BA}(\lambda)\]
+	Finalement, on obtient :
+	\[\lambda^p\chi_{AB}(\lambda)=\lambda^n\chi_{BA}(\lambda)\]
+	Ceci étant vrai pour tout $\lambda\in\K$, \[X^p\chi_{AB}=X^n\chi_{BA}\]
+	Et par intégrité de $\K[X]$, quand $n=p$, on a \[\chi_{AB}=\chi_{BA}\] 
 	\subsection{Polynôme caractéristique de l'inverse}
 	\label{Polynôme caractéristique de l'inverse corrigé}
 	\textcolor{blue}{\hyperref[Polynôme caractérisque de l'inverse]{[Enoncé]}}\\
@@ -4723,7 +4853,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Raisonnons par l'absurde que $A$ et $B$ possède une valeur propre commune $\lambda$.\\
 	Soit $u,v\in \M_{n,1}(\K)$ tel que $u$ est un vecteur propre de $A^\top$ et $v$ est un vecteur propre de $B$ pour la valeur propre $\lambda$.
 	Ainsi pour tout $X\in \M_n(\K)$, \[u^\top AXv-u^\top XBv=0\]
-	Ainsi, il suffit de trouver une matrice $M$ tel que$u^\top M v$ est non nulle. On peut prendre $M=uv^\top$.\\
+	Ainsi, il suffit de trouver une matrice $M$ tel que $u^\top M v$ est non nulle. On peut prendre $M=uv^\top$.\\
 	Ainsi, on obtient une contradiction, donc $A$ et $B$ sont à spectres disjoints. 
 	\newpage
 \section{Correction Réduction algébrique}
@@ -7323,11 +7453,11 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 \section{Correction Dénombrement}
 	\subsection{Identité de Vandermonde}
 	\label{Identité de Vandermonde corrigé}
-		\textcolor{blue}{\hyperref[Identité de Vandermonde]{[Enoncé]}}\\
-	\subsubsection{Formule de Chu-Vandermonde}
+	\textcolor{blue}{\hyperref[Identité de Vandermonde]{[Enoncé]}}\\
 	\subsection{Nombre de Fibonacci}
 	\label{Nombre de Fibonacci corrigé}
-	\textcolor{blue}{\hyperref[Nombre de Fibonacci]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Nombre de Fibonacci]{[Enoncé]}}
+
 	
 	\subsection{Matrices orthogonales à coefficients entiers}
 	\label{Matrices orthogonales à coefficients entiers corrigé}
@@ -8917,7 +9047,34 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\subsection{Lemme de Fitting}
 	\label{Lemme de Fitting corrigé}
 	\textcolor{blue}{\hyperref[Lemme de Fitting]{[Enoncé]}}\\
-	
+	\begin{enumerate}[leftmargin=*]
+		\item On écrit le polynôme caractéristique de $u$ \[\chi_u=X^p\times Q\] de sorte que $0$ n'est pas racine de $Q$.\\
+		Ainsi, $X^p\wedge Q=1$, donc d'après le lemme des noyaux, \[E=\Ker(u^p)\oplus\Ker(Q(u))\]
+		Montrons que $\Ker(Q(u))=\Ima(u^p)$.\\
+		Comme $\Ker(Q(u))$ est stable par $u^p$, et $\Ker(u^p)\cap\Ker(Q(u))$, l'endomorphisme induit $u^p_{\Ker(Q(u))}$ est injectif donc réalise un isomorphisme de $\Ker(Q(u))$ dans lui-même.\\
+		D'où $\Ker(Q(u))=u^p(\Ker(Q(u)))\subset \Ima(u^p)$.\\
+		De plus, d'après le théorème du rang, on en déduit que $\Ker(Q(u))=\Ima(u^p)$.\\
+		Et donc \[E=\Ker(u^p)\oplus \Ima(u^p)\]
+		\item On pose $u$ l'endomorphisme canoniquement associé à $M$.\\
+		D'après la question précédente,il existe $p\in\N$ tel que $E=\Ker(u^p)\oplus\Ima(u^p)$.\\
+		On pose $F=\Ker(u^p)$ et $G=\Ima(u^p)$.\\
+		Montrons que $F$ et $G$ sont stables par $u$.\\
+		Puisque $u$ commute avec $u^p$, on en déduit que $F$ est stable par $u$.\\
+		De même puisque $u$ commute avec $Q(u)$ (cf. question 1), on a $G$ est stable par $u$.\\
+		Par conséquent, la matrice $u$ dans la base $\B$ adaptée à $E=F\oplus G$ est de la forme \[\begin{pmatrix}
+			N&0\\0&P
+		\end{pmatrix}\]
+		Montrons que $N$ est nilpotente.\\
+		Pour tout $x\in F$, $u^p(x)=0$.\\
+		Donc $u^p=0$ sur $F$, par conséquent $N$ est nilpotente.\\
+		Montrons que $P$ est inversible.\\
+		On rappelle que $\Ima(u^p)=\Ker(Q(u))$.\\
+		Puisque $0$ n'est pas racine de $Q$, on en déduit aisément que $u_{|G}$ est inversible, donc $P$ l'est également.\\
+		Finalement, on a montré que $M$ est semblable à une matrice de la forme $\begin{pmatrix}
+			N&0\\0&P
+		\end{pmatrix}$ où $N$ est nilpotente et $P$ est inversible.		
+		 
+	\end{enumerate}
 	\subsection{Réduction de Jordan}
 	\label{Réduction de Jordan corrigé}
 		\textcolor{blue}{\hyperref[Réduction de Jordan]{[Enoncé]}}\\

@@ -4544,7 +4544,6 @@ Alors, on a l'équivalence :
 	
 	\subsection{Règle de d'Alembert}\label{sec:regle-de-dalembert}
 		\textcolor{blue}{\hyperref[Règle de d'Alembert]{[Enoncé]}}\\
-	
 	\subsection{Règle de Cauchy}\label{sec:regle-de-cauchy}
 		\textcolor{blue}{\hyperref[Règle de Cauchy]{[Enoncé]}}\\
 	
@@ -6597,7 +6596,44 @@ Alors, on a l'équivalence :
 	
 	\subsection{Théorème de Weierstrass}\label{sec:theoreme-de-weierstrass}
 		\textcolor{blue}{\hyperref[Théorème de Weierstrass]{[Enoncé]}}\\
-	
+	\begin{enumerate}[leftmargin=*]
+		\item\begin{enumerate}[label=\alph*.]
+		 \item Soit $f,g\in E$.\\
+		$\forall x\in\R$
+		\begin{align*}
+			(f*g)(x)&=\int_{-\infty}^{+\infty}f(x-t)g(t)dt\\
+			&=\int_{+\infty}^{-\infty}f(t)g(x-u)(-du)&\text{on pose }u=x-t\\
+			&=(g*f)(x) 
+		\end{align*}
+		Soit $f,g,h\in E$.\\
+		$\forall x\in \R$
+		\begin{align*}
+			((f+g)*h)(x)&=\int_{-\infty}^{+\infty}(f+g)(x-t)h(t)dt\\
+			&=\int_{-\infty}^{+\infty}\left[f(x-t)h(t)+g(x-t)h(t)\right]dt\\
+			&=(f*h)(x)+(g*h)(x)
+		\end{align*}
+		\item 
+		$\forall x\in\R,\forall \alpha >0$ 
+		\begin{align*}
+			|f*\chi_n(x)-f(x)|&=\left|\int_{-\infty}^{+\infty}f(x-t)\chi_n(t)dt-f(x)\right|\\
+			&=\left|\int_{-\infty}^{+\infty}\left(f(x-t)-f(x)\right)\chi_n(t)dt\right|\\
+			&\leq \int_{-\infty}^{+\infty}\left|f(x-t)-f(x)\right|\chi_n(t)dt\\
+			&=\int_{|t|<\alpha}\left|f(x-t)-f(x)\right|\chi_n(t)dt+\int_{|t|\geq\alpha}\left|f(x-t)-f(x)\right|\chi_n(t)dt
+		\end{align*}
+		D'après l'énoncé, $f$ est continue sur un compact donc elle est uniformément continue d'après le théorème de Heine.\\
+		Ainsi $\forall \varepsilon>0, \exists \alpha >0, \forall t\in\R, |(x-t)-t|<\alpha \Rightarrow |f(x-t)-f(x)|<\frac{\varepsilon}{2}$.\\
+		Par conséquent, \[\int_{|t|<\alpha}|f(x-t)-f(x)|\chi_n(t)dt<\frac{\varepsilon}{2}\int_{|t|<\alpha}\chi_n(t)dt\]
+		d'où \[\int_{|t|<\alpha}|f(x-t)-f(x)|\chi_n(t)dt<\frac{\varepsilon}{2}\int_{-\infty}^{+\infty}\chi_n(t)dt=\frac{\varepsilon}{2}\]
+		De plus, puisque $f$ est continue à valeurs dans un compact, elle est bornée d'après le théorème des bornes atteintes, ainsi il existe $M\in \R$ tel que :
+		\[\int_{|t|\geq\alpha}|f(x-t)-f(x)|\chi_n(t)dt\leq 2M\int_{|t|\geq\alpha}\chi_n(t)dt\]
+		Puisque $(\chi)$ est une séquence de Dirac, il existe $N\in\N$ tel que $\forall n\geq N$, 
+		\[\int_{|t|\geq\alpha}\chi_n(t)dt\leq \frac{\varepsilon}{4M}\]
+		Par conséquent, pour tout $n\geq N$, on a :
+		\[|(f*\chi_n)(x)-f(x)|\leq \frac{\varepsilon}{2}+2M\frac{\varepsilon}{4M}=\varepsilon\]
+		Donc : \[\normep{\infty}{(f*\chi_n)-f}\leq \varepsilon\]
+		Finalement, $(f*\chi_n)$ converge uniformément vers $f$ sur $\R$.
+		\end{enumerate}
+	\end{enumerate}
 	\subsection{Théorème de Chudnovsky \etoile{4}}\label{sec:theoreme-de-chudnovsky-etoile4}
 		\textcolor{blue}{\hyperref[Théorème de Chudnovsky]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -7930,7 +7966,7 @@ Alors, on a l'équivalence :
 		\textcolor{blue}{\hyperref[Inéquation différentielle]{[Enoncé]}}\\
 	
 	\subsection{Solution $2\pi$-périodique d'une équation différentielle}\label{sec:solution-2pi-periodique-dune-equation-differentielle}
-		\textcolor{blue}{\hyperref[Solution épi-périodique d'une équation différentielle]{[Enoncé]}}\\
+		\textcolor{blue}{\hyperref[Solution 2pi-périodique d'une équation différentielle]{[Enoncé]}}\\
 	
 	\subsection{Superposition de solutions}\label{sec:superposition-de-solutions}
 		\textcolor{blue}{\hyperref[Superposition de solutions]{[Enoncé]}}\\
