@@ -112,6 +112,12 @@
              /* ...en boîtes grises foncées semi-transparentes */
             background-color: rgba(20, 20, 20, 0.95);
         }
+        .category-divider {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 2rem; /* Espace avant les cartes */
+            margin-top: 3rem; /* Espace après la grille précédente */
+        }
     </style>
 </head>
 
@@ -257,24 +263,25 @@
 
 
     <div class="container my-5" id="youtube">
+        
         <header class="text-center mb-5">
             <h1 class="display-4" data-aos="fade-up">Chaînes YouTube</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Classées par matière pour vous y retrouver.</p>
         </header>
+
         <main>
+            
+            <h2 class="display-5 category-divider" data-aos="fade-up">Maths</h2>
+            
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 
                 <div class="col" data-aos="fade-up" data-aos-delay="200">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_l2oySHRjL1U-PgFnBDrE9i7ZTQVbmt0V5iSTFlEYM7Mw=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_l2oySHRjL1U-PgFnBDrE9i7ZTQVbmt0V5iSTFlEYM7Mw=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Maths Adultes</h5>
                       <p class="card-text text-muted">Cours de Maths (+ correction de sujet d'agreg en live tous les mercredis)</p>
-                      <a href="https://www.youtube.com/@MathsAdultes" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@MathsAdultes" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
@@ -282,15 +289,10 @@
                 <div class="col" data-aos="fade-up" data-aos-delay="300">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/7IwcFFulQhB3My8y5dYRwwn2HSWeV2gBW_BQL37FvAUOlrNbe-gpvU8HxeCzn10mq-eTNL2lf6k=s176-c-k-c0x00ffffff-no-rj-mo"
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.ggpht.com/7IwcFFulQhB3My8y5dYRwwn2HSWeV2gBW_BQL37FvAUOlrNbe-gpvU8HxeCzn10mq-eTNL2lf6k=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Cassou Math Prépa</h5>
                       <p class="card-text text-muted">Présentation et solution d'exercice de maths</p>
-                      <a href="https://www.youtube.com/@CassouMathPrepa" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@CassouMathPrepa" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
@@ -298,15 +300,10 @@
                 <div class="col" data-aos="fade-up" data-aos-delay="400">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/pKpTC2MI7GyLHQPiV7VQ6Iz-2Z7omg9qJRTQITcypreVw09P9TMfJfI58bH_Cov0PoFsmsmS=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.ggpht.com/pKpTC2MI7GyLHQPiV7VQ6Iz-2Z7omg9qJRTQITcypreVw09P9TMfJfI58bH_Cov0PoFsmsmS=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Maths*</h5>
                       <p class="card-text text-muted">Pour aller plus loin</p>
-                      <a href="https://www.youtube.com/@MathsEtoile" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@MathsEtoile" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
@@ -314,45 +311,32 @@
                 <div class="col" data-aos="fade-up" data-aos-delay="200">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_mzYO_s_b0qZjGE8Ub5sD0-LlcpjjsoImKsHNmUo3cCsA=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_mzYO_s_b0qZjGE8Ub5sD0-LlcpjjsoImKsHNmUo3cCsA=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Mathéma</h5>
                       <p class="card-text text-muted">Listes terriblement longue d'exercices de maths</p>
-                      <a href="https://www.youtube.com/@mathema-" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@mathema-" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
+
                 <div class="col" data-aos="fade-up" data-aos-delay="200">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/NevOJH9sCrbCn8c4sEuLk0Zdo69z2tdefLR0Wx35HPg1SWm4Mqr-esz5yLBwf-gBxH2pB_MSJw=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.ggpht.com/NevOJH9sCrbCn8c4sEuLk0Zdo69z2tdefLR0Wx35HPg1SWm4Mqr-esz5yLBwf-gBxH2pB_MSJw=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">PhiMaths</h5>
                       <p class="card-text text-muted">Même concept et DA que Maths*</p>
-                      <a href="https://www.youtube.com/@EnAvantMaths" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@EnAvantMaths" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
+
                 <div class="col" data-aos="fade-up" data-aos-delay="300">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_k1TkTALMoG6bJ7Xet9MKDI6sT1iomIHG_dr1BO8B2QFwg=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_k1TkTALMoG6bJ7Xet9MKDI6sT1iomIHG_dr1BO8B2QFwg=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Maths en prépa avec Hans Amble</h5>
                       <p class="card-text text-muted">Exercices de Maths plutôt accessibles (ENAC)</p>
-                      <a href="https://www.youtube.com/@prepa-maths" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@prepa-maths" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
@@ -360,91 +344,69 @@
                 <div class="col" data-aos="fade-up" data-aos-delay="400">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/De0SXcfqijUHLi2nQcD9GUIJA1p6OnA08ZGkCkLadldjzhV07rrGc3seujORe3HUKXtJpJXExA=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.ggpht.com/De0SXcfqijUHLi2nQcD9GUIJA1p6OnA08ZGkCkLadldjzhV07rrGc3seujORe3HUKXtJpJXExA=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Pi-Star Maths HD</h5>
                       <p class="card-text text-muted">Problèmes de maths très instructif et utiles</p>
-                      <a href="https://www.youtube.com/@Pistar74114" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@Pistar74114" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
+
                 <div class="col" data-aos="fade-up" data-aos-delay="400">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/DkE0PqthywZdukEZQrlodQAz6j_0EY17hZgM7LbwM8r9r3VsWjEw2TcBO3Kleh6EqXpKNwwT=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.ggpht.com/DkE0PqthywZdukEZQrlodQAz6j_0EY17hZgM7LbwM8r9r3VsWjEw2TcBO3Kleh6EqXpKNwwT=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">EPSILON NEGATIF</h5>
                       <p class="card-text text-muted">Présentation de problèmes de maths</p>
-                      <a href="https://www.youtube.com/@EPSILONNEGATIF" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@EPSILONNEGATIF" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
+
                 <div class="col" data-aos="fade-up" data-aos-delay="400">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/K6ydHizMRRXlQShhUUvBWZBGehh64TICKq8KAfY-DfXcW-o_SNBf4JgpSnajvwhLX3loHegNpw=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.ggpht.com/K6ydHizMRRXlQShhUUvBWZBGehh64TICKq8KAfY-DfXcW-o_SNBf4JgpSnajvwhLX3loHegNpw=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Øljen – Les maths en finesse</h5>
                       <p class="card-text text-muted">Cours de maths sup et spé avec des animations</p>
-                      <a href="https://www.youtube.com/@oljenmaths" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@oljenmaths" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
+
                 <div class="col" data-aos="fade-up" data-aos-delay="400">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/mtKVnKiKg0J_RXCFqp8jKrfHCcQSTlt8q4ZF60hYNvR-oTt-Hs-70J7yDNogNNZGsUbtqixJ=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.ggpht.com/mtKVnKiKg0J_RXCFqp8jKrfHCcQSTlt8q4ZF60hYNvR-oTt-Hs-70J7yDNogNNZGsUbtqixJ=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Téo VS la prépa</h5>
                       <p class="card-text text-muted">Beaucoup de corrections d’oraux de maths sup et spé</p>
-                      <a href="https://www.youtube.com/@teovslaprepa" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@teovslaprepa" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
+
                 <div class="col" data-aos="fade-up" data-aos-delay="400">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_lg23juKOJEO1d_e8fKwIunlihDfst1kkmLVG1aeY8UqYU=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_lg23juKOJEO1d_e8fKwIunlihDfst1kkmLVG1aeY8UqYU=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Phil Caldero</h5>
                       <p class="card-text text-muted">Cours et exo de maths jusqu’au niveau agreg</p>
-                      <a href="https://www.youtube.com/@philcaldero8964" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@philcaldero8964" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
-                
+
+            </div> <h2 class="display-5 category-divider" data-aos="fade-up">Physique-Chimie</h2>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            
                 <div class="col" data-aos="fade-up" data-aos-delay="200">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_mmraaNVx9Nbw9Y63v0MEor6pzGUHIJqnT7Enbfn6a6KQ=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_mmraaNVx9Nbw9Y63v0MEor6pzGUHIJqnT7Enbfn6a6KQ=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Physique Chimie Prépa</h5>
                       <p class="card-text text-muted">Cours de physique</p>
-                      <a href="https://www.youtube.com/@physiquechimieprepa" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@physiquechimieprepa" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
@@ -452,15 +414,10 @@
                 <div class="col" data-aos="fade-up" data-aos-delay="300">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_nm6eyW6D9Zwenkgl4mnmT62xqFkTyaL6yljc_exBGj_As=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.googleusercontent.com/ytc/AIdro_nm6eyW6D9Zwenkgl4mnmT62xqFkTyaL6yljc_exBGj_As=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Michel van Biezen</h5>
                       <p class="card-text text-muted">Cours de physique en anglais sur tous les thèmes</p>
-                      <a href="https://www.youtube.com/@MichelvanBiezen" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@MichelvanBiezen" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
@@ -468,15 +425,10 @@
                 <div class="col" data-aos="fade-up" data-aos-delay="400">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/juTPuxqQyTRfLlXDuCLCPMkfwV0r065wXa8xJZCfvvr21h3cfJEsNhzBv8yeTjRY7AkAZbliGg=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.ggpht.com/juTPuxqQyTRfLlXDuCLCPMkfwV0r065wXa8xJZCfvvr21h3cfJEsNhzBv8yeTjRY7AkAZbliGg=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Boyle Marmotte</h5>
                       <p class="card-text text-muted">Exercices corrigés de physique incroyables</p>
-                      <a href="https://www.youtube.com/@BoyleMarmotte" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@BoyleMarmotte" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
@@ -484,35 +436,46 @@
                 <div class="col" data-aos="fade-up" data-aos-delay="200">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/Kjy8DoahcSmwwf0t8TSliqXwZMdfGW6H9Fml9jobpc7AHdPgVkiANfS8GMRhcO_1c9HJjxLFXKM=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <img src="https://yt3.ggpht.com/Kjy8DoahcSmwwf0t8TSliqXwZMdfGW6H9Fml9jobpc7AHdPgVkiANfS8GMRhcO_1c9HJjxLFXKM=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
                       <h5 class="card-title">Physique avec Tristan</h5>
                       <p class="card-text text-muted">Idem</p>
-                      <a href="https://www.youtube.com/@PhysiqueavecTristan" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col" data-aos="fade-up" data-aos-delay="300">
-                  <div class="card h-100 shadow-sm text-center">
-                    <div class="card-body d-flex flex-column justify-content-between">
-                      <img src="https://yt3.ggpht.com/ftf8Ox92uZJBv7vQ5dUndTYSj44ka7URy4N0BLoY5tG0Ifqp31MbFYAO1oOMUONApUQgrg9phg=s176-c-k-c0x00ffffff-no-rj-mo" 
-                           class="rounded-circle mb-3 shadow-sm" 
-                           alt="Logo de la chaîne" 
-                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
-                      <h5 class="card-title">Guillaume Fraysse</h5>
-                      <p class="card-text text-muted">Cours et exercices S2I (plutôt pour les PCSI)</p>
-                      <a href="https://www.youtube.com/@fraysse-s2i" class="btn btn-danger" target="_blank">
-                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
-                      </a>
+                      <a href="https://www.youtube.com/@PhysiqueavecTristan" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
 
+            </div> <h2 class="display-5 category-divider" data-aos="fade-up">S2I (Sciences de l'Ingénieur)</h2>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card h-100 shadow-sm text-center">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <img src="https://yt3.ggpht.com/ftf8Ox92uZJBv7vQ5dUndTYSj44ka7URy4N0BLoY5tG0Ifqp31MbFYAO1oOMUONApUQgrg9phg=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <h5 class="card-title">Guillaume Fraysse</h5>
+                      <p class="card-text text-muted">Cours et exercices S2I (plutôt pour les PCSI)</p>
+                      <a href="https://www.youtube.com/@fraysse-s2i" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+            </div> <h2 class="display-5 category-divider" data-aos="fade-up">Français</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card h-100 shadow-sm text-center">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <img src="https://yt3.ggpht.com/dETFkXfIqMnXezbjwLv4bNN_haFKOjjL0szAlt3ha8vN9D23B-FsGysA3Km2bA2LGeKPhsjn5A=s176-c-k-c0x00ffffff-no-rj-mo" class="rounded-circle mb-3 shadow-sm" alt="Logo de la chaîne" style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <h5 class="card-title">Prépa Up</h5>
+                      <p class="card-text text-muted">Résumé des oeuvres (mis à jour tous les ans)</p>
+                      <a href="https://www.youtube.com/@Prepa-Up" class="btn btn-danger" target="_blank">Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div> <h2 class="display-5 category-divider" data-aos="fade-up">Anglais</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <p class="text-muted" data-aos="fade-up">Pas encore de chaînes pour cette catégorie...</p>
+                </div>
             </div> </main>
     </div>
 
