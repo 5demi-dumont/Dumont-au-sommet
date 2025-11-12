@@ -13,7 +13,7 @@
     <style>
         /* Gère l'image de fond (l'ancre) */
         body {
-            background-image: url('img/ancre.jpg');
+            background-image: url('img/ancre-removebg-preview.png');
             background-repeat: no-repeat;
             background-position: center center;
             background-attachment: fixed;
@@ -92,6 +92,26 @@
                 text-align: center !important;
             }
         }
+        [data-bs-theme="dark"] #presentation {
+            /* On change le fond blanc en gris très foncé */
+            background-color: #1a1a1a; 
+            /* On change le texte sombre en texte clair */
+            color: #eee;
+        }
+
+        /* On change aussi le texte du titre et le lien de la souris */
+        [data-bs-theme="dark"] #presentation h1,
+        [data-bs-theme="dark"] #presentation h2,
+        [data-bs-theme="dark"] #presentation .lead,
+        [data-bs-theme="dark"] .scroll-down-link {
+            color: #eee !important;
+        }
+
+        /* On change les boîtes blanches semi-transparentes... */
+        [data-bs-theme="dark"] .container {
+             /* ...en boîtes grises foncées semi-transparentes */
+            background-color: rgba(20, 20, 20, 0.95);
+        }
     </style>
 </head>
 
@@ -107,8 +127,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+          <ul class="navbar-nav ms-auto"> <li class="nav-item">
               <a class="nav-link" href="#presentation">Accueil</a>
             </li>
             <li class="nav-item">
@@ -120,7 +139,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#sites">Sites Utiles</a>
             </li>
-          </ul>
+            
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link" href="#" id="theme-toggle">
+                <i class="bi bi-sun-fill" id="theme-icon-sun"></i> <i class="bi bi-moon-stars-fill d-none" id="theme-icon-moon"></i> </a>
+            </li>
+            </ul>
         </div>
       </div>
     </nav>
@@ -348,7 +372,21 @@
                     </div>
                   </div>
                 </div>
-                
+                <div class="col" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card h-100 shadow-sm text-center">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <img src="https://yt3.ggpht.com/DkE0PqthywZdukEZQrlodQAz6j_0EY17hZgM7LbwM8r9r3VsWjEw2TcBO3Kleh6EqXpKNwwT=s176-c-k-c0x00ffffff-no-rj-mo" 
+                           class="rounded-circle mb-3 shadow-sm" 
+                           alt="Logo de la chaîne" 
+                           style="width: 90px; height: 90px; object-fit: cover; margin-left: auto; margin-right: auto;">
+                      <h5 class="card-title">EPSILON NEGATIF</h5>
+                      <p class="card-text text-muted">yfgbuy</p>
+                      <a href="https://www.youtube.com/@EPSILONNEGATIF" class="btn btn-danger" target="_blank">
+                        Voir la chaîne <i class="bi bi-box-arrow-up-right ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div class="col" data-aos="fade-up" data-aos-delay="200">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
@@ -555,6 +593,64 @@
     <script>
         // C'est la ligne magique qui active toutes les animations
         AOS.init(); 
+    
+        // --- DÉBUT DU SCRIPT POUR LE DARK MODE ---
+        
+        // On récupère les éléments dont on a besoin
+        const toggleButton = document.getElementById('theme-toggle');
+        const sunIcon = document.getElementById('theme-icon-sun');
+        const moonIcon = document.getElementById('theme-icon-moon');
+        const htmlElement = document.documentElement; // C'est la balise <html>
+
+        // Fonction pour appliquer un thème (dark/light)
+        function applyTheme(theme) {
+            htmlElement.setAttribute('data-bs-theme', theme);
+            if (theme === 'dark') {
+                sunIcon.classList.add('d-none'); // Cache le soleil
+                moonIcon.classList.remove('d-none'); // Montre la lune
+            } else {
+                sunIcon.classList.remove('d-none'); // Montre le soleil
+                moonIcon.classList.add('d-none'); // Cache la lune
+            }
+        }
+
+        // Écouteur de clic sur le bouton
+        toggleButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Empêche le lien de sauter
+            
+            // On vérifie le thème actuel
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            // On choisit le nouveau thème
+            const newTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            
+            // On applique le nouveau thème
+            applyTheme(newTheme);
+            // On sauvegarde le choix dans le navigateur
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Fonction pour charger le thème au démarrage
+        function loadTheme() {
+            // 1. On regarde si l'utilisateur a déjà fait un choix
+            const savedTheme = localStorage.getItem('theme');
+            
+            // 2. Sinon, on regarde la préférence de son système (Windows, Mac, Android...)
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme) {
+                applyTheme(savedTheme); // On applique le choix sauvegardé
+            } else if (prefersDark) {
+                applyTheme('dark'); // On applique la préférence système
+            } else {
+                applyTheme('light'); // Par défaut, on met le mode lumineux
+            }
+        }
+
+        // On lance la fonction de chargement au démarrage de la page
+        loadTheme();
+        
+        // --- FIN DU SCRIPT POUR LE DARK MODE ---
+
     </script>
 
 </body>
