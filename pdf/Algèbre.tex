@@ -5313,8 +5313,17 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\subsection{$P(A)$ nilpotente}
 	\label{P(A) nilpotente corrigé}
 	\textcolor{blue}{\hyperref[P(A) nilpotente]{[Enoncé]}}\\
-	
-	
+	On sait que $A$ est trigonalisable dans $\M_n(\C)$.\\
+	On note $\lambda_1,\dots,\lambda_n$ les valeurs propres de $A$ sans se soucier de leurs multiplicités.\\
+	On remarque que pour tout $P\in\C[X]$, on a : 
+	\[P(A)\sim\begin{pmatrix}
+		P(\lambda_1) & & & \\
+		0&P(\lambda_2)& *& \\
+		\vdots& \ddots& \ddots & \\
+		0&\dots &0 & P(\lambda_n)
+	\end{pmatrix}\]
+	Ainsi, les valeurs propres de $P(A)$ sont les $P(\lambda_i)$.
+	Pour que $P(A)$ soit nilpotent, il est donc nécessaire et suffisant que \[\text{Sp}(A)\subset \{x\in \C, P(x)=0\}\] autrement dit que les valeurs propres de $A$ soient racines de $P$.
 	
 	\newpage
 \section{Correction Déterminant}

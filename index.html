@@ -44,7 +44,7 @@
             align-items: center;
             text-align: center;
             color: #333;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            background-color: #ffffff; /* <-- AJOUTEZ CETTE LIGNE */
         }
 
         /* Style de la flèche de scroll animée */
@@ -62,6 +62,35 @@
             0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
             40% { transform: translateY(-20px); }
             60% { transform: translateY(-10px); }
+        }
+
+        /* --- NOUVEAU CSS POUR LA GARDE EN 2 COLONNES --- */
+        #presentation .container-fluid {
+            padding-top: 70px; /* Évite que la navbar ne recouvre le contenu */
+            padding-bottom: 70px;
+        }
+
+        #presentation img {
+            max-width: 80%; /* L'image ne prendra pas plus de 90% de la largeur de sa colonne */
+            height: auto;
+            transition: all 0.5s ease-in-out; 
+        }
+        
+        /* Styles pour un effet d'ombre sur le texte */
+        .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        /* Police pour l'image et le titre */
+        #presentation h1 {
+            font-size: 3.5rem; /* Ajuste la taille du titre */
+        }
+
+        /* Sur les petits écrans, centre le texte */
+        @media (max-width: 768px) {
+            #presentation .text-md-start {
+                text-align: center !important;
+            }
         }
     </style>
 </head>
@@ -96,8 +125,32 @@
       </div>
     </nav>
     <section id="presentation">
-        <h1 class="display-1" data-aos="fade-down">Héritage des 5/2</h1>
-        <p class="lead" data-aos="fade-up" data-aos-delay="100">Documents et ressources</p>
+        <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+            <div class="row w-100 align-items-center text-center text-md-start">
+                
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center" data-aos="fade-right">
+                    
+                    <img src="img/Armoiries_de_Toulon.png" class="img-fluid mb-3" alt="Image de garde">
+                    
+                    <h1 class="display-3 fw-bold text-dark text-shadow-sm" style="font-family: 'Georgia', serif;">Héritage 5/2</h1>
+                </div>
+                
+                <div class="col-12 col-md-6 text-center text-md-start" data-aos="fade-left" data-aos-delay="200">
+                    <h2 class="display-5 fw-light text-dark mb-4">Bienvenue !</h2>
+                    <p class="lead text-muted">
+                        Vous voilà en possession d'un trésor inimaginable : L'Héritage des 5/2. Une collection de documents et de secrets que nous sommes prêts à
+                        vous partager pour vous aider dans votre aventure à Dumont d'Urvile. Explorez, téléchargez, et laissez-vous guider par ces ressources précieuses.<br>
+                        Bonne chance, et que l'héritage vous soit favorable !
+
+                    </p>
+                    <a href="#contenu" class="btn btn-primary btn-lg mt-4">
+                        Accéder aux ressources
+                        <i class="bi bi-arrow-down-circle ms-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
         
         <a href="#contenu" class="scroll-down-link">
             <i class="bi bi-mouse display-4"></i>
@@ -108,7 +161,6 @@
     <div class="container my-5" id="contenu">
         <header class="text-center mb-5">
             <h1 class="display-4" data-aos="fade-up">Les Documents</h1>
-            
         </header>
         <main>
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -117,7 +169,7 @@
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <i class="bi bi-file-earmark-pdf-fill display-3 text-danger mb-3"></i>
-                      <h5 class="card-title">Tome I : Analyse</h5>
+                      <h5 class="card-title">Tome I : Algèbre</h5>
                       <p class="card-text text-muted">PDF - Analyse</p>
                       <a href="pdf/Analyse.pdf" class="btn btn-primary" download>
                         <i class="bi bi-download me-2"></i>Télécharger
@@ -383,7 +435,7 @@
             </div> </main>
     </div>
 
-
+            
     <div class="container my-5" id="sites">
         <header class="text-center mb-5">
             <h1 class="display-4" data-aos="fade-up">Sites Utiles</h1>
@@ -396,7 +448,6 @@
                   <h5 class="mb-1">WolframAlpha</h5>
                   <i class="bi bi-box-arrow-up-right"></i>
                 </div>
-                <p class="mb-1">Le moteur de calcul ultime. Pour vérifier n'importe quelle intégrale, dérivée, ou tracer des fonctions complexes.</p>
               </a>
               
               <a href="https://www.geogebra.org/" class="list-group-item list-group-item-action" target="_blank" data-aos="fade-up" data-aos-delay="300">
@@ -404,7 +455,6 @@
                   <h5 class="mb-1">GeoGebra</h5>
                   <i class="bi bi-box-arrow-up-right"></i>
                 </div>
-                <p class="mb-1">Excellent pour visualiser la géométrie, les courbes paramétrées et les fonctions 3D.</p>
               </a>
               <a href="https://www.doc-solus.fr/" class="list-group-item list-group-item-action" target="_blank" data-aos="fade-up" data-aos-delay="300">
                 <div class="d-flex w-100 justify-content-between">
@@ -465,6 +515,8 @@
             </div>
         </main>
     </div>
+        </main>
+    </div>
 
     <footer class="container my-5 text-center text-muted">
         <p>© 2025 - Dumont d'Urville</p>
@@ -488,12 +540,11 @@
                     <i class="bi bi-github ms-1"></i>
                 </a>
             </p>
-            </div>
-            <div class="mt-3">
-             <a href="mailto:heritage.5demi@proton.me" class="h4 text-muted" title="Nous contacter">
-                <i class="bi bi-envelope-fill"></i>
-             </a>
-        
+            <p class="mb-1">
+    Pour nous contacter : 
+    <a href="mailto:heritage52.dumont@proton.me">heritage52.dumont@proton.me</a>
+</p>
+                
         </div>
         
         <p class="mt-4">
