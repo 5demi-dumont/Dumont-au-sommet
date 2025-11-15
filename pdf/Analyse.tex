@@ -4603,8 +4603,25 @@ Alors, on a l'équivalence :
 		\textcolor{blue}{\hyperref[Calcul d'une somme de série 3]{[Enoncé]}}\\
 	
 	\subsection{Problème de Bâle}\label{sec:probleme-de-bale}
-		\textcolor{blue}{\hyperref[Problème de Bâle]{[Enoncé]}}\\
+		\textcolor{blue}{\hyperref[Problème de Bâle]{[Enoncé]}}
 	\subsubsection{Lemme de Riemann-Lebesgue}
+	\begin{enumerate}[leftmargin=*]
+		\item cf. $\ref{Lemme de Riemann-Lebesgue : cas des fonction C1}$. Il suffira ensuite de prendre la partie réelle et la partie imaginaire pour obtenir le résultat.
+		\item Soit $n\in\N^*$.\\
+		Par intégration par parties, on a 
+		\[\int_{0}^{\pi}x\cos(nx)dx=\frac{-1+(-1)^n}{n^2}\]
+		et \[\int_{0}^{\pi}x^2\cos(nx)dx=\frac{2(-1)^n\pi}{n^2}\]
+		Il suffit donc de prendre $u=-1$ et $v=\frac{1}{2\pi}$ pour avoir 
+		\[\int_{0}^{pi}(ax+bx^2)\cos(nx)dx=\frac{1}{n^2}\]
+		\item $\varphi$ est une fonction de classe $\mathcal{C}^1$ sur $]0,\pi]$.\\
+		De plus, $\lim\limits_{x\to 0}\varphi(x)=2$ car $\sin\left(\frac{x}{2}\right)\underset{x\to 0}{\sim}\frac{x}{2}$.\\
+		Pour tout $x\in]0,1]$, \[\varphi'(x)=\frac{\sin\left(\frac{x}{2}\right)-\frac{x}{2}\cos\left(\frac{x}{2}\right)}{\sin^2\left(\frac{x}{2}\right)}\]
+		On sait que $\sin\left(\frac{x}{2}\right)=\frac{x}{2}+\o_{x\to 0}(x^2)$ et $\cos\left(\frac{x}{2}\right)=1+\o_{x\to 0}(x)$ donc 
+		\[\varphi'(x)=\o_{x\to 0}(1)\]
+		et donc \[\lim\limits_{x\to 0}\varphi'(x)=0\]
+		
+		
+	\end{enumerate}
 	\subsubsection{Série de fonctions}
 	\subsubsection{Série entière}
 	\subsection{Nombre moyen de diviseurs d'un entier \etoile{4}}\label{sec:nombre-moyen-de-diviseurs-dun-entier-etoile4}
@@ -8138,6 +8155,7 @@ Alors, on a l'équivalence :
 	\subsection{Gradient et différentielle du déterminant}\label{sec:gradient-et-differentielle-du-determinant}
 		\textcolor{blue}{\hyperref[Gradient et différentielle du déterminant]{[Enoncé]}}\\
 	\subsection{Espace tangent aux matrices orthogonales en l'identité}\label{sec:espace-tangent-aux-matrices-orthogonales-en-lidentite}
+	\textcolor{blue}{\hyperref[Espace tangent aux matrices orthogonales en l'identité]{[Enoncé]}}\\
 	Soit $A\in \mathcal A_n(\R)$. On pose $f:t\in \R\mapsto e^{tA}$.\\
 	Par continuité de la transposition, qui est linéaire sur $\M_n(\R)$, un espace vectoriel normé de dimension finie,\\
 	$\forall t\in \R,\ \left(e^{tA}\right)^\top=e^{(tA)^\top}=e^{-tA}=\left(e^{tA}\right)^{-1}$.\\
