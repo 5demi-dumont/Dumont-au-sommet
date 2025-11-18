@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.22)  18 NOV 2025 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.22)  18 NOV 2025 19:31
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./Analyse.tex
-(Analyse.tex
+**"c:/Users/marco/OneDrive/Bureau/HÃ©ritage des 52/Dumont-au-sommet/pdf/Analyse.tex"
+(c:/Users/marco/OneDrive/Bureau/HÃ©ritage des 52/Dumont-au-sommet/pdf/Analyse.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -23,34 +24,25 @@ File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-)
-(usepackage.tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (usepackage.tex (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -58,25 +50,21 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen143
-))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen144
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count196
@@ -126,8 +114,7 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\yhmath.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\yhmath.sty
 Package: yhmath 2020/03/17 v1.6
 \symyhlargesymbols=\mathgroup6
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 29.
@@ -160,22 +147,17 @@ LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 95.
 LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 97.
 LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 99.
 LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 101.
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup7
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\eucal.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\eucal.sty
 Package: eucal 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/mathdots\mathdots.sty
-Package: mathdots 2014/06/11 v0.9 Improve and add various macros for dots in ma
-th.
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/mathdots\mathdots.sty
+Package: mathdots 2014/06/11 v0.9 Improve and add various macros for dots in math.
 \MDo@unit=\dimen152
 \MDo@dotsbox=\box53
 \MDoprekern=\muskip17
@@ -192,14 +174,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 (Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count274
@@ -214,11 +193,8 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen159
 \Gm@layoutvoffset=\dimen160
 \Gm@dimlist=\toks24
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
-
 \f@nch@headwidth=\skip53
 \f@nch@offset@elh=\skip54
 \f@nch@offset@erh=\skip55
@@ -234,26 +210,20 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip65
 \f@nch@widthR=\skip66
 \@temptokenb=\toks25
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
 Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
-
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex
- v1.42, 2010/05/14 <tvz>
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex  v1.42, 2010/05/14 <tvz>
 \multido@count=\count277
 \multidocount=\count278
 \multido@stuff=\toks26
 )
 File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count279
 \U@D=\dimen161
 \l@unhyphenated=\language79
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count280
 
@@ -261,15 +231,10 @@ Package: babel 2024/01/07 v24.1 The Babel package
 * Local config file bblopts.cfg used
 *
 (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.l
-df
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.ldf
 Language: french 2025-08-15 v4.0e French support from the babel system
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french3.
-ldf
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french3.ldf
 Language: french 2025-08-15 v3.7e French support from the babel system
 \FB@stdchar=\count281
 Package babel Info: Making : an active character on input line 273.
@@ -292,14 +257,10 @@ Package babel Info: Making ? an active character on input line 276.
 \leftmarginFB=\dimen168
 \parindentFFN=\dimen169
 \FBfnindent=\dimen170
-)))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
--french.tex
+))) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel-french.tex
 Package babel Info: Importing font and identification data for french
 (babel)             from babel-fr.ini. Reported on input line 11.
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip67
 \enit@outerparindent=\dimen171
@@ -307,80 +268,55 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box54
 \enit@count@id=\count288
 \enitdp@description=\count289
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
-.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
-lestring.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count290
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count291
 )
 \@linkdim=\dimen172
 \Hy@linkcounter=\count292
 \Hy@pagecounter=\count293
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count294
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -393,21 +329,16 @@ Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4448.
 \c@Hy@tempcnt=\count295
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip20
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4786.
 \XeTeXLinkMargin=\dimen173
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
-.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count296
 \Field@Width=\dimen174
@@ -419,8 +350,7 @@ Package hyperref Info: backreferencing OFF on input line 6080.
 Package hyperref Info: Link coloring OFF on input line 6085.
 Package hyperref Info: Link coloring with OCG OFF on input line 6090.
 Package hyperref Info: PDF/A mode OFF on input line 6095.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -429,34 +359,25 @@ package with kernel methods
 \c@Hfootnote=\count299
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
 \Fld@listcount=\count300
 \c@bookmark@seq@number=\count301
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
-echeck.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
-ounter.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-84.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip68
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
 Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
@@ -464,57 +385,29 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
 \big@size=\dimen176
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
 Package: lastpage 2025/08/14 v2.1h lastpage: 2.09 or 2e? (HMM)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
-Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (H
-MM)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpageclassi
-c.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (HMM)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpageclassic.sty
 Package: lastpageclassic 2025/08/14 v2.1h Refers to last page's name (HMM; JPG)
-
 ) 
-))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
-sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
-y
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--common.tex
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks29
 \pgfutil@tempdima=\dimen177
 \pgfutil@tempdimb=\dimen178
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--latex.def
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box55
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
-code.tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
-sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
-sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks30
 \pgfkeys@temptoks=\toks31
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-libraryfiltered.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks32
 ))
 \pgf@x=\dimen179
@@ -537,39 +430,27 @@ libraryfiltered.code.tex
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
 \pgf@sys@id@count=\count306
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
-fg
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-pdftex.def
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-common-pdf.def
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-ssoftpath.code.tex
+))) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count307
 \pgfsyssoftpath@bigbuffer@items=\count308
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-sprotocol.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
@@ -579,52 +460,18 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-e.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
-code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
-r.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen189
 \pgfmath@count=\count309
 \pgfmath@box=\box56
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
 \pgfmath@stack@operation=\toks38
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.basic.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.trigonometric.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.random.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.comparison.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.base.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.round.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.misc.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.integerarithmetics.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
-code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
-.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count310
-))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
-tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epoints.code.tex
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen190
 \pgf@picmaxx=\dimen191
@@ -640,130 +487,75 @@ File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yy=\dimen257
 \pgf@zx=\dimen258
 \pgf@zy=\dimen259
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathconstruct.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@path@lastx=\dimen260
 \pgf@path@lasty=\dimen261
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathusage.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen262
 \pgf@shorten@start@additional=\dimen263
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-escopes.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
 \pgf@picture@serial@count=\count311
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-egraphicstate.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen264
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransformations.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen265
 \pgf@pt@y=\dimen266
 \pgf@pt@temp=\dimen267
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-equick.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eobjects.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathprocessing.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-earrows.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen268
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eshade.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen269
 \pgf@sys@shading@range@num=\count312
 \pgf@shadingcount=\count313
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eimage.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eexternal.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box60
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-elayers.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransparency.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epatterns.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-erdf.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-shapes.code.tex
+))) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box61
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-plot.code.tex
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-0-65.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepstart=\dimen270
 \pgf@nodesepend=\dimen271
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-1-18.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
-y
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
-ty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
-code.tex
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen272
 \pgffor@skip=\dimen273
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
-))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z\tikz.code.tex
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
-aryplothandlers.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count314
 \pgfplotmarksize=\dimen274
@@ -784,52 +576,35 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofchildren=\count316
 \tikznumberofcurrentchild=\count317
 \tikz@fig@count=\count318
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-matrix.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count319
 \pgfmatrixcurrentcolumn=\count320
 \pgf@matrix@numberofcolumns=\count321
 )
 \tikz@expandcount=\count322
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibrarytopaths.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/tkz-tab\tkz-tab.sty
+))) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/tkz-tab\tkz-tab.sty
 Package: tkz-tab 2020/04/29 v2.12c variations (ctan version)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks41
 \XKV@tempa@toks=\toks42
 )
 \XKV@depth=\count323
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibraryarrows.code.tex
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
-aryarrows.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \arrowsize=\dimen283
-))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibrarypatterns.code.tex
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
-arypatterns.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
 File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 \tkz@XF=\dimen284
@@ -846,8 +621,7 @@ File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@tkz@cnt@pair=\count333
 \c@tkz@cnt@impair=\count334
 \c@tkz@cnt@aw=\count335
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box66
 \beforetitleunit=\skip69
@@ -858,9 +632,7 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen288
 \titlewidthlast=\dimen289
 \titlewidthfirst=\dimen290
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/changepage\changepage.s
-ty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/changepage\changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count336
 \cp@tempcnt=\count337
@@ -868,16 +640,13 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks44
 \inpenc@posthook=\toks45
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen291
 \ESO@tempdimb=\dimen292
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count338
 \lst@gtempboxa=\box67
 \lst@token=\toks46
@@ -890,21 +659,18 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 \lst@newlines=\count342
 \lst@lineno=\count343
 \lst@maxwidth=\dimen296
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 \c@lstnumber=\count344
 \lst@skipnumbers=\count345
 \lst@framebox=\box68
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.st
-y
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip71
 \mylen=\skip72
@@ -913,13 +679,9 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \py=\skip75
 \pyy=\skip76
 \pxx=\skip77
-) (fonction.tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibraryshapes.geometric.code.tex
+) (fonction.tex (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
-pgflibraryshapes.geometric.code.tex
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 Package french3.ldf Info: Setting StandardItemizeEnv=true for
@@ -928,9 +690,7 @@ Package french3.ldf Info: Setting StandardItemizeEnv=true for
 Package french3.ldf Info: Setting StandardEnumerateEnv=true for
 (french3.ldf)             compatibility with enumitem package,
 (french3.ldf)             reported on input line 26.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count346
 \l__pdf_internal_box=\box69
@@ -955,9 +715,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count347
 \scratchdimen=\dimen297
@@ -970,23 +728,16 @@ ii
 \MPnumerator=\count351
 \makeMPintoPDFobject=\count352
 \everyMPtoPDFconversion=\toks48
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
@@ -1038,15 +789,12 @@ Package pdftex.def Info: Minerve-Meduse.jpg  used on input line 42.
 <lycee_dumont_urville-1-copie.jpg, id=1575, 488.82625pt x 190.7125pt>
 File: lycee_dumont_urville-1-copie.jpg Graphic file (type jpg)
 <use lycee_dumont_urville-1-copie.jpg>
-Package pdftex.def Info: lycee_dumont_urville-1-copie.jpg  used on input line 5
-1.
+Package pdftex.def Info: lycee_dumont_urville-1-copie.jpg  used on input line 51.
 (pdftex.def)             Requested size: 119.50279pt x 46.62166pt.
  [0
 
-{C:/Users/marco/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Minerve-Me
-duse.jpg> <./lycee_dumont_urville-1-copie.jpg>]
-pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has 
-been already used, duplicate ignored
+{C:/Users/marco/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Minerve-Meduse.jpg> <./lycee_dumont_urville-1-copie.jpg>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.64 	\newpage
@@ -1076,8 +824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.82 	\newpage
@@ -1087,34 +834,24 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 84.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
-
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
-
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
-84.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\omxyhex.fd
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 84.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\omxyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 84
-.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 84.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 8
-4.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 84.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
 Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
@@ -1122,25 +859,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--86
 [1] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-06.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 106.
  (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) (Analyse.toc [3] [4]
 LaTeX Font Info:    Trying to load font information for U+eus on input line 93.
-
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueus.fd
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-)
-[5] [6] [7] [8] [9] [10] [11])
+) [5] [6] [7] [8] [9] [10] [11])
 \tf@toc=\write5
 \openout5 = `Analyse.toc'.
 
  [12]
 Chapitre I.
-LaTeX Font Info:    Trying to load font information for OT1+pzc on input line 1
-09.
+LaTeX Font Info:    Trying to load font information for OT1+pzc on input line 109.
 (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pzc.fd
 File: ot1pzc.fd 2020/03/25 font definitions for OT1/pzc.
 )
@@ -1220,11 +952,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Overfull \hbox (4.1998pt too wide) in paragraph at lines 263--265
-\T1/cmr/m/n/10 On sou-haite dé-mon-trer la for-mule d'in-ver-sion de Pas-cal : 
-$\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 p \OMS/cmsy/m/n/10 2 \U/stmry/m/n/10 J\OT1/
-cmr/m/n/10 0; \OML/cmm/m/it/10 n\U/stmry/m/n/10 K\OML/cmm/m/it/10 ;  a[] \OT1/c
-mr/m/n/10 = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][]\OML/cmm/m/it/10 b[]$\
-T1/cmr/m/n/10 . 
+\T1/cmr/m/n/10 On sou-haite dé-mon-trer la for-mule d'in-ver-sion de Pas-cal : $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 p \OMS/cmsy/m/n/10 2 \U/stmry/m/n/10 J\OT1/cmr/m/n/10 0; \OML/cmm/m/it/10 n\U/stmry/m/n/10 K\OML/cmm/m/it/10 ;  a[] \OT1/cmr/m/n/10 = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][]\OML/cmm/m/it/10 b[]$\T1/cmr/m/n/10 . 
  []
 
 [17]
@@ -1273,13 +1001,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Overfull \hbox (29.14592pt too wide) detected at line 347
-[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 ) = [][
-] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cm
-m/m/it/10 dt \OT1/cmr/m/n/10 + [](\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m
-/it/10 m\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
- n\OT1/cmr/m/n/10 )) + [] [] [] + [] [][] [](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 
-)\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/c
-mm/m/it/10 dt
+[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 + [](\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 )) + [] [] [] + [] [][] [](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt
  []
 
 
@@ -1482,10 +1204,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [32]
 Overfull \hbox (7.87122pt too wide) in paragraph at lines 698--699
-[]\T1/cmr/m/n/10 Soit $\OML/cmm/m/it/10 f$ \T1/cmr/m/n/10 une ap-pli-ca-tion un
-i-for-mé-ment conti-nue de $\U/msb/m/n/10 R[]$ \T1/cmr/m/n/10 dans $\U/msb/m/n/
-10 R$ \T1/cmr/m/n/10 telle que l'in-té-grale $[][] \OML/cmm/m/it/10 f\OT1/cmr/m
-/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt$
+[]\T1/cmr/m/n/10 Soit $\OML/cmm/m/it/10 f$ \T1/cmr/m/n/10 une ap-pli-ca-tion uni-for-mé-ment conti-nue de $\U/msb/m/n/10 R[]$ \T1/cmr/m/n/10 dans $\U/msb/m/n/10 R$ \T1/cmr/m/n/10 telle que l'in-té-grale $[][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt$
  []
 
 
@@ -1586,10 +1305,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Overfull \hbox (4.16629pt too wide) in paragraph at lines 1006--1007
-[]$[]$ \T1/cmr/m/n/10 : On sup-pose que $[] \OML/cmm/m/it/10 f \OT1/cmr/m/n/10 
-= \OML/cmm/m/it/10 l \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R$\T1/cmr/m/n/10 . Mon-tr
-er que $[] \OML/cmm/m/it/10 pF\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/1
-0 ) =
+[]$[]$ \T1/cmr/m/n/10 : On sup-pose que $[] \OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 l \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R$\T1/cmr/m/n/10 . Mon-trer que $[] \OML/cmm/m/it/10 pF\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 ) =
  []
 
 
@@ -1808,8 +1524,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\etoile' on input line 1201.
 
 
-LaTeX Warning: Reference `ThÃ©orÃ¨me de Froda' on page 47 undefined on input li
-ne 1209.
+LaTeX Warning: Reference `ThÃ©orÃ¨me de Froda' on page 47 undefined on input line 1209.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1854,9 +1569,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Overfull \hbox (3.54645pt too wide) in paragraph at lines 1326--1327
-[]\T1/cmr/m/n/10 A l'aide de la for-mule de Tay-lor, mon-trer que pour tout $\O
-ML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ; B[] \OT1/
-cmr/m/n/10 = [] []\OML/cmm/m/it/10 b[]X[]$\T1/cmr/m/n/10 . 
+[]\T1/cmr/m/n/10 A l'aide de la for-mule de Tay-lor, mon-trer que pour tout $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ; B[] \OT1/cmr/m/n/10 = [] []\OML/cmm/m/it/10 b[]X[]$\T1/cmr/m/n/10 . 
  []
 
 
@@ -1943,10 +1656,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Overfull \hbox (7.81654pt too wide) in paragraph at lines 1638--1639
-[]\T1/cmr/m/n/10 Soit $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N[]$
-\T1/cmr/m/n/10 . Mon-trer qu'il existe un unique po-ly-nôme $\OML/cmm/m/it/10 A
-[] \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cm
-r/m/n/10 ]$ \T1/cmr/m/n/10 tel que $\OML/cmm/m/it/10 A[] [] \OT1/cmr/m/n/10 =
+[]\T1/cmr/m/n/10 Soit $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N[]$\T1/cmr/m/n/10 . Mon-trer qu'il existe un unique po-ly-nôme $\OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ]$ \T1/cmr/m/n/10 tel que $\OML/cmm/m/it/10 A[] [] \OT1/cmr/m/n/10 =
  []
 
 [61]
@@ -1960,12 +1670,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Overfull \hbox (17.89452pt too wide) in paragraph at lines 1666--1667
-[]\T1/cmr/m/n/10 Soient $\OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R$
- \T1/cmr/m/n/10 et $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 C[]\OT1
-/cmr/m/n/10 (]\OML/cmm/m/it/10 a; \OT1/cmr/m/n/10 +\OMS/cmsy/m/n/10 1\OT1/cmr/m
-/n/10 [\OML/cmm/m/it/10 ; \U/msb/m/n/10 R\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 . On 
-dé-fi-nit $\OT1/cmr/m/n/10 ^^A(\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ) : []$\T1/cmr
-/m/n/10 .
+[]\T1/cmr/m/n/10 Soient $\OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R$ \T1/cmr/m/n/10 et $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 C[]\OT1/cmr/m/n/10 (]\OML/cmm/m/it/10 a; \OT1/cmr/m/n/10 +\OMS/cmsy/m/n/10 1\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 ; \U/msb/m/n/10 R\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 . On dé-fi-nit $\OT1/cmr/m/n/10 ^^A(\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ) : []$\T1/cmr/m/n/10 .
  []
 
 
@@ -2189,19 +1894,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2687--2689
 
 
 Overfull \hbox (12.86324pt too wide) in paragraph at lines 2690--2691
-[]\T1/cmr/m/n/10 Soit $[] \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 U[]$\T1/cmr/m/n/10 .
- Mon-trer que $[]$ est une va-leur d'adhé-rence de la suite $[][]$. 
+[]\T1/cmr/m/n/10 Soit $[] \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 U[]$\T1/cmr/m/n/10 . Mon-trer que $[]$ est une va-leur d'adhé-rence de la suite $[][]$. 
  []
 
 [100] [101]
 Overfull \hbox (1.23431pt too wide) in paragraph at lines 2755--2757
-\T1/cmr/m/n/10 On consi-dère les es-paces vec-to-riels nor-més $\OML/cmm/m/it/1
-0 E \OT1/cmr/m/n/10 = (\U/eus/m/n/10 C[]\OT1/cmr/m/n/10 ([0\OML/cmm/m/it/10 ; \
-OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ; \U/msb/m/n/10 R\OT1/cmr/m/n/10 )\OML/cmm/m/
-it/10 ; [][]\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 et $\OML/cmm/m/it/10 F \OT1/cmr/m
-/n/10 = (\U/eus/m/n/10 C[]\OT1/cmr/m/n/10 ([0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
- 1]\OML/cmm/m/it/10 ; \U/msb/m/n/10 R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [][]\O
-T1/cmr/m/n/10 )$
+\T1/cmr/m/n/10 On consi-dère les es-paces vec-to-riels nor-més $\OML/cmm/m/it/10 E \OT1/cmr/m/n/10 = (\U/eus/m/n/10 C[]\OT1/cmr/m/n/10 ([0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ; \U/msb/m/n/10 R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [][]\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 et $\OML/cmm/m/it/10 F \OT1/cmr/m/n/10 = (\U/eus/m/n/10 C[]\OT1/cmr/m/n/10 ([0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ; \U/msb/m/n/10 R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [][]\OT1/cmr/m/n/10 )$
  []
 
 
@@ -2317,13 +2015,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3160--3161
 
 [113]
 Overfull \hbox (19.69043pt too wide) in paragraph at lines 3163--3164
-[]\T1/cmr/m/n/10 Montrer que $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 M \OMS/cmsy/m/
-n/10 2 \U/eus/m/n/10 M[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 K\OT1/cmr/m/n/10 )\OML/c
-mm/m/it/10 ; \OMS/cmsy/m/n/10 8\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 U; V\OT1/cmr/m
-/n/10 ) \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 M[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 K\OT
-1/cmr/m/n/10 )[]\OML/cmm/m/it/10 ;  [] [] \OT1/cmr/m/n/10 = [] [] + \OML/cmm/m/
-it/10 V[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/
-10 U$ 
+[]\T1/cmr/m/n/10 Montrer que $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 M[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 K\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 8\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 U; V\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 M[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 K\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 ;  [] [] \OT1/cmr/m/n/10 = [] [] + \OML/cmm/m/it/10 V[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 U$ 
  []
 
 
@@ -2417,9 +2109,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3289--3290
 
 [117]
 Overfull \hbox (158.92973pt too wide) in paragraph at lines 3319--3321
-[]\T1/cmr/m/n/10 On sou-haite mon-trer pour toute ma-trice $\OML/cmm/m/it/10 A$
- \T1/cmr/m/n/10 la pro-po-si-tion $\U/eus/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/i
-t/10 A\OT1/cmr/m/n/10 ) : "[]"$\T1/cmr/m/n/10 .
+[]\T1/cmr/m/n/10 On sou-haite mon-trer pour toute ma-trice $\OML/cmm/m/it/10 A$ \T1/cmr/m/n/10 la pro-po-si-tion $\U/eus/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) : "[]"$\T1/cmr/m/n/10 .
  []
 
 
@@ -2437,8 +2127,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\etoile' on input line 3334.
 
 
-LaTeX Warning: Reference `Matrices de permutation' on page 118 undefined on inp
-ut line 3337.
+LaTeX Warning: Reference `Matrices de permutation' on page 118 undefined on input line 3337.
 
 [118] [119] [120
 
@@ -2456,8 +2145,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3368--3369
 
 [121]
 Overfull \hbox (0.63852pt too wide) in paragraph at lines 3395--3395
-|[]\T1/cmr/bx/n/14.4 Equation fonc-tion-nelle de l'ex-po-nen-tielle ma-tri-ciel
-le
+|[]\T1/cmr/bx/n/14.4 Equation fonc-tion-nelle de l'ex-po-nen-tielle ma-tri-cielle
  []
 
 
@@ -2512,8 +2200,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [123]
 Overfull \hbox (11.3121pt too wide) in paragraph at lines 3455--3455
-|[]\T1/cmr/bx/n/14.4 Condition de conti-nuité sur un es-pace vec-to-riel normé|
- 
+|[]\T1/cmr/bx/n/14.4 Condition de conti-nuité sur un es-pace vec-to-riel normé| 
  []
 
 
@@ -2636,17 +2323,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4130--4134
 
 ] [148]
 Overfull \hbox (20.55846pt too wide) in paragraph at lines 4162--4165
-[] \OT1/cmr/m/n/10 = [] = [] \OMS/cmsy/m/n/10 ^^T [] []j\OML/cmm/m/it/10 "[]\OM
-S/cmsy/m/n/10 j$\T1/cmr/m/n/10 . 
+[] \OT1/cmr/m/n/10 = [] = [] \OMS/cmsy/m/n/10 ^^T [] []j\OML/cmm/m/it/10 "[]\OMS/cmsy/m/n/10 j$\T1/cmr/m/n/10 . 
  []
 
 
 Overfull \hbox (0.21pt too wide) in paragraph at lines 4166--4169
-\T1/cmr/m/n/10 Ainsi $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^U
- \OML/cmm/m/it/10 N; [] \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 C []\OT1/cmr/m/n/
-10 ([](\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/
-10 (\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)) = \OML/cmm/m/it
-/10 C [] []$\T1/cmr/m/n/10 . 
+\T1/cmr/m/n/10 Ainsi $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 N; [] \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 C []\OT1/cmr/m/n/10 ([](\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)) = \OML/cmm/m/it/10 C [] []$\T1/cmr/m/n/10 . 
  []
 
 [149]
@@ -2674,9 +2356,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4203--4204
 
 
 Overfull \hbox (27.50882pt too wide) detected at line 4210
-[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^M \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it
-/10 v[] [] [] \OMS/cmsy/m/n/10 ^^@[] \OT1/cmr/m/n/10 = [] [] [] = \OMS/cmsy/m/n
-/10 ^^@[] [] ^^@[]
+[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^M \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 v[] [] [] \OMS/cmsy/m/n/10 ^^@[] \OT1/cmr/m/n/10 = [] [] [] = \OMS/cmsy/m/n/10 ^^@[] [] ^^@[]
  []
 
 
@@ -2694,8 +2374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4238--4248
 
 
 Overfull \hbox (8.06784pt too wide) in paragraph at lines 4238--4248
-\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 u[] [] u[] [] [] u[]
- [] []
+\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 u[] [] u[] [] [] u[] [] []
  []
 
 [152]
@@ -2763,29 +2442,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4350--4351
 
 
 Overfull \hbox (6.33691pt too wide) in paragraph at lines 4367--4370
-\T1/cmr/m/n/10 Donc $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U
-/msb/m/n/10 N\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 T \OT1/cmr/
-m/n/10 + \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )[](\OML/cmm/m/it/10 a\OT1/cmr/m/n/1
-0 ))[] = [] [](\OML/cmm/m/it/10 S[] \OMS/cmsy/m/n/10 ^^N \OML/cmm/m/it/10 T[]\O
-T1/cmr/m/n/10 )(\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))[] = [] [](\OML/cmm/m/it/10
- S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))[] = [] []\OML/cmm/m/i
-t/10 a[] \OT1/cmr/m/n/10 =
+\T1/cmr/m/n/10 Donc $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )[](\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))[] = [] [](\OML/cmm/m/it/10 S[] \OMS/cmsy/m/n/10 ^^N \OML/cmm/m/it/10 T[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))[] = [] [](\OML/cmm/m/it/10 S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))[] = [] []\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 =
  []
 
 [158]
 Overfull \hbox (87.96071pt too wide) in paragraph at lines 4379--4381
-[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][]\OML/cmm/m/it/1
-0 b[] \OT1/cmr/m/n/10 = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][] [] []\OML
-/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][
-][]\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = [] [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/
-n/10 1)[][][]\OML/cmm/m/it/10 a[]$\T1/cmr/m/n/10 . 
+[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][]\OML/cmm/m/it/10 b[] \OT1/cmr/m/n/10 = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][] [] []\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][][]\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = [] [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][][]\OML/cmm/m/it/10 a[]$\T1/cmr/m/n/10 . 
  []
 
 
 Overfull \hbox (14.01741pt too wide) in paragraph at lines 4392--4398
-\T1/cmr/m/n/10 D'après la for-mule d'in-ver-sion de Pas-cal on a $\OML/cmm/m/it
-/10 D[] \OT1/cmr/m/n/10 = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][]\OML/cmm
-/m/it/10 k\OT1/cmr/m/n/10 ! = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][] =
+\T1/cmr/m/n/10 D'après la for-mule d'in-ver-sion de Pas-cal on a $\OML/cmm/m/it/10 D[] \OT1/cmr/m/n/10 = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][]\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 ! = [](\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)[][] =
  []
 
 [159]
@@ -2840,8 +2507,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4483--4484
 
 
 Overfull \hbox (16.64702pt too wide) in paragraph at lines 4486--4492
-\T1/cmr/m/n/10 Ainsi $[] []$ est une sé-rie à termes po-si-tifs ma-jo-rée $[]$ 
-:
+\T1/cmr/m/n/10 Ainsi $[] []$ est une sé-rie à termes po-si-tifs ma-jo-rée $[]$ :
  []
 
 
@@ -2961,10 +2627,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4668--4683
 
 
 Overfull \hbox (58.16762pt too wide) in paragraph at lines 4668--4683
-\T1/cmr/m/n/10 on pose $\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (0) = 0\OML/cmm/m/i
-t/10 ;  S[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 a[]$ \T1/cmr/m/n/10 et pour t
-out $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  ^
-^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 + 1) = []$ 
+\T1/cmr/m/n/10 on pose $\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (0) = 0\OML/cmm/m/it/10 ;  S[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 a[]$ \T1/cmr/m/n/10 et pour tout $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 + 1) = []$ 
  []
 
 [171]
@@ -2999,13 +2662,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4775--4777
 
 
 Overfull \hbox (11.99812pt too wide) in paragraph at lines 4779--4780
-[]\T1/cmr/m/n/10 Pour tout $\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U/msb/m/n/10
- R[]\OML/cmm/m/it/10 ;  t \OMS/cmsy/m/n/10 7! \OML/cmm/m/it/10 f\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 []\OT1/cmr/m/n/10 (
-\U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; \U/msb/m/n/10 C\OT1/cmr/m/n/10 )$ \T1/cmr/m
-/n/10 et $\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
- x; t\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 
-^^T [] []
+[]\T1/cmr/m/n/10 Pour tout $\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R[]\OML/cmm/m/it/10 ;  t \OMS/cmsy/m/n/10 7! \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 []\OT1/cmr/m/n/10 (\U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; \U/msb/m/n/10 C\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 et $\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 ^^T [] []
  []
 
 [175] [176]
@@ -3020,10 +2677,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4808--4824
 
 
 Overfull \hbox (30.07188pt too wide) in paragraph at lines 4808--4824
-\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm
-/m/it/10 ;  [][] []dt \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 dt \OT1/cmr/m/n
-/10 = [][] []\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 dt \
-OMS/cmsy/m/n/10 ^^U [][] [] \OT1/cmr/m/n/10 =
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  [][] []dt \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 dt \OMS/cmsy/m/n/10 ^^U [][] [] \OT1/cmr/m/n/10 =
  []
 
 
@@ -3033,18 +2687,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4808--4824
 
 [177]
 Overfull \hbox (17.91318pt too wide) in paragraph at lines 4836--4847
-\OML/cmm/m/it/10 '[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OMS
-/cmsy/m/n/10 ^^@[] \OT1/cmr/m/n/10 + [] = [] [] [] []
+\OML/cmm/m/it/10 '[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@[] \OT1/cmr/m/n/10 + [] = [] [] [] []
  []
 
 
 Overfull \hbox (56.0211pt too wide) in paragraph at lines 4836--4847
-\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm
-/m/it/10 ;  v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 u[] \OT1/cmr/m/n/10 = [][
-] []((2\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 + 1)\OML/cmm/m/it/10 t\OT1/cmr/m/n/10
- )\OML/cmm/m/it/10 '\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cm
-m/m/it/10 dt \OT1/cmr/m/n/10 = [][] + [][] []\OML/cmm/m/it/10 '[]\OT1/cmr/m/n/1
-0 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt$\T1/cmr/m/n/10 . 
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 u[] \OT1/cmr/m/n/10 = [][] []((2\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 + 1)\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 '\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 = [][] + [][] []\OML/cmm/m/it/10 '[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt$\T1/cmr/m/n/10 . 
  []
 
 [178]
@@ -3054,21 +2702,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4854--4856
 
 
 Overfull \hbox (41.5687pt too wide) in paragraph at lines 4862--4866
-\T1/cmr/m/n/10 Ainsi d'après le théo-rème de trans-fert $\U/eus/m/n/10 C[]\OML/
-cmm/m/it/10 ;  F \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 C[]\OT1/cmr/m/n/10 (\U/msb/m/
-n/10 R[]\OML/cmm/m/it/10 ; \U/msb/m/n/10 R\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 et 
-$\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R[]\OML/
-cmm/m/it/10 ;  F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OMS/c
-msy/m/n/10 ^^@ [][] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/
-cmm/m/it/10 e[]dt$\T1/cmr/m/n/10 . 
+\T1/cmr/m/n/10 Ainsi d'après le théo-rème de trans-fert $\U/eus/m/n/10 C[]\OML/cmm/m/it/10 ;  F \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 C[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; \U/msb/m/n/10 R\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 et $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R[]\OML/cmm/m/it/10 ;  F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@ [][] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[]dt$\T1/cmr/m/n/10 . 
  []
 
 
 Overfull \hbox (42.76515pt too wide) in paragraph at lines 4862--4866
-\T1/cmr/m/n/10 Pour cal-cu-ler cette in-té-grale on passe passe en com-plexe : 
-$\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R[]\OML/
-cmm/m/it/10 ;  F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OMS/c
-msy/m/n/10 ^^@ [] []$
+\T1/cmr/m/n/10 Pour cal-cu-ler cette in-té-grale on passe passe en com-plexe : $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R[]\OML/cmm/m/it/10 ;  F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@ [] []$
  []
 
 [179]
@@ -3128,8 +2767,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4967--4977
 
 
 Overfull \hbox (7.52309pt too wide) in paragraph at lines 4967--4977
-\T1/cmr/m/n/10 Or, $[] [][] [] [] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr
-/m/n/10 ) [] [][] +
+\T1/cmr/m/n/10 Or, $[] [][] [] [] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) [] [][] +
  []
 
 [183] [184]
@@ -3154,26 +2792,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4995--4996
 
 
 Overfull \hbox (6.94476pt too wide) in paragraph at lines 4997--5012
-\T1/cmr/m/n/10 Montrons par ré-cur-rence $\U/eus/m/n/10 P\OT1/cmr/m/n/10 (\OML/
-cmm/m/it/10 n\OT1/cmr/m/n/10 ) : "\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 C[] \OMS/c
-msy/m/n/10 2 \U/msb/m/n/10 R\OML/cmm/m/it/10 ;  \OMS/cmsy/m/n/10 8\OML/cmm/m/it
-/10 x \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/
-10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] [] [] + [][] []\OML/cmm/m/it/10 dt
- \OT1/cmr/m/n/10 +
+\T1/cmr/m/n/10 Montrons par ré-cur-rence $\U/eus/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ) : "\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 C[] \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R\OML/cmm/m/it/10 ;  \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] [] [] + [][] []\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 +
  []
 
 
 Overfull \hbox (25.18729pt too wide) in paragraph at lines 4997--5012
-[][] []\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 = [] + [][] []\OML/cmm/m/it/10 dt \O
-T1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 ^^A [] ^^@ [] \OT1/cmr/m/n/10 + [][] []\OML
-/cmm/m/it/10 dt$\T1/cmr/m/n/10 . 
+[][] []\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 = [] + [][] []\OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 ^^A [] ^^@ [] \OT1/cmr/m/n/10 + [][] []\OML/cmm/m/it/10 dt$\T1/cmr/m/n/10 . 
  []
 
 [185]
 Overfull \hbox (0.50314pt too wide) in paragraph at lines 5015--5016
-\T1/cmr/m/n/10 Ainsi $[][] []\OML/cmm/m/it/10 dt [] [][][][][]$ \T1/cmr/m/n/10 
-d'où $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) [] [] [] [] + [][]
-[][][]$\T1/cmr/m/n/10 . 
+\T1/cmr/m/n/10 Ainsi $[][] []\OML/cmm/m/it/10 dt [] [][][][][]$ \T1/cmr/m/n/10 d'où $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) [] [] [] [] + [][][][][]$\T1/cmr/m/n/10 . 
  []
 
 
@@ -3206,10 +2835,7 @@ Underfull \vbox (badness 2753) has occurred while \output is active []
 
  [187]
 Overfull \hbox (44.9591pt too wide) in paragraph at lines 5065--5068
-[]\T1/cmr/m/n/10 Montrons que $\OML/cmm/m/it/10 I$ \T1/cmr/m/n/10 est conti-nue
- sur $\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 
-; \OT1/cmr/m/n/10 1[$\T1/cmr/m/n/10 . No-tons $\OT1/cmr/m/n/10 ^^H : []$\T1/cmr
-/m/n/10 . 
+[]\T1/cmr/m/n/10 Montrons que $\OML/cmm/m/it/10 I$ \T1/cmr/m/n/10 est conti-nue sur $\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1[$\T1/cmr/m/n/10 . No-tons $\OT1/cmr/m/n/10 ^^H : []$\T1/cmr/m/n/10 . 
  []
 
 
@@ -3234,10 +2860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5072--5088
 
 
 Overfull \hbox (28.8208pt too wide) in paragraph at lines 5072--5088
-\OT1/cmr/m/n/10 	 = [](\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 + [](\OML/cmm/m/it/10
- g; h\OT1/cmr/m/n/10 ) + \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 
-^^@ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g; h\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j
-\OT1/cmr/m/n/10 ) = [] []$\T1/cmr/m/n/10 . 
+\OT1/cmr/m/n/10 	 = [](\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 + [](\OML/cmm/m/it/10 g; h\OT1/cmr/m/n/10 ) + \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g; h\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 ) = [] []$\T1/cmr/m/n/10 . 
  []
 
 [188]
@@ -3328,8 +2951,7 @@ Package pdftex.def Info: trapeze.png  used on input line 5232.
 
 Underfull \vbox (badness 2050) has occurred while \output is active []
 
- [194]
-[195 <./trapeze.png>] [196]
+ [194] [195 <./trapeze.png>] [196]
 Underfull \hbox (badness 10000) in paragraph at lines 5281--5285
 
  []
@@ -3350,8 +2972,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5298--5305
  []
 
 [198]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 531
-8.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 5318.
  (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
@@ -3391,19 +3012,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 5430--5431
 
 
 Overfull \hbox (2.87906pt too wide) in paragraph at lines 5438--5448
-\OML/cmm/m/it/10 f$ \T1/cmr/m/n/10 est im-paire : $\OMS/cmsy/m/n/10 8\OML/cmm/m
-/it/10 x \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  f\OT1/cmr/m/n
-/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [](\OMS/cmsy/m/n
-/10 ^^@\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + [] [] = \OMS/cmsy/m/n/10 ^^@ []\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ [] [] \O
-T1/cmr/m/n/10 =
+\OML/cmm/m/it/10 f$ \T1/cmr/m/n/10 est im-paire : $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  f\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [](\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + [] [] = \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ [] [] \OT1/cmr/m/n/10 =
  []
 
 [202]
 Overfull \hbox (5.17517pt too wide) in paragraph at lines 5453--5463
-[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 b\OT1/
-cmr/m/n/10 ) = []$\T1/cmr/m/n/10 , l'iden-tité $[]\OT1/cmr/m/n/10 (4\OML/cmm/m/
-it/10 x\OT1/cmr/m/n/10 ) = [] = [] =
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 b\OT1/cmr/m/n/10 ) = []$\T1/cmr/m/n/10 , l'iden-tité $[]\OT1/cmr/m/n/10 (4\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] = [] =
  []
 
 
@@ -3436,8 +3050,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5499--5500
 
 
 Overfull \hbox (22.17383pt too wide) in paragraph at lines 5513--5513
-|[]\T1/cmr/bx/n/12 Convexité des fonc-tions conti-nues sur un in-ter-valle  []|
- 
+|[]\T1/cmr/bx/n/12 Convexité des fonc-tions conti-nues sur un in-ter-valle  []| 
  []
 
 
@@ -3447,10 +3060,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5514--5516
 
 [205]
 Overfull \hbox (15.54974pt too wide) in paragraph at lines 5516--5531
-\T1/cmr/m/n/10 Puis par hy-po-thèse de ré-cur-rence, $\OML/cmm/m/it/10 f\OT1/cm
-r/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T []$ \T1/cmr/
-m/n/10 et $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10
- ) \OMS/cmsy/m/n/10 ^^T []$
+\T1/cmr/m/n/10 Puis par hy-po-thèse de ré-cur-rence, $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T []$ \T1/cmr/m/n/10 et $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T []$
  []
 
 
@@ -3465,11 +3075,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5516--5531
 
 
 Overfull \hbox (19.6597pt too wide) in paragraph at lines 5516--5531
-\OMS/cmsy/m/n/10 8\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/
-cmsy/m/n/10 2 \OML/cmm/m/it/10 I[];  f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Ux \O
-T1/cmr/m/n/10 + (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )\O
-ML/cmm/m/it/10 y\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f [] \OT1/cmr/m/n/10 = \OM
-L/cmm/m/it/10 f [] \OMS/cmsy/m/n/10 ^^T [] \OT1/cmr/m/n/10 =
+\OMS/cmsy/m/n/10 8\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 I[];  f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Ux \OT1/cmr/m/n/10 + (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f [] \OMS/cmsy/m/n/10 ^^T [] \OT1/cmr/m/n/10 =
  []
 
 
@@ -3479,8 +3085,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5533--5534
 
 [206]
 
-LaTeX Warning: Reference `ThÃ©orÃ¨me de Froda' on page 207 undefined on input l
-ine 5547.
+LaTeX Warning: Reference `ThÃ©orÃ¨me de Froda' on page 207 undefined on input line 5547.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5552--5553
@@ -3499,24 +3104,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 5558--5563
 
 [207]
 Overfull \hbox (14.25107pt too wide) in paragraph at lines 5568--5585
-\OT1/cmr/m/n/10 ^^H$ \T1/cmr/m/n/10 est dé-ri-vable sur $\U/msb/m/n/10 R[]$ \T1
-/cmr/m/n/10 et $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 c > \OT1/cmr/m/n/10 0\OML/cm
-m/m/it/10 ;  \OT1/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) = \OML/c
-mm/m/it/10 ^^U\OT1/cmr/m/n/10 (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U\OT1/
-cmr/m/n/10 )(\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 y\OT1/cmr
-/m/n/10 ) []$\T1/cmr/m/n/10 . 
+\OT1/cmr/m/n/10 ^^H$ \T1/cmr/m/n/10 est dé-ri-vable sur $\U/msb/m/n/10 R[]$ \T1/cmr/m/n/10 et $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 c > \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 y\OT1/cmr/m/n/10 ) []$\T1/cmr/m/n/10 . 
  []
 
 
 Overfull \hbox (45.22913pt too wide) in paragraph at lines 5568--5585
-\OT1/cmr/m/n/10 ^^H(\OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^
-Uf\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 c[] \OT1
-/cmr/m/n/10 + (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )\OML
-/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )\OML/cmm/m/it
-/10 c[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^Uf\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
-0 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 + (1 \OMS/cmsy/m/n/10 
-^^@ \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OM
-L/cmm/m/it/10 y\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 =
+\OT1/cmr/m/n/10 ^^H(\OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^Uf\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 c[] \OT1/cmr/m/n/10 + (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 c[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^Uf\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 + (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 =
  []
 
 [208]
@@ -3586,8 +3179,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5714--5715
 
 [213]
 
-LaTeX Warning: Reference `SÃ©rie harmonique' on page 214 undefined on input lin
-e 5725.
+LaTeX Warning: Reference `SÃ©rie harmonique' on page 214 undefined on input line 5725.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5728--5729
@@ -3636,9 +3228,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5750--5757
 
 [215]
 Overfull \hbox (3.4682pt too wide) in paragraph at lines 5760--5772
-[]\T1/cmr/m/n/10 Supposons pas l'ab-surde qu'il existe deux po-ly-nômes à co-ef
--fi-cients ra-tion-nels $\OML/cmm/m/it/10 B \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/
-10 b[]X[]$
+[]\T1/cmr/m/n/10 Supposons pas l'ab-surde qu'il existe deux po-ly-nômes à co-ef-fi-cients ra-tion-nels $\OML/cmm/m/it/10 B \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 b[]X[]$
  []
 
 
@@ -3671,13 +3261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5825--5835
 
 
 Overfull \hbox (0.45483pt too wide) in paragraph at lines 5825--5835
-\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2 \U/stmry/m/n/10 J\OT1/cmr/m/n/10 1; \OML/
-cmm/m/it/10 r\U/stmry/m/n/10 K$\T1/cmr/m/n/10 . $\OML/cmm/m/it/10 a; b \OMS/cms
-y/m/n/10 2 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 ) = [](\OML/c
-mm/m/it/10 R[]\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 donc il existe $\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 ^^U[]; [] ; ^^U[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cm
-r/m/n/10 (\OML/cmm/m/it/10 ^^V[]; [] ; ^^V[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
-2
+\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2 \U/stmry/m/n/10 J\OT1/cmr/m/n/10 1; \OML/cmm/m/it/10 r\U/stmry/m/n/10 K$\T1/cmr/m/n/10 . $\OML/cmm/m/it/10 a; b \OMS/cmsy/m/n/10 2 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 donc il existe $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^U[]; [] ; ^^U[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^V[]; [] ; ^^V[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2
  []
 
 
@@ -3707,9 +3291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5852--5854
 
 
 Overfull \hbox (11.48022pt too wide) in paragraph at lines 5854--5858
-\T1/cmr/m/n/10 On sait alors que $[] \OT1/cmr/m/n/10 = [] []$ \T1/cmr/m/n/10 et
- par dé-ri-va-tion, $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U
-/msb/m/n/10 R \OMS/cmsy/m/n/10 n \OML/cmm/m/it/10 S;  [] \OT1/cmr/m/n/10 =
+\T1/cmr/m/n/10 On sait alors que $[] \OT1/cmr/m/n/10 = [] []$ \T1/cmr/m/n/10 et par dé-ri-va-tion, $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R \OMS/cmsy/m/n/10 n \OML/cmm/m/it/10 S;  [] \OT1/cmr/m/n/10 =
  []
 
 
@@ -3729,10 +3311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5923--5929
 
 
 Overfull \hbox (19.48967pt too wide) in paragraph at lines 5923--5929
-\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R\OML/cmm
-/m/it/10 ;  P\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OML/cmm
-/m/it/10 P\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = 1 + [] \OML
-/cmm/m/it/10 S [] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 S []$ 
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R\OML/cmm/m/it/10 ;  P\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = 1 + [] \OML/cmm/m/it/10 S [] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 S []$ 
  []
 
 
@@ -3833,14 +3412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6062--6064
 
 
 Overfull \hbox (142.96138pt too wide) in paragraph at lines 6064--6065
-\U/msb/m/n/10 K[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ]$ \T1/cmr/
-m/n/10 res-pec-ti-ve-ment. Ainsi d'après le cours, la fa-mille $\U/eus/m/n/10 B
- \OT1/cmr/m/n/10 = ((1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 ; \
-OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X; \OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 ; [] ; \
-OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[]; \OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 ; \OT1
-/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 ; \OT1/cmr/
-m/n/10 (0\OML/cmm/m/it/10 ; X\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [] ; \OT1/cmr/
-m/n/10 (0\OML/cmm/m/it/10 ; X[]\OT1/cmr/m/n/10 ))$
+\U/msb/m/n/10 K[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ]$ \T1/cmr/m/n/10 res-pec-ti-ve-ment. Ainsi d'après le cours, la fa-mille $\U/eus/m/n/10 B \OT1/cmr/m/n/10 = ((1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X; \OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[]; \OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; X\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; X[]\OT1/cmr/m/n/10 ))$
  []
 
 [229]
@@ -3860,10 +3432,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6093--6095
 
 [230]
 Overfull \hbox (30.35413pt too wide) in paragraph at lines 6095--6098
-\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 Q[] \OT1/cmr/m/n/10 = \
-OML/cmm/m/it/10 R[]  \OT1/cmr/m/n/10 =[]\OMS/cmsy/m/n/10 )  [][] \OT1/cmr/m/n/1
-0 + [][] = [][]$\T1/cmr/m/n/10 . Po-sons $\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ;
- []; []\OT1/cmr/m/n/10 ) = []$
+\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 Q[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 R[]  \OT1/cmr/m/n/10 =[]\OMS/cmsy/m/n/10 )  [][] \OT1/cmr/m/n/10 + [][] = [][]$\T1/cmr/m/n/10 . Po-sons $\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []; []\OT1/cmr/m/n/10 ) = []$
  []
 
 
@@ -3943,9 +3512,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6238--6239
 
 [236]
 Overfull \hbox (12.59494pt too wide) detected at line 6270
-[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 y[]\
-OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^T [][][][] \OT1/cmr/m/n/10 + [][][][] = (
-[][] + [][])[][]
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 y[]\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^T [][][][] \OT1/cmr/m/n/10 + [][][][] = ([][] + [][])[][]
  []
 
 
@@ -4070,13 +3637,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6446--6447
 
 
 Overfull \hbox (0.66844pt too wide) detected at line 6459
-\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/
-cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 8\OML/cmm/m
-/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0
- \OMS/cmsy/m/n/10 ^^T [] ^^@ \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it
-/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 g [
-] \OT1/cmr/m/n/10 = [] [][] \OMS/cmsy/m/n/10 ^^T []
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^T [] ^^@ \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 g [] \OT1/cmr/m/n/10 = [] [][] \OMS/cmsy/m/n/10 ^^T []
  []
 
 
@@ -4190,8 +3751,7 @@ LaTeX Warning: Command \` invalid in math mode on input line 6566.
 
 Missing character: There is no è in font cmr7!
 
-LaTeX Warning: Reference `Lemme des compacts emboÃ®tÃ©s' on page 249 undefined 
-on input line 6577.
+LaTeX Warning: Reference `Lemme des compacts emboÃ®tÃ©s' on page 249 undefined on input line 6577.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 6563--6580
@@ -4230,18 +3790,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 6657--6658
 
 
 Overfull \hbox (23.94409pt too wide) in paragraph at lines 6675--6681
-\T1/cmr/m/n/10 D'autre part, $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/
-n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  [][] \OMS/cmsy/m/n/10 ^^T [][] \OT1/c
-mr/m/n/10 + [][] = [][][][] +
+\T1/cmr/m/n/10 D'autre part, $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  [][] \OMS/cmsy/m/n/10 ^^T [][] \OT1/cmr/m/n/10 + [][] = [][][][] +
  []
 
 [252]
 Overfull \hbox (9.45369pt too wide) in paragraph at lines 6681--6686
-\T1/cmr/m/n/10 En po-sant pour $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/
-n/10 N$\T1/cmr/m/n/10 , $\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/i
-t/10 d[]X[]$ \T1/cmr/m/n/10 on a alors $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P[]\O
-T1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 Z[]$ \T1/cmr/m/n/10 et $[][] [
-]
+\T1/cmr/m/n/10 En po-sant pour $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N$\T1/cmr/m/n/10 , $\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 d[]X[]$ \T1/cmr/m/n/10 on a alors $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 Z[]$ \T1/cmr/m/n/10 et $[][] []
  []
 
 
@@ -4257,8 +3811,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6693--6696
 
 Underfull \vbox (badness 6741) has occurred while \output is active []
 
- [253]
-[254]
+ [253] [254]
 Underfull \hbox (badness 10000) in paragraph at lines 6700--6701
 
  []
@@ -4370,28 +3923,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 6777--6778
 
 [258]
 Overfull \hbox (15.90991pt too wide) in paragraph at lines 6788--6800
-\T1/cmr/m/n/10 Par construc-tion $\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 (\OML/cmm/m
-/it/10 AX[]\OT1/cmr/m/n/10 )[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] [] \OMS/c
-msy/m/n/10 j\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j[][]$ \T1/cmr/m/n/10 d'où $[]
-[] \OMS/cmsy/m/n/10 ^^U [] [] j\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j[][]$\T1/c
-mr/m/n/10 . 
+\T1/cmr/m/n/10 Par construc-tion $\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 AX[]\OT1/cmr/m/n/10 )[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j[][]$ \T1/cmr/m/n/10 d'où $[][] \OMS/cmsy/m/n/10 ^^U [] [] j\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j[][]$\T1/cmr/m/n/10 . 
  []
 
 
 Overfull \hbox (36.00569pt too wide) in paragraph at lines 6800--6808
-[] \OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 AX\OT1/cmr/m/n/10 )[]\OM
-S/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] [] \OMS/cmsy/m/n/10 ^^T [] [] j\OML/cmm/m/
-it/10 A[]\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n
-/10 = [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 j [] j\OML/cmm/
-m/it/10 A[]\OMS/cmsy/m/n/10 j ^^T [][] []$\T1/cmr/m/n/10 . 
+[] \OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 AX\OT1/cmr/m/n/10 )[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] [] \OMS/cmsy/m/n/10 ^^T [] [] j\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 j [] j\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j ^^T [][] []$\T1/cmr/m/n/10 . 
  []
 
 [259]
 Overfull \hbox (31.70877pt too wide) detected at line 6812
-[][] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 t[]t[]^^U[]\OMS/cmsy/m/n/10 h\OML
-/cmm/m/it/10 X[]; X[]\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 t
-[]^^U[] \OMS/cmsy/m/n/10 ^^T [] [] [] \OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 = []
- [] [][]
+[][] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 t[]t[]^^U[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 X[]; X[]\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 t[]^^U[] \OMS/cmsy/m/n/10 ^^T [] [] [] \OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 = [] [] [][]
  []
 
 [260]
@@ -4409,9 +3951,7 @@ LaTeX Warning: Command \L invalid in math mode on input line 6835.
 Missing character: There is no Š in font cmr10!
 [261] [262]
 Overfull \hbox (2.28156pt too wide) in paragraph at lines 6867--6873
-\T1/cmr/m/n/10 Donc $[] \OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10
- M[] [] [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 K\OMS/cmsy/m/n/10 j\OML/cmm/m/it/
-10 M[] []
+\T1/cmr/m/n/10 Donc $[] \OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 M[] [] [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 K\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 M[] []
  []
 
 
@@ -4456,9 +3996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7003--7004
 
 [268]
 Overfull \hbox (56.13329pt too wide) in paragraph at lines 7013--7035
-\T1/cmr/m/n/10 Or APCR $[]$, $\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x[] \OMS/cmsy/
-m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 > []$ \T1/cm
-r/m/n/10 d'où $[] \OML/cmm/m/it/10 >
+\T1/cmr/m/n/10 Or APCR $[]$, $\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 > []$ \T1/cmr/m/n/10 d'où $[] \OML/cmm/m/it/10 >
  []
 
 
@@ -4511,14 +4049,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 7134--7135
 
 
 Overfull \hbox (25.6247pt too wide) in paragraph at lines 7140--7145
-\T1/cmr/m/n/10 On sait que $[] [] \OT1/cmr/m/n/10 = [] [] = []$\T1/cmr/m/n/10 .
- Par ailleurs, $[] [] \OT1/cmr/m/n/10 =
+\T1/cmr/m/n/10 On sait que $[] [] \OT1/cmr/m/n/10 = [] [] = []$\T1/cmr/m/n/10 . Par ailleurs, $[] [] \OT1/cmr/m/n/10 =
  []
 
 
 Overfull \hbox (21.47058pt too wide) in paragraph at lines 7140--7145
-[]$ \T1/cmr/m/n/10 et $[] [] \OT1/cmr/m/n/10 = []$\T1/cmr/m/n/10 . Par uni-cité
- de la li-mite, $[] \OT1/cmr/m/n/10 = [] =
+[]$ \T1/cmr/m/n/10 et $[] [] \OT1/cmr/m/n/10 = []$\T1/cmr/m/n/10 . Par uni-cité de la li-mite, $[] \OT1/cmr/m/n/10 = [] =
  []
 
 
@@ -4561,12 +4097,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7213--7222
 
 [277] [278]
 Overfull \hbox (21.72693pt too wide) in paragraph at lines 7249--7250
-[]$\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 + \OML
-/cmm/m/it/10 Q\OT1/cmr/m/n/10 ) = [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 P[]\OT1
-/cmr/m/n/10 (0) + \OML/cmm/m/it/10 Q[]\OT1/cmr/m/n/10 (0)\OMS/cmsy/m/n/10 j ^^T
- [] j\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (0)\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 
-+ [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 Q[]\OT1/cmr/m/n/10 (0)\OMS/cmsy/m/n/10 
-j ^^T
+[]$\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 ) = [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (0) + \OML/cmm/m/it/10 Q[]\OT1/cmr/m/n/10 (0)\OMS/cmsy/m/n/10 j ^^T [] j\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (0)\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 + [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 Q[]\OT1/cmr/m/n/10 (0)\OMS/cmsy/m/n/10 j ^^T
  []
 
 
@@ -4576,9 +4107,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7261--7263
 
 
 Overfull \hbox (80.27673pt too wide) in paragraph at lines 7263--7273
-\T1/cmr/m/n/10 Donc $\OML/cmm/m/it/10 V[] \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/
-it/10 dx[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 V[] [] dx[]$\T1/cmr/m/n/10 .
- 
+\T1/cmr/m/n/10 Donc $\OML/cmm/m/it/10 V[] \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/it/10 dx[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 V[] [] dx[]$\T1/cmr/m/n/10 . 
  []
 
 
@@ -4593,24 +4122,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 7276--7296
 
 
 Overfull \hbox (18.5825pt too wide) in paragraph at lines 7296--7301
-[]\T1/cmr/m/n/10 La for-mule de Stir-ling $\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ! 
-[] [][] []$ \T1/cmr/m/n/10 donne $[] \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\OML/
-cmm/m/it/10 R\OT1/cmr/m/n/10 ) = 0 = [] \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\O
-ML/cmm/m/it/10 R\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 .
+[]\T1/cmr/m/n/10 La for-mule de Stir-ling $\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ! [] [][] []$ \T1/cmr/m/n/10 donne $[] \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R\OT1/cmr/m/n/10 ) = 0 = [] \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 .
  []
 
 
 Overfull \hbox (19.03671pt too wide) in paragraph at lines 7304--7312
-\T1/cmr/m/n/10 On se place dans l'es-pace vec-to-riel $\OML/cmm/m/it/10 E \OT1/
-cmr/m/n/10 = \U/msb/m/n/10 R\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 
-]$ \T1/cmr/m/n/10 que l'on muni de la norme uni-forme $[][] \OT1/cmr/m/n/10 =
+\T1/cmr/m/n/10 On se place dans l'es-pace vec-to-riel $\OML/cmm/m/it/10 E \OT1/cmr/m/n/10 = \U/msb/m/n/10 R\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ]$ \T1/cmr/m/n/10 que l'on muni de la norme uni-forme $[][] \OT1/cmr/m/n/10 =
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [280]
-[281]
+ [280] [281]
 Underfull \hbox (badness 10000) in paragraph at lines 7352--7353
 
  []
@@ -4741,19 +4264,12 @@ LaTeX Warning: Reference `rg1' on page 288 undefined on input line 7496.
 
 
 Overfull \hbox (26.8326pt too wide) in paragraph at lines 7498--7503
-\T1/cmr/m/n/10 la mul-ti-pli-ca-tion par une ma-trice in-ver-sible conserve le 
-rang donc on a en-core $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M[]UV[]\OT1/cmr/m/n
-/10 ) =
+\T1/cmr/m/n/10 la mul-ti-pli-ca-tion par une ma-trice in-ver-sible conserve le rang donc on a en-core $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M[]UV[]\OT1/cmr/m/n/10 ) =
  []
 
 
 Overfull \hbox (15.88562pt too wide) in paragraph at lines 7498--7503
-\T1/cmr/m/n/10 Par consé-quent, $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OT1/cmr
-/m/n/10 + \OML/cmm/m/it/10 UV[]\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 M\OT1/cm
-r/m/n/10 ) + \OML/cmm/m/it/10 V[] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr
-/m/n/10 )\OML/cmm/m/it/10 M[]U \OT1/cmr/m/n/10 = [](\OML/cmm/m/it/10 M\OT1/cmr/
-m/n/10 ) + \OML/cmm/m/it/10 V[] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr/m
-/n/10 )[]\OML/cmm/m/it/10 U$
+\T1/cmr/m/n/10 Par consé-quent, $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 UV[]\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 V[] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 M[]U \OT1/cmr/m/n/10 = [](\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 V[] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 U$
  []
 
 
@@ -4768,12 +4284,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7523--7526
 
 
 Overfull \hbox (62.52428pt too wide) in paragraph at lines 7526--7533
-\OML/cmm/m/it/10 I[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 t^^UE[]$ \T1/cmr/m/n/10
- est conti-nue car af-fine. Par consé-quent la fonc-tion $\OML/cmm/m/it/10 h \O
-T1/cmr/m/n/10 : \OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cm
-m/m/it/10 ; \OT1/cmr/m/n/10 1] \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OML/cmm/m/
-it/10 T[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t^^U[]\OT1/cmr/m/n/10 )\OML/cmm/m/it
-/10 ; [] ; T[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t^^U[]\OT1/cmr/m/n/10 ))$
+\OML/cmm/m/it/10 I[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 t^^UE[]$ \T1/cmr/m/n/10 est conti-nue car af-fine. Par consé-quent la fonc-tion $\OML/cmm/m/it/10 h \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1] \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t^^U[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [] ; T[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t^^U[]\OT1/cmr/m/n/10 ))$
  []
 
 
@@ -4816,11 +4327,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7607--7613
 
 
 Overfull \hbox (8.74194pt too wide) in paragraph at lines 7614--7626
-\T1/cmr/m/n/10 Par consé-quent, $[][][][]\OML/cmm/m/it/10 MX \OT1/cmr/m/n/10 = 
-([] [][])(\OML/cmm/m/it/10 ^^U X\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 j\OML/cmm/
-m/it/10 ^^U\OMS/cmsy/m/n/10 j[][][]\OML/cmm/m/it/10 X$ \T1/cmr/m/n/10 et $[][][
-][]\OML/cmm/m/it/10 MX \OT1/cmr/m/n/10 = [][]\OML/cmm/m/it/10 I[]X \OT1/cmr/m/n
-/10 =
+\T1/cmr/m/n/10 Par consé-quent, $[][][][]\OML/cmm/m/it/10 MX \OT1/cmr/m/n/10 = ([] [][])(\OML/cmm/m/it/10 ^^U X\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^U\OMS/cmsy/m/n/10 j[][][]\OML/cmm/m/it/10 X$ \T1/cmr/m/n/10 et $[][][][]\OML/cmm/m/it/10 MX \OT1/cmr/m/n/10 = [][]\OML/cmm/m/it/10 I[]X \OT1/cmr/m/n/10 =
  []
 
 [292]
@@ -4830,25 +4337,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 7632--7664
 
 
 Overfull \hbox (31.02441pt too wide) in paragraph at lines 7632--7664
-\T1/cmr/m/n/10 D'autre part, $[][]\OML/cmm/m/it/10 QMQ[] \OT1/cmr/m/n/10 = [] [
-] =
+\T1/cmr/m/n/10 D'autre part, $[][]\OML/cmm/m/it/10 QMQ[] \OT1/cmr/m/n/10 = [] [] =
  []
 
 
 Overfull \hbox (47.2206pt too wide) in paragraph at lines 7632--7664
-\T1/cmr/m/n/10 On pose alors en-fin $\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 = []$ \
-T1/cmr/m/n/10 et on vé-ri-fie que $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = \OML/cm
-m/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]; [] ; e[]\OT1/cmr/m/n/10 )\O
-ML/cmm/m/it/10 P[]$\T1/cmr/m/n/10 . 
+\T1/cmr/m/n/10 On pose alors en-fin $\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 = []$ \T1/cmr/m/n/10 et on vé-ri-fie que $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]; [] ; e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P[]$\T1/cmr/m/n/10 . 
  []
 
 
 Overfull \hbox (85.80707pt too wide) in paragraph at lines 7664--7671
-\T1/cmr/m/n/10 On pose $\OML/cmm/m/it/10 ^^M \OT1/cmr/m/n/10 : []$\T1/cmr/m/n/1
-0 . Il est clair que $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 2 \
-OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ;  []\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]; [] ; e[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
-2
+\T1/cmr/m/n/10 On pose $\OML/cmm/m/it/10 ^^M \OT1/cmr/m/n/10 : []$\T1/cmr/m/n/10 . Il est clair que $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]; [] ; e[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2
  []
 
 
@@ -4858,11 +4357,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7664--7671
 
 
 Overfull \hbox (5.59483pt too wide) in paragraph at lines 7664--7671
-\T1/cmr/m/n/10 Pour $\OML/cmm/m/it/10 SU[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1/
-cmr/m/n/10 )$ \T1/cmr/m/n/10 il suf-fit de re-mar-quer que $\OML/cmm/m/it/10 M 
-\OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]; []
- ; e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10
- SU[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 ([])
+\T1/cmr/m/n/10 Pour $\OML/cmm/m/it/10 SU[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 il suf-fit de re-mar-quer que $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]; [] ; e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 SU[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1/cmr/m/n/10 )  \OMS/cmsy/m/n/10 ([])
  []
 
 [293]
@@ -4877,11 +4372,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7691--7719
 
 
 Overfull \hbox (19.12086pt too wide) in paragraph at lines 7691--7719
-\T1/cmr/m/n/10 nale $\OML/cmm/m/it/10 D \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 M[]\OT
-1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 et une ma-trice 
-$\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 2 [][]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1
-/cmr/m/n/10 )$ \T1/cmr/m/n/10 tels que $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = []
- \OML/cmm/m/it/10 P[]$\T1/cmr/m/n/10 . 
+\T1/cmr/m/n/10 nale $\OML/cmm/m/it/10 D \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 M[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 et une ma-trice $\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 2 [][]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 tels que $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 P[]$\T1/cmr/m/n/10 . 
  []
 
 
@@ -4909,10 +4400,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7746--7747
 
 
 Overfull \hbox (25.26852pt too wide) in paragraph at lines 7748--7756
-\T1/cmr/m/n/10 Et si $\OML/cmm/m/it/10 ^^U[] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 
-= \OML/cmm/m/it/10 ^^U[]$ \T1/cmr/m/n/10 alors $\OMS/cmsy/m/n/10 j\OML/cmm/m/it
-/10 ^^V[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V[]\OMS/cmsy/m/n/10 j \OT1/cm
-r/m/n/10 = [] \OMS/cmsy/m/n/10 ^^U []$\T1/cmr/m/n/10 . 
+\T1/cmr/m/n/10 Et si $\OML/cmm/m/it/10 ^^U[] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^U[]$ \T1/cmr/m/n/10 alors $\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^V[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 ^^U []$\T1/cmr/m/n/10 . 
  []
 
 [296]
@@ -4975,27 +4463,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [299]
 
-LaTeX Warning: Reference `ThÃ©orÃ¨me de Hall' on page 300 undefined on input li
-ne 7844.
+LaTeX Warning: Reference `ThÃ©orÃ¨me de Hall' on page 300 undefined on input line 7844.
 
 
 Overfull \hbox (4.6647pt too wide) in paragraph at lines 7843--7852
-\T1/cmr/m/n/10 Alors d'après le théo-rème de Hall (cf.[]), $\OMS/cmsy/m/n/10 9\
-OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j[]; [] ; j[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/1
-0 2 [] \OML/cmm/m/it/10 A[];  \OMS/cmsy/m/n/10 8\OT1/cmr/m/n/10 (\OML/cmm/m/it/
-10 k; l\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/stmry/m/n/10 J\OT1/cmr/m/n/10 1;
- \OML/cmm/m/it/10 n\U/stmry/m/n/10 K[]\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 (\OML
-/cmm/m/it/10 k \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 =
+\T1/cmr/m/n/10 Alors d'après le théo-rème de Hall (cf.[]), $\OMS/cmsy/m/n/10 9\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j[]; [] ; j[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 [] \OML/cmm/m/it/10 A[];  \OMS/cmsy/m/n/10 8\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k; l\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/stmry/m/n/10 J\OT1/cmr/m/n/10 1; \OML/cmm/m/it/10 n\U/stmry/m/n/10 K[]\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 =
  []
 
 
 Overfull \hbox (7.91371pt too wide) in paragraph at lines 7853--7858
-[]\T1/cmr/m/n/10 Par hy-po-thèse de ré-cur-rence, $\OML/cmm/m/it/10 B[] \OMS/cm
-sy/m/n/10 2 []\OT1/cmr/m/n/10 (\U/eus/m/n/10 P[]\OT1/cmr/m/n/10 )$\T1/cmr/m/n/1
-0 . Donc $\OMS/cmsy/m/n/10 9\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^U[]; [] ; ^^U[]
-\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 (\U/msb/m/n/10 R[]\OT1/cmr
-/m/n/10 )[]\OML/cmm/m/it/10 ;  \OMS/cmsy/m/n/10 9\OT1/cmr/m/n/10 (\OML/cmm/m/it
-/10 P[]; [] ; P[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2
+[]\T1/cmr/m/n/10 Par hy-po-thèse de ré-cur-rence, $\OML/cmm/m/it/10 B[] \OMS/cmsy/m/n/10 2 []\OT1/cmr/m/n/10 (\U/eus/m/n/10 P[]\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 . Donc $\OMS/cmsy/m/n/10 9\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^U[]; [] ; ^^U[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 (\U/msb/m/n/10 R[]\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 ;  \OMS/cmsy/m/n/10 9\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P[]; [] ; P[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2
  []
 
 
@@ -5015,8 +4492,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7875--7876
 
 
 Overfull \hbox (9.9156pt too wide) in paragraph at lines 7876--7876
-|[]\T1/cmr/bx/n/12 Equation fonc-tion-nelle de l'ex-po-nen-tielle ma-tri-cielle
-  []| 
+|[]\T1/cmr/bx/n/12 Equation fonc-tion-nelle de l'ex-po-nen-tielle ma-tri-cielle  []| 
  []
 
 
@@ -5026,11 +4502,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7877--7878
 
 
 Overfull \hbox (9.40176pt too wide) in paragraph at lines 7879--7893
-\T1/cmr/m/n/10 Notons $\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\
-OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [] ; C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\
-OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 les co-lonnes de $\OML/cmm/m/it/10 '\OT1/cmr/m
-/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;  f \OT1/cmr/m/n/10
- : []$
+\T1/cmr/m/n/10 Notons $\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [] ; C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 les co-lonnes de $\OML/cmm/m/it/10 '\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;  f \OT1/cmr/m/n/10 : []$
  []
 
 [302]
@@ -5040,14 +4512,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 7903--7904
 
 
 Overfull \hbox (3.1203pt too wide) in paragraph at lines 7915--7919
-\T1/cmr/m/n/10 Et $\OML/cmm/m/it/10 k [] [] [][]\U/eus/m/n/10 O[][]$ \T1/cmr/m/
-n/10 et $[] [][] \OT1/cmr/m/n/10 = [] [] []
+\T1/cmr/m/n/10 Et $\OML/cmm/m/it/10 k [] [] [][]\U/eus/m/n/10 O[][]$ \T1/cmr/m/n/10 et $[] [][] \OT1/cmr/m/n/10 = [] [] []
  []
 
 [303]
 Overfull \hbox (82.36287pt too wide) in paragraph at lines 7928--7931
-\T1/cmr/m/n/10 Ainsi, $[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 )
- + [][](\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = [][] + [][] = [] [] =
+\T1/cmr/m/n/10 Ainsi, $[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) + [][](\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = [][] + [][] = [] [] =
  []
 
 
@@ -5127,9 +4597,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7967--7969
 
 
 Overfull \hbox (72.72247pt too wide) in paragraph at lines 7969--7976
-\T1/cmr/m/n/10 Les so-lu-tions de $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OT1/cmr/
-m/n/10 )$ \T1/cmr/m/n/10 sur $\U/msb/m/n/10 R[]$ \T1/cmr/m/n/10 sont les fonc-t
-ions $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 : []$
+\T1/cmr/m/n/10 Les so-lu-tions de $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 sur $\U/msb/m/n/10 R[]$ \T1/cmr/m/n/10 sont les fonc-tions $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 : []$
  []
 
 
@@ -5417,55 +4885,14 @@ Package rerunfilecheck Info: File `Analyse.out' has not changed.
 (rerunfilecheck)             Checksum: A61928512A761D4CAA9B79F85FB342C2;85265.
  ) 
 Here is how much of TeX's memory you used:
- 32527 strings out of 474486
- 600460 string characters out of 5743755
+ 32529 strings out of 474486
+ 600671 string characters out of 5743755
  1996542 words of memory out of 5000000
  52006 multiletter control sequences out of 15000+600000
  586400 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,14n,96p,1228b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-0700.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600
-\bbm10.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
-600\ecti1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecbx1440.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ecbx1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/p
-k/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\marco\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\marco\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\marco\AppD
-ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\marc
-o\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\User
-s\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:
-/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cmextra/cmex7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/marco/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/marco/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/marco/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/marco/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
-marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
-:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5
-.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/marco/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/marco/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/marco/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm7.pfb><C:/U
-sers/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/symbols/msbm5.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/symbols/msbm7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/hoekwater/stmary10.pfb><C:/Users/marco/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/hoekwater/stmary7.pfb><C:/Users/marco/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb><C:/Users/marco/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/yhmath/yhcmex.pfb>
+ 89i,14n,96p,1297b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\bbm10.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm5.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/stmary10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/stmary7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/yhmath/yhcmex.pfb>
 Output written on Analyse.pdf (319 pages, 2487873 bytes).
 PDF statistics:
  7124 PDF objects out of 7423 (max. 8388607)
