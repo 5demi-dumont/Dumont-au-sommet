@@ -198,8 +198,12 @@
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <i class="bi bi-file-earmark-pdf-fill display-3 text-danger mb-3"></i>
-                      <h5 class="card-title">Tome I : Analyse</h5>
-                      <p class="card-text text-muted">PDF - Analyse</p>
+                      <h5 class="card-title">Tome I : Algèbre</h5>
+                      <p class="card-text text-muted mb-1">PDF - Analyse</p>
+                      
+                      <small class="text-muted mb-3 last-updated" data-file="pdf/Analyse.pdf">
+                          <i class="bi bi-clock me-1"></i> Vérification...
+                      </small>
                       <a href="pdf/Analyse.pdf" class="btn btn-primary" download>
                         <i class="bi bi-download me-2"></i>Télécharger
                       </a>
@@ -207,13 +211,17 @@
                   </div>
                 </div>
 
-                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
                   <div class="card h-100 shadow-sm text-center">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <i class="bi bi-file-earmark-pdf-fill display-3 text-danger mb-3"></i>
                       <h5 class="card-title">Tome II : Algèbre</h5>
-                      <p class="card-text text-muted">PDF - Algèbre & Proba</p>
-                      <a href="pdf/Algèbre.pdf" class="btn btn-primary" download>
+                      <p class="card-text text-muted mb-1">PDF - Algèbre</p>
+                      
+                      <small class="text-muted mb-3 last-updated" data-file="pdf/Algèbre.pdf">
+                          <i class="bi bi-clock me-1"></i> Vérification...
+                      </small>
+                      <a href="pdf/Analyse.pdf" class="btn btn-primary" download>
                         <i class="bi bi-download me-2"></i>Télécharger
                       </a>
                     </div>
@@ -670,6 +678,42 @@
         // --- FIN DU SCRIPT POUR LE DARK MODE ---
 
     </script>
+<script>
+        // ⚠️ REMPLACEZ CES DEUX VALEURS PAR LES VÔTRES !
+        const USERNAME = '5demi-dumont';   // Votre nom d'utilisateur GitHub
+        const REPO_NAME = 'Dumont-au-sommet'; // Le nom exact de votre dépôt
+        
+        // Fonction qui fait le travail
+        document.querySelectorAll('.last-updated').forEach(async (element) => {
+            const filePath = element.getAttribute('data-file');
+            const apiUrl = `https://api.github.com/repos/${USERNAME}/${REPO_NAME}/commits?path=${filePath}&page=1&per_page=1`;
 
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+
+                if (data && data.length > 0) {
+                    // On récupère la date du dernier "commit" (modification)
+                    const dateString = data[0].commit.committer.date;
+                    const date = new Date(dateString);
+                    
+                    // On la formate en français (ex: 12 oct. 2024)
+                    const formattedDate = date.toLocaleDateString('fr-FR', {
+                        day: 'numeric',
+                        month: 'short',
+                        year: 'numeric'
+                    });
+
+                    // On met à jour le texte
+                    element.innerHTML = `<i class="bi bi-clock-history me-1"></i> MàJ : ${formattedDate}`;
+                } else {
+                    element.innerHTML = ""; // On cache si on ne trouve pas d'info
+                }
+            } catch (error) {
+                console.error("Erreur récupération date:", error);
+                element.innerHTML = ""; // On cache en cas d'erreur
+            }
+        });
+    </script>
 </body>
 </html>
