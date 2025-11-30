@@ -2700,6 +2700,11 @@ On note $\ell^\infty$ l'ensemble des suites bornées de $\K^\N$ que l'on munit d
 	\item Montrer que l'ensemble des suites convergentes est un fermé de $\ell^\infty$.
 \end{enumerate}
 
+ \section{Calcul d'une adhérence \xens{3}}
+ \label{Calcul d'adhérence}
+ \textcolor{blue}{\hyperref[Calcul d'adhérence corrigé]{[Corrigé]}}\\
+ Quelle est l'adhérence de $E=\left\{\dfrac{1}{p}+\dfrac{1}{q},\ (p,q)\in (\N^*)^2\right\}$ ?
+ 
 \section{Partie ouverte et fermée simultanément}
 \label{Partie ouverte et fermée simultanément}
 \textcolor{blue}{\hyperref[sec:partie-ouverte-et-fermee-simultanement]{[Corrigé]}}\\
@@ -2875,6 +2880,15 @@ Pour cela on pose, pour tout $n\in \N$, $F_n=\{f\in E,\ \exists x\in I,\ \forall
 	\item Donner un contre exemple dans $\R[X]$.
 \end{enumerate}
 
+\subsection{Lemme de Croft (2)}
+Soit $f:\R^*_+\to\R$ une application telle que
+$$\forall x>0,\ \unfty\lim f(nx)=0$$
+\begin{enumerate}
+	\item On suppose $f$ uniformément continue. Montrer que $\uxfty\lim f(x)=0$.
+	\item On suppose seulement $f$ continue. Montrer à l'aide du théorème de Baire qu'on a toujours $\uxfty\lim f(x)=0$.
+	\item Le résultat est-t-il vrai sans hypothèse supplémentaire sur $f$ ?
+\end{enumerate}
+
 \subsection{Caractérisation des polynômes réels \etoile{5} (HP)}
 Soit $f\in \mathcal C^\infty(\R,\R)$ telle que $\forall x\in \R,\ \exists n\in \N,\ f^{(n)}(x)=0$. Le but de cet exercice est de montrer que $f$ est polynomiale. On note pour $n\in \N,\ F_n=\{x\in \R,\ f^{(n)}(x)=0\}$. On note aussi $\Omega=\displaystyle\bigcup_{n\in \N} \ring F_n$ et $\Phi=\R\setminus\Omega$. Enfin, on suppose que $\Phi$ n'est pas vide. On admettra que $\R$ est complet (cf. \ref{Suite de Cauchy}).
 \begin{enumerate}
@@ -2907,7 +2921,14 @@ Soit $f\in \mathcal C^\infty(\R,\R)$ telle que $\forall x\in \R,\ \exists n\in \
 	\end{enumerate}
 	\item Conclure.
 \end{enumerate}
-
+\subsection{Un raffinement}
+\begin{enumerate}[leftmargin=*]
+	\item Expliquer comment adapter la démonstration précédente pour montrer le résultat suivant :\\
+	Si $f\in \mathcal C^\infty(\R,\R)$ et si $D$ est une partie au plus dénombrable qui vérifie
+	$$\forall x\in \R,\ \exists n\in \N,\ f^{(n)}(x)\in D$$
+	alors $f$ est polynomiale.
+	\item En déduire que si $f\in \mathcal C^\infty(\R,\R)$ n'est pas polynomiale alors il existe un réel en lequel toutes les dérivées successives de $f$ sont irrationnelles.
+\end{enumerate}
 \section{Volume d'une (hyper)boule \xens{3} (HP)}
 \label{Volume d'une (hyper)boule}
 \textcolor{blue}{\hyperref[sec:volume-dune-hyperboule-etoile3]{[Corrigé]}}\\
@@ -4468,6 +4489,7 @@ Alors, on a l'équivalence :
 	\subsection{Nature d'une suite}\label{sec:nature-dune-suite}
 		\textcolor{blue}{\hyperref[Nature d'une suite]{[Enoncé]}}\\
 	\subsection{Valeurs d'adhérence d'une suite}\label{sec:valeurs-dadherence-dune-suite}
+		\textcolor{blue}{\hyperref[Valeurs d'adhérence d'une suite]{[Enoncé]}}
 	\subsection{Nature d'une série (1)\etoile{1}}\label{sec:nature-dune-serie-1etoile1}
 		\textcolor{blue}{\hyperref[Nature d'une série 1]{[Enoncé]}}\\
 	On remarque que: \begin{align*}
@@ -5687,6 +5709,30 @@ Alors, on a l'équivalence :
 \section{Correction Polynômes}
 	\subsection{Théorème de d'Alembert-Gauss (2)}\label{sec:theoreme-de-dalembert-gauss-2}
 	\textcolor{blue}{\hyperref[alembertgauss2]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $\P$ est une partie non vide et minorée (par $0$) de $\R$. Elle admet donc une borne inférieure.
+		\item Soit $z\in \C$ de module $r$. Par la seconde inégalité triangulaire puis la première :\\
+		$|P(z)|=\displaystyle\left|a_nz^n+\sum_{k=0}^{n-1}a_kz^k\right|\geq \left||a_nz^n|-\left|-\sum_{k=0}^{n-1}a_kz^k\right|\right|\geq |a_n|r^n-\left|\sum_{k=0}^{n-1}a_kz^k\right|\geq |a_n|r^n-\sum_{k=0}^{n-1}|a_k|r^k$.
+		\item Le membre de droite est équivalent à $|a_n|r^n$ pour $r\to\infty$ donc $\lim\limits_{|z|\to+\infty}|P(z)|=+\infty$.
+		\item \begin{enumerate}[label=\alph*.]
+			\item Par caractérisation séquentielle de la borne inférieure $\exists (u_n)\in \C^\N,\ |P(u_n)|\unfty\longrightarrow\alpha$. D'après la question précédente si $(u_n)_{n\in \N}$ n'est pas bornée alors $|P(u_n)|\unfty\longrightarrow+\infty$ donc $(u_n)_{n\in \N}$ est bornée.
+			\item Par le théorème de Bolzano-Weierstrass on peut extraire de $(u_n)_{n\in \N}$ une suite $(v_n)_{n\in \N}$ qui converge. On note $z_0$ sa limite.\\
+			Par continuité de $|P|$, $|P(v_n)|\unfty\longrightarrow |P(z_0)|$ et d'autre part $|P(v_n)|\unfty\longrightarrow\alpha$ comme suite extraite. Donc par unicité de la limite $|P(z_0)|=\alpha$.
+		\end{enumerate}
+		\item \begin{enumerate}[label=\alph*.]
+			\item $\displaystyle\inf_{z\in \C}|Q(z)|=\frac{1}{|P(z_0)|}\inf_{z\in \C}|P(z)|=1=|Q(0)|$.
+			\item Notons $Q=\displaystyle\sum_{k=0}^nb_kX^k$ ainsi que $p$ la plus petite puissance des monômes non constants non nuls de $Q$ (il y en a une car $P$ n'est pas constant donc $Q$ n'est pas constant).\\
+			$Q(X)=Q(0)+b_pX^p+\displaystyle\sum_{k=p+1}b_kX^k=1+b_pX^p+\sum_{k=p+1}^nb_pX^p$.
+			\item On a \begin{align*}
+				|Q(re^{i\theta/p})|-1&\ \, =\left|1+r^p\left(b_pe^{-i\theta}+r\sum_{k=p+1}^nb_ke^{-ik\theta/p}r^{k-p-1}\right)\right|-1\\
+				&\underset{r\to0^+}{=}|1+\rho r^p+\smallo{r^p}|-1\\
+				&\underset{r\to0^+}{=}\rho r^p+\smallo{r^p}\\
+				&\underset{r\to0^+}{\sim}\rho r^p
+			\end{align*}
+			$\rho r^p$ est strictement négatif au voisinage de $0^+$ donc $|Q(re^{i\theta/p})|-1$ aussi.
+		\end{enumerate}
+		\item Ce dernier résultat contredit la minimalité de $\alpha$ donc $\alpha=0$. Autrement dit $P(z_0)=0$ et le théorème est démontré.
+	\end{enumerate}
 	\subsection{Bernoulli}\label{sec:bernoulli}
 	\textcolor{blue}{\hyperref[bernoulli]{[Enoncé]}}\\
 	\subsection{Lagrange \etoile{1}}\label{sec:lagrange-etoile1}
@@ -6888,7 +6934,20 @@ Alors, on a l'équivalence :
 			$$|\ell_p-\ell_N|\leq |\ell_p-u_p^k|+|u_p^k-u_N^k|+|u_N^k-\ell_N|\leq |u_p^k-\ell_p|+\normep{\infty}{u_p-u_N}+|u_N^k-\ell_N|<\varepsilon$$
 			On conclut comme la question précédente avec le théorème de la double limite.
 		\end{enumerate}
-	
+	\subsection{Calcul d'adhérence}
+	\label{Calcul d'adhérence corrigé}
+	\textcolor{blue}{\hyperref[Calcul d'adhérence]{[Enoncé]}}
+	Soit $r_n\in E^\N$ convergente. On note $r$ sa limite. $\forall n\in \N,\ \exists (p_n,q_n)\in (\N^*)^2,\ r_n=\displaystyle\frac{1}{p_n}+\frac{1}{q_n}$.\\
+	On rappelle qu'une suite d'entier qui converge stationne et que donc la limite d'une suite d'entiers naturels non nuls est un entier naturel non nul (cf.$\Z$ est fermé).\\
+	On distingue des cas suivant si $(p_n)$, $(q_n)$ sont bornées ou non.\\
+	Si $(p_n)$ et $(q_n)$ sont bornées alors quitte à extraire, on peut supposer que $(p_n)$ converge vers une limite $p\in \N^*$. Alors $\unfty\lim\dfrac{1}{q_n}=\unfty\lim r_n-\dfrac{1}{p_n}=r-\dfrac{1}{p}$. $(q_n)$ est bornée donc $\unfty\lim\dfrac{1}{q_n}\ne 0$ et donc $(q_n)$ converge vers $q:=\dfrac{1}{r-\dfrac{1}{p}}\in \N^*$. Ainsi $r=\dfrac{1}{p}+\dfrac{1}{n}$ avec $p,q\in \N^*$.\\
+	Supposons qu'une des suites $(p_n),(q_n)$ est bornée et que l'autre ne l'est pas. On suppose sans perte de généralité que $(p_n)$ n'est pas bornée et que $(q_n)$ l'est.
+	On montre (cf. lemme des pics dans l'exo de Bolzano 
+	Weierstrass) que de toute suite réelle on peut extraire une suite monotone. Donc quitte à extraire on peut supposer $(p_n)$ monotone. $(p_n)$ n'est pas décroissante puisque étant minorée elle serait bornée. $(p_n)$ est donc une suite croissante non bornée : elle diverge vers $+\infty$.\\
+	Ainsi $\dfrac{1}{q_n}=r_n-\dfrac{1}{p_n}\unfty\longrightarrow r$. Comme $(q_n)$ est bornée, $r\ne 0$ et donc $(q_n)$ converge vers une limite $q\in \N^*$ puis $r=\unfty\lim \dfrac{1}{p_n}+\dfrac{1}{q_n}=\dfrac{1}{q}$.\\
+	Enfin supposons $(p_n)$ et $(q_n)$ non bornées. Quitte à extraire on peut supposer $(p_n)$ croissante, et donc de limite $+\infty$. Alors $\dfrac{1}{q_n}\unfty\longrightarrow r$. Si $r\ne 0$, $(q_n)$ converge vers $\dfrac{1}{r}$ et est donc bornée. On en déduit que $r=0$.\\
+	Ainsi $\overline E=\{0\}\cup\left\{\dfrac{1}{n},\ n\in \N^*\right\}\cup E$.\\\\
+	\textit{Remarque : On aurait aussi pu extraire de manière à ce que $(p_n)$ et $(q_n)$ soient bornée(s)/monotone(s), ce qui revient à dire qu'un produit cartésien de compacts est compact. Cela nous évite d'avoir à montrer que $\left(\dfrac{1}{q_n}\right)_{n\in \N}$ converge à chaque fois.}
 	\subsection{Partie ouverte et fermée simultanément}
 	\label{sec:partie-ouverte-et-fermee-simultanement}
 		\textcolor{blue}{\hyperref[Partie ouverte et fermée simultanément]{[Enoncé]}}\\
@@ -7197,6 +7256,9 @@ Alors, on a l'équivalence :
 		$$\displaystyle\overline{\bigcap\limits_{n\in \N}\Omega_n}=E\iff \widering{\bigcup\limits_{n\in \N}\Omega_n^c}=\emptyset$$
 	\end{enumerate}
 	\subsubsection{$\R$ n'est pas dénombrable}
+	On montre que $\R$ est complet (cf. \ref{R est complet}).\\
+	Supposons que $\R$ est dénombrable. Pour tout $x\in\R$, $\{x\}$ est un fermé de $\R$ d'intérieur vide. Donc d'après le théorème de Baire $\R=\displaystyle\bigcup_{x\in \R}\{x\}$ est d'intérieur vide. Ceci est absurde donc $\R$ n'est pas dénombrable.
+	
 	\subsubsection{Base d'un espace de Banach \etoile{3}}
 	Soit $E$ un espace de Banach. Supposons par l'absurde que $E$ admette une base dénombrable $\B=(e_n)_{n\in \N}$.\\
 	On pose pour $n\in \N,\ F_n=\Vect(e_0,\dots,e_n)$. Fixons $n\in \N$.\\
@@ -7234,6 +7296,24 @@ Alors, on a l'équivalence :
 		Mais alors d'après la question $1$, $\widering{A^c}\subset \displaystyle\widering{\bigcup\limits_{n\in \N}F_n}=\emptyset$ d'où $\widering{A^c}=\emptyset$ c'est à dire $A$ est dense dans $E$.
 	\end{enumerate}
 
+	\subsubsection{Lemme de Croft}
+\begin{enumerate}[leftmargin=*]
+	\item Soit $\varepsilon>0$. Par uniforme continuité $\exists \eta>0,\ \forall (x,y)\in (\R^*_+)^2,\ |x-y|\leq\eta\implies |f(x)-f(y)|<\dfrac{\varepsilon}{2}$.\\
+	On sait que $\unfty\lim f(n\eta)=0$ donc $\exists N\in \N^*,\ \forall n\geq N,\ |f(n\eta)|<\dfrac{\varepsilon}{2}$.\\
+	Soit $x\geq N\eta$. On pose $n=\left\lfloor\dfrac{x}{\eta}\right\rfloor$ de sorte que $|x-n\eta|\leq \eta$ et $n\geq N$.\\
+	On a alors $|f(x)|\leq |f(x-n\eta)|+|f(n\eta)|<\varepsilon$.\\
+	On a montré que $\forall x\geq N\eta,\ |f(x)|<\varepsilon$ i.e $f$ admet une limite nulle en $+\infty$.
+	\item Fixons $\varepsilon>0$. On pose pour $n\in \N,\ F_n=\{x>0,\ \forall p\geq n,\ |f(px)|\leq\varepsilon\}$. Par continuité de $f$, l'application $g_n:x\mapsto |f(nx)|$ est continue et par suite les ensembles $F_{n,p}:=\{x>0,\ |f(px)|<\varepsilon\}=g_n^{-1}([0,\varepsilon])$ sont fermés d'où $F_n=\displaystyle\bigcap_{p\geq n}F_{n,p}$ est fermé. Par hypothèse $\displaystyle\bigcup_{n\in \N} F_n=\R^*_+$. $\R^*_+$ n'est pas d'intérieur vide donc d'après la contraposée du théorème de Baire il existe un entier naturel $n$ tel que $\ring F_n\ne\emptyset$.\\
+	Ainsi il existe $0<\alpha<\beta$ tels que $\forall y>0,\ y\in ]\alpha,\beta[\implies \forall p\geq n,\ |f(py)|<\varepsilon$.\\
+	Autrement dit, $\forall z>0,\ z\in \displaystyle\bigcup_{p\geq n}\ ]p\alpha,p\beta[\implies |f(z)|<\varepsilon$.\\
+	Or pour $p>p_0:=\max\left(n,\left\lfloor\dfrac{\alpha}{\beta-\alpha}\right\rfloor\right),\ (p+1)\alpha\geq p\beta$. Donc $\displaystyle\bigcup_{p>p_0}\ ]p\alpha,p\beta[\ =\ ](p_0+1)\alpha,+\infty[$.\\
+	On a montré que si $y>(p_0+1)\alpha$ alors $|f(y)|<\varepsilon$. Ainsi $f$ admet une limite nulle en $+\infty$.
+	\item Ce n'est malheureusement pas aussi simple...\\
+	On va poser $f=\mathbbm 1_A$ avec $A$ non majoré et tel que le quotient de deux éléments distincts de $A$ ne soit jamais rationnel. En effet $A$ non majoré assure que $f$ n'ait pas de limite en $+\infty$. En outre, si $mx\leq nx\in A$ alors $\displaystyle\frac{n}{m}\in \Q$ est un quotient d'éléments de $A$ et donc $n=m$. Ceci assure que pour tout $x>0,\ nx\notin A$ APCR et donc $\unfty\lim f(nx)=0$.\\
+	On peut considérer $A=\{\pi^k,\ k\in \Z\}$ l'ensemble des puissances entières de $\pi$. $\pi>1$ donc $A$ n'est pas majoré et de plus pour tout $m<n\in \N$, si $\pi^{n-m}\in \Q$ alors $\pi$ est racine du polynôme à coefficients rationnels $X^{n-m}-\pi^{n-m}$. Il est bien connu que $\pi$ est transcendant donc ceci est absurde d'où $\pi^{n-m}\notin \Q$. On en déduit aussi $\pi^{m-n}\notin \Q$.\\
+	En fait il suffit de prendre l'ensemble des puissances entières de n'importe quel nombre transcendant réel positif. Sans même en expliciter on sait qu'il en existe car les nombres algébriques sont dénombrables. $\R_+$ étant non dénombrable il contient une infinité de nombres transcendants.
+\end{enumerate}
+
 	\subsubsection{Caractérisation des endomorphismes continus nilpotents dans un espace de Banach \etoile{3}}
 	\begin{enumerate}[leftmargin=*]
 		\item Posons pour $n\in \N^*,\ F_n=\{x\in E,\ f^n(x)=0\}$. $F_n$ est fermé.\\
@@ -7255,8 +7335,52 @@ Alors, on a l'équivalence :
 	\end{enumerate}
 	
 	\subsubsection{Caractérisation des polynômes réels \etoile{5}}
+	\begin{enumerate}[leftmargin=*]
+		\item L'hypothèse de l'énoncé se traduit en $\R=\displaystyle\bigcup_{n\in \N} F_n$. Pour tout $n\in \N$, $F_n=(f^{(n)})^{-1}(\{0\})$ est fermé car $f^{(n)}$ est continue. Donc d'après la contraposée du théorème de Baire, $\widering{\displaystyle\bigcup_{n\in \N} F_n}=\ring \R=\R\ne\emptyset\implies \exists N\in \N,\ \ring F_N\ne\emptyset$.
+		\item \begin{enumerate}[label=\alph*.]
+			\item $x\in \ring F_N$ donc $f^{(N)}$ s'annule sur un voisinage ouvert de $x$. Donc si $k\geq N$, $f^{(k)}$ s'annule sur ce même voisinage et en particulier en $x$.
+			\item La série de Taylor de $f$ converge en tout point $x\in I$ puisque $$\displaystyle\sum_{k=0}^{\infty}\dfrac{f^{(k)}(x)}{k!}(y-x)^k=\sum_{k=0}^{N-1}\dfrac{f^{(k)}(x)}{k!}(y-x)^k$$
+			$I$ étant un voisinage ouvert de $x$, $f$ est égale sur $I$ à sa série de Taylor en $x$, qui est une fonction polynomiale.
+		\end{enumerate}
+		\item \begin{enumerate}[label=\alph*.]
+			\item On sait que les connexes par arcs de $\R$ sont les intervalles. Si $J$ contient une de ses bornes, disons son sup $v$, alors comme $\Omega$ est ouvert, on peut trouver $\varepsilon>0$ tel que $v+\varepsilon\in \Omega$. Mais alors $J\cup [v,v+\varepsilon]\subset \Omega$ ce qui contredit la maximalité de $J$. De manière analogue, $J$ ne contient pas sa borne inférieure $u$ et donc $J=]u,v[$ est ouvert.
+			\item $x_0\in \Omega$ donc il existe un entier naturel $n$ tel que $x_0\in \ring F_n$ et donc il existe un intervalle ouvert $I_0$ tel que $x_0\in I\subset F_n$. Or comme $x_0\in J$ et comme $I$ est connexe par arcs, $I\subset J$. Alors $x_0\in I\subset F_n\cap J$. De plus, $I$ est non vide donc la question précédente donne l'existence d'un polynôme $P$ tel que $\forall y\in I,\ f(y)=P(y)$.
+			\item $x_0\in I$ donc $A$ est non vide. De plus $A$ est connexe par arcs, en effet si $y<z\in A$ alors $\forall t\in [0,1],\ [x_0,ty+(1-t)z]\subset [x_0,z]\implies ty+(1-t)z\in A$. Donc $A$ est connexe par arcs.\\
+			Ainsi comme $A$ contient un élément $x_0\in J$, $A\subset J$.
+			\item Supposons $s\in \Omega$. Notons $p\in \N$ tel que $s\in \ring F_p$. Alors $\exists \varepsilon\in ]0,s-x_0],\ I':=]s-\varepsilon,s+\varepsilon[\subset F_p$. D'après la question 2, $\exists Q\in \R[X],\ \forall y\in I',\ f(y)=Q(y)$.\\
+			$f$ et $Q$ coïncident sur l'intervalle $I'$, il en va donc de même pour leurs dérivées successives. Par ailleurs $f$ et $P$ coïncident sur le connexe par arcs $A$, il en va donc de même pour leurs dérivées successives.
+			Mais alors en $y=s-\varepsilon\in A\cap I'$, $\forall k\in \N,\ P^{(k)}(y)=f^{(k)}(y)=Q^{(k)}(y)$. On en déduit que $P=Q$ et donc que $s+\varepsilon\in A$ ce qui contredit la maximalité de $s$. On en déduit que $s\notin\Omega$.\\
+			Par conséquent, $s\notin J$. Pourtant $A\subset J\implies s\leq \sup J$, donc comme $J$ est un intervalle, $s=\sup J$.
+			\item On montre de la même manière qu'en notant $B=\{x\leq x_0\ |\ \forall y\in [x,x_0],\ f(y)=P(y)\}$, $B$ est un intervalle et on a $\inf B=\inf J$. $A\cup B$ est l'union de deux intervalles non disjoints ($x_0\in A\cap B$), c'est donc aussi un intervalle. En outre, $A\cup B\subset J$ et $\inf A\cup B=\inf J$ et $\sup A\cup B=\sup J$. Ainsi $J=A\cup B$ i.e $\forall y\in J,\ f(y)=P(y)$.
+		\end{enumerate}
+		\item \begin{enumerate}[label=\alph*.]
+			\item Soit $x\in \Phi$. Supposons $x$ isolé dans $\Phi$. Alors il existe $\varepsilon>0$ tel que $I_-:=]x-\varepsilon,x[\subset \Omega$ et $I_+:=]x,x+\varepsilon[\subset \Omega$. $I_-$ et $I_+$ Etant des intervalles de $\Omega$, la question 3 assure que $f$ est polynomiale sur $I_-$ et $I_+$. On note $P_-$ et $P_+$ tels que $\forall y\in I_-,\ f(y)=P_-(y)$ et $\forall y\in I_+,\ f(y)=P_+(y)$.\\
+			D'après le théorème de la limite de la dérivée, $\forall n\in \N,\ P_-^{(n)}(x)=f^{(n)}(x)=P_+^{(n)}(x)$. En particulier $x\in\ring F_{\max(deg(P),\deg(Q))+1}$ ce qui est absurde. Donc $\Phi$ n'a pas de point isolé.
+			\item $\Omega$ est ouvert en tant que réunion d'ouverts donc $\Phi$ est fermé. Ainsi si $(x_n)\in \Phi^\N$ est de Cauchy alors comme $\R$ est complet elle converge dans $\R$. Mais comme $\Phi$ est fermé, elle converge dans $\Phi$.\\
+			Par conséquent $\Phi$ est complet.
+			\item $\Phi=\R\cap\Phi=\displaystyle\left(\bigcup_{n\in \N} F_n\cap\Phi\right)=\bigcup_{n\in \N}(\Phi\cap F_n)$. On a supposé $\Phi$ non vide donc on peut se donner $x\in \Phi$. On sait que $x$ n'est pas isolé dans $\Phi$ donc $x$ appartient à l'intérieur \underline{dans $\Phi$} de $\Phi$ :
+			$$\forall \varepsilon>0,\ \exists x_\varepsilon\in \Phi,\ |x-x_\varepsilon|<\varepsilon$$
+			Notons pour toute partie $X\subset \Phi,\ \ring X_\Phi=\{x\in X,\ \exists \varepsilon>0,\ \emptyset\ne]x-\varepsilon,x+\varepsilon[\cap\Phi\subset X\}$ l'intérieur de $X$ dans $\Phi$.\\
+			Les $\Phi\cap F_n$ sont des fermés de $\Phi$ dont la réunion est d'intérieur non vide dans $\Phi$, d'après la contraposé du théorème de Baire $\exists n_0\in \N,\ \widering{(\Phi\cap F_n)}_\Phi\ne\emptyset$.\\
+			Autrement dit il existe un intervalle ouvert $I$ tel que $\emptyset\ne I\cap\Phi\subset F_{n_0}$.
+			\item Comme $x$ n'est pas isolé dans $\Phi$, $\forall n\in \N^*,\ \exists x_n\in \Phi\backslash\{x\},\ |x-x_n|<\dfrac{1}{n}$. $(x_n)_{n\in \N}$ converge vers $x$ et est APCR à valeurs dans $I$ (car c'est un ouvert). Quitte à réindicer on peut supposer $(x_n)_{n\in \N}$ à valeurs dans $I\cap\Phi\backslash\{x\}$. De plus d'après le lemme des pics (cf.l'exo de Bolzano-Weierstrass) on peut extraire de $(x_n)_{n\in \N}$ une suite monotone. Cette suite converge toujours vers $x$ et ne stationne pas à $x$, on peut donc la supposer strictement monotone quitte à enlever des termes.
+			\item Supposons $(x_k)_{k\in \N}$ strictement croissante. Alors $\forall k\in \N,\ x_k<x_{k+1}$ et $f^{(n_0)}(x_{k-1})=f^{(n_0)}(x_k)=f^{(n_0)}(x_{k+1})=0$. D'après le théorème de Rolle il existe une suite $(y^1_k)_{k\in \N^*}$ telle que $\forall k\in \N,\ x_{k-1}<y^1_k<x_k<y^1_{k+1}<x_{k+1}<x$ et $f^{(n_0+1)}(y^1_k)=0$.\\
+			On construit comme ceci par récurrence des suites $(y^p_k)_{k\in \N^*}$ telles que $\forall p\in \N^*,\ \forall k\in \N^*,\ x_{k-1}<y^p_k<y^{p+1}_k<x$ et $f^{(n_0+p)}(y^p_k)=0$.\\
+			Par construction $\forall p\in \N^*,\ y^p_k\ukfty\longrightarrow x$ et $(y^p_k)_{k\in \N^*}\in F_{n_0+p}^{\N^*}$. Donc comme les $F_n,\ n\geq n_0$ sont des fermés, $\forall n\geq n_0,\ x\in F_n$.
+			\item Soit $J=]u,v[$ ($u,v\in \overline\R$) une composante connexe par arcs de $I\cap\Omega$. On remarque que $I=(I\cap\Phi)\sqcup(I\cup\Omega)$. Comme $I\cap\Phi\ne\emptyset$, $u\ne-\infty$ ou $v\ne+\infty$. Donc $u\in I\cap\Phi$ ou $v\in I\cap\Phi$. Supposons $v\in I\cap\Phi$, alors d'après la question précédente, $\forall n\geq n_0,\ f^{(n)}(v)=0$. Par ailleurs $J$ est un connexe par arcs de $\Omega$ donc d'après la question 3, $\exists P\in \R[X],\ \forall y\in J,\ f(y)=P(y)$.\\
+			Il suit $\forall n\geq n_0,\ P^{(n)}(v)=f^{(n)}(v)=0$. Puis par la formule de Taylor, $\deg(P)<n_0$ d'où $P^{(n_0)}=0$ et enfin $\forall y\in J,\ f^{(n_0)}(y)=0$ i.e $J\subset F_{n_0}$. On peut faire le même raisonnement si $u\in I\cap\Phi$.
+			\item $I$ est la réunion de $I\cap\Phi$ et des composantes connexes par arcs de $I\cap\Omega$. Tous ces ensembles sont inclus dans $F_{n_0}$ donc $I\subset F_{n_0}$. Et puis comme $I$ est ouvert, $I\subset \ring F_{n_0}\subset \Omega$.
+		\end{enumerate}
+		\item $I\subset \Omega\implies I\cap\Phi=\emptyset$. Cela contredit la définition de $I$ donc une hypothèse qu'on a fait est fausse. La seule hypothèse qu'on a fait est celle qui dit que $\Phi$ est non vide. On en déduit donc que $\Omega=\R$.\\
+		Sa seule composante connexe par arcs est donc $\R$ et la question 3 conclut l'exercice.
+	\end{enumerate}
 	
-	
+	\textit{Remarque : Le résultat analogue pour les fonctions polynomiales complexes (fonctions entières) est vrai et surprenamment (ou pas) largement plus simple à démontrer.}
+	\subsubsection{Un raffinement}
+	\begin{enumerate}[leftmargin=*]
+		\item Il suffit de considérer $\Omega=\displaystyle\bigcup_{(n,d)\in \N\times D}\ring F_{n,d}$ avec $F_{n,d}=\{x\in \R,\ f^{(n)}(x)=d\}$. Le reste de la démonstration ne change pas.
+		\item Application directe de la question 1 avec $D=\Q$.
+	\end{enumerate}
 	\subsection{Volume d'une (hyper)boule \etoile{3}}\label{sec:volume-dune-hyperboule-etoile3}
 		\textcolor{blue}{\hyperref[Volume d'une (hyper)boule]{[Enoncé]}}\\
 	\begin{enumerate}
