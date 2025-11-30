@@ -499,7 +499,8 @@
 	
 	\section{Problème de Bâle}
 	\label{Problème de Bâle}
-	\textcolor{blue}{\hyperref[sec:probleme-de-bale]{[Corrigé]}}
+	\textcolor{blue}{\hyperref[sec:probleme-de-bale]{[Corrigé]}}\\
+	On cherche à calculer la somme des $\frac{1}{n^2}$. On va noter \[\zeta(2)=\sum_{n=1}^{+\infty}\frac{1}{n^2}\]
 	\subsection{Lemme de Riemann-Lebesgue}
 	\begin{enumerate}[leftmargin=*]
 		\item Soient $(a,b)\in \R^2$ tel que $a<b$ et $f$ une fonction de classe $\mathcal C^1$ sur $[a,b]$ à valeurs dans $\R$. On pose pour $\lambda\in \R$,
@@ -507,6 +508,8 @@
 		Montrer que $\lim\limits_{\lambda\to +\infty}I(\lambda)=\lim\limits_{\lambda\to +\infty}J(\lambda)=0$.
 		\item Déterminer deux réels $u$ et $v$ tels que pour tout $n\in \N^*$ :
 		$$\int_0^\pi(ux+vx^2)\cos(nx)dx=\frac{1}{n^2}$$
+		\item Soit $n\in\N^*$.  Montrer que pour tout $x\in]0,\pi]$.
+		\[\sum_{k=1}^{n}\cos(kx)=\frac{\sin\left(\left(n+\frac{1}{2}\right)x\right)}{2\sin\left(\frac{x}{2}\right)}-\frac{1}{2}\]
 		\item Montrer que la fonction $\varphi:x\in ]0,\pi]\mapsto\displaystyle\frac{x}{\sin\left(\frac{x}{2}\right)}$ est prolongeable en une fonction de classe $\mathcal C^1$ sur $[0,\pi]$.
 		\item En déduire que $\zeta(2)=\displaystyle\frac{\pi^2}{6}$.
 		\item Exprimer la somme de la série $\displaystyle\sum_{n\in \N^*}\frac{1}{(2n-1)^2}$ en fonction de $\zeta(2)$ et en déduire sa valeur.
@@ -4630,19 +4633,24 @@ Alors, on a l'équivalence :
 		\textcolor{blue}{\hyperref[Problème de Bâle]{[Enoncé]}}
 	\subsubsection{Lemme de Riemann-Lebesgue}
 	\begin{enumerate}[leftmargin=*]
-		\item cf. $\ref{Lemme de Riemann-Lebesgue : cas des fonction C1}$. Il suffira ensuite de prendre la partie réelle et la partie imaginaire pour obtenir le résultat.
+		\item cf. \ref{Lemme de Riemann-Lebesgue : cas des fonction C1}. Il suffira ensuite de prendre la partie réelle et la partie imaginaire pour obtenir le résultat.
 		\item Soit $n\in\N^*$.\\
 		Par intégration par parties, on a 
 		\[\int_{0}^{\pi}x\cos(nx)dx=\frac{-1+(-1)^n}{n^2}\]
 		et \[\int_{0}^{\pi}x^2\cos(nx)dx=\frac{2(-1)^n\pi}{n^2}\]
 		Il suffit donc de prendre $u=-1$ et $v=\frac{1}{2\pi}$ pour avoir 
 		\[\int_{0}^{pi}(ax+bx^2)\cos(nx)dx=\frac{1}{n^2}\]
+		\item Soit $x\in]0,\pi]$. Puisque $e^{ix}\ne 1$,
+		\[\sum_{k=1}^{n}e^{ikx} = e^{ix}\frac{e^{inx}-1}{e^{ix}-1} = e^{i\frac{(n+1)x}{2}}\frac{e^{i\frac{nx}{2}}-e^{-i\frac{nx}{2}}}{e^{i\frac{x}{2}}-e^{-i\frac{x}{2}}} = e^{i\frac{(n+1)x}{2}}\frac{\sin\left(\frac{nx}{2}\right)}{\sin\left(\frac{x}{2}\right)}\]
+		Ainsi, en passant à la partie réelle, 
+		\[\sum_{k=1}^{n}\cos(kx)=\frac{\sin\left(\frac{nx}{2}\right)}{\sin\left(\frac{x}{2}\right)}\]
 		\item $\varphi$ est une fonction de classe $\mathcal{C}^1$ sur $]0,\pi]$.\\
 		De plus, $\lim\limits_{x\to 0}\varphi(x)=2$ car $\sin\left(\frac{x}{2}\right)\underset{x\to 0}{\sim}\frac{x}{2}$.\\
 		Pour tout $x\in]0,1]$, \[\varphi'(x)=\frac{\sin\left(\frac{x}{2}\right)-\frac{x}{2}\cos\left(\frac{x}{2}\right)}{\sin^2\left(\frac{x}{2}\right)}\]
 		On sait que $\sin\left(\frac{x}{2}\right)=\frac{x}{2}+\o_{x\to 0}(x^2)$ et $\cos\left(\frac{x}{2}\right)=1+\o_{x\to 0}(x)$ donc 
 		\[\varphi'(x)=\o_{x\to 0}(1)\]
 		et donc \[\lim\limits_{x\to 0}\varphi'(x)=0\]
+		Donc $\varphi$ est prolongeable par continuité en une fonction de classe $\mathcal{C}^1$ sur $[0,\pi]$.
 		\item 
 		
 	\end{enumerate}
