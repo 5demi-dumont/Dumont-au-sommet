@@ -513,7 +513,7 @@
 		\item Montrer que la fonction $\varphi:x\in ]0,\pi]\mapsto\displaystyle\frac{x}{\sin\left(\frac{x}{2}\right)}$ est prolongeable en une fonction de classe $\mathcal C^1$ sur $[0,\pi]$.
 		\item En déduire que $\zeta(2)=\displaystyle\frac{\pi^2}{6}$.
 		\item Exprimer la somme de la série $\displaystyle\sum_{n\in \N^*}\frac{1}{(2n-1)^2}$ en fonction de $\zeta(2)$ et en déduire sa valeur.
-		\item En adaptant les réels de la question 2, justifier la convergence et calculer les sommes des séries $\displaystyle\sum_{n\in \N^*}\frac{(-1)^{n-1}}{n^2}$ et $\displaystyle\sum_{n\in \N^*}\frac{1}{(2n-1)^2}$.
+		\item En adaptant les réels de la question 2, justifier la convergence et calculer les sommes des séries $\displaystyle\sum_{n\in \N^*}\frac{(-1)^{n-1}}{n^2}$.
 	\end{enumerate}
 	\subsection{Série de fonctions \ccinp{3}}
 	Pour tout $m\in \N^*$ on pose $f_m:\theta \in ]-\pi,\pi[ \displaystyle\longmapsto\frac{\sin((2m+1)\theta)}{\sin^{2m+1}(\theta)}$
@@ -4651,8 +4651,27 @@ Alors, on a l'équivalence :
 		\[\varphi'(x)=\o_{x\to 0}(1)\]
 		et donc \[\lim\limits_{x\to 0}\varphi'(x)=0\]
 		Donc $\varphi$ est prolongeable par continuité en une fonction de classe $\mathcal{C}^1$ sur $[0,\pi]$.
-		\item 
-		
+		\item Soit $p\in\N^*$
+		\begin{align*}
+			\sum_{n=1}^{p}\frac{1}{n^2}&=\sum_{n=1}^{p}\int_{0}^{\pi}(ux+vx^2)\cos(nx)dx\\
+			&=\int_{0}^{\pi}(ux+vx^2)\sum_{n=1}^{p}\cos(nx)dx\\
+			&=\int_{0}^{\pi}(u+vx)\left(\frac{1}{2}\varphi(x)\sin\left(\left(p+\frac{1}{2}\right)x\right)-\frac{x}{2}\right)dx
+			&=\frac{1}{2}\int_{0}^{\pi}(u+vx)\varphi(x)\sin\left(\left(p+\frac{1}{2}\right)x\right)dx-\frac{1}{2}\int_{0}^{\pi}(ux+vx^2)dx
+		\end{align*}
+		La fonction $x\mapsto (u+vx)\varphi(x)$ étant de classe $\mathcal{C}^1$ sur $[0,\pi]$, on peut appliquer la question $1$ :
+		\[\lim\limits_{p\to+\infty}\int_{0}^{\pi}(u+vx)\varphi(x)\sin\left(\left(p+\frac{1}{2}\right)x\right)dx=0\]
+		Par conséquent, on a :
+		\[\lim\limits_{p\to+\infty}\sum_{n=1}^{p}\frac{1}{n^2}=-\frac{1}{2}\int_{0}^{\pi}(ux+vx^2)dx=-\frac{u\pi^2}{4}-\frac{v\pi^3}{6}=\frac{\pi^2}{6}\]
+		d'où : 
+		\[\zeta(2)=\frac{\pi^2}{6}\]
+		\item On peut appliquer le CSSA sinon on peut simplement dire que la série converge absolument donc elle converge.\\
+		On remarque qu'il s'agit de la somme des $\frac{1}{n^2}$ mais seulement en gardant les termes pour $n$ impairs.\\
+		Ainsi \[\sum_{n=1}^{+\infty}\frac{1}{(2n-1)^2}=\zeta(2)-\sum_{n=1}^{+\infty}\frac{1}{(2n)^2}\]
+		Donc : 
+		\[\sum_{n=1}^{+\infty}=\left(1-\frac{1}{4}\right)\zeta(2)=\frac{3}{4}\zeta(2)=\frac{\pi^2}{8}\]
+		\item On réapplique la même méthode. On cherche des constantes $u$ et $v$ tels que \[\forall n\in\N^*, \int_{0}^\pi(ux+vx^2)\cos(nx)dx=\frac{(-1)^n}{n^2}\]
+		On constate que pour $u=0$ et $v=-\frac{1}{2\pi}$, on obtient bien le résultat pour tout $n\in\N^*$.\\
+		On a encore : \[\lim\limits_{p\to+\infty}\sum_{n=1}^{p}\frac{(-1)^n}{n^2}=-\frac{u\pi^2}{4}-\frac{v\pi^3}{6}=\frac{\pi^2}{12}\]
 	\end{enumerate}
 	\subsubsection{Série de fonctions}
 	\subsubsection{Série entière}
