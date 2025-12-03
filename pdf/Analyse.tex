@@ -4655,7 +4655,7 @@ Alors, on a l'équivalence :
 		\begin{align*}
 			\sum_{n=1}^{p}\frac{1}{n^2}&=\sum_{n=1}^{p}\int_{0}^{\pi}(ux+vx^2)\cos(nx)dx\\
 			&=\int_{0}^{\pi}(ux+vx^2)\sum_{n=1}^{p}\cos(nx)dx\\
-			&=\int_{0}^{\pi}(u+vx)\left(\frac{1}{2}\varphi(x)\sin\left(\left(p+\frac{1}{2}\right)x\right)-\frac{x}{2}\right)dx
+			&=\int_{0}^{\pi}(u+vx)\left(\frac{1}{2}\varphi(x)\sin\left(\left(p+\frac{1}{2}\right)x\right)-\frac{x}{2}\right)dx\\
 			&=\frac{1}{2}\int_{0}^{\pi}(u+vx)\varphi(x)\sin\left(\left(p+\frac{1}{2}\right)x\right)dx-\frac{1}{2}\int_{0}^{\pi}(ux+vx^2)dx
 		\end{align*}
 		La fonction $x\mapsto (u+vx)\varphi(x)$ étant de classe $\mathcal{C}^1$ sur $[0,\pi]$, on peut appliquer la question $1$ :
@@ -4664,12 +4664,13 @@ Alors, on a l'équivalence :
 		\[\lim\limits_{p\to+\infty}\sum_{n=1}^{p}\frac{1}{n^2}=-\frac{1}{2}\int_{0}^{\pi}(ux+vx^2)dx=-\frac{u\pi^2}{4}-\frac{v\pi^3}{6}=\frac{\pi^2}{6}\]
 		d'où : 
 		\[\zeta(2)=\frac{\pi^2}{6}\]
-		\item On peut appliquer le CSSA sinon on peut simplement dire que la série converge absolument donc elle converge.\\
-		On remarque qu'il s'agit de la somme des $\frac{1}{n^2}$ mais seulement en gardant les termes pour $n$ impairs.\\
+		\item 
+		On remarque qu'il s'agit de la somme des $\frac{1}{n^2}$ mais seulement en gardant les termes pour $n$ impairs. Cette somme est plus petite que $\zeta(2)$ à termes positifs donc elle converge.\\
 		Ainsi \[\sum_{n=1}^{+\infty}\frac{1}{(2n-1)^2}=\zeta(2)-\sum_{n=1}^{+\infty}\frac{1}{(2n)^2}\]
 		Donc : 
 		\[\sum_{n=1}^{+\infty}=\left(1-\frac{1}{4}\right)\zeta(2)=\frac{3}{4}\zeta(2)=\frac{\pi^2}{8}\]
-		\item On réapplique la même méthode. On cherche des constantes $u$ et $v$ tels que \[\forall n\in\N^*, \int_{0}^\pi(ux+vx^2)\cos(nx)dx=\frac{(-1)^n}{n^2}\]
+		\item On peut appliquer le CSSA sinon on peut simplement dire que la série converge absolument donc elle converge.\\
+		On réapplique la même méthode. On cherche des constantes $u$ et $v$ tels que \[\forall n\in\N^*, \int_{0}^\pi(ux+vx^2)\cos(nx)dx=\frac{(-1)^n}{n^2}\]
 		On constate que pour $u=0$ et $v=-\frac{1}{2\pi}$, on obtient bien le résultat pour tout $n\in\N^*$.\\
 		On a encore : \[\lim\limits_{p\to+\infty}\sum_{n=1}^{p}\frac{(-1)^n}{n^2}=-\frac{u\pi^2}{4}-\frac{v\pi^3}{6}=\frac{\pi^2}{12}\]
 	\end{enumerate}
