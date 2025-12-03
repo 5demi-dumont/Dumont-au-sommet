@@ -6418,6 +6418,41 @@ Alors, on a l'équivalence :
 		\textcolor{blue}{\hyperref[Caractérisation des sous-espaces de dimension finie de C0]{[Enoncé]}}\\
 	\subsection{Distance}\label{sec:distance}
 		\textcolor{blue}{\hyperref[Distance]{[Enoncé]}}\\
+		\begin{enumerate}[leftmargin=*]
+			\item \begin{itemize}
+				\item $\forall x,y\in E$, $\norme{x-y}=|-1|\norme{y-x}=\norme{y-x}$
+				\item $\forall x,y\in E, \norme{x-y}=0\Longleftrightarrow x-y=0\Longleftrightarrow x=y$
+				\item $\forall x,y,z\in E, \norme{x-y}=\norme{x-z+z-y}\leq \norme{x-z}+\norme{z-y}$
+			\end{itemize}
+			Donc $d$ est une distance sur $E$.
+			\item On admet que $\varphi:(x,y)\in\R^2\mapsto |x-y|$ est une distance sur $\R$.
+			\begin{itemize}
+				\item La symétrie vient de la symétrie de la valeur absolue
+				\item La séparation vient du fait que $\arctan(x)=0$ admet une unique solution qui est $0$ et donc puisque $\varphi$ est une distance, on a $x=y\Longleftrightarrow \arctan|x-y|=0$
+				\item Soient $x,y,z\in\R$.\\
+				 D'après l'inégalité triangulaire sur la valeur absolue, on a 
+				 \[|x-y|\leq|x-z|+|z-y|\]
+				 Comme la fonction $\arctan$ est croissante sur $\R$, on a :
+				 \[\arctan|x-y|\leq \arctan\left(|x-z|+|z-y|\right)\]
+				 Montrons que pour tout $a,b\in\R_+$ tels que :
+				 \[\arctan(a+b)\leq\arctan(a)+\arctan(b)\]
+				 On fixe $a\in\R_+$.\\
+				 On pose $\fonction{f}{\R_+}{\R}{t}{\arctan(a+t)-\arctan(a)-\arctan(t}$.\\
+				 Cette fonction est de classe $\mathcal{C}^1$ sur $\R_+$.
+				 \[f'(t)=\frac{1}{1+(a+t)^2}-\frac{1}{1+t^2}\]
+				 On a $f'(t)\leq 0$ pour tout $t\geq 0$. Donc $f$ est décroissante sur $\R_+$.\\
+				 En particulier, on a : \[\forall t\in\R_+, f(t)\leq f(0)\]
+				 i.e. \[\arctan(a+t)-\arctan(t)-\arctan(a)\leq 0\]
+				 D'où le résultat.
+				 Par conséquent, on a pour $a=|x-z|$ et $b=|z-y|$, on a : 
+				 \[\arctan|x-y|\leq \arctan|x-z|+\arctan|z-y|\]			\end{itemize}
+				 Donc $d$ est bien une distance.\\
+				 Supposons maintenant que $d$ est induite d'une norme.
+			On a alors pour tout $\lambda\in\R$ et pour tous $(x,y)\in\R$, 
+			\[d(\lambda x,\lambda y)=|\lambda|d(x,y)\]
+			Or puisque $\Ima(\arctan)=[-\frac{\pi}{2},\frac{\pi}{2}]$, le résultat ne peut être vérifié pour un $\lambda$ grand (exemple : $\lambda=100$).
+			Donc cette distance n'est pas induite d'une norme.
+		\end{enumerate}
 	\subsection{Distance à une partie}\label{sec:distance-a-une-partie}
 		\textcolor{blue}{\hyperref[Distance à une partie]{[Enoncé]}}\\
 	\subsection{Distance d'un élément à une partie (1)}\label{sec:distance-dun-element-a-une-partie-1}
@@ -6491,10 +6526,76 @@ Alors, on a l'équivalence :
 	\end{enumerate}
 	\subsection{Diamètre d'une partie bornée}\label{sec:diametre-dune-partie-bornee}
 		\textcolor{blue}{\hyperref[Diamètre d'une partie bornée]{[Enoncé]}}\\
+		\begin{enumerate}[leftmargin=*]
+			\item Puisque $A$ est bornée, il existe $M\in\R_+$ tel que pour tout $x\in A$ , $N(x)\leq M$.
+			D'après l'inégalité triangulaire pour tout $(x,y)\in A^2$
+			\[N(x-y)\leq N(x) + N(y)\leq 2M\]
+			Ainsi, l'ensemble $\{N(x-y), (x,y)\in A^2\}$ est majoré. Et puisque $A$ est non vide, il l'est également, ce qui justifie l'existence de la borne supérieure.
+			\item Supposons que $A\subset B$.\\
+			Pour tout $x,y\in A$, \[N(x-y)\leq \delta(B)\] car $x,y$ sont aussi des éléments de $B$.\\
+			Puisque $\delta(A)$ est le plus petit majorant, on en déduit bien que $\delta(A)\leq\delta(B)$.
+			\item 
+			Soient $x,y\in A\cup B$.\\
+			Si $x\in A$ et $y\in A$, $N(x-y)\leq \delta(A)\leq \delta(A)+\delta(B)$ car $N$ est une fonction positive.\\
+			Idem, si $x\in B$ et $y\in B$.\\
+			Dernière possibilité, si $x$ et $y$ sont dans des ensembles différents, par symétrie des rôles de $x$ et $y$ on peut supposer que $x\in A$ et $y\in B$
+			 puisque $A\cap B\ne \emptyset$, il existe $z\in A\cap B$.\\
+			\[N(x-y)\leq N(x-z)+N(z-y)\leq \delta(A)+\delta(B)\]
+			On a donc montrer que pour tout $x,y\in A\cup B$ \[N(x-y)\leq \delta(A)+\delta(B)\]
+			ainsi puisque $\delta(A\cup B)$ est le plus petit majorant de $\{N(x-y), x,y\in A\cup B \}$, on en déduit que \[\delta(A\cup B)\leq \delta(A)+\delta(B)\]
+			\item 
+			D'après ce qui précède, si $x$ et $y$ sont dans le même ensemble, le résultat est vrai.\\
+			Supposons comme précédemment que $x\in A$ et $y\in B$.\\
+			Par caractérisation séquentielle de la borne inférieur, il existe $(a_n)\in A^\N$ et $(b_n)\in B^\N$ telles que \[N(a_n-b_n)\underset{n\to+\infty}{\longrightarrow}d(A,B)\]
+			Soit $(x,y)\in A\cup B$ et soit $n\in \N$.
+			\[N(x-y)\leq N(x-a_n)+N(a_n-b_n)+N(b_n+y)\]
+			Puisque $x, a_n\in A$ et $y,b_n\in B$, on a :
+			\[N(x-y)\leq \delta(A)+N(a_n-b_n)+\delta(B)\]
+			Ainsi, par passage à la limite, on en déduit que :
+			\[N(x-y)\leq \delta(A)+\delta(B)+d(A,B)\]
+			Puisque $\delta(A\cup B)$ est le plus petit majorant de $\{N(x-y), x,y\in A\cup B\}$, on a montré que pour tous 
+			\[\delta(A\cup B)\leq \delta(A)+\delta(B)+d(A,B)\] 			
+		\end{enumerate}
 	\subsection{Détermination d'une borne inférieure}\label{sec:determination-dune-borne-inferieure}
 		\textcolor{blue}{\hyperref[Détermination d'une borne inférieure]{[Enoncé]}}\\
 	\subsection{Normes usuelles sur $\mathcal{C}^1([0,1],\K)$}\label{sec:normes-usuelles-sur-mathcalc101k}
 			\textcolor{blue}{\hyperref[Normes usuelles sur C1]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item \begin{itemize}
+			\item Montrons que $N_1$ est une norme.\\
+			\textbullet On a déjà que $0\in E$ et $N_1(0)=0$.\\
+			Soit $f\in E$ tel que $N_1(f)=0$.\\
+			On a alors $\normep{1}{f}=0$ et $\normep{1}{f}=0$ car $N_1(f)$ est la somme de deux termes positifs.\\
+			On a alors $f=0$ car $\normep{1}{f}=0$.\\
+			\textbullet L'homogénéité est plutôt clair.\\
+			\textbullet L'inégalité triangulaire est clair aussi car $\normep{1}{.}$ est une norme.
+		\item Montrons que $\N_2$ est une norme.\\
+			\textbullet Idem on a encore $N_2(0)=0$.
+			Soit $f\in E$ tel que $N_2(f)=0$.\\
+			On a $f(0)=0$ et $\normep{1}{f'}=0$.
+			Donc $f'$ est nulle et $f(0)=0$.\\
+			Par conséquent $f$ est constante (car $f'$ est nulle) égale à $0$ car $f(0)=0$.\\
+			\textbullet L'homogénéité et l'inégalité triangulaire est immédiate car $|.|$ et $\normep{1}{.}$ sont des normes.
+		\end{itemize}
+		Ainsi, $N_1$ et $N_2$ sont des normes.
+		\item On sait que pour tout $x\in[0,1]$ on a :
+		\[f(x)=f(0)+\int_{0}^{x}f'(t)dt\]
+		Ainsi, on a 
+		\[|f(x)|\leq |f(0)|+\int_{0}^{x}|f'(t)|dt\]
+		Puisque $|f'(t)|\geq $ pour tout $t\in [0,1]$, on a 
+		\[|f(x)|\leq |f(0)|+\int_{0}^{1}|f'(t)|dt\]
+		Il suffit d'intégrer pour avoir 
+		\[N_1(f)\leq N_2(f)\]
+		Comme précédemment, on a
+		\[f(0)=f(x)-\int_{0}^{x}f'(t)dt\]
+		Donc l'inégalité triangulaire de la valeur absolue donne 
+		\[|f(0)|\leq |f(x)|+\int_{0}^{x}|f'(t)|dt\leq |f(x)|+\int_{0}^{1}|f'(t)|dt\]
+		Donc en intégrant de $0$ à $1$, on a 
+		\[|f(0)|\leq N_1(f)\]
+		Puisque $\normep{1}{f}\geq 0$, on a $\normep{1}{f'}\leq N_1(f)$.\\
+		Par conséquent, \[N_2(f)\leq 2N_1(f)\]
+		Donc $N_1$ et $N_2$ sont équivalentes.
+	\end{enumerate}
 	\subsection{Intersection des boules unités subordonnées d'un espace vectoriel normé de dimension finie}\label{sec:intersection-des-boules-unites-subordonnees-dun-espace-vectoriel-norme-de-dimension-finie}
 		\textcolor{blue}{\hyperref[Intersection des boules unités subordonnées d'un espace vectoriel normé de dimension finie]{[Enoncé]}}\\
 	\subsection{Modes de convergence}\label{sec:modes-de-convergence}
@@ -6610,7 +6711,18 @@ Alors, on a l'équivalence :
 	
 	\subsection{Un théorème de Weierstrass sur $\R$ ?}\label{sec:un-theoreme-de-weierstrass-sur-r-}
 		\textcolor{blue}{\hyperref[Un théorème de Weierstrass sur R]{[Enoncé]}}\\
-		
+	Par hypothèse, la suite $(P_n)$ converge uniformément vers $f$ sur $\R$. Ecrivons la définition de cette convergence pour une distance $\varepsilon=1$.\\
+	Il existe un rang $N\in\N$ tel que pour tout $n\geq N$ et pour tout $x\in\R$ :
+	\[|P_n(x)-f(x)|\leq 1\]
+	Soit $n\geq N$ quelconque. Pour tout $x\in \R$\\
+	\[|P_n(x)-P_N(x)|=|P_n(x)-f(x)+f(x)-P_N(x)|\]
+	donc \[|P_n(x)-P_N(x)|\leq |P_n(x)-f(x)|+|f(x)-P_N(x)|\leq 2\]
+	On pose $Q_n=P_n-P_N$.\\
+	Ce polynôme est de degré $0$ car il est borné. En effet, si $Q_n$ n'est pas de degré $0$, on aurait \[\lim\limits_{|x|\to+\infty}|Q_n(x)|=+\infty\]
+	Ainsi il existe $c_n\in\R$ tel que $P_n(x)=P_N(x)+c_n$.\\
+	Puisque $P_n$ converge simplement vers $f$, on a que $c_n$ converge vers un certain $\lambda\in\R$.\\
+	Par conséquent $f=P_n+\lambda$.\\
+	Donc $f$ est un polynôme à coefficients dans $\R$. 
 	\subsection{Approximation paire}\label{sec:approximation-paire}
 		\textcolor{blue}{\hyperref[Approximation paire]{[Enoncé]}}\\
 	\subsection{Approximation croissante}\label{sec:approximation-croissante}
