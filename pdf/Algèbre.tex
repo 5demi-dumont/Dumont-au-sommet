@@ -1166,7 +1166,6 @@ On cherche les matrices $A\in \M_n(\C)$ telles que $A+\Com(A)^\top$ soit une mat
 		1&\ddots&d_{i,j}^2&\\
 		\vdots & d_{i,j}^2&\ddots &\\
 		1&&&0
-		
 	\end{vmatrix}$
 	Démontrer que : $$\det(x_1-x_0,\dots,x_n-x_0)^2=\frac{(-1)^{n+1}}{2^n}\Gamma(x_0,\dots,x_n)$$
 	
@@ -1353,11 +1352,6 @@ On cherche les matrices $A\in \M_n(\C)$ telles que $A+\Com(A)^\top$ soit une mat
 	\label{Morphismes de GLn(R) dans Z/mZ}
 	\textcolor{blue}{\hyperref[Morphismes de GLn(R) dans Z/mZ corrigé]{[Corrigé]}}\\
 	Soient $m,n \in \N^*$. Déterminer les morphismes de $(\text{GL}_n(\R),\times)$ dans $(\Z /m\Z,+)$.
-	
-	\section{Caractères algébriques de GL$_n(\K)$}
-	\label{Caractères algébriques de GLn(K)}
-	\textcolor{blue}{\hyperref[Caractères algébriques de GLn(K) corrigé]{[Corrigé]}}\\
-	Soit $\chi:\text{GL}_n(\K)\to \K^*$ un morphisme de groupe polynomial.\\ Montrer que $\chi$ est une puissance du déterminant.
 	
 	\section{Quasi-morphisme \centraleponts{3}}
 	\label{Quasi-morphisme}
@@ -3943,6 +3937,11 @@ On se donne $G$ un sous-groupe fini de GL$(V)$ et on note :
 $$V^G=\{x\in V\ |\ \forall g\in G,\ g(x)=x\}$$
 Démontrer que $\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}\Tr(g)=\dim(V^G)$.
 
+\section{Caractères algébriques de GL$_n(\K)$}
+\label{Caractères algébriques de GLn(K)}
+\textcolor{blue}{\hyperref[Caractères algébriques de GLn(K) corrigé]{[Corrigé]}}\\
+Soit $\chi:\text{GL}_n(\K)\to \K^*$ un morphisme de groupe polynomial.\\ Montrer que $\chi$ est une puissance du déterminant.
+
 \section{Théorème de Fermat matriciel \xens{3} (HP)}
 \label{Théorème de Fermat matriciel}
 \textcolor{blue}{\hyperref[Théorème de Fermat matriciel corrigé]{[Corrigé]}}\\
@@ -5853,27 +5852,23 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	$\left(\begin{array}{c|c}1&0\\\hline0&M_1\end{array}\right)$ est bien une matrice de transvection car pour $(i,j)\in \crblanc{1}{n-1}^2$ et $\lambda\in \R$ tel que $M_1=I_{n-1}+\lambda E^{n-1}_{ij}$, on a $\left(\begin{array}{c|c}1&0\\\hline0&M_1\end{array}\right)=I_n+\lambda E^n_{ij}$. De même, $\left(\begin{array}{c|c}1&0\\\hline0&N_1\end{array}\right)$ est bien une matrice de transvection.\\\\
 	\textit{Remarque : on a en fait montré que} SL$_n(\R)$ \textit{est engendré par les matrices de transvection et que} GL$_n(\R)$ \textit{est engendré par les matrices de transvection et les matrices de dilatation.}\\\\
 	Revenons à $f$. Pour déterminer un morphisme, il suffit de déterminer l'image d'une partie génératrice. Comme $\Z/m\Z$ est d'ordre $m$, $\forall A\in \text{GL}_n(\R),\ f(A^m)=\overline{m}f(A)=\overline{0}$.\\
-	Puisque $T_{ij}(\lambda)=\displaystyle T_{ij}\left(\frac{\lambda}{m}\right)^m$, on a $f(T_{ij}(\lambda)=0$. On en déduit que pour tout $A\in \text{GL}_n(\R),\ f(A)=f(D_n(\det A)$.\\
+	Puisque $T_{ij}(\lambda)=\displaystyle T_{ij}\left(\frac{\lambda}{m}\right)^m$, on a $f(T_{ij}(\lambda))=0$. On en déduit que pour tout $A\in \text{GL}_n(\R),\ f(A)=f(D_n(\det A))$.\\
 	Si $m$ est impair, pour tout $\lambda \in \R^*,\ D_n(\lambda)=D_n\left(\sqrt[m]\lambda\right)^m=\overline{0}$ et donc $f$ est le morphisme trivial.\\
 	Si $m$ est pair, pour tout $\lambda\in \R^*_+,\ D_n(\lambda)=D_n\left(\sqrt[m]\lambda\right)^m$ donc $f(A)=\overline{0}$ pour tout $A\in \text{GL}_n^+(\R)$. De plus, si $\lambda \in \R^*_-,\ D_n(\lambda)=D_n(-1)D_n(-\lambda)$ avec $-\lambda>0$. Ainsi, $\forall A\in \text{GL}_n^-(\R),\ f(A)=f(D_n(-1))$. Or $D_n(-1)^2=I_n$ donc $f(D_n(-1))=\overline{0}$ ou $f(D_n(-1))=\overline{\displaystyle\frac{m}{2}}$.\\
 	Finalement, $f$ est soit le morphisme trivial, soit le morphisme valant $\overline 0$ sur GL$_n^+(\R)$ et $\overline{\displaystyle\frac{m}{2}}$ et GL$_n^-(\R)$.
-	
-	\subsection{Caractères algébriques de $GL_n(\K)$}
-	\label{Caractères algébriques de GLn(K) corrigé}
-	\textcolor{blue}{\hyperref[Caractères algébriques de GLn(K)]{[Enoncé]}}\\
 	
 	\subsection{Quasi-morphisme \etoile{3}}
 	\label{Quasi-morphisme corrigé}
 	\textcolor{blue}{\hyperref[Quasi-morphisme]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Supposons par l'absurde que $f$ s'annule en $x\in G$.\\
-		Alors par inégalité triangulaire, $\forall y\in G,\ |f(y)|=|f(yx^{-1}x)-f(yx^{-1})f(x)|\leq \delta$ ce qui contredit le caractère non bornée de $f$.\\
+		Alors, $\forall y\in G,\ |f(y)|=|f(yx^{-1}x)-f(yx^{-1})f(x)|\leq \delta$ ce qui contredit le caractère non bornée de $f$.\\
 		Ainsi $f$ ne s'annule pas.
 		\item Comme $f$ n'est pas bornée, on sait qu'il existe $(z_n)\in G^\N$ telle que $|f(z_n)|\unfty\longrightarrow+\infty$. Fixons $x\in G$.\\
 		On peut écrire $\forall n\in \N,\ \displaystyle\left|\frac{f(xz_n)}{f(z_n)}-f(x)\right|\leq \frac{\delta}{|f(z_n)|}$.\\
 		Par passage à la limite, $f(x)=\unfty\lim\displaystyle\frac{f(xz_n)}{f(z_n)}$.
 		\item On considère $(z_n)_{n\in \N}$ comme définie précédemment. Fixons $x,y\in G$.\\
-		$|f(y)|=\unfty\lim\displaystyle\frac{|f(yz_n)|}{|f(z_n)|}$. Donc $(|f(yz_n)|)_{n\in \N}$ diverge vers $+\infty$ et on peut écrire comme $f$ ne s'annule pas :
+		$\unfty\lim\displaystyle\frac{|f(yz_n)|}{|f(z_n)|}=|f(y)|\ne 0$. Donc $(|f(yz_n)|)_{n\in \N}$ diverge vers $+\infty$ et on peut écrire comme $f$ ne s'annule pas :
 		$$f(xy)=\unfty\lim\displaystyle\frac{f(xyz_n)}{f(z_n)}=\unfty\lim\frac{f(xyz_n)}{f(yz_n)}\cdot\frac{f(yz_n)}{f(z_n)}=f(x)f(y)$$
 	\end{enumerate}
 	
@@ -5893,7 +5888,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\label{Sous-groupes de GLn(R) corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupes de GLn(R)]{[Enoncé]}}\\
 	Notons $E$ le neutre de $G$.\\
-	Par définition du neutre $E^2=E$. Ainsi $E$ est une matrice de projection. On sait (ou redémontre aisément) alors que $E$ est semblable, par la matrice de passage $P$ de la base canonique de $\K^n$ à une base adaptée à la décomposition $\M_n(\K)=\ker(E-I_n)\bigoplus\ker(E)$, à $J_r=\left(\begin{array}{c|c}
+	Par définition du neutre $E^2=E$ donc $E$ est une matrice de projection. On sait (ou redémontre aisément) alors que $E$ est semblable, par la matrice de passage $P$ de la base canonique de $\K^n$ à une base adaptée à la décomposition $\M_n(\K)=\ker(E-I_n)\bigoplus\ker(E)$, à $J_r=\left(\begin{array}{c|c}
 		I_r&0\\
 		\hline
 		0&0
@@ -6002,11 +5997,11 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		Soit $G$ un groupe d'ordre $4$.\\ 
 		D'après le théorème de Lagrange, l'ordre de tout élément de $G$ divise l'ordre de $G$ ainsi les ordres possibles pour les éléments différents du neutre sont $2$ ou $4$.
 		\begin{itemize}
-			\item Si $G$ contient un élément d'ordre $4$. On note cet élément $a$. Le sous-groupe cyclique engendré par $a$ contient 4 éléments distincts. Ainsi, $\langle a\rangle=G$ Donc $G$ est cyclique donc $G$ est commutatif.
-			\item Si tous les éléments non neutres de $G$ sont d'ordre $2$. D'après l'exercice V.3, $G$ est commutatif.\\
+			\item Si $G$ contient un élément $a$ d'ordre $4$ alors, $\langle a\rangle$ est un sous-groupe de $G$ d'ordre $4$. Donc $\langle a\rangle=G$ d'où $G$ est cyclique et puis $G$ est commutatif.
+			\item Sinon tous les éléments de $G$ différents du neutre sont d'ordre $2$. D'après l'exercice V.3, $G$ est commutatif.\\
 		\end{itemize}
 		Finalement, aucun groupe d'ordre 4 n'est non commutatif.
-		Cet entier est 6. Il suffit de regarder le groupe symétriques $S_3$ qui n'est pas commutatif.
+		l'entier recherché est 6. Il suffit de regarder le groupe symétriques $S_3$ qui n'est pas commutatif car $(12)(23)=(123)\ne(132)=(23)(12)$ par exemple.
 		
 	\end{enumerate}
 	\subsection{Sous-groupe d'un groupe cyclique \etoile{3}}
@@ -6059,6 +6054,15 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\subsection{Un groupe d'inversible non cyclique}
 	\label{Un groupe d'inversible non cyclique corrigé}
 	\textcolor{blue}{\hyperref[Un groupe d'inversible non cyclique]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On écrit $a=2b+1$ avec $b\in \Z$. Montrons par récurrence sur $k$ le résultat suivant : "pour tout entier $k\geq 1$, $a^{2^k}\equiv 1[2^{k+2}]$".\\
+		$k=1$ : $a^{2^1}=a^2=1+4b+4b^2=1+4b(b+1)$. Parmi $b$ et $b+1$ il y a toujours un entier pair donc $a^2\equiv 1[8]$.\\
+		Supposons que pour un certain $k\in \N$ il existe $\mu_k\in \Z$ tel que $a^{2^k}=1+\mu_k2^{k+2}$.\\
+		Alors $a^{2^{k+1}}=(1+\mu_k2^{k+2})^2=1+2\mu_k2^{k+2}+2^{2k+4}=1+(\mu_k+2^{k+1})2^{k+3}$.\\
+		Donc $a^{2^{k+1}}\equiv 1[2^{k+3}]$.\\
+		Ainsi pour tout $k\geq 3$, $a^{2^{k-2}}\equiv 1[2^k]$ et en particulier $a^{2^{n-2}}\equiv 1[2^n]$.
+		\item On sait que $(\Z/2^n\Z)^\times$ est un groupe d'ordre $\varphi(2^n)=2^n-2^{n-1}=2^{n-1}>2^{n-2}$ et qu'il est composé des classes d'entiers premiers avec $2^n$ càd celles des entiers impairs. Or d'après la question 1 les entiers impairs sont d'ordre au plus $2^{n-2}$ dans $(\Z/2^n\Z)^\times$. Donc $(\Z/2^n\Z)^\times$ n'est pas cyclique.
+	\end{enumerate}
 	
 	\subsection{Ordre dans un groupe de cardinal pair}
 	\label{Ordre dans un groupe de cardinal pair corrigé}
@@ -6392,7 +6396,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			On en déduit que $b$ est nul c'est à dire $ea=eae$.\\
 			En considérant de même $c=(1-e)ae$ on obtient $ae=eae$. Il en résulte que $a$ et $e$ commute. Ainsi $e\in Z(A)$.\\
 			Soit $x\in A$. $(x^2)^2=x^4=x^2$ donc d'après ce qui précède, $x^2\in Z(A)$.
-			\item On montre que $Z(A)$ est un sous-anneau (cf. \ref{Centre d'un anneau}). Fixons $x\in A$.\\
+			\item On montre que $Z(A)$ est un sous-anneau (cf. \ref{Centre d'un anneau}) de $A$. Fixons $x\in A$.\\
 			Alors $2x=(x+1)^2-x^2-1\in Z(A)$ et $3x=(x+1)^3-x^3-3x^2-1=x+1-x-3x^2-1=-3x^2\in Z(A)$.\\
 			Ainsi $x=3x-2x\in Z(A)$. On en déduit que $Z(A)=A$ c'est à dire que $A$ est commutatif.
 		\end{enumerate}
@@ -9248,7 +9252,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\newpage
 \section{Correction Divers}
 
-	\subsection{Fonction $\R$-linéaire mais pas $\C$-linéaire \etoile{1}}
+\subsection{Fonction $\R$-linéaire mais pas $\C$-linéaire \etoile{1}}
 \label{Fonction R linéaire mais pas C linéaire corrigé}
 \textcolor{blue}{\hyperref[Fonction R linéaire mais pas C linéaire]{[Enoncé]}}\\
 On pose $\fonction{f}{\C}{\C}{z}{\overline{z}}$.\\
@@ -9256,35 +9260,35 @@ $\forall x,y\in \C,\ \forall \lambda\in \R,\ f(x+\lambda y)=\overline{x+\lambda 
 Ainsi $f$ est $\R$-linéaire.\\
 Nonobstant $f(i\times 1)=-i\ne i=i\times f(1)$ donc $f$ n'est pas $\C$-linéaire.
 
-	\subsection{Relation d'ordre}
+\subsection{Relation d'ordre}
 \label{Relation d'ordre corrigé}
 \textcolor{blue}{\hyperref[Relation d'ordre]{[Enoncé]}}\\
 
 \subsection{Ordre lexicographique}
 \label{Ordre lexicographique corrigé}
 \textcolor{blue}{\hyperref[Ordre lexicographique]{[Enoncé]}}
-	\subsection{Sous-groupes de GL$_n(\C)$ d'exposant fini \etoile{5}}
-	\label{Sous-groupes de Gl_n(C) d'exposant fini corrigé}
-		\textcolor{blue}{\hyperref[Sous-groupes de GL_n(C) d'exposant fini]{[Enoncé]}}\\
-	Soit $M\in G$.\\
-	$M^k=I_n$ donc les valeurs propres de $M$ sont incluses dans l'ensemble des racines de $X^k-1$ c'est à dire $\U_k$. On remarque aussi que $M$ est diagonalisable ce qui servira plus tard.\\
-	Alors $T=\{\Tr(M),\ M\in G\}=\displaystyle\left\{\sum\limits_{\lambda\in \text{Sp}(M)}m_\lambda(M)\lambda,\ M\in G\right\}\subset \left\{\sum\limits_{p=1}^n\lambda_p,\ (\lambda_1,\dots,\lambda_n)\in \U_k^n\right\}$.\\
-	Ce dernier ensemble étant fini car $\U_k$ l'est, $T$ est fini.\\\\
-	Ensuite, Considérons $V=\Vect(G)$. $V$ est de dimension finie comme sous-espace vectoriel de $\M_n(\C)$ on peut donc en prendre une base $(M_1,\dots,M_d)$.\\
-	Posons alors l'application $\fonction{f}{G}{T^d}{M}{(\Tr(MM_1),\dots,\Tr(MM_d))}$ et montrons que $f$ est injective.\\
-	Tout d'abord, $f$ est bien une application. En effet, $\forall M\in G,\ \forall p\in \crblanc{1}{d},\ M_p\in G\implies MM_p\in G$.\\
-	Fixons un couple de matrice $(A,B)\in G^2$ tel que $f(A)=f(B)$ c'est à dire $\forall p\in \crblanc{1}{d},\ \Tr(AM_p)=\Tr(BM_p)$.\\
-	Alors par linéarité de la trace, pour toute combinaison linéaire $M=\displaystyle\sum\limits_{p=1}^dx_pM_p,\ \Tr(AM)=\Tr(BM)$.\\
-	En particulier pour $B^{-1}\in G\subset V,\ \Tr(AB^{-1})=\Tr(I_n)=n$.\\
-	Supposons alors par l'absurde que $A\ne B$ et donc que $C=AB^{-1}\ne I_n$. Alors le spectre de $C$ n'est pas réduit à $1$ (car sinon, $C$ étant diagonalisable on aurait $C=I_n$). On note $\lambda_0$ une valeur propre de $C$ différente de $1$.\\
-	On a $\operatorname{Re}(\Tr(C))=\operatorname{Re}(\lambda_0)+\displaystyle\sum\limits_{\lambda\in \text{Sp}(C)\backslash\{\lambda_0\}}\operatorname{Re}(\lambda)\leq \operatorname{Re}(\lambda_0)+\sum\limits_{\lambda\in \text{Sp}(C)\backslash\{\lambda_0\}}1=\operatorname{Re}(\lambda_0)+n-1<n$.\\
-	Ceci est absurde donc $A=B$.\\
-	On a donc construit une injection de $G$ dans $T^d$ qui est un ensemble fini. On en déduit que $G$ est fini.
+\subsection{Sous-groupes de GL$_n(\C)$ d'exposant fini \etoile{5}}
+\label{Sous-groupes de Gl_n(C) d'exposant fini corrigé}
+	\textcolor{blue}{\hyperref[Sous-groupes de GL_n(C) d'exposant fini]{[Enoncé]}}\\
+Soit $M\in G$.\\
+$M^k=I_n$ donc les valeurs propres de $M$ sont incluses dans l'ensemble des racines de $X^k-1$ c'est à dire $\U_k$. On remarque aussi que $M$ est diagonalisable ce qui servira plus tard.\\
+Alors $T=\{\Tr(M),\ M\in G\}=\displaystyle\left\{\sum\limits_{\lambda\in \text{Sp}(M)}m_\lambda(M)\lambda,\ M\in G\right\}\subset \left\{\sum\limits_{p=1}^n\lambda_p,\ (\lambda_1,\dots,\lambda_n)\in \U_k^n\right\}$.\\
+Ce dernier ensemble étant fini car $\U_k$ l'est, $T$ est fini.\\\\
+Ensuite, Considérons $V=\Vect(G)$. $V$ est de dimension finie comme sous-espace vectoriel de $\M_n(\C)$ on peut donc en prendre une base $(M_1,\dots,M_d)$.\\
+Posons alors l'application $\fonction{f}{G}{T^d}{M}{(\Tr(MM_1),\dots,\Tr(MM_d))}$ et montrons que $f$ est injective.\\
+Tout d'abord, $f$ est bien une application. En effet, $\forall M\in G,\ \forall p\in \crblanc{1}{d},\ M_p\in G\implies MM_p\in G$.\\
+Fixons un couple de matrice $(A,B)\in G^2$ tel que $f(A)=f(B)$ c'est à dire $\forall p\in \crblanc{1}{d},\ \Tr(AM_p)=\Tr(BM_p)$.\\
+Alors par linéarité de la trace, pour toute combinaison linéaire $M=\displaystyle\sum\limits_{p=1}^dx_pM_p,\ \Tr(AM)=\Tr(BM)$.\\
+En particulier pour $B^{-1}\in G\subset V,\ \Tr(AB^{-1})=\Tr(I_n)=n$.\\
+Supposons alors par l'absurde que $A\ne B$ et donc que $C=AB^{-1}\ne I_n$. Alors le spectre de $C$ n'est pas réduit à $1$ (car sinon, $C$ étant diagonalisable on aurait $C=I_n$). On note $\lambda_0$ une valeur propre de $C$ différente de $1$.\\
+On a $\operatorname{Re}(\Tr(C))=\operatorname{Re}(\lambda_0)+\displaystyle\sum\limits_{\lambda\in \text{Sp}(C)\backslash\{\lambda_0\}}\operatorname{Re}(\lambda)\leq \operatorname{Re}(\lambda_0)+\sum\limits_{\lambda\in \text{Sp}(C)\backslash\{\lambda_0\}}1=\operatorname{Re}(\lambda_0)+n-1<n$.\\
+Ceci est absurde donc $A=B$.\\
+On a donc construit une injection de $G$ dans $T^d$ qui est un ensemble fini. On en déduit que $G$ est fini.
 	
 	
-	\subsection{Formule de Burnside \etoile{4}}
-	\label{Formule de Burnside corrigé}
-		\textcolor{blue}{\hyperref[Formule de Burnside]{[Enoncé]}}\\
+\subsection{Formule de Burnside \etoile{4}}
+\label{Formule de Burnside corrigé}
+	\textcolor{blue}{\hyperref[Formule de Burnside]{[Enoncé]}}\\
 	Toutes les sommes écrites sont des sommes \textbf{finies}.\\
 	Posons $\varphi=\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}g$. On veut montrer que $\Tr(\varphi)=\dim(V^G)$.\\
 	Le résultat paraît improbable dans le sens où $\Tr(\varphi)\in \K$. Et pourtant on doit montrer que $\Tr(\varphi)$ est un entier positif. Parmi les endomorphismes connus on sait que les projecteur ont une trace entière (égale à leur rang). On va donc essayer de montrer que $\varphi$ est un projecteur.\\
@@ -9298,17 +9302,47 @@ Nonobstant $f(i\times 1)=-i\ne i=i\times f(1)$ donc $f$ n'est pas $\C$-linéaire
 	Ainsi Im$(\varphi)=V^G$.\\
 	Finalement $\dim(V^G)=\rg(\varphi)=\Tr(\varphi)=\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}\Tr(g)$.
 	
+\subsection{Caractères algébriques de $GL_n(\K)$}
+\label{Caractères algébriques de GLn(K) corrigé}
+\textcolor{blue}{\hyperref[Caractères algébriques de GLn(K)]{[Enoncé]}}\\
+D'après l'énoncé, $\exists R\in \K[X_1,\dots,X_{n^2}],\ \forall A=(a_{ij})_{1\leq i,j\leq n}\in \T{GL}_n(\K),\ \chi(A)=R((a_{ij})_{1\leq i,j\leq n})$.\\
+On sait que GL$_n(\K)$ est engendré par les matrices de dilatations $D_n(\lambda)=\left(\begin{array}{c|ccc}
+	\lambda & 0 & \cdots & 0\\
+	\hline
+	0 & & &\\
+	\vdots& & I_{n-1} &\\
+	0 & & &
+\end{array}\right),\lambda\in \K^*$ et les matrices de transvections $T_{ij}(\lambda)=I_n+\lambda E_{ij},\ \lambda\in \K,i\ne j$. Il suffit donc de montrer que $\chi$ coïncide avec une puissance du déterminant sur ces matrices.
+\begin{itemize}
+	\item Fixons $\lambda\in \K^*$.\\
+	On note $P=\chi(D_n(X))\in \K[X]$ et on note $d$ son degré. $P$ n'est pas le polynôme nul puisque $P(1)=\chi(I_n)=1$ donc $d$ est un entier naturel.\\
+	$\forall \lambda,\mu\in \K^*,\ P(\lambda\mu)=\chi(D_n(\lambda\mu))=\chi(D_n(\lambda)D_n(\mu))=\chi(D_n(\lambda))\chi(D_n(\mu))=P(\lambda)P(\mu)$. Donc comme $\K$ est infini, $P(X)P(\mu)=P(\mu X)$. Par dérivation successive on obtient $P(\mu)P^{(d)}(X)=\mu^d P^{(d)}(\mu X)$. Or $P^{(d)}$ est un polynôme constant non nul, donc $\forall \mu\in \K^*,\ P(\mu)=\mu^d$.\\
+	Autrement dit $\exists d\in \N,\ \forall \lambda\in \K^*,\ \chi(D_n(\lambda))=\lambda^d=\det(D_n(\lambda))^d$.
+	\item Fixons $i\ne j\in \crblanc{1}{n}$ et $\lambda,\mu\in \K$.\\
+	On note $Q_{ij}=\chi(T_{ij}(X))\in \K[X]$. $T_{ij}(\lambda)T_{ij}(\mu)=I_n+(\lambda+\mu)E_{ij}=T_{ij}(\lambda+\mu)$. On en déduit la relation $Q_{ij}(X+\mu)=Q_{ij}(\mu)Q_{ij}(X)$. Or le coefficients dominants de $Q_{ij}(X+\mu)$ et $Q_{ij}(X)$ sont égaux, donc $Q_{ij}(\mu)=1$. Ainsi $\forall \lambda\in \K,\ \forall i\ne j\in\crblanc{1}{n},\ \chi(T_{ij}(\lambda))=1=\det(T_{ij}(\lambda))^d$.
+\end{itemize}
+Finalement, $\chi=\det^d$.\\
 
-	\subsection{Théorème de Fermat matriciel}
+Pour $\K=\C$ on peut donner la preuve alternative suivante.
+\begin{itemize}
+	\item Fixons $\lambda\in \C^*$.\\
+	On note $P=\chi(D_n(X))\in \C[X]$. $\forall \lambda\in \C^*,\ \chi(D_n(\lambda))=P(\lambda)\ne 0$. Donc $P$ n'a pas de racine non nulle. Si $P$ n'est pas constant alors $\exists d\in \N^*,\ P=X^d$. Sinon, comme $P(1)=\chi(I_n)=1,\ P=1$.
+	\item Fixons $i\ne j\in \crblanc{1}{n}$ et $\lambda\in \C$.\\
+	On note $Q_{ij}=\chi(T_{ij}(X))\in \C[X]$. $\forall \lambda\in \C,\ \chi(T_{ij}(\lambda))=Q_{ij}(\lambda)\ne 0$. Donc $Q_{ij}$ n'a pas de racine, c'est donc un polynôme constant. Comme $Q_{ij}(0)=\chi(I_n)=1$, $Q_{ij}=1$.
+\end{itemize}
+
+\textit{Remarque : La première preuve qu'on a donné fonctionne pour n'importe quel corps infini. Le résultat est aussi vrai sur les corps finis et ce montre toujours en passant par les matrices de transvections/dilatations, en montrant au préalable qu'elles engendrent toujours le groupe linéaire lorsque $\K$ est un corps quelconque.}
+
+\subsection{Théorème de Fermat matriciel}
 	\label{Théorème de Fermat matriciel corrigé}
 	\textcolor{blue}{\hyperref[Théorème de Fermat matriciel]{[Enoncé]}}\\
 	
-	\subsection{Développement décimal propre d'un réel}
+\subsection{Développement décimal propre d'un réel}
 	\label{Développement décimal propre d'un réel corrigé}
 	\textcolor{blue}{\hyperref[Développement décimal propre d'un réel]{[Enoncé]}}\\
-	\subsubsection{Une caractéristique des rationnels}
+\subsubsection{Une caractérisation des rationnels}
 	
-	\subsection{Distribution du premier chiffre des puissances de 2}
+\subsection{Distribution du premier chiffre des puissances de 2}
 	\label{Distribution du premier chiffre des puissances de 2 corrigé}
 	\textcolor{blue}{\hyperref[Distribution du premier chiffre des puissances de 2]{[Enoncé]}}\\
 	
