@@ -158,6 +158,25 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item $M$ est une homothétie.
 	\end{itemize}
 	
+	\section{Isomorphisme de $\M_n(\K)$ qui respecte les matrices de rang 1}
+	\label{Isomorphisme de M_n(K) qui respecte les matrices de rang 1}
+	\textcolor{blue}{\hyperref[Isomorphisme de M_n(K) qui respecte les matrices de rang 1 corrigé]{[Corrigé]}}\\
+	Soit $f\in \T{GL}(\M_n(\K))$ telle que $\forall M\in \M_n(\K),\ \rg(M)=1\implies \rg(f(M))=1$. On note $\mathcal C=\M_{n,1}(\K),\ \L=\M_{1,n}(\K)$ et $\mathcal R=\{CL,\ (C,L)\in \mathcal C\times\L\}$. On note aussi pour $i,j\in \crblanc{1}{n},\ E_{ij}$ la matrice élémentaire, dont tous les coefficients sont nuls sauf celui en position $(i,j)$ qui vaut $1$. Enfin on note $(E_i)_{1\leq i\leq n}$ la base canonique de $\M_{n,1}(\K)$.
+	\begin{enumerate}
+		\item Calculer le produit $E_j^\top E_i$ pour $i,j\in \crblanc{1}{n}$.
+		\item Montrer que $\mathcal R$ est l'ensemble des matrices de rang inférieur ou égal à $1$. En déduire que pour tout $i,j\in \crblanc{1}{n},\ \mathcal R=\{AE_{ij}B,\ A,B\in \T{GL}_n(\K)\}$.
+		\item Soient $(C_1,C_2)\in \mathcal C$ et $(L_1,L_2)\in \L$.\\
+		Montrer que $\rg(C_1L_1+C_2L_2)\geq 2$ si et seulement si $(C_1,C_2)$ et $(L_1,L_2)$ sont libres.
+		\item Soit $\{0\}\ne\mathcal F\subset \mathcal R$ un sous-espace vectoriel de $\M_n(\K)$. Déduire de ce qui précède l'existence d'une colonne non nulle $C$ telle que $\mathcal F\subset C\mathcal L$ ou bien d'une ligne non nulle $L$ telle que $\mathcal F\subset \mathcal CL$.
+		\item Justifier la décomposition $\M_n(\K)=\displaystyle\bigoplus_{i=1}^nE_i\L$.
+		\item En déduire l'existence de deux matrices $A,B\in \T{GL}_n(\K)$ vérifiant une des deux affirmations :
+		\begin{itemize}
+			\item $\forall i,j\in \crblanc{1}{n},\ f(E_{ij})=AE_{ij}B$
+			\item $\forall i,j\in \crblanc{1}{n},\ f(E_{ij})=AE_{ji}B$.
+		\end{itemize}
+		\item Déterminer $f$.
+	\end{enumerate}
+	
 	\section{\underline{Centre de $\M_n(\K)$} \centraleponts{2}}
 	\label{Centre de Mn(K)}
 	\textcolor{blue}{\hyperref[Centre de Mn(K) corrigé]{[Corrigé]}}\\
@@ -238,6 +257,11 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item $\text{Im}(f^2)=\text{Im}(f)$
 		\item $\text{Ker}(f^2)=\text{Ker}(f)$
 	\end{itemize}
+	
+	\section{Equation entre projecteurs \centraleponts{3}}
+	\label{Equation entre projecteurs}
+	\textcolor{blue}{\hyperref[Equation entre projecteurs corrigé]{[Corrigé]}}\\
+	Existe-t-il des projecteurs $p,q,r$ d'un espace euclidien $E$ non tous nuls vérifiant $\sqrt{2}p+\sqrt{3}q=r$ ?
 	
 	\section{Théorème de Maschke}
 	\label{Théorème de Maschke}
@@ -2486,8 +2510,9 @@ On admettra le résultat des exercices \ref{Produit des nombres premiers inféri
 \textcolor{blue}{\hyperref[Identité de Vandermonde corrigé]{[Corrigé]}}\\
 Soient $r,m,n$ des entiers naturels. Montrer que : $$\sum_{k=0}^r\binom{n}{k}\binom{m}{r-k}=\binom{n+m}{r}$$
 \textit{Remarque : Formule de Chu-Vandermonde}\\
-Pour $\alpha\in\R$, on pose $$\forall n\in\N, \binom{\alpha}{n}=\frac{\alpha(\alpha-1)\dots(\alpha-n+1)}{n!}$$
-On a également $$\forall n\in \N, \forall (a,b)\in\R ,\sum_{k=0}^n\binom{a}{k}\binom{b}{n-k}=\binom{a+b}{n}$$
+Pour $\alpha\in\C$, on pose $$\forall n\in\N, \binom{\alpha}{n}=\frac{\alpha(\alpha-1)\dots(\alpha-n+1)}{n!}$$
+On a également $$\forall n\in \N, \forall (a,b)\in\C ,\sum_{k=0}^n\binom{a}{k}\binom{b}{n-k}=\binom{a+b}{n}$$
+
 \section{Nombre de Fibonacci \xens{3}}
 \label{Nombre de Fibonacci}
 \textcolor{blue}{\hyperref[Nombre de Fibonacci corrigé]{[Corrigé]}}\\
@@ -2663,6 +2688,11 @@ Soit $f$ une fonction monotone sur un intervalle $I$ de $\R$.
 On définit l'oscillation de $f$ en $x\in I$ par $\omega(x)=\left|\lim\limits_{x^+}f-\lim\limits_{x^-}f\right|$.\\
 Justifier que $\omega$ est bien définie sur $I$ puis montrer que l'ensemble des points de discontinuité de $f$ est au plus dénombrable.
 
+\section{Ouverts de $\R$}
+\label{Ouverts de R}
+\textcolor{blue}{\hyperref[Ouverts de R corrigé]{[Corrigé]}}\\
+Montrer que tout ouvert de $\R$ s'écrit comme réunion au plus dénombrable d'intervalles ouverts et que de plus, ces intervalles peuvent être pris disjoints.
+
 \section{Ensemble discret \telecom{2}}
 \label{Ensemble discret}
 \textcolor{blue}{\hyperref[Ensemble discret corrigé]{[Corrigé]}}\\
@@ -2677,17 +2707,17 @@ Soit $E$ un espace vectoriel normé. On dit qu'un point $x$ d'une partie $A$ de 
 \section{Ensemble parfait}
 \label{Ensemble parfait}
 \textcolor{blue}{\hyperref[Ensemble parfait corrigé]{[Corrigé]}}\\
-Soit $E$ un espace vectoriel normé. Un sous-ensemble $A$ de $E$ est dit \textit{parfait} s'il est fermé et n'a aucun point isolé (cf. \ref{Ensemble discret}.
+Soit $E$ un espace vectoriel normé. Un sous-ensemble $A$ de $E$ est dit \textit{parfait} s'il est fermé et n'a aucun point isolé (cf. \ref{Ensemble discret}).
 
 \subsection{Poussière de Cantor}
 On admet (cf. \ref{Développement décimal propre d'un réel}) que tout réel $x\in [0,1[$ s'écrit de manière unique $x=\displaystyle\sum_{n=1}^{+\infty}\frac{a_n}{3^n}$ où $(a_n)_{n\in \N^*}$ une suite à valeurs dans $\{0,1,2\}$ qui ne stationne pas à $2$. On définit \textit{l'ensemble de Cantor} $K=\displaystyle\left\{\sum_{n=1}^{+\infty}\frac{a_n}{3^n}\ |\ \forall n\in \N^*,\ a_n\in \{0,2\}\right\}$.\\
 Montrer que $K$ est un ensemble parfait, d'intérieur vide, compact et non dénombrable.
 
-\subsection{Ensemble parfait de $\R$}
+\subsection{Parfaits de $\R$}
 \begin{enumerate}[leftmargin=*]
 	\item Donner un exemple d'ensemble parfait de $\R$.
 	\item Montrer qu'un ensemble parfait non vide de $\R$ n'est pas dénombrable.
-	\item Montrer que l'intervalle $]0,1[$ n'est pas réunion dénombrable de segments disjoints.
+	\item En déduire que l'intervalle $]0,1[$ n'est pas réunion dénombrable de segments disjoints.
 \end{enumerate}
 
 \subsection{Théorème de Cantor-Bendixson}
@@ -3319,15 +3349,17 @@ On appelle $u$ le produit vectoriel des vecteurs $x_1,\dots, x_{n-1}$ et on le n
 	\item Montrer que l'application $$(x_1,\dots,x_{n-1})\in E^{n-1}\mapsto x_1\wedge x_2\wedge\dots\wedge x_{n-1}$$ est une application $(n-1)$-linéaire alternée.
 \end{enumerate}
 
+\section{Une caractérisation de la trace}
+\label{Une caractérisation de la trace}
+\textcolor{blue}{\hyperref[Une caractérisation de la trace corrigé]{[Corrigé]}}\\
+Soit $\varphi:\M_n(\R)\to\R$ une application linéaire vérifiant
+$$\forall A,B\in \M_n(\R),\ \varphi(AB)=\varphi(BA)$$
+Montrer que $\varphi$ est proportionnelle à la trace.
+
 \section{\underline{Hyperplan de $\M_n(\K)$} \xens{4}}
 \label{Hyperplan de Mn(K)}
 \textcolor{blue}{\hyperref[Hyperplan de Mn(K) corrigé]{[Corrigé]}}\\
 Montrer que tout hyperplan de $\M_n(\K)$ rencontre GL$_n(\K)$.
-
-\section{Equation entre projecteurs \centraleponts{3}}
-\label{Equation entre projecteurs}
-\textcolor{blue}{\hyperref[Equation entre projecteurs corrigé]{[Corrigé]}}\\
-Existe-t-il des projecteurs $p,q,r$ d'un espace euclidien $E$ vérifiant $\sqrt{2}p+\sqrt{3}q=r$ ?
 
 \section{\underline{Exemple de symétrie orthogonale} \ccinp{1}}
 \label{Exemple de syméttrie orthogonale}
@@ -3336,7 +3368,7 @@ Montrer que $\fonction{s}{\M_n(\R)}{\M_n(\R)}{M}{M^\top}$ est une symétrie orth
 
 \section{\underline{Caractérisations des projections orthogonales} \ccinp{2}}
 \label{Caractérisations des projections orthogonales}
-\textcolor{blue}{\hyperref[Caractérisations des projecteurs orthogonales corrigé]{[Corrigé]}}\\
+\textcolor{blue}{\hyperref[Caractérisations des projections orthogonales corrigé]{[Corrigé]}}\\
 Soient $E$ un espace euclidien et $p$ une projection de $E$. Etablir l'équivalence des trois propriétés suivantes:
 \begin{enumerate}[label=\roman*.]
 	\item $p$ est orthogonale
@@ -4055,6 +4087,11 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Il est clair que si $M$ est une homothétie alors \[\forall A,B\in \M_n(\R), \Tr(MAB)= \Tr(MBA)\]
 	Réciproquement, supposons que $M$ vérifie la propriété de l'énoncé.\\
 	Alors elle est vérifié en particulierr pour les matrices élémentaires, cela va nous fournir des conditions très restrictives sur les coefficients de $M$.\\ On en déduit que $M$ est une homothétie.
+	
+	\subsection{Isomorphisme de $\M_n(\K)$ qui respecte les matrices de rang 1}
+	\label{Isomorphisme de M_n(K) qui respecte les matrices de rang 1 corrigé}
+	\textcolor{blue}{\hyperref[Isomorphisme de M_n(K) qui respecte les matrices de rang 1]{[Enoncé]}}\\
+	
 	\subsection{Centre de $\M_n(\K)$ \etoile{2}}
 	\label{Centre de Mn(K) corrigé}
 	\textcolor{blue}{\hyperref[Centre de Mn(K)]{[Enoncé]}}\\
@@ -4211,7 +4248,17 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Par conséquent, $\Ker(f)$ et $\Ima(f)$ sont en somme directe.\\
 		De plus, d'après le théorème du rang : $\dim(\Ima(f))+\dim(\Ker(f))=n$.\\
 		Donc $\Ima(f)\oplus\Ker(f)=E$.
-		
+	
+	\subsection{Equation entre projecteurs}
+	\label{Equation entre projecteurs corrigé}
+	\textcolor{blue}{\hyperref[Equation entre projecteurs]{[Enoncé]}}\\
+	Supposons qu'il existe $p,q,r$ des projecteurs de $E$ vérifiant $\sqrt 2p+\sqrt 3q=r$.\\
+	Alors en appliquant la trace $\sqrt 2\Tr(p)+\sqrt 3\Tr(q)=\Tr(r)$. Or on sait que la trace d'un projecteur est son rang (il suffit d'écrire la matrice du projeteur $f$ dans une base adaptée à la décomposition de $E=\ker(f)\bigoplus\ker(f-\Id_E)$). On note $n,m,k$ les rangs respectifs de $p,q,r$.\\
+	Si $n=0$ alors $m=0$ (car sinon $\sqrt 3=\dfrac{k}{m}\in \Q$) et par suite $k=0$. Dans ce cas $p,q,r$ sont tous nuls. De même, $m=0\implies p=q=r=0$.\\
+	Supposons $n,m$ non nuls et notons $\alpha=\dfrac{m}{n}\ne 0$ et $\beta=\dfrac{k}{n}$. On a\\
+	$\sqrt 2+\sqrt 3\alpha=\beta$ d'où $2+2\alpha\sqrt 6+3\alpha^2=\beta^2$ i.e $\sqrt 6=\dfrac{\beta^2-3\alpha^2-2}{2\alpha}\in \Q$ ce qui est absurde.\\
+	Ainsi il n'existe pas de triplet $(p,q,r)\ne (0,0,0)$ de projecteurs de $E$ qui vérifient $\sqrt 2p+\sqrt 3q=r$.
+	
 	\subsection{Théorème de Maschle}
 	\label{Théorème de Maschke corrigé}
 	\textcolor{blue}{\hyperref[Théorème de Maschke]{[Enoncé]}}\\
@@ -7655,8 +7702,16 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\label{Support d'une famille sommable corrigé}
 	
 	\subsection{Théorème de Froda}
-		\textcolor{blue}{\hyperref[Théorème de Froda]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Théorème de Froda]{[Enoncé]}}\\
 	\label{Théorème de Froda corrigé}
+	
+	\subsection{Ouverts de $\R$}
+	\label{Ouverts de R}
+	\textcolor{blue}{\hyperref[Ouverts de R]{[Enoncé]}}\\
+	Soit $\mathcal U$ un ouvert de $\R$. $\forall x>0,\ \exists \varepsilon_x>0,\ I_x:=]x-\varepsilon_x,x+\varepsilon_x[\subset\mathcal U$. Alors on a clairement $\mathcal U=\displaystyle\bigcup_{x\in \mathcal U}I_x$. Or par densité de $\Q$ dans $\R$, chaque $I_x$ contient un rationnel $q_x$. Donc $\exists r_{q_x}=\min(|x-q_x|,q_x-x+\varepsilon_x,x+\varepsilon_x-q_x)>0,\ x\in J_{q_x}:=]q_x-r_{q_x},q_x+r_{q_x}[\subset \mathcal U$.\\
+	Par construction, $\mathcal U=\displaystyle\bigcup_{x\in \mathcal U}J_{q_x}$. Or $\Q$ étant dénombrable, l'ensemble $Q:=\{q_x,\ x\in \mathcal U\}\subset\Q$ est au plus dénombrable. Ainsi $\mathcal U=\displaystyle\bigcup_{q\in Q} J_q$ avec $Q$ au plus dénombrable.\\
+	On rappelle que les connexes par arcs de $\R$ sont exactement les intervalles de $\R$. Comme on a écrit $\mathcal U$ comme une réunion au plus dénombrable de connexes par arcs, $\mathcal U$ a un nombre au plus dénombrable de composantes connexe par arcs. De plus les composantes connexes par arcs d'un ouvert sont ouvertes. En effet, donnons nous $J$ une composante connexe par arcs de $\mathcal U$. Si $J=\R$ alors c'est bon. Sinon $J$ a une borne finie, disons que c'est son sup $s$. Si $s\in J$ alors par caractère ouvert de $\mathcal U,\ \exists \eta>0,\ [s,s+\eta[\subset \mathcal U$. Mais alors $J\subsetneq J\cup[s,s+\eta[\subset \mathcal U$ avec $J\cup[s,s+\eta[$ connexe par arcs ce qui contredit la maximalité de $J$ en tant que composante connexe par arcs. Donc $s\notin J$, càd $J$ est un intervalle ouvert. Enfin
+	$$\mathcal U=\bigcup_{J\T{ composante connexe par arcs de }\mathcal U}J$$
 	
 	\subsection{Ensemble discret}
 	\textcolor{blue}{\hyperref[Ensemble discret]{[Enoncé]}}\\
@@ -7666,7 +7721,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\textcolor{blue}{\hyperref[Ensemble parfait]{[Enoncé]}}\\
 	\label{Ensemble parfait corrigé}
 	\subsubsection{Poussière de Cantor}
-	\subsubsection{Ensemble parfait de $\R$}
+	\subsubsection{Parfaits de $\R$}
 	\subsubsection{Théorème de Cantor-Berdixson}
 	
 	\newpage
@@ -7751,9 +7806,9 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		Par conséquent, \[\forall x\in X(\Omega), |x|=0 \text{ ou } \p(X=x)=0\]
 		Donc pour tout $x\in X(\Omega)$ non nul, on a $\p(X=x)=0$.
 		Par conséquent, \[\p(X=0)=1\] 
-		\item On sait que $\V(X)=\E(|X-\E(x)|)$, donc en posant $Y=X-\E(X)$, d'après la question 1, on a que \[Y \text{ est presque surement nulle}\]
+		\item On sait que $\V(X)=\E((X-\E(X))^2)$, donc en posant $Y=(X-\E(X))^2$, d'après la question 1, on a que \[Y \text{ est presque surement nulle}\]
 		Donc \[\p(X-\E(X)=0)=1\]
-		Donc en posant $a=\E(X)$, on a le résultat.
+		D'où le résultat en posant $a=\E(X)$.
 	\end{enumerate}
 	\subsection{Loi de Pascal \etoile{2}}
 	\label{Loi de Pascal corrigé}
@@ -7795,7 +7850,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		$\ln\left(\p\left(\displaystyle\bigcap\limits_{k=n}^{n+p}\overline{A_k}\right)\right)=\displaystyle\sum\limits_{k=n}^{n+p}\ln(\p(\overline{A_k}))\leq\displaystyle\sum\limits_{k=n}^{n+p}\left(\p(\overline{A_k})-1\right)=-\displaystyle\sum\limits_{k=n}^{n+p}\p(A_k)$.\\
 		Donc par passage à l'exponentielle qui est une fonction croissante sur $\R$,\\
 		$\p\left(\displaystyle\bigcap\limits_{k=n}^{n+p}\overline{A_k}\right)\leq \exp\left(-\displaystyle\sum\limits_{k=n}^{n+p}\p(A_k)\right)$.
-		\item $\displaystyle\sum\limits_{n\in\N}\p(A_n)$ étant une série à termes positifs divergente, sa somme vaut $+\infty$. Ainsi en faisant tendre $p$ vers l'infini dans l'inégalité précédente, $\upfty{\lim}\p\left(\displaystyle\bigcap\limits_{k=n}^{n+p}\overline{A_k}\right)\leq \exp\left(-\displaystyle\sum\limits_{k=n}^{+\infty}\p(A_k)\right)=0$. De plus par continuité décroissante, $\upfty{\lim}\p\left(\displaystyle\bigcap\limits_{k=n}^{n+p}\overline{A_k}\right)=\upfty{\lim}\p\left(\displaystyle\bigcap\limits_{k=n}^{+\infty}\overline{A_k}\right)=\p(\overline{B_n})$. Donc $\p(\overline{B_n})=0$.\\
+		\item $\displaystyle\sum\limits_{n\in\N}\p(A_n)$ étant une série à termes positifs divergente, sa somme vaut $+\infty$. Ainsi en faisant tendre $p$ vers l'infini dans l'inégalité précédente, $\upfty{\lim}\p\left(\displaystyle\bigcap\limits_{k=n}^{n+p}\overline{A_k}\right)\leq \exp\left(-\displaystyle\sum\limits_{k=n}^{+\infty}\p(A_k)\right)=0$. De plus par continuité décroissante, $\upfty{\lim}\p\left(\displaystyle\bigcap\limits_{k=n}^{n+p}\overline{A_k}\right)=\p\left(\displaystyle\bigcap\limits_{k=n}^{+\infty}\overline{A_k}\right)=\p(\overline{B_n})$. Donc $\p(\overline{B_n})=0$.\\
 		Ainsi comme $\p(\overline{A})=\p\left(\displaystyle\bigcup\limits_{n\in \N}\overline{B_n}\right)\leq \displaystyle\sum\limits_{n=0}^{+\infty}\p(\overline{B_n})=0$, $\p(\overline{A})=0$ c'est à dire $\p(A)=1$.
 	\end{enumerate}
 	
@@ -8346,7 +8401,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		On suppose maintenant $\E(X^p)\ne 0$ et $\E(Y^q)\ne 0$. On pose $X_0=\displaystyle\frac{X}{\E(X^p)^{1/p}}$ et $Y_0=\displaystyle\frac{Y}{\E(Y^q)^{1/q}}$. $X_0$ et $Y_0$ sont deux variables aléatoires réelles positives vérifiant $\E(X_0^p)=\E(Y_0^q)=1$. D'après ce qui a été fait précédemment on sait que
 		$$\E(X_0Y_0)\leq \E(X_0^p)^{1/p}\E(Y_0^q)^{1/q}$$
 		C'est à dire $\displaystyle\frac{\E(XY)}{\E(X^p)^{1/p}\E(Y^q)^{1/q}}\leq 1$ ou encore $\E(XY)\leq \E(X^p)^{1/p}\E(Y^q)^{1/q}$.
-		\item Pour $p=q=2$ on a $\E(XY)\leq \sqrt{\E(X^2)\E(Y^2)}$. Il s'agit de l'inégalité de Cauchy-Schwartz.
+		\item Pour $p=q=2$ on a $\E(XY)\leq \sqrt{\E(X^2)\E(Y^2)}$. Il s'agit de l'inégalité de Cauchy-Schwarz.
 	\end{enumerate}
 	
 	\subsection{Modes de convergences}
@@ -8415,7 +8470,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			&=A^\top\Sigma A
 		\end{align*}
 		\item La covariance étant symétrique, $\Sigma$ est symétrique réelle et donc diagonalisable d'après le théorème spectral. De plus, la question précédente montre que $\forall A\in \M_{n,1}(\R),\ A^\top\Sigma A\geq 0$.\\
-		Donc $\Sigma \in S_n^{++}(\R)$ c'est à dire $\operatorname{Sp}(\Sigma)\subset \R_+$.
+		Donc $\Sigma \in S_n^+(\R)$ c'est à dire $\operatorname{Sp}(\Sigma)\subset \R_+$.
 		\item $0\notin \operatorname{Sp}(\Sigma)\iff \forall A=\begin{pmatrix} a_1\\ \vdots\\ a_n \end{pmatrix}\in \M_{n,1}(\R),\ A^\top\Sigma A=\V(A^\top X)\ne 0$.\\
 		Or, pour toute variable aléatoire discrète réelle $Y$, $\V(Y)=0\iff \E((Y-\E(Y)^2)=0$. Et puisque la variable aléatoire $(Y-\E(Y))^2$ est positive, cela équivaut à ce que $(Y-\E(Y))^2=0$ c'est à dire à ce que $Y=\E(Y)$ et donc à ce que $Y$ soit certaine (constante).\\
 		On peut alors donner la condition : $\Sigma$ est inversible si et seulement s'il n'existe aucune combinaison linéaire de $X_1,\dots,X_n$ qui soit presque sûrement constante.\\
@@ -8428,21 +8483,21 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\textcolor{blue}{\hyperref[Maximisation de la variance sous contrainte]{[Enoncé]}}\\
 	\label{Maximisation de la variance sous contrainte corrigé}
 	\begin{enumerate}[leftmargin=*]
-		\item On note $X_i$ la variable aléatoire qui vaut $1$ si la $i$-ème ampoule est allumée. \\On a donc $X_i\sim\mathcal{B}(p_i)$.\\
+		\item On note $X_i$ la variable aléatoire qui vaut $1$ si la $i$-ème ampoule est allumée et $0$ sinon.\\
 		On a donc $\displaystyle Y=\sum_{i=1}^{n}X_i$.\\
-		Par linéarité de l'espérance, \[\E(Y)=\sum_{i=1}^{n}\E(X_i)=\sum_{i=1}^{n}p_i\].
-		Puisque les $(X_i)$ sont indépendants par hypothèse, on a : \[\V(Y)=\sum_{i=1}^{n}\V(X_i)=\sum_{i=1}^{n}p_i(1-p_i)\]
+		Par linéarité de l'espérance, \[\E(Y)=\sum_{i=1}^{n}\E(X_i)=\sum_{i=1}^{n}p_i\]
+		Puisque les $X_i$ sont indépendants par hypothèse, on a : \[\V(Y)=\sum_{i=1}^{n}\V(X_i)=\sum_{i=1}^{n}p_i(1-p_i)\]
 		\item On peut voir ce problème comme un problème d'optimisation sous contrainte.\\
-		On pose $p=(p_1, \dots, p_n)$.\\
-		On pose également $f(p)=\sum_{i=1}^{n}p_i(1-p_i)$ et $g(p)=\sum_{i=1}^{n}p_i-m$.\\
+		On pose $p=(p_1,\dots,p_n)$.\\
+		On pose également $f(p)=\displaystyle\sum_{i=1}^{n}p_i(1-p_i)$ et $g(p)=\displaystyle\sum_{i=1}^{n}p_i-m$.\\
 		On a donc : \[\begin{cases}
 			\nabla f(p)=(1-2p_1,\dots, 1-2p_n)\\
 			\nabla g(p)=(1,\dots, 1)
 		\end{cases}\]
 		Cherchons $\lambda\in\R$ tel que $\nabla f(p)=\lambda \nabla g(p)$ quand $g(p)=0$.
-		Donc qu'un tel $\lambda$ existe il faut que les $p_i$ soient égaux, on a donc : \[p_i=\frac{m}{n}\]
+		Pour qu'un tel $\lambda$ existe il faut que les $p_i$ soient égaux, on a donc : \[p_i=\frac{m}{n}\]
 		pour tout $i\in\crblanc{1}{n}$.
-		Ainsi, la variance est maximale pour $p=\left(\frac{m}{n},\dots,\frac{m}{n}\right)$ et : \[\V(Y)=\sum_{i=1}^{n}\frac{m}{n}\left(1-\frac{m}{n}\right)=m(1-\frac{m}{n})\]
+		Ainsi, la variance est maximale pour $p=\left(\frac{m}{n},\dots,\frac{m}{n}\right)$ et : \[\V(Y)=\sum_{i=1}^n\frac{m}{n}\left(1-\frac{m}{n}\right)=m\left(1-\frac{m}{n}\right)\]
 		On en déduit que : $Y\sim \mathcal{B}\left(n,\frac{m}{n}\right)$.
 	\end{enumerate}
 	\subsection{Inégalité de Kosmanek \etoile{1}}
@@ -8452,7 +8507,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		\item $\mathbbm{1}_C\sim\B(\p(C))$ donc $\V(\mathbbm{1}_C)=\p(C)(1-\p(C))$.\\
 		Or la fonction $p\mapsto p(1-p)$ admet un maximum sur $[0,1]$ en $p=\displaystyle\frac{1}{2}$ qui vaut $\displaystyle\frac{1}{4}$.\\
 		On en déduit que $\V(\mathbbm{1}_C)\leq \displaystyle\frac{1}{4}$.
-		\item D'après l'inégalité de Cauchy-Schwartz, $\displaystyle\left|\operatorname{Cov}(\mathbbm{1}_A,\mathbbm{1}_B)\right|\leq\sqrt{\V(\mathbbm{1}_A)\V(\mathbbm{1}_B)}\leq\frac{1}{4}$.
+		\item D'après l'inégalité de Cauchy-Schwarz, $\displaystyle\left|\operatorname{Cov}(\mathbbm{1}_A,\mathbbm{1}_B)\right|\leq\sqrt{\V(\mathbbm{1}_A)\V(\mathbbm{1}_B)}\leq\frac{1}{4}$.
 		\item $\displaystyle\frac{1}{4}\geq|\operatorname{Cov}(\mathbbm{1}_A,\mathbbm{1}_B)|=|\E(\mathbbm{1}_A\mathbbm{1}_B)-\E(\mathbbm{1}_A)\E(\mathbbm{1}_B)|=|\E(\mathbbm{1}_{A\cap B})-\E(\mathbbm{1}_A)\E(\mathbbm{1}_B)|=|\p(A\cap B)-\p(A)\p(B)|$.\\
 		Il y a égalité lorsque $\displaystyle\left|\operatorname{Cov}(\mathbbm{1}_A,\mathbbm{1}_B)\right|=\sqrt{\V(\mathbbm{1}_A)\V(\mathbbm{1}_B)}=\frac{1}{4}$.\\
 		La deuxième égalité impose $\p(A)=\p(B)=\displaystyle\frac{1}{2}$.\\
@@ -8539,7 +8594,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			&\leq \displaystyle\frac{\varepsilon}{2}\E\left(\mathbbm{1}_{\{|t-R_n|\leq \delta\}}\right)+2{||f||}_\infty\E\left(\mathbbm{1}_{\{|t-R_n|>\delta\}}\right)\\
 			&\leq \displaystyle\frac{\varepsilon}{2}+2{||f||}_\infty\p\left(|t-R_n|>\delta\right)
 		\end{align*}
-		\item D'après l'inégalité de Cauchy-Schwartz,\\
+		\item D'après l'inégalité de Cauchy-Schwarz,\\
 		$\p(|R_n-t|>\delta)=\p(|R_n-\E(R_n)|>\delta)\leq \displaystyle\frac{\V(R_n)}{\delta^2}=\frac{\V(S_n)}{n^2\delta^2}=\frac{t(1-t)}{n\delta^2}$.\\\\
 		Etudions $g:x\mapsto x(1-x)$ sur $I$. $g$ est dérivable sur $I$ et $\forall x\in I,\ g'(x)=1-2x$.\\\\
 		\begin{tikzpicture}
@@ -8581,20 +8636,21 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		\item Supposons qu'il existe une telle matrice $N$.\\
 		Alors $N^4=\begin{pmatrix}0&0\\0&0\end{pmatrix}$ et donc $N$ est nilpotente. On en déduit que $\chi_N=X^2$. Mais alors d'après le théorème de Cayley-Hamilton, $N^2=\begin{pmatrix}0&0\\0&0\end{pmatrix}$ ce qui est absurde.
 	\end{enumerate}
+	
 	\subsection{Equation matricielle faisant intervenir la comatrice}
 	\label{Equation matricielle faisant intervenir la comatrice corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la comatrice]{[Enoncé]}}\\
-	Soit $A\in\M_{n}(R)$ telle que $Com(A)=A$.\\
+	Soit $A\in\M_n(\R)$ telle que $\Com(A)=A$.\\
 	On rappelle que \[A\Com(A)^\top=\det(A)I_n\]
 	Ainsi, on en déduit que : $AA^\top=\det(A)I_n$.\\
 	Par passage au déterminant, $\det(A)^2=\det(A)$.Donc $\det(A)=0$ ou $\det(A)=1$.\\
 	\textbullet Si $\det(A)=0$ alors $AA^\top=0$. Ainsi, $\Tr(A^\top A)=0$ ce qui implique que : $A=0$.\\
 	\textbullet Si $\det(A)=1$ alors $AA^\top=I_n$ donc $A\in\mathcal{O}_n(\R)$.\\
-	Réciproquement, il est clairement que si $A=0$ alors $\Com(A)=A$.\\
+	Réciproquement, il est clair que si $A=0$ alors $\Com(A)=A$.\\
 	Si $A\in\mathcal{SO}_n(\R)$ alors $A^{-1}=A^\top$ et $\det(A)=1$.\\ 
-	Donc puisque \[A\Com(A)^\top=I_n\] Donc par unicité de l'inverse $\Com(A)^\top=A^\top$.
+	Donc puisque \[A\Com(A)^\top=I_n\] par unicité de l'inverse $\Com(A)^\top=A^\top$.
 	D'où $A=\Com(A)$.\\
-	Donc l'ensemble des solutions des matrices vérifiant $A=\Com(A)$ est : \[\mathcal{SO}_n(\R)\cup\{0\}\]
+	Donc l'ensemble des solutions des matrices à coefficients réels vérifiant $A=\Com(A)$ est : \[\mathcal{SO}_n(\R)\cup\{0\}\]
 	
 	\subsection{Matrice de rotation}
 	\label{Matrice de rotation corrigé}
@@ -8648,11 +8704,27 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\label{Produit mixte et produit vectoriel corrigé}
 		\textcolor{blue}{\hyperref[Produit mixte et produit vectoriel]{[Enoncé]}}\\
 	
-	\subsection{Hyperplan de $\M_{n}(\K)$}
+	\subsection{Une caractérisation de la trace}
+	\label{Une caractérisation de la trace corrigé}
+	\textcolor{blue}{\hyperref[Une caractérisation de la trace]{[Enoncé]}}\\
+	$\M_n(\R)$ est un espace euclidien donc d'après le théorème de représentation de Riesz, $\exists A\in \M_n(\R),\ \forall B\in \M_n(\R),\ \varphi(B)=\Tr(AB)$. Il suffit de montrer que $A$ est une matrice d'homothétie. Notons $E_{ij}$ la matrice dont tous les coefficients sont nuls, sauf celui en position $(i,j)$ qui vaut 1.\\
+	On vérifie que $\forall i,j,k,l\in \crblanc{1}{n},\ k\ne j\implies E_ijE_kl=0$ et $E_{ij}E_{jl}=E_{il}$.\\
+	Par hypothèse si $i\ne l,\ \varphi(E_{ij}E_{jl})=\varphi(E_{jl}E_{ij})=\varphi(0)=0$.\\
+	D'autre part $\varphi(E_{ij}E_{jl})=\varphi(E_{ij})=\Tr(AE_{il})=\displaystyle\sum_{k=1}^n(AE_{il})_{kk}$.\\
+	On calcule $(AE_{il})_{kk}=\displaystyle\sum_{r=1}^nA_{kr}(E_{il})_{rk}=\begin{cases}
+		0&\mbox{si }k\ne l\\
+		A_{li}&\mbox{sinon}
+	\end{cases}$\\
+	Donc $A_{li}=0$.\\
+	Et de plus, $A_{11}=\varphi(E_{11})=\varphi(E_{1i}E_{i1})=\varphi(E_{i1}E_{1i})=\varphi(E_{ii})=A_{ii}$. Ainsi $A=\lambda I_n$ avec $\lambda=A_{11}$.\\
+	Finalement, $\varphi=\lambda\Tr$.
+	
+	\subsection{Hyperplan de $\M_n(\K)$}
 	\label{Hyperplan de Mn(K) corrigé}
 	\textcolor{blue}{\hyperref[Hyperplan de Mn(K)]{[Enoncé]}}\\
 	Soit $H$ un hyperplan de $\M_n(\K)$.\\
-	Supposons que $H$ ne contient aucun matrice inversible.\\
+	\underline{$1^{\T{ère}}$ méthode :}\\
+	Supposons que $H$ ne contient aucune matrice inversible.\\
 	Ainsi puisque $I_n$ est inversible, on a \[H\bigoplus \Vect{I_n}=\M_n(\K)\]
 	Montrons que $H$ contient toutes les matrices nilpotentes.\\
 	Soit $N$ une matrice nilpotente.\\
@@ -8661,18 +8733,38 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	Cela implique que \[NX=\lambda X\]
 	Donc $X$ est un vecteur propre de $N$, on a a fortiori $\lambda=0$, d'où $N=A\in H$.\\
 	En particulier $H$ contient toutes les matrices $E_{i,j}$ pour $i\ne j$.\\
-	Donc la matrice J défini par \[J=\begin{pmatrix}
-		
+	Donc la matrice $J$ définie par \[J=\begin{pmatrix}
 		0 & 1 &  &(0)\\
 		&\ddots&\ddots&\\
 		&(0)&\ddots&1\\
 		1&&&0
 	\end{pmatrix}\]
 	est dans $H$.\\
-	Or cette matrice est inversible donc on a montré par l'absurde que toute hyperplan de $\M_n(\K)$ rencontre $\text{GL}_n(\K)$.
-	\subsection{Equation entre projecteurs}
-	\label{Equation entre projecteurs corrigé}
-	\textcolor{blue}{\hyperref[Equation entre projecteurs]{[Enoncé]}}\\
+	Or cette matrice est inversible (c'est l'identité à permutations près) donc on a montré par l'absurde que tout hyperplan de $\M_n(\K)$ rencontre $\text{GL}_n(\K)$.\\\\
+	\underline{$2^{\T{nd}}$ méthode :}\\
+	Soit $\varphi:\M_n(\K)\to \K$ une forme linéaire de noyau $H$. Dans $\K=\R$ le théorème de Riesz nous donne l'existence d'une matrice $A\in \M_n(\R)$ telle que $\forall B\in \M_n(\R),\ \varphi(B)=\Tr(AB)$. Montrons que le résultat reste vrai avec $\K=\C$.\\
+	Pour $A\in \M_n(\C)$ on pose $\fonction{f_A}{\M_n(\C)}{\C}{B}{\Tr(\overline{A}^\top B)}$.\\
+	Montrons que $\fonction{\Phi}{\M_n(\C)}{\M_n(\C)^*}{A}{f_A}$ est un isomorphisme.\\
+	Par linéarité de la trace, de la transposition et de la conjugaison complexe $\Phi$ est une application linéaire. De plus $\dim(\M_n(\C))=\dim(\M_n(\C)^*)$. Il suffit donc de montrer que $\Phi$ est injective.\\
+	Soit $A\in \ker\Phi$. $0=f_A(A)=\Tr(\overline{A}^\top A)=\displaystyle\sum_{1\leq i,j\leq n}|A_{ij}|^2$. Donc $A=0$.\\
+	Ainsi dans le cas général, $\exists A\in \M_n(\K),\ \forall B\in \M_n(\K),\ \varphi(B)=\Tr(AB)$.\\
+	Soient $P,Q\in \T{GL}_n(\K)$ telles que $\begin{pmatrix}
+		I_r&0\\
+		0&0
+	\end{pmatrix}:=J_r=PAQ$ avec $r=\rg(A)$. Alors $\forall B\in \M_n(\K),\ \varphi(QBP)=\Tr(AQBP)=\Tr(PAQB)=\Tr(J_rB):=\tilde\varphi(B)$. Comme $P$ et $Q$ sont inversibles, le noyau de $\varphi$ contient une matrice inversible ssi le noyau de $\tilde\varphi$ en contient une.\\
+	Pour $B=\begin{pmatrix}
+		X&Y\\
+		Z&T
+	\end{pmatrix},\ J_rB=\begin{pmatrix}
+	X&Y\\
+	0&0
+	\end{pmatrix}$. Il suffit de trouver une matrice inversible qui n'a que des $0$ sur sa diagonale. Par exemple la matrice $J$ définie par \[J=\begin{pmatrix}
+	0 & 1 &  &(0)\\
+	&\ddots&\ddots&\\
+	&(0)&\ddots&1\\
+	1&&&0
+	\end{pmatrix}\] fonctionne (elle est inversible car c'est l'identité à permutations près).\\
+	On a montré que $QJP\in H\cap\T{GL}_n(\K)$.
 	
 	\subsection{Exemple de symétrie orthogonale}
 	\label{Exemple de symétrie orthogonale corrigé}
@@ -8689,8 +8781,8 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	Donc, par symétrie du produit scalaire, on en déduit que $\langle A, S\rangle =0$.
 	Donc $\mathcal{S}_n(\R)$ et $\mathcal{A}_n(\R)$ sont orthogonaux.\\
 	Ainsi $s$ est une symétrie orthogonale.
-	\subsection{Caractérisations des projecteurs orthogonales}
-	\label{Caractérisations des projecteurs orthogonales corrigé}
+	\subsection{Caractérisations des projections orthogonales}
+	\label{Caractérisations des projections orthogonales corrigé}
 	\textcolor{blue}{\hyperref[Caractérisations des projections orthogonales]{[Enoncé]}}\\
 	On pose $F=\Ker(p-Id_E)$
 	Montrons que i. $\Rightarrow$ ii.\\
