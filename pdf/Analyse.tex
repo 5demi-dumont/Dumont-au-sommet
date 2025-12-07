@@ -1950,10 +1950,10 @@
 	\section{Passage par les matrices orthogonales}
 	\textcolor{blue}{\hyperref[sec:passage-par-les-matrices-orthogonales]{[Corrigé]}}\\
 	\label{Passage par les matrices orthogonales}
-	Pour $X\in\M_{n,1}(\R)$, on pose $\displaystyle N(X)=\max_{A\in\Or_n(\R)}\normep{\infty}{AX}$.
+	Pour $X\in\M_{n,1}(\R)$, on pose $\displaystyle N(X)=\max_{A\in\O_n(\R)}\normep{\infty}{AX}$.
 	\begin{enumerate}
 		\item Montrer que $N$ est une norme sur $\M_{n,1}(\R)$.
-		\item Vérifier que : $\forall X\in \M_{n,1}(\R),\forall A \in \Or_n(\R),\quad N(AX)=N(X)$.
+		\item Vérifier que : $\forall X\in \M_{n,1}(\R),\forall A \in \O_n(\R),\quad N(AX)=N(X)$.
 		\item Montrer que $N=\normep{2}{.}$ la norme euclidienne canonique de $\M_{n,1}(\R)$.
 	\end{enumerate}
 	
@@ -3228,7 +3228,7 @@ Soit $A\in \M_n(\K)$. Montrer que la transposée de la comatrice de $A$ est un p
 \section{Groupe orthogonal \etoile{1}}
 \label{Groupe orthogonal}
 \textcolor{blue}{\hyperref[sec:groupe-orthogonal-etoile1]{[Corrigé]}}\\
-Montrer que $\Or_n(\R)$ est un sous-groupe compact de GL$_n(\R)$. Est-il connexe par arcs ?
+Montrer que $\O_n(\R)$ est un sous-groupe compact de GL$_n(\R)$. Est-il connexe par arcs ?
 
 \section{Groupe (spécial) unitaire \etoile{3}}
 \label{Groupe (spécial) unitaire}
@@ -3303,7 +3303,7 @@ Pour tout $M\in\M_n(\K)$, on désigne sa classe de similitude sur $\K$ par: $$S_
 \label{Groupe spécial orthogonal et connexité}
 \textcolor{blue}{\hyperref[sec:groupe-special-orthogonal-et-connexite]{[Corrigé]}}\\
 \begin{enumerate}[leftmargin=*]
-	\item $\Or_n(\R)$ est-il connexe par arcs ?
+	\item $\O_n(\R)$ est-il connexe par arcs ?
 	\item Montrer que SO$_2(\R)$ est connexe par arcs.
 	\item Montrer que SO$_n(\R)$ est connexe par arcs.
 \end{enumerate}
@@ -3922,7 +3922,7 @@ Déterminer le gradient et la différentielle de l'application $\det:M\in \M_n(\
 \section{Espace tangent aux matrices orthogonales en l'identité}
 \label{Espace tangent aux matrices orthogonales en l'identité}
 \textcolor{blue}{\hyperref[sec:espace-tangent-aux-matrices-orthogonales-en-lidentite]{[Corrigé]}}\\
-Montrer que l'ensemble des vecteurs tangents à l'ensemble des matrices orthogonales en la matrice identité $T_{I_n}(\Or_n(\R))$ est l'ensemble des matrices antisymétriques réelles.
+Montrer que l'ensemble des vecteurs tangents à l'ensemble des matrices orthogonales en la matrice identité $T_{I_n}(\O_n(\R))$ est l'ensemble des matrices antisymétriques réelles.
 
 \section{Vecteur propre d'un endomorphisme auto-adjoint}
 \label{Vecteur propre d'un endomorhpsime auto-adjoint}
@@ -4212,7 +4212,7 @@ Alors, on a l'équivalence :
 	\textcolor{blue}{\hyperref[Série Harmonique]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item \underline{Première méthode :} Sommation de relations de comparaisons\\
-		On remarque que $\ln(n+1)-\ln(n)=\ln\left(1+\displaystyle\frac{1}{n}\right)\underset{\nfty}{\sim}\displaystyle\frac{1}{n}$. \\Or $(\ln(n+1)-\ln(n))_{n\in \N^*}$ est de signe constant APCR et $\displaystyle\sum\limits_{n\in \N^*}{\ln(n+1)-\ln(n)}$ diverge puisque de même nature que la suite $(\ln n)_{n\in \N^*}$. \\
+		On remarque que $\ln(n+1)-\ln(n)=\ln\left(1+\displaystyle\frac{1}{n}\right)\underset{\nfty}{\sim}\displaystyle\frac{1}{n}$. \\O $(\ln(n+1)-\ln(n))_{n\in \N^*}$ est de signe constant APCR et $\displaystyle\sum\limits_{n\in \N^*}{\ln(n+1)-\ln(n)}$ diverge puisque de même nature que la suite $(\ln n)_{n\in \N^*}$. \\
 		Donc $H_n\underset{\nfty}{\sim}\ln n$.\\\\
 		\underline{Seconde méthode :} Comparaison série-intégrale\\
 		Soit $n\in \N^*$.
@@ -4424,7 +4424,7 @@ Alors, on a l'équivalence :
 		\textcolor{blue}{\hyperref[Théorème de Pringsheim]{[Enoncé]}}\\
 	On pose pour tout $n\in\N$, $S_n=\displaystyle\sum\limits_{k=0}^na_k$.
 	\\On a pour tout $n\in\N$, $S_{2n}-S_n=\displaystyle\sum\limits_{k=n+1}^{2n}a_k\geq na_{2n}\geq0$ car $(a_n)_{n\geq 0}$ est décroissante.
-	\\Or comme $\displaystyle\sum\limits_{k\geq 0}a_k$ converge, on en déduit que $S_{2n}-S_n$ tend vers $0$. Donc par encadrement, on en déduit que $(2na_{2n})_{n\geq 0}$ tend vers $0$.
+	\\ Or comme $\displaystyle\sum\limits_{k\geq 0}a_k$ converge, on en déduit que $S_{2n}-S_n$ tend vers $0$. Donc par encadrement, on en déduit que $(2na_{2n})_{n\geq 0}$ tend vers $0$.
 	\\De plus, on remarque que pour tout entier naturel $n$, $0\leq (2n+1)a_{2n+1}\leq (2n+1)a_{2n}$. On sait que $a_{2n}\unfty{\longrightarrow}0$ car $\displaystyle\sum\limits_{n\geq 0}a_n$ converge et que $2na_{2n}\unfty{\longrightarrow}0$ d'après ce qui précède. On en déduit par encadrement que $(2n+1)a_{2n+1}\unfty{\longrightarrow}0$.
 	\\Finalement, $na_n\unfty{\longrightarrow}0$.
 	\subsection{Lemme de Fekete}\label{sec:lemme-de-fekete}
@@ -4588,7 +4588,7 @@ Alors, on a l'équivalence :
 		\item Soient $n\in\N^*$ et $y\in[S_{n-1},S_n]$\\Par croissance de $t\to t^2$ sur $\R^+$, $$(S_n-S_{n-1})S_{n-1}^2\leq\displaystyle\int_{S_{n-1}}^{S_n}t^2dt\leq(S_n-S_{n-1})S_{n}^2$$
 		On remarque que $(S_n-S_{n-1})S_{n-1}^2=a_n^2S_{n-1}^2=a_n^2(S_n-a_n)^2=a_n^2S_n^2-2S_na_n^3+a_n^4$\\ Puisque $\lim\limits_{n\to+\infty}a_nS_n=1$ et $\lim\limits_{n\to +\infty}a_n=0$, on en déduit que $\displaystyle\int_{S_{n-1}}^{S_n}t^2dt\unfty{\longrightarrow}1$ d'après le théorème des gendarmes.
 		\item On remarque que $\displaystyle\sum\limits_{k=1}^n\displaystyle\int_{S_{k-1}}^{S_k}t^2dt=\displaystyle\int_{0}^{S_n}t^2dt=\frac{S_n^3}{3}$.
-		\\Or $\displaystyle\int_{S_{n-1}}^{S_n}t^2\unfty{\sim}1$ donc par sommation de relation de comparaison pour les séries divergentes à termes positifs, $\displaystyle\sum\limits_{k=1}^n\displaystyle\int_{S_{k-1}}^{S_k}t^2dt\unfty{\sim}n$. Par conséquent, on a $S_n \unfty{\sim}\sqrt[3]{3n}$.
+		\\ Or $\displaystyle\int_{S_{n-1}}^{S_n}t^2\unfty{\sim}1$ donc par sommation de relation de comparaison pour les séries divergentes à termes positifs, $\displaystyle\sum\limits_{k=1}^n\displaystyle\int_{S_{k-1}}^{S_k}t^2dt\unfty{\sim}n$. Par conséquent, on a $S_n \unfty{\sim}\sqrt[3]{3n}$.
 		\\Et finalement $a_n\unfty{\sim}\displaystyle\frac{1}{\sqrt[3]{3n}}$.
 	\end{enumerate}
 	
@@ -6497,29 +6497,29 @@ Alors, on a l'équivalence :
 	\begin{enumerate}[leftmargin=*]
 		\item \textbullet\underline{Séparation} : \\
 		Soit $X\in\M_n(\R)$ tel que $N(X)=0$.\\
-		Donc $\forall A\in\Or_n(\R), \normep{\infty}{AX}=0$.\\
+		Donc $\forall A\in\O_n(\R), \normep{\infty}{AX}=0$.\\
 		En particulier, $\normep{\infty}{I_nX}=\normep{\infty}{X}=0$.\\
 		Donc $X=0$ car $\normep{\infty}{.}$ est une norme.\\
 		\textbullet \underline{Homogénéité} :\\
 		Soient $X\in\M_n(\R)$ et $\lambda\in\R$.
-		\[N(\lambda X)=\max_{A\in\Or_n(\R)}\normep{\infty}{\lambda AX}=\max_{A\in\Or_n(\R)}|\lambda\normep{\infty}{AX}=|\lambda|N(X)\]
+		\[N(\lambda X)=\max_{A\in\O_n(\R)}\normep{\infty}{\lambda AX}=\max_{A\in\O_n(\R)}|\lambda\normep{\infty}{AX}=|\lambda|N(X)\]
 		\textbullet \underline{Inégalité triangulaire} : \\
-		$\forall A\in\Or_n(\R), \forall X,Y\in\M_n(\R)$, 
+		$\forall A\in\O_n(\R), \forall X,Y\in\M_n(\R)$, 
 		\[\normep{\infty}{A(X+Y)}\leq \normep{\infty}{AX}+\normep{\infty}{AY}\leq N(X)+N(Y)\]
 		D'où: \[N(X+Y)\leq N(X)+N(Y)\]
-		\item Pour tous $X\in\M_{n,1}(\R)$ et $A\in\Or_n(\R)$.\\
-		\[N(AX)=\max_{B\in\Or_n(\R)}\normep{\infty}{BAX}= \max_{B\in\Or_n(\R)}\normep{\infty}{BX}=N(X)\]
-		car l'application $B\in\Or_n(\R)\mapsto BA$ est bijective.
+		\item Pour tous $X\in\M_{n,1}(\R)$ et $A\in\O_n(\R)$.\\
+		\[N(AX)=\max_{B\in\O_n(\R)}\normep{\infty}{BAX}= \max_{B\in\O_n(\R)}\normep{\infty}{BX}=N(X)\]
+		car l'application $B\in\O_n(\R)\mapsto BA$ est bijective.
 		\item Soit $X\in\M_{n,1}(\R)$.
 		Si $X=0$, il est clair que $N(X)=\normep{2}{X}$.\\
-		Sinon, pour $A\in\Or(\R)$, \[\normep{\infty}{AX}=\max_{1\leq i\leq n}\left|\sum_{j=1}^{n}a_{i,j}x_j\right|\]
+		Sinon, pour $A\in\O(\R)$, \[\normep{\infty}{AX}=\max_{1\leq i\leq n}\left|\sum_{j=1}^{n}a_{i,j}x_j\right|\]
 		Soit $i\in\crblanc{1}{n}$. D'après l'inégalité de Cauchy-Schwarz,
 		\[\left|\sum_{j=1}^{n}a_{i,j}x_j\right|\leq\left(\sum_{j=1}^{n}a_{i,j}^2\right)^{\frac{1}{2}}\left(\sum_{j=1}^{n}x_j^2\right)^{\frac{1}{2}}=\normep{2}{X}\]
 		On en déduit que: \[\normep{\infty}{AX}\leq\normep{2}{X}\].
-		Puisque cela vaut pour tout les $A\in\Or(\R)$, on obtient, $N(X)\leq \normep{2}{X}$.
+		Puisque cela vaut pour tout les $A\in\O(\R)$, on obtient, $N(X)\leq \normep{2}{X}$.
 		Réciproquement, considérons la ligne $\displaystyle L=\frac{X^\top}{\normep{2}{X}}$
 		On peut compléter cette ligne unitaire en une base orthonormée de $\M_{1,n}(\R)$.\\
-		On pose $A\in\Or(\R)$ la matrice formée par cette base.\\
+		On pose $A\in\O(\R)$ la matrice formée par cette base.\\
 		On a : \[|(AX)_1|=\normep{2}{X}\]
 		et donc : \[\normep{2}{X}\leq\normep{\infty}{AX}\leq N(X)\]
 		Par double inégalité : \[N(X)=\normep{2}{X}\]
@@ -7757,7 +7757,7 @@ Alors, on a l'équivalence :
 	\begin{enumerate}
 		\item Soit $(U,V)\in\mathcal{M}_{n,1}(\K)^2$.
 		On remarque que $\det(I_n+UV^\top)=(-1)^n\chi_{UV^\top}(-1)$.
-		\\Or d'après \ref{rg1}, $\operatorname{rg}(UV^\top)=1$ et $\operatorname{Sp}(UV^\top)=\{0,\Tr(UV^\top)\}$.
+		\\O d'après \ref{rg1}, $\operatorname{rg}(UV^\top)=1$ et $\operatorname{Sp}(UV^\top)=\{0,\Tr(UV^\top)\}$.
 		\\Donc $\det(I_n+UV^\top)=(-1)^n(-1)^{n-1}(-1-\Tr(UV^\top))=1+\Tr(V^\top U)=1+V^\top U$.
 		\item L'idée ici est d'utiliser la densité de GL$_n(\R)$\\Soient $M\in \text{GL}_n(\R)$ et $(U,V)\in\mathcal{M}_n(\R)^2$.
 		$\det(M^{-1})\det(M+UV^\top)=\det(I_n+M^{-1}UV^\top)$.\\ la multiplication par une matrice inversible conserve le rang donc on a encore $\operatorname{rg}(M^{-1}UV^\top)=1$.\\
@@ -7828,21 +7828,21 @@ Alors, on a l'équivalence :
 	
 	\subsection{Groupe orthogonal \etoile{1}}\label{sec:groupe-orthogonal-etoile1}
 		\textcolor{blue}{\hyperref[Groupe orthogonal]{[Enoncé]}}\\
-	Soient $U,V\in \Or_n(\R)$.\\
-	Vérifions que $\Or_n(\R)$ est un sous-groupe de GL$_n(\R)$ :
+	Soient $U,V\in \O_n(\R)$.\\
+	Vérifions que $\O_n(\R)$ est un sous-groupe de GL$_n(\R)$ :
 	\begin{itemize}
-		\item $V$ est inversible d'inverse $V^\top$ donc $\Or_n(\R)\subset \text{GL}_n(\R)$;
-		\item $(UV^{-1})^\top UV^{-1}=(V^{-1})^\top U^\top UV^{-1}=(V^\top)^{-1}V^{-1}=VV^{-1}=I_n$ donc $UV^{-1}\in \Or_n(\R)$.
+		\item $V$ est inversible d'inverse $V^\top$ donc $\O_n(\R)\subset \text{GL}_n(\R)$;
+		\item $(UV^{-1})^\top UV^{-1}=(V^{-1})^\top U^\top UV^{-1}=(V^\top)^{-1}V^{-1}=VV^{-1}=I_n$ donc $UV^{-1}\in \O_n(\R)$.
 	\end{itemize}
-	Ensuite, $\Or_n(\R)\subset \M_n(\R)$ qui est de dimension finie donc il suffit de montrer que $\Or_n(\R)$ est fermé et borné.\\
-	Pour la norme ${||.||}_2:M\mapsto \displaystyle\sqrt{\Tr(M^\top M)},\ {||V||}_2=\displaystyle\sqrt{\Tr(I_n)}=\displaystyle\sqrt{n}$ d'où $\Or_n(\R)$ est borné.\\
+	Ensuite, $\O_n(\R)\subset \M_n(\R)$ qui est de dimension finie donc il suffit de montrer que $\O_n(\R)$ est fermé et borné.\\
+	Pour la norme ${||.||}_2:M\mapsto \displaystyle\sqrt{\Tr(M^\top M)},\ {||V||}_2=\displaystyle\sqrt{\Tr(I_n)}=\displaystyle\sqrt{n}$ d'où $\O_n(\R)$ est borné.\\
 	On aurait aussi pu prendre la norme ${||.||}_\infty:M\mapsto \max\limits_{1\leq i,j\leq n}|M_{ij}|$ : On sait que la famille des colonnes de $V$ forme une base orthonormée de $\M_{n,1}(\R)$ pour son produit scalaire canonique. Alors en notant $C_1,\dots,C_n$ les colonnes de $V$,\\
 	$\forall j\in \crblanc{1}{n},\ ||C_j||^2=\displaystyle\sum\limits_{i=1}^nV_{ij}^2=1$. Donc $\forall i,j\in\crblanc{1}{n},\ |V_{ij}|\leq 1$. D'où ${||V||}_\infty\leq 1$.\\
-	Enfin, $\Or_n(\R)=f^{-1}(\{I_n\})$ avec $f:M\in \M_n(\R)\mapsto M^\top M$.\\
+	Enfin, $\O_n(\R)=f^{-1}(\{I_n\})$ avec $f:M\in \M_n(\R)\mapsto M^\top M$.\\
 	Or les coefficients de $M^\top M$ sont polynomiaux en ceux de $M$ donc $f$ est continue.\\
-	On en déduit, comme $\{I_n\}$ est fermé, que $\Or_n(\R)$ est fermé.\\\\
-	On remarque que $\det(\Or_n(\R))=\{-1,1\}$ n'est pas connexe par arcs.\\
-	L'application $\det:\M_n(\R)\to \R$ est continue car polynomiale en les coefficients de la matrice donc $\Or_n(\R)$ ne peut pas être connexe par arcs.
+	On en déduit, comme $\{I_n\}$ est fermé, que $\O_n(\R)$ est fermé.\\\\
+	On remarque que $\det(\O_n(\R))=\{-1,1\}$ n'est pas connexe par arcs.\\
+	L'application $\det:\M_n(\R)\to \R$ est continue car polynomiale en les coefficients de la matrice donc $\O_n(\R)$ ne peut pas être connexe par arcs.
 	
 	\subsection{Groupe (spécial) unitaire \etoile{3}}\label{sec:groupe-special-unitaire-etoile3}
 		\textcolor{blue}{\hyperref[Groupe (spécial) unitaire]{[Enoncé]}}\\
@@ -8298,7 +8298,7 @@ Alors, on a l'équivalence :
 		\textcolor{blue}{\hyperref[Solutions de norme constante]{[Enoncé]}}\\
 	Supposons que $A\in \mathcal A_n(\R)$.\\
 	Soit $X$ une solution du système différentiel $Y'=AY$. On sait que $\forall t\in \R,\ X(t)=e^{tA}X(0)$.\\
-	Or $\forall t\in \R,\ e^{tA}\in \Or_n(\R)$. En effet, par continuité de la transposition, $\forall t\in \R,\ \left(e^{tA}\right)^\top=e^{tA^\top}=e^{-tA}=\left(e^{tA}\right)^{-1}$.\\
+	Or $\forall t\in \R,\ e^{tA}\in \O_n(\R)$. En effet, par continuité de la transposition, $\forall t\in \R,\ \left(e^{tA}\right)^\top=e^{tA^\top}=e^{-tA}=\left(e^{tA}\right)^{-1}$.\\
 	Ainsi, $\forall t\in \R,\ \norme{X(t)}=\norme{X(0)}$.\\\\
 	Réciproquement, supposons que $X'=AX\implies \forall t\in \R,\ \norme{X(t)}=\norme{X(0)}$.\\
 	Donnons nous une solution $X$ du système différentiel.\\
@@ -8425,11 +8425,11 @@ Alors, on a l'équivalence :
 	Soit $A\in \mathcal A_n(\R)$. On pose $f:t\in \R\mapsto e^{tA}$.\\
 	Par continuité de la transposition, qui est linéaire sur $\M_n(\R)$, un espace vectoriel normé de dimension finie,\\
 	$\forall t\in \R,\ \left(e^{tA}\right)^\top=e^{(tA)^\top}=e^{-tA}=\left(e^{tA}\right)^{-1}$.\\
-	Ainsi $f$ est à valeurs dans $\Or_n(\R)$.\\
+	Ainsi $f$ est à valeurs dans $\O_n(\R)$.\\
 	De plus $f$ est dérivable sur $\R$ et $\forall t\in \R,\ f'(t)=Ae^{tA}$.\\
-	On a donc $f(0)=I_n$ et $f'(0)=A$ d'où $f\in T_{I_n}(\Or_n(\R))$.\\\\
-	Réciproquement, donnons nous $A\in T_{I_n}(\Or_n(\R))$.\\
-	Il existe $\varepsilon>0$ et $\gamma:]-\varepsilon,\varepsilon[\to\Or_n(\R)$ dérivable en $0$ telle que $\gamma(0)=I_n$ et $\gamma'(0)=A$.\\
+	On a donc $f(0)=I_n$ et $f'(0)=A$ d'où $f\in T_{I_n}(\O_n(\R))$.\\\\
+	Réciproquement, donnons nous $A\in T_{I_n}(\O_n(\R))$.\\
+	Il existe $\varepsilon>0$ et $\gamma:]-\varepsilon,\varepsilon[\to\O_n(\R)$ dérivable en $0$ telle que $\gamma(0)=I_n$ et $\gamma'(0)=A$.\\
 	$(*) :\forall t\in ]-\varepsilon,\varepsilon[,\ \gamma(t)^\top\gamma(t)=I_n$.\\
 	Par linéarité de la transposition, $\psi:t\mapsto\gamma(t)^\top$ est dérivable en $0$ et $\psi'(0)=\gamma'(0)^\top=A^\top$.\\
 	On peut alors dériver la relation $(*)$ en $0$:

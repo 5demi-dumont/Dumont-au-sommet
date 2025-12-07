@@ -233,7 +233,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Espaces engendrés par les matrice inversibles et orthogonales corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Déterminer $\vect(\text{GL}_n(\K))$.
-		\item Déterminer $\vect(\Or_n(\R))$.
+		\item Déterminer $\vect(\O_n(\R))$.
 	\end{enumerate}
 	
 	\section{Espace engendré par les matrices nilpotentes \centraleponts{3}}
@@ -934,7 +934,7 @@ On cherche les matrices $A\in \M_n(\C)$ telles que $A+\Com(A)^\top$ soit une mat
 	\textcolor{blue}{\hyperref[Polynôme minimal de l'inverse corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $A\in \text{GL}_n(\R)$. Exprimer le polynôme minimal de $A^{-1}$ en fonction de celui de $A$.
-		\item Soit $A\in \Or_n(\R)$ telle que $1$ et $-1$ ne soient pas valeurs propres de $A$. Montrer que le polynôme minimal de $A$ est de degré pair.
+		\item Soit $A\in \O_n(\R)$ telle que $1$ et $-1$ ne soient pas valeurs propres de $A$. Montrer que le polynôme minimal de $A$ est de degré pair.
 	\end{enumerate}
 	
 	\section{Polynôme minimal de la transposée \ccinp{1}}
@@ -1073,14 +1073,17 @@ On cherche les matrices $A\in \M_n(\C)$ telles que $A+\Com(A)^\top$ soit une mat
 	\label{Déterminant tridiagonal}
 	\textcolor{blue}{\hyperref[Déterminant tridiagonal corrigé]{[Corrigé]}}\\
 	Soit $(a,b,c)\in \C^3$.\\\\
-	Calculer $\Delta_n=
-	\begin{vmatrix}
-		a     &c     &0     &\dots &0\\
-		b     &a     &c     &\ddots&\vdots\\
-		0     &b     &a     &\ddots&0\\
-		\vdots&\ddots&\ddots&\ddots&c\\
-		0     &\dots &0     &b     &a
-	\end{vmatrix}_n$
+	\begin{enumerate}
+		\item Calculer $\Delta_n=
+		\begin{vmatrix}
+			a     &c     &0     &\dots &0\\
+			b     &a     &c     &\ddots&\vdots\\
+			0     &b     &a     &\ddots&0\\
+			\vdots&\ddots&\ddots&\ddots&c\\
+			0     &\dots &0     &b     &a
+		\end{vmatrix}_n$.  On pourra noter $\Delta_0=1$
+		\item Expliciter le résultat pour $(a,b,c)=(2\cos\theta,1,1)$ où $\theta\in \R$.
+	\end{enumerate}
 	
 	\section{Déterminant bitriangulaire\centraleponts{3}}
 	\label{Déterminant bitriangulaire}
@@ -1535,10 +1538,14 @@ On cherche les matrices $A\in \M_n(\C)$ telles que $A+\Com(A)^\top$ soit une mat
 	Soit $H$ un sous-groupe strict d'un groupe $G$.\\
 	Déterminer le sous-groupe engendré par le complémentaire de $H$ dans $G$.
 	
-	\section{Partie génératrice}
+	\section{Partie génératrice (HP)}
 	\label{Partie génératrice}
 	\textcolor{blue}{\hyperref[Partie génératrice corrigé]{[Corrigé]}}\\
-	Montrer que tout groupe fini $G$ de cardinal $n\geq 2$ possède une partie génératrice constitué d'au plus $\log_2(n)$ éléments.
+	\begin{enumerate}[leftmargin=*]
+		\item Soient $G$ un groupe fini et $H$ un sous-groupe strict de $G$. Montrer que $2|H|\leq |G|$.
+		\item Montrer que tout groupe fini $G$ de cardinal $n\geq 2$ possède une partie génératrice constituée d’au plus $\log_2(n)$ éléments.
+		\item A l'aide de l'exercice \ref{Un cas particulier du lemme de Cauchy} donner un groupe pour lequel cette borne est optimale.
+	\end{enumerate}
 	
 	\section{Groupe alterné \centraleponts{3}}
 	\label{Groupe alterné}
@@ -1561,18 +1568,40 @@ On cherche les matrices $A\in \M_n(\C)$ telles que $A+\Com(A)^\top$ soit une mat
 		\item Quel est le cardinal minimal d'une famille de transposition génératrice de $\mathcal S_n$ ?
 	\end{enumerate}
 	
-	\section{Partie génératrice de $\Or(E)$ \xens{4}}
+	\section{Partie génératrice de $\O(E)$ \xens{4}}
 	\label{Partie génératrice de O(E)}
 	\textcolor{blue}{\hyperref[Partie génératrice de O(E) corrigé]{[Corrigé]}}\\
-	Soit $E$ un espace euclidien. Montrer que $\Or(E)$ est engendré par les réflexions.
+	Soit $E$ un espace euclidien. Montrer que $\O(E)$ est engendré par les réflexions.
 	
 	\section{Groupe dans un plan euclidien \centraleponts{3}}
 	\label{Groupe dans un plan euclidien}
 	\textcolor{blue}{\hyperref[Groupe dans un plan euclidien corrigé]{[Corrigé]}}\\
+	Soit $E$ un plan euclidien.
 	\begin{enumerate}[leftmargin=*]
-		\item Déterminer les sous-groupes finis de SO$(E)$.
-		\item Caractériser les sous-groupes finis de $\Or(E)$.
-		\item Soit $G$ un sous-groupe fini de GL$(E)$. Déterminer un produit scalaire pour lequel tous les éléments de $G$ sont des endomorphismes orthogonaux.
+		\item Déterminer les sous-groupes finis de $\mathcal{SO}(E)$.
+		\item Caractériser les sous-groupes finis de $\O(E)$.
+		\item Soit $G$ un sous-groupe fini de GL$(E)$. Déterminer un produit scalaire pour lequel tous les éléments de $G$ sont des automorphismes orthogonaux.
+	\end{enumerate}
+	
+	\section{Groupe diédral \centraleponts{3}}
+	\label{Groupe diédral}
+	\textcolor{blue}{\hyperref[Groupe diédral corrigé]{[Corrigé]}}\\
+	Soit $n\in \N^*$. On appelle groupe diédral d'ordre $2n$ et on note $D_n$ le sous-groupe de GL$_2(\R)$ engendré par les matrices $R=\begin{pmatrix}
+		\cos\left(\frac{2\pi}{n}\right)&-\sin\left(\frac{2\pi}{n}\right)\\
+		\sin\left(\frac{2\pi}{n}\right)&\cos\left(\frac{2\pi}{n}\right)
+	\end{pmatrix}$ et $S=\begin{pmatrix}
+		1&0\\
+		0&-1
+	\end{pmatrix}$.
+	\begin{enumerate}
+		\item Montrer que $SR=R^{-1}S$.
+		\item En déduire que $D_n=\{I_2,R,\dots,R^{n-1},S,SR,\dots,SR^{n-1}\}$.
+		\item Déterminer les groupes diédraux abéliens.
+	\end{enumerate}
+	On note $G_n$ le polygone du plan régulier à $n$ côtés centrés en l'origine et dont l'un des sommets est $(1,0)$.
+	\begin{enumerate}[resume]
+		\item Déterminer les coordonnées des sommets de $G_n$
+		\item Soit $\Delta_n$ l'ensemble des isométries vectorielles de $\R^2$ préservant $G_n$, c'est-à-dire effectuant une permutation de ses sommets. Après avoir brièvement justifié que $\Delta_n$ est un groupe, montrer qu'il est isomorphe à $D_n$.
 	\end{enumerate}
 	
 	\section{\underline{Matrices de permutation} \telecom{1}}
@@ -1595,7 +1624,7 @@ On cherche les matrices $A\in \M_n(\C)$ telles que $A+\Com(A)^\top$ soit une mat
 		\item 
 		\begin{enumerate}[label=\alph*.]
 			\item Montrer que toute matrice de SO$_2(\R)$ peut s'écrire comme un produit de deux symétries. Y a-t-il unicité ?
-			\item Montrer que $\Or_2(\Q)=\M_2(\Q)\cap\Or_2(\R)$ est un groupe puis que SO$_2(\Q)=\{M\in \Or_2(\Q),\ \det(M)=1\}$ est un sous-groupe commutatif de $\Or_2(\Q)$. Démontrer que le sous-groupe dérivé de $\Or_2(\Q)$ est un sous-groupe strict de SO$_2(\Q)$.
+			\item Montrer que $\O_2(\Q)=\M_2(\Q)\cap\O_2(\R)$ est un groupe puis que SO$_2(\Q)=\{M\in \O_2(\Q),\ \det(M)=1\}$ est un sous-groupe commutatif de $\O_2(\Q)$. Démontrer que le groupe dérivé de $\O_2(\Q)$ est un sous-groupe strict de SO$_2(\Q)$.
 		\end{enumerate}
 	\end{enumerate}
 	
@@ -2521,7 +2550,7 @@ Déterminer le nombre $a_n$ de manière de recouvrir un damier de dimension $2\t
 \section{Matrices orthogonales à coefficients entiers \telecom{2}}
 \label{Matrices orthogonales à coefficients entiers}
 \textcolor{blue}{\hyperref[Matrices orthogonales à coefficients entiers corrigé]{[Corrigé]}}\\
-Quel est le cardinal de $\Or_n(\R) \cap \M_n(\Z)$ ?
+Quel est le cardinal de $\O_n(\R) \cap \M_n(\Z)$ ?
 
 \section{Nombre de carrés inférieur à un entier fixé \etoile{1}}
 \label{Nombre de carrés inférieur à un entier fixé}
@@ -3417,7 +3446,7 @@ Démontrer que $\displaystyle\frac{\Tr(M)}{n}\geq \det(M)^{1/n}$.
 \section{\underline{Inégalité à propos des matrices orthogonales} \telecom{3}}
 \label{Inégalité à propos des matrices orthogonales}
 \textcolor{blue}{\hyperref[Inégalité à propos des matrices orthogonales corrigé]{[Corrigé]}}\\
-Soit $A\in \Or_n(\R)$. Montrer que\\
+Soit $A\in \O_n(\R)$. Montrer que\\
 $\left|\displaystyle\sum\limits_{1\leq i,j\leq n}m_{i,j}\right|\leq n \leq\displaystyle\sum\limits_{1\leq i,j\leq n}|m_{i,j}| \leq n^{3/2}$.
 
 \section{Inégalité de la trace}
@@ -3446,7 +3475,7 @@ Soit $A\in \M_n(\R)$ la matrice Atilla $A=\begin{pmatrix}
 	\vdots&\adots&\ddots&\vdots\\
 	1&\cdots&\cdots&1
 \end{pmatrix}$.\\
-Quelles sont les matrices $M\in \Or_n(\R)$ telles que $A+M$ soit inversible ?
+Quelles sont les matrices $M\in \O_n(\R)$ telles que $A+M$ soit inversible ?
 
 \section{Somme de Cesàro de matrices orthogonales}
 \label{Somme de Cesàrp de matrices orthogonales}
@@ -3465,7 +3494,7 @@ Soit $A\in \A_n(\R)$.
 	\item Déterminer les valeurs propres possibles de la matrice $A$.
 	\item En déduire que les matrices $A+I_n$ et $A-I_n$ sont inversibles.
 	\item Montrer que la matrice $\Omega=(A+I_n)(A-I_n)^{-1}$ est orthogonale. Et calculer $\det(\Omega)$
-	\item Démontrer que l'application $\fonction{\varphi}{\A_n(\R)}{\{\Omega\in \Or_n(\R)|-1\notin \text{Sp}(\Omega)\}}{A}{(A+I_n)(A-I_n)^{-1}}$ est bijective.
+	\item Démontrer que l'application $\fonction{\varphi}{\A_n(\R)}{\{\Omega\in \O_n(\R)|-1\notin \text{Sp}(\Omega)\}}{A}{(A+I_n)(A-I_n)^{-1}}$ est bijective.
 	\item En déduire que si $\Omega$ est une matrice orthogonale et que $-1\notin \text{Sp}(\Omega)$ alors $\det(\Omega)=1$. Pouvait-t-on constater cela d'une autre manière ?
 \end{enumerate}
 
@@ -3521,7 +3550,7 @@ Soit $E$ un plan orienté.
 \section{Similitude entre matrices orthogonales \centraleponts{3}}
 \label{Similitude entre matrices orthogonales}
 \textcolor{blue}{\hyperref[Similitude entre matrices orthogonales corrigé]{[Corrigé]}}\\
-Soit $(A,B)\in \Or_n(\R)^2$. 
+Soit $(A,B)\in \O_n(\R)^2$. 
 \\ Montrer que $A$ et $B$ sont semblables si et seulement $\chi_A=\chi_B$.
 
 \section{Propriété de l'adjoint \ccinp{2}}
@@ -3552,7 +3581,7 @@ Soient $E$ un espace euclidien et $f$ un endomorphisme de $E$ tel que $\text{Im}
 \textcolor{blue}{\hyperref[Somme d'une matrice orthogonale et de sa transposée corrigé]{[Corrigé]}}\\
 Soit $A\in\M_n(\R)$. Démontrer que les propriétés suivantes sont équivalentes :
 \begin{itemize}
-	\item Il existe $B\in\Or_n(\R)$ telle que $A=B+B^\top$,
+	\item Il existe $B\in\O_n(\R)$ telle que $A=B+B^\top$,
 	\item $A\in\mathcal{S}_n(\R),\ \operatorname{Sp}(A)\subset[-2,2]$ et les valeurs propres de $A$ dans $]-2,2[$ sont de multiplicité paire.
 \end{itemize}
 
@@ -3565,9 +3594,9 @@ Soit $A\in\M_n(\K)$.
 \section{Exponentielle de matrices antisymétriques \xens{3}}
 \label{Exponentielle de matrices antisymétriques}
 \textcolor{blue}{\hyperref[Exponentielle de matrices antisymétriques corrigé]{[Corrigé]}}\\
-Montrer que $\exp:\A_n(\R)\to \Or_n(\R)$ est une application surjective. 
+Montrer que $\exp:\A_n(\R)\to \O_n(\R)$ est une application surjective. 
 \\
-\textit{\underline{Remarque:} La décomposition polaire sur $\C$ est donnée par l'application $\fonction{\varphi}{\R^*_+\times\R}{\C^*}{(r,\theta)}{re^{i\theta}}$. $\exp:\A_n(\R)\to \Or_n(\R)$ permet de comprendre d'où vient le nom de décomposition polaire pour les matrice inversible.}
+\textit{\underline{Remarque:} La décomposition polaire sur $\C$ est donnée par l'application $\fonction{\varphi}{\R^*_+\times\R}{\C^*}{(r,\theta)}{re^{i\theta}}$. $\exp:\A_n(\R)\to \O_n(\R)$ permet de comprendre d'où vient le nom de décomposition polaire pour les matrice inversible.}
 
 \section{Théorème spectral \etoile{3}}
 \label{Théorème spectral}
@@ -3600,7 +3629,7 @@ On munit $\mathcal{M}_n(\R)$ muni de son produit scalaire canonique. On note $\m
 \\ Soit $A\in\M_n(\R)$: $$\forall U\in\mathcal{O}_n(\R), \quad \Tr(AU)\leq\Tr(A)$$
 \begin{enumerate}
 	\item Déterminer le supplémentaire orthogonal de $\mathcal{A}_n(\R)$.
-	\item Soit $B\in\mathcal{A}_n(\R)$. Montrer que $\forall x\in\R,\quad\exp(xB)\in\Or_n(\R)$.
+	\item Soit $B\in\mathcal{A}_n(\R)$. Montrer que $\forall x\in\R,\quad\exp(xB)\in\O_n(\R)$.
 	\item Montrer que $A\in\mathcal S_n^+(\R)$.
 	\item Etudier la réciproque.
 \end{enumerate}
@@ -3626,7 +3655,7 @@ On munit $\M_n(\R)$ de la norme euclidienne canonique $\norme{.}_F$.
 \\Pour toute matrice symétrique réelle $M\in S_n(\R)$, on note $\lambda_1(M)\geq\dots\geq\lambda_n(M)$ ses valeurs propres rangées dans l'ordre décroissant.
 \\Soient $A$ et $B$ deux matrices de $S_n(\R)$.
 \begin{enumerate}
-	\item Montrer que, pour tout $M\in\M_n(\R)$ et pour tout $P$ et $Q$ dans $\Or_n(\R)$, on a: $\norme{PMQ}_F=\norme{M}_F$.
+	\item Montrer que, pour tout $M\in\M_n(\R)$ et pour tout $P$ et $Q$ dans $\O_n(\R)$, on a: $\norme{PMQ}_F=\norme{M}_F$.
 	\item On note $D_A=\text{diag}(\lambda_1(A),\dots,\lambda_n(A))$ et $D_B=\text{diag}(\lambda_1(B),\dots,\lambda_n(B))$. Montrer qu'il existe une matrice orthogonale $P=(p_{i,j})$ telle que $\norme{A-B}_F=\norme{D_AP-PD_B}_F$.
 	\item Montrer que $\norme{A-B}_F^2=\displaystyle\sum\limits_{1\leq i,j\leq n}p_{i,j}^2(\lambda_i(A)-\lambda_j(B))^2$
 \end{enumerate}
@@ -3666,7 +3695,7 @@ Etablir que : $$\forall p\in \crblanc{1}{n},\ \sum_{i=1}^p\lambda_i=\max\limits_
 \section{Théorème de Cartan-Dieudonnée \xens{4}}
 \label{Théorème de Cartan-Dieudonnée}
 \textcolor{blue}{\hyperref[Théorème de Cartan-Dieudonnée corrigé]{[Corrigé]}}\\
-Soient $E$ un espace vectoriel euclidien de dimension $n$ et $f\in \Or_n(E)$.
+Soient $E$ un espace vectoriel euclidien de dimension $n$ et $f\in \O_n(E)$.
 Notons $F=\ker(f-\Id_E)$ et $p(f)=n-\dim(F)$.
 \\Montrer que $f$ s'écrit comme produit de $p(f)$ réflexions, et qu'on ne peut pas faire moins.
 \\Pour démontrer ce résultat, on pourra procéder par récurrence forte sur $p(f)$.
@@ -3744,18 +3773,18 @@ Montrer que les applications $\fonction{\varphi}{\M_n(\C)}{\M_n(\C)}{M=D+N}{D}$ 
 	\item Soit $A\in \text{GL}_n(\R)$.
 	\begin{enumerate}[label=\alph*.]
 		\item Montrer que $A^\top A\in S^{++}_n(\R)$.
-		\item En déduire qu'il existe un unique couple $(O,S)\in \Or_n(\R)\times S^{++}_n(\R)$ tel que $A=OS$.
+		\item En déduire qu'il existe un unique couple $(O,S)\in \O_n(\R)\times S^{++}_n(\R)$ tel que $A=OS$.
 	\end{enumerate}
 	\item Soit $A\in \M_n(\R)$.\\
-	Montrer qu'il existe un couple $(O,S)\in \Or_n(\R)\times S^+_n(\R)$ tel que $A=OS$. Ce couple est-il unique ?
+	Montrer qu'il existe un couple $(O,S)\in \O_n(\R)\times S^+_n(\R)$ tel que $A=OS$. Ce couple est-il unique ?
 \end{enumerate}
 
 \subsection{Sous-groupe compact maximal de GL$_n(\R)$ \centraleponts{3}}
 On munit $\R^n$ de son produit scalaire usuel $\langle\ ,\ \rangle:(X,Y)\mapsto X^\top Y$ et on note $\normep{2}{.}$ la norme associée. Pour $A\in \M_n(\R)$ on note $\rho(A)=\max\{|\lambda|,\ \lambda\in \text{Sp}(A)\}$. On pose ${|||.|||}_2:A\in \M_n(\R)\mapsto \sup\limits_{\substack{X\in \R^n\\\normep{2}{X}=1}}\normep{2}{AX}$.
 \begin{enumerate}
 	\item Montrer que $\forall A\in \M_n(\R),\ {|||A|||}_2=\sqrt{\rho(A^\top A)}$.
-	\item Montrer que $\Or_n(\R)$ est un sous-groupe compact de GL$_n(\R)$.
-	\item Soit $G$ un sous-groupe compact de GL$_n(\R)$ qui contient $\Or_n(\R)$. On cherche à montrer que $G=\Or_n(\R)$. Pour cela on fixe $A\in G$ et on note $A=OS$ sa décomposition polaire.
+	\item Montrer que $\O_n(\R)$ est un sous-groupe compact de GL$_n(\R)$.
+	\item Soit $G$ un sous-groupe compact de GL$_n(\R)$ qui contient $\O_n(\R)$. On cherche à montrer que $G=\O_n(\R)$. Pour cela on fixe $A\in G$ et on note $A=OS$ sa décomposition polaire.
 	\begin{enumerate}[label=\alph*.]
 		\item Montrer que les valeurs propres de $S$ sont toutes inférieures à $1$.
 		\item Montrer que $\text{Sp}(S)=\{1\}$.
@@ -3769,10 +3798,10 @@ On munit $\M_{n,1}(\R)$ de son produit scalaire usuel $\langle\ ,\ \rangle_2:(X,
 On munit ensuite $\M_n(\R)$ de la norme subordonnée ${|||.|||}_2:A\mapsto\sup\limits_{\substack{X\in \M_{n,1}(\R)\\\normep {2}{X}=1}}\normep{2}{AX}$ et on note $\B$ la boule unité fermée de $\M_n(\R)$ pour cette norme.
 \begin{enumerate}
 	\item Soit $A\in \M_n(\R)$. Exprimer ${|||A|||}_2$ en fonction des valeurs propres de $A^\top A$.
-	\item Montrer que l'enveloppe convexe (cf. VIII-36 tome Analyse) de $\Or_n(\R)$ est contenue dans $\B$.
-	\item On suppose qu'il existe une matrice $M\in \B$ qui n'est pas dans l'enveloppe convexe de $\Or_n(\R)$. On admet que Conv$(\Or_n(\R))$ est une partie compacte de $\M_n(\R)$ (cf. VIII-37 tome Analyse) et on note $N$ le projeté convexe de $M$ sur Conv($\Or_n(\R))$ pour le produit scalaire $\langle\ ,\ \rangle:(A,B)\in \M_n(\R)^2\mapsto \Tr(A^\top B)$ et on pose $A=(M-N)^\top$. On écrit enfin $A=US$ une représentation polaire de $A$.
+	\item Montrer que l'enveloppe convexe (cf. VIII-36 tome Analyse) de $\O_n(\R)$ est contenue dans $\B$.
+	\item On suppose qu'il existe une matrice $M\in \B$ qui n'est pas dans l'enveloppe convexe de $\O_n(\R)$. On admet que Conv$(\O_n(\R))$ est une partie compacte de $\M_n(\R)$ (cf. VIII-37 tome Analyse) et on note $N$ le projeté convexe de $M$ sur Conv($\O_n(\R))$ pour le produit scalaire $\langle\ ,\ \rangle:(A,B)\in \M_n(\R)^2\mapsto \Tr(A^\top B)$ et on pose $A=(M-N)^\top$. On écrit enfin $A=US$ une représentation polaire de $A$.
 	\begin{enumerate}[label=\alph*.]
-		\item Montrer que $\forall V\in \text{Conv}(\Or_n(\R)),\ \Tr(AV)\leq\Tr(AN)<\Tr(AM)$.
+		\item Montrer que $\forall V\in \text{Conv}(\O_n(\R)),\ \Tr(AV)\leq\Tr(AN)<\Tr(AM)$.
 		\item En déduire que $\Tr(S)<\Tr(USM)$.
 		\item Montrer que $\Tr(S)\geq \Tr(MUS)$ puis conclure.
 	\end{enumerate}
@@ -3811,11 +3840,11 @@ $$\exists \alpha_1,\dots,\alpha_{2n+1}\in \R,\ U=\begin{pmatrix}
 \label{Décomposition QR}
 \textcolor{blue}{\hyperref[Décomposition QR corrigé]{[Corrigé]}}\\
 \begin{enumerate}[leftmargin=*]
-	\item Montrer que $\Or_n(\R)$ et $T_n^{++}(\R)$ (ensemble des matrices triangulaires supérieures donc tous les coefficients diagonaux sont strictement positifs) sont des sous-groupes de $(\text{GL}_n(\R),\times)$.
-	\item Montrer que $\Or_n(\R)\cap T_n^{++}(\R)=\{I_n\}$.
+	\item Montrer que $\O_n(\R)$ et $T_n^{++}(\R)$ (ensemble des matrices triangulaires supérieures donc tous les coefficients diagonaux sont strictement positifs) sont des sous-groupes de $(\text{GL}_n(\R),\times)$.
+	\item Montrer que $\O_n(\R)\cap T_n^{++}(\R)=\{I_n\}$.
 	\item Soit $A\in \text{GL}_n(\R)$. Soit $(e_1,\dots e_n)$ la base constituée des vecteurs colonnes de $A$.
 	\\Soit $\B_{GS}=(v_1,\dots,v_n)$ la base orthonormée obtenue à partir de $\mathcal{B}$ grâce au procédé d'orthonormalisation de Gramm-Schmidt.
-	\\ A l'aide de ces bases, montrer qu'il existe un unique couple de matrices $(Q,R)\in \Or_n(\R)\times T_n^{++}(\R)$ tel que $A=QR$
+	\\ A l'aide de ces bases, montrer qu'il existe un unique couple de matrices $(Q,R)\in \O_n(\R)\times T_n^{++}(\R)$ tel que $A=QR$
 \end{enumerate}
 
 \subsection{Matrice de Householder}
@@ -5405,7 +5434,40 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\subsection{Déterminant tridiagonal}
 	\label{Déterminant tridiagonal corrigé}
 	\textcolor{blue}{\hyperref[Déterminant tridiagonal]{[Enoncé]}}\\
-	
+	\begin{enumerate}[leftmargin=*]
+		\item Développons $\Delta_n$ par rapport à la première colonne :
+		$$\Delta_n=a\Delta_{n-1}-b\begin{vmatrix}
+			c&0&0&\cdots&0\\
+			b&a&c&\ddots&\vdots\\
+			0&\ddots&\ddots&\ddots&0\\
+			\vdots&\ddots&\ddots&\ddots&c\\
+			0&\cdots&0&b&a
+		\end{vmatrix}_{n-1}$$
+		Puis développons le deuxième terme par rapport à la première ligne :
+		$$\Delta_n=a\Delta_{n-1}-bc\Delta_{n-2}$$
+		Remarquons que cette relation est vérifiée pour $n=2$ en posant $\delta_0=1$. En effet, $\Delta_1=|a|=a$ et $\Delta_2=\begin{vmatrix}
+			a&c\\
+			b&a
+		\end{vmatrix}=a^2-bc=a\Delta_1-bc\Delta_0$.\\
+		L'équation caractéristique de la relation est $r^2-ar+bc=0$ de solutions $r_1=\dfrac{a+\delta}{2}$ et $r_2=\dfrac{a-\delta}{2}$ avec $\delta^2=a^2-4bc$. Il faut maintenant distinguer deux cas :
+		\begin{itemize}
+			\item Si $\Delta\ne 0$ alors il existe des constantes $A,B\in \C$ telles que $\forall n\in \N,\ \Delta_n=Ar_1^n+Br_2^n$.\\
+			On a $A+B=1$ et $Ar_1+Br_2=a$.\\
+			Donc $B=1-A$ et $A=\dfrac{r_1}{\delta}$ i.e
+			$$\forall n\in \N,\ \Delta_n=\dfrac{1}{\delta}\left(r_1^{n+1}-r_2^{n+1}\right)$$
+			\item Si $\Delta=0$ alors il existe des constantes $C,D\in \C$ telles que $$\forall n\in \N^,\ \Delta_n=(C+Dn)\left(\dfrac{a}{2}\right)^n$$
+			Les conditions initiales donnent dans ce cas $C=D=1$ i.e
+			$$\forall n\in \N,\ \Delta_n=(1+n)\left(\dfrac{a}{2}\right)^n$$
+		\end{itemize}
+		\item On a $\Delta=4(\cos^2\theta-1)=-4\sin^2\theta$. Donc $\Delta=0\iff \theta\in \pi\Z$.
+		\begin{itemize}
+			\item Si $\theta\in \pi\Z$ alors :\\
+			Si $\theta\in2\pi\Z$, alors $\cos\theta=1$ et $\forall n\in \N^*,\ \Delta_n=2(2-n)$.\\
+			Et si $\theta\in\pi+2\pi\Z$ alors $\cos\theta=-1$ et $\forall n\in \N^*,\ \Delta_n=2(2-n)(-1)^n$.
+			\item Si $\theta\notin \pi\Z$, on pose $\delta=2i|\sin\theta|$. On a $r_1=\cos\theta+i\sin\theta=e^{i\theta}$ et $r_2=\cos\theta-i\sin\theta=e^{-i\theta}$. Alors
+			$$\forall n\in \N,\ \Delta_n=\frac{1}{2i\sin\theta}\left(e^{i(n+1)\theta}-e^{-i(n+1)\theta}\right)=\frac{\sin((n+1)\theta)}{\sin(\theta)}$$
+		\end{itemize}
+	\end{enumerate}
 	
 	\subsection{Déterminant bitriangulaire\etoile{3}}
 	\label{Déterminant bitriangulaire corrigé}
@@ -6189,9 +6251,29 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\subsection{Sous-groupe engendré par le complémentaire d'un sous-groupe}
 	\label{Sous-groupe engendré par le complémentaire d'un sous-groupe corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupe engendré par le complémentaire d'un sous-groupe]{[Enoncé]}}\\
+	On note $e$ le neutre de $G$. On notera $\langle E\rangle$ le sous-groupe engendré par une partie $E$.
+	Commençons par des exemples.\begin{itemize}
+		\item $\Z\backslash a\Z$ contient $1$ donc tous ses multiples i.e $\langle\Z\backslash a\Z\rangle=\Z$.
+		\item Si $e^{i\theta}\in \U$ alors $e^{i\theta}=2e^{i\theta}\times 2^{-1}\in \langle\C^*\backslash\U\rangle$. $\langle\C^*\backslash\U\rangle=\C^*$.
+		\item $\mathcal S_n\backslash\mathcal A_n$ est l'ensemble des permutations de signature $-1$. Il contient toutes les transpositions. Celle-ci engendrant $\mathcal S_n$, $\langle S_n\backslash\mathcal A_n\rangle=\mathcal S_n$.
+	\end{itemize}
+	Il semble que le résultat attendu soit $\langle G\backslash H\rangle=G$. Notons $E=G\backslash H$ et montrons $H\subset \langle E\rangle$. Par hypothèse il existe $x\in E$. Soit $y\in H$. On pose $z=xy$.\\
+	Si $z\in H$ alors $x=zy^{-1}\in H$ car $H$ est un groupe, ce qui est exclus. Donc $z\in E$ et par suite $x^{-1}z=y\in\langle E\rangle$.\\
+	Ainsi $H\subset \langle E\rangle$. De plus $E\subset \langle E\rangle$ donc $G=H\cup E\subset \langle E\rangle$ i.e $\langle G\backslash H\rangle=G$.
+	
 	\subsection{Partie génératrice}
 	\label{Partie génératrice corrigé}
 	\textcolor{blue}{\hyperref[Partie génératrice]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item D'après le théorème de Lagrange $\dfrac{|G|}{|H|}$ est un entier supérieur strictement à $1$, c'est donc au moins $2$ i.e $2|H|\leq |G|$.
+		\item $G$ possède une partie génératrice (lui même), on peut donc considérer une partie génératrice de $G$ de cardinal minimal. Soit $E=\{x_1,\dots,x_m\}$ une telle partie. $m\leq \log_2(n)\iff 2^m\leq n$.\\
+		Posons pour $i\in \crblanc{1}{m},\ G_i=\langle x_1,\dots,x_i\rangle$.\\
+		On remarque que $\forall i\in \crblanc{1}{m-1},\ G_i\subsetneq G_{i+1}$. En effet, si pour un certain $i_0\in \crblanc{1}{m-1},\ G_{i_0}=G_{i_0+1}$ alors $\{a_1,\dots,a_{i_0},a_{i_0+2},\dots,a_m\}$ est une partie génératrice de $G$ ayant strictement moins d'éléments que $E$ ce qui est absurde.\\
+		Soit $i\in \crblanc{1}{m-1}$. $G_i$ est un sous-groupe strict de $G_{i+1}$ donc d'après la question 1, $2|G_i|\leq |G_{i+1}|$.\\
+		Par récurrence immédiate $n=|G|=|G_m|\geq 2^m$.
+		\item Soit $G=((\Z/2\Z)^m,+)$. $G$ est un $\Z/2\Z$-espace vectoriel de dimension $m$, il est donc de cardinal $m$ (même sans théorie sur les espaces vectoriels sur des corps finis on peut vérifier à la main qu'il y a unicité de l'écriture dans la base canonique).\\
+		Soit $E$ une partie de $G$ de cardinal inférieur strictement à $m$. D'après la question 1 de l'exercice sur le théorème de Cauchy, le cardinal de $\langle E\rangle$ est une puissance de $2$. Par définition de $E$, $|\langle E\rangle|<|G|$.
+	\end{enumerate}
 	
 	\subsection{Groupe alterné $\etoile{3}$}
 	\label{Groupe alterné corrigé}
@@ -6220,13 +6302,78 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		Ainsi, en partant de l'identité qui a $n$ cycles, on en déduit que $s$ a au moins $n-p$ cycles d'après ce qui précède. Ainsi, puisque $s$ est un $n$-cycle, il a un unique cycle, donc on en déduit que $n-p\leq 1$, d'où $p\geq n-1$.
 		\item D'après ce qui précède, on en déduit que $n-1$ est ce minimum.
 	\end{enumerate}
-	\subsection{Partie génératrice de $\Or(E)$}
+	\subsection{Partie génératrice de $\O(E)$}
 	\label{Partie génératrice de O(E) corrigé}
 	\textcolor{blue}{\hyperref[Partie génératrice de O(E)]{[Enoncé]}}\\
+	On rappelle qu'une réflexion (orthogonale) $s$ de $E$ est une symétrie orthogonale par rapport à un hyperplan $H$ de $E$. De plus, si l'on note $a\in E$ tel que $H=\Vect(a)^\bot$ alors $\forall x\in E,\ s(x)=x-2\dfrac{\proscal{a}{x}}{\norme{a}^2}a$. En effet $\forall x\in E,\ \exists h\in H,\ x=\displaystyle\proscal{\frac{a}{\norme a}}{x}\frac{a}{\norme a}+h$. Donc $s(x)=\displaystyle\frac{\proscal{a}{x}}{\norme{a}^2}s(a)+s(h)=-\frac{\proscal{a}{x}}{\norme{a}^2}a+h=x-2\frac{\proscal{a}{x}}{\norme{a}^2}a$.\\
+	Par récurrence sur $n=\dim(E)$ :\\
+	$n=1$ : $\O(E)=\{\Id,-\Id\}$ est le groupe engendré par $-\Id$ qui est un réflexion.\\
+	Supposons le résultat vrai pour un certain $n\in \N^*$. Soit $E$ un espace euclidien de dimension $n+1$. Soit $u\in \O(E)$. Si $u=\Id$ alors $u$ est le produit de $0$ réflexions. Sinon $\exists x\in E\backslash\{0\},\ u(x)\ne x$. Alors il existe une réflexion orthogonale qui échange $u(x)$ et $x$. En effet, $y=u(x)-x\ne 0$ donc $\Vect(y)^\bot$ est un hyperplan de $E$ et la symétrie orthogonale $s$ associée vérifie
+	\begin{align*}
+		s(u(x))&=u(x)-2\frac{\proscal{y}{u(x)}}{\norme{y}^2}y\\
+		&=u(x)-2\frac{\proscal{u(x)-x}{u(x)}}{\norme{u(x)-x}^2}y\\
+		&=u(x)-2\frac{\norme{u(x)}^2-\proscal{u(x)}{x}}{\norme{u(x)}^2-2\proscal{u(x)}{x}+\norme{x}^2}y\\
+		&=u(x)-2\frac{\norme{x}^2-\proscal{u(x)}{x}}{2(\norme{x}^2-\proscal{u(x)}{x})}y\quad\quad\quad\quad\quad\quad (\T{car }u\in \O(E))\\
+		&=u(x)-y\\
+		&=x
+	\end{align*}
+	Ainsi $s\circ u$ stabilise $\Vect(x)$ et donc $(s\circ u)^*=u^*\circ s^*=u^{-1}\circ s$ stabilise $H:=\Vect(x)^\bot$. Il induit donc un endomorphisme (orthogonal car $u^{-1}\circ s$ l'est) $v$ sur $H$. Par hypothèse de récurrence $v$ s'écrit comme un produit de réflexions de $H$ (on peut l'écrire sans inverse car une réflexion est une involution) $v=\tilde s_1\dots\tilde s_m$.\\
+	Pour conclure il suffit de définir $s_i\in \L(E)$ par ${s_i}_{|H}=\tilde s_i$ et $s_i(x)=x$ pour tout $1\leq i\leq m$ de sorte que $s_i^2=\Id_E$ et $\ker(s_i-\Id_E)=\ker(\tilde s_i-\Id_H)\bigoplus\Vect(x)$ soit un hyperplan de $E$.\\
+	On a alors $u=ss_m\dots s_1$.\\\\
+	\textit{\underline{Remarque :} La même preuve en adaptant l'hypothèse de récurrence montre en fait que tout endomorphisme orthogonal de E est produit d'au plus dim(E) réflexions.}
 	
 	\subsection{Groupe dans un plan euclidien}
 	\label{Groupe dans un plan euclidien corrigé}
 	\textcolor{blue}{\hyperref[Groupe dans un plan euclidien]{[Enoncé]}}\\
+	On note dans tout l'exercice $B=(e_1,e_2)$ une base orthonormée de $E$.
+	\begin{enumerate}
+		\item On sait que $\fonction{\varphi}{\mathcal{SO}(E)}{\mathcal{SO}_2(\R)}{u}{\Mat_B(u)}$ et on montre que $\fonction{\psi}{\mathcal{SO}_2(\R)}{\U}{\begin{pmatrix}
+				\cos\theta&-\sin\theta\\
+				\sin\theta&\cos\theta
+		\end{pmatrix}}{e^{i\theta}}$ sont des isomorphismes de groupes. Ainsi on peut reporter l'étude au sous-groupes finis de $\U$.\\
+		Celle-ci est simple puisque si $H$ est un sous-groupe fini de $\U$ alors $\forall z\in H,\ z^{|H|}=1$ d'où $H\subset\U_{|H|}$ puis $H=\U_{|H|}$ par égalité des cardinaux.\\
+		En notant $r_\theta=\varphi^{-1}\left(\begin{pmatrix}
+			\cos\theta&-\sin\theta\\
+			\sin\theta&\cos\theta
+		\end{pmatrix}\right)$ on déduit de ce qui précède que les sous-groupes fini de $\mathcal{SO}(E)$ sont les $U_n:=\{r_{2k\pi/n},\ 0\leq k\leq n-1\}$ pour $n\in \N^*$.
+		\item On rappelle que $\O(E)$ ne contient que des rotations et des réflexions, qui sont distinguées par le signe de leurs déterminants.\\
+		Soit $G$ un sous-groupe fini de $\O(E)$. On note $G^+$ (resp. $G^-$) l'ensemble des automorphismes de $G$ dont le déterminant est positif (resp. négatif). $G^+$ n'est pas vide puisque si $s\in G$ est une symétrie, $s^2=I_2\in G^+$.\\
+		$G^+=G\cap\mathcal{SO}(E)$ est un sous-groupe fini de $\mathcal{SO}(E)$. Il est donc de la forme $U_n$ pour un certain $n\in \N^*$.\\
+		Si $G^-$ est vide on a fini. Sinon, on dispose d'une symétrie $s\in G$. Alors $\fonction{f}{G^-}{G^+}{u}{s\circ u}$ est clairement une application bijective.\\
+		Ainsi, $G^-=sU_n$. Finalement en notant $r=r_{2\pi/n},\ G=\{\Id_E,r,\dots,r^{n-1},s,sr,\dots,sr^{n-1}\}=\langle r,s\rangle$ (tous ces éléments sont bien distincts car $G^+\cap G^-=\emptyset$).\\
+		Finalement $G$ en notant est de la forme :
+		$$\langle r_{2\pi/n}\rangle\T{ ou }\langle r_{2\pi/n},s\rangle$$
+		avec $n\in \N^*$ et $s$ une réflexion de $E$.\\\\
+		\textit{\underline{Remarque :} le groupe engendré par les matrices de $r_{2\pi/n}$ et de la réflexion d'axe $e_1$ (càd $\begin{pmatrix}
+				1&0\\
+				0&-1
+			\end{pmatrix}$) est appelé groupe diédral d'ordre $2n$. Quitte à changer la base au départ on peut toujours se ramener à cette matrice. On a donc montré que les sous-groupes finis de $\O_2(\R)$ sont cycliques ou diédraux. L'exercice suivant s'intéresse de plus près aux groupes diédraux.}
+		\item Il me manque tellement rien pour y arriver sans gros théorème de Maschke :[
+	\end{enumerate}
+	
+	\subsection{Groupe diédral \centraleponts{3}}
+	\label{Groupe diédral corrigé}
+	\textcolor{blue}{\hyperref[Groupe diédral]{[Enoncé]}}
+	\begin{enumerate}[leftmargin=*]
+		\item $R$ est une matrice de rotation et $S$ une matrice de symétrie donc $D_n$ est un sous-groupe de $\O_2(\R)$. On rappelle $\O_2(\R)$ est composé seulement de matrices rotations et de réflexions, qui sont distinguées (hormis $I_2$) par le signe de leur déterminant.\\
+		Tout d'abord, $SR=R^{-1}S\iff SR=(SR)^{-1}\iff (SR)^2=I_2$. Autrement dit il s'agit de montrer que $SR$ est une symétrie. Cela est vrai car $\det(RS)=\det(R)\det(S)=-1$.\\\\
+		\textit{Remarque : Ici le calcul matriciel est simple mais la méthode présentée fonctionne pour n'importe quelle rotation et n'importe quelle réflexion.}
+		\item Commençons par remarquer que comme $R$ est la matrice de rotation d'angle $\dfrac{2\pi}{n}$, elle est d'ordre $n$ càd $\langle R\rangle=\{I_2,R,\dots,R^{n-1}\}$. En particulier $R^{-1}=R^{n-1}$. Ainsi avec $S^2=I_2$, la question 1 justifie qu'un mot de $\langle R,S\rangle$ s'écrit toujours $R^iS^j$ avec $0\leq i\leq n-1$ et $j\in \{0,1\}$.\\
+		Reste à montrer que ces éléments sont tous distincts. On a déjà justifier que les $R^i$, $1\leq i\leq n-1$ le sont. Il sont distincts des $R^iS$ car ces derniers sont des symétries non triviales et non des rotations. Enfin, les $R^iS$ sont distincts entre eux car $R^i\mapsto R^iS$ est une bijection.\\
+		Ainsi $D_n=\{I_2,R,\dots,R^{n-1},S,SR,\dots,SR^{n-1}\}$.
+		\item $D_1=\{I_2,S\}$ et $D_2=\{I_2,-I_2,S,-S\}$ sont clairement abéliens. Et si $n\geq 3$, $R^{-1}$ est la matrice de rotation d'angle $-\dfrac{2\pi}{n}\not\equiv\dfrac{2\pi}{n}[2\pi]$. Donc $SR=R^{-1}S\ne RS$.
+		\item Une approche pratique pour les notations est de travailler dans $\C$. On va montrer que les points $z_k$ d'affixes $e^{2ik\pi/n}$ pour $0\leq k\leq n-1$ sont les sommets de $G_n$ dans le plan complexe. $z_0=e^{i0}=1$ donc il suffit de montrer que les distances $|z_{k+1}-z_k|$ sont toutes égales.\\
+		On calcule $|z_{k+1}-z_k|=|e^{2i\pi/n}z_k-z_k|=|e^{2i\pi/n}-1||z_k|=|e^{2i\pi/n}-1|$.\\
+		Ainsi les coordonnées des sommets de $G_n$ sont $\left(\cos\left(\dfrac{2k\pi}{n}\right),\sin\left(\dfrac{2k\pi}{n}\right)\right)$ pour $0\leq k\leq n-1$.
+		\item Une composée de transformations du plan qui conservent une figure conserve cette même figure. Les isométries vectorielles de $\R^2$ formant un groupe, $\Delta_n$ est bien un groupe.\\
+		Ensuite, en notant $\B=((1,0),(0,1))$ la base canonique de $\R^2$ on dispose d'un isomorphisme de $\O(\R^2)$ dans $\O_2(\R)$ donné par $\varphi:u\mapsto \Mat_\B(u)$. Montrons que $\varphi(\Delta_n)=D_n$. En premier $G_n$ est invariant par rotation d'angle $\dfrac{2\pi}{n}$ et par symétrie par rapport à l'axe des abscisses. Donc $\varphi^{-1}(D_n)\subset\Delta_n$.\\
+		Réciproquement, si $u\in \Delta_n$ alors :
+		\begin{itemize}
+			\item Si $\det(u)>0$, $u$ est une rotation dont on note $\theta$ l'angle. $u(1,0)=(\cos\theta,\sin\theta)$ est un des sommets de $G_n$, autrement dit $\exists k\in \crblanc{0}{n-1},\ \theta=\dfrac{2k\pi}{n}$. Et on donc $\varphi(u)=R^k\in D_n$.
+			\item Si $\det(u)<0$, alors en notant $s=\varphi^{-1}(S)$, $s\circ u\in \Delta_n$ avec $\det(s\circ u)>0$, donc $\varphi(s\circ u)=R^k$ pour un certain $0\leq k\leq n-1$, càd $\varphi(u)=\varphi(s)^{-1}R^k=S^{-1}R^k=SR^k\in D_n$.
+		\end{itemize}
+		Dans tous les cas, $\varphi(u)\in D_n$. Donc $\varphi(\Delta_n)\subset D_n$ puis $\varphi(\Delta_n)=D_n$.
+	\end{enumerate}
 	
 	\subsection{Matrices de permutation \etoile{1}}
 	\label{Matrices de permutation corrigé}
@@ -6240,7 +6387,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		De plus, $\forall \sigma\in \mathcal S_n,\ f(\sigma)=I_n\implies \forall i\in \crblanc{1}{n},\ \delta_{i,\sigma(i)}=1\implies \forall i\in \crblanc{1}{n},\ \sigma(i)=i\implies \sigma=\Id$. Donc $f$ est un isomorphisme de groupes.
 		\item $\forall \sigma\in \mathcal S_n,\ \forall (i,j)\in \crblanc{1}{n}^2,\ (P_\sigma^\top)_{i,j}=\delta_{j,\sigma(i)}=\delta_{\sigma^{-1}(j),i}=(P_{\sigma^{-1}})_{i,j}=(P_\sigma^{-1})_{i,j}$.\\
 		Donc $\forall \sigma\in \mathcal S_n,\ P_\sigma^\top=P_\sigma^{-1}$.\\
-		On a montré que $\mathcal P_n\subset \Or_n(\R)$.
+		On a montré que $\mathcal P_n\subset \O_n(\R)$.
 		\item Soit $\sigma\in \mathcal S_n$.\\
 		Par la formule du déterminant : On sait que $\det(P_\sigma)=\displaystyle\sum\limits_{\tau\in \mathcal S_n}\varepsilon(\tau)\prod\limits_{i=1}^n(P_\sigma)_{i,\tau(i)}=\sum\limits_{\tau\in \mathcal S_n}\varepsilon(\tau)\prod\limits_{i=1}^n\delta_{i,\sigma\circ\tau(i)}$.\\
 		Or $\tau\ne \sigma^{-1}\implies \exists i\in \crblanc{1}{n},\ i\ne \sigma\circ\tau(i)\implies \displaystyle\prod\limits_{i=1}^n\delta_{i\sigma\circ\tau(i)}=0$ et, $\tau=\sigma^{-1}\implies \forall i\in \crblanc{1}{n},\ i=\sigma\circ\tau(i)\implies \displaystyle\prod\limits_{i=1}^n\delta_{i\sigma\circ\tau(i)}=1$.\\
@@ -6293,15 +6440,15 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 				\cos(\theta)=\cos(\alpha-\beta)
 			\end{cases}\iff\theta\equiv\alpha-\beta[2\pi]$.\\
 			Il y a donc existence mais pas unicité de l'écriture de $M$ comme produit de deux symétries.
-			\item SO$_2(\Q)\subset \text{SO}_2(\R)$ qui est un groupe abélien donc les éléments de SO$_2(\Q)$ commutent tous entre eux. $I_2\in\Or_2(\Q)$. De plus, $\det(\Or_2(\Q))\subset \det(\Or_2(\R))=\{-1,1\}$. Donc si $M=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ et $M'=\begin{pmatrix}a'&b'\\c'&d'\end{pmatrix}$ sont dans $\Or_2(\Q)$ alors en notant $\varepsilon=\displaystyle\frac{1}{\det(M(M')^{-1})}\in \{-1,1\}$,\\    $M(M')^{-1}=\begin{pmatrix}a&b\\c&d\end{pmatrix}\cdot\varepsilon\begin{pmatrix}d'&-b'\\-c'&d'\end{pmatrix}=\varepsilon\begin{pmatrix}ad'-bc'&bd'-ab'\\cd'-dc'&dd'-db'\end{pmatrix}\in \M_2(\Q)$ d'où $M(M')^{-1}\in \Or_2(\Q)$. De plus, si $\det(M)=\det(M')=1$ alors $\det(M(M')^{-1})=1$ donc SO$_2(\Q)$ est un sous groupe de $\Or_2(\Q)$.\\
-			Il est évident que $D\subset \text{SO}_2(\Q)$. Supposons par l'absurde que $D=C=\text{SO}_2(\Q)$. Comme tous les éléments de $\Or_2(\Q)\backslash \text{SO}_2(\Q)$ ont un carré égal au neutre, $C$ est engendré par les carrés des éléments de $\text{SO}_2(\Q)$.\\
-			Ensuite, les éléments de $\Or_2(\Q)$ de déterminant $-1$ sont des réflexions.\\
+			\item SO$_2(\Q)\subset \text{SO}_2(\R)$ qui est un groupe abélien donc les éléments de SO$_2(\Q)$ commutent tous entre eux. $I_2\in\O_2(\Q)$. De plus, $\det(\O_2(\Q))\subset \det(\O_2(\R))=\{-1,1\}$. Donc si $M=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ et $M'=\begin{pmatrix}a'&b'\\c'&d'\end{pmatrix}$ sont dans $\O_2(\Q)$ alors en notant $\varepsilon=\displaystyle\frac{1}{\det(M(M')^{-1})}\in \{-1,1\}$,\\    $M(M')^{-1}=\begin{pmatrix}a&b\\c&d\end{pmatrix}\cdot\varepsilon\begin{pmatrix}d'&-b'\\-c'&d'\end{pmatrix}=\varepsilon\begin{pmatrix}ad'-bc'&bd'-ab'\\cd'-dc'&dd'-db'\end{pmatrix}\in \M_2(\Q)$ d'où $M(M')^{-1}\in \O_2(\Q)$. De plus, si $\det(M)=\det(M')=1$ alors $\det(M(M')^{-1})=1$ donc SO$_2(\Q)$ est un sous groupe de $\O_2(\Q)$.\\
+			Il est évident que $D\subset \text{SO}_2(\Q)$. Supposons par l'absurde que $D=C=\text{SO}_2(\Q)$. Comme tous les éléments de $\O_2(\Q)\backslash \text{SO}_2(\Q)$ ont un carré égal au neutre, $C$ est engendré par les carrés des éléments de $\text{SO}_2(\Q)$.\\
+			Ensuite, les éléments de $\O_2(\Q)$ de déterminant $-1$ sont des réflexions.\\
 			Soit $M\in \text{SO}_2(\Q)$. D'après les calculs fait en question $3.a$, en prenant $\alpha=\theta$ et $\beta=0$ on a $M=AB$ avec $A=\begin{pmatrix}\cos(\theta)&\sin(\theta)\\\sin(\theta)&-\cos(\theta)
-			\end{pmatrix}\in \Or_2(\Q),\ B=\begin{pmatrix}1&0\\0&-1
-			\end{pmatrix}\in \Or_2(\Q),\ A^2=B^2=I_2$.\\
-			Ainsi $\Or_2(\Q)$ est bien engendré par les involutions d'où $D=C$ d'après la question $2$.\\
+			\end{pmatrix}\in \O_2(\Q),\ B=\begin{pmatrix}1&0\\0&-1
+			\end{pmatrix}\in \O_2(\Q),\ A^2=B^2=I_2$.\\
+			Ainsi $\O_2(\Q)$ est bien engendré par les involutions d'où $D=C$ d'après la question $2$.\\
 			Or comme SO$_2(\Q)$ est commutatif, un produit de carré de matrices de SO$_2(\Q)$ est encore un carré dans SO$_2(\Q)$.\\
-			Et donc pour montrer que $D$ est distinct de SO$_2(\Q)$ il suffit de montrer qu'il existe une matrice de SO$_2(\Q)$ qui n'est pas un carré dans SO$_2(\Q)$. C'est le cas de $M=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$. Supposons qu'il existe une matrice $N\in \Or_2(\Q)$ telle que $M=N^2$. On a forcément $N\in \text{SO}_2(\Q)$ puisque sinon $N^2=I_n$. On peut donc écrire $N=\begin{pmatrix}\cos(\theta)&-\sin(\theta)\\\sin(\theta)&\cos(\theta)\end{pmatrix}$ avec $\theta\in \R$. Mais alors $2\theta\equiv \displaystyle\frac{\pi}{2}[2\pi]$ et donc $\cos(\theta)=\pm\displaystyle\frac{\sqrt{2}}{2}\notin \Q$ ce qui est absurde.
+			Et donc pour montrer que $D$ est distinct de SO$_2(\Q)$ il suffit de montrer qu'il existe une matrice de SO$_2(\Q)$ qui n'est pas un carré dans SO$_2(\Q)$. C'est le cas de $M=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$. Supposons qu'il existe une matrice $N\in \O_2(\Q)$ telle que $M=N^2$. On a forcément $N\in \text{SO}_2(\Q)$ puisque sinon $N^2=I_n$. On peut donc écrire $N=\begin{pmatrix}\cos(\theta)&-\sin(\theta)\\\sin(\theta)&\cos(\theta)\end{pmatrix}$ avec $\theta\in \R$. Mais alors $2\theta\equiv \displaystyle\frac{\pi}{2}[2\pi]$ et donc $\cos(\theta)=\pm\displaystyle\frac{\sqrt{2}}{2}\notin \Q$ ce qui est absurde.
 		\end{enumerate}
 	\end{enumerate}
 	
@@ -7363,12 +7510,12 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\label{Critère d'Euler corrigé}
 		\textcolor{blue}{\hyperref[Critère d'Euler]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Soit $x,y\in \F_p^*$.\\
+		\item Soit $x,y\in \mathbb F_p^*$.\\
 		\[x^2=y^2\Leftrightarrow (x+y)(x-y)=0\Leftrightarrow x=y \text{ ou } x=-y\]
 		Comme $p\ne 2$, $y\ne -y$, ainsi tout élément de $\mathcal{C}$ admet exactement deux antécédent par l'application $x\mapsto x^2$.\\
-		Ainsi puisque $\mathcal{C}$ est l'image de cette application et que $\Card(\F_p^*)=p-1$, on obtient : \[\Card(\mathcal{C})=\frac{p-1}{2}\]
-		\item Puisque $\Card(\F_p^*)=p-1$, on a $\left(a^{\frac{p-1}{2}}\right)^2=1$.\\
-		Ainsi par intégrité du corps $\F_p^*$, $a^{\frac{p-1}{2}}\in\{\pm\overline{1}\}$.
+		Ainsi puisque $\mathcal{C}$ est l'image de cette application et que $\Card(\mathbb F_p^*)=p-1$, on obtient : \[\Card(\mathcal{C})=\frac{p-1}{2}\]
+		\item Puisque $\Card(\mathbb F_p^*)=p-1$, on a $\left(a^{\frac{p-1}{2}}\right)^2=1$.\\
+		Ainsi par intégrité du corps $\mathbb F_p^*$, $a^{\frac{p-1}{2}}\in\{\pm\overline{1}\}$.
 		\item On rappelle que les polynômes de Lagrange $L_i=\prod_{j\ne i}\frac{X-a_j}{a_i-a_j}$ forme une base de $\R[X]$.\\
 		Par conséquent, on peut écrire \[P=\sum_{i=1}^{d}P(a_d)L_i\]
 		Il existe donc des entiers $n_1,\dots,n_d$ tels que 
@@ -7377,11 +7524,11 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		On sait que $p|P(a_i)$ pour tout $i\in\crblanc{1}{n}$, ainsi $p$ divise le membre de droite.\\
 		Puisque que les $a_i$ sont distincts modulo $p$, $p$ ne divise pas $\left(\prod_{1\leq i<j\leq n}a_j-a_i\right)$ donc d'après le lemme d'Euclide $p|P(n)$.
 		\item D'après le théorème de Lagrange, pour tout $a\in\mathcal{C}$, $a^{\frac{p-1}{2}}=\overline{1}$.
-		Donc \[\mathcal{C}\subset\{a\in\F_p^*,a^{\frac{p-1}{2}}=\overline{1}\}\]
+		Donc \[\mathcal{C}\subset\{a\in\mathbb F_p^*,a^{\frac{p-1}{2}}=\overline{1}\}\]
 		On pose $P=X^{\frac{p-1}{2}}-\overline{1}\in \R_{\frac{p-1}{2}}[X]$.\\
-		Supposons qu'il existe $a\in\F_p^*\setminus\mathcal{C}$ tel que $a^{\frac{p-1}{2}}=\overline{1}$.\\
+		Supposons qu'il existe $a\in\mathbb F_p^*\setminus\mathcal{C}$ tel que $a^{\frac{p-1}{2}}=\overline{1}$.\\
 		Ainsi, $P$ admet $\frac{p-1}{2}+1$ racines donc $p$ divise toutes les racines de $P$ ainsi d'après la question précédente pour tout $n\in\Z$, $p|P(n)$ ce qui est absurde car $p\not\mid P(0)=-\overline{1}$.\\
-		Ainsi, $\mathcal{C}=\{a\in\F_p^*,a^{\frac{p-1}{2}}=\overline{1}\}$.
+		Ainsi, $\mathcal{C}=\{a\in\mathbb F_p^*,a^{\frac{p-1}{2}}=\overline{1}\}$.
 	\end{enumerate}
 	\subsection{Indicatrice d'Euler}
 	\label{Indicatrice d'Euler corrigé}
@@ -8935,7 +9082,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\begin{enumerate}
 		\item \begin{enumerate}[label=\alph*.]
 			\item Soit $s_1$ et $s_2$ deux réflexions.
-			Puisque $(\Or(E),\circ)$ est un groupe $s_1\circ s_2\in \Or(E)$
+			Puisque $(\O(E),\circ)$ est un groupe $s_1\circ s_2\in \O(E)$
 			\\On a: $\det(s_1)=\det(s_2)=-1$.
 			\\Donc, $\det(s_1\circ s_2)=1$.
 			Et puisque $E$ est de dimension 2, on en déduit que $s_1\circ s_2$ est une rotation.
@@ -8946,7 +9093,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			+\sin(3\theta/2)e_2)$.
 			En étudiant les matrices de $r$ et de $s_1\circ s_2$ dans la base $\mathcal{B}$, on a $r=s_1\circ s_2$.
 		\end{enumerate}
-		\item Puisque $\Or(E)$ est un groupe, $r\circ s$ est une isométrie vectorielle.
+		\item Puisque $\O(E)$ est un groupe, $r\circ s$ est une isométrie vectorielle.
 		\\ On a: $\det(r\circ s)=-1$ donc $r\circ s$ est une réflexion.
 		\\ Ainsi, $(r\circ s)^2=\Id_E$ et donc on en déduit que: 
 		$\begin{cases}
@@ -9196,17 +9343,17 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			\item Tout d'abord, $\left(A^\top A\right)^\top=A^\top A$. Ensuite, si $X\in \R^n\backslash\{0\}$,\\
 			$X^\top A^\top AX=\norme{AX}^2$ pour $\norme{.}:Y\in \R^n\mapsto Y^\top Y$ la norme euclidienne usuelle sur $\R^n$.\\
 			Or $A\in \text{GL}_n(\R)$ donc $X\ne 0\implies AX\ne 0\implies \norme{AX}^2>0$. Ainsi $A^\top A$ est une matrice symétrique définie positive.
-			\item Si $A=OS$ avec $(O,S)\in \Or_n(\R)\times S_n^{++}(\R)$ alors $A^\top A=S^\top O^\top OS=S^\top S=S^2$. Donc $S$ est l'unique matrice de $S_n^{++}(\R)$ qui vérifie $A^\top A=S^2$. On a alors forcément $O=AS^{-1}$.\\
+			\item Si $A=OS$ avec $(O,S)\in \O_n(\R)\times S_n^{++}(\R)$ alors $A^\top A=S^\top O^\top OS=S^\top S=S^2$. Donc $S$ est l'unique matrice de $S_n^{++}(\R)$ qui vérifie $A^\top A=S^2$. On a alors forcément $O=AS^{-1}$.\\
 			On calcule $O^\top O=\left(S^{-1}\right)^\top A^\top AS^{-1}=\left(S^\top\right)^{-1}S=S^{-1}S=I_n$ donc $O$ est bien une matrice orthogonale.
 		\end{enumerate}
 		\item On sait que GL$_n(\R)$ est dense dans $\M_n(\R)$ (cf. VIII-53 tome Analyse). On peut donc poser une suite $(A_k)_{k\in \N}$ de matrice inversible qui converge vers $A$. Pour tout $k\in \N$ on note $A_k=O_kS_k$ la décomposition polaire de $A_k$.\\
-		Comme $\Or_n(\R)$ est compact on peut extraire une suite $(O_{\varphi(k)})_{k\in \N}$ de $(O_k)_{k\in \N}$ qui converge. On note $O$ sa limite.\\
+		Comme $\O_n(\R)$ est compact on peut extraire une suite $(O_{\varphi(k)})_{k\in \N}$ de $(O_k)_{k\in \N}$ qui converge. On note $O$ sa limite.\\
 		$\forall k\in \N,\ S_{\varphi(k)}=O_{\varphi(k)}^{-1}A_{\varphi(k)}$.\\
 		On sait que l'application $M\in \M_n(\R)\mapsto M^{-1}$ est continue puisque les coefficients de $M^{-1}$ sont polynomiaux en ceux de $M$. De plus $A_{\varphi(k)}\ukfty{\longrightarrow}A$ comme suite extraite de $(A_k)_{k\in \N}$. Enfin l'application $(M,N)\in \M_n(\R)^2\mapsto MN$ est continue car bilinéaire sur $\M_n(\R)$ qui est de dimension finie.\\
 		Ainsi par passage à la limite, $S_{\varphi(k)}\ukfty{\longrightarrow}O^{-1}A=S$.\\
 		Or $(S_{\varphi(k)})_{k\in \N}\in S_n^+(\R)^\N$. On sait que si $X\in \R^n$ alors $\forall k\in \N,\ X^\top S_{\varphi(k)}X\geq 0$ et $S_{\varphi(k)}^\top=S_{\varphi(k)}$. Donc comme les applications $M\in \M_n(\R)\mapsto X^\top MX$ et $M\in \M_n(\R)\mapsto M^\top$ sont continues car linéaires, on obtient par passage à la limite : $X^\top SX\geq 0$ et $S^\top=S$. C'est à dire $S\in S_n^+(\R)$.\\
-		Finalement, $A=OS$ où $(O,S)\in \Or_n(\R)\times S_n^+(\R)$.\\
-		Il n'y a pas unicité. Par exemple la matrice nulle peut s'écrire $0_n=I_n\times 0_n=-I_n\times 0_n$ où $(I_n,-I_n)\in \Or_n(\R)^2$ et $0_n\in S_n^+(\R)$.
+		Finalement, $A=OS$ où $(O,S)\in \O_n(\R)\times S_n^+(\R)$.\\
+		Il n'y a pas unicité. Par exemple la matrice nulle peut s'écrire $0_n=I_n\times 0_n=-I_n\times 0_n$ où $(I_n,-I_n)\in \O_n(\R)^2$ et $0_n\in S_n^+(\R)$.
 	\end{enumerate}
 	
 	\subsubsection{Sous-groupe compact maximal de GL$_n(\R)$ \etoile{3}}
@@ -9215,27 +9362,27 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		$$0\leq \normep{2}{AX}^2=X^\top A^\top AX=\sum_{i=1}^n\lambda_ia_i^2\leq \rho(A^\top A)\sum_{i=1}^na_i^2=\rho(A^\top A)\normep{2}{X}^2=\rho(A^\top A)$$
 		De plus, en notant $i_0\in \crblanc{1}{n}$ tel que $\lambda_{i_0}=\rho(A^\top A)$ on a $X^\top e_{i_0}X=\rho(A^\top A)$.\\
 		Ainsi ${|||A|||}_2=\sqrt{\rho(A^\top A)}$.
-		\item $\Or_n(\R)$ est un sous-groupe de GL$_n(\R)$ :
+		\item $\O_n(\R)$ est un sous-groupe de GL$_n(\R)$ :
 		\begin{itemize}
-			\item $\Or_n(\R)\subset \text{GL}_n(\R)$ ($\forall M\in \Or_n(\R),\ M^{-1}=M^\top$);
-			\item $I_n\in \Or_n(\R)$;
-			\item $\forall (A,B)\in \Or_n(\R)^2,\ (AB^{-1})^\top AB^{-1}=BA^\top AB^\top=BB^\top=I_n$.
+			\item $\O_n(\R)\subset \text{GL}_n(\R)$ ($\forall M\in \O_n(\R),\ M^{-1}=M^\top$);
+			\item $I_n\in \O_n(\R)$;
+			\item $\forall (A,B)\in \O_n(\R)^2,\ (AB^{-1})^\top AB^{-1}=BA^\top AB^\top=BB^\top=I_n$.
 		\end{itemize}
-		$\Or_n(\R)$ est compact :
+		$\O_n(\R)$ est compact :
 		\begin{itemize}
-			\item $\Or_n(\R)\subset \M_n(\R)$ avec $\dim(\M_n(\R))=n^2<+\infty$;
-			\item $\Or_n(\R)=f^{-1}(\{I_n\})$ pour $f:M\mapsto M^\top M$ qui est continue car les coefficients de $f(M)$ sont polynomiaux en ceux de $M$. Donc $\Or_n(\R)$ est fermé;
-			\item $\forall M\in \Or_n(\R),\ {|||M|||}_2=\sup\limits_{\substack{X\in \R^n\\\normep{2}{X}=1}}\normep{2}{MX}=\sup\limits_{\substack{X\in \R^n\\\normep{2}{X}=1}}\normep{2}{X}=1$.
+			\item $\O_n(\R)\subset \M_n(\R)$ avec $\dim(\M_n(\R))=n^2<+\infty$;
+			\item $\O_n(\R)=f^{-1}(\{I_n\})$ pour $f:M\mapsto M^\top M$ qui est continue car les coefficients de $f(M)$ sont polynomiaux en ceux de $M$. Donc $\O_n(\R)$ est fermé;
+			\item $\forall M\in \O_n(\R),\ {|||M|||}_2=\sup\limits_{\substack{X\in \R^n\\\normep{2}{X}=1}}\normep{2}{MX}=\sup\limits_{\substack{X\in \R^n\\\normep{2}{X}=1}}\normep{2}{X}=1$.
 		\end{itemize}
-		$\Or_n(\R)$ est un fermé borné de $\M_n(\R)$ qui est de dimension finie, c'est donc un compact.
+		$\O_n(\R)$ est un fermé borné de $\M_n(\R)$ qui est de dimension finie, c'est donc un compact.
 		\item \begin{enumerate}[label=\alph*.]
 			\item Supposons que $S$ ait une valeur propre $\lambda>1$.\\
-			Comme $G$ est un groupe qui contient $\Or_n(\R)$, $\forall n\in \N^*,\ S^n=(O^{-1}A)^n\in G$.\\
+			Comme $G$ est un groupe qui contient $\O_n(\R)$, $\forall n\in \N^*,\ S^n=(O^{-1}A)^n\in G$.\\
 			Nonobstant, $\forall n\in \N^*,\ \lambda^{2n}\in \text{Sp}(S^{2n})\implies \lambda^{2n}\leq \rho(S^{2n})={|||S^n|||}_2$. Ainsi ${|||S^n|||}_2\unfty{\longrightarrow}+\infty$ ce qui est absurde puisque $G$ est borné.
-			\item Supposons que $S$ ait une valeur propre $\lambda<1$. Alors comme $G$ est un groupe qui contient $\Or_n(\R)$, $S^{-1}=A^{-1}O\in G$. Or $\displaystyle\frac{1}{\lambda}\in \text{Sp}(S^{-1})$ et $\displaystyle\frac{1}{\lambda}>1$. Par le même raisonnement qu'à la question précédente ceci est absurde. On en déduit que Sp$(S)=\{1\}$.
+			\item Supposons que $S$ ait une valeur propre $\lambda<1$. Alors comme $G$ est un groupe qui contient $\O_n(\R)$, $S^{-1}=A^{-1}O\in G$. Or $\displaystyle\frac{1}{\lambda}\in \text{Sp}(S^{-1})$ et $\displaystyle\frac{1}{\lambda}>1$. Par le même raisonnement qu'à la question précédente ceci est absurde. On en déduit que Sp$(S)=\{1\}$.
 		\end{enumerate}
 		\item Le théorème spectral donne que $S$ est diagonalisable. On a donc d'après la question précédente $S=I_n$.\\
-		Ainsi $A=O\in \Or_n(\R)$ et finalement $G=\Or_n(\R)$.
+		Ainsi $A=O\in \O_n(\R)$ et finalement $G=\O_n(\R)$.
 	\end{enumerate}
 	
 	\subsubsection{Enveloppe convexe des matrices orthogonales}
@@ -9244,14 +9391,14 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		$$0\leq \normep{2}{AX}^2=X^\top A^\top AX=\sum_{i=1}^n\lambda_ia_i^2\leq \rho(A^\top A)\sum_{i=1}^na_i^2=\rho(A^\top A)\normep{2}{X}^2=\rho(A^\top A)$$
 		De plus, en notant $i_0\in \crblanc{1}{n}$ tel que $\lambda_{i_0}=\rho(A^\top A)$ on a $X^\top e_{i_0}X=\rho(A^\top A)$.\\
 		Ainsi ${|||A|||}_2=\sqrt{\rho(A^\top A)}$.
-		\item Soit $A\in \text{Conv}(\Or_n(\R))$. Il existe $A_1,\dots,A_p$ des matrices orthogonales ainsi que $t_1,\dots,t_p$ des réels positifs de somme $1$ tels que $A=\displaystyle\sum_{i=1}^pt_iA_i$.\\
-		On remarque que $\forall M\in \Or_n(\R),\ {|||M|||}_2=\sup\limits_{\substack{X\in \M_n(\R)\\\normep{2}{X}=1}}\normep{2}{MX}=\sup\limits_{\substack{X\in \M_n(\R)\\\normep{2}{X}=1}}\normep{2}{X}=1$.\\
+		\item Soit $A\in \text{Conv}(\O_n(\R))$. Il existe $A_1,\dots,A_p$ des matrices orthogonales ainsi que $t_1,\dots,t_p$ des réels positifs de somme $1$ tels que $A=\displaystyle\sum_{i=1}^pt_iA_i$.\\
+		On remarque que $\forall M\in \O_n(\R),\ {|||M|||}_2=\sup\limits_{\substack{X\in \M_n(\R)\\\normep{2}{X}=1}}\normep{2}{MX}=\sup\limits_{\substack{X\in \M_n(\R)\\\normep{2}{X}=1}}\normep{2}{X}=1$.\\
 		Donc par inégalité triangulaire ${|||A|||}_2\leq \displaystyle\sum_{i=1}^pt_i{|||A_i|||}_2=\sum_{i=1}^pt_i=1$ d'où $A\in \B$.
 		\item \begin{enumerate}[label=\alph*.]
-			\item Soit $V\in \text{Conv}(\Or_n(\R))$.\\
+			\item Soit $V\in \text{Conv}(\O_n(\R))$.\\
 			D'une part, $\Tr(AV)-\Tr(AN)=\Tr(A(V-N))=\proscal{M-N}{V-N}\leq 0$ d'après le théorème de projection sur un convexe compact.\\
-			D'autre part, $\Tr(AM)-\Tr(AN)=\Tr((M-N)^\top(M-N))=\proscal{M-N}{M-N}\geq 0$. De plus $N\in \text{Conv}(\Or_n(\R))$ et $M\notin \text{Conv}(\Or_n(\R))$ donc $M\ne N$ d'où $\proscal{M-N}{M-N}>0$.
-			\item D'après la question précédente, pour $V=U^{-1}\in \Or_n(\R)\subset \text{Conv}(\Or_n(\R)),\ \Tr(S)=\Tr(U^{-1}US)=\Tr(U^{-1}A)\leq \Tr(AN)<\Tr(AM)=\Tr(USM)$.
+			D'autre part, $\Tr(AM)-\Tr(AN)=\Tr((M-N)^\top(M-N))=\proscal{M-N}{M-N}\geq 0$. De plus $N\in \text{Conv}(\O_n(\R))$ et $M\notin \text{Conv}(\O_n(\R))$ donc $M\ne N$ d'où $\proscal{M-N}{M-N}>0$.
+			\item D'après la question précédente, pour $V=U^{-1}\in \O_n(\R)\subset \text{Conv}(\O_n(\R)),\ \Tr(S)=\Tr(U^{-1}US)=\Tr(U^{-1}A)\leq \Tr(AN)<\Tr(AM)=\Tr(USM)$.
 			\item D'après le théorème spectral il existe une base $(e_1,\dots,e_n)$ de $\M_{n,1}(\R)$ formée de vecteurs propres de $S$. On note $\lambda_i$ la valeur propre associée à $e_i$.\\
 			
 		\end{enumerate}
