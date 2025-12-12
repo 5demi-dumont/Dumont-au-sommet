@@ -1288,10 +1288,10 @@
 	\textcolor{blue}{\hyperref[sec:theoreme-de-dalembert-gauss-2]{[Corrigé]}}\\
 	\label{alembertgauss2}
 	\label{Théorème de d'Alembert-Gauss 2}
-	Soit $P=\displaystyle\sum\limits_{k=0}^na_kX^k\in\C[X]$ de degré $n\geq 1$. Notons $\mathcal{P}=\left\{|P(z)|,z\in\C\right\}$.
-	\begin{enumerate}[leftmargin=*]
-		\item Montrer que $\mathcal P$ admet une borne inférieure notée $\alpha$.
-		\item Soit $r>0$. Montrer que pour tout nombre complexe $z$ de module $r$, $|P(z)|\geq|a_p|r^p-\displaystyle\sum\limits_{k=0}^{p-1} |a_k|r^k$
+	Soit $P=\displaystyle\sum\limits_{k=0}^na_kX^k\in\C[X]$ de degré $n\geq 1$. Notons $\P=\left\{|P(z)|,z\in\C\right\}$.
+	\begin{enumerate}
+		\item Justifier que $\P$ admet une borne inférieure notée $\alpha$.
+		\item Soit $r>0$. Montrer que pour tout nombre complexe $z$ de module $r$, $|P(z)|\geq|a_p|r^n-\displaystyle\sum\limits_{k=0}^{n-1} |a_k|r^k$
 		\item En déduire que $\lim\limits_{|z|\to+\infty}|P(z)|=+\infty$.
 		\item
 		\begin{enumerate}[label=\alph*.]
@@ -1301,9 +1301,8 @@
 		\item On suppose que $\alpha>0$. On considère alors le polynôme $Q=\displaystyle\frac{P(X+z_0)}{P(z_0)}$
 		\begin{enumerate}[label=\alph*.]
 			\item Montrer que $\inf\limits_{z\in\C}{|Q(z)|}=|Q(0)|=1$.
-			\item Montrer qu'il existe $p\in\crblanc{1}{n}$ et $b_p\ne0,b_{p+1},\dots,b_n\in \C$ tels que: $$Q=\displaystyle\sum\limits_{k=p+1}^n b_kX^k-b_pX^p+1$$
-			\item On pose $b_p=\rho e^{i\theta}$ avec $\rho>0$ et $\theta\in\R$. Pour $z=re^{i\frac{\theta}{p}}$ avec $r>0$, montrer qu'il existe $r_0>0$ tel que $$\forall r\leq r_0, \ |Q(z)|-1\leq -\rho r^p+\displaystyle\sum\limits_{k=p+1}^n |b_k|X^k$$
-			\item En déduire que $\alpha=0$.
+			\item Montrer qu'il existe $p\in\crblanc{1}{n}$ et $b_p\ne0,b_{p+1},\dots,b_n\in \C$ tels que: $$Q=\displaystyle\sum\limits_{k=p+1}^n b_kX^k+b_pX^p+1$$
+			\item On pose $b_p=\rho e^{i\theta}$ avec $\rho<0$ et $\theta\in\R$. Montrer qu'il existe $r_0>0$ tel que $$\forall 0<r\leq r_0, \ |Q(re^{i\theta/p})|-1<0$$
 		\end{enumerate}
 		\item Conclure.
 	\end{enumerate}
@@ -1413,13 +1412,6 @@
 		\item En déduire que $H_n(\Z)\subset\Z$.
 		\item Montrer que $P\in\R_n[X]$ est à valeurs entières sur les entiers si et seulement si ses coordonnées dans la base $(H_k)_{k\in\crblanc{0}{n}}$ sont entières.  
 	\end{enumerate}
-	\subsection{Points critiques des polynômes de Hilbert \etoile{3}}
-	Soient $n$ un entier supérieur ou égal à deux et $P_n=\displaystyle\prod\limits_{k=0}^n(X-k)$.
-	\begin{enumerate}
-		\item En considérant $F_n=\displaystyle\frac{P_n'}{P_n}$, Montrer que $P_n'$ admet une unique racine $x_n$ sur $]0,1[$.
-		\item Montrer que $(x_n)_{n\geq 2}$ converge vers $0$.
-		\item Montrer que $x_n\unfty{\sim}\displaystyle\frac{1}{\ln n}$.
-	\end{enumerate}
 	
 	\section{Laguerre \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:laguerre]{[Corrigé]}}\\
@@ -1496,10 +1488,10 @@
 		\end{enumerate}
 	\end{enumerate}
 	
-	\section{Suite de polynômes défini par récurrence}
-	\textcolor{blue}{\hyperref[sec:suite-de-polynomes-defini-par-recurrence]{[Corrigé]}}\\
+	\section{Suite de polynômes définis par récurrence}
+	\textcolor{blue}{\hyperref[sec:suite-de-polynomes-definis-par-recurrence]{[Corrigé]}}\\
 	\label{suitepoly}
-	\label{Suite de polynùomes défini par récurrence}
+	\label{Suite de polynômes définis par récurrence}
 	Soit $\displaystyle f:x\mapsto\begin{cases}
 		e^{-\frac{1}{x^2}} &\text{si}\;x\ne0\\
 		0 &\text{sinon}
@@ -1509,6 +1501,44 @@
 		\item Montrer que $f$ est prolongeable par continuité en une fonction de classe $\mathcal C^\infty$ sur $\R$.
 		\item Montrer que pour tout $n\in\N$, $P_n$ a toutes ses racines réelles.
 	\end{enumerate}
+	
+	\section{Equation polynomiale (1)}
+	\label{Equation polynomiale (1)}
+	\textcolor{blue}{\hyperref[sec:équation-polynomiale-(1)]{[Corrigé]}}\\
+	Trouver les polynômes $P\in \R[X]$ tels que $(X^2-X)P''(X)=6P(X)$.
+	
+	\section{Equation polynomiale (2)}
+	\label{Equation polynomiale (2)}
+	\textcolor{blue}{\hyperref[sec:équation-polynomiale-(2)]{[Corrigé]}}\\
+	Trouver les polynômes $P\in \R[X]$ tels que $P(X^2)=(X^3+1)P(X)$.
+	
+	\section{Equation polynomiale (3)}
+	\label{Equation polynomiale (3)}
+	\textcolor{blue}{\hyperref[sec:équation-polynomiale-(3)]{[Corrigé]}}\\
+	Trouver les polynômes $P\in \C[X]$ tels que $P(X^2)=P(X+1)^2$.
+	
+	\section{Equation polynomiale (4)}
+	\label{Equation polynomiale (4)}
+	\textcolor{blue}{\hyperref[sec:équation-polynomiale-(4)]{[Corrigé]}}\\
+	On cherche à déterminer les polynômes $P\in \R[X]$ solutions de l'équation $(*) : P(X^2)=P(X+1)P(X)$.
+	\begin{enumerate}
+		\item Déterminer les polynômes constants solutions de $(*)$.
+		\item Soit $P\in \R[X]$ non constant solution de $(*)$ et soit $\lambda$ une racine complexe de $P$.\\
+		Montrer que $\lambda\in \{0,1\}$ ou $|\lambda|=|\lambda-1|=1$.
+		\item Tracer dans python l'ensemble des $\lambda\in \C$ vérifiant $|\lambda|=|\lambda-1|=1$.
+		\item En déduire l'ensemble des solutions de $(*)$.
+	\end{enumerate}
+	
+	\section{Equation polynomiale (5)}
+	\label{Equation polynomiale (5)}
+	\textcolor{blue}{\hyperref[sec:équation-polynomiale-(5)]{[Corrigé]}}\\
+	Trouver les polynômes $P\in \C[X]$ tels que $P(X^2)=P(X+1)P(X-1)$.\\
+	On pourra considérer une racine de $P$ de module maximal.
+	
+	\section{Equation de Shapiro}
+	\label{Equation de Shapiro}
+	\textcolor{blue}{\hyperref[sec:équation-de-shapiro]{[Corrigé]}}\\
+	Trouver les polynômes $P\in \R[X]$ tels que $P(X)P(X+1)=P(X^2+X+1)$.
 	
 	\section{Théorème de la racine rationnelle}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-la-racine-rationnelle]{[Corrigé]}}\\
@@ -1544,7 +1574,15 @@
 		\item En déduire la dimension de $\R$ en tant que $\Q$-espace vectoriel.
 	\end{enumerate}
 	
-
+	\section{Points critiques des polynômes de Hilbert \centraleponts{3}}
+	\textcolor{blue}{\hyperref[sec:points-critiques-des-polynômes-de-hilbert]{[Corrigé]}}\\
+	\label{Points critiques des polynômes de Hilbert}
+	Soient $n$ un entier supérieur ou égal à deux et $P_n=\displaystyle\prod\limits_{k=0}^n(X-k)$.
+	\begin{enumerate}
+		\item En considérant $F_n=\displaystyle\frac{P_n'}{P_n}$, Montrer que $P_n'$ admet une unique racine $x_n$ sur $]0,1[$.
+		\item Montrer que $(x_n)_{n\geq 2}$ converge vers $0$.
+		\item Montrer que $x_n\unfty{\sim}\displaystyle\frac{1}{\ln n}$.
+	\end{enumerate}
 	
 	\section{Zéros des polynômes de Taylor du sinus}
 	\textcolor{blue}{\hyperref[sec:zeros-des-polynomes-de-taylor-du-sinus]{[Corrigé]}}\\
@@ -1552,6 +1590,18 @@
 	\label{Zéros des polynômes de Taylor du sinus}
 	On pose pour tout $n\in \N,\ P_n=\displaystyle\sum_{k=0}^n\frac{(-1)^kX^{2k+1}}{(2k+1)!}$.\\
 	Montrer que le nombre $c_n$ de racines réelles de $P_n$ (comptées avec multiplicité) vérifie $c_n\unfty\sim\displaystyle\frac{4n}{e\pi}$.
+	
+	\section{Polynôme de Taylor de l'exponentielle \ccinp{1}}
+	\textcolor{blue}{\hyperref[sec:polynôme-de-taylor-de-l'exponentielle]{[Corrigé]}}\\
+	\label{Polynôme de Taylor de l'exponentielle}
+	Soit $n\in \N^*$. Montrer que le polynôme $P=\displaystyle\sum_{k=0}^n\frac{X^k}{k!}$ est scindé à racine simples.
+	
+	\section{Les fonctions localement polynomiales sont polynomiales \centraleponts{2}}
+	\textcolor{blue}{\hyperref[sec:les-fonctions-localement-polynomiales-sont-polynomiales]{[Corrigé]}}\\
+	\label{Les fonctions localement polynomiales sont polynomiales}
+	Soit $f:\R\to\R$ une fonction \textit{localement polynomiale} c'est-à-dire vérifiant :
+	$$\forall a\in \R,\ \exists\varepsilon>0,\ \exists P\in \R[X],\ \forall x\in ]a-\varepsilon,a+\varepsilon[,\ f(x)=P(x)$$
+	Montrer que $f$ est une fonction polynomiale.
 	
 	\section{Intégrales de polynômes \etoile{1}}
 	\textcolor{blue}{\hyperref[sec:integrales-de-polynomes-etoile1]{[Corrigé]}}\\
@@ -1580,16 +1630,10 @@
 		\item La réciproque est-elle vraie ?
 	\end{enumerate}
 	
-	\section{Une condition nécessaire pour qu'un polynôme réel soit à racines réelles \etoile{3}}
-	\textcolor{blue}{\hyperref[sec:une-condition-necessaire-pour-quun-polynome-reel-soit-a-racines-reelles-etoile3]{[Corrigé]}}\\
-	\label{polyreelracinesrellees}
-	\label{Une condition nécessaire pour qu'un polynôme réel soit à racines réelles}
-	Soit $P=\displaystyle\sum\limits_{k=1}^n{a_kX^k}\in \R[X]$ à racines réelles.
-	\begin{enumerate}
-		\item Montrer que $\forall x\in \R,\ P''(x)P(x)-(P'(x))^2\leq 0$.
-		\item Montrer que $P',\dots ,P^{(n-1)}$ sont à racines réelles.
-		\item Démontrer que $\forall k\in \crblanc{1}{n-1},\ a_k^2\leq a_{k-1}a_{k+1}$.
-	\end{enumerate}
+	\section{Graphe d'un polynôme \telecom{2}}
+	\textcolor{blue}{\hyperref[sec:graphe-d'un-polynôme]{[Corrigé]}}\\
+	\label{Graphe d'un polynôme}
+	Soit $P$ un polynôme de degré $n\geq 2$. Montrer que le graphe de $P$ a au plus $n$ points alignés.
 	
 	\section{Polynômes qui commutent avec cosinus \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:polynomes-qui-commutent-avec-cosinus-etoile3]{[Corrigé]}}\\
@@ -1609,11 +1653,27 @@
 	Déterminer l'ensemble des polynômes $P\in \R[X]$ tels que
 	$$\forall t\in \R,\ P(\cos t)+P(\sin t)=1$$
 	
+	\section{Division euclidienne (1) \ccinp{2}}
+	\textcolor{blue}{\hyperref[sec:division-euclidienne-(1)]{[Corrigé]}}\\
+	\label{Division euclidienne (1)}
+	Déterminer le reste dans la division euclidienne de $X^{42}+X^{1729}+X^{11\, 111}$ par $X^2+X+1$.
 	
-	\section{Logarithme polynomial ? \etoile{1}}
-	\textcolor{blue}{\hyperref[sec:logarithme-polynomial--etoile1]{[Corrigé]}}\\
-	\label{logpoly}
-	\label{Logarithme polynomial ?}
+	\section{Division euclidienne (2) \ccinp{1}}
+	\textcolor{blue}{\hyperref[sec:division-euclidienne-(2)]{[Corrigé]}}\\
+	\label{Division euclidienne (2)}
+	Soit $n\in\N$. Déterminer le reste dans la division euclidienne de $(\cos\theta+X\sin(\theta))^n$ par $X^2+1$.
+	
+	\section{Fonctions trigonométriques polynomiale ? \ccinp{1}}
+	\textcolor{blue}{\hyperref[sec:division-euclidienne-(1)]{[Corrigé]}}\\
+	\label{Division euclidienne (1)}
+	\begin{enumerate}[leftmargin=*]
+		\item Montrer que $\cos$ n'est pas une fonction polynomiale.
+		\item Montrer que $\tan$ n'est pas une fonction polynomiale.
+	\end{enumerate}
+	
+	\section{Logarithme rationnel ? \telecom{2}}
+	\textcolor{blue}{\hyperref[sec:logarithme-rationnel-?]{[Corrigé]}}\\
+	\label{Logarithme rationnel ?}
 	Existe-il une fraction rationnelle $R\in\K(X)$ telle que $R'(X)=\displaystyle\frac{1}{X}$.
 	
 	\section{Une fraction rationnelle \etoile{1}}
@@ -1622,14 +1682,44 @@
 	\label{Une fraction rationnelle}
 	Décomposer en éléments simples sur $\C(X)$ la fraction rationnelle $F(X)=\displaystyle\frac{1}{X^n(1-X)^n}$.
 	
+	\section{Dérivé d'un polynôme scindé sur $\R$ \centraleponts{3}}
+	\textcolor{blue}{\hyperref[sec:dérivé-d'un-polynôme-scindé-sur-R]{[Corrigé]}}\\
+	\label{Dérivé d'un polynôme scindé sur R}
+	Soit $P$ un polynôme de degré supérieur ou égal à $2$ scindé sur $\R$.
+	\begin{enumerate}
+		\item Montrer que $P'$ l'est aussi.
+		\item On fixe $\alpha\in \R$. Montrer que $P'+\alpha P$ l'est aussi.
+	\end{enumerate}
+	
+	\section{Une condition nécessaire pour qu'un polynôme soit scindé sur $\R$ \centraleponts{3}}
+	\textcolor{blue}{\hyperref[sec:une-condition-nécessaire-pour-qu'un-polynôme-soit-scindé-sur-R]{[Corrigé]}}\\
+	\label{Une condition nécessaire pour qu'un polynôme soit scindé sur R}
+	Soit $P=\displaystyle\sum\limits_{k=0}^n{a_kX^k}$ scindé sur $\R$.
+	\begin{enumerate}
+		\item Montrer que $\forall x\in \R,\ P''(x)P(x)-(P'(x))^2\leq 0$.
+		\item Montrer que $P',\dots ,P^{(n-1)}$ sont à racines réelles.
+		\item Démontrer que $\forall k\in \crblanc{1}{n-1},\ a_k^2\leq a_{k-1}a_{k+1}$.
+	\end{enumerate}
+	
+	\section{Une condition nécessaire pour qu'un polynôme soit dissocié sur $\R$ \telecom{2}}
+	\textcolor{blue}{\hyperref[sec:une-condition-nécessaire-pour-qu'un-polynôme-soit-dissocié-sur-R]{[Corrigé]}}\\
+	\label{Une condition nécessaire pour qu'un polynôme soit dissocié sur R}
+	Soit $P=\displaystyle\sum_{k=0}^na_kX^k$ de degré $n\geq 2$ scindé à racines simples sur $\R$.
+	\begin{enumerate}
+		\item Montrer que $P'$ est scindé à racines simples sur $\R$.
+		\item Montrer que $\forall k\in \crblanc{0}{n-1},\ a_k^2+a_{k+1}^2>0$.
+	\end{enumerate}
+	
 	\section{Théorème de Bernstein}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-bernstein]{[Corrigé]}}\\
-	\label{theobernstein}
 	\label{Théorème de Bernstein}
-	Soient $n\in \N$ et $P\in \C_n[X]$.
+	Soient $n\in \N$ et $P\in \C_n[X]$. Pour tout $\lambda\in \C$ on pose $Q_\lambda(X)=\dfrac{P(\lambda X)-P(\lambda)}{X-1}$. On fixe $\lambda\in \C$.
 	\begin{enumerate}
-		\item En décomposant la fraction rationnelle $\displaystyle\frac{X^k}{X^n+1}$ en éléments simples, montrer qu'en notant $\zeta_1,\dots,\zeta_n$ les racines de $X^n+1$ on a :
+		\item En décomposant la fraction rationnelle $\displaystyle\frac{Q_\lambda(X)}{X^n+1}$ en éléments simples, montrer qu'en notant $\zeta_1,\dots,\zeta_n$ les racines de $X^n+1$ on a :
+		$$\lambda P'(\lambda)=\displaystyle\frac{2}{n}\sum_{k=1}^n\frac{\zeta_kP(\zeta_k\lambda)}{(\zeta_k-1)^2}-\dfrac{2}{n}P(\lambda)\sum_{k=1}^n\frac{\zeta_k}{(\zeta_k-1)^2}$$
+		\item En déduire l'égalité :
 		$$XP'(X)=\displaystyle\frac{n}{2}P(X)+\frac{2}{n}\sum_{k=1}^n\frac{\zeta_kP(\zeta_kX)}{(\zeta_k-1)^2}$$
+		On pourra appliquer le résultat de la question 2 a un polynôme bien choisi.
 		\item En déduire que $\sup\limits_{z\in \U}|P'(z)|\leq n\sum\limits_{z\in \U}|P(z)|$.
 	\end{enumerate}
 	
@@ -5761,8 +5851,10 @@ Alors, on a l'équivalence :
 		\end{enumerate}
 		\item Ce dernier résultat contredit la minimalité de $\alpha$ donc $\alpha=0$. Autrement dit $P(z_0)=0$ et le théorème est démontré.
 	\end{enumerate}
+	
 	\subsection{Bernoulli}\label{sec:bernoulli}
 	\textcolor{blue}{\hyperref[bernoulli]{[Enoncé]}}\\
+	
 	\subsection{Lagrange \etoile{1}}\label{sec:lagrange-etoile1}
 	\textcolor{blue}{\hyperref[lagrange]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -5786,18 +5878,7 @@ Alors, on a l'équivalence :
 	\subsubsection{Triangles dont les sommets sont à coordonnées rationnelles}
 	\subsection{Hilbert}\label{sec:hilbert}
 	\textcolor{blue}{\hyperref[hilbert]{[Enoncé]}}\\
-	\subsubsection{Points critiques des polynômes de Hilbert \etoile{3}}
-	\begin{enumerate}[leftmargin=*]
-		\item Notons $f_n:x\mapsto F_n(x)$. $f_n$ est $\mathcal C^\infty$ sur $]0,1[$ car $F_n$ n'admet pas de pôle dans cet intervalle.\\
-		Ensuite d'après le cours $F_n(X)=\displaystyle\sum_{k=0}^n\frac{1}{X-k}$. Donc $\lim\limits_{x\to 0^+}f(x)=+\infty$ et $\lim\limits_{x\to 1^-}f(x)=-\infty$.\\
-		De plus $\forall x\in ]0,[1,\ f_n'(x)=-\displaystyle\sum_{k=0}^n\frac{1}{(X-k)^2}<0$. Donc $f_n$ est strictement décroissante sur $]0,1[$.\\
-		D'après le théorème de la bijection $f_n$ s'annule exactement une fois sur $]0,1[$.
-		\item Fixons $n\geq 2$. $f_n(x_n)=0$ donc $\displaystyle\frac{1}{x_n}=\sum_{k=1}^n\frac{1}{k-x_n}\geq \sum_{k=1}^n\frac{1}{k}:=H_n$.\\
-		On sait que $H_n\unfty\longrightarrow+\infty$ donc $x_n\unfty\longrightarrow 0$.
-		\item Fixons $n\geq 2$.\\
-		On réécrit de même $\displaystyle H_n\leq\frac{1}{x_n}=\frac{1}{1-x_n}+\sum_{k=2}^n\frac{1}{k-x_n}\leq\frac{1}{1-x_n}+\sum_{k=2}^n\frac{1}{k-1}=\frac{1}{1-x_n}+H_{n-1}=\frac{1}{1-x_n}-\frac{1}{n}+H_n$.\\
-		Or on montre classiquement (cf. \ref{Série harmonique}) que $H_n\unfty\sim\ln n$ d'où $\displaystyle\frac{1}{1-x_n}-\frac{1}{n}+H_n\unfty\sim\ln n$ puis $x_n\unfty\sim\displaystyle\frac{1}{\ln n}$.
-	\end{enumerate}
+	
 	\subsection{Laguerre}\label{sec:laguerre}
 	\textcolor{blue}{\hyperref[laguerre]{[Enoncé]}}\\
 	
@@ -5812,10 +5893,37 @@ Alors, on a l'équivalence :
 	
 	\subsection{Polynômes cyclotomiques}\label{sec:polynomes-cyclotomiques}
 	\textcolor{blue}{\hyperref[polycyclotomiques]{[Enoncé]}}\\
-	\subsection{Suite de polynômes défini par récurrence}\label{sec:suite-de-polynomes-defini-par-recurrence}
-	\textcolor{blue}{\hyperref[Suite de polynùomes défini par récurrence]{[Enoncé]}}\\
+	
+	\subsection{Suite de polynômes définis par récurrence}\label{sec:suite-de-polynômes-definis-par-recurrence}
+	\textcolor{blue}{\hyperref[Suite de polynômes définis par récurrence]{[Enoncé]}}\\
+	
+	\subsection{Equation polynomiale (1)}
+	\label{sec:équation-polynomiale-(1)}
+	\textcolor{blue}{\hyperref[Equation polynomiale (1)]{[Enoncé]}}\\
+	
+	\subsection{Equation polynomiale (2)}
+	\label{sec:équation-polynomiale-(2)}
+	\textcolor{blue}{\hyperref[Equation polynomiale (1)]{[Enoncé]}}\\
+	
+	\subsection{Equation polynomiale (3)}
+	\label{sec:équation-polynomiale-(3)}
+	\textcolor{blue}{\hyperref[Equation polynomiale (3)]{[Enoncé]}}\\
+	
+	\subsection{Equation polynomiale (4)}
+	\label{sec:équation-polynomiale-(4)}
+	\textcolor{blue}{\hyperref[Equation polynomiale (4)]{[Enoncé]}}\\
+	
+	\subsection{Equation polynomiale (5)}
+	\label{sec:équation-polynomiale-(5)}
+	\textcolor{blue}{\hyperref[Equation polynomiale (5)]{[Enoncé]}}\\
+	
+	\subsection{Equation de Shapiro}
+	\label{sec:équation-de-shapiro}
+	\textcolor{blue}{\hyperref[Equation de Shapiro]{[Enoncé]}}\\
+	
 	\subsection{Théorème de la racine rationnelle}\label{sec:theoreme-de-la-racine-rationnelle}
 	\textcolor{blue}{\hyperref[Théorème de la racine rationnelle]{[Enoncé]}}\\
+	
 	\subsection{Critère d'Eisenstein \etoile{3}}\label{sec:critere-deisenstein-etoile3}
 	\textcolor{blue}{\hyperref[Eisenstein]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -5868,9 +5976,37 @@ Alors, on a l'équivalence :
 		Ainsi $\R$ n'admet pas de famille $\Q$-libre maximale : $\R$ est un $\Q$-espace vectoriel de dimension infinie.
 	\end{enumerate}
 	
-
+	\subsection{Points critiques des polynômes de Hilbert \centraleponts{3}}
+	\label{sec:points-critiques-des-polynômes-de-hilbert}
+	\textcolor{blue}{\hyperref[Points critiques des polynômes de Hilbert]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Notons $f_n:x\mapsto F_n(x)$. $f_n$ est $\mathcal C^\infty$ sur $]0,1[$ car $F_n$ n'admet pas de pôle dans cet intervalle.\\
+		Ensuite d'après le cours $F_n(X)=\displaystyle\sum_{k=0}^n\frac{1}{X-k}$. Donc $\lim\limits_{x\to 0^+}f(x)=+\infty$ et $\lim\limits_{x\to 1^-}f(x)=-\infty$.\\
+		De plus $\forall x\in ]0,[1,\ f_n'(x)=-\displaystyle\sum_{k=0}^n\frac{1}{(X-k)^2}<0$. Donc $f_n$ est strictement décroissante sur $]0,1[$.\\
+		D'après le théorème de la bijection $f_n$ s'annule exactement une fois sur $]0,1[$.
+		\item Fixons $n\geq 2$. $f_n(x_n)=0$ donc $\displaystyle\frac{1}{x_n}=\sum_{k=1}^n\frac{1}{k-x_n}\geq \sum_{k=1}^n\frac{1}{k}:=H_n$.\\
+		On sait que $H_n\unfty\longrightarrow+\infty$ donc $x_n\unfty\longrightarrow 0$.
+		\item Fixons $n\geq 2$.\\
+		On réécrit de même $\displaystyle H_n\leq\frac{1}{x_n}=\frac{1}{1-x_n}+\sum_{k=2}^n\frac{1}{k-x_n}\leq\frac{1}{1-x_n}+\sum_{k=2}^n\frac{1}{k-1}=\frac{1}{1-x_n}+H_{n-1}=\frac{1}{1-x_n}-\frac{1}{n}+H_n$.\\
+		Or on montre classiquement (cf. \ref{Série harmonique}) que $H_n\unfty\sim\ln n$ d'où $\displaystyle\frac{1}{1-x_n}-\frac{1}{n}+H_n\unfty\sim\ln n$ puis $x_n\unfty\sim\displaystyle\frac{1}{\ln n}$.
+	\end{enumerate}
+	
 	\subsection{Zéros des polynômes de Taylor du sinus}\label{sec:zeros-des-polynomes-de-taylor-du-sinus}
-		\textcolor{blue}{\hyperref[Zéros des polynômes de Taylor du sinus]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Zéros des polynômes de Taylor du sinus]{[Enoncé]}}\\
+	
+	\subsection{Polynôme de Taylor de l'exponentielle \ccinp{1}}
+	\label{sec:polynôme-de-taylor-de-l'exponentielle}
+	\textcolor{blue}{\hyperref[Polynôme de Taylor de l'exponentielle]{[Enoncé]}}\\
+	Soit $z\in \C$ une racine de $P$. Supposons par l'absurde que $P'(z)=0$.\\
+	On a $0=P'(z)=\displaystyle\sum_{k=0}^{n-1}\frac{z^k}{k!}=P(z)-z^n=-z^n$ donc $z=0$. Ceci est absurde puisque $P(0)=1\ne 0$. On en déduit que $P$ est scindé à racines simples.
+	
+	\subsection{Les fonctions localement polynomiales sont polynomiales \centraleponts{2}}
+	\label{sec:les-fonctions-localement-polynomiale-sont-polynomiales}
+	\textcolor{blue}{\hyperref[Les fonctions localement polynomiales sont polynomiales]{[Enoncé]}}\\
+	On sait déjà que $f$ est égal à un certain polynôme $P$ sur un intervalle $[0,\varepsilon]$. L'idée va être de trouver le plus grand intervalle sur lequel $f$ est égale à $P$.\\
+	On introduit donc $s:=\sup\{t>0,\ \forall x\in [0,t],\ f(x)=P(x)\}\in \R_+\cup\{+\infty\}$. Le but est de montrer que $s=+\infty$.\\
+	Supposons par l'absurde $s\in \R$. Alors $\exists 0<\alpha<s,\ \exists Q\in \R[X],\ \forall x\in ]s-\alpha,s+\alpha[,\ f(x)=Q(x)$. En particulier $\forall x\in [s-\alpha,s[,\ P(x)=f(x)=Q(x)$. $P$ et $Q$ coïncident en une infinité de points, ils sont donc égaux. Ceci contredit la maximalité de $s$ et on en déduit que $s=+\infty$.\\
+	On peut faire de même pour montrer que $f$ est polynomiale sur $]-\infty,1]$. Ce polynôme coïncide avec $P$ sur $[0,1]$, ils sont donc égaux et par suite $\forall x\in \R,\ f(x)=P(x)$.
 	
 	\subsection{Intégrales de polynômes \etoile{1}}\label{sec:integrales-de-polynomes-etoile1}
 	\textcolor{blue}{\hyperref[Intégrales de polynômes]{[Enoncé]}}\\
@@ -5922,36 +6058,11 @@ Alors, on a l'équivalence :
 		On prend $P=X^2(X-1)=X^3-X^2$. $P''=6X-2$ ne divise pas $P$.
 	\end{enumerate}
 	
-	\subsection{Une condition nécessaire pour qu'un polynôme réel soit à racines réelles \etoile{3}}\label{sec:une-condition-necessaire-pour-quun-polynome-reel-soit-a-racines-reelles-etoile3}
-	\textcolor{blue}{\hyperref[polyreelracinesrellees]{[Enoncé]}}\\
-	\begin{enumerate}
-		\item On écrit $P=\Lambda\displaystyle\prod\limits_{i=1}^r{(X-x_i)^{m_i}}$, où $S=\{x_i,i\in \crblanc{1}{r}\}$ est l'ensemble des racines de $P$.\\
-		On sait alors que $\displaystyle\frac{P'}{P}=\displaystyle\sum\limits_{i=1}^r{\displaystyle\frac{m_i}{X-x_i}}$ et par dérivation, $\forall x\in \R\setminus S,\ \displaystyle\frac{P''(x)P(x)-(P'(x))^2}{(P(x))^2}=\displaystyle\sum\limits_{i=1}^r{-\displaystyle\frac{m_i}{(x-x_i)^2}}\leq 0$.\\\\
-		c'est à dire $\forall x\in \R\setminus S,\ P''(x)P(x)-(P'(x))^2\leq 0$.\\
-		L'inégalité est trivialement vérifiée sur $S$.
-		\item \underline{\textbf{Première méthode: théorème de Rolle}}\\
-		\underline{Initialisation:}\\
-		Quitte à réindicer on peut supposer $x_1<\dots<x_r$.
-		Soit $i\in \crblanc{1}{r-1}$. On sait que $x_i$ est racine de $P'$ de multiplicité $m_i-1$ (en considérant que $x_i$ n'est pas racine de $P'$ si $m_i-1=0$).\\
-		De plus $x_i<x_{i+1},P(x_i)=0=P(x_{i+1}) \text{ et }x\mapsto P(x)$ est continue sur $[x_i,x_{i+1}]$ et dérivable sur $]x_i,x_{i+1}[$ donc d'après le théorème de Rolle, $\exists y_i\in ]x_i,x_{i+1}[,\ P'(y_i)=0$. De par la définition des $y_i$ on a $y_1<\dots<y_{r-1}$.\\
-		On a donc trouvé $r-1+\displaystyle\sum\limits_{i=1}^r{(m_i-1)}=\deg(P)-1$ racines de $P'$, comptées avec multiplicité.\\
-		Comme $\deg(P')\leq \deg(P)-1$, $P'$ n'a pas d'autre racine. Elles sont donc bien toutes réelles.\\
-		\underline{Hérédité:}\\
-		Soit $k\in \crblanc{1}{n-2}$ tel que $P^{(k)}$ n'ai que des racines réelles. En appliquant le résultat précédant à $P^{(k)}$ on obtient directement le résultat voulu.\\
-		\underline{Conclusion}: Pour tout $k\in \crblanc{1}{n-1}$, $P^{(k)}$ est à racines réelles.\\\\
-		\underline{\textbf{Deuxième méthode: théorème de Gauss-Lucas}}\\
-		l'exercice \ref{Gauss-Lucas} montre que si $P$ est à racines réelles alors $P'$ l'est aussi. Une récurrence similaire à celle de l'autre méthode permet de conclure.
-		\item On applique le résultat de la question $1$ à $P,P',\dots,P^{(n-1)}$:
-		$$\forall x\in \R,\forall k\in \crblanc{1}{n-1},\ P^{(k+1)}(x)P^{(k-1)}(x)-(P^k(x))^2\leq 0$$
-		En particulier d'après la formule de Taylor, pour $x=0$:
-		\begin{align*}
-			\forall k\in \crblanc{1}{n-1},\ (k+1)!\ a_{k+1}\cdot (k-1)!\ a_{k-1}&\leq (k!)^2a_k^2\\
-			\iff a_{k+1}a_{k-1}\displaystyle\frac{k+1}{k}&\leq a_k^2
-		\end{align*}
-		Enfin si $a_{k+1}a_{k-1}\leq 0$, l'inégalité est trivialement vérifiée,\\
-		et si $a_{k+1}a_{k-1}>0$ alors $\displaystyle\frac{k+1}{k}\geq 1\implies a_{k+1}a_{k-1}\leq a_{k+1}a_{k-1}\displaystyle\frac{k+1}{k}\leq a_k^2$.
-	\end{enumerate}
-	
+	\subsection{Graphe d'un polynôme \telecom{2}}
+	\label{sec:graphe-d'un-polynôme}
+	\textcolor{blue}{\hyperref[Graphe d'un polynôme]{[Enoncé]}}\\
+	Notons $G=\{(x,P(x)),\ x\in \R\}$ le graphe de $P$. Soient $((x_i,y_i))_{0\leq i\leq n}\in G^{n+1}$ distincts et alignés. Par hypothèse il existe une droite passant par tous ces points. Notons $y=ax+b$ l'équation de cette droite.\\
+	$\forall i\in \crblanc{0}{n},\ P(x_i)=y_i=ax_i+b$. Donc le polynôme $P-aX-b$ a $n+1$ racines distinctes. Ceci est absurde car $\deg(P-aX-b)=n$.
 	
 	\subsection{Polynômes qui commutent avec cosinus \etoile{3}}\label{sec:polynomes-qui-commutent-avec-cosinus-etoile3}
 	\textcolor{blue}{\hyperref[polycommutecos]{[Enoncé]}}\\
@@ -5999,11 +6110,41 @@ Alors, on a l'équivalence :
 	$\forall t\in \R,\ P(\cos t)+P(\sin t)=1+\left(\cos^2 t-\displaystyle\frac{1}{2}\right)S\left[\left(\cos^2 t-\displaystyle\frac{1}{2}\right)^2\right]+\left(\sin^2 t-\displaystyle\frac{1}{2}\right)S\left[\left(\sin^2 t-\displaystyle\frac{1}{2}\right)^2\right]$\\
 	Or on remarque que $\left(\cos^2 t-\displaystyle\frac{1}{2}\right)^2-\left(\sin^2 t-\displaystyle\frac{1}{2}\right)^2=(\cos^2 t+\sin^2 t-1)(\cos^2 t-\sin^2 t)=0$.\\
 	Donc $\forall t\in \R,\ P(\cos t)+P(\sin t)=1+(\cos^2 t+\sin^2 t-1)S\left[\left(\sin^2 t-\displaystyle\frac{1}{2}\right)^2\right]=1$.\\\\\\
-	Ainsi l'ensemble des solutions de $(0)$ est $\mathcal{E}=\left\{\left(X^2-\displaystyle\frac{1}{2}\right)S\left[\left(X^2-\displaystyle\frac{1}{2}\right)^2\right]+\displaystyle\frac{1}{2},\ S\in \R[X]\right\}$
+	Ainsi l'ensemble des solutions de $(0)$ est $\mathcal{E}=\left\{\left(X^2-\displaystyle\frac{1}{2}\right)S\left[\left(X^2-\displaystyle\frac{1}{2}\right)^2\right]+\displaystyle\frac{1}{2},\ S\in \R[X]\right\}$.
 	
-	\subsection{Logarithme polynomial ? \etoile{1}}\label{sec:logarithme-polynomial--etoile1}
-	\textcolor{blue}{\hyperref[logpoly]{[Enoncé]}}\\
-	\underline{$1^{ère}$ solution:} par le degré\\
+	\subsection{Division euclidienne (1)}
+	Déterminer le reste dans la division euclidienne de $X^{42}+X^{1729}+X^{11\, 111}$ par $X^2+X+1$.\\\\
+	
+	Correction :\\
+	Notons $P=X^{42}+X^{1729}+X^{11\, 111}$ et $A=X^2+X+1$. On écrit $P=AQ+R$ la division euclidienne de $P$ par $A$. On montre classiquement que $A=(X-j)(X-\overline j)$ avec $j=e^{2i\pi/3}$, vérifiant $j^3=1$.\\
+	En évaluant en $j$ on obtient $aj+b=R(j)=j^{3\times 14}+j^{1728+1}+j^{11\,112-1}=1+j+j^{-1}=1+j+j^2=0$.\\
+	On en déduit $R(\overline j)=P(\overline j)=\overline{P(j)}=0$. $R$ est de degré au plus $1$ et a deux racines, c'est donc le polynôme nul.\\
+	Autrement dit $X^2+X+1|X^{42}+X^{1729}+X^{11\, 111}$.
+	
+	\subsection{Division euclidienne (2)}
+	Soit $n\in\N$. Déterminer le reste dans la division euclidienne de $(\cos\theta+X\sin(\theta))^n$ par $X^2+1$.\\\\
+	
+	Correction :\\
+	Notons $P=(\cos\theta+X\sin(\theta))^n$ et $A=X^2+1$. On écrit $P=AQ+R$ la division euclidienne de $P$ par $A$ avec $R=aX+b\in \R[X]$. En évaluant en $i$ on obtient $ai+b=e^{in\theta}$ d'où $a=\cos(n\theta)$ et $b=\sin(n\theta)$.
+	
+	\subsection{Fonctions trigonométriques polynomiale ?}
+	\label{sec:fonctions-trigonométriques-polynomiales-?}
+	\textcolor{blue}{\hyperref[Fonctions trigonométriques polynomiales ?]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item \underline{$1^{\T{ère}}$ méthode :} Sur $\R$\\
+		$\cos$ est bornée donc si c'était une fonction polynomiale, elle serait constante ce qui n'est pas le cas.\\
+		\underline{$2^{\T{nd}}$ méthode :} Sur $\R$\\
+		$\cos$ n'est pas identiquement nulle et s'annule une infinité de fois sur $\R$.\\
+		\underline{$3^{\T{ème}}$ méthode :} Sur un intervalle non vide quelconque\\
+		$\cos''=-\cos$ donc si c'était une fonction polynomiale, elle serait identiquement nulle (pour des raisons de degrés) ce qui n'est pas le cas.
+		\item Soit $P$ un éventuel polynôme égal à $\tan$ sur un intervalle non vide $I$. $P$ n'est pas constant car $\tan$ est injective sur $I$.\\
+		En dérivant $P'=1+P^2$. Pourtant $\deg(P')<\deg(P)\leq \deg(P^2)=\deg(1+P^2)$.
+	\end{enumerate}
+	
+	\subsection{Logarithme rationnel ? \telecom{2}}
+	\label{sec:logarithme-rationnel-?}
+	\textcolor{blue}{\hyperref[Logarithme rationnel ?]{[Enoncé]}}\\
+	\underline{$1^{\T{ère}}$ solution:} par le degré\\
 	Supposons qu'une telle fraction rationnelle $R=\displaystyle\frac{P}{Q}$ existe.\\
 	$R'(X)=\displaystyle\frac{1}{X}\iff \displaystyle\frac{P'(X)Q(X)-P(X)Q'(X)}{Q(X)^2}=\displaystyle\frac{1}{X}\iff X(P'(X)Q(X)-P(X)Q'(X))=Q(X)^2$.\\
 	Donc \begin{align*}
@@ -6017,7 +6158,7 @@ Alors, on a l'équivalence :
 	Mais alors $R'\in \K[X]$ ce qui est absurde donc il n'existe pas de fraction rationnelle dont la dérivée vaut $\displaystyle\frac{1}{X}$.\\
 	\textit{Cette solution a pour avantage d'être assez élémentaire, toutefois elle ne s'adapte pas vraiment à des fractions rationnelles plus sophistiqués que $\displaystyle\frac{1}{X}$.}\\
 	
-	\underline{$2^{ème}$ solution:} par l'étude de fonction\\
+	\underline{$2^{\T{nd}}$ solution:} par l'étude de fonction\\
 	Supposons qu'une telle fraction rationnelle $R$ existe.\\
 	Notons $z$ un pôle de $R$ de module maximal parmi les pôles de $R$.
 	$\forall x>|z|,\ R'(x)=\displaystyle\frac{1}{x}$.\\
@@ -6026,7 +6167,7 @@ Alors, on a l'équivalence :
 	Ceci est absurde donc il n'existe pas de fraction rationnelle dont la dérivée vaut $\displaystyle\frac{1}{X}$.\\
 	\textit{Cette solution, bien que très différente de la précédente, possède le même défaut que celle-ci pour ce qui est d'essayer de généraliser l'exercice...}\\
 	
-	\underline{$3^{ème}$ solution:} par l'étude de la multiplicité de $0$\\
+	\underline{$3^{\T{ème}}$ solution:} par l'étude de la multiplicité de $0$\\
 	Supposons qu'une telle fraction rationnelle $R=\displaystyle\frac{P}{Q}$ avec $P\land Q=1$ existe.\\
 	$R'(X)=\displaystyle\frac{1}{X}\iff \displaystyle\frac{P'(X)Q(X)-P(X)Q'(X)}{Q(X)^2}=\displaystyle\frac{1}{X}\iff X(P'(X)Q(X)-P(X)Q'(X))=Q(X)^2:(*)$\\
 	Donc $X|Q^2$ et d'après le lemme d'Euclide, $X|Q$. Notons $m$ la multiplicité de $0$ en tant que racine de $Q$. On a montré que $m\geq 1$.\\
@@ -6037,8 +6178,86 @@ Alors, on a l'équivalence :
 	
 	\subsection{Une fraction rationnelle}\label{sec:une-fraction-rationnelle}
 	\textcolor{blue}{\hyperref[fractionrationnelle]{[Enoncé]}}\\
-	\subsection{Théorème de Bernstein}\label{sec:theoreme-de-bernstein}
+	
+	\subsection{Dérivé d'un polynôme scindé sur $\R$ \centraleponts{3}}
+	\label{sec:dérivé-d'un-polynôme-scindé-sur-R}
+	\textcolor{blue}{\hyperref[Dérivé d'un polynôme scindé sur R]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Notons $x_1<\dots<x_r$ les racines distinctes de $P$.
+		Soit $i\in \crblanc{1}{r-1}$. On sait que $x_i$ est racine de $P'$ de multiplicité $m_i-1$ (en considérant que $x_i$ n'est pas racine de $P'$ si $m_i-1=0$).\\
+		De plus $x_i<x_{i+1},\ P(x_i)=0=P(x_{i+1}) \text{ et }x\mapsto P(x)$ est continue sur $[x_i,x_{i+1}]$ et dérivable sur $]x_i,x_{i+1}[$. Donc d'après le théorème de Rolle, $\exists y_i\in ]x_i,x_{i+1}[,\ P'(y_i)=0$. De par la définition des $y_i$ on a $y_1<\dots<y_{r-1}$.\\
+		On a donc trouvé $r-1+\displaystyle\sum\limits_{i=1}^r{(m_i-1)}=\deg(P)-1$ racines de $P'$, comptées avec multiplicité.\\
+		Comme $1\leq\deg(P')=\deg(P)-1$, $P'$ n'a pas d'autre racine. Elles sont donc bien toutes réelles.
+		\item Si $\alpha=0$ la question 1 conclut. Sinon, on pose $f:t\mapsto P(t)e^{\alpha t}$.\\
+		$\forall t\in \R,\ f'(t)=0\iff (P'(t)+\alpha P(t))e^{\alpha t}=0\iff P'(t)+\alpha P(t)=0$.\\
+		On fait la même preuve que pour la question 1 en appliquant Rolle à $f$ entre deux racines consécutives de $P$.
+	\end{enumerate}
+	
+	\subsection{Une condition nécessaire pour qu'un polynôme soit scindé sur $\R$ \centraleponts{3}}
+	\label{sec:une-condition-nécessaire-pour-qu'un-polynôme-soit-scindé-sur-R}
+	\textcolor{blue}{\hyperref[Une condition nécessaire pour qu'un polynôme soit scindé sur R]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item On écrit $P=\Lambda\displaystyle\prod\limits_{i=1}^r{(X-x_i)^{m_i}}$, où $S=\{x_i,i\in \crblanc{1}{r}\}$ est l'ensemble des racines de $P$.\\
+		On sait alors que $\displaystyle\frac{P'}{P}=\displaystyle\sum\limits_{i=1}^r{\displaystyle\frac{m_i}{X-x_i}}$ et par dérivation, $\forall x\in \R\setminus S,\ \displaystyle\frac{P''(x)P(x)-(P'(x))^2}{(P(x))^2}=\displaystyle\sum\limits_{i=1}^r{-\displaystyle\frac{m_i}{(x-x_i)^2}}\leq 0$.\\\\
+		c'est à dire $\forall x\in \R\setminus S,\ P''(x)P(x)-(P'(x))^2\leq 0$.\\
+		L'inégalité est trivialement vérifiée sur $S$.
+		\item \underline{\textbf{Première méthode: théorème de Rolle}}\\
+		\underline{Initialisation:}\\
+		Quitte à réindicer on peut supposer $x_1<\dots<x_r$.
+		Soit $i\in \crblanc{1}{r-1}$. On sait que $x_i$ est racine de $P'$ de multiplicité $m_i-1$ (en considérant que $x_i$ n'est pas racine de $P'$ si $m_i-1=0$).\\
+		De plus $x_i<x_{i+1},P(x_i)=0=P(x_{i+1}) \text{ et }x\mapsto P(x)$ est continue sur $[x_i,x_{i+1}]$ et dérivable sur $]x_i,x_{i+1}[$ donc d'après le théorème de Rolle, $\exists y_i\in ]x_i,x_{i+1}[,\ P'(y_i)=0$. De par la définition des $y_i$ on a $y_1<\dots<y_{r-1}$.\\
+		On a donc trouvé $r-1+\displaystyle\sum\limits_{i=1}^r{(m_i-1)}=\deg(P)-1$ racines de $P'$, comptées avec multiplicité.\\
+		Comme $\deg(P')\leq \deg(P)-1$, $P'$ n'a pas d'autre racine. Elles sont donc bien toutes réelles.\\
+		\underline{Hérédité:}\\
+		Soit $k\in \crblanc{1}{n-2}$ tel que $P^{(k)}$ n'ai que des racines réelles. En appliquant le résultat précédant à $P^{(k)}$ on obtient directement le résultat voulu.\\
+		\underline{Conclusion}: Pour tout $k\in \crblanc{1}{n-1}$, $P^{(k)}$ est à racines réelles.\\\\
+		\underline{\textbf{Deuxième méthode: théorème de Gauss-Lucas}}\\
+		l'exercice \ref{Gauss-Lucas} montre que si $P$ est à racines réelles alors $P'$ l'est aussi. Une récurrence similaire à celle de l'autre méthode permet de conclure.
+		\item On applique le résultat de la question $1$ à $P,P',\dots,P^{(n-1)}$:
+		$$\forall x\in \R,\forall k\in \crblanc{1}{n-1},\ P^{(k+1)}(x)P^{(k-1)}(x)-(P^k(x))^2\leq 0$$
+		En particulier d'après la formule de Taylor, pour $x=0$:
+		\begin{align*}
+			\forall k\in \crblanc{1}{n-1},\ (k+1)!\ a_{k+1}\cdot (k-1)!\ a_{k-1}&\leq (k!)^2a_k^2\\
+			\iff a_{k+1}a_{k-1}\displaystyle\frac{k+1}{k}&\leq a_k^2
+		\end{align*}
+		Enfin si $a_{k+1}a_{k-1}\leq 0$, l'inégalité est trivialement vérifiée,\\
+		et si $a_{k+1}a_{k-1}>0$ alors $\displaystyle\frac{k+1}{k}\geq 1\implies a_{k+1}a_{k-1}\leq a_{k+1}a_{k-1}\displaystyle\frac{k+1}{k}\leq a_k^2$.
+	\end{enumerate}
+	
+	\subsection{Une condition nécessaire pour qu'un polynôme soit dissocié sur $\R$ \telecom{2}}
+	\label{sec:une-condition-nécessaire-pour-qu'un-polynôme-soit-dissocié-sur-R}
+	\textcolor{blue}{\hyperref[Une condition nécessaire pour qu'un polynôme soit dissocié sur R]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item Notons $x_1<\dots<x_r$ les racines distinctes de $P$.
+		Soit $i\in \crblanc{1}{r-1}$. On sait que $x_i$ est racine de $P'$ de multiplicité $m_i-1$ (en considérant que $x_i$ n'est pas racine de $P'$ si $m_i-1=0$).\\
+		De plus $x_i<x_{i+1},\ P(x_i)=0=P(x_{i+1}) \text{ et }x\mapsto P(x)$ est continue sur $[x_i,x_{i+1}]$ et dérivable sur $]x_i,x_{i+1}[$. Donc d'après le théorème de Rolle, $\exists y_i\in ]x_i,x_{i+1}[,\ P'(y_i)=0$. De par la définition des $y_i$ on a $y_1<\dots<y_{r-1}$.\\
+		On a donc trouvé $r-1+\displaystyle\sum\limits_{i=1}^r{(m_i-1)}=\deg(P)-1$ racines de $P'$, comptées avec multiplicité.\\
+		Comme $1\leq\deg(P')=\deg(P)-1$, $P'$ n'a pas d'autre racine. Elles sont donc bien toutes réelles.
+		\item On remarque que $\forall k\in \crblanc{0}{n-1},\ a_k^2+a_{k+1}^2>0\iff (a_k\ne 0\T{ ou }a_{k+1}\ne 0)$.\\
+		Par la formule de Taylor $\forall k\in\crblanc{0}{n},\ a_k=\dfrac{P^{(k)}(0)}{k!}$. Donc si il existe $k\in \crblanc{0}{n-1}$ tel que $a_k=a_{k+1}$, alors $P^{(k)}(0)=P^{(k+1)}(0)=0$. Autrement dit $0$ est racine double de $P^{(k)}$.\\
+		Pourtant par une récurrence immédiate sur la question 1, $P$ scindé à racines simples sur $\R$ donne $P^{(k)}$ scindé à racines simples sur $\R$ pour tout $k<\deg(P)$.
+	\end{enumerate}
+	
+	\subsection{Théorème de Bernstein}
+	\label{sec:theoreme-de-bernstein}
 	\textcolor{blue}{\hyperref[Théorème de Bernstein]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Remarquons que $1$ est racine de $P(\lambda X)-P(\lambda)$ donc $Q_\lambda$ est un polynôme et de plus $$Q_\lambda(1)=\lim\limits_{z\to 1}\dfrac{P(\lambda z)-P(\lambda)}{z-1}=P(\lambda X)'(1)=\lambda P'(\lambda)$$
+		Les racines de $X^n+1$ sont les racines $n$-ième de $-1$, $X^n+1$ est donc scindé à racines simples. Par conséquent il existe des complexes $\alpha_{\lambda,1},\dots,\alpha_{\lambda,n}$ tels que $\displaystyle\frac{Q_\lambda(X)}{X^n+1}=\sum_{k=1}^n\frac{\alpha_{\lambda,k}}{X-\zeta_k}$. On a $\alpha_{\lambda,k}=\displaystyle\lim_{\zeta\to\zeta_k}\frac{(\zeta-\zeta_k)Q_\lambda(\zeta_k)}{\zeta^n+1}=\frac{Q_\lambda(\zeta_k)}{(X^n+1)'(\zeta_k)}=\frac{Q_\lambda(\zeta_k)}{n\zeta^{n-1}}=-\frac{\zeta_k(P(\lambda\zeta_k)-P(\lambda))}{n(\zeta_k-1)}$.\\
+		Ainsi $\displaystyle\frac{Q_\lambda(X)}{X^n+1}=\frac{1}{n}\sum_{k=1}^n\frac{\zeta_k(P(\zeta_k\lambda)-P(\lambda))}{(\zeta_k-1)(\zeta_k-X)}$.\\
+		En particulier $\lambda P'(\lambda)=Q_\lambda(1)=\displaystyle\frac{2}{n}\sum_{k=1}^n\frac{\zeta_kP(\zeta_k\lambda)}{(\zeta_k-1)^2}-\dfrac{2}{n}P(\lambda)\sum_{k=1}^n\frac{\zeta_k}{(\zeta_k-1)^2}$.
+		\item On applique la question 2 à $P=X^n$ :
+		$$n\lambda^n=\frac{2}{n}\left(\sum_{k=1}^n\frac{\zeta_k(\zeta_k^n\lambda^n-\lambda^n)}{(\zeta_k-1)^2}\right)=-\frac{4}{n}\sum_{k=1}^n\frac{\zeta_k\lambda^n}{(\zeta_k-1)^2}$$
+		D'où en évaluant en $\lambda=1$ :
+		$$\sum_{k=1}^n\frac{\zeta_k}{(\zeta_k-1)^2}=-\frac{n^2}{4}$$
+		En remplaçant dans le résultat de la question 2, comme $\C$ est infini on obtient l'égalité des polynômes :
+		$$XP'(X)=\displaystyle\frac{n}{2}P(X)+\frac{2}{n}\sum_{k=1}^n\frac{\zeta_kP(\zeta_kX)}{(\zeta_k-1)^2}$$
+		\item Soit $z\in \U$.\\
+		$|P'(z)|=|zP'(z)|\leq \displaystyle\frac{n}{2}|P(z)|+\frac{2}{n}\sum_{k=1}^n\frac{|P(\zeta_kz)|}{|\zeta_k-1|^2}\leq \left(\frac{n}{2}+\frac{2}{n}\sum_{k=1}^n\frac{1}{|\zeta_k-1|^2}\right)\sup_{z\in \U}|P(z)|$.\\
+		Or $\forall k\in \crblanc{1}{n},\ \zeta_k\in \U\implies \displaystyle\frac{\zeta_k}{(\zeta_k-1)^2}=\frac{1}{(1-\zeta_k^{-1})(\zeta_k-1)}=-\frac{1}{(\overline{\zeta_k}-1)(\zeta_k-1)}=-\frac{1}{|\zeta_k-1|^2}$.\\
+		Et finalement $\displaystyle\sup_{z\in \U}|P'(z)|\leq \left(\frac{n}{2}+\frac{2}{n}\cdot\frac{n^2}{4}\right)\sup_{z\in \U}|P(z)|=n\sup_{z\in \U}|P(z)|$.
+	\end{enumerate}
+	
 	\subsection{Etude d'un polynôme défini implicitement}\label{sec:etude-dun-polynome-defini-implicitement}
 	\textcolor{blue}{\hyperref[etudepolyimplicite]{[Enoncé]}}\\
 	
@@ -6839,6 +7058,7 @@ Alors, on a l'équivalence :
 		Finalement, $(f*\chi_n)$ converge uniformément vers $f$ sur $\R$.
 		\end{enumerate}
 	\end{enumerate}
+	
 	\subsection{Théorème de Chudnovsky \etoile{4}}\label{sec:theoreme-de-chudnovsky-etoile4}
 		\textcolor{blue}{\hyperref[Théorème de Chudnovsky]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6864,15 +7084,16 @@ Alors, on a l'équivalence :
 		D'autre part, $\forall n\in \N,\ \normep{\infty}{fg-P_nQ_n}\leq \normep{\infty}{fg-P_ng}+\normep{\infty}{P_ng-P_nQ_n}=\normep{\infty}{g}\normep{\infty}{f-P_n}+\normep{\infty}{P_n}\normep{\infty}{g-Q_n}$.\\
 		La suite $(P_n)_{n\in \N}$ converge pour la norme uniforme, elle est donc bornée pour cette norme d'où $\normep{\infty}{fg-P_nQ_n}\unfty\longrightarrow 0$.\\
 		Ainsi $(P_nQ_n)_{n\in \N}$, qui est une suite de fonctions polynomiales à coefficients entiers, converge uniformément vers $fg$ i.e $fg\in \mathcal Z$.
-		\item D'après la question $2$, $x\mapsto \displaystyle\frac{1}{2}\in \mathcal Z$. De plus on remarque que toutes les $f$ fonctions constantes égale à un entier sont dans $\mathcal Z$ (comme limite de la suite constante égale à $f$) Donc d'après la question $3$, quel que soit $d\in \mathcal D,\ x\mapsto d\in \mathcal Z$. De plus n'importe quelle fonction polynomiale $g$ associé à un monôme est aussi dans $\mathcal Z$ (comme limite de la suite constante égale à $g$)\\
+		\item D'après la question $2$, $x\mapsto \displaystyle\frac{1}{2}\in \mathcal Z$. De plus on remarque que toutes les fonctions $f$ constantes égales à un entier sont dans $\mathcal Z$ (comme limite de la suite constante égale à $f$) Donc d'après la question $3$, quel que soit $d\in \mathcal D,\ x\mapsto d\in \mathcal Z$. De plus n'importe quelle fonction polynomiale $g$ associé à un monôme est aussi dans $\mathcal Z$ (comme limite de la suite constante égale à $g$)\\
 		Ainsi, si $P=\displaystyle\sum_{k=0}^pa_kX^k\in \R[X]$ alors d'après la question $1$ on peut trouver des suites $(d_n^0),\dots,(d_n^p)\in \mathcal D^\N$ telles que $\forall k\in \crblanc{0}{p},\ a_k=\unfty\lim d_n^k$.\\
-		En posant pour $n\in \N$, $P_n=\displaystyle\sum_{k=0}^pd_n^kX^k$ on a alors $(P_n)\in \mathcal Z^\N$ et $\normep{\infty}{x\mapsto P(x)-P_n(x)}\unfty\longrightarrow 0$. On en déduit que $\mathcal Z$ contient l'ensemble des fonctions polynomiale à coefficients réels.\\
+		En posant pour $n\in \N$, $P_n=\displaystyle\sum_{k=0}^pd_n^kX^k$ on a alors $(P_n)\in \mathcal Z^\N$ et $\normep{\infty}{x\mapsto P(x)-P_n(x)}\unfty\longrightarrow 0$. On en déduit que $\mathcal Z$ contient l'ensemble des fonctions polynomiales à coefficients réels.\\
 		Fixons maintenant $f\in \mathcal C([a,b],\R)$. D'après le théorème d'approximation de Weierstrass, il existe une suite $(P_n)_{n\in \N}$ de fonctions polynomiales à coefficients réels convergeant uniformément vers $f$. Finalement, $f\in \mathcal Z$.\\
-		\textit{Remarque : on aurait pu formuler la réponse à l'aide du théorème de la double limite}
+		\textit{Remarque : on aurait pu formuler la réponse à l'aide du théorème de la double limite.}
 		\item Le choix de $a$ et $b$ est important ! En effet si le segment $[a,b]$ contient un entier alors on ne peut pas atteindre toutes les fonctions continues de $[a,b]$:\\
 		si $k\in \Z\cap[a,b]$ et si $(P_n)_{n\in \N}$ est une suite de fonctions polynomiales à coefficients entiers convergeant uniformément vers une fonction $P$ alors $(P_n(k))_{n\in \N}$ est une suite d'entier qui converge vers $P(k)$. $P(k)$ est donc un entier (cf. \ref{Topologie de Z}).\\\\
 		Le résultat actuel ne permet pas d'obtenir une fonction qui prendrait une valeur complexe car un polynôme à coefficients entiers est à valeurs réelles sur $[a,b]$.\\
-		On peut cependant avoir un résultat analogue en considérant des polynômes à coefficients dans l'anneau des entiers de Gauss $\Z[i]=\{a+ib,\ (a,b)\in \Z^2\}$. La preuve n'est pas bien plus compliquée, il suffit de montrer que la fonction constante égale à $i$ est dans $\mathcal Z$ ($(2i\varphi_n)_{n\in \N}$ fait l'affaire) puis d'utiliser la stabilité par produit et somme de $\mathcal Z$.
+		On peut cependant avoir un résultat analogue en considérant des polynômes à coefficients dans l'anneau des entiers de Gauss $\Z[i]=\{a+ib,\ (a,b)\in \Z^2\}$ :\\
+		Soit $h:[a,b]\to\C$. On note $h=f+ig$ avec $f$ et $g$ des fonctions réelles. On dispose de $(P_n),(Q_n)\in \Z[X]^\N$ qui convergent uniformément sur $[a,b]$ vers $f$ et $g$ respectivement. Alors $\normep{\infty}{h-(P_n+iQ_n)}\leq \normep{\infty}{f-P_n}+|i|\normep{\infty}{g-Q_n}\unfty\longrightarrow0$ avec $(P_n+iQ_n)\in (\Z[i])[X]^\N$.
 	\end{enumerate}
 	
 	\subsection{Théorème de sélection de Helly}\label{sec:theoreme-de-selection-de-helly}
