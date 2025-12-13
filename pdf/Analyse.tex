@@ -1284,14 +1284,15 @@
 	
 	\newpage
 \chapter{Polynômes}
-	\section{Théorème de d'Alembert-Gauss (2)}
+	\section{Théorème de d'Alembert-Gauss (2) \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-dalembert-gauss-2]{[Corrigé]}}\\
 	\label{alembertgauss2}
 	\label{Théorème de d'Alembert-Gauss 2}
 	Soit $P=\displaystyle\sum\limits_{k=0}^na_kX^k\in\C[X]$ de degré $n\geq 1$. Notons $\P=\left\{|P(z)|,z\in\C\right\}$.
 	\begin{enumerate}
 		\item Justifier que $\P$ admet une borne inférieure notée $\alpha$.
-		\item Soit $r>0$. Montrer que pour tout nombre complexe $z$ de module $r$, $|P(z)|\geq|a_p|r^n-\displaystyle\sum\limits_{k=0}^{n-1} |a_k|r^k$
+		\item Soit $r>0$.\\
+		Montrer que pour tout nombre complexe $z$ de module $r$, $|P(z)|\geq|a_p|r^n-\displaystyle\sum\limits_{k=0}^{n-1} |a_k|r^k$
 		\item En déduire que $\lim\limits_{|z|\to+\infty}|P(z)|=+\infty$.
 		\item
 		\begin{enumerate}[label=\alph*.]
@@ -1302,7 +1303,7 @@
 		\begin{enumerate}[label=\alph*.]
 			\item Montrer que $\inf\limits_{z\in\C}{|Q(z)|}=|Q(0)|=1$.
 			\item Montrer qu'il existe $p\in\crblanc{1}{n}$ et $b_p\ne0,b_{p+1},\dots,b_n\in \C$ tels que: $$Q=\displaystyle\sum\limits_{k=p+1}^n b_kX^k+b_pX^p+1$$
-			\item On pose $b_p=\rho e^{i\theta}$ avec $\rho<0$ et $\theta\in\R$. Montrer qu'il existe $r_0>0$ tel que $$\forall 0<r\leq r_0, \ |Q(re^{i\theta/p})|-1<0$$
+			\item On pose $b_p=\rho e^{i\theta}$ avec $\rho<0$ et $\theta\in\R$. Montrer qu'il existe $r_0>0$ tel que $$\forall r\in ]0,r_0], \ |Q(re^{i\theta/p})|-1<0$$
 		\end{enumerate}
 		\item Conclure.
 	\end{enumerate}
@@ -1312,16 +1313,16 @@
 	\label{bernoulli}
 	\label{Bernoulli}
 	\begin{enumerate}[leftmargin=*]
-		\item Définition:
+		\item Définition :
 		\begin{enumerate} 
-			\item Soit $P\in\R[X]$. Montrer qu'il existe un unique $Q\in\R[X]$ tel que $Q'=P$ et $\int_0^1 Q(x)dx=0$.
+			\item Soit $P\in\R[X]$. Montrer qu'il existe un unique $Q\in\R[X]$ tel que $Q'=P$ et $\displaystyle\int_0^1 Q(x)dx=0$.
 			\item En déduire qu'il existe une unique suite de polynômes réels $(B_n(X)$ vérifiant:
 			$$B_0=1\ ; \ \forall n \geq 1, \ B_n'=nB_{n-1} \ ; \ \forall n \geq 1, \ \int_0^1 B_n(x)dx=0$$
-			\item Calculer $B_1$ et $B_2$ En déduire $b_1$ et $b_2$.
+			\item Calculer $B_1$ et $B_2$.
 			\item Quel est le degré de $B_n$ pour $n\geq 0$.
 		\end{enumerate}
 		On appelle $(B_n)$ la suite des polynômes de Bernoulli. Pour tout $n\geq 0$, on pose $b_n=B_n(0)$. \\La suite de réels $(b_n)$ est appelée suite des nombres de Bernoulli.
-		\item Propriétés
+		\item Propriétés :
 		\begin{enumerate}
 			\item Montrer que pour tout $n\geq 2$, $B_n(0)=B_n(1)$.
 			\item Montrer que pour tout entier $n$, $B_n=(-1)^nB_n(1-X)$. En déduire que $B_{2n+1}(0)=B_{2n+1}(1)=0$.
@@ -1330,7 +1331,7 @@
 		\end{enumerate}
 	\end{enumerate}
 	
-	\section{Lagrange \etoile{1}}
+	\section{Lagrange \ccinp{1}}
 	\textcolor{blue}{\hyperref[sec:lagrange-etoile1]{[Corrigé]}}\\
 	\label{lagrange}
 	\label{Lagrange}
@@ -1347,7 +1348,7 @@
 	\label{Tchebychev}
 	On note $E$ l'espace vectoriel des fonctions continues de $[-1,1]$ dans $\R$. On désigne par $E_n$ l'espace des fonctions polynomiales de $[-1,1]$ dans $\R$ de degré inférieur ou égal à $n$, où $n$ est un entier naturel.
 	\begin{enumerate}[leftmargin=*]
-		\item Existence et unicité
+		\item Existence et unicité :
 		\begin{enumerate}
 			\item Démontrer qu'il existe un polynôme $T_n$ à coefficients réels de degré inférieur ou égal à $n$ vérifiant la propriété suivante:
 			$$ \forall \theta\in\R,\ T(\cos(\theta))=\cos(n\theta)$$
@@ -1357,12 +1358,12 @@
 		\item Montrer que, pour tout $x\in[-1,1], T_{n+2}(x)=2xT_{n+1}(x)-T_n(x)$
 		\item Quel est le degré de $T_n$ ? Quel est son coefficient dominant ?
 		\item Montrer que $T_n$ est à coefficients entiers, et que si $n$ est impair alors son coefficient constant est nul.
-		\item Racines et extremum:
+		\item Racines et extremum :
 		\begin{enumerate}
 			\item Montrer que, pour tout $x\in[-1,1], \ T_n(x)=2^{n-1}\displaystyle\prod\limits_{k=0}^{n-1}(x-\cos(\theta_k))$ où $\theta_k=\displaystyle\frac{(2k+1)\pi}{2n}$
 			\item On pose, pour $k\in\crblanc{0}{n}$, $c_k=\cos\left(\displaystyle\frac{k\pi}{n}\right)$. Calculer $\normep{\infty}{T_n}=\sup\limits_{x\in[-1,1]}|T_n(x)|$ puis prouver que $|T_n(c_k))|=\normep{\infty}{T_n}$ pour tout $k\in\crblanc{0}{n-1}$
 		\end{enumerate}
-		\item Orthogonalité:
+		\item Orthogonalité :
 		\begin{enumerate}
 			\item Montrer que, pour toutes fonctions $f,g$ dans $E$, l'application $t\mapsto \displaystyle\frac{f(t)g(t)}{\sqrt{1-t^2}}$ est intégrable sur $]-1,1[$.
 			\item Pour $f,g$ éléments de $E$, on pose $\langle f,g \rangle =\displaystyle\int_{-1}^1\frac{f(t)g(t)}{\sqrt{1-t^2}} dt$. Justifier que ceci définit un produit scalaire sur $E$.
@@ -1400,17 +1401,18 @@
 	\label{Hilbert}
 	On pose pour tout $k\in\N^*,H_k=\displaystyle\frac{1}{k!}\prod\limits_{j=0}^{k-1}(X-j)$ et $H_0=1$. On pose également pour tout $P\in\R[X], \ \Delta(P)=P(X+1)-P(X)$
 	\begin{enumerate}[leftmargin=*]
-		\item Montrer que $(H_k)_{k\in\crblanc{0}{n}}$ est une base de $\R_n[X]$.
+		\item Montrer que $(H_k)_{0\leq k\leq n}$ est une base de $\R_n[X]$.
 		\item Calculer $\Delta(H_0)$ et, pour tout $k\in\crblanc{1}{n}$, exprimer $\Delta(H_k)$ à l'aide de $H_{k-1}$.
 		\item Montrer que, pour tous $k,l \in\crblanc{0}{n}, \Delta^k(H_k)(0)=
 		\begin{cases}
-			1 & \mbox{si } k=\ell\\
+			1 & \mbox{si } k=l\\
 			0 & \mbox{sinon}
 		\end{cases}$
 		\item Montrer que, pour tout $P\in\R_n[X]$, $P=\displaystyle\sum\limits_{k=0}^n(\Delta^k(P))(0)H_k$
-		\item Soit $k\in\Z$. Calculer $H_n(k)$. On distinguera trois cas: $k\in\crblanc{0}{n-1}$, $k\geq n$ et $k<0$. Pour ce dernier, on posera $k=-\ell$.
+		\item Calculer $H_n(k)$ pour $k\in \Z$.\\
+		On distinguera trois cas : $k\in\crblanc{0}{n-1}$, $k\geq n$ et $k<0$.
 		\item En déduire que $H_n(\Z)\subset\Z$.
-		\item Montrer que $P\in\R_n[X]$ est à valeurs entières sur les entiers si et seulement si ses coordonnées dans la base $(H_k)_{k\in\crblanc{0}{n}}$ sont entières.  
+		\item Montrer que $P\in\R_n[X]$ est à valeurs entières sur les entiers si et seulement si ses coordonnées dans la base $(H_k)_{0\leq k\leq n}$ sont entières.  
 	\end{enumerate}
 	
 	\section{Laguerre \etoile{3}}
@@ -1539,6 +1541,11 @@
 	\label{Equation de Shapiro}
 	\textcolor{blue}{\hyperref[sec:équation-de-shapiro]{[Corrigé]}}\\
 	Trouver les polynômes $P\in \R[X]$ tels que $P(X)P(X+1)=P(X^2+X+1)$.
+	
+	\section{Degré d'une différence \telecom{1}}
+	\label{Degré d'une différence}
+	\textcolor{blue}{\hyperref[sec:degré-d'une-différence]{[Corrigé]}}\\
+	Soient $P\ne Q\in \R[X]$ de degrés $n\geq 0$. Montrer que $P^3-Q^3$ est au moins de degré $2n$.
 	
 	\section{Théorème de la racine rationnelle}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-la-racine-rationnelle]{[Corrigé]}}\\
@@ -1710,6 +1717,55 @@
 		\item Montrer que $\forall k\in \crblanc{0}{n-1},\ a_k^2+a_{k+1}^2>0$.
 	\end{enumerate}
 	
+	\section{Suite de polynômes scindés sur $\R$ \xens{3}}
+	\textcolor{blue}{\hyperref[sec:suite-de-polynômes-scindés-sur-R]{[Corrigé]}}\\
+	\label{Suite de polynômes scindés sur R}
+	Soit $(P_n)_{n\in \N}\in \R_n[X]^\N$ une suite de polynômes unitaires scindés sur $\R$ convergeant simplement vers un polynôme $P$ sur $\C$. Montrer que $P$ est scindé sur $\R$.
+	
+	\section{Borne de Cauchy \telecom{2}}
+	\textcolor{blue}{\hyperref[sec:borne-de-cauchy]{[Corrigé]}}\\
+	\label{Borne de Cauchy}
+	Soient $n\in \N^*$ et $P=X^n+\displaystyle\sum_{k=0}^{n-1}a_kX^k\in \C[X]$.\\
+	Montrer que pour toute racine $z$ de $P$ on a $|z|\leq 1+\max\limits_{0\leq k\leq n-1}|a_k|$.
+	
+	\section{Théorème d'Eneström-Kakeya \centraleponts{3}}
+	\textcolor{blue}{\hyperref[sec:théorème-d'eneström-kakeya]{[Corrigé]}}\\
+	\label{Théorème d'Eneström-Kakeya}
+	Soit $P=\displaystyle\sum_{k=0}^na_kX^k\in \R[X]$ tel que $\forall k\in \crblanc{0}{n},\ a_k>0$.
+	\begin{enumerate}
+		\item On suppose $a_0\leq a_1\leq\cdots\leq a_n$. Montrer que les racines de $P$ sont toutes de module au plus $1$.\\
+		On pourra considérer le polynôme $Q=(X-1)P$.
+		\item Montrer qu'en général les racines de $P$ sont comprises dans la couronne
+		$$C(r,R)=\{z\in \C\ |\ r\leq |z|\leq R\}$$
+		où $r$ et $R$ sont respectivement le minimum et le maximum de $\left(\dfrac{a_k}{a_{k+1}}\right)_{0\leq k\leq n-1}$.
+	\end{enumerate}
+	
+	\section{Perturbations de polynômes}
+	\textcolor{blue}{\hyperref[sec:pertubation-de-polynômes]{[Corrigé]}}\\
+	\label{Pertubations de polynômes}
+	Montrer pour tout $n\in \N^*$, il existe $(a_0,\dots,a_n)\in (\R^*_+)^n$ tel que $\forall (\varepsilon_0,\dots,\varepsilon_n)\in \{-1,1\}^n$, le polynôme
+	$$P=\sum_{k=0}^na_k\varepsilon_kX^k$$
+	soit scindé sur $\R$.
+	
+	\section{Polynômes à coefficients dans $\{-1,0,1\}$}
+	On note $S$ l'ensemble des polynômes à coefficients dans $\{-1,0,1\}$ et $R$ l'ensemble des racines réelles des polynômes non nuls de $S$.
+	
+	\subsection{Polynômes scindés}
+	\textcolor{blue}{\hyperref[sec:polynômes-scindés]{[Corrigé]}}\\
+	\label{Polynômes scindés}
+	Déterminer les polynômes unitaires de $S$ qui sont scindés sur $\R$.
+	
+	\subsection{Ensemble des racines (1)}
+	\textcolor{blue}{\hyperref[sec:ensemble-des-racines-(1)]{[Corrigé]}}\\
+	\label{Ensemble des racines (1)}
+	Montrer que $R$ est une partie dénombrable de $\left[-2,-\dfrac{1}{2}\right]\cup\{0\}\cup\left[\dfrac{1}{2},2\right]$.
+	
+	\subsection{Ensemble des racines (2)}
+	\textcolor{blue}{\hyperref[sec:ensemble-des-racines-(2)]{[Corrigé]}}\\
+	\label{Ensemble des racines (2)}
+	Montrer que $R$ est dense dans $\left[-2,-\dfrac{1}{2}\right]\cup\{0\}\cup\left[\dfrac{1}{2},2\right]$.\\
+	On pourra construire pour $\alpha\in \left[\dfrac{1}{2},1\right]$ une partie $I$ de $\N^*$ telle que $\displaystyle\sum_{n\in I}\alpha^n=1$.
+	
 	\section{Théorème de Bernstein}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-bernstein]{[Corrigé]}}\\
 	\label{Théorème de Bernstein}
@@ -1733,16 +1789,24 @@
 		\item Décomposer $\displaystyle\frac{1}{A_n}$ en éléments simples.
 	\end{enumerate}
 	
-	\section{P'|P \etoile{1}}
-	\textcolor{blue}{\hyperref[sec:pp-etoile1]{[Corrigé]}}\\
-	\label{derivdiv}
+	\section{P'|P \telecom{1}}
+	\textcolor{blue}{\hyperref[sec:P'|P]{[Corrigé]}}\\
 	\label{P'|P}
 	Déterminer les polynômes $P\in \C[X]$ tels que $P'$ divise $P$.
 	
-	\section{Polynômes positifs \etoile{2}}
-	\textcolor{blue}{\hyperref[sec:polynomes-positifs-etoile2]{[Corrigé]}}\\
-	\label{polyposi}
-	\label{Polynômes positifs}
+	\section{Polynôme positif (1) \centraleponts{3}}
+	\textcolor{blue}{\hyperref[sec:polynôme-positif-(1)]{[Corrigé]}}\\
+	\label{Polynôme positif (1)}
+	Soit $P\in \R[X]$ de degré $n\in \N^*$ tel que $\forall x\in \R,\ P(x)\geq 0$. On pose $Q=\displaystyle\sum_{k=0}^nP^{(k)}$.
+	\begin{enumerate}
+		\item Montrer que $\lim\limits_{|x|\to +\infty}Q(x)=+\infty$.
+		\item En déduire que $Q$ admet un minimum sur $\R$.
+		\item En déduire que $\forall x\in \R,\ Q(x)\geq 0$.
+	\end{enumerate}
+	
+	\section{Théorème de Pythagore polynomial \centraleponts{3}}
+	\textcolor{blue}{\hyperref[sec:théorème-de-pythagore-polynomial]{[Corrigé]}}\\
+	\label{Théorème de Pythagore polynomial}
 	Soit $P\in\R[X]$ non constant tel que $P(x)\geq0$ pour tout réel $x$.
 	\begin{enumerate}
 		\item Montrer que le coefficient dominant de $P$ est positif et que les racines réelles de $P$ sont de multiplicité paire.
@@ -1750,10 +1814,9 @@
 		\item En déduire qu'il existe $A$ et $B$ dans $\R[X]$ tels que $P=A^2+B^2$.
 	\end{enumerate}
 	
-	\section{Polynômes carrés}
-	\textcolor{blue}{\hyperref[sec:polynomes-carres]{[Corrigé]}}\\
-	\label{polycarre}
-	\label{Polynômes carrés}
+	\section{Polynômes à valeurs carrées}
+	\textcolor{blue}{\hyperref[sec:polynomes-à-valeurs-carrées]{[Corrigé]}}\\
+	\label{Polynômes à valeurs carrées}
 	Soit $P\in \R[X]$ tel que $\forall n\in \N,\ \exists m\in \N,\ P(n)=m^2$. On souhaite montrer qu'il existe un polynôme $Q\in \R[X]$ tel que $P=Q^2$.
 	\begin{enumerate}
 		\item Soient $a\in \R$ et $f\in \mathcal C^{\infty}(]a,+\infty[,\R)$. On définit $\fonction{\Delta(f)}{]a,+\infty[}{\R}{x}{f(x+1)-f(x)}$. Montrer que :
@@ -1761,7 +1824,7 @@
 		\item Conclure en appliquant la question 1 à $x\mapsto \sqrt{P(x)}$.
 	\end{enumerate}
 	
-	\section{Polynômes réciproques \etoile{2}}
+	\section{Polynômes réciproques \ccinp{2}}
 	\textcolor{blue}{\hyperref[sec:polynomes-reciproques-etoile2]{[Corrigé]}}\\
 	\label{polyrecip}
 	\label{Polynômes réciproques}
@@ -1794,12 +1857,11 @@
 		\item $P(\Z)=\Z$
 	\end{enumerate}
 	
-	\section{Résultant et discriminant \etoile{2}}
+	\section{Résultant et discriminant \ccinp{2}}
 	\textcolor{blue}{\hyperref[sec:resultant-et-discriminant-etoile2]{[Corrigé]}}\\
 	\label{Résultant}
 	\label{Résultant et discriminant}
-	Soit $(m,n)\in(\N^*)^2$ un couple d'entiers naturels non nuls.
-	Soient $P=\displaystyle\sum\limits_{k=0}^{n}a_kX^k\in\K_n[X]$ et $Q=\displaystyle\sum\limits_{k=0}^{m}b_kX^k\in\K_m[X]$ deux polynômes.
+	Soit $(m,n)\in(\N^*)^2$. Soient $P=\displaystyle\sum\limits_{k=0}^{n}a_kX^k\in\K_n[X]$ et $Q=\displaystyle\sum\limits_{k=0}^{m}b_kX^k\in\K_m[X]$ deux polynômes.
 	\\ On pose le résultant de $P$ et $Q$: $$\operatorname{Res}(P,Q)= 
 	\begin{vmatrix}
 		a_0 & 0&\dots &\dots &0 &b_0 &0  &\dots &0\\
@@ -1827,13 +1889,15 @@
 		\item On suppose ici que $\K=\C$ et par conséquent que $P\in\C[X]$. Montrer que $P$ est scindé à racines simples si et seulement $\Delta(P)\ne 0$
 	\end{enumerate}
 	
-	\section{Théorème de Liouville : Fermat pour les polynômes \etoile{4}}
-	\textcolor{blue}{\hyperref[sec:theoreme-de-liouville--fermat-pour-les-polynomes-etoile4]{[Corrigé]}}\\
-	\label{liouvillepoly}
+	\section{Théorème de Liouville : Fermat pour les polynômes \xens{4}}
+	\textcolor{blue}{\hyperref[sec:theoreme-de-liouville--fermat-pour-les-polynomes]{[Corrigé]}}\\
 	\label{Théorème de Liouville : Fermat pour les polynômes}
 	Soit $n$ un entier supérieur ou égal à $3$. On souhaite montrer que si $(P,Q,R)\in \C[X]^3$ tel que $P^n+Q^n=R^n$ alors $P,Q,R$ sont égaux à une constante multiplicative près. On se donne $(P,Q,R)$ un tel triplet.
 	\begin{enumerate}
-		\item Montrer que l'on peut se ramener à $\tilde P,\tilde Q,\tilde R$ premiers entre eux deux à deux. Dorénavant on supposera $P,Q,R$ premiers entre eux deux à deux et on cherche à montrer que $P,Q,R$ sont constants.
+		\item Montrer que l'on peut se ramener à $\tilde P,\tilde Q,\tilde R$ premiers entre eux deux à deux.
+	\end{enumerate} 
+	Dorénavant on supposera $P,Q,R$ premiers entre eux deux à deux et on cherche à montrer que $P,Q,R$ sont constants.
+	\begin{enumerate}[resume]
 		\item On note $\zeta_1,\dots,\zeta_n$ les racines de $X^n+1$ et pour $i\in \crblanc{1}{n},\ T_i=P-\zeta_iQ$.\\
 		Montrer que $\forall i\in \crblanc{1}{n},\exists H_i\in \C[X],\ T_i=H_i^n$.\\
 		\item Conclure.
@@ -2744,7 +2808,7 @@ $$P_1(x)=x+x(1-x)(T_1(x)-\varepsilon) ,\; P_2(x)=x+x(1-x)(T_2(x)-\varepsilon),\;
 
 \newpage
 \chapter{Topologie}
-\section{Normes d'opérateur}
+\section{Normes d'opérateur \ccinp{1}}
 \textcolor{blue}{\hyperref[sec:normes-doperateur]{[Corrigé]}}\\
 \label{Normes d'opérateur}
 Soit $A\in\M_{n,p}(\R)$.
@@ -2759,46 +2823,49 @@ Soit $A\in\M_{n,p}(\R)$.
 \textcolor{blue}{\hyperref[sec:z-est-ferme-etoile1]{[Corrigé]}}\\
 Montrer que $\Z$ est fermé.
 
-\section{Orthogonalité et topologie}
+\section{Orthogonalité et topologie \ccinp{2}}
 \label{Orthogonalité et topologie}
 \textcolor{blue}{\hyperref[sec:orthogonalite-et-topologie]{[Corrigé]}}\\
-Soit $F$ un sous-espace vectoriel d'un espace préhilbertien réel $E$ que l'on munit de sa norme euclidienne. 
+Soit $F$ un sous-espace vectoriel d'un espace préhilbertien réel $E$ que l'on munit de sa norme euclidienne.
 \begin{enumerate}
 	\item Montrer que pour tout $y\in E, \ \varphi_y:x\in E \mapsto \langle x,y\rangle$ est continue.
 	\item Montrer que $F^{\bot}$ est un fermé dans $E$.
 	\item Montrer que de manière général, $\overline{F}\subset(F^{\bot})^{\bot}$
 \end{enumerate}
 
-\section{Ensemble des valeurs d'adhérence d'une suite}
+\section{Ensemble des valeurs d'adhérence d'une suite \centraleponts{3}}
 \label{Ensemble des valeurs d'adhérence d'une suite}
 \textcolor{blue}{\hyperref[sec:ensemble-des-valeurs-dadherence-dune-suite]{[Corrigé]}}\\
 Soit $(u_n)_{n\in \N}$ une suite à valeurs dans un espace vectoriel normé $E$. On note $V$ l'ensemble des valeurs d'adhérence de $(u_n)_{n\in \N}$.\\
 Montrer que $V=\displaystyle\bigcap\limits_{n\in \N}{\overline{\{u_k,\ k\geq n\}}}$ et en déduire que $V$ est fermé.
 
-\subsection{Valeur d'adhérence du cercle unité}
-\label{Valeur d'adhérence du cercle unité}
-\textcolor{blue}{\hyperref[sec:valeurs-dadherence-dune-suite]{[Corrigé]}}\\
+\subsection{Une application \etoile{4}}
+\label{Une application}
+\textcolor{blue}{\hyperref[sec:une-application]{[Corrigé]}}\\
 \begin{enumerate}
 	\item Soit $z\in \U$. Montrer que $1$ est une valeur d'adhérence de la suite $(z^n)_{n\in \N}$.
 	\item Soit $\begin{pmatrix}z_1\\\vdots\\z_m\end{pmatrix}\in \U^m$. Montrer que $\begin{pmatrix}1\\\vdots\\1\end{pmatrix}$ est une valeur d'adhérence de la suite $\begin{pmatrix}z_1^n\\\vdots\\z_m^n\end{pmatrix}_{n\in \N}$.
 	\item Que peut-on dire de complexes $a_1,\dots,a_n$ tels que $\displaystyle\sum_{k=1}^na_k^m$ converge pour $m\to\infty$ ?
 \end{enumerate}
 
-\section{Ensemble des suites convergentes}
+\section{Ensemble des suites convergents vers 0 \centraleponts{2}}
+\label{Ensemble des suites convergents vers 0}
+\textcolor{blue}{\hyperref[sec:ensemble-des-suites-convergents-vers-0]{[Corrigé]}}\\
+On note $\ell^\infty$ l'ensemble des suites bornées de $\K^\N$ que l'on munit de la norme $\normep{\infty}{\cdot}$.\\
+Montrer que l'ensemble des suites convergeant vers $0$ est un fermé de $\ell^\infty$.
+
+\subsection{Ensemble des suites convergentes \etoile{3} (HP)}
 \label{Ensemble des suites convergentes}
 \textcolor{blue}{\hyperref[sec:ensemble-des-suites-convergentes]{[Corrigé]}}\\
-On note $\ell^\infty$ l'ensemble des suites bornées de $\K^\N$ que l'on munit de la norme $\normep{\infty}{\cdot}$.
-\begin{enumerate}
-	\item Montrer que l'ensemble des suites convergeant vers $0$ est un fermé de $\ell^\infty$.
-	\item Montrer que l'ensemble des suites convergentes est un fermé de $\ell^\infty$.
-\end{enumerate}
+Montrer que l'ensemble des suites convergentes est un fermé de $\ell^\infty$.\\
+On pourra utiliser l'exercice \ref{Suite de Cauchy}.
 
- \section{Calcul d'une adhérence \xens{3}}
- \label{Calcul d'adhérence}
- \textcolor{blue}{\hyperref[Calcul d'adhérence corrigé]{[Corrigé]}}\\
- Quelle est l'adhérence de $E=\left\{\dfrac{1}{p}+\dfrac{1}{q},\ (p,q)\in (\N^*)^2\right\}$ ?
- 
-\section{Partie ouverte et fermée simultanément}
+\section{Calcul d'une adhérence \xens{3}}
+\label{Calcul d'adhérence}
+\textcolor{blue}{\hyperref[Calcul d'adhérence corrigé]{[Corrigé]}}\\
+Quelle est l'adhérence de $E=\left\{\dfrac{1}{p}+\dfrac{1}{q},\ (p,q)\in (\N^*)^2\right\}$ ?
+
+\section{Partie ouverte et fermée simultanément \centraleponts{3}}
 \label{Partie ouverte et fermée simultanément}
 \textcolor{blue}{\hyperref[sec:partie-ouverte-et-fermee-simultanement]{[Corrigé]}}\\
 Montrer que les seules parties à la fois ouvertes et fermées d'un espace vectoriel normé $E$ sont $\varnothing$ et $E$.
@@ -2813,13 +2880,13 @@ Soit $E$ un espace vectoriel normé et soit $A,B$ deux parties de $E$.
 	Montrer qu'il n'y a pas égalité en général.
 \end{enumerate}
 
-\section{Les sept espaces de Kuratowski}
+\section{Les sept espaces de Kuratowski \etoile{3}}
 \label{Les sept espaces de Kuratowski}
 \textcolor{blue}{\hyperref[sec:les-sept-espaces-de-kuratowski]{[Corrigé]}}\\
 Trouver une partie $A$ de $\R$ telles que les sept ensembles suivants soient tous distincts :
 $$A,\ring A,\overline A,\overline{\ring A},\ring{\overline A},\ring{\overline{\ring A}},\overline{\ring{\overline A}}$$
 
-\section{Intérieur d'un sev}
+\section{Intérieur d'un sous-espace \telecom{2}}
 \label{Intérieur d'un sev}
 \textcolor{blue}{\hyperref[sec:interieur-dun-sev]{[Corrigé]}}\\
 Soit $F$ un sous-espace vectoriel d'un espace vectoriel normé $E$.
@@ -2828,7 +2895,7 @@ Soit $F$ un sous-espace vectoriel d'un espace vectoriel normé $E$.
 	\item Montrer que si $F\ne E$, alors $\overset{\circ}{F}=\varnothing$.
 \end{enumerate}
 
-\section{Adhérence d'un sev}
+\section{Adhérence d'un sous-espace \centraleponts{3}}
 \label{Adhérence d'un sev}
 \textcolor{blue}{\hyperref[sec:adherence-dun-sev]{[Corrigé]}}\\
 Soit $E$ un espace vectoriel normée.
@@ -2838,7 +2905,7 @@ Soit $E$ un espace vectoriel normée.
 	\item Soit $H$ un hyperplan de $E$. Montrer que $H$ est fermé ou dense dans $E$.
 \end{enumerate}
 
-\section{Graphe fermé}
+\section{Graphe fermé \centraleponts{3}}
 \label{Graphe fermé}
 \textcolor{blue}{\hyperref[sec:graphe-ferme]{[Corrigé]}}\\
 Soit $f$ une fonction réelle. On note $G=\{(x,y)\in \R^2,\ y=f(x)\}$ le graphe de $f$.
@@ -2848,7 +2915,7 @@ Soit $f$ une fonction réelle. On note $G=\{(x,y)\in \R^2,\ y=f(x)\}$ le graphe 
 	\item Montrer que ce n'est plus vrai si on ne suppose plus $f$ bornée.
 \end{enumerate}
 
-\section{Application linéaire continue}
+\section{Application linéaire continue \centraleponts{2}}
 \label{Application linéaire continue}
 \textcolor{blue}{\hyperref[sec:application-lineaire-continue]{[Corrigé]}}\\
 On considère les espaces vectoriels normés $E=(\mathcal C^0([0,1],\R),\normep{\infty}{.})$ et $F=(\mathcal C^0([0,1],\R),\normep{1}{.})$ avec $\forall f\in \mathcal C^0([0,1],\R)$ :
@@ -2858,12 +2925,12 @@ $$\normep{\infty}{f}=\sup\limits_{[0,1]}f\quad\text{et}\quad \normep{1}{f}=\int_
 	\item Peut-on trouver une forme linéaire continue sur $E$ et pas sur $F$ ?
 \end{enumerate}
 
-\section{Application linéaire non continue}
+\section{Application linéaire non continue \centraleponts{2}}
 \label{Application linéaire non continue}
 \textcolor{blue}{\hyperref[sec:application-lineaire-non-continue]{[Corrigé]}}\\
 On note $E=\mathcal C^\infty(\R,\R)$. Existe-il une application linéaire sur $E$ continue pour aucune norme ?
 
-\section{Polynômes réels de degré $n$ scindés à racines simples sur $\R$ \etoile{4}}
+\section{Polynômes réels de degré $n$ scindés à racines simples sur $\R$ \xens{4}}
 \label{Polynômes réels de degré n scindés à racines simples sur R}
 \textcolor{blue}{\hyperref[sec:polynomes-reels-de-degre-n-scindes-a-racines-simples-sur-r-etoile4]{[Corrigé]}}\\
 On note $A$ l'ensemble des polynômes à coefficients réels de degré $n$ scindé à racines simples sur $\R$.
@@ -2872,7 +2939,7 @@ On note $A$ l'ensemble des polynômes à coefficients réels de degré $n$ scind
 	\item Déterminer l'adhérence de $A$.
 \end{enumerate}
 
-\section{Lemme de Riemann-Lebesgue \etoile{3}}
+\section{Lemme de Riemann-Lebesgue \centraleponts{3}}
 \label{Lemme de Riemann-Lebesgue}
 \textcolor{blue}{\hyperref[sec:lemme-de-riemann-lebesgue-etoile3]{[Corrigé]}}\\
 On considère un segment $[a,b]$ de $\R$, $(E,||.||)$ un espace vectoriel normé de dimension finie et $\phi:[a,b]\to E$.
@@ -2883,7 +2950,7 @@ On considère un segment $[a,b]$ de $\R$, $(E,||.||)$ un espace vectoriel normé
 	\item $\phi$ est une fonction continue par morceaux et intégrable sur $\R$ avec $a=-\infty$ et $b=+\infty$.
 \end{itemize}
 
-\section{Borel-Lebesgue}
+\section{Borel-Lebesgue (HP)}
 \label{Borel-Lebesgue}
 \textcolor{blue}{\hyperref[sec:borel-lebesgue]{[Corrigé]}}\\
 Soit $E$ un espace vectoriel normé dont on note $\mathcal T$ l'ensemble des ouverts. On dit qu'une partie $K$ de $E$ est compacte au sens de Borel-Lebesgue lorsque :
@@ -2891,7 +2958,7 @@ $$\forall (O_i)_{i\in I}\subset \mathcal T,\ K\subset \bigcup_{i\in I}O_i\implie
 Autrement dit, de tout recouvrement de $K$ composé d'ouverts, on peut extraire un sous-recouvrement fini.\\
 Montrer qu'une partie de $E$ est compacte au sens de Borel-Lebesgue si et seulement si elle l'est au sens de Bolzano-Weierstrass (définition par l'existence d'une valeur d'adhérence).\\\\
 
-\section{Parties compactes d'un espace vectoriel normé de dimension finie}
+\section{Parties compactes d'un espace vectoriel normé de dimension finie \etoile{2}}
 \label{Parties compactes d'un espace vectoriel normé de dimension finie}
 \textcolor{blue}{\hyperref[sec:parties-compactes-dun-espace-vectoriel-norme-de-dimension-finie]{[Corrigé]}}\\
 Soit $E$ un $\K$-espace vectoriel normé.
@@ -2903,7 +2970,7 @@ Soit $E$ un $\K$-espace vectoriel normé.
 	\item On suppose que $E$ est de dimension finie. Démontrer que les parties compactes de $E$ sont exactement les parties fermées bornées de $E$.
 \end{enumerate}
 
-\section{Somme de sous-espaces}
+\section{Somme de sous-espaces \centraleponts{3}}
 \label{Somme de sous-espaces}
 \textcolor{blue}{\hyperref[sec:somme-de-sous-espaces]{[Corrigé]}}\\
 \begin{enumerate}[leftmargin=*]
@@ -2912,7 +2979,7 @@ Soit $E$ un $\K$-espace vectoriel normé.
 	\item Que peut-on dire de la somme de deux fermés ?
 \end{enumerate}
 
-\section{Un théorème du point fixe}
+\section{Un théorème du point fixe \centraleponts{3}}
 \label{Théorème du point fixe}
 \textcolor{blue}{\hyperref[Théorème du point fixe corrigé]{[Corrigé]}}\\
 Soit $K$ un compact d'un espace vectoriel. Soit $f:K\to K$ une application vérifiant
@@ -2923,12 +2990,12 @@ $$\forall x,y\in K,\ x\ne y\implies \norme{f(x)-f(y)}<\norme{x-y}$$
 	\item Donner un contre-exemple en ne supposant plus $K$ compact.
 \end{enumerate}
 
-\section{Théorème de Heine}
+\section{Théorème de Heine \etoile{2}}
 \label{Théorème de Heine}
 \textcolor{blue}{\hyperref[sec:theoreme-de-heine]{[Corrigé]}}\\
 Démontrer qu'une fonction continue sur un compact est uniformément continue sur ce compact.
 
-\section{Lemme des compacts emboîtés \etoile{1}}
+\section{Lemme des compacts emboîtés \telecom{1}}
 \label{Lemme des compacts emboités}
 \textcolor{blue}{\hyperref[sec:lemme-des-compacts-emboites-etoile1]{[Corrigé]}}\\
 Soient $E$ un espace-vectoriel normé et $(K_n)_{n\in \N}$ une suite décroissante de compacts non vides de $E$.\\
@@ -2973,7 +3040,7 @@ Pour cela on pose, pour tout $n\in \N$, $F_n=\{f\in E,\ \exists x\in I,\ \forall
 	\item Donner un contre exemple dans $\R[X]$.
 \end{enumerate}
 
-\subsection{Lemme de Croft (2)}
+\subsection{Lemme de Croft (2) \etoile{4} (HP)}
 Soit $f:\R^*_+\to\R$ une application telle que
 $$\forall x>0,\ \unfty\lim f(nx)=0$$
 \begin{enumerate}
@@ -3014,7 +3081,8 @@ Soit $f\in \mathcal C^\infty(\R,\R)$ telle que $\forall x\in \R,\ \exists n\in \
 	\end{enumerate}
 	\item Conclure.
 \end{enumerate}
-\subsection{Un raffinement}
+
+\subsection{Un raffinement \etoile{1} (HP)}
 \begin{enumerate}[leftmargin=*]
 	\item Expliquer comment adapter la démonstration précédente pour montrer le résultat suivant :\\
 	Si $f\in \mathcal C^\infty(\R,\R)$ et si $D$ est une partie au plus dénombrable qui vérifie
@@ -3022,7 +3090,8 @@ Soit $f\in \mathcal C^\infty(\R,\R)$ telle que $\forall x\in \R,\ \exists n\in \
 	alors $f$ est polynomiale.
 	\item En déduire que si $f\in \mathcal C^\infty(\R,\R)$ n'est pas polynomiale alors il existe un réel en lequel toutes les dérivées successives de $f$ sont irrationnelles.
 \end{enumerate}
-\section{Volume d'une (hyper)boule \xens{3} (HP)}
+
+\section{Volume d'une (hyper)boule \xens{4} (HP)}
 \label{Volume d'une (hyper)boule}
 \textcolor{blue}{\hyperref[sec:volume-dune-hyperboule-etoile3]{[Corrigé]}}\\
 Soit $R\in\R^*_+$.
@@ -3032,12 +3101,12 @@ Soit $R\in\R^*_+$.
 	\item Déterminer la limite de $V_n(R)$. Quelle interprétation peut-on en faire ? Est-ce surprenant ?
 \end{enumerate}
 
-\section{Partie fermée bornée non compacte \etoile{3}}
+\section{Partie fermée bornée non compacte \centraleponts{3}}
 \label{Partie fermée bornée non compacte}
 \textcolor{blue}{\hyperref[sec:partie-fermee-bornee-non-compacte-etoile3]{[Corrigé]}}\\
 Donner un exemple de partie fermée bornée non compacte d'un espace vectoriel normé.
 
-\section{Théorème de compacité de Riesz \etoile{4}}
+\section{Théorème de compacité de Riesz \centraleponts{4}}
 \label{Théorème de compacité de Riesz}
 \textcolor{blue}{\hyperref[sec:theoreme-de-compacite-de-riesz-etoile4]{[Corrigé]}}\\
 Soit $(E,\norme{.})$ un $K$-espace vectoriel normé.
@@ -3051,19 +3120,19 @@ Soit $(E,\norme{.})$ un $K$-espace vectoriel normé.
 	\item On note $B$ la boule unité fermée de $E$ i.e. $B=\{x\in E,\ \norme{x}\leq1\}$. Montrer que si $E$ n'est pas de dimension finie, alors $B$ n'est pas compacte.
 \end{enumerate}
 
-\section{Sphère et boule unité \etoile{3}}
+\section{Sphère et boule unité \centraleponts{3}}
 \label{Sphère et boule unité}
 \textcolor{blue}{\hyperref[sec:sphere-et-boule-unite-etoile3]{[Corrigé]}}\\
 Soit $(E,||.||)$ un espace vectoriel normé. On note $B$ la boule unité fermée de $E$ et $S$ la sphère unité de $E$.\\
 Montrer que $B$ est compacte si et seulement si $S$ est compacte.
 
-\section{Principe du maximum pour les polynômes}
+\section{Principe du maximum pour les polynômes \xens{3}}
 \label{Principe du maximum pour les polynômes}
 \textcolor{blue}{\hyperref[sec:principe-du-maximum-pour-les-polynomes]{[Corrigé]}}\\
 Soit $P\in \C[X]$. On note $B=\{z\in \C,\ |z|\leq 1\}\text{ et }S=\{z\in \C,\ |z|=1\}$.\\\\
 Montrer que $\max\limits_{z\in B}{|P(z)|}=\max\limits_{z\in S}{|P(z)|}$.
 
-\section{Applications $1$-lipschitzienne surjective sur un compact}
+\section{Applications $1$-lipschitzienne surjective sur un compact \centraleponts{4}}
 \label{Applications 1-lipschitzienne sujective sur un compact}
 \textcolor{blue}{\hyperref[sec:applications-1-lipschitzienne-surjective-sur-un-compact]{[Corrigé]}}\\
 Soient $E$ un espace vectoriel normé, $K$ un compact de $E$ et $g:K\to K$ une application $1$-lipschitzienne. On cherche à montrer que $g$ est surjective si et seulement si c'est une isométrie (i.e $\forall x,y\in E,\ ||g(x)-g(y)||=||u(x)-u(y)||$).
@@ -3073,7 +3142,7 @@ Soient $E$ un espace vectoriel normé, $K$ un compact de $E$ et $g:K\to K$ une a
 	\item On suppose maintenant que $g$ est une isométrie de $E$. Montrer que $g$ est surjective. Donner un contre-exemple lorsque $K$ est seulement borné.
 \end{enumerate}
 
-\section{Une isométrie conserve les milieux}
+\section{Une isométrie conserve les milieux \centraleponts{4}}
 \label{Une isométrie conserve les milieux}
 \textcolor{blue}{\hyperref[sec:une-isometrie-conserve-les-milieux]{[Corrigé]}}\\
 Soit $E$ un $\R$-espace vectoriel normé de dimension finie.
@@ -3088,13 +3157,13 @@ Soit $E$ un $\R$-espace vectoriel normé de dimension finie.
 	\textit{Remarque : une isométrie de $E$ est une application $u:E\to E$ telle que $\forall (x,y)\in E^2,\ ||u(x)-u(y)||=||x-y||$.}
 \end{enumerate}
 
-\section{Fonctions coercives}
+\section{Fonctions coercives \centraleponts{3}}
 \label{Fonctions coercives}
 \textcolor{blue}{\hyperref[sec:fonctions-coercives]{[Corrigé]}}\\
 Soient $(E,\norme{.})$ un espace vectoriel normé de dimension finie et $f:E\to \R$ continue.\\
 Montrer que $\lim\limits_{\norme{x}\to +\infty}f(x)=+\infty$ si et seulement si l'image réciproque par $f$ de tout compact de $\R$ est un compact de $E$.
 
-\section{Homéomorphisme de compacts}
+\section{Homéomorphisme de compacts \centraleponts{3}}
 \label{Homéomorphisme de compacts}
 \textcolor{blue}{\hyperref[sec:homeomorphisme-de-compacts]{[Corrigé]}}\\
 Soient $E$ et $F$ deux espaces vectoriels normés, $K$ un compact de $E$ et $L$ une partie de $F$. Soit $f:K\to L$ bijective et continue. Montrer que $f^{-1}$ est continue.
@@ -3112,13 +3181,13 @@ Soit $(E,\norme{.})$ un espace vectoriel normé. Pour $A$ une partie bornée de 
 Montrer que pour toute partie bornée $A$ de $E$ on a :
 $$\delta(A)=\delta(\Fr(A))$$
 
-\section{Frontière}
+\section{Frontière \ccinp{2}}
 \label{Frontière}
 \textcolor{blue}{\hyperref[sec:frontiere]{[Corrigé]}}\\
 Soient $E$ un espace vectoriel normé et $F$ une partie fermée de $E$.\\
 Montrer que $\Fr(\Fr(F))=\Fr(F)$.
 
-\section{Projeté sur un convexe compact}
+\section{Projeté sur un convexe compact \centraleponts{3}}
 \label{Projeté convexe}
 \textcolor{blue}{\hyperref[sec:projete-sur-un-convexe-compact]{[Corrigé]}}\\
 Soit $(E,\proscal{.}{.})$ un espace euclidien. Soient $H$ une partie convexe et compacte de $E$ et soit $x\in E$. On note
@@ -3130,7 +3199,7 @@ Soient $h,h'\in H$. On pose $q:t\in [0,1]\longmapsto ||x-th-(1-t)h'||^2$.
 \end{enumerate}
 \textit{Le vecteur $h_0$ est appelé projeté de $x$ sur $H$}.
 
-\section{Convexité de l'adhérence et de l'intérieur}
+\section{Convexité de l'adhérence et de l'intérieur \centraleponts{3}}
 \label{Convexité de l'adhérence et de l'intérieur}
 \textcolor{blue}{\hyperref[sec:convexite-de-ladherence-et-de-linterieur]{[Corrigé]}}\\
 Soit $A$ une partie convexe d'un espace vectoriel normé $E$. Montrer que $\overline A$ et $\ring A$ sont convexes.
@@ -3162,7 +3231,7 @@ Soit $E$ un espace euclidien.
 	Montrer que Conv$(A)$ est constitué des combinaisons convexes d'éléments de $A$.
 \end{enumerate}
 
-\section{Théorème de Carathéodory}
+\section{Théorème de Carathéodory \centraleponts{3}}
 \label{Théorème de Carathéodory}
 \textcolor{blue}{\hyperref[sec:theoreme-de-caratheodory]{[Corrigé]}}\\
 Soit $E$ un espace vectoriel de dimension $n$. Soit $A\subset E$. On souhaite montrer que l'enveloppe convexe de $A$ (\ref{Enveloppe convexe}) est constitué des combinaisons convexes d'au plus $n+1$ éléments de $A$.\\
@@ -3172,7 +3241,11 @@ Soit $x=\displaystyle\sum\limits_{k=1}^p{\lambda_kx_k}$ une combinaison convexe 
 	$$\displaystyle\sum\limits_{k=1}^p{\mu_kx_k}=0\text{   et   }\displaystyle\sum\limits_{k=1}^p{\mu_k}=0$$
 	\item Conclure.
 \end{enumerate}
-\underline{Corollaire:} Montrer que l'enveloppe convexe d'une partie compacte est compacte.
+
+\subsection{Enveloppe convexe d'une partie compacte \centraleponts{2}}
+\label{Enveloppe convexe d'une partie compacte}
+\textcolor{blue}{\hyperref[sec-enveloppe-convexe-d'une-partie-compacte]{[Corrigé]}}
+En déduire que l'enveloppe convexe d'une partie compacte est compacte.
 
 \section{Théorème de Krein-Milman}
 \label{Théorème de Krein-Milman}
@@ -3188,27 +3261,49 @@ On pourra librement utiliser dans cet exercice le théorème de projection sur u
 	\item Montrer que $C=\text{Conv}(\text{Ext}(C))$.
 \end{enumerate}
 
-\section{Epigraphe}
+\section{Epigraphe \ccinp{1}}
 \label{Epigraphe}
 \textcolor{blue}{\hyperref[sec:epigraphe]{[Corrigé]}}\\
 Soit $f$ une fonction réelle. On note $E=\{(x,y)\in \R^2,\ y\geq f(x)\}$ l'épigraphe de $f$.\\
 Montrer que $f$ est convexe si et seulement si $E$ est convexe.
 
-\section{Partie convexe dense de $\R^n$}
-\label{Partie convexe dense de R^n}
-\textcolor{blue}{\hyperref[sec:partie-convexe-dense-de-rn]{[Corrigé]}}\\
+\section{Partie convexe et dense de $\R^n$ \xens{4}}
+\label{Partie convexe et dense de R^n}
+\textcolor{blue}{\hyperref[sec:partie-convexe-et-dense-de-rn]{[Corrigé]}}\\
 Soit $A$ une partie convexe et dense de $\R^n$. Montrer que $A=\R^n$.
 
-\section{Complémentaire d'un hyperplan}
+\section{Partie convexe et ouverte de $\R^n$ \xens{4}}
+\label{Partie convexe et ouverte de R^n}
+\textcolor{blue}{\hyperref[sec:partie-convexe-et-ouverte-de-rn]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Soit $A$ une partie convexe et ouverte de $\R^2$. Montrer que le complémentaire de $A$ contient une droite vectorielle.
+	\item Soit $A$ une partie convexe et ouverte de $\R^n$, $n\geq 2$. Montrer que le complémentaire de $A$ contient une droite vectorielle.
+\end{enumerate}
+
+\section{Connexité de l'espace \etoile{2}}
+\label{Connexité de l'espace}
+\textcolor{blue}{\hyperref[sec:connexité-de-l'espace]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Déterminer les composantes connexes par arcs de $\R^*$.
+	\item Montrer que $\U$ privé d'un point est connexe par arcs. $\U$ privé de deux points est-t-il connexe par arcs ? En déduire les parties connexes par arcs de $\U$.
+	\item Montrer que $\C$ privé d'un nombre fini de points est connexe par arcs.
+	\item Montrer que $\R^3$ privé d'un nombre fini de droites est connexe par arcs.
+\end{enumerate}
+
+\section{Complémentaire d'un hyperplan \centraleponts{3}}
 \label{Complémentaire d'un hyperplan}
 \textcolor{blue}{\hyperref[sec:complementaire-dun-hyperplan]{[Corrigé]}}\\
-Soit $H$ un hyperplan d'un $\R$-espace vectoriel de dimension finie $E$.
-\\ Montrer que $E\setminus H$ n'est pas connexe par arcs. Quelles sont ses composantes connexes par arcs?
+Soit $E$ un $\R$-espace vectoriel de dimension $n$ finie.
+\begin{enumerate}
+	\item Soit $H$ un hyperplan de $E$. Montrer que $E\backslash H$ n'est pas connexe par arcs. Quelles sont ses composantes connexes par arcs ?
+	\item Soit $F$ un sous-espace vectoriel de $E$ de dimension $d\leq n-2$. $E\backslash F$ est-t-il connexe par arcs ?
+	\item Reprendre la question 1 avec $E$ un $\C$-espace vectoriel.
+\end{enumerate}
 
-\section{Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans}
+\section{Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans \xens{5}}
 \label{Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans}
 \textcolor{blue}{\hyperref[sec:composantes-connexes-par-arcs-du-complementaire-de-la-reunion-de-plusieurs-hyperplans]{[Corrigé]}}\\
-Soit $r\in \N^*$
+Soient $n,r\in \N^*$.
 \begin{enumerate}[leftmargin=*]
 	\item
 	\begin{enumerate}[label=\alph*.]
@@ -3219,7 +3314,7 @@ Soit $r\in \N^*$
 	\item Soient $H_1,\dots,H_r$ des hyperplans affines de $\R^n$. Quel est le nombre maximal de composantes connexes par arcs de $\R^n\setminus \displaystyle\bigcup\limits_{i=1}^r{H_i}$ ?
 \end{enumerate}
 
-\section{Sphères d'un $\R$-espace vectoriel}
+\section{Sphères d'un $\R$-espace vectoriel \centraleponts{3}}
 \label{Sphères d'un R espace vectoriel}
 \textcolor{blue}{\hyperref[sec:spheres-dun-r-espace-vectoriel]{[Corrigé]}}\\
 Soit $E$ un $\R$-espace vectoriel de dimension supérieure ou égale à $2$.
@@ -3228,13 +3323,13 @@ Soit $E$ un $\R$-espace vectoriel de dimension supérieure ou égale à $2$.
 	\item En déduire que toutes les sphères de $E$ sont connexes par arcs.
 \end{enumerate}
 
-\section{Théorème du passage à la douane}
+\section{Théorème du passage à la douane \centraleponts{3}}
 \label{Théorème du passage à la douane}
 \textcolor{blue}{\hyperref[sec:theoreme-du-passage-a-la-douane]{[Corrigé]}}\\
 Soit $E$ un $\R$-espace vectoriel normé, montrer que toute partie connexe par arcs qui rencontre une partie $A$ et son complémentaire rencontre forcément la frontière de $A$.
 
-\section{Condition nécessaire de la connexité par arc}
-\label{COndition nécessaire de la connexité par arc}
+\section{Condition nécessaire de la connexité par arc \etoile{1}}
+\label{Condition nécessaire de la connexité par arc}
 \textcolor{blue}{\hyperref[sec:condition-necessaire-de-la-connexite-par-arc]{[Corrigé]}}\\
 Soit $C$ un connexe par arcs.
 \\ Montrer que toute application $f:C\to\{0,1\}$ continue est constante.
@@ -5825,7 +5920,8 @@ Alors, on a l'équivalence :
 	
 	\newpage
 \section{Correction Polynômes}
-	\subsection{Théorème de d'Alembert-Gauss (2)}\label{sec:theoreme-de-dalembert-gauss-2}
+	\subsection{Théorème de d'Alembert-Gauss (2) \etoile{3}}
+	\label{sec:theoreme-de-dalembert-gauss-2}
 	\textcolor{blue}{\hyperref[alembertgauss2]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item $\P$ est une partie non vide et minorée (par $0$) de $\R$. Elle admet donc une borne inférieure.
@@ -5852,10 +5948,12 @@ Alors, on a l'équivalence :
 		\item Ce dernier résultat contredit la minimalité de $\alpha$ donc $\alpha=0$. Autrement dit $P(z_0)=0$ et le théorème est démontré.
 	\end{enumerate}
 	
-	\subsection{Bernoulli}\label{sec:bernoulli}
+	\subsection{Bernoulli}
+	\label{sec:bernoulli}
 	\textcolor{blue}{\hyperref[bernoulli]{[Enoncé]}}\\
 	
-	\subsection{Lagrange \etoile{1}}\label{sec:lagrange-etoile1}
+	\subsection{Lagrange \ccinp{1}}
+	\label{sec:lagrange-etoile1}
 	\textcolor{blue}{\hyperref[lagrange]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item 
@@ -5871,30 +5969,42 @@ Alors, on a l'équivalence :
 		\\Donc $P=\displaystyle\sum\limits_{k=1}^nP(x_k)L_k$
 	\end{enumerate}
 	
-	\subsection{Tchebychev}\label{sec:tchebychev}
+	\subsection{Tchebychev}
+	\label{sec:tchebychev}
 	\textcolor{blue}{\hyperref[tchebychev]{[Enoncé]}}\\
+	
 	\subsubsection{Angles rationnels dont le cosinus est rationnel}
+	
 	\subsubsection{Triangle à angles rationnels sont tous les côtés ont un longueur rationnelle}
+	
 	\subsubsection{Triangles dont les sommets sont à coordonnées rationnelles}
-	\subsection{Hilbert}\label{sec:hilbert}
+	
+	\subsection{Hilbert}
+	\label{sec:hilbert}
 	\textcolor{blue}{\hyperref[hilbert]{[Enoncé]}}\\
 	
-	\subsection{Laguerre}\label{sec:laguerre}
+	\subsection{Laguerre}
+	\label{sec:laguerre}
 	\textcolor{blue}{\hyperref[laguerre]{[Enoncé]}}\\
 	
-	\subsection{Legendre}\label{sec:legendre}
+	\subsection{Legendre}
+	\label{sec:legendre}
 	\textcolor{blue}{\hyperref[Legendre]{[Enoncé]}}\\
 	
-	\subsection{Hermite}\label{sec:hermite}
+	\subsection{Hermite}
+	\label{sec:hermite}
 	\textcolor{blue}{\hyperref[hermite]{[Enoncé]}}\\
 	
-	\subsection{Bernstein}\label{sec:bernstein}
+	\subsection{Bernstein}
+	\label{sec:bernstein}
 	\textcolor{blue}{\hyperref[bernstein]{[Enoncé]}}\\
 	
-	\subsection{Polynômes cyclotomiques}\label{sec:polynomes-cyclotomiques}
+	\subsection{Polynômes cyclotomiques}
+	\label{sec:polynomes-cyclotomiques}
 	\textcolor{blue}{\hyperref[polycyclotomiques]{[Enoncé]}}\\
 	
-	\subsection{Suite de polynômes définis par récurrence}\label{sec:suite-de-polynômes-definis-par-recurrence}
+	\subsection{Suite de polynômes définis par récurrence}
+	\label{sec:suite-de-polynômes-definis-par-recurrence}
 	\textcolor{blue}{\hyperref[Suite de polynômes définis par récurrence]{[Enoncé]}}\\
 	
 	\subsection{Equation polynomiale (1)}
@@ -5920,6 +6030,14 @@ Alors, on a l'équivalence :
 	\subsection{Equation de Shapiro}
 	\label{sec:équation-de-shapiro}
 	\textcolor{blue}{\hyperref[Equation de Shapiro]{[Enoncé]}}\\
+	
+	\subsection{Degré d'une différence \telecom{1}}
+	\label{sec:degré-d'une-différence}
+	\textcolor{blue}{\hyperref[Degré d'une différence]{[Enoncé]}}
+	On sait que $X^3-1=(X-1)(X-j)(X-\overline j)$ avec $j=e^{2i\pi/3}$. Donc $P^3-Q^3=(P-Q)(P-jQ)(P-\overline jQ)$.\\
+	Comme $P-Q\ne 0,\ \deg(P^3-Q^3)=\deg(P-Q)+\deg(P-jQ)+\deg(P-\overline jQ)\geq \deg(P-jQ)+\deg(P-\overline jQ)$.\\
+	Or pour tout $z\in \C$, $\deg(P-zQ)\ne n$ ssi le coefficient dominant de $P$ est égal à celui de $zQ$. Comme $j\notin\R$, le coefficient dominant de $jQ$ n'est pas réel. De même pour celui de $\overline jQ$.\\
+	Ainsi comme celui de $P$ est réel, $\deg(P-jQ)=\deg(P-\overline jQ)=n$ d'où $\deg(P^3-Q^3)\geq 2n$.
 	
 	\subsection{Théorème de la racine rationnelle}\label{sec:theoreme-de-la-racine-rationnelle}
 	\textcolor{blue}{\hyperref[Théorème de la racine rationnelle]{[Enoncé]}}\\
@@ -6238,6 +6356,55 @@ Alors, on a l'équivalence :
 		Pourtant par une récurrence immédiate sur la question 1, $P$ scindé à racines simples sur $\R$ donne $P^{(k)}$ scindé à racines simples sur $\R$ pour tout $k<\deg(P)$.
 	\end{enumerate}
 	
+	\subsection{Suite de polynômes scindés sur $\R$ \xens{3}}
+	\label{sec:suite-de-polynômes-scindés-sur-R}
+	\textcolor{blue}{\hyperref[Suite de polynômes scindés sur R]{[Enoncé]}}\\
+	Notons pour $n\in \N,\ P_n=\displaystyle\prod_{k=1}^{d_n}(X-x_{n,k})$.\\
+	Alors $\forall n\in \N,\ \forall z\in \C,\ |P_n(z)|=\displaystyle\prod_{k=1}^{d_n}|z-x_k|\geq\prod_{k=1}^{d_n}|\T{Im}(z-x_k)|=\prod_{k=1}^{d_n}|\T{Im}(z)|\geq \min(|\T{Im}(z)|^n,|\T{Im}(z)|)$.\\
+	Donc en passant à la limite, $\forall z\in \C,\ |P(z)|\geq \min(|\T{Im}(z)|^n,|\T{Im}(z)|)$.\\
+	En particulier $\forall z\in \C,\ P(z)=0\implies \T{Im}(z)=0$. Donc $P$ est constant ou scindé sur $\R$. Or si $P=C$ est constant alors $z=i(1+|C|)$ contredit l'inégalité.
+	
+	\subsection{Borne de Cauchy \telecom{2}}
+	\label{sec:borne-de-cauchy}
+	\textcolor{blue}{\hyperref[Borne de Cauchy]{[Enoncé]}}\\
+	Soit $z$ une racine de $P$. Si $|z|\leq 1$ il n'y a rien à faire, on suppose donc $|z|>1$. Notons $M=\max\limits_{0\leq k\leq n-1}|a_k|$.\\
+	On a avec $|z|\ne 1$, $|z^n|=\displaystyle\left|-\sum_{k=0}^{n-1}a_kz^k\right|\leq \sum_{k=0}^{n-1}|a_k|z^k\leq M\sum_{k=0}^{n-1}|z|^k=M\frac{|z|^n-1}{|z|-1}$.\\
+	Or comme $|z|>1$, $\dfrac{|z|^n-1}{|z|-1}\leq \dfrac{|z|^n}{|z|-1}$ donc $1\leq \dfrac{M}{|z|-1}$ càd $|z|\leq 1+\max\limits_{0\leq k\leq n-1}|a_k|$.
+	
+	\subsection{Théorème d'Eneström-Kakeya \centraleponts{3}}
+	\label{sec:théorème-d'eneström-kakeya}
+	\textcolor{blue}{\hyperref[Théorème d'Eneström-Kakeya]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $z\in \C$ une racine de $P$. $P(0)=a_0\ne0$ donc $z\ne 0$. On pose en suivant l'indication $Q(X)=(X-1)P(X)$.\\
+		$Q(z)=0\implies 0=a_nz^{n+1}+\displaystyle\sum_{k=1}^n(a_{k-1}-a_k)z^k-a_0\implies a_n=\sum_{k=1}^n\frac{a_{k-1}-a_k}{z^{n+1-k}}+\frac{a_0}{z^{n+1}}$.\\
+		D'où $a_n\leq \displaystyle\sum_{k=1}^n\frac{a_k-a_{k-1}}{|z|^{n+1-k}}+\frac{a_0}{|z^{n+1}|}$. Si $|z|>1$ alors $a_n<\displaystyle\sum_{k=1}^n(a_k-a_{k-1})+a_0=a_n$.\\
+		Ceci est absurde donc $|z|\leq 1$.
+		\item On définit $r$ et $R$ comme dans l'énoncé. Montrons que $\tilde P=P(RX)=\displaystyle\sum_{k=0}^na_kR^kX^k$ vérifie les hypothèses de la question 1. Notons pour $k\in \crblanc{0}{n},\ b_k=a_kR^k$ et fixons $k\in \crblanc{0}{n-1}$.\\
+		$b_{k+1}-b_k=R^k(a_{k+1}R-a_k)\geq R^k\left(a_{k+1}\dfrac{a_k}{a_{k+1}}-a_k\right)=0$.\\
+		Soit $z$ une racine de $P$. Alors $\tilde P\left(\dfrac{z}{R}\right)=P(z)=0$.\\
+		Donc d'après la question 1, $\left|\dfrac{z}{R}\right|\leq 1$ càd $|z|\leq R$.\\
+		Pour avoir la minoration on considère le polynôme réciproque de $P$, $Q=X^nP\left(\dfrac{1}{X}\right)$ (cf. \ref{Polynôme réciproque}). On montre alors que $Q=\displaystyle\sum_{k=0}^na_{n-k}X^k$ et que ses racines sont exactement les inverses des racines de $P$. Similairement à ce qu'on vient de faire que le polynôme $\tilde Q=Q\left(\dfrac{X}{r}\right)$ les hypothèses de la question 1 et donc ses racines sont de module au plus $\dfrac{1}{r}$. Ainsi les racines de $P$ sont de module au moins $r$.
+	\end{enumerate}
+	
+	\subsection{Perturbations de polynômes}
+	\label{sec:pertubations-de-polynômes}
+	\textcolor{blue}{\hyperref[Pertubations de polynômes]{[Enoncé]}}\\
+	
+	\subsection{Polynômes à coefficients dans $\{-1,0,1\}$}
+	
+	
+	\subsubsection{Polynômes scindés}
+	\label{sec:polynômes-scindés}
+	\textcolor{blue}{\hyperref[Polynômes scindés]{[Enoncé]}}\\
+	
+	\subsubsection{Ensemble des racines (1)}
+	\label{sec:ensemble-des-racines-(1)}
+	\textcolor{blue}{\hyperref[Ensemble des racines (1)]{[Enoncé]}}\\
+	
+	\subsubsection{Ensemble des racines (2)}
+	\label{sec:ensemble-des-racines-(2)}
+	\textcolor{blue}{\hyperref[Ensemble des racines (2)]{[Enoncé]}}\\
+	
 	\subsection{Théorème de Bernstein}
 	\label{sec:theoreme-de-bernstein}
 	\textcolor{blue}{\hyperref[Théorème de Bernstein]{[Enoncé]}}\\
@@ -6261,15 +6428,27 @@ Alors, on a l'équivalence :
 	\subsection{Etude d'un polynôme défini implicitement}\label{sec:etude-dun-polynome-defini-implicitement}
 	\textcolor{blue}{\hyperref[etudepolyimplicite]{[Enoncé]}}\\
 	
-	\subsection{P'|P \etoile{1}}\label{sec:pp-etoile1}
-	\textcolor{blue}{\hyperref[derivdiv]{[Enoncé]}}\\
+	\subsection{P'|P \telecom{1}}
+	\label{sec:P'|P}
+	\textcolor{blue}{\hyperref[P'|P]{[Enoncé]}}\\
 	Soit $P\in \C[X]$ tel que $P'|P$. Tout d'abord si $P'=0$ alors $P'|P$ si et seulement si $P=0$. On suppose maintenant que ce n'est pas le cas. Notons $P=\displaystyle\prod\limits_{i=1}^n\left(X-z_i\right)^{m_i}$ où $m_i$ est la multiplicité de $z_i$ en tant que racines de $P$. Alors pour tout $i\in \crblanc{1}{n}$, la multiplicité de $z_i$ en tant que racine de $P'$ est $m_i-1$ (en considérant que $z_i$ n'est pas racine si sa multiplicité est nulle).\\
 	On sait que $P'$ n'a pas d'autre racine que celles de $P$ donc $\deg(P')=\deg(P)-1=\displaystyle\sum\limits_{i=1}^n(m_i-1)=\sum\limits_{i=1}^nm_i-n=\deg(P)-n$. On en déduit que $n=1$ : $P$ n'a qu'une racine.\\
 	Réciproquement si il existe $\lambda\in \C,\ a\in \C^*$ et $n\in \N^*$ tels que $P=a\left(X-\lambda\right)^n$ alors $P'=an\left(X-\lambda\right)^{n-1}$ divise $P$.\\
 	Finalement, $P'|P\iff \exists (a,\lambda)\in \C^2,\ \exists n\in \N^*,\ P=a\left(X-\lambda\right)^n$.
 	
-	\subsection{Polynômes positifs \etoile{2}}\label{sec:polynomes-positifs-etoile2}
-	\textcolor{blue}{\hyperref[polyposi]{[Enoncé]}}\\
+	\subsection{Polynôme positif (1) \centraleponts{3}}
+	\label{sec:polynôme-positif-(1)}
+	\textcolor{blue}{\hyperref[Polynôme positif (1)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Il est clair que $P$ et $Q$ ont même degré et même coefficient dominant $\lambda\ne 0$. On a $P(x)\uxfty\sim\lambda x^n$ donc comme $P$ est positif, $\lambda x^n$ est positif au voisinage de $+\infty$ d'où $\lambda>0$. De plus, si $P$ était de degré impair alors $P(x)\underset{x\to-\infty}{\sim}\lambda x^n\implies \lim\limits_{x\to-\infty}P(x)=-\infty$ ce qui est absurde. Donc $P$, et a fortiori $Q$, sont de degré pair. L'équivalent $Q(x)\underset{|x|\to+\infty}{\sim}\lambda x^n$ donne alors $\lim\limits_{|x|\to+\infty} Q(x)=+\infty$.
+		\item D'après la question 1 il existe $R>0$ tel que $\forall x\in \R,\ |x|>R\implies Q(x)\geq Q(0)$. Or $Q$ est continue donc d'après le théorème des bornes atteintes $Q$ admet un minimum $m$ sur $[-R,R]$. Par définition $\forall x\in \R\backslash[-R,R],\ Q(x)\geq Q(0)\geq m$. Ainsi $m$ est un minimum global de $Q$.
+		\item Il suffit de montrer $m\geq 0$. Notons $x_0$ tel que $Q(x_0)=m$. Alors $Q'(x_0)=0$.\\
+		Or $Q'=Q-P$ donc $Q(x_0)=Q'(x_0)+P(x_0)=P(x_0)\geq 0$.
+	\end{enumerate}
+	
+	\subsection{Théorème de Pythagore polynomial \centraleponts{3}}
+	\label{sec:théorème-de-pythagore-polynomial}
+	\textcolor{blue}{\hyperref[Théorème de Pythagore polynomial]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Notons $P=\Lambda\displaystyle\prod\limits_{i=1}^p{(X^2+a_iX+b_i)^{n_i}}\displaystyle\prod\limits_{j=1}^q{(X-x_j)^{m_j}}$ la décomposition de $P$ en facteurs irréductibles dans $\R[X]$.\\
 		Tout d'abord, $P(x)\underset{x\to +\infty}{\sim}\Lambda x^{\deg(P)}$. Donc $\Lambda x^{\deg(P)}$ est du signe de $P(x)$ au voisinage de $+\infty$ c'est à dire $\Lambda\geq 0$.\\
@@ -6279,9 +6458,24 @@ Alors, on a l'équivalence :
 		Donc en posant $C=\displaystyle\sqrt{\Lambda}\displaystyle\prod\limits_{j=1}^q{(X-x_j)^{m_j/2}}\displaystyle\prod\limits_{i=1}^p{(X-\omega_i)}$ on a bien $P=C\overline{C}$ et $C\in \C[X]$.\\
 		\item $A=\text{Re}(C)$ et $B=\text{Im}(C)$ fonctionnent.
 	\end{enumerate}
-	\subsection{Polynômes carrés}\label{sec:polynomes-carres}
-		\textcolor{blue}{\hyperref[Polynômes carrés]{[Enoncé]}}\\
-	\subsection{Polynômes réciproques \etoile{2}}\label{sec:polynomes-reciproques-etoile2}
+	
+	\subsection{Polynômes à valeurs carrées}
+	\label{sec:polynomes-à-valeurs-carrées}
+	\textcolor{blue}{\hyperref[Polynômes à valeurs carrées]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $x>a$. Par récurrence :\\
+		$n=1$ : $\Delta(f)(x)=f(x+1)-f(x)$. $f$ est continue sur $[x,x+1]$, dérivable sur $]x,x+1[$ donc d'après le théorème de Rolle, $\exists y\in ]x,x+1[,\ \Delta(f)(x)=f'(y)$. i.e $\exists \theta\in ]0,1[,\ \Delta(f)(x)=f'(x+\theta)$.\\
+		Supposons le résultat vrai pour un certain $n\in \N^*$.\\
+		$\Delta^{n+1}(f)(x)=\Delta(\Delta^n(f))(x)=f^{(n)}(x+\theta+1)-f^{(n)}(x+\theta)$.\\
+		$f^{(n)}$ est continue sur $[x+\theta,x+\theta+1]$, dérivable sur $]x+\theta,x+\theta+1[$ donc d'après le théorème de Rolle, $\exists z\in ]x+\theta,x+\theta+1[,\ \Delta^{n+1}(f)(x)=f^{(n+1)}(z)$. i.e $\exists\varphi\in ]\theta,\theta+1[\subset[0,n+1],\ \Delta^{n+1}(f)(x)=f^{(n+1)}(x+\varphi)$.
+		\item Justifions déjà que $P$ est strictement positif sur $]a,+\infty[$ pour $a$ assez grand. Pour cela déterminons la limite de $P$ en $+\infty$. Si la suite $(P(n))_{n\in \N}$ prend une infinité de fois la même valeur alors $P$ est constant, et est égal à $P(0)$ par exemple qui est le carré d'un entier, et donc le carré du polynôme constant égal à cet entier. Sinon, comme la suite $(P(n))_{n\in \N}$ est à valeurs dans $\N$, elle ne peut pas être bornée (par principe des tiroirs) et tend donc vers $+\infty$. Ainsi $\uxfty\lim P(x)=+\infty$ et par suite $\exists a>0,\ \forall x>a,\ P(x)>0$.\\
+		Alors par composition $f:x\mapsto \sqrt{P(x)}\in \mathcal C^\infty(]a,+\infty[)$. Donc d'après la question 1,\\
+		$$\forall x>a,\ \forall n\in \N^*,\ \exists \theta\in [0,n],\ \Delta^n(f)(x)=f^{(n)}(x+\theta)$$
+		Pour l'instant j'ai tenté pas mal de trucs mais ça marche pas :[, affaire à suivre.
+	\end{enumerate}
+	
+	\subsection{Polynômes réciproques \ccinp{2}}
+	\label{sec:polynomes-reciproques-etoile2}
 	\textcolor{blue}{\hyperref[polyrecip]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item $X^nP\left(\displaystyle\frac{1}{X}\right)=X^n\displaystyle\sum\limits_{k=0}^n{a_kX^-k}=\displaystyle\sum\limits_{k=0}^n{a_kX^{n-k}}=\displaystyle\sum\limits_{k=0}^n{a_{n-k}X^k}$. Donc $P$ est un polynôme réciproque si et seulement si $\forall k\in \crblanc{0}{n},\ a_k=a_{n-k}$.
@@ -6306,7 +6500,8 @@ Alors, on a l'équivalence :
 		Et donc on déduit de ce qui a été fait précédemment que $P$ se factorise en $P=a_{2n}(X+1)(X^2+b_1X+1)\dots(X^2+b_nX+1)$.
 	\end{enumerate}
 	
-	\subsection{Polynômes surjectifs \etoile{5}}\label{sec:polynomes-surjectifs-etoile5}
+	\subsection{Polynômes surjectifs \etoile{5}}
+	\label{sec:polynomes-surjectifs-etoile5}
 	\textcolor{blue}{\hyperref[polysurj]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item On a déjà $P(\C)\subset \C$. Fixons $a\in \C$.\\
@@ -6351,7 +6546,7 @@ Alors, on a l'équivalence :
 		\item 
 	\end{enumerate}
 	
-	\subsection{Résultant et discriminant \etoile{2}}\label{sec:resultant-et-discriminant-etoile2}
+	\subsection{Résultant et discriminant \ccinp{2}}\label{sec:resultant-et-discriminant-etoile2}
 	\textcolor{blue}{\hyperref[Résultant]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item On sait que $(1,X,\dots,X^{m-1})$ et $(1,X,\dots,X^{n-1})$ sont des bases de $\K_{m-1}[X]$ et $\K_{n-1}[X]$ respectivement. Ainsi d'après le cours, la famille $\B=((1,0),(X,0),\dots,(X^{m-1},0),(0,1),(0,X),\dots, (0,X^{n-1}))$ est une base de l'espace vectoriel produit $\K_{m-1}[X]\times\K_{n-1}[X]$.
@@ -6382,8 +6577,9 @@ Alors, on a l'équivalence :
 	\end{enumerate}
 	\textit{Le résultant est un outil intéressant sur certains problèmes car il permet de mettre en évidence une sorte de "continuité" des racines d'un polynôme via le déterminant, qui est lui continu.}
 	
-	\subsection{Théorème de Liouville : Fermat pour les polynômes \etoile{4}}\label{sec:theoreme-de-liouville--fermat-pour-les-polynomes-etoile4}
-	\textcolor{blue}{\hyperref[liouvillepoly]{[Enoncé]}}\\
+	\subsection{Théorème de Liouville : Fermat pour les polynômes \xens{4}}
+	\label{sec:theoreme-de-liouville--fermat-pour-les-polynomes}
+	\textcolor{blue}{\hyperref[Théorème de Liouville : Fermat pour les polynômes]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item Notons $D=P\land Q\land R$.\\
 		$P^n+Q^n=R^n\implies \left(\displaystyle\frac{P}{D}\right)^n+\left(\displaystyle\frac{Q}{D}\right)^n=\left(\displaystyle\frac{R}{D}\right)^n$. Posons $(\tilde{P},\tilde{Q},\tilde{R})=\left(\left(\displaystyle\frac{P}{D}\right)^n,\left(\displaystyle\frac{Q}{D}\right)^n,\left(\displaystyle\frac{R}{D}\right)^n\right)$ de sorte que $\tilde{P},\tilde{Q},\tilde{R}$ sont premiers entre eux dans leur ensemble. Soit $S$ un facteur irréductible commun à $\tilde{P}$ et $\tilde{Q}$.\\
@@ -7188,9 +7384,10 @@ Alors, on a l'équivalence :
 	
 	\newpage
 \section{Correction Topologie}
-	\subsection{Normes d'opérateur}\label{sec:normes-doperateur}
-		\textcolor{blue}{\hyperref[Normes d'opérateur]{[Enoncé]}}\\
-	Dans tout l'exercice on ne se souciera pas de noter différemment les normes $\normep{\infty}{\cdots},\normep{1}{\cdot},\normep{2}{\cdot}$ de $\M_{p,1}(\R)$ et $\M_{n,1}(\R)$. Il doit être clair aux yeux du lecteur dans quels espaces vivent chaque objets.
+	\subsection{Normes d'opérateur \ccinp{1}}
+	\label{sec:normes-doperateur}
+	\textcolor{blue}{\hyperref[Normes d'opérateur]{[Enoncé]}}\\
+	Dans tout l'exercice on ne se souciera pas de noter différemment les normes $\normep{\infty}{\cdot},\normep{1}{\cdot},\normep{2}{\cdot}$ de $\M_{p,1}(\R)$ et $\M_{n,1}(\R)$. Il doit être clair aux yeux du lecteur dans quels espaces vivent chaque objets.
 	\begin{enumerate}
 		\item Soit $X=\begin{pmatrix}x_1\\\vdots\\x_p\end{pmatrix}\in \M_{p,1}(\R)$. Soit $i\in \crblanc{1}{n}$.\\
 		$|(AX)_i|=\displaystyle\left|\sum_{j=1}^pA_{ij}x_j\right|\leq \sum_{j=1}^p|A_{ij}||x_j|\leq \normep{\infty}{X}\sum_{j=1}^p|A_{ij}|\leq \left(\max_{1\leq i\leq n}\sum_{j=1}^p|A_{ij}|\right)\normep{\infty}{X}$.\\
@@ -7222,8 +7419,9 @@ Alors, on a l'équivalence :
 		Ainsi $\mid\mid\mid A\mid\mid\mid_2=\sqrt{\max\T{Sp}(A^\top A)}$.
 	\end{enumerate}
 	
-	\subsection{$\Z$ est fermé \etoile{1}}\label{sec:z-est-ferme-etoile1}
-		\textcolor{blue}{\hyperref[Z est fermé]{[Enoncé]}}\\
+	\subsection{$\Z$ est fermé \etoile{1}}
+	\label{sec:z-est-ferme-etoile1}
+	\textcolor{blue}{\hyperref[Z est fermé]{[Enoncé]}}\\
 	\label{Topologie de Z}
 	Soit $(u_n)\in \Z^\N$ de limite $\ell\in \C$.\\
 	$\exists N\in \N,\ \forall n\geq N,\ |u_n-\ell|<\displaystyle\frac{1}{2}$.\\
@@ -7232,8 +7430,9 @@ Alors, on a l'équivalence :
 	Donc $\forall n\geq N,\ u_n=u_{n+1}$. Ainsi $u_n\unfty{\longrightarrow}u_N$.\\
 	Par unicité de la limite, $\ell=u_N\in \Z$.
 	
-	\subsection{Orthogonalité et topologie}\label{sec:orthogonalite-et-topologie}
-		\textcolor{blue}{\hyperref[Orthogonalité et topologie]{[Enoncé]}}\\
+	\subsection{Orthogonalité et topologie \ccinp{2}}
+	\label{sec:orthogonalite-et-topologie}
+	\textcolor{blue}{\hyperref[Orthogonalité et topologie]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $y\in E$. On sait que $\varphi_y\in \L(E)$.\\
 		De plus d'après l'inégalité de Cauchy-Schwartz, $\forall x\in E,\ |\varphi_y(x)|\leq \norme y\norme x$.\\
@@ -7246,31 +7445,43 @@ Alors, on a l'équivalence :
 		Soit $y\in F^\bot$. Par définition de $F^\bot$, $\proscal{x}{y}=0$. Donc $x\in (F^\bot)^\bot$.\\
 		Ainsi $(F^\bot)^\bot$ est un fermé qui contient $F$ et par suite $\overline F\subset (F^\bot)^\bot$.
 	\end{enumerate}
-	\subsection{Ensemble des valeurs d'adhérence d'une suite}\label{sec:ensemble-des-valeurs-dadherence-dune-suite}
-		\textcolor{blue}{\hyperref[Ensemble des valeurs d'adhérence d'une suite]{[Enoncé]}}\\
-		On raisonne par double inclusion.\\
-		Soit $\ell$ une valeur d'adhérence de $u:=(u_n)_{n\in \N}$. Fixons $n\in \N$.\\
-		Notons $\varphi:\N\to\N$ strictement croissante telle que $\upfty\lim u_{\varphi(p)}=\ell$. $\varphi(n)\unfty\longrightarrow\infty$ donc $\exists N\in \N,\ \forall p\geq N,\ \varphi(p)\geq n$. Ainsi $(u_{\varphi(p)})_{p\geq N}$ est une suite à valeurs dans $\{u_k,\ k\geq n\}$ de limite $\ell$ : $\ell\in \overline{\{u_k,\ k\geq n\}}$.\\
-		On en déduit que $V\subset \displaystyle\bigcap_{n\in \N}\overline{\{u_k,\ k\geq n\}}$.\\
-		Réciproquement soit $\ell\in \displaystyle\bigcap_{n\in \N}\overline{\{u_k,\ k\geq n\}}$.\\
-		On va construire par récurrence une extractrice $\psi$ telle que $(u_{\psi(p)})_{p\in \N}$ tend vers $\ell$.\\
-		$\ell\in \overline{\{u_k,\ k\geq 0\}}\implies \exists k_0\in \N,\ \norme{\ell-u_{k_0}}<1=\dfrac{1}{2^0}$.\\
-		Supposons que l'on dispose pour un certain $p\in \N$ d'entiers $k_0<\cdots<k_p$ tels que $\forall j\in \crblanc{0}{p},\ \norme{\ell-u_{k_j}}<\dfrac{1}{2^j}$.\\
-		Alors $\ell\in \overline{\{u_k,\ k\geq k_p\}}\implies \exists k_{p+1}\in \N,\ \norme{\ell-u_{k_{p+1}}}<\dfrac{1}{2^{p+1}}$.\\
-		On définit alors $\psi:\N\to\N$ par $\forall p\in \N,\ \psi(p)=k_p$. Par construction $\psi$ est strictement croissante et de plus, $\forall p\in \N,\ \norme{\ell-u_{\psi(p)}}<\dfrac{1}{2^p}$. Donc $u_{\psi(p)}\upfty\longrightarrow\ell$ d'où $\ell\in V$.\\
-		On en déduit que $V=\displaystyle\bigcap_{n\in \N}\overline{\{u_k,\ k\geq n\}}$. $V$ est un fermé en tant qu'intersection de fermés.\\
-		\textit{Remarque : une manière plus simple/naturelle de traiter l'exercice est de caractériser le fait que $\ell$ soit une valeur d'adhérence de $u$ par le fait qu'il existe une infinité de terme de la suite $u$ à une distance inférieure à $\varepsilon$ de $\ell$. Cette caractérisation peut se voir comme définition d'une valeur d'adhérence et est parfois plus utile que le point de vue suite extraite.}
-	\subsubsection{Valeur d'adhérence du cercle unité}
+	
+	\subsection{Ensemble des valeurs d'adhérence d'une suite \centraleponts{3}}
+	\label{sec:ensemble-des-valeurs-dadherence-dune-suite}
+	\textcolor{blue}{\hyperref[Ensemble des valeurs d'adhérence d'une suite]{[Enoncé]}}\\
+	On raisonne par double inclusion.\\
+	Soit $\ell$ une valeur d'adhérence de $u:=(u_n)_{n\in \N}$. Fixons $n\in \N$.\\
+	Notons $\varphi:\N\to\N$ strictement croissante telle que $\upfty\lim u_{\varphi(p)}=\ell$. $\varphi(n)\unfty\longrightarrow\infty$ donc $\exists N\in \N,\ \forall p\geq N,\ \varphi(p)\geq n$. Ainsi $(u_{\varphi(p)})_{p\geq N}$ est une suite à valeurs dans $\{u_k,\ k\geq n\}$ de limite $\ell$ : $\ell\in \overline{\{u_k,\ k\geq n\}}$.\\
+	On en déduit que $V\subset \displaystyle\bigcap_{n\in \N}\overline{\{u_k,\ k\geq n\}}$.\\
+	Réciproquement soit $\ell\in \displaystyle\bigcap_{n\in \N}\overline{\{u_k,\ k\geq n\}}$.\\
+	On va construire par récurrence une extractrice $\psi$ telle que $(u_{\psi(p)})_{p\in \N}$ tend vers $\ell$.\\
+	$\ell\in \overline{\{u_k,\ k\geq 0\}}\implies \exists k_0\in \N,\ \norme{\ell-u_{k_0}}<1=\dfrac{1}{2^0}$.\\
+	Supposons que l'on dispose pour un certain $p\in \N$ d'entiers $k_0<\cdots<k_p$ tels que $\forall j\in \crblanc{0}{p},\ \norme{\ell-u_{k_j}}<\dfrac{1}{2^j}$.\\
+	Alors $\ell\in \overline{\{u_k,\ k\geq k_p\}}\implies \exists k_{p+1}\in \N,\ \norme{\ell-u_{k_{p+1}}}<\dfrac{1}{2^{p+1}}$.\\
+	On définit alors $\psi:\N\to\N$ par $\forall p\in \N,\ \psi(p)=k_p$. Par construction $\psi$ est strictement croissante et de plus, $\forall p\in \N,\ \norme{\ell-u_{\psi(p)}}<\dfrac{1}{2^p}$. Donc $u_{\psi(p)}\upfty\longrightarrow\ell$ d'où $\ell\in V$.\\
+	On en déduit que $V=\displaystyle\bigcap_{n\in \N}\overline{\{u_k,\ k\geq n\}}$. $V$ est un fermé en tant qu'intersection de fermés.\\
+	\textit{Remarque : une manière plus simple/naturelle de traiter l'exercice est de caractériser le fait que $\ell$ soit une valeur d'adhérence de $u$ par le fait qu'il existe une infinité de terme de la suite $u$ à une distance inférieure à $\varepsilon$ de $\ell$. Cette caractérisation peut se voir comme définition d'une valeur d'adhérence et est parfois plus utile que le point de vue suite extraite.}
+	
+	\subsubsection{Une application \etoile{4}}
+	\label{sec:une-application}
+	\textcolor{blue}{\hyperref[Une application]{[Enoncé]}}\\
 	\begin{enumerate}
-		\item Déjà fait dans les groupes
+		\item Soit $z\in \C$. Si $z$ est une racine de l'unité alors la suite $(z^n)_{n\in \N}$ stationne à $1$ qui est donc sa seule valeur d'adhérence.\\
+		Supposons maintenant que $z$ n'est pas une racine de l'unité. Cela revient à supposer, si l'on écrit $z=e^{2i\pi\theta}$ avec $\theta\in \R$, que $\theta$ est irrationnel.\\
+		On va alors montrer que $\Z+\theta\Z$ est dense dans $\R$. Pour cela on utilise l'exercice classique qui montre que les sous-groupes de $(\R,+)$ sont monogènes ou dense dans $\R$.\\
+		On montre aisément que $\Z+\theta\Z$ est un sous-groupe de $(\R,+)$. Montrons qu'il n'est pas monogène. Par l'absurde on suppose qu'il existe $a\in \R$ tel que $\Z+\theta\Z=a\Z$.\\
+		Alors on sait qu'il existe un entier $k$ tel que $1=ak$. On en déduit que $a=\displaystyle\frac{1}{k}\in \Q$. Nonobstant on sait aussi qu'il existe un entier $m$ tel que $\theta=am$. Donc $\theta\in \Q$ ce qui est absurde.\\
+		Ainsi $\Z+\theta\Z$ n'est pas monogène, il est donc dense dans $\R$.\\
+		On en déduit par continuité et $1$-périodicité de la fonction $f:x\in \R\mapsto e^{2i\pi x}$ que $f(\Z+\theta\Z)=\{e^{2ki\pi\theta},\ k\in \Z\}=\{e^{2in\pi\theta},\ n\in \N\}=\{z^n,\ n\in \N\}$ est dense dans $f(\R)=\U$.\\
+		En particulier $1$ est une valeur d'adhérence de la suite $(z^n)_{n\in \N}$.
 		\item Construisons une extractrice par extractions successives :\\
 		D'après la question précédente on dispose de $\varphi_1:\N\to\N$ strictement croissante telle que $z_1^{\varphi_1(n)}\unfty\longrightarrow1$.\\
 		Supposons que pour un certain $k\in \crblanc{1}{m}$ on dispose de $\psi_{k-1}$ telle que $$\begin{pmatrix}z_1^{\psi_{k-1}(n)}\\\vdots\\z_{k-1}^{\psi_{k-1}(n)}\end{pmatrix}\unfty\longrightarrow\begin{pmatrix}1\\\vdots\\1\end{pmatrix}$$
-		$\left(z_k^{\varphi_{k-1}(n)}\right)_{n\in \N}$ est à valeur dans le compact $\U$ donc quitte à extraire on peut supposer qu'elle converge vers un certain $\lambda\in \U$.\\
-		Ainsi $\begin{pmatrix}1\\\vdots\\1\\\lambda\end{pmatrix}$ est une valeur d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_k^n\end{pmatrix}$. Mais quel que soit $p\in \N$, $\begin{pmatrix}1\\\vdots\\1\\\lambda^p\end{pmatrix}$ est une valeur d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_{k-1}^n\\z_k^n\end{pmatrix}$. En effet en notant $\eta$ une extractrice qui fait converger la suite vers $\begin{pmatrix}1\\\vdots\\1\\\lambda\end{pmatrix}$, il suffit de considérer $\xi(n)=p\eta(n)$.\\
+		$\left(z_k^{\psi_{k-1}(n)}\right)_{n\in \N}$ est à valeur dans le compact $\U$ donc quitte à extraire on peut supposer qu'elle converge vers un certain $\lambda\in \U$.\\
+		Ainsi $\begin{pmatrix}1\\\vdots\\1\\\lambda\end{pmatrix}$ est une valeur d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_k^n\end{pmatrix}$. Mais quel que soit $p\in \N$, $\begin{pmatrix}1\\\vdots\\1\\\lambda^p\end{pmatrix}$ est une valeur d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_k^n\end{pmatrix}$. En effet en notant $\eta$ une extractrice qui fait converger la suite vers $\begin{pmatrix}1\\\vdots\\1\\\lambda\end{pmatrix}$, il suffit de considérer $\xi(n)=p\eta(n)$.\\
 		On considère désormais la suite $(\lambda^n)_{n\in \N}$. D'après la question précédente, cette suite admet 1 pour valeur d'adhérence.\\
 		Par conséquent, comme l'ensemble des valeurs d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_k^n\end{pmatrix}_{n\in \N}$ est fermé, $\begin{pmatrix}1\\\vdots\\1\end{pmatrix}$ est une valeur d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_k^n\end{pmatrix}_{n\in \N}$.\\
-		Par récurrence, pour tout $k\in \crblanc{1}{m}$ $\begin{pmatrix}1\\\vdots\\1\end{pmatrix}$ est une valeur d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_k^n\end{pmatrix}_{n\in \N}$. En particulier $\begin{pmatrix}1\\\vdots\\1\end{pmatrix}$ est une valeur d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_k^m\end{pmatrix}_{n\in \N}$.
+		Par récurrence, pour tout $k\in \crblanc{1}{m}$ $\begin{pmatrix}1\\\vdots\\1\end{pmatrix}$ est une valeur d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_k^n\end{pmatrix}_{n\in \N}$. En particulier $\begin{pmatrix}1\\\vdots\\1\end{pmatrix}$ est une valeur d'adhérence de $\begin{pmatrix}z_1^n\\\vdots\\z_m^n\end{pmatrix}_{n\in \N}$.
 		\item Notons $M=\max\limits_{1\leq k\leq n}|a_k|$. Il est clair que si $M<1$ alors $\displaystyle\left|\sum_{k=1}^na_k^m\right|\leq nM^m\underset{m\to+\infty}{\longrightarrow}0$ d'où $\displaystyle\sum_{k=1}^na_k^m\underset{m\to+\infty}{\longrightarrow}0$.\\
 		Supposons maintenant $M>1$. On note $K=\{k\in \crblanc{1}{n},\ |a_k|=M\}$.\\
 		$\forall k\in K,\ \dfrac{a_k}{M}\in \U$. Donc d'après la question précédente on peut trouver une extractrice $\varphi$ telle que $\forall k\in K,\ \left(\dfrac{a_k}{M}\right)^{\varphi(m)}\underset{m\to\infty}{\longrightarrow}1$.\\
@@ -7278,24 +7489,29 @@ Alors, on a l'équivalence :
 		Enfin, si $M=1$ le même calcul donne $\underset{m\to+\infty}{\lim}\displaystyle\sum_{k=1}^na_k^m=|K|$.\\
 		Au final, si $\left(\displaystyle\sum_{k=1}^na_k^m\right)_{m\in \N}$ converge alors $\forall k\in \crblanc{1}{n},\ |a_k|\leq 1$ et la limite est un entier entre $1$ et $k$, égal au nombre des $a_k$ de module $1$.
 	\end{enumerate}
-	\subsection{Ensemble des suites convergentes}\label{sec:ensemble-des-suites-convergentes}
-		\textcolor{blue}{\hyperref[Ensemble des suites convergentes]{[Enoncé]}}\\
-		\begin{enumerate}[leftmargin=*]
-			\item On note $V$ l'ensemble des suites de $\K^\N$ convergeant vers $0$.\\
-			Tout d'abord c'est bien une partie de $\ell^\infty$ puisqu'une suite convergente est bornée. Ensuite, donnons nous $(u_n^k)_{n\in \N}\in V^\N$ une suite de suites convergeant vers $0$ qui converge vers une suite $U$ dans $(\ell^\infty,\normep{\infty}{\cdot})$.\\
-			La suite des limites $\ukfty\lim u_n^k$ converge vers $0$ puisqu'elle est constante égale à $0$. De plus $(u_n)_{n\in \N}$ converge uniformément vers $U$. Alors d'après le théorème de la double limite $U$ converge vers $\unfty\lim\ukfty\lim u_n^k=0$.\\
-			Ainsi $V$ est fermé.
-			\item On note $C$ l'ensemble des suites convergentes de $\K^\N$. C'est bien une partie de $\ell^\infty$ puisqu'une suite convergente est bornée.\\
-			Soit $(u_n^k)_{n\in \N}\in C^\N$ une suite de suites convergentes qui converge vers une suite $U=(U_n)_{n\in \N}$ dans $(\ell^\infty,\normep{\infty}{\cdot})$. On note pour tout $n\in \N$, $\ell_n=\ukfty\lim u_n^k$.\\
-			Montrons que la suite des limites $(\ell_n)_{n\in \N}$ converge. On va montrer qu'elle est de Cauchy ce qui justifiera qu'elle converge (cf.[l'exo qui montre qu'un espace vectoriel de dimension finie est complet]).\\
-			Soit $\varepsilon>0$.\\
-			$\normep{\infty}{u_n-U}\unfty\longrightarrow0$ donc $\exists N\in \N,\ \forall p,q\geq N,\ \normep{\infty}{u_p-u_q}<\dfrac{\varepsilon}{3}$.\\
-			Pour tout $n\in\N$, $u_n^k\unfty\longrightarrow\ell_n$ donc $\exists K_n\in \N,\ \forall k\geq K_n,\ |u_n^k-\ell_n|<\dfrac{\varepsilon}{3}$.\\
-			Soient $p\geq N$ et $k\geq \max(K_p,K_N)$.
-			$$|\ell_p-\ell_N|\leq |\ell_p-u_p^k|+|u_p^k-u_N^k|+|u_N^k-\ell_N|\leq |u_p^k-\ell_p|+\normep{\infty}{u_p-u_N}+|u_N^k-\ell_N|<\varepsilon$$
-			On conclut comme la question précédente avec le théorème de la double limite.
-		\end{enumerate}
-	\subsection{Calcul d'adhérence}
+	
+	\subsection{Ensemble des suites convergente vers 0 \centraleponts{3}}
+	\label{sec:ensemble-des-suites-convergents-vers-0}
+	\textcolor{blue}{\hyperref[Ensemble des suites convergents vers 0]{[Enoncé]}}\\
+	On note $V$ l'ensemble des suites de $\K^\N$ convergeant vers $0$.\\
+	Tout d'abord c'est bien une partie de $\ell^\infty$ puisqu'une suite convergente est bornée. Ensuite, donnons nous $((u_n^k)_{k\in \N})_{n\in \N}\in V^\N$ une suite de suites convergeant vers $0$ qui converge vers une suite $U$ dans $(\ell^\infty,\normep{\infty}{\cdot})$.\\
+	La suite des limites $\ukfty\lim u_n^k$ converge vers $0$ puisqu'elle est constante égale à $0$. De plus $(u_n)_{n\in \N}$ converge uniformément vers $U$. Alors d'après le théorème de la double limite $U$ converge vers $\unfty\lim\ukfty\lim u_n^k=0$.\\
+	Ainsi $V$ est fermé.
+	
+	\subsubsection{Ensemble des suites convergentes \etoile{3} (HP)}
+	\label{sec:ensemble-des-suites-convergentes}
+	\textcolor{blue}{\hyperref[Ensemble des suites convergentes]{[Enoncé]}}\\
+	On note $C$ l'ensemble des suites convergentes de $\K^\N$. C'est bien une partie de $\ell^\infty$ puisqu'une suite convergente est bornée.\\
+	Soit $(u_n^k)_{n\in \N}\in C^\N$ une suite de suites convergentes qui converge vers une suite $U=(U_n)_{n\in \N}$ dans $(\ell^\infty,\normep{\infty}{\cdot})$. On note pour tout $n\in \N$, $\ell_n=\ukfty\lim u_n^k$.\\
+	Montrons que la suite des limites $(\ell_n)_{n\in \N}$ converge. On va montrer qu'elle est de Cauchy ce qui justifiera qu'elle converge (cf.\ref{Suite de Cauchy}).\\
+	Soit $\varepsilon>0$.\\
+	$\normep{\infty}{u_n-U}\unfty\longrightarrow0$ donc $\exists N\in \N,\ \forall p,q\geq N,\ \normep{\infty}{u_p-u_q}<\dfrac{\varepsilon}{3}$.\\
+	Pour tout $n\in\N$, $u_n^k\unfty\longrightarrow\ell_n$ donc $\exists K_n\in \N,\ \forall k\geq K_n,\ |u_n^k-\ell_n|<\dfrac{\varepsilon}{3}$.\\
+	Soient $p\geq N$ et $k\geq \max(K_p,K_N)$.
+	$$|\ell_p-\ell_N|\leq |\ell_p-u_p^k|+|u_p^k-u_N^k|+|u_N^k-\ell_N|\leq |u_p^k-\ell_p|+\normep{\infty}{u_p-u_N}+|u_N^k-\ell_N|<\varepsilon$$
+	On conclut comme la question précédente avec le théorème de la double limite.
+	
+	\subsection{Calcul d'adhérence \xens{3}}
 	\label{Calcul d'adhérence corrigé}
 	\textcolor{blue}{\hyperref[Calcul d'adhérence]{[Enoncé]}}
 	Soit $r_n\in E^\N$ convergente. On note $r$ sa limite. $\forall n\in \N,\ \exists (p_n,q_n)\in (\N^*)^2,\ r_n=\displaystyle\frac{1}{p_n}+\frac{1}{q_n}$.\\
@@ -7309,7 +7525,8 @@ Alors, on a l'équivalence :
 	Enfin supposons $(p_n)$ et $(q_n)$ non bornées. Quitte à extraire on peut supposer $(p_n)$ croissante, et donc de limite $+\infty$. Alors $\dfrac{1}{q_n}\unfty\longrightarrow r$. Si $r\ne 0$, $(q_n)$ converge vers $\dfrac{1}{r}$ et est donc bornée. On en déduit que $r=0$.\\
 	Ainsi $\overline E=\{0\}\cup\left\{\dfrac{1}{n},\ n\in \N^*\right\}\cup E$.\\\\
 	\textit{Remarque : On aurait aussi pu extraire de manière à ce que $(p_n)$ et $(q_n)$ soient bornée(s)/monotone(s), ce qui revient à dire qu'un produit cartésien de compacts est compact. Cela nous évite d'avoir à montrer que $\left(\dfrac{1}{q_n}\right)_{n\in \N}$ converge à chaque fois.}
-	\subsection{Partie ouverte et fermée simultanément}
+	
+	\subsection{Partie ouverte et fermée simultanément \centraleponts{3}}
 	\label{sec:partie-ouverte-et-fermee-simultanement}
 		\textcolor{blue}{\hyperref[Partie ouverte et fermée simultanément]{[Enoncé]}}\\
 		\textbf{Je rajouterai un joli dessin}\\
@@ -7324,32 +7541,27 @@ Alors, on a l'équivalence :
 		$\dfrac{r-s}{2}\norme{b-a}<r\iff r-s<\dfrac{2r}{\norme{b-a}}\iff r<\dfrac{\norme{b-a}s}{\norme{b-a}-2}$ donc quitte à prendre $r$ plus petit on peut considérer que l'inégalité est vérifiée. (elle l'est automatiquement si $\norme{b-a}=2$).\\
 		Ainsi $s'>s$ et $s'\in \{t\in [0,1],\ \varphi(t)\in A\}$. Ceci est absurde donc $s=1$ et par suite $b\in A$.\\
 		Finalement $A=E$.
-		\subsection{Opérations sur les adhérences/intérieurs}
-		\label{Opérations sur les adhérences/intérieurs corrigé}
-		\textcolor{blue}{\hyperref[Opérations sur les adhérences/intérieurs]{[Corrigé]}}\\
-		Il n'y a pas vraiment de méthode pour trouver un tel ensemble. On peut essayer de le construire par étape. Il faut jouer avec des parties de $\R$ dont on connaît l'adhérence/l'intérieur comme par exemple les intervalles.\\
-		On veut $\T A\ne\ring{\T A}$ et $\T A\ne \overline{\T A}$ il faut donc déjà une partie ni ouverte ni fermée. Prenons par exemple $I=[0,1[$.\\
-		Cela ne suffit pas puisque $\overline I=[0,1]=\overline{\ring I}$ par exemple. Un intervalle ne suffit donc pas, essayons avec plusieurs. Prenons $J=[0,1[\cup ]1,2[$. Pour faciliter les calculs on a les relations de l'exercice précédant (cf.[l'exo que j'ai rajouté avant]).
-		On a
-		$$\ring J=]0,1[\cup]1,2[,\ \overline J=[0,2],\ \ring{\overline J}=]0,2[, \overline{\ring J}=[0,2]$$
-		On peut éviter la dernière égalité en prenant $J'=J\cup \{3\}$ : $\overline{J'}=[0,2]\cup\{3\}$ et $\overline{\ring{J'}}=[0,2]$.\\
-		On sait aussi que $\overline \Q=\R$ et $\ring \Q=\emptyset$ (car $\R/\Q$ est dense dans $\R$).\\
-		Finalement $\T A=[0,1[\cup]1,2[\cup\{3\}\cup(]4,5[\cap\Q)$ fonctionne :
-		$$\ring{\T A}=]0,1[\cup ]1,2[,\ \overline{\T A}=[0,2]\cup\{3\}\cup[4,5],\ \ring{\overline{\T A}}=]0,2[\cup]4,5[,\ \overline{\ring{\T A}}=[0,2],\ \ring{\overline{\ring{\T A}}}=]0,2[,\ \overline{\ring{\overline{\T A}}}=[0,2]\cup[4,5]$$
-		
-	\subsection{Les sept espaces de Kuratowski}\label{sec:les-sept-espaces-de-kuratowski}
-		\textcolor{blue}{\hyperref[Les sept espaces de Kuratowski]{[Enoncé]}}\\
-		Il n'y a pas vraiment de méthode pour trouver un tel ensemble. On peut essayer de le construire par étape. Il faut jouer avec des parties de $\R$ dont on connaît l'adhérence/l'intérieur comme par exemple les intervalles.\\
-		On veut $\T A\ne\ring{\T A}$ et $\T A\ne \overline{\T A}$ il faut donc déjà une partie ni ouverte ni fermée. Prenons par exemple $I=[0,1[$.\\
-		Cela ne suffit pas puisque $\overline I=[0,1]=\overline{\ring I}$ par exemple. Un intervalle ne suffit donc pas, essayons avec plusieurs. Prenons $J=[0,1[\cup ]1,2[$. Pour faciliter les calculs on a les relations de l'exercice précédant (cf.[l'exo que j'ai rajouté avant]).
-		On a
-		$$\ring J=]0,1[\cup]1,2[,\ \overline J=[0,2],\ \ring{\overline J}=]0,2[, \overline{\ring J}=[0,2]$$
-		On peut éviter la dernière égalité en prenant $J'=J\cup \{3\}$ : $\overline{J'}=[0,2]\cup\{3\}$ et $\overline{\ring{J'}}=[0,2]$.\\
-		On sait aussi que $\overline \Q=\R$ et $\ring \Q=\emptyset$ (car $\R/\Q$ est dense dans $\R$).\\
-		Finalement $\T A=[0,1[\cup]1,2[\cup\{3\}\cup(]4,5[\cap\Q)$ fonctionne :
-		$$\ring{\T A}=]0,1[\cup ]1,2[,\ \overline{\T A}=[0,2]\cup\{3\}\cup[4,5],\ \ring{\overline{\T A}}=]0,2[\cup]4,5[,\ \overline{\ring{\T A}}=[0,2],\ \ring{\overline{\ring{\T A}}}=]0,2[,\ \overline{\ring{\overline{\T A}}}=[0,2]\cup[4,5]$$
-	\subsection{Intérieur d'un sev}\label{sec:interieur-dun-sev}
-		\textcolor{blue}{\hyperref[Intérieur d'un sev]{[Enoncé]}}\\
+	
+	\subsection{Opérations sur les adhérences/intérieurs}
+	\label{Opérations sur les adhérences/intérieurs corrigé}
+	\textcolor{blue}{\hyperref[Opérations sur les adhérences/intérieurs]{[Corrigé]}}\\
+	
+	\subsection{Les sept espaces de Kuratowski \etoile{3}}
+	\label{sec:les-sept-espaces-de-kuratowski}
+	\textcolor{blue}{\hyperref[Les sept espaces de Kuratowski]{[Enoncé]}}\\
+	Il n'y a pas vraiment de méthode pour trouver un tel ensemble. On peut essayer de le construire par étape. Il faut jouer avec des parties de $\R$ dont on connaît l'adhérence/l'intérieur comme par exemple les intervalles.\\
+	On veut $\T A\ne\ring{\T A}$ et $\T A\ne \overline{\T A}$ il faut donc déjà une partie ni ouverte ni fermée. Prenons par exemple $I=[0,1[$.\\
+	Cela ne suffit pas puisque $\overline I=[0,1]=\overline{\ring I}$ par exemple. Un intervalle ne suffit donc pas, essayons avec plusieurs. Prenons $J=[0,1[\cup ]1,2[$. Pour faciliter les calculs on a les relations de l'exercice précédant (cf.[l'exo que j'ai rajouté avant]).
+	On a
+	$$\ring J=]0,1[\cup]1,2[,\ \overline J=[0,2],\ \ring{\overline J}=]0,2[, \overline{\ring J}=[0,2]$$
+	On peut éviter la dernière égalité en prenant $J'=J\cup \{3\}$ : $\overline{J'}=[0,2]\cup\{3\}$ et $\overline{\ring{J'}}=[0,2]$.\\
+	On sait aussi que $\overline \Q=\R$ et $\ring \Q=\emptyset$ (car $\R/\Q$ est dense dans $\R$).\\
+	Finalement $\T A=[0,1[\cup]1,2[\cup\{3\}\cup(]4,5[\cap\Q)$ fonctionne :
+	$$\ring{\T A}=]0,1[\cup ]1,2[,\ \overline{\T A}=[0,2]\cup\{3\}\cup[4,5],\ \ring{\overline{\T A}}=]0,2[\cup]4,5[,\ \overline{\ring{\T A}}=[0,2],\ \ring{\overline{\ring{\T A}}}=]0,2[,\ \overline{\ring{\overline{\T A}}}=[0,2]\cup[4,5]$$
+
+	\subsection{Intérieur d'un sous-espace \telecom{2}}
+	\label{sec:interieur-dun-sev}
+	\textcolor{blue}{\hyperref[Intérieur d'un sev]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Supposons que $F$ est ouvert. Soit $x\in E\backslash\{0\}$.\\
 		$0\in F$ donc comme $F$ est ouvert, $\exists r>0,\ B(0,r)\subset F$. $y=\dfrac{r}{2\norme x}x\in B(0,r)$ donc $y\in F$. Puis comme $F$ est un espace vectoriel, $x=\dfrac{2\norme x}{r}y\in F$.\\
@@ -7359,68 +7571,77 @@ Alors, on a l'équivalence :
 		$x=\dfrac{2\norme x}{r}(y-x_0)\in F$.\\
 		Ainsi $F=E$.
 	\end{enumerate}
-	\subsection{Adhérence d'un sev}\label{sec:adherence-dun-sev}
-		\textcolor{blue}{\hyperref[Adhérence d'un sev]{[Enoncé]}}\\
-		\begin{enumerate}[leftmargin=*]
-		\item $F\subset \overline F$ donc $0\in \overline F$. Fixons $x,y\in \overline F$ et $\lambda\in \K$.\\
-		Il existe des suites $(x_n),(y_n)\in F^\N$ qui convergent respectivement vers $x$ et $y$.\\
-		Alors comme $F$ est un espace vectoriel $(x_n+\lambda y_n)\in F^\N$. De plus, $x_n+\lambda y_n\unfty\longrightarrow x+\lambda y$. Donc $x+\lambda y\in \overline F$.\\
-		On en déduit que $\overline F$ est un sous-espace vectoriel de $E$.
-		\item \underline{$1^{\T{ère}}$ méthode :}\\
-		Soit $(x_n)\in F^\N$ une suite qui converge vers $x\in E$. Puisque $(x_n)$ converge, elle est bornée. Il existe donc $M>0$ telle que $\forall n\in \N,\ x_n\in B_f(0,M)$. Alors $(x_n)$ est une suite de $K:=F\cap B_f(0,M)$ qui est un fermé relatif à $F$ borné. Comme $F$ est de dimension finie, $K$ est compact et donc $(x_n)$ admet une valeur d'adhérence dans $K$, a fortiori dans $F$.\\
-		$x$ étant la seule valeur d'adhérence de $(x_n)$, on en déduit que $x\in F$ puis que $F$ est fermé.\\\\
-		\underline{$2^{\T{nd}}$ méthode :}\\
-		Soit $(x_n)\in F^\N$ une suite qui converge vers $x\in E$. Fixons une base $(e_1,\dots,e_d)$ de $F$. On la complète en une base $(e_i)_{i\in I}$ de $E$.\\
-		$\forall n\in \N,\ \exists a_1^n,\dots,a_d^n\in \K,\ x_n=\displaystyle\sum_{k=1}^da_k^ne_k$. On note aussi $x=\displaystyle\sum_{j\in J}a_je_j$ où $J$ est une sous-famille finie de $I$.\\
-		Comme $(x_n)$ converge vers $x$ dans $E$, il y a convergence coordonnées par coordonnées.\\
-		Alors $\forall j\in J\backslash\crblanc{1}{d},\ a_j=\unfty\lim 0=0$. Par conséquent $x=\displaystyle\sum_{j=1}^da_je_j\in F$.\\
-		\textit{Remarque : Cette preuve repose sur l'existence d'une base dans un espace vectoriel quelconque, ce qui se déduit du théorème de la base incomplète qui est équivalent à l'axiome du choix (ou plutôt au lemme de Zorn). La première preuve permet d'éviter de telles considérations.}\\\\
-		\underline{$3^{\T{ème}}$ méthode :} (hors-programme)\\
-		On montre qu'un sous-espace vectoriel de dimension finie d'un espace vectoriel normé est complet et donc a fortiori fermé (cf. l'exo qui montre que $\R$ est complet \ref{R est complet} : je vais rajouter des questions pour arriver à ce résultat).
-		\item Soit $a\in E$ tel que $E=H\oplus\Vect(a)$. Supposons que $H$ n'est pas fermé dans $E$. Alors il existe une suite $(h_n)\in H^\N$ qui converge vers un élément $x\in E\backslash H$.\\
-		On sait alors qu'il existe un couple $(h,\lambda)\in H\times\K^*$ tel que $x=h+\lambda a$. Fixons $y=h'+\lambda'a\in E$.\\
-		$y-\dfrac{\lambda'}{\lambda}x=h'-\dfrac{\lambda'}{\lambda}h\in H$.\\
-		Ainsi $\lambda y=\lambda y-\lambda'x+\lambda'x=\unfty\lim \lambda h'-\lambda'h+\lambda' h_n$ avec $\forall n\in \N,\ \lambda h'-\lambda'h+\lambda'h_n\in H$. Ainsi $\lambda y\in\overline H$ et comme $\overline H$ est un espace vectoriel et $\lambda\ne 0$, $y\in \overline H$.\\
-		Par conséquent $\overline H=E$ c'est-à-dire $H$ est dense dans $E$.
-		\end{enumerate}
-	\subsection{Graphe fermé}\label{sec:graphe-ferme}
-		\textcolor{blue}{\hyperref[Graphe fermé]{[Enoncé]}}\\
-		\begin{enumerate}[leftmargin=*]
-			\item Supposons $f$ continue. Soit $(x_n,y_n)\in G^\N$ convergeant vers $(x,y)\in \R^2$ i.e $x=\unfty\lim x_n$ et $y=\unfty\lim y_n$.\\
-			$\forall n\in \N,\ y_n=f(x_n)$. Donc comme $f$ est continue, $f(x_n)\unfty\longrightarrow f(x)$. Par unicité de la limite $y=f(x)$ i.e $(x,y)\in G$.
-			\item Supposons $f$ bornée et $G$ fermé. Soient $x\in \R$ et $(x_n)\in \R^\N$ convergeant vers $x$.\\
-			$(f(x_n))$ est une suite bornée de $\R$, d'après le théorème de Bolzano-Weierstrass elle admet une sous-suite $f(x_{\varphi(n)})$ convergente. On note $\ell$ sa limite.\\
-			$((x_{\varphi(n)},f(x_{\varphi(n)}))$ est une suite convergente de $G$, sa limite est donc dans $G$. Par conséquent $(x,\ell)\in G$, c'est-à-dire $\unfty\lim f(x_{\varphi(n)})=\ell=f(x)$.\\
-			Ainsi $f$ est continue.
-			\item La fonction $f:x\mapsto\begin{cases}
-				\dfrac{1}{|x|}&\mbox{si }x\ne 0\\
-				0&\mbox{si }x=0
-			\end{cases}$ fournit un contre-exemple.\\
-			En effet, si $\left(x_n,\dfrac{1}{|x_n|}\right)\unfty\longrightarrow(x,y)\in \R^2$ alors :
-			\begin{itemize}
-				\item Si $x\ne 0$ on se retrouve dans le cas de la question 1 et $y=\dfrac{1}{|x|}$;
-				\item Si $x=0$ alors $y=+\infty$ ce qui est absurde.
-			\end{itemize}
-			Par conséquent le graphe de $f$ est fermé, pourtant $f$ n'est pas continue en $0$.
-		\end{enumerate}
-	\subsection{Application linéaire continue}\label{sec:application-lineaire-continue}
-		\textcolor{blue}{\hyperref[Application linéaire continue]{[Enoncé]}}\\
-		\begin{enumerate}[leftmargin=*]
-			\item On pose $\varphi:f\in \mathcal C([0,1],\R)\mapsto f(1)$.\\
-			$\forall f\in \mathcal C([0,1],\R),\ |\varphi(f)|\leq \normep{\infty}{f}$ donc $\varphi\in E^*$.\\
-			Pourtant, pour $f_n:x\mapsto x^n$, $\dfrac{\normep{1}{f_n}}{|\varphi(f_n)|}=\dfrac{1}{n+1}\unfty\longrightarrow0$. Donc $\varphi\notin F^*$.
-			\item On montre aisément que : \[\normep{1}{f}\leq \normep{\infty}{f}\]
-			Ainsi pour une application $\varphi$ continue sur $F$, on a : 
-			\[\exists C\in\R_+,\forall f\in\mathcal{C}^0([0,1],\R), \; |\varphi(f)|\leq C\normep{1}{f}\leq C\normep{\infty}{f}\]
-			Et donc $\varphi$ est continue sur $E$.
-		\end{enumerate}
-	\subsection{Application linéaire non continue}\label{sec:application-lineaire-non-continue}
-		\textcolor{blue}{\hyperref[Application linéaire non continue]{[Enoncé]}}\\
-		Oui : On considère l'opérateur de dérivation $D:f\in E\mapsto f'$ et la suite des fonctions $f_n:x\mapsto e^{nx}$. On remarque alors que $D(f_n)=nf_n$\\
-		Si $N$ est une norme sur $E$ alors $\dfrac{N(D(f_n))}{N(f_n)}=n\unfty\longrightarrow+\infty$. Donc $D$ n'est pas continue sur $(E,N)$.
+	
+	\subsection{Adhérence d'un sous-espace \centraleponts{3}}
+	\label{sec:adherence-dun-sev}
+	\textcolor{blue}{\hyperref[Adhérence d'un sev]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+	\item $F\subset \overline F$ donc $0\in \overline F$. Fixons $x,y\in \overline F$ et $\lambda\in \K$.\\
+	Il existe des suites $(x_n),(y_n)\in F^\N$ qui convergent respectivement vers $x$ et $y$.\\
+	Alors comme $F$ est un espace vectoriel $(x_n+\lambda y_n)\in F^\N$. De plus, $x_n+\lambda y_n\unfty\longrightarrow x+\lambda y$. Donc $x+\lambda y\in \overline F$.\\
+	On en déduit que $\overline F$ est un sous-espace vectoriel de $E$.
+	\item \underline{$1^{\T{ère}}$ méthode :}\\
+	Soit $(x_n)\in F^\N$ une suite qui converge vers $x\in E$. Puisque $(x_n)$ converge, elle est bornée. Il existe donc $M>0$ telle que $\forall n\in \N,\ x_n\in B_f(0,M)$. Alors $(x_n)$ est une suite de $K:=F\cap B_f(0,M)$ qui est un fermé relatif à $F$ borné. Comme $F$ est de dimension finie, $K$ est compact et donc $(x_n)$ admet une valeur d'adhérence dans $K$, a fortiori dans $F$.\\
+	$x$ étant la seule valeur d'adhérence de $(x_n)$, on en déduit que $x\in F$ puis que $F$ est fermé.\\\\
+	\underline{$2^{\T{nd}}$ méthode :}\\
+	Soit $(x_n)\in F^\N$ une suite qui converge vers $x\in E$. Fixons une base $(e_1,\dots,e_d)$ de $F$. On la complète en une base $(e_i)_{i\in I}$ de $E$.\\
+	$\forall n\in \N,\ \exists a_1^n,\dots,a_d^n\in \K,\ x_n=\displaystyle\sum_{k=1}^da_k^ne_k$. On note aussi $x=\displaystyle\sum_{j\in J}a_je_j$ où $J$ est une sous-famille finie de $I$.\\
+	Comme $(x_n)$ converge vers $x$ dans $E$, il y a convergence coordonnées par coordonnées.\\
+	Alors $\forall j\in J\backslash\crblanc{1}{d},\ a_j=\unfty\lim 0=0$. Par conséquent $x=\displaystyle\sum_{j=1}^da_je_j\in F$.\\
+	\textit{Remarque : Cette preuve repose sur l'existence d'une base dans un espace vectoriel quelconque, ce qui se déduit du théorème de la base incomplète qui est équivalent à l'axiome du choix (ou plutôt au lemme de Zorn). La première preuve permet d'éviter de telles considérations.}\\\\
+	\underline{$3^{\T{ème}}$ méthode :} (hors-programme)\\
+	On montre qu'un sous-espace vectoriel de dimension finie d'un espace vectoriel normé est complet et donc a fortiori fermé (cf. l'exo qui montre que $\R$ est complet \ref{R est complet} : je vais rajouter des questions pour arriver à ce résultat).
+	\item Soit $a\in E$ tel que $E=H\oplus\Vect(a)$. Supposons que $H$ n'est pas fermé dans $E$. Alors il existe une suite $(h_n)\in H^\N$ qui converge vers un élément $x\in E\backslash H$.\\
+	On sait alors qu'il existe un couple $(h,\lambda)\in H\times\K^*$ tel que $x=h+\lambda a$. Fixons $y=h'+\lambda'a\in E$.\\
+	$y-\dfrac{\lambda'}{\lambda}x=h'-\dfrac{\lambda'}{\lambda}h\in H$.\\
+	Ainsi $\lambda y=\lambda y-\lambda'x+\lambda'x=\unfty\lim \lambda h'-\lambda'h+\lambda' h_n$ avec $\forall n\in \N,\ \lambda h'-\lambda'h+\lambda'h_n\in H$. Ainsi $\lambda y\in\overline H$ et comme $\overline H$ est un espace vectoriel et $\lambda\ne 0$, $y\in \overline H$.\\
+	Par conséquent $\overline H=E$ c'est-à-dire $H$ est dense dans $E$.
+	\end{enumerate}
+	
+	\subsection{Graphe fermé \centraleponts{3}}
+	\label{sec:graphe-ferme}
+	\textcolor{blue}{\hyperref[Graphe fermé]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Supposons $f$ continue. Soit $(x_n,y_n)\in G^\N$ convergeant vers $(x,y)\in \R^2$ i.e $x=\unfty\lim x_n$ et $y=\unfty\lim y_n$.\\
+		$\forall n\in \N,\ y_n=f(x_n)$. Donc comme $f$ est continue, $f(x_n)\unfty\longrightarrow f(x)$. Par unicité de la limite $y=f(x)$ i.e $(x,y)\in G$.
+		\item Supposons $f$ bornée et $G$ fermé. Soient $x\in \R$ et $(x_n)\in \R^\N$ convergeant vers $x$.\\
+		$(f(x_n))$ est une suite bornée de $\R$, d'après le théorème de Bolzano-Weierstrass elle admet une sous-suite $f(x_{\varphi(n)})$ convergente. On note $\ell$ sa limite.\\
+		$((x_{\varphi(n)},f(x_{\varphi(n)}))$ est une suite convergente de $G$, sa limite est donc dans $G$. Par conséquent $(x,\ell)\in G$, c'est-à-dire $\unfty\lim f(x_{\varphi(n)})=\ell=f(x)$.\\
+		Ainsi $f$ est continue.
+		\item La fonction $f:x\mapsto\begin{cases}
+			\dfrac{1}{|x|}&\mbox{si }x\ne 0\\
+			0&\mbox{si }x=0
+		\end{cases}$ fournit un contre-exemple.\\
+		En effet, si $\left(x_n,\dfrac{1}{|x_n|}\right)\unfty\longrightarrow(x,y)\in \R^2$ alors :
+		\begin{itemize}
+			\item Si $x\ne 0$ on se retrouve dans le cas de la question 1 et $y=\dfrac{1}{|x|}$;
+			\item Si $x=0$ alors $y=+\infty$ ce qui est absurde.
+		\end{itemize}
+		Par conséquent le graphe de $f$ est fermé, pourtant $f$ n'est pas continue en $0$.
+	\end{enumerate}
+	
+	\subsection{Application linéaire continue \telecom{2}}
+	\label{sec:application-lineaire-continue}
+	\textcolor{blue}{\hyperref[Application linéaire continue]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On pose $\varphi:f\in \mathcal C([0,1],\R)\mapsto f(1)$.\\
+		$\forall f\in \mathcal C([0,1],\R),\ |\varphi(f)|\leq \normep{\infty}{f}$ donc $\varphi\in E^*$.\\
+		Pourtant, pour $f_n:x\mapsto x^n$, $\dfrac{\normep{1}{f_n}}{|\varphi(f_n)|}=\dfrac{1}{n+1}\unfty\longrightarrow0$. Donc $\varphi\notin F^*$.
+		\item On montre aisément que : \[\normep{1}{f}\leq \normep{\infty}{f}\]
+		Ainsi pour une application $\varphi$ continue sur $F$, on a : 
+		\[\exists C\in\R_+,\forall f\in\mathcal{C}^0([0,1],\R), \; |\varphi(f)|\leq C\normep{1}{f}\leq C\normep{\infty}{f}\]
+		Et donc $\varphi$ est continue sur $E$.
+	\end{enumerate}
+	
+	\subsection{Application linéaire non continue \centraleponts{2}}
+	\label{sec:application-lineaire-non-continue}
+	\textcolor{blue}{\hyperref[Application linéaire non continue]{[Enoncé]}}\\
+	Oui : On considère l'opérateur de dérivation $D:f\in E\mapsto f'$ et la suite des fonctions $f_n:x\mapsto e^{nx}$. On remarque alors que $D(f_n)=nf_n$\\
+	Si $N$ est une norme sur $E$ alors $\dfrac{N(D(f_n))}{N(f_n)}=n\unfty\longrightarrow+\infty$. Donc $D$ n'est pas continue sur $(E,N)$.
 		
-	\subsection{Polynômes réels de degré $n$ scindés à racines simples sur $\R$ \etoile{4}}\label{sec:polynomes-reels-de-degre-n-scindes-a-racines-simples-sur-r-etoile4}
-		\textcolor{blue}{\hyperref[Polynômes réels de degré n scindés à racines simples sur R]{[Enoncé]}}\\
+	\subsection{Polynômes réels de degré $n$ scindés à racines simples sur $\R$ \xens{4}}
+	\label{sec:polynomes-reels-de-degre-n-scindes-a-racines-simples-sur-r-etoile4}
+	\textcolor{blue}{\hyperref[Polynômes réels de degré n scindés à racines simples sur R]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $P=\Lambda\displaystyle\prod\limits_{i=1}^n(X-x_i)\in A$ avec $x_1<\dots<x_n$. On fixe $(a_0,\dots,a_n)\in \R^{n+1}$ telle que,
 		$$a_0<x_1<a_1<x_2<\dots<a_{n-1}<x_n<a_n$$
@@ -7454,8 +7675,9 @@ Alors, on a l'équivalence :
 		Finalement $\overline{A}=S$.
 	\end{enumerate}
 	
-	\subsection{Lemme de Riemann-Lebesgue \etoile{3}}\label{sec:lemme-de-riemann-lebesgue-etoile3}
-		\textcolor{blue}{\hyperref[Lemme de Riemann-Lebesgue]{[Enoncé]}}\\
+	\subsection{Lemme de Riemann-Lebesgue \centraleponts{3}}
+	\label{sec:lemme-de-riemann-lebesgue-etoile3}
+	\textcolor{blue}{\hyperref[Lemme de Riemann-Lebesgue]{[Enoncé]}}\\
 	\begin{itemize}[leftmargin=*]
 		\item Posons $(x_0,\dots,x_n)$ une subdivision de $[a,b]$ adaptée à $\phi$, c'est à dire telle que $x_0=a<x_1<\dots<x_{n-1}<x_n=b$ et que $\phi$ soit constante sur les intervalles $]x_k,x_{k+1}[$ pour $k\in \crblanc{0}{n-1}$. On note $\alpha_k=\phi(x_k)$.\\
 		$\left|\displaystyle\int_a^b e^{i\lambda t}\phi(t)dt\right|=\left|\displaystyle\sum\limits_{k=0}^{n-1}\int_{x_k}^{x_{k+1}}e^{i\lambda t}\phi(t)dt\right|=\left|\displaystyle\sum\limits_{k=0}^{n-1}\int_{x_k}^{x_{k+1}}e^{i\lambda t}\alpha_kdt\right|=\left|\displaystyle\sum\limits_{k=0}^{n-1}\frac{\alpha_k(e^{i\lambda x_{k+1}}-e^{i\lambda x_k})}{i\lambda}\right|\leq\displaystyle\sum\limits_{k=0}^{n-1}\frac{2|\alpha_k|}{\lambda}\underset{\lambda\to +\infty}{\longrightarrow}0$.\\
@@ -7478,15 +7700,16 @@ Alors, on a l'équivalence :
 		C'est à dire $\lim\limits_{\lambda\to +\infty}\displaystyle\int_{-\infty}^{+\infty}\phi(t)e^{i\lambda t}dt=0$.
 	\end{itemize}
 	
-	\subsection{Borel-Lebesgue}\label{sec:borel-lebesgue}
-		\textcolor{blue}{\hyperref[Borel-Lebesgue]{[Enoncé]}}\\
+	\subsection{Borel-Lebesgue (HP)}
+	\label{sec:borel-lebesgue}
+	\textcolor{blue}{\hyperref[Borel-Lebesgue]{[Enoncé]}}\\
 	Par souci de facilité, on raccourcira Borel-Lebesgue par BL et Bolzano-Weierstrass par BW.\\
 	Montrons que BL-compact implique BW-compact.\\
 	Supposons que $E$ est BL-compact.\\
 	Soit $(x_n)$ une suite de $E$.\\
 	Supposons que $(x_n)$ n'a pas de valeur d'adhérence.\\
 	Alors pour tout $y\in E$, il existe un ouvert de $E$, $U_y$ qui contient $y$ tel que \[\{k, x_k\in U_y\}\; \text{est fini}\]
-	La famille $(U_y)$ est un recouvrement de $E$ donc il existe une famille finie $(y_1,\dots, y_p)$ tel que :
+	La famille $(U_y)$ est un recouvrement de $E$ donc il existe une famille finie $(y_1,\dots, y_p)$ telle que :
 	\[\bigcup_{i=1}^{p}U_{y_i}=E\]
 	donc \[\{{k, x_k\in E}\}\; \text{est fini}\]
 	ce qui est absurde.\\
@@ -7513,27 +7736,31 @@ Alors, on a l'équivalence :
 	Ainsi :
 	\[\forall n\in \N, \forall m<n, d(x_m, x_n)>r\]
 	Donc la suite $(x_n)$ n'a pas de sous-suite de Cauchy, ce qui est impossible car $E$ est BW-compact.
-	\subsection{Parties compactes d'un espace vectoriel normé de dimension finie}\label{sec:parties-compactes-dun-espace-vectoriel-norme-de-dimension-finie}
-		\textcolor{blue}{\hyperref[Parties compactes d'un espace vectoriel normé de dimension finie]{[Enoncé]}}\\
-		\begin{enumerate}[leftmargin=*]
-			\item Soit $K\subset E$ une partie compacte. Soit $(x_n)\in K^\N$ qui converge vers $x\in E$.\\
-			Comme $K$ est compacte, la suite $(x_n)$ admet une valeur d'adhérence dans $K$. Par ailleurs $(x_n)$ converge vers $x$ donc sa seule valeur d'adhérence est $x$. On en déduit que $x\in K$ et donc que $K$ est fermée.
-			\item Soient $F\subset K\subset E$ avec $F$ fermée et $K$ compacte. Soit $(x_n)\in F^\N$.\\
-			$(x_n)\in K^\N$ donc comme $K$ est compacte, il existe une sous-suite $(y_n)$ de $(x_n)$ qui converge dans $K$. Or $(y_n)\in F^\N$ donc comme $F$ est fermée, $(y_n)$ converge dans $F$.\\
-			Ainsi $F$ est compacte.
-			\item Montrons que le produit cartésien de deux compacts de $E$ est compact. On procédera ensuite par récurrence sur le nombre de compacts dans le produit.\\
-			Soit $K_1,K_2$ deux compacts de $E$. Soit $(u_n,v_n)$ une suite de vecteurs de $K_1\times K_2$.\\
-			Comme $K_1$ est compact, il existe une extractrice $\varphi$ telle que $(u_{\varphi(n)})$ converge dans $K_1$. Alors $(v_{\varphi(n)})\in K_2^\N$ donc comme $K_2$ est compact, il existe une extractrice $\psi$ telle que $(v_{\varphi\circ\psi(n)})$ converge dans $K_2$. Alors $(u_{\varphi\circ\psi(n)})$ converge en tant que sous-suite d'une suite convergente. De plus sa limite est dans $K_1$. On conclut que $(u_{\varphi\circ\psi(n)},v_{\varphi\circ\psi(n)})$ converge dans $K_1\times K_2$.\\
-			Ainsi $K_1\times K_2$ est compact.\\
-			Supposons que tout produit cartésiens de $p$ compacts de $E$ est un compact de $E$. Fixons $K_1,\dots,K_{p+1}$ des compacts de $E$. Alors par hypothèse de récurrence $\displaystyle\prod_{i=1}^pK_i$ est compact. Puis par ce que l'on vient de démontrer, $\displaystyle\left(\prod_{i=1}^pK_i\right)\times K_{p+1}=\prod_{i=1}^{p+1}K_i$ est compact.
-			\item C'est le théorème de Bolzano-Weierstrass (on peut mettre un lien à l'exo qui le démontre).
-			\item On fixe une base $(e_1,\dots,e_d)$ de $E$.\\
-			On dispose d'un isomorphisme $f:E\to \R^d$. Comme $E$ et $\R^d$ sont de dimensions finies, $f$ et $f^{-1}$ sont continues. On sait de plus que l'image directe d'une partie compacte/bornée par une application continue est une partie compacte/bornée et que l'image réciproque d'une partie fermée par une application continue est fermée. Ainsi une partie $A$ de $E$ est compacte/fermée/bornée ssi $f(A)$ est compacte/fermée/bornée dans $\R^d$. Il suffit donc de montrer le résultat dans $\R^d$.\\
-			Soit $K$ un compact de $\R^d$. D'après la question 1, $K$ est fermé dans $\R^d$. Supposons par l'absurde que $K$ n'est pas bornée.\\
-			Alors il existe une suite $(x_n)\in K^\N$ telle que $\norme{x_n}\unfty\longrightarrow+\infty$. $K$ est compact donc il existe une sous-suite $(y_n)$ de $(x_n)$ qui converge. Mais alors par continuité de $\norme{\cdot}$ qui est $1$-lipschitzienne, $(\norme{y_n})$ converge. Par ailleurs $\norme{y_n}\unfty\longrightarrow+\infty$ comme suite extraite de $(\norme{x_n})$. Ceci est absurde d'où $K$ est borné.\\
-			Réciproquement, soit $K$ une partie fermée bornée de $\R^d$. On rappelle que toutes les normes de $\R^n$ sont équivalentes, donc $K$ est bornée pour la norme uniforme; càd qu'il existe $M\geq 0$ tel que $K\subset\{x\in \R^d,\ \normep{\infty}{x}\leq M\}=[-M,M]^d$. Or d'après les questions 3 et 4 $[-M,M]^d$ est un compact de $\R^d$. Enfin $K$ est fermée donc d'après la question 2, $K$ est compacte.
-		\end{enumerate}
-	\subsection{Somme de sous-espaces}\label{sec:somme-de-sous-espaces}
+	
+	\subsection{Parties compactes d'un espace vectoriel normé de dimension finie \etoile{2}}
+	\label{sec:parties-compactes-dun-espace-vectoriel-norme-de-dimension-finie}
+	\textcolor{blue}{\hyperref[Parties compactes d'un espace vectoriel normé de dimension finie]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $K\subset E$ une partie compacte. Soit $(x_n)\in K^\N$ qui converge vers $x\in E$.\\
+		Comme $K$ est compacte, la suite $(x_n)$ admet une valeur d'adhérence dans $K$. Par ailleurs $(x_n)$ converge vers $x$ donc sa seule valeur d'adhérence est $x$. On en déduit que $x\in K$ et donc que $K$ est fermée.
+		\item Soient $F\subset K\subset E$ avec $F$ fermée et $K$ compacte. Soit $(x_n)\in F^\N$.\\
+		$(x_n)\in K^\N$ donc comme $K$ est compacte, il existe une sous-suite $(y_n)$ de $(x_n)$ qui converge dans $K$. Or $(y_n)\in F^\N$ donc comme $F$ est fermée, $(y_n)$ converge dans $F$.\\
+		Ainsi $F$ est compacte.
+		\item Montrons que le produit cartésien de deux compacts de $E$ est compact. On procédera ensuite par récurrence sur le nombre de compacts dans le produit.\\
+		Soit $K_1,K_2$ deux compacts de $E$. Soit $(u_n,v_n)$ une suite de vecteurs de $K_1\times K_2$.\\
+		Comme $K_1$ est compact, il existe une extractrice $\varphi$ telle que $(u_{\varphi(n)})$ converge dans $K_1$. Alors $(v_{\varphi(n)})\in K_2^\N$ donc comme $K_2$ est compact, il existe une extractrice $\psi$ telle que $(v_{\varphi\circ\psi(n)})$ converge dans $K_2$. Alors $(u_{\varphi\circ\psi(n)})$ converge en tant que sous-suite d'une suite convergente. De plus sa limite est dans $K_1$. On conclut que $(u_{\varphi\circ\psi(n)},v_{\varphi\circ\psi(n)})$ converge dans $K_1\times K_2$.\\
+		Ainsi $K_1\times K_2$ est compact.\\
+		Supposons que tout produit cartésiens de $p$ compacts de $E$ est un compact de $E$. Fixons $K_1,\dots,K_{p+1}$ des compacts de $E$. Alors par hypothèse de récurrence $\displaystyle\prod_{i=1}^pK_i$ est compact. Puis par ce que l'on vient de démontrer, $\displaystyle\left(\prod_{i=1}^pK_i\right)\times K_{p+1}=\prod_{i=1}^{p+1}K_i$ est compact.
+		\item C'est le théorème de Bolzano-Weierstrass.
+		\item On fixe une base $(e_1,\dots,e_d)$ de $E$.\\
+		On dispose d'un isomorphisme $f:E\to \R^d$. Comme $E$ et $\R^d$ sont de dimensions finies, $f$ et $f^{-1}$ sont continues. On sait de plus que l'image directe d'une partie compacte/bornée par une application continue est une partie compacte/bornée et que l'image réciproque d'une partie fermée par une application continue est fermée. Ainsi une partie $A$ de $E$ est compacte/fermée/bornée ssi $f(A)$ est compacte/fermée/bornée dans $\R^d$. Il suffit donc de montrer le résultat dans $\R^d$.\\
+		Soit $K$ un compact de $\R^d$. D'après la question 1, $K$ est fermé dans $\R^d$. Supposons par l'absurde que $K$ n'est pas bornée.\\
+		Alors il existe une suite $(x_n)\in K^\N$ telle que $\norme{x_n}\unfty\longrightarrow+\infty$. $K$ est compact donc il existe une sous-suite $(y_n)$ de $(x_n)$ qui converge. Mais alors par continuité de $\norme{\cdot}$ qui est $1$-lipschitzienne, $(\norme{y_n})$ converge. Par ailleurs $\norme{y_n}\unfty\longrightarrow+\infty$ comme suite extraite de $(\norme{x_n})$. Ceci est absurde d'où $K$ est borné.\\
+		Réciproquement, soit $K$ une partie fermée bornée de $\R^d$. On rappelle que toutes les normes de $\R^n$ sont équivalentes, donc $K$ est bornée pour la norme uniforme; càd qu'il existe $M\geq 0$ tel que $K\subset\{x\in \R^d,\ \normep{\infty}{x}\leq M\}=[-M,M]^d$. Or d'après les questions 3 et 4 $[-M,M]^d$ est un compact de $\R^d$. Enfin $K$ est fermée donc d'après la question 2, $K$ est compacte.
+	\end{enumerate}
+	
+	\subsection{Somme de sous-espaces \centraleponts{3}}
+	\label{sec:somme-de-sous-espaces}
 	\textcolor{blue}{\hyperref[Somme de sous-espaces]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soient $A,B$ des compacts de $E$. On munit $E^2$ de la norme $\normep{1}{\cdot}:(a,b)\mapsto \norme a+\norme b$. L'application
@@ -7549,7 +7776,8 @@ Alors, on a l'équivalence :
 			\item Dans $E=\R$ on peut prendre $F_1=\Z$ et $F_2=\pi\Z$. On montre classiquement (cf. sous-groupes de $\R$) que $\overline{F_1+F_2}=\R$.
 		\end{itemize}
 	\end{enumerate}
-	\subsection{Un théorème du point fixe}
+	
+	\subsection{Un théorème du point fixe \centraleponts{3}}
 	\label{Théorème du point fixe corrigé}
 	\textcolor{blue}{\hyperref[Théorème du point fixe]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -7563,8 +7791,10 @@ Alors, on a l'équivalence :
 		On sait que $\unfty\lim\norme{x_{\varphi(n)}-a}=\unfty\lim\norme{x_{\varphi(n)+1}}=\norme{\ell-a}$. Par ailleurs, $\unfty\lim\norme{x_{\varphi(n)}-a}=\norme{x-a}$ et $\unfty\lim\norme{x_{\varphi(n)+1}-a}=\norme{f(x)-a}$. Par unicité de la limite, $\norme{x-a}=\norme{f(x)-a}=\norme{f(x)-f(a)}$. Donc $x=a$.\\
 		On a montré que la seule valeur d'adhérence de $(x_n)_{n\in \N}$ est $a$, càd $\unfty\lim f^n(x_0)=a$.
 	\end{enumerate}
-	\subsection{Théorème de Heine}\label{sec:theoreme-de-heine}
-		\textcolor{blue}{\hyperref[Théorème de Heine]{[Enoncé]}}\\
+	
+	\subsection{Théorème de Heine \etoile{2}}
+	\label{sec:theoreme-de-heine}
+	\textcolor{blue}{\hyperref[Théorème de Heine]{[Enoncé]}}\\
 	Soient $(E,\normep{E}{\cdot}),(F,\normep{F}{\cdot})$ deux espaces vectoriels normés, $K$ un compact de $E$ et $f:K\to F$ continue. Fixons $\varepsilon>0$.\\
 	\underline{$1^{\T{ère}}$ méthode} :\\
 	On note $d_E:(x,y)\in E^2\mapsto \normep{E}{x-y}$ et $d_F:(x,y)\in F^2\mapsto \normep{F}{x-y}$ ainsi que $X=\{(x,y)\in K^2,\ d_F(f(x),f(y))\geq \varepsilon\}$. On vérifie que $d_E$ et $d_F$ sont $1$-lipschitziennes et donc continues. On en déduit que $g:(x,y)\in E^2\mapsto d_F(f(x),f(y))$ est continue.\\
@@ -7577,8 +7807,9 @@ Alors, on a l'équivalence :
 	Comme $K$ est compact on peut extraire une suite $(x_{\varphi(n)})$ qui converge vers un vecteur $x\in K$. Mais alors $\forall n\in \N^*,\ \normep{E}{x-y_{\varphi(n)}}\leq \normep{E}{x-x_{\varphi(n)}}+\normep{E}{x_{\varphi(n)}-y_{\varphi(n)}}\unfty\longrightarrow 0$. Autrement dit $\unfty\lim y_{\varphi(n)}=x$. Pourtant $(f(y_{\varphi(n)}))_{n\in \N^*}$ ne converge par vers $f(x)$ puisque APCR,
 	$$\normep{F}{f(x)-f(y_{\varphi(n)})}\geq \normep{F}{f(x_{\varphi(n)})-f(y_{\varphi(n)})}-\normep{F}{f(x)-f(x_{\varphi(n)})}\geq \frac{\varepsilon}{2}$$
 	
-	\subsection{Lemme des compacts emboîtés \etoile{1}}\label{sec:lemme-des-compacts-emboites-etoile1}
-		\textcolor{blue}{\hyperref[Lemme des compacts emboités]{[Enoncé]}}\\
+	\subsection{Lemme des compacts emboîtés \telecom{1}}
+	\label{sec:lemme-des-compacts-emboites-etoile1}
+	\textcolor{blue}{\hyperref[Lemme des compacts emboités]{[Enoncé]}}\\
 	\label{Lemme des compacts emboîtés corrigé}
 	$\forall n\in \N,\ \exists x_n\in K_n$. De plus, $\forall n\in \N,\ K_{n+1}\subset K_n\subset K_0$.\\
 	Donc $(x_n)_{n\in \N}$ est à valeurs dans $K_0$ qui est compact.\\
@@ -7587,8 +7818,9 @@ Alors, on a l'équivalence :
 	Soit $n\in \N$. $\exists n_0\in \N,\ \varphi(n_0)\geq n$.\\
 	La suite $(x_{\varphi(k)})_{k\geq n_0}$ est à valeur dans  $K_n\supset K_{\varphi(n_0)}$ qui est un fermé. Ainsi sa limite $x\in K_{n}$ puis, $x\in K=\displaystyle\bigcap\limits_{n\in \N} K_n$.\\
 	
-	\subsection{Théorème de Baire \etoile{5}}\label{sec:theoreme-de-baire-etoile5}
-		\textcolor{blue}{\hyperref[Théorème de Baire]{[Enoncé]}}\\
+	\subsection{Théorème de Baire \xens{5} (HP)}
+	\label{sec:theoreme-de-baire-etoile5}
+	\textcolor{blue}{\hyperref[Théorème de Baire]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $(\Omega_n)\in E^{\N^*}$ une suite d'ouverts denses dans $E$.\\
 		Soit $V$ un ouvert non vide de $E$. On va montrer que $V\cap\displaystyle\bigcap\limits_{n\in \N^*}\Omega_n\ne \emptyset$.\\
@@ -7616,17 +7848,17 @@ Alors, on a l'équivalence :
 		Alors pour tout $n\in \N$, $\Omega_n^c$ le complémentaire dans $E$ de $\Omega_n$ est fermé et $\overline{\Omega_n}=E$ d'où $\ring{(\Omega_n^c)}=(\overline{\Omega_n})^c=\emptyset$. Ainsi par passage au complémentaire,
 		$$\displaystyle\overline{\bigcap\limits_{n\in \N}\Omega_n}=E\iff \widering{\bigcup\limits_{n\in \N}\Omega_n^c}=\emptyset$$
 	\end{enumerate}
-	\subsubsection{$\R$ n'est pas dénombrable}
+	\subsubsection{$\R$ n'est pas dénombrable \etoile{1} (HP)}
 	On montre que $\R$ est complet (cf. \ref{R est complet}).\\
 	Supposons que $\R$ est dénombrable. Pour tout $x\in\R$, $\{x\}$ est un fermé de $\R$ d'intérieur vide. Donc d'après le théorème de Baire $\R=\displaystyle\bigcup_{x\in \R}\{x\}$ est d'intérieur vide. Ceci est absurde donc $\R$ n'est pas dénombrable.
 	
-	\subsubsection{Base d'un espace de Banach \etoile{3}}
+	\subsubsection{Base d'un espace de Banach \etoile{3} (HP)}
 	Soit $E$ un espace de Banach. Supposons par l'absurde que $E$ admette une base dénombrable $\B=(e_n)_{n\in \N}$.\\
 	On pose pour $n\in \N,\ F_n=\Vect(e_0,\dots,e_n)$. Fixons $n\in \N$.\\
 	$F_n$ est un sous-espace vectoriel de $E$. Il est d'intérieur vide car c'est un sous-espace strict de $E$ (cf. \ref{Intérieur d'un sev}) et il est fermé dans $E$ car il est de dimension finie (cf. \ref{Adhérence d'un sev}).\\
 	On peut écrire $E=\displaystyle\bigcup_{n\in \N} F_n$ donc d'après le théorème de Baire on en déduit que $E$ est d'intérieur vide ce qui est absurde.
 	
-	\subsubsection{Densité des fonctions nulle part dérivables (2) \etoile{4}}
+	\subsubsection{Densité des fonctions nulle part dérivables (2) \etoile{4} (HP)}
 	Notons $I=[0,1]$ et $E=\mathcal C^0(I,\K)$.\\
 	\begin{enumerate}
 		\item Soit $f\in A^c$. Il existe alors un point $x\in I$ en lequel $f$ est dérivable.\\
@@ -7657,7 +7889,7 @@ Alors, on a l'équivalence :
 		Mais alors d'après la question $1$, $\widering{A^c}\subset \displaystyle\widering{\bigcup\limits_{n\in \N}F_n}=\emptyset$ d'où $\widering{A^c}=\emptyset$ c'est à dire $A$ est dense dans $E$.
 	\end{enumerate}
 
-	\subsubsection{Lemme de Croft}
+	\subsubsection{Lemme de Croft \etoile{4} (HP)}
 \begin{enumerate}[leftmargin=*]
 	\item Soit $\varepsilon>0$. Par uniforme continuité $\exists \eta>0,\ \forall (x,y)\in (\R^*_+)^2,\ |x-y|\leq\eta\implies |f(x)-f(y)|<\dfrac{\varepsilon}{2}$.\\
 	On sait que $\unfty\lim f(n\eta)=0$ donc $\exists N\in \N^*,\ \forall n\geq N,\ |f(n\eta)|<\dfrac{\varepsilon}{2}$.\\
@@ -7675,7 +7907,7 @@ Alors, on a l'équivalence :
 	En fait il suffit de prendre l'ensemble des puissances entières de n'importe quel nombre transcendant réel positif. Sans même en expliciter on sait qu'il en existe car les nombres algébriques sont dénombrables. $\R_+$ étant non dénombrable il contient une infinité de nombres transcendants.
 \end{enumerate}
 
-	\subsubsection{Caractérisation des endomorphismes continus nilpotents dans un espace de Banach \etoile{3}}
+	\subsubsection{Caractérisation des endomorphismes continus nilpotents dans un espace de Banach \etoile{3} (HP)}
 	\begin{enumerate}[leftmargin=*]
 		\item Posons pour $n\in \N^*,\ F_n=\{x\in E,\ f^n(x)=0\}$. $F_n$ est fermé.\\
 		$\displaystyle\bigcup_{n\in \N^*}F_n=E$. Donc d'après le théorème de Baire il existe $N\in \N^*$ tel que $\ring F_N\ne \emptyset$. On dispose donc d'un vecteur $a\in E$ et d'un réel $r>0$ tel que $B_f(a,r)\subset F_N$.\\
@@ -7695,7 +7927,7 @@ Alors, on a l'équivalence :
 		$D$ n'est pas nilpotent : $D^n$ n'est pas nul puisque $\Ker(D^n)=\R_{n-1}[X]\ne E$. Pourtant $\forall P\in E,\ D^{\deg P+1}(P)=0$.
 	\end{enumerate}
 	
-	\subsubsection{Caractérisation des polynômes réels \etoile{5}}
+	\subsubsection{Caractérisation des polynômes réels \etoile{5} (HP)}
 	\begin{enumerate}[leftmargin=*]
 		\item L'hypothèse de l'énoncé se traduit en $\R=\displaystyle\bigcup_{n\in \N} F_n$. Pour tout $n\in \N$, $F_n=(f^{(n)})^{-1}(\{0\})$ est fermé car $f^{(n)}$ est continue. Donc d'après la contraposée du théorème de Baire, $\widering{\displaystyle\bigcup_{n\in \N} F_n}=\ring \R=\R\ne\emptyset\implies \exists N\in \N,\ \ring F_N\ne\emptyset$.
 		\item \begin{enumerate}[label=\alph*.]
@@ -7724,7 +7956,7 @@ Alors, on a l'équivalence :
 			Notons pour toute partie $X\subset \Phi,\ \ring X_\Phi=\{x\in X,\ \exists \varepsilon>0,\ \emptyset\ne]x-\varepsilon,x+\varepsilon[\cap\Phi\subset X\}$ l'intérieur de $X$ dans $\Phi$.\\
 			Les $\Phi\cap F_n$ sont des fermés de $\Phi$ dont la réunion est d'intérieur non vide dans $\Phi$, d'après la contraposé du théorème de Baire $\exists n_0\in \N,\ \widering{(\Phi\cap F_n)}_\Phi\ne\emptyset$.\\
 			Autrement dit il existe un intervalle ouvert $I$ tel que $\emptyset\ne I\cap\Phi\subset F_{n_0}$.
-			\item Comme $x$ n'est pas isolé dans $\Phi$, $\forall n\in \N^*,\ \exists x_n\in \Phi\backslash\{x\},\ |x-x_n|<\dfrac{1}{n}$. $(x_n)_{n\in \N}$ converge vers $x$ et est APCR à valeurs dans $I$ (car c'est un ouvert). Quitte à réindicer on peut supposer $(x_n)_{n\in \N}$ à valeurs dans $I\cap\Phi\backslash\{x\}$. De plus d'après le lemme des pics (cf.l'exo de Bolzano-Weierstrass) on peut extraire de $(x_n)_{n\in \N}$ une suite monotone. Cette suite converge toujours vers $x$ et ne stationne pas à $x$, on peut donc la supposer strictement monotone quitte à enlever des termes.
+			\item Comme $x$ n'est pas isolé dans $\Phi$, $\forall n\in \N^*,\ \exists x_n\in \Phi\backslash\{x\},\ |x-x_n|<\dfrac{1}{n}$. $(x_n)_{n\in \N}$ converge vers $x$ et est APCR à valeurs dans $I$ (car c'est un ouvert). Quitte à réindicer on peut supposer $(x_n)_{n\in \N}$ à valeurs dans $I\cap\Phi\backslash\{x\}$. De plus d'après le lemme des pics (cf.\ref{Théorème de Bolzano-Weierstrass}) on peut extraire de $(x_n)_{n\in \N}$ une suite monotone. Cette suite converge toujours vers $x$ et ne stationne pas à $x$, on peut donc la supposer strictement monotone quitte à enlever des termes.
 			\item Supposons $(x_k)_{k\in \N}$ strictement croissante. Alors $\forall k\in \N,\ x_k<x_{k+1}$ et $f^{(n_0)}(x_{k-1})=f^{(n_0)}(x_k)=f^{(n_0)}(x_{k+1})=0$. D'après le théorème de Rolle il existe une suite $(y^1_k)_{k\in \N^*}$ telle que $\forall k\in \N,\ x_{k-1}<y^1_k<x_k<y^1_{k+1}<x_{k+1}<x$ et $f^{(n_0+1)}(y^1_k)=0$.\\
 			On construit comme ceci par récurrence des suites $(y^p_k)_{k\in \N^*}$ telles que $\forall p\in \N^*,\ \forall k\in \N^*,\ x_{k-1}<y^p_k<y^{p+1}_k<x$ et $f^{(n_0+p)}(y^p_k)=0$.\\
 			Par construction $\forall p\in \N^*,\ y^p_k\ukfty\longrightarrow x$ et $(y^p_k)_{k\in \N^*}\in F_{n_0+p}^{\N^*}$. Donc comme les $F_n,\ n\geq n_0$ sont des fermés, $\forall n\geq n_0,\ x\in F_n$.
@@ -7737,13 +7969,15 @@ Alors, on a l'équivalence :
 	\end{enumerate}
 	
 	\textit{Remarque : Le résultat analogue pour les fonctions polynomiales complexes (fonctions entières) est vrai et surprenamment (ou pas) largement plus simple à démontrer.}
-	\subsubsection{Un raffinement}
+	\subsubsection{Un raffinement \etoile{1} (HP)}
 	\begin{enumerate}[leftmargin=*]
 		\item Il suffit de considérer $\Omega=\displaystyle\bigcup_{(n,d)\in \N\times D}\ring F_{n,d}$ avec $F_{n,d}=\{x\in \R,\ f^{(n)}(x)=d\}$. Le reste de la démonstration ne change pas.
 		\item Application directe de la question 1 avec $D=\Q$.
 	\end{enumerate}
-	\subsection{Volume d'une (hyper)boule \etoile{3}}\label{sec:volume-dune-hyperboule-etoile3}
-		\textcolor{blue}{\hyperref[Volume d'une (hyper)boule]{[Enoncé]}}\\
+	
+	\subsection{Volume d'une (hyper)boule \xens{4} (HP)}
+	\label{sec:volume-dune-hyperboule-etoile3}
+	\textcolor{blue}{\hyperref[Volume d'une (hyper)boule]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item $n\in \N^*$.\\
 		Tout d'abord, en posant le changement de variable $y_i=\displaystyle\frac{x_i}{R}$ pour tout $i\in \crblanc{1}{n}$,\\
@@ -7785,8 +8019,9 @@ Alors, on a l'équivalence :
 		A partir de $n=6$ le volume ne cesse de décroître.
 	\end{enumerate}
 	
-	\subsection{Partie fermée bornée non compacte \etoile{3}}\label{sec:partie-fermee-bornee-non-compacte-etoile3}
-		\textcolor{blue}{\hyperref[Partie fermée bornée non compacte]{[Enoncé]}}\\
+	\subsection{Partie fermée bornée non compacte \centraleponts{3}}
+	\label{sec:partie-fermee-bornee-non-compacte-etoile3}
+	\textcolor{blue}{\hyperref[Partie fermée bornée non compacte]{[Enoncé]}}\\
 	On se place dans l'espace vectoriel $E=\R[X]$ que l'on muni de la norme uniforme $\normep{\infty}{\displaystyle\sum\limits_{n=0}^{+\infty}a_nX^n}=\sup\{|a_n|,\ n\in \N\}$ et on va montrer que la boule unité fermé $B=B_f(0,1)$ est fermée et bornée mais pas compacte dans $E$. (C'est un cas particulier du théorème de compacité de Riesz \ref{Théorème de compacité de Riesz})\\
 	Tout d'abord, $B$ est évidemment fermée et bornée. Supposons par l'absurde que $B$ est compacte.\\
 	$\forall n\in \N,\ \normep{\infty}{X^n}=1$ donc $(X^n)\in B^\N$. Par conséquent il existe une suite extraite $(X^{\varphi(n)})_{n\in \N}$ qui converge.\\
@@ -7795,8 +8030,9 @@ Alors, on a l'équivalence :
 	Ceci est absurde donc $B$ n'est pas compacte.\\
 	(On a d'ailleurs montré que la sphère unité n'est pas compacte ce qui est plus fort).
 	
-	\subsection{Théorème de compacité de Riesz \etoile{4}}\label{sec:theoreme-de-compacite-de-riesz-etoile4}
-		\textcolor{blue}{\hyperref[Théorème de compacité de Riesz]{[Enoncé]}}\\
+	\subsection{Théorème de compacité de Riesz \centraleponts{4}}
+	\label{sec:theoreme-de-compacite-de-riesz-etoile4}
+	\textcolor{blue}{\hyperref[Théorème de compacité de Riesz]{[Enoncé]}}\\
 	\label{Théorème de compacité de Riesz corrigé}
 	\begin{enumerate}[leftmargin=*]
 		\item \begin{enumerate}[label=\alph*.]
@@ -7821,8 +8057,9 @@ Alors, on a l'équivalence :
 		Ceci est absurde donc $B$ n'est pas compacte.
 	\end{enumerate}
 	
-	\subsection{Sphère et boule unité \etoile{3}}\label{sec:sphere-et-boule-unite-etoile3}
-		\textcolor{blue}{\hyperref[Sphère et boule unité]{[Enoncé]}}\\
+	\subsection{Sphère et boule unité \centraleponts{3}}
+	\label{sec:sphere-et-boule-unite-etoile3}
+	textcolor{blue}{\hyperref[Sphère et boule unité]{[Enoncé]}}\\
 	$S$ est un fermé inclus dans $B$ donc si $B$ est fermée alors $S$ l'est aussi.\\
 	Supposons que $S$ soit compacte.\\
 	Donnons nous une suite $(x_n)\in B^\N$.\\
@@ -7833,38 +8070,47 @@ Alors, on a l'équivalence :
 	Comme $z_{\varphi(n)}\in S^\N$, on peut extraire une suite $(z_{\varphi\circ\psi(n)})_{n\in \N}$ qui converge. Mais alors on sait que $(||y_{\varphi\circ\psi(n)}||)_{n\in \N}$ converge comme suite extraite de $(||y_{\varphi(n)}||)_{n\in \N}$. Ainsi par produit, la suite $(y_{\varphi\circ\psi(n)})_{n\in \N}=(||y_{\varphi\circ\psi(n)}||z_{\varphi\circ\psi(n)})_{n\in \N}$ converge.\\
 	Ainsi, $B$ est compacte par caractérisation séquentielle.
 	
-	\subsection{Principe du maximum pour les polynômes}\label{sec:principe-du-maximum-pour-les-polynomes}
-		\textcolor{blue}{\hyperref[Principe du maximum pour les polynômes]{[Enoncé]}}\\
+	\subsection{Principe du maximum pour les polynômes \xens{3}}
+	\label{sec:principe-du-maximum-pour-les-polynomes}
+	\textcolor{blue}{\hyperref[Principe du maximum pour les polynômes]{[Enoncé]}}\\
 	
-	\subsection{Applications $1$-lipschitzienne surjective sur un compact}\label{sec:applications-1-lipschitzienne-surjective-sur-un-compact}
-		\textcolor{blue}{\hyperref[Applications 1-lipschitzienne sujective sur un compact]{[Enoncé]}}\\
+	\subsection{Applications $1$-lipschitzienne surjective sur un compact \centraleponts{4}}
+	\label{sec:applications-1-lipschitzienne-surjective-sur-un-compact}
+	\textcolor{blue}{\hyperref[Applications 1-lipschitzienne sujective sur un compact]{[Enoncé]}}\\
 	
-	\subsection{Une isométrie conserve les milieux}\label{sec:une-isometrie-conserve-les-milieux}
-		\textcolor{blue}{\hyperref[Une isométrie conserve les milieux]{[Enoncé]}}\\
+	\subsection{Une isométrie conserve les milieux \centraleponts{4}}
+	\label{sec:une-isometrie-conserve-les-milieux}
+	\textcolor{blue}{\hyperref[Une isométrie conserve les milieux]{[Enoncé]}}\\
 	
-	\subsection{Fonctions coercives}\label{sec:fonctions-coercives}
-		\textcolor{blue}{\hyperref[Fonctions coercives]{[Enoncé]}}\\
+	\subsection{Fonctions coercives \centraleponts{3}}
+	\label{sec:fonctions-coercives}
+	\textcolor{blue}{\hyperref[Fonctions coercives]{[Enoncé]}}\\
 	
-	\subsection{Homéomorphisme de compacts}\label{sec:homeomorphisme-de-compacts}
-		\textcolor{blue}{\hyperref[Homéomorphisme de compacts]{[Enoncé]}}\\
+	\subsection{Homéomorphisme de compacts \centraleponts{3}}
+	\label{sec:homeomorphisme-de-compacts}
+	\textcolor{blue}{\hyperref[Homéomorphisme de compacts]{[Enoncé]}}\\
 	
-	\subsection{Distance à un fermé}\label{sec:distance-a-un-ferme}
-		\textcolor{blue}{\hyperref[Distance à un fermé]{[Enoncé]}}\\
-	\subsection{Diamètre et frontière}\label{sec:diametre-et-frontiere}
-		\textcolor{blue}{\hyperref[Diamètre et frontière]{[Enoncé]}}\\
-	\subsection{Frontière}\label{sec:frontiere}
-		\textcolor{blue}{\hyperref[Frontière]{[Enoncé]}}\\
-		On sait que $\Fr(F)$ est un fermé donc $\Fr(F)=\overline{\Fr(F)}$.
-		Montrons que $\Fr(F)$ est d'intérieur vide.\\
-		Soit $x\in\Fr(F)$.\\
-		Alors pour tout $r>0$, la boule $B(x,r)$ contient des points de $\ring F$ qui ne sont par conséquent pas dans $\Fr(F)$.\\
-		Ainsi aucune boule n'est contenue dans $\Fr(F)$, ce qui donne que : \[\mathring{\Fr(F)}=\emptyset\]
-		Ainsi, on a :\[\Fr(\Fr(F))=\overline{\Fr(F)}\setminus\mathring{\Fr(F)}=\Fr(F)\]
-		
-		
-		Montrons que 
-	\subsection{Projeté sur un convexe compact}\label{sec:projete-sur-un-convexe-compact}
-		\textcolor{blue}{\hyperref[Projeté convexe]{[Enoncé]}}\\
+	\subsection{Distance à un fermé}
+	\label{sec:distance-a-un-ferme}
+	\textcolor{blue}{\hyperref[Distance à un fermé]{[Enoncé]}}\\
+	
+	\subsection{Diamètre et frontière}
+	\label{sec:diametre-et-frontiere}
+	\textcolor{blue}{\hyperref[Diamètre et frontière]{[Enoncé]}}\\
+	
+	\subsection{Frontière \ccinp{2}}
+	\label{sec:frontiere}
+	\textcolor{blue}{\hyperref[Frontière]{[Enoncé]}}\\
+	On sait que $\Fr(F)$ est un fermé donc $\Fr(F)=\overline{\Fr(F)}$.
+	Montrons que $\Fr(F)$ est d'intérieur vide.\\
+	Soit $x\in\Fr(F)$.\\
+	Alors pour tout $r>0$, la boule $B(x,r)$ contient des points de $\ring F$ qui ne sont par conséquent pas dans $\Fr(F)$.\\
+	Ainsi aucune boule n'est contenue dans $\Fr(F)$, ce qui donne que : \[\mathring{\Fr(F)}=\emptyset\]
+	Ainsi, on a :\[\Fr(\Fr(F))=\overline{\Fr(F)}\setminus\mathring{\Fr(F)}=\Fr(F)\]
+	
+	\subsection{Projeté sur un convexe compact \centraleponts{3}}
+	\label{sec:projete-sur-un-convexe-compact}
+	\textcolor{blue}{\hyperref[Projeté convexe]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item La fonction $h\in H\mapsto \norme{x-h}$ est continue sur $H$ qui est un compact donc elle admet un minimum. Il existe donc $h_0\in H$ tel que \[d(x,H)=\norme{x-h_0}\]
 		Supposons qu'il existe $h_1\in H$ tel que $\norme{x-h_1}=\norme{x-h_0}=d(x,H)$ et $h_1\ne h_0.$\\
@@ -7891,8 +8137,10 @@ Alors, on a l'équivalence :
 		En particulier pour $t=0$, on a : \[q(0)=\norme{x-y}\geq \norme{x-h_0}\]
 		Et donc, on a $d(x,H)=\norme{x-h_0}$
 	\end{enumerate}
-	\subsection{Convexité de l'adhérence et de l'intérieur}\label{sec:convexite-de-ladherence-et-de-linterieur}
-		\textcolor{blue}{\hyperref[Convexité de l'adhérence et de l'intérieur]{[Enoncé]}}\\
+	
+	\subsection{Convexité de l'adhérence et de l'intérieur \centraleponts{3}}
+	\label{sec:convexite-de-ladherence-et-de-linterieur}
+	\textcolor{blue}{\hyperref[Convexité de l'adhérence et de l'intérieur]{[Enoncé]}}\\
 	Montrons que $\overline{A}$ est convexe.\\
 	Soient $x,y\in \overline{A}$.\\
 	Il existe $(x_n)\in A^\N$ (resp. $(y_n)\in\A^\N$) tel que $\lim\limits_{n\to +\infty}x_n=x$ (resp. $\lim\limits_{n\to +\infty}y_n=y$)
@@ -7900,8 +8148,9 @@ Alors, on a l'équivalence :
 	et \[\forall \lambda\in[0,1], \lambda x_n+(1-\lambda)y_n\underset{n\to+\infty}{\to}\lambda x+(1-\lambda)y\]
 	donc : \[\lambda x+(1-\lambda)y\in \overline{A}\]
 	Montrons que $\ring A$ est convexe.\\
-	Soit $x,y\in \ring{A}$.\\
-	Ils existent $\varepsilon_1$ et $\varepsilon_2$ tel que $B(x,\varepsilon_1)\subset A$ et $B(y,\varepsilon_2)\subset A$.\\
+	\textbf{Ce serait bien de faire un joli dessin}\\
+	Soient $x,y\in \ring{A}$.\\
+	Il existe $\varepsilon_1>0$ et $\varepsilon_2>0$ tels que $B(x,\varepsilon_1)\subset A$ et $B(y,\varepsilon_2)\subset A$.\\
 	Posons $\varepsilon=\min(\varepsilon_1,\varepsilon_2)$.\\
 	Soit $\lambda\in[0,1]$. Posons $z=\lambda x +(1-\lambda)y$.\\
 	Soit $v\in B(z,\varepsilon)$.\\
@@ -7910,33 +8159,252 @@ Alors, on a l'équivalence :
 	On a choisi $x'$ et $y'$ de sorte que $x'\in B(x,\varepsilon_1)$ donc $x'\in A$ et $y'\in B(y,\varepsilon_2)$ donc $y'\in A$.\\
 	Donc par convexité $v\in A$ et donc $B(z,\varepsilon)\subset A$.\\
 	Par conséquent $z\in \ring A$ d'où $\ring A$ est convexe.\\
-	\subsection{Fonctions positivement homogènes}\label{sec:fonctions-positivement-homogenes}
-		\textcolor{blue}{\hyperref[FOnctions positivement homogènes]{[Enoncé]}}\\
+	
+	\subsection{Fonctions positivement homogènes}
+	\label{sec:fonctions-positivement-homogenes}
+	\textcolor{blue}{\hyperref[FOnctions positivement homogènes]{[Enoncé]}}\\
 	
 	\subsection{Enveloppe convexe}\label{sec:enveloppe-convexe}
-		\textcolor{blue}{\hyperref[Enveloppe convexe]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Enveloppe convexe]{[Enoncé]}}\\
 	
-	\subsection{Théorème de Carathéodory}\label{sec:theoreme-de-caratheodory}
-		\textcolor{blue}{\hyperref[Théorème de Carathéodory]{[Enoncé]}}\\
-	\subsection{Théorème de Krein-Milman}\label{sec:theoreme-de-krein-milman}
-		\textcolor{blue}{\hyperref[Théorème de Krein-Milman]{[Enoncé]}}\\
-	\subsection{Epigraphe}\label{sec:epigraphe}
-		\textcolor{blue}{\hyperref[Epigraphe]{[Enoncé]}}\\
+	\subsection{Théorème de Carathéodory \centraleponts{3}}
+	\label{sec:theoreme-de-caratheodory}
+	\textcolor{blue}{\hyperref[Théorème de Carathéodory]{[Enoncé]}}\\
 	
-	\subsection{Partie convexe dense de $\R^n$}\label{sec:partie-convexe-dense-de-rn}
-		\textcolor{blue}{\hyperref[Partie convexe dense de R^n]{[Enoncé]}}\\
+	\subsubsection{Enveloppe convexe d'une partie compacte \centraleponts{2}}
+	\label{sec-enveloppe-convexe-d'une-partie-compacte}
+	\textcolor{blue}{\hyperref[Enveloppe convexe d'une partie compacte]{[Enoncé]}}
 	
-	\subsection{Complémentaire d'un hyperplan}\label{sec:complementaire-dun-hyperplan}
-		\textcolor{blue}{\hyperref[Complémentaire d'un hyperplan]{[Enoncé]}}\\
+	\subsection{Théorème de Krein-Milman}
+	\label{sec:theoreme-de-krein-milman}
+	\textcolor{blue}{\hyperref[Théorème de Krein-Milman]{[Enoncé]}}\\
 	
-	\subsection{Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans}\label{sec:composantes-connexes-par-arcs-du-complementaire-de-la-reunion-de-plusieurs-hyperplans}
-		\textcolor{blue}{\hyperref[Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans]{[Enoncé]}}\\
+	\subsection{Epigraphe \ccinp{1}}
+	\label{sec:epigraphe}
+	\textcolor{blue}{\hyperref[Epigraphe]{[Enoncé]}}\\
 	
-	\subsection{Sphères d'un $\R$-espace vectoriel}\label{sec:spheres-dun-r-espace-vectoriel}
-		\textcolor{blue}{\hyperref[Sphères d'un R espace vectoriel]{[Enoncé]}}\\
-		\begin{enumerate}[leftmargin=*]
-			\item 
-	Soient \(x,y\in S\).\\
+	\subsection{Partie convexe dense de $\R^n$ \xens{4}}
+	\label{sec:partie-convexe-dense-de-rn}
+	\textcolor{blue}{\hyperref[Partie convexe dense de R^n]{[Enoncé]}}\\
+	On fixe $n\in \N^*$.\\
+	\underline{$1^{\T{ère}}$ méthode :} Par récurrence\\
+	Montrons par récurrence sur $m\in \N^*$ la propriété $\P(m)$: "Si $E$ est un espace euclidien de dimension $m$ alors la seule partie de $E$ convexe et dense dans $E$ est $E$."\\
+	Soit $E$ un espace vectoriel normé de dimension $1$. Soit $A$ une partie convexe et dense dans $E$. On dispose d'un isomorphisme $f:E\to \R$. Celui-ci est continu car $E$ est de dimension finie, il envoie donc une partie convexe et dense dans $E$ sur une partie convexe (par linéarité) et dense dans $\R$ (par continuité). Il suffit de montrer que $f(A)=\R$ puisque par bijectivité de $f$ cela donne $A=f^{-1}(\R)=E$.\\
+	Soit $a\in \R$. Par densité de $f(A)$, $\exists \alpha,\beta\in f(A),\ |a-1-\alpha|<1$ et $|a+1-\beta|<1$.\\
+	Par construction $a\in [\alpha,\beta]$ donc par convexité $a\in f(A)$.\\
+	Ainsi $f(A)=\R$ et par suite $A=E$.\\
+	Supposons $\P(m-1)$ pour un certain entier $m\geq 2$. On se donne un produit salaire $\proscal{\cdot}{\cdot}$ sur $E$.\\
+	Comme notre hypothèse porte sur des espaces de dimension $m-1$ il serait agréable de travailler avec des hyperplans. On remarque qu'en notant $\mathcal H$ l'ensemble des hyperplans de $E$ on a $E=\displaystyle\bigcup_{H\in \mathcal H}H$ et $A=E\cap A=\displaystyle\bigcup_{H\in \mathcal H}H\cap A$. L'idée va être de montrer que $A\cap H$ est une partie convexe et dense dans $H$. En premier lieu, elle est convexe comme intersection de deux parties convexes (un sev est convexe). Montrons que $A\cap H$ est dense dans $H$.\\
+	Soit $H$ un hyperplan de $E$ et $a\in E$ unitaire tel que $H=\Vect(a)^\bot$. Fixons $\varepsilon>0$. On cherche un vecteur $h_A\in A\cap H$ tel que $\norme{h-h_A}<\varepsilon$. Faisons un dessin dans $\R^2$ :\\
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[thick,black,->] (0,-1) -- (0,3.5) node[anchor=south west] {$H$};
+			\draw[thick,black,->] (-5,0) -- (5,0) node[anchor=north west] {$\Vect(a)$};
+			\draw (0,0) node[anchor=north west] {$0$};
+			\draw (-1.5,1.5) circle (1.5);
+			\filldraw (-1.5,1.5) circle (0.05) node[anchor=north west] {$h-\varepsilon a$};
+			\draw (1.5,1.5) circle (1.5);
+			\draw[thick,<->] (-1.5,1.5) -- ({-1.5+1.5*cos(5*pi/4 r)},{1.5+1.5*sin(5*pi/4 r)});
+			\draw ({-1.5+0.75*cos(5*pi/4 r)},{1.5+0.75*sin(5*pi/4 r)}) node[anchor=south east] {$\varepsilon$};
+			\filldraw (1.5,1.5) circle (0.05) node[anchor=north west] {$h+\varepsilon a$};
+			\filldraw[blue] ({-1.5+cos(2*pi/3 r)},{1.5+sin(2*pi/3 r)}) circle (0.05) node[anchor=north east] {$h^-$};
+			\filldraw[blue] ({1.5+0.5*cos(7*pi/8 r)},{1.5+0.5*sin(7*pi/8 r)}) circle (0.05) node[anchor=south west] {$h^+$};
+			\draw[thick,blue] ({-1.5+cos(2*pi/3 r)},{1.5+sin(2*pi/3 r)}) -- ({1.5+0.5*cos(7*pi/8 r)},{1.5+0.5*sin(7*pi/8 r)});
+			\filldraw[blue] (0,{((3+cos(7*pi/8 r))/(6+cos(7*pi/8 r)-2*cos(2*pi/3 r))))*(1.5+sin(2*pi/3 r))+(1-((3+cos(7*pi/8 r))/(6+cos(7*pi/8 r)-2*cos(2*pi/3 r))))*(1.5+0.5*sin(7*pi/8 r))}) circle (0.05) node[anchor=south west] {$h_A$};
+			\draw[dashed] (-1.5,1.5) -- (1.5,1.5);
+			\draw[thick,green,->] (0,0) -- (1,0) node[anchor=north west] {$a$};
+			\draw[thick,red,->] (0,0) -- (0,1.5) node[anchor=north west] {$h$};
+		\end{tikzpicture}
+	\end{center}
+	On aimerait trouver des vecteurs $h^-,h^+\in A$ qui forment respectivement un angle obtus et aigu avec le vecteur $a$. De sorte que le segment $[h^-,h^+]\subset A$ coupe $H$ (ensemble des vecteurs normaux à $a$). Le point d'intersection $h_A$ sera dans $H\cap A$. Pour qu'il respecte la condition de densité il suffit de travailler "pas trop loin" de $h$.\\
+	Par densité de $A$, $\exists h^-,h^+\in A,\ \norme{h^--(h-\varepsilon a)}<\varepsilon,\norme{h^+-(h+\varepsilon a)}<\varepsilon$.\\
+	Par construction :
+	$$\proscal{h^-}{a}=\proscal{h^--h+\varepsilon a}{a}+\proscal{h-\varepsilon a}{a}=\proscal{h^--h+\varepsilon a}{a}-\varepsilon\T{ et }|\proscal{h^--h+\varepsilon a}{a}|\leq \norme{h^--h+\varepsilon a}\norme{a}<\varepsilon$$
+	Donc $\proscal{h^-}{a}<0$. On montre de même $\proscal{h^+}{a}>0$.\\
+	D'après le TVI l'application $t\in [0,1]\mapsto\proscal{th^++(1-t)h^-}{a}$ s'annule en un certain $t_0$. On note $h_A=t_0h^++(1-t_0)h^-$. $h_A\in A$ par convexité et $h_A\in H$ car $\proscal{h_A}{a}=0$.\\
+	En outre, $\norme{h-h_A}=\norme{t_0(h-h^+)+(1-t_0)(h-h^-)}\leq t_0\norme{h-h^+}+(1-t_0)\norme{h-h^-}$.\\
+	Or $\norme{h-h^-}\leq \norme{h-h^--\varepsilon a}+\norme{\varepsilon a}<2\varepsilon$. De même $\norme{h-h^+}<2\varepsilon$.\\
+	Donc $\norme{h-h_A}<2\varepsilon$. Il suffit de refaire le même raisonnement en remplaçant $\varepsilon$ par $\dfrac{\varepsilon}{2}$ pour obtenir le résultat voulu.\\
+	Ainsi par hypothèse de récurrence $H\cap A=A$ et par suite $E=A$.\\
+	Finalement, $\forall m\in \N^*,\ \mathcal P(m)$. En particulier $\mathcal P(n)$ donne le résultat.
+	\\\\
+	\underline{$2^{\T{nd}}$ méthode :} A l'intérieur d'un hypercube\\
+	Pour tout $x\in \R^n$ l'ensemble $A-x=\{a-x,\ a\in A\}$ est convexe et dense dans $\R^n$. Comme $x\in A\iff 0\in A-x$ quitte à translater on peut se contenter de montrer $0\in A$.\\
+	L'idée est de voir $0$ comme élément de l'hypercube de côté $1$ centré en $0$.\\
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[thick,black,->] (0,-4) -- (0,4);
+			\draw[thick,black,->] (-4,0) -- (4,0);
+			\draw (0,0) node[anchor=north west] {$0$};
+			\draw[thick,black] (-3,-3) -- (3,-3) -- (3,3) -- (-3,3) -- cycle;
+			\filldraw (-3,-3) circle (0.05) node[anchor=north east] {$P_{-1,-1}$};
+			\filldraw (3,-3) circle (0.05) node[anchor=north west] {$P_{1,-1}$};
+			\filldraw (3,3) circle (0.05) node[anchor=south west] {$P_{1,1}$};
+			\filldraw (-3,3) circle (0.05) node[anchor=south east] {$P_{-1,1}$};
+			\foreach \X in {-1,1} {
+				\foreach \Y in {-1,1} {
+					\draw ({\X*3},{\Y*3}) circle (1.5);
+					\filldraw[blue] ({\X*3+cos((6+2*\X+5*\Y)*pi/13 r)},{\Y*3+sin((4+11*\Y+\X)*pi/7 r)}) circle (0.05) node[anchor=north] {$Q_{\X,\Y}$};
+				}
+			}
+			\filldraw[blue,opacity=0.3] ({-3+cos(-pi/13)},{-3+sin(-8*pi/7 r)}) -- ({3+cos(3*pi/13 r)},{-3+sin(-6*pi/7 r)}) -- (2,{3+sin(2*pi/7 r)}) -- ({-3+cos(9*pi/13 r)},3);
+			\filldraw[red] (-2.725,0) circle (0.05) node[anchor=north east] {$Q_{-1}$};
+			\filldraw[red] (2.9,0) circle (0.05) node[anchor=north west] {$Q_1$};
+			\draw[thick,red] (-2.725,0) -- (2.9,0);
+		\end{tikzpicture}
+	\end{center}
+	Les sommets de l'hypercube sont les points $P_\varepsilon$ de coordonnées $\varepsilon=(\varepsilon_1,\dots,\varepsilon_n)\in \{-1,1\}^n$. Par densité on peut trouver des points $Q_\varepsilon\in A$ dont on note $(\eta_1,\dots,\eta_n$) les coordonnées tels que $\normep{\infty}{P_\varepsilon-Q_\varepsilon}\leq \dfrac{1}{2}$. Alors $0$ est dans le polytope de sommets $(Q_\varepsilon)_{\varepsilon\in \{-1,1\}^n}$. En effet la condition $\normep{\infty}{P_\varepsilon-Q_\varepsilon}\leq\dfrac{1}{2}<1$ assure que la $i$-ème coordonnée $\eta_i$ de $Q_\varepsilon$ est de même signe que la $i$-ème coordonnée $\varepsilon_i$ de $P_\varepsilon$. Autrement dit il y a un $Q_\varepsilon$ dans chaque "cadran" de $\R^n$, et donc l'enveloppe convexe de ces points contient $0$. Pour le montrer de manière plus rigoureuse on peut montrer par récurrence sur le nombre de coordonnées nulles que les points $Q_\varepsilon$ de coordonnées $(\eta_1,\dots,\eta_{n-r},0\dots,0)$ avec $\varepsilon=(\varepsilon_1,\dots,\varepsilon_{n-r})\in \{-1,1\}^{n-r}$ sont dans l'enveloppe convexe des $(Q_\varepsilon)_{\varepsilon\in \{-1,1\}^n}$ et donc dans $A$ :\\
+	C'est évidemment vrai pour $r=0$. Supposons que ce soit vrai pour un certain $r\in \crblanc{0}{n-1}$. Fixons $(\varepsilon_1,\dots,\varepsilon_{n-r-1})\in \{-1,1\}^{n-r-1}$.\\
+	On note $(\eta_1,\dots,\eta_{n-r-1},\alpha,0,\dots,0)$ les coordonnées de $Q_{(\varepsilon_1,\dots,\varepsilon_{n-r-1},-1)}$ et $(\eta_1,\dots,\eta_{n-r-1},\beta,0,\dots,0)$ celles de de $Q_{(\varepsilon_1,\dots,\varepsilon_{n-r-1},1)}$. Par le TVI l'application $t\in [0,1]\mapsto (\eta_1,\dots,\eta_{n-r-1},t\alpha+(1-t)\beta,0,\dots,0)$ s'annule. Autrement dit $(\eta_1,\dots,\eta_{n-r-1},0,\dots,0)\in [Q_{(\eta_1,\dots,\eta_{r-n-1},\alpha)},Q_{(\eta_1,\dots,\eta_{n-r-1},\beta)}]$.\\
+	Donc par hypothèse de récurrence le point de coordonnées $(\eta_1,\dots,\eta_{n-r-1},0,\dots,0)$ est combinaison convexe des $(Q_\varepsilon)_{\varepsilon\in \{-1,1\}^n}$.\\
+	Ainsi par récurrence la propriété est vrai pour tout $r\in \crblanc{0}{n}$, en particulier pour $n=r$ on obtient $0\in A$.
+	\\\\
+	\underline{$3^{\T{ème}}$ méthode :}\\
+	
+	\subsection{Partie convexe et ouverte de $\R^n$ \xens{4}}
+	\label{sec:partie-convexe-et-ouverte-de-rn}
+	\textcolor{blue}{\hyperref[Partie convexe et ouverte de R^n]{[Enoncé]}}\\
+	Si $A$ est vide l'énoncé est évidemment vrai, on suppose donc que ce n'est pas le cas.
+	\begin{enumerate}
+		\item Quitte à passer par un isomorphisme (qui transforme une partie convexe en une partie convexe par linéarité et une partie ouverte en une partie ouverte par continuité de l'isomorphisme réciproque) on peux travailler dans $\C$ vu comme un $\R$-espace vectoriel. En outre quitte à appliquer une rotation (isométrie vectorielle) on peut supposer que $A$ contient un réel positif. L'idée va être de projeter $A$ sur le cercle unité, càd de considérer $B:=\left\{\dfrac{z}{|z|},\ z\in A\right\}=\{e^{i\arg(z)},\ z\in A\}$ :\\
+		\begin{center}
+			\begin{tikzpicture}
+				\draw[thick,->] (-4,0) -- (4,0);
+				\draw[thick,->] (0,-4) -- (0,4);
+				\draw (0,0) node[anchor=north west] {$0$};
+				\draw[blue] (0,0) circle (2);
+			\end{tikzpicture}
+		\end{center}
+		Remarquons que la convexité de $A$ impose que si $a\in A$ alors $-a\notin A$ (sinon $0\in A$). Donc $B$ n'a pas de points antipodaux.\\
+		Par hypothèse $1\in B$. L'ensemble $\{\alpha\in [0,\pi],\ e^{i\alpha}\in B\}$ est non vide (il contient $1$) et majoré, on note alors $\alpha_0$ sa borne supérieure. On note de même $\beta_0$ la borne inférieure de $\{\beta\in ]-\pi,0],\ e^{i\beta}\in B\}$. On note enfin $\delta=\max(\alpha_0,\pi+\beta_0)$. On va vérifier que $\Vect_\R(e^{i\delta })\subset \C\backslash A$.\\
+		Si $\alpha_0=\pi$ ou $\beta_0=-\pi$ alors $\Vect_\R(e^{i\delta})=\R$ ne fonctionne pas. Commençons donc par montrer que ces cas sont exclus.\\
+		Pour cela on va montrer que $B$ est ouvert dans $S$. Soit $a\in A$ et $b=\dfrac{a}{|a|}$. Il s'agit de montrer :
+		$$\exists\varepsilon>0,\ \forall b'\in S,\ |b'-b|<\varepsilon\implies b'\in B$$
+		ou encore qu'il existe un arc de cercle contenu dans $B$ et contenant $b$ en son intérieur.\\
+		On peut déjà remarquer que si $a,a'\in A$ alors par convexité l'arc de cercle formé par $\dfrac{a}{|a|}$ et $\dfrac{a'}{|a'|}$ est $\{e^{i((1-t)\arg(a)+t\arg(a'))},\ t\in [0,1]\}=\left\{\dfrac{(1-t)a+ta'}{|(1-t)a+ta'|},\ t\in [0,1]\right\}\subset B$. Ceci justifie que l'ensemble des arguments des éléments de $B$ est une partie connexe par arcs de $\R$, c'est donc un intervalle. Il suffit donc de trouver des éléments de $B$ ayant un argument strictement supérieur/inférieur à celui de $b$.\\
+		Par caractère ouvert de $A$, $\exists \xi>0,\ \forall z\in \C,\ |z-a|<\xi\implies z\in A$. Notons $a=|a|e^{i\theta}$ et posons $z_1:=|a|e^{i(\theta+\eta)}$, $z_2:=|a|e^{i(\theta-\eta)}$ avec $\eta>0$ tel que $|e^{i\eta}-1|<\dfrac{\xi}{|a|}$ (continuité de $t\mapsto e^{it}$ en $0$). Alors $|z_1-a|=|a||e^{i\eta}-1|<\xi$ et $|z_2-a|=|a||e^{-i\eta}-1|=|a|\left|\overline{e^{-i\eta}-1}\right|=|a||e^{i\eta}-1|<\xi$. Donc $z_1,z_2\in A$. Ainsi $e^{i(\theta-\eta)},e^{i(\theta+\eta)}\in B$ avec $b=e^{i\theta}$ ce qui permet de conclure que $B$ est ouvert dans $S$.\\
+		Ainsi comme $1\in B$ par hypothèse et comme $B$ est ouvert dans $S$ on dispose de $e^{i\varphi},e^{-i\varphi}\in B$ avec et $0<\varphi<\pi$. Ceci justifie $\alpha_0<\pi$ car sinon $-e^{-i\varphi}=e^{\pi-i\varphi}\in B$ car il est dans l'arc de cercle formé par $e^{i(\pi-\varphi/2)}\in B$ et $1$. De même $\beta_0>-\pi$. Cela justifie $\delta>0$ et $\pi-\delta>0$.\\
+		Supposons par l'absurde qu'il existe $z\in \Vect_\R(e^{i\delta})\cap A$. Alors $\dfrac{z}{|z|}=\pm e^{i\delta}\in B$. Si $\dfrac{z}{|z|}=e^{i\delta}$ alors comme $B$ est ouvert dans $S$ il existe $0<\eta\leq\pi-\delta$ tel que $e^{i(\delta+\eta)}\in B$ ce qui contredit la maximalité de $\delta$.\\
+		De même si $\dfrac{z}{|z|}=-e^{i\delta}=e^{i(\delta-\pi)}\in B$ alors il existe $0<\eta<\delta$ tel que $e^{i(\delta-\pi-\eta)}\in B$. Or $-\pi<\delta-\pi-\eta<\delta-\pi\leq\beta_0$ ce qui est absurde.\\
+		Finalement $\Vect_\R(e^{i\delta})\subset \C\backslash A$.
+		\item C'est le même principe. On munit $\R^n$ de sa norme euclidienne usuelle $\norme{\cdot}$ et on considère $B:=\left\{\dfrac{a}{\norme a},\ a\in A\right\}$. C'est pas simple à écrire faut que je réfléchisse encore...
+	\end{enumerate}
+	
+	\subsection{Connexité de l'espace \etoile{2}}
+	\label{sec:connexité-de-l'espace}
+	\textcolor{blue}{\hyperref[Connexité de l'espace]{[Enoncé]}}\\
+	En général en oral un bon dessin peut convaincre l'examinateur.
+	\begin{enumerate}[leftmargin=*]
+		\item Soient $a<0<b$. D'après le TVI, dans $\R$ tout chemin continu de $a$ à $b$ s'annule. Donc $\R^*$ n'est pas connexe par arcs. Ensuite $\R^*=\R^*_+\bigsqcup\R^*_-$. Ces deux ensembles sont des intervalles donc sont convexes et a fortiori connexes par arcs. Ce sont donc les composantes connexes par arcs de $\R^*$.
+		\item Soit $\theta\in ]-\pi,\pi]$. Montrons que $\U\backslash\{e^{i\theta}\}$ est connexe par arcs. Soit $z_1\ne z_2\in \U\backslash\{e^{i\theta}\}$. Sans perte de généralité $\exists \theta_1<\theta_2\in ]\theta,\theta+2\pi[,\ z_1=e^{i\theta_1},z_2=e^{i\theta_2}$.\\
+		$[\theta_1,\theta_2]\cap(\theta+2\pi\Z)=\emptyset$ donc le chemin $\gamma(t)=e^{i((1-t)\theta_1+t\theta_2)}$ est continu à valeur dans $\U\backslash\{e^{i\theta}\}$ et relie $z_1$ à $z_2$.\\
+		Soit maintenant $\alpha<\beta\in]-\pi,\pi]$. Montrons que $\U\backslash\{e^{i\alpha},e^{i\beta}\}$ n'est pas connexe par arcs. Soient $\theta,\theta'\in \R$ tels que $-\pi<\theta<\alpha<\theta'<\beta$. Soit $\gamma:[0,1]\to\U\backslash\{e^{i\alpha},e^{i\beta}\}$ un chemin continu de $e^{i\theta}$ à $e^{i\theta'}$. $\forall t\in [0,1],\ \exists! f(t)\in ]-\pi,\pi],\ \gamma(t)=e^{if(t)}$. En outre $f$ est continue. En effet si $t\in [0,1]$ et si $(t_n)\in [0,1]^\N$ converge vers $t$ alors $f$ étant bornée, quitte à extraire on peut supposer que $f(t_n)$ converge vers un certain $L\in ]-\pi,\pi]$. On en déduit par continuité de $\gamma$, $\gamma(t_n)\unfty\longrightarrow e^{if(t)}$ et par continuité de $\exp$, $\gamma(t_n)\unfty\longrightarrow e^{iL}$. Ainsi comme $L,f(t)\in ]-\pi,\pi]$, $f(t)=L$.\\
+		En particulier on a choisi $\theta,\theta'$ tels que $\alpha\in [\theta,\theta']$ et $f(0)=\theta$ et $f(1)=\theta'$. Donc d'après le TVI $\exists t\in [0,1],\ f(t)=\beta$. Mais alors $\gamma(t)=e^{i\beta}$ ce qui est absurde.\\\\
+		\textit{Remarque : avec le résultat de l'exercice suivant on peut donner une autre preuve. Pour $\U\backslash\{z\}$ on considère la tangente au cercle unité passant par $z$. $\U\backslash\{z\}$ est alors inclus dans l'un des demi-plans (Un demi-plan est connexe par arcs) définis par la tangente.\\
+		Pour $\U\backslash\{z,z'\}$ on considère la droite formée par $z$ et $z'$. Le cercle unité n'est contenu dans aucun des demi-plans définis par la droite.}
+		\begin{multicols}{2}
+		\begin{tikzpicture}
+			\draw[thick,->] (-3,0) -- (3,0);
+			\draw[thick,->] (0,-3) -- (0,3);
+			\draw (0,0) node[anchor=north west] {$0$};
+			\draw[blue] (0,0) circle (2);
+		\end{tikzpicture}
+		\\
+		\begin{tikzpicture}
+			\draw[thick,->] (-3,0) -- (3,0);
+			\draw[thick,->] (0,-3) -- (0,3);
+			\draw (0,0) node[anchor=north west] {$0$};
+			\draw[blue] (0,0) circle (2);
+		\end{tikzpicture}
+		\end{multicols}
+		Soit $\mathcal C\subset\U$ connexe par arcs. $\forall z\in \overline{\mathcal C},\ \exists!\theta(z)\in ]-\pi,\pi],\ z=e^{i\theta(z)}$. On montre comme on l'a fait pour $f$ avant que $\theta$ est continue. Donc $\theta(\mathcal C)$ est un connexe par arcs de $\R$ : c'est un intervalle.\\
+		On a montré qu'il existe un intervalle $I$ tel que $\mathcal C=\{e^{it},\ t\in I\}$, c'est-à-dire que $\mathcal C$ est un arc de cercle (en considérant $\U$ comme un arc de cercle).
+		\item Soient $z_1,\dots,z_N\in \C$. Notons $\tilde\C:=\C\backslash\{z_1,\dots,z_N\}$, $z\ne z'\in \tilde\C$, $u=z'-z$ et $\delta:=\dfrac{1}{3|u|}\min\limits_{1\leq i\ne j\leq N}|z_i-z_j|$. Quitte à réindicer on peut noter $\{z_1,\dots,z_n\}=\{z_1,\dots,z_N\}\cap[z,z']$ où $\forall i\in \crblanc{1}{n-1},\ [z,z_i]\subset [z,z_{i+1}]$ (les $z_i$ sont rangés par ordre d'apparition dans le segment $[z,z']$). On note alors pour $i\in \crblanc{0}{n},\ x_{i+1}=\begin{cases}
+			z_{i+1}-\delta u&\mbox{si }i\leq n-1\\
+			z'&\mbox{si }i=n
+		\end{cases}$ et $y_i=\begin{cases}
+			z&\mbox{si }i=0\\
+			z_i+\delta u&\mbox{si }i\geq 1
+		\end{cases}$.
+		On relie $z$ à $z'$ par $\gamma$ le chemin composé de :
+		\begin{itemize}
+			\item $\tau_i(t)=(1-t)y_i+tx_{i+1}$ (translation de $y_i$ à $x_{i+1}$);
+			\item $r_i(t)=z_i-\delta e^{i\pi t}u$ (rotation de centre $z_i$ et de rayon $\delta$ de $x_i$ à $y_i$);
+		\end{itemize}
+		Soit $i\in \crblanc{1}{n}$. Par définition $\tau_{i-1}([0,1])=[z_{i-1}+\delta u,z_i-\delta u]\subset ]z_{i-1},z_i[\subset \tilde\C$. $\delta$ est aussi choisi pour que $x_i-y_{i-1}=\lambda u$ avec $\lambda>0$.\\
+		Et $\forall t\in [0,1],\ \forall j\in \crblanc{1}{N},\ |r_i(t)-z_j|\geq \left||z_i-z_j|-\delta|u|\right|\geq |z_i-z_j|-\delta|u|\geq 3|u|\delta-\delta|u|=2\delta|u|>0$. Donc $r([0,1])\subset\tilde\C$.\\
+		Ainsi on a construit des chemins continus à valeurs dans $\tilde\C$ reliant $y_i$ à $x_{i+1}$ puis $x_{i+1}$ à $y_{i+1}$. Finalement $z=y_0$ est relié à $z'=x_n$ par un chemin continu à valeurs dans $\tilde\C$.
+		\item Soient $D_1,\dots,D_N$ des droites de $\R^3$. Soient $x\ne y\in \R^3\backslash\displaystyle\bigcup_{n=1}^ND_n$. On peut trouver un plan $P$ de $\R^3$ qui contient $x,y$ et qui ne contient aucune des droites $D_n,\ 1\leq n\leq N$. Alors l'intersection de $P$ et d'une droite $D_n$ est vide ou réduite à un point. Ainsi par la question 2 on peut trouver un chemin continu reliant $x$ et $y$ dans $\left(\R^3\backslash\displaystyle\bigcup_{n=1}^ND_n\right)\cap P=P\backslash\displaystyle\bigcup_{n=1}^N(P\cap D_n)$.
+	\end{enumerate}
+	
+	\subsection{Complémentaire d'un hyperplan \centraleponts{3}}
+	\label{sec:complementaire-dun-hyperplan}
+	\textcolor{blue}{\hyperref[Complémentaire d'un hyperplan]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $\varphi\in E^*$ telle que $H=\ker\varphi$. On note $H^+=\{x\in E,\ \varphi(x)>0\}$ et $H^-=\{x\in E,\ \varphi(x)<0\}=-H^+$. On a $H=H^+\cup H^-$.\\
+		Si $t\in [0,1]$ et si $x_1,x_2\in H^+$ alors $\varphi(tx_1+(1-t)x_2)=t\varphi(x_1)+(1-t)\varphi(x_2)>0$. Donc $H^+$ et convexe et a fortiori connexe par arcs. De même $H^-$ est connexe par arcs.\\
+		Enfin, si $E\backslash H$ est connexe par arcs alors comme $\varphi$ est continue (linéaire sur $E$ de dimension finie) $\varphi(E\backslash H)$ est connexe par arcs. Or on sait que $E\backslash H\ne\emptyset$ donc pour $a\in E\backslash H$, $\forall \lambda\in \R^*,\ \lambda=\varphi\left(\dfrac{\lambda}{\varphi(a)}\lambda\right)$. Donc $\varphi(E\backslash H)=\R^*$ ce qui est absurde.
+		\item Notons $(e_1,\dots,e_d)$ une base de $F$ que l'on complète en une base $(e_1,\dots,e_n)$ de $E$. Soit $x\in E\backslash F$. Il s'écrit $x=\displaystyle\sum_{k=1}^na_ke_k$ avec $(a_{d+1},\dots,a_n)\ne (0,\dots,0)$. On note $i\in \crblanc{d+1}{n}$ tel que $a_i\ne 0$. Si $a_i>0$ alors on peut relier $x$ à $e_i$ par $x(t)=(1-t)x+te_i\in E\backslash F$. Et si $a_i<0$ alors on peut relier $x$ à $-e_i$ par le même chemin.\\
+		Ensuite, pour tout $i\ne j\in \crblanc{d+1}{n}$, $[e_i,e_j]\subset \Vect(e_{d+1},\dots,e_n)\backslash\{0\}\subset E\backslash F$ et $[-e_i,e_j]\subset \Vect(e_{d+1},\dots,e_n)\backslash\{0\}\subset E\backslash F$. Comme $d\leq n-2$, on peut toujours trouver $j\ne i\in\crblanc{d+1}{n}$ donc $e_i$ et $-e_i$ sont reliés par un chemin continu dans $E\backslash F$ d'où $F$ est connexe par arcs.
+		\item En voyant $E$ comme un $\R$-espace vectoriel de dimension $2n$, $H$ est un sous-espace de $E$ de dimension $2n-2$. D'après la question 2, $E\backslash H$ est connexe par arcs.
+	\end{enumerate}
+	
+	\subsection{Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans \xens{5}}
+	\label{sec:composantes-connexes-par-arcs-du-complementaire-de-la-reunion-de-plusieurs-hyperplans}
+	\textcolor{blue}{\hyperref[Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item
+		\begin{enumerate}[label=\alph*.]
+			\item On note pour tout $i\in \crblanc{1}{r},\ H_i=\ker f_i$ ainsi que $U=\R^n\backslash \displaystyle\bigcup_{i=1}^r H_i$. Puisque la famille des formes linéaires est libre dans $(\R^n)^*$ qui est de dimension $\dim(\R^n)=n$, $r\leq n$.\\
+			Faisons un dessin dans $\R^2$ et $\R^3$ pour comprendre ce qu'il se passe. Dans $\R^2$ un hyperplan est une droite vectorielle.\\
+			\begin{multicols}{2}
+			\begin{tikzpicture}
+				\filldraw[opacity=.5,fill=red,draw=none] ({3*cos(1/2 r)},{3*sin(1/2 r)}) -- ({-3*cos(1/2 r)},{-3*sin(1/2 r)}) -- (0,-3) -- (3,-3) -- (3,0);
+				\filldraw[opacity=.5,fill=green,draw=none] ({-3*cos(1/2 r)},{-3*sin(1/2 r)}) -- ({3*cos(1/2 r)},{3*sin(1/2 r)}) -- (0,3) -- (-3,3) -- (-3,0);
+				\draw[black] (0,0) node[anchor=north west] {$0$};
+				\draw[black,thick,->] (-3,0) -- (3,0);
+				\draw[black,thick,->] (0,-3) -- (0,3);
+				\filldraw[black,thick] ({-3*cos(1/2 r)},{-3*sin(1/2 r)}) -- ({3*cos(1/2 r)},{3*sin(1/2 r)}) node[anchor=south west] {$(H_1)$};
+			\end{tikzpicture}
+			\\
+			\begin{tikzpicture}
+				\filldraw[opacity=.5,fill=cyan,draw=none] ({-3*cos(1/2 r)},{-3*sin(1/2 r)}) -- (0,0) -- ({-3*cos(1 r)},{-3*sin(1 r)});
+				\filldraw[opacity=.5,fill=yellow,draw=none] ({3*cos(1/2 r)},{3*sin(1/2 r)}) -- (0,0) -- ({3*cos(1 r)},{3*sin(1 r)});
+				\filldraw[opacity=.5,fill=red,draw=none] ({3*cos(1/2 r)},{3*sin(1/2 r)}) -- (0,0) -- ({-3*cos(1 r)},{-3*sin(1 r)}) -- (0,-3) -- (3,-3) -- (3,0);
+				\filldraw[opacity=.5,fill=green,draw=none] ({-3*cos(1/2 r)},{-3*sin(1/2 r)}) -- (0,0) -- ({3*cos(1 r)},{3*sin(1 r)}) -- (0,3) -- (-3,3) -- (-3,0);
+				\draw[black] (0,0) node[anchor=north west] {$0$};
+				\draw[black,thick,->] (-3,0) -- (3,0);
+				\draw[black,thick,->] (0,-3) -- (0,3);
+				\filldraw[black,thick] ({-3*cos(1/2 r)},{-3*sin(1/2 r)}) -- ({3*cos(1/2 r)},{3*sin(1/2 r)}) node[anchor=south west] {$(H_1)$};
+				\filldraw[black,thick] ({3*cos(1 r)},{3*sin(1 r)}) -- ({-3*cos(1 r)},{-3*sin(1 r)}) node[anchor=north east] {$(H_2)$};
+			\end{tikzpicture}
+			\end{multicols}
+			Chaque région colorée est une partie non vide de $\R^2\backslash (H_1\cup H_2)$ connexe par arcs et elles recouvrent $\R^2\backslash (H_1\cup H_2)$. Ce sont donc les composantes connexes par arcs de $\R^2\backslash (H_1\cup H_2)$. On voit que chaque $H_1$ sépare $\R^2$ en deux demi-plans puis que $H_2$ sépare ces deux demi-plans en deux.\\
+			Et dans $\R^3$ en prenant $H_1$, $H_2$, $H_3$ les 3 plans définies par les axes :\\
+			\textbf{Apprendre à faire des dessins en 3D requis}\\
+			$H_1$ sépare l'espace en deux, $H_2$ sépare les demi-espaces créés en deux, $H_3$ sépare les quarts d'espaces restant...\\
+			Sur ces exemples le nombre de composantes connexes par arcs de $U$ (le nombre de "régions") semble être $2^r$. C'est ce que l'on va montrer.\\
+			Remarquons que pour une forme linéaire non nulle $f\in (\R^n)^*$, $\R^n\backslash\ker f$ a exactement deux composantes connexes par arcs qui sont $\{x\in \R^n,\ f(x)>0\}$ et $\{x\in \R^n,\ f(x)<0\}$ (cf. l'exo précédent). Ainsi si $g$ est une forme linéaire non colinéaire à $f$, les "régions" de $\R^n\backslash(\ker f\cup\ker g)$ sont données par les combinaisons de signe possible pour $f(x),g(x)$ : $f(x)>0,g(x)>0$ ou $f(x)>0,g(x)<0$ ou $f(x)<0,g(x)>0$ ou $f(x)<0,g(x)<0$.\\
+			Concrètement on note $U=\R^n\backslash\displaystyle\bigcup_{i=1}^r\ker f_i$ ainsi que $S=\{-1,1\}^r$ et on pose pour $\varepsilon=(\varepsilon_1,\dots,\varepsilon_r)\in S$
+			$$C_\varepsilon=\{x\in U,\ \forall i\in \crblanc{1}{r},\ \varepsilon_if_i(x)>0\}$$
+			On va montrer que les composantes connexes par arcs de $U$ sont exactement les $C_\varepsilon$ pour $\varepsilon\in S$. Fixons $\varepsilon\in S$. Comme les $f_i$ forment une famille libre l'application
+			$$\fonction{\Phi}{\R^n}{\R^r}{x}{(f_1(x),\dots,f_r(x))}$$
+			est surjective. En effet sa matrice dans les bases canoniques $(u_1,\dots,u_n)$ de $\R^n$ et $(v_1,\dots,v_r)$ de $\R^r$ est $(f_i(u_j))_{\substack{1\leq i\leq r\\1\leq j\leq n}}$ qui est de noyau nul donc de rang $r$ par le théorème du rang. En particulier, $\exists x\in \R^n,\ \Phi(x)=\varepsilon$. Alors $x\in C_\varepsilon$ et par suite $C_\varepsilon\ne\emptyset$.\\
+			Ensuite, si $x,y\in C_\varepsilon$ alors $[x,y]\in C_\varepsilon$ donc $C_\varepsilon$ est connexe par arcs.\\
+			Enfin on a clairement $U=\displaystyle\bigsqcup_{\varepsilon\in S}C_\varepsilon$.\\
+			Ainsi $\R^n\backslash\displaystyle\bigcup_{i=1}^r\ker f_i$ a $|S|=2^r$ composantes connexes par arcs.
+			\item Montrons que $U$ est connexe par arcs. Soient $x\ne y\in U$. L'application
+			$$\fonction{P}{\C}{\C}{z}{\displaystyle\prod_{i=1}^rf_i((1-z)x+zy)}$$
+			est polynomiale donc s'annule un nombre fini de fois et de plus, $P(0)\ne 0$ et $P(1)\ne 0$. Or on sait que $\C$ privé d'un nombre fini de points est connexe par arcs (cf.\ref{Connexité de l'espace}). Donc il existe un chemin continu $\gamma$ de 0 à 1 tel que $P\circ \gamma$ ne s'annule pas. $\tilde\gamma:t\mapsto (1-\gamma(t))x+\gamma(t)y$ est donc un chemin continue de $x$ à $y$ à valeurs dans $U$.
+		\end{enumerate}
+		\item 
+	\end{enumerate}
+	
+	\subsection{Sphères d'un $\R$-espace vectoriel \centraleponts{3}}
+	\label{sec:spheres-dun-r-espace-vectoriel}
+	\textcolor{blue}{\hyperref[Sphères d'un R espace vectoriel]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+	\item Soient \(x,y\in S\).\\
 	Supposons que $x\ne -y$.
 	On pose :
 	\[
@@ -7947,34 +8415,48 @@ Alors, on a l'équivalence :
 	Donc $\gamma$ est un chemin continue de $x$ vers $y$.
 	Supposons que $x=-y$.
 	On choisit un point $z\in S$ tels que $z\ne x$ et $z\ne y$.\\
-	Ainsi d'après ce qui précède, il existe un chemin continue entre $x$ et $z$ et un autre chemin continue entre $y$ et $z$. Donc par transitivité, il existe un chemin continue entre $x$ et $y$.
+	Ainsi d'après ce qui précède, il existe un chemin continu entre $x$ et $z$ et un autre chemin continu entre $y$ et $z$. Donc par transitivité, il existe un chemin continu entre $x$ et $y$.
 	Donc $S$ est connexe par arcs.
 	\item Soit $S'$ une sphère de rayon $r>0$ et de centre $a$.
-	L'application \[\fonction{f}{S}{S'}{x}{r(x+a)}\] est une application continue de $S$ dans $S'$ car polynomiale.\\
+	L'application \[\fonction{f}{S}{S'}{x}{r(x+a)}\] est une application continue de $S$ dans $S'$ car affine.\\
 	Puisque l'on a montré que $S$ est connexe par arcs, l'image de $S$ par $f$ est connexe par arcs.\\
 	Or cette image est $S'$ donc $S'$ est connexe par arcs
 	\end{enumerate}
-	\subsection{Théorème du passage à la douane}\label{sec:theoreme-du-passage-a-la-douane}
-		\textcolor{blue}{\hyperref[Théorème du passage à la douane]{[Enoncé]}}\\
 	
-	\subsection{Condition nécessaire de la connexité par arc}\label{sec:condition-necessaire-de-la-connexite-par-arc}
-		\textcolor{blue}{\hyperref[COndition nécessaire de la connexité par arc]{[Enoncé]}}\\
+	\subsection{Théorème du passage à la douane \centraleponts{3}}
+	\label{sec:theoreme-du-passage-a-la-douane}
+	\textcolor{blue}{\hyperref[Théorème du passage à la douane]{[Enoncé]}}\\
+	Soit $C\subset E$ connexe par arcs telle que $C\cap A\ne\emptyset$ et $C\cap(E\backslash A)\ne\emptyset$. On fixe $a\in C\cap A$ et $b\in C\cap(E\backslash A)$. $C$ est connexe par arcs donc $\exists \gamma\in \mathcal C^0([0,1],E),\ \gamma(0)=a,\gamma(1)=b$. Si $b\in \T{Fr}(A)$ on a fini. Supposons que ce n'est pas le cas, càd comme $b\notin \ring A$ que $b\notin \overline A$.\\
+	Notons $s=\sup\{t\in [0,1],\ \gamma(t)\in \overline A\}$ qui est bien définie puisque $\gamma(0)=a\in A$. On va montrer que $\gamma(s)\in \T{Fr}(A)$.\\
+	Par caractérisation séquentielle de la borne supérieure on se donne une suite $t_n\in [0,1]^\N$ qui converge vers $s$ et telle que $\forall n\in \N,\ \gamma(t_n)\in \overline A$. Par continuité de $\gamma$, $\gamma(t_n)\unfty\longrightarrow\gamma(s)$ puis par caractérisation séquentielle de l'adhérence, $\gamma(s)\in \overline A$. On en déduit comme $\gamma(1)=b\notin \overline A$ que $s<1$. Supposons par l'absurde que $\gamma(s)\in \ring A$. Alors $\exists \varepsilon>0,\ B(\gamma(s),\varepsilon)\subset A$. Quitte à prendre plus petit on peut supposer $\varepsilon<1$.\\
+	Par continuité de $\gamma$ on se donne $1-s\geq \delta>0$ tel que $\forall s'\in [0,1],\ |s'-s|\leq \delta\implies |\gamma(s')-\gamma(s)|<\varepsilon$. On a vu que $s<1$ donc $s<s+\delta:=s'\in [0,1]$. De plus, $|s'-s|=\delta$ donc $|\gamma(s')-\gamma(s)|<\varepsilon$ i.e $\gamma(s')\in B(\gamma(s),\varepsilon)$ d'où $\gamma(s')\in A\subset \overline A$.\\
+	Ceci est absurde donc $\gamma(s)\in \T{Fr}(A)$.
+	
+	\subsection{Condition nécessaire de la connexité par arc \etoile{1}}
+	\label{sec:condition-necessaire-de-la-connexite-par-arc}
+	\textcolor{blue}{\hyperref[Condition nécessaire de la connexité par arc]{[Enoncé]}}\\
 	On sait que l'image d'un connexe par arcs par une application continue est connexe par arcs.\\
 	Par conséquent, $f(C)$ est connexe par arcs.\\
 	Puisque $f(C)\subset\{0,1\}$, on en déduit que : \[f(C)=\{0\}, f(C)=\{1\} \text{ ou } f(C)=\{0,1\}\]
 	Or $\{0,1\}$ n'est pas connexe par arcs, donc $f(C)\ne\{0,1\}$.\\
 	Dans les deux cas restant $f(C)$ est un singleton (qui est bien connexe par arcs), donc $f$ est constante sur $C$.
-	\subsection{Entre un ensemble et son adhérence}\label{sec:entre-un-ensemble-et-son-adherence}
-		\textcolor{blue}{\hyperref[Entre un ensemble et son aadhérence]{[Enoncé]}}\\
 	
-	\subsection{Continuité d'applications matricielles}\label{sec:continuite-dapplications-matricielles}
-		\textcolor{blue}{\hyperref[Continuité d'applicaiton matricielles]{[Enoncé]}}\\
+	\subsection{Entre un ensemble et son adhérence}
+	\label{sec:entre-un-ensemble-et-son-adherence}
+	\textcolor{blue}{\hyperref[Entre un ensemble et son aadhérence]{[Enoncé]}}\\
+	
+	\subsection{Continuité d'applications matricielles}
+	\label{sec:continuite-dapplications-matricielles}
+	\textcolor{blue}{\hyperref[Continuité d'applicaiton matricielles]{[Enoncé]}}\\
+	
 	\subsection{Points de continuité du polynôme minimal}\label{sec:points-de-continuite-du-polynome-minimal}
-		\textcolor{blue}{\hyperref[Points de continuité du polynôme minimal]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Points de continuité du polynôme minimal]{[Enoncé]}}\\
+	
 	\subsection{Exponentielle matricielle et topologie}\label{sec:exponentielle-matricielle-et-topologie}
-		\textcolor{blue}{\hyperref[Exponentielle matricielle et topologie]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Exponentielle matricielle et topologie]{[Enoncé]}}\\
+	
 	\subsection{Lemme du déterminant}\label{sec:lemme-du-determinant}
-		\textcolor{blue}{\hyperref[Lemme du déterminant]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Lemme du déterminant]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item Soit $(U,V)\in\mathcal{M}_{n,1}(\K)^2$.
 		On remarque que $\det(I_n+UV^\top)=(-1)^n\chi_{UV^\top}(-1)$.
@@ -7987,9 +8469,9 @@ Alors, on a l'équivalence :
 		\\Finalement, puisque GL$_n(\R)$ est dense dans $\mathcal{M}_n(\R)$ et que $\det$ est continue sur $\mathcal{M}_n(\R)$ car $\det(M)$ est polynomiale en les coefficients de $M$; la relation est vérifiée pour toute matrice de $\mathcal{M}_n(\R)$.
 	\end{enumerate}
 	
-	
-	\subsection{Matrice de déterminant $1$ \etoile{3}}\label{sec:matrice-de-determinant-1-etoile3}
-		\textcolor{blue}{\hyperref[Matrice de déterminant 1]{[Enoncé]}}\\
+	\subsection{Matrice de déterminant $1$ \etoile{3}}
+	\label{sec:matrice-de-determinant-1-etoile3}
+	\textcolor{blue}{\hyperref[Matrice de déterminant 1]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item On considère le morphisme de groupe $\det:\text{GL}_n(\K)\to \K^*$.\\
 		SL$_n(\K)=\ker(\det)$ donc SL$_n(\K)$ est un sous-groupe de GL$_n(\K)$.
@@ -8017,11 +8499,13 @@ Alors, on a l'équivalence :
 		On en déduit que SL$_n(\K)$ est connexe par arcs.
 	\end{enumerate}
 	
-	\subsection{Ensembles de matrices de rang fixé}\label{sec:ensembles-de-matrices-de-rang-fixe}
-		\textcolor{blue}{\hyperref[Ensembles de matroces de rang fixé]{[Enoncé]}}\\
+	\subsection{Ensembles de matrices de rang fixé}
+	\label{sec:ensembles-de-matrices-de-rang-fixe}
+	\textcolor{blue}{\hyperref[Ensembles de matroces de rang fixé]{[Enoncé]}}\\
 	
-	\subsection{Densité des matrices inversibles \etoile{3}}\label{sec:densite-des-matrices-inversibles-etoile3}
-		\textcolor{blue}{\hyperref[Densité des matrices inversibles]{[Enoncé]}}\\
+	\subsection{Densité des matrices inversibles \etoile{3}}
+	\label{sec:densite-des-matrices-inversibles-etoile3}
+	\textcolor{blue}{\hyperref[Densité des matrices inversibles]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $M\in \M_n(\K)$. On pose pour $k\in \N^*$, $M_k=M-\displaystyle\frac{1}{k}I_n$. Il est clair que $M_k\ukfty\longrightarrow M$.\\
 		On remarque que $\forall k\in \N^*,\ M_k\in \text{GL}_n(\K)\iff \det(M_k)\ne 0\iff \displaystyle\frac{1}{k}\notin\text{Sp}(M)$. Or on sait que le spectre d'une matrice est un ensemble fini, c'est l'ensemble des racines d'un polynôme. Ainsi pour $k> \displaystyle\frac{1}{\min\limits_{\lambda\in \text{Sp}(M)\setminus\{0\}}|\lambda|}$, on sait que $\displaystyle\frac{1}{k}\notin \text{Sp}(M)$.\\
@@ -8044,11 +8528,13 @@ Alors, on a l'équivalence :
 		Ainsi par unicité de la limite, $\chi_{\exp(AB)}=\chi_{\exp(BA)}$.
 	\end{enumerate}
 	
-	\subsection{Comatrice et topologie}\label{sec:comatrice-et-topologie}
-		\textcolor{blue}{\hyperref[Comatrice et toplogie]{[Enoncé]}}\\
+	\subsection{Comatrice et topologie}
+	\label{sec:comatrice-et-topologie}
+	\textcolor{blue}{\hyperref[Comatrice et toplogie]{[Enoncé]}}\\
 	
-	\subsection{Groupe orthogonal \etoile{1}}\label{sec:groupe-orthogonal-etoile1}
-		\textcolor{blue}{\hyperref[Groupe orthogonal]{[Enoncé]}}\\
+	\subsection{Groupe orthogonal \etoile{1}}
+	\label{sec:groupe-orthogonal-etoile1}
+	\textcolor{blue}{\hyperref[Groupe orthogonal]{[Enoncé]}}\\
 	Soient $U,V\in \O_n(\R)$.\\
 	Vérifions que $\O_n(\R)$ est un sous-groupe de GL$_n(\R)$ :
 	\begin{itemize}
@@ -8065,8 +8551,9 @@ Alors, on a l'équivalence :
 	On remarque que $\det(\O_n(\R))=\{-1,1\}$ n'est pas connexe par arcs.\\
 	L'application $\det:\M_n(\R)\to \R$ est continue car polynomiale en les coefficients de la matrice donc $\O_n(\R)$ ne peut pas être connexe par arcs.
 	
-	\subsection{Groupe (spécial) unitaire \etoile{3}}\label{sec:groupe-special-unitaire-etoile3}
-		\textcolor{blue}{\hyperref[Groupe (spécial) unitaire]{[Enoncé]}}\\
+	\subsection{Groupe (spécial) unitaire \etoile{3}}
+	\label{sec:groupe-special-unitaire-etoile3}
+	\textcolor{blue}{\hyperref[Groupe (spécial) unitaire]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item On vérifie que $\fonction{\varphi}{\M_n(\C)}{\M_n(\C)}{M}{\overline{M}}$ est un morphisme d'algèbre.\\
 		Soient $A,B\in U_n(\C)$.\\
@@ -8156,8 +8643,9 @@ Alors, on a l'équivalence :
 		\end{enumerate}
 	\end{enumerate}
 	
-	\subsection{Partie compacte et stable par produit de GL$_n(\K)$ \etoile{3}}\label{sec:partie-compacte-et-stable-par-produit-de-glnk-etoile3}
-		\textcolor{blue}{\hyperref[Partie compacte et stable par produit de GLn(K)]{[Enoncé]}}\\
+	\subsection{Partie compacte et stable par produit de GL$_n(\K)$ \etoile{3}}
+	\label{sec:partie-compacte-et-stable-par-produit-de-glnk-etoile3}
+	\textcolor{blue}{\hyperref[Partie compacte et stable par produit de GLn(K)]{[Enoncé]}}\\
 	On se donne $G$ une telle partie. Comme elle est non vide on se donne un élément $A\in G$. La stabilité par produit donne par récurrence immédiate $\forall n\in \N^*,\ A^n\in G$.\\
 	Ensuite comme $G$ est compacte on sait qu'il existe une application $\varphi:\N\to\N^*$ strictement croissante telle que $(A^{\varphi(n)})_{n\in \N}$ converge vers une matrice $B\in G$.\\
 	On sait que l'inversion matricielle est continue (cf. \ref{Continuité d'applicaiton matricielles}) donc $A^{-\varphi(n)}\unfty\longrightarrow B^{-1}$.\\
@@ -8166,8 +8654,9 @@ Alors, on a l'équivalence :
 	Elle est donc continue et, $A^{\varphi(n+2)}A^{-\varphi(n)}A^{-1}\unfty\longrightarrow BB^{-1}A^{-1}=A^{-1}$. Donc $A^{-1}\in G$ par caractérisation séquentielle d'une partie fermée.\\
 	$G$ est une partie non vide de GL$_n(\K)$, stable par produit et passage à l'inverse : c'est un sous-groupe de GL$_n(\K)$.
 	
-	\subsection{Intérieur des matrices diagonalisable \etoile{5}}\label{sec:interieur-des-matrices-diagonalisable-etoile5}
-		\textcolor{blue}{\hyperref[Intérieur des matrices diagonalisables]{[Enoncé]}}\\
+	\subsection{Intérieur des matrices diagonalisable \etoile{5}}
+	\label{sec:interieur-des-matrices-diagonalisable-etoile5}
+	\textcolor{blue}{\hyperref[Intérieur des matrices diagonalisables]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Tout d'abord, $\B_n(\R)\subset \mathcal{D}_n(\R)$.
 		Montrons que $\B_n(\R)$ est ouvert dans $\M_n(\R)$.\\
@@ -8226,9 +8715,9 @@ Alors, on a l'équivalence :
 		Finalement, $\widering{\mathcal{D}_n(\C)}=\B_n(\C)$.
 	\end{enumerate}
 	
-	\subsection{Adhérence des matrices diagonalisables \etoile{3}}\label{sec:adherence-des-matrices-diagonalisables-etoile3}
-
-		\textcolor{blue}{\hyperref[Adhérence des matrices diagonalisables]{[Enoncé]}}\\
+	\subsection{Adhérence des matrices diagonalisables \etoile{3}}
+	\label{sec:adherence-des-matrices-diagonalisables-etoile3}
+	\textcolor{blue}{\hyperref[Adhérence des matrices diagonalisables]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $M\in \M_n(\C)=\mathcal{T}_n(\C)$. On note $\lambda_1,\dots,\lambda_n$ les valeurs propres de $M$, potentiellement égales. Il existe $P$ une matrice inversible et $T$ une matrice triangulaire supérieure telles que $M=PTP^{-1}$.\\
 		Posons, pour $k\in \N,\ M_k=P\left(T+\text{diag}\left(\displaystyle\frac{1}{k+1},\dots,\frac{1}{k+n}\right)\right)P^{-1}$.\\
@@ -8258,8 +8747,9 @@ Alors, on a l'équivalence :
 		\end{enumerate}
 	\end{enumerate}
 	
-	\subsection{Une preuve de Cayley-Hamilton (1) \etoile{2}}\label{sec:une-preuve-de-cayley-hamilton-1-etoile2}
-		\textcolor{blue}{\hyperref[Une preuve de Cayley-Hamilton (1)]{[Enoncé]}}\\
+	\subsection{Une preuve de Cayley-Hamilton (1) \etoile{2}}
+	\label{sec:une-preuve-de-cayley-hamilton-1-etoile2}
+	\textcolor{blue}{\hyperref[Une preuve de Cayley-Hamilton (1)]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item Notons $\lambda_1,\dots,\lambda_n$ les valeurs propres de $A$, potentiellement égale. Il existe une matrice inversible $P$ telle que $A=P\text{diag}(\lambda_1,\dots,\lambda_n)P^{-1}$. Notons $\chi_A=\displaystyle\sum\limits_{k=0}^na_kX^k$.\\
 		On calcule :
@@ -8277,28 +8767,38 @@ Alors, on a l'équivalence :
 		Or l'application $M\in\M_n(\C)\mapsto \chi_M(M)$ est continue car les coefficients de $\chi_M(M)$ sont polynomiaux en ceux de $M$.\\
 		Ainsi par passage à la limite, $\chi_A(A)=0$.
 	\end{enumerate}
-	\subsection{Dimension du commutant d'une matrice}\label{sec:dimension-du-commutant-dune-matrice}
-		\textcolor{blue}{\hyperref[Dimension du commutant d'une matrice]{[Enoncé]}}\\
-	\subsection{Topologie et réduction}\label{sec:topologie-et-reduction}
-		\textcolor{blue}{\hyperref[Topologie et réduction]{[Enoncé]}}\\
 	
-	\subsection{Groupe spécial orthogonal et connexité}\label{sec:groupe-special-orthogonal-et-connexite}
-		\textcolor{blue}{\hyperref[Groupe spécial orthogonal et connexité]{[Enoncé]}}\\
+	\subsection{Dimension du commutant d'une matrice}
+	\label{sec:dimension-du-commutant-dune-matrice}
+	\textcolor{blue}{\hyperref[Dimension du commutant d'une matrice]{[Enoncé]}}\\
 	
-	\subsection{Matrices inversibles et connexité}\label{sec:matrices-inversibles-et-connexite}
-		\textcolor{blue}{\hyperref[Matrices inversibles et connexité]{[Enoncé]}}\\
+	\subsection{Topologie et réduction}
+	\label{sec:topologie-et-reduction}
+	\textcolor{blue}{\hyperref[Topologie et réduction]{[Enoncé]}}\\
 	
-	\subsection{Matrices nilpotentes et connexité}\label{sec:matrices-nilpotentes-et-connexite}
-		\textcolor{blue}{\hyperref[Matrices nilpotentes et connexité]{[Enoncé]}}\\
+	\subsection{Groupe spécial orthogonal et connexité}
+	\label{sec:groupe-special-orthogonal-et-connexite}
+	\textcolor{blue}{\hyperref[Groupe spécial orthogonal et connexité]{[Enoncé]}}\\
 	
-	\subsection{Raffinement sur les disques de Gershgorin}\label{sec:raffinement-sur-les-disques-de-gershgorin}
-		\textcolor{blue}{\hyperref[Raffinament sur les disques de Gershgorin]{[Enoncé]}}\\
+	\subsection{Matrices inversibles et connexité}
+	\label{sec:matrices-inversibles-et-connexite}
+	\textcolor{blue}{\hyperref[Matrices inversibles et connexité]{[Enoncé]}}\\
 	
-	\subsection{Matrices stochastiques et bistochastiques}\label{sec:matrices-stochastiques-et-bistochastiques}
-		\textcolor{blue}{\hyperref[Matrices stochastiques et bistochatiques]{[Enoncé]}}\\
+	\subsection{Matrices nilpotentes et connexité}
+	\label{sec:matrices-nilpotentes-et-connexite}
+	\textcolor{blue}{\hyperref[Matrices nilpotentes et connexité]{[Enoncé]}}\\
 	
-	\subsection{Théorème de Birkhoff-Von Neumann \etoile{4}}\label{sec:theoreme-de-birkhoff-von-neumann-etoile4}
-		\textcolor{blue}{\hyperref[Théorème de Birkhoff-Von Neumann]{[Enoncé]}}\\
+	\subsection{Raffinement sur les disques de Gershgorin}
+	\label{sec:raffinement-sur-les-disques-de-gershgorin}
+	\textcolor{blue}{\hyperref[Raffinament sur les disques de Gershgorin]{[Enoncé]}}\\
+	
+	\subsection{Matrices stochastiques et bistochastiques}
+	\label{sec:matrices-stochastiques-et-bistochastiques}
+	\textcolor{blue}{\hyperref[Matrices stochastiques et bistochatiques]{[Enoncé]}}\\
+	
+	\subsection{Théorème de Birkhoff-Von Neumann \etoile{4}}
+	\label{sec:theoreme-de-birkhoff-von-neumann-etoile4}
+	\textcolor{blue}{\hyperref[Théorème de Birkhoff-Von Neumann]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $P\in \text{Conv}(\mathcal P_n)$. $\exists (\lambda_1,\dots,\lambda_n)\in (\R_+)^n,\ \exists (\sigma_1,\dots,\sigma_n)\in \mathcal S_n^n,\ \begin{cases}
 			\displaystyle\sum_{k=1}^n\lambda_k=1\\
@@ -8354,12 +8854,17 @@ Alors, on a l'équivalence :
 	
 	\newpage
 \section{Correction Fonctions à valeurs vectorielles}
-	\subsection{Point fixe de l'exponentielle complexe}\label{sec:point-fixe-de-lexponentielle-complexe}
-		\textcolor{blue}{\hyperref[Point fixe de l'exponentielle complexe]{[Enoncé]}}\\
-	\subsection{Théorème du relèvement}\label{sec:theoreme-du-relevement}
-		\textcolor{blue}{\hyperref[Théorème du relèvement]{[Enoncé]}}\\
-	\subsection{Equation fonctionnelle de l'exponentielle matricielle \etoile{3}}\label{sec:equation-fonctionnelle-de-lexponentielle-matricielle-etoile3}
-		\textcolor{blue}{\hyperref[Equation fonctionnelle de l'exponentielle matricielle]{[Enoncé]}}\\
+	\subsection{Point fixe de l'exponentielle complexe}
+	\label{sec:point-fixe-de-lexponentielle-complexe}
+	\textcolor{blue}{\hyperref[Point fixe de l'exponentielle complexe]{[Enoncé]}}\\
+	
+	\subsection{Théorème du relèvement}
+	\label{sec:theoreme-du-relevement}
+	\textcolor{blue}{\hyperref[Théorème du relèvement]{[Enoncé]}}\\
+	
+	\subsection{Equation fonctionnelle de l'exponentielle matricielle \etoile{3}}
+	\label{sec:equation-fonctionnelle-de-lexponentielle-matricielle-etoile3}
+	\textcolor{blue}{\hyperref[Equation fonctionnelle de l'exponentielle matricielle]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item On remarque déjà que $\varphi(0)=\varphi(0)^2$ et que $\forall (s,t)\in \R^2,\ \varphi(s)\varphi(t)=\varphi(s+t)=\varphi(t)\varphi(s)$.\\
 		Alors si l'on fixe $s\in \R$ et que l'on dérive par rapport à $t$ en $0$ :\\
@@ -8384,8 +8889,9 @@ Alors, on a l'équivalence :
 		Ainsi, pour $T=T_1,\ \varphi(s)=A(T_1)^{-1}(\Phi(s+T_1)-\Phi(s))$. Cette dernière expression est $\mathcal C^1$ en $s$ donc $\varphi$ est $\mathcal C^1$ sur $\R$ et on se retrouve dans le cas de la question précédente.
 	\end{enumerate}
 	
-	\subsection{Formule de Trotter-Kato \etoile{2}}\label{sec:formule-de-trotter-kato-etoile2}
-		\textcolor{blue}{\hyperref[Formule de Trotter-Kato]{[Enoncé]}}\\
+	\subsection{Formule de Trotter-Kato \etoile{2}}
+	\label{sec:formule-de-trotter-kato-etoile2}
+	\textcolor{blue}{\hyperref[Formule de Trotter-Kato]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $M\in \M_n(\K)$. Par récurrence immédiate, $\forall n\in \N,\ \norme{M^n}\leq \norme{M}^n$.\\
 		Comme toutes les sommes qu'on va écrire convergent, par inégalité triangulaire,\\
@@ -8403,8 +8909,9 @@ Alors, on a l'équivalence :
 		Donc $\norme{X_k^k-Y_k^k}\ukfty{=}\bigO{\displaystyle\frac{1}{k}}$ d'où $\displaystyle\ukfty{\lim}\left(\exp\left(\frac{A}{k}\right)\exp\left(\frac{B}{k}\right)\right)^k=\exp(A+B)$.
 	\end{enumerate}
 	
-	\subsection{Série entière de matrice \etoile{2}}\label{sec:serie-entiere-de-matrice-etoile2}
-		\textcolor{blue}{\hyperref[Série entière de matrice]{[Enoncé]}}\\
+	\subsection{Série entière de matrice \etoile{2}}
+	\label{sec:serie-entiere-de-matrice-etoile2}
+	\textcolor{blue}{\hyperref[Série entière de matrice]{[Enoncé]}}\\
 	On sait que pour tout $M\in \M_n(\K),\ \displaystyle\sum_{n\in \N}\frac{M^n}{n!}$ converge absolument vers $e^M$. Donc d'après le théorème de Fubini :
 	\begin{align*}
 		e^{iA}+e^{-iA}&=\displaystyle\sum_{n=0}^{+\infty}\frac{i^n}{n!}A^n+\sum_{n=0}^{+\infty}\frac{(-i)^n}{n!}A^n\\
@@ -8413,26 +8920,44 @@ Alors, on a l'équivalence :
 	\end{align*}
 	On montre de même que $e^{iA}-e^{-iA}=2i\sin(A)$. De plus, $iA$ et $-iA$ commutent donc $e^{iA}e^{-iA}=e^{iA-iA}=I_n$\\
 	Ainsi, $\cos^2(A)+\sin^2(A)=\displaystyle\left(\frac{e^{iA}+e^{-iA}}{2}\right)^2+\left(\frac{e^{iA}-e^{-iA}}{2i}\right)^2=\frac{1}{4}\left[e^{2iA}+2I_n+e^{-2iA}-\left(e^{2iA}-2I_n+e^{-2iA}\right)\right]=I_n$.
-	\subsection{Expression d'un projecteur}\label{sec:expression-dun-projecteur}
-		\textcolor{blue}{\hyperref[Expression d'un projecteur]{[Enoncé]}}\\
-	\subsection{Une preuve analytique de Cayley-Hamilton}\label{sec:une-preuve-analytique-de-cayley-hamilton}
-		\textcolor{blue}{\hyperref[Une preuve analytique de Cayley-Hamilton]{[Enoncé]}}\\
+	
+	\subsection{Expression d'un projecteur}
+	\label{sec:expression-dun-projecteur}
+	\textcolor{blue}{\hyperref[Expression d'un projecteur]{[Enoncé]}}\\
+	
+	\subsection{Une preuve analytique de Cayley-Hamilton}
+	\label{sec:une-preuve-analytique-de-cayley-hamilton}
+	\textcolor{blue}{\hyperref[Une preuve analytique de Cayley-Hamilton]{[Enoncé]}}\\
 	\newpage
-	\subsection{Exemple de fonctions lipschitzienne}\label{sec:exemple-de-fonctions-lipschitzienne}
+	
+	\subsection{Exemple de fonctions lipschitzienne}
+	\label{sec:exemple-de-fonctions-lipschitzienne}
 	\textcolor{blue}{\hyperref[Exemple de fonction lipschitzienne]{[Enoncé]}}\\
-	\subsection{Condition de continuité sur un espace vectoriel normé}\label{sec:condition-de-continuite-sur-un-espace-vectoriel-norme}
+	
+	\subsection{Condition de continuité sur un espace vectoriel normé}
+	\label{sec:condition-de-continuite-sur-un-espace-vectoriel-norme}
 	\textcolor{blue}{\hyperref[Condition de continuité sur un espace vecoriel normé]{[Enoncé]}}\\
-	\subsection{Application linéaire (2)}\label{sec:application-lineaire-2}
+	
+	\subsection{Application linéaire (2)}
+	\label{sec:application-lineaire-2}
 	\textcolor{blue}{\hyperref[Application linéaire 2]{[Enoncé]}}\\
-	\subsection{Mouvement à force centrale}\label{sec:mouvement-a-force-centrale}
+	
+	\subsection{Mouvement à force centrale}
+	\label{sec:mouvement-a-force-centrale}
 	\textcolor{blue}{\hyperref[Mouvement à force centrale]{[Enoncé]}}\\
-	\subsection{Dérivée d'un produit de deux matrices}\label{sec:derivee-dun-produit-de-deux-matrices}
+	
+	\subsection{Dérivée d'un produit de deux matrices}
+	\label{sec:derivee-dun-produit-de-deux-matrices}
 	\textcolor{blue}{\hyperref[Dérivée d'un produit de deux matrices]{[Enoncé]}}\\
-	\subsection{Inégalité des accroissements finis pour un espace euclidien}\label{sec:inegalite-des-accroissements-finis-pour-un-espace-euclidien}
+	
+	\subsection{Inégalité des accroissements finis pour un espace euclidien}
+	\label{sec:inegalite-des-accroissements-finis-pour-un-espace-euclidien}
 	\textcolor{blue}{\hyperref[Inégalité des accroissements finis pour un espace euclidien]{[Enoncé]}}\\
+
 \section{Correction Equations différentielles}
-	\subsection{Equations différentielles du premier ordre}\label{sec:equations-differentielles-du-premier-ordre}
-		\textcolor{blue}{\hyperref[Equations différentielles du premier ordre]{[Enoncé]}}\\
+	\subsection{Equations différentielles du premier ordre}
+	\label{sec:equations-differentielles-du-premier-ordre}
+	\textcolor{blue}{\hyperref[Equations différentielles du premier ordre]{[Enoncé]}}\\
 	
 	\subsection{Equations différentielles du second ordre}\label{sec:equations-differentielles-du-second-ordre}
 		\textcolor{blue}{\hyperref[Equations différentielles du second ordre]{[Enoncé]}}\\

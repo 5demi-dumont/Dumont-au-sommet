@@ -148,9 +148,9 @@
 \contentsline {section}{\numberline {III.24}Lemme de Croft \etoile {2}}{51}{section.3.24}%
 \contentsline {section}{\numberline {III.25}Inégalité intégrale de Jensen \etoile {1}}{51}{section.3.25}%
 \contentsline {chapter}{\numberline {IV}Polynômes}{53}{chapter.4}%
-\contentsline {section}{\numberline {IV.1}Théorème de d'Alembert-Gauss (2)}{53}{section.4.1}%
+\contentsline {section}{\numberline {IV.1}Théorème de d'Alembert-Gauss (2) \etoile {3}}{53}{section.4.1}%
 \contentsline {section}{\numberline {IV.2}Bernoulli \etoile {2}}{54}{section.4.2}%
-\contentsline {section}{\numberline {IV.3}Lagrange \etoile {1}}{54}{section.4.3}%
+\contentsline {section}{\numberline {IV.3}Lagrange \ccinp {1}}{54}{section.4.3}%
 \contentsline {section}{\numberline {IV.4}Tchebychev \etoile {2}}{55}{section.4.4}%
 \contentsline {subsection}{\numberline {IV.4.1}Angles rationnels dont le cosinus est rationnel \etoile {3} (HP)}{55}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {IV.4.2}Triangle à angles rationnels dont tous les côtés ont une longueur rationnelle \etoile {2} (HP)}{56}{subsection.4.4.2}%
@@ -168,743 +168,771 @@
 \contentsline {section}{\numberline {IV.15}Equation polynomiale (4)}{60}{section.4.15}%
 \contentsline {section}{\numberline {IV.16}Equation polynomiale (5)}{60}{section.4.16}%
 \contentsline {section}{\numberline {IV.17}Equation de Shapiro}{60}{section.4.17}%
-\contentsline {section}{\numberline {IV.18}Théorème de la racine rationnelle}{60}{section.4.18}%
-\contentsline {section}{\numberline {IV.19}Critère d'Eisenstein \etoile {3}}{61}{section.4.19}%
-\contentsline {subsection}{\numberline {IV.19.1}Irréductibilité des polynômes cyclotomiques d'indices premiers \etoile {2}}{61}{subsection.4.19.1}%
-\contentsline {subsection}{\numberline {IV.19.2}Dimension de $\mathbb {R}$ en tant que $\mathbb {Q}$-espace vectoriel \etoile {3}}{61}{subsection.4.19.2}%
-\contentsline {section}{\numberline {IV.20}Points critiques des polynômes de Hilbert \centraleponts {3}}{61}{section.4.20}%
-\contentsline {section}{\numberline {IV.21}Zéros des polynômes de Taylor du sinus}{62}{section.4.21}%
-\contentsline {section}{\numberline {IV.22}Polynôme de Taylor de l'exponentielle \ccinp {1}}{62}{section.4.22}%
-\contentsline {section}{\numberline {IV.23}Les fonctions localement polynomiales sont polynomiales \centraleponts {2}}{62}{section.4.23}%
-\contentsline {section}{\numberline {IV.24}Intégrales de polynômes \etoile {1}}{62}{section.4.24}%
-\contentsline {section}{\numberline {IV.25}Théorème de Gauss-Lucas \etoile {2}}{63}{section.4.25}%
-\contentsline {subsection}{\numberline {IV.25.1}Une application \etoile {3}}{63}{subsection.4.25.1}%
-\contentsline {section}{\numberline {IV.26}Graphe d'un polynôme \telecom {2}}{63}{section.4.26}%
-\contentsline {section}{\numberline {IV.27}Polynômes qui commutent avec cosinus \etoile {3}}{63}{section.4.27}%
-\contentsline {section}{\numberline {IV.28}Relation trigonométrique polynomiale \etoile {3}}{64}{section.4.28}%
-\contentsline {section}{\numberline {IV.29}Division euclidienne (1) \ccinp {2}}{64}{section.4.29}%
-\contentsline {section}{\numberline {IV.30}Division euclidienne (2) \ccinp {1}}{64}{section.4.30}%
-\contentsline {section}{\numberline {IV.31}Fonctions trigonométriques polynomiale ? \ccinp {1}}{64}{section.4.31}%
-\contentsline {section}{\numberline {IV.32}Logarithme rationnel ? \telecom {2}}{64}{section.4.32}%
-\contentsline {section}{\numberline {IV.33}Une fraction rationnelle \etoile {1}}{64}{section.4.33}%
-\contentsline {section}{\numberline {IV.34}Dérivé d'un polynôme scindé sur $\mathbb {R}$ \centraleponts {3}}{64}{section.4.34}%
-\contentsline {section}{\numberline {IV.35}Une condition nécessaire pour qu'un polynôme soit scindé sur $\mathbb {R}$ \centraleponts {3}}{65}{section.4.35}%
-\contentsline {section}{\numberline {IV.36}Une condition nécessaire pour qu'un polynôme soit dissocié sur $\mathbb {R}$ \telecom {2}}{65}{section.4.36}%
-\contentsline {section}{\numberline {IV.37}Théorème de Bernstein}{65}{section.4.37}%
-\contentsline {section}{\numberline {IV.38}Etude d'un polynôme défini implicitement}{66}{section.4.38}%
-\contentsline {section}{\numberline {IV.39}P'|P \etoile {1}}{66}{section.4.39}%
-\contentsline {section}{\numberline {IV.40}Polynômes positifs \etoile {2}}{66}{section.4.40}%
-\contentsline {section}{\numberline {IV.41}Polynômes carrés}{66}{section.4.41}%
-\contentsline {section}{\numberline {IV.42}Polynômes réciproques \etoile {2}}{67}{section.4.42}%
-\contentsline {section}{\numberline {IV.43}Polynômes surjectifs \etoile {5}}{67}{section.4.43}%
-\contentsline {section}{\numberline {IV.44}Résultant et discriminant \etoile {2}}{67}{section.4.44}%
-\contentsline {section}{\numberline {IV.45}Théorème de Liouville : Fermat pour les polynômes \etoile {4}}{68}{section.4.45}%
-\contentsline {chapter}{\numberline {V}Espace vectoriels normés}{71}{chapter.5}%
-\contentsline {section}{\numberline {V.1}Suite de Cauchy \etoile {2}}{71}{section.5.1}%
-\contentsline {section}{\numberline {V.2}Théorème de Fréchet-Von Neumann-Jordan}{71}{section.5.2}%
-\contentsline {section}{\numberline {V.3}Une norme non euclidienne}{71}{section.5.3}%
-\contentsline {section}{\numberline {V.4}Norme invariante par similitude}{72}{section.5.4}%
-\contentsline {section}{\numberline {V.5}Equivalence des normes dans un espace vectoriel normé de dimension finie}{72}{section.5.5}%
-\contentsline {section}{\numberline {V.6}Normes non équivalentes}{72}{section.5.6}%
-\contentsline {section}{\numberline {V.7}Normes semblables à la norme uniforme sur $\mathbb {K}[X]$}{72}{section.5.7}%
-\contentsline {section}{\numberline {V.8}Comparaisons de deux normes sur $\mathbb {K}_n[X]$}{73}{section.5.8}%
-\contentsline {section}{\numberline {V.9}Comparaisons de normes usuelles sur $\EuScript C^0([a,b],\mathbb {K})$}{73}{section.5.9}%
-\contentsline {section}{\numberline {V.10}Normes $p$}{73}{section.5.10}%
-\contentsline {subsection}{\numberline {V.10.1}Inégalités de Hölder et Minkowski}{73}{subsection.5.10.1}%
-\contentsline {subsection}{\numberline {V.10.2}Equivalence des normes $p$ et $q$}{74}{subsection.5.10.2}%
-\contentsline {subsection}{\numberline {V.10.3}Norme infinie}{74}{subsection.5.10.3}%
-\contentsline {section}{\numberline {V.11}Normes de Sobolev}{74}{section.5.11}%
-\contentsline {section}{\numberline {V.12}Norme duale}{75}{section.5.12}%
-\contentsline {section}{\numberline {V.13}Norme à partir d'une famille libre}{75}{section.5.13}%
-\contentsline {section}{\numberline {V.14}Quelques normes matricielles}{75}{section.5.14}%
-\contentsline {section}{\numberline {V.15}Caractérisation des sous-espaces de dimension finie de $\EuScript C^0([0,1],\mathbb {K})$}{76}{section.5.15}%
-\contentsline {section}{\numberline {V.16}Distance}{76}{section.5.16}%
-\contentsline {section}{\numberline {V.17}Distance à une partie}{76}{section.5.17}%
-\contentsline {section}{\numberline {V.18}Distance d'un élément à une partie (1)}{77}{section.5.18}%
-\contentsline {section}{\numberline {V.19}Distance d'un élément à une partie (2)}{77}{section.5.19}%
-\contentsline {section}{\numberline {V.20}Passage par les matrices orthogonales}{77}{section.5.20}%
-\contentsline {section}{\numberline {V.21}Diamètre d'une partie bornée}{77}{section.5.21}%
-\contentsline {section}{\numberline {V.22}Détermination d'une borne inférieure}{78}{section.5.22}%
-\contentsline {section}{\numberline {V.23}Normes usuelles sur $\EuScript C^1([0,1],\mathbb {K})$}{78}{section.5.23}%
-\contentsline {section}{\numberline {V.24}Intersection des boules unités subordonnées d'un espace vectoriel normé de dimension finie}{78}{section.5.24}%
-\contentsline {section}{\numberline {V.25}Modes de convergence}{78}{section.5.25}%
-\contentsline {section}{\numberline {V.26}Moyenne des itérés et projection sur l'espace des invariants d'une application linéaire contractante}{79}{section.5.26}%
-\contentsline {section}{\numberline {V.27}Matrice de projecteur}{79}{section.5.27}%
-\contentsline {section}{\numberline {V.28}Matrice de rotation}{79}{section.5.28}%
-\contentsline {section}{\numberline {V.29}Applications contractantes}{79}{section.5.29}%
-\contentsline {section}{\numberline {V.30}Une série vectorielle}{80}{section.5.30}%
-\contentsline {section}{\numberline {V.31}Polytopes réguliers d'un espace vectoriel euclidien}{80}{section.5.31}%
-\contentsline {chapter}{\numberline {VI}Suites et séries de fonctions}{81}{chapter.6}%
-\contentsline {section}{\numberline {VI.1}Etude d'une suite de fonctions (1)}{81}{section.6.1}%
-\contentsline {section}{\numberline {VI.2}Etude d'une suite de fonctions (2)}{81}{section.6.2}%
-\contentsline {section}{\numberline {VI.3}Etude d'une suite de fonctions (3)}{82}{section.6.3}%
-\contentsline {section}{\numberline {VI.4}Etude d'une suite de fonctions (4)}{82}{section.6.4}%
-\contentsline {section}{\numberline {VI.5}Etude d'une suite de fonctions (5)}{82}{section.6.5}%
-\contentsline {section}{\numberline {VI.6}Etude d'une suite de fonctions (6)}{82}{section.6.6}%
-\contentsline {section}{\numberline {VI.7}Etude d'une suite de fonctions (7)}{82}{section.6.7}%
-\contentsline {section}{\numberline {VI.8}Développement de la cotangente (1)}{83}{section.6.8}%
-\contentsline {section}{\numberline {VI.9}Etude d'une fonction définie par une série alternée (1)}{83}{section.6.9}%
-\contentsline {section}{\numberline {VI.10}Etude d'une fonction définie par une série alternée (2)}{83}{section.6.10}%
-\contentsline {section}{\numberline {VI.11}Convergence vers une dérivée}{84}{section.6.11}%
-\contentsline {section}{\numberline {VI.12}Limite ponctuelle et uniforme d'une suite de fonctions}{84}{section.6.12}%
-\contentsline {section}{\numberline {VI.13}Convergence des suites de polynômes}{84}{section.6.13}%
-\contentsline {section}{\numberline {VI.14}Un théorème de Weierstrass sur $\mathbb {R}$ ?}{84}{section.6.14}%
-\contentsline {section}{\numberline {VI.15}Approximation paire}{85}{section.6.15}%
-\contentsline {section}{\numberline {VI.16}Approximation croissante}{85}{section.6.16}%
-\contentsline {section}{\numberline {VI.17}Interversion Série-Intégrale}{85}{section.6.17}%
-\contentsline {section}{\numberline {VI.18}Série de fonction matricielle}{85}{section.6.18}%
-\contentsline {section}{\numberline {VI.19}Fonction $\zeta $ de Riemann}{86}{section.6.19}%
-\contentsline {section}{\numberline {VI.20}Expression de suites sous forme de séries}{86}{section.6.20}%
-\contentsline {section}{\numberline {VI.21}Etude d'une série de fonctions}{86}{section.6.21}%
-\contentsline {section}{\numberline {VI.22}Théorème de Dini \etoile {4}}{87}{section.6.22}%
-\contentsline {section}{\numberline {VI.23}Suite de fonction lipschitzienne \etoile {3}}{87}{section.6.23}%
-\contentsline {section}{\numberline {VI.24}Phénomène de Runge}{87}{section.6.24}%
-\contentsline {section}{\numberline {VI.25}Théorème de Weierstrass}{88}{section.6.25}%
-\contentsline {section}{\numberline {VI.26}Théorème de Chudnovsky \etoile {4}}{89}{section.6.26}%
-\contentsline {section}{\numberline {VI.27}Théorème de sélection de Helly}{89}{section.6.27}%
-\contentsline {chapter}{\numberline {VII}Série entière}{91}{chapter.7}%
-\contentsline {section}{\numberline {VII.1}Lemme d'Abel}{91}{section.7.1}%
-\contentsline {section}{\numberline {VII.2}Fonction non développable en série entière}{91}{section.7.2}%
-\contentsline {section}{\numberline {VII.3}CCINP MP 2019}{91}{section.7.3}%
-\contentsline {section}{\numberline {VII.4}Série entière de terme général binomial}{92}{section.7.4}%
-\contentsline {section}{\numberline {VII.5}Formule de Cauchy}{92}{section.7.5}%
-\contentsline {section}{\numberline {VII.6}Principe des zéros isolés}{92}{section.7.6}%
-\contentsline {section}{\numberline {VII.7}Produit de Hadamard}{92}{section.7.7}%
-\contentsline {section}{\numberline {VII.8}Théorème de Liouville}{93}{section.7.8}%
-\contentsline {section}{\numberline {VII.9}Inverse d'une série entière}{93}{section.7.9}%
-\contentsline {section}{\numberline {VII.10}Equivalent de séries entières}{93}{section.7.10}%
-\contentsline {section}{\numberline {VII.11}Théorème de d'Alembert-Gauss}{93}{section.7.11}%
-\contentsline {section}{\numberline {VII.12}Développement de fraction rationnelle autour de 0}{94}{section.7.12}%
-\contentsline {section}{\numberline {VII.13}Fonction quasi-polynomiale}{94}{section.7.13}%
-\contentsline {subsection}{\numberline {VII.13.1}Série génératrice d'une fonction quasi-polynomiale}{95}{subsection.7.13.1}%
-\contentsline {subsection}{\numberline {VII.13.2}Partitions d'un entier}{95}{subsection.7.13.2}%
-\contentsline {section}{\numberline {VII.14}Théorème de réalisation de Borel}{95}{section.7.14}%
-\contentsline {section}{\numberline {VII.15}Série de Lambert}{96}{section.7.15}%
-\contentsline {section}{\numberline {VII.16}Somme de Goldbach}{96}{section.7.16}%
-\contentsline {section}{\numberline {VII.17}Une somme avec l'indicatrice d'Euler}{96}{section.7.17}%
-\contentsline {section}{\numberline {VII.18}Coefficients définies par des intégrales}{96}{section.7.18}%
-\contentsline {section}{\numberline {VII.19}Détermination des coefficients d'un développement en série entière}{97}{section.7.19}%
-\contentsline {section}{\numberline {VII.20}Série génératrice du nombre de points à coordonnées entières dans un quart de disque}{97}{section.7.20}%
-\contentsline {subsection}{\numberline {VII.20.1}Nombres de points à coordonnées entières dans un disque}{97}{subsection.7.20.1}%
-\contentsline {subsection}{\numberline {VII.20.2}Prolongement du problème}{97}{subsection.7.20.2}%
-\contentsline {section}{\numberline {VII.21}Nombre d'involution}{98}{section.7.21}%
-\contentsline {section}{\numberline {VII.22}Théorème d'Abel}{98}{section.7.22}%
-\contentsline {section}{\numberline {VII.23}Théorèmes taubériens d'Abel}{99}{section.7.23}%
-\contentsline {subsection}{\numberline {VII.23.1}Cas des séries à coefficients positifs}{99}{subsection.7.23.1}%
-\contentsline {subsection}{\numberline {VII.23.2}Théorème taubérien faible}{99}{subsection.7.23.2}%
-\contentsline {subsection}{\numberline {VII.23.3}Théorème taubérien fort}{100}{subsection.7.23.3}%
-\contentsline {chapter}{\numberline {VIII}Topologie}{103}{chapter.8}%
-\contentsline {section}{\numberline {VIII.1}Normes d'opérateur}{103}{section.8.1}%
-\contentsline {section}{\numberline {VIII.2}$\mathbb {Z}$ est fermé \etoile {1}}{103}{section.8.2}%
-\contentsline {section}{\numberline {VIII.3}Orthogonalité et topologie}{104}{section.8.3}%
-\contentsline {section}{\numberline {VIII.4}Ensemble des valeurs d'adhérence d'une suite}{104}{section.8.4}%
-\contentsline {subsection}{\numberline {VIII.4.1}Valeur d'adhérence du cercle unité}{104}{subsection.8.4.1}%
-\contentsline {section}{\numberline {VIII.5}Ensemble des suites convergentes}{104}{section.8.5}%
-\contentsline {section}{\numberline {VIII.6}Calcul d'une adhérence \xens {3}}{105}{section.8.6}%
-\contentsline {section}{\numberline {VIII.7}Partie ouverte et fermée simultanément}{105}{section.8.7}%
-\contentsline {section}{\numberline {VIII.8}Opérations sur les adhérences/intérieurs}{105}{section.8.8}%
-\contentsline {section}{\numberline {VIII.9}Les sept espaces de Kuratowski}{105}{section.8.9}%
-\contentsline {section}{\numberline {VIII.10}Intérieur d'un sev}{105}{section.8.10}%
-\contentsline {section}{\numberline {VIII.11}Adhérence d'un sev}{105}{section.8.11}%
-\contentsline {section}{\numberline {VIII.12}Graphe fermé}{106}{section.8.12}%
-\contentsline {section}{\numberline {VIII.13}Application linéaire continue}{106}{section.8.13}%
-\contentsline {section}{\numberline {VIII.14}Application linéaire non continue}{106}{section.8.14}%
-\contentsline {section}{\numberline {VIII.15}Polynômes réels de degré $n$ scindés à racines simples sur $\mathbb {R}$ \etoile {4}}{106}{section.8.15}%
-\contentsline {section}{\numberline {VIII.16}Lemme de Riemann-Lebesgue \etoile {3}}{107}{section.8.16}%
-\contentsline {section}{\numberline {VIII.17}Borel-Lebesgue}{107}{section.8.17}%
-\contentsline {section}{\numberline {VIII.18}Parties compactes d'un espace vectoriel normé de dimension finie}{107}{section.8.18}%
-\contentsline {section}{\numberline {VIII.19}Somme de sous-espaces}{108}{section.8.19}%
-\contentsline {section}{\numberline {VIII.20}Un théorème du point fixe}{108}{section.8.20}%
-\contentsline {section}{\numberline {VIII.21}Théorème de Heine}{108}{section.8.21}%
-\contentsline {section}{\numberline {VIII.22}Lemme des compacts emboîtés \etoile {1}}{108}{section.8.22}%
-\contentsline {section}{\numberline {VIII.23}Théorème de Baire \xens {5} (HP)}{108}{section.8.23}%
-\contentsline {subsection}{\numberline {VIII.23.1}$\mathbb {R}$ n'est pas dénombrable \etoile {2} (HP)}{109}{subsection.8.23.1}%
-\contentsline {subsection}{\numberline {VIII.23.2}Base d'un espace de Banach \etoile {3} (HP)}{109}{subsection.8.23.2}%
-\contentsline {subsection}{\numberline {VIII.23.3}Densité des fonctions nulle part dérivables (2) \etoile {4} (HP)}{109}{subsection.8.23.3}%
-\contentsline {subsection}{\numberline {VIII.23.4}Caractérisation des endomorphismes nilpotents d'un espace de Banach \etoile {2} (HP)}{109}{subsection.8.23.4}%
-\contentsline {subsection}{\numberline {VIII.23.5}Lemme de Croft (2)}{110}{subsection.8.23.5}%
-\contentsline {subsection}{\numberline {VIII.23.6}Caractérisation des polynômes réels \etoile {5} (HP)}{110}{subsection.8.23.6}%
-\contentsline {subsection}{\numberline {VIII.23.7}Un raffinement}{111}{subsection.8.23.7}%
-\contentsline {section}{\numberline {VIII.24}Volume d'une (hyper)boule \xens {3} (HP)}{111}{section.8.24}%
-\contentsline {section}{\numberline {VIII.25}Partie fermée bornée non compacte \etoile {3}}{111}{section.8.25}%
-\contentsline {section}{\numberline {VIII.26}Théorème de compacité de Riesz \etoile {4}}{111}{section.8.26}%
-\contentsline {section}{\numberline {VIII.27}Sphère et boule unité \etoile {3}}{112}{section.8.27}%
-\contentsline {section}{\numberline {VIII.28}Principe du maximum pour les polynômes}{112}{section.8.28}%
-\contentsline {section}{\numberline {VIII.29}Applications $1$-lipschitzienne surjective sur un compact}{112}{section.8.29}%
-\contentsline {section}{\numberline {VIII.30}Une isométrie conserve les milieux}{112}{section.8.30}%
-\contentsline {section}{\numberline {VIII.31}Fonctions coercives}{113}{section.8.31}%
-\contentsline {section}{\numberline {VIII.32}Homéomorphisme de compacts}{113}{section.8.32}%
-\contentsline {section}{\numberline {VIII.33}Distance à un fermé}{113}{section.8.33}%
-\contentsline {section}{\numberline {VIII.34}Diamètre et frontière}{113}{section.8.34}%
-\contentsline {section}{\numberline {VIII.35}Frontière}{114}{section.8.35}%
-\contentsline {section}{\numberline {VIII.36}Projeté sur un convexe compact}{114}{section.8.36}%
-\contentsline {section}{\numberline {VIII.37}Convexité de l'adhérence et de l'intérieur}{114}{section.8.37}%
-\contentsline {section}{\numberline {VIII.38}Fonctions positivement homogènes}{114}{section.8.38}%
-\contentsline {section}{\numberline {VIII.39}Enveloppe convexe}{115}{section.8.39}%
-\contentsline {section}{\numberline {VIII.40}Théorème de Carathéodory}{115}{section.8.40}%
-\contentsline {section}{\numberline {VIII.41}Théorème de Krein-Milman}{116}{section.8.41}%
-\contentsline {section}{\numberline {VIII.42}Epigraphe}{116}{section.8.42}%
-\contentsline {section}{\numberline {VIII.43}Partie convexe dense de $\mathbb {R}^n$}{116}{section.8.43}%
-\contentsline {section}{\numberline {VIII.44}Complémentaire d'un hyperplan}{116}{section.8.44}%
-\contentsline {section}{\numberline {VIII.45}Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans}{117}{section.8.45}%
-\contentsline {section}{\numberline {VIII.46}Sphères d'un $\mathbb {R}$-espace vectoriel}{117}{section.8.46}%
-\contentsline {section}{\numberline {VIII.47}Théorème du passage à la douane}{117}{section.8.47}%
-\contentsline {section}{\numberline {VIII.48}Condition nécessaire de la connexité par arc}{117}{section.8.48}%
-\contentsline {section}{\numberline {VIII.49}Entre un ensemble et son adhérence}{118}{section.8.49}%
-\contentsline {section}{\numberline {VIII.50}Continuité d'applications matricielles}{118}{section.8.50}%
-\contentsline {section}{\numberline {VIII.51}Points de continuité du polynôme minimal}{118}{section.8.51}%
-\contentsline {section}{\numberline {VIII.52}Exponentielle matricielle et topologie}{118}{section.8.52}%
-\contentsline {section}{\numberline {VIII.53}Lemme du déterminant}{118}{section.8.53}%
-\contentsline {section}{\numberline {VIII.54}Matrice de déterminant $1$ \etoile {3}}{119}{section.8.54}%
-\contentsline {section}{\numberline {VIII.55}Ensembles de matrices de rang fixé}{119}{section.8.55}%
-\contentsline {section}{\numberline {VIII.56}Densité des matrices inversibles \etoile {3}}{119}{section.8.56}%
-\contentsline {section}{\numberline {VIII.57}Comatrice et topologie}{119}{section.8.57}%
-\contentsline {section}{\numberline {VIII.58}Groupe orthogonal \etoile {1}}{120}{section.8.58}%
-\contentsline {section}{\numberline {VIII.59}Groupe (spécial) unitaire \etoile {3}}{120}{section.8.59}%
-\contentsline {section}{\numberline {VIII.60}Partie compacte et stable par produit de GL$_n(\mathbb {K})$ \etoile {3}}{120}{section.8.60}%
-\contentsline {section}{\numberline {VIII.61}Intérieur des matrices diagonalisables \etoile {5}}{120}{section.8.61}%
-\contentsline {section}{\numberline {VIII.62}Adhérence des matrices diagonalisables \etoile {3}}{121}{section.8.62}%
-\contentsline {section}{\numberline {VIII.63}Une preuve de Cayley-Hamilton (1) \etoile {3}}{121}{section.8.63}%
-\contentsline {section}{\numberline {VIII.64}Dimension du commutant d'une matrice}{121}{section.8.64}%
-\contentsline {section}{\numberline {VIII.65}Topologie et réduction}{121}{section.8.65}%
-\contentsline {section}{\numberline {VIII.66}Groupe spécial orthogonal et connexité}{122}{section.8.66}%
-\contentsline {section}{\numberline {VIII.67}Matrices inversibles et connexité}{122}{section.8.67}%
-\contentsline {section}{\numberline {VIII.68}Matrices nilpotentes et connexité}{122}{section.8.68}%
-\contentsline {section}{\numberline {VIII.69}Raffinement sur les disques de Gershgorin}{122}{section.8.69}%
-\contentsline {section}{\numberline {VIII.70}Matrices stochastiques et bistochastiques}{123}{section.8.70}%
-\contentsline {section}{\numberline {VIII.71}Théorème de Birkhoff-Von Neumann \etoile {4}}{123}{section.8.71}%
-\contentsline {subsection}{\numberline {VIII.71.1}Points extrémaux des matrices bistochastiques}{124}{subsection.8.71.1}%
-\contentsline {subsection}{\numberline {VIII.71.2}Points extrémaux des matrices orthogonales}{124}{subsection.8.71.2}%
-\contentsline {chapter}{\numberline {IX}Fonctions à valeurs vectorielles}{125}{chapter.9}%
-\contentsline {section}{\numberline {IX.1}Point fixe de l'exponentielle complexe}{125}{section.9.1}%
-\contentsline {section}{\numberline {IX.2}Théorème du relèvement}{125}{section.9.2}%
-\contentsline {section}{\numberline {IX.3}Equation fonctionnelle de l'exponentielle matricielle \etoile {3}}{126}{section.9.3}%
-\contentsline {section}{\numberline {IX.4}Formule de Trotter-Kato \etoile {2}}{126}{section.9.4}%
-\contentsline {section}{\numberline {IX.5}Série entière de matrice \etoile {2}}{127}{section.9.5}%
-\contentsline {section}{\numberline {IX.6}Expression d'un projecteur}{127}{section.9.6}%
-\contentsline {section}{\numberline {IX.7}\underline {Une preuve analytique de Cayley-Hamilton} \centraleponts {3}}{127}{section.9.7}%
-\contentsline {section}{\numberline {IX.8}Exemple de fonction lipschitzienne}{127}{section.9.8}%
-\contentsline {section}{\numberline {IX.9}Condition de continuité sur un espace vectoriel normé}{128}{section.9.9}%
-\contentsline {section}{\numberline {IX.10}Application linéaire (2)}{128}{section.9.10}%
-\contentsline {section}{\numberline {IX.11}Mouvement à force centrale}{128}{section.9.11}%
-\contentsline {section}{\numberline {IX.12}Dérivée d'un produit de deux matrices}{129}{section.9.12}%
-\contentsline {section}{\numberline {IX.13}Inégalité des accroissements finis pour un espace euclidien}{129}{section.9.13}%
-\contentsline {chapter}{\numberline {X}Equations différentielles}{131}{chapter.10}%
-\contentsline {section}{\numberline {X.1}Equations différentielles du premier ordre}{131}{section.10.1}%
-\contentsline {section}{\numberline {X.2}Equations différentielles du second ordre}{131}{section.10.2}%
-\contentsline {section}{\numberline {X.3}Problèmes de raccordement}{131}{section.10.3}%
-\contentsline {section}{\numberline {X.4}Suite d'équations différentielles}{132}{section.10.4}%
-\contentsline {section}{\numberline {X.5}Equation de Bernoulli (1)}{132}{section.10.5}%
-\contentsline {section}{\numberline {X.6}Equation de Bernoulli (2)}{132}{section.10.6}%
-\contentsline {section}{\numberline {X.7}Etude asymptotique des solutions d'une équation différentielle \etoile {4}}{133}{section.10.7}%
-\contentsline {section}{\numberline {X.8}Inéquation différentielle}{133}{section.10.8}%
-\contentsline {section}{\numberline {X.9}Solution $2\pi $-périodique d'une équation différentielle}{133}{section.10.9}%
-\contentsline {section}{\numberline {X.10}Superposition de solutions}{133}{section.10.10}%
-\contentsline {section}{\numberline {X.11}Fonction de Bessel}{134}{section.10.11}%
-\contentsline {section}{\numberline {X.12}Développement de la cotangente (2)}{134}{section.10.12}%
-\contentsline {section}{\numberline {X.13}Wronskien}{134}{section.10.13}%
-\contentsline {section}{\numberline {X.14}Utilité du wronskien}{135}{section.10.14}%
-\contentsline {section}{\numberline {X.15}Principe d'entrelacement des zéros de Sturm}{135}{section.10.15}%
-\contentsline {section}{\numberline {X.16}Solution qui s'annule}{135}{section.10.16}%
-\contentsline {section}{\numberline {X.17}Solution qui s'annule une infinité de fois}{136}{section.10.17}%
-\contentsline {section}{\numberline {X.18}Lemme de Grönwall}{136}{section.10.18}%
-\contentsline {subsection}{\numberline {X.18.1}Application du lemme de Grönwall}{136}{subsection.10.18.1}%
-\contentsline {section}{\numberline {X.19}Théorème de Floquet}{136}{section.10.19}%
-\contentsline {section}{\numberline {X.20}Méthode de Lagrange (1)}{137}{section.10.20}%
-\contentsline {section}{\numberline {X.21}Méthode de Lagrange (2)}{137}{section.10.21}%
-\contentsline {section}{\numberline {X.22}Equation différentielle matricielle non linéaire}{137}{section.10.22}%
-\contentsline {section}{\numberline {X.23}Système dynamique}{138}{section.10.23}%
-\contentsline {section}{\numberline {X.24}Solutions de norme constante \etoile {3}}{138}{section.10.24}%
-\contentsline {section}{\numberline {X.25}Exponentielles de matrices qui commutent \etoile {2}}{138}{section.10.25}%
-\contentsline {section}{\numberline {X.26}Lemme de Hochshild}{138}{section.10.26}%
-\contentsline {chapter}{\numberline {XI}Calcul Différentiel}{139}{chapter.11}%
-\contentsline {section}{\numberline {XI.1}Calcul de dérivées partielles}{139}{section.11.1}%
-\contentsline {section}{\numberline {XI.2}Existence de dérivées partielles}{139}{section.11.2}%
-\contentsline {section}{\numberline {XI.3}Etude d'une fonction}{139}{section.11.3}%
-\contentsline {section}{\numberline {XI.4}Une équation fonctionnelle \etoile {2}}{140}{section.11.4}%
-\contentsline {section}{\numberline {XI.5}Application linéaire}{140}{section.11.5}%
-\contentsline {section}{\numberline {XI.6}Opérateurs vectoriels}{140}{section.11.6}%
-\contentsline {section}{\numberline {XI.7}Laplacien en polaires}{141}{section.11.7}%
-\contentsline {section}{\numberline {XI.8}Fonction harmonique}{141}{section.11.8}%
-\contentsline {section}{\numberline {XI.9}Mines ponts MP 2016}{142}{section.11.9}%
-\contentsline {section}{\numberline {XI.10}Différentielle de l'exponentielle matricielle}{142}{section.11.10}%
-\contentsline {section}{\numberline {XI.11}Différentielle de la norme euclidienne}{142}{section.11.11}%
-\contentsline {section}{\numberline {XI.12}Différentielle de l'inversion matricielle}{142}{section.11.12}%
-\contentsline {section}{\numberline {XI.13}Gradient et différentielle du déterminant}{143}{section.11.13}%
-\contentsline {section}{\numberline {XI.14}Espace tangent aux matrices orthogonales en l'identité}{143}{section.11.14}%
-\contentsline {section}{\numberline {XI.15}Vecteur propre d'un endomorphisme auto-adjoint}{143}{section.11.15}%
-\contentsline {section}{\numberline {XI.16}Quotient de Rayleigh}{143}{section.11.16}%
-\contentsline {section}{\numberline {XI.17}Différentielle du déterminant}{144}{section.11.17}%
-\contentsline {section}{\numberline {XI.18}Equation de d'Alembert}{144}{section.11.18}%
-\contentsline {section}{\numberline {XI.19}Utilisation des extrema liés (1)}{144}{section.11.19}%
-\contentsline {section}{\numberline {XI.20}Utilisation des extrema liés (2)}{144}{section.11.20}%
-\contentsline {section}{\numberline {XI.21}Utilisation des extrema liés (3)}{144}{section.11.21}%
-\contentsline {section}{\numberline {XI.22}Sinus complexe}{145}{section.11.22}%
-\contentsline {section}{\numberline {XI.23}Entropie}{145}{section.11.23}%
-\contentsline {section}{\numberline {XI.24}Fonction convexe sur $\mathbb {R}^n$}{145}{section.11.24}%
-\contentsline {section}{\numberline {XI.25}Chemin le plus court entre deux points}{146}{section.11.25}%
-\contentsline {section}{\numberline {XI.26}Fonction homogène}{146}{section.11.26}%
-\contentsline {section}{\numberline {XI.27}Problème de Dirichlet et principe faible du maximum}{146}{section.11.27}%
-\contentsline {section}{\numberline {XI.28}La méthode des moindres carrés}{147}{section.11.28}%
-\contentsline {section}{\numberline {XI.29}Equation de la chaleur}{148}{section.11.29}%
-\contentsline {chapter}{\numberline {XII}Divers}{149}{chapter.12}%
-\contentsline {section}{\numberline {XII.1}Développement décimal propre d'un réel \xens {3}}{149}{section.12.1}%
-\contentsline {subsection}{\numberline {XII.1.1}Une caractérisation des rationnels \xens {3}}{149}{subsection.12.1.1}%
-\contentsline {section}{\numberline {XII.2}Distribution du premier chiffre des puissances de $2$ \xens {3}}{149}{section.12.2}%
-\contentsline {section}{\numberline {XII.3}Série de Engel}{150}{section.12.3}%
-\contentsline {section}{\numberline {XII.4}Théorème de Müntz}{150}{section.12.4}%
-\contentsline {chapter}{\numberline {XIII}Correction}{151}{chapter.13}%
-\contentsline {section}{\numberline {XIII.1}Correction Suite et série numérique}{151}{section.13.1}%
-\contentsline {subsection}{\numberline {XIII.1.1}Lemme de Césarò \etoile {2}}{151}{subsection.13.1.1}%
-\contentsline {subsubsection}{Lemme de l'escalier\etoile {1}}{152}{subsection.13.1.1}%
-\contentsline {subsection}{\numberline {XIII.1.2}Théorèmes Taubériens d'Hardy \etoile {1}}{152}{subsection.13.1.2}%
-\contentsline {subsubsection}{Hardy Faible \etoile {2}}{152}{subsection.13.1.2}%
-\contentsline {subsubsection}{Hardy Fort \etoile {3}}{153}{subsection.13.1.2}%
-\contentsline {subsection}{\numberline {XIII.1.3}Série Harmonique \etoile {3}}{154}{subsection.13.1.3}%
-\contentsline {subsection}{\numberline {XIII.1.4}Suite récurrente (1) \etoile {3}}{156}{subsection.13.1.4}%
-\contentsline {subsection}{\numberline {XIII.1.5}Suite récurrente (2)}{158}{subsection.13.1.5}%
-\contentsline {subsection}{\numberline {XIII.1.6}Suite récurrente (3)}{158}{subsection.13.1.6}%
-\contentsline {subsection}{\numberline {XIII.1.7}Suite récurrente (4) \etoile {3}}{158}{subsection.13.1.7}%
-\contentsline {subsection}{\numberline {XIII.1.8}Suite récurrente (5)}{159}{subsection.13.1.8}%
-\contentsline {subsection}{\numberline {XIII.1.9}Suite récurrente (6)}{160}{subsection.13.1.9}%
-\contentsline {subsection}{\numberline {XIII.1.10}Suite définie implicitement (1)\etoile {2}}{160}{subsection.13.1.10}%
-\contentsline {subsection}{\numberline {XIII.1.11}Suite définie implicitement (2)}{161}{subsection.13.1.11}%
-\contentsline {subsection}{\numberline {XIII.1.12}Suite définie implicitement (3)}{161}{subsection.13.1.12}%
-\contentsline {subsection}{\numberline {XIII.1.13}Suite définie implicitement (4)}{161}{subsection.13.1.13}%
-\contentsline {subsection}{\numberline {XIII.1.14}Suite définie implicitement (5) \etoile {3}}{161}{subsection.13.1.14}%
-\contentsline {subsection}{\numberline {XIII.1.15}Formule d'inversion de Pascal \etoile {2}}{162}{subsection.13.1.15}%
-\contentsline {subsubsection}{Première méthode matrice de passage \etoile {1}}{162}{subsection.13.1.15}%
-\contentsline {subsubsection}{Deuxième méthode : binôme de Newton \etoile {2}}{162}{Item.873}%
-\contentsline {subsubsection}{Troisième méthode : par le calcul \etoile {2}}{163}{Item.873}%
-\contentsline {subsubsection}{Dérangement \etoile {3}}{163}{Item.876}%
-\contentsline {subsection}{\numberline {XIII.1.16}Théorème de Pringsheim \etoile {3}}{164}{subsection.13.1.16}%
-\contentsline {subsection}{\numberline {XIII.1.17}Lemme de Fekete}{164}{subsection.13.1.17}%
-\contentsline {subsection}{\numberline {XIII.1.18}Théorème de Bolzano-Weierstrass \etoile {3}}{165}{subsection.13.1.18}%
-\contentsline {subsection}{\numberline {XIII.1.19}$\mathbb {R}$ est complet \etoile {2}}{165}{subsection.13.1.19}%
-\contentsline {subsection}{\numberline {XIII.1.20}Récurrence de Cauchy}{166}{subsection.13.1.20}%
-\contentsline {subsection}{\numberline {XIII.1.21}Sommes de Riemann}{167}{subsection.13.1.21}%
-\contentsline {subsection}{\numberline {XIII.1.22}Formule d'Euler-Maclaurin}{167}{subsection.13.1.22}%
-\contentsline {subsection}{\numberline {XIII.1.23}Nature d'une suite}{167}{subsection.13.1.23}%
-\contentsline {subsection}{\numberline {XIII.1.24}Valeurs d'adhérence d'une suite}{167}{subsection.13.1.24}%
-\contentsline {subsection}{\numberline {XIII.1.25}Nature d'une série (1)\etoile {1}}{168}{subsection.13.1.25}%
-\contentsline {subsection}{\numberline {XIII.1.26}Nature d'une série (2) \etoile {2}}{168}{subsection.13.1.26}%
-\contentsline {subsection}{\numberline {XIII.1.27}Nature d'une série (3) \etoile {3}}{168}{subsection.13.1.27}%
-\contentsline {subsection}{\numberline {XIII.1.28}Nature d'une série (4)}{169}{subsection.13.1.28}%
-\contentsline {subsection}{\numberline {XIII.1.29}Nature d'une série (5)}{169}{subsection.13.1.29}%
-\contentsline {subsection}{\numberline {XIII.1.30}Calcul d'un équivalent \etoile {3}}{169}{subsection.13.1.30}%
-\contentsline {subsection}{\numberline {XIII.1.31}Sommation de relation de comparaison}{170}{subsection.13.1.31}%
-\contentsline {subsection}{\numberline {XIII.1.32}Equivalent de séries de Riemann}{170}{subsection.13.1.32}%
-\contentsline {subsection}{\numberline {XIII.1.33}Séries de Bertrand}{170}{subsection.13.1.33}%
-\contentsline {subsection}{\numberline {XIII.1.34}Critère de Raabe-Duhamel \etoile {2}}{170}{subsection.13.1.34}%
-\contentsline {subsection}{\numberline {XIII.1.35}Règle de d'Alembert}{171}{subsection.13.1.35}%
-\contentsline {subsection}{\numberline {XIII.1.36}Règle de Cauchy}{171}{subsection.13.1.36}%
-\contentsline {subsection}{\numberline {XIII.1.37}d'Alembert $\Rightarrow $ Cauchy}{171}{subsection.13.1.37}%
-\contentsline {subsection}{\numberline {XIII.1.38}Transformation d'Abel et règle d'Abel}{171}{subsection.13.1.38}%
-\contentsline {subsubsection}{Une série de Dirichlet}{171}{subsection.13.1.38}%
-\contentsline {subsection}{\numberline {XIII.1.39}Equation différentielle discrète\etoile {3}}{171}{subsection.13.1.39}%
-\contentsline {subsection}{\numberline {XIII.1.40}Critère spécial des séries alternées}{172}{subsection.13.1.40}%
-\contentsline {subsection}{\numberline {XIII.1.41}Calcul d'une somme de série (1) \etoile {3}}{172}{subsection.13.1.41}%
-\contentsline {subsection}{\numberline {XIII.1.42}Calcul d'une somme de série (2) \etoile {1}}{173}{subsection.13.1.42}%
-\contentsline {subsection}{\numberline {XIII.1.43}Calcul d'une somme de série (3) \etoile {3}}{173}{subsection.13.1.43}%
-\contentsline {subsection}{\numberline {XIII.1.44}Problème de Bâle}{173}{subsection.13.1.44}%
-\contentsline {subsubsection}{Lemme de Riemann-Lebesgue}{173}{subsection.13.1.44}%
-\contentsline {subsubsection}{Série de fonctions}{175}{Item.892}%
-\contentsline {subsubsection}{Série entière}{175}{Item.892}%
-\contentsline {subsection}{\numberline {XIII.1.45}Nombre moyen de diviseurs d'un entier \etoile {4}}{175}{subsection.13.1.45}%
-\contentsline {subsection}{\numberline {XIII.1.46}Théorème de réarrangement de Riemann \etoile {5}}{177}{subsection.13.1.46}%
-\contentsline {subsection}{\numberline {XIII.1.47}Moyennes arithmétique, géométrique et harmonique \etoile {1}}{178}{subsection.13.1.47}%
-\contentsline {subsection}{\numberline {XIII.1.48}Inégalité de Carleman}{179}{subsection.13.1.48}%
-\contentsline {section}{\numberline {XIII.2}Correction Intégrale}{180}{section.13.2}%
-\contentsline {subsection}{\numberline {XIII.2.1}Règle de Bioche}{180}{subsection.13.2.1}%
-\contentsline {subsection}{\numberline {XIII.2.2}Intégrale de Wallis \etoile {2}}{180}{subsection.13.2.2}%
-\contentsline {subsection}{\numberline {XIII.2.3}Formule de Stirling}{181}{subsection.13.2.3}%
-\contentsline {subsection}{\numberline {XIII.2.4}Intégrale de Gauss}{181}{subsection.13.2.4}%
-\contentsline {subsubsection}{Wallis}{181}{subsection.13.2.4}%
-\contentsline {subsubsection}{Intégrales auxiliaires}{181}{subsection.13.2.4}%
-\contentsline {subsubsection}{Equivalent du reste}{181}{subsection.13.2.4}%
-\contentsline {subsection}{\numberline {XIII.2.5}Intégrale de Fresnel \etoile {3}}{181}{subsection.13.2.5}%
-\contentsline {subsection}{\numberline {XIII.2.6}Intégrale de Dirichlet}{183}{subsection.13.2.6}%
-\contentsline {subsubsection}{Semi-convergence \etoile {2}}{183}{subsection.13.2.6}%
-\contentsline {subsubsection}{Une autre expression \etoile {2}}{184}{subsection.13.2.6}%
-\contentsline {subsubsection}{Premier calcul \etoile {2}}{184}{subsection.13.2.6}%
-\contentsline {subsubsection}{Second calcul \etoile {3}}{185}{Item.901}%
-\contentsline {subsection}{\numberline {XIII.2.7}Intégrale du reste de l'intégrale de Dirichlet \etoile {3}}{186}{subsection.13.2.7}%
-\contentsline {subsection}{\numberline {XIII.2.8}Intégrale d'Euler}{187}{subsection.13.2.8}%
-\contentsline {subsection}{\numberline {XIII.2.9}Fonction intégrale}{188}{subsection.13.2.9}%
-\contentsline {subsection}{\numberline {XIII.2.10}Intégrales de Bertrand}{189}{subsection.13.2.10}%
-\contentsline {subsection}{\numberline {XIII.2.11}Intégrabilité des cosinus de polynômes}{189}{subsection.13.2.11}%
-\contentsline {subsection}{\numberline {XIII.2.12}Nature d'une intégrale}{189}{subsection.13.2.12}%
-\contentsline {subsection}{\numberline {XIII.2.13}Divergence grossière}{189}{subsection.13.2.13}%
-\contentsline {subsection}{\numberline {XIII.2.14}Espace $l^2$ et dérivation}{189}{subsection.13.2.14}%
-\contentsline {subsection}{\numberline {XIII.2.15}Intégrale de Frullani}{189}{subsection.13.2.15}%
-\contentsline {subsection}{\numberline {XIII.2.16}Calcul d'une intégrale (1) \etoile {3}}{190}{subsection.13.2.16}%
-\contentsline {subsection}{\numberline {XIII.2.17}Calcul d'une intégrale (2) \etoile {2}}{190}{subsection.13.2.17}%
-\contentsline {subsection}{\numberline {XIII.2.18}Calcul d'une intégrale (3)}{191}{subsection.13.2.18}%
-\contentsline {subsection}{\numberline {XIII.2.19}Calcul d'une intégrale (4)}{191}{subsection.13.2.19}%
-\contentsline {subsection}{\numberline {XIII.2.20}Permutation Série-intégrale (1)}{191}{subsection.13.2.20}%
-\contentsline {subsection}{\numberline {XIII.2.21}Permutation Série-intégrale (2)}{191}{subsection.13.2.21}%
-\contentsline {subsection}{\numberline {XIII.2.22}Fonction d'écart Logarithmique intégral \etoile {2}}{191}{subsection.13.2.22}%
-\contentsline {subsection}{\numberline {XIII.2.23}Intégrale de Bernoulli}{192}{subsection.13.2.23}%
-\contentsline {subsection}{\numberline {XIII.2.24}Lemme de Riemann-Lebesgue : cas des fonctions $\EuScript {C}^1$ \etoile {1}}{192}{subsection.13.2.24}%
-\contentsline {subsection}{\numberline {XIII.2.25}Intégrale de Poisson (1) \etoile {2}}{192}{subsection.13.2.25}%
-\contentsline {subsection}{\numberline {XIII.2.26}Intégrale de Poisson (2) \etoile {3}}{193}{subsection.13.2.26}%
-\contentsline {subsection}{\numberline {XIII.2.27}Mines-Ponts MP 2024 (Chaïma Prime)}{195}{subsection.13.2.27}%
-\contentsline {subsection}{\numberline {XIII.2.28}Une suite d'intégrales (1)}{195}{subsection.13.2.28}%
-\contentsline {subsection}{\numberline {XIII.2.29}Une suite d'intégrales (2)}{195}{subsection.13.2.29}%
-\contentsline {subsection}{\numberline {XIII.2.30}Une suite d'intégrales (3)}{195}{subsection.13.2.30}%
-\contentsline {subsection}{\numberline {XIII.2.31}Nombre d'Apéry}{195}{subsection.13.2.31}%
-\contentsline {subsection}{\numberline {XIII.2.32}Comportement asymptotique (1)}{196}{subsection.13.2.32}%
-\contentsline {subsection}{\numberline {XIII.2.33}Comportement asymptotique (2)}{196}{subsection.13.2.33}%
-\contentsline {subsection}{\numberline {XIII.2.34}Théorème de d'Alembert-Gauss (1) \etoile {2}}{196}{subsection.13.2.34}%
-\contentsline {subsection}{\numberline {XIII.2.35}Fonction Gamma d'Euler}{197}{subsection.13.2.35}%
-\contentsline {subsubsection}{Point critique et limite en $+\infty $}{199}{Item.918}%
-\contentsline {subsubsection}{Valeur en les demi-entiers}{199}{Item.918}%
-\contentsline {subsubsection}{Théorème de Bohr-Mollerup \etoile {4}}{199}{Item.918}%
-\contentsline {subsubsection}{Formules de Gauss et Weierstrass}{200}{Item.918}%
-\contentsline {subsubsection}{Lien entre les gamma d'Euler}{200}{Item.918}%
-\contentsline {subsubsection}{Formule de duplication de Legendre}{200}{Item.918}%
-\contentsline {subsubsection}{Intégrale de Raabe}{200}{Item.918}%
-\contentsline {subsubsection}{Généralisation de la formule de Stirling}{200}{Item.918}%
-\contentsline {subsection}{\numberline {XIII.2.36}Fonction Beta d'Euler}{200}{subsection.13.2.36}%
-\contentsline {subsubsection}{Lien avec une intégrale d'Euler}{200}{subsection.13.2.36}%
-\contentsline {subsubsection}{Lien entre $\Gamma $ et B}{200}{subsection.13.2.36}%
-\contentsline {subsection}{\numberline {XIII.2.37}Inégalité intégrale-dérivée \etoile {1}}{200}{subsection.13.2.37}%
-\contentsline {subsection}{\numberline {XIII.2.38}Majoration de l'erreur dans la méthode des trapèzes}{200}{subsection.13.2.38}%
-\contentsline {subsection}{\numberline {XIII.2.39}Inégalité de Young \etoile {2}}{202}{subsection.13.2.39}%
-\contentsline {subsection}{\numberline {XIII.2.40}Transformée de Laplace}{203}{subsection.13.2.40}%
-\contentsline {subsection}{\numberline {XIII.2.41}Théorème des résidus (version faible)}{203}{subsection.13.2.41}%
-\contentsline {section}{\numberline {XIII.3}Correction Fonctions réelles}{204}{section.13.3}%
-\contentsline {subsection}{\numberline {XIII.3.1}Formule de Leibniz \etoile {1}}{204}{subsection.13.3.1}%
-\contentsline {subsection}{\numberline {XIII.3.2}Fonction discontinue en tout point \etoile {1}}{205}{subsection.13.3.2}%
-\contentsline {subsection}{\numberline {XIII.3.3}Fonction nulle part dérivable}{205}{subsection.13.3.3}%
-\contentsline {subsection}{\numberline {XIII.3.4}Theorème de Rolle}{205}{subsection.13.3.4}%
-\contentsline {subsection}{\numberline {XIII.3.5}Dérivée symétrique \etoile {1}}{205}{subsection.13.3.5}%
-\contentsline {subsection}{\numberline {XIII.3.6}Fonction de Pringsheim \etoile {2}}{206}{subsection.13.3.6}%
-\contentsline {subsection}{\numberline {XIII.3.7}$f\circ f=\operatorname {Id}_{\mathbb {R}_+}$ \etoile {2}}{206}{subsection.13.3.7}%
-\contentsline {subsection}{\numberline {XIII.3.8}Point fixe d'une fonction continue et décroissante sur $\mathbb {R}$ \etoile {1}}{206}{subsection.13.3.8}%
-\contentsline {subsection}{\numberline {XIII.3.9}Un théorème du point fixe (1) \etoile {1}}{206}{subsection.13.3.9}%
-\contentsline {subsection}{\numberline {XIII.3.10}Un théorème du point fixe (2) \etoile {2}}{207}{subsection.13.3.10}%
-\contentsline {subsection}{\numberline {XIII.3.11}Point fixe de $f\circ f$ \etoile {1}}{207}{subsection.13.3.11}%
-\contentsline {subsection}{\numberline {XIII.3.12}Point fixe de $f\circ g$ et $g\circ f$ \etoile {2}}{207}{subsection.13.3.12}%
-\contentsline {subsection}{\numberline {XIII.3.13}Racine carrée de cos \etoile {3}}{207}{subsection.13.3.13}%
-\contentsline {subsection}{\numberline {XIII.3.14}Trigonométrie \etoile {1}}{208}{subsection.13.3.14}%
-\contentsline {subsection}{\numberline {XIII.3.15}Règle de l'Hôpital}{210}{subsection.13.3.15}%
-\contentsline {subsection}{\numberline {XIII.3.16}Théorème de Darboux}{210}{subsection.13.3.16}%
-\contentsline {subsubsection}{Réciproque du TVI \etoile {1}}{210}{subsection.13.3.16}%
-\contentsline {subsubsection}{Fonction non primitivable \etoile {1}}{210}{subsection.13.3.16}%
-\contentsline {subsubsection}{Condition suffisante pour être de classe $\EuScript {C}^1$ \etoile {3}}{211}{subsection.13.3.16}%
-\contentsline {subsection}{\numberline {XIII.3.17}Dérivée et inverse confondu}{211}{subsection.13.3.17}%
-\contentsline {subsection}{\numberline {XIII.3.18}Fonction croissante et convexe sur $\mathbb {R}$ \etoile {1}}{211}{subsection.13.3.18}%
-\contentsline {subsection}{\numberline {XIII.3.19}Convexité des fonctions continues sur un intervalle \etoile {4}}{212}{subsection.13.3.19}%
-\contentsline {subsection}{\numberline {XIII.3.20}Convexe sur un ouvert $\DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Relbar \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}$ continue \etoile {3}}{212}{subsection.13.3.20}%
-\contentsline {subsection}{\numberline {XIII.3.21}Fonctions logarithmiquement convexes \etoile {3}}{213}{subsection.13.3.21}%
-\contentsline {subsection}{\numberline {XIII.3.22}Etude d'une fonction définie implicitement}{215}{subsection.13.3.22}%
-\contentsline {subsection}{\numberline {XIII.3.23}Inégalités de Kolmogorov \etoile {4}}{215}{subsection.13.3.23}%
-\contentsline {subsection}{\numberline {XIII.3.24}Lemme de Croft \etoile {2}}{217}{subsection.13.3.24}%
-\contentsline {subsection}{\numberline {XIII.3.25}Inégalité intégrale de Jensen \etoile {1}}{218}{subsection.13.3.25}%
-\contentsline {section}{\numberline {XIII.4}Correction Polynômes}{219}{section.13.4}%
-\contentsline {subsection}{\numberline {XIII.4.1}Théorème de d'Alembert-Gauss (2)}{219}{subsection.13.4.1}%
-\contentsline {subsection}{\numberline {XIII.4.2}Bernoulli}{220}{subsection.13.4.2}%
-\contentsline {subsection}{\numberline {XIII.4.3}Lagrange \etoile {1}}{220}{subsection.13.4.3}%
-\contentsline {subsection}{\numberline {XIII.4.4}Tchebychev}{220}{subsection.13.4.4}%
-\contentsline {subsubsection}{Angles rationnels dont le cosinus est rationnel}{220}{subsection.13.4.4}%
-\contentsline {subsubsection}{Triangle à angles rationnels sont tous les côtés ont un longueur rationnelle}{220}{subsection.13.4.4}%
-\contentsline {subsubsection}{Triangles dont les sommets sont à coordonnées rationnelles}{220}{subsection.13.4.4}%
-\contentsline {subsection}{\numberline {XIII.4.5}Hilbert}{220}{subsection.13.4.5}%
-\contentsline {subsection}{\numberline {XIII.4.6}Laguerre}{221}{subsection.13.4.6}%
-\contentsline {subsection}{\numberline {XIII.4.7}Legendre}{221}{subsection.13.4.7}%
-\contentsline {subsection}{\numberline {XIII.4.8}Hermite}{221}{subsection.13.4.8}%
-\contentsline {subsection}{\numberline {XIII.4.9}Bernstein}{221}{subsection.13.4.9}%
-\contentsline {subsection}{\numberline {XIII.4.10}Polynômes cyclotomiques}{221}{subsection.13.4.10}%
-\contentsline {subsection}{\numberline {XIII.4.11}Suite de polynômes définis par récurrence}{221}{subsection.13.4.11}%
-\contentsline {subsection}{\numberline {XIII.4.12}Equation polynomiale (1)}{221}{subsection.13.4.12}%
-\contentsline {subsection}{\numberline {XIII.4.13}Equation polynomiale (2)}{221}{subsection.13.4.13}%
-\contentsline {subsection}{\numberline {XIII.4.14}Equation polynomiale (3)}{221}{subsection.13.4.14}%
-\contentsline {subsection}{\numberline {XIII.4.15}Equation polynomiale (4)}{222}{subsection.13.4.15}%
-\contentsline {subsection}{\numberline {XIII.4.16}Equation polynomiale (5)}{222}{subsection.13.4.16}%
-\contentsline {subsection}{\numberline {XIII.4.17}Equation de Shapiro}{222}{subsection.13.4.17}%
-\contentsline {subsection}{\numberline {XIII.4.18}Théorème de la racine rationnelle}{222}{subsection.13.4.18}%
-\contentsline {subsection}{\numberline {XIII.4.19}Critère d'Eisenstein \etoile {3}}{222}{subsection.13.4.19}%
-\contentsline {subsubsection}{Irréductibilité des polynômes cyclotomiques d'indices premiers \etoile {2}}{224}{Item.969}%
-\contentsline {subsubsection}{Dimension de $\mathbb {R}$ en tant que $\mathbb {Q}$-espace vectoriel \etoile {3}}{224}{Item.969}%
-\contentsline {subsection}{\numberline {XIII.4.20}Points critiques des polynômes de Hilbert \centraleponts {3}}{225}{subsection.13.4.20}%
-\contentsline {subsection}{\numberline {XIII.4.21}Zéros des polynômes de Taylor du sinus}{225}{subsection.13.4.21}%
-\contentsline {subsection}{\numberline {XIII.4.22}Polynôme de Taylor de l'exponentielle \ccinp {1}}{225}{subsection.13.4.22}%
-\contentsline {subsection}{\numberline {XIII.4.23}Les fonctions localement polynomiales sont polynomiales \centraleponts {2}}{226}{subsection.13.4.23}%
-\contentsline {subsection}{\numberline {XIII.4.24}Intégrales de polynômes \etoile {1}}{226}{subsection.13.4.24}%
-\contentsline {subsection}{\numberline {XIII.4.25}Théorème de Gauss-Lucas \etoile {2}}{226}{subsection.13.4.25}%
-\contentsline {subsubsection}{Une application \etoile {3}}{227}{Item.977}%
-\contentsline {subsection}{\numberline {XIII.4.26}Graphe d'un polynôme \telecom {2}}{228}{subsection.13.4.26}%
-\contentsline {subsection}{\numberline {XIII.4.27}Polynômes qui commutent avec cosinus \etoile {3}}{229}{subsection.13.4.27}%
-\contentsline {subsection}{\numberline {XIII.4.28}Relation trigonométrique polynomiale \etoile {3}}{230}{subsection.13.4.28}%
-\contentsline {subsection}{\numberline {XIII.4.29}Division euclidienne (1)}{230}{subsection.13.4.29}%
-\contentsline {subsection}{\numberline {XIII.4.30}Division euclidienne (2)}{231}{subsection.13.4.30}%
-\contentsline {subsection}{\numberline {XIII.4.31}Fonctions trigonométriques polynomiale ?}{231}{subsection.13.4.31}%
-\contentsline {subsection}{\numberline {XIII.4.32}Logarithme rationnel ? \telecom {2}}{231}{subsection.13.4.32}%
-\contentsline {subsection}{\numberline {XIII.4.33}Une fraction rationnelle}{233}{subsection.13.4.33}%
-\contentsline {subsection}{\numberline {XIII.4.34}Dérivé d'un polynôme scindé sur $\mathbb {R}$ \centraleponts {3}}{233}{subsection.13.4.34}%
-\contentsline {subsection}{\numberline {XIII.4.35}Une condition nécessaire pour qu'un polynôme soit scindé sur $\mathbb {R}$ \centraleponts {3}}{233}{subsection.13.4.35}%
-\contentsline {subsection}{\numberline {XIII.4.36}Une condition nécessaire pour qu'un polynôme soit dissocié sur $\mathbb {R}$ \telecom {2}}{234}{subsection.13.4.36}%
-\contentsline {subsection}{\numberline {XIII.4.37}Théorème de Bernstein}{235}{subsection.13.4.37}%
-\contentsline {subsection}{\numberline {XIII.4.38}Etude d'un polynôme défini implicitement}{236}{subsection.13.4.38}%
-\contentsline {subsection}{\numberline {XIII.4.39}P'|P \etoile {1}}{236}{subsection.13.4.39}%
-\contentsline {subsection}{\numberline {XIII.4.40}Polynômes positifs \etoile {2}}{236}{subsection.13.4.40}%
-\contentsline {subsection}{\numberline {XIII.4.41}Polynômes carrés}{237}{subsection.13.4.41}%
-\contentsline {subsection}{\numberline {XIII.4.42}Polynômes réciproques \etoile {2}}{237}{subsection.13.4.42}%
-\contentsline {subsection}{\numberline {XIII.4.43}Polynômes surjectifs \etoile {5}}{238}{subsection.13.4.43}%
-\contentsline {subsection}{\numberline {XIII.4.44}Résultant et discriminant \etoile {2}}{241}{subsection.13.4.44}%
-\contentsline {subsection}{\numberline {XIII.4.45}Théorème de Liouville : Fermat pour les polynômes \etoile {4}}{242}{subsection.13.4.45}%
-\contentsline {section}{\numberline {XIII.5}Correction Espaces vectoriels normés}{244}{section.13.5}%
-\contentsline {subsection}{\numberline {XIII.5.1}Suite de Cauchy \etoile {2}}{244}{subsection.13.5.1}%
-\contentsline {subsection}{\numberline {XIII.5.2}Théorème de Fréchet-Von Neumann}{244}{subsection.13.5.2}%
-\contentsline {subsection}{\numberline {XIII.5.3}Une norme non euclidienne}{245}{subsection.13.5.3}%
-\contentsline {subsection}{\numberline {XIII.5.4}Norme invariante par similitude}{246}{subsection.13.5.4}%
-\contentsline {subsection}{\numberline {XIII.5.5}Equivalence des normes dans un espace vectoriel normé de dimension finie}{246}{subsection.13.5.5}%
-\contentsline {subsection}{\numberline {XIII.5.6}Normes non équivalentes}{246}{subsection.13.5.6}%
-\contentsline {subsection}{\numberline {XIII.5.7}Normes semblables à la norme uniforme sur $\mathbb {K}[X]$}{246}{subsection.13.5.7}%
-\contentsline {subsection}{\numberline {XIII.5.8}Comparaisons de deux normes sur $\mathbb {K}_n[X]$}{246}{subsection.13.5.8}%
-\contentsline {subsection}{\numberline {XIII.5.9}Comparaisons de normes usuelles sur $\EuScript {C}^0([a,b],\mathbb {K})$}{247}{subsection.13.5.9}%
-\contentsline {subsection}{\numberline {XIII.5.10}Normes $p$}{247}{subsection.13.5.10}%
-\contentsline {subsubsection}{Inégalité de Hölder et Minkowski}{247}{subsection.13.5.10}%
-\contentsline {subsubsection}{Equivalence des normes $p$ et $q$}{249}{Item.1028}%
-\contentsline {subsubsection}{Norme infinie}{250}{Item.1030}%
-\contentsline {subsection}{\numberline {XIII.5.11}Normes de Sobolev}{250}{subsection.13.5.11}%
-\contentsline {subsection}{\numberline {XIII.5.12}Norme duale}{250}{subsection.13.5.12}%
-\contentsline {subsection}{\numberline {XIII.5.13}Norme à partir d'une famille libre}{250}{subsection.13.5.13}%
-\contentsline {subsection}{\numberline {XIII.5.14}Quelques normes matricielles}{250}{subsection.13.5.14}%
-\contentsline {subsection}{\numberline {XIII.5.15}Caractérisation des sous-espaces de dimension finie de $\EuScript {C}^0([0,1],\mathbb {K})$}{250}{subsection.13.5.15}%
-\contentsline {subsection}{\numberline {XIII.5.16}Distance}{251}{subsection.13.5.16}%
-\contentsline {subsection}{\numberline {XIII.5.17}Distance à une partie}{252}{subsection.13.5.17}%
-\contentsline {subsection}{\numberline {XIII.5.18}Distance d'un élément à une partie (1)}{252}{subsection.13.5.18}%
-\contentsline {subsection}{\numberline {XIII.5.19}Distance d'un élément à une partie (2)}{252}{subsection.13.5.19}%
-\contentsline {subsection}{\numberline {XIII.5.20}Passage par les matrices orthogonales}{253}{subsection.13.5.20}%
-\contentsline {subsection}{\numberline {XIII.5.21}Diamètre d'une partie bornée}{254}{subsection.13.5.21}%
-\contentsline {subsection}{\numberline {XIII.5.22}Détermination d'une borne inférieure}{255}{subsection.13.5.22}%
-\contentsline {subsection}{\numberline {XIII.5.23}Normes usuelles sur $\EuScript {C}^1([0,1],\mathbb {K})$}{255}{subsection.13.5.23}%
-\contentsline {subsection}{\numberline {XIII.5.24}Intersection des boules unités subordonnées d'un espace vectoriel normé de dimension finie}{256}{subsection.13.5.24}%
-\contentsline {subsection}{\numberline {XIII.5.25}Modes de convergence}{256}{subsection.13.5.25}%
-\contentsline {subsection}{\numberline {XIII.5.26}Moyenne des itérés et projection sur l'espace des invariants d'une application linéaire contractante}{257}{subsection.13.5.26}%
-\contentsline {subsection}{\numberline {XIII.5.27}Matrice de projecteur}{257}{subsection.13.5.27}%
-\contentsline {subsection}{\numberline {XIII.5.28}Matrice de rotation}{257}{subsection.13.5.28}%
-\contentsline {subsection}{\numberline {XIII.5.29}Applications contractantes}{257}{subsection.13.5.29}%
-\contentsline {subsection}{\numberline {XIII.5.30}Une série vectorielle}{257}{subsection.13.5.30}%
-\contentsline {subsection}{\numberline {XIII.5.31}Polytopes réguliers d'un espace vectoriel euclidien}{257}{subsection.13.5.31}%
-\contentsline {section}{\numberline {XIII.6}Correction Suites et séries de fonctions}{258}{section.13.6}%
-\contentsline {subsection}{\numberline {XIII.6.1}Etude d'une suite de fonctions (1)}{258}{subsection.13.6.1}%
-\contentsline {subsection}{\numberline {XIII.6.2}Etude d'une suite de fonctions (2)}{258}{subsection.13.6.2}%
-\contentsline {subsection}{\numberline {XIII.6.3}Etude d'une suite de fonctions (3)}{259}{subsection.13.6.3}%
-\contentsline {subsection}{\numberline {XIII.6.4}Etude d'une suite de fonctions (4)}{260}{subsection.13.6.4}%
-\contentsline {subsection}{\numberline {XIII.6.5}Etude d'une suite de fonctions 5}{260}{subsection.13.6.5}%
-\contentsline {subsection}{\numberline {XIII.6.6}Etude d'une suite de fonctions 6}{260}{subsection.13.6.6}%
-\contentsline {subsection}{\numberline {XIII.6.7}Etude d'une suite de fonctions 7}{260}{subsection.13.6.7}%
-\contentsline {subsection}{\numberline {XIII.6.8}Développement de la cotangente}{261}{subsection.13.6.8}%
-\contentsline {subsection}{\numberline {XIII.6.9}Etude d'une fonction définie par une série alternée (1)}{261}{subsection.13.6.9}%
-\contentsline {subsection}{\numberline {XIII.6.10}Etude d'une fonction définie par une série alternée (2)}{261}{subsection.13.6.10}%
-\contentsline {subsection}{\numberline {XIII.6.11}Convergence vers une dérivée}{261}{subsection.13.6.11}%
-\contentsline {subsection}{\numberline {XIII.6.12}Limite ponctuelle et uniforme d'une suite de fonctions}{261}{subsection.13.6.12}%
-\contentsline {subsection}{\numberline {XIII.6.13}Convergence des suites de polynômes}{262}{subsection.13.6.13}%
-\contentsline {subsection}{\numberline {XIII.6.14}Un théorème de Weierstrass sur $\mathbb {R}$ ?}{262}{subsection.13.6.14}%
-\contentsline {subsection}{\numberline {XIII.6.15}Approximation paire}{262}{subsection.13.6.15}%
-\contentsline {subsection}{\numberline {XIII.6.16}Approximation croissante}{262}{subsection.13.6.16}%
-\contentsline {subsection}{\numberline {XIII.6.17}Interversion Série-Intégrale}{262}{subsection.13.6.17}%
-\contentsline {subsection}{\numberline {XIII.6.18}Série de fonction matricielle}{263}{subsection.13.6.18}%
-\contentsline {subsection}{\numberline {XIII.6.19}Fonction $\zeta $ de Riemann}{263}{subsection.13.6.19}%
-\contentsline {subsection}{\numberline {XIII.6.20}Expression de suites sous forme de séries}{263}{subsection.13.6.20}%
-\contentsline {subsection}{\numberline {XIII.6.21}Etude d'une série de fonctions}{263}{subsection.13.6.21}%
-\contentsline {subsection}{\numberline {XIII.6.22}Théorème de Dini \etoile {4}}{263}{subsection.13.6.22}%
-\contentsline {subsection}{\numberline {XIII.6.23}Suite de fonction lipschitzienne \etoile {3}}{264}{subsection.13.6.23}%
-\contentsline {subsection}{\numberline {XIII.6.24}Phénomène de Runge}{265}{subsection.13.6.24}%
-\contentsline {subsection}{\numberline {XIII.6.25}Théorème de Weierstrass}{265}{subsection.13.6.25}%
-\contentsline {subsection}{\numberline {XIII.6.26}Théorème de Chudnovsky \etoile {4}}{267}{subsection.13.6.26}%
-\contentsline {subsection}{\numberline {XIII.6.27}Théorème de sélection de Helly}{268}{subsection.13.6.27}%
-\contentsline {section}{\numberline {XIII.7}Correction Séries entières}{269}{section.13.7}%
-\contentsline {subsection}{\numberline {XIII.7.1}Lemme d'Abel}{269}{subsection.13.7.1}%
-\contentsline {subsection}{\numberline {XIII.7.2}Fonction non développable en série entière}{269}{subsection.13.7.2}%
-\contentsline {subsection}{\numberline {XIII.7.3}CCINP MP 2019}{270}{subsection.13.7.3}%
-\contentsline {subsection}{\numberline {XIII.7.4}Série entière de terme général binomial}{270}{subsection.13.7.4}%
-\contentsline {subsection}{\numberline {XIII.7.5}Formule de Cauchy}{270}{subsection.13.7.5}%
-\contentsline {subsection}{\numberline {XIII.7.6}Principe des zéros isolés}{270}{subsection.13.7.6}%
-\contentsline {subsection}{\numberline {XIII.7.7}Produit de Hadamard}{270}{subsection.13.7.7}%
-\contentsline {subsection}{\numberline {XIII.7.8}Théorème de Liouville}{270}{subsection.13.7.8}%
-\contentsline {subsection}{\numberline {XIII.7.9}Inverse d'une série entière}{271}{subsection.13.7.9}%
-\contentsline {subsection}{\numberline {XIII.7.10}Equivalent de séries entières}{271}{subsection.13.7.10}%
-\contentsline {subsection}{\numberline {XIII.7.11}Théorème de d'Alembert-Gauss}{271}{subsection.13.7.11}%
-\contentsline {subsection}{\numberline {XIII.7.12}Développement de fraction rationnelle autour de 0}{271}{subsection.13.7.12}%
-\contentsline {subsection}{\numberline {XIII.7.13}Fonction quasi-polynomiale}{271}{subsection.13.7.13}%
-\contentsline {subsubsection}{Série génératrice d'une fonction quasi-polynomiale}{271}{subsection.13.7.13}%
-\contentsline {subsubsection}{Partition d'un entier}{271}{subsection.13.7.13}%
-\contentsline {subsection}{\numberline {XIII.7.14}Théorème de réalisation de Borel}{271}{subsection.13.7.14}%
-\contentsline {subsection}{\numberline {XIII.7.15}Série de Lambert}{271}{subsection.13.7.15}%
-\contentsline {subsection}{\numberline {XIII.7.16}Somme de Goldbach}{271}{subsection.13.7.16}%
-\contentsline {subsection}{\numberline {XIII.7.17}Une somme avec l'indicatrice d'Euler}{272}{subsection.13.7.17}%
-\contentsline {subsection}{\numberline {XIII.7.18}Coefficients définies par des intégrales}{272}{subsection.13.7.18}%
-\contentsline {subsection}{\numberline {XIII.7.19}Détermination des coefficients d'un développement en série entière}{272}{subsection.13.7.19}%
-\contentsline {subsection}{\numberline {XIII.7.20}Série génératrice du nombre de points à coordonnées entières dans un quart de disque}{272}{subsection.13.7.20}%
-\contentsline {subsubsection}{Nombre de points à coordonnées entières dans un disque}{272}{subsection.13.7.20}%
-\contentsline {subsubsection}{Prolongement du problème}{272}{subsection.13.7.20}%
-\contentsline {subsection}{\numberline {XIII.7.21}Nombre d'involution}{272}{subsection.13.7.21}%
-\contentsline {subsection}{\numberline {XIII.7.22}Théorème d'Abel}{272}{subsection.13.7.22}%
-\contentsline {subsection}{\numberline {XIII.7.23}Théorèmes taubériens d'Abel}{272}{subsection.13.7.23}%
-\contentsline {subsubsection}{Cas des séries à coefficients positifs}{273}{subsection.13.7.23}%
-\contentsline {subsubsection}{Théorème taubérien faible}{273}{subsection.13.7.23}%
-\contentsline {subsubsection}{Théorème taubérien fort}{273}{subsection.13.7.23}%
-\contentsline {section}{\numberline {XIII.8}Correction Topologie}{274}{section.13.8}%
-\contentsline {subsection}{\numberline {XIII.8.1}Normes d'opérateur}{274}{subsection.13.8.1}%
-\contentsline {subsection}{\numberline {XIII.8.2}$\mathbb {Z}$ est fermé \etoile {1}}{275}{subsection.13.8.2}%
-\contentsline {subsection}{\numberline {XIII.8.3}Orthogonalité et topologie}{276}{subsection.13.8.3}%
-\contentsline {subsection}{\numberline {XIII.8.4}Ensemble des valeurs d'adhérence d'une suite}{276}{subsection.13.8.4}%
-\contentsline {subsubsection}{Valeur d'adhérence du cercle unité}{277}{subsection.13.8.4}%
-\contentsline {subsection}{\numberline {XIII.8.5}Ensemble des suites convergentes}{278}{subsection.13.8.5}%
-\contentsline {subsection}{\numberline {XIII.8.6}Calcul d'adhérence}{279}{subsection.13.8.6}%
-\contentsline {subsection}{\numberline {XIII.8.7}Partie ouverte et fermée simultanément}{280}{subsection.13.8.7}%
-\contentsline {subsection}{\numberline {XIII.8.8}Opérations sur les adhérences/intérieurs}{280}{subsection.13.8.8}%
-\contentsline {subsection}{\numberline {XIII.8.9}Les sept espaces de Kuratowski}{281}{subsection.13.8.9}%
-\contentsline {subsection}{\numberline {XIII.8.10}Intérieur d'un sev}{281}{subsection.13.8.10}%
-\contentsline {subsection}{\numberline {XIII.8.11}Adhérence d'un sev}{282}{subsection.13.8.11}%
-\contentsline {subsection}{\numberline {XIII.8.12}Graphe fermé}{283}{subsection.13.8.12}%
-\contentsline {subsection}{\numberline {XIII.8.13}Application linéaire continue}{283}{subsection.13.8.13}%
-\contentsline {subsection}{\numberline {XIII.8.14}Application linéaire non continue}{284}{subsection.13.8.14}%
-\contentsline {subsection}{\numberline {XIII.8.15}Polynômes réels de degré $n$ scindés à racines simples sur $\mathbb {R}$ \etoile {4}}{284}{subsection.13.8.15}%
-\contentsline {subsection}{\numberline {XIII.8.16}Lemme de Riemann-Lebesgue \etoile {3}}{286}{subsection.13.8.16}%
-\contentsline {subsection}{\numberline {XIII.8.17}Borel-Lebesgue}{287}{subsection.13.8.17}%
-\contentsline {subsection}{\numberline {XIII.8.18}Parties compactes d'un espace vectoriel normé de dimension finie}{288}{subsection.13.8.18}%
-\contentsline {subsection}{\numberline {XIII.8.19}Somme de sous-espaces}{289}{subsection.13.8.19}%
-\contentsline {subsection}{\numberline {XIII.8.20}Un théorème du point fixe}{290}{subsection.13.8.20}%
-\contentsline {subsection}{\numberline {XIII.8.21}Théorème de Heine}{290}{subsection.13.8.21}%
-\contentsline {subsection}{\numberline {XIII.8.22}Lemme des compacts emboîtés \etoile {1}}{291}{subsection.13.8.22}%
-\contentsline {subsection}{\numberline {XIII.8.23}Théorème de Baire \etoile {5}}{291}{subsection.13.8.23}%
-\contentsline {subsubsection}{$\mathbb {R}$ n'est pas dénombrable}{292}{Item.1104}%
-\contentsline {subsubsection}{Base d'un espace de Banach \etoile {3}}{292}{Item.1104}%
-\contentsline {subsubsection}{Densité des fonctions nulle part dérivables (2) \etoile {4}}{293}{Item.1104}%
-\contentsline {subsubsection}{Lemme de Croft}{294}{Item.1108}%
-\contentsline {subsubsection}{Caractérisation des endomorphismes continus nilpotents dans un espace de Banach \etoile {3}}{295}{Item.1111}%
-\contentsline {subsubsection}{Caractérisation des polynômes réels \etoile {5}}{296}{Item.1113}%
-\contentsline {subsubsection}{Un raffinement}{298}{Item.1132}%
-\contentsline {subsection}{\numberline {XIII.8.24}Volume d'une (hyper)boule \etoile {3}}{298}{subsection.13.8.24}%
-\contentsline {subsection}{\numberline {XIII.8.25}Partie fermée bornée non compacte \etoile {3}}{300}{subsection.13.8.25}%
-\contentsline {subsection}{\numberline {XIII.8.26}Théorème de compacité de Riesz \etoile {4}}{300}{subsection.13.8.26}%
-\contentsline {subsection}{\numberline {XIII.8.27}Sphère et boule unité \etoile {3}}{301}{subsection.13.8.27}%
-\contentsline {subsection}{\numberline {XIII.8.28}Principe du maximum pour les polynômes}{301}{subsection.13.8.28}%
-\contentsline {subsection}{\numberline {XIII.8.29}Applications $1$-lipschitzienne surjective sur un compact}{301}{subsection.13.8.29}%
-\contentsline {subsection}{\numberline {XIII.8.30}Une isométrie conserve les milieux}{301}{subsection.13.8.30}%
-\contentsline {subsection}{\numberline {XIII.8.31}Fonctions coercives}{302}{subsection.13.8.31}%
-\contentsline {subsection}{\numberline {XIII.8.32}Homéomorphisme de compacts}{302}{subsection.13.8.32}%
-\contentsline {subsection}{\numberline {XIII.8.33}Distance à un fermé}{302}{subsection.13.8.33}%
-\contentsline {subsection}{\numberline {XIII.8.34}Diamètre et frontière}{302}{subsection.13.8.34}%
-\contentsline {subsection}{\numberline {XIII.8.35}Frontière}{302}{subsection.13.8.35}%
-\contentsline {subsection}{\numberline {XIII.8.36}Projeté sur un convexe compact}{302}{subsection.13.8.36}%
-\contentsline {subsection}{\numberline {XIII.8.37}Convexité de l'adhérence et de l'intérieur}{304}{subsection.13.8.37}%
-\contentsline {subsection}{\numberline {XIII.8.38}Fonctions positivement homogènes}{304}{subsection.13.8.38}%
-\contentsline {subsection}{\numberline {XIII.8.39}Enveloppe convexe}{304}{subsection.13.8.39}%
-\contentsline {subsection}{\numberline {XIII.8.40}Théorème de Carathéodory}{304}{subsection.13.8.40}%
-\contentsline {subsection}{\numberline {XIII.8.41}Théorème de Krein-Milman}{305}{subsection.13.8.41}%
-\contentsline {subsection}{\numberline {XIII.8.42}Epigraphe}{305}{subsection.13.8.42}%
-\contentsline {subsection}{\numberline {XIII.8.43}Partie convexe dense de $\mathbb {R}^n$}{305}{subsection.13.8.43}%
-\contentsline {subsection}{\numberline {XIII.8.44}Complémentaire d'un hyperplan}{305}{subsection.13.8.44}%
-\contentsline {subsection}{\numberline {XIII.8.45}Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans}{305}{subsection.13.8.45}%
-\contentsline {subsection}{\numberline {XIII.8.46}Sphères d'un $\mathbb {R}$-espace vectoriel}{305}{subsection.13.8.46}%
-\contentsline {subsection}{\numberline {XIII.8.47}Théorème du passage à la douane}{306}{subsection.13.8.47}%
-\contentsline {subsection}{\numberline {XIII.8.48}Condition nécessaire de la connexité par arc}{306}{subsection.13.8.48}%
-\contentsline {subsection}{\numberline {XIII.8.49}Entre un ensemble et son adhérence}{306}{subsection.13.8.49}%
-\contentsline {subsection}{\numberline {XIII.8.50}Continuité d'applications matricielles}{306}{subsection.13.8.50}%
-\contentsline {subsection}{\numberline {XIII.8.51}Points de continuité du polynôme minimal}{306}{subsection.13.8.51}%
-\contentsline {subsection}{\numberline {XIII.8.52}Exponentielle matricielle et topologie}{307}{subsection.13.8.52}%
-\contentsline {subsection}{\numberline {XIII.8.53}Lemme du déterminant}{307}{subsection.13.8.53}%
-\contentsline {subsection}{\numberline {XIII.8.54}Matrice de déterminant $1$ \etoile {3}}{307}{subsection.13.8.54}%
-\contentsline {subsection}{\numberline {XIII.8.55}Ensembles de matrices de rang fixé}{308}{subsection.13.8.55}%
-\contentsline {subsection}{\numberline {XIII.8.56}Densité des matrices inversibles \etoile {3}}{308}{subsection.13.8.56}%
-\contentsline {subsection}{\numberline {XIII.8.57}Comatrice et topologie}{310}{subsection.13.8.57}%
-\contentsline {subsection}{\numberline {XIII.8.58}Groupe orthogonal \etoile {1}}{310}{subsection.13.8.58}%
-\contentsline {subsection}{\numberline {XIII.8.59}Groupe (spécial) unitaire \etoile {3}}{310}{subsection.13.8.59}%
-\contentsline {subsection}{\numberline {XIII.8.60}Partie compacte et stable par produit de GL$_n(\mathbb {K})$ \etoile {3}}{313}{subsection.13.8.60}%
-\contentsline {subsection}{\numberline {XIII.8.61}Intérieur des matrices diagonalisable \etoile {5}}{313}{subsection.13.8.61}%
-\contentsline {subsection}{\numberline {XIII.8.62}Adhérence des matrices diagonalisables \etoile {3}}{315}{subsection.13.8.62}%
-\contentsline {subsection}{\numberline {XIII.8.63}Une preuve de Cayley-Hamilton (1) \etoile {2}}{316}{subsection.13.8.63}%
-\contentsline {subsection}{\numberline {XIII.8.64}Dimension du commutant d'une matrice}{317}{subsection.13.8.64}%
-\contentsline {subsection}{\numberline {XIII.8.65}Topologie et réduction}{317}{subsection.13.8.65}%
-\contentsline {subsection}{\numberline {XIII.8.66}Groupe spécial orthogonal et connexité}{317}{subsection.13.8.66}%
-\contentsline {subsection}{\numberline {XIII.8.67}Matrices inversibles et connexité}{317}{subsection.13.8.67}%
-\contentsline {subsection}{\numberline {XIII.8.68}Matrices nilpotentes et connexité}{317}{subsection.13.8.68}%
-\contentsline {subsection}{\numberline {XIII.8.69}Raffinement sur les disques de Gershgorin}{317}{subsection.13.8.69}%
-\contentsline {subsection}{\numberline {XIII.8.70}Matrices stochastiques et bistochastiques}{317}{subsection.13.8.70}%
-\contentsline {subsection}{\numberline {XIII.8.71}Théorème de Birkhoff-Von Neumann \etoile {4}}{318}{subsection.13.8.71}%
-\contentsline {subsubsection}{Points extrémaux des matrices bistochastiques}{320}{Item.1172}%
-\contentsline {subsubsection}{Points extrémaux des matrices orthogonales}{320}{Item.1172}%
-\contentsline {section}{\numberline {XIII.9}Correction Fonctions à valeurs vectorielles}{321}{section.13.9}%
-\contentsline {subsection}{\numberline {XIII.9.1}Point fixe de l'exponentielle complexe}{321}{subsection.13.9.1}%
-\contentsline {subsection}{\numberline {XIII.9.2}Théorème du relèvement}{321}{subsection.13.9.2}%
-\contentsline {subsection}{\numberline {XIII.9.3}Equation fonctionnelle de l'exponentielle matricielle \etoile {3}}{321}{subsection.13.9.3}%
-\contentsline {subsection}{\numberline {XIII.9.4}Formule de Trotter-Kato \etoile {2}}{322}{subsection.13.9.4}%
-\contentsline {subsection}{\numberline {XIII.9.5}Série entière de matrice \etoile {2}}{323}{subsection.13.9.5}%
-\contentsline {subsection}{\numberline {XIII.9.6}Expression d'un projecteur}{323}{subsection.13.9.6}%
-\contentsline {subsection}{\numberline {XIII.9.7}Une preuve analytique de Cayley-Hamilton}{323}{subsection.13.9.7}%
-\contentsline {subsection}{\numberline {XIII.9.8}Exemple de fonctions lipschitzienne}{324}{subsection.13.9.8}%
-\contentsline {subsection}{\numberline {XIII.9.9}Condition de continuité sur un espace vectoriel normé}{324}{subsection.13.9.9}%
-\contentsline {subsection}{\numberline {XIII.9.10}Application linéaire (2)}{324}{subsection.13.9.10}%
-\contentsline {subsection}{\numberline {XIII.9.11}Mouvement à force centrale}{324}{subsection.13.9.11}%
-\contentsline {subsection}{\numberline {XIII.9.12}Dérivée d'un produit de deux matrices}{324}{subsection.13.9.12}%
-\contentsline {subsection}{\numberline {XIII.9.13}Inégalité des accroissements finis pour un espace euclidien}{324}{subsection.13.9.13}%
-\contentsline {section}{\numberline {XIII.10}Correction Equations différentielles}{324}{section.13.10}%
-\contentsline {subsection}{\numberline {XIII.10.1}Equations différentielles du premier ordre}{324}{subsection.13.10.1}%
-\contentsline {subsection}{\numberline {XIII.10.2}Equations différentielles du second ordre}{324}{subsection.13.10.2}%
-\contentsline {subsection}{\numberline {XIII.10.3}Problèmes de raccordement}{325}{subsection.13.10.3}%
-\contentsline {subsection}{\numberline {XIII.10.4}Suite d'équations différentielles}{325}{subsection.13.10.4}%
-\contentsline {subsection}{\numberline {XIII.10.5}Equation de Bernoulli (1)}{325}{subsection.13.10.5}%
-\contentsline {subsection}{\numberline {XIII.10.6}Equation de Bernoulli (2)}{325}{subsection.13.10.6}%
-\contentsline {subsection}{\numberline {XIII.10.7}Etude asymptotique des solutions d'une équation différentielle \etoile {4}}{325}{subsection.13.10.7}%
-\contentsline {subsection}{\numberline {XIII.10.8}Inéquation différentielle}{326}{subsection.13.10.8}%
-\contentsline {subsection}{\numberline {XIII.10.9}Solution $2\pi $-périodique d'une équation différentielle}{326}{subsection.13.10.9}%
-\contentsline {subsection}{\numberline {XIII.10.10}Superposition de solutions}{326}{subsection.13.10.10}%
-\contentsline {subsection}{\numberline {XIII.10.11}Fonction de Bessel}{326}{subsection.13.10.11}%
-\contentsline {subsection}{\numberline {XIII.10.12}Développement de la cotangente (2)}{326}{subsection.13.10.12}%
-\contentsline {subsection}{\numberline {XIII.10.13}Wronskien}{326}{subsection.13.10.13}%
-\contentsline {subsection}{\numberline {XIII.10.14}Utilité du wronskien}{327}{subsection.13.10.14}%
-\contentsline {subsection}{\numberline {XIII.10.15}Principe d'entrelacement des zéros de Sturm}{327}{subsection.13.10.15}%
-\contentsline {subsection}{\numberline {XIII.10.16}Solution qui s'annule}{327}{subsection.13.10.16}%
-\contentsline {subsection}{\numberline {XIII.10.17}Solution qui s'annule une infinité de fois}{327}{subsection.13.10.17}%
-\contentsline {subsection}{\numberline {XIII.10.18}Lemme de Grönwall}{327}{subsection.13.10.18}%
-\contentsline {subsubsection}{Application du lemme de Grönwall}{327}{subsection.13.10.18}%
-\contentsline {subsection}{\numberline {XIII.10.19}Théorème de Floquet}{327}{subsection.13.10.19}%
-\contentsline {subsection}{\numberline {XIII.10.20}Méthode de Lagrange (1)}{327}{subsection.13.10.20}%
-\contentsline {subsection}{\numberline {XIII.10.21}Méthode de Lagrange (2)}{327}{subsection.13.10.21}%
-\contentsline {subsection}{\numberline {XIII.10.22}Equation différentielle matricielle non linéaire}{327}{subsection.13.10.22}%
-\contentsline {subsection}{\numberline {XIII.10.23}Système dynamique}{328}{subsection.13.10.23}%
-\contentsline {subsection}{\numberline {XIII.10.24}Solutions de norme constante \etoile {3}}{328}{subsection.13.10.24}%
-\contentsline {subsection}{\numberline {XIII.10.25}Exponentielles de matrices qui commutent \etoile {2}}{328}{subsection.13.10.25}%
-\contentsline {subsection}{\numberline {XIII.10.26}Lemme de Hochshild}{329}{subsection.13.10.26}%
-\contentsline {section}{\numberline {XIII.11}Correction Calcul différentiel}{330}{section.13.11}%
-\contentsline {subsection}{\numberline {XIII.11.1}Calcul de dérivées partielles}{330}{subsection.13.11.1}%
-\contentsline {subsection}{\numberline {XIII.11.2}Existence de dérivées partielles}{330}{subsection.13.11.2}%
-\contentsline {subsection}{\numberline {XIII.11.3}Etude d'une fonction}{330}{subsection.13.11.3}%
-\contentsline {subsection}{\numberline {XIII.11.4}Une équation fonctionnelle \etoile {2}}{330}{subsection.13.11.4}%
-\contentsline {subsection}{\numberline {XIII.11.5}Application linéaire}{331}{subsection.13.11.5}%
-\contentsline {subsection}{\numberline {XIII.11.6}Opérateurs vectoriels}{331}{subsection.13.11.6}%
-\contentsline {subsection}{\numberline {XIII.11.7}Laplacien en polaires}{331}{subsection.13.11.7}%
-\contentsline {subsection}{\numberline {XIII.11.8}Fonction harmonique}{331}{subsection.13.11.8}%
-\contentsline {subsection}{\numberline {XIII.11.9}Mines ponts MP 2016}{331}{subsection.13.11.9}%
-\contentsline {subsection}{\numberline {XIII.11.10}Différentielle de l'exponentielle matricielle}{331}{subsection.13.11.10}%
-\contentsline {subsection}{\numberline {XIII.11.11}Différentielle de la norme euclidienne}{332}{subsection.13.11.11}%
-\contentsline {subsection}{\numberline {XIII.11.12}Différentielle de l'inversion matricielle}{332}{subsection.13.11.12}%
-\contentsline {subsection}{\numberline {XIII.11.13}Gradient et différentielle du déterminant}{332}{subsection.13.11.13}%
-\contentsline {subsection}{\numberline {XIII.11.14}Espace tangent aux matrices orthogonales en l'identité}{332}{subsection.13.11.14}%
-\contentsline {subsection}{\numberline {XIII.11.15}Vecteur propre d'un endomorphisme auto-adjoint}{332}{subsection.13.11.15}%
-\contentsline {subsection}{\numberline {XIII.11.16}Quotient de Rayleigh}{332}{subsection.13.11.16}%
-\contentsline {subsection}{\numberline {XIII.11.17}Différentielle du déterminant}{333}{subsection.13.11.17}%
-\contentsline {subsection}{\numberline {XIII.11.18}Equation de d'Alembert}{333}{subsection.13.11.18}%
-\contentsline {subsection}{\numberline {XIII.11.19}Utilisation des extrémas liés (1)}{333}{subsection.13.11.19}%
-\contentsline {subsection}{\numberline {XIII.11.20}Utilisation des extrémas liés (2)}{333}{subsection.13.11.20}%
-\contentsline {subsection}{\numberline {XIII.11.21}Utilisation des extrémas liés (3)}{333}{subsection.13.11.21}%
-\contentsline {subsection}{\numberline {XIII.11.22}Sinus complexe}{333}{subsection.13.11.22}%
-\contentsline {subsection}{\numberline {XIII.11.23}Entropie}{333}{subsection.13.11.23}%
-\contentsline {subsection}{\numberline {XIII.11.24}Fonction convexe sur $\mathbb {R}^n$}{333}{subsection.13.11.24}%
-\contentsline {subsection}{\numberline {XIII.11.25}Chemin le plus court entre deux points}{333}{subsection.13.11.25}%
-\contentsline {subsection}{\numberline {XIII.11.26}Fonction homogène}{334}{subsection.13.11.26}%
-\contentsline {subsection}{\numberline {XIII.11.27}Problème de Dirichlet et principe du maximum}{334}{subsection.13.11.27}%
-\contentsline {subsection}{\numberline {XIII.11.28}La méthode des moindres carrés}{334}{subsection.13.11.28}%
-\contentsline {subsection}{\numberline {XIII.11.29}Equation de la chaleur}{334}{subsection.13.11.29}%
-\contentsline {section}{\numberline {XIII.12}Correction Divers}{335}{section.13.12}%
-\contentsline {subsection}{\numberline {XIII.12.1}Développement décimal propre d'un réel}{335}{subsection.13.12.1}%
-\contentsline {subsubsection}{Une caractéristique des rationnels}{335}{subsection.13.12.1}%
-\contentsline {subsection}{\numberline {XIII.12.2}Distribution du premier chiffre des puissances de 2}{335}{subsection.13.12.2}%
-\contentsline {subsection}{\numberline {XIII.12.3}Série de Engel}{335}{subsection.13.12.3}%
-\contentsline {subsection}{\numberline {XIII.12.4}Théorème de Müntz}{335}{subsection.13.12.4}%
+\contentsline {section}{\numberline {IV.18}Degré d'une différence \telecom {1}}{60}{section.4.18}%
+\contentsline {section}{\numberline {IV.19}Théorème de la racine rationnelle}{61}{section.4.19}%
+\contentsline {section}{\numberline {IV.20}Critère d'Eisenstein \etoile {3}}{61}{section.4.20}%
+\contentsline {subsection}{\numberline {IV.20.1}Irréductibilité des polynômes cyclotomiques d'indices premiers \etoile {2}}{61}{subsection.4.20.1}%
+\contentsline {subsection}{\numberline {IV.20.2}Dimension de $\mathbb {R}$ en tant que $\mathbb {Q}$-espace vectoriel \etoile {3}}{61}{subsection.4.20.2}%
+\contentsline {section}{\numberline {IV.21}Points critiques des polynômes de Hilbert \centraleponts {3}}{62}{section.4.21}%
+\contentsline {section}{\numberline {IV.22}Zéros des polynômes de Taylor du sinus}{62}{section.4.22}%
+\contentsline {section}{\numberline {IV.23}Polynôme de Taylor de l'exponentielle \ccinp {1}}{62}{section.4.23}%
+\contentsline {section}{\numberline {IV.24}Les fonctions localement polynomiales sont polynomiales \centraleponts {2}}{62}{section.4.24}%
+\contentsline {section}{\numberline {IV.25}Intégrales de polynômes \etoile {1}}{63}{section.4.25}%
+\contentsline {section}{\numberline {IV.26}Théorème de Gauss-Lucas \etoile {2}}{63}{section.4.26}%
+\contentsline {subsection}{\numberline {IV.26.1}Une application \etoile {3}}{63}{subsection.4.26.1}%
+\contentsline {section}{\numberline {IV.27}Graphe d'un polynôme \telecom {2}}{63}{section.4.27}%
+\contentsline {section}{\numberline {IV.28}Polynômes qui commutent avec cosinus \etoile {3}}{64}{section.4.28}%
+\contentsline {section}{\numberline {IV.29}Relation trigonométrique polynomiale \etoile {3}}{64}{section.4.29}%
+\contentsline {section}{\numberline {IV.30}Division euclidienne (1) \ccinp {2}}{64}{section.4.30}%
+\contentsline {section}{\numberline {IV.31}Division euclidienne (2) \ccinp {1}}{64}{section.4.31}%
+\contentsline {section}{\numberline {IV.32}Fonctions trigonométriques polynomiale ? \ccinp {1}}{64}{section.4.32}%
+\contentsline {section}{\numberline {IV.33}Logarithme rationnel ? \telecom {2}}{64}{section.4.33}%
+\contentsline {section}{\numberline {IV.34}Une fraction rationnelle \etoile {1}}{65}{section.4.34}%
+\contentsline {section}{\numberline {IV.35}Dérivé d'un polynôme scindé sur $\mathbb {R}$ \centraleponts {3}}{65}{section.4.35}%
+\contentsline {section}{\numberline {IV.36}Une condition nécessaire pour qu'un polynôme soit scindé sur $\mathbb {R}$ \centraleponts {3}}{65}{section.4.36}%
+\contentsline {section}{\numberline {IV.37}Une condition nécessaire pour qu'un polynôme soit dissocié sur $\mathbb {R}$ \telecom {2}}{65}{section.4.37}%
+\contentsline {section}{\numberline {IV.38}Suite de polynômes scindés sur $\mathbb {R}$ \xens {3}}{65}{section.4.38}%
+\contentsline {section}{\numberline {IV.39}Borne de Cauchy \telecom {2}}{66}{section.4.39}%
+\contentsline {section}{\numberline {IV.40}Théorème d'Eneström-Kakeya \centraleponts {3}}{66}{section.4.40}%
+\contentsline {section}{\numberline {IV.41}Perturbations de polynômes}{66}{section.4.41}%
+\contentsline {section}{\numberline {IV.42}Polynômes à coefficients dans $\{-1,0,1\}$}{66}{section.4.42}%
+\contentsline {subsection}{\numberline {IV.42.1}Polynômes scindés}{66}{subsection.4.42.1}%
+\contentsline {subsection}{\numberline {IV.42.2}Ensemble des racines (1)}{67}{subsection.4.42.2}%
+\contentsline {subsection}{\numberline {IV.42.3}Ensemble des racines (2)}{67}{subsection.4.42.3}%
+\contentsline {section}{\numberline {IV.43}Théorème de Bernstein}{67}{section.4.43}%
+\contentsline {section}{\numberline {IV.44}Etude d'un polynôme défini implicitement}{67}{section.4.44}%
+\contentsline {section}{\numberline {IV.45}P'|P \telecom {1}}{68}{section.4.45}%
+\contentsline {section}{\numberline {IV.46}Polynôme positif (1) \centraleponts {3}}{68}{section.4.46}%
+\contentsline {section}{\numberline {IV.47}Théorème de Pythagore polynomial \centraleponts {3}}{68}{section.4.47}%
+\contentsline {section}{\numberline {IV.48}Polynômes à valeurs carrées}{68}{section.4.48}%
+\contentsline {section}{\numberline {IV.49}Polynômes réciproques \ccinp {2}}{69}{section.4.49}%
+\contentsline {section}{\numberline {IV.50}Polynômes surjectifs \etoile {5}}{69}{section.4.50}%
+\contentsline {section}{\numberline {IV.51}Résultant et discriminant \ccinp {2}}{69}{section.4.51}%
+\contentsline {section}{\numberline {IV.52}Théorème de Liouville : Fermat pour les polynômes \xens {4}}{70}{section.4.52}%
+\contentsline {chapter}{\numberline {V}Espace vectoriels normés}{73}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Suite de Cauchy \etoile {2}}{73}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Théorème de Fréchet-Von Neumann-Jordan}{73}{section.5.2}%
+\contentsline {section}{\numberline {V.3}Une norme non euclidienne}{73}{section.5.3}%
+\contentsline {section}{\numberline {V.4}Norme invariante par similitude}{74}{section.5.4}%
+\contentsline {section}{\numberline {V.5}Equivalence des normes dans un espace vectoriel normé de dimension finie}{74}{section.5.5}%
+\contentsline {section}{\numberline {V.6}Normes non équivalentes}{74}{section.5.6}%
+\contentsline {section}{\numberline {V.7}Normes semblables à la norme uniforme sur $\mathbb {K}[X]$}{74}{section.5.7}%
+\contentsline {section}{\numberline {V.8}Comparaisons de deux normes sur $\mathbb {K}_n[X]$}{75}{section.5.8}%
+\contentsline {section}{\numberline {V.9}Comparaisons de normes usuelles sur $\EuScript C^0([a,b],\mathbb {K})$}{75}{section.5.9}%
+\contentsline {section}{\numberline {V.10}Normes $p$}{75}{section.5.10}%
+\contentsline {subsection}{\numberline {V.10.1}Inégalités de Hölder et Minkowski}{75}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {V.10.2}Equivalence des normes $p$ et $q$}{76}{subsection.5.10.2}%
+\contentsline {subsection}{\numberline {V.10.3}Norme infinie}{76}{subsection.5.10.3}%
+\contentsline {section}{\numberline {V.11}Normes de Sobolev}{76}{section.5.11}%
+\contentsline {section}{\numberline {V.12}Norme duale}{77}{section.5.12}%
+\contentsline {section}{\numberline {V.13}Norme à partir d'une famille libre}{77}{section.5.13}%
+\contentsline {section}{\numberline {V.14}Quelques normes matricielles}{77}{section.5.14}%
+\contentsline {section}{\numberline {V.15}Caractérisation des sous-espaces de dimension finie de $\EuScript C^0([0,1],\mathbb {K})$}{78}{section.5.15}%
+\contentsline {section}{\numberline {V.16}Distance}{78}{section.5.16}%
+\contentsline {section}{\numberline {V.17}Distance à une partie}{78}{section.5.17}%
+\contentsline {section}{\numberline {V.18}Distance d'un élément à une partie (1)}{79}{section.5.18}%
+\contentsline {section}{\numberline {V.19}Distance d'un élément à une partie (2)}{79}{section.5.19}%
+\contentsline {section}{\numberline {V.20}Passage par les matrices orthogonales}{79}{section.5.20}%
+\contentsline {section}{\numberline {V.21}Diamètre d'une partie bornée}{79}{section.5.21}%
+\contentsline {section}{\numberline {V.22}Détermination d'une borne inférieure}{80}{section.5.22}%
+\contentsline {section}{\numberline {V.23}Normes usuelles sur $\EuScript C^1([0,1],\mathbb {K})$}{80}{section.5.23}%
+\contentsline {section}{\numberline {V.24}Intersection des boules unités subordonnées d'un espace vectoriel normé de dimension finie}{80}{section.5.24}%
+\contentsline {section}{\numberline {V.25}Modes de convergence}{80}{section.5.25}%
+\contentsline {section}{\numberline {V.26}Moyenne des itérés et projection sur l'espace des invariants d'une application linéaire contractante}{81}{section.5.26}%
+\contentsline {section}{\numberline {V.27}Matrice de projecteur}{81}{section.5.27}%
+\contentsline {section}{\numberline {V.28}Matrice de rotation}{81}{section.5.28}%
+\contentsline {section}{\numberline {V.29}Applications contractantes}{81}{section.5.29}%
+\contentsline {section}{\numberline {V.30}Une série vectorielle}{82}{section.5.30}%
+\contentsline {section}{\numberline {V.31}Polytopes réguliers d'un espace vectoriel euclidien}{82}{section.5.31}%
+\contentsline {chapter}{\numberline {VI}Suites et séries de fonctions}{83}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}Etude d'une suite de fonctions (1)}{83}{section.6.1}%
+\contentsline {section}{\numberline {VI.2}Etude d'une suite de fonctions (2)}{83}{section.6.2}%
+\contentsline {section}{\numberline {VI.3}Etude d'une suite de fonctions (3)}{84}{section.6.3}%
+\contentsline {section}{\numberline {VI.4}Etude d'une suite de fonctions (4)}{84}{section.6.4}%
+\contentsline {section}{\numberline {VI.5}Etude d'une suite de fonctions (5)}{84}{section.6.5}%
+\contentsline {section}{\numberline {VI.6}Etude d'une suite de fonctions (6)}{84}{section.6.6}%
+\contentsline {section}{\numberline {VI.7}Etude d'une suite de fonctions (7)}{84}{section.6.7}%
+\contentsline {section}{\numberline {VI.8}Développement de la cotangente (1)}{85}{section.6.8}%
+\contentsline {section}{\numberline {VI.9}Etude d'une fonction définie par une série alternée (1)}{85}{section.6.9}%
+\contentsline {section}{\numberline {VI.10}Etude d'une fonction définie par une série alternée (2)}{85}{section.6.10}%
+\contentsline {section}{\numberline {VI.11}Convergence vers une dérivée}{86}{section.6.11}%
+\contentsline {section}{\numberline {VI.12}Limite ponctuelle et uniforme d'une suite de fonctions}{86}{section.6.12}%
+\contentsline {section}{\numberline {VI.13}Convergence des suites de polynômes}{86}{section.6.13}%
+\contentsline {section}{\numberline {VI.14}Un théorème de Weierstrass sur $\mathbb {R}$ ?}{86}{section.6.14}%
+\contentsline {section}{\numberline {VI.15}Approximation paire}{87}{section.6.15}%
+\contentsline {section}{\numberline {VI.16}Approximation croissante}{87}{section.6.16}%
+\contentsline {section}{\numberline {VI.17}Interversion Série-Intégrale}{87}{section.6.17}%
+\contentsline {section}{\numberline {VI.18}Série de fonction matricielle}{87}{section.6.18}%
+\contentsline {section}{\numberline {VI.19}Fonction $\zeta $ de Riemann}{88}{section.6.19}%
+\contentsline {section}{\numberline {VI.20}Expression de suites sous forme de séries}{88}{section.6.20}%
+\contentsline {section}{\numberline {VI.21}Etude d'une série de fonctions}{88}{section.6.21}%
+\contentsline {section}{\numberline {VI.22}Théorème de Dini \etoile {4}}{89}{section.6.22}%
+\contentsline {section}{\numberline {VI.23}Suite de fonction lipschitzienne \etoile {3}}{89}{section.6.23}%
+\contentsline {section}{\numberline {VI.24}Phénomène de Runge}{89}{section.6.24}%
+\contentsline {section}{\numberline {VI.25}Théorème de Weierstrass}{90}{section.6.25}%
+\contentsline {section}{\numberline {VI.26}Théorème de Chudnovsky \etoile {4}}{91}{section.6.26}%
+\contentsline {section}{\numberline {VI.27}Théorème de sélection de Helly}{91}{section.6.27}%
+\contentsline {chapter}{\numberline {VII}Série entière}{93}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Lemme d'Abel}{93}{section.7.1}%
+\contentsline {section}{\numberline {VII.2}Fonction non développable en série entière}{93}{section.7.2}%
+\contentsline {section}{\numberline {VII.3}CCINP MP 2019}{93}{section.7.3}%
+\contentsline {section}{\numberline {VII.4}Série entière de terme général binomial}{94}{section.7.4}%
+\contentsline {section}{\numberline {VII.5}Formule de Cauchy}{94}{section.7.5}%
+\contentsline {section}{\numberline {VII.6}Principe des zéros isolés}{94}{section.7.6}%
+\contentsline {section}{\numberline {VII.7}Produit de Hadamard}{94}{section.7.7}%
+\contentsline {section}{\numberline {VII.8}Théorème de Liouville}{95}{section.7.8}%
+\contentsline {section}{\numberline {VII.9}Inverse d'une série entière}{95}{section.7.9}%
+\contentsline {section}{\numberline {VII.10}Equivalent de séries entières}{95}{section.7.10}%
+\contentsline {section}{\numberline {VII.11}Théorème de d'Alembert-Gauss}{95}{section.7.11}%
+\contentsline {section}{\numberline {VII.12}Développement de fraction rationnelle autour de 0}{96}{section.7.12}%
+\contentsline {section}{\numberline {VII.13}Fonction quasi-polynomiale}{96}{section.7.13}%
+\contentsline {subsection}{\numberline {VII.13.1}Série génératrice d'une fonction quasi-polynomiale}{97}{subsection.7.13.1}%
+\contentsline {subsection}{\numberline {VII.13.2}Partitions d'un entier}{97}{subsection.7.13.2}%
+\contentsline {section}{\numberline {VII.14}Théorème de réalisation de Borel}{97}{section.7.14}%
+\contentsline {section}{\numberline {VII.15}Série de Lambert}{98}{section.7.15}%
+\contentsline {section}{\numberline {VII.16}Somme de Goldbach}{98}{section.7.16}%
+\contentsline {section}{\numberline {VII.17}Une somme avec l'indicatrice d'Euler}{98}{section.7.17}%
+\contentsline {section}{\numberline {VII.18}Coefficients définies par des intégrales}{98}{section.7.18}%
+\contentsline {section}{\numberline {VII.19}Détermination des coefficients d'un développement en série entière}{99}{section.7.19}%
+\contentsline {section}{\numberline {VII.20}Série génératrice du nombre de points à coordonnées entières dans un quart de disque}{99}{section.7.20}%
+\contentsline {subsection}{\numberline {VII.20.1}Nombres de points à coordonnées entières dans un disque}{99}{subsection.7.20.1}%
+\contentsline {subsection}{\numberline {VII.20.2}Prolongement du problème}{99}{subsection.7.20.2}%
+\contentsline {section}{\numberline {VII.21}Nombre d'involution}{100}{section.7.21}%
+\contentsline {section}{\numberline {VII.22}Théorème d'Abel}{100}{section.7.22}%
+\contentsline {section}{\numberline {VII.23}Théorèmes taubériens d'Abel}{101}{section.7.23}%
+\contentsline {subsection}{\numberline {VII.23.1}Cas des séries à coefficients positifs}{101}{subsection.7.23.1}%
+\contentsline {subsection}{\numberline {VII.23.2}Théorème taubérien faible}{101}{subsection.7.23.2}%
+\contentsline {subsection}{\numberline {VII.23.3}Théorème taubérien fort}{102}{subsection.7.23.3}%
+\contentsline {chapter}{\numberline {VIII}Topologie}{105}{chapter.8}%
+\contentsline {section}{\numberline {VIII.1}Normes d'opérateur \ccinp {1}}{105}{section.8.1}%
+\contentsline {section}{\numberline {VIII.2}$\mathbb {Z}$ est fermé \etoile {1}}{105}{section.8.2}%
+\contentsline {section}{\numberline {VIII.3}Orthogonalité et topologie \ccinp {2}}{106}{section.8.3}%
+\contentsline {section}{\numberline {VIII.4}Ensemble des valeurs d'adhérence d'une suite \centraleponts {3}}{106}{section.8.4}%
+\contentsline {subsection}{\numberline {VIII.4.1}Une application \etoile {4}}{106}{subsection.8.4.1}%
+\contentsline {section}{\numberline {VIII.5}Ensemble des suites convergents vers 0 \centraleponts {2}}{106}{section.8.5}%
+\contentsline {subsection}{\numberline {VIII.5.1}Ensemble des suites convergentes \etoile {3} (HP)}{106}{subsection.8.5.1}%
+\contentsline {section}{\numberline {VIII.6}Calcul d'une adhérence \xens {3}}{107}{section.8.6}%
+\contentsline {section}{\numberline {VIII.7}Partie ouverte et fermée simultanément \centraleponts {3}}{107}{section.8.7}%
+\contentsline {section}{\numberline {VIII.8}Opérations sur les adhérences/intérieurs}{107}{section.8.8}%
+\contentsline {section}{\numberline {VIII.9}Les sept espaces de Kuratowski \etoile {3}}{107}{section.8.9}%
+\contentsline {section}{\numberline {VIII.10}Intérieur d'un sous-espace \telecom {2}}{107}{section.8.10}%
+\contentsline {section}{\numberline {VIII.11}Adhérence d'un sous-espace \centraleponts {3}}{107}{section.8.11}%
+\contentsline {section}{\numberline {VIII.12}Graphe fermé \centraleponts {3}}{108}{section.8.12}%
+\contentsline {section}{\numberline {VIII.13}Application linéaire continue \centraleponts {2}}{108}{section.8.13}%
+\contentsline {section}{\numberline {VIII.14}Application linéaire non continue \centraleponts {2}}{108}{section.8.14}%
+\contentsline {section}{\numberline {VIII.15}Polynômes réels de degré $n$ scindés à racines simples sur $\mathbb {R}$ \xens {4}}{108}{section.8.15}%
+\contentsline {section}{\numberline {VIII.16}Lemme de Riemann-Lebesgue \centraleponts {3}}{109}{section.8.16}%
+\contentsline {section}{\numberline {VIII.17}Borel-Lebesgue (HP)}{109}{section.8.17}%
+\contentsline {section}{\numberline {VIII.18}Parties compactes d'un espace vectoriel normé de dimension finie \etoile {2}}{109}{section.8.18}%
+\contentsline {section}{\numberline {VIII.19}Somme de sous-espaces \centraleponts {3}}{110}{section.8.19}%
+\contentsline {section}{\numberline {VIII.20}Un théorème du point fixe \centraleponts {3}}{110}{section.8.20}%
+\contentsline {section}{\numberline {VIII.21}Théorème de Heine \etoile {2}}{110}{section.8.21}%
+\contentsline {section}{\numberline {VIII.22}Lemme des compacts emboîtés \telecom {1}}{110}{section.8.22}%
+\contentsline {section}{\numberline {VIII.23}Théorème de Baire \xens {5} (HP)}{110}{section.8.23}%
+\contentsline {subsection}{\numberline {VIII.23.1}$\mathbb {R}$ n'est pas dénombrable \etoile {2} (HP)}{111}{subsection.8.23.1}%
+\contentsline {subsection}{\numberline {VIII.23.2}Base d'un espace de Banach \etoile {3} (HP)}{111}{subsection.8.23.2}%
+\contentsline {subsection}{\numberline {VIII.23.3}Densité des fonctions nulle part dérivables (2) \etoile {4} (HP)}{111}{subsection.8.23.3}%
+\contentsline {subsection}{\numberline {VIII.23.4}Caractérisation des endomorphismes nilpotents d'un espace de Banach \etoile {2} (HP)}{111}{subsection.8.23.4}%
+\contentsline {subsection}{\numberline {VIII.23.5}Lemme de Croft (2) \etoile {4} (HP)}{112}{subsection.8.23.5}%
+\contentsline {subsection}{\numberline {VIII.23.6}Caractérisation des polynômes réels \etoile {5} (HP)}{112}{subsection.8.23.6}%
+\contentsline {subsection}{\numberline {VIII.23.7}Un raffinement \etoile {1} (HP)}{113}{subsection.8.23.7}%
+\contentsline {section}{\numberline {VIII.24}Volume d'une (hyper)boule \xens {4} (HP)}{113}{section.8.24}%
+\contentsline {section}{\numberline {VIII.25}Partie fermée bornée non compacte \centraleponts {3}}{113}{section.8.25}%
+\contentsline {section}{\numberline {VIII.26}Théorème de compacité de Riesz \centraleponts {4}}{113}{section.8.26}%
+\contentsline {section}{\numberline {VIII.27}Sphère et boule unité \centraleponts {3}}{114}{section.8.27}%
+\contentsline {section}{\numberline {VIII.28}Principe du maximum pour les polynômes \xens {3}}{114}{section.8.28}%
+\contentsline {section}{\numberline {VIII.29}Applications $1$-lipschitzienne surjective sur un compact \centraleponts {4}}{114}{section.8.29}%
+\contentsline {section}{\numberline {VIII.30}Une isométrie conserve les milieux \centraleponts {4}}{114}{section.8.30}%
+\contentsline {section}{\numberline {VIII.31}Fonctions coercives \centraleponts {3}}{115}{section.8.31}%
+\contentsline {section}{\numberline {VIII.32}Homéomorphisme de compacts \centraleponts {3}}{115}{section.8.32}%
+\contentsline {section}{\numberline {VIII.33}Distance à un fermé}{115}{section.8.33}%
+\contentsline {section}{\numberline {VIII.34}Diamètre et frontière}{115}{section.8.34}%
+\contentsline {section}{\numberline {VIII.35}Frontière \ccinp {2}}{116}{section.8.35}%
+\contentsline {section}{\numberline {VIII.36}Projeté sur un convexe compact \centraleponts {3}}{116}{section.8.36}%
+\contentsline {section}{\numberline {VIII.37}Convexité de l'adhérence et de l'intérieur \centraleponts {3}}{116}{section.8.37}%
+\contentsline {section}{\numberline {VIII.38}Fonctions positivement homogènes}{116}{section.8.38}%
+\contentsline {section}{\numberline {VIII.39}Enveloppe convexe}{117}{section.8.39}%
+\contentsline {section}{\numberline {VIII.40}Théorème de Carathéodory \centraleponts {3}}{117}{section.8.40}%
+\contentsline {subsection}{\numberline {VIII.40.1}Enveloppe convexe d'une partie compacte \centraleponts {2}}{118}{subsection.8.40.1}%
+\contentsline {section}{\numberline {VIII.41}Théorème de Krein-Milman}{118}{section.8.41}%
+\contentsline {section}{\numberline {VIII.42}Epigraphe \ccinp {1}}{118}{section.8.42}%
+\contentsline {section}{\numberline {VIII.43}Partie convexe et dense de $\mathbb {R}^n$ \xens {4}}{118}{section.8.43}%
+\contentsline {section}{\numberline {VIII.44}Partie convexe et ouverte de $\mathbb {R}^n$ \xens {4}}{119}{section.8.44}%
+\contentsline {section}{\numberline {VIII.45}Connexité de l'espace \etoile {2}}{119}{section.8.45}%
+\contentsline {section}{\numberline {VIII.46}Complémentaire d'un hyperplan \centraleponts {3}}{119}{section.8.46}%
+\contentsline {section}{\numberline {VIII.47}Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans \xens {5}}{119}{section.8.47}%
+\contentsline {section}{\numberline {VIII.48}Sphères d'un $\mathbb {R}$-espace vectoriel \centraleponts {3}}{120}{section.8.48}%
+\contentsline {section}{\numberline {VIII.49}Théorème du passage à la douane \centraleponts {3}}{120}{section.8.49}%
+\contentsline {section}{\numberline {VIII.50}Condition nécessaire de la connexité par arc \etoile {1}}{120}{section.8.50}%
+\contentsline {section}{\numberline {VIII.51}Entre un ensemble et son adhérence}{120}{section.8.51}%
+\contentsline {section}{\numberline {VIII.52}Continuité d'applications matricielles}{120}{section.8.52}%
+\contentsline {section}{\numberline {VIII.53}Points de continuité du polynôme minimal}{121}{section.8.53}%
+\contentsline {section}{\numberline {VIII.54}Exponentielle matricielle et topologie}{121}{section.8.54}%
+\contentsline {section}{\numberline {VIII.55}Lemme du déterminant}{121}{section.8.55}%
+\contentsline {section}{\numberline {VIII.56}Matrice de déterminant $1$ \etoile {3}}{121}{section.8.56}%
+\contentsline {section}{\numberline {VIII.57}Ensembles de matrices de rang fixé}{122}{section.8.57}%
+\contentsline {section}{\numberline {VIII.58}Densité des matrices inversibles \etoile {3}}{122}{section.8.58}%
+\contentsline {section}{\numberline {VIII.59}Comatrice et topologie}{122}{section.8.59}%
+\contentsline {section}{\numberline {VIII.60}Groupe orthogonal \etoile {1}}{122}{section.8.60}%
+\contentsline {section}{\numberline {VIII.61}Groupe (spécial) unitaire \etoile {3}}{122}{section.8.61}%
+\contentsline {section}{\numberline {VIII.62}Partie compacte et stable par produit de GL$_n(\mathbb {K})$ \etoile {3}}{123}{section.8.62}%
+\contentsline {section}{\numberline {VIII.63}Intérieur des matrices diagonalisables \etoile {5}}{123}{section.8.63}%
+\contentsline {section}{\numberline {VIII.64}Adhérence des matrices diagonalisables \etoile {3}}{123}{section.8.64}%
+\contentsline {section}{\numberline {VIII.65}Une preuve de Cayley-Hamilton (1) \etoile {3}}{124}{section.8.65}%
+\contentsline {section}{\numberline {VIII.66}Dimension du commutant d'une matrice}{124}{section.8.66}%
+\contentsline {section}{\numberline {VIII.67}Topologie et réduction}{124}{section.8.67}%
+\contentsline {section}{\numberline {VIII.68}Groupe spécial orthogonal et connexité}{124}{section.8.68}%
+\contentsline {section}{\numberline {VIII.69}Matrices inversibles et connexité}{125}{section.8.69}%
+\contentsline {section}{\numberline {VIII.70}Matrices nilpotentes et connexité}{125}{section.8.70}%
+\contentsline {section}{\numberline {VIII.71}Raffinement sur les disques de Gershgorin}{125}{section.8.71}%
+\contentsline {section}{\numberline {VIII.72}Matrices stochastiques et bistochastiques}{126}{section.8.72}%
+\contentsline {section}{\numberline {VIII.73}Théorème de Birkhoff-Von Neumann \etoile {4}}{126}{section.8.73}%
+\contentsline {subsection}{\numberline {VIII.73.1}Points extrémaux des matrices bistochastiques}{126}{subsection.8.73.1}%
+\contentsline {subsection}{\numberline {VIII.73.2}Points extrémaux des matrices orthogonales}{127}{subsection.8.73.2}%
+\contentsline {chapter}{\numberline {IX}Fonctions à valeurs vectorielles}{129}{chapter.9}%
+\contentsline {section}{\numberline {IX.1}Point fixe de l'exponentielle complexe}{129}{section.9.1}%
+\contentsline {section}{\numberline {IX.2}Théorème du relèvement}{129}{section.9.2}%
+\contentsline {section}{\numberline {IX.3}Equation fonctionnelle de l'exponentielle matricielle \etoile {3}}{130}{section.9.3}%
+\contentsline {section}{\numberline {IX.4}Formule de Trotter-Kato \etoile {2}}{130}{section.9.4}%
+\contentsline {section}{\numberline {IX.5}Série entière de matrice \etoile {2}}{131}{section.9.5}%
+\contentsline {section}{\numberline {IX.6}Expression d'un projecteur}{131}{section.9.6}%
+\contentsline {section}{\numberline {IX.7}\underline {Une preuve analytique de Cayley-Hamilton} \centraleponts {3}}{131}{section.9.7}%
+\contentsline {section}{\numberline {IX.8}Exemple de fonction lipschitzienne}{131}{section.9.8}%
+\contentsline {section}{\numberline {IX.9}Condition de continuité sur un espace vectoriel normé}{132}{section.9.9}%
+\contentsline {section}{\numberline {IX.10}Application linéaire (2)}{132}{section.9.10}%
+\contentsline {section}{\numberline {IX.11}Mouvement à force centrale}{132}{section.9.11}%
+\contentsline {section}{\numberline {IX.12}Dérivée d'un produit de deux matrices}{133}{section.9.12}%
+\contentsline {section}{\numberline {IX.13}Inégalité des accroissements finis pour un espace euclidien}{133}{section.9.13}%
+\contentsline {chapter}{\numberline {X}Equations différentielles}{135}{chapter.10}%
+\contentsline {section}{\numberline {X.1}Equations différentielles du premier ordre}{135}{section.10.1}%
+\contentsline {section}{\numberline {X.2}Equations différentielles du second ordre}{135}{section.10.2}%
+\contentsline {section}{\numberline {X.3}Problèmes de raccordement}{135}{section.10.3}%
+\contentsline {section}{\numberline {X.4}Suite d'équations différentielles}{136}{section.10.4}%
+\contentsline {section}{\numberline {X.5}Equation de Bernoulli (1)}{136}{section.10.5}%
+\contentsline {section}{\numberline {X.6}Equation de Bernoulli (2)}{136}{section.10.6}%
+\contentsline {section}{\numberline {X.7}Etude asymptotique des solutions d'une équation différentielle \etoile {4}}{137}{section.10.7}%
+\contentsline {section}{\numberline {X.8}Inéquation différentielle}{137}{section.10.8}%
+\contentsline {section}{\numberline {X.9}Solution $2\pi $-périodique d'une équation différentielle}{137}{section.10.9}%
+\contentsline {section}{\numberline {X.10}Superposition de solutions}{137}{section.10.10}%
+\contentsline {section}{\numberline {X.11}Fonction de Bessel}{138}{section.10.11}%
+\contentsline {section}{\numberline {X.12}Développement de la cotangente (2)}{138}{section.10.12}%
+\contentsline {section}{\numberline {X.13}Wronskien}{138}{section.10.13}%
+\contentsline {section}{\numberline {X.14}Utilité du wronskien}{139}{section.10.14}%
+\contentsline {section}{\numberline {X.15}Principe d'entrelacement des zéros de Sturm}{139}{section.10.15}%
+\contentsline {section}{\numberline {X.16}Solution qui s'annule}{139}{section.10.16}%
+\contentsline {section}{\numberline {X.17}Solution qui s'annule une infinité de fois}{140}{section.10.17}%
+\contentsline {section}{\numberline {X.18}Lemme de Grönwall}{140}{section.10.18}%
+\contentsline {subsection}{\numberline {X.18.1}Application du lemme de Grönwall}{140}{subsection.10.18.1}%
+\contentsline {section}{\numberline {X.19}Théorème de Floquet}{140}{section.10.19}%
+\contentsline {section}{\numberline {X.20}Méthode de Lagrange (1)}{141}{section.10.20}%
+\contentsline {section}{\numberline {X.21}Méthode de Lagrange (2)}{141}{section.10.21}%
+\contentsline {section}{\numberline {X.22}Equation différentielle matricielle non linéaire}{141}{section.10.22}%
+\contentsline {section}{\numberline {X.23}Système dynamique}{142}{section.10.23}%
+\contentsline {section}{\numberline {X.24}Solutions de norme constante \etoile {3}}{142}{section.10.24}%
+\contentsline {section}{\numberline {X.25}Exponentielles de matrices qui commutent \etoile {2}}{142}{section.10.25}%
+\contentsline {section}{\numberline {X.26}Lemme de Hochshild}{142}{section.10.26}%
+\contentsline {chapter}{\numberline {XI}Calcul Différentiel}{143}{chapter.11}%
+\contentsline {section}{\numberline {XI.1}Calcul de dérivées partielles}{143}{section.11.1}%
+\contentsline {section}{\numberline {XI.2}Existence de dérivées partielles}{143}{section.11.2}%
+\contentsline {section}{\numberline {XI.3}Etude d'une fonction}{143}{section.11.3}%
+\contentsline {section}{\numberline {XI.4}Une équation fonctionnelle \etoile {2}}{144}{section.11.4}%
+\contentsline {section}{\numberline {XI.5}Application linéaire}{144}{section.11.5}%
+\contentsline {section}{\numberline {XI.6}Opérateurs vectoriels}{144}{section.11.6}%
+\contentsline {section}{\numberline {XI.7}Laplacien en polaires}{145}{section.11.7}%
+\contentsline {section}{\numberline {XI.8}Fonction harmonique}{145}{section.11.8}%
+\contentsline {section}{\numberline {XI.9}Mines ponts MP 2016}{146}{section.11.9}%
+\contentsline {section}{\numberline {XI.10}Différentielle de l'exponentielle matricielle}{146}{section.11.10}%
+\contentsline {section}{\numberline {XI.11}Différentielle de la norme euclidienne}{146}{section.11.11}%
+\contentsline {section}{\numberline {XI.12}Différentielle de l'inversion matricielle}{146}{section.11.12}%
+\contentsline {section}{\numberline {XI.13}Gradient et différentielle du déterminant}{147}{section.11.13}%
+\contentsline {section}{\numberline {XI.14}Espace tangent aux matrices orthogonales en l'identité}{147}{section.11.14}%
+\contentsline {section}{\numberline {XI.15}Vecteur propre d'un endomorphisme auto-adjoint}{147}{section.11.15}%
+\contentsline {section}{\numberline {XI.16}Quotient de Rayleigh}{147}{section.11.16}%
+\contentsline {section}{\numberline {XI.17}Différentielle du déterminant}{148}{section.11.17}%
+\contentsline {section}{\numberline {XI.18}Equation de d'Alembert}{148}{section.11.18}%
+\contentsline {section}{\numberline {XI.19}Utilisation des extrema liés (1)}{148}{section.11.19}%
+\contentsline {section}{\numberline {XI.20}Utilisation des extrema liés (2)}{148}{section.11.20}%
+\contentsline {section}{\numberline {XI.21}Utilisation des extrema liés (3)}{148}{section.11.21}%
+\contentsline {section}{\numberline {XI.22}Sinus complexe}{149}{section.11.22}%
+\contentsline {section}{\numberline {XI.23}Entropie}{149}{section.11.23}%
+\contentsline {section}{\numberline {XI.24}Fonction convexe sur $\mathbb {R}^n$}{149}{section.11.24}%
+\contentsline {section}{\numberline {XI.25}Chemin le plus court entre deux points}{150}{section.11.25}%
+\contentsline {section}{\numberline {XI.26}Fonction homogène}{150}{section.11.26}%
+\contentsline {section}{\numberline {XI.27}Problème de Dirichlet et principe faible du maximum}{150}{section.11.27}%
+\contentsline {section}{\numberline {XI.28}La méthode des moindres carrés}{151}{section.11.28}%
+\contentsline {section}{\numberline {XI.29}Equation de la chaleur}{152}{section.11.29}%
+\contentsline {chapter}{\numberline {XII}Divers}{153}{chapter.12}%
+\contentsline {section}{\numberline {XII.1}Développement décimal propre d'un réel \xens {3}}{153}{section.12.1}%
+\contentsline {subsection}{\numberline {XII.1.1}Une caractérisation des rationnels \xens {3}}{153}{subsection.12.1.1}%
+\contentsline {section}{\numberline {XII.2}Distribution du premier chiffre des puissances de $2$ \xens {3}}{153}{section.12.2}%
+\contentsline {section}{\numberline {XII.3}Série de Engel}{154}{section.12.3}%
+\contentsline {section}{\numberline {XII.4}Théorème de Müntz}{154}{section.12.4}%
+\contentsline {chapter}{\numberline {XIII}Correction}{155}{chapter.13}%
+\contentsline {section}{\numberline {XIII.1}Correction Suite et série numérique}{155}{section.13.1}%
+\contentsline {subsection}{\numberline {XIII.1.1}Lemme de Césarò \etoile {2}}{155}{subsection.13.1.1}%
+\contentsline {subsubsection}{Lemme de l'escalier\etoile {1}}{156}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {XIII.1.2}Théorèmes Taubériens d'Hardy \etoile {1}}{156}{subsection.13.1.2}%
+\contentsline {subsubsection}{Hardy Faible \etoile {2}}{156}{subsection.13.1.2}%
+\contentsline {subsubsection}{Hardy Fort \etoile {3}}{157}{subsection.13.1.2}%
+\contentsline {subsection}{\numberline {XIII.1.3}Série Harmonique \etoile {3}}{158}{subsection.13.1.3}%
+\contentsline {subsection}{\numberline {XIII.1.4}Suite récurrente (1) \etoile {3}}{160}{subsection.13.1.4}%
+\contentsline {subsection}{\numberline {XIII.1.5}Suite récurrente (2)}{162}{subsection.13.1.5}%
+\contentsline {subsection}{\numberline {XIII.1.6}Suite récurrente (3)}{162}{subsection.13.1.6}%
+\contentsline {subsection}{\numberline {XIII.1.7}Suite récurrente (4) \etoile {3}}{162}{subsection.13.1.7}%
+\contentsline {subsection}{\numberline {XIII.1.8}Suite récurrente (5)}{163}{subsection.13.1.8}%
+\contentsline {subsection}{\numberline {XIII.1.9}Suite récurrente (6)}{164}{subsection.13.1.9}%
+\contentsline {subsection}{\numberline {XIII.1.10}Suite définie implicitement (1)\etoile {2}}{164}{subsection.13.1.10}%
+\contentsline {subsection}{\numberline {XIII.1.11}Suite définie implicitement (2)}{165}{subsection.13.1.11}%
+\contentsline {subsection}{\numberline {XIII.1.12}Suite définie implicitement (3)}{165}{subsection.13.1.12}%
+\contentsline {subsection}{\numberline {XIII.1.13}Suite définie implicitement (4)}{165}{subsection.13.1.13}%
+\contentsline {subsection}{\numberline {XIII.1.14}Suite définie implicitement (5) \etoile {3}}{165}{subsection.13.1.14}%
+\contentsline {subsection}{\numberline {XIII.1.15}Formule d'inversion de Pascal \etoile {2}}{166}{subsection.13.1.15}%
+\contentsline {subsubsection}{Première méthode matrice de passage \etoile {1}}{166}{subsection.13.1.15}%
+\contentsline {subsubsection}{Deuxième méthode : binôme de Newton \etoile {2}}{166}{Item.885}%
+\contentsline {subsubsection}{Troisième méthode : par le calcul \etoile {2}}{167}{Item.885}%
+\contentsline {subsubsection}{Dérangement \etoile {3}}{167}{Item.888}%
+\contentsline {subsection}{\numberline {XIII.1.16}Théorème de Pringsheim \etoile {3}}{168}{subsection.13.1.16}%
+\contentsline {subsection}{\numberline {XIII.1.17}Lemme de Fekete}{168}{subsection.13.1.17}%
+\contentsline {subsection}{\numberline {XIII.1.18}Théorème de Bolzano-Weierstrass \etoile {3}}{169}{subsection.13.1.18}%
+\contentsline {subsection}{\numberline {XIII.1.19}$\mathbb {R}$ est complet \etoile {2}}{169}{subsection.13.1.19}%
+\contentsline {subsection}{\numberline {XIII.1.20}Récurrence de Cauchy}{170}{subsection.13.1.20}%
+\contentsline {subsection}{\numberline {XIII.1.21}Sommes de Riemann}{171}{subsection.13.1.21}%
+\contentsline {subsection}{\numberline {XIII.1.22}Formule d'Euler-Maclaurin}{171}{subsection.13.1.22}%
+\contentsline {subsection}{\numberline {XIII.1.23}Nature d'une suite}{171}{subsection.13.1.23}%
+\contentsline {subsection}{\numberline {XIII.1.24}Valeurs d'adhérence d'une suite}{171}{subsection.13.1.24}%
+\contentsline {subsection}{\numberline {XIII.1.25}Nature d'une série (1)\etoile {1}}{172}{subsection.13.1.25}%
+\contentsline {subsection}{\numberline {XIII.1.26}Nature d'une série (2) \etoile {2}}{172}{subsection.13.1.26}%
+\contentsline {subsection}{\numberline {XIII.1.27}Nature d'une série (3) \etoile {3}}{172}{subsection.13.1.27}%
+\contentsline {subsection}{\numberline {XIII.1.28}Nature d'une série (4)}{173}{subsection.13.1.28}%
+\contentsline {subsection}{\numberline {XIII.1.29}Nature d'une série (5)}{173}{subsection.13.1.29}%
+\contentsline {subsection}{\numberline {XIII.1.30}Calcul d'un équivalent \etoile {3}}{173}{subsection.13.1.30}%
+\contentsline {subsection}{\numberline {XIII.1.31}Sommation de relation de comparaison}{174}{subsection.13.1.31}%
+\contentsline {subsection}{\numberline {XIII.1.32}Equivalent de séries de Riemann}{174}{subsection.13.1.32}%
+\contentsline {subsection}{\numberline {XIII.1.33}Séries de Bertrand}{174}{subsection.13.1.33}%
+\contentsline {subsection}{\numberline {XIII.1.34}Critère de Raabe-Duhamel \etoile {2}}{174}{subsection.13.1.34}%
+\contentsline {subsection}{\numberline {XIII.1.35}Règle de d'Alembert}{175}{subsection.13.1.35}%
+\contentsline {subsection}{\numberline {XIII.1.36}Règle de Cauchy}{175}{subsection.13.1.36}%
+\contentsline {subsection}{\numberline {XIII.1.37}d'Alembert $\Rightarrow $ Cauchy}{175}{subsection.13.1.37}%
+\contentsline {subsection}{\numberline {XIII.1.38}Transformation d'Abel et règle d'Abel}{175}{subsection.13.1.38}%
+\contentsline {subsubsection}{Une série de Dirichlet}{175}{subsection.13.1.38}%
+\contentsline {subsection}{\numberline {XIII.1.39}Equation différentielle discrète\etoile {3}}{175}{subsection.13.1.39}%
+\contentsline {subsection}{\numberline {XIII.1.40}Critère spécial des séries alternées}{176}{subsection.13.1.40}%
+\contentsline {subsection}{\numberline {XIII.1.41}Calcul d'une somme de série (1) \etoile {3}}{176}{subsection.13.1.41}%
+\contentsline {subsection}{\numberline {XIII.1.42}Calcul d'une somme de série (2) \etoile {1}}{177}{subsection.13.1.42}%
+\contentsline {subsection}{\numberline {XIII.1.43}Calcul d'une somme de série (3) \etoile {3}}{177}{subsection.13.1.43}%
+\contentsline {subsection}{\numberline {XIII.1.44}Problème de Bâle}{177}{subsection.13.1.44}%
+\contentsline {subsubsection}{Lemme de Riemann-Lebesgue}{177}{subsection.13.1.44}%
+\contentsline {subsubsection}{Série de fonctions}{179}{Item.904}%
+\contentsline {subsubsection}{Série entière}{179}{Item.904}%
+\contentsline {subsection}{\numberline {XIII.1.45}Nombre moyen de diviseurs d'un entier \etoile {4}}{179}{subsection.13.1.45}%
+\contentsline {subsection}{\numberline {XIII.1.46}Théorème de réarrangement de Riemann \etoile {5}}{181}{subsection.13.1.46}%
+\contentsline {subsection}{\numberline {XIII.1.47}Moyennes arithmétique, géométrique et harmonique \etoile {1}}{182}{subsection.13.1.47}%
+\contentsline {subsection}{\numberline {XIII.1.48}Inégalité de Carleman}{183}{subsection.13.1.48}%
+\contentsline {section}{\numberline {XIII.2}Correction Intégrale}{184}{section.13.2}%
+\contentsline {subsection}{\numberline {XIII.2.1}Règle de Bioche}{184}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {XIII.2.2}Intégrale de Wallis \etoile {2}}{184}{subsection.13.2.2}%
+\contentsline {subsection}{\numberline {XIII.2.3}Formule de Stirling}{185}{subsection.13.2.3}%
+\contentsline {subsection}{\numberline {XIII.2.4}Intégrale de Gauss}{185}{subsection.13.2.4}%
+\contentsline {subsubsection}{Wallis}{185}{subsection.13.2.4}%
+\contentsline {subsubsection}{Intégrales auxiliaires}{185}{subsection.13.2.4}%
+\contentsline {subsubsection}{Equivalent du reste}{185}{subsection.13.2.4}%
+\contentsline {subsection}{\numberline {XIII.2.5}Intégrale de Fresnel \etoile {3}}{185}{subsection.13.2.5}%
+\contentsline {subsection}{\numberline {XIII.2.6}Intégrale de Dirichlet}{187}{subsection.13.2.6}%
+\contentsline {subsubsection}{Semi-convergence \etoile {2}}{187}{subsection.13.2.6}%
+\contentsline {subsubsection}{Une autre expression \etoile {2}}{188}{subsection.13.2.6}%
+\contentsline {subsubsection}{Premier calcul \etoile {2}}{188}{subsection.13.2.6}%
+\contentsline {subsubsection}{Second calcul \etoile {3}}{189}{Item.913}%
+\contentsline {subsection}{\numberline {XIII.2.7}Intégrale du reste de l'intégrale de Dirichlet \etoile {3}}{190}{subsection.13.2.7}%
+\contentsline {subsection}{\numberline {XIII.2.8}Intégrale d'Euler}{191}{subsection.13.2.8}%
+\contentsline {subsection}{\numberline {XIII.2.9}Fonction intégrale}{192}{subsection.13.2.9}%
+\contentsline {subsection}{\numberline {XIII.2.10}Intégrales de Bertrand}{193}{subsection.13.2.10}%
+\contentsline {subsection}{\numberline {XIII.2.11}Intégrabilité des cosinus de polynômes}{193}{subsection.13.2.11}%
+\contentsline {subsection}{\numberline {XIII.2.12}Nature d'une intégrale}{193}{subsection.13.2.12}%
+\contentsline {subsection}{\numberline {XIII.2.13}Divergence grossière}{193}{subsection.13.2.13}%
+\contentsline {subsection}{\numberline {XIII.2.14}Espace $l^2$ et dérivation}{193}{subsection.13.2.14}%
+\contentsline {subsection}{\numberline {XIII.2.15}Intégrale de Frullani}{193}{subsection.13.2.15}%
+\contentsline {subsection}{\numberline {XIII.2.16}Calcul d'une intégrale (1) \etoile {3}}{194}{subsection.13.2.16}%
+\contentsline {subsection}{\numberline {XIII.2.17}Calcul d'une intégrale (2) \etoile {2}}{194}{subsection.13.2.17}%
+\contentsline {subsection}{\numberline {XIII.2.18}Calcul d'une intégrale (3)}{195}{subsection.13.2.18}%
+\contentsline {subsection}{\numberline {XIII.2.19}Calcul d'une intégrale (4)}{195}{subsection.13.2.19}%
+\contentsline {subsection}{\numberline {XIII.2.20}Permutation Série-intégrale (1)}{195}{subsection.13.2.20}%
+\contentsline {subsection}{\numberline {XIII.2.21}Permutation Série-intégrale (2)}{195}{subsection.13.2.21}%
+\contentsline {subsection}{\numberline {XIII.2.22}Fonction d'écart Logarithmique intégral \etoile {2}}{195}{subsection.13.2.22}%
+\contentsline {subsection}{\numberline {XIII.2.23}Intégrale de Bernoulli}{196}{subsection.13.2.23}%
+\contentsline {subsection}{\numberline {XIII.2.24}Lemme de Riemann-Lebesgue : cas des fonctions $\EuScript {C}^1$ \etoile {1}}{196}{subsection.13.2.24}%
+\contentsline {subsection}{\numberline {XIII.2.25}Intégrale de Poisson (1) \etoile {2}}{196}{subsection.13.2.25}%
+\contentsline {subsection}{\numberline {XIII.2.26}Intégrale de Poisson (2) \etoile {3}}{197}{subsection.13.2.26}%
+\contentsline {subsection}{\numberline {XIII.2.27}Mines-Ponts MP 2024 (Chaïma Prime)}{199}{subsection.13.2.27}%
+\contentsline {subsection}{\numberline {XIII.2.28}Une suite d'intégrales (1)}{199}{subsection.13.2.28}%
+\contentsline {subsection}{\numberline {XIII.2.29}Une suite d'intégrales (2)}{199}{subsection.13.2.29}%
+\contentsline {subsection}{\numberline {XIII.2.30}Une suite d'intégrales (3)}{199}{subsection.13.2.30}%
+\contentsline {subsection}{\numberline {XIII.2.31}Nombre d'Apéry}{199}{subsection.13.2.31}%
+\contentsline {subsection}{\numberline {XIII.2.32}Comportement asymptotique (1)}{200}{subsection.13.2.32}%
+\contentsline {subsection}{\numberline {XIII.2.33}Comportement asymptotique (2)}{200}{subsection.13.2.33}%
+\contentsline {subsection}{\numberline {XIII.2.34}Théorème de d'Alembert-Gauss (1) \etoile {2}}{200}{subsection.13.2.34}%
+\contentsline {subsection}{\numberline {XIII.2.35}Fonction Gamma d'Euler}{201}{subsection.13.2.35}%
+\contentsline {subsubsection}{Point critique et limite en $+\infty $}{203}{Item.930}%
+\contentsline {subsubsection}{Valeur en les demi-entiers}{203}{Item.930}%
+\contentsline {subsubsection}{Théorème de Bohr-Mollerup \etoile {4}}{203}{Item.930}%
+\contentsline {subsubsection}{Formules de Gauss et Weierstrass}{204}{Item.930}%
+\contentsline {subsubsection}{Lien entre les gamma d'Euler}{204}{Item.930}%
+\contentsline {subsubsection}{Formule de duplication de Legendre}{204}{Item.930}%
+\contentsline {subsubsection}{Intégrale de Raabe}{204}{Item.930}%
+\contentsline {subsubsection}{Généralisation de la formule de Stirling}{204}{Item.930}%
+\contentsline {subsection}{\numberline {XIII.2.36}Fonction Beta d'Euler}{204}{subsection.13.2.36}%
+\contentsline {subsubsection}{Lien avec une intégrale d'Euler}{204}{subsection.13.2.36}%
+\contentsline {subsubsection}{Lien entre $\Gamma $ et B}{204}{subsection.13.2.36}%
+\contentsline {subsection}{\numberline {XIII.2.37}Inégalité intégrale-dérivée \etoile {1}}{204}{subsection.13.2.37}%
+\contentsline {subsection}{\numberline {XIII.2.38}Majoration de l'erreur dans la méthode des trapèzes}{204}{subsection.13.2.38}%
+\contentsline {subsection}{\numberline {XIII.2.39}Inégalité de Young \etoile {2}}{206}{subsection.13.2.39}%
+\contentsline {subsection}{\numberline {XIII.2.40}Transformée de Laplace}{207}{subsection.13.2.40}%
+\contentsline {subsection}{\numberline {XIII.2.41}Théorème des résidus (version faible)}{207}{subsection.13.2.41}%
+\contentsline {section}{\numberline {XIII.3}Correction Fonctions réelles}{208}{section.13.3}%
+\contentsline {subsection}{\numberline {XIII.3.1}Formule de Leibniz \etoile {1}}{208}{subsection.13.3.1}%
+\contentsline {subsection}{\numberline {XIII.3.2}Fonction discontinue en tout point \etoile {1}}{209}{subsection.13.3.2}%
+\contentsline {subsection}{\numberline {XIII.3.3}Fonction nulle part dérivable}{209}{subsection.13.3.3}%
+\contentsline {subsection}{\numberline {XIII.3.4}Theorème de Rolle}{209}{subsection.13.3.4}%
+\contentsline {subsection}{\numberline {XIII.3.5}Dérivée symétrique \etoile {1}}{209}{subsection.13.3.5}%
+\contentsline {subsection}{\numberline {XIII.3.6}Fonction de Pringsheim \etoile {2}}{210}{subsection.13.3.6}%
+\contentsline {subsection}{\numberline {XIII.3.7}$f\circ f=\operatorname {Id}_{\mathbb {R}_+}$ \etoile {2}}{210}{subsection.13.3.7}%
+\contentsline {subsection}{\numberline {XIII.3.8}Point fixe d'une fonction continue et décroissante sur $\mathbb {R}$ \etoile {1}}{210}{subsection.13.3.8}%
+\contentsline {subsection}{\numberline {XIII.3.9}Un théorème du point fixe (1) \etoile {1}}{210}{subsection.13.3.9}%
+\contentsline {subsection}{\numberline {XIII.3.10}Un théorème du point fixe (2) \etoile {2}}{211}{subsection.13.3.10}%
+\contentsline {subsection}{\numberline {XIII.3.11}Point fixe de $f\circ f$ \etoile {1}}{211}{subsection.13.3.11}%
+\contentsline {subsection}{\numberline {XIII.3.12}Point fixe de $f\circ g$ et $g\circ f$ \etoile {2}}{211}{subsection.13.3.12}%
+\contentsline {subsection}{\numberline {XIII.3.13}Racine carrée de cos \etoile {3}}{211}{subsection.13.3.13}%
+\contentsline {subsection}{\numberline {XIII.3.14}Trigonométrie \etoile {1}}{212}{subsection.13.3.14}%
+\contentsline {subsection}{\numberline {XIII.3.15}Règle de l'Hôpital}{214}{subsection.13.3.15}%
+\contentsline {subsection}{\numberline {XIII.3.16}Théorème de Darboux}{214}{subsection.13.3.16}%
+\contentsline {subsubsection}{Réciproque du TVI \etoile {1}}{214}{subsection.13.3.16}%
+\contentsline {subsubsection}{Fonction non primitivable \etoile {1}}{214}{subsection.13.3.16}%
+\contentsline {subsubsection}{Condition suffisante pour être de classe $\EuScript {C}^1$ \etoile {3}}{215}{subsection.13.3.16}%
+\contentsline {subsection}{\numberline {XIII.3.17}Dérivée et inverse confondu}{215}{subsection.13.3.17}%
+\contentsline {subsection}{\numberline {XIII.3.18}Fonction croissante et convexe sur $\mathbb {R}$ \etoile {1}}{215}{subsection.13.3.18}%
+\contentsline {subsection}{\numberline {XIII.3.19}Convexité des fonctions continues sur un intervalle \etoile {4}}{216}{subsection.13.3.19}%
+\contentsline {subsection}{\numberline {XIII.3.20}Convexe sur un ouvert $\DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Relbar \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}$ continue \etoile {3}}{216}{subsection.13.3.20}%
+\contentsline {subsection}{\numberline {XIII.3.21}Fonctions logarithmiquement convexes \etoile {3}}{217}{subsection.13.3.21}%
+\contentsline {subsection}{\numberline {XIII.3.22}Etude d'une fonction définie implicitement}{219}{subsection.13.3.22}%
+\contentsline {subsection}{\numberline {XIII.3.23}Inégalités de Kolmogorov \etoile {4}}{219}{subsection.13.3.23}%
+\contentsline {subsection}{\numberline {XIII.3.24}Lemme de Croft \etoile {2}}{221}{subsection.13.3.24}%
+\contentsline {subsection}{\numberline {XIII.3.25}Inégalité intégrale de Jensen \etoile {1}}{222}{subsection.13.3.25}%
+\contentsline {section}{\numberline {XIII.4}Correction Polynômes}{223}{section.13.4}%
+\contentsline {subsection}{\numberline {XIII.4.1}Théorème de d'Alembert-Gauss (2) \etoile {3}}{223}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {XIII.4.2}Bernoulli}{224}{subsection.13.4.2}%
+\contentsline {subsection}{\numberline {XIII.4.3}Lagrange \ccinp {1}}{224}{subsection.13.4.3}%
+\contentsline {subsection}{\numberline {XIII.4.4}Tchebychev}{224}{subsection.13.4.4}%
+\contentsline {subsubsection}{Angles rationnels dont le cosinus est rationnel}{224}{subsection.13.4.4}%
+\contentsline {subsubsection}{Triangle à angles rationnels sont tous les côtés ont un longueur rationnelle}{224}{subsection.13.4.4}%
+\contentsline {subsubsection}{Triangles dont les sommets sont à coordonnées rationnelles}{224}{subsection.13.4.4}%
+\contentsline {subsection}{\numberline {XIII.4.5}Hilbert}{224}{subsection.13.4.5}%
+\contentsline {subsection}{\numberline {XIII.4.6}Laguerre}{225}{subsection.13.4.6}%
+\contentsline {subsection}{\numberline {XIII.4.7}Legendre}{225}{subsection.13.4.7}%
+\contentsline {subsection}{\numberline {XIII.4.8}Hermite}{225}{subsection.13.4.8}%
+\contentsline {subsection}{\numberline {XIII.4.9}Bernstein}{225}{subsection.13.4.9}%
+\contentsline {subsection}{\numberline {XIII.4.10}Polynômes cyclotomiques}{225}{subsection.13.4.10}%
+\contentsline {subsection}{\numberline {XIII.4.11}Suite de polynômes définis par récurrence}{225}{subsection.13.4.11}%
+\contentsline {subsection}{\numberline {XIII.4.12}Equation polynomiale (1)}{225}{subsection.13.4.12}%
+\contentsline {subsection}{\numberline {XIII.4.13}Equation polynomiale (2)}{225}{subsection.13.4.13}%
+\contentsline {subsection}{\numberline {XIII.4.14}Equation polynomiale (3)}{225}{subsection.13.4.14}%
+\contentsline {subsection}{\numberline {XIII.4.15}Equation polynomiale (4)}{226}{subsection.13.4.15}%
+\contentsline {subsection}{\numberline {XIII.4.16}Equation polynomiale (5)}{226}{subsection.13.4.16}%
+\contentsline {subsection}{\numberline {XIII.4.17}Equation de Shapiro}{226}{subsection.13.4.17}%
+\contentsline {subsection}{\numberline {XIII.4.18}Degré d'une différence \telecom {1}}{226}{subsection.13.4.18}%
+\contentsline {subsection}{\numberline {XIII.4.19}Théorème de la racine rationnelle}{226}{subsection.13.4.19}%
+\contentsline {subsection}{\numberline {XIII.4.20}Critère d'Eisenstein \etoile {3}}{226}{subsection.13.4.20}%
+\contentsline {subsubsection}{Irréductibilité des polynômes cyclotomiques d'indices premiers \etoile {2}}{228}{Item.981}%
+\contentsline {subsubsection}{Dimension de $\mathbb {R}$ en tant que $\mathbb {Q}$-espace vectoriel \etoile {3}}{228}{Item.981}%
+\contentsline {subsection}{\numberline {XIII.4.21}Points critiques des polynômes de Hilbert \centraleponts {3}}{229}{subsection.13.4.21}%
+\contentsline {subsection}{\numberline {XIII.4.22}Zéros des polynômes de Taylor du sinus}{230}{subsection.13.4.22}%
+\contentsline {subsection}{\numberline {XIII.4.23}Polynôme de Taylor de l'exponentielle \ccinp {1}}{230}{subsection.13.4.23}%
+\contentsline {subsection}{\numberline {XIII.4.24}Les fonctions localement polynomiales sont polynomiales \centraleponts {2}}{230}{subsection.13.4.24}%
+\contentsline {subsection}{\numberline {XIII.4.25}Intégrales de polynômes \etoile {1}}{230}{subsection.13.4.25}%
+\contentsline {subsection}{\numberline {XIII.4.26}Théorème de Gauss-Lucas \etoile {2}}{230}{subsection.13.4.26}%
+\contentsline {subsubsection}{Une application \etoile {3}}{231}{Item.989}%
+\contentsline {subsection}{\numberline {XIII.4.27}Graphe d'un polynôme \telecom {2}}{233}{subsection.13.4.27}%
+\contentsline {subsection}{\numberline {XIII.4.28}Polynômes qui commutent avec cosinus \etoile {3}}{233}{subsection.13.4.28}%
+\contentsline {subsection}{\numberline {XIII.4.29}Relation trigonométrique polynomiale \etoile {3}}{234}{subsection.13.4.29}%
+\contentsline {subsection}{\numberline {XIII.4.30}Division euclidienne (1)}{235}{subsection.13.4.30}%
+\contentsline {subsection}{\numberline {XIII.4.31}Division euclidienne (2)}{235}{subsection.13.4.31}%
+\contentsline {subsection}{\numberline {XIII.4.32}Fonctions trigonométriques polynomiale ?}{235}{subsection.13.4.32}%
+\contentsline {subsection}{\numberline {XIII.4.33}Logarithme rationnel ? \telecom {2}}{236}{subsection.13.4.33}%
+\contentsline {subsection}{\numberline {XIII.4.34}Une fraction rationnelle}{237}{subsection.13.4.34}%
+\contentsline {subsection}{\numberline {XIII.4.35}Dérivé d'un polynôme scindé sur $\mathbb {R}$ \centraleponts {3}}{237}{subsection.13.4.35}%
+\contentsline {subsection}{\numberline {XIII.4.36}Une condition nécessaire pour qu'un polynôme soit scindé sur $\mathbb {R}$ \centraleponts {3}}{238}{subsection.13.4.36}%
+\contentsline {subsection}{\numberline {XIII.4.37}Une condition nécessaire pour qu'un polynôme soit dissocié sur $\mathbb {R}$ \telecom {2}}{239}{subsection.13.4.37}%
+\contentsline {subsection}{\numberline {XIII.4.38}Suite de polynômes scindés sur $\mathbb {R}$ \xens {3}}{239}{subsection.13.4.38}%
+\contentsline {subsection}{\numberline {XIII.4.39}Borne de Cauchy \telecom {2}}{240}{subsection.13.4.39}%
+\contentsline {subsection}{\numberline {XIII.4.40}Théorème d'Eneström-Kakeya \centraleponts {3}}{240}{subsection.13.4.40}%
+\contentsline {subsection}{\numberline {XIII.4.41}Perturbations de polynômes}{241}{subsection.13.4.41}%
+\contentsline {subsection}{\numberline {XIII.4.42}Polynômes à coefficients dans $\{-1,0,1\}$}{241}{subsection.13.4.42}%
+\contentsline {subsubsection}{Polynômes scindés}{241}{subsection.13.4.42}%
+\contentsline {subsubsection}{Ensemble des racines (1)}{241}{subsection.13.4.42}%
+\contentsline {subsubsection}{Ensemble des racines (2)}{241}{subsection.13.4.42}%
+\contentsline {subsection}{\numberline {XIII.4.43}Théorème de Bernstein}{241}{subsection.13.4.43}%
+\contentsline {subsection}{\numberline {XIII.4.44}Etude d'un polynôme défini implicitement}{242}{subsection.13.4.44}%
+\contentsline {subsection}{\numberline {XIII.4.45}P'|P \telecom {1}}{242}{subsection.13.4.45}%
+\contentsline {subsection}{\numberline {XIII.4.46}Polynôme positif (1) \centraleponts {3}}{243}{subsection.13.4.46}%
+\contentsline {subsection}{\numberline {XIII.4.47}Théorème de Pythagore polynomial \centraleponts {3}}{243}{subsection.13.4.47}%
+\contentsline {subsection}{\numberline {XIII.4.48}Polynômes à valeurs carrées}{244}{subsection.13.4.48}%
+\contentsline {subsection}{\numberline {XIII.4.49}Polynômes réciproques \ccinp {2}}{244}{subsection.13.4.49}%
+\contentsline {subsection}{\numberline {XIII.4.50}Polynômes surjectifs \etoile {5}}{245}{subsection.13.4.50}%
+\contentsline {subsection}{\numberline {XIII.4.51}Résultant et discriminant \ccinp {2}}{248}{subsection.13.4.51}%
+\contentsline {subsection}{\numberline {XIII.4.52}Théorème de Liouville : Fermat pour les polynômes \xens {4}}{249}{subsection.13.4.52}%
+\contentsline {section}{\numberline {XIII.5}Correction Espaces vectoriels normés}{252}{section.13.5}%
+\contentsline {subsection}{\numberline {XIII.5.1}Suite de Cauchy \etoile {2}}{252}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {XIII.5.2}Théorème de Fréchet-Von Neumann}{252}{subsection.13.5.2}%
+\contentsline {subsection}{\numberline {XIII.5.3}Une norme non euclidienne}{253}{subsection.13.5.3}%
+\contentsline {subsection}{\numberline {XIII.5.4}Norme invariante par similitude}{254}{subsection.13.5.4}%
+\contentsline {subsection}{\numberline {XIII.5.5}Equivalence des normes dans un espace vectoriel normé de dimension finie}{254}{subsection.13.5.5}%
+\contentsline {subsection}{\numberline {XIII.5.6}Normes non équivalentes}{254}{subsection.13.5.6}%
+\contentsline {subsection}{\numberline {XIII.5.7}Normes semblables à la norme uniforme sur $\mathbb {K}[X]$}{254}{subsection.13.5.7}%
+\contentsline {subsection}{\numberline {XIII.5.8}Comparaisons de deux normes sur $\mathbb {K}_n[X]$}{254}{subsection.13.5.8}%
+\contentsline {subsection}{\numberline {XIII.5.9}Comparaisons de normes usuelles sur $\EuScript {C}^0([a,b],\mathbb {K})$}{255}{subsection.13.5.9}%
+\contentsline {subsection}{\numberline {XIII.5.10}Normes $p$}{255}{subsection.13.5.10}%
+\contentsline {subsubsection}{Inégalité de Hölder et Minkowski}{255}{subsection.13.5.10}%
+\contentsline {subsubsection}{Equivalence des normes $p$ et $q$}{257}{Item.1047}%
+\contentsline {subsubsection}{Norme infinie}{258}{Item.1049}%
+\contentsline {subsection}{\numberline {XIII.5.11}Normes de Sobolev}{258}{subsection.13.5.11}%
+\contentsline {subsection}{\numberline {XIII.5.12}Norme duale}{258}{subsection.13.5.12}%
+\contentsline {subsection}{\numberline {XIII.5.13}Norme à partir d'une famille libre}{258}{subsection.13.5.13}%
+\contentsline {subsection}{\numberline {XIII.5.14}Quelques normes matricielles}{258}{subsection.13.5.14}%
+\contentsline {subsection}{\numberline {XIII.5.15}Caractérisation des sous-espaces de dimension finie de $\EuScript {C}^0([0,1],\mathbb {K})$}{258}{subsection.13.5.15}%
+\contentsline {subsection}{\numberline {XIII.5.16}Distance}{259}{subsection.13.5.16}%
+\contentsline {subsection}{\numberline {XIII.5.17}Distance à une partie}{260}{subsection.13.5.17}%
+\contentsline {subsection}{\numberline {XIII.5.18}Distance d'un élément à une partie (1)}{260}{subsection.13.5.18}%
+\contentsline {subsection}{\numberline {XIII.5.19}Distance d'un élément à une partie (2)}{260}{subsection.13.5.19}%
+\contentsline {subsection}{\numberline {XIII.5.20}Passage par les matrices orthogonales}{261}{subsection.13.5.20}%
+\contentsline {subsection}{\numberline {XIII.5.21}Diamètre d'une partie bornée}{262}{subsection.13.5.21}%
+\contentsline {subsection}{\numberline {XIII.5.22}Détermination d'une borne inférieure}{263}{subsection.13.5.22}%
+\contentsline {subsection}{\numberline {XIII.5.23}Normes usuelles sur $\EuScript {C}^1([0,1],\mathbb {K})$}{263}{subsection.13.5.23}%
+\contentsline {subsection}{\numberline {XIII.5.24}Intersection des boules unités subordonnées d'un espace vectoriel normé de dimension finie}{264}{subsection.13.5.24}%
+\contentsline {subsection}{\numberline {XIII.5.25}Modes de convergence}{264}{subsection.13.5.25}%
+\contentsline {subsection}{\numberline {XIII.5.26}Moyenne des itérés et projection sur l'espace des invariants d'une application linéaire contractante}{265}{subsection.13.5.26}%
+\contentsline {subsection}{\numberline {XIII.5.27}Matrice de projecteur}{265}{subsection.13.5.27}%
+\contentsline {subsection}{\numberline {XIII.5.28}Matrice de rotation}{265}{subsection.13.5.28}%
+\contentsline {subsection}{\numberline {XIII.5.29}Applications contractantes}{265}{subsection.13.5.29}%
+\contentsline {subsection}{\numberline {XIII.5.30}Une série vectorielle}{265}{subsection.13.5.30}%
+\contentsline {subsection}{\numberline {XIII.5.31}Polytopes réguliers d'un espace vectoriel euclidien}{265}{subsection.13.5.31}%
+\contentsline {section}{\numberline {XIII.6}Correction Suites et séries de fonctions}{266}{section.13.6}%
+\contentsline {subsection}{\numberline {XIII.6.1}Etude d'une suite de fonctions (1)}{266}{subsection.13.6.1}%
+\contentsline {subsection}{\numberline {XIII.6.2}Etude d'une suite de fonctions (2)}{266}{subsection.13.6.2}%
+\contentsline {subsection}{\numberline {XIII.6.3}Etude d'une suite de fonctions (3)}{267}{subsection.13.6.3}%
+\contentsline {subsection}{\numberline {XIII.6.4}Etude d'une suite de fonctions (4)}{268}{subsection.13.6.4}%
+\contentsline {subsection}{\numberline {XIII.6.5}Etude d'une suite de fonctions 5}{268}{subsection.13.6.5}%
+\contentsline {subsection}{\numberline {XIII.6.6}Etude d'une suite de fonctions 6}{268}{subsection.13.6.6}%
+\contentsline {subsection}{\numberline {XIII.6.7}Etude d'une suite de fonctions 7}{268}{subsection.13.6.7}%
+\contentsline {subsection}{\numberline {XIII.6.8}Développement de la cotangente}{269}{subsection.13.6.8}%
+\contentsline {subsection}{\numberline {XIII.6.9}Etude d'une fonction définie par une série alternée (1)}{269}{subsection.13.6.9}%
+\contentsline {subsection}{\numberline {XIII.6.10}Etude d'une fonction définie par une série alternée (2)}{269}{subsection.13.6.10}%
+\contentsline {subsection}{\numberline {XIII.6.11}Convergence vers une dérivée}{269}{subsection.13.6.11}%
+\contentsline {subsection}{\numberline {XIII.6.12}Limite ponctuelle et uniforme d'une suite de fonctions}{269}{subsection.13.6.12}%
+\contentsline {subsection}{\numberline {XIII.6.13}Convergence des suites de polynômes}{270}{subsection.13.6.13}%
+\contentsline {subsection}{\numberline {XIII.6.14}Un théorème de Weierstrass sur $\mathbb {R}$ ?}{270}{subsection.13.6.14}%
+\contentsline {subsection}{\numberline {XIII.6.15}Approximation paire}{270}{subsection.13.6.15}%
+\contentsline {subsection}{\numberline {XIII.6.16}Approximation croissante}{270}{subsection.13.6.16}%
+\contentsline {subsection}{\numberline {XIII.6.17}Interversion Série-Intégrale}{270}{subsection.13.6.17}%
+\contentsline {subsection}{\numberline {XIII.6.18}Série de fonction matricielle}{271}{subsection.13.6.18}%
+\contentsline {subsection}{\numberline {XIII.6.19}Fonction $\zeta $ de Riemann}{271}{subsection.13.6.19}%
+\contentsline {subsection}{\numberline {XIII.6.20}Expression de suites sous forme de séries}{271}{subsection.13.6.20}%
+\contentsline {subsection}{\numberline {XIII.6.21}Etude d'une série de fonctions}{271}{subsection.13.6.21}%
+\contentsline {subsection}{\numberline {XIII.6.22}Théorème de Dini \etoile {4}}{271}{subsection.13.6.22}%
+\contentsline {subsection}{\numberline {XIII.6.23}Suite de fonction lipschitzienne \etoile {3}}{272}{subsection.13.6.23}%
+\contentsline {subsection}{\numberline {XIII.6.24}Phénomène de Runge}{273}{subsection.13.6.24}%
+\contentsline {subsection}{\numberline {XIII.6.25}Théorème de Weierstrass}{273}{subsection.13.6.25}%
+\contentsline {subsection}{\numberline {XIII.6.26}Théorème de Chudnovsky \etoile {4}}{275}{subsection.13.6.26}%
+\contentsline {subsection}{\numberline {XIII.6.27}Théorème de sélection de Helly}{276}{subsection.13.6.27}%
+\contentsline {section}{\numberline {XIII.7}Correction Séries entières}{277}{section.13.7}%
+\contentsline {subsection}{\numberline {XIII.7.1}Lemme d'Abel}{277}{subsection.13.7.1}%
+\contentsline {subsection}{\numberline {XIII.7.2}Fonction non développable en série entière}{277}{subsection.13.7.2}%
+\contentsline {subsection}{\numberline {XIII.7.3}CCINP MP 2019}{278}{subsection.13.7.3}%
+\contentsline {subsection}{\numberline {XIII.7.4}Série entière de terme général binomial}{278}{subsection.13.7.4}%
+\contentsline {subsection}{\numberline {XIII.7.5}Formule de Cauchy}{278}{subsection.13.7.5}%
+\contentsline {subsection}{\numberline {XIII.7.6}Principe des zéros isolés}{278}{subsection.13.7.6}%
+\contentsline {subsection}{\numberline {XIII.7.7}Produit de Hadamard}{278}{subsection.13.7.7}%
+\contentsline {subsection}{\numberline {XIII.7.8}Théorème de Liouville}{278}{subsection.13.7.8}%
+\contentsline {subsection}{\numberline {XIII.7.9}Inverse d'une série entière}{279}{subsection.13.7.9}%
+\contentsline {subsection}{\numberline {XIII.7.10}Equivalent de séries entières}{279}{subsection.13.7.10}%
+\contentsline {subsection}{\numberline {XIII.7.11}Théorème de d'Alembert-Gauss}{279}{subsection.13.7.11}%
+\contentsline {subsection}{\numberline {XIII.7.12}Développement de fraction rationnelle autour de 0}{279}{subsection.13.7.12}%
+\contentsline {subsection}{\numberline {XIII.7.13}Fonction quasi-polynomiale}{279}{subsection.13.7.13}%
+\contentsline {subsubsection}{Série génératrice d'une fonction quasi-polynomiale}{279}{subsection.13.7.13}%
+\contentsline {subsubsection}{Partition d'un entier}{279}{subsection.13.7.13}%
+\contentsline {subsection}{\numberline {XIII.7.14}Théorème de réalisation de Borel}{279}{subsection.13.7.14}%
+\contentsline {subsection}{\numberline {XIII.7.15}Série de Lambert}{279}{subsection.13.7.15}%
+\contentsline {subsection}{\numberline {XIII.7.16}Somme de Goldbach}{279}{subsection.13.7.16}%
+\contentsline {subsection}{\numberline {XIII.7.17}Une somme avec l'indicatrice d'Euler}{280}{subsection.13.7.17}%
+\contentsline {subsection}{\numberline {XIII.7.18}Coefficients définies par des intégrales}{280}{subsection.13.7.18}%
+\contentsline {subsection}{\numberline {XIII.7.19}Détermination des coefficients d'un développement en série entière}{280}{subsection.13.7.19}%
+\contentsline {subsection}{\numberline {XIII.7.20}Série génératrice du nombre de points à coordonnées entières dans un quart de disque}{280}{subsection.13.7.20}%
+\contentsline {subsubsection}{Nombre de points à coordonnées entières dans un disque}{280}{subsection.13.7.20}%
+\contentsline {subsubsection}{Prolongement du problème}{280}{subsection.13.7.20}%
+\contentsline {subsection}{\numberline {XIII.7.21}Nombre d'involution}{280}{subsection.13.7.21}%
+\contentsline {subsection}{\numberline {XIII.7.22}Théorème d'Abel}{280}{subsection.13.7.22}%
+\contentsline {subsection}{\numberline {XIII.7.23}Théorèmes taubériens d'Abel}{280}{subsection.13.7.23}%
+\contentsline {subsubsection}{Cas des séries à coefficients positifs}{281}{subsection.13.7.23}%
+\contentsline {subsubsection}{Théorème taubérien faible}{281}{subsection.13.7.23}%
+\contentsline {subsubsection}{Théorème taubérien fort}{281}{subsection.13.7.23}%
+\contentsline {section}{\numberline {XIII.8}Correction Topologie}{282}{section.13.8}%
+\contentsline {subsection}{\numberline {XIII.8.1}Normes d'opérateur \ccinp {1}}{282}{subsection.13.8.1}%
+\contentsline {subsection}{\numberline {XIII.8.2}$\mathbb {Z}$ est fermé \etoile {1}}{283}{subsection.13.8.2}%
+\contentsline {subsection}{\numberline {XIII.8.3}Orthogonalité et topologie \ccinp {2}}{284}{subsection.13.8.3}%
+\contentsline {subsection}{\numberline {XIII.8.4}Ensemble des valeurs d'adhérence d'une suite \centraleponts {3}}{284}{subsection.13.8.4}%
+\contentsline {subsubsection}{Une application \etoile {4}}{285}{subsection.13.8.4}%
+\contentsline {subsection}{\numberline {XIII.8.5}Ensemble des suites convergente vers 0 \centraleponts {3}}{287}{subsection.13.8.5}%
+\contentsline {subsubsection}{Ensemble des suites convergentes \etoile {3} (HP)}{287}{subsection.13.8.5}%
+\contentsline {subsection}{\numberline {XIII.8.6}Calcul d'adhérence \xens {3}}{287}{subsection.13.8.6}%
+\contentsline {subsection}{\numberline {XIII.8.7}Partie ouverte et fermée simultanément \centraleponts {3}}{288}{subsection.13.8.7}%
+\contentsline {subsection}{\numberline {XIII.8.8}Opérations sur les adhérences/intérieurs}{289}{subsection.13.8.8}%
+\contentsline {subsection}{\numberline {XIII.8.9}Les sept espaces de Kuratowski \etoile {3}}{289}{subsection.13.8.9}%
+\contentsline {subsection}{\numberline {XIII.8.10}Intérieur d'un sous-espace \telecom {2}}{289}{subsection.13.8.10}%
+\contentsline {subsection}{\numberline {XIII.8.11}Adhérence d'un sous-espace \centraleponts {3}}{290}{subsection.13.8.11}%
+\contentsline {subsection}{\numberline {XIII.8.12}Graphe fermé \centraleponts {3}}{291}{subsection.13.8.12}%
+\contentsline {subsection}{\numberline {XIII.8.13}Application linéaire continue \telecom {2}}{292}{subsection.13.8.13}%
+\contentsline {subsection}{\numberline {XIII.8.14}Application linéaire non continue \centraleponts {2}}{292}{subsection.13.8.14}%
+\contentsline {subsection}{\numberline {XIII.8.15}Polynômes réels de degré $n$ scindés à racines simples sur $\mathbb {R}$ \xens {4}}{292}{subsection.13.8.15}%
+\contentsline {subsection}{\numberline {XIII.8.16}Lemme de Riemann-Lebesgue \centraleponts {3}}{294}{subsection.13.8.16}%
+\contentsline {subsection}{\numberline {XIII.8.17}Borel-Lebesgue (HP)}{295}{subsection.13.8.17}%
+\contentsline {subsection}{\numberline {XIII.8.18}Parties compactes d'un espace vectoriel normé de dimension finie \etoile {2}}{296}{subsection.13.8.18}%
+\contentsline {subsection}{\numberline {XIII.8.19}Somme de sous-espaces \centraleponts {3}}{297}{subsection.13.8.19}%
+\contentsline {subsection}{\numberline {XIII.8.20}Un théorème du point fixe \centraleponts {3}}{298}{subsection.13.8.20}%
+\contentsline {subsection}{\numberline {XIII.8.21}Théorème de Heine \etoile {2}}{298}{subsection.13.8.21}%
+\contentsline {subsection}{\numberline {XIII.8.22}Lemme des compacts emboîtés \telecom {1}}{299}{subsection.13.8.22}%
+\contentsline {subsection}{\numberline {XIII.8.23}Théorème de Baire \xens {5} (HP)}{299}{subsection.13.8.23}%
+\contentsline {subsubsection}{$\mathbb {R}$ n'est pas dénombrable \etoile {1} (HP)}{300}{Item.1121}%
+\contentsline {subsubsection}{Base d'un espace de Banach \etoile {3} (HP)}{301}{Item.1121}%
+\contentsline {subsubsection}{Densité des fonctions nulle part dérivables (2) \etoile {4} (HP)}{301}{Item.1121}%
+\contentsline {subsubsection}{Lemme de Croft \etoile {4} (HP)}{302}{Item.1125}%
+\contentsline {subsubsection}{Caractérisation des endomorphismes continus nilpotents dans un espace de Banach \etoile {3} (HP)}{303}{Item.1128}%
+\contentsline {subsubsection}{Caractérisation des polynômes réels \etoile {5} (HP)}{304}{Item.1130}%
+\contentsline {subsubsection}{Un raffinement \etoile {1} (HP)}{306}{Item.1149}%
+\contentsline {subsection}{\numberline {XIII.8.24}Volume d'une (hyper)boule \xens {4} (HP)}{306}{subsection.13.8.24}%
+\contentsline {subsection}{\numberline {XIII.8.25}Partie fermée bornée non compacte \centraleponts {3}}{308}{subsection.13.8.25}%
+\contentsline {subsection}{\numberline {XIII.8.26}Théorème de compacité de Riesz \centraleponts {4}}{308}{subsection.13.8.26}%
+\contentsline {subsection}{\numberline {XIII.8.27}Sphère et boule unité \centraleponts {3}}{309}{subsection.13.8.27}%
+\contentsline {subsection}{\numberline {XIII.8.28}Principe du maximum pour les polynômes \xens {3}}{310}{subsection.13.8.28}%
+\contentsline {subsection}{\numberline {XIII.8.29}Applications $1$-lipschitzienne surjective sur un compact \centraleponts {4}}{310}{subsection.13.8.29}%
+\contentsline {subsection}{\numberline {XIII.8.30}Une isométrie conserve les milieux \centraleponts {4}}{310}{subsection.13.8.30}%
+\contentsline {subsection}{\numberline {XIII.8.31}Fonctions coercives \centraleponts {3}}{310}{subsection.13.8.31}%
+\contentsline {subsection}{\numberline {XIII.8.32}Homéomorphisme de compacts \centraleponts {3}}{310}{subsection.13.8.32}%
+\contentsline {subsection}{\numberline {XIII.8.33}Distance à un fermé}{310}{subsection.13.8.33}%
+\contentsline {subsection}{\numberline {XIII.8.34}Diamètre et frontière}{310}{subsection.13.8.34}%
+\contentsline {subsection}{\numberline {XIII.8.35}Frontière \ccinp {2}}{310}{subsection.13.8.35}%
+\contentsline {subsection}{\numberline {XIII.8.36}Projeté sur un convexe compact \centraleponts {3}}{311}{subsection.13.8.36}%
+\contentsline {subsection}{\numberline {XIII.8.37}Convexité de l'adhérence et de l'intérieur \centraleponts {3}}{312}{subsection.13.8.37}%
+\contentsline {subsection}{\numberline {XIII.8.38}Fonctions positivement homogènes}{313}{subsection.13.8.38}%
+\contentsline {subsection}{\numberline {XIII.8.39}Enveloppe convexe}{313}{subsection.13.8.39}%
+\contentsline {subsection}{\numberline {XIII.8.40}Théorème de Carathéodory \centraleponts {3}}{313}{subsection.13.8.40}%
+\contentsline {subsubsection}{Enveloppe convexe d'une partie compacte \centraleponts {2}}{313}{subsection.13.8.40}%
+\contentsline {subsection}{\numberline {XIII.8.41}Théorème de Krein-Milman}{313}{subsection.13.8.41}%
+\contentsline {subsection}{\numberline {XIII.8.42}Epigraphe \ccinp {1}}{313}{subsection.13.8.42}%
+\contentsline {subsection}{\numberline {XIII.8.43}Partie convexe dense de $\mathbb {R}^n$ \xens {4}}{313}{subsection.13.8.43}%
+\contentsline {subsection}{\numberline {XIII.8.44}Partie convexe et ouverte de $\mathbb {R}^n$ \xens {4}}{316}{subsection.13.8.44}%
+\contentsline {subsection}{\numberline {XIII.8.45}Connexité de l'espace \etoile {2}}{318}{subsection.13.8.45}%
+\contentsline {subsection}{\numberline {XIII.8.46}Complémentaire d'un hyperplan \centraleponts {3}}{320}{subsection.13.8.46}%
+\contentsline {subsection}{\numberline {XIII.8.47}Composantes connexes par arcs du complémentaire de la réunion de plusieurs hyperplans \xens {5}}{320}{subsection.13.8.47}%
+\contentsline {subsection}{\numberline {XIII.8.48}Sphères d'un $\mathbb {R}$-espace vectoriel \centraleponts {3}}{322}{subsection.13.8.48}%
+\contentsline {subsection}{\numberline {XIII.8.49}Théorème du passage à la douane \centraleponts {3}}{323}{subsection.13.8.49}%
+\contentsline {subsection}{\numberline {XIII.8.50}Condition nécessaire de la connexité par arc \etoile {1}}{323}{subsection.13.8.50}%
+\contentsline {subsection}{\numberline {XIII.8.51}Entre un ensemble et son adhérence}{323}{subsection.13.8.51}%
+\contentsline {subsection}{\numberline {XIII.8.52}Continuité d'applications matricielles}{324}{subsection.13.8.52}%
+\contentsline {subsection}{\numberline {XIII.8.53}Points de continuité du polynôme minimal}{324}{subsection.13.8.53}%
+\contentsline {subsection}{\numberline {XIII.8.54}Exponentielle matricielle et topologie}{324}{subsection.13.8.54}%
+\contentsline {subsection}{\numberline {XIII.8.55}Lemme du déterminant}{324}{subsection.13.8.55}%
+\contentsline {subsection}{\numberline {XIII.8.56}Matrice de déterminant $1$ \etoile {3}}{324}{subsection.13.8.56}%
+\contentsline {subsection}{\numberline {XIII.8.57}Ensembles de matrices de rang fixé}{325}{subsection.13.8.57}%
+\contentsline {subsection}{\numberline {XIII.8.58}Densité des matrices inversibles \etoile {3}}{326}{subsection.13.8.58}%
+\contentsline {subsection}{\numberline {XIII.8.59}Comatrice et topologie}{327}{subsection.13.8.59}%
+\contentsline {subsection}{\numberline {XIII.8.60}Groupe orthogonal \etoile {1}}{327}{subsection.13.8.60}%
+\contentsline {subsection}{\numberline {XIII.8.61}Groupe (spécial) unitaire \etoile {3}}{328}{subsection.13.8.61}%
+\contentsline {subsection}{\numberline {XIII.8.62}Partie compacte et stable par produit de GL$_n(\mathbb {K})$ \etoile {3}}{330}{subsection.13.8.62}%
+\contentsline {subsection}{\numberline {XIII.8.63}Intérieur des matrices diagonalisable \etoile {5}}{331}{subsection.13.8.63}%
+\contentsline {subsection}{\numberline {XIII.8.64}Adhérence des matrices diagonalisables \etoile {3}}{332}{subsection.13.8.64}%
+\contentsline {subsection}{\numberline {XIII.8.65}Une preuve de Cayley-Hamilton (1) \etoile {2}}{333}{subsection.13.8.65}%
+\contentsline {subsection}{\numberline {XIII.8.66}Dimension du commutant d'une matrice}{334}{subsection.13.8.66}%
+\contentsline {subsection}{\numberline {XIII.8.67}Topologie et réduction}{334}{subsection.13.8.67}%
+\contentsline {subsection}{\numberline {XIII.8.68}Groupe spécial orthogonal et connexité}{334}{subsection.13.8.68}%
+\contentsline {subsection}{\numberline {XIII.8.69}Matrices inversibles et connexité}{334}{subsection.13.8.69}%
+\contentsline {subsection}{\numberline {XIII.8.70}Matrices nilpotentes et connexité}{335}{subsection.13.8.70}%
+\contentsline {subsection}{\numberline {XIII.8.71}Raffinement sur les disques de Gershgorin}{335}{subsection.13.8.71}%
+\contentsline {subsection}{\numberline {XIII.8.72}Matrices stochastiques et bistochastiques}{335}{subsection.13.8.72}%
+\contentsline {subsection}{\numberline {XIII.8.73}Théorème de Birkhoff-Von Neumann \etoile {4}}{335}{subsection.13.8.73}%
+\contentsline {subsubsection}{Points extrémaux des matrices bistochastiques}{337}{Item.1202}%
+\contentsline {subsubsection}{Points extrémaux des matrices orthogonales}{337}{Item.1202}%
+\contentsline {section}{\numberline {XIII.9}Correction Fonctions à valeurs vectorielles}{338}{section.13.9}%
+\contentsline {subsection}{\numberline {XIII.9.1}Point fixe de l'exponentielle complexe}{338}{subsection.13.9.1}%
+\contentsline {subsection}{\numberline {XIII.9.2}Théorème du relèvement}{338}{subsection.13.9.2}%
+\contentsline {subsection}{\numberline {XIII.9.3}Equation fonctionnelle de l'exponentielle matricielle \etoile {3}}{338}{subsection.13.9.3}%
+\contentsline {subsection}{\numberline {XIII.9.4}Formule de Trotter-Kato \etoile {2}}{339}{subsection.13.9.4}%
+\contentsline {subsection}{\numberline {XIII.9.5}Série entière de matrice \etoile {2}}{340}{subsection.13.9.5}%
+\contentsline {subsection}{\numberline {XIII.9.6}Expression d'un projecteur}{340}{subsection.13.9.6}%
+\contentsline {subsection}{\numberline {XIII.9.7}Une preuve analytique de Cayley-Hamilton}{340}{subsection.13.9.7}%
+\contentsline {subsection}{\numberline {XIII.9.8}Exemple de fonctions lipschitzienne}{341}{subsection.13.9.8}%
+\contentsline {subsection}{\numberline {XIII.9.9}Condition de continuité sur un espace vectoriel normé}{341}{subsection.13.9.9}%
+\contentsline {subsection}{\numberline {XIII.9.10}Application linéaire (2)}{341}{subsection.13.9.10}%
+\contentsline {subsection}{\numberline {XIII.9.11}Mouvement à force centrale}{341}{subsection.13.9.11}%
+\contentsline {subsection}{\numberline {XIII.9.12}Dérivée d'un produit de deux matrices}{341}{subsection.13.9.12}%
+\contentsline {subsection}{\numberline {XIII.9.13}Inégalité des accroissements finis pour un espace euclidien}{341}{subsection.13.9.13}%
+\contentsline {section}{\numberline {XIII.10}Correction Equations différentielles}{341}{section.13.10}%
+\contentsline {subsection}{\numberline {XIII.10.1}Equations différentielles du premier ordre}{341}{subsection.13.10.1}%
+\contentsline {subsection}{\numberline {XIII.10.2}Equations différentielles du second ordre}{341}{subsection.13.10.2}%
+\contentsline {subsection}{\numberline {XIII.10.3}Problèmes de raccordement}{342}{subsection.13.10.3}%
+\contentsline {subsection}{\numberline {XIII.10.4}Suite d'équations différentielles}{342}{subsection.13.10.4}%
+\contentsline {subsection}{\numberline {XIII.10.5}Equation de Bernoulli (1)}{342}{subsection.13.10.5}%
+\contentsline {subsection}{\numberline {XIII.10.6}Equation de Bernoulli (2)}{342}{subsection.13.10.6}%
+\contentsline {subsection}{\numberline {XIII.10.7}Etude asymptotique des solutions d'une équation différentielle \etoile {4}}{342}{subsection.13.10.7}%
+\contentsline {subsection}{\numberline {XIII.10.8}Inéquation différentielle}{343}{subsection.13.10.8}%
+\contentsline {subsection}{\numberline {XIII.10.9}Solution $2\pi $-périodique d'une équation différentielle}{343}{subsection.13.10.9}%
+\contentsline {subsection}{\numberline {XIII.10.10}Superposition de solutions}{343}{subsection.13.10.10}%
+\contentsline {subsection}{\numberline {XIII.10.11}Fonction de Bessel}{343}{subsection.13.10.11}%
+\contentsline {subsection}{\numberline {XIII.10.12}Développement de la cotangente (2)}{343}{subsection.13.10.12}%
+\contentsline {subsection}{\numberline {XIII.10.13}Wronskien}{343}{subsection.13.10.13}%
+\contentsline {subsection}{\numberline {XIII.10.14}Utilité du wronskien}{344}{subsection.13.10.14}%
+\contentsline {subsection}{\numberline {XIII.10.15}Principe d'entrelacement des zéros de Sturm}{344}{subsection.13.10.15}%
+\contentsline {subsection}{\numberline {XIII.10.16}Solution qui s'annule}{344}{subsection.13.10.16}%
+\contentsline {subsection}{\numberline {XIII.10.17}Solution qui s'annule une infinité de fois}{344}{subsection.13.10.17}%
+\contentsline {subsection}{\numberline {XIII.10.18}Lemme de Grönwall}{344}{subsection.13.10.18}%
+\contentsline {subsubsection}{Application du lemme de Grönwall}{344}{subsection.13.10.18}%
+\contentsline {subsection}{\numberline {XIII.10.19}Théorème de Floquet}{344}{subsection.13.10.19}%
+\contentsline {subsection}{\numberline {XIII.10.20}Méthode de Lagrange (1)}{344}{subsection.13.10.20}%
+\contentsline {subsection}{\numberline {XIII.10.21}Méthode de Lagrange (2)}{344}{subsection.13.10.21}%
+\contentsline {subsection}{\numberline {XIII.10.22}Equation différentielle matricielle non linéaire}{344}{subsection.13.10.22}%
+\contentsline {subsection}{\numberline {XIII.10.23}Système dynamique}{345}{subsection.13.10.23}%
+\contentsline {subsection}{\numberline {XIII.10.24}Solutions de norme constante \etoile {3}}{345}{subsection.13.10.24}%
+\contentsline {subsection}{\numberline {XIII.10.25}Exponentielles de matrices qui commutent \etoile {2}}{345}{subsection.13.10.25}%
+\contentsline {subsection}{\numberline {XIII.10.26}Lemme de Hochshild}{346}{subsection.13.10.26}%
+\contentsline {section}{\numberline {XIII.11}Correction Calcul différentiel}{347}{section.13.11}%
+\contentsline {subsection}{\numberline {XIII.11.1}Calcul de dérivées partielles}{347}{subsection.13.11.1}%
+\contentsline {subsection}{\numberline {XIII.11.2}Existence de dérivées partielles}{347}{subsection.13.11.2}%
+\contentsline {subsection}{\numberline {XIII.11.3}Etude d'une fonction}{347}{subsection.13.11.3}%
+\contentsline {subsection}{\numberline {XIII.11.4}Une équation fonctionnelle \etoile {2}}{347}{subsection.13.11.4}%
+\contentsline {subsection}{\numberline {XIII.11.5}Application linéaire}{348}{subsection.13.11.5}%
+\contentsline {subsection}{\numberline {XIII.11.6}Opérateurs vectoriels}{348}{subsection.13.11.6}%
+\contentsline {subsection}{\numberline {XIII.11.7}Laplacien en polaires}{348}{subsection.13.11.7}%
+\contentsline {subsection}{\numberline {XIII.11.8}Fonction harmonique}{348}{subsection.13.11.8}%
+\contentsline {subsection}{\numberline {XIII.11.9}Mines ponts MP 2016}{348}{subsection.13.11.9}%
+\contentsline {subsection}{\numberline {XIII.11.10}Différentielle de l'exponentielle matricielle}{348}{subsection.13.11.10}%
+\contentsline {subsection}{\numberline {XIII.11.11}Différentielle de la norme euclidienne}{349}{subsection.13.11.11}%
+\contentsline {subsection}{\numberline {XIII.11.12}Différentielle de l'inversion matricielle}{349}{subsection.13.11.12}%
+\contentsline {subsection}{\numberline {XIII.11.13}Gradient et différentielle du déterminant}{349}{subsection.13.11.13}%
+\contentsline {subsection}{\numberline {XIII.11.14}Espace tangent aux matrices orthogonales en l'identité}{349}{subsection.13.11.14}%
+\contentsline {subsection}{\numberline {XIII.11.15}Vecteur propre d'un endomorphisme auto-adjoint}{349}{subsection.13.11.15}%
+\contentsline {subsection}{\numberline {XIII.11.16}Quotient de Rayleigh}{349}{subsection.13.11.16}%
+\contentsline {subsection}{\numberline {XIII.11.17}Différentielle du déterminant}{350}{subsection.13.11.17}%
+\contentsline {subsection}{\numberline {XIII.11.18}Equation de d'Alembert}{350}{subsection.13.11.18}%
+\contentsline {subsection}{\numberline {XIII.11.19}Utilisation des extrémas liés (1)}{350}{subsection.13.11.19}%
+\contentsline {subsection}{\numberline {XIII.11.20}Utilisation des extrémas liés (2)}{350}{subsection.13.11.20}%
+\contentsline {subsection}{\numberline {XIII.11.21}Utilisation des extrémas liés (3)}{350}{subsection.13.11.21}%
+\contentsline {subsection}{\numberline {XIII.11.22}Sinus complexe}{350}{subsection.13.11.22}%
+\contentsline {subsection}{\numberline {XIII.11.23}Entropie}{350}{subsection.13.11.23}%
+\contentsline {subsection}{\numberline {XIII.11.24}Fonction convexe sur $\mathbb {R}^n$}{350}{subsection.13.11.24}%
+\contentsline {subsection}{\numberline {XIII.11.25}Chemin le plus court entre deux points}{350}{subsection.13.11.25}%
+\contentsline {subsection}{\numberline {XIII.11.26}Fonction homogène}{351}{subsection.13.11.26}%
+\contentsline {subsection}{\numberline {XIII.11.27}Problème de Dirichlet et principe du maximum}{351}{subsection.13.11.27}%
+\contentsline {subsection}{\numberline {XIII.11.28}La méthode des moindres carrés}{351}{subsection.13.11.28}%
+\contentsline {subsection}{\numberline {XIII.11.29}Equation de la chaleur}{351}{subsection.13.11.29}%
+\contentsline {section}{\numberline {XIII.12}Correction Divers}{352}{section.13.12}%
+\contentsline {subsection}{\numberline {XIII.12.1}Développement décimal propre d'un réel}{352}{subsection.13.12.1}%
+\contentsline {subsubsection}{Une caractéristique des rationnels}{352}{subsection.13.12.1}%
+\contentsline {subsection}{\numberline {XIII.12.2}Distribution du premier chiffre des puissances de 2}{352}{subsection.13.12.2}%
+\contentsline {subsection}{\numberline {XIII.12.3}Série de Engel}{352}{subsection.13.12.3}%
+\contentsline {subsection}{\numberline {XIII.12.4}Théorème de Müntz}{352}{subsection.13.12.4}%
