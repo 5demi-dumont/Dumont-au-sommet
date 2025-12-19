@@ -7553,7 +7553,9 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		\end{lstlisting}
 		On peut gagner du temps de calcul en gardant en mémoire les valeurs calculées (puisque les diviseurs d'un diviseur sont des diviseurs) :
 		\begin{lstlisting}
-			def auxiliaire(n,S):
+			def auxiliaire(n,S) :
+			 # S est la liste des images
+			 # de l'indicatrice d'Euler
 			 s=0
 			 for i in range(1,n) :
 			  if n%i==0 :
@@ -7564,32 +7566,17 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			    s+=S[i]
 			 S[n]=n-s
 			 return S
-			 #S est la liste des images
-			 #de l'indicatrice d'Euler
 			def ind_euler_bis(n) :
 			return auxiliaire(n,[0]*(n+1))[-1]
 		\end{lstlisting}
-		\item On partitionne $\Z/n\Z$ par les ensembles suivants : 
-		\[
-		H_d=\{x\in\Z/n\Z, o(x)=d\} \text{ pour }d\mid n
-		\]
-		D'après la question précédente, $|H_d|=\varphi(d)$.
-		Ces ensembles sont bien disjoints deux à deux et chaque élément de $\Z/n\Z$ appartient bien à un de ces ensembles d'après le théorème de Lagrange.\\
-		Ainsi : \[\Z/n\Z=\bigsqcup_{d\mid n}H_d\]
-		Donc par passage au cardinal : \[n=\sum_{d\mid n}\varphi(d)\]
-		\item On remarque ainsi que \[\varphi(n)=n-\sum_{d\mid n et d\ne n} \varphi(d)\]
-		\begin{lstlisting}
-			def ind_euler(n):
-			 L=[]
-			 s=0
-			  for i in range(1,n) : 
-			   if n%i==0:
-			    L.append(i)
-			  for d in L:
-			   s+= ind_euler(d)
-			return n-s
-				
-		\end{lstlisting}
+		Voici une comparaison du temps de calcul (en seconde) entre les deux pour les calculs des 10000 premières valeurs :
+		\begin{center}
+			\includegraphics[scale=0.8]{Comparaison indicatrice d'Euler.PNG}
+		\end{center}
+		Et avec la formule $\varphi(n)=n\displaystyle\prod_{\substack{p|n\\p\T{ premier}}}\left(1-\frac{1}{p}\right)$, en implémentant le crible d'Eratostène sur les 5000 premières valeurs :
+		\begin{center}
+			\includegraphics[scale=0.8]{Comparaison Crible d'Eratostène}
+		\end{center}
 	\end{enumerate}
 	
 	\subsection{Une minoration de l'indicatrice d'Euler}
