@@ -6104,20 +6104,20 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			\item Sinon tous les éléments de $G$ différents du neutre sont d'ordre $2$. D'après l'exercice V.3, $G$ est commutatif.\\
 		\end{itemize}
 		Finalement, aucun groupe d'ordre 4 n'est non commutatif.
-		l'entier recherché est 6. Il suffit de regarder le groupe symétriques $S_3$ qui n'est pas commutatif car $(12)(23)=(123)\ne(132)=(23)(12)$ par exemple.
-		
+		l'entier recherché est 6. Il suffit de regarder le groupe symétriques $S_3$ qui n'est pas commutatif car $(12)(23)=(123)\ne(132)=(23)(12)$ par exemple.	
 	\end{enumerate}
+	
 	\subsection{Sous-groupe d'un groupe cyclique \etoile{3}}
 	\textcolor{blue}{\hyperref[Sous-groupe d'un groupe cyclique]{[Enoncé]}}\\
 	\label{Sous-groupe d'un groupe cyclique corrigé}
 	Notons $e$ le neutre de $G$.
 	Posons $x$ un générateur de $G$ puis posons $y=x^{n/d}$.\\
-	Par définition $x$ est d'ordre $n$ donc $y^d=x^n=e$ et $\forall k\in \crblanc{1}{d-1},\ \displaystyle\frac{nk}{d}<n\implies y^k=x^{nk/d}\ne e$. Ainsi $y$ est d'ordre $d$ d'où $<y>$ est un sous-groupe (cyclique) de $G$ d'ordre $d$.\\
-	Soit $H$ un sous-groupe de $G$ d'ordre $d$. Fixons $z\in H$.\\
+	Par définition $x$ est d'ordre $n$ donc $y^d=x^n=e$ et $\forall k\in \crblanc{1}{d-1},\ \displaystyle\frac{nk}{d}<n\implies y^k=x^{nk/d}\ne e$. Ainsi $y$ est d'ordre $d$ d'où $\langle y\rangle$ est un sous-groupe (cyclique) de $G$ d'ordre $d$.\\
+	Maintenant, soit $H$ un sous-groupe de $G$ d'ordre $d$. Fixons $z\in H$.\\
 	Comme $z\in G,\ \exists k\in \crblanc{1}{n},\ z=x^k$.\\
 	De plus $z\in H$ donc $z^d=x^{kd}=e$. Alors d'après le théorème de Lagrange $n|kd$ c'est à dire $\displaystyle\frac{n}{d}|k$.\\
-	Ainsi $\exists q\in \Z,\ k=q\cdot\displaystyle\frac{n}{d}$. On a alors $z=x^{q\cdot n/d}=y^q$ : $z\in <y>$.\\
-	Finalement $H\subset <y>$ et comme $|H|=d=|<y>|,\ H=<y>$.
+	Ainsi $\exists q\in \Z,\ k=q\cdot\displaystyle\frac{n}{d}$. On a alors $z=x^{q\cdot n/d}=y^q$ : $z\in \langle y\rangle$.\\
+	Finalement $H\subset \langle y\rangle$ et comme $|H|=d=|\langle y\rangle|,\ H=\langle y\rangle$.
 	
 	\subsection{Exposant d'un groupe abélien fini \etoile{4}}
 	\label{Exposant d'un groupe abélien fini corrigé}
@@ -6188,10 +6188,10 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\subsection{Ordre dans $\Z/n\Z$ \etoile{2}}
 	\label{Ordre dans Z/nZ corrigé}
 	\textcolor{blue}{\hyperref[Ordre dans Z/nZ]{[Enoncé]}}\\
-	D'une part, $\displaystyle\frac{k}{k\land n}\in \N\implies\frac{n}{n\land k}\overline{k}=\frac{k}{n\land k}\overline{n}=\overline{0}$. Donc $d|\displaystyle\frac{n}{n\land k}$.\\\\
-	D'autre part, $\overline{dk}=d\overline{k}=\overline{0}$ donc $n|dk$.\\
-	Alors $\displaystyle\frac{n}{n\land k}|d\cdot\frac{k}{n\land k}$. Or $\pgcd\left(\displaystyle\frac{n}{n\land k},\frac{k}{n\land k}\right)=1$ donc d'après le lemme de Gauss, $\displaystyle\frac{n}{n\land k}|d$.\\
-	Ainsi comme $d\geq 0$ et $\displaystyle\frac{n}{n\land k}\geq 0,\ d=\frac{n}{n\land k}$.
+	D'une part, $\displaystyle\frac{k}{k\wedge n}\in \N\implies\frac{n}{n\wedge k}\overline k=\frac{k}{n\wedge k}\overline n=\overline 0$. Donc $d|\displaystyle\frac{n}{n\wedge k}$.\\\\
+	D'autre part, $\overline{dk}=d\overline k=\overline 0$ donc $n|dk$.\\
+	Alors $\displaystyle\frac{n}{n\wedge k}|d\cdot\frac{k}{n\wedge k}$. Or $\pgcd\left(\displaystyle\frac{n}{n\land k},\frac{k}{n\wedge k}\right)=1$ donc d'après le lemme de Gauss, $\dfrac{n}{n\wedge k}|d$.\\
+	Ainsi comme $d\geq 0$ et $\displaystyle\frac{n}{n\wedge k}\geq 0,\ d=\frac{n}{n\wedge k}$.
 	
 	\subsection{Passage par les groupes}
 	\label{Passage par les groupes corrigé}
