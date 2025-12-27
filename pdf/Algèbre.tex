@@ -2552,12 +2552,6 @@ Déterminer le nombre $a_n$ de manière de recouvrir un damier de dimension $2\t
 \textcolor{blue}{\hyperref[Matrices orthogonales à coefficients entiers corrigé]{[Corrigé]}}\\
 Quel est le cardinal de $\O_n(\R) \cap \M_n(\Z)$ ?
 
-\section{Nombre de carrés inférieur à un entier fixé \etoile{1}}
-\label{Nombre de carrés inférieur à un entier fixé}
-\textcolor{blue}{\hyperref[Nombre de carrés inférieur à un entier fixé corrigé]{[Corrigé]}}\\
-Pour tout $n\in \N$, on pose $A(n)$ l'ensemble des carrées d'entiers non nuls inférieur à $n$. 
-\\Déterminer le cardinal de $A(n)$.
-
 \section{Dérangement \centraleponts{3}}
 \label{Dérangement}
 \textcolor{blue}{\hyperref[Dérangement corrigé]{[Corrigé]}}\\
@@ -6110,20 +6104,20 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			\item Sinon tous les éléments de $G$ différents du neutre sont d'ordre $2$. D'après l'exercice V.3, $G$ est commutatif.\\
 		\end{itemize}
 		Finalement, aucun groupe d'ordre 4 n'est non commutatif.
-		l'entier recherché est 6. Il suffit de regarder le groupe symétriques $S_3$ qui n'est pas commutatif car $(12)(23)=(123)\ne(132)=(23)(12)$ par exemple.
-		
+		l'entier recherché est 6. Il suffit de regarder le groupe symétriques $S_3$ qui n'est pas commutatif car $(12)(23)=(123)\ne(132)=(23)(12)$ par exemple.	
 	\end{enumerate}
+	
 	\subsection{Sous-groupe d'un groupe cyclique \etoile{3}}
 	\textcolor{blue}{\hyperref[Sous-groupe d'un groupe cyclique]{[Enoncé]}}\\
 	\label{Sous-groupe d'un groupe cyclique corrigé}
 	Notons $e$ le neutre de $G$.
 	Posons $x$ un générateur de $G$ puis posons $y=x^{n/d}$.\\
-	Par définition $x$ est d'ordre $n$ donc $y^d=x^n=e$ et $\forall k\in \crblanc{1}{d-1},\ \displaystyle\frac{nk}{d}<n\implies y^k=x^{nk/d}\ne e$. Ainsi $y$ est d'ordre $d$ d'où $<y>$ est un sous-groupe (cyclique) de $G$ d'ordre $d$.\\
-	Soit $H$ un sous-groupe de $G$ d'ordre $d$. Fixons $z\in H$.\\
+	Par définition $x$ est d'ordre $n$ donc $y^d=x^n=e$ et $\forall k\in \crblanc{1}{d-1},\ \displaystyle\frac{nk}{d}<n\implies y^k=x^{nk/d}\ne e$. Ainsi $y$ est d'ordre $d$ d'où $\langle y\rangle$ est un sous-groupe (cyclique) de $G$ d'ordre $d$.\\
+	Maintenant, soit $H$ un sous-groupe de $G$ d'ordre $d$. Fixons $z\in H$.\\
 	Comme $z\in G,\ \exists k\in \crblanc{1}{n},\ z=x^k$.\\
 	De plus $z\in H$ donc $z^d=x^{kd}=e$. Alors d'après le théorème de Lagrange $n|kd$ c'est à dire $\displaystyle\frac{n}{d}|k$.\\
-	Ainsi $\exists q\in \Z,\ k=q\cdot\displaystyle\frac{n}{d}$. On a alors $z=x^{q\cdot n/d}=y^q$ : $z\in <y>$.\\
-	Finalement $H\subset <y>$ et comme $|H|=d=|<y>|,\ H=<y>$.
+	Ainsi $\exists q\in \Z,\ k=q\cdot\displaystyle\frac{n}{d}$. On a alors $z=x^{q\cdot n/d}=y^q$ : $z\in \langle y\rangle$.\\
+	Finalement $H\subset \langle y\rangle$ et comme $|H|=d=|\langle y\rangle|,\ H=\langle y\rangle$.
 	
 	\subsection{Exposant d'un groupe abélien fini \etoile{4}}
 	\label{Exposant d'un groupe abélien fini corrigé}
@@ -6194,10 +6188,10 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\subsection{Ordre dans $\Z/n\Z$ \etoile{2}}
 	\label{Ordre dans Z/nZ corrigé}
 	\textcolor{blue}{\hyperref[Ordre dans Z/nZ]{[Enoncé]}}\\
-	D'une part, $\displaystyle\frac{k}{k\land n}\in \N\implies\frac{n}{n\land k}\overline{k}=\frac{k}{n\land k}\overline{n}=\overline{0}$. Donc $d|\displaystyle\frac{n}{n\land k}$.\\\\
-	D'autre part, $\overline{dk}=d\overline{k}=\overline{0}$ donc $n|dk$.\\
-	Alors $\displaystyle\frac{n}{n\land k}|d\cdot\frac{k}{n\land k}$. Or $\pgcd\left(\displaystyle\frac{n}{n\land k},\frac{k}{n\land k}\right)=1$ donc d'après le lemme de Gauss, $\displaystyle\frac{n}{n\land k}|d$.\\
-	Ainsi comme $d\geq 0$ et $\displaystyle\frac{n}{n\land k}\geq 0,\ d=\frac{n}{n\land k}$.
+	D'une part, $\displaystyle\frac{k}{k\wedge n}\in \N\implies\frac{n}{n\wedge k}\overline k=\frac{k}{n\wedge k}\overline n=\overline 0$. Donc $d|\displaystyle\frac{n}{n\wedge k}$.\\\\
+	D'autre part, $\overline{dk}=d\overline k=\overline 0$ donc $n|dk$.\\
+	Alors $\displaystyle\frac{n}{n\wedge k}|d\cdot\frac{k}{n\wedge k}$. Or $\pgcd\left(\displaystyle\frac{n}{n\land k},\frac{k}{n\wedge k}\right)=1$ donc d'après le lemme de Gauss, $\dfrac{n}{n\wedge k}|d$.\\
+	Ainsi comme $d\geq 0$ et $\displaystyle\frac{n}{n\wedge k}\geq 0,\ d=\frac{n}{n\wedge k}$.
 	
 	\subsection{Passage par les groupes}
 	\label{Passage par les groupes corrigé}
@@ -7530,43 +7524,64 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		Ainsi, $P$ admet $\frac{p-1}{2}+1$ racines donc $p$ divise toutes les racines de $P$ ainsi d'après la question précédente pour tout $n\in\Z$, $p|P(n)$ ce qui est absurde car $p\not\mid P(0)=-\overline{1}$.\\
 		Ainsi, $\mathcal{C}=\{a\in\mathbb F_p^*,a^{\frac{p-1}{2}}=\overline{1}\}$.
 	\end{enumerate}
+	
 	\subsection{Indicatrice d'Euler}
 	\label{Indicatrice d'Euler corrigé}
-		\textcolor{blue}{\hyperref[Indicatrice d'Euler]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Indicatrice d'Euler]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Montrons que le seul sous-groupe d'ordre d de $\Z/n\Z$ est $\Z/d\Z$.\\
-		Il est clair que $\Z/d\Z$ est un sous-groupe de $\Z/n\Z$ car $d\mid n$.\\
-		Soit $H$ un sous-groupe d'ordre $d$ de $\Z/n\Z$.\\
-		Pour tout $x\in H, x^d=e$ d'après le théorème de Lagrange.\\
-		Donc $H\subset \Z/d\Z$.\\
-		Ainsi par égalité des cardinaux, $H=\Z/d\Z$.
-		Maintenant, il suffit d'énumérer les éléments d'ordre exactement $d$ qui les générateurs de $\Z/d\Z$.\\
-		On en déduit donc qu'il y a $\varphi(d)$ éléments d'ordre $d$ dans $\Z/n\Z$.
-		\item On partitionne $\Z/n\Z$ par les ensembles suivants : 
+		\item On montre que $\Z/n\Z$ possède un unique sous-groupe d'ordre $d$ et qu'il est cyclique (cf.\ref{Sous-groupe d'un groupe cyclique}). Notons $H$ ce sous-groupe et $x$ un générateur.\\
+		Si $y\in \Z/n\Z$ est d'ordre $d$ alors $\langle y\rangle$ est un sous-groupe de $\Z/n\Z$ d'ordre $d$. Donc $\langle y\rangle=H$ et en particulier $y\in H$.\\
+		On montre ensuite que pour $k\in \Z$ l'ordre de $kx$ est $\dfrac{d}{k\wedge d}$.\\
+		Ainsi les éléments de $\Z/n\Z$ d'ordre $d$ sont les $kx$ avec $1\leq k\leq d$ et $k\wedge d=1$, il y en a donc $\varphi(d)$.
+		\item On partitionne $\Z/n\Z$ par les ensembles suivants :
 		\[
-		H_d=\{x\in\Z/n\Z, o(x)=d\} \text{ pour }d\mid n
+		H_d=\{x\in\Z/n\Z,\ o(x)=d\} \text{ pour }d\mid n
 		\]
 		D'après la question précédente, $|H_d|=\varphi(d)$.
 		Ces ensembles sont bien disjoints deux à deux et chaque élément de $\Z/n\Z$ appartient bien à un de ces ensembles d'après le théorème de Lagrange.\\
 		Ainsi : \[\Z/n\Z=\bigsqcup_{d\mid n}H_d\]
 		Donc par passage au cardinal : \[n=\sum_{d\mid n}\varphi(d)\]
-		\item On remarque ainsi que \[\varphi(n)=n-\sum_{d\mid n et d\ne n} \varphi(d)\]
+		\item On remarque ainsi que \[\varphi(n)=n-\sum_{d\mid n\T{ et } d\ne n} \varphi(d)\]
+		La traduction directe de cela peut s'écrire :
 		\begin{lstlisting}
 			def ind_euler(n):
-			 L=[]
 			 s=0
-			  for i in range(1,n) : 
-			   if n%i==0:
-			    L.append(i)
-			  for d in L:
-			   s+= ind_euler(d)
-			return n-s
-				
+			 for i in range(1,n) : 
+			  if n%i==0:
+			   s+=ind_euler(i)
+			 return n-s
 		\end{lstlisting}
+		On peut gagner du temps de calcul en gardant en mémoire les valeurs calculées (puisque les diviseurs d'un diviseur sont des diviseurs) :
+		\begin{lstlisting}
+			def auxiliaire(n,S) :
+			 # S est la liste des images
+			 # de l'indicatrice d'Euler
+			 s=0
+			 for i in range(1,n) :
+			  if n%i==0 :
+			   if S[i]!=0 :
+			    s+=S[i]
+			   else :
+			    S[i]=auxiliaire(i,S)[i]
+			    s+=S[i]
+			 S[n]=n-s
+			 return S
+			def ind_euler_bis(n) :
+			return auxiliaire(n,[0]*(n+1))[-1]
+		\end{lstlisting}
+		Voici une comparaison du temps de calcul (en seconde) entre les deux pour les calculs des 10000 premières valeurs :
+		\begin{center}
+			\includegraphics[scale=0.8]{Comparaison indicatrice d'Euler.PNG}
+		\end{center}
+		Et avec la formule $\varphi(n)=n\displaystyle\prod_{\substack{p|n\\p\T{ premier}}}\left(1-\frac{1}{p}\right)$, en implémentant le crible d'Eratostène sur les 5000 premières valeurs :
+		\begin{center}
+			\includegraphics[scale=0.8]{Comparaison Crible d'Eratostène}
+		\end{center}
 	\end{enumerate}
+	
 	\subsection{Une minoration de l'indicatrice d'Euler}
 	\label{Une minoration de l'indicatrice d'Euler corrigé}
-		\textcolor{blue}{\hyperref[Une minoration de l'indicatrice d'Euler]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Une minoration de l'indicatrice d'Euler]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item 
 		Sans perte de généralités, supposons que les $n_i$ sont rangées dans l'ordre décroissant. Ainsi puisque les $(n_i)$ sont des entiers ont en déduit les inégalités suivantes: $$\forall i\in\crblanc{2}{k}\, ,\quad n_i\geq n_{1}+i-1$$
@@ -7580,6 +7595,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		\\De plus, $\displaystyle n\geq\prod_{i=1}^kp_i\geq2^k$ donc $\displaystyle 2n\geq2^{k+1}$ et donc $\displaystyle\ln(2n)\geq(k+1)\ln(2)$.
 		\\Par conséquent, $\displaystyle \varphi(n)\geq \frac{n\ln(2)}{\ln(2n)}$
 	\end{enumerate}
+	
 	\subsection{Théorème d'interversion de Möbius}
 	\label{Théorème d'interversion de Möbius corrigé}
 	\textcolor{blue}{\hyperref[Théorème d'intersersion de Möbius]{[Enoncé]}}\\
@@ -7597,51 +7613,54 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		\end{cases}\]
 		Soient $p_1,\dots,p_r$ les diviseurs premiers deux à deux distincts de l'entier $n$.
 		Par définition de $\mu$, les seuls diviseurs positifs qui de $n$ qui vont intervenir dans la somme sont ceux de la forme :\[p_I=p_{i_1}\dots p_{i_r}\]
-	 	où $I=\{i_1,\dots, i_r\}$ est une partie de $\crblanc{1}{r}$.
-	 	On a alors :\[\sum_{d|n}\mu(d)=\sum_{I}(-1)^{|I|}\]
-	 	Or pour tout $s\in\crblanc{0}{r}$, il y a $\binom{r}{s}$ parties $I$ de $\crblanc{1}{r}$ à $s$ éléments.\\
-	 	Ainsi, \[\sum_{d|n}\mu(d)=\sum_{s=0}^{r}\binom{r}{s}(-1)^s=(1-1)^r\]
-	 	Finalement, on en déduit bien que :
-	 	\[\sum_{d|n}\mu(d)=\begin{cases}
-	 		1 &\mbox{si }n=1\\
-	 		0&\mbox{si }n\geq 2
-	 	\end{cases}\]
-	 	\item Soit $n\in\N^*$ 
-	 	Remarquons l'équivalence suivante :
-	 	\[\forall d,d'\geq 1, \; d|n \text{ et } d'|\frac{n}{d} \Longleftrightarrow d'|n \text{ et } d|\frac{n}{d}\]
-	 	\begin{align*}
-	 		\sum_{d|n}\mu(d)F\!\left(\frac{n}{d}\right)
-	 		&= \sum_{d|n}\mu(d)\sum_{d'\mid\frac{n}{d}}f(d')\\
-	 		&= \sum_{d|n}\sum_{d'\mid\frac{n}{d}}\mu(d)f(d')\\
-	 		&= \sum_{d'\mid n}\sum_{d\mid\frac{n}{d'}}\mu(d)f(d') 
-	 		&& \text{(d'après l'équivalence précédente)}\\
-	 		&= \sum_{d'\mid n} f(d') \sum_{d\mid\frac{n}{d'}}\mu(d)
-	 	\end{align*}
-	 	D'après la question 2, \[\sum_{d|\frac{n}{d'}}\mu(d)\ne 0 \Longleftrightarrow d'=n\]
-	 	Par conséquent, on en déduit bien l'égalité souhaité : \[f(n)=\sum_{d|n}\mu(d)F(\frac{n}{d})\]
-	 	\item D'après l'exercice \ref{Indicatrice d'Euler}, on a : \[I(n)=n=\sum_{d|n}\varphi(d)\]
-	 	Ainsi d'après la formule d'inversion de Möbius, on a :
-	 	\[\varphi(n)=\sum_{d|n}\mu(d)\frac{n}{d}\]
-	 	i.e \[\varphi=\mu*I\]
+		où $I=\{i_1,\dots, i_r\}$ est une partie de $\crblanc{1}{r}$.
+		On a alors :\[\sum_{d|n}\mu(d)=\sum_{I}(-1)^{|I|}\]
+		Or pour tout $s\in\crblanc{0}{r}$, il y a $\displaystyle\binom{r}{s}$ parties $I$ de $\crblanc{1}{r}$ à $s$ éléments.\\
+		Ainsi, \[\sum_{d|n}\mu(d)=\sum_{s=0}^{r}\binom{r}{s}(-1)^s=(1-1)^r\]
+		Finalement, on en déduit bien que :
+		\[\sum_{d|n}\mu(d)=\begin{cases}
+			1 &\mbox{si }n=1\\
+			0&\mbox{si }n\geq 2
+		\end{cases}\]
+		\item Soit $n\in\N^*$ 
+		Remarquons l'équivalence suivante :
+		\[\forall d,d'\geq 1, \; d|n \text{ et } d'|\frac{n}{d} \Longleftrightarrow d'|n \text{ et } d|\frac{n}{d}\]
+		\begin{align*}
+			\sum_{d|n}\mu(d)F\!\left(\frac{n}{d}\right)
+			&= \sum_{d|n}\mu(d)\sum_{d'\mid\frac{n}{d}}f(d')\\
+			&= \sum_{d|n}\sum_{d'\mid\frac{n}{d}}\mu(d)f(d')\\
+			&= \sum_{d'\mid n}\sum_{d\mid\frac{n}{d'}}\mu(d)f(d') 
+			&& \text{(d'après l'équivalence précédente)}\\
+			&= \sum_{d'\mid n} f(d') \sum_{d\mid\frac{n}{d'}}\mu(d)
+		\end{align*}
+		D'après la question 2, \[\sum_{d|\frac{n}{d'}}\mu(d)\ne 0 \Longleftrightarrow d'=n\]
+		Par conséquent, on en déduit bien l'égalité souhaité : \[f(n)=\sum_{d|n}\mu(d)F(\frac{n}{d})\]
+		\item D'après l'exercice \ref{Indicatrice d'Euler}, on a : \[I(n)=n=\sum_{d|n}\varphi(d)\]
+		Ainsi d'après la formule d'inversion de Möbius, on a :
+		\[\varphi(n)=\sum_{d|n}\mu(d)\frac{n}{d}\]
+		i.e \[\varphi=\mu*I\]
 	\end{enumerate}
 	
 	
 	\subsection{Probabilité que deux entiers soient premiers entre eux}
 	\label{Probabilité que deux entiers soient premiers entre eux corrigé}
-		\textcolor{blue}{\hyperref[Probabilité que deux entiers soient premiers entre eux]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Probabilité que deux entiers soient premiers entre eux]{[Enoncé]}}\\
+	
 	\subsection{Limite d'une fonction arithmétique multiplicative}
 	\label{Limite d'une fonction arithmétique multiplicative corrigé}
 	\textcolor{blue}{\hyperref[Limite d'une fonction arithmétique multiplicative]{[Enoncé]}}\\
+	
 	\subsection{Fonctions arithmétiques réelles additives}
 	\label{Fonctions arithmétiques réelles additives corrigé}
 	\textcolor{blue}{\hyperref[Fonctions arithmétiques réelles addtives]{[Enoncé]}}\\
+	
 	\subsection{Une majoration de la somme des diviseurs d'un entier}
 	\label{Une majoration de la somme des diviseurs d'un entier corrigé}
-		\textcolor{blue}{\hyperref[Une majorattion de la somme des diviseurs d'un entier]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Une majorattion de la somme des diviseurs d'un entier]{[Enoncé]}}\\
 	
 	\subsection{Entiers algébriques}
 	\label{Entiers algébriques corrigé}
-		\textcolor{blue}{\hyperref[Entiers algébriques]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Entiers algébriques]{[Enoncé]}}\\
 	
 	\subsection{Majoration de la primorielle}
 	\label{Majoration de la primorielle corrigé}
@@ -7699,49 +7718,46 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 		\[
 		\prod_{\substack{p\ \text{premier}\\ p\le n}} p \le 4^{n}.
 		\]
-		
 	\end{enumerate}
 	
 	\subsection{Théorèmes de Mertens}
 	\label{Théorèmes de Mertens corrigé}
 	\textcolor{blue}{\hyperref[Théorème de Mertens]{[Enoncé]}}\\
+	
 	\subsection{Théorèmes de Tchebychev}
 	\label{Théorèmes de Tchebychev corrigé}
 	\textcolor{blue}{\hyperref[Théorèmes de Tchebychev]{[Enoncé]}}\\
+	
+	
 	\newpage
 \section{Correction Dénombrement}
 	\subsection{Identité de Vandermonde}
 	\label{Identité de Vandermonde corrigé}
 	\textcolor{blue}{\hyperref[Identité de Vandermonde]{[Enoncé]}}\\
+	
 	\subsection{Nombre de Fibonacci}
 	\label{Nombre de Fibonacci corrigé}
-	\textcolor{blue}{\hyperref[Nombre de Fibonacci]{[Enoncé]}}
+	\textcolor{blue}{\hyperref[Nombre de Fibonacci]{[Enoncé]}}\\
 
-	
 	\subsection{Matrices orthogonales à coefficients entiers}
 	\label{Matrices orthogonales à coefficients entiers corrigé}
-		\textcolor{blue}{\hyperref[Matrices orthogonales à coefficients entiers]{[Enoncé]}}\\
-	
-	\subsection{Nombre de carrés inférieur à un entier fixé \etoile{1}}
-	\label{Nombre de carrés inférieur à un entier fixé corrigé}
-		\textcolor{blue}{\hyperref[Nombre de carrés inférieur à un entier fixé]{[Enoncé]}}\\
-	Fixons $n\in \N$.\\
-	$\forall k\in \Z,\ k^2\in A(n)\iff 0<k^2\leq n\iff 0<|k|\leq\sqrt{n}\iff 0<|k|\leq\lfloor\sqrt{n}\rfloor$.\\
-	Donc $\Card(A(n))=\lfloor\sqrt{n}\rfloor$.
+	\textcolor{blue}{\hyperref[Matrices orthogonales à coefficients entiers]{[Enoncé]}}\\
 	
 	\subsection{Dérangement}
 	\label{Dérangement corrigé}
-		\textcolor{blue}{\hyperref[Dérangement]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Dérangement]{[Enoncé]}}\\
+	
 	\subsection{Dérangement partiel}
 	\label{Dérangement partiel corrigé}
 	\textcolor{blue}{\hyperref[Dérangement partiel]{[Enoncé]}}\\
+	
 	\subsection{Nombres de Bell}
 	\label{Nombres de Bell corrigé}
-		\textcolor{blue}{\hyperref[Nombres de Bell]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Nombres de Bell]{[Enoncé]}}\\
 	
 	\subsection{Nombres de Catalan}
 	\label{Nombres de Catalan corrigé}
-		\textcolor{blue}{\hyperref[Nombres de Catalan]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Nombres de Catalan]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Un mot bien parenthésé de longueur $2(n+1)$ est de la forme $(m)m'$ où $m$ est un mot de longueur $k$ et $m'$ est un mot de longueur $2(n-k)$ avec $k\in\crblanc{0}{n}$.\\
 		Ainsi pour $k\in\crblanc{0}{n}$, on a $C_kC_{n-k}$ choix possibles.\\
