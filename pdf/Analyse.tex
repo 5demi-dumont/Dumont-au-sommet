@@ -7245,13 +7245,47 @@ Alors, on a l'équivalence :
 		d'où \[\int_{|t|<\alpha}|f(x-t)-f(x)|\chi_n(t)dt<\frac{\varepsilon}{2}\int_{-\infty}^{+\infty}\chi_n(t)dt=\frac{\varepsilon}{2}\]
 		De plus, puisque $f$ est continue à valeurs dans un compact, elle est bornée d'après le théorème des bornes atteintes, ainsi il existe $M\in \R$ tel que :
 		\[\int_{|t|\geq\alpha}|f(x-t)-f(x)|\chi_n(t)dt\leq 2M\int_{|t|\geq\alpha}\chi_n(t)dt\]
-		Puisque $(\chi)$ est une séquence de Dirac, il existe $N\in\N$ tel que $\forall n\geq N$, 
+		Puisque $(\chi_n)$ est une séquence de Dirac, il existe $N\in\N$ tel que $\forall n\geq N$, 
 		\[\int_{|t|\geq\alpha}\chi_n(t)dt\leq \frac{\varepsilon}{4M}\]
 		Par conséquent, pour tout $n\geq N$, on a :
 		\[|(f*\chi_n)(x)-f(x)|\leq \frac{\varepsilon}{2}+2M\frac{\varepsilon}{4M}=\varepsilon\]
 		Donc : \[\normep{\infty}{(f*\chi_n)-f}\leq \varepsilon\]
 		Finalement, $(f*\chi_n)$ converge uniformément vers $f$ sur $\R$.
 		\end{enumerate}
+		\item\begin{enumerate}
+		 \item Il est clair que $(p_n)$ est une suite de fonctions positives.\\
+		Par définition, il a \[\int_{-\infty}^{+\infty}p_n(t)dt=1\]
+		Soit $\alpha>0$.\\
+		Si $\alpha\geq1$, on a \[\int_{|t|\geq\alpha}p_n(t)dt=0\]
+		Si $\alpha<1$, on a 
+			\[a_n=2\int_{0}^{1}(1-t^2)^ndt\geq2\int_{0}^{1}t(1-t^2)^ndt=\frac{1}{n+1}\]
+		Ainsi, \[\int_{|t|\geq\alpha}p_n(t)dt=\frac{2}{a_n}\int_{\alpha}{1}(1-t^2)^ndt\leq \frac{(1-\alpha^2)^n}{a_n}\leq2(n+1)(1-\alpha^2)^n\]
+		Par croissance comparée, 
+		\[\lim\limits_{n\to+\infty}\int_{|t|\geq\alpha}p_n(t)dt=0\]
+		Donc, $(p_n)$ est une séquence de Dirac.
+		\item Soit $n\in\N$ et soit $x\in\R$.\\
+		\[(f*p_n)(x)=(p_n*f)(x)=\int_{-\frac{1}{2}}^{\frac{1}{2}}p_(x-t)f(t)dt\]
+		Puisque $p_n$ est polynomiale, on peut réécrire $p_n(x-t)$ comme étant de la forme $\sum_{i=0}^{+\infty}q_i(t)x^i$.\\
+		Ainsi, 
+		\[(f*p_n)(x)=\sum_{i=0}^{+\infty}\int_{-\frac{1}{2}}^{\frac{1}{2}}q_i(t)f(t)dtx^i\]
+		(on peut bien intervertir somme et intégrale car la somme est finie.)\\
+		Par conséquent, $(f*p_n)$ est polynomiale.\\
+		On vient de montrer que $(f*p_n)$ est une suite de fonctions polynomiale qui tend uniformément vers $f$ sur $\R$.\\
+		\item Soit $f$ une fonction continue sur un segment $I=[a,b]$ de $\R$.\\
+		On prolonge $f$ sur $\R$ de telle sorte que en considérant $[c,d]$ tels que $[a,b]\subset [c,d]$ on puisse prolonger $f$ sur $[c,a]$ par une fonction affine telle que $f(c)=0$ et idem sur $[b,d]$ telle que $f(d)=0$ et que $f(x)=0$ en dehors du segment $[c,d]$.\\
+		Ce prolongement de $f$ appartient à $E$.\\
+		En procédant à un changement de variable affine, on se ramène à une fonction nulle en dehors de $[-\frac{1}{2},\frac{1}{2}]$, donc la fonction $f$ est alors limite uniforme de fonctions polynomiales sur $[c,d]$ d'après la question précédente, en particulier sur $[a,b]$.
+	\end{enumerate}
+	\item \begin{enumerate}
+	\item Par linéarité, on a pour tout $P\in\R[X]$ 
+	\[\int_{0}^{1}f(t)P(t)dt=0\]
+	D'après le théorème de Weierstrass, il existe $(P_n)$ une suite de fonctions polynômiales telle que $(P_n)$ converge uniformément vers $f$ sur $[0,1]$.\\
+	Donc pour tout $n\in\N$,
+	\[\int_{0}^{1}f(t)P_n(t)dt=0\]
+	Puisque la convergence est uniforme, on peut intervertir limite et intégrale donc 
+	\[\int_{0}^{1}f^2(t)dt=0\]	
+	Puisque $f^2$ est continue et positive sur $[0,1]$, $f^2\equiv 0$ et donc $f\equiv 0$.
+	\end{enumerate}
 	\end{enumerate}
 	
 	\subsection{Théorème de Chudnovsky \etoile{4}}\label{sec:theoreme-de-chudnovsky-etoile4}
