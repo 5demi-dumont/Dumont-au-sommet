@@ -200,14 +200,33 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	On note $E$ le sous-ensemble de $\C^\N$ composé des suites périodiques.\\
 	Montrer que $E$ est un espace vectoriel et en déterminer une base.
 	
-	\section{Dimension du commutant (1)}
-	\label{Dimension du commutant}
-	\textcolor{blue}{\hyperref[Dimension du commutant corrigé]{[Corrigé]}}\\
-	Soit $u$ un endomorphisme d'un $\C$-espace vectoriel $E$ de dimension finie.\\
-	On pose $\fonction{f_u}{\mathcal L(E)}{\mathcal L(E)}{v}{u\circ v-v\circ u}$ et on note $\mathcal C(u)=\{v\in \mathcal L(E),\ u\circ v=v\circ u\}$.\\
+	\section{Dimension du commutant (1) \centraleponts{3}}
+	\label{Dimension du commutant (1)}
+	\textcolor{blue}{\hyperref[Dimension du commutant (1) corrigé]{[Corrigé]}}\\
+	Soit $A\in \M_n(\C)$.\\
+	On pose $\fonction{f_A}{\M_n(\C)}{\M_n(\C)}{B}{AB-BA}$ et on note $\mathcal C(A)=\{B\in \M_n(\C),\ AB=BA\}$.\\
+	On cherche à montrer que la dimension de $\mathcal C(A)$ est minorée par $n$.
 	\begin{enumerate}
-		\item Montrer que $\mathcal C(u)$ est un sous-espace vectoriel de $\mathcal L(E)$.
-		\item Montrer que $\dim\mathcal C(u)\geq \dim E$.
+		\item Montrer que $f_A\in \L(\M_n(\C))$ et que $\mathcal C(A)$ est un sous-espace vectoriel de $\M_n(\C)$.
+		\item Montrer que l'on peut supposer $A$ triangulaire supérieure.\\
+		On le supposera dans la suite.
+		\item Montrer que $f_A$ induit un endomorphisme $\tilde f_A$ sur l'ensemble des matrices triangulaires supérieures.
+		\item En déduire que $\dim\mathcal C(A)\geq n$.
+	\end{enumerate}
+	
+	\section{Dimension du commutant (2) \centraleponts{4}}
+	\label{Dimension du commutant (2)}
+	\textcolor{blue}{\hyperref[Dimension du commutant (2) corrigé]{[Corrigé]}}\\
+	Soit $u$ un endomorphisme nilpotent d'un $\K$-espace vectoriel $E$ de dimension finie.\\
+	Pour $k\in \N^*$ on note $e_k(u)=\dim(\Ker(u^k))-\dim(\Ker(u^{k-1}))$.\\
+	On note aussi $\mathcal C(u)=\{v\in \L(E),\ u\circ v=v\circ u\}$.
+	\begin{enumerate}
+		\item Soit $v\in \mathcal C(u)$. Montrer que $v$ induit un endomorphisme $\tilde v$ sur l'image de $u$.
+		\item Soit $k\in \N$. Montrer que $\T{Im}(u)\cap\Ker(u^k)=u(\Ker(u^{k+1}))$ puis que $e_k(\tilde u)=e_{k+1}(u)$.
+		\item Montrer que
+		$$\fonction{\Phi}{\mathcal C(u)}{\mathcal C(\tilde u)}{v}{\tilde v}$$
+		est une application linéaire surjective.
+		\item En déduire que $\dim\mathcal C(u)=\displaystyle\sum_{k=1}^{+\infty}e_k(u)^2$.
 	\end{enumerate}
 	
 	\section{Etude de la comatrice \centraleponts{3}}
@@ -4166,15 +4185,56 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On sait que $\Ker(S-\omega_r^k\Id_{\C^n})=\{(u_n)\in \C^\N\ |\ \forall n\in \N,\ u_{n+1}=\omega_r^ku_n\}=\Vect\left((\omega_r^{kn})_{n\in \N}\right)$. On remarque enfin que $\forall (k,r,p)\in (\N^*)^3,\ (\omega_{pr}^{pkn})_{n\in \N}=(\omega_r^{kn})_{n\in \N}$ ce qui permet de se contenter des $(\omega_r^{kn})_{n\in \N}$ pour $r$ et $k$ premiers entre eux.\\
 	On a alors montré que $E=\Vect\left((\omega_r^{kn})_{n\in \N},\ r\wedge k=1\right)$. Cette famille est bien libre puisqu'elle est formée de vecteurs propres de $S$ associés à des valeurs propres différentes (ce qui est assuré par le fait que $k$ et $r$ sont pris premiers entre eux).
 	
-	\subsection{Dimension du commutant (1)}
-	\label{Dimension du commutant corrigé}
-	\textcolor{blue}{\hyperref[Dimension du commutant]{[Enoncé]}}\\
+	\subsection{Dimension du commutant (1) \centraleponts{3}}
+	\label{Dimension du commutant (1) corrigé}
+	\textcolor{blue}{\hyperref[Dimension du commutant (1)]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Soit $v,w\in \mathcal{L}(E)$ et $\lambda\in \C$.
-		\[f_u(v+\lambda w)=u\circ(v+\lambda w)-(v+\lambda w)\circ u=f_u(v)+\lambda f_u(w)\]
-		Donc $f_u$ est linéaire.\\
-		On remarque que $\mathcal{C}(u)$ est le noyau de $f_u$. Donc $\mathcal{C}(u)$ est un sous-espace vectoriel de $\mathcal{L}(E)$. 
-		\item 
+		\item Soient $B,C\in \M_n(\C)$ et soit $\lambda\in \C$.\\
+		$f_A(B+\lambda C)=A(B+\lambda C)-(B+\lambda C)A=AB-BA+\lambda(AC-CA)=f_A(B)+\lambda f_A(C)$.\\
+		On en déduit que $\mathcal C(A)=\Ker(f_A)$ est un sous-espace vectoriel de $\M_n(\C)$.
+		\item $A$ est trigonalisable dans $\M_n(\C)$ donc il existe $P\in \T{GL}_n(\C)$ et $T$ triangulaire supérieure telles que $A=PTP^{-1}$.\\
+		Alors $\forall B\in \M_n(\C),\ B\in \mathcal C(A)\iff AB=BA\iff PTP^{-1}B=BPTP^{-1}\iff TP^{-1}BP=P^{-1}BPT\iff P^{-1}BP\in \mathcal C(T)$.\\
+		Donc l'application $B\in \M_n(\C)\mapsto P^{-1}BP$ est un isomorphisme de $\mathcal C(A)$ sur $\mathcal C(T)$.\\
+		Par conséquent $\dim\mathcal C(A)=\dim\mathcal C(T)$.
+		\item On sait que le produit et la différence de deux matrices triangulaires supérieures est triangulaire supérieure. Ainsi $f_A$ stabilise le sous-espace des matrices triangulaires supérieures, il induit donc un endomorphisme sur celui-ci.
+		\item On applique le théorème du rang à $\tilde f_A$ : $\dim(\Ker(\tilde f_A))=\dfrac{n(n+1)}{2}-\rg(\tilde f_A)$.\\
+		Or on remarque que l'image de $\tilde f_A$ est incluse dans le sous-espace des matrices triangulaires supérieures à diagonale nulle (car les coefficients diagonaux d'un produit de deux matrices triangulaires sont les produits des coefficients diagonaux des matrices en jeux).\\
+		On obtient donc la majoration $\rg(\tilde f_A)\leq \dfrac{n(n+1)}{2}-n$.\\
+		Ainsi $\dim(\Ker(\tilde f_A))\geq n$. Enfin il est clair que $\Ker(\tilde f_A)\subset \Ker(f_A)=\mathcal C(A)$ d'où :
+		$$\dim\mathcal C(A)\geq \dim(\Ker(\tilde f_A))\geq n$$
+	\end{enumerate}
+	
+	\subsection{Dimension du commutant (2) \centraleponts{4}}
+	\label{Dimension du commutant (2) corrigé}
+	\textcolor{blue}{\hyperref[Dimension du commutant (2)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $y\in \T{Im}(u)$. Il existe $x\in E$ tel que $y=u(x)$. Donc $v(y)=v\circ u(x)=u(v(x))\in \T{Im}(u)$. Ainsi $v(\T{Im}(u))\subset \T{Im}(u)$ et $v$ induit un endomorphisme sur $\T{Im}(u)$.
+		\item Par double inclusion :\\
+		Soit $y\in \T{Im}(u)\cap\Ker(u^k)$. Il existe $x\in E$ tel que $y=u(x)$. De plus $0=u^k(y)=u^{k+1}(x)$ donc $x\in \Ker(u^{k+1})$ d'où $y\in u(\Ker(u^{k+1}))$.\\
+		Réciproquement, si $y\in u(\Ker(u^{k+1})$ alors il existe $x\in \Ker(u^{k+1})$ tel que $y=u(x)$. Donc $y\in \T{Im}(u)$ et $u^k(y)=u^{k+1}(x)=0$. Donc $y\in \T{Im}(u)\cap\Ker(u^k)$.\\
+		Pour avoir la deuxième égalité on remarque que $\T{Im}(u)\cap\Ker(u^k)=\Ker(\tilde u^k)$.\\
+		Puis par le théorème du rang, $\dim(u(\Ker(u^{k+1})))=\dim(\Ker(u^{k+1}))-\dim(\Ker(\overline u))$ avec $\overline u$ l'endomorphisme induit par $u$ sur $\Ker(u^{k+1})$. Or $\Ker(\overline u)=\Ker(u)\cap\Ker(u^{k+1})=\Ker(u)$.\\
+		On a alors $e_k(\tilde u)=\dim(\Ker(\tilde u^k))-\dim(\Ker(\tilde u^{k-1}))=\dim(u(\Ker(u^{k+1})))-\dim(u(\Ker(u^k)))=\dim(\Ker(u^{k+1}))-\dim(\Ker(u^k))=e_{k+1}(u)$.
+		\item Soit $v\in \mathcal C(u)$. $\tilde v$ commute avec $\tilde u$ en tant que restrictions de deux endomorphismes qui commutent. On montre aisément que $\mathcal C(u)$ est un sous-espace vectoriel de $\L(E)$ et que $\Phi$ linéaire.\\
+		Enfin, fixons $w\in \mathcal C(\tilde u)$. On définit $v\in \L(E)$ sur $\T{Im}(u)$ par $v(x)=w(x)$ et sur un supplémentaire $S$ de $\T{Im}(u)$ dans $E$, dont on note $(a_1,\dots,a_s)$ une base, par $v(a_i)=b_i$ où $b_i\in E$ tel que $u(b_i)=w(u(a_i))$ ($b_i$ existe car $w\in \L(\T{Im}(u))$).\\
+		On a alors $v(u(a_i))=w(u(a_i))=u(v(a_i))$ pour tout $1\leq i\leq s$ d'où $v\in \mathcal C(u)$ et $\Phi(v)=w$.
+		\item Tout d'abord remarquons que la somme est bien définie. $\forall k\in \N,\ \Ker(u^k)\subset \Ker(u^{k+1}\subset E$. La suite $(\dim(\Ker(u^k)))_{k\in \N}$ est donc une suite croissante et majorée d'entiers : elle stationne. Ainsi la suite $(e_k(u))_{k\in \N^*}$ stationne à $0$.\\
+		Par récurrence forte sur la dimension de $E$ :\\
+		$\dim(E)=0$ : $u=0$, $\Com(u)=\{0\}$ et $\forall k\in \N,\ \dim(\Ker(u^k))=0$.\\
+		Hérédité : Supposons le résultat vrai pour tout espace de dimension strictement inférieure à $\dim(E)$.\\
+		En appliquant le théorème du rang à $\Phi$ on a $\dim(\mathcal C(u))=\dim(\Ker \Phi)+\dim(\mathcal C(\tilde u))$. Or $\rg(u)<\dim(E)$ donc par hypothèse de récurrence, $\dim(\mathcal C(\tilde u))=\displaystyle\sum_{k=1}^{+\infty}e_k(\tilde u)^2$. Puis par la question 2, $\dim(\mathcal C(\tilde u))=\displaystyle\sum_{k=2}^{+\infty}e_k(u)^2$.\\
+		Il faut donc montrer que $\Ker\Phi$ est dimension $e_1^2=\dim(\Ker(u))^2$.\\
+		Le noyau de $\Phi$ est inclus dans l'ensemble des endomorphisme de $E$ qui sont nul sur l'image de $u$. Cet espace est isomorphe à $\L(S,E)$. Au vu de la dimension que l'on veut, comme le théorème du rang donne $\dim(S)=\dim(\Ker(u))$, on peut essayer de montrer que $\Ker\Phi$ est isomorphe à $\L(S,\Ker(u))$.\\
+		Posons $\fonction{f}{\Ker\Phi}{\L(S,\Ker(u))}{v}{\overline v}$ où $\overline v=v_{|S}^{|\Ker(u)}$. Vérifions que $f$ est un isomorphisme.\\
+		Soit $v\in \Ker\Phi$. $v$ commute avec $u$ et est nul sur $\T{Im}(u)$ donc $\forall x\in S,\ u(v(x))=v(u(x))=0$. Ainsi $\overline v\in \L(S,\Ker(u))$. $f$ est clairement linéaire.\\
+		$f$ est injectif car pour tout $v\in \Ker\Phi$, $v$ est nul sur $S$ et sur $\T{Im}(u)$ et par suite sur $E$.\\
+		Enfin $f$ est surjectif : si $w\in \L(S,\Ker(u))$ alors on pose $v\in \L(E)$ définit comme étant nul sur l'image de $u$ et égal à $w$ sur $S$. On a alors
+		\begin{itemize}
+			\item $\forall x\in \T{Im}(u),\ u\circ v(x)=u(0)=0=v\circ u(x)$;
+			\item $\forall x\in S,\ u\circ v(x)=u\circ w(x)=0=v\circ u(x)$.
+		\end{itemize}
+		Par conséquent $\dim(\Ker\Phi)=\dim(S)\dim(\Ker(u))=e_1^2$ et puis :
+		$$\dim\mathcal C(u)=\sum_{k=1}^{+\infty}e_k(u)^2$$
 	\end{enumerate}
 	
 	\subsection{Etude de la comatrice \etoile{3}}
