@@ -116,8 +116,8 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Extension de corps corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Donner un exemple de sous-espace vectoriel réel d'un $\C$-espace vectoriel qui n'est pas un $\C$-espace vectoriel.
-		\item Soit $V$ un $\C$-espace vectoriel de dimension $p$.\\
-		Démontrer que $V$ est un $\R$-espace vectoriel de dimension $2p$.
+		\item Soit $V$ un $\C$-espace vectoriel de dimension $n$.\\
+		Démontrer que $V$ est un $\R$-espace vectoriel de dimension $2n$.
 		\item On considère un corps commutatif $(\mathbb M,+,\times)$ et $\K\subset\mathbb L$ deux sous-corps de $\mathbb M$. \\
 		Démontrer l'équivalence des deux assertions :
 		\begin{enumerate}[label=(\roman*)]
@@ -127,7 +127,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		Montrer que dans ces conditions $m=kp$. (relation de multiplicativité des degrés)
 	\end{enumerate}
 	
-	\section{Passage du complexe au réel}
+	\section{Passage du complexe au réel \etoile{2}}
 	\label{Passage du complexe au réel}
 	\textcolor{blue}{\hyperref[Passage du complexe au réel corrigé]{[Corrigé]}}\\
 	Soient $V$ un $\C$-espace vectoriel de dimension $n$ et $v\in \mathcal L(V)$. On note $W$ l'espace $V$ munit de sa structure naturelle de $\R$-espace vectoriel de dimension $2n$ et on note $u\in \mathcal L(W)$ l'endomorphisme de $W$ défini comme étant égal à $v$.\\
@@ -142,20 +142,19 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item Quelle est la dimension de $\R$ en tant que $\Q$-espace vectoriel ?
 	\end{enumerate}
 	
-	\section{Indépendance des fonctions}
-	\label{Indépendance des fonctions}
-	\textcolor{blue}{\hyperref[Indépendance des fonctions corrigé]{[Corrigé]}}\\ 
-	
+	\section{Fonctions indépendantes \xens{3}}
+	\label{Fonctions indépendantes}
+	\textcolor{blue}{\hyperref[Fonctions indépendantes corrigé]{[Corrigé]}}\\
 	Soient $X$ un ensemble et $(f_1,\dots,f_n)$ une famille libre de $\C^X$.\\
-	 Montrer qu'il existe $x_1,\dots,x_n\in X$ tels que ma matrice $(f_i(x_j))_{1\leq i,j\leq n}$ soit inversible.
+	Montrer qu'il existe $x_1,\dots,x_n\in X$ tels que la matrice $(f_i(x_j))_{1\leq i,j\leq n}$ soit inversible.
 	
-	\section{L'ordre a son importance}
+	\section{L'ordre a son importance \telecom{2}}
 	\label{L'ordre a son importance}
 	\textcolor{blue}{\hyperref[L'ordre a son importance corrigé]{[Corrigé]}}\\
-	Soit $M\in \M_n(\R)$.\\ Montrer l'équivalence entre les affirmations:
+	Soit $M\in \M_n(\R)$.\\ Montrer l'équivalence entre les affirmations :
 	\begin{itemize}
 		\item $\forall A,B\in\M_n(\R), \,\Tr(MAB)=\Tr(MBA)$
-		\item $M$ est une homothétie.
+		\item $M$ est une matrice d'homothétie.
 	\end{itemize}
 	
 	\section{Isomorphisme de $\M_n(\K)$ qui respecte les matrices de rang 1}
@@ -4100,9 +4099,15 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On montre comme précédemment que $\F$ est une famille libre et finalement $\mathbb M=\Vect_\K(\F)$ est un $\K$-espace vectoriel de dimension $kp$.
 	\end{enumerate}
 	
-\subsection{Passage du complexe au réel}	
+\subsection{Passage du complexe au réel \etoile{2}}
 	\textcolor{blue}{\hyperref[Passage du complexe au réel]{[Enoncé]}}\\
 	\label{Passage du complexe au réel corrigé}
+	$\chi_v\in \C[X]$ est scindé donc $v$ est trigonalisable dans une certaine base $\B=(a_1,\dots,a_n)$ de $V$. On note $\Mat_\B(v)=(z_{ij})_{1\leq i,j\leq n}\in \M_n(\C)$. Pour tout $i,j\in \crblanc{1}{n}$ on note $z_{ij}=x_{ij}+iy_{ij}$ avec $x_{ij},y_{ij}\in \R$. On montre (cf.[exo d'avant]) que $\tilde\B=(a_1,\dots,a_n,b_1,\dots,b_n)$, où $b_k=ia_k$, est une base de $W$.\\
+	Alors $\M_{\tilde B}(u)$ est triangulaire par blocs, avec pour blocs diagonaux $R_k:=\begin{pmatrix}
+		x_{kk}&-y_{kk}\\
+		y_{kk}&x_{kk}
+	\end{pmatrix}$.\\
+	Ainsi $\det(u)=\displaystyle\prod_{k=1}^n\det(R_k)=\prod_{k=1}^n(x_k^2+y_k^2)=\prod_{k=1}^n|z_k|^2=|\det(v)|^2$.
 	
 \subsection{Dimension de $\R$ en tant que $\Q$-espace vectoriel \etoile{2}}
 \label{Dimenseion de R en tant que Q espace vectoriel corrigé}
@@ -4118,12 +4123,21 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\item On sait qu'il existe une infinité de nombres premiers donc $\R$ n'admet pas de famille $\Q$-libre maximale : $\R$ est un $\Q$-espace vectoriel de dimension infinie.
 	\end{enumerate}
 	
-	\subsection{Indépendance des fonctions}
-	\label{Indépendance des fonctions corrigé}
-	\textcolor{blue}{\hyperref[Indépendance des fonctions]{[Enoncé]}}\\
+	\subsection{Fonctions indépendantes \xens{3}}
+	\label{Fonctions indépendantes corrigé}
+	\textcolor{blue}{\hyperref[Fonctions indépendantes]{[Enoncé]}}\\
+	On construit $x_1,\dots,x_n$ par récurrence.\\
+	$f_1$ n'est pas nulle donc il existe $x_1$ tel que $f_1(x_1)\ne 0$. La matrice $(f_1(x_1))\in \M_1(\C)$ est inversible.\\
+	Supposons disposer de $x_1,\dots,x_{k-1}\in X$ tels que la matrice $(f_i(x_j))_{1\leq i,j\leq k-1}$ soit inversible (on note $\Lambda$ son déterminant). Supposons que quel que soit $x_k\in X$ la matrice $M:=(f_i(x_j))_{1\leq i,j\leq k}$ n'est pas inversible.\\
+	Alors en développant le déterminant par rapport à la dernière colonne on a :
+	$$\det(M)=\Lambda f_k(x_k)+\sum_{i=1}^k(-1)^{i+k}\Delta_{ik}f_i(x_k)=0$$
+	où $\Delta_{ij}$ est le mineur de $M$ correspondant au coefficient $f_i(x_j)$.\\
+	Par hypothèse $\Lambda$ est non nul donc $f_k(x_k)=\displaystyle\sum_{i=1}^k\frac{(-1)^{i+k}\Delta_{ik}}{\Lambda}f_i(x_k)$.\\
+	Ceci étant vrai pour tout $x_k\in X,\ f_k=\displaystyle\sum_{i=1}^k\frac{(-1)^{i+k}\Delta_{ik}}{\Lambda}f_i$.\\
+	Cela contredit la liberté de $(f_1,\dots,f_k)$ donc il existe $x_k\in X$ tel que $M$ est inversible.\\
+	Par récurrence, il existe $x_1,\dots,x_n\in X$ tel que la matrice $(f_i(x_j))_{1\leq i,j\leq n}$ soit inversible.
 	
-	
-	\subsection{L'ordre a son importance}
+	\subsection{L'ordre a son importance \telecom{2}}
 	\label{L'ordre a son importance corrigé}
 	\textcolor{blue}{\hyperref[L'ordre a son importance]{[Enoncé]}}\\
 	Il est clair que si $M$ est une homothétie alors \[\forall A,B\in \M_n(\R), \Tr(MAB)= \Tr(MBA)\]
