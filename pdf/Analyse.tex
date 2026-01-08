@@ -292,15 +292,26 @@
 	
 	Soit $(a_n)_{n\in \N}$ une suite positive et décroissante telle que $\displaystyle\sum\limits_{n\in \N} a_n$ converge. \\Montrer que $(na_n)_{n\in \N}$ converge vers 0.
 	
-	\section{Lemme de Fekete \etoile{3}}
+	\section{Lemme de Fekete \centraleponts{3}}
 	\label{Lemme de Fekete}
 	\textcolor{blue}{\hyperref[sec:lemme-de-fekete]{[Corrigé]}}\\
+	Soit $(u_n)_{n\in \N}$ une suite réelle vérifiant
+	$$\forall m,n\in \N,\ u_{n+m}\leq u_n+u_m$$
+	\textit{On dit que la suite est sous-additive.}\\
+	On veut montrer que la suite $\left(\dfrac{u_n}{n}\right)_{n\in \N^*}$ tend vers $\ell:=\inf\limits_{n\in \N^*}\dfrac{u_n}{n}$.
 	\begin{enumerate}
-		\item Soit $(u_n)\in \R^\N$ telle que $\forall m,n\in \N^*,\ u_{n+m}\leq u_n+u_m$. \textit{On dit qu'une telle suite est sous-additive. }
-		\\Montrer que si $\displaystyle\left(\frac{u_n}{n}\right)$ est minorée alors elle converge vers $\displaystyle\ell=\inf\limits_{n\in\N^*} \frac{u_n}{n}$
-		\item Soit $(v_n)\in\R_+^\N$ telle que $\forall n,m\in\N^*$, $v_{n+m}\leq v_n\times v_m$. \textit{On dit qu'une telle suite est sous multiplicative.}
-		\\ Montrer que si $\displaystyle(v_n^\frac{1}{n})$ est minorée alors elle converge vers $\displaystyle\ell=\inf\limits_{n\in\N^*} v_n^\frac{1}{n}$
+		\item Soient $n\leq N$ des entiers positifs. On note $n=qN+r$ la division euclidienne de $n$ par $N$.\\
+		Montrer que $u_n\leq qu_N+\max\limits_{0\leq k<N}u_k$.
+		\item Conclure en distinguant les cas $\left(\dfrac{u_n}{n}\right)_{n\in \N^*}$ minorée ou non.
 	\end{enumerate}
+	
+	\subsection{Chemins auto-évitant}
+	\textcolor{blue}{\hyperref[Chemins auto-évitant corrigé]{[Corrigé]}}\\
+	\label{Chemins auto-évitant}
+	On considère le réseau carré $\Z^2$ : les voisins du point $(i,j)$ sont exactement $(i-1,j),\ (i+1,j),\ (i,j-1)$ et $(i,j+1)$.\\
+	On appelle chemin de longueur $n$ tout $n$-uplet $(M_1,\dots,M_n)$ de points de $\Z^2$ où $M_1=(0,0)$ (les chemins partent de l'origine) et où pour tout $i$, $M_{i+1}$ est un voisin de $M_i$.\\
+	Enfin on dit qu'un chemin $(M_1,\dots,M_n)$ est auto-évitant si les $M_i$ sont distincts. On note $c_n$ le nombre de chemins auto-évitant de longueurs $n$.\\\\
+	Montrer que la suite $(c_n)_{n\in \N^*}$ converge vers $\mu:=\inf\limits_{n\in \N^*}c_n^{1/n}$.
 	
 	\section{Théorème de Bolzano-Weierstrass \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-bolzano-weierstrass-etoile3]{[Corrigé]}}\\
@@ -317,8 +328,6 @@
 	On dit qu'une suite $(u_n)\in \R^\N$ est de Cauchy lorsqu'elle vérifie :
 	$$\forall \varepsilon>0,\ \exists N\in \N,\ \forall p,q\in \llbracket N;+\infty\llbracket,\ |u_p-u_q|\leq \varepsilon$$
 	\\Démontrer qu'une suite réelle est de Cauchy si et seulement si elle converge.
-	
-
 	
 	\section{Récurrence de Cauchy \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:recurrence-de-cauchy]{[Corrigé]}}\\
@@ -347,66 +356,67 @@
 	\\Montrer que $$\sum_{i=m}^{n} f(i)=\int_m^n f(t)dt +\frac{1}{2}(f(m)+f(n))+\sum_{i=2}^{r}\frac{b_i}{2}\left[f^{(i-1)}(m)-f^{(i-1)}(n)\right]+\frac{(-1)^{r+1}}{r!}\int_m^n \overset{\sim}{B_r}(t)f^{(r)}(t)dt$$
 	\\ \underline{Application:} Déterminer un développement asymptotique à tout ordre de la série harmonique.
 	
-	\section{Nature d'une suite  \telecom{2}}
+	\section{Nature d'une suite \telecom{2}}
 	\textcolor{blue}{\hyperref[sec:nature-dune-suite]{[Corrigé]}}\\
 	\label{Nature d'une suite}
 	Déterminer la nature de la suite $(\sin n)_{n\in \N}$.
 	
-	\section{Valeurs d'adhérence d'une suite \centraleponts{3}}
+	\section{Valeurs d'adhérence d'une suite \centraleponts{4}}
 	\label{Valeurs d'adhérence d'une suite}
 	\textcolor{blue}{\hyperref[sec:valeurs-dadherence-dune-suite]{[Corrigé]}}\\
 	On pose pour $n\in \N^*,\ z_n=\displaystyle\prod_{k=1}^n\left(1+\frac{i}{k}\right)$.
 	\begin{enumerate}
+		\item Rappeler le théorème de sommation de relation de comparaison pour des suites équivalentes.
 		\item Montrer que la suite $(|z_n|)_{n\in \N^*}$ converge.
 		\item Déterminer l'ensemble des valeurs d'adhérence de la suite $(z_n)_{n\in \N^*}$.
 	\end{enumerate}
 	
 	\section{Nature d'une série (1) \ccinp{1}}
-\textcolor{blue}{\hyperref[sec:nature-dune-serie-1etoile1]{[Corrigé]}}\\
+	\textcolor{blue}{\hyperref[sec:nature-dune-serie-1etoile1]{[Corrigé]}}\\
 	\label{Nature d'une série 1}
 	Déterminer la nature de la série $\displaystyle\sum\limits_{n\geq 0} \sin\left(\pi\sqrt{1+n^2}\right)$.
 	
-	\section{Nature d'une série (2) \etoile{2}}
-\textcolor{blue}{\hyperref[sec:nature-dune-serie-2-etoile2]{[Corrigé]}}\\
+	\section{Nature d'une série (2) \telecom{2}}
+	\textcolor{blue}{\hyperref[sec:nature-dune-serie-2-etoile2]{[Corrigé]}}\\
 	\label{Nature d'une série 2}
 	Déterminer la nature de la série $\displaystyle\sum\limits_{n\geq 0}\sin\left(\pi(2+\sqrt 3)^n\right)$.
 	\\On pourra s'intéresser pour $n\in \N$ à la quantité $(2+\sqrt 3)^n+(2-\sqrt 3)^n$.
 	
-	\section{Nature d'une série (3) \etoile{3}}
-\textcolor{blue}{\hyperref[sec:nature-dune-serie-3-etoile3]{[Corrigé]}}\\
+	\section{Nature d'une série (3) \centraleponts{3}}
+	\textcolor{blue}{\hyperref[sec:nature-dune-serie-3-etoile3]{[Corrigé]}}\\
 	\label{Nature d'une série 3}
+	Déterminer la nature de la série $\displaystyle\sum_{n\geq 1}\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ en fonction de la valeur de $\alpha\in \R$.
+	
+	\section{Nature d'une série (4) \xens{3}}
+	\label{Nature d'une série 4}
+	\textcolor{blue}{\hyperref[sec:nature-dune-serie-4]{[Corrigé]}}\\
 	Soit $(a_n)_{n\in \N^*}$ une suite strictement croissante d'entiers naturels non nuls.\\
 	Déterminer la nature de la série $\displaystyle\sum\limits_{n\geq 1}\frac{1}{\ppcm(a_1,\dots,a_n)}$.
 	
-	\section{Nature d'une série (4)}
-	\label{Nature d'une série 4}
-	\textcolor{blue}{\hyperref[sec:nature-dune-serie-4]{[Corrigé]}}\\
+	\section{Nature d'une série (5) \xens{3}}
+	\label{Nature d'une série 5}
+	\textcolor{blue}{\hyperref[sec:nature-dune-serie-5]{[Corrigé]}}\\
 	Soit $(\alpha_n)_{n\in \N^*}$ une suite d'entiers strictement positifs deux à deux distincts. Déterminer la nature de la série
 	$$\sum_{n\geq 1}\frac{\alpha_n}{n^2}$$
 	
-	\section{Nature d'une série (5)}
-	\label{Nature d'une série 5}
-	\textcolor{blue}{\hyperref[sec:nature-dune-serie-5]{[Corrigé]}}\\
-	Déterminer la nature de la série $\displaystyle\sum_{n\geq 1}\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ en fonction de la valeur de $\alpha\in \R$.
-	
-	\section{Calcul d'un équivalent \etoile{3}}
+	\section{Calcul d'un équivalent \xens{4}}
 	\textcolor{blue}{\hyperref[sec:calcul-dun-equivalent-etoile3]{[Corrigé]}}\\
 	\label{Calcul d'un équivalent}
 	Déterminer un équivalent de $u_n=\left(\displaystyle\prod\limits_{k=1}^nk^k\right)^{1/n}$.
 	
-	\section{Sommation de relation de comparaison \etoile{1}}
-	\textcolor{blue}{\hyperref[sec:sommation-de-relation-de-comparaison]{[Corrigé]}}\\
-	\label{Sommation de relation de comparaison}
+	\section{Sommation de relations de comparaison \ccinp{1}}
+	\textcolor{blue}{\hyperref[sec:sommation-de-relations-de-comparaison]{[Corrigé]}}\\
+	\label{Sommation de relations de comparaison}
 	Soient $(u_n)_{n\in \N}$ et $(v_n)_{n\in \N}$ deux suites équivalentes.\\
 	Peut-on affirmer que $\displaystyle\sum\limits_{n\in \N}u_n$ et $\displaystyle\sum\limits_{n\in \N}v_n$ sont de mêmes natures ? Justifier.
 	
-	\section{Equivalent de séries de Riemann \etoile{1}}
+	\section{\underline{Equivalent de séries de Riemann} \ccinp{1}}
 	\textcolor{blue}{\hyperref[sec:equivalent-de-series-de-riemann]{[Corrigé]}}\\
 	\label{Equivalent de séries de Riemann}
 	On considère pour $\alpha\in \R$ la série $\displaystyle\sum_{n\in \N^*}\frac{1}{n^\alpha}$.\\
 	Déterminer un équivalent simple de la somme partielle pour $\alpha<1$ et du reste pour $\alpha>1$.
 	
-	\section{Séries de Bertrand  \ccinp{2}}
+	\section{\underline{Séries de Bertrand} \ccinp{2}}
 	\textcolor{blue}{\hyperref[sec:series-de-bertrand]{[Corrigé]}}\\
 	\label{Séries de Bertrand}
 	Démontrer que $\displaystyle\sum\limits_{n\geq 2}\frac{1}{n^\alpha\ln(n)^\beta}$ converge $\iff\alpha>1$ ou $(\alpha=1$ et $\beta >1)$.
@@ -426,40 +436,45 @@
 		\end{itemize}
 	\end{enumerate}
 	
-	\section{Règle de d'Alembert \etoile{2}}
+	\section{Règle de d'Alembert \ccinp{2}}
 	\textcolor{blue}{\hyperref[sec:regle-de-dalembert]{[Corrigé]}}\\
 	\label{Règle de d'Alembert}
-	Démontrer la règle de d'Alembert
-	
-	\section{Règle de Cauchy \centraleponts{3}}
-	\textcolor{blue}{\hyperref[sec:regle-de-cauchy]{[Corrigé]}}\\
-	\label{Règle de Cauchy}
-	Soit $(u_n)\in(\R_+)^\N$ tel que $\unfty{\lim}\displaystyle\sqrt[n]{u_n}=l\in\R_+\cup\{+\infty\}$.
-	\\Démontrer que:
+	Soit $(u_n)\in(\R^*_+)^\N$ telle que $\unfty{\lim}\displaystyle\frac{u_{n+1}}{u_n}=\ell\in\R_+\cup\{+\infty\}$.
+	\\Démontrer que :
 	\begin{itemize}
-		\item si $l<1$ alors $\displaystyle\sum\limits_{n\in \N} u_n$ converge;
-		\item si $l>1$ alors $\displaystyle\sum\limits_{n\in \N} u_n$ diverge;
-		\item Si $l=1$ alors on ne peut pas conclure quant à la nature de $\displaystyle\sum\limits_{n\in \N} u_n$.
+		\item si $\ell<1$ alors $\displaystyle\sum_{n\in \N} u_n$ converge;
+		\item si $\ell>1$ alors $\displaystyle\sum_{n\in \N} u_n$ diverge;
+		\item Si $\ell=1$ alors on ne peut pas conclure quant à la nature de $\displaystyle\sum_{n\in \N} u_n$.
 	\end{itemize}
 	
-	\section{d'Alembert $\implies$ Cauchy  \etoile{2}}
+	\section{Règle de Cauchy \ccinp{2}}
+	\textcolor{blue}{\hyperref[sec:regle-de-cauchy]{[Corrigé]}}\\
+	\label{Règle de Cauchy}
+	Soit $(u_n)\in(\R_+)^\N$ telle que $\unfty{\lim}\displaystyle\sqrt[n]{u_n}=\ell\in\R_+\cup\{+\infty\}$.
+	\\Démontrer que :
+	\begin{itemize}
+		\item si $\ell<1$ alors $\displaystyle\sum_{n\in \N} u_n$ converge;
+		\item si $\ell>1$ alors $\displaystyle\sum_{n\in \N} u_n$ diverge;
+		\item Si $\ell=1$ alors on ne peut pas conclure quant à la nature de $\displaystyle\sum_{n\in \N} u_n$.
+	\end{itemize}
+	
+	\section{d'Alembert $\implies$ Cauchy \centraleponts{3}}
 	\textcolor{blue}{\hyperref[sec:dalembert-rightarrow-cauchy]{[Corrigé]}}\\
 	\label{d'Alembert implique Cauchy}
 	Soit $\displaystyle\sum\limits_{n\in \N} u_n$ une série à termes strictement positifs.
 	\\ Montrer que si $\unfty{\lim} \displaystyle\frac{u_{n+1}}{u_n}=\ell$ alors $\unfty{\lim}\sqrt[n]{u_n}=\ell$.
 	
-	\section{Transformation et règle d'Abel \ccinp{3}}
+	\section{\underline{Transformation et règle d'Abel} \centraleponts{2}}
 	\textcolor{blue}{\hyperref[sec:transformation-dabel-et-regle-dabel]{[Corrigé]}}\\
 	\label{Transformation et règle d'Abel}
 	Soit $(a_n)_{n\geq n_0}$ et $(B_n)_{n\geq n_0}$ deux suites complexes. On définit $(A_n)_{n\geq n_0}$ et $(b_n)_{n\geq n_0}$ telles que: \\$\forall n \geq n_0$, $A_n=\displaystyle\sum\limits_{k=n_0}^na_k$ et $b_n=B_{n+1}-B_n$
 	\begin{enumerate}
 		\item Démontrer que: $ \forall n\geq n_{0},\ \displaystyle\sum\limits_{k=n_0}^na_kB_k=A_nB_n-\sum\limits_{k=n_0}^{n-1} A_kb_k$
-		\item Démontrer que si $(A_n)_{n\geq n_0}$ est bornée, alors $\sum |b_n-b_{n+1}|$ converge et $(b_n)_{n\geq n_0}$ tend vers 0.
-		alors $\displaystyle\sum\limits_{n\geq n_0}a_nb_n$ converge.
+		\item Démontrer que si $(A_n)_{n\geq n_0}$ est bornée, si $\displaystyle\sum|b_n-b_{n+1}|$ converge et si $(b_n)_{n\geq n_0}$ tend vers 0 alors $\displaystyle\sum_{n\geq n_0}a_nb_n$ converge.
 	\end{enumerate}
 	\underline{Remarque}: On remarquera la ressemblance entre la transformation d'Abel et l'intégration par parties.
 	
-	\subsection{Une série de Dirichlet \etoile{3}}
+	\subsection{Une série de Dirichlet \centraleponts{3}}
 	Déterminer la nature de la série $\displaystyle\sum_{n\in \N^*}\frac{\sin n}{n^\alpha}$ suivant la valeur du paramètre $\alpha\in \R$.
 	
 	\section{Equation différentielle discrète \centraleponts{3}}
@@ -472,7 +487,7 @@
 		\item En déduire que $a_n\unfty{\sim}\displaystyle\frac{1}{\sqrt[3]{3n}}$
 	\end{enumerate}
 	
-	\section{Critère spécial des série alternées\etoile{1}}
+	\section{Critère spécial des série alternées \etoile{1}}
 	\textcolor{blue}{\hyperref[sec:critere-special-des-series-alternees]{[Corrigé]}}\\
 	\label{Critère spécial des séries alternées}
 	Soit $(a_n)_{n\in \N}$ une suite réelle positive de limite nulle.\\
@@ -677,7 +692,6 @@
 	
 	\section{Intégrabilité des cosinus de polynôme}
 	\textcolor{blue}{\hyperref[Intégrabilité des cosinus de polynômes corrigé]{[Corrigé]}}\\
-	\label{intégrabilitécospolynome}
 	\label{Intégrabilité des cosinus de polynôme}
 	Soit $P\in \R[X]$ de degré supérieur ou égal à $2$.
 	\begin{enumerate}
@@ -686,10 +700,14 @@
 		\item Déterminer le signe de $I$ dans le cas $P=X^2$.
 	\end{enumerate}
 	
-	\section{Nature d'une intégrale}
-	\textcolor{blue}{\hyperref[Nature d'une intégrale corrigé]{[Corrigé]}}\\
-	\label{natureintégrale}
-	\label{Nature d'une intégrale}
+	\section{Nature d'une intégrale (1) \telecom{2}}
+	\textcolor{blue}{\hyperref[Nature d'une intégrale (1) corrigé]{[Corrigé]}}\\
+	\label{Nature d'une intégrale (1)}
+	Pour quelles valeurs du réel $\alpha$ l'intégrale $\displaystyle\int_0^1\frac{dt}{\arccos(t)^\alpha}$ converge-t-elle ?
+	
+	\section{Nature d'une intégrale (2)}
+	\textcolor{blue}{\hyperref[Nature d'une intégrale (2) corrigé]{[Corrigé]}}\\
+	\label{Nature d'une intégrale (2)}
 	Pour quelles valeurs du réel $\alpha$ l'intégrale $\displaystyle\int_0^{+\infty}\frac{\sin t}{t^\alpha}dt$ converge ?
 	
 	\section{Divergence grossière}
@@ -701,10 +719,10 @@
 		\item Soit $f$ une application uniformément continue de $\R_+$ dans $\R$ telle que l'intégrale $\displaystyle\int_0^{+\infty}f(t)dt$ converge. Montrer que $\lim\limits_{+\infty}f=0$.
 	\end{enumerate}
 	
-	\section{Espace $l^2$ et dérivation}
-	\textcolor{blue}{\hyperref[sec:espace-l2-et-derivation]{[Corrigé]}}\\
-	\label{l2}
-	\label{Espace l^2 et  dérivation}
+	\section{Espace $L^2$ et dérivation}
+	\textcolor{blue}{\hyperref[sec:espace-L2-et-derivation]{[Corrigé]}}\\
+	\label{L2}
+	\label{Espace L^2 et  dérivation}
 	Soit $f:\R\to \R$ de classe $\mathcal C^2$ telle que $f$ et $f''$ soit de carré intégrable sur $\R$.
 	\begin{enumerate}
 		\item Montrer que $f'$ est également de carré intégrable sur $\R$.
@@ -2287,8 +2305,8 @@
 	\end{enumerate}
 	
 	\section{Développement de la cotangente (1)}
-	\textcolor{blue}{\hyperref[sec:developpement-de-la-cotangente]{[Corrigé]}}\\
-	\label{Développement de la cotangente 1}
+	\textcolor{blue}{\hyperref[sec:developpement-de-la-cotangente-(1)]{[Corrigé]}}\\
+	\label{Développement de la cotangente (1)}
 	On pose pour $n\in \N$ et $x\in \R\setminus\Z$, $f_n(x)=\displaystyle\sum_{k=-n}^n\frac{1}{x-k}$.
 	\begin{enumerate}
 		\item Montrer que la suite de fonction $(f_n)_{n\in \N}$ converge simplement vers une fonction $f$.
@@ -3724,6 +3742,11 @@ Résoudre ces équations différentielles
 	\item $y''-(1-i)y'-2(1+i)y=0$ sur $\C$ avec $y(0)=y'(0)=1$.
 \end{enumerate}
 
+\section{Une équation quasi-différentielle}
+\textcolor{blue}{\hyperref[Une équation quasi-différentielle corrigé]{[Corrigé]}}\\
+\label{Une équation quasi-différentielle}
+Déterminer l'ensemble des fonctions $f\in \mathcal C^1(\R,\C)$ telles que $\forall x\in \R,\ f'(x)=f(-x)$.
+
 \section{Problèmes de raccordement}
 \textcolor{blue}{\hyperref[sec:problemes-de-raccordement]{[Corrigé]}}\\
 \label{Problème de raccordement}
@@ -3772,7 +3795,7 @@ Soient I=$]1,+\infty[$, $$(E): -t^2y'+ty=y^2$$
 	\item En déduire les solutions de $(E)$ ne s'annulant pas sur l'intervalle $I$.
 \end{enumerate}
 
-\section{Etude asymptotique des solutions d'une équation différentielle \etoile{4}}
+\section{Etude asymptotique des solutions d'une équation différentielle \centraleponts{4}}
 \textcolor{blue}{\hyperref[sec:etude-asymptotique-des-solutions-dune-equation-differentielle-etoile4]{[Corrigé]}}\\
 \label{Etude asymptotique des solution d'une équation différentielle}
 \begin{enumerate}[leftmargin=*]
@@ -4605,17 +4628,41 @@ Alors, on a l'équivalence :
 	Par conséquent $\displaystyle\frac{D_n}{n!}\unfty\longrightarrow\sum_{k=0}^{+\infty}\frac{(-1)^k}{k}=\frac{1}{e}$.\\
 	Le quotient $\displaystyle\frac{D_n}{n!}$ peut s'interpréter comme la probabilité d'obtenir un dérangement quand on tire au hasard une permutation dans un ensemble à $n$ éléments, en considérant qu'il y a équiprobabilité pour de toutes les issus. On a montré que cette probabilité tend vers $\displaystyle\frac{1}{e}\approx0,37$ quand on augmente le nombre d'éléments.
 	
-	\subsection{Théorème de Pringsheim \etoile{3}}\label{sec:theoreme-de-pringsheim-etoile3}
-		\textcolor{blue}{\hyperref[Théorème de Pringsheim]{[Enoncé]}}\\
+	\subsection{Théorème de Pringsheim \etoile{3}}
+	\label{sec:theoreme-de-pringsheim-etoile3}
+	\textcolor{blue}{\hyperref[Théorème de Pringsheim]{[Enoncé]}}\\
 	On pose pour tout $n\in\N$, $S_n=\displaystyle\sum\limits_{k=0}^na_k$.
 	\\On a pour tout $n\in\N$, $S_{2n}-S_n=\displaystyle\sum\limits_{k=n+1}^{2n}a_k\geq na_{2n}\geq0$ car $(a_n)_{n\geq 0}$ est décroissante.
 	\\ Or comme $\displaystyle\sum\limits_{k\geq 0}a_k$ converge, on en déduit que $S_{2n}-S_n$ tend vers $0$. Donc par encadrement, on en déduit que $(2na_{2n})_{n\geq 0}$ tend vers $0$.
 	\\De plus, on remarque que pour tout entier naturel $n$, $0\leq (2n+1)a_{2n+1}\leq (2n+1)a_{2n}$. On sait que $a_{2n}\unfty{\longrightarrow}0$ car $\displaystyle\sum\limits_{n\geq 0}a_n$ converge et que $2na_{2n}\unfty{\longrightarrow}0$ d'après ce qui précède. On en déduit par encadrement que $(2n+1)a_{2n+1}\unfty{\longrightarrow}0$.
 	\\Finalement, $na_n\unfty{\longrightarrow}0$.
-	\subsection{Lemme de Fekete}\label{sec:lemme-de-fekete}
-		\textcolor{blue}{\hyperref[Lemme de Fekete]{[Enoncé]}}\\
-	\subsection{Théorème de Bolzano-Weierstrass \etoile{3}}\label{sec:theoreme-de-bolzano-weierstrass-etoile3}
-		\textcolor{blue}{\hyperref[Théorème de Bolzano-Weierstrass]{[Enoncé]}}\\
+	
+	\subsection{Lemme de Fekete \centraleponts{3}}
+	\label{sec:lemme-de-fekete}
+	\textcolor{blue}{\hyperref[Lemme de Fekete]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Par récurrence immédiate $\forall k\in \N^*,\ u_{kn}\leq ku_n$.\\
+		Donc $u_n\leq u_{qN}+u_r\leq qu_N+u_r\leq qu_N+\max\limits_{0\leq k<N}u_k$.
+		\item Supposons $\left(\dfrac{u_n}{n}\right)_{n\in \N^*}$ minorée et fixons $\varepsilon>0$. Alors $\exists N\in \N^*,\ \dfrac{u_N}{N}-\ell\leq\dfrac{\varepsilon}{2}$. On note $U:=\max\limits_{0\leq k<N}u_k$.\\
+		Notons $N'=\max\left(N,\left\lfloor\dfrac{2U}{\varepsilon}\right\rfloor+1\right)$. Alors si $n\geq N'$, $\displaystyle\frac{u_n}{n}-\ell\leq \frac{q}{n}u_N-\ell+\frac{U}{n}\leq \frac{qN}{n}\left(\ell+\frac{\varepsilon}{2}\right)-\ell+\frac{\varepsilon}{2}$.\\
+		Or $qN=n-r\leq n$ donc $\dfrac{qN}{n}\leq 1$ d'où $\dfrac{u_n}{n}-\ell\leq \varepsilon$.\\
+		Donc $\dfrac{u_n}{n}\longrightarrow\ell$.\\
+		Supposons maintenant $\left(\dfrac{u_n}{n}\right)_{n\in \N^*}$ non minorée et fixons $\delta<0$. Alors $\exists N\in \N^*,\ u_n\leq \delta-1$.\\
+		Alors $\forall n\geq \max(N,\lfloor U\rfloor+1),\ \displaystyle\frac{u_n}{n}\leq \frac{qN}{n}\left(\delta-1+\ell\right)-\ell+\frac{U}{n}\leq \delta-1+\ell-\ell+1=\delta$.\\
+		Donc $\dfrac{u_n}{n}\unfty\longrightarrow-\infty$.
+	\end{enumerate}
+	
+	\subsubsection{Chemins auto-évitant \etoile{3}}
+	\label{Chemins auto-évitant corrigé}
+	\textcolor{blue}{\hyperref[Chemins auto-évitant]{[Enoncé]}}\\
+	La suite $(c_n)_{n\in \N^*}$ est clairement minorée par $1$. On remarque par croissance de $\ln$ que $\ln\mu=\inf\limits_{n\in \N^*}\dfrac{\ln c_n}{n}$. On va donc montrer que la suite $(\ln c_n)_{n\in \N^*}$ est sous-additive. Autrement dit que $(c_n)_{n\in \N^*}$ est sous-multiplicative :
+	$$\forall m,n\in \N^*,\ c_{n+m}\leq c_nc_m$$
+	Cette inégalité est simple à obtenir car on peut voir un chemin de longueur $n+m$ comme un chemin de longueur $n$ associé à un chemin de longueur $m$ (qui part du point d'arrivée de celui de longueur $n$).\\\\
+	\textit{Remarque : On peut définir les chemins auto-évitant dans n'importe quel réseau. La constante $\mu$ s'appelle alors constante de connectivité du réseau. On ne dispose pas de valeur exacte pour cette constante en général, elle n'est en fait connu que pour le réseau hexagonal : $\mu=\sqrt{2+\sqrt 2}$. Ce résultat est dû à Hugo Duminil-Copin, médaillé Fields français et Stanislav Smirnov, médaillé Fields russe.}
+	
+	\subsection{Théorème de Bolzano-Weierstrass \etoile{3}}
+	\label{sec:theoreme-de-bolzano-weierstrass-etoile3}
+	\textcolor{blue}{\hyperref[Théorème de Bolzano-Weierstrass]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $(v_n)\in \R^\N$. On pose $A=\{n\in \N\ |\ \forall k>n,\ v_k\geq v_n\}$.\\
 		Si $A$ est infini alors n'importe quelle suite extraite de $(v_n)_{n\in \N}$ à valeur dans $A$ est croissante.\\
@@ -4648,38 +4695,80 @@ Alors, on a l'équivalence :
 	C'est-à-dire $u_{\varphi(n)}-u_n\unfty{\longrightarrow}0$.\\
 	Mais alors par somme, $u_n=u_n-u_{\varphi(n)}+u_{\varphi(n)}\unfty{\longrightarrow}\ell$.
 	
-	\subsection{Récurrence de Cauchy}\label{sec:recurrence-de-cauchy}
-		\textcolor{blue}{\hyperref[Récurrence de Cauchy]{[Enoncé]}}\\
+	\subsection{Récurrence de Cauchy}
+	\label{sec:recurrence-de-cauchy}
+	\textcolor{blue}{\hyperref[Récurrence de Cauchy]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item $1\in A$ donc $0=1-1\in A$. Fixons $n\in \N^*$.\\
 		Par récurrence immédiate en utilisant le troisième axiome de $A$, $\forall k\in \N,\ 2^k\in A$. Comme $(2^k)_{k\in \N}\unfty\longrightarrow+\infty$ on sait qu'il existe $k_0\in \N$ tel que $2^{k_0}>n$.\\
 		Par récurrence immédiate sur le en utilisant le deuxième axiome de $A$, si $p\in A$ alors $\forall q\in \N,\ q\leq p\implies q\in A$. Ainsi $n\in A$.\\
 		Par double inclusion, $A=\N$.\\
 		\textit{Remarque : On vient de définir un raisonnement par récurrence. Il est aussi intéressant de noter que le raisonnement fonctionne encore si on remplace la condition $"\forall n\in A,\ 2n\in A"$ par $"\forall n\in A,\ \varphi(n)\in A"$ avec $\varphi$ n'importe quelle fonction de $\N$ dans $\N$ strictement croissante.}
-		\item Notons pour $n\in \N^*,\ \mathcal P(n):"\forall (x_1,\dots,x_n)\in (\R_+)^n,\ \displaystyle\frac{1}{n}\sum_{k=1}^nx_k\geq \left(\prod_{k=1}^nx_k^n\right)^{1/n}"$.\\
-		Pour $n=1$ il n'y a rien à faire. Supposons $\mathcal P(n)$ pour un certain $n\in \N^*$.\\
-		Supposons que $n\geq 2$ et montrons $\mathcal P(n-1)$. On se donne $(x_1,\dots,x_{n-1})\in (\R_+)^{n-1}$.\\
+		\item Notons pour $n\in \N^*,\ \P(n):"\forall (x_1,\dots,x_n)\in (\R_+)^n,\ \displaystyle\frac{1}{n}\sum_{k=1}^nx_k\geq \left(\prod_{k=1}^nx_k^n\right)^{1/n}"$.\\
+		Pour $n=1$ il n'y a rien à faire. Supposons $\P(n)$ pour un certain $n\in \N^*$.\\
+		Supposons que $n\geq 2$ et montrons $\P(n-1)$. On se donne $(x_1,\dots,x_{n-1})\in (\R_+)^{n-1}$.\\
 		Posons $\forall k\in \crblanc{1}{n-1},\ y_k=x_k$ ainsi que $y_n=\displaystyle\frac{1}{n-1}\sum_{k=1}^{n-1}x_k$.\\
 		On remarque que $\displaystyle\frac{1}{n}\sum_{k=1}^ny_k=\frac{1}{n}\left(\sum_{k=1}^{n-1}x_k+\frac{1}{n-1}\sum_{k=1}^{n-1}x_k\right)=\frac{1}{n-1}\sum_{k=1}^{n-1}x_k$.\\
 		$\forall k\in \crblanc{1}{n},\ y_k\geq 0$. Donc par hypothèse de récurrence,\\
 		$\displaystyle\frac{1}{n-1}\sum_{k=1}^{n-1}x_k=\frac{1}{n}\sum_{k=1}^ny_k\geq \left(\prod_{k=1}^ny_k\right)^{1/n}=\left(\prod_{k=1}^{n-1}x_k\right)^{1/n}\times\left(\frac{1}{n-1}\sum_{k=1}^{n-1}x_k\right)^{1/n}$.\\
-		On en déduit $\displaystyle\left(\frac{1}{n-1}\sum_{k=1}^{n-1}x_k\right)^{1-1/n}\geq \left(\prod_{k=1}^{n-1}x_k\right)^{1/n}$ et puis en élevant à la puissance $\displaystyle\frac{n}{n-1}$ : $\displaystyle\frac{1}{n-1}\sum_{k=1}^{n-1}x_k\geq \left(\prod_{k=1}^{n-1}x_k\right)^{1/(n-1)}$.\\
-		D'où $\mathcal P(n-1)$.\\
-		Montrons maintenant $\mathcal P(2n)$. On se donne $(x_1,\dots,x_n,y_1,\dots,y_n)\in (\R_+)^{2n}$. En appliquant deux fois $\mathcal P(n)$, une fois sur $\displaystyle\left(\frac{x_1}{2}\dots,\frac{x_n}{2}\right)$ et une fois sur $\displaystyle\left(\frac{y_1}{2}\dots,\frac{y_n}{2}\right)$ on a :\\
-		$\displaystyle\frac{1}{2n}\left(\sum_{k=1}^nx_k+\sum_{k=1}^ny_k\right)\geq \left(\prod_{k=1}^n\frac{x_k}{2}\right)^{1/n}\times\left(\prod_{k=1}^n\frac{y_k}{2}\right)^{1/n}=$
+		On en déduit $\displaystyle\left(\frac{1}{n-1}\sum_{k=1}^{n-1}x_k\right)^{1-1/n}\geq \left(\prod_{k=1}^{n-1}x_k\right)^{1/n}$ et puis en élevant à la puissance $\dfrac{n}{n-1}$ : $\displaystyle\frac{1}{n-1}\sum_{k=1}^{n-1}x_k\geq \left(\prod_{k=1}^{n-1}x_k\right)^{1/(n-1)}$.\\
+		D'où $\P(n-1)$.\\
+		Montrons maintenant $\P(2n)$. On se donne $(x_1,\dots,x_n,y_1,\dots,y_n)\in (\R_+)^{2n}$. En appliquant $\P(2)$ sur $\displaystyle\left(\frac{1}{n}\sum_{k=1}^nx_k,\frac{1}{n}\sum_{k=1}^ny_k\right)$ puis deux fois $\P(n)$, une fois sur $(x_1\dots,x_n)$ et une fois sur $(y_1\dots,y_n)$ on a :\\
+		$\displaystyle\frac{1}{2n}\left(\sum_{k=1}^nx_k+\sum_{k=1}^ny_k\right)\geq \sqrt{\frac{1}{n}\sum_{k=1}^nx_k\cdot\frac{1}{n}\sum_{k=1}^ny_k}\geq\left(\prod_{k=1}^nx_k\prod_{k=1}^ny_k\right)^{1/2n}$.
 	\end{enumerate}
 	
-	\subsection{Sommes de Riemann}\label{sec:sommes-de-riemann}
-		\textcolor{blue}{\hyperref[Sommes de Riemann]{[Enoncé]}}\\
+	\subsection{Sommes de Riemann}
+	\label{sec:sommes-de-riemann}
+	\textcolor{blue}{\hyperref[Sommes de Riemann]{[Enoncé]}}\\
 	
-	\subsection{Formule d'Euler-Maclaurin}\label{sec:formule-deuler-maclaurin}
-		\textcolor{blue}{\hyperref[Formule d'Euler-Maclaurin]{[Enoncé]}}\\
-	\subsection{Nature d'une suite}\label{sec:nature-dune-suite}
-		\textcolor{blue}{\hyperref[Nature d'une suite]{[Enoncé]}}\\
-	\subsection{Valeurs d'adhérence d'une suite}\label{sec:valeurs-dadherence-dune-suite}
-		\textcolor{blue}{\hyperref[Valeurs d'adhérence d'une suite]{[Enoncé]}}
-	\subsection{Nature d'une série (1)\etoile{1}}\label{sec:nature-dune-serie-1etoile1}
-		\textcolor{blue}{\hyperref[Nature d'une série 1]{[Enoncé]}}\\
+	\subsection{Formule d'Euler-Maclaurin}
+	\label{sec:formule-deuler-maclaurin}
+	\textcolor{blue}{\hyperref[Formule 
+	d'Euler-Maclaurin]{[Enoncé]}}\\
+	
+	\subsection{Nature d'une suite \telecom{2}}
+	\label{sec:nature-dune-suite}
+	\textcolor{blue}{\hyperref[Nature d'une suite]{[Enoncé]}}\\
+	Supposons que $(\sin(n))_{n\in \N}$ admet une limite $\ell\in [-1,1]$.\\
+	$\forall n\in \N,\ \sin(n)^2+\cos(n)^2=1$. Donc $\cos(n)^2\unfty\longrightarrow 1-\ell^2$.\\
+	De plus, $\forall n\in \N,\ \sin(2n)^2=4\cos(n)^2\sin(n)^2$.\\
+	Donc par passage à la limite $\ell^2=4\ell^2(1-\ell^2)^2$ i.e $\ell=0$ ou $4(1-\ell^2)^2=1$.\\
+	Dans le second cas, comme $1-\ell^2\geq 0,\ 1-\ell^2=\dfrac{1}{2}$ d'où $\ell^2=\dfrac{1}{2}$.\\
+	Or $\forall n\in \N,\ \sin(n+1)=\sin(n)\cos(1)+\cos(n)\sin(1)\iff \cos(n)=\dfrac{\sin(n+1)-\sin(n)\cos(1)}{\sin(1)}$.\\
+	Donc $\cos(n)^2\unfty\longrightarrow\left(\dfrac{\ell(1-\cos(1))}{\sin(1)}\right)^2$.\\
+	Par unicité de la limite on a $(1-\ell^2)\sin(1)^2=\ell^2(\cos(1)-1)^2$. Pourtant $\ell=0$ et $\ell^2=\dfrac{1}{2}$ ne satisfont pas cette équation.
+	Ceci est absurde donc $(\sin(n))_{n\in \N}$ diverge.
+	
+	\subsection{Valeurs d'adhérence d'une suite \centraleponts{4}}
+	\label{sec:valeurs-dadherence-dune-suite}
+	\textcolor{blue}{\hyperref[Valeurs d'adhérence d'une suite]{[Enoncé]}}
+	\begin{enumerate}[leftmargin=*]
+		\item Soient $(u_n)_{n\in \N}$ et $(v_n)_{n\in \N}$ deux suites réelles équivalentes avec $(v_n)$ de signe constant APCR. Alors les séries $\displaystyle\sum_{n\in \N}u_n$ et $\displaystyle\sum_{n\in \N}v_n$ sont de même nature.
+		\item Soit $n\in \N^*$.\\
+		$|z_n|^2=\displaystyle\prod_{k=1}^n\left|1+\frac{i}{k}\right|^2=\prod_{k=1}^n\left(1+\frac{1}{k^2}\right)\ne 0$.\\
+		On considère alors la suite de terme général $x_n:=\ln|z_n|$.\\
+		$2x_n=\displaystyle\sum_{k=1}^n\ln\left(1+\frac{1}{k^2}\right)$. Or $\displaystyle\ln\left(1+\frac{1}{k^2}\right)\ukfty\sim\frac{1}{k^2}$ et $\displaystyle\sum_{k\in \N^*}\frac{1}{k^2}$ est une série à termes positifs convergente. Donc par théorème de comparaison $(x_n)_{n\in \N^*}$ converge vers un certain réel $x$. On en déduit que $(|z_n|)_{n\in \N^*}$ converge vers $r:=e^x$.
+		\item Tout d'abord $(z_n)$ est bornée donc elle admet une valeur d'adhérence (un disque est un compact de $\C$). Soit $\ell$ une valeur d'adhérence de $(z_n)$. On note $(\zeta_n)$ une suite extraite de $(z_n)$ qui converge vers $\ell$. Alors par continuité du module $|\zeta_n|\unfty\longrightarrow|\ell|$. Donc d'après la première question $|\ell|=r$.\\
+		Déterminons un argument $\theta_k\in [-\pi,\pi[$ de $1+\dfrac{i}{k}$. On a $\begin{cases}
+			\displaystyle\sqrt{1+\frac{1}{k^2}}\cos(\theta_k)=1\\
+			\displaystyle\sqrt{1+\frac{1}{k^2}}\sin(\theta_k)=\frac{1}{k}
+		\end{cases}$\\
+		Donc $\tan(\theta_k)=\dfrac{1}{k}$. Or $\cos(\theta_k)>0$ donc $\theta_k\in \displaystyle\left]-\frac{\pi}{2},\frac{\pi}{2}\right[$ d'où $\theta_k=\arctan\left(\dfrac{1}{k}\right)$.\\
+		Ainsi $z_n=\displaystyle\prod_{k=1}^n\sqrt{1+\frac{1}{k^2}}e^{i\theta_k}=|z_n|e^{i\sum\limits_{k=1}^n\arctan(1/k)}$.\\
+		On sait que $\displaystyle\arctan\left(\frac{1}{k}\right)\ukfty\sim\frac{1}{k}$. La série $\displaystyle\sum_{k\in \N^*}\frac{1}{k}$ est à termes positifs et diverge donc par théorème de comparaison $\displaystyle\sum_{k\in \N^*}\theta_k$ diverge. On note désormais $S_n:=\displaystyle\sum_{k=1}^n\theta_k$.\\
+		Ce que l'on à obtenu nous pousse à montrer que l'ensemble des valeurs d'adhérence de $(z_n)$ est exactement l'ensemble des complexes de module $r$. Fixons $\theta\in\R$ et $\varepsilon>0$.\\
+		On va chercher à trouver une infinité d'entiers positifs $k$ tels que $|\theta+2k\pi-S_{n_k}|\leq \varepsilon$.\\
+		$\forall A>0,\ \exists N\in \N,\ \forall n\geq N,\ S_n\geq A$. Si $A>\theta_1$ l'ensemble $\{n\in \N,\ S_n<A\}$ est non vide et majoré. On peut donc considérer son maximum $n_A$.\\
+		Par définition $S_{n_A}<A$ et $S_{n_A+1}\geq A$. On prend $A=\theta+2k\pi$ et on note $n_k:=n_A$.\\
+		On a alors $0<\theta+2k\pi-S_{n_k}\leq S_{n_k+1}-S_{n_k}=\theta_k$.\\
+		Par continuité de $t\mapsto e^{it}$ on se donne $\delta>0$ tel que $\forall x,y\in \R,\ |x-y|\leq \delta\implies |e^{ix}-e^{iy}|\leq \varepsilon$. Et comme $\theta_k\ukfty\longrightarrow 0$ on peut prendre $K\in \N$ tel que pour $k\geq K,\ \theta_k\leq \delta$.\\
+		Ainsi $\forall k\geq K,\ |e^{i\theta}-e^{iS_{n_k}}|=|e^{i(\theta+2k\pi-S_{n_k})}-1|\leq \varepsilon$.\\
+		Ainsi $e^{iS_{n_k}}\ukfty\longrightarrow e^{i\theta}$ et par suite $z_{n_k}\ukfty\longrightarrow re^{i\theta}$.
+	\end{enumerate}
+	
+	\subsection{Nature d'une série (1) \ccinp{1}}
+	\label{sec:nature-dune-serie-1etoile1}
+	\textcolor{blue}{\hyperref[Nature d'une série 1]{[Enoncé]}}\\
 	On remarque que: \begin{align*}
 		\sin\left(\pi\sqrt{1+n^2}\right)&\ \ \ =\ \ \ \sin\left(\pi n\sqrt{1+\frac{1}{n^2}}\right)\\
 		&\unfty{=}\sin\left(\pi n\left[1+\frac{1}{2n^2}+\bigO{\frac{1}{n^3}}\right]\right)\\
@@ -4689,22 +4778,61 @@ Alors, on a l'équivalence :
 	D'après le critère spécial des séries alternées, $\displaystyle\sum\limits_{n\geq 0}(-1)^n\frac{\pi}{2n}$ converge et d'après le critère de Riemann, $\displaystyle\sum_{n\geq 1}\frac{1}{n^2}$ converge. De plus $\forall n\in \N^*,\ \displaystyle\frac{1}{n^2}\geq 0$.
 	\\Donc $\displaystyle\sum\limits_{n\geq 0}\sin(\pi\sqrt{1+n^2})$ converge.
 	
-	\subsection{Nature d'une série (2) \etoile{2}}\label{sec:nature-dune-serie-2-etoile2}
-		\textcolor{blue}{\hyperref[Nature d'une série 2]{[Enoncé]}}\\
+	\subsection{Nature d'une série (2) \telecom{2}}
+	\label{sec:nature-dune-serie-2-etoile2}
+	\textcolor{blue}{\hyperref[Nature d'une série 2]{[Enoncé]}}\\
+	Soit $n\in \N$. En séparant les deux sommes en termes impairs et pairs,\\
+	$(2+\sqrt 3)^n+(2-\sqrt 3)^n=\displaystyle\sum_{k=0}^n\binom{n}{k}\sqrt{3}^k2^{n-k}+\sum_{k=0}^n\binom{n}{k}(-1)^k\sqrt{3}^k2^{n-k}=\sum_{k=0}^{\lfloor n/2\rfloor}\binom{n}{2k}3^k2^{n-2k+1}:=K_n\in \Z$.\\
+	Donc \begin{align*}
+		\sin(\pi(2+\sqrt 3)^n)&=\sin(K_n\pi-\pi(2-\sqrt 3)^n)\\
+		&=\sin(K_n\pi)\cos(\pi(2-\sqrt 3)^n)-\cos(K_n\pi)\sin(\pi(2-\sqrt 3)^n)\\
+		&=(-1)^{K_n+1}\sin(\pi(2-\sqrt 3)^n)
+	\end{align*}
+	Or $4\leq 4+2\sqrt 3\iff 2^2\leq (1+\sqrt 3)^2\implies 0\leq 2-\sqrt 3<1\implies \sin(\pi(2-\sqrt 3)^n)\unfty\sim\pi(2-\sqrt 3)^n$.\\
+	La série $\displaystyle\sum_{n\in \N}(2-\sqrt 3)^n$ est à termes positifs et convergente donc par théorème de comparaison $\displaystyle\sum_{n\in \N}\sin((2+\sqrt 3)^n)$ est absolument convergente.
 	
-	\subsection{Nature d'une série (3) \etoile{3}}\label{sec:nature-dune-serie-3-etoile3}
-		\textcolor{blue}{\hyperref[Nature d'une série 3]{[Enoncé]}}\\
+	\subsection{Nature d'une série (3) \centraleponts{3}}
+	\label{sec:nature-dune-serie-3-etoile3}
+	\textcolor{blue}{\hyperref[Nature d'une série 3]{[Enoncé]}}\\
+	Soit $\alpha\in \R$. Soit $n\in \N^*$.\\
+	Remarquons déjà que $\displaystyle\frac{n^\alpha}{1+n^\alpha}\in [0,1]$ donc $\displaystyle\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ est bien défini.\\
+	Si $\alpha<0$, $\displaystyle\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)\unfty\longrightarrow\arccos(0)=\frac{\pi}{2}$.\\
+	Et pour $\alpha=0$, $\displaystyle\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)\unfty\longrightarrow\arccos\left(\frac{1}{2}\right)=\frac{\pi}{3}$.\\
+	Par conséquent si $\alpha\leq 0,\ \displaystyle\sum_{n\geq 1}\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ diverge grossièrement.\\
+	Supposons $\alpha>0$. Le terme général étant positif, cherchons-en un équivalent.\\
+	$\displaystyle\frac{n^\alpha}{1+n^\alpha}=\frac{1}{1+n^{-\alpha}}\unfty=1-\frac{1}{n^\alpha}+\smallo{\frac{1}{n^\alpha}}$.
+	On sait que $\forall x\in ]-1,1[,\ \sin(\arccos(x))=\sqrt{1-x^2}$.\\
+	Donc $\displaystyle\sin\left(\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)\right)\unfty=\sqrt{1-\left(1-\frac{1}{n^\alpha}+\smallo{\frac{1}{n^\alpha}}\right)^2}\unfty=\sqrt{\frac{2}{n^\alpha}+\smallo{\frac{1}{n^\alpha}}}\unfty\sim\frac{\sqrt 2}{n^{\alpha/2}}$.\\
+	Or $\sin(x)\uxzero\sim x$ donc $\displaystyle\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)\unfty\sim\frac{\sqrt 2}{n^{\alpha/2}}$.\\
+	On en déduit que $\displaystyle\sum_{n\in \N}\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ converge si et seulement si $\alpha>2$.
+	
+	\subsection{Nature d'une série (4) \xens{3}}
+	\label{sec:nature-dune-serie-4}
+	\textcolor{blue}{\hyperref[Nature d'une série 4]{[Enoncé]}}\\
 	Soit $n\geq 2$ un entier.\\
 	$\ppcm(a_1,\dots,a_n)\geq \ppcm(a_{n-1},a_n)=\displaystyle\frac{a_{n-1}a_n}{\pgcd(a_{n-1}a_n)}>0$.\\
 	Or on remarque que $\pgcd(a_{n-1},a_n)|a_n-a_{n-1}>0$. Donc $\pgcd(a_{n-1},a_n)\leq a_n-a_{n-1}$ d'où $\displaystyle\frac{\pgcd(a_{n-1},a_n)}{a_{n-1}a_n}\leq\frac{a_n-a_{n-1}}{a_{n-1}a_n}=\frac{1}{a_{n-1}}-\frac{1}{a_n}$.\\
 	On montre par récurrence que pour tout $n\in \N^*,\ a_n\geq a_1+n-1$ et on en déduit que $a_n\unfty{\longrightarrow}+\infty$.\\
 	Ainsi $\displaystyle\sum\limits_{n\geq 2}\frac{1}{\ppcm(a_1,\dots,a_n)}$ est une série à termes positifs majorée $\left(\text{par }\displaystyle\sum\limits_{n=2}^{+\infty}\frac{1}{a_{n-1}}-\frac{1}{a_n}=\frac{1}{a_1}\right)$ : elle converge.
-	\subsection{Nature d'une série (4)}\label{sec:nature-dune-serie-4}
-	\textcolor{blue}{\hyperref[Nature d'une série 4]{[Enoncé]}}\\
-	\subsection{Nature d'une série (5)}\label{sec:nature-dune-serie-5}
+	
+	\subsection{Nature d'une série (5) \xens{4}}
+	\label{sec:nature-dune-serie-5}
 	\textcolor{blue}{\hyperref[Nature d'une série 5]{[Enoncé]}}\\
-	\subsection{Calcul d'un équivalent \etoile{3}}\label{sec:calcul-dun-equivalent-etoile3}
-		\textcolor{blue}{\hyperref[Calcul d'un équivalent]{[Enoncé]}}\\
+	Montrons le lemme suivant : (inégalité de réarrangement)\\
+	Soient $a_1>\dots>a_n,b_1<\dots<b_n$ des réels. Alors pour toute permutation $\sigma\in \S_n$,
+	$$S(\sigma):=\sum_{k=1}^na_ib_{\sigma(i)}\leq \sum_{k=1}^na_ib_i$$
+	Soient $\sigma\in \S_n$ tel que $S(\sigma)$ soit minimale et $\tau=(ij)$, où $i<j$, une transposition.\\
+	On remarque que $S(\sigma\circ\tau)-S(\sigma)=a_ib_{\sigma(j)}-a_ib_{\sigma(i)}+a_jb_{\sigma(i)}-a_jb_{\sigma(j)}=(a_j-a_i)(b_{\sigma(i)}-b_{\sigma(j)})$.\\
+	$S(\sigma\circ\tau)-S(\sigma)\geq 0$ par minimalité de $S(\sigma)$ et $a_j-a_i<0$ car $j>i$. Donc $b_{\sigma(i)}\leq b_{\sigma(j)}$ d'où $\sigma(i)\leq \sigma(j)$.\\
+	On a montré que $\sigma$ est une bijection de $\crblanc{1}{n}$ croissante, c'est donc l'identité d'où le résultat.\\
+	\textit{Remarque : on peut aussi faire une récurrence en isolant les termes faisant apparaître l'indice $n+1$, ce qui revient en fait au même.}\\\\
+	Fixons $n\in \N$. Tout d'abord, on peut minorer $\displaystyle\sum_{k=1}^n\frac{\alpha_k}{k^2}\geq \sum_{k=1}^n\frac{b_k}{k^2}$ avec $\beta_1,\dots,\beta_n\in \crblanc{1}{n}$. En effet, si $k\in \crblanc{1}{n}\backslash\{\alpha_1,\dots,\alpha_n\}$ alors au moins un des $n$ entiers $\alpha_1,\dots,\alpha_n$ est supérieur strictement à $n$, et on le minore alors par $k$.\\
+	L'application $\sigma:k\in\crblanc{1}{n}\mapsto \beta_k$ est alors une bijection.\\
+	D'après le lemme appliqué à $a_i=\dfrac{1}{i^2}$ et $b_i=i$ on a alors $\displaystyle\sum_{k=1}^n\frac{\alpha_k}{k^2}\geq \sum_{k=1}^n\frac{k}{k^2}=\sum_{k=1}^n\frac{1}{k}\unfty\longrightarrow+\infty$.
+	
+	\subsection{Calcul d'un équivalent \xens{4}}
+	\label{sec:calcul-dun-equivalent-etoile3}
+	\textcolor{blue}{\hyperref[Calcul d'un équivalent]{[Enoncé]}}\\
 	\underline{$1^{ère}$ méthode :} Somme de Riemann\\
 	
 	
@@ -4723,23 +4851,93 @@ Alors, on a l'équivalence :
 	$\displaystyle\int_1^{n+1}t\ln t\ dt=\left[\frac{t^2}{2}\ln t\right]_1^{n+1}-\int_1^{n+1}\frac{t}{2}\ dt=\frac{(n+1)^2}{2}\ln(n+1)-\frac{(n+1)^2}{4}+\frac{1}{4}$.\\
 	On rappelle que $\ln(n+1)\unfty\sim\ln n$ car $\ln(n+1)-\ln n=\displaystyle\ln\left(1+\frac{1}{n}\right)\unfty=\smallo 1\unfty=\smallo{\ln n}$.\\
 	Donc $\displaystyle\int_1^{n+1}t\ln t\ dt\unfty=\frac{n^2}{2}\ln n-\frac{n^2}{4}+\smallo n$.\\
-	Posons $T_n=S_n-\displaystyle\frac{n^2}{2}\ln n-\frac{n^2}{4}$. On souhaite estimer $T_n$ et comme sa définition fait intervenir une somme une bonne idée peut être d'essayer d'estimer $T_{n+1}-T_n$ puis de sommer l'estimation obtenue.\\
+	Posons $T_n=S_n-\dfrac{n^2\ln n}{2}+\dfrac{n^2}{4}$. On souhaite estimer $T_n$ à la précision $\smallo n$ et comme sa définition fait intervenir une somme une bonne idée peut être d'essayer d'estimer $T_{n+1}-T_n$ à la précision $\smallo 1$ puis de sommer l'estimation obtenue.
 	\begin{align*}
-		T_{n+1}-T_n&=(n+1)\ln(n+1)+\frac{(n+1)^2}{2}\ln(n+1)-\frac{(n+1)^2}{4}-\frac{n^2}{2}\ln n+\frac{n^2}{4}\\
-		&=
+		T_{n+1}-T_n&\ \ \,=\ \ \,(n+1)\ln(n+1)-\frac{(n+1)^2}{2}\ln(n+1)+\frac{(n+1)^2}{4}+\frac{n^2}{2}\ln n-\frac{n^2}{4}\\
+		&\unfty=(n+1)\ln n+\frac{2n+1}{4}-\frac{2n+1}{2}\ln n+\left(\frac{(n+1)^2}{2}-n-1\right)\ln\left(1-\frac{1}{n+1}\right)+\smallo 1\\
+		&\unfty=\frac{\ln n}{2}+\frac{2n+1}{4}+\left(n+1-\frac{(n+1)^2}{2}\right)\left(\frac{1}{n+1}+\frac{1}{2(n+1)^2}\right)+\smallo 1\\
+		&\unfty=\frac{\ln n}{2}+\frac{2n+1}{4}1-\frac{n+1}{2}-\frac{1}{4}+\smallo 1\\
+		&\unfty=\frac{1}{2}+\frac{\ln n}{2}+\smallo 1
+	\end{align*}
+	Donc en sommant $T_n-T_1=\displaystyle\sum_{k=1}^{n-1}T_{k+1}-T_k\unfty=\frac{n}{2}+\frac{1}{2}\sum_{k=1}^{n-1}\ln k+\smallo n$.\\
+	On montre classiquement par comparaison série-intégrale $\displaystyle\sum_{k=1}^{n-1}\ln k\unfty=n\ln n-n+\smallo n$.\\
+	Par conséquent $T_n=\dfrac{n\ln n}{2}+\smallo n$.\\
+	Par suite, $S_n=T_n+\displaystyle\frac{n^2\ln n}{2}-\frac{n^2}{4}\unfty=\frac{n\ln n}{2}-\frac{n^2}{4}+\frac{n^2\ln n}{2}+\smallo n$.\\
+	Finalement,
+	\begin{align*}
+		u_n&\ \ \,=\ \ \,\exp\left(\frac{S_n}{n}\right)\\
+		&\unfty=\exp\left(-\frac{n}{4}+\frac{(n+1)\ln n}{2}+\smallo 1\right)\\
+		&\unfty=n^{\frac{n+1}{2}}e^{-\frac{n}{4}}e^{\smallo 1}\\
+		&\unfty\sim n^{\frac{n+1}{2}}e^{-\frac{n}{4}}
 	\end{align*}
 	
-	\subsection{Sommation de relation de comparaison}\label{sec:sommation-de-relation-de-comparaison}
-		\textcolor{blue}{\hyperref[Sommation de relation de comparaison]{[Enoncé]}}\\
+	\subsection{Sommation de relations de comparaison \ccinp{1}}
+	\label{sec:sommation-de-relations-de-comparaison}
+	\textcolor{blue}{\hyperref[Sommation de relations de comparaison]{[Enoncé]}}\\
+	Non ! Le théorème du cours nous dit qu'on a la conclusion lorsque l'une des suites est de signe constant APCR (elles sont de toute façon de même signe APCR). Trouvons un contre exemple.\\
+	Les suites de terme général $u_n=\dfrac{(-1)^n}{\sqrt n}$ et $v_n=\dfrac{(-1)^n}{\sqrt n}+\dfrac{1}{n}$ sont équivalentes.
+	Or $\displaystyle\sum_{n\in \N^*}u_n$ converge par critère spécial et $\displaystyle\sum_{n\in \N^*}v_n$ diverge comme somme d'une série convergente et d'une série divergente.
 	
-	\subsection{Equivalent de séries de Riemann}\label{sec:equivalent-de-series-de-riemann}
-		\textcolor{blue}{\hyperref[Equivalent de séries de Riemann]{[Enoncé]}}\\
+	\subsection{\underline{Equivalent de séries de Riemann} \ccinp{1}}
+	\label{sec:equivalent-de-series-de-riemann}
+	\textcolor{blue}{\hyperref[Equivalent de séries de Riemann]{[Enoncé]}}\\
+	\underline{$1^{ère}$ méthode :} Sommation de relations de comparaison\\
+	On remarque que $\displaystyle\frac{1}{n^\alpha}-\frac{1}{(n+1)^\alpha}=\frac{(n+1)^\alpha-n^\alpha}{n^\alpha(n+1)^\alpha}=\frac{\left(1+\frac{1}{n}\right)^\alpha-1}{(n+1)^\alpha}\unfty\sim\frac{\alpha}{n^{\alpha+1}}$.\\
+	La suite $\left(\dfrac{1}{n^\alpha}\right)$ est positive donc
+	\begin{itemize}
+		\item si $\alpha<1,\ \displaystyle\sum_{k=1}^n\frac{1}{k^\alpha}\unfty\sim\frac{1}{\alpha-1}\sum_{k=1}^n\left(\frac{1}{k^{\alpha-1}}-\frac{1}{(k+1)^{\alpha-1}}\right)\unfty\sim\frac{n^{1-\alpha}}{1-\alpha}$;
+		\item si $\alpha>1,\ \displaystyle\sum_{k=n+1}^{+\infty}\frac{1}{k^\alpha}\unfty\sim\frac{1}{\alpha-1}\sum_{k=n+1}^{+\infty}\left(\frac{1}{k^{\alpha-1}}-\frac{1}{(k+1)^{\alpha-1}}\right)\unfty\sim\frac{1}{(\alpha-1)n^{\alpha-1}}$.
+	\end{itemize}
 	
-	\subsection{Séries de Bertrand}\label{sec:series-de-bertrand}
-		\textcolor{blue}{\hyperref[Séries de Bertrand]{[Enoncé]}}\\
+	\underline{$2^{nd}$ méthode :} Comparaison série-intégrale\\
+	On pose $f_\alpha:t\mapsto\dfrac{1}{t^\alpha}$. $f_\alpha$ est dérivable sur $\R^*_+$ et $\forall t>0,\ f_\alpha'(t)=-\dfrac{\alpha}{t^{\alpha+1}}$ est du signe de $-\alpha$.\\
+	Fixons $k\in \N^*$. Soit $t\in [k,k+1]$.\\
+	Si $\alpha<0$ alors $f_\alpha(k)\leq f_\alpha(t)\leq f_\alpha(k+1)$. D'où en intégrant sur $[k,k+1]$ :
+	$$f_\alpha(k)\leq \displaystyle\int_k^{k+1}f_\alpha(t)dt\leq f_\alpha(k+1)$$
+	Puis en sommant de $1$ à $n-1$ :\\
+	$$\sum_{k=1}^{n-1}\frac{1}{k^\alpha}\leq \int_1^n\frac{dt}{t^\alpha}\leq \sum_{k=2}^n\frac{1}{k^\alpha}$$
+	Càd
+	$$1+\frac{n^{1-\alpha}-1}{1-\alpha}=1+\int_1^n\frac{dt}{t^\alpha}\leq\sum_{k=1}^n\frac{1}{k^\alpha}\leq \frac{1}{n^\alpha}+\int_1^n\frac{dt}{t^\alpha}=\frac{1}{n^\alpha}+\frac{n^{1-\alpha}-1}{1-\alpha}$$
+	Si $0\leq\alpha<1$ on obtient les même inégalités dans l'autre sens, donc dans ces deux cas $\displaystyle\sum_{k=1}^n\frac{1}{k^\alpha}\unfty\sim\frac{n^{1-\alpha}}{1-\alpha}$ par encadrement.\\
+	Si $\alpha>1$ on somme plutôt de $n$ à $+\infty$ :
+	$$\sum_{k=n+1}^{+\infty}\frac{1}{k^\alpha}\leq \int_n^{+\infty}\frac{dt}{t^\alpha}\leq \sum_{k=n}^{+\infty}\frac{1}{k^\alpha}$$
+	Càd
+	$$\frac{1}{(\alpha-1)n^{\alpha-1}}-\frac{1}{n^\alpha}=\int_n^{+\infty}\frac{dt}{t^\alpha}-\frac{1}{n^\alpha}\leq\sum_{k=n+1}^{+\infty}\frac{1}{k^\alpha}\leq \int_n^{+\infty}\frac{dt}{t^\alpha}=\frac{1}{(\alpha-1)n^{\alpha-1}}$$
+	Donc $\displaystyle\sum_{k=n+1}^{+\infty}\frac{1}{k^\alpha}\unfty\sim\frac{1}{(\alpha-1)n^{\alpha-1}}$ par encadrement.
 	
-	\subsection{Critère de Raabe-Duhamel \etoile{2}}\label{sec:critere-de-raabe-duhamel-etoile2}
-		\textcolor{blue}{\hyperref[Critère de Raabe-Duhamel]{[Enoncé]}}\\
+	\subsection{\underline{Séries de Bertrand} \ccinp{2}}
+	\label{sec:series-de-bertrand}
+	\textcolor{blue}{\hyperref[Séries de Bertrand]{[Enoncé]}}\\
+	Soient $\alpha,\beta\in \R$.
+	\begin{itemize}
+		\item Si $\alpha>1$ : on se donne $\gamma\in ]1,\alpha[$.\\
+		$\dfrac{1}{n^\alpha\ln(n)^\beta}=\smallo{\dfrac{1}{n^\gamma}}$ car $\gamma<\alpha$ et $\displaystyle\sum_{n\geq 1}\frac{1}{n^\gamma}$ converge car $\gamma>1$. En outre la suite $\left(\dfrac{1}{n^\gamma}\right)_{n\in \N^*}$ est positive.\\
+		On en déduit que $\displaystyle\sum_{n\geq 2}\frac{1}{n^\alpha\ln(n)^\beta}$ converge;
+		\item Si $\alpha<1$ : on se donne $\gamma\in ]\alpha,1[$.\\
+		$\dfrac{1}{n^\gamma}=\smallo{\dfrac{1}{n^\alpha\ln(n)^\beta}}$ car $\gamma>\alpha$ et $\displaystyle\sum_{n\geq 1}\frac{1}{n^\gamma}$ diverge car $\gamma<1$. En outre la suite $\left(\dfrac{1}{n^\gamma}\right)_{n\in \N^*}$ est positive.\\
+		On en déduit que $\displaystyle\sum_{n\geq 2}\frac{1}{n^\alpha\ln(n)^\beta}$ diverge;
+		\item Si $\alpha=1$ : on pose $f_\beta:t\mapsto\dfrac{1}{t\ln(t)^\beta}$.
+		\begin{itemize}[label=\textbullet]
+			\item Si $\beta<0$ : $\forall x,y\in [2,+\infty[,\ x\leq y\implies x\ln(x)^\beta\geq y\ln(y)^\beta\implies f_\beta(x)\leq f_\beta(y)$.\\
+			Fixons $k\in \N^*$. Soit $t\in [k,k+1]$.\\
+			Alors $f_\beta(k)\leq f_\beta(t)\leq f_\beta(k+1)$. D'où en intégrant sur $[k,k+1]$ :
+			$$f_\beta(k)\leq \displaystyle\int_k^{k+1}f_\beta(t)dt\leq f_\beta(k+1)$$
+			Puis en sommant de $2$ à $n-1$ :\\
+			$$\sum_{k=2}^{n-1}\frac{1}{k^\beta}\leq \int_2^n\frac{dt}{t^\beta}\leq \sum_{k=3}^n\frac{1}{k^\beta}$$
+			Càd
+			$$\frac{1}{2\ln(2)^\beta}+\int_2^n\frac{dt}{t\ln(t)^\beta}\leq\sum_{k=2}^n\frac{1}{k\ln(k)^\beta}\leq \frac{1}{n\ln(n)^\beta}+\int_2^n\frac{dt}{t\ln(t)^\beta}$$
+			On calcule avec $\beta\ne 1$, $\displaystyle\int_2^n\frac{dt}{t\ln(t)^\beta}=\left[\frac{\ln(t)^{1-\beta}}{1-\beta}\right]_2^n=\frac{1}{1-\beta}\left(\ln(n)^{1-\beta}-\ln(2)^{1-\beta}\right)$.\\
+			Donc comme $\dfrac{\ln(n)^{1-\beta}}{1-\beta}\unfty\longrightarrow+\infty$, $\displaystyle\sum_{n\geq 2}\frac{1}{n\ln(n)^\beta}$ diverge;
+			\item Si $\beta>0$ : $f_\beta$ est décroissante donc on a les mêmes inégalités dans l'autre sens.\\
+			Si $\beta<1$, $\dfrac{1}{n\ln(n)^\beta}+\dfrac{\ln(n)^{1-\beta}}{1-\beta}\unfty\longrightarrow+\infty$ donc $\displaystyle\sum_{n\geq 2}\frac{1}{n\ln(n)^\beta}$ diverge.\\
+			Si $\beta>1$, $\dfrac{\ln(n)^{1-\beta}}{1-\beta}\unfty\longrightarrow0$ donc la série $\displaystyle\sum_{n\geq 2}\frac{1}{n\ln(n)^\beta}$ est majorée. Etant à termes positifs elle converge.\\
+			Enfin si $\beta=1$ alors $\displaystyle\int_2^n\frac{dt}{t\ln(t)}=\ln(\ln(n))-\ln(\ln(2))\unfty\longrightarrow+\infty$ donc $\displaystyle\sum_{n\geq 2}\frac{1}{n\ln(n)^\beta}$ diverge.
+		\end{itemize}
+	\end{itemize}
+	
+	\subsection{Critère de Raabe-Duhamel \ccinp{2}}
+	\label{sec:critere-de-raabe-duhamel-etoile2}
+	\textcolor{blue}{\hyperref[Critère de Raabe-Duhamel]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item APCR, on a $\displaystyle\frac{v_{n}}{u_n}\leq\frac{v_{n+1}}{u_{n+1}}$ c'est-à-dire $\left(\displaystyle\frac{v_{n}}{u_n}\right)$ est croissante APCR. Donc, pour un certain $N\in\N$, on a pour tout $n\geq N, \; \displaystyle\frac{v_{N}}{u_N}\leq\frac{v_{n}}{u_n}$, c'est-à-dire $0\leq u_n\leq\displaystyle\frac{u_N}{v_N}v_n$
 		\\Et donc $u_n\unfty{=}\bigO{v_n}$
@@ -4754,20 +4952,74 @@ Alors, on a l'équivalence :
 		\end{itemize}
 	\end{enumerate}
 	
-	\subsection{Règle de d'Alembert}\label{sec:regle-de-dalembert}
-		\textcolor{blue}{\hyperref[Règle de d'Alembert]{[Enoncé]}}\\
-	\subsection{Règle de Cauchy}\label{sec:regle-de-cauchy}
-		\textcolor{blue}{\hyperref[Règle de Cauchy]{[Enoncé]}}\\
+	\subsection{Règle de d'Alembert \ccinp{2}}
+	\label{sec:regle-de-dalembert}
+	\textcolor{blue}{\hyperref[Règle de d'Alembert]{[Enoncé]}}\\
+	\begin{itemize}
+		\item Supposons $\ell<1$. Soit $\varepsilon>0$. Par hypothèse $\exists n_0\in \N,\ \forall n\geq n_0,\ \left|\dfrac{u_{n+1}}{u_n}-\ell\right|\leq \varepsilon$.\\
+		D'où comme $(u_n)_{n\in \N}$ est positive, $\forall n\geq n_0,\ u_{n+1}\leq u_n(\ell+\varepsilon)$.\\
+		Par récurrence immédiate $\forall n\geq n_0,\ u_n\leq u_{n_0}(\ell+\varepsilon)^{n-n_0}$. Alors en prenant $\varepsilon\in ]0,1-\ell[$, $0\leq\ell+\varepsilon<1$ donc la série $\displaystyle\sum_{n\in \N}(\ell+\varepsilon)^n$ converge et par suite $\displaystyle\sum_{n\in \N}u_n$ converge.
+		\item Si $\ell>1$ alors $\exists n_0\in \N,\ \forall n\geq n_0,\ \dfrac{u_{n+1}}{u_n}\geq 1$. Donc $\forall n\geq n_0,\ u_{n+1}\geq u_n\geq u_{n_0}>0$. Ainsi $\displaystyle\sum_{n\in \N}u_n$ diverge grossièrement.
+	\end{itemize}
+	Montrons que dans le cas $\ell=1$ la série peut diverger ou converger.\\
+	Pour $u_n=\displaystyle\frac{1}{n}$, $\displaystyle\frac{u_{n+1}}{u_n}=\frac{n+1}{n}\unfty\longrightarrow 1$ et la série $\displaystyle\sum_{n\in \N^*}\frac{1}{n}$ diverge.\\
+	Pour $u_n=\displaystyle\frac{1}{n^2}$, $\displaystyle\frac{u_{n+1}}{u_n}=\frac{(n+1)^2}{n^2}\unfty\longrightarrow 1$ et la série $\displaystyle\sum_{n\in \N^*}\frac{1}{n^2}$ converge.
 	
-	\subsection{d'Alembert $\Rightarrow$ Cauchy}\label{sec:dalembert-rightarrow-cauchy}
-		\textcolor{blue}{\hyperref[d'Alembert implique Cauchy]{[Enoncé]}}\\
+	\subsection{Règle de Cauchy \ccinp{2}}
+	\label{sec:regle-de-cauchy}
+	\textcolor{blue}{\hyperref[Règle de Cauchy]{[Enoncé]}}\\
+	\begin{itemize}
+		\item Supposons $\ell<1$. Soit $\varepsilon>0$. Par hypothèse $\exists n_0\in \N,\ \forall n\geq n_0,\ \left|\sqrt[n]{u_n}-\ell\right|\leq \varepsilon$.\\
+		D'où $\forall n\geq n_0,\ u_n\leq (\ell+\varepsilon)^n$. Alors en prenant $\varepsilon\in ]0,1-\ell[$, $0\leq\ell+\varepsilon<1$ donc la série $\displaystyle\sum_{n\in \N}(\ell+\varepsilon)^n$ converge et par suite $\displaystyle\sum_{n\in \N}u_n$ converge.
+		\item Si $\ell>1$ alors $\exists n_0\in \N,\ \forall n\geq n_0,\ \sqrt[n]{u_n}\geq 1$. Donc $\forall n\geq n_0,\ u_n\geq 1$. Ainsi $\displaystyle\sum_{n\in \N}u_n$ diverge grossièrement.
+	\end{itemize}
+	Montrons que dans le cas $\ell=1$ la série peut diverger ou converger.\\
+	Pour $u_n=\left(1+\dfrac{1}{n}\right)^n$, $\sqrt[n]{u_n}=1+\dfrac{1}{n}\unfty\longrightarrow 1$ et la série $\displaystyle\sum_{n\in \N^*}\left(1+\frac{1}{n}\right)^n$ diverge grossièrement.\\
+	($u_n=\displaystyle\frac{1}{n}$ fonctionne aussi.)\\
+	Pour $u_n=\displaystyle\frac{1}{n^2}$, $\sqrt[n]{u_n}=n^{-2/n}=\exp\left(-\dfrac{2\ln n}{n}\right)\unfty\longrightarrow 1$ et la série $\displaystyle\sum_{n\in \N^*}\frac{1}{n^2}$ converge.
 	
-	\subsection{Transformation d'Abel et règle d'Abel}\label{sec:transformation-dabel-et-regle-dabel}
-		\textcolor{blue}{\hyperref[Transformation et règle d'Abel]{[Enoncé]}}\\
+	\subsection{d'Alembert $\Rightarrow$ Cauchy \centraleponts{3}}
+	\label{sec:dalembert-rightarrow-cauchy}
+	\textcolor{blue}{\hyperref[d'Alembert implique Cauchy]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item \begin{itemize}
+			\item Supposons $\ell\in \R_+$. Soit $\varepsilon>0$. Par hypothèse $\exists n_0\in \N,\ \forall n\geq n_0,\ (1-\varepsilon)\ell\leq\dfrac{u_{n+1}}{u_n}\leq (1+\varepsilon)\ell$.\\
+			Càd comme $(u_n)_{n\in \N}$ est positive, $\forall n\geq n_0,\ u_n(1-\varepsilon)\ell\leq u_{n+1}\leq u_n(1+\varepsilon)\ell$.\\
+			Par récurrence immédiate $\forall n\geq n_0,\ \dfrac{u_{n_0}}{(1-\varepsilon)^{n_0}\ell^{n_0}}(1-\varepsilon)^n\ell^n\leq u_n\leq \dfrac{u_{n_0}}{(1+\varepsilon)^{n_0}\ell^{n_0}}(1+\varepsilon)^n\ell^n$.\\
+			D'où $\forall n\geq n_0,\ \dfrac{u_{n_0}}{\ell^{n_0}}(1-\varepsilon)^n\ell^n\leq u_n\leq \dfrac{u_{n_0}}{\ell^{n_0}}(1+\varepsilon)^n\ell^n$.\\
+			D'où $\forall n\geq n_0,\ \sqrt[n]{\dfrac{u_{n_0}}{\ell^{n_0}}}(1-\varepsilon)\ell\leq \sqrt[n]{u_n}\leq \sqrt[n]{\dfrac{u_{n_0}}{\ell^{n_0}}}(1+\varepsilon)\ell$.\\
+			Or $\sqrt[n]{\dfrac{u_{n_0}}{\ell^{n_0}}}\unfty\longrightarrow 1$ donc on peut trouver $n_1\in \N$ pour lequel $\forall n\geq n_1,\ \left|\sqrt[n]{\dfrac{u_{n_0}}{\ell^{n_0}}}-1\right|\leq \varepsilon$.\\
+			Alors pour tout $n\geq \max(n_0,n_1)$, $(1-\varepsilon)^2\ell\leq \sqrt[n]{u_n}\leq (1+\varepsilon)^2\ell$.\\
+			Finalement $\sqrt[n]{u_n}\unfty\longrightarrow\ell$.
+			\item Supposons $\ell=+\infty$. Soit $A>0$. Par hypothèse $\exists n_0\in \N,\ \forall n\geq n_0,\ \dfrac{u_{n+1}}{u_n}\geq A$.\\
+			Càd comme $(u_n)_{n\in \N}$ est positive, $\forall n\geq n_0,\ u_{n+1}\geq u_nA$.\\
+			Par récurrence immédiate $\forall n\geq n_0,\ u_n\geq u_{n_0}A^{n-n_0}$.\\
+			D'où $\forall n\geq n_0,\ \sqrt[n]{u_n}\geq \sqrt[n]{\dfrac{u_{n_0}}{A^{n_0}}}A$.\\
+			Or $\sqrt[n]{\dfrac{u_{n_0}}{A^{n_0}}}\unfty\longrightarrow 1$ donc on peut trouver $n_1\in \N$ pour lequel $\forall n\geq n_1,\ \sqrt[n]{\dfrac{u_{n_0}}{A^{n_0}}}\geq \dfrac{1}{2}$.\\
+			Alors pour tout $n\geq \max(n_0,n_1)$, $\sqrt[n]{u_n}\geq \dfrac{A}{2}$.\\
+			Finalement $\sqrt[n]{u_n}\unfty\longrightarrow+\infty$.
+		\end{itemize}
+		\item Soit $\varepsilon>0$. On pose $v_n=\dfrac{u_n}{(\ell+\varepsilon)^n}$ et $w_n=\dfrac{(\ell-\varepsilon)^n}{u_n}$. Les suites $(v_n)_{n\in \N},\ (w_n)_{n\in \N}$ sont à termes strictement positifs.\\
+		De plus $\displaystyle\frac{v_{n+1}}{v_n}=\frac{u_{n+1}}{u_n}(\ell+\varepsilon)^{-1}\unfty\longrightarrow\frac{\ell}{\ell+\varepsilon}<1$ et $\displaystyle\frac{w_{n+1}}{w_n}\unfty\longrightarrow\frac{\ell-\varepsilon}{\ell}<1$.\\
+		Donc par le critère de d'Alembert les séries $\displaystyle\sum_{n\in \N}v_n$ et $\displaystyle\sum_{n\in \N}w_n$ converge. Leur terme général est donc de limite nulle d'où APCR $\ell-\varepsilon\leq \sqrt[n]{u_n}\leq \ell+\varepsilon$.
+		\item On considère $x_n=\ln\left(\dfrac{u_{n+1}}{u_n}\right)$. Par continuité de $\ln$, $(x_n)_{n\in \N}$ converge vers $\ln(\ell)$ (avec les conventions $\ln(0)=-\infty$, $\ln(+\infty)=+\infty$). Donc d'après le lemme de Césaro $$\frac{1}{n}\sum_{k=0}^{n-1}\ln(u_{k+1})-\ln(u_k)=\frac{\ln(u_n)-\ln(u_0)}{n}\unfty\longrightarrow\ln(\ell)$$
+		Donc $\dfrac{\ln(u_n)}{n}\unfty\longrightarrow\ln(\ell)$ puis par continuité de $\exp$, $\sqrt[n]{u_n}\unfty\longrightarrow\ell$.
+		\item La réciproque est fausse. Pour $u_n=2+(-1)^n$ :
+		\begin{itemize}
+			\item $\sqrt[2n]{u_{2n}}=e^{\ln(3)/n}\unfty\longrightarrow 1$ et $\sqrt[2n+1]{u_{2n +1}}=1\unfty\longrightarrow 1$ donc $\sqrt[n]{u_n}\unfty\longrightarrow 1$;
+			\item $\dfrac{u_{2n+2}}{u_{2n+1}}=3\unfty\longrightarrow 3$ et $\dfrac{u_{2n+1}}{u_{2n}}=\dfrac{1}{3}\unfty\longrightarrow\dfrac{1}{3}$ donc $\left(\dfrac{u_{n+1}}{u_n}\right)_{n\in \N}$ n'admet pas de limite.
+		\end{itemize}
+	\end{enumerate}
+	
+	\subsection{\underline{Transformation d'Abel et règle d'Abel} \centraleponts{2}}
+	\label{sec:transformation-dabel-et-regle-dabel}
+	\textcolor{blue}{\hyperref[Transformation et règle d'Abel]{[Enoncé]}}\\
+	
 	\subsubsection{Une série de Dirichlet}
 	
-	\subsection{Equation différentielle discrète\etoile{3}}\label{sec:equation-differentielle-discreteetoile3}
-		\textcolor{blue}{\hyperref[Equation différentielle discrète]{[Enoncé]}}\\
+	\subsection{Equation différentielle discrète \centraleponts{3}}
+	\label{sec:equation-differentielle-discreteetoile3}
+	\textcolor{blue}{\hyperref[Equation différentielle discrète]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item La série $\displaystyle\sum a_n^2$ est à termes positifs donc la suite $(S_n)$ converge ou diverge vers $+\infty$.\\ Supposons qu'elle converge vers un certain $l\in\R$. Puisque pour tout $n\in \N^*,\ S_n\geq a_1^2>0$, $l$ est strictement positif. Donc $(a_n)$ converge vers $\displaystyle\frac{1}{l}$. Or ceci est absurde car $\displaystyle\sum a_n^2$ divergerait grossièrement. Par conséquent, la série $\displaystyle\sum a_n^2$ diverge vers $+\infty$ et $a_n$ tend vers 0.
 		\item Soient $n\in\N^*$ et $y\in[S_{n-1},S_n]$\\Par croissance de $t\to t^2$ sur $\R^+$, $$(S_n-S_{n-1})S_{n-1}^2\leq\displaystyle\int_{S_{n-1}}^{S_n}t^2dt\leq(S_n-S_{n-1})S_{n}^2$$
@@ -4777,10 +5029,13 @@ Alors, on a l'équivalence :
 		\\Et finalement $a_n\unfty{\sim}\displaystyle\frac{1}{\sqrt[3]{3n}}$.
 	\end{enumerate}
 	
-	\subsection{Critère spécial des séries alternées}\label{sec:critere-special-des-series-alternees}
-		\textcolor{blue}{\hyperref[Critère spécial des séries alternées]{[Enoncé]}}\\
-	\subsection{Calcul d'une somme de série (1) \etoile{3}}\label{sec:calcul-dune-somme-de-serie-1-etoile3}
-		\textcolor{blue}{\hyperref[Calcul d'une somme de série 1]{[Enoncé]}}\\
+	\subsection{Critère spécial des séries alternées}
+	\label{sec:critere-special-des-series-alternees}
+	\textcolor{blue}{\hyperref[Critère spécial des séries alternées]{[Enoncé]}}\\
+	
+	\subsection{Calcul d'une somme de série (1) \xens{3}}
+	\label{sec:calcul-dune-somme-de-serie-1-etoile3}
+	\textcolor{blue}{\hyperref[Calcul d'une somme de série 1]{[Enoncé]}}\\
 	$\forall n\in \N^*,\ u_n=\displaystyle\frac{n(n+1)(2n+1)}{6}$. $\displaystyle\frac{1}{u_n}\unfty{=}\bigO{\frac{1}{n^3}}$ donc $\displaystyle\sum\limits_{n\geq 1}\frac{1}{u_n}$ converge par comparaison à une série de Riemann.\\
 	On décompose en éléments simples $F(X)=\displaystyle\frac{6}{X(X+1)(2X+1)}=\displaystyle\frac{a}{X}+\displaystyle\frac{b}{X+1}+\displaystyle\frac{c}{2X+1}$.\\
 	$\begin{cases}
@@ -4801,8 +5056,9 @@ Alors, on a l'équivalence :
 	\end{align*}\\
 	Finalement, $\displaystyle\sum\limits_{n=1}^{+\infty}\frac{1}{u_n}=18-24\ln(2)$.
 	
-	\subsection{Calcul d'une somme de série (2) \etoile{1}}\label{sec:calcul-dune-somme-de-serie-2-etoile1}
-		\textcolor{blue}{\hyperref[Calcul d'une somme de série 2]{[Enoncé]}}\\
+	\subsection{Calcul d'une somme de série (2) \telecom{1}}
+	\label{sec:calcul-dune-somme-de-serie-2-etoile1}
+	\textcolor{blue}{\hyperref[Calcul d'une somme de série 2]{[Enoncé]}}\\
 	\underline{$1^{ère}$ méthode :}\\
 	$\forall n\in \N^*,\ u_n=\displaystyle\frac{1}{n}\sum\limits_{k=1}^n\frac{1}{1+\displaystyle\frac{k}{n}}$. La fonction $f:x\mapsto \displaystyle\frac{1}{1+x}$ est continue sur $[0,1]$ donc $(u_n)_{n\in \N^*}$ converge et,\\\\
 	$\unfty{\lim}u_n=\unfty{\lim}\displaystyle\frac{
@@ -4811,11 +5067,14 @@ Alors, on a l'équivalence :
 	$\forall n\in \N^*,\ u_n=\displaystyle\sum\limits_{k=n+1}^{2n}\frac{1}{k}=H_{2n}-H_n$, avec $H_n=\displaystyle\sum\limits_{k=1}^n\frac{1}{k}$.
 	En utilisant le développement asymptotique classique de la série harmonique, $u_n\unfty{=}\ln(2n)+\gamma-\ln(n)-\gamma+\smallo{1}\unfty{=}\ln(2)+\smallo{1}\unfty{\longrightarrow}\ln(2)$.
 	
-	\subsection{Calcul d'une somme de série (3) \etoile{3}}\label{sec:calcul-dune-somme-de-serie-3-etoile3}
-		\textcolor{blue}{\hyperref[Calcul d'une somme de série 3]{[Enoncé]}}\\
+	\subsection{Calcul d'une somme de série (3) \etoile{3}}
+	\label{sec:calcul-dune-somme-de-serie-3-etoile3}
+	\textcolor{blue}{\hyperref[Calcul d'une somme de série 3]{[Enoncé]}}\\
 	
-	\subsection{Problème de Bâle}\label{sec:probleme-de-bale}
-		\textcolor{blue}{\hyperref[Problème de Bâle]{[Enoncé]}}
+	\subsection{Problème de Bâle}
+	\label{sec:probleme-de-bale}
+	\textcolor{blue}{\hyperref[Problème de Bâle]{[Enoncé]}}
+	
 	\subsubsection{Lemme de Riemann-Lebesgue}
 	\begin{enumerate}[leftmargin=*]
 		\item cf. \ref{Lemme de Riemann-Lebesgue : cas des fonction C1}. Il suffira ensuite de prendre la partie réelle et la partie imaginaire pour obtenir le résultat.
@@ -5187,14 +5446,24 @@ Alors, on a l'équivalence :
 	\subsection{Intégrabilité des cosinus de polynômes}
 	\label{Intégrabilité des cosinus de polynômes corrigé}
 	\textcolor{blue}{\hyperref[intégrabilitécospolynome]{[Enoncé]}}\\
-	\subsection{Nature d'une intégrale}
-	\label{Nature d'une intégrale corrigé}
-	\textcolor{blue}{\hyperref[natureintégrale]{[Enoncé]}}\\
+	\subsection{Nature d'une intégrale (1) \telecom{2}}
+	\label{Nature d'une intégrale (1) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une intégrale (1)]{[Enoncé]}}\\
+	$\arccos$ est une fonction continue par morceaux et strictement positive sur $[0,1[$. Cherchons un équivalent de $\arccos$ en $1^-$.\\
+	On sait que $\cos(t)\utzero=1-\dfrac{t^2}{2}+\smallo{t^2}$ et $\arccos(t)\underset{t\to 1^-}\longrightarrow 0$.\\
+	Donc $2(1-t)\underset{t\to 1^-}=\arccos(t)^2+\smallo{\arccos(t)^2}\underset{t\to 1^-}\sim\arccos(t)^2$.\\
+	Ainsi $\forall \alpha\in \R,\ \displaystyle\frac{1}{\arccos(t)^\alpha}\underset{t\to 1^-}\sim\frac{1}{2^{\alpha/2}(1-t)^{\alpha/2}}$.\\
+	On en déduit que $\displaystyle\int_0^1\frac{dt}{\arccos(t)^\alpha}$ converge si et seulement si $\alpha>2$.
+	
+	\subsection{Nature d'une intégrale (2)}
+	\label{Nature d'une intégrale (2) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une intégrale (2)]{[Enoncé]}}\\
+	
 	\subsection{Divergence grossière}
 	\label{Divergence grossière corrigé}
 	\textcolor{blue}{\hyperref[divergencegrossière]{[Enoncé]}}\\
-	\subsection{Espace $l^2$ et dérivation}\label{sec:espace-l2-et-derivation}
-	\textcolor{blue}{\hyperref[l2]{[Enoncé]}}\\
+	\subsection{Espace $L^2$ et dérivation}\label{sec:espace-L2-et-derivation}
+	\textcolor{blue}{\hyperref[Espace L^2 et  dérivation]{[Enoncé]}}\\
 	\subsection{Intégrale de Frullani}\label{sec:integrale-de-frullani}
 	\textcolor{blue}{\hyperref[frullani]{[Enoncé]}}\\
 	
@@ -7100,8 +7369,47 @@ Alors, on a l'équivalence :
 	\subsection{Etude d'une suite de fonctions 7}\label{sec:etude-dune-suite-de-fonction-7}
 		\textcolor{blue}{\hyperref[Etude d'une suite de fonctions 7]{[Enoncé]}}\\
 		
-	\subsection{Développement de la cotangente}\label{sec:developpement-de-la-cotangente}
-		\textcolor{blue}{\hyperref[Développement de la cotangente 1]{[Enoncé]}}\\
+	\subsection{Développement de la cotangente (1)}
+	\label{sec:developpement-de-la-cotangente-(1)}
+	\textcolor{blue}{\hyperref[Développement de la cotangente (1)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Fixons $x\in \R\backslash\Z$.\\
+		$f_n(x)=\displaystyle\frac{1}{x}+\sum_{k=1}^n\left(\frac{1}{x-k}+\frac{1}{x+k}\right)=\frac{1}{x}+\sum_{k=1}^n\frac{2x}{x^2-k^2}$.\\
+		Or $\dfrac{2x}{x^2-k^2}\ukfty=\bigO{\dfrac{1}{k^2}}$ donc $(f_n(x))_{n\in \N}$ converge par comparaison à une série de Riemann.\\
+		Ainsi $(f_n)_{n\in \N}$ converge simplement sur $\R\backslash\Z$ vers $f:x\mapsto\displaystyle\frac{1}{x}+\sum_{k=1}^{+\infty}\frac{2x}{x^2-k^2}$.\\
+		\item $\cotan(\pi x)=\dfrac{\cos(\pi x)}{\sin(\pi x)}$ est définie et continue sur $\R\backslash\Z$.\\
+		En outre $\forall x\in \R\backslash\Z,\ \cotan(\pi(x+1))=\dfrac{\cos(\pi x+\pi)}{\sin(\pi x+\pi)}=\dfrac{-\cos(\pi x)}{-\sin(\pi x)}=\cotan(\pi x)$.\\
+		On remarque ensuite que $f$ est $1$-périodique (c'est un changement d'indice). On peut donc se contenter de montrer que $f$ est continue sur $]0,1[$ et que $g$ est prolongeable par continuité en $0$.
+		Les $f_n$ sont continues sur $]0,1[$, montrons qu'elles convergent uniformément vers $f$ sur tout segment de $]0,1[$.\\
+		Soit $x\in ]0,1[$. On note $R_n(x):=f(x)-f_n(x)=\displaystyle\sum_{k=n+1}^{+\infty}\frac{2x}{x^2-k^2}$.\\
+		$\forall n\in \N^*,\ |R_n(x)|\leq \displaystyle\sum_{k=n+1}^{+\infty}\frac{2}{k^2-x^2}\leq \sum_{k=n+1}^{+\infty}\frac{2}{k(k-1)}=2\sum_{k=n+1}^{+\infty}\left(\frac{1}{k-1}-\frac{1}{k}\right)=\frac{2}{n}$.\\
+		Ainsi $\sup\limits_{x\in ]0,1[}|R_n(x)|\leq \dfrac{2}{n}\unfty\longrightarrow0$.\\
+		Càd $(f_n)_{n\in \N}$ converge uniformément vers $f$ sur $]0,1[$. On en déduit que $f$ est continue sur $]0,1[$.\\
+		Enfin, \begin{align*}
+			\pi\cotan(\pi x)&\ =\frac{\pi\cos(\pi x)}{\sin(\pi x)}\\
+			&\uxzero=\frac{1}{x-\frac{\pi^2x^3}{6}+\smallo{x^3}}\\
+			&\uxzero=\frac{1}{x}\cdot\frac{1}{1-\frac{\pi^2x^2}{6}+\smallo{x^2}}\\
+			&\uxzero=\frac{1}{x}\left(1-\frac{\pi^2x^2}{6}+\smallo{x^2}\right)\\
+			&\uxzero=\frac{1}{x}-\frac{\pi^2x}{6}+\smallo{x}
+		\end{align*}
+		Donc $g(x)\uxzero=\displaystyle-\frac{\pi^2x}{6}+\sum_{k=1}^{+\infty}\frac{2x}{k^2-x^2}+\smallo{x}\uxzero=\smallo{1}$.\\
+		Càd $g$ est prolongeable par continuité en $0$ en posant $g(0)=0$. Par $1$-périodicité, $g$ est prolongeable par continuité sur $\R$ en posant $g(k)=0$ pour tout entier $k$.
+		\item $\displaystyle f\left(\frac{x}{2}\right)+f\left(\frac{x+1}{2}\right)=\sum_{k=-\infty}^{+\infty}\frac{2}{x-2k}+\sum_{k=-\infty}^{+\infty}\frac{2}{x-2k+1}$.
+		Or on a en fait montré dans la question précédente qu'on a la convergence normale des séries en jeux sur $]0,1[$. Donc d'après le théorème de sommation par paquets,
+		$$f(x)=\frac{f\left(\frac{x}{2}\right)+f\left(\frac{x+1}{2}\right)}{2}$$
+		Ensuite,\begin{align*}
+			\cotan\left(\frac{\pi x}{2}\right)+\cotan\left(\frac{\pi(x+1)}{2}\right)&=\frac{\cos(\frac{\pi x}{2})\sin(\frac{\pi(x+1)}{2})+\cos(\frac{\pi(x+1)}{2})\sin(\frac{\pi x}{2})}{\sin(\frac{\pi x}{2})\sin(\frac{\pi(x+1)}{2})}\\
+			&=\frac{\sin(\pi x+\frac{\pi}{2})}{\sin(\frac{\pi x}{2})\sin(\frac{\pi x}{2}+\frac{\pi}{2})}\\
+			&=\frac{\cos(\pi x)}{\sin(\frac{\pi x}{2})\cos(\frac{\pi x}{2})}\\
+			&=\frac{2\cos(\pi x)}{\sin(\pi x)}\\
+			&=2\cotan(\pi x)
+		\end{align*}
+		Donc $g(x)=\dfrac{g\left(\frac{x}{2}\right)+g\left(\frac{x+1}{2}\right)}{2}$.\\
+		Cette égalité reste vraie en $0$ par continuité. Elle est donc vraie sur $\R$ par $1$-périodicité.
+		\item $g$ étant continue sur $[0,1]$, elle y est bornée et atteints ses bornes. Il existe donc $a\in [0,1]$ tel que $g(a)=\max\limits_{x\in [0,1]}g(x)$.\\
+		On remarque alors que comme $\displaystyle\frac{a+1}{2}\in [0,1],\ 2g(a)=g\left(\frac{a}{2}\right)+g\left(\frac{a+1}{2}\right)\leq g\left(\frac{a}{2}\right)+g(a)$ i.e $g\left(\dfrac{a}{2}\right)\geq g(a)$. Comme $\dfrac{a}{2}\in [0,1]$, $g(a)=g\left(\dfrac{a}{2}\right)$. Par récurrence immédiate $\forall n\in \N,\ g(a)=g\left(\dfrac{a}{2^n}\right)$. Donc par continuité de $g$ en $0$, $g(a)=g(0)=0$. D'où $g=0$ sur $[0,1]$, puis sur $\R$ par $1$-périodicité.
+	\end{enumerate}
+	
 	\subsection{Etude d'une fonction définie par une série alternée (1)}\label{sec:etude-dune-fonction-definie-par-une-serie-alternee-1}
 		\textcolor{blue}{\hyperref[Etude d'une fonction définie par une série alternée 1]{[Enoncé]}}\\
 	\subsection{Etude d'une fonction définie par une série alternée (2)}\label{sec:etude-dune-fonction-definie-par-une-serie-alternee-2}
@@ -8992,22 +9300,38 @@ Alors, on a l'équivalence :
 	\label{sec:equations-differentielles-du-premier-ordre}
 	\textcolor{blue}{\hyperref[Equations différentielles du premier ordre]{[Enoncé]}}\\
 	
-	\subsection{Equations différentielles du second ordre}\label{sec:equations-differentielles-du-second-ordre}
-		\textcolor{blue}{\hyperref[Equations différentielles du second ordre]{[Enoncé]}}\\
-	\subsection{Problèmes de raccordement}\label{sec:problemes-de-raccordement}
-		\textcolor{blue}{\hyperref[Problème de raccordement]{[Enoncé]}}\\
+	\subsection{Equations différentielles du second ordre}
+	\label{sec:equations-differentielles-du-second-ordre}
+	\textcolor{blue}{\hyperref[Equations différentielles du second ordre]{[Enoncé]}}\\
 	
-	\subsection{Suite d'équations différentielles}\label{sec:suite-dequations-differentielles}
-		\textcolor{blue}{\hyperref[Suite d'équations différentielles]{[Enoncé]}}\\
+	\subsection{Une équation quasi-différentielle \ccinp{1}}
+	\label{Une équation quasi-différentielle corrigé}
+	\textcolor{blue}{\hyperref[Une équation quasi-différentielle]{[Enoncé]}}\\
+	Soit $f:\R\to\C$ de classe $\mathcal C^1$ solution de l'équation. Alors $x\mapsto f(-x)$ est de classe $\mathcal C^1$ d'où $f$ est de classe $\mathcal C^2$.\\
+	En dérivant dans l'équation : $\forall x\in \R,\ f''(x)=-f'(-x)=-f(x)$.\\
+	Ainsi $f$ est solution de l'équation différentielle $y''+y=0$ sur $\R$.\\
+	L'ensemble des solutions de cette équation est $\Vect(\cos,\sin)$.\\
+	Réciproquement, si $f\in \Vect(\cos,\sin)$ alors $f$ est de classe $\mathcal C^1$ sur $\R$ et $\forall x\in \R,\ f'(x)=f(-x)$.
 	
-	\subsection{Equation de Bernoulli (1)}\label{sec:equation-de-bernoulli-1}
-		\textcolor{blue}{\hyperref[Equation de Bernoulli 1]{[Enoncé]}}\\
+	\subsection{Problèmes de raccordement}
+	\label{sec:problemes-de-raccordement}
+	\textcolor{blue}{\hyperref[Problème de raccordement]{[Enoncé]}}\\
 	
-	\subsection{Equation de Bernoulli (2)}\label{sec:equation-de-bernoulli-2}
-		\textcolor{blue}{\hyperref[Equation de Bernoulli (2)]{[Enoncé]}}\\
+	\subsection{Suite d'équations différentielles}
+	\label{sec:suite-dequations-differentielles}
+	\textcolor{blue}{\hyperref[Suite d'équations différentielles]{[Enoncé]}}\\
 	
-	\subsection{Etude asymptotique des solutions d'une équation différentielle \etoile{4}}\label{sec:etude-asymptotique-des-solutions-dune-equation-differentielle-etoile4}
-		\textcolor{blue}{\hyperref[Etude asymptotique des solution d'une équation différentielle]{[Enoncé]}}\\
+	\subsection{Equation de Bernoulli (1)}
+	\label{sec:equation-de-bernoulli-1}
+	\textcolor{blue}{\hyperref[Equation de Bernoulli 1]{[Enoncé]}}\\
+	
+	\subsection{Equation de Bernoulli (2)}
+	\label{sec:equation-de-bernoulli-2}
+	\textcolor{blue}{\hyperref[Equation de Bernoulli (2)]{[Enoncé]}}\\
+	
+	\subsection{Etude asymptotique des solutions d'une équation différentielle \centraleponts{4}}
+	\label{sec:etude-asymptotique-des-solutions-dune-equation-differentielle-etoile4}
+	\textcolor{blue}{\hyperref[Etude asymptotique des solution d'une équation différentielle]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item $f$ est solution de $(E) : y'+ay=f'+af$ sur $\R_+$.\\
 		Les solutions de $(E)$ sur $\R_+$ sont les fonctions $\fonction{f_C}{\R_+}{\C}{x}{Ce^{-ax}+e^{-ax}\displaystyle\int_0^x(f'(t)+af(t))e^{at}dt}$ avec $C\in \C$.\\
