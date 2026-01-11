@@ -139,9 +139,9 @@
 		\item En déduire le théorème Taubérien de Hardy (Fort). \\Indication: on pourra prendre $m=1+\left\lfloor{\alpha n}\right\rfloor$ avec un paramètre $\alpha>1$ à choisir, où $\left\lfloor{x}\right\rfloor$ désigne la partie entière de $x\in\R$.
 	\end{enumerate}
 	
-	\section{Série Harmonique \ccinp{3}}
+	\section{Série harmonique \ccinp{3}}
 	\textcolor{blue}{\hyperref[sec:serie-harmonique-etoile3]{[Corrigé]}}\\
-	\label{Série Harmonique}
+	\label{Série harmonique}
 	Soit $(H_n)_{n\in \N^*}$ la suite définie par $\forall n \in \N^*, \ H_n=\displaystyle\sum\limits_{k=1}^{n}\frac{1}{k}$.\\
 	\begin{enumerate}
 		\item Déterminer un équivalent simple de $H_n$.
@@ -1326,32 +1326,30 @@
 		\item Conclure.
 	\end{enumerate}
 	
-	\section{Bernoulli \etoile{2}}
-	\textcolor{blue}{\hyperref[sec:bernoulli]{[Corrigé]}}\\
-	\label{bernoulli}
+	\section{Bernoulli \ccinp{2}}
+	\textcolor{blue}{\hyperref[sec:Bernoulli]{[Corrigé]}}\\
 	\label{Bernoulli}
 	\begin{enumerate}[leftmargin=*]
 		\item Définition :
-		\begin{enumerate} 
+		\begin{enumerate}[label=\alph*.]
 			\item Soit $P\in\R[X]$. Montrer qu'il existe un unique $Q\in\R[X]$ tel que $Q'=P$ et $\displaystyle\int_0^1 Q(x)dx=0$.
-			\item En déduire qu'il existe une unique suite de polynômes réels $(B_n(X)$ vérifiant:
+			\item En déduire qu'il existe une unique suite de polynômes réels $(B_n)_{n\in \N}$ vérifiant :
 			$$B_0=1\ ; \ \forall n \geq 1, \ B_n'=nB_{n-1} \ ; \ \forall n \geq 1, \ \int_0^1 B_n(x)dx=0$$
 			\item Calculer $B_1$ et $B_2$.
-			\item Quel est le degré de $B_n$ pour $n\geq 0$.
+			\item Soit $n\in \N$. Quel est le degré de $B_n$.
 		\end{enumerate}
-		On appelle $(B_n)$ la suite des polynômes de Bernoulli. Pour tout $n\geq 0$, on pose $b_n=B_n(0)$. \\La suite de réels $(b_n)$ est appelée suite des nombres de Bernoulli.
+		On appelle $(B_n)_{n\in \N}$ la suite des polynômes de Bernoulli. Pour tout $n\geq 0$, on pose $b_n=B_n(0)$. \\La suite de réels $(b_n)$ est appelée suite des nombres de Bernoulli.
 		\item Propriétés :
-		\begin{enumerate}
-			\item Montrer que pour tout $n\geq 2$, $B_n(0)=B_n(1)$.
-			\item Montrer que pour tout entier $n$, $B_n=(-1)^nB_n(1-X)$. En déduire que $B_{2n+1}(0)=B_{2n+1}(1)=0$.
-			\item A l'aide de la formule de Taylor, montrer que pour tout $n\in\N, B_n=\displaystyle\sum\limits_{k=0}^n \binom{n}{k}b_{n-k}X^k$.
-			\item En déduire que: $\forall n\in\N, b_{2n+2}=\displaystyle\sum\limits_{k=0}^{2n+2}\binom{2p+2}{k}b_k$. \\Puis que: $\forall n \in\N^*,b_{2n}=\displaystyle-\displaystyle\frac{1}{(n+1)(2n+1)}\displaystyle\sum\limits_{k=0}^{2n-2}\binom{2n+2}{k}b_k$    
+		\begin{enumerate}[label=\alph*.]
+			\item Montrer que pour tout $n\geq 2,\ B_n(0)=B_n(1)$.
+			\item Montrer que pour tout entier positif $n,\ B_n=(-1)^nB_n(1-X)$. En déduire que $B_{2n+1}(0)=B_{2n+1}(1)=0$.
+			\item A l'aide de la formule de Taylor, montrer que pour tout $n\in\N,\ B_n=\displaystyle\sum\limits_{k=0}^n \binom{n}{k}b_{n-k}X^k$.
+			\item En déduire que: $\forall n\in\N,\ b_{2n+2}=\displaystyle\sum\limits_{k=0}^{2n+2}\binom{2p+2}{k}b_k$. \\Puis que $\forall n \in\N^*,\ b_{2n}=\displaystyle-\displaystyle\frac{1}{(n+1)(2n+1)}\displaystyle\sum\limits_{k=0}^{2n-2}\binom{2n+2}{k}b_k$    
 		\end{enumerate}
 	\end{enumerate}
 	
 	\section{Lagrange \ccinp{1}}
-	\textcolor{blue}{\hyperref[sec:lagrange-etoile1]{[Corrigé]}}\\
-	\label{lagrange}
+	\textcolor{blue}{\hyperref[sec:Lagrange]{[Corrigé]}}\\
 	\label{Lagrange}
 	Soient $n$ un entier naturel non nul et $(x_1,x_2,\dots, x_n)\in \K^n$
 	\begin{enumerate}[leftmargin=*]
@@ -1361,8 +1359,7 @@
 	\end{enumerate}
 	
 	\section{Tchebychev \etoile{2}}
-	\textcolor{blue}{\hyperref[sec:tchebychev]{[Corrigé]}}\\
-	\label{tchebychev}
+	\textcolor{blue}{\hyperref[sec:Tchebychev]{[Corrigé]}}\\
 	\label{Tchebychev}
 	On note $E$ l'espace vectoriel des fonctions continues de $[-1,1]$ dans $\R$. On désigne par $E_n$ l'espace des fonctions polynomiales de $[-1,1]$ dans $\R$ de degré inférieur ou égal à $n$, où $n$ est un entier naturel.
 	\begin{enumerate}[leftmargin=*]
@@ -1407,17 +1404,15 @@
 	\end{enumerate}
 	
 	\subsection{Triangle à angles rationnels dont tous les côtés ont une longueur rationnelle \etoile{2} (HP)}
-	
 	On se place dans le plan $\R^2$ munit de sa structure euclidienne canonique et d'un repère orthonormé. Caractériser les triangles dont les angles sont rationnels et tous les côtés ont une longueur rationnelle.
 	
 	\subsection{Triangles dont les sommets sont à coordonnées rationnelles \etoile{2} (HP)}
 	On se place dans le plan $\R^2$ munit de sa structure euclidienne canonique et d'un repère orthonormé. Caractériser les triangles dont les sommets ont des coordonnées rationnelles.
 	
-	\section{Hilbert \etoile{2}}
-	\textcolor{blue}{\hyperref[sec:hilbert]{[Corrigé]}}\\
-	\label{hilbert}
+	\section{Hilbert \ccinp{2}}
+	\textcolor{blue}{\hyperref[sec:Hilbert]{[Corrigé]}}\\
 	\label{Hilbert}
-	On pose pour tout $k\in\N^*,H_k=\displaystyle\frac{1}{k!}\prod\limits_{j=0}^{k-1}(X-j)$ et $H_0=1$. On pose également pour tout $P\in\R[X], \ \Delta(P)=P(X+1)-P(X)$
+	On pose pour tout $k\in\N^*,H_k=\displaystyle\frac{1}{k!}\prod\limits_{j=0}^{k-1}(X-j)$ et $H_0=1$. On pose également pour tout $P\in\C[X], \ \Delta(P)=P(X+1)-P(X)$
 	\begin{enumerate}[leftmargin=*]
 		\item Montrer que $(H_k)_{0\leq k\leq n}$ est une base de $\R_n[X]$.
 		\item Calculer $\Delta(H_0)$ et, pour tout $k\in\crblanc{1}{n}$, exprimer $\Delta(H_k)$ à l'aide de $H_{k-1}$.
@@ -1426,30 +1421,29 @@
 			1 & \mbox{si } k=l\\
 			0 & \mbox{sinon}
 		\end{cases}$
-		\item Montrer que, pour tout $P\in\R_n[X]$, $P=\displaystyle\sum\limits_{k=0}^n(\Delta^k(P))(0)H_k$
+		\item Montrer que, pour tout $P\in\C_n[X]$, $P=\displaystyle\sum\limits_{k=0}^n(\Delta^k(P))(0)H_k$
 		\item Calculer $H_n(k)$ pour $k\in \Z$.\\
 		On distinguera trois cas : $k\in\crblanc{0}{n-1}$, $k\geq n$ et $k<0$.
 		\item En déduire que $H_n(\Z)\subset\Z$.
-		\item Montrer que $P\in\R_n[X]$ est à valeurs entières sur les entiers si et seulement si ses coordonnées dans la base $(H_k)_{0\leq k\leq n}$ sont entières.  
+		\item Montrer que $P\in\C_n[X]$ est à valeurs entières sur les entiers si et seulement si ses coordonnées dans la base $(H_k)_{0\leq k\leq n}$ sont entières.  
 	\end{enumerate}
 	
-	\section{Laguerre \etoile{3}}
-	\textcolor{blue}{\hyperref[sec:laguerre]{[Corrigé]}}\\
-	\label{laguerre}
+	\section{Laguerre \centraleponts{3}}
+	\textcolor{blue}{\hyperref[sec:Laguerre]{[Corrigé]}}\\
 	\label{Laguerre}
 	On pose, pour tout entier naturel $n$ et pour tout réel $x$, $h_n(x)=x^ne^{-x}$ et $L_n(x)=\displaystyle\frac{e^x}{n!}h_n^{(n)}(x)$.
 	\begin{enumerate}[leftmargin=*]
 		\item Montrer que, pour tout entier $n$, $L_n$ est une fonction polynomiale. Préciser son degré et son coefficient dominant.
-		\item Pour tous, $P,Q\in\R[X]$ on pose $\langle P,Q \rangle = \displaystyle\int_0^{+\infty}P(x)Q(x)e^{-x}dx$.\\Démontrer que $\langle .,. \rangle$ est bien définie et est un produit scalaire sur $\R[X]$
-		\item Calculer, pour tout $n\in\N$, $\langle L_0,X_n \rangle$.
-		\item Montrer que, pour tout $k\in\crblanc{0}{n}$, il existe $Q_k\in\R[X]$ tel que, pour tout $x\in\R$, on a $h_n^{(k)}(x)=x^{n-k}e^{-x}Q_k(x)$
-		\item Etablir que: $\forall n\in\N, \ \forall P\in\R[X], \forall p\in\crblanc{0}{n}, \langle L_n,P \rangle=\displaystyle\frac{(-1)^p}{n!}\int_0^{+\infty}h_n^{(n-p)}(x)P^{(p)}(x)dx.$
-		\item En déduire que $(L_n)$ est une famille orthonormée de $(\R[X],\langle .,. \rangle)$.
+		\item Pour tous, $P,Q\in\R[X]$ on pose $\langle P,Q \rangle = \displaystyle\int_0^{+\infty}P(x)Q(x)e^{-x}dx$.\\Démontrer que $\proscal{\cdot}{\cdot}$ est bien définie et est un produit scalaire sur $\R[X]$
+		\item Calculer, pour tout $n\in\N$, $\proscal{L_0}{X^n}$.
+		\item Montrer que pour tout $k\in\crblanc{0}{n}$ il existe $Q_k\in\R[X]$ tel que pour tout $x\in\R$ on ait :
+		$$h_n^{(k)}(x)=x^{n-k}e^{-x}Q_k(x)$$
+		\item Etablir que : $\forall n\in\N, \ \forall P\in\R[X], \forall p\in\crblanc{0}{n}, \langle L_n,P \rangle=\displaystyle\frac{(-1)^p}{n!}\int_0^{+\infty}h_n^{(n-p)}(x)P^{(p)}(x)dx.$
+		\item En déduire que $(L_n)$ est une famille orthonormée de $(\R[X],\proscal{\cdot}{\cdot})$.
 	\end{enumerate}
 	
 	\section{Legendre \etoile{2}}
-	\textcolor{blue}{\hyperref[sec:legendre]{[Corrigé]}}\\
-	\label{polylegendre}
+	\textcolor{blue}{\hyperref[sec:Legendre]{[Corrigé]}}\\
 	\label{Legendre}
 	Pour tout $n\in\N$, on note $Q_n=(X^2-1)^n$ et $P_n=\displaystyle\frac{1}{2^nn!}Q_n^{(n)}$. On pourra confondre polynôme et fonction polynomiale associée.
 	\begin{enumerate}[leftmargin=*]
@@ -1463,8 +1457,7 @@
 	\end{enumerate}
 	
 	\section{Hermite \etoile{3}}
-	\textcolor{blue}{\hyperref[sec:hermite]{[Corrigé]}}\\
-	\label{hermite}
+	\textcolor{blue}{\hyperref[sec:Hermite]{[Corrigé]}}\\
 	\label{Hermite}
 	On définit le $n$-ième polynôme d'Hermite par: $$H_n(X)=(-1)^n e^{\frac{x^2}{2}}\frac{d^n}{dx^n}(e^{-\frac{x^2}{2}})$$
 	On définit aussi le produit scalaire suivant sur $\R[X]$: $$\langle P,Q \rangle=\int_{-\infty}^{+\infty}P(t)Q(t)e^{-\frac{t^2}{2}}dt$$
@@ -1477,8 +1470,7 @@
 	\end{enumerate}
 	
 	\section{Bernstein \etoile{3}}
-	\textcolor{blue}{\hyperref[sec:bernstein]{[Corrigé]}}\\
-	\label{bernstein}
+	\textcolor{blue}{\hyperref[sec:Bernstein]{[Corrigé]}}\\
 	\label{Bernstein}
 	On note $I=[0,1]$ et $\mathcal C$ l'espace vectoriel des fonctions continues de $I$ dans $\C$. \\ On note, pour toute fonction $f\in\mathcal C$ et $n\in\N^*$: $$\fonction{B_n(f)}{I}{\C}{x}{\displaystyle\sum_{k=0}^{n}f\left(\frac{k}{n}\right)b_k^n(x)} \ \text{avec} \ b_k^n(x)=\binom{n}{k}x^k(1-x)^{n-k}$$
 	\begin{enumerate}
@@ -1488,10 +1480,9 @@
 	
 	\section{Polynômes cyclotomiques \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:polynomes-cyclotomiques]{[Corrigé]}}\\
-	\label{polycyclotomiques}
 	\label{Polynômes cyclotomiques}
-	Pour un entier $n$ supérieur ou égal à 1, on dit qu'une racine $n$-ième de l'unité $z$ est primitive si $z^d\ne 1$ pour tout entier $d$ tel que $1\leq d\leq n$. On note $\p_n$ l'ensemble des racines primitives $n$-ième de l'unité. On a donc $P_1=\{1\}$.
-	\\On définit $\Phi\in\C[X]$ par: $$\Phi_n=\displaystyle\prod\limits_{z\in\p_n} (X-z)$$
+	Pour un entier $n$ supérieur ou égal à 1, on dit qu'une racine $n$-ième de l'unité $z$ est primitive si $z^d\ne 1$ pour tout entier $d$ tel que $1\leq d<n$. On note $\p_n$ l'ensemble des racines primitives $n$-ième de l'unité. On a donc $\p_1=\{1\}$.
+	\\On définit $\Phi\in\C[X]$ par : $$\Phi_n=\displaystyle\prod\limits_{z\in\p_n} (X-z)$$
 	\begin{enumerate}[leftmargin=*]
 		\item Montrer que pour tout $n\geq1$, on a: $$X^n-1=\displaystyle\prod\limits_{d|n}\Phi_d$$
 		\item Montrer que si $p$ est un nombre premier et $k\geq1$ est un entier, alors $$\Phi_{p^k}=X^{(p-1)p^{k-1}}+X^{(p-2)p^{k-1}}+\dots+X^{p^{k-1}}+1$$
@@ -1510,7 +1501,6 @@
 	
 	\section{Suite de polynômes définis par récurrence}
 	\textcolor{blue}{\hyperref[sec:suite-de-polynomes-definis-par-recurrence]{[Corrigé]}}\\
-	\label{suitepoly}
 	\label{Suite de polynômes définis par récurrence}
 	Soit $\displaystyle f:x\mapsto\begin{cases}
 		e^{-\frac{1}{x^2}} &\text{si}\;x\ne0\\
@@ -1609,16 +1599,15 @@
 		\item Montrer que $x_n\unfty{\sim}\displaystyle\frac{1}{\ln n}$.
 	\end{enumerate}
 	
-	\section{Zéros des polynômes de Taylor du sinus}
-	\textcolor{blue}{\hyperref[sec:zeros-des-polynomes-de-taylor-du-sinus]{[Corrigé]}}\\
-	\label{zerotaylorsinus}
-	\label{Zéros des polynômes de Taylor du sinus}
+	\section{Zéros du sinus tronqué}
+	\textcolor{blue}{\hyperref[sec:zeros-du-sinus-tronqué]{[Corrigé]}}\\
+	\label{Zéros du sinus tronqué}
 	On pose pour tout $n\in \N,\ P_n=\displaystyle\sum_{k=0}^n\frac{(-1)^kX^{2k+1}}{(2k+1)!}$.\\
 	Montrer que le nombre $c_n$ de racines réelles de $P_n$ (comptées avec multiplicité) vérifie $c_n\unfty\sim\displaystyle\frac{4n}{e\pi}$.
 	
-	\section{Polynôme de Taylor de l'exponentielle \ccinp{1}}
-	\textcolor{blue}{\hyperref[sec:polynôme-de-taylor-de-l'exponentielle]{[Corrigé]}}\\
-	\label{Polynôme de Taylor de l'exponentielle}
+	\section{Exponentielle tronquée \ccinp{1}}
+	\textcolor{blue}{\hyperref[sec:exponentielle-tronquée]{[Corrigé]}}\\
+	\label{Exponentielle tronquée}
 	Soit $n\in \N^*$. Montrer que le polynôme $P=\displaystyle\sum_{k=0}^n\frac{X^k}{k!}$ est scindé à racine simples.
 	
 	\section{Les fonctions localement polynomiales sont polynomiales \centraleponts{2}}
@@ -1628,17 +1617,15 @@
 	$$\forall a\in \R,\ \exists\varepsilon>0,\ \exists P\in \R[X],\ \forall x\in ]a-\varepsilon,a+\varepsilon[,\ f(x)=P(x)$$
 	Montrer que $f$ est une fonction polynomiale.
 	
-	\section{Intégrales de polynômes \etoile{1}}
+	\section{Intégrales de polynômes \telecom{1}}
 	\textcolor{blue}{\hyperref[sec:integrales-de-polynomes-etoile1]{[Corrigé]}}\\
-	\label{integraledepoly}
 	\label{Intégrales de polynômes}
 	Soient $a\leq b$ deux réels et $x_0,\dots,x_n$ une subdivision de $[a,b]$.\\
 	Montrer qu'il existe des réels $\lambda_0,\dots,\lambda_n$ tels que :
 	$$\forall P\in \K[X],\ \int_a^bP(x)dx=\sum_{i=0}^n\lambda_iP(x_i)$$
 	
-	\section{Théorème de Gauss-Lucas \etoile{2}}
+	\section{Théorème de Gauss-Lucas \centraleponts{2}}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-gauss-lucas-etoile2]{[Corrigé]}}\\
-	\label{gausslucas}
 	\label{Théorème de Gauss-Lucas}
 	Pour tout $P\in \C[X]$, on note $R_P$ l'ensemble des racines de $P$. Soit $P=\Lambda\displaystyle\prod\limits_{k=1}^r{(X-z_k)^{n_k}} \in\C[X]$ non constant avec $R_P=\{z_k,\ k\in\crblanc{1}{r}\}$.
 	\begin{enumerate}
@@ -1660,9 +1647,8 @@
 	\label{Graphe d'un polynôme}
 	Soit $P$ un polynôme de degré $n\geq 2$. Montrer que le graphe de $P$ a au plus $n$ points alignés.
 	
-	\section{Polynômes qui commutent avec cosinus \etoile{3}}
+	\section{Polynômes qui commutent avec cosinus \centraleponts{3}}
 	\textcolor{blue}{\hyperref[sec:polynomes-qui-commutent-avec-cosinus-etoile3]{[Corrigé]}}\\
-	\label{polycommutecos}
 	\label{Polynômes qui commutent avec cosinus}
 	Soit $P\in \R[X]$ tel que $\forall x\in \R,\ P(\cos(x))=\cos(P(x))$.
 	\begin{enumerate}
@@ -1722,7 +1708,7 @@
 	Soit $P=\displaystyle\sum\limits_{k=0}^n{a_kX^k}$ scindé sur $\R$.
 	\begin{enumerate}
 		\item Montrer que $\forall x\in \R,\ P''(x)P(x)-(P'(x))^2\leq 0$.
-		\item Montrer que $P',\dots ,P^{(n-1)}$ sont à racines réelles.
+		\item Montrer que $P',\dots ,P^{(n-1)}$ sont scindés sur $\R$.
 		\item Démontrer que $\forall k\in \crblanc{1}{n-1},\ a_k^2\leq a_{k-1}a_{k+1}$.
 	\end{enumerate}
 	
@@ -1784,7 +1770,7 @@
 	Montrer que $R$ est dense dans $\left[-2,-\dfrac{1}{2}\right]\cup\{0\}\cup\left[\dfrac{1}{2},2\right]$.\\
 	On pourra construire pour $\alpha\in \left[\dfrac{1}{2},1\right]$ une partie $I$ de $\N^*$ telle que $\displaystyle\sum_{n\in I}\alpha^n=1$.
 	
-	\section{Théorème de Bernstein}
+	\section{Théorème de Bernstein \centraleponts{4}}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-bernstein]{[Corrigé]}}\\
 	\label{Théorème de Bernstein}
 	Soient $n\in \N$ et $P\in \C_n[X]$. Pour tout $\lambda\in \C$ on pose $Q_\lambda(X)=\dfrac{P(\lambda X)-P(\lambda)}{X-1}$. On fixe $\lambda\in \C$.
@@ -1844,11 +1830,10 @@
 	
 	\section{Polynômes réciproques \ccinp{2}}
 	\textcolor{blue}{\hyperref[sec:polynomes-reciproques-etoile2]{[Corrigé]}}\\
-	\label{polyrecip}
 	\label{Polynômes réciproques}
 	On dit qu'un polynôme $P\in\C[X]$ de degré $n$ est réciproque s'il s'écrit $P=a_nX^n+\dots+a_0$ avec $a_k=a_{n-k}$ pour tout $k\in\crblanc{0}{n}$.
 	\begin{enumerate}
-		\item Soit $P\in\C[X]$ de degré n. Démontrer que $P$ est réciproque si et seulement $P(X)=X^nP\left(\displaystyle\frac{1}{X}\right)$.
+		\item Soit $P\in\C[X]$ de degré $n$. Démontrer que $P$ est réciproque si et seulement $P(X)=X^nP\left(\displaystyle\frac{1}{X}\right)$.
 		\item Montrer qu'un produit de polynômes réciproques est réciproque.
 		\item On suppose que $P$ et $Q$ sont réciproques et que $Q|P$. Démontrer que $\displaystyle\frac{P}{Q}$ est réciproque.
 		\item Soit $P=\displaystyle\sum\limits_{k=0}^n{a_kX^k}\in\C[X],\ a_n\ne 0$, un polynôme réciproque.
@@ -1872,6 +1857,7 @@
 		\item $P(\U)=\U$
 		\item $P(\R)=\R$
 		\item $P(\Q)=\Q$
+		\item $P(\R\backslash\Q)=\R\backslash\Q$
 		\item $P(\Z)=\Z$
 	\end{enumerate}
 	
@@ -6217,13 +6203,48 @@ Alors, on a l'équivalence :
 		\item Ce dernier résultat contredit la minimalité de $\alpha$ donc $\alpha=0$. Autrement dit $P(z_0)=0$ et le théorème est démontré.
 	\end{enumerate}
 	
-	\subsection{Bernoulli}
-	\label{sec:bernoulli}
-	\textcolor{blue}{\hyperref[bernoulli]{[Enoncé]}}\\
+	\subsection{Bernoulli \ccinp{2}}
+	\label{sec:Bernoulli}
+	\textcolor{blue}{\hyperref[Bernoulli]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item
+		\begin{enumerate}[label=\alph*.]
+			\item On pose $Q\in \R[X]$ tel que $\forall x\in \R,\ \tilde Q(x)=\displaystyle\int_0^xP(t)dt$ et $a=\displaystyle\int_0^1\tilde Q(x)dx$.\\
+			Alors $Q(X)=\tilde Q(X)-a$ vérifie $\displaystyle\int_0^1Q(x)dx=\int_0^1\tilde Q(x)dx-a=0$. $x\mapsto\tilde Q(x)$ est continue sur $\R$ donc d'après le TFA $x\mapsto Q(x)$ est une primitive de $P$ sur $\R$. Enfin si on note $P=\displaystyle\sum_{k=0}^na_kX^k$ alors $\forall x\in \R,\ \tilde Q(x)=\displaystyle\sum_{k=0}^na_k\frac{x^{k+1}}{k+1}$. $\R$ étant infini $\tilde Q(X)$ est bien un polynôme à coefficients réels. Par suite $Q\in \R[X]$.\\
+			Enfin si $Q_1,Q_2\in \R[X]$ vérifient $Q_1'=P=Q_2'$ et $\displaystyle\int_0^1Q_1(x)dx=0=\int_0^1Q_2(x)dx$ alors $\exists c\in \R,\ Q_1=Q_2+c$ et $c=\displaystyle\int_0^1(Q_1(x)-Q_2(x))dx=\int_0^1Q_1(x)dx-\int_0^1Q_2(x)dx=0$.\\
+			Ainsi $Q_1=Q_2$.
+			\item Construisons $B_n$ par récurrence. On pose $B_0=1$. Supposons avoir construit, pour un certain $n\in \N^*$, $B_0,\dots,B_{n-1}$ comme dans l'énoncé. $nB_{n-1}\in \R[X]$ donc d'après la question précédente $\exists!B_n\in \R[X],\ B'n=nB_{n-1}$ et $\displaystyle\int_0^1B_n(x)dx=0$.\\
+			On conclut qu'il existe une unique suite de polynôme réels qui vérifie la condition de l'énoncé.
+			\item $B_1'=B_0=1$ donc $\exists b_1\in \R,\ B_1=X+b_1$. De plus $\displaystyle\int_0^1B_1(x)dx=\frac{1}{2}+b_1=0$ donc $B_1=X-\dfrac{1}{2}$.\\
+			$B_2'=2B_1=2X-1$ donc $\exists b_2\in \R,\ B_1=X^2-X+b_2$. De plus $\displaystyle\int_0^1B_2(x)dx=\frac{1}{3}-\frac{1}{2}+b_2=0$ donc $B_2=X^2-X+\dfrac{1}{6}$.\\
+			\item Le calcul de $B_0,B_1,B_2$ nous pousse à conjecturer $\P(n)"\forall n\in \N,\ \deg B_n=n"$. Montrons cette proposition par récurrence.\\
+			On a $\P(0)$. Supposons $\P(n-1)$ pour un certain $n\in \N^*$. Alors $\deg B_n'=\deg nB_{n-1}=n-1$. Donc $\P(n)$.\\
+			Par récurrence, $\forall n\in \N,\ \deg B_n=n$.
+		\end{enumerate}
+		\item 
+		\begin{enumerate}[label=\alph*.]
+			\item $\forall n\geq 2,\ B_n(1)-B_n(0)=\displaystyle\int_0^1B_n'(x)dx=n\int_0^1B_{n-1}(x)dx=0$.
+			\item Montrons que la suite de terme général $A_n(X)=(-1)^nB_n(1-X)$ vérifie la relation de récurrence qui définie $(B_n)_{n\in \N}$. L'unicité de la solution donnera le résultat obtenu question 1.b.\\
+			$A_0(X)=B_0(1-X)=1=B_0(X)$ et $\forall n\in \N^*,\ A_n'(X)=(-1)^{n+1}B_n'(1-X)=nA_{n-1}(X)$ et $\displaystyle\int_0^1A_n(x)dx=\int_0^1A_n(1-x)dx=(-1)^n\int_0^1B_n(x)dx=0$.\\
+			On en déduit que $\forall n\in \N^*,\ B_{2n+1}(0)=-B_{2n+1}(1)=-B_{2n+1}(0)$ d'où $B_{2n+1}(0)=B_{2n+1}(1)=0$.
+			\item On rappelle que $B_n$ est de degré $n$ donc la formule de Taylor en $0$ s'écrit :
+			$$B_n=\sum_{k=0}^n\frac{B_n^{(k)}(0)}{k!}X^k=\sum_{k=0}^n\frac{n(n-1)\dots(n-k+1)B_{n-k}(0)}{k!}X^k=\sum_{k=0}^n\binom{n}{k}b_{n-k}X^k$$
+			\item Soit $n\in \N$. Avec les questions $2.b$ et $2.c$ on a :\\
+			\begin{align*}
+				b_{2n+2}&=B_{2n+2}(1)\\
+				&=\sum_{k=0}^{2n+2}\binom{2n+2}{k}b_{2n+2-k}\\
+				&=\sum_{k=0}^{2n+2}\binom{2n+2}{2n+2-k}b_k\\
+				&=\sum_{k=0}^{2n+2}\binom{2n+2}{k}b_k
+			\end{align*}
+			Soit $n\in \N^*$. $2n+1>2n-1\geq 1$ donc $b_{2n+1}=b_{2n-1}=0$.\\
+			Ainsi $b_{2n+2}=b_{2n+2}+\displaystyle\binom{2n+2}{2n}b_{2n}+\sum_{k=0}^{2n-2}\binom{2n+2}{k}b_k$.\\
+			i.e $b_{2n}=-\displaystyle\frac{1}{(n+1)(2n+2)}\sum_{k=0}^{2n-2}\binom{2n+2}{k}b_k$.
+		\end{enumerate}
+	\end{enumerate}
 	
 	\subsection{Lagrange \ccinp{1}}
-	\label{sec:lagrange-etoile1}
-	\textcolor{blue}{\hyperref[lagrange]{[Enoncé]}}\\
+	\label{sec:Lagrange}
+	\textcolor{blue}{\hyperref[Lagrange]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item 
 		On sait que: $\dim(\K_{n-1}[X])=n=\dim(\K^n)$, ainsi il suffit de montrer que $\Psi$ est injective.
@@ -6239,8 +6260,8 @@ Alors, on a l'équivalence :
 	\end{enumerate}
 	
 	\subsection{Tchebychev}
-	\label{sec:tchebychev}
-	\textcolor{blue}{\hyperref[tchebychev]{[Enoncé]}}\\
+	\label{sec:Tchebychev}
+	\textcolor{blue}{\hyperref[Tchebychev]{[Enoncé]}}\\
 	
 	\subsubsection{Angles rationnels dont le cosinus est rationnel}
 	
@@ -6248,32 +6269,85 @@ Alors, on a l'équivalence :
 	
 	\subsubsection{Triangles dont les sommets sont à coordonnées rationnelles}
 	
-	\subsection{Hilbert}
-	\label{sec:hilbert}
-	\textcolor{blue}{\hyperref[hilbert]{[Enoncé]}}\\
+	\subsection{Hilbert \ccinp{2}}
+	\label{sec:Hilbert}
+	\textcolor{blue}{\hyperref[Hilbert]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $(H_k)_{0\leq k\leq n}$ est une famille de $n+1$ polynômes a degrés échelonnés de $\C_n[X]$ qui est de dimension $n+1$. C'est donc une base de $\C_n[X]$.
+		\item $\Delta(H_0)=1-1=0$.\\
+		$\forall k\in \crblanc{1}{n},\ k!\Delta(H_k)=\displaystyle\prod_{j=-1}^{k-2}(X-j)-\prod_{j=0}^{k-1}(X-j)=(X+1-(X-k+1))\prod_{j=0}^{k-2}(X-j)=k!H_{k-1}$.\\
+		Ainsi $\Delta(H_k)=H_{k-1}$.
+		\item Soient $k,l\in \crblanc{0}{n}$. D'après la question précédente $\Delta^l(H_k)=\begin{cases}
+			0&\mbox{si }l>k\\
+			H_{k-l}&\mbox{sinon}
+		\end{cases}$\\
+		Or $H_p(0)=\begin{cases}
+			1&\mbox{si }p=0\\
+			0&\mbox{sinon}
+		\end{cases}$\\
+		Donc $\Delta^l(H_k)=\begin{cases}
+			1&\mbox{si }k=l\\
+			0&\mbox{sinon}
+		\end{cases}$
+		\item Soit $P\in \C_n[X]$. D'après la question 1 il existe des réels $\lambda_0,\dots,\lambda_n$ tels que $P=\displaystyle\sum_{k=0}^n\lambda_kH_k$. On remarque que $\Delta\in \L(\C_n[X])$.\\
+		Donc $\forall l\in \crblanc{0}{n},\ \Delta^l(P)(0)=\displaystyle\sum_{k=0}^n\lambda_k\Delta^l(H_k)(0)=\lambda_l$.
+		\item Soit $k\in \Z$.
+		\begin{itemize}
+			\item Si $0\leq k\leq n-1$ alors $H_n(k)=0$;
+			\item Si $k\geq n$ alors $H_n(k)=\displaystyle\frac{1}{n!}\prod_{j=0}^{n-1}(k-j)=\frac{1}{n!}\prod_{j=k-n-1}^kj=\binom{k}{n}$;
+			\item Si $k<0$ alors $H_n(k)=\displaystyle\frac{(-1)^n}{n!}\prod_{j=0}^{n-1}(j-k)=\frac{(-1)^n}{n!}\prod_{j=-k}^{n-k-1}j=(-1)^n\binom{n-k-1}{n}$.
+		\end{itemize}
+		\item On sait que les coefficients binomiaux sont des entiers donc $H_n(\Z)\subset \Z$.
+		\item Soit $P\in \C_n[X]$. Les deux implications découlent de la structure d'anneau de $\Z$.\\
+		Si $P(\Z)\subset \Z$ alors par récurrence immédiate $\forall k\in \crblanc{0}{n},\ \Delta^k(P)(\Z)\subset \Z$. Réciproquement, si $\forall k\in \crblanc{0}{n},\ \Delta^k(P)(0)\in \Z$ alors $\forall j\in \Z,\ P(j)=\displaystyle\sum_{k=0}^{n-1}\Delta^k(P)(0)H_k(j)\in \Z$.
+	\end{enumerate}
 	
-	\subsection{Laguerre}
-	\label{sec:laguerre}
-	\textcolor{blue}{\hyperref[laguerre]{[Enoncé]}}\\
+	\subsection{Laguerre \centraleponts{3}}
+	\label{sec:Laguerre}
+	\textcolor{blue}{\hyperref[Laguerre]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item D'après la formule de Leibniz $\forall n\in \N,\ \forall x\in \R$,
+		$$h_n^{(n)}(x)=\sum_{k=0}^n\binom{n}{k}\frac{d^k}{dx^k}(e^{-x})\frac{d^{n-k}}{dx^{n-k}}(x^n)=\sum_{k=0}^n\binom{n}{k}(-1)^k\frac{n!}{k!}x^ke^{-x}$$
+		Donc $L_n(X)$ est un polynôme de degré $n$ et de coefficient dominant $\dfrac{(-1)^n}{n!}$.
+		\item Soient $P,Q\in \R[X]$. La fonction $f:x\mapsto P(x)Q(x)e^{-x}$ est continue par morceaux sur $\R_+$ et $f(x)\uxfty=\bigO{x^{\deg(PQ)}e^{-x}}\uxfty=\smallo{\dfrac{1}{x^2}}$. Donc $f$ est intégrale sur $\R_+$, en particulier l'intégrale $\displaystyle\int_0^{+\infty}P(x)Q(x)e^{-x}dx$ converge.\\
+		Ensuite, il est évident que $\proscal{\cdot}{\cdot}$ est symétrique et bilinéaire. Fixons $P\in \R[X]$.\\
+		La fonction $x\mapsto P(x)^2e^{-x}$ est continue et positive sur $\R_+$. Ainsi par stricte positivité de l'intégrale $\proscal{P}{P}\geq 0$ avec égalité ssi $\forall x\in \R,\ P(x)^2e^{-x}=0$. Dans ce cas $P$ est nul sur $\R$ qui est infini donc $P$ est le polynôme nul.\\
+		On conclut que $\proscal{\cdot}{\cdot}$ est un produit scalaire sur $\R[X]$.
+		\item $L_0=1$.\\
+		$\forall n\in \N,\ \proscal{L_0}{X^n}=\displaystyle\int_0^{+\infty}x^ne^{-x}dx=\Gamma(n+1)=n!$.
+		\item Soit $k\in \crblanc{0}{n}$. D'après la formule de Leibniz $\forall x\in \R$,
+		$$h_n^{(k)}(x)=\sum_{j=0}^k\binom{k}{j}\frac{d^{k-j}}{dx^{k-j}}(e^{-x})\frac{d^j}{dx^j}(x^n)=\sum_{j=0}^k\binom{k}{j}(-1)^{k-j}\frac{n!}{(n-j)!}x^{n-j}e^{-x}$$
+		On pose $Q_k=\displaystyle\sum_{j=0}^k(-1)^{k-j}\binom{k}{j}\frac{n!}{(n-j)!}X^{k-j}=\sum_{j=0}^k(-1)^k\binom{k}{j}\frac{n!}{(n-k+j)!}X^j$.
+		\item Soient $n\in \N$, $p\in \crblanc{0}{n}$ et $P\in \R[X]$. Les fonctions en jeux sont de classe $\mathcal C^\infty$ sur $\R_+$ donc par IPP successives :\\
+		$n!\proscal{L_n}{P}=\displaystyle\int_0^{+\infty}h_n^{(n)}P(x)dx=\sum_{j=0}^{p-1}\left[(-1)^jh_n^{(n-j-1)}(x)P^{(j)}(x)\right]_0^{+\infty}+(-1)^p\int_0^{+\infty}h_n^{(n-p)}(x)P^{(p)}(x)dx$.\\
+		Or pour $j\in \crblanc{0}{p-1}$, la question précédente montre que $h_n^{(n-j-1)}(0)=0$\\
+		et $h_n^{(n-j-1)}(x)P^{(j)}(x)\uxfty\longrightarrow0$.\\
+		On en déduit $\proscal{L_n}{P}=\displaystyle\frac{(-1)^p}{n!}\int_0^{+\infty}h_n^{(n-p)}(x)P^{(p)}(x)dx$.
+		\item Soient $n\geq m\in \N$. D'après la question précédente :
+		$$\proscal{L_n}{L_m}=\frac{(-1)^n}{n!}\int_0^{+\infty}h_n(x)L_m^{(n)}(x)dx=\frac{(-1)^n}{n!}\int_0^{+\infty}x^nL_m^{(n)}(x)e^{-x}=\frac{(-1)^n}{n!}\proscal{X^n}{L_m^{(n)}}$$
+		On rappelle qu'on a montré question 1 que $L_m$ est de degré $m$ et de coefficient dominant $\dfrac{(-1)^m}{m!}$.\\
+		Si $n>m$ alors $L_m^{(n)}=0$ d'où $\proscal{L_n}{L_m}=0$.\\
+		Et si $m=n$ alors $L_m^{(n)}=(-1)^nL_0$ d'où $\proscal{L_n}{L_m}=\dfrac{1}{n!}\proscal{X^n}{L_0}=1$.
+	\end{enumerate}
 	
 	\subsection{Legendre}
-	\label{sec:legendre}
+	\label{sec:Legendre}
 	\textcolor{blue}{\hyperref[Legendre]{[Enoncé]}}\\
 	
 	\subsection{Hermite}
-	\label{sec:hermite}
-	\textcolor{blue}{\hyperref[hermite]{[Enoncé]}}\\
+	\label{sec:Hermite}
+	\textcolor{blue}{\hyperref[Hermite]{[Enoncé]}}\\
 	
 	\subsection{Bernstein}
-	\label{sec:bernstein}
-	\textcolor{blue}{\hyperref[bernstein]{[Enoncé]}}\\
+	\label{sec:Bernstein}
+	\textcolor{blue}{\hyperref[Bernstein]{[Enoncé]}}\\
 	
 	\subsection{Polynômes cyclotomiques}
 	\label{sec:polynomes-cyclotomiques}
-	\textcolor{blue}{\hyperref[polycyclotomiques]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Polynômes cyclotomiques]{[Enoncé]}}\\
 	
 	\subsection{Suite de polynômes définis par récurrence}
-	\label{sec:suite-de-polynômes-definis-par-recurrence}
+	\label{sec:suite-de-polynomes-definis-par-recurrence}
 	\textcolor{blue}{\hyperref[Suite de polynômes définis par récurrence]{[Enoncé]}}\\
 	
 	\subsection{Equation polynomiale (1)}
@@ -6308,10 +6382,12 @@ Alors, on a l'équivalence :
 	Or pour tout $z\in \C$, $\deg(P-zQ)\ne n$ ssi le coefficient dominant de $P$ est égal à celui de $zQ$. Comme $j\notin\R$, le coefficient dominant de $jQ$ n'est pas réel. De même pour celui de $\overline jQ$.\\
 	Ainsi comme celui de $P$ est réel, $\deg(P-jQ)=\deg(P-\overline jQ)=n$ d'où $\deg(P^3-Q^3)\geq 2n$.
 	
-	\subsection{Théorème de la racine rationnelle}\label{sec:theoreme-de-la-racine-rationnelle}
+	\subsection{Théorème de la racine rationnelle}
+	\label{sec:theoreme-de-la-racine-rationnelle}
 	\textcolor{blue}{\hyperref[Théorème de la racine rationnelle]{[Enoncé]}}\\
 	
-	\subsection{Critère d'Eisenstein \etoile{3}}\label{sec:critere-deisenstein-etoile3}
+	\subsection{Critère d'Eisenstein \etoile{3}}
+	\label{sec:critere-deisenstein-etoile3}
 	\textcolor{blue}{\hyperref[Eisenstein]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item
@@ -6375,15 +6451,16 @@ Alors, on a l'équivalence :
 		On sait que $H_n\unfty\longrightarrow+\infty$ donc $x_n\unfty\longrightarrow 0$.
 		\item Fixons $n\geq 2$.\\
 		On réécrit de même $\displaystyle H_n\leq\frac{1}{x_n}=\frac{1}{1-x_n}+\sum_{k=2}^n\frac{1}{k-x_n}\leq\frac{1}{1-x_n}+\sum_{k=2}^n\frac{1}{k-1}=\frac{1}{1-x_n}+H_{n-1}=\frac{1}{1-x_n}-\frac{1}{n}+H_n$.\\
-		Or on montre classiquement (cf. \ref{Série harmonique}) que $H_n\unfty\sim\ln n$ d'où $\displaystyle\frac{1}{1-x_n}-\frac{1}{n}+H_n\unfty\sim\ln n$ puis $x_n\unfty\sim\displaystyle\frac{1}{\ln n}$.
+		Or on montre classiquement (cf. \ref{Série harmonique}) que $H_n\unfty\sim\ln n$ d'où $\displaystyle\frac{1}{1-x_n}-\frac{1}{n}+H_n\unfty\sim\ln n$ puis $x_n\unfty\sim\dfrac{1}{\ln n}$.
 	\end{enumerate}
 	
-	\subsection{Zéros des polynômes de Taylor du sinus}\label{sec:zeros-des-polynomes-de-taylor-du-sinus}
-	\textcolor{blue}{\hyperref[Zéros des polynômes de Taylor du sinus]{[Enoncé]}}\\
+	\subsection{Zéros du sinus tronqué}
+	\label{sec:zeros-du-sinus-tronqué}
+	\textcolor{blue}{\hyperref[Zéros du sinus tronqué]{[Enoncé]}}\\
 	
-	\subsection{Polynôme de Taylor de l'exponentielle \ccinp{1}}
-	\label{sec:polynôme-de-taylor-de-l'exponentielle}
-	\textcolor{blue}{\hyperref[Polynôme de Taylor de l'exponentielle]{[Enoncé]}}\\
+	\subsection{Exponentielle tronquée \ccinp{1}}
+	\label{sec:exponentielle-tronquée}
+	\textcolor{blue}{\hyperref[Exponentielle tronquée]{[Enoncé]}}\\
 	Soit $z\in \C$ une racine de $P$. Supposons par l'absurde que $P'(z)=0$.\\
 	On a $0=P'(z)=\displaystyle\sum_{k=0}^{n-1}\frac{z^k}{k!}=P(z)-z^n=-z^n$ donc $z=0$. Ceci est absurde puisque $P(0)=1\ne 0$. On en déduit que $P$ est scindé à racines simples.
 	
@@ -6395,13 +6472,15 @@ Alors, on a l'équivalence :
 	Supposons par l'absurde $s\in \R$. Alors $\exists 0<\alpha<s,\ \exists Q\in \R[X],\ \forall x\in ]s-\alpha,s+\alpha[,\ f(x)=Q(x)$. En particulier $\forall x\in [s-\alpha,s[,\ P(x)=f(x)=Q(x)$. $P$ et $Q$ coïncident en une infinité de points, ils sont donc égaux. Ceci contredit la maximalité de $s$ et on en déduit que $s=+\infty$.\\
 	On peut faire de même pour montrer que $f$ est polynomiale sur $]-\infty,1]$. Ce polynôme coïncide avec $P$ sur $[0,1]$, ils sont donc égaux et par suite $\forall x\in \R,\ f(x)=P(x)$.
 	
-	\subsection{Intégrales de polynômes \etoile{1}}\label{sec:integrales-de-polynomes-etoile1}
+	\subsection{Intégrales de polynômes \telecom{1}}
+	\label{sec:integrales-de-polynomes-etoile1}
 	\textcolor{blue}{\hyperref[Intégrales de polynômes]{[Enoncé]}}\\
 	Notons $(L_0,\dots,L_n)$ la base de Lagrange aux points $x_0,\dots,x_n$. Fixons $P\in \K_n[X]$.\\
 	On sait que $P=\displaystyle\sum_{i=0}^nP(x_i)L_i$.\\
 	Donc $\displaystyle\int_a^bP(x)dx=\sum_{i=0}^n\int_a^bP(x_i)L_i(x)dx=\sum_{i=0}^nP(x_i)\int_a^bL_i(x)dx=\sum_{i=0}^n\lambda_iP(x_i)$ avec $\lambda_i=\displaystyle\int_a^bL_i(x)dx$.
 	
-	\subsection{Théorème de Gauss-Lucas \etoile{2}}\label{sec:theoreme-de-gauss-lucas-etoile2}
+	\subsection{Théorème de Gauss-Lucas \centraleponts{2}}
+	\label{sec:theoreme-de-gauss-lucas-etoile2}
 	\textcolor{blue}{\hyperref[gausslucas]{[Enoncé]}}\\
 	\label{Gauss-Lucas}
 	\begin{enumerate}
@@ -6451,7 +6530,8 @@ Alors, on a l'équivalence :
 	Notons $G=\{(x,P(x)),\ x\in \R\}$ le graphe de $P$. Soient $((x_i,y_i))_{0\leq i\leq n}\in G^{n+1}$ distincts et alignés. Par hypothèse il existe une droite passant par tous ces points. Notons $y=ax+b$ l'équation de cette droite.\\
 	$\forall i\in \crblanc{0}{n},\ P(x_i)=y_i=ax_i+b$. Donc le polynôme $P-aX-b$ a $n+1$ racines distinctes. Ceci est absurde car $\deg(P-aX-b)=n$.
 	
-	\subsection{Polynômes qui commutent avec cosinus \etoile{3}}\label{sec:polynomes-qui-commutent-avec-cosinus-etoile3}
+	\subsection{Polynômes qui commutent avec cosinus \centraleponts{3}}
+	\label{sec:polynomes-qui-commutent-avec-cosinus-etoile3}
 	\textcolor{blue}{\hyperref[polycommutecos]{[Enoncé]}}\\
 	On note $(*):\forall x\in \R,\ P(\cos(x))=\cos(P(x))$
 	\begin{enumerate}
@@ -6481,7 +6561,8 @@ Alors, on a l'équivalence :
 		Ceci est absurde donc les seuls polynômes solutions sont $P=X$ et $P=\lambda$.
 	\end{enumerate}
 	
-	\subsection{Relation trigonométrique polynomiale \etoile{3}}\label{sec:relation-trigonometrique-polynomiale-etoile3}
+	\subsection{Relation trigonométrique polynomiale \etoile{3}}
+	\label{sec:relation-trigonometrique-polynomiale-etoile3}
 	\textcolor{blue}{\hyperref[relationtrigopoly]{[Enoncé]}}\\
 	soit $P\in \R[X]$ vérifiant $(0):\forall t\in \R,P(\cos t)+P(\sin t)=1$. Fixons $t\in \R$\\
 	$(1): P(\cos(-t))+P(\sin(-t))=P(\cos t)+P(-\sin t)=1$\\
@@ -6499,21 +6580,20 @@ Alors, on a l'équivalence :
 	Donc $\forall t\in \R,\ P(\cos t)+P(\sin t)=1+(\cos^2 t+\sin^2 t-1)S\left[\left(\sin^2 t-\displaystyle\frac{1}{2}\right)^2\right]=1$.\\\\\\
 	Ainsi l'ensemble des solutions de $(0)$ est $\mathcal{E}=\left\{\left(X^2-\displaystyle\frac{1}{2}\right)S\left[\left(X^2-\displaystyle\frac{1}{2}\right)^2\right]+\displaystyle\frac{1}{2},\ S\in \R[X]\right\}$.
 	
-	\subsection{Division euclidienne (1)}
-	Déterminer le reste dans la division euclidienne de $X^{42}+X^{1729}+X^{11\, 111}$ par $X^2+X+1$.\\\\
-	
-	Correction :\\
+	\subsection{Division euclidienne (1) \ccinp{1}}
+	\label{sec:division-euclidienne-(1)}
+	\textcolor{blue}{\hyperref[Division euclidienne (1)]{[Enoncé]}}\\
 	Notons $P=X^{42}+X^{1729}+X^{11\, 111}$ et $A=X^2+X+1$. On écrit $P=AQ+R$ la division euclidienne de $P$ par $A$. On montre classiquement que $A=(X-j)(X-\overline j)$ avec $j=e^{2i\pi/3}$, vérifiant $j^3=1$.\\
 	En évaluant en $j$ on obtient $aj+b=R(j)=j^{3\times 14}+j^{1728+1}+j^{11\,112-1}=1+j+j^{-1}=1+j+j^2=0$.\\
 	On en déduit $R(\overline j)=P(\overline j)=\overline{P(j)}=0$. $R$ est de degré au plus $1$ et a deux racines, c'est donc le polynôme nul.\\
 	Autrement dit $X^2+X+1|X^{42}+X^{1729}+X^{11\, 111}$.
 	
-	\subsection{Division euclidienne (2)}
-	Soit $n\in\N$. Déterminer le reste dans la division euclidienne de $(\cos\theta+X\sin(\theta))^n$ par $X^2+1$.\\\\
-	
-	Correction :\\
+	\subsection{Division euclidienne (2) \ccinp{1}}
+	\label{sec:division-euclidienne-(2)}
+	\textcolor{blue}{\hyperref[Division euclidienne (2)]{[Enoncé]}}\\
 	Notons $P=(\cos\theta+X\sin(\theta))^n$ et $A=X^2+1$. On écrit $P=AQ+R$ la division euclidienne de $P$ par $A$ avec $R=aX+b\in \R[X]$. En évaluant en $i$ on obtient $ai+b=e^{in\theta}$ d'où $a=\cos(n\theta)$ et $b=\sin(n\theta)$.
-		\subsection{Fonctions trigonométriques polynomiale ?}
+	
+	\subsection{Fonctions trigonométriques polynomiale ? \ccinp{1}}
 	\label{sec:fonctions-trigonométriques-polynomiales-?}
 	\textcolor{blue}{\hyperref[Fonctions trigonométriques polynomiales ?]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6521,9 +6601,9 @@ Alors, on a l'équivalence :
 		$\cos$ est bornée donc si c'était une fonction polynomiale, elle serait constante ce qui n'est pas le cas.\\
 		\underline{$2^{\T{nd}}$ méthode :} Sur $\R$\\
 		$\cos$ n'est pas identiquement nulle et s'annule une infinité de fois sur $\R$.\\
-		\underline{$3^{\T{ème}}$ méthode :} Sur un intervalle non vide quelconque\\
+		\underline{$3^{\T{ème}}$ méthode :} Sur un intervalle d'intérieur non vide quelconque\\
 		$\cos''=-\cos$ donc si c'était une fonction polynomiale, elle serait identiquement nulle (pour des raisons de degrés) ce qui n'est pas le cas.
-		\item Soit $P$ un éventuel polynôme égal à $\tan$ sur un intervalle non vide $I$. $P$ n'est pas constant car $\tan$ est injective sur $I$.\\
+		\item Soit $P$ un éventuel polynôme égal à $\tan$ sur un intervalle d'intérieur non vide $I$. $P$ n'est pas constant car $\tan$ est injective sur $I$.\\
 		En dérivant $P'=1+P^2$. Pourtant $\deg(P')<\deg(P)\leq \deg(P^2)=\deg(1+P^2)$.
 	\end{enumerate}
 	
@@ -6546,7 +6626,7 @@ Alors, on a l'équivalence :
 	
 	\underline{$2^{\T{nd}}$ solution:} par l'étude de fonction\\
 	Supposons qu'une telle fraction rationnelle $R$ existe.\\
-	Notons $z$ un pôle de $R$ de module maximal parmi les pôles de $R$.
+	Notons $z$ un pôle de $R$ de module maximal.
 	$\forall x>|z|,\ R'(x)=\displaystyle\frac{1}{x}$.\\
 	Donc, $\exists C\in \C,\forall x>|z|,\ R(x)=\ln(x)+C$.\\
 	Alors $\lim\limits_{x\to +\infty}{R(x)}=+\infty$ ce qui implique $\deg(R)>0$ et $\lim\limits_{x\to +\infty}{\displaystyle\frac{R(x)}{x}}=0$ ce qui implique $\deg\left(\displaystyle\frac{R(X)}{X}\right)<0$ c'est à dire $\deg(R)<1$.\\
@@ -6562,7 +6642,8 @@ Alors, on a l'équivalence :
 	Ceci est absurde donc il n'existe pas de fraction rationnelle dont la dérivée vaut $\displaystyle\frac{1}{X}$.\\
 	\textit{Cette solution a pour mérite de s'adapter à toutes les fractions rationnelles qui possèdent un pôle simple ! Il suffit d'étudier la multiplicité de ce pôle (au lieu de $0$ ici).}
 	
-	\subsection{Une fraction rationnelle}\label{sec:une-fraction-rationnelle}
+	\subsection{Une fraction rationnelle}
+	\label{sec:une-fraction-rationnelle}
 	\textcolor{blue}{\hyperref[fractionrationnelle]{[Enoncé]}}\\
 	
 	\subsection{Dérivé d'un polynôme scindé sur $\R$ \centraleponts{3}}
@@ -6574,7 +6655,7 @@ Alors, on a l'équivalence :
 		De plus $x_i<x_{i+1},\ P(x_i)=0=P(x_{i+1}) \text{ et }x\mapsto P(x)$ est continue sur $[x_i,x_{i+1}]$ et dérivable sur $]x_i,x_{i+1}[$. Donc d'après le théorème de Rolle, $\exists y_i\in ]x_i,x_{i+1}[,\ P'(y_i)=0$. De par la définition des $y_i$ on a $y_1<\dots<y_{r-1}$.\\
 		On a donc trouvé $r-1+\displaystyle\sum\limits_{i=1}^r{(m_i-1)}=\deg(P)-1$ racines de $P'$, comptées avec multiplicité.\\
 		Comme $1\leq\deg(P')=\deg(P)-1$, $P'$ n'a pas d'autre racine. Elles sont donc bien toutes réelles.
-		\item Si $\alpha=0$ la question 1 conclut. Sinon, on pose $f:t\mapsto P(t)e^{\alpha t}$.\\
+		\item On pose $f:t\mapsto P(t)e^{\alpha t}$.\\
 		$\forall t\in \R,\ f'(t)=0\iff (P'(t)+\alpha P(t))e^{\alpha t}=0\iff P'(t)+\alpha P(t)=0$.\\
 		On fait la même preuve que pour la question 1 en appliquant Rolle à $f$ entre deux racines consécutives de $P$.
 	\end{enumerate}
@@ -6600,7 +6681,7 @@ Alors, on a l'équivalence :
 		\underline{\textbf{Deuxième méthode: théorème de Gauss-Lucas}}\\
 		l'exercice \ref{Gauss-Lucas} montre que si $P$ est à racines réelles alors $P'$ l'est aussi. Une récurrence similaire à celle de l'autre méthode permet de conclure.
 		\item On applique le résultat de la question $1$ à $P,P',\dots,P^{(n-1)}$:
-		$$\forall x\in \R,\forall k\in \crblanc{1}{n-1},\ P^{(k+1)}(x)P^{(k-1)}(x)-(P^k(x))^2\leq 0$$
+		$$\forall x\in \R,\forall k\in \crblanc{1}{n-1},\ P^{(k+1)}(x)P^{(k-1)}(x)-(P^{(k)}(x))^2\leq 0$$
 		En particulier d'après la formule de Taylor, pour $x=0$:
 		\begin{align*}
 			\forall k\in \crblanc{1}{n-1},\ (k+1)!\ a_{k+1}\cdot (k-1)!\ a_{k-1}&\leq (k!)^2a_k^2\\
@@ -6673,7 +6754,7 @@ Alors, on a l'équivalence :
 	\label{sec:ensemble-des-racines-(2)}
 	\textcolor{blue}{\hyperref[Ensemble des racines (2)]{[Enoncé]}}\\
 	
-	\subsection{Théorème de Bernstein}
+	\subsection{Théorème de Bernstein \centraleponts{4}}
 	\label{sec:theoreme-de-bernstein}
 	\textcolor{blue}{\hyperref[Théorème de Bernstein]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6811,6 +6892,14 @@ Alors, on a l'équivalence :
 		\end{align*}
 		Or $a$ et $b$ sont premiers entre eux donc $p|b\implies p\not |\ a$ et donc d'après le lemme d'Euclide, $p|c_d$. Ceci est absurde car $p>|c_d|$.\\\\
 		Finalement on conclut que $P(\Q)=\Q \iff \exists a,b\in \Q^*\times \Q,\ P(X)=aX+b$.
+		\item Soit $P$ un tel polynôme. Le raisonnement que l'on va utiliser fonctionne avec les seules hypothèses $P(\R\backslash\Q)\subset\R\backslash\Q$ et $P$ non constant (ce qui est évident avec l'inclusion réciproque).\\
+		Tout d'abord $P$ est à valeurs réelles car $\R\backslash\Q$ est infini (question 3).\\
+		Ensuite, montrons que $P$ est à coefficients rationnels. On a vu dans la question précédente qu'il suffit que $P$ soit à valeur rationnelle sur une partie infini de $\Q$. Supposons que ce n'est pas le cas. Alors il existe une partie finie $A$ de $\Q$ telle que $P(\Q\backslash A)\subset \R\backslash\Q$. Par conséquent $P(\R)\subset\R\backslash\Q\cup P(A)$ d'où $\widering{P(\R)}=\emptyset$ ce qui contredit le fait que $P$ n'est pas constant.\\
+		Ainsi $P$ est à coefficients rationnels. On en déduit alors $P(\Q)\subset\Q\subset\R\backslash P(\R\backslash\Q)$ et par conséquent l'égalité :
+		$$P(\Q)\sqcup P(\R\backslash\Q)=P(\R)=(P(\R)\cap\Q)\sqcup(P(\R)\cap\R\backslash\Q)$$
+		Cela impose que les inclusions $P(\Q)\subset P(\R)\cap\Q$ et $P(\R\backslash\Q)\subset P(\R)\cap\R\backslash\Q$ sont en fait des égalités.\\
+		Or $P(\R)$ est un intervalle non borné (TVI + $P$ non constant). Quitte à prendre $-P$ il n'est pas majoré et quitte à prendre $P-q$ pour $q\in \Q$ supérieur à l'inf de $P$ sur $\R_+$, il contient $\R_+$ (ces opérations conserve l'hypothèse $P(\R\backslash\Q)=\R\backslash\Q$. Enfin, quitte à multiplier $P$ par le ppcm des dénominateurs de ses coefficients, $P\in \Z[X]$. Ainsi si $p$ est un nombre premier, $\dfrac{1}{p}\in P(\Q)$ et on en déduit comme dans la question précédente que si $P$ est de degré au moins $2$ alors $p|\lambda$ avec $\lambda$ le coefficient dominant de $P$. Pour $p>|\lambda|$ ceci est absurde donc $\exists a,b\in \Q,\ P(X)=aX+b$.\\
+		Ces polynômes sont bien solutions puisque pour $\alpha\in\R\backslash\Q,\ P(\alpha)\in\R\backslash\Q$ et $P\left(\dfrac{\alpha-b}{a}\right)=\alpha$ avec $\dfrac{\alpha-b}{a}\in \R\backslash\Q$.
 		\item 
 	\end{enumerate}
 	

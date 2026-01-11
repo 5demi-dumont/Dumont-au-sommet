@@ -732,23 +732,20 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\section{Equation matricielle avec la comatrice \xens{4}}
 	\label{Equation matricielle avec la comatrice}
 	\textcolor{blue}{\hyperref[Equation matricielle avec la comatrice corrigé]{[Corrigé]}}\\
-\begin{enumerate}[leftmargin=*]
-	\item Montrer que $\forall A,B\in \M_n(\C),\ \Com(AB)=\Com(A)\Com(B)$.
-\end{enumerate}
-On cherche les matrices $A\in \M_n(\C)$ telles que $A+\Com(A)^\top$ soit une matrice scalaire. Pour $\lambda\in \C$ on note $E_\lambda=\{A\in \M_n(\C),\ A+\Com(A)^\top=\lambda I_n\}$.
-\begin{enumerate}[resume]
-	\item Montrer que si $A\in E_\lambda$ alors toute la classe de conjugaison de $A$ est dans $E_\lambda$.
-	\item Discuter du rang de $\Com(A)$ en fonction du rang de $A$.
-	\item En déduire l'ensemble des matrices recherchées.
-\end{enumerate}
-
+	\begin{enumerate}[leftmargin=*]
+		\item Montrer que $\forall A,B\in \M_n(\C),\ \Com(AB)=\Com(A)\Com(B)$.
+	\end{enumerate}
+	On cherche les matrices $A\in \M_n(\C)$ telles que $A+\Com(A)^\top$ soit une matrice scalaire. Pour $\lambda\in \C$ on note $E_\lambda=\{A\in \M_n(\C),\ A+\Com(A)^\top=\lambda I_n\}$.
+	\begin{enumerate}[resume]
+		\item Montrer que si $A\in E_\lambda$ alors toute la classe de conjugaison de $A$ est dans $E_\lambda$.
+		\item Discuter du rang de $\Com(A)$ en fonction du rang de $A$.
+		\item En déduire l'ensemble des matrices recherchées.
+	\end{enumerate}
 	
 	\section{Rang et spectre de la comatrice \xens{3}}
 	\label{Rang et spectre de la comatrice}
 	\textcolor{blue}{\hyperref[Rang et spectre de la comatrice corrigé]{[Corrigé]}}\\
 	Soit $A\in \M_n(\C)$. Déterminer le rang et le spectre de $\tilde A=\Com(A)^\top$.
-	
-
 	
 	\section{Racine $p$-ième d'une matrice \telecom{3}}
 	\label{Racine pieme d'une matrice}
@@ -5011,6 +5008,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Ainsi, il suffit de trouver une matrice $M$ tel que $u^\top M v$ est non nulle. On peut prendre $M=uv^\top$.\\
 	Ainsi, on obtient une contradiction, donc $A$ et $B$ sont à spectres disjoints. 
 	\newpage
+
 \section{Correction Réduction algébrique}
 	\subsection{Equation matricielle polynomiale (1)}
 	\label{Equation matricielle polynomiale (1) corrigé}
@@ -5024,114 +5022,116 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Or $\forall \lambda\in \C,\ m_\lambda\in \crblanc{0}{n}$ et de plus $m_0+m_1+m_j+m_{\overline j}=n$. Donc $m_1=n$ et $m_j=m_{\overline j}=m_0=0$. Autrement dit $1$ est la seule valeur propre de $M$. Mais alors en particulier $M$ est inversible d'où $M^3=I_n$.\\
 	Le polynôme $X^3-1$ annule $M$ donc $M$ est diagonalisable. N'ayant que $1$ pour valeur propre, on conclut que $M=I_n$.\\
 	Enfin $I_n$ vérifie évidemment $I_n^5=I_n^2$.
+	
 	\subsection{Equation matricielle polynomiale (2)}
 	\label{Equation matricielle polynomiale (2) corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle polynomiale (2)]{[Enoncé]}}\\
 		Soit $A\in \M_n(\R)$ telle que $A^3+A^2+A=0$. Le polynôme $X^3+X^2+X=X(X^2+X+1)$ annule $A$ donc $\text{Sp}(A)\subset\{0,j,\overline j\}$ en notant $j=e^{2i\pi/3}$.\\
-	Pour $\lambda\in \C$ on note $m_\lambda$ la multiplicité de $\lambda$ en tant que valeur propre de $A$, càd en tant que racine de son polynôme caractéristique ($m_\lambda=0$ si $\lambda$ n'est pas valeur propre de $A$).\\
+	Pour $\lambda\in \C$ on note $m_\lambda$ la multiplicité algébrique de $\lambda$ en tant que valeur propre de $A$, càd en tant que racine de son polynôme caractéristique ($m_\lambda=0$ si $\lambda$ n'est pas valeur propre de $A$).\\
 	Comme $A$ est à coefficients réels, $\chi_A\in \R[X]$. Donc $m_j=m_{\overline j}$. De plus d'après le théorème du rang $\rg(A)=n-m_0$.\\
 	Enfin on sait que $m_0+m_j+m_{\overline j}=n$ càd $2m_j=n-m_0=\rg(A)$. $\rg(A)$ est donc pair.
+	
 	\subsection{Equation matricielle avec la comatrice}
 	\label{Equation matricielle avec la comatrice corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle avec la comatrice]{[Enoncé]}}\\
 	\begin{enumerate}
-\item On sait que si $M\in \T{GL}_n(\C)$ on a $\Com(M)^\top=\det(M)M^{-1}$.\\
-Soit $A,B\in \T{GL}_n(\C)$. $\det(AB)=\det(A)\det(B)\ne 0$ donc $AB\in \text{GL}_n(\C)$.\\
-Ainsi $\Com(AB)^\top=\det(AB)(AB)^{-1}=\det(B)B^{-1}\det(A)A^{-1}=\Com(B)^\top\Com(A)^\top$ i.e $\Com(AB)=\Com(A)\Com(B)$.\\
-Soit maintenant $A,B\in \M_n(\C)$. On sait que GL$_n(\C)$ est dense dans $\M_n(\C)$ cf.[l'exo qui va bien] donc il existe deux suites de matrices inversibles $(A_k)_{k\in \N}$ et $(B_k)_{k\in \N}$ de limites respectives $A$ et $B$.\\
-D'après ce qui vient d'être fait, $\forall k\in \N,\ \Com(A_kB_k)=\Com(A_k)\Com(B_k)$.\\
-Or les coefficients de $\Com(M)$ sont polynomiaux en ceux de $M$, donc l'application $\Com:M\in \M_n(\C)\mapsto \Com(M)$ est continue. D'autre part le produit matriciel $(M,N)\in \M_n(\C)^2\mapsto MN$ est bilinéaire sur $\M_n(\C)$ qui est un espace vectoriel de dimension $n^2<\infty$. C'est donc aussi une application continue.\\
-On en déduit par passage à la limite que $\Com(AB)=\Com(A)\Com(B)$.
-\item Soit $\lambda\in \C$ et soit $A\in E_\lambda$. Soit enfin $P\in \text{GL}_n(\C)$. On pose $B=PAP^{-1}$.\\
-D'après la question précédente $\Com(B)=\Com(P)\Com(A)\Com(P^{-1})$.\\
-Or toujours d'après la question précédente $I_n=\Com(I_n)=\Com(PP^{-1})=\Com(P)\Com(P^{-1})$. Donc $\Com(P^{-1})=\Com(P)^{-1}$. Et comme $P$ est inversible, $\Com(P)^\top=\det(P)P^{-1}$.\\
-Ainsi, $\Com(B)^\top=P\Com(A)^\top P^{-1}$ et par suite $B+\Com(B)^\top=P(A+\Com(A)^\top)P^{-1}=\lambda I_n$.\\
-C'est-à-dire $B\in E_\lambda$.
-\item On note $\tilde A=\Com(A)^\top$. $\rg(\tilde A)=\rg(\Com(A))$.\\
-Pour $n=1$ on déduit de la formule $A\tilde A=\det(A)I_n$ que $\tilde A=1$ si $A\ne 0$. $\tilde A=0$ si $A=0$. On suppose donc maintenant $n\geq 2$.\\
-Si $\rg(A)=n$ i.e si $A$ est inversible, alors $\tilde A$ est inversible puisque $A\tilde A=\det(A)I_n$ avec $\det(A)\ne 0$.\\
-Si $\rg(A)\leq n-2$ alors tous les mineurs de $A$ sont nuls, comme déterminants de matrices extraites de $A$ de tailles strictement supérieures à $\rg(A)$ donc $\tilde A=0$ i.e $\rg(\tilde A)=0$.\\
-Enfin, supposons que $\rg(A)=n-1$. On a $A\tilde A=\det(A)I_n=0$. Donc $\Ima(\tilde A)\subset \Ker(A)$. D'après le théorème du rang $\Ker(A)$ est de dimension $1$, donc $\tilde A$ est de rang $1$ ou $0$. $\Com(A)$ n'est pas nulle puisque $A$, de rang $n-1$, a au moins un mineur non nul. On en déduit que $\rg(\tilde A)=1$.\\
-En résumé, $\rg(\Com(A))=\begin{cases}
-	n&\mbox{si }\rg(A)=n\\
-	1&\mbox{si }0<\rg(A)=n-1\\
-	0&\mbox{sinon}
-\end{cases}$
-\item On note toujours $\tilde A=\Com(A)^\top$.\\
-Pour $n=1$, toute matrice $A$ appartient à $E_{A+\tilde A}$. Supposons dans la suite $n\geq 2$.\\
-Soient $\lambda\in \C$ et $A\in \M_n(\C)$ tels que $A+\tilde A=\lambda I_n$. Observons qu'en multipliant l'égalité par $A$ il vient $A^2-\lambda A-\det(A)I_n=0$. On va discuter selon le rang de $A$.\\
-Si $\rg(A)\leq n-2$ alors $\tilde A=0$ et par suite $A=\lambda I_n$. Comme $A$ n'est pas inversible on a $\lambda=0$ d'où $A=0$. La matrice nulle est bien dans $E_0$.\\
-Supposons que $\rg(A)=n-1$.\\
-Supposons dans un premier temps que $\lambda\ne 0$. Alors $A(A-\lambda I_n)=0$ et le polynôme $X(X-\lambda)$ est scindé à racines simples. Donc $A$ est diagonalisable et puisque $\rg(A)=n-1$, $A$ est semblable à la matrice $\lambda J_{n-1}=\diag(\lambda,\dots,\lambda,0)$. On calcule $\Com(\lambda J_{n-1})=\left(\begin{array}{ccc|c}
-	&&&0\\
-	&0&&\vdots\\
-	&&&0\\
-	\hline
-	0&\cdots&0&\lambda^{n-1}
-\end{array}\right)$. La matrice $A$ appartient donc à $E_\lambda$ ssi $\lambda^{n-1}=\lambda$, autrement dit ssi $\lambda$ est une racine $(n-2)$-ième de l'unité.\\
-Maintenant si $\lambda=0$ alors $A^2=0$. Ceci impose $\Ima(A)\subset \Ker(A)$ et par le théorème du rang $n-1=\rg(A)\leq \dim\Ker(A)=1$ i.e $n\leq 2$. Donc $E_0$ est vide lorsque $n>2$.\\
-Pour le cas $n=2$, on écrit $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. On calcule $\Com(A)=\begin{pmatrix}d&-c\\-b&a\end{pmatrix}$ puis $A+\tilde A=\begin{pmatrix}a+d&0\\
-	0&a+d\end{pmatrix}=\Tr(A)I_n$. Ainsi $\forall A\in \M_2(\C),\ A\in E_{\Tr(A)}$.\\
-On s'intéressera dans la suite au cas $n\geq 3$.\\
-Supposons enfin $\rg(A)=n$. On note $\Delta$ le discriminant de $P(X)=X^2-\lambda X-\det(A)$.\\
-Si $\Delta\ne0$ alors $P$ est scindé à racines simples donc $A$ est diagonalisable. On note $\lambda_1,\lambda_2$ les deux racines de $P$ et $m$ la multiplicité de $\lambda_1$ en tant que valeur propre de $A$. On peut remarquer qu'avec ses notations, $\lambda=\lambda_1+\lambda_2$ et $\det(A)=\lambda_1\lambda_2$.\\
-$A$ est semblable à la matrice diagonale $D=\diag(\lambda_1,\dots,\lambda_1,\lambda_2,\dots,\lambda_2)$ où $\lambda_1$ apparaît $m$ fois et $\lambda_2$ apparaît $n-m$ fois.\\
-Alors $\lambda_1\lambda_2=\det(A)=\det(D)=\lambda_1^m\lambda_2^{n-m}$. Comme $A$ est inversible $\lambda_1\ne 0$ et $\lambda_2\ne 0$. Ainsi $\lambda_1,\lambda_2$ vérifient la relation $\lambda_1^{m-1}=\lambda_2^{m+1-n}$.\\
-Etudions la réciproque. Si $D=\diag(\lambda_1,\dots,\lambda_1,\lambda_2,\dots,\lambda_2)\in \text{GL}_n(\C)$, où $\lambda_1$ apparaît $m\in \crblanc{1}{n-1}$ fois et $\lambda_1^{m-1}=\lambda_2^{m+1-n}$ alors on calcule $\tilde D=\det(D)D^{-1}=\lambda_1\lambda_2\diag(\lambda_1^{-1},\dots,\lambda_1^{-1},\lambda_2^{-1},\dots,\lambda_2^{-1})=\diag(\lambda_2,\dots,\lambda_2,\lambda_1,\dots,\lambda_1)$ où $\lambda_2$ apparaît $m$ fois.\\
-Donc $D+\tilde D=(\lambda_1+\lambda_2)I_n$.\\
-Reste à traiter le cas $\Delta=0$ càd $\lambda^2=4\det(A)$. On note $\mu=\dfrac{\lambda}{2}\ne 0$ la racine double de $P$. On a $\det(A)=\mu^n=\mu_2$ donc $\mu$ est une racine $(n-2)$-ième de l'unité.\\
-réciproquement fixons $\mu\in \U_{n-2}$ et $A\in \M_n(\C)$ telle que $B=A-\mu I_n$ vérifie $B^2=0$.\\
-Alors $\mu$ est l'unique valeur propre de $A$ et $\det(A)=\mu^n=\mu^2$.
-$B^2=0\implies A^2-2\mu A+\mu^2I_n=0\implies \displaystyle-\frac{1}{\mu^2}A^2+\frac{2}{\mu}A=I_n\implies A^{-1}=\frac{2}{\mu}I_n-\frac{1}{\mu^2}A$.
-On calcule alors $A+\tilde A=A+\det(A)A^{-1}=A+\displaystyle\mu^2\left(\frac{2}{\mu}I_n-\frac{1}{\mu^2}A\right)=2\mu I_n$.\\\\
-En outre on peut résumer la réponse en :
-\begin{itemize}
-	\item $\forall A\in \M_1(\C),\ A\in E_{A+\tilde A}$;
-	\item $\forall A\in \M_2(\C),\ A\in E_{\Tr(A)}$;
-	\item Si $n\geq 3$ et si $A\in E_\lambda$ alors,
-	\begin{itemize}
-		\item si $\rg(A)<n-2$ alors $\lambda=0$ et $A=0$;
-		\item si $\rg(A)=n-1$ alors $\lambda\in \U_{n-2}$ et $A\sim\lambda J_{n-1}=\diag(\lambda,\dots,\lambda,0)$;
-		\item si $\rg(A)=n$ alors,
+		\item On sait que si $M\in \T{GL}_n(\C)$ on a $\Com(M)^\top=\det(M)M^{-1}$.\\
+		Soit $A,B\in \T{GL}_n(\C)$. $\det(AB)=\det(A)\det(B)\ne 0$ donc $AB\in \text{GL}_n(\C)$.\\
+		Ainsi $\Com(AB)^\top=\det(AB)(AB)^{-1}=\det(B)B^{-1}\det(A)A^{-1}=\Com(B)^\top\Com(A)^\top$ i.e $\Com(AB)=\Com(A)\Com(B)$.\\
+		Soit maintenant $A,B\in \M_n(\C)$. On sait que GL$_n(\C)$ est dense dans $\M_n(\C)$ cf.[l'exo qui va bien] donc il existe deux suites de matrices inversibles $(A_k)_{k\in \N}$ et $(B_k)_{k\in \N}$ de limites respectives $A$ et $B$.\\
+		D'après ce qui vient d'être fait, $\forall k\in \N,\ \Com(A_kB_k)=\Com(A_k)\Com(B_k)$.\\
+		Or les coefficients de $\Com(M)$ sont polynomiaux en ceux de $M$, donc l'application $\Com:M\in \M_n(\C)\mapsto \Com(M)$ est continue. D'autre part le produit matriciel $(M,N)\in \M_n(\C)^2\mapsto MN$ est bilinéaire sur $\M_n(\C)$ qui est un espace vectoriel de dimension $n^2<\infty$. C'est donc aussi une application continue.\\
+		On en déduit par passage à la limite que $\Com(AB)=\Com(A)\Com(B)$.
+		\item Soit $\lambda\in \C$ et soit $A\in E_\lambda$. Soit enfin $P\in \text{GL}_n(\C)$. On pose $B=PAP^{-1}$.\\
+		D'après la question précédente $\Com(B)=\Com(P)\Com(A)\Com(P^{-1})$.\\
+		Or toujours d'après la question précédente $I_n=\Com(I_n)=\Com(PP^{-1})=\Com(P)\Com(P^{-1})$. Donc $\Com(P^{-1})=\Com(P)^{-1}$. Et comme $P$ est inversible, $\Com(P)^\top=\det(P)P^{-1}$.\\
+		Ainsi, $\Com(B)^\top=P\Com(A)^\top P^{-1}$ et par suite $B+\Com(B)^\top=P(A+\Com(A)^\top)P^{-1}=\lambda I_n$.\\
+		C'est-à-dire $B\in E_\lambda$.
+		\item On note $\tilde A=\Com(A)^\top$. $\rg(\tilde A)=\rg(\Com(A))$.\\
+		Pour $n=1$ on déduit de la formule $A\tilde A=\det(A)I_n$ que $\tilde A=1$ si $A\ne 0$. $\tilde A=0$ si $A=0$. On suppose donc maintenant $n\geq 2$.\\
+		Si $\rg(A)=n$ i.e si $A$ est inversible, alors $\tilde A$ est inversible puisque $A\tilde A=\det(A)I_n$ avec $\det(A)\ne 0$.\\
+		Si $\rg(A)\leq n-2$ alors tous les mineurs de $A$ sont nuls, comme déterminants de matrices extraites de $A$ de tailles strictement supérieures à $\rg(A)$ donc $\tilde A=0$ i.e $\rg(\tilde A)=0$.\\
+		Enfin, supposons que $\rg(A)=n-1$. On a $A\tilde A=\det(A)I_n=0$. Donc $\Ima(\tilde A)\subset \Ker(A)$. D'après le théorème du rang $\Ker(A)$ est de dimension $1$, donc $\tilde A$ est de rang $1$ ou $0$. $\Com(A)$ n'est pas nulle puisque $A$, de rang $n-1$, a au moins un mineur non nul. On en déduit que $\rg(\tilde A)=1$.\\
+		En résumé, $\rg(\Com(A))=\begin{cases}
+			n&\mbox{si }\rg(A)=n\\
+			1&\mbox{si }0<\rg(A)=n-1\\
+			0&\mbox{sinon}
+		\end{cases}$
+		\item On note toujours $\tilde A=\Com(A)^\top$.\\
+		Pour $n=1$, toute matrice $A$ appartient à $E_{A+\tilde A}$. Supposons dans la suite $n\geq 2$.\\
+		Soient $\lambda\in \C$ et $A\in \M_n(\C)$ tels que $A+\tilde A=\lambda I_n$. Observons qu'en multipliant l'égalité par $A$ il vient $A^2-\lambda A-\det(A)I_n=0$. On va discuter selon le rang de $A$.\\
+		Si $\rg(A)\leq n-2$ alors $\tilde A=0$ et par suite $A=\lambda I_n$. Comme $A$ n'est pas inversible on a $\lambda=0$ d'où $A=0$. La matrice nulle est bien dans $E_0$.\\
+		Supposons que $\rg(A)=n-1$.\\
+		Supposons dans un premier temps que $\lambda\ne 0$. Alors $A(A-\lambda I_n)=0$ et le polynôme $X(X-\lambda)$ est scindé à racines simples. Donc $A$ est diagonalisable et puisque $\rg(A)=n-1$, $A$ est semblable à la matrice $\lambda J_{n-1}=\diag(\lambda,\dots,\lambda,0)$. On calcule $\Com(\lambda J_{n-1})=\left(\begin{array}{ccc|c}
+			&&&0\\
+			&0&&\vdots\\
+			&&&0\\
+			\hline
+			0&\cdots&0&\lambda^{n-1}
+		\end{array}\right)$. La matrice $A$ appartient donc à 	$E_\lambda$ ssi $\lambda^{n-1}=\lambda$, autrement dit ssi $\lambda$ est une racine $(n-2)$-ième de l'unité.\\
+		Maintenant si $\lambda=0$ alors $A^2=0$. Ceci impose $\Ima(A)\subset \Ker(A)$ et par le théorème du rang $n-1=\rg(A)\leq \dim\Ker(A)=1$ i.e $n\leq 2$. Donc $E_0$ est vide lorsque $n>2$.\\
+		Pour le cas $n=2$, on écrit $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. On calcule $\Com(A)=\begin{pmatrix}d&-c\\-b&a\end{pmatrix}$ puis $A+\tilde A=\begin{pmatrix}
+			a+d&0\\
+			0&a+d\end{pmatrix}=\Tr(A)I_n$. Ainsi $\forall A\in \M_2(\C),\ A\in E_{\Tr(A)}$.\\
+		On s'intéressera dans la suite au cas $n\geq 3$.\\
+		Supposons enfin $\rg(A)=n$. On note $\Delta$ le discriminant de $P(X)=X^2-\lambda X-\det(A)$.\\
+		Si $\Delta\ne0$ alors $P$ est scindé à racines simples donc $A$ est diagonalisable. On note $\lambda_1,\lambda_2$ les deux racines de $P$ et $m$ la multiplicité de $\lambda_1$ en tant que valeur propre de $A$. On peut remarquer qu'avec ses notations, $\lambda=\lambda_1+\lambda_2$ et $\det(A)=\lambda_1\lambda_2$.\\
+		$A$ est semblable à la matrice diagonale $D=\diag(\lambda_1,\dots,\lambda_1,\lambda_2,\dots,\lambda_2)$ où $\lambda_1$ apparaît $m$ fois et $\lambda_2$ apparaît $n-m$ fois.\\
+		Alors $\lambda_1\lambda_2=\det(A)=\det(D)=\lambda_1^m\lambda_2^{n-m}$. Comme $A$ est inversible $\lambda_1\ne 0$ et $\lambda_2\ne 0$. Ainsi $\lambda_1,\lambda_2$ vérifient la relation $\lambda_1^{m-1}=\lambda_2^{m+1-n}$.\\
+		Etudions la réciproque. Si $D=\diag(\lambda_1,\dots,\lambda_1,\lambda_2,\dots,\lambda_2)\in \text{GL}_n(\C)$, où $\lambda_1$ apparaît $m\in \crblanc{1}{n-1}$ fois et $\lambda_1^{m-1}=\lambda_2^{m+1-n}$ alors on calcule $\tilde D=\det(D)D^{-1}=\lambda_1\lambda_2\diag(\lambda_1^{-1},\dots,\lambda_1^{-1},\lambda_2^{-1},\dots,\lambda_2^{-1})=\diag(\lambda_2,\dots,\lambda_2,\lambda_1,\dots,\lambda_1)$ où $\lambda_2$ apparaît $m$ fois.\\
+		Donc $D+\tilde D=(\lambda_1+\lambda_2)I_n$.\\
+		Reste à traiter le cas $\Delta=0$ càd $\lambda^2=4\det(A)$. On note $\mu=\dfrac{\lambda}{2}\ne 0$ la racine double de $P$. On a $\det(A)=\mu^n=\mu^2$ donc $\mu$ est une racine $(n-2)$-ième de l'unité.\\
+		réciproquement fixons $\mu\in \U_{n-2}$ et $A\in \M_n(\C)$ telle que $B=A-\mu I_n$ vérifie $B^2=0$.\\
+		Alors $\mu$ est l'unique valeur propre de $A$ et $\det(A)=\mu^n=\mu^2$.
+		$B^2=0\implies A^2-2\mu A+\mu^2I_n=0\implies \displaystyle-\frac{1}{\mu^2}A^2+\frac{2}{\mu}A=I_n\implies A^{-1}=\frac{2}{\mu}I_n-\frac{1}{\mu^2}A$.
+		On calcule alors $A+\tilde A=A+\det(A)A^{-1}=A+\displaystyle\mu^2\left(\frac{2}{\mu}I_n-\frac{1}{\mu^2}A\right)=2\mu I_n$.\\\\
+		En outre on peut résumer la réponse en :
 		\begin{itemize}
-			\item si $\lambda^2\ne 4\det(A)$ alors $A$ a deux valeurs propres distinctes $\lambda_1$ et $\lambda_2$, $\lambda=\lambda_1+\lambda_2$ et $A$ est semblable à une matrice de la forme $\diag(\lambda_1,\dots,\lambda_1,\lambda_2,\dots,\lambda_2)$ où $\lambda_1$ apparaît $m\in \crblanc{1}{n-1}$ fois. De plus $\lambda_1,\lambda_2$ vérifient la relation $\lambda_1^{m-1}=\lambda_2^{m+1-n}$;
-			\item si $\lambda^2=4\det(A)$ alors $\dfrac{\lambda}{2}\in \U_{n-2}$ et $\left(A-\dfrac{\lambda}{2}I_n\right)^2=0$.
+			\item $\forall A\in \M_1(\C),\ A\in E_{A+\tilde A}$;
+			\item $\forall A\in \M_2(\C),\ A\in E_{\Tr(A)}$;
+			\item Si $n\geq 3$ et si $A\in E_\lambda$ alors,
+			\begin{itemize}
+				\item si $\rg(A)<n-2$ alors $\lambda=0$ et $A=0$;
+				\item si $\rg(A)=n-1$ alors $\lambda\in \U_{n-2}$ et $A\sim\lambda J_{n-1}=\diag(\lambda,\dots,\lambda,0)$;
+				\item si $\rg(A)=n$ alors,
+				\begin{itemize}
+					\item si $\lambda^2\ne 4\det(A)$ alors $A$ a deux valeurs propres distinctes $\lambda_1$ et $\lambda_2$, $\lambda=\lambda_1+\lambda_2$ et $A$ est semblable à une matrice de la forme $\diag(\lambda_1,\dots,\lambda_1,\lambda_2,\dots,\lambda_2)$ où $\lambda_1$ apparaît $m\in \crblanc{1}{n-1}$ fois. De plus $\lambda_1,\lambda_2$ vérifient la relation $\lambda_1^{m-1}=\lambda_2^{m+1-n}$;
+					\item si $\lambda^2=4\det(A)$ alors $\dfrac{\lambda}{2}\in \U_{n-2}$ et $\left(A-\dfrac{\lambda}{2}I_n\right)^2=0$.
+				\end{itemize}
+			\end{itemize}
 		\end{itemize}
-	\end{itemize}
-\end{itemize}
-\end{enumerate}
+	\end{enumerate}
+	
 	\subsection{Rang et spectre de la comatrice}
 	\label{Rang et spectre de la comatrice corrigé}
 	\textcolor{blue}{\hyperref[Rang et spectre de la comatrice]{[Enoncé]}}\\
-Pour $n=1$ on déduit de la formule $A\tilde A=\det(A)I_n$ que $\tilde A=1$ si $A\ne 0$. $\tilde A=0$ si $A=0$. On suppose donc maintenant $n\geq 2$.\\
-Si $\rg(A)=n$ i.e si $A$ est inversible, alors $\tilde A$ est inversible puisque $A\tilde A=\det(A)I_n$ avec $\det(A)\ne 0$.\\
-Si $\rg(A)\leq n-2$ alors tous les mineurs de $A$ sont nuls, comme déterminants de matrices extraites de $A$ de tailles strictement supérieures à $\rg(A)$ donc $\tilde A=0$ i.e $\rg(\tilde A)=0$.\\
-Enfin, supposons que $\rg(A)=n-1$. On a $A\tilde A=\det(A)I_n=0$. Donc $\T{Im}(\tilde A)\subset \Ker(A)$. D'après le théorème du rang $\Ker(A)$ est de dimension $1$, donc $\tilde A$ est de rang $1$ ou $0$. $\tilde A$ n'est pas nulle puisque $A$, de rang $n-1$, a au moins un mineur non nul. On en déduit que $\rg(\tilde A)=1$.\\
-En résumé, $\rg(\tilde A)=\begin{cases}
-	n&\mbox{si }\rg(A)=n\\
-	1&\mbox{si }0<\rg(A)=n-1\\
-	0&\mbox{sinon}
-\end{cases}$
-
-Pour ce qui est du spectre, l'étude du rang nous permet déjà de dire que $\T{Sp}(\tilde A)=\{0\}$ si $\rg(A)<n-1$. Si $\rg(A)=n-1$ alors $\tilde A$ est de rang $1$. On en déduit qu'il existe $\lambda\in \C$ tel que $\chi_{\tilde A}(X)=X^{n-1}(X-\lambda)$. Comme on sait que le coefficient en $X^{n-1}$ de $\chi_{\tilde A}$ est $-\Tr(\tilde A)$ on en déduit que $\lambda=\Tr(\tilde A)$. Donc $\T{Sp}(\tilde A)=\{0,\Tr(\tilde A)\}$ (On a potentiellement $\Tr(\tilde A)=0$).\\
-Enfin supposons que $\tilde A$ est inversible. Fixons $\lambda\in \C^*$.
-\begin{align*}
-	\chi_{\tilde A}(\lambda)&=\det(\lambda I_n-\tilde A)\\
-	&=\det(A^{-1})\det(\lambda A-A\tilde A)\\
-	&=\frac{1}{\det(A)}\det(\lambda A-\det(A)I_n)\\
-	&=\frac{(-\lambda)^n}{\det(A)}\det\left(\frac{\det(A)}{\lambda}I_n-A\right)\\
-	&=\frac{\lambda^n}{(-1)^n\det(A)}\chi_A\left(\frac{\det(A)}{\lambda}\right)
-\end{align*}
-$\C^*$ étant infini on a l'égalité entre polynômes $\chi_{\tilde A}(X)=\dfrac{X^n}{(-1)^n\det(A)}\chi_A\left(\dfrac{\det(A)}{X}\right)$.\\
-On sait que $\tilde A$ est inversible donc $\lambda=0$ n'est pas racine de $\chi_{\tilde A}$.\\
-Ainsi $\forall \lambda\in \C,\ \chi_{\tilde A}(\lambda)=0\iff \chi_A\left(\dfrac{\det(A)}{\lambda}\right)=0\iff \dfrac{\det(A)}{\lambda}\in \T{Sp}(A)$.\\
-Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
-
+	Pour $n=1$ on déduit de la formule $A\tilde A=\det(A)I_n$ que $\tilde A=1$ si $A\ne 0$. $\tilde A=0$ si $A=0$. On suppose donc maintenant $n\geq 2$.\\
+	Si $\rg(A)=n$ i.e si $A$ est inversible, alors $\tilde A$ est inversible puisque $A\tilde A=\det(A)I_n$ avec $\det(A)\ne 0$.\\
+	Si $\rg(A)\leq n-2$ alors tous les mineurs de $A$ sont nuls, comme déterminants de matrices extraites de $A$ de tailles strictement supérieures à $\rg(A)$ donc $\tilde A=0$ i.e $\rg(\tilde A)=0$.\\
+	Enfin, supposons que $\rg(A)=n-1$. On a $A\tilde A=\det(A)I_n=0$. Donc $\T{Im}(\tilde A)\subset \Ker(A)$. D'après le théorème du rang $\Ker(A)$ est de dimension $1$, donc $\tilde A$ est de rang $1$ ou $0$. $\tilde A$ n'est pas nulle puisque $A$, de rang $n-1$, a au moins un mineur non nul. On en déduit que $\rg(\tilde A)=1$.\\
+	En résumé, $\rg(\tilde A)=\begin{cases}
+		n&\mbox{si }\rg(A)=n\\
+		1&\mbox{si }0<\rg(A)=n-1\\
+		0&\mbox{sinon}
+	\end{cases}$
 	
+	Pour ce qui est du spectre, l'étude du rang nous permet déjà de dire que $\T{Sp}(\tilde A)=\{0\}$ si $\rg(A)<n-1$. Si $\rg(A)=n-1$ alors $\tilde A$ est de rang $1$. On en déduit qu'il existe $\lambda\in \C$ tel que $\chi_{\tilde A}(X)=X^{n-1}(X-\lambda)$. Comme on sait que le coefficient en $X^{n-1}$ de $\chi_{\tilde A}$ est $-\Tr(\tilde A)$ on en déduit que $\lambda=\Tr(\tilde A)$. Donc $\T{Sp}(\tilde A)=\{0,\Tr(\tilde A)\}$ (On a potentiellement $\Tr(\tilde A)=0$).\\
+	Enfin supposons que $\tilde A$ est inversible. Fixons $\lambda\in \C^*$.
+	\begin{align*}
+		\chi_{\tilde A}(\lambda)&=\det(\lambda I_n-\tilde A)\\
+		&=\det(A^{-1})\det(\lambda A-A\tilde A)\\
+		&=\frac{1}{\det(A)}\det(\lambda A-\det(A)I_n)\\
+		&=\frac{(-\lambda)^n}{\det(A)}\det\left(\frac{\det(A)}{\lambda}I_n-A\right)\\
+		&=\frac{\lambda^n}{(-1)^n\det(A)}\chi_A\left(\frac{\det(A)}{\lambda}\right)
+	\end{align*}
+	$\C^*$ étant infini on a l'égalité entre polynômes $\chi_{\tilde A}(X)=\dfrac{X^n}{(-1)^n\det(A)}\chi_A\left(\dfrac{\det(A)}{X}\right)$.\\
+	On sait que $\tilde A$ est inversible donc $\lambda=0$ n'est pas racine de $\chi_{\tilde A}$.\\
+	Ainsi $\forall \lambda\in \C,\ \chi_{\tilde A}(\lambda)=0\iff \chi_A\left(\dfrac{\det(A)}{\lambda}\right)=0\iff \dfrac{\det(A)}{\lambda}\in \T{Sp}(A)$.\\
+	Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
+
 	\subsection{Racine $p$-ième d'une matrice}
 	\label{Racine pieme d'une matrice corrigé}
 	\textcolor{blue}{\hyperref[Racine pieme d'une matrice]{[Enoncé]}}\\
-	
 	$\M_{n,1}(\C)=\displaystyle\bigoplus_{\lambda\in \T{Sp}(B^p)}\ker(B^p-\lambda\Id)$.\\
 	Posons pour $\lambda\in \T{Sp}(A)$ et $k\in \crblanc{0}{p-1},\ \mu_{\lambda,k}=\sqrt[p]{|\lambda|}e^{i(2k\pi+\arg(\lambda))/p}$.\\
 	Dans ce cas les polynômes $X-\mu_{\lambda,0},\dots,X-\mu_{\lambda,p-1}$ sont deux à deux premiers entre eux et de produit $X^p-\lambda$. Et donc d'après le lemme des noyaux :\\
@@ -5219,8 +5219,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	Alors $(S-\Id)(P)=(X+1)^d-X^d+Q(X+1)-Q(X)=\displaystyle\sum_{k=0}^{d-1}\binom{d}{k}X^k+Q(X+1)-Q(X)$.\\
 	On en déduit que $\deg((S-\Id)(P))\leq d-1<\deg(P)$. Or $(S-\Id)(P)=\lambda P$ donc si $\lambda\ne 0$, $\deg((S-\Id)(P))=\deg(P)$. Par conséquent $\lambda=0$.\\
 	Ainsi $S-\Id$ est un endomorphisme nilpotent de $\C_{n-1}[X]$ qui est un $\C$-espace vectoriel de dimension $n$, son polynôme caractéristique est donc $X^n$.\\
-	En outre, d'après le théorème de Cayley-Hamilton $(S-\Id)^n=0$.
-	
+	Finalement, d'après le théorème de Cayley-Hamilton $(S-\Id)^n=0$.
 	
 	\subsection{Ordre de matrice}
 	\label{Ordre de matrice corrigé}
@@ -5342,6 +5341,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\item Supposons que l'on dispose d'un isomorphisme $\varphi:\T{GL}_n(\C)\to\T{GL}_m(\C)$. Notons pour $k\in \N^*$, $G_k$ la partie de GL$_k(\C)$ formée des matrices $A$ telles que $A^2=I_k$.\\
 	$\forall A\in G_n,\ \varphi(A)^2=\varphi(A^2)=\varphi(I_n)=I_m$. Donc $\varphi(G_n)\subset G_m$. Et de même, $\varphi^{-1}(G_m)\subset G_n$ d'où $G_m\subset \varphi(G_n)$. Ainsi $G_m=\varphi(G_n)$. En particulier, $\varphi(D_n)$ est un sous-groupe de $\T{GL}_m(\C)$ inclus dans $G_m$, d'après la question précédente $2^n=|D_n|=|\varphi(D_n)|\leq 2^m$. De même, $\varphi^{-1}(D_m)$ est un sous-groupe de $\T{GL}_n(\C)$ inclus dans $G_n$, donc $2^m=|D_m|=|\varphi^{-1}(D_m)|\leq 2^n$. Ainsi $2^n=2^m$ et par suite $n=m$.
 	\end{enumerate}
+	
 	\subsection{Inverse et conjugaison}
 	\label{Inverse et conjugaison corrigé}
 	\textcolor{blue}{\hyperref[Inverse et conjugaison]{[Enoncé]}}\\
@@ -5400,8 +5400,9 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 				\left(\lambda^n+\displaystyle\sum_{k=0}^{n-1}\lambda^k\right)x_0=0
 			\end{cases}
 		\end{align*}
-		On en déduit que le sous-espace propre associé à $\lambda$ est $\Vect\left(\begin{pmatrix}1\\\lambda\\\vdots\\\lambda^{n-1}\end{pmatrix}\right)$. On peut d'ailleurs remarquer que la première ligne impose $x_0\ne 0$ (puisque sinon $X=0$), et donc la deuxième ligne montre d'une nouvelle manière que $\chi_A=X^n=\displaystyle\sum_{k=0}^{n-1}X^k$.
+		On en déduit que le sous-espace propre associé à $\lambda$ est $\Vect\left(\begin{pmatrix}1\\\lambda\\\vdots\\\lambda^{n-1}\end{pmatrix}\right)$. On peut d'ailleurs remarquer que la première ligne impose $x_0\ne 0$ (puisque sinon $X=0$), et donc la deuxième ligne montre d'une nouvelle manière que $\chi_A=X^n+\displaystyle\sum_{k=0}^{n-1}X^k$.
 	\end{enumerate}
+	
 	\subsection{Polynôme minimal ponctuel}
 	\label{Polynôme minimal ponctuel corrigé}
 	\textcolor{blue}{\hyperref[Polynôme minimal ponctuel]{[Enoncé]}}\\
@@ -5517,7 +5518,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			a&c\\
 			b&a
 		\end{vmatrix}=a^2-bc=a\Delta_1-bc\Delta_0$.\\
-		L'équation caractéristique de la relation est $r^2-ar+bc=0$ de solutions $r_1=\dfrac{a+\delta}{2}$ et $r_2=\dfrac{a-\delta}{2}$ avec $\delta^2=a^2-4bc$. Il faut maintenant distinguer deux cas :
+		L'équation caractéristique de la relation est $r^2-ar+bc=0$ de solutions $r_1=\dfrac{a+\delta}{2}$ et $r_2=\dfrac{a-\delta}{2}$ avec $\delta^2=\Delta=a^2-4bc$. Il faut maintenant distinguer deux cas :
 		\begin{itemize}
 			\item Si $\Delta\ne 0$ alors il existe des constantes $A,B\in \C$ telles que $\forall n\in \N,\ \Delta_n=Ar_1^n+Br_2^n$.\\
 			On a $A+B=1$ et $Ar_1+Br_2=a$.\\
@@ -5532,7 +5533,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 			\item Si $\theta\in \pi\Z$ alors :\\
 			Si $\theta\in2\pi\Z$, alors $\cos\theta=1$ et $\forall n\in \N^*,\ \Delta_n=2(2-n)$.\\
 			Et si $\theta\in\pi+2\pi\Z$ alors $\cos\theta=-1$ et $\forall n\in \N^*,\ \Delta_n=2(2-n)(-1)^n$.
-			\item Si $\theta\notin \pi\Z$, on pose $\delta=2i|\sin\theta|$. On a $r_1=\cos\theta+i\sin\theta=e^{i\theta}$ et $r_2=\cos\theta-i\sin\theta=e^{-i\theta}$. Alors
+			\item Si $\theta\notin \pi\Z$, on pose $\delta=2i\sin\theta$. On a $r_1=\cos\theta+i\sin\theta=e^{i\theta}$ et $r_2=\cos\theta-i\sin\theta=e^{-i\theta}$. Alors
 			$$\forall n\in \N,\ \Delta_n=\frac{1}{2i\sin\theta}\left(e^{i(n+1)\theta}-e^{-i(n+1)\theta}\right)=\frac{\sin((n+1)\theta)}{\sin(\theta)}$$
 		\end{itemize}
 	\end{enumerate}
@@ -5578,7 +5579,7 @@ Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
 	\\De plus, on remarque que $f$ s'annule pour chaque $x_k$.
 	\\Ainsi, on en déduit que pour tout $x\in\K$, $f(x)=V(x_1,\dots,x_{n-1})\displaystyle\prod_{k=0}^{n-1}(x-x_k)$.
 	\\Puis, en évaluant $f$ en $x_n$, on a $V(x_1,\dots,x_n)=V(x_1,\dots,x_{n-1})\displaystyle\prod_{k=0}^{n-1}(x_n-x_k)$.
-	\\Finalement, par récurrence, on montre que: $\forall n\in\N^*,V(x_1,\dots x_n)=\displaystyle\prod_{1\leq i<j\leq n}(x_j-x_i)$.
+	\\Finalement, par récurrence, on montre que: $\forall n\in\N^*,V(x_1,\dots,x_n)=\displaystyle\prod_{1\leq i<j\leq n}(x_j-x_i)$.
 	
 	\subsection{Déterminant de Hilbert \etoile{3}}
 	\label{Déterminant de Hilbert corrigé}
