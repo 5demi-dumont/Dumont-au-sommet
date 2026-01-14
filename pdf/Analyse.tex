@@ -1326,7 +1326,7 @@
 		\item Conclure.
 	\end{enumerate}
 	
-	\section{Bernoulli \ccinp{2}}
+	\section{\underline{Bernoulli} \ccinp{2}}
 	\textcolor{blue}{\hyperref[sec:Bernoulli]{[Corrigé]}}\\
 	\label{Bernoulli}
 	\begin{enumerate}[leftmargin=*]
@@ -1348,7 +1348,7 @@
 		\end{enumerate}
 	\end{enumerate}
 	
-	\section{Lagrange \ccinp{1}}
+	\section{\underline{Lagrange} \ccinp{1}}
 	\textcolor{blue}{\hyperref[sec:Lagrange]{[Corrigé]}}\\
 	\label{Lagrange}
 	Soient $n$ un entier naturel non nul et $(x_1,x_2,\dots, x_n)\in \K^n$
@@ -1358,39 +1358,39 @@
 		$$P=\sum\limits_{k=1}^n P(x_k)L_k$$
 	\end{enumerate}
 	
-	\section{Tchebychev \etoile{2}}
+	\section{\underline{Tchebychev} \ccinp{2}}
 	\textcolor{blue}{\hyperref[sec:Tchebychev]{[Corrigé]}}\\
 	\label{Tchebychev}
-	On note $E$ l'espace vectoriel des fonctions continues de $[-1,1]$ dans $\R$. On désigne par $E_n$ l'espace des fonctions polynomiales de $[-1,1]$ dans $\R$ de degré inférieur ou égal à $n$, où $n$ est un entier naturel.
+	On note $E$ l'espace vectoriel des fonctions continues de $[-1,1]$ dans $\R$.
 	\begin{enumerate}[leftmargin=*]
-		\item Existence et unicité :
-		\begin{enumerate}
+		\item Existence et unicité
+		\begin{enumerate}[label=\alph*.]
 			\item Démontrer qu'il existe un polynôme $T_n$ à coefficients réels de degré inférieur ou égal à $n$ vérifiant la propriété suivante:
-			$$ \forall \theta\in\R,\ T(\cos(\theta))=\cos(n\theta)$$
+			$$ \forall \theta\in\R,\ T_n(\cos(\theta))=\cos(n\theta)$$
 			\\(On pourra remarquer que $\cos(n\theta)$ est la partie réelle de $(\cos(\theta)+i\sin(\theta))^n$.) 
 			\item Démontrer qu'un tel polynôme est unique.
 		\end{enumerate}
-		\item Montrer que, pour tout $x\in[-1,1], T_{n+2}(x)=2xT_{n+1}(x)-T_n(x)$
+		\item Montrer que $\forall x\in[-1,1],\ T_{n+2}(x)=2xT_{n+1}(x)-T_n(x)$
 		\item Quel est le degré de $T_n$ ? Quel est son coefficient dominant ?
 		\item Montrer que $T_n$ est à coefficients entiers, et que si $n$ est impair alors son coefficient constant est nul.
 		\item Racines et extremum :
-		\begin{enumerate}
-			\item Montrer que, pour tout $x\in[-1,1], \ T_n(x)=2^{n-1}\displaystyle\prod\limits_{k=0}^{n-1}(x-\cos(\theta_k))$ où $\theta_k=\displaystyle\frac{(2k+1)\pi}{2n}$
-			\item On pose, pour $k\in\crblanc{0}{n}$, $c_k=\cos\left(\displaystyle\frac{k\pi}{n}\right)$. Calculer $\normep{\infty}{T_n}=\sup\limits_{x\in[-1,1]}|T_n(x)|$ puis prouver que $|T_n(c_k))|=\normep{\infty}{T_n}$ pour tout $k\in\crblanc{0}{n-1}$
+		\begin{enumerate}[label=\alph*.]
+			\item Montrer que, pour tout $x\in[-1,1], \ T_n(x)=2^{n-1}\displaystyle\prod_{k=0}^{n-1}(x-\cos(\theta_k))$ où $\theta_k=\dfrac{(2k+1)\pi}{2n}$
+			\item On pose, pour $k\in\crblanc{0}{n}$, $c_k=\cos\left(\dfrac{k\pi}{n}\right)$. Calculer $\normep{\infty}{T_n}=\sup\limits_{x\in[-1,1]}|T_n(x)|$ puis prouver que $|T_n(c_k)|=\normep{\infty}{T_n}$ pour tout $k\in\crblanc{0}{n}$
 		\end{enumerate}
 		\item Orthogonalité :
-		\begin{enumerate}
+		\begin{enumerate}[label=\alph*.]
 			\item Montrer que, pour toutes fonctions $f,g$ dans $E$, l'application $t\mapsto \displaystyle\frac{f(t)g(t)}{\sqrt{1-t^2}}$ est intégrable sur $]-1,1[$.
 			\item Pour $f,g$ éléments de $E$, on pose $\langle f,g \rangle =\displaystyle\int_{-1}^1\frac{f(t)g(t)}{\sqrt{1-t^2}} dt$. Justifier que ceci définit un produit scalaire sur $E$.
-			\item Calculer $\langle T_n,T_m \rangle$ pour tous $n,m \in\N$. 
+			\item Calculer $\langle T_n,T_m \rangle$ pour tous $n,m\in \N$. 
 		\end{enumerate}
 	\end{enumerate}
 	
-	\subsection{Angles rationnels dont le cosinus est rationnel \etoile{3} (HP)}
+	\subsection{Angles rationnels dont le cosinus est rationnel \etoile{3}}
 	Soit $\alpha\in \pi\Q$.
 	\begin{enumerate}
 		\item On suppose que $\alpha\in \displaystyle\frac{\pi}{2}\Z$. Que dire de $\cos(\alpha)$ ?\\
-		On suppose dans la suite que $\alpha\notin\displaystyle\frac{\pi}{2}\Z$ et on écrit $\alpha=\displaystyle\pi\frac{p}{q}$ avec $p\wedge q=1$ et $q>2$. On suppose de plus que $\cos(\alpha)=\displaystyle\frac{a}{b}\in \Q$ avec $b>0$.
+		On suppose dans la suite que $\alpha\notin\displaystyle\frac{\pi}{2}\Z$ et on écrit $\alpha=\displaystyle\pi\frac{p}{q}$ avec $p\wedge q=1$ et $q>2$. On suppose de plus que $\cos(\alpha)=\displaystyle\frac{a}{b}\in \Q$ avec $a\wedge b=1$ et $b>0$.
 		\item On suppose $q$ impair.
 		\begin{enumerate}[label=\alph*.]
 			\item Montrer que $\cos(\alpha)$ est de la forme $\displaystyle\frac{\varepsilon}{2^r}$ avec $\varepsilon\in \{-1,1\}$ et $r\in \N$.
@@ -1403,13 +1403,13 @@
 		\item Déterminer les valeurs de $\alpha$ pour lesquelles $\tan(\alpha)$ est rationnel.
 	\end{enumerate}
 	
-	\subsection{Triangle à angles rationnels dont tous les côtés ont une longueur rationnelle \etoile{2} (HP)}
-	On se place dans le plan $\R^2$ munit de sa structure euclidienne canonique et d'un repère orthonormé. Caractériser les triangles dont les angles sont rationnels et tous les côtés ont une longueur rationnelle.
+	\subsection{Triangle à angles rationnels dont tous les côtés ont une longueur rationnelle \etoile{2}}
+	On se place dans le plan $\R^2$ munit de sa structure euclidienne canonique et d'un repère orthonormé. Caractériser les triangles non plats dont les angles exprimés en degrés sont rationnels et tous les côtés ont une longueur rationnelle.
 	
-	\subsection{Triangles dont les sommets sont à coordonnées rationnelles \etoile{2} (HP)}
-	On se place dans le plan $\R^2$ munit de sa structure euclidienne canonique et d'un repère orthonormé. Caractériser les triangles dont les sommets ont des coordonnées rationnelles.
+	\subsection{Triangles dont les sommets sont à coordonnées rationnelles \etoile{2}}
+	On se place dans le plan $\R^2$ munit de sa structure euclidienne canonique et d'un repère orthonormé. Caractériser les triangles non plats dont les sommets ont des coordonnées rationnelles.
 	
-	\section{Hilbert \ccinp{2}}
+	\section{\underline{Hilbert} \ccinp{2}}
 	\textcolor{blue}{\hyperref[sec:Hilbert]{[Corrigé]}}\\
 	\label{Hilbert}
 	On pose pour tout $k\in\N^*,H_k=\displaystyle\frac{1}{k!}\prod\limits_{j=0}^{k-1}(X-j)$ et $H_0=1$. On pose également pour tout $P\in\C[X], \ \Delta(P)=P(X+1)-P(X)$
@@ -1428,7 +1428,7 @@
 		\item Montrer que $P\in\C_n[X]$ est à valeurs entières sur les entiers si et seulement si ses coordonnées dans la base $(H_k)_{0\leq k\leq n}$ sont entières.  
 	\end{enumerate}
 	
-	\section{Laguerre \centraleponts{3}}
+	\section{\underline{Laguerre} \centraleponts{3}}
 	\textcolor{blue}{\hyperref[sec:Laguerre]{[Corrigé]}}\\
 	\label{Laguerre}
 	On pose, pour tout entier naturel $n$ et pour tout réel $x$, $h_n(x)=x^ne^{-x}$ et $L_n(x)=\displaystyle\frac{e^x}{n!}h_n^{(n)}(x)$.
@@ -1442,7 +1442,7 @@
 		\item En déduire que $(L_n)$ est une famille orthonormée de $(\R[X],\proscal{\cdot}{\cdot})$.
 	\end{enumerate}
 	
-	\section{Legendre \etoile{2}}
+	\section{\underline{Legendre} \ccinp{2}}
 	\textcolor{blue}{\hyperref[sec:Legendre]{[Corrigé]}}\\
 	\label{Legendre}
 	Pour tout $n\in\N$, on note $Q_n=(X^2-1)^n$ et $P_n=\displaystyle\frac{1}{2^nn!}Q_n^{(n)}$. On pourra confondre polynôme et fonction polynomiale associée.
@@ -1451,25 +1451,26 @@
 		\item Quel est le degré de $P_n$?
 		\item Montrer que $P_n$ a la parité de $n$. En déduire $P_n(0)$ pour $n$ impair et $P_n'(0)$ pour $n$ pair.
 		\item Calculer $P_n(0)$ pour $n$ pair et $P_n'(0)$ pour $n$ impair. On exprimera les résultats à l'aide de factorielles.
-		\item Vérifier que: $\forall  n\in\N, (X^2-1)Q_n'=2nXQ_n$. En déduire que: $\forall n \in\N, (X^2-1)P_n''+2XP_n'=n(n+1)P_n$.
-		\item Montrer que pour tout $k\in\crblanc{0}{n-1}, \ Q_n^{(k)}(-1)=Q_n^{(k)}(1)=0$.
-		\item En appliquant le théorème de Rolle et à l'aide d'une récurrence, montrer que $P_n$ admet exactement n racines réelles distinctes dans $]-1,1[$.
+		\item Vérifier que $\forall  n\in\N,\ (X^2-1)Q_n'=2nXQ_n$.\\
+		En déduire que $\forall n \in\N,\ (X^2-1)P_n''+2XP_n'=n(n+1)P_n$.
+		\item Montrer que pour tout $k\in\crblanc{0}{n-1},\ Q_n^{(k)}(-1)=Q_n^{(k)}(1)=0$.
+		\item En appliquant le théorème de Rolle et à l'aide d'une récurrence, montrer que $P_n$ admet exactement $n$ racines réelles distinctes dans $]-1,1[$.
 	\end{enumerate}
 	
-	\section{Hermite \etoile{3}}
+	\section{\underline{Hermite} \centraleponts{3}}
 	\textcolor{blue}{\hyperref[sec:Hermite]{[Corrigé]}}\\
 	\label{Hermite}
-	On définit le $n$-ième polynôme d'Hermite par: $$H_n(X)=(-1)^n e^{\frac{x^2}{2}}\frac{d^n}{dx^n}(e^{-\frac{x^2}{2}})$$
+	On définit le $n$-ième polynôme d'Hermite par: $$\forall x\in \R,\ H_n(x)=(-1)^n e^{\frac{x^2}{2}}\frac{d^n}{dx^n}\left(e^{-\frac{x^2}{2}}\right)$$
 	On définit aussi le produit scalaire suivant sur $\R[X]$: $$\langle P,Q \rangle=\int_{-\infty}^{+\infty}P(t)Q(t)e^{-\frac{t^2}{2}}dt$$
 	\begin{enumerate}
-		\item Montrer que $\langle.,.\rangle$ est bien un produit scalaire.
+		\item Montrer que $\proscal{\cdot}{\cdot}$ est bien un produit scalaire.
 		\item Soient $m,n \in\N$. Montrer que si $n\ne m$ alors $\langle H_n,H_m\rangle=0$.
 		\item Soit $n\in\N$. Calculer $\langle H_n,H_n\rangle$.
-		\item Montrer qu'on a la relation de récurrence d'ordre 2 suivante: $$\forall x\in\R, H_{n+1}(x)=xH_n(x)-nH_{n-1}(x)$$
-		\item Montrer que $H_n$ vérifie l'équation différentielle suivante: $$\forall x\in\R, \ H_n''(x)-xH_n'(x)+nH_n(x)=0$$
+		\item Montrer qu'on a la relation de récurrence d'ordre 2 suivante : $$\forall x\in\R,\ H_{n+1}(x)=xH_n(x)-nH_{n-1}(x)$$
+		\item Montrer que $H_n$ vérifie l'équation différentielle suivante : $$\forall x\in\R,\ H_n''(x)-xH_n'(x)+nH_n(x)=0$$
 	\end{enumerate}
 	
-	\section{Bernstein \etoile{3}}
+	\section{\underline{Bernstein} \centraleponts{3}}
 	\textcolor{blue}{\hyperref[sec:Bernstein]{[Corrigé]}}\\
 	\label{Bernstein}
 	On note $I=[0,1]$ et $\mathcal C$ l'espace vectoriel des fonctions continues de $I$ dans $\C$. \\ On note, pour toute fonction $f\in\mathcal C$ et $n\in\N^*$: $$\fonction{B_n(f)}{I}{\C}{x}{\displaystyle\sum_{k=0}^{n}f\left(\frac{k}{n}\right)b_k^n(x)} \ \text{avec} \ b_k^n(x)=\binom{n}{k}x^k(1-x)^{n-k}$$
@@ -1478,7 +1479,7 @@
 		\item \textit{Théorème de Bernstein}: Pour tout $f\in\mathcal C$, montrer que la suite de fonctions $(B_n(f))$ converge uniformément vers $f$ sur $[0,1]$. En déduire le théorème de Weierstrass.
 	\end{enumerate}
 	
-	\section{Polynômes cyclotomiques \etoile{3}}
+	\section{\underline{Polynômes cyclotomiques} \xens{3}}
 	\textcolor{blue}{\hyperref[sec:polynomes-cyclotomiques]{[Corrigé]}}\\
 	\label{Polynômes cyclotomiques}
 	Pour un entier $n$ supérieur ou égal à 1, on dit qu'une racine $n$-ième de l'unité $z$ est primitive si $z^d\ne 1$ pour tout entier $d$ tel que $1\leq d<n$. On note $\p_n$ l'ensemble des racines primitives $n$-ième de l'unité. On a donc $\p_1=\{1\}$.
@@ -1555,12 +1556,11 @@
 	\textcolor{blue}{\hyperref[sec:degré-d'une-différence]{[Corrigé]}}\\
 	Soient $P\ne Q\in \R[X]$ de degrés $n\geq 0$. Montrer que $P^3-Q^3$ est au moins de degré $2n$.
 	
-	\section{Théorème de la racine rationnelle}
+	\section{Théorème de la racine rationnelle \telecom{2}}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-la-racine-rationnelle]{[Corrigé]}}\\
-	\label{racinerationnelle}
 	\label{Théorème de la racine rationnelle}
-	Soit $P=\displaystyle\sum_{k=0}^na_kX^k$ $(a_n\ne 0)$ un polynôme à coefficients entiers.\\
-	Montrer que si $P$ admet une racine rationnelle $\displaystyle\frac{p}{q}$ alors $p|a_0$ et $q|a_n$.
+	Soit $P=\displaystyle\sum_{k=0}^na_kX^k$ de degré $n\geq 1$ un polynôme à coefficients entiers.\\
+	Montrer que si $P$ admet une racine rationnelle irréductible $\displaystyle\frac{p}{q}$ alors $p|a_0$ et $q|a_n$.
 	
 	\section{Critère d'Eisenstein \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:critere-deisenstein-etoile3]{[Corrigé]}}\\
@@ -6203,7 +6203,7 @@ Alors, on a l'équivalence :
 		\item Ce dernier résultat contredit la minimalité de $\alpha$ donc $\alpha=0$. Autrement dit $P(z_0)=0$ et le théorème est démontré.
 	\end{enumerate}
 	
-	\subsection{Bernoulli \ccinp{2}}
+	\subsection{\underline{Bernoulli} \ccinp{2}}
 	\label{sec:Bernoulli}
 	\textcolor{blue}{\hyperref[Bernoulli]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6242,7 +6242,7 @@ Alors, on a l'équivalence :
 		\end{enumerate}
 	\end{enumerate}
 	
-	\subsection{Lagrange \ccinp{1}}
+	\subsection{\underline{Lagrange} \ccinp{1}}
 	\label{sec:Lagrange}
 	\textcolor{blue}{\hyperref[Lagrange]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -6259,17 +6259,107 @@ Alors, on a l'équivalence :
 		\\Donc $P=\displaystyle\sum\limits_{k=1}^nP(x_k)L_k$
 	\end{enumerate}
 	
-	\subsection{Tchebychev}
+	\subsection{\underline{Tchebychev} \ccinp{2}}
 	\label{sec:Tchebychev}
 	\textcolor{blue}{\hyperref[Tchebychev]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item 
+		\begin{enumerate}[label=\alph*.]
+			\item On développe
+			\begin{align*}
+				\cos(n\theta)&=\operatorname{Re}\left[\cos(\theta)+i\sin(\theta))^n\right]\\
+				&=\operatorname{Re}\left[\sum_{k=0}^n\binom{n}{k}\cos^{n-k}(\theta)i^k\sin^k(\theta)\right]\\
+				&=\operatorname{Re}\left[\sum_{k=0}^{\lfloor\frac{n}{2}\rfloor}(-1)^k\binom{n}{2k}\cos^{n-2k}(\theta)\sin^{2k}(\theta)+i\sum_{k=0}^{\lfloor\frac{n-1}{2}\rfloor}(-1)^k\binom{n}{2k+1}\cos^{n-2k-1}(\theta)\sin^{2k+1}(\theta)\right]\\
+				&=\sum_{k=0}^{\lfloor\frac{n}{2}\rfloor}(-1)^k\binom{n}{2k}\cos^{n-2k}(\theta)(1-\cos^{2k}(\theta))
+			\end{align*}
+			Le polynôme $T_n(X)=\displaystyle\sum_{k=0}^{\lfloor\frac{n}{2}\rfloor}(-1)^k\binom{n}{2k}X^{n-2k}(1-X^{2k})$ est à coefficients réels, de degré inférieur à $n$ et vérifie $\forall \theta\in \R,\ T_n(\cos(\theta))=\cos(n\theta)$.
+			\item Soit $S_n\in \R_n[X]$ tel que $\forall \theta\in \R,\ S_n(\cos(\theta))=\cos(n\theta)$.\\
+			Alors $S_n$ et $T_n$ coïncident sur $\cos(\R)=[-1,1]$ qui est infini. Donc $S_n=T_n$.
+		\end{enumerate}
+		\item Soit $\theta\in \R$. Par les formules de Simpson :
+		$$2\cos(\theta)\cos((n+1)\theta)=\cos((n+2)\theta)+\cos(n\theta)$$
+		i.e $T_{n+2}(\cos(\theta))=2\cos(\theta)T_{n+1}(\cos(\theta))-T_n(\cos(\theta))$.\\
+		i.e $\forall x\in [-1,1],\ T_{n+2}(x)=2xT_{n+1}(x)-T_n(x)$.
+		\item On calcule aisément $T_0=1,\ T_1=X,\ T_2=2X^2-1$. Montrons par récurrence double sur $n\in \N^*$ la proposition $H(n):"T_n\T{ est de degré }n\T{ et son coefficient dominant est }d_n:=2^{n-1}"$.\\
+		on a clairement $H(1)$ et $H(2)$. Supposons $H(n)$ et $H(n+1)$ pour un certain $n\in \N^*$.\\
+		On sait que $T_{n+2}=2XT_{n+1}-T_n$. Par hypothèse de récurrence $\deg(T_n)=n<n+2=\deg(2XT_{n+1}$ Donc $\deg(T_{n+2})=\deg(2XT_{n+1})=n+2$. De plus, $d_{n+2}=2d_{n+1}=2^{n+1}$.\\
+		Ainsi par récurrence double, $\forall n\in \N^*,\ \deg(T_n)=n$ et $d_n=2^{n-1}$.
+		\item L'expression trouvée question 1.a donne les deux résultats.\\
+		Sinon, la même récurrence double montre que $T_n$ est à coefficients entiers. Et si $n=2k+1$ est impair, $T_n(0)=\displaystyle T_n\left(\cos\left(\frac{\pi}{2}\right)\right)=\cos\left(\frac{\pi}{2}+k\pi\right)=0$.
+		\item 
+		\begin{enumerate}[label=\alph*.]
+			\item Pour tout $k\in \crblanc{0}{n-1}, \theta_k=\dfrac{\pi}{2n}+\dfrac{k\pi}{n}$.\\
+			On a $\displaystyle\frac{\pi}{2n}=0<\theta_0<\theta_1<\dots<\theta_{n-1}=\frac{2n-1}{2n}\pi<\pi$. Or $\cos$ est strictement décroissante et continue sur $[0,\pi]$, en particulier elle est injective sur $[0,\pi]$.\\
+			En outre, $\forall k\in \crblanc{0}{n-1},\ T_n(\cos(\theta_k))=\cos(n\theta_k)=\cos\left(\dfrac{\pi}{2}+k\pi\right)=0$.\\
+			$T_n$ étant de degré $n$ et de coefficient dominant $2^{n-1}$, $T_n(X)=\displaystyle2^{n-1}\prod_{k=0}^{n-1}(X-\cos(\theta_k))$.
+			\item Soit $x\in [-1,1]$. $\exists \theta\in \R,\ x=\cos(\theta)$. Donc $|T_n(x)|=|T_n(\cos(\theta)|=|\cos(n\theta)|\leq 1$. De plus $T_n(1)=T_n(\cos(0))=\cos(0)=1$.\\
+			On en déduit que $\normep{\infty}{T_n}=1$.\\
+			Ensuite, $\forall k\in \crblanc{0}{n-1},\ |T_n(c_k)|=|\cos(k\pi)|=|(-1)^k|=1=\normep{\infty}{T_n}$.
+		\end{enumerate}
+		\item 
+		\begin{enumerate}[label=\alph*.]
+			\item Soit $h\in E$. La fonction $H:t\mapsto\dfrac{h(t)}{\sqrt{1-t^2}}$ est continue par morceaux sur $]-1,1[$.\\
+			D'après le théorème des bornes atteintes $h$ est bornée sur $[-1,1]$ donc $H(t)=\dfrac{h(t)}{\sqrt{1-t}\sqrt{1+t}}\underset{t\to1^-}=\bigO{\dfrac{1}{(1-t)^{1/2}}}$. Or $t\mapsto \dfrac{1}{(1-t)^{1/2}}$ est positive et intégrable au voisinage de $1^-$. Donc $H$ est intégrable en $1^-$.\\
+			De même, $H(t)\underset{t\to-1^+}=\bigO{\dfrac{1}{(1+t)^{1/2}}}$ donc $H$ est intégrable en $-1^+$.\\
+			Finalement $H$ est intégrable sur $]-1,1[$.\\
+			Pour tout $f,g\in E$, $fg\in E$ donc $t\mapsto \dfrac{f(t)g(t)}{\sqrt{1-t^2}}$ est intégrable sur $]-1,1[$.
+			\item On a montré que $\proscal{\cdot}{\cdot}$ est bien définie sur $E^2$.\\
+			c'est clairement une application symétrique et la bilinéarité est conséquence directe de la linéarité de l'intégrale.\\
+			Enfin, si $f\in E$ alors $t\mapsto \dfrac{f(t)^2}{\sqrt{1-t^2}}$ est continue et positive sur $]-1,1[$ donc $\proscal{f}{f}=\displaystyle\int_{-1}^1\frac{f(t)^2}{\sqrt{1-t^2}}dt\geq 0$, avec égalité ssi $\forall t\in ]-1,1[,\ \dfrac{f(t)^2}{\sqrt{1-t^2}}=0$.\\
+			Ceci revient à $\forall t\in ]-1,1[,\ f(t)=0$. On en déduit par continuité de $f$ en $-1$ et $1$ que $f$ est nulle sur $[-1,1]$, càd $f=0$.
+			\item Soient $n,m\in \N$. $\proscal{T_n}{T_m}=\displaystyle\int_{-1}^1\frac{T_n(t)T_m(t)}{\sqrt{1-t^2}}dt$.\\
+			Effectuons le changement de variables $\theta=\arccos(t)$. C'est possible car $\arccos:]-1,1[\to]0,\pi[$ est une bijection décroissante de classe $\mathcal C^1$. $d\theta=-\dfrac{dt}{\sqrt{1-t^2}}$.\\
+			$\proscal{T_n}{T_m}=\displaystyle\int_\pi^0T_n(\cos(\theta))T_m(\cos(\theta))(-d\theta)=\int_0^\pi\cos(n\theta)\cos(m\theta)d\theta$.\\
+			Or $\cos(n\theta)\cos(m\theta)=\dfrac{\cos((n+m)\theta)+\cos((n-m)\theta)}{2}$.\\
+			Si $k\in\Z\backslash\{0\}$, $\displaystyle\int_0^\pi\cos(k\theta)d\theta=\left[\frac{\sin(k\theta)}{k}\right]_0^\pi=0$.\\
+			Et $\displaystyle\int_0^\pi\cos(0\times\theta)d\theta=\int_0^\pi d\theta=\pi$.\\
+			Donc $\proscal{T_n}{T_m}=\begin{cases}
+				0&\mbox{si }n\ne m\\
+				\dfrac{\pi}{2}&\mbox{sinon}
+			\end{cases}$
+		\end{enumerate}
+	\end{enumerate}
 	
-	\subsubsection{Angles rationnels dont le cosinus est rationnel}
+	\subsubsection{Angles rationnels dont le cosinus est rationnel \etoile{3}}
+	\begin{enumerate}[leftmargin=*]
+		\item $\exists k\in \Z,\ \alpha=\dfrac{k\pi}{2}$. Notons $k=4q+r$ la division euclidienne de $k$ par $4$.\\
+		$\cos(\alpha)=\displaystyle\cos\left(2q\pi+r\frac{\pi}{2}\right)=\cos\left(r\frac{\pi}{2}\right)$.
+		\begin{itemize}
+			\item Si $r=0,\ \cos(\alpha)=1$;
+			\item Si $r=1,\ \cos(\alpha)=0$;
+			\item Si $r=2,\ \cos(\alpha)=-1$;
+			\item Si $r=3,\ \cos(\alpha)=0$.
+		\end{itemize}
+		\item 
+		\begin{enumerate}[label=\alph*.]
+			\item On rappelle que $T_q\in \Z[X]$ et $T_q(0)=0$.\\
+			On a $T_q(\cos(\alpha))=\cos(q\alpha)=\cos(p\pi)=(-1)^p$.\\
+			Donc en appliquant le théorème de la racine rationnelle à $T_n+(-1)^{p+1}$ (cf.\ref{Théorème de la racine rationnelle}) on obtient $a|(-1)^{p+1}$ et $b|2^{q-1}$ d'où $a\in \{-1,1\}$ et l'existence de $r\in \N$ tel que $b=2^r$.
+			\item Si $r=0$ on retrouve $\cos(\alpha)=\pm1$ ce qui est exclus ici.\\
+			Si $r=1$ alors $\cos(\alpha)=\pm\dfrac{1}{2}$ d'où $\alpha\in \displaystyle\left\{\pm\frac{2\pi}{3},\pm\frac{\pi}{3}\right\}$.\\
+			Supposons $r\geq 2$. Comme $\cos(2\alpha)=2\cos(\alpha)^2-1\in \Q$ on a $\cos(2\alpha)=\dfrac{\varepsilon'}{2^{r'}}$ pour un certain $\varepsilon'\in \{-1,1\}$ et $r'\in \N$.\\
+			Donc $\displaystyle\frac{\varepsilon'}{2^{r'}}=\frac{1}{2^{2r-1}}-1<0$. On en déduit $\varepsilon'=-1$ et $2^{2r-1}=2^{r'}(2^{2r-1}-1)$.\\
+			Comme $2^{2r-1}-1$ est impair et est un diviseur positif de $2^{2r-1}$, il vaut $1$. Càd $2r-1=1$ ou encore $r=1$ ce qui est absurde.
+		\end{enumerate}
+		\item Supposons que $q$ s'écrit $q=4m$ avec $m\in \N$. comme $\cos(\alpha)\in \Q$, $\cos(m\alpha)$ aussi. Pourtant $\cos(m\alpha)=\cos\left(\dfrac{p\pi}{4}\right)=\pm\dfrac{\sqrt 2}{2}\notin\Q$.\\
+		Supposons que $q$ s'écrive $q=2m$ avec $m$ impair. Alors $2\alpha=\dfrac{p}{m}$ satisfait les hypothèse du cas de la question 2. Donc avec $\cos(2\alpha)=\cos(\alpha)^2-1$ on en déduit que les valeurs possibles pour $\cos(\alpha)$ sont $-1,1,0,\pm\dfrac{1}{2}$ et $\pm\dfrac{\sqrt{3}}{2}$. La seule compatible avec la forme de $\alpha$ est $0$ ce qui impose $q=2$, ici exclus.
+		\item On a montré que les seuls couples $(\alpha,\cos(\alpha))$ avec $\alpha\in ]-\pi,\pi]$ possibles sont $$(0,1),(\pi,-1),\left(\pm\frac{\pi}{2},0\right),\left(\pm\frac{\pi}{3},\frac{1}{2}\right),\left(\pm\frac{2\pi}{3},-\frac{1}{2}\right)$$
+		\item $\alpha\in \pi\Q\iff \dfrac{\pi}{2}-\alpha\in\pi\Q$. Donc avec $\sin(\alpha)=\cos\left(\dfrac{\pi}{2}-\alpha\right)$, Les couples possibles sont :
+		$$(0,0),\left(\pm\frac{\pi}{2},\pm1\right),\left(\pm\frac{\pi}{6},\pm\frac{1}{2}\right),\left(\pm\frac{5\pi}{6},\pm\frac{1}{2}\right)$$
+		\item Supposons $\tan(\alpha)\in \Q$ avec $\alpha\in \left]-\dfrac{\pi}{2},\dfrac{\pi}{2}\right[$. Comme $\cos(2\alpha)=\dfrac{1-\tan^2(\alpha)}{1+\tan^2(\alpha)}$, $\cos(2\alpha)\in \Q$.\\
+		$\cos(2\alpha)\ne -1$ donc on a $\tan^2(\alpha)=\dfrac{1-\cos(2\alpha)}{1+\cos(2\alpha)}$ d'où $\tan(\alpha)\in \left\{0,\pm1,\pm\sqrt 3,\pm\dfrac{\sqrt 3}{3}\right\}$. En enlevant les valeur irrationnelle reste $\tan(\alpha)\in\{-1,0,1\}$. Cela donne $\alpha\in \left\{-\dfrac{\pi}{4},0,\dfrac{\pi}{4}\right\}$.
+	\end{enumerate}
 	
-	\subsubsection{Triangle à angles rationnels sont tous les côtés ont un longueur rationnelle}
+	\subsubsection{Triangle à angles rationnels sont tous les côtés ont un longueur rationnelle \etoile{2}}
+	Un angle exprimé en degré est rationnel ssi l'angle exprimé en radian est dans $\pi\Q$. Notons $A,B,C$ les sommet d'un tel triangle. D'après le théorème d'Al-Kashi, $AC^2=AB^2+BC^2+\cos(\widehat{ABC})$ où $\widehat{ABC}$ est exprimé en radian. Donc $\cos(\widehat{ABC})\in \Q$. On en déduit que $\widehat{ABC}\in \displaystyle\left\{\frac{\pi}{2},\frac{\pi}{3},\frac{2\pi}{3}\right\}$. De même pour les autres angles. Comme leur somme doit faire $\pi$ la seule possibilité est qu'ils soient tous égaux à $\dfrac{\pi}{3}$. On a donc un triangle équilatéral.
 	
-	\subsubsection{Triangles dont les sommets sont à coordonnées rationnelles}
+	\subsubsection{Triangles dont les sommets sont à coordonnées rationnelles \etoile{2}}
+	Soit $A,B,C$ des points à coordonnées entières formant un triangle non plat. Un des angles au moins n'est pas égal à $\dfrac{\pi}{2}$. Supposons que c'est $\widehat{ABC}$. Notons $\Vec{AB}=\begin{pmatrix}x\\y\end{pmatrix}$ et $\Vec{BC}=\begin{pmatrix}x'\\y'\end{pmatrix}$\\
+	Alors $|\tan(\widehat{ABC})|=\displaystyle\frac{|\sin(\widehat{ABC})|}{|\cos(\widehat{ABC})|}=\frac{\norme{\Vec{AB}}\norme{\Vec{BC}}|\sin(\widehat{ABC})|}{\norme{\Vec{AB}}\norme{\Vec{BC}}|\cos(\widehat{ABC})|}=\frac{\norme{\Vec{AB}\wedge\Vec{BC}}}{|\Vec{AB}\cdot\Vec{BC}|}=\left|\frac{xy'-yx'}{xx'+yy'}\right|\in \Q$.\\
+	Donc $\widehat{ABC}=\dfrac{\pi}{4}$.\\
+	Ainsi la seule possibilité est d'avoir un triangle rectangle isocèle.
 	
-	\subsection{Hilbert \ccinp{2}}
+	\subsection{\underline{Hilbert} \ccinp{2}}
 	\label{sec:Hilbert}
 	\textcolor{blue}{\hyperref[Hilbert]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6302,7 +6392,7 @@ Alors, on a l'équivalence :
 		Si $P(\Z)\subset \Z$ alors par récurrence immédiate $\forall k\in \crblanc{0}{n},\ \Delta^k(P)(\Z)\subset \Z$. Réciproquement, si $\forall k\in \crblanc{0}{n},\ \Delta^k(P)(0)\in \Z$ alors $\forall j\in \Z,\ P(j)=\displaystyle\sum_{k=0}^{n-1}\Delta^k(P)(0)H_k(j)\in \Z$.
 	\end{enumerate}
 	
-	\subsection{Laguerre \centraleponts{3}}
+	\subsection{\underline{Laguerre} \centraleponts{3}}
 	\label{sec:Laguerre}
 	\textcolor{blue}{\hyperref[Laguerre]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6330,19 +6420,71 @@ Alors, on a l'équivalence :
 		Et si $m=n$ alors $L_m^{(n)}=(-1)^nL_0$ d'où $\proscal{L_n}{L_m}=\dfrac{1}{n!}\proscal{X^n}{L_0}=1$.
 	\end{enumerate}
 	
-	\subsection{Legendre}
+	\subsection{\underline{Legendre} \ccinp{2}}
 	\label{sec:Legendre}
 	\textcolor{blue}{\hyperref[Legendre]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $Q_0=1,\ Q_1'=2X,\ Q_2''=(X^4-2X^2+1)''=12X^2-4,\ Q_3'''=(X^6-3X^4+3X^2-1)'''=120X^3-72X$.\\
+		$P_0=1,\ P_1=X,\ P_2=\displaystyle\frac{3}{2}X^2-\frac{1}{2},\ P_3=\frac{5}{2}X^3-\frac{3}{2}X$.
+		\item $\deg(Q_n)=2n$ donc $\deg(P_n)=\deg(Q_n^{(n)})=n$.
+		\item On remarque que la dérivé d'un polynôme pair est impaire et que la dérivée d'un polynôme impair est paire : $P(-X)=P(X)\implies -P'(-X)=P'(X)$ et $P(-X)=-P(X)\implies -P'(-X)=-P'(X)\implies P'(-X)=P'(X)$.\\
+		$Q_n$ est pair donc sa dérivée $n$-ième a la parité de $n$. On en déduit que $P_n(0)=0$ si $n$ est impair et $P_n'(0)=0$ si $n$ est pair ($P_n'$ est impair).
+		\item Soient $m\in \N$ et $n=2m$. $Q_n=\displaystyle\sum_{k=0}^n\binom{n}{k}(-1)^{n-k}X^{2k}$ donc $Q_n^{(n)}=\displaystyle\sum_{k=m}^{2m}\binom{2m}{k}(-1)^k\frac{(2k)!}{(2k-2m)!}X^{2(k-m)}$.\\
+		Ainsi $P_n(0)=\displaystyle\frac{(-1)^m}{2^{2m}}\binom{2m}{m}=(-1)^m\frac{(2m)!}{2^{2m}(m!)^2}$.\\
+		De même, $Q_{n+1}^{(n+2)}=\displaystyle\sum_{k=m+1}^{2m+1}\binom{2m+1}{k}(-1)^k\frac{(2k)!}{(2k-2m-2)!}X^{2k-2m-2}$.\\
+		Donc $P_n'(0)=\displaystyle\frac{(-1)^{m+1}(2m+2)}{2^{2m+1}}\binom{2m+1}{m+1}=(-1)^{m+1}\frac{(2m+1)!}{2^{2m}(m!)^2}$.
+		\item $Q_n'=2nX(X^2-1)^{n-1}$ donc $(X^2-1)Q_n'=2nXQ_n$. On dérive $(n+1)$-fois cette expression :
+		$$(X^2-1)Q_n^{(n+2)}+2(n+1)XQ_n^{(n+1)}=2nXQ_n^{(n+1)}+2n(n+1)Q_n^{(n)}$$
+		D'où en simplifiant et en divisant par $2^nn!,\ (X^2-1)P_n''+2XP_n'=n(n+1)P_n$.
+		\item $Q_n=(X-1)^n(X+1)^n$ donc $-1,1$ sont racines de $Q_n$ de multiplicités $n$. Ainsi $\forall k\in \crblanc{0}{n-1},\ Q_n^{(k)}(-1)=Q_n^{(k)}(1)=0$.
+		\item Remarquons que $P_n$ admet au plus $n$ racines distinctes car il est de degré $n$.\\
+		Montrons par récurrence sur $k\in \crblanc{0}{n}$ la propriété $H(k):"Q_n^{(k)}\T{ admet au moins }k\T{ racines distinctes dans }]-1,1["$.\\
+		$H(0)$ est évidemment vraie.\\
+		Supposons $H(k)$ pour un certain $k\in \crblanc{0}{n-1}$. On note $-1<x_1<\dots<x_n<1$ les racines en questions. On note aussi $x_0=-1$ et $x_{n+1}=1$, dont on sait qu'ils sont racines de $Q_n^{(k)}$.\\
+		Pour tout $i\in \crblanc{0}{k},\ Q_n^{(k)}$ est continu sur $[x_i,x_{i+1}]$, dérivable sur $]x_i,x_{i+1}[$ et $Q_n^{(k)}(x_i)=Q_n^{(k)}(x_{i+1})=0$. Donc d'après le théorème de Rolle, il existe $y_1,\dots y_{k+1}$ des racines de $Q_n^{(k+1)}$ telles que
+		$$-1<y_1<x_1<y_2<x_2<\dots<y_{k+1}<1$$
+		D'où $H(k+1)$.\\
+		Par récurrence $\forall k\in \crblanc{0}{n},\ H(k)$. En particulier $H(n)$ donne le résultat voulu.
+	\end{enumerate}
 	
-	\subsection{Hermite}
+	\subsection{\underline{Hermite} \centraleponts{3}}
 	\label{sec:Hermite}
 	\textcolor{blue}{\hyperref[Hermite]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soient $P,Q\in \R[X]$. Alors $P(t)Q(t)\underset{|t|\to+\infty}=\bigO{x^{\deg(P)+\deg(Q)}}$ donc $P(t)Q(t)e^{-t^2/2}\underset{|t|\to+\infty}=\smallo{\dfrac{1}{t^2}}$.\\
+		L'intégrale est donc bien définie.\\
+		Il est évident que $\proscal{P}{Q}=\proscal{Q}{P}$. La bilinéarité est conséquence directe de la linéarité de l'intégrale.\\
+		Ensuite $\proscal{P}{P}=\displaystyle\int_{-\infty}^{+\infty}P(t)^2e^{-t^2/2}dt$. La fonction $t\mapsto P(t)^2e^{-t^2/2}$ est continue et positive sur $\R$. Donc par (stricte) positivité de l'intégrale, $\proscal{P}{P}\geq 0$, avec égalité ssi $\forall t\in \R,\ P(t)^2e^{-t^2/2}=0$ ssi $\forall t\in \R,\ P(t)=0$ ssi $P=0$.
+		\item Il faut d'abord s'assurer que $H_n$ est un polynôme. Montrons par récurrence que $\forall x\in \R,\ \dfrac{d^n}{dx^n}\left(e^{-\frac{x^2}{2}}\right)=P_n(x)e^{-x^2/2}$. On aura alors $P_n=(-1)^nH_n$.\\
+		C'est vrai pour $n=0$ avec $P_0=1$. Supposons que ce soit vrai pour un certain $n\in \N$. Fixons $x\in \R$.\\
+		Alors $\displaystyle\frac{d^{n+1}}{dx^{n+1}}\left(e^{-\frac{x^2}{2}}\right)=\frac{d}{dx}\left(P_n(x)e^{-x^2/2}\right)=(P_n'(x)-xP_n(x))e^{-x^2/2}$.\\
+		La propriété est donc vrai au rang $n+1$ pour $P_{n+1}=P_n'-XP_n$.\\
+		La même récurrence montre aussi que $P_n$ est de degré $n$ pour tout $n\in \N$.\\
+		Ensuite on suppose sans perte de généralité $n>m$. On calcule alors par IPP successives :
+		\begin{align*}
+			\proscal{H_n}{H_m}&=\int_{-\infty}^{+\infty}(-1)^n\frac{d^n}{dx^n}\left(e^{-\frac{x^2}{2}}\right)H_m(x)dx\\
+			&=\sum_{k=0}^{n-1}\left[(-1)^{n+k}\frac{d^{n-k-1}}{dx^{n-k-1}}\left(e^{-x^2/2}\right)H_m^{(k)}(x)\right]_{-\infty}^{+\infty}+\int_{-\infty}^{+\infty}e^{-x^2/2}H_m^{(n)}(x)dx
+		\end{align*}
+		Les termes de la somme sont tous nul car on a vu que $P(x)e^{-x^2/2}\underset{|x|\to+\infty}\longrightarrow 0$ pour tout $P\in \R[X]$.\\
+		Le terme intégral est nul car $H_m^{(n)}=0$ (dérivée $n>m$-ième d'un polynôme de degré $m$).\\
+		Ainsi $\proscal{H_n}{H_m}=0$.
+		\item Le calcul précédent est toujours valable. Il donne :\\
+		$$\proscal{H_n}{H_n}=\int_{-\infty}^{+\infty}H_n^{(n)}(x)e^{-x^2/2}dx$$
+		Or $H_n^{(n)}$ est un polynôme constant égal à $n!d$ où $d$ est le coefficient dominant de $H_n$. Dans la récurrence faîte à la question précédente, on obtient $P_{n+1}=P_n'-XP_n$ i.e $H_{n+1}=XH_n-H_n'$. Cette relation donne par récurrence que le coefficient dominant de $H_{n+1}$ est égal à celui de $H_n$. Comme $H_0=1$, $H_n^{(n)}=n!$.\\
+		Ainsi $\proscal{H_n}{H_n}=n!\displaystyle\int_{-\infty}^{+\infty}e^{-x^2/2}dx=n!\sqrt{2\pi}$.
+		\item D'après la formule de Leibniz
+		$$\frac{d^{n+1}}{dx^{n+1}}\left(e^{-x^2/2}\right)=-\frac{d^n}{dx^n}\left(xe^{-x^2/2}\right)=-\left(x\frac{d^n}{dx^n}\left(e^{-x^2/2}\right)+n\frac{d^{n-1}}{dx^{n-1}}\left(e^{-x^2/2}\right)\right)$$
+		D'où :
+		$$H_{n+1}=XH_n-nH_{n-1}$$
+		\item On rappelle qu'on a $H_{n+1}=XH_n-H_n'$. On identifie donc $H_n'=nH_{n-1}$ et l'injectant l'équation précédente, écrite à l'ordre $n+1$, on obtient :
+		$$H_n''-XH_n'+nH_n=0$$
+	\end{enumerate}
 	
-	\subsection{Bernstein}
+	\subsection{\underline{Bernstein} \centraleponts{3}}
 	\label{sec:Bernstein}
 	\textcolor{blue}{\hyperref[Bernstein]{[Enoncé]}}\\
 	
-	\subsection{Polynômes cyclotomiques}
+	\subsection{\underline{Polynômes cyclotomiques} \xens{3}}
 	\label{sec:polynomes-cyclotomiques}
 	\textcolor{blue}{\hyperref[Polynômes cyclotomiques]{[Enoncé]}}\\
 	
@@ -6382,9 +6524,14 @@ Alors, on a l'équivalence :
 	Or pour tout $z\in \C$, $\deg(P-zQ)\ne n$ ssi le coefficient dominant de $P$ est égal à celui de $zQ$. Comme $j\notin\R$, le coefficient dominant de $jQ$ n'est pas réel. De même pour celui de $\overline jQ$.\\
 	Ainsi comme celui de $P$ est réel, $\deg(P-jQ)=\deg(P-\overline jQ)=n$ d'où $\deg(P^3-Q^3)\geq 2n$.
 	
-	\subsection{Théorème de la racine rationnelle}
+	\subsection{Théorème de la racine rationnelle \telecom{2}}
 	\label{sec:theoreme-de-la-racine-rationnelle}
 	\textcolor{blue}{\hyperref[Théorème de la racine rationnelle]{[Enoncé]}}\\
+	$\dfrac{p}{q}$ irréductible équivaut à $p\wedge q=1$.\\
+	On sait que $0=\displaystyle P\left(\frac{p}{q}\right)=\sum_{k=0}^na_k\frac{p^k}{q^k}=q^{-n}\sum_{k=0}^na_kp^kq^{n-k}$.\\
+	Donc $-a_0q^n=\displaystyle p\sum_{k=1}^na_kp^{k-1}q^{n-k}$.\\
+	Or $\displaystyle\sum_{k=1}^na_kp^{k-1}q^{n-k}\in \Z$ donc $p|a_0q^n$ d'où par le lemme de Gauss $p|a_0$.\\
+	De même $-a_np^n=\displaystyle q\sum_{k=0}^{n-1}a_kp^kq^{n-1-k}$ donc $q|a_np^n$ d'où $q|a_n$.
 	
 	\subsection{Critère d'Eisenstein \etoile{3}}
 	\label{sec:critere-deisenstein-etoile3}
