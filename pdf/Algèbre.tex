@@ -189,7 +189,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item Déterminer les matrices de $\M_n(\K)$ qui commutent avec toutes les matrices de projecteur.
 	\end{enumerate}
 	
-	\section{Racine carrée de la dérivation \centraleponts{3}}
+	\section{Racine carrée de la dérivation \xens{3}}
 	\label{Racine carrée de la dérivation}
 	\textcolor{blue}{\hyperref[Racine carrée de la dérivation corrigé]{[Corrigé]}}\\
 	On note $E=\mathcal C^\infty(\R,\R)$ et $\fonction{\Delta}{E}{E}{f}{f'}$.\\
@@ -354,7 +354,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	Soit $A\in \M_n(\K)$ non nulle.\\
 	Montrer que l'application $M\in \M_n(\K)\mapsto M+\Tr(M)A$ est diagonalisable si et seulement si $\Tr(A)\ne 0$.
 	
-	\subsection{Dimension du commutant d'une matrice de rang 1}
+	\subsection{Dimension du commutant d'une matrice de rang 1 \centraleponts{3}}
 	\label{Dimension du commutant d'une matrice de rang 1}
 	\textcolor{blue}{\hyperref[Dimension du commutant d'une matrice de rang 1 corrigé]{[Corrigé]}}\\
 	Soit $A\in \M_n(\K)$ de rang $1$.\\
@@ -451,14 +451,14 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\section{Eléments propres d'un endomorphisme (1) \telecom{2}}
 	\label{Eléments propres d'un endomorphismes (1)}
 	\textcolor{blue}{\hyperref[Eléments propres d'un endomorphismes (1) corrigé]{[Corrigé]}}\\
-	Soit $(E,\langle\ ,\ \rangle)$ un espace euclidien. On considère des vecteurs unitaires $a$ et $b$ formant une famille libre de $E$.\\
+	Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien. On considère des vecteurs unitaires $a$ et $b$ formant une famille libre de $E$.\\
 	Réduire l'endomorphisme $\fonction{\Phi}{E}{E}{x}{\proscal{a}{x}a+\proscal{b}{x}b}$
 	
 	\section{\underline{Eléments propres d'un endomorphisme} (2) \centraleponts{3}}
 	\label{Eléments propres d'un endomorphismes (2)}
 	\textcolor{blue}{\hyperref[Eléments propres d'un endomorphisme (2) corrigé]{[Corrigé]}}\\
 	Soit $E$ l'espace des fonctions continues de $[0,1]$ dans $\R$.\\ A toute application $f\in E$ on associe l'application $$\fonction{\Phi(f)}{[0,1]}{\R}{x}{\displaystyle\int_0^1{\min{(x,t)}f(t)\ dt}}$$
-	\begin{enumerate}[leftmargin=*]
+	\begin{enumerate}
 		\item Montrer que $\Phi$ est un endomorphisme de $E$
 		\item Déterminer les éléments propres de $\Phi$
 	\end{enumerate}
@@ -468,7 +468,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Eléments propres d'un endomorphisme (3) corrigé]{[Corrigé]}}\\
 	Soit $\B$ le sous-espace de $\C^{\Z}$ formé des suites bornées.
 	On considère : \[\fonction{T}{\B}{\B}{(u_n)_{n\in \Z}}{\displaystyle\left(\frac{u_{n-1}+u_{n+1}}{2}\right)_{n\in \Z}}\]
-	\begin{enumerate}[leftmargin=*]
+	\begin{enumerate}
 		\item Montrer que $T\in \mathcal{L}(\B)$.
 		\item Déterminer les éléments propres de $T$
 	\end{enumerate}
@@ -478,7 +478,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Eléments propres d'un endomorphisme (4) corrigé]{[Corrigé]}}\\
 	Soit $E=\mathcal{C}(\R^+,\R)$.\\
 	Pour $f\in E$ on définit l'application $T(f):x\in \R_+^*\longmapsto \displaystyle{\frac{1}{x}\int_0^x{f(t)\ dt}}$
-	\begin{enumerate}[leftmargin=*]
+	\begin{enumerate}
 		\item Soit $f\in E$. Montrer que $T(f)$ est prolongeable par continuité en $0$ (on notera encore $T(f)$ le prolongement).
 		\item Déterminer les éléments propres de $T$.
 	\end{enumerate}
@@ -487,7 +487,6 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\label{Loi de Hooke}
 	\textcolor{blue}{\hyperref[Loi de Hooke corrigé]{[Corrigé]}}\\
 	Soit $\fonction{\varphi}{\M_n(\R)}{\M_n(\R)}{M}{M+\Tr(M)I_n}$. Déterminer les éléments propres de $\varphi$.
-	
 	
 	\section{Existence d'une valeur propre double \centraleponts{3}}
 	\label{Existence d'une valeur propre double}
@@ -670,7 +669,6 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item En déduire que $\chi_{AB}=\chi_{BA}$ si $n=p$.
 	\end{enumerate}
 
-	
 	\section{Polynôme caractéristique de l'inverse \telecom{2}}
 	\label{Polynôme caractérisque de l'inverse}
 	\textcolor{blue}{\hyperref[Polynôme caractéristique de l'inverse corrigé]{[Corrigé]}}\\
@@ -4226,8 +4224,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Par conséquent $\delta(\Id_\R)$ est une fonction constante d'où $\Delta(\Id_\R)=\delta(\delta(\Id_\R))=0$ ce qui est absurde.\\
 	Ainsi il n'existe pas d'endomorphisme $\delta$ de $E$ qui vérifie $\delta^2=\Delta$.
 	
-	
-	\subsection{Produit de matrices nilpotentes \etoile{5}}
+	\subsection{Produit de matrices nilpotentes \xens{5}}
 	\label{Produit de matrices nilpotentes corrigé}
 	\textcolor{blue}{\hyperref[Produit de matrices nilpotentes]{[Enoncé]}}\\
 	Montrons le lemme suivant : si $A$ est une matrice non nulle et $B$ est une matrice nilpotente qui commute avec $A$ alors $\rg(AB)<\rg(A)$.\\
@@ -4290,7 +4287,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On a alors $v(u(a_i))=w(u(a_i))=u(v(a_i))$ pour tout $1\leq i\leq s$ d'où $v\in \mathcal C(u)$ et $\Phi(v)=w$.
 		\item Tout d'abord remarquons que la somme est bien définie. $\forall k\in \N,\ \Ker(u^k)\subset \Ker(u^{k+1}\subset E$. La suite $(\dim(\Ker(u^k)))_{k\in \N}$ est donc une suite croissante et majorée d'entiers : elle stationne. Ainsi la suite $(e_k(u))_{k\in \N^*}$ stationne à $0$.\\
 		Par récurrence forte sur la dimension de $E$ :\\
-		$\dim(E)=0$ : $u=0$, $\Com(u)=\{0\}$ et $\forall k\in \N,\ \dim(\Ker(u^k))=0$.\\
+		$\dim(E)=0$ : $u=0$, $\mathcal C(u)=\{0\}$ et $\forall k\in \N,\ \dim(\Ker(u^k))=0$.\\
 		Hérédité : Supposons le résultat vrai pour tout espace de dimension strictement inférieure à $\dim(E)$.\\
 		En appliquant le théorème du rang à $\Phi$ on a $\dim(\mathcal C(u))=\dim(\Ker \Phi)+\dim(\mathcal C(\tilde u))$. Or $\rg(u)<\dim(E)$ donc par hypothèse de récurrence, $\dim(\mathcal C(\tilde u))=\displaystyle\sum_{k=1}^{+\infty}e_k(\tilde u)^2$. Puis par la question 2, $\dim(\mathcal C(\tilde u))=\displaystyle\sum_{k=2}^{+\infty}e_k(u)^2$.\\
 		Il faut donc montrer que $\Ker\Phi$ est dimension $e_1^2=\dim(\Ker(u))^2$.\\
@@ -4349,8 +4346,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Par suite, Im$(\varphi)=\text{GL}_n(\C)\cup\{A\in \M_n(\C),\ \rg(A)=1\}$.
 	\end{enumerate}
 	
-	
-	\subsection{Caractérisation des homothéties (1)}
+	\subsection{Caractérisation des homothéties (1) \ccinp{2}}
 	\label{Caractérisation des homothéties (1) corrigé}
 	\textcolor{blue}{\hyperref[Caractérisation des homothéties (1)]{[Enoncé]}}\\
 	Soient $x_1,x_2 \in E$. D'après l'hypothèse de l'énoncé, il existe $\lambda_1,\lambda_2 \in \K$ tels que $u(x_1)=\lambda_1x_1$ et $u(x_2)=\lambda_2x_2$.
@@ -4375,7 +4371,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Espace engendré par les matrices nilpotentes corrigé}
 	\textcolor{blue}{\hyperref[Espace engendré par les matrices nilpotentes]{[Enoncé]}}\\
 	
-	\subsection{Transmission d'information \etoile{3}}
+	\subsection{Transmission d'information \centraleponts{3}}
 	\label{Transmission d'information corrigé}
 	\textcolor{blue}{\hyperref[Transmission d'information]{[Enoncé]}}\\
 	Supposons que $(A,B)\ne (0,0)$. Alors on peut se donner $x\in \M_{n,1}\backslash\Ker(A)$ et $y\in \text{Im}(B)\backslash\{0\}$. On complète la famille $(y)$ en une base $(y,e_2,\dots,e_n)$ de $\M_{n,1}(\K)$.\\
@@ -4386,17 +4382,17 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires corrigé}
 	\textcolor{blue}{\hyperref[Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires]{[Enoncé]}}\\
 		On montre aisément que : $$\Ker(f)\subset \Ker(f^2) \quad \text{et} \quad \Ima(f^2)\subset\Ima{f}$$
-		Montrons que (i)$\Longrightarrow$(ii)\\
+		Montrons que (i)$\implies$(ii)\\
 		Soit $y\in\Ima(f)$\\
 		IL existe $x\in E$ tel que $f(x)=y$.\\
 		D'après (i), il existe $(x_1,x_2)\in\Ima(f)\times\Ker(f)$.\\
 		Ainsi $f(x_1)=y$.\\
 		Puisque $x_1\in \Ima(f)$, il existe $y'\in E$ tel que $x_1=f(y')$ donc $f^2(y')=y$.\\
 		Donc $\Ima(f^2)=\Ima(f)$ par double inclusion.\\
-		Montrons que (ii)$\Longrightarrow$(iii).\\
+		Montrons que (ii)$\implies$(iii).\\
 		D'après le théorème du rang, $\dim(\Ker(f))=n-\dim(\Ima(f))=n-\dim(\Ima(f^2))=\dim(\Ker(f^2))$\\
 		Et puisque $\Ker(f)\subset\Ker(f^2)$, on en déduit que : $\Ker(f)=\Ker(f^2)$.\\
-		Montrons que (iii)$\Longrightarrow$(i)\\
+		Montrons que (iii)$\implies$(i)\\
 		Soit $x\in\Ker(f)\cap\Ima(f)$\\
 			$f(x)=0$\\
 			$\exists y\in E, f(y)=x$\\
@@ -4528,9 +4524,10 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Ainsi $\Tr(\varphi-\Id)=\Tr(A)$ et par suite $\varphi-\Id$ est diagonalisable ssi $\Tr(A)\ne 0$.\\
 	Pour conclure, $\varphi-\Id$ est diagonalisable ssi $\varphi$ l'est (par la même matrice de passage).
 	
-	\subsubsection{Dimension du commutant d'une matrice de rang 1}
+	\subsubsection{Dimension du commutant d'une matrice de rang 1 \centraleponts{3}}
 	\label{Dimension du commutant d'une matrice de rang 1 corrigé}
 	\textcolor{blue}{\hyperref[Dimension du commutant d'une matrice de rang 1]{[Enoncé]}}\\
+	Si $n=1$ alors $\mathcal C(A)=\M_1(\K)$. On suppose dans la suite $n\geq 2$.\\
 	On distingue deux cas suivant si $\alpha:=\Tr(A)=0$ ou non.\\
 	\underline{Si $\Tr(A)\ne 0$ :}\\
 	$\exists P\in \T{GL}_n(\C),\ A=PDP^{-1}$ avec $D=\diag(\alpha,0,\dots,0)$.\\
@@ -4554,7 +4551,32 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Donc comme $\alpha\ne 0$, $L=0$ et $C=0$.\\
 	On en déduit que $\mathcal C(D)$ est isomorphe à $\K\times\M_{n-1}(\K)$, et donc que $\dim\mathcal C(A)=(n-1)^2+1$.\\\\
 	\underline{Si $\Tr(A)=0$ :}\\
-	Par le même changement de base on se ramène à déterminer la dimension du commutant de $M=$
+	Par le même changement de base on se ramène à déterminer la dimension du commutant de $N=\left(\begin{array}{cc|ccc}
+		0&0&0&\cdots&0\\
+		1&0&0&\cdots&0\\
+		\hline
+		0&0&&&\\
+		\vdots&\vdots&&0_{n-2}&\\
+		0&0&&&
+	\end{array}\right)$. Notons $N_2=\begin{pmatrix}
+	0&0\\
+	1&0
+	\end{pmatrix}$.\\
+	$\forall M=\begin{pmatrix}
+		a&b\\
+		c&d
+	\end{pmatrix}\in \M_2(\K),\ MN_2=N_2M\iff \begin{pmatrix}
+	b&0\\
+	d&0
+	\end{pmatrix}=\begin{pmatrix}
+	0&0\\
+	a&b
+	\end{pmatrix}\iff a=d$ et $b=0$.\\
+	Donc $\mathcal C(N)$ est isomorphe à $\left\{\begin{pmatrix}
+		a&0\\
+		c&a
+	\end{pmatrix},\ (a,c)\in \K^2\right\}\times\M_{n-2}(\K)$.\\
+	On en déduit $\dim\mathcal C(A)=(n-2)^2+2$.
 	
 	\subsubsection{Diagonalisabilité d'une matrice \centraleponts{3}}
 	\label{Diagonalisabilité d'une matrice corrigé}
@@ -4573,17 +4595,17 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{pmatrix}^\top$. Ainsi, d'après le lemme du déterminant, on a: $$\chi_M(\lambda)=\det(\diag(\lambda-a_1+b_1,\dots,\lambda-a_n+b_n))-V^\top\operatorname{Com}(\diag(\lambda-a_1+b_1,\dots,\lambda-a_n+b_n))U$$
 	On choisit $\lambda$ tel que $\diag(\lambda-a_1+b_1,\dots,\lambda-a_n+b_n)$ est inversible. Donc: \begin{align*}
 		\chi_M(\lambda)=&\det(\diag(\lambda- a_1+b_1,\dots,\lambda-a_n+b_n))\cdot\left(1-V^\top\diag\left(\left(\frac{1}{\lambda- a_1+b_1},\dots,\frac{1}{\lambda-a_n+b_n}\right)\right)U\right)
-		\\&=\displaystyle\prod\limits_{i=1}^n(\lambda-a_i+b_i)(1-\displaystyle\sum_{i=1}^n\frac{b_i}{\lambda-a_i+b_i})
-		\\&=\displaystyle\prod\limits_{i=1}^n(\lambda-a_i+b_i)-\sum\limits_{i=1}^n b_iP_i(\lambda)
+		\\&=\prod_{i=1}^n(\lambda-a_i+b_i)\left(1-\sum_{i=1}^n\frac{b_i}{\lambda-a_i+b_i}\right)
+		\\&=\prod_{i=1}^n(\lambda-a_i+b_i)-\sum_{i=1}^n b_iP_i(\lambda)
 	\end{align*}
-	Avec $P_i(\lambda)=\displaystyle\prod\limits_{j\in\crblanc{1}{n}, j\ne i}(\lambda-a_i+b_i)$.
+	Avec $P_i(\lambda)=\displaystyle\prod_{j\in\crblanc{1}{n}, j\ne i}(\lambda-a_i+b_i)$.
 	\\Puisque $a_1\leq\dots\leq a_n$ et $0<b_n<\dots< b_1$, on a $a_1-b_1<\dots<a_n-b_n$.
-	\\On a $\chi_M(a_i-b_i)=-b_i\displaystyle\prod\limits_{j\in\crblanc{1}{n}, j\ne i}[(a_i-b_i)-(a_j-b_j)]$.
+	\\On a $\chi_M(a_i-b_i)=-b_i\displaystyle\prod_{j\in\crblanc{1}{n}, j\ne i}[(a_i-b_i)-(a_j-b_j)]$.
 	\\Ainsi, $\text{sgn}(\chi_M(a_i-b_i))=(-1)^{n+1-i}$ et $\lim\limits_{\lambda\to+\infty}\chi_M(\lambda)=+\infty$.
 	\\Par conséquent, d'après le théorème des valeurs intermédiaires, pour tout $i\in\crblanc{1}{n}$, il existe $\mu_i\in]a_i-b_i,a_{i+1}-b_{i+1}[$ tel que $\chi_M(\mu_i)=0$ et il existe $\mu_n\in]a_n-b_n,+\infty[$ tel que $\chi_M(\mu_n)=0$.
 	\\On a donc trouvé $n$ racines distinctes de $\chi_M$ qui est de degré $n$. Donc $\chi_M$ est scindé à racines simples et par suite $M$ est diagonalisable.
 	
-	\subsection{Matrices réelles semblables}
+	\subsection{\underline{Matrices réelles semblables} \centraleponts{2}}
 	\label{Matrices réelles semblables corrigé}
 	\textcolor{blue}{\hyperref[Matrices réelles semblables]{[Enoncé]}}\\
 	D'après l'énoncé, il existe $P\in GL_n(\C)$ tel que $A=PBP^{-1}$. On note $P=S+iR$ avec $(S,R)\in\mathcal{M}_n(\R)$.
@@ -4594,7 +4616,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	De plus, on pose $f:t\mapsto \det(S+tR)$. $f$ est une fonction polynomiale non nulle car $f(i)\ne0$. Donc il existe $\lambda\in\R$ tel que $f(\lambda)\ne0$ et donc $S+\lambda R$ est inversible.
 	\\Ainsi comme $AS=SB$ et $AR=RB$, on a $A(S+\lambda R)=(S+\lambda R)B$ d'où le résultat.
 	
-	\subsection{Complément de Schur}
+	\subsection{Complément de Schur \telecom{2}}
 	\label{Complément de Schur corrigé}
 	\textcolor{blue}{\hyperref[Complément de Schur]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -4623,7 +4645,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Finalement, $\operatorname{rg}(M)=p+q-\dim(\Ker(M))=p+\operatorname{rg}(S)=\operatorname{rg}(A)+\operatorname{rg}(S)$.
 	\end{enumerate}
 	
-	\subsection{Produit de Kronecker}
+	\subsection{Produit de Kronecker \ccinp{2}}
 	\label{Produit de Kronecker corrigé}
 	\textcolor{blue}{\hyperref[Produit de Kronecker]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -4647,39 +4669,38 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 			0_2 & B
 		\end{pmatrix}$ donc $\det(I_2 \otimes B) = (\det B)^2$.
 		
-		Soit $u$ l'endomorphisme de $C^4$ canoniquement associé à $A \otimes I_2$. Notons $(e_1, e_2, e_3, e_4)$ la base canonique de $C^4$. Alors la matrice de $u$ dans la base $(e_1, e_2, e_3, e_4)$ est $I_2 \otimes A$. On a donc $\det(A \otimes I_2) = \det u = (\det A)^2$ d'après ce qui précède. D'après la première question, $A \otimes B = (A \otimes I_2) \cdot (I_2 \otimes B)$. Ainsi $\det(A \otimes B) = \det(A)^2 \det(B)^2$.
-		\item Puisqu'une matrice est inversible si et seulement si son déterminant est non nul, d'après la question précédente, $A \times B$ est inversible si et seulement si $A$ et $B$ le sont. Dans ce cas, on a d'après la première question
+		Soit $u$ l'endomorphisme de $\K^4$ canoniquement associé à $A \otimes I_2$. Notons $(e_1, e_2, e_3, e_4)$ la base canonique de $\K^4$. Alors la matrice de $u$ dans la base $(e_1, e_3, e_2, e_4)$ est $I_2 \otimes A$. On a donc $\det(A \otimes I_2) = \det u = (\det A)^2$ d'après ce qui précède. D'après la première question, $A \otimes B = (A \otimes I_2) \cdot (I_2 \otimes B)$. Ainsi $\det(A \otimes B) = \det(A)^2 \det(B)^2$.
+		\item Puisqu'une matrice est inversible si et seulement si son déterminant est non nul, d'après la question précédente, $A\otimes B$ est inversible si et seulement si $A$ et $B$ le sont. Dans ce cas, on a d'après la première question
 		$$(A \otimes B) \cdot (A^{-1} \otimes B^{-1}) = (AA^{-1}) \otimes (BB^{-1}) = I_2 \otimes I_2 = I_4$$
-		\item D'après l'énoncé, il existe $P , Q \in Gl_n(\K)$ et $D_A , D_B \in \M_{n}(\K)$ diagonales tels que : $A=PD_AP^{-1}$ et $B=QD_BQ^{-1}$.\\
-		On montre aisément que : $$(A\otimes B)=(P\otimes Q)(D_A\otimes D_B)(P^{-1}\otimes Q^{-1})$$
-		Ce qui justifie que $(A\otimes B)$ est diagonalisable.	 
+		Càd $(A\otimes B)^{-1}=A^{-1}\otimes B^{-1}$.
+		\item D'après l'énoncé, il existe $P,Q \in \T{GL}_n(\K)$ et $D_A , D_B \in \M_n(\K)$ diagonales telles que $A=PD_AP^{-1}$ et $B=QD_BQ^{-1}$.\\
+		On montre aisément que : $$A\otimes B=(P\otimes Q)(D_A\otimes D_B)(P\otimes Q)^{-1}$$
+		Ce qui justifie que $A\otimes B$ est diagonalisable.	 
 	\end{enumerate}
 
-	\subsection{Disques de Gershgorin}
+	\subsection{\underline{Disques de Gershgorin} \telecom{2}}
 	\label{Disques de Gershgorin corrigé}
 	\textcolor{blue}{\hyperref[Disques de Gershgorin]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 			\item Soit $\lambda\in\text{Sp}(A)$ et $X=\begin{pmatrix}
 			x_1\\ \vdots \\ x_n
 				\end{pmatrix}$ un vecteur propre de $A$ associé à $\lambda$.
-			On a pour tout $i\in\crblanc{1}{n}$, \[(\lambda-a_{i,i})x_i=\sum_{j\ne i}^{a_{i,j}x_j}\]
-			On choisit un $i$ pour lequel $|x_i|$ est maximal. Ainsi, 
+			On a pour tout $i\in\crblanc{1}{n}$, \[(\lambda-a_{i,i})x_i=\sum_{j\ne i}a_{i,j}x_j\]
+			On choisit un $i_0$ pour lequel $|x_{i_0}|$ est maximal ($|x_{i_0}|>0$ car $X$ est non nul). Ainsi, 
 			\begin{align*}
-				|\lambda-a_{i,i}|&=|\sum_{j\ne i}a_{i,j}\frac{x_j}{x_i}|\\
-				&\leq\sum_{j\ne i}|a_{i,j}|\frac{|x_j|}{|x_i|}\\
-				&\leq\sum_{j\ne i}|a_{i,j}|=R_i &\mbox{car $|x_i|$ est maximal}
+				|\lambda-a_{i_0,i_0}|&=\left|\sum_{j\ne i_0}a_{i_0,j}\frac{x_j}{x_{i_0}}\right|\\
+				&\leq\sum_{j\ne i_0}|a_{i_0,j}|\frac{|x_j|}{|x_{i_0}|}\\
+				&\leq\sum_{j\ne i_0}|a_{i_0,j}|&\mbox{car $|x_{i_0}|$ est maximal}\\
+				&=R_{i_0}
 			\end{align*}
-			Par conséquent, on a : \[\lambda \in D(a_{i,i},R_i)\]
-			\item Montrons que $0\not\in D(a_{i,i},R_i)$ pour tout $i\in\crblanc{1}{n}$.
-			Soit $i\in\crblanc{1}{n}$.\\
+			Par conséquent, on a $\lambda \in D(a_{i_0,i_0},R_{i_0})$.
+			\item Soit $i\in\crblanc{1}{n}$.\\
 			\[|0-a_{i,i}|=|a_{i,i}|>R_i\]
 			donc $0\not\in D(a_{i,i},R_i)$.\\
 			Par conséquent, $0$ ne peut être une valeur propre de $A$, donc $A$ est  inversible.
-			
 	\end{enumerate}
-
-
-	\subsection{Spectre de $u\circ v$ et $v\circ u$}
+	
+	\subsection{Spectre de $u\circ v$ et $v\circ u$ \ccinp{1}}
 	\label{Spectre de uov et vou corrigé}
 	\textcolor{blue}{\hyperref[Spectre de uov et vou]{[Enoncé]}}\\
 	Montrons que $\text{Sp}(u\circ v)\subset \text{Sp}(v\circ u)$. (L'autre inclusion se montrera de la même façon par inversion des rôles de $u$ et $v$).\\
@@ -4698,18 +4719,27 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		&\Leftrightarrow \det(v\circ u)=0\\
 		&\Leftrightarrow 0\in \text{Sp}(v\circ u)
 	\end{align*}
-	\subsection{Endomorphismes qui commutent}
+	
+	\subsection{\underline{Endomorphismes qui commutent} \ccinp{2}}
 	\label{Endomorphismes qui commutent corrigé}
 	\textcolor{blue}{\hyperref[Endomorphismes qui commutent]{[Enoncé]}}\\
 	Supposons que $u$ et $v$ commutent.\\
 	Alors $E_\lambda(u)$ est stable par $v$.\\
 	Donc $v$ induit un endomorphisme $v_{E_\lambda(u)}$ sur $E_\lambda(u)$.\\
-	$v_{E_\lambda(u)}$ admet un vecteur propre car $E$ est un $\C$-espace vectoriel.\\
-	Ce vecteur propre est un vecteur propre de $v$ et un vecteur propre de $u$, donc $u$ et $v$ admettent un vecteur propre commun.
+	$v_{E_\lambda(u)}$ admet un vecteur propre car $E_\lambda(u)$ est un $\C$-espace vectoriel $(\chi_{v_{E\lambda(u)}})$ est scindé).\\
+	Ce vecteur propre est un vecteur propre de $v$ et un vecteur propre de $u$ par définition de $E_\lambda(u)$, donc $u$ et $v$ admettent un vecteur propre commun.
 	
-	\subsection{Vecteur propre commun}
+	\subsection{Vecteur propre commun \centraleponts{3}}
 	\label{Vecteur propre commun corrigé}
 	\textcolor{blue}{\hyperref[Vecteur propre commun]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $\Ima(v)\subset \Ker(u)$ donc $v(\Ker(u))\subset\Ima(v)\subset\Ker(u)$. $v$ induit donc un endomorphisme $\tilde v$ sur $\Ker(u)$. $\Ker(u)$ étant un $\C$-espace vectoriel, $\chi_{\tilde v}$ est scindé et donc $\tilde v$ admet un vecteur propre. Ce vecteur propre est vecteur propre de $v$ et vecteur propre de $u$ en tant qu'élément non nul de son noyau.
+		\item On a $u\circ(v-a\Id_E)=0$ donc d'après la question 1 $u$ et $v-a\Id_E$ admettent un vecteur propre commun que l'on note $x$. Notons $\lambda\in \C$ tel que $(v-a\Id_E)(x)=\lambda x$. Alors $x$ est vecteur propre de $v$ pour la valeur propre $\lambda+a$.
+		\item De même $(u-b\Id_E)\circ v=0$ donne le résultat.
+		\item $u$ est l'inverse de $v$. En particulier ils commutent et admettent donc un vecteur propre commun (cf.\ref{Vecteur propre commun corrigé}).
+		\item On a $(u-b\Id_E)\circ (v-a\Id_E)=ab\Id_E$.\\
+		Si $ab=0$ alors on est dans le cas de la question 1 et sinon on est dans le cas de la question 4. Dans tous les cas $u-b\Id_E$ et $v-a\Id_E$ ont un vecteur propre commun $x$. On montre aisément que $x$ est un vecteur propre commun à $u$ et $v$.
+	\end{enumerate}
 	
 	\subsection{Eléments propres d'un endomorphisme (1)}
 	\label{Eléments propres d'un endomorphismes (1) corrigé}
