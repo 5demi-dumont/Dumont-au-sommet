@@ -181,6 +181,14 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Centre de Mn(K) corrigé]{[Corrigé]}}\\
 	Déterminer le centre de $\M_n(\K)$ : $Z=\{A\in \M_n(\K),\ \forall B\in \M_n(\K),\ AB=BA\}$.
 	
+	\section{$\M_n(\K)$ est violemment non commutatif}
+	\label{Mn(K) est violemment non commutatif corrigé}
+	\textcolor{blue}{\hyperref[Mn(K) est violemment non commutatif]{[Corrigé]}}\\
+	\begin{enumerate}
+		\item Déterminer les matrices de $\M_n(\K)$ qui commutent avec toutes les matrices inversibles.
+		\item Déterminer les matrices de $\M_n(\K)$ qui commutent avec toutes les matrices de projecteur.
+	\end{enumerate}
+	
 	\section{Racine carrée de la dérivation \centraleponts{3}}
 	\label{Racine carrée de la dérivation}
 	\textcolor{blue}{\hyperref[Racine carrée de la dérivation corrigé]{[Corrigé]}}\\
@@ -238,20 +246,25 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item Soit $\fonction{\varphi}{\M_n(\K)}{\M_n(\K)}{A}{\Com(A)}$.\\
 		$\varphi$ est-elle injective ? Surjective ? \\Déterminer $\text{Im}(\varphi)$ dans le cas $\K=\C$.
 	\end{enumerate}
-	\newpage
-	\section{Lemme de Schur \ccinp{2}}
-	\label{Lemme de Schur}
-	\textcolor{blue}{\hyperref[Lemme de Schur corrigé]{[Corrigé]}}\\
- Soit $\K$ un corps. Soit $u$ un endomorphisme de $E$ un $\K$-espace vectoriel tel que pour tout $x\in E$, $(x,u(x))$ est une famille liée.\\
-		Montrer que $u$ est une homothétie vectorielle.
- 
+
+	\section{Caractérisation des homothéties (1) \ccinp{2}}
+	\label{Caractérisation des homothéties (1)}
+	\textcolor{blue}{\hyperref[Caractérisation des homothéties (1) corrigé]{[Corrigé]}}\\
+	Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$ tel que pour tout $x\in E$, $(x,u(x))$ est une famille liée.\\
+	Montrer que $u$ est une homothétie.
+	
+	\section{Caractérisation des homothéties (2) \centraleponts{2}}
+	\label{Caractérisation des homothéties (2)}
+	\textcolor{blue}{\hyperref[Caractérisation des homothéties (2) corrigé]{[Enoncé]}}\\
+	Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$.\\
+	Montrer que si $u$ stabilise tous les sous-espaces de $E$ de dimension $r$ alors $u$ est une homothétie.
 	
 	\section{Espaces engendrés par les matrices inversibles et orthogonales \centraleponts{3}}
 	\label{Espaces engendrés par les matrices inversibles et orthogonales}
 	\textcolor{blue}{\hyperref[Espaces engendrés par les matrice inversibles et orthogonales corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Déterminer $\vect(\text{GL}_n(\K))$.
-		\item Déterminer $\vect(\O_n(\R))$.
+		\item Déterminer $\Vect(\text{GL}_n(\K))$.
+		\item Déterminer $\Vect(\O_n(\R))$.
 	\end{enumerate}
 	
 	\section{Espace engendré par les matrices nilpotentes \centraleponts{3}}
@@ -305,23 +318,51 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\newpage
 \chapter{Réduction géométrique}
 	Dans toute cette section $n$ désigne un entier supérieur ou égal à $1$.
-	\section{Matrices de rang $1$}
-	\label{Matrices de rang 1}
-	\textcolor{blue}{\hyperref[Matrices de rang 1 corrigé]{[Corrigé]}}
-	\subsection{Réduction des matrices de rang $1$ \ccinp{1}} 
+	\section{Réduction des matrices de rang $1$ \ccinp{2}}
+	\label{Réduction des matrices de rang 1}
+	\textcolor{blue}{\hyperref[Réduction des matrices de rang 1 corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Soit $M\in\M_{n}(\K)$. 
-		Montrer que :\[\rg(M)=1 \Longleftrightarrow \exists (U,V)\in(\M_{n,1}(\K))^2 \text{ non nulles tel que } M=UV^\top\]
-		\item Soit $M\in\mathcal{M}_n(\K)$ une matrice de rang $1$, montrer que $M^2=\Tr(M)M$.
+		\item Soit $M\in \M_n(\K)$.
+		Montrer que :\[\rg(M)=1 \iff \exists (U,V)\in (\M_{n,1}(\K)\backslash\{0\})^2,\ M=UV^\top\]
+		\item Soit $M\in \M_n(\K)$ une matrice de rang $1$. Montrer que $M^2=\Tr(M)M$.
 		\item Donner une condition nécessaire et suffisante pour qu'une matrice de rang $1$ soit diagonalisable.
 		\item Application : Résoudre l'équation $A^3=\begin{pmatrix}
 			1 &-2 &1\\
 			1 &-2 &1\\
 			1 &-2 &1\\
 		\end{pmatrix}$.
+		\item Soit $E$ un $\K$-espace vectoriel de dimension finie et soit $u\in \L(E)$ un endomorphisme de rang $1$ et de trace nulle.
+		\begin{enumerate}[label=\alph*.]
+			\item justifier que $\T{Im}(u)\subset\Ker(u)$.
+			\item En déduire que $\T{Im}(u)\cap\Ker(u)\ne\{0\}$.
+			\item Montrer qu'il existe une base de $E$ dans laquelle la matrice de $u$ est
+			$$\begin{pmatrix}
+				0&0&0&&&\\
+				1&0&0&&(0)&\\
+				0&0&0&&&\\
+				&&&\ddots&&\\
+				&(0)&&&\ddots&\\
+				&&&&&0
+			\end{pmatrix}$$
+		\end{enumerate}
+		\item Montrer que deux matrices de rang $1$ sont semblables si et seulement si elles ont la même trace.
 	\end{enumerate}
 	
+	\subsection{Application \ccinp{1}}
+	\label{Application}
+	\textcolor{blue}{\hyperref[Application corrigé]{[Corrigé]}}\\
+	Soit $A\in \M_n(\K)$ non nulle.\\
+	Montrer que l'application $M\in \M_n(\K)\mapsto M+\Tr(M)A$ est diagonalisable si et seulement si $\Tr(A)\ne 0$.
+	
+	\subsection{Dimension du commutant d'une matrice de rang 1}
+	\label{Dimension du commutant d'une matrice de rang 1}
+	\textcolor{blue}{\hyperref[Dimension du commutant d'une matrice de rang 1 corrigé]{[Corrigé]}}\\
+	Soit $A\in \M_n(\K)$ de rang $1$.\\
+	Déterminer la dimension du commutant de $A$ : $\mathcal C(A)=\{B\in M_n(\K),\ AB=BA\}$.
+	
 	\subsection{Diagonalisabilité d'une matrice \centraleponts{3}}
+	\label{Diagonalisabilité d'une matrice}
+	\textcolor{blue}{\hyperref[Diagonalisabilité d'une matrice corrigé]{[Corrigé]}}\\
 	Soient $a_1\leq \dots\leq a_n$ et $b_1>\dots>b_n>0$ des réels. On considère la matrice
 	$$M=\begin{pmatrix}
 		a_1   &b_2   &\dots &b_{n-1}&b_n\\
@@ -330,7 +371,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\vdots&\vdots&\ddots&a_{n-1}&b_n\\
 		b_1   &b_2   &\dots &b_{n-1}&a_n
 	\end{pmatrix}$$
-	\begin{enumerate}[leftmargin=*]
+	\begin{enumerate}
 		\item Exprimer $\chi_M$ en fonction des $a_i$ et des $b_i$.\\ \textit{On pourra utiliser le lemme du déterminant} (cf. VIII-50 tome Analyse)
 		\item Démontrer à l'aide du TVI que $M$ est diagonalisable dans $\R$.
 	\end{enumerate}
@@ -338,7 +379,8 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\section{\underline{Matrices réelles semblables} \centraleponts{2}}
 	\label{Matrices réelles semblables}
 	\textcolor{blue}{\hyperref[Matrices réelles semblables corrigé]{[Corrigé]}}\\
-	Soient $A$ et $B$ deux matrices de $\M_n(\R)$ semblables sur $\C$.\\ Montrer que $A$ et $B$ sont semblables sur $\R$.
+	Soient $A$ et $B$ deux matrices de $\M_n(\R)$ semblables sur $\M_n(\C)$.\\
+	Montrer que $A$ et $B$ sont semblables sur $\M_n(\R)$.
 	
 	\section{Complément de Schur \telecom{2}}
 	\label{Complément de Schur}
@@ -377,7 +419,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\label{Disques de Gershgorin}
 	\textcolor{blue}{\hyperref[Disques de Gershgorin corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Soit $A\in \M_n(\C)$. Pour $i\in \crblanc{1}{n}$ on note $R_i=\sum\limits_{j\ne i}{|a_{ij}|}$.\\ Montrer que toute valeur propre de $A$ appartient à au moins un des disques fermés de centre $a_{ii}$ et de rayon $R_i$.
+		\item Soit $A\in \M_n(\C)$. Pour $i\in \crblanc{1}{n}$ on note $R_i=\displaystyle\sum_{j\ne i}{|a_{ij}|}$.\\ Montrer que toute valeur propre de $A$ appartient à au moins un des disques fermés de centre $a_{ii}$ et de rayon $R_i$.
 		\item En déduire le lemme de Hadamard :
 		Toute matrice à diagonale strictement dominante (i.e $\forall i\in \crblanc{1}{n},\ |a_{ii}|>R_i$) est inversible.
 	\end{enumerate}
@@ -661,27 +703,37 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item Montrer que les sous-espaces vectoriels de $E$ stables par $u$ sont exactement ceux de la forme $\displaystyle\bigoplus\limits_{\lambda\in \operatorname{Sp}(u)}{F_\lambda}$ où pour tout $\lambda\in \operatorname{Sp}(u),\ F_\lambda$ est un sous-espace vectoriel de $E_\lambda(u)$.\\
 	\end{enumerate}
 	
-	\section{Hyperplans stables \centraleponts{3}}
+	\section{Caractérisation de la diagonalisabilité par les hyperplans \centraleponts{3}}
+	\label{Caractérisation de la diagonalisabilité par les hyperplans}
+	\textcolor{blue}{\hyperref[Caractérisation de la diagonalisabilité par les hyperplans corrigé]{[Corrigé]}}\\
+	Soient $E$ un $\R$-espace vectoriel de dimension $n$ et $f\in \L(E)$.\\ Montrer que $f$ est diagonalisable si et seulement s'il existe $n$ hyperplans $H_1,\dots,H_n$ de $E$ stables par $f$ tels que $\displaystyle\bigcap\limits_{i=1}^n{H_i}=\{0_E\}$.
+	
+	\section{Hyperplans stables}
 	\label{Hyperplans stables}
 	\textcolor{blue}{\hyperref[Hyperplans stables corrigé]{[Corrigé]}}\\
-	Soient $E$ un $\R$-espace vectoriel de dimension $n$ et $f\in \mathcal{L}(E)$.\\ Montrer que $f$ est diagonalisable si et seulement s'il existe des hyperplans $H_1,\dots,H_n$ de $E$ stables par $f$ tels que $\displaystyle\bigcap\limits_{i=1}^n{H_i}=\{0_E\}$.
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $u$ un endomorphisme d'un $\C$-espace vectoriel $E$ de dimension finie.\\
+		Soit $H$ un hyperplan de $E$. Montrer que $H$ est stable par $u$ si et seulement si il existe $\lambda\in \C$ tel que $\T{Im}(u-\lambda\Id_E)\subset H$.
+		\item Soient $A\in \M_n(\R)$ et $u\in \L(\R^n)$ l'endomorphisme canoniquement associé.\\
+		Soit $X\in \R^n\backslash\{0\}$. Montrer que l'hyperplan $H=X^\bot$ est stable par $u$ si et seulement si $X$ est valeur propre de $A^\top$.
+	\end{enumerate}
 	
-	\section{Endomorphisme qui stabilise un nombre fini de sous-espaces \centraleponts{3}}
-	\label{Endomorphisme qui stabilise un nombre fini de sous-espaces}
-	\textcolor{blue}{\hyperref[Endomorphisme qui stabilise un nombre fini de sous-espaces corrigé]{[Corrigé]}}\\
-	Soit $u$ un endomorphisme à spectre simple d'un $\K$-espace vectoriel $E$ de dimension $n$ finie. (c'est à dire que $u$ a exactement $n$ valeurs propres distinctes)\\
+	\section{Sous-espaces stables d'un endomorphisme à spectre simple \centraleponts{3}}
+	\label{Sous-espaces stables d'un endomorphisme à spectre simple}
+	\textcolor{blue}{\hyperref[Sous-espaces stables d'un endomorphisme à spectre simple corrigé]{[Corrigé]}}\\
+	Soit $E$ un $\K$-espace vectoriel de dimension finie $n$ et soit $u$ un endomorphisme de $E$ à spectre simple, c'est à dire ayant exactement $n$ valeurs propres distinctes.\\
 	Montrer qu'il existe un nombre fini de sous-espaces de $E$ stables par $u$ et les dénombrer.
 	
 	\section{Sous-espaces stables d'un endomorphisme nilpotent maximal \centraleponts{3}}
 	\label{Sous-espaces stables d'un endomorphsime nilpotent maximal}
 	\textcolor{blue}{\hyperref[Sous-espaces stables d'un endomorphisme nilpotent maximal corrigé]{[Corrigé]}}\\
-	Soit $E$ un $\K$-espace vectoriel de dimension $n$ finie.\\ On considère $u\in \mathcal{L}(E)$ nilpotent d'indice $n$.\\
+	Soit $E$ un $\K$-espace vectoriel de dimension $n$ finie.\\ On considère $u\in \L(E)$ nilpotent d'indice $n$.\\
 	Montrer que $u$ stabilise exactement $n+1$ sous-espaces vectoriels de $E$.
 	
-	\section{Sous-espaces stables par les endomorphismes de permutation \xens{4}}
-	\label{Sous-espaces stables par les endomorphismes de permutation}
-	\textcolor{blue}{\hyperref[Sous-espaces stables par tous les endomorphismes de permutation corrigé]{[Corrigé]}}\\
-	Soit $\sigma\in \mathcal S_n$. On définit l'endomorphisme $u_\sigma : (x_1,\dots,x_n)\in \C^n\mapsto (x_{\sigma(1)},\dots,x_{\sigma(n)})$.
+	\section{Endomorphismes de permutation \xens{4}}
+	\label{Endomorphismes de permutation}
+	\textcolor{blue}{\hyperref[Endomorphismes de permutation corrigé]{[Corrigé]}}\\
+	Soit $\sigma\in \S_n$. On définit l'endomorphisme $u_\sigma : (x_1,\dots,x_n)\in \C^n\mapsto (x_{\sigma(1)},\dots,x_{\sigma(n)})$.
 	\begin{enumerate}
 		\item Déterminer le spectre de $u_\sigma$.
 		\item Déterminer les sous-espaces vectoriels de $\C^n$ stables par tous les $u_\sigma,\ \sigma\in \mathcal S_n$.
@@ -1227,9 +1279,9 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	Soit $(U,\cdot)$ un sous-semi-groupe de $\M_n(\K)$ (i.e $U$ est stable par produit) non vide et fini.\\
 	Montrer que $\exists A\in U,\ \Tr(A)\in \crblanc{0}{n}$.
 	
-	\section{\underline{Groupe d'exposant inférieur à 2} \ccinp{1}}
-	\label{Groupe d'exposant inférieur à 2}
-	\textcolor{blue}{\hyperref[Groupe d'exposant inférieur à 2 corrigé]{[Corrigé]}}\\
+	\section{\underline{Groupe composé d'involutions} \ccinp{1}}
+	\label{Groupe composé d'involutions}
+	\textcolor{blue}{\hyperref[Groupe composé d'involutions corrigé]{[Corrigé]}}\\
 	Soit $G$ un groupe de neutre $e$ pour lequel, $\forall x\in G,\ x^2=e$. \\Montrer que $G$ est commutatif.
 	\newpage
 	\section{\underline{Centre et Commutant} \ccinp{1}}
@@ -1246,7 +1298,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		est un sous groupe de $G$.
 	\end{enumerate}
 	
-	\section{Théorème de Dixon \xens{4}}
+	\section{\underline{Théorème de Dixon} \xens{4}}
 	\label{Probabilité que deux élémebts d'un groupe commutent}
 	\textcolor{blue}{\hyperref[Probabilité que deux éléments d'un groupe commutent corrigé]{[Corrigé]}}\\
 	Soit $G$ un groupe fini non commutatif. Montrer que la probabilité que deux éléments choisis au hasard dans $G$ commutent est inférieure à $\displaystyle\frac{5}{8}$.
@@ -1339,11 +1391,12 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\label{Sous-groupes distingués}
 	\textcolor{blue}{\hyperref[Sous-groupes distingué corrigé]{[Corrigé]}}\\
 	Soit $G$ un groupe\\
-	On dit que $H$ est un sous-groupe distingué dans $G$ quand $H$ est un sous groupe de $G$ et \[\forall g\in G,\forall h\in H, ghg^{-1}\in H\].
+	On dit que $H$ est un sous-groupe distingué dans $G$ quand $H$ est un sous groupe de $G$ et \[\forall g\in G,\forall h\in H, ghg^{-1}\in H\]
 	\begin{enumerate}
 		\item Montrer que le centre de $G$ (défini à \ref{Centre}) est distingué dans $G$.
 		\item Soit $f$ un morphisme de groupe de $G$ dans $G'$.\\ Montrer que $\Ker(f)$ est distingué dans $G$.
 	\end{enumerate}
+	
 	\section{Nature d'une suite}
 	\label{Nature d'une suite}
 	\textcolor{blue}{\hyperref[Nature d'une suite corrigé]{[Corrigé]}}\\
@@ -1352,11 +1405,12 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		$$\left|x-\frac{p}{q}\right|<\frac{1}{q^2}$$
 		\item Montrer que la suite de terme général $u_n=\ddots\frac{1}{n\sin n}$ diverge.
 	\end{enumerate}
+	\textit{Un jour peut-être Marconot se rappellera pourquoi il a mit cet exo là et quelle est la mystérieuse question 2...}
 	
 	\section{Une relation utile sur les morphismes de groupes}
-	\label{Une relation utile sur les morphismes dee groupes}
+	\label{Une relation utile sur les morphismes de groupes}
 	\textcolor{blue}{\hyperref[Une relation utile sur les morphismes de groupes corrigé]{[Corrigé]}}\\
-	Soit $G$ un groupe fini et $G'$ un groupe. Soit $f:G\to G'$ un morphisme de groupe.\\
+	Soit $G$ un groupe fini et $G'$ un groupe. Soit $f:G\to G'$ un morphisme de groupes.\\
 	Montrer que $|G|=|\Ker(f)|\times|\text{Im}(f)|$.
 	
 	\section{Automorphisme d'inversion \ccinp{1}}
@@ -1385,7 +1439,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Morphismes de Q dans Z corrigé]{[Corrigé]}}\\
 	Déterminer les morphismes de groupes de $(\Q,+)$ dans $(\Z,+)$.
 	
-	\section{Morphismes de $\Z/n\Z$ dans $\Z/m\Z$}
+	\section{Morphismes de $\Z/n\Z$ dans $\Z/m\Z$ \telecom{2}}
 	\label{Morphismes de Z/nZ dans Z/mZ}
 	\textcolor{blue}{\hyperref[Morphismes de Z/nZ dans Z/mZ corrigé]{[Corrigé]}}\\
 	Soient $m,n\in \N^*$. Déterminer les morphismes de groupes de $(\Z/n\Z,+)$ dans $(\Z/m\Z,+)$.
@@ -1406,20 +1460,20 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item En déduire que $f$ est un morphisme.
 	\end{enumerate}
 	
-	\section{Morphisme de $\Z^\N$ presque nul \centraleponts{3}}
-	\label{Morphisme de Z^N presque nul}
-	\textcolor{blue}{\hyperref[Morphisme de Z^N presque nul corrigé]{[Corrigé]}}\\
+	\section{Morphisme de $\Z^\N$ dans $\Z$ presque nul \centraleponts{3}}
+	\label{Morphisme de Z^N dans Z presque nul}
+	\textcolor{blue}{\hyperref[Morphisme de Z^N dans Z presque nul corrigé]{[Corrigé]}}\\
 	Soit $\Phi:\Z^\N\to\Z$ un morphisme qui s'annule sur les suites presque nulles (i.e qui n'ont qu'un nombre fini de termes non nuls).
 	\begin{enumerate}
 		\item Soit $(x_n)\in \Z^\N$. Montrer qu'il existe deux suites d'entiers $(y_n)$ et $(z_n)$ telles que $\forall n\in \N,\ x_n=2^ny_n+3^nz_n$.
 		\item En déduire que $\Phi$ est nul.
 	\end{enumerate}
 
-	\section{Groupes de matrices}
+	\section{Groupes de matrices \xens{3}}
 	\label{Sous-groupes de GLn(R)}
 	\textcolor{blue}{\hyperref[Sous-groupes de GLn(R) corrigé]{[Corrigé]}}\\
 	Soit $G$ une partie de $\M_n(\K)$ tel que $(G,\times)$ est un groupe non trivial.\\
-	Montrer qu'il existe $r\in \crblanc{1}{n}$ tel que $G$ soit isomorphe à un sous-groupe de GL$_r(\K)$.\\\\
+	Montrer qu'il existe $r\in \crblanc{1}{n}$ tel que $G$ soit isomorphe à un sous-groupe de GL$_r(\K)$.
 	
 	\section{Caractérisation de la finitude d'un groupe par ses sous-groupes \xens{3}}
 	\label{Caractérisation de la finitude d'un groupe par ses sous-groupes}
@@ -1444,7 +1498,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\end{itemize}
 	Montrer que $\sim,\ \sim_g,\ \sim_d$ sont des relations d'équivalence sur $G$.
 	
-	\section{\underline{Théorème de Lagrange} \centraleponts{3} (HP)}
+	\section{\underline{Théorème de Lagrange} \centraleponts{3}}
 	\label{Théorème de Lagrange}
 	\textcolor{blue}{\hyperref[Théorème de Lagrange corrigé]{[Corrigé]}}\\
 	Soit $G$ un groupe commutatif fini. Montrer que l'ordre d'un sous-groupe de $G$ divise l'ordre de $G$.
@@ -1462,13 +1516,14 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item Soit $G$ un groupe de cardinal $2p$ avec $p$ un nombre premier différent de $2$. Montrer que $G$ possède un élément d'ordre $p$.
 	\end{enumerate}
 	
-	\section{Groupe d'ordre premier \telecom{1}}
+	\section{Groupe d'ordre premier \ccinp{1}}
 	\label{Groupe d'ordre premier}
 	\textcolor{blue}{\hyperref[Groupe d'ordre premier corrigé]{[Corrigé]}}\\
 	Montrer que tout groupe d'ordre premier est cyclique.
 	
 	\subsection{Plus petit groupe non commutatif \centraleponts{3}}
 	\label{Plus petit groupe non commutatif}
+	\textcolor{blue}{\hyperref[Plus petit groupe non commutatif corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Montrer qu'un groupe cyclique est commutatif.
 		\item Quel est le plus petit entier $n$ tel qu'il existe un groupe d'ordre $n$ non commutatif ?
@@ -1491,16 +1546,16 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		$\textit{On admettra qu'un polynôme à coefficients dans $\K$ admet toujours moins de racines que son degré.}$
 	\end{enumerate}
 	
-	\section{Un groupe d'inversible non cyclique}
-	\label{Un groupe d'inversible non cyclique}
-	\textcolor{blue}{\hyperref[Un groupe d'inversible non cyclique corrigé]{[Corrigé]}}\\
+	\section{Un groupe d'inversibles non cyclique \centraleponts{3}}
+	\label{Un groupe d'inversibles non cyclique}
+	\textcolor{blue}{\hyperref[Un groupe d'inversibles non cyclique corrigé]{[Corrigé]}}\\
 	Soit $n\geq 3$ un entier.
 	\begin{enumerate}
 		\item Soit $a$ un entier impair. Montrer que $a^{2^{n-2}}\equiv1[2^n]$.
 		\item En déduire que le groupe des inversibles de $\Z/2^n\Z$, $\left(\Z/2^n\Z\right)^\times$ n'est pas cyclique.
 	\end{enumerate}
 	
-	\section{Ordre dans un groupe de cardinal pair}
+	\section{Ordre dans un groupe de cardinal pair \telecom{2}}
 	\label{Ordre dans un groupe de cardinal pair}
 	\textcolor{blue}{\hyperref[Ordre dans un groupe de cardinal pair corrigé]{[Corrigé]}}\\
 	Soit $G$ un groupe de cardinal $2n$.
@@ -1517,7 +1572,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	Soit $(k,n)\in \Z\times \N^*$. On note $d$ l'ordre de $\overline{k}$ dans $\Z/n\Z$.\\
 	Montrer que $d=\displaystyle\frac{n}{n\land k}$.
 	
-	\section{Passage par les groupes}
+	\section{Passage par les groupes \centraleponts{2}}
 	\label{Passage par les groupes}
 	\textcolor{blue}{\hyperref[Passage par les groupes corrigé]{[Corrigé]}}\\
 	Le but de cet exercice est de montrer qu'il n'existe pas d'entier $n\geq 2$ tel que $n|2^n-1$. On raisonne par l'absurde et on note $p$ le plus petit diviseur premier d'un tel entier $n$. On note aussi $m$ la classe de $2$ dans $(\Z/p\Z)^\times$.
@@ -1542,18 +1597,18 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Ordre dans le groupe symétrique corrigé]{[Corrigé]}}\\
 	Soit $n\in \N^*$. Déterminer l'ordre de $\sigma\in \mathcal S_n$ en fonction de sa décomposition en produit de cycles à supports disjoints.
 	
-	\section{Sous-groupe engendré par les nombres premiers}
+	\section{Sous-groupe engendré par les nombres premiers \ccinp{1}}
 	\label{Sous-groupe engendré par les nombres premiers}
 	\textcolor{blue}{\hyperref[Sous-groupe engendré par les nombres premiers corrigé]{[Corrigé]}}\\
 	Déterminer le sous-groupe engendré par l'ensemble $\mathcal P$ des nombres premiers dans $(\C^*,\times)$.
 	
-	\section{Sous-groupe engendré par le complémentaire d'un sous-groupe}
+	\section{Sous-groupe engendré par le complémentaire d'un sous-groupe \telecom{2}}
 	\label{Sous-groupe engendré par le complémentaire d'un sous-groupe}
 	\textcolor{blue}{\hyperref[Sous-groupe engendré par le complémentaire d'un sous-groupe corrigé]{[Corrigé]}}\\
 	Soit $H$ un sous-groupe strict d'un groupe $G$.\\
 	Déterminer le sous-groupe engendré par le complémentaire de $H$ dans $G$.
 	
-	\section{Partie génératrice (HP)}
+	\section{Partie génératrice \etoile{3} (HP)}
 	\label{Partie génératrice}
 	\textcolor{blue}{\hyperref[Partie génératrice corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -1689,7 +1744,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\end{enumerate}
 	
 	\subsection{L'anneau de Boole est principal \centraleponts{3}}
-	Montrer que les idéaux de $(\mathcal P(E),\Delta,\cap)$ sont de la forme $\mathcal P(F)$ avec $F\subset E$.
+	On suppose que $E$ est fini. Montrer que les idéaux de $(\mathcal P(E),\Delta,\cap)$ sont de la forme $\mathcal P(F)$ avec $F\subset E$.
 	
 	\section{Condition suffisante pour qu'un anneau soit commutatif \centraleponts{3}}
 	\label{Condition suffisante pour qu'un anneau soit commutatif}
@@ -2127,8 +2182,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Théorème de Kronecker corrigé]{[Corrigé]}}\\
 	Soit $P=\displaystyle\prod_{i=1}^d(X-\lambda_i)\in \Z[X]$ unitaire dont toutes les racines sont non nulle et de module inférieur à $1$. Soit $k\in \N^*$.
 	\begin{enumerate}
-		\item Montrer que $\lambda_1^k,\dots,\lambda_d^k$ sont les racines d'un polynôme non nul $Q_k$ unitaire à coefficients entiers.\\
-		\textit{Indication : on pourra voir $Q_k$ comme un certain polynôme caractéristique}
+		\item Montrer que $\lambda_1^k,\dots,\lambda_d^k$ sont les racines d'un polynôme non nul $Q_k$ unitaire à coefficients entiers.
 		\item Montrer que les coefficients de $Q_k$ sont bornées.
 		\item En déduire que $\lambda_1,\dots,\lambda_d$ sont des racines de l'unité.
 	\end{enumerate}
@@ -2389,9 +2443,9 @@ Soit $n\in \N^*$. On note $\varphi$ la fonction indicatrice d'Euler.
 	$$\forall n\in \N^*,\ \varphi(n)\geq \frac{n\ln{2}}{\ln{n}+\ln{2}}$$
 \end{enumerate}
 
-\section{\underline{Théorème d'interversion de Möbius} \centraleponts{3}}
-\label{Théorème d'intersersion de Möbius}
-\textcolor{blue}{\hyperref[Théorème d'interversion de Möbius corrigé]{[Corrigé]}}\\
+\section{\underline{Formule d'inversion de Möbius} \centraleponts{3}}
+\label{Formule d'inversion de Möbius}
+\textcolor{blue}{\hyperref[Formule d'inversion de Möbius corrigé]{[Corrigé]}}\\
 Une fonction arithmétique est une fonction de $\N^*$ dans $\C$.
 On note $1$, $\delta$,  $I$ les fonctions arithmétiques: 
 $$\fonction{1}{\N^*}{\C}{n}{1} \quad \fonction{\delta}{\N^*}{\C}{n}{\begin{cases}
@@ -2492,7 +2546,7 @@ Soit $n\in \N^*$. Une somme indicée sur $p$ indique que la sommation est effect
 	\item \textit{Premier théorème de Mertens}
 	\begin{enumerate}[label=\alph*.]
 		\item Montrer que : $$\frac{n}{p}-1<\nu_p(n!)\leq\frac{n}{p}\frac{n}{p(p-1)}$$
-		\item Etablir que : $$\sum_{k=1}^n \ln k=n\ln n-n+\bigO{\ln n}$$
+		\item Etablir que : $$\sum_{k=1}^n \ln k\unfty=n\ln n-n+\bigO{\ln n}$$
 		\item Justifier que $\displaystyle n!=\prod_{p\leq n}p^{\nu_p(n!)}$ et en déduire que :
 		$$n\sum_{p\leq n}\frac{\ln p}{p}-n\ln 4<\ln(n!)\leq n\sum_{p\leq n}\frac{\ln p}{p}+n\sum_{p\leq n}\frac{\ln p}{p(p-1)}$$
 		\item Justifier que la série $\displaystyle\sum_{k\geq2}\frac{\ln k}{k(k-1)}$ converge.
@@ -2726,7 +2780,7 @@ Soit $f$ une fonction monotone sur un intervalle $I$ de $\R$.
 On définit l'oscillation de $f$ en $x\in I$ par $\omega(x)=\left|\lim\limits_{x^+}f-\lim\limits_{x^-}f\right|$.\\
 Justifier que $\omega$ est bien définie sur $I$ puis montrer que l'ensemble des points de discontinuité de $f$ est au plus dénombrable.
 
-\section{Ouverts de $\R$}
+\section{Ouverts de $\R$ \xens{4}}
 \label{Ouverts de R}
 \textcolor{blue}{\hyperref[Ouverts de R corrigé]{[Corrigé]}}\\
 Montrer que tout ouvert de $\R$ s'écrit comme réunion au plus dénombrable d'intervalles ouverts et que de plus, ces intervalles peuvent être pris disjoints.
@@ -2739,7 +2793,7 @@ Soit $E$ un espace vectoriel normé. On dit qu'un point $x$ d'une partie $A$ de 
 \begin{enumerate}
 	\item L'ensemble $A=\displaystyle\left\{\frac{1}{n},\ n\in \N^*\right\}$ est-t-elle une partie discrète de $\R$ ? Même question pour $B=A\cup\{0\}$.
 	\item Montrer qu'une partie discrète de $\R$ est au plus dénombrable.
-	\item Une partie dénombrable de $\R$ est-elle forcément dénombrable ?
+	\item Une partie dénombrable de $\R$ est-elle forcément discrète ?
 \end{enumerate}
 
 \section{Ensemble parfait}
@@ -3427,7 +3481,7 @@ Soit $(e_1,\dots e_n)$ une base orthogonale de $\R^n$
 \label{Matrice de Hilbert}
 \textcolor{blue}{\hyperref[Matrice de Hilbert corrigé]{[Corrigé]}}\\
 \begin{enumerate}
-	\item Montrer que l'application $\fonction{\langle\ ;\ \rangle}{\R_{n-1}[X]^2}{\R}{(P,Q)}{\displaystyle\int_0^1P(t)Q(t)}$ définie un produit scalaire sur $\R_{n-1}[X]$.
+	\item Montrer que l'application $\fonction{\proscal{\cdot}{\cdot}}{\R_{n-1}[X]^2}{\R}{(P,Q)}{\displaystyle\int_0^1P(t)Q(t)}$ définie un produit scalaire sur $\R_{n-1}[X]$.
 	\item Montrer que la matrice de Hilbert $H=\displaystyle\left(\frac{1}{i+j+1}\right)_{0\leq i,j\leq n-1}=
 	\begin{pmatrix}
 		1&\displaystyle\frac{1}{2}&\dots&\displaystyle\frac{1}{n}\\
@@ -3442,36 +3496,37 @@ Soit $(e_1,\dots e_n)$ une base orthogonale de $\R^n$
 \label{Racine carrée d'un endomorphisme auto-adjoint positif}
 \textcolor{blue}{\hyperref[Racine carrée d'un endomorphisme auto-adjoint positif corrigé]{[Corrigé]}}\\
 \begin{enumerate}[leftmargin=*]
-	\item Soit $f$ un endomorphisme auto-adjoint positif d'un espace euclidien $E$. Montrer qu'il existe $g\in\mathcal{S}^+(E)$ tel que $g^2=f$.
-	\item Soit $f$ un endomorphisme auto-adjoint défini positif d'un espace euclidien $E$. Montrer qu'il existe un unique $g\in\mathcal{S}^{++}(E)$ tel que $g^2=f$.
+	\item Soit $f$ un endomorphisme auto-adjoint positif d'un espace euclidien $E$. Montrer qu'il existe $g\in\S^+(E)$ tel que $g^2=f$.
+	\item Soit $f$ un endomorphisme auto-adjoint défini positif d'un espace euclidien $E$. Montrer qu'il existe un unique $g\in\S^{++}(E)$ tel que $g^2=f$.
 \end{enumerate}
 
 \section{\underline{Inégalité de convexité} \telecom{2}}
 \label{Inégalité de convexité}
 \textcolor{blue}{\hyperref[Inégalité de convexité corrigé]{[Corrigé]}}\\
-Soit $M\in\mathcal S^+_n(\R)$.\\
+Soit $M\in\S^+_n(\R)$.\\
 Démontrer que $\displaystyle\frac{\Tr(M)}{n}\geq \det(M)^{1/n}$.
 
 \section{\underline{Inégalité à propos des matrices orthogonales} \telecom{3}}
 \label{Inégalité à propos des matrices orthogonales}
 \textcolor{blue}{\hyperref[Inégalité à propos des matrices orthogonales corrigé]{[Corrigé]}}\\
 Soit $A\in \O_n(\R)$. Montrer que\\
-$\left|\displaystyle\sum\limits_{1\leq i,j\leq n}m_{i,j}\right|\leq n \leq\displaystyle\sum\limits_{1\leq i,j\leq n}|m_{i,j}| \leq n^{3/2}$.
+$$\left|\sum_{1\leq i,j\leq n}m_{i,j}\right|\leq n \leq\sum_{1\leq i,j\leq n}|m_{i,j}|\leq n^{3/2}$$
 
 \section{Inégalité de la trace}
 \label{Inégalité de la trace}
 \textcolor{blue}{\hyperref[Inégalité de la trace corrigé]{[Corrigé]}}\\
-Soient $A,B\in\mathcal S_n^+(\R)$. Montrer que $0\leq\Tr(AB)\leq\Tr(A)\Tr(B)$.
+Soient $A,B\in\S_n^+(\R)$. Montrer que $0\leq\Tr(AB)\leq\Tr(A)\Tr(B)$.
 
 \section{\underline{Inégalité de Hadamard} \centraleponts{3}}
 \label{Inégalité de Hadamard}
 \textcolor{blue}{\hyperref[Inégalité de Hadamard corrigé]{[Corrigé]}}\\
-Soit $S=(s_{i,j})\in\mathcal S_n^+(\R)$.
+Soit $S=(s_{ij})\in\mathcal S_n^+(\R)$.
 On pourra se servir librement de l'inégalité arithmético-géométrique cf. I-47 tome Analyse.
 \begin{enumerate}
 	\item Montrer que $\det(S)\leq \left(\displaystyle\frac{1}{n}\Tr(S)\right)^n$.
-	\item Soient $\alpha=(\alpha_1,\dots,\alpha_n)\in\R^n$, $D=\text{diag}(\alpha_1,\dots,\alpha_n)$ et $S_{\alpha}=DSD$.\\Vérifier $S_{\alpha}\in\mathcal{S}_n^+(\R)$ et exprimer $\Tr(S_{\alpha})$.
-	\item On suppose $S$ inversible. Vérifier que les coefficients diagonaux de $S$ sont strictement positifs et, en introduisant des réels $\alpha_1,\dots,\alpha_n$ pertinemment choisis, établir que: $$\det(S)\leq \displaystyle\prod\limits_{i=1}^n s_{i,i}$$
+	\item Soient $\alpha=(\alpha_1,\dots,\alpha_n)\in\R^n$, $D=\text{diag}(\alpha_1,\dots,\alpha_n)$ et $S_{\alpha}=DSD$.\\
+	Vérifier que $S_{\alpha}\in\S_n^+(\R)$ et exprimer $\Tr(S_{\alpha})$.
+	\item On suppose $S$ inversible. Vérifier que les coefficients diagonaux de $S$ sont strictement positifs et, en introduisant des réels $\alpha_1,\dots,\alpha_n$ pertinemment choisis, établir que: $$\det(S)\leq \prod_{i=1}^n s_{ii}$$
 	\item Justifier que l'inégalité précédente est encore vraie lorsque $S$ n'est pas inversible.
 \end{enumerate}
 
@@ -3487,9 +3542,9 @@ Soit $A\in \M_n(\R)$ la matrice Atilla $A=\begin{pmatrix}
 Quelles sont les matrices $M\in \O_n(\R)$ telles que $A+M$ soit inversible ?
 
 \section{Somme de Cesàro de matrices orthogonales}
-\label{Somme de Cesàrp de matrices orthogonales}
+\label{Somme de Cesàro de matrices orthogonales}
 \textcolor{blue}{\hyperref[Somme de Cesaro de mattrices orthogonales corrigé]{[Corrigé]}}\\
-Soit $A\in \mathcal{O}_n(\R)$ telle que $-1\notin \text{Sp}(A)$.
+Soit $A\in \O_n(\R)$ telle que $-1\notin \text{Sp}(A)$.
 \begin{enumerate}
 	\item Montrer que la suite $\left(\displaystyle\frac{1}{p+1}\sum_{k=0}^pA^k\right)_{p\in \N}$ converge et déterminer sa limite.
 	\item La suite $(A^p)_{p\in \N}$ converge-t-elle ?
@@ -3504,7 +3559,7 @@ Soit $A\in \A_n(\R)$.
 	\item En déduire que les matrices $A+I_n$ et $A-I_n$ sont inversibles.
 	\item Montrer que la matrice $\Omega=(A+I_n)(A-I_n)^{-1}$ est orthogonale. Et calculer $\det(\Omega)$
 	\item Démontrer que l'application $\fonction{\varphi}{\A_n(\R)}{\{\Omega\in \O_n(\R)|-1\notin \text{Sp}(\Omega)\}}{A}{(A+I_n)(A-I_n)^{-1}}$ est bijective.
-	\item En déduire que si $\Omega$ est une matrice orthogonale et que $-1\notin \text{Sp}(\Omega)$ alors $\det(\Omega)=1$. Pouvait-t-on constater cela d'une autre manière ?
+	\item En déduire que si $\Omega$ est une matrice orthogonale et que $-1\notin \text{Sp}(\Omega)$ alors $\det(\Omega)=1$. Pouvait-t-on constater cela d'une manière plus directe ?
 \end{enumerate}
 
 \section{Optimisation (1) \telecom{2}}
@@ -3562,7 +3617,7 @@ Soit $E$ un plan orienté.
 Soit $(A,B)\in \O_n(\R)^2$. 
 \\ Montrer que $A$ et $B$ sont semblables si et seulement $\chi_A=\chi_B$.
 
-\section{Propriété de l'adjoint \ccinp{2}}
+\section{\underline{Propriété de l'adjoint} \ccinp{2}}
 \label{Propriété de l'adjoint}
 \textcolor{blue}{\hyperref[Propriété de l'adjoint corrigé]{[Corrigé]}}\\
 Soit $f$ un endomorphisme d'un espace euclidien $E$.
@@ -4145,7 +4200,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Isomorphisme de M_n(K) qui respecte les matrices de rang 1 corrigé}
 	\textcolor{blue}{\hyperref[Isomorphisme de M_n(K) qui respecte les matrices de rang 1]{[Enoncé]}}\\
 	
-	\subsection{Centre de $\M_n(\K)$ \etoile{2}}
+	\subsection{Centre de $\M_n(\K)$ \centraleponts{2}}
 	\label{Centre de Mn(K) corrigé}
 	\textcolor{blue}{\hyperref[Centre de Mn(K)]{[Enoncé]}}\\
 	Soit $A\in Z$. On note pour $1\leq i,j\leq n,\ E_{ij}$ la matrice dont tous les coefficients sont nuls sauf celui sur la $i$-ième ligne, $j$-ième colonne qui vaut $1$. Fixons $(i,j)\in \crblanc{1}{n}^2$.\\
@@ -4158,7 +4213,11 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$\forall B\in \M_n(\K),\ (\alpha I_n)B=\alpha B=B(\alpha I_n)$.\\
 	Finalement, les seules matrices qui commutent avec toutes les autres sont les matrices scalaires : $Z=\Vect(I_n)$.
 	
-	\subsection{Racine carrée de la dérivation \etoile{3}}
+	\subsection{$\M_n(\K)$ est violemment non commutatif}
+	\label{Mn(K) est violemment non commutatif}
+	\textcolor{blue}{\hyperref[Mn(K) est violemment non commutatif corrigé]{[Enoncé]}}\\
+	
+	\subsection{Racine carrée de la dérivation \xens{3}}
 	\label{Racine carrée de la dérivation corrigé}
 	\textcolor{blue}{\hyperref[Racine carrée de la dérivation]{[Enoncé]}}\\
 	Supposons qu'il existe un tel endomorphisme $\delta$. Alors $\delta\circ\Delta=\delta^3=\Delta\circ\delta$.\\
@@ -4291,10 +4350,10 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{enumerate}
 	
 	
-	\subsection{Lemme de Schur}
-	\label{Lemme de Schur corrigé}
-	\textcolor{blue}{\hyperref[Lemme de Schur]{[Enoncé]}}\\
-	Soient $x_1 , x_2 \in E$. D'après l'hypothèse de l'énoncé, il existe $\lambda_1 , \lambda_2 \in \K$ tel que $u(x_1)=\lambda_1x_1$ et $u(x_2)=\lambda_2x_2$.
+	\subsection{Caractérisation des homothéties (1)}
+	\label{Caractérisation des homothéties (1) corrigé}
+	\textcolor{blue}{\hyperref[Caractérisation des homothéties (1)]{[Enoncé]}}\\
+	Soient $x_1,x_2 \in E$. D'après l'hypothèse de l'énoncé, il existe $\lambda_1,\lambda_2 \in \K$ tels que $u(x_1)=\lambda_1x_1$ et $u(x_2)=\lambda_2x_2$.
 	\begin{itemize}
 		\item  Supposons que $(x_1,x_2)$ est une famille libre.\\ 
 		Il existe $\lambda\in\K$ tel que $u(x_1+x_2)=\lambda(x_1+x_2).$\\
@@ -4302,9 +4361,11 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\item Supposons que $(x_1,x_2)$ est une famille liée. Donc il existe $\alpha\in\K$ tel que $x_1=\alpha x_2.$\\
 		$\lambda_1x_1=u(x_1)=u(\alpha x_2)=\alpha u(x_2)=\alpha\lambda_2x_2=\lambda_2x_1$. 
 	\end{itemize}
-	On en déduit que : u est bien une homothétie.
-
+	On en déduit que $u$ est bien une homothétie.
 	
+	\subsection{Caractérisation des homothéties (2)}
+	\label{Caractérisation des homothéties (2) corrigé}
+	\textcolor{blue}{\hyperref[Caractérisation des homothéties (2)]{[Enoncé]}}\\
 	
 	\subsection{Espaces engendrés par les matrices inversibles et orthogonales}
 	\label{Espaces engendrés par les matrice inversibles et orthogonales corrigé}
@@ -4313,6 +4374,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Espace engendré par les matrices nilpotentes}
 	\label{Espace engendré par les matrices nilpotentes corrigé}
 	\textcolor{blue}{\hyperref[Espace engendré par les matrices nilpotentes]{[Enoncé]}}\\
+	
 	\subsection{Transmission d'information \etoile{3}}
 	\label{Transmission d'information corrigé}
 	\textcolor{blue}{\hyperref[Transmission d'information]{[Enoncé]}}\\
@@ -4405,39 +4467,98 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\newpage
 \section{Correction Réduction géométrique}
-	\subsection{Matrices de rang $1$}
-	\label{rg1}
-	\label{Matrices de rang 1 corrigé}
-	\textcolor{blue}{\hyperref[Matrices de rang 1]{[Enoncé]}}
-	\subsubsection{Réduction des matrices de rang $1$}
+	\subsection{Réduction des matrices de rang $1$}
+	\label{Réduction des matrices de rang 1 corrigé}
+	\textcolor{blue}{\hyperref[Réduction des matrices de rang 1]{[Enoncé]}}\\
 	\begin{enumerate}
-		
-		\item Soit $M\in\mathcal{M}_n(\K)$. \\ $\begin{array}{ccc}
-			& \operatorname{rg}(M)=1\\
-			\mbox{ssi} & \exists (x_1,\dots,x_n)\in\R^n, \exists U\in\mathcal{M}_{n,1}(\K)\text{ tel que }M=\left(x_1U|\dots|x_nU\right) \\
-			\mbox{ssi} & \exists (U,V)\in\mathcal{M}_{n,1}(\K)\text{ tel que }M=UV^\top
+		\item Soit $M\in\M_n(\K)$.\\
+		$\begin{array}{ccc}
+			& \rg(M)=1\\
+			\mbox{ssi} & \exists (x_1,\dots,x_n)\in\K^n\backslash\{0\}, \exists U\in\M_{n,1}(\K)\backslash\{0\}\text{ tels que }M=\left(x_1U|\dots|x_nU\right) \\
+			\mbox{ssi} & \exists (U,V)\in(\M_{n,1}(\K)\backslash\{0\})^2\text{ tel que }M=UV^\top
 		\end{array}$
-		\item Puisque $m$ est de rang 1, on en déduit qu'il existe $(U,V)\in \M_{n,1}(\K)^2$ tel que $M=UV^\top$. \\On remarque que $\Tr(M)=V^\top U$. Ainsi, on a aisément $M^2=\Tr(M)M$
-		\item Soit $M\in\mathcal{M}_n(\K)$ tq $\operatorname{rg}(M)=1$ \\ Donc d'après le théorème du rang, on a: $\operatorname{dim}(\operatorname{Ker}(M))=n-1$. \\On en déduit que la multiplicité algébrique de $0$ est au moins $n-1$ càd $m_0(M)\geq n-1$.
+		\item D'après la question précédente il existe $(U,V)\in \M_{n,1}(\K)^2$ tel que $M=UV^\top$.\\
+		On remarque que $\Tr(M)=V^\top U$. Ainsi on a aisément $M^2=\Tr(M)M$.
+		\item Soit $M\in\M_n(\K)$ tq $\rg(M)=1$.\\
+		Par la réduction algébrique :\\
+		Le polynôme $P=X^2-\Tr(M)X$ annule $M$. Comme $M$ n'est pas une homothétie (qui serait de rang $n$ ou $0$), $P$ est le polynôme minimal de $M$. Il est scindé à racines simples ssi $\Tr(M)\ne 0$.\\
+		Ainsi $M$ est diagonalisable ssi $\Tr(M)\ne 0$.\\\\
+		Par la réduction géométrique :\\
+		D'après le théorème du rang, $\dim(\operatorname{Ker}(M))=n-1$.\\
+		On en déduit que la multiplicité algébrique de $0$ est au moins $n-1$. On note $m_0(M)$ cette multiplicité.
 		\\Donc $X^{n-1}|\chi_M$ et puisque $\operatorname{deg}(\chi_M)=n$, il existe $\alpha\in\K$ tel que $\chi_M=X^{n-1}(X-\alpha)$.
 		\\Notons également que $\alpha=\Tr(M)$ car la trace de $M$ est la somme des valeurs $M$. 
 		\begin{itemize}
 			\item Si $\Tr(M)=0$, on a $m_0(M)>n-1$ donc $M$ n'est pas diagonalisable.
-			\item Si $\Tr(M)\ne 0$, $m_0(M)=n-1$ et $\operatorname{dim}(E_{\Tr(M)}(M)=1=m_{\Tr(M)}(M)$. Donc $M$ est diagonalisable.
+			\item Si $\Tr(M)\ne 0$, $m_0(M)=n-1$ et $\dim(E_{\Tr(M)}(M))=1=m_{\Tr(M)}(M)$. Donc $M$ est diagonalisable.
 		\end{itemize}
 		On conclut donc que $M$ est diagonalisable ssi $\Tr(M)\ne0$.
-		\item Soit $A\in\mathcal{M}_3(\C)$ tel que $A^3=\begin{pmatrix}
+		\item Soit $A\in \M_3(\C)$ telle que $A^3=\begin{pmatrix}
 			1 &-2 &1\\
 			1 &-2 &1\\
 			1 &-2 &1\\
-		\end{pmatrix}=M$
-		\\$M$ est de rang $1$ ainsi on a: $M^2=\Tr(M)M=0_3$ car $\Tr(M)=0$.
+		\end{pmatrix}=:M$
+		\\$M$ est de rang $1$ ainsi $M^2=\Tr(M)M=0_3$ car $\Tr(M)=0$.
 		\\Donc $A^6=0$.
 		\\Ainsi $A$ est nilpotente, donc d'après le théorème de Cayley-Hamilton, $A^3=0_3$.
-		\\Donc il n'y a pas de solution à l'équation : $A^3=M$.
+		\\Finalement il n'y a pas de solution à l'équation : $A^3=M$.
+		\begin{enumerate}[label=\alph*.]
+			\item Soit $y\in \T{Im}(u)$. Il existe $x\in E$ tel que $y=u(x)$. Alors $u(y)=u^2(x)=\Tr(u)x=0$. Càd $y\in \Ker(u)$.
+			\item On en déduit que $\dim(\T{Im}(u)\cap\Ker(u))=\rg(u)=1$. En particulier cet espace n'est pas nul.
+			\item Soit alors un vecteur $y\in \T{Im}(u)\cap\Ker(u)$ non nul. Il existe $x\in E$ tel que $y=u(x)$. On complète la famille $(y)$ en une base $(y,e_3,\dots,e_n)$ de $\Ker(u)$. Enfin montrons que la famille $\B=(x,y,e_3,\dots,e_n)$ est une base de $E$. Il suffit de montrer qu'elle est libre.\\
+			Si $\alpha,\beta,\gamma_3,\dots,\gamma_n\in \K$ tels que $\alpha x+\beta y+\displaystyle\sum_{k=3}^n\gamma_ke_k=0$ alors en appliquant $u$ on obtient $\alpha u(x)=0$ d'où $\alpha=0$. Puis par liberté de $(y,e_3,\dots,e_n)$, les autres coefficients sont aussi nuls.\\
+			La matrice dans la base $\B$ est alors celle recherchée.
+		\end{enumerate}
+		\item Soient $A,B\in \M_n(\K)$ deux matrices de rang $1$.\\
+		Si elles sont semblables elles ont évidemment même trace.\\
+		Réciproquement, supposons $\Tr(A)=\Tr(B):=\alpha$.\\
+		Si leur trace est nulle alors d'après la question 4 appliquée aux endomorphismes canoniquement associés à $A$ et $B$, $A$ et $B$ sont toutes deux semblables à la matrice de l'énoncé.\\
+		Et si leur trace est non nulle alors elles sont semblables à la matrices diagonale $\diag(\alpha,0,\dots,0)$.\\
+		Dans les deux cas, $A$ et $B$ sont semblables par transitivité de la relation "être semblable" sur les matrices.
 	\end{enumerate}
 	
-	\subsubsection{Diagonalisabilité d'une matrice}
+	\subsubsection{Application \ccinp{2}}
+	\label{Application corrigé}
+	\textcolor{blue}{\hyperref[Application]{[Enoncé]}}\\
+	Il est clair que $\varphi$ est linéaire. On remarque que $\T{Im}(\varphi-\Id)\subset\Vect(A)$. De plus comme $A$ n'est pas nulle, $\varphi(I_n)-I_n=A\ne 0$. Donc $\varphi-\Id$ n'est pas nulle et est donc de rang $1$.\\
+	On sait alors qu'elle est diagonalisable si et seulement si sa trace est non nulle.\\
+	Soient $\lambda\in \K$ et $M\in \M_n(\K)\backslash\{0\}$ telle que $\Tr(M)A=\lambda M$.\\
+	En appliquant la trace on obtient $\Tr(M)\Tr(A)=\lambda\Tr(M)$. Donc $\Tr(M)=0$ ou $\lambda=\Tr(A)$.\\
+	Si $\Tr(M)=0$ alors $\lambda M=0$ d'où $\lambda=0$ car $M\ne 0$.\\
+	Ainsi $\Tr(\varphi-\Id)=\Tr(A)$ et par suite $\varphi-\Id$ est diagonalisable ssi $\Tr(A)\ne 0$.\\
+	Pour conclure, $\varphi-\Id$ est diagonalisable ssi $\varphi$ l'est (par la même matrice de passage).
+	
+	\subsubsection{Dimension du commutant d'une matrice de rang 1}
+	\label{Dimension du commutant d'une matrice de rang 1 corrigé}
+	\textcolor{blue}{\hyperref[Dimension du commutant d'une matrice de rang 1]{[Enoncé]}}\\
+	On distingue deux cas suivant si $\alpha:=\Tr(A)=0$ ou non.\\
+	\underline{Si $\Tr(A)\ne 0$ :}\\
+	$\exists P\in \T{GL}_n(\C),\ A=PDP^{-1}$ avec $D=\diag(\alpha,0,\dots,0)$.\\
+	Alors $\forall B\in \M_n(\K),\ AB=BA\iff PDP^{-1}B=BPDP^{-1}\iff DP^{-1}BP=P^{-1}BPD$.\\
+	Or l'application $B\in \M_n(\K)\mapsto PBP^{-1}$ est un isomorphisme donc $\dim\mathcal C(A)=\dim\mathcal C(D)$.\\
+	Enfin, si $B$ commute avec $D$, en notant $B=\left(\begin{array}{c|c}
+		\beta&L\\
+		\hline
+		C&B'
+	\end{array}\right)$
+	avec $\beta\in \K$ et $B'\in \M_{n-1}(\K)$ on obtient :
+	$$BD=\left(\begin{array}{c|c}
+		\alpha\beta&0\\
+		\hline
+		\alpha C&0
+	\end{array}\right)=\left(\begin{array}{c|c}
+	\alpha\beta&\alpha L\\
+	\hline
+	0&0
+	\end{array}\right)=DB$$
+	Donc comme $\alpha\ne 0$, $L=0$ et $C=0$.\\
+	On en déduit que $\mathcal C(D)$ est isomorphe à $\K\times\M_{n-1}(\K)$, et donc que $\dim\mathcal C(A)=(n-1)^2+1$.\\\\
+	\underline{Si $\Tr(A)=0$ :}\\
+	Par le même changement de base on se ramène à déterminer la dimension du commutant de $M=$
+	
+	\subsubsection{Diagonalisabilité d'une matrice \centraleponts{3}}
+	\label{Diagonalisabilité d'une matrice corrigé}
+	\textcolor{blue}{\hyperref[Diagonalisabilité d'une matrice]{[Enoncé]}}\\
 	Pour tout $\lambda\in\R,\quad \chi_M=\det(\diag(\lambda- a_1+b_1,\dots,\lambda-a_n+b_n)-N)$ avec $N=\begin{pmatrix}
 		b_1  &b_2   &\dots &b_{n-1}&b_n\\
 		b_1   &b_2  &\ddots&\vdots &\vdots\\
@@ -4882,14 +5003,28 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{dz stable}
 	\textcolor{blue}{\hyperref[Sous-espaces stables d'un endomorphisme diagonalisable]{[Enoncé]}}\\
 	
+	\subsection{Caractérisation de la diagonalisabilité par les hyperplans}
+	\label{Caractérisation de la diagonalisabilité par les hyperplans corrigé}
+	\textcolor{blue}{\hyperref[Caractérisation de la diagonalisabilité par les hyperplans]{[Enoncé]}}\\
+	Supposons que $f$ est diagonalisable. Alors il existe une base $(e_1,\dots,e_n)$ de $E$ formée de vecteurs propres de $f$. On note pour $i\in \crblanc{1}{n},\ H_i=\Vect(e_1,\dots,e_{i-1},e_{i+1},\dots,e_n)$. Ce sont des hyperplans stables par $f$.\\
+	De plus, si $x\in \displaystyle\bigcap_{i=1}^nH_i$ alors en écrivant $x=\displaystyle\sum_{k=1}^na_ke_k$, $x\in H_i\implies a_i=0$. D'où $x=0$.\\
+	Réciproquement, supposons qu'il existe des hyperplans $H_1,\dots,H_n$ stables par $f$ et d'intersection nulle.\\
+	On sait d'après le cours de MPSI que la dimension de l'intersection d'un sev $F$ et d'un hyperplan $H$ de $E$ est de dimension $\dim(F)$ ou $\dim(F)-1$, suivant si $F\subset H$ ou pas (cela découle du fait que $F+H=H$ ou $F+H=E$).\\
+	Donc $\displaystyle\dim\left(\bigcap_{i=1}^nH_i\right)=0\implies \forall i\in \crblanc{1}{n},\ D_i:=\bigcap_{\substack{1\leq j\leq n\\j\ne i}}H_j$ est de dimension $1$.\\
+	On se donne pour chaque $i$ un vecteur non nul $e_i\in D_i$.\\
+	Comme les hyperplans sont stables par $f$, $D_i$ aussi càd $e_i$ est un vecteur propre de $f$.\\
+	Soit $(a_1,\dots,a_n)\in \K^n$ tels que $\displaystyle\sum_{i=1}^na_ie_i=0$.\\
+	Alors $\forall i\in \crblanc{1}{n},\ \lambda_ie_i=-\displaystyle\sum_{\substack{1\leq j\leq n\\j\ne i}}a_je_j\in D_i\cap H_i=\{0\}$.\\
+	Ainsi $(e_1,\dots,e_n)$ est une base de $E$ formée de vecteurs propres de $f$ et par suite $f$ est diagonalisable.
 	
 	\subsection{Hyperplans stables}
 	\label{Hyperplans stables corrigé}
 	\textcolor{blue}{\hyperref[Hyperplans stables]{[Enoncé]}}\\
 	
-	\subsection{Endomorphisme qui stabilise un nombre fini de sous-espaces \etoile{3}}
-	\label{Endomorphisme qui stabilise un nombre fini de sous-espaces corrigé}
-	\textcolor{blue}{\hyperref[Endomorphisme qui stabilise un nombre fini de sous-espaces]{[Enoncé]}}\\
+	
+	\subsection{Sous-espaces stables d'un endomorphisme à spectre simple \centraleponts{3}}
+	\label{Sous-espaces stables d'un endomorphisme à spectre simple corrigé}
+	\textcolor{blue}{\hyperref[Sous-espaces stables d'un endomorphisme à spectre simple]{[Enoncé]}}\\
 	On pose $\text{Sp}(u)=\{\lambda_1,\dots,\lambda_n\}$.\\
 	Et on note $E_1,\dots,E_n$ les sous-espaces propres de $u$ respectivement associés à $\lambda_1,\dots,\lambda_n$. 
 	On remarque que pour toute partie $I$ de $\crblanc{1}{n}$, $\displaystyle\bigoplus_{i\in I}E_i$ est stable par $u$.
@@ -4899,7 +5034,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\\Par conséquent, $F$ est une somme de sous-espaces propres.
 	\\Ainsi, les seuls espaces vectoriels stables par $u$ sont de la forme $\displaystyle\bigoplus_{i\in I}E_i$ avec $I$ une partie de $\crblanc{1}{n}$. Il y a donc $2^n$ espaces vectoriels stables par $u$.
 	
-	\subsection{Sous-espaces stables d'un endomorphisme nilpotent maximal \etoile{3}}
+	\subsection{Sous-espaces stables d'un endomorphisme nilpotent maximal \centraleponts{3}}
 	\label{Sous-espaces stables d'un endomorphisme nilpotent maximal corrigé}
 	\textcolor{blue}{\hyperref[Sous-espaces stables d'un endomorphsime nilpotent maximal]{[Enoncé]}}\\
 	On montre classiquement qu'il existe $x\in E$ tel que $(x,u(x),\dots,u^{n-1}(x))$ est une base de $E$.
@@ -4924,14 +5059,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{pmatrix}$$
 	on en déduit que la dimension de $\ker(u^p)$ est égale à $p$ pour tout $p\in\crblanc{1}{n-1}$.
 	\\Soit $F$ un espace stable par $u$ de dimension $p\in\crblanc{1}{n-1}$.
-	\\En étudiant l'endomorphisme induit $u_F$ par $u$ sur $F$, on a que $u_F$ est nilpotent puisque $u_F^n=0$ et donc $u_F^p=0$ puisque $u_F\in \mathcal L(F)$.
+	\\En étudiant l'endomorphisme induit $u_F$ par $u$ sur $F$, on a que $u_F$ est nilpotent puisque $u_F^n=0$ et donc $u_F^p=0$ puisque $u_F\in \L(F)$.
 	\\Donc $F\subset \ker(u^p)$.
 	\\Et donc avec $\dim(F)=\dim(\ker(u^p))$, on a $F=\ker(u^p)$.
 	\\Finalement, les espaces vectoriels stables par $u$ sont les $\ker(u^p)$ pour tout $p\in\crblanc{0}{n}$ ce qui donne bien qu'il y a exactement $n+1$ espaces vectoriels stables par $u$.
 	
-	\subsection{Sous-espaces stables par tous les endomorphismes de permutation \etoile{4}}
-	\label{Sous-espaces stables par tous les endomorphismes de permutation corrigé}
-	\textcolor{blue}{\hyperref[Sous-espaces stables par les endomorphismes de permutation]{[Enoncé]}}\\
+	\subsection{Endomorphismes de permutation \xens{4}}
+	\label{Endomorphismes de permutation corrigé}
+	\textcolor{blue}{\hyperref[Endomorphismes de permutation]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Notons $\B=(e_1,\dots,e_n)$ la base canonique de $\C^n$. On note aussi $\sigma=\sigma_1\circ\dots\circ\sigma_r$ la décomposition en cycles à supports disjoints de $\sigma$ ainsi que $l_i$ la longueur de $\sigma_i$ pour $i\in \crblanc{1}{r}$.\\
 		On remarque que $\forall \tau,\tau'\in \mathcal S_n,\ u_{\tau\circ\tau'}=u_{\tau'}\circ u_\tau$ et que $u_\tau$ laisse laisse invariant $e_i$ lorsque $i$ n'est pas dans son support. Ainsi il suffit de déterminer la matrice de $u_{\sigma_1},\dots,u_{\sigma_r}$ pour avoir celle de $u_\sigma$.\\
@@ -4981,9 +5116,19 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Semi-simplicité corrigé}
 	\textcolor{blue}{\hyperref[Semi-simplicité]{[Enoncé]}}\\
 	
-	\subsection{Endomorphismes diagonalisables d'un $\R$-espace vectoriel}
+	\subsection{Endomorphismes diagonalisables d'un $\R$-espace vectoriel \telecom{3}}
 	\label{Endomorphismes diagonalisables d'un R-espace vectoriel corrigé}
 	\textcolor{blue}{\hyperref[Endomorphismes diagonalisables d'un R-espace vectoriel]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $f$ est diagonalisable donc $E$ admet une base $(x_1,\dots,x_n)$ formée de vecteurs propres de $f$. On note $f(x_j)=\lambda_j$ pour tout $j\in \crblanc{1}{n}$.\\
+		Soient $x$ un vecteur propre de $f^k$ et $\lambda$ la valeur propre associée. On écrit $x=\displaystyle\sum_{j=1}^na_jx_j$.\\
+		On a $f^k(x)=\lambda x=\displaystyle\sum_{j=1}^na_j\lambda_j^kx_j$.\\
+		Donc comme $(x_1,\dots,x_n)$ est libre, $\forall j\in \crblanc{1}{n},\ a_j\lambda=a_j\lambda_j^k$.\\
+		Donc comme $k$ est impair, si $a_j\ne 0$, $\lambda_j=\sqrt[k]\lambda$. Ainsi $x=\displaystyle\sum_{j=1}^na_j\sqrt[k]\lambda x_j$ est un vecteur propre de $f$ (associé à la valeur propre $\sqrt[k]\lambda$).
+		\item Soit $(e_1,\dots,e_n)$ une base de $E$ formée de vecteurs propres de $f^k=g^k$. D'après la question précédente c'est aussi une base formée de vecteurs propres de $f$ et de $g$.\\
+		Si l'on note $\lambda_i$ les valeurs propres de $f$ et $\mu_i$ celles de $g$ l'égalité $f^k=g^k$ donne $\forall i\in \crblanc{1}{n},\ \lambda_i^k=\mu_i^k$ d'où $\lambda_i=\mu_i$ car $k$ est impair.\\
+		Ainsi $\forall i\in \crblanc{1}{n},\ f(e_i)=\lambda_ie_i=\mu_ie_i=g(e_i)$. $f$ et $g$ coïncident sur une base, ils sont donc égaux.
+	\end{enumerate}
 	
 	\subsection{Matrices à spectres disjoints}
 	\label{Matrices à spectres disjoints corrigé}
@@ -5698,16 +5843,16 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\textcolor{blue}{\hyperref[Déterminant de Cayley-Menger]{[Enoncé]}}\\
 	\newpage
 \section{Correction Groupes}
-	\subsection{Existence d'un idempotent \etoile{3}}
+	\subsection{Existence d'un idempotent \centraleponts{3}}
 	\label{Existence d'un idempotent corrigé}
 	\textcolor{blue}{\hyperref[Existence d'un idempotent]{[Enoncé]}}\\
 	Soit $x\in E$. $\forall n\in \N,\ x^{2^n}\in E$. Or $E$ est fini, donc il existe $n<m$ deux entiers naturels tels que $x^{2^n}=x^{2^m}$.\\
 	Si $E$ était un groupe de neutres $e$ on aurait $x^{2^m-2^n}=e$, et donc $s^2=s$ en posant $s=x^{2^m-2^n}$.\\
 	En s'inspirant de cela, on pose $s=x^{2^m-2^n}$ :\\
 	Si $m=n+1$ alors $s=x^{2^n}=x^{2^m}=x^{2^{n+1}}=\left(x^{2^n}\right)^2=s^2$.\\
-	Et si $m>n+1$, alors $s^2=x^{2^m-2^n}\cdot x^{2^m-2^n}=x^{2^m}\cdot x^{2^m-2^n-2^n}=x^{2^n}\cdot x^{2^m-2^n-2^n}=x^{2^m-2^n}=s$. ($x^{2^m-2^n-2^n}$ a bien un sens puisque $2^m-2^n-2^n=2^m-2^{n+1}>0$)
+	Et si $m>n+1$, alors $s^2=x^{2^m-2^n}\cdot x^{2^m-2^n}=x^{2^m}\cdot x^{2^m-2^n-2^n}=x^{2^n}\cdot x^{2^m-2^n-2^n}=x^{2^m-2^n}=s$ ($x^{2^m-2^n-2^n}$ a bien un sens puisque $2^m-2^n-2^n=2^m-2^{n+1}>0$).
 	
-	\subsection{Sous-semi-groupes finis de $\M_n(\K)$}
+	\subsection{Sous-semi-groupes finis de $\M_n(\K)$ \centraleponts{3}}
 	\label{Sous-semi-groupes finis de Mn(K) corrigé}
 	\textcolor{blue}{\hyperref[Sous-semi-groupes finis de Mn(K)]{[Enoncé]}}\\
 	On utilise le résultat de l'exercice précédent, ainsi on sait que $U$ admet un idempotent que l'on note $A$
@@ -5715,13 +5860,13 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\\Par conséquent, $\Tr(A)=\rg(A)\in\crblanc{0}{n}$
 	\\Ainsi, il existe une matrice $A$ de trace appartenant à $\crblanc{0}{n}$. 
 	
-	\subsection{Groupe d'exposant inférieur à $2$ \etoile{1}}
-	\label{Groupe d'exposant inférieur à 2 corrigé}
-	\textcolor{blue}{\hyperref[Groupe d'exposant inférieur à 2]{[Enoncé]}}\\
+	\subsection{\underline{Groupe composé d'involutions} \ccinp{1}}
+	\label{Groupe composé d'involutions corrigé}
+	\textcolor{blue}{\hyperref[Groupe composé d'involutions]{[Enoncé]}}\\
 	On remarque que tout élément $x\in G$ est une involution : $x^{-1}=x$. Fixons $(x,y)\in G^2$.\\
 	$e=(xy)^2=xyxy=x^{-1}yxy^{-1}$ donc en multipliant par $x$ à gauche et par $y$ à droite on obtient $xy=yx$.
 	
-	\subsection{Centre et Commutant \etoile{1}}
+	\subsection{\underline{Centre et Commutant} \ccinp{1}}
 	\label{Centre et Commutant corrigé}
 	\textcolor{blue}{\hyperref[Centre et Commutant]{[Enoncé]}}\\
 	On note $e$ le neutre de $G$.
@@ -5738,7 +5883,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi $\mathcal{C}(G)$ est un sous-groupe de $G$.
 	\end{enumerate}
 	
-	\subsection{Théorème de Dixon \etoile{4}}
+	\subsection{\underline{Théorème de Dixon} \xens{4}}
 	\label{Probabilité que deux éléments d'un groupe commutent corrigé}
 	\textcolor{blue}{\hyperref[Probabilité que deux élémebts d'un groupe commutent]{[Enoncé]}}\\
 	Notons $n=|G|$. On munit $(G^2,\mathcal{P}(G^2))$ de la probabilité $\p$ uniforme.\\
@@ -5755,7 +5900,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On peut alors majorer :
 	$$\p(A)\leq \frac{|Z(G)|}{n}+\frac{1}{n^2}\sum\limits_{x\in G\backslash Z(G)}\frac{n}{2}\leq \frac{|Z(G)|}{n}+\frac{n-|Z(G)|}{2n}\leq\frac{n+|Z(G)|}{2n}=\frac{1}{2}+\frac{|Z(G)|}{2n}\leq \frac{1}{2}+\frac{1}{8}=\frac{5}{8}$$
 	
-	\subsection{Opérations sur les sous-groupes \etoile{2}}
+	\subsection{\underline{Opérations sur les sous-groupes} \ccinp{2}}
 	\label{Opérations sur les sous-groupes corrigé}
 	\textcolor{blue}{\hyperref[Opérations sur les sous-groupes]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -5773,7 +5918,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On a donc montré que $H\subset K$ ou $H\subset K$.
 	\end{enumerate}
 	
-	\subsection{Sous-groupes finis de $\U$ \etoile{2}}
+	\subsection{\underline{Sous-groupes finis de $\U$} \telecom{2}}
 	\label{Sous-groupes finis de U corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupes finis de U]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -5795,7 +5940,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		De plus, si $k\in \N^*$ tel que $m|k$ et $n|k$ alors $\U_m\cup \U_n\subset \U_k$. Donc par définition du sous-groupe engendré $\U_r\subset \U_k$ c'est à dire $r|k$. Ainsi comme $r$ est positif, $r=m\vee n$.
 	\end{enumerate}
 	
-	\subsection{Groupes quasi-cycliques de Prüfer \etoile{3}}
+	\subsection{Groupes quasi-cycliques de Prüfer \centraleponts{3}}
 	\label{Groupes quasi-cycliques de Prüfer corrigé}
 	\textcolor{blue}{\hyperref[Groupes quasi-cycliques de Prüfer]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -5816,14 +5961,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Pour conclure, les $\U_{p^k}$ pour $k\in \N$ sont bien des sous-groupes de $G_p$.
 	\end{enumerate}
 	
-	\subsection{Sous-groupes de GL$_n(\C)$ qui intersectent trivialement le groupe spécial linéaire \etoile{3}}
+	\subsection{Sous-groupes de GL$_n(\C)$ qui intersectent trivialement le groupe spécial linéaire \centraleponts{3}}
 	\label{Sous-groupes de GLn(C) qui intersectent trivialement le groupe spécial linéaire corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupes de GLn(C) qui intersectent trivialement le groupe spécial linéaire]{[Enoncé]}}\\
 	Considérons le morphisme $\det:G\to \C^*$. Par hypothèse, $\ker(\det)=G\cap\text{SL}_n(\C)=\{I_n\}$ donc $\det$ est injectif.\\
 	Par conséquent $G$ est isomorphe à Im$(\det)$ ce que l'on note $G\simeq\text{Im}(\det)$ et Im$(\det)$ est un sous-groupe fini de $\C^*$. Notons $q$ son ordre. $\forall z\in \text{Im}(\det),\ z^q=1\implies \text{Im}(\det)\subset \U_q$. Par suite, Im$(\det)=\U_q$ par égalité des cardinaux.\\
 	Ainsi $G\simeq \U_q\simeq \Z/q\Z$. D'après le cours $G$ est cyclique.
 	
-	\subsection{Matrices inversibles à coefficients entiers}
+	\subsection{\underline{Matrices inversibles à coefficients entiers} \telecom{2}}
 	\label{Matrices inversibles à coefficients entiers corrigé}
 	\textcolor{blue}{\hyperref[Matrices inversibles à coefficients entiers]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -5842,7 +5987,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		
 	\end{enumerate}
 	
-	\subsection{Sous-groupes de $(\Z,+)$ \etoile{2}}
+	\subsection{\underline{Sous-groupes de $(\Z,+)$} \ccinp{2}}
 	\label{Sous-groupes de Z corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupes de (Z,+)]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -5858,7 +6003,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi $G=a\Z$.
 	\end{enumerate}
 	
-	\subsection{Sous-groupes de $(\R,+)$ \etoile{3}}
+	\subsection{\underline{Sous-groupes de $(\R,+)$} \centraleponts{3}}
 	\label{Sous-groupes de R corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupes de (R,+)]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -5883,7 +6028,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Comme $kx\in G$ on a prouvé que $G$ est dense dans $\R$.
 	\end{enumerate}
 	
-	\subsubsection{Fonction (multi)périodique \etoile{3}}
+	\subsubsection{Fonction (multi)périodique \centraleponts{3}}
 	On considère $P=\{T\in \R,\ \forall x\in \R,\ f(x+T)=f(x)\}$ l'ensemble des périodes de $f$.\\
 	Montrons que $P$ est un sous-groupe de $\R$.\\
 	Tout d'abord $0\in P$. Fixons $(T_1,T_2)\in P^2$. Soit $x\in \R$.\\
@@ -5898,7 +6043,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$\forall k\in \N,\ f(x+T_k)=f(x)$\\
 	Donc comme $f$ est continue sur $\R$, par passage à la limite $f(y)=f(x+(y-x))=f(x)$.
 	
-	\subsubsection{$\cos(\N)$ \etoile{3}}
+	\subsubsection{$\cos(\N)$ \centraleponts{3}}
 	Montrons que $\Z+2\pi\Z$ est dense dans $\R$.\\
 	$0=0+0(2\pi)\in \Z+2\pi\Z$.\\
 	Soient $x,y\in \Z+2\pi\Z$. $\exists a,b,c,d\in \Z,\ x=a+2b\pi,\ y=c+2d\pi$.\\
@@ -5911,7 +6056,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Alors par continuité de $\cos$ en $x$, $\cos(x_n)\unfty{\longrightarrow}\sin(x)$. De plus $\forall n\in \N,\ \sin(x_n)=\cos(a_n)=\cos(|a_n|)$.\\
 	On en déduit que $\cos(|a_n|)\unfty{\longrightarrow}t$ avec $\forall n\in \N,\ |a_n|\in \N$.
 	
-	\subsubsection{Valeur d'adhérence du cercle unité \etoile{3}}
+	\subsubsection{Valeur d'adhérence du cercle unité \centraleponts{3}}
 	Soit $z\in \C$. Si $z$ est une racine de l'unité alors la suite $(z^n)_{n\in \N}$ stationne à $1$ qui est donc sa seule valeur d'adhérence.\\
 	Supposons maintenant que $z$ n'est pas une racine de l'unité. Cela revient à supposer, si l'on écrit $z=e^{2i\pi\theta}$ avec $\theta\in \R$, que $\theta\notin\Q$.\\
 	On va alors montrer que $\Z+\theta\Z$ est dense dans $\R$. On montre aisément que $\Z+\theta\Z$ est un sous-groupe de $(\R,+)$. Montrons qu'il n'est pas monogène. Par l'absurde on suppose qu'il existe $a\in \R$ tel que $\Z+\theta\Z=a\Z$.\\
@@ -5920,7 +6065,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On en déduit par continuité et $1$-périodicité de la fonction $f:x\in \R\mapsto e^{2i\pi x}$ que $f(\Z+\theta\Z)=\{e^{2ki\pi\theta},\ k\in \Z\}=\{e^{2in\pi\theta},\ n\in \N\}=\{z^n,\ n\in \N\}$ est dense dans $f(\R)=\U$.\\
 	En particulier $1$ est une valeur d'adhérence de la suite $(z^n)_{n\in \N}$.
 	
-	\subsection{Sous-groupes distingué}
+	\subsection{Sous-groupes distingué \etoile{1}}
 	\label{Sous-groupes distingué corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupes distingués]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -5935,20 +6080,20 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Nature d'une suite corrigé}
 	\textcolor{blue}{\hyperref[Nature d'une suite]{[Enoncé]}}\\
 	
-	\subsection{Une relation utile sur les morphismes de groupes}
+	\subsection{Une relation utile sur les morphismes de groupes \etoile{2}}
 	\label{Une relation utile sur les morphismes de groupes corrigé}
-	\textcolor{blue}{\hyperref[Une relation utile sur les morphismes dee groupes]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Une relation utile sur les morphismes de groupes]{[Enoncé]}}\\
 	On admet que la relation sur $G$ suivante est une relation d'équivalence sur $G$. $$\forall g_1,g_2\in G , g_1 \sim g_2 \Leftrightarrow g_1^{-1}g_2\in \Ker(f)$$
-	Ces classes d'équivalence sont les $g\Ker(f)=\{gk , k\in\Ker(f)\}$ pour $g\in G$.\\
+	Ses classes d'équivalence sont les $g\Ker(f)=\{gk , k\in\Ker(f)\}$ pour $g\in G$.\\
 	Montrons que $|g\Ker(f)|=|\Ker(f)|$\\
 	On pose $\fonction{\varphi}{\Ker(f)}{g\Ker(f)}{k}{gk}$ et  $\fonction{\psi}{g\Ker(f)}{\Ker(f)}{k}{g^{-1}k}$.\\
-	On remarque que : $\varphi\circ\psi=Id_G=\psi\circ\varphi$ donc $\varphi$ est une bijection et $|g\Ker(f)|=|\Ker(f)|$.\\
+	On remarque que : $\varphi\circ\psi=\Id_G=\psi\circ\varphi$ donc $\varphi$ est une bijection et $|g\Ker(f)|=|\Ker(f)|$.\\
 	De plus, on remarque que $f$ est constante sur les classes d'équivalence définies précédemment.\\
 	En effet, pour tout $g_1 , g_2 \in G$ tel que $g_1\sim g_2$, on a $f(g_1^{-1}g_2)=e$ donc $f(g_1)=f(g_2)$ car $f$ est un morphisme de groupe.\\
 	Ainsi, on en déduit que le nombre de classes d'équivalences est $|\Ima(f)|$.\\
-	Finalement, puisque les classes d'équivalences forment une partition de $G$, on en déduit : $$|G|=\sum_{g\in\Ima(f)}|g\Ker(f)|=\sum_{g\in\Ima(f)}|\Ker(g)|=|\Ker(f)||\Ima(f)|$$
+	Finalement, puisque les classes d'équivalences forment une partition de $G$, on en déduit : $$|G|=\sum_{g\in\Ima(f)}|g\Ker(f)|=\sum_{g\in\Ima(f)}|\Ker(g)|=|\Ker(f)|\times|\Ima(f)|$$
 	
-	\subsection{Automorphisme d'inversion \etoile{1}}
+	\subsection{Automorphisme d'inversion \ccinp{1}}
 	\textcolor{blue}{\hyperref[Automorphisme d'inversion]{[Enoncé]}}\\
 	\label{Automorphisme d'inversion corrigé}
 	Notons $e$ le neutre de $G$.
@@ -5956,7 +6101,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$\forall (x,y)\in G^2,\ f(xy)=(xy)^{-1}=y^{-1}x^{-1}$.\\
 	Donc $f\in \text{Aut}(G)\iff \forall (x,y)\in G^2,\ y^{-1}x^{-1}=f(xy)=f(x)f(y)=x^{-1}y^{-1} \iff \forall (x,y)\in G^2,\ (y^{-1}x^{-1})^{-1}=(x^{-1}y^{-1})^{-1}\iff \forall (x,y)\in G^2,\ xy=yx$.
 	
-	\subsection{Automorphismes intérieurs \etoile{1}}
+	\subsection{Automorphismes intérieurs \ccinp{1}}
 	\label{Automorphismes intérieurs corrigé}
 	\textcolor{blue}{\hyperref[Automorphismes intérieurs]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -5971,7 +6116,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi $\mathfrak{J}(G)=\text{Im}(\Phi)$ est un sous-groupe de $(\text{Aut}(G),\circ)$.
 	\end{enumerate}
 	
-	\subsection{Endomorphismes continus de $\R$ \etoile{2}}
+	\subsection{Endomorphismes continus de $\R$ \telecom{2}}
 	\label{Endomorphismes continus de R corrigé}
 	\textcolor{blue}{\hyperref[Endomorphismes continus de R]{[Enoncé]}}\\
 	Soit $f$ un endomorphisme de $(\R,+)$ continu.\\
@@ -5983,7 +6128,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Autrement dit $f$ est l'homothétie de rapport $f(1)$.\\
 	Réciproquement on vérifie que les homothéties sont des endomorphismes de $(\R,+)$ continus.
 	
-	\subsection{Morphismes de $\Q$ dans $\Z$ \etoile{1}}
+	\subsection{Morphismes de $\Q$ dans $\Z$ \ccinp{1}}
 	\label{Morphismes de Q dans Z corrigé}
 	\textcolor{blue}{\hyperref[Morphismes de Q dans Z]{[Enoncé]}}\\
 	Soit $f$ un morphisme de $(\Q,+)$ dans $(\Z,+)$.\\
@@ -5992,7 +6137,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Autrement dit $\forall q\in \N^*,\ q|f(p)$. Donc $f(p)=0$.\\
 	Ainsi $f=0$.
 	
-	\subsection{Morphismes de $\Z/n\Z$ dans $\Z/m\Z$}
+	\subsection{Morphismes de $\Z/n\Z$ dans $\Z/m\Z$ \telecom{2}}
 	\label{Morphismes de Z/nZ dans Z/mZ corrigé}
 	\textcolor{blue}{\hyperref[Morphismes de Z/nZ dans Z/mZ]{[Enoncé]}}\\
 	On note $\overline{k}$ les éléments de $\Z/n\Z$ et $\tilde k$ les éléments de $\Z/m\Z$.\\
@@ -6004,7 +6149,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Ainsi si $f: \Z/n\Z \longrightarrow \Z/m\Z$ est un morphisme alors $nf(\overline{1})\equiv 0[m]$.\\
 	La réciproque est immédiate.
 	
-	\subsection{Morphismes de GL$_n(\R)$ dans $\Z /m\Z$ \etoile{5}}
+	\subsection{Morphismes de GL$_n(\R)$ dans $\Z /m\Z$ \xens{5}}
 	\label{Morphismes de GLn(R) dans Z/mZ corrigé}
 	\textcolor{blue}{\hyperref[Morphismes de GLn(R) dans Z/mZ]{[Enoncé]}}\\
 	Soit $f$ un morphisme de $(\text{GL}_n(\R),\times)$ dans $(\Z/m\Z,+)$. On note $D_i(\lambda)=I_n+(1-\lambda)E^n_{ii}$ pour $i\in \crblanc{1}{n}$ et $\lambda\in \R^*$ les matrices de dilatations (où $E^n_{ij}$ représente la matrice carrée de taille $n$ ayant un $1$ en position $(i,j)$ et des $0$ partout ailleurs). On note $T_{ij}(\lambda)=I_n+\lambda E^n_{ij}$ pour $(i,j)\in \crblanc{1}{n}^2,i\ne j$ et $\lambda\in \R$ les matrices de transvections.\\
@@ -6035,7 +6180,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Si $m$ est pair, pour tout $\lambda\in \R^*_+,\ D_n(\lambda)=D_n\left(\sqrt[m]\lambda\right)^m$ donc $f(A)=\overline{0}$ pour tout $A\in \text{GL}_n^+(\R)$. De plus, si $\lambda \in \R^*_-,\ D_n(\lambda)=D_n(-1)D_n(-\lambda)$ avec $-\lambda>0$. Ainsi, $\forall A\in \text{GL}_n^-(\R),\ f(A)=f(D_n(-1))$. Or $D_n(-1)^2=I_n$ donc $f(D_n(-1))=\overline{0}$ ou $f(D_n(-1))=\overline{\displaystyle\frac{m}{2}}$.\\
 	Finalement, $f$ est soit le morphisme trivial, soit le morphisme valant $\overline 0$ sur GL$_n^+(\R)$ et $\overline{\displaystyle\frac{m}{2}}$ et GL$_n^-(\R)$.
 	
-	\subsection{Quasi-morphisme \etoile{3}}
+	\subsection{Quasi-morphisme \centraleponts{3}}
 	\label{Quasi-morphisme corrigé}
 	\textcolor{blue}{\hyperref[Quasi-morphisme]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6050,9 +6195,9 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		$$f(xy)=\unfty\lim\displaystyle\frac{f(xyz_n)}{f(z_n)}=\unfty\lim\frac{f(xyz_n)}{f(yz_n)}\cdot\frac{f(yz_n)}{f(z_n)}=f(x)f(y)$$
 	\end{enumerate}
 	
-	\subsection{Morphisme de $\Z^\N$ presque nul \etoile{3}}
-	\label{Morphisme de Z^N presque nul corrigé}
-	\textcolor{blue}{\hyperref[Morphisme de Z^N presque nul]{[Enoncé]}}\\
+	\subsection{Morphisme de $\Z^\N$ dans $\Z$ presque nul \centraleponts{3}}
+	\label{Morphisme de Z^N dans Z presque nul corrigé}
+	\textcolor{blue}{\hyperref[Morphisme de Z^N dans Z presque nul]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $n\in \N$. $x_n\in \Z$ et $\pgcd(2^n,3^n)=1$ donc d'après le théorème de Bézout, $\exists (y_n,z_n)\in \Z^2,\ 2^ny_n+3^nz_n=x_n$.\\
 		\item Soit $s>0$.\\
@@ -6062,7 +6207,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Finalement $\Phi=0$.
 	\end{enumerate}
 	
-	\subsection{Groupes de matrices}
+	\subsection{Groupes de matrices \xens{3}}
 	\label{Sous-groupes de GLn(R) corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupes de GLn(R)]{[Enoncé]}}\\
 	Notons $E$ le neutre de $G$.\\
@@ -6078,7 +6223,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\end{array}\right)P}$ est un morphisme de groupes injectif.\\
 	Ainsi $G$ est isomorphe à $f^{-1}(G)$ qui est un sous-groupe de GL$_r(\K)$.
 	
-	\subsection{Caractérisation de la finitude d'un groupe par ses sous-groupes \etoile{3}}
+	\subsection{Caractérisation de la finitude d'un groupe par ses sous-groupes \xens{3}}
 	\label{Caractérisation de la finitude d'un groupe par ses sous-groupes corrigé}
 	\textcolor{blue}{\hyperref[Caractérisation de la finitude d'un groupe par ses sous-groupes]{[Enoncé]}}\\
 	Notons $g$ l'ensemble des sous-groupes de $G$.\\
@@ -6089,7 +6234,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	De plus, pour tout $x\in G$, $<x>$ est fini. En effet, Si $<x>$ est infini alors les ensembles $<x^{2^n}>$ pour $n\in \N$ sont des sous-groupes de $G$ tous distincts $\left(<x^{2^{n+1}}>\ \subset\ <x^{2^n}>\text{ et }x^{2^n}\notin <x^{2^{n+1}}>\right)$ et $g$ n'est pas fini.\\
 	Donc $|G|=\displaystyle\left|\bigcup\limits_{x\in G_0}<x>\right|\leq \sum\limits_{x\in G_0}|<x>|<+\infty$.
 	
-	\subsection{Sous-groupe des éléments d'ordre fini \etoile{4}}
+	\subsection{Sous-groupe des éléments d'ordre fini \xens{4}}
 	\label{Sous-groupes des éléments d'ordre fini corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupe des éléments d'ordre fini]{[Enoncé]}}\\
 	Notons $H$ le sous-groupe engendré par les éléments de $E$. On va montrer que $E=H$. Par définition, $E\subset H$.\\
@@ -6113,7 +6258,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Si $x\sim_g y\sim_g z$ alors il existe $h_0,h_1\in H$ tels que $y=h_0x$ et $z=h_1y$. Alors $z=h_2x$ avec $h_2=h_1h_0\in H$ d'où $x\sim_g z$\\
 	Ainsi $\sim,\ \sim_d$ et $\sim_g$ sont des relations d'équivalence sur $G$  
 	
-	\subsection{Théorème de Lagrange \etoile{3}}
+	\subsection{\underline{Théorème de Lagrange} \centraleponts{3}}
 	\label{Théorème de Lagrange corrigé}
 	\textcolor{blue}{\hyperref[Théorème de Lagrange]{[Enoncé]}}\\
 	Soit $H$ un sous-groupe de $G$. On note $e$ le neutre de $G$.\\
@@ -6129,7 +6274,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$G=\displaystyle\bigsqcup\limits_{k=1}^dx_kH$ donc $|G|=\displaystyle\sum\limits_{k=1}^d|x_kH|=\sum\limits_{k=1}^d|H|=d|H|$.\\
 	Ainsi $|H|$ divise $|G|$.
 	
-	\subsection{Un cas particulier du lemme de Cauchy \etoile{4}}
+	\subsection{Un cas particulier du lemme de Cauchy \xens{4}}
 	\label{Un cas particulier du lemme de Cauchy corrigé}
 	\textcolor{blue}{\hyperref[Un cas particulier du lemme de Cauchy]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6160,14 +6305,17 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Mais alors d'après la question $1$ $|G|=2^q$ pour un certain entier $q$. Or $p>2$ apparaît dans la décomposition en facteur premier de $|G|$. Ceci est absurde donc il existe un élément dans $G$ qui n'est pas d'ordre $2$.
 	\end{enumerate}
 	
-	\subsection{Groupe d'ordre premier \etoile{1}}
+	\subsection{Groupe d'ordre premier \ccinp{1}}
 	\label{Groupe d'ordre premier corrigé}
 	\textcolor{blue}{\hyperref[Groupe d'ordre premier]{[Enoncé]}}\\
 	Il s'agit de montrer que $G$ possède un élément d'ordre $p$. Soit $x\in G$.\\
 	D'après le théorème de Lagrange l'ordre de $x$ divise $p$. Alors comme $p$ est premier, $x$ est d'ordre $1$ ou d'ordre $p$.\\
 	Si tous les éléments de $G$ sont d'ordre $1$ alors $G=\{e\}$ n'est pas de cardinal $p\geq 2$.\\
 	Ainsi il existe $x\in G$ d'ordre $p$ et donc $G=<x>$.
-	\subsubsection{Plus petit groupe non commutatif}
+	
+	\subsubsection{Plus petit groupe non commutatif \centraleponts{3}}
+	\label{Plus petit groupe non commutatif corrigé}
+	\textcolor{blue}{\hyperref[Plus petit groupe non commutatif]{[Enoncé]}}
 	\begin{enumerate}
 		\item Soit $G$ un groupe cyclique. Il existe $x\in G$ tel que $G=\langle x \rangle$. Donc $G$ est a fortiori commutatif.
 		\item Déjà à partir de l'exercice précédent, nous pouvons éliminer les groupes d'ordre 2, 3 et 5. Et évidemment le groupe trivial est commutatif.\\
@@ -6176,13 +6324,13 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		D'après le théorème de Lagrange, l'ordre de tout élément de $G$ divise l'ordre de $G$ ainsi les ordres possibles pour les éléments différents du neutre sont $2$ ou $4$.
 		\begin{itemize}
 			\item Si $G$ contient un élément $a$ d'ordre $4$ alors, $\langle a\rangle$ est un sous-groupe de $G$ d'ordre $4$. Donc $\langle a\rangle=G$ d'où $G$ est cyclique et puis $G$ est commutatif.
-			\item Sinon tous les éléments de $G$ différents du neutre sont d'ordre $2$. D'après l'exercice V.3, $G$ est commutatif.\\
+			\item Sinon tous les éléments de $G$ différents du neutre sont d'ordre $2$. D'après l'exercice \ref{Groupe composé d'involutions}, $G$ est commutatif.\\
 		\end{itemize}
 		Finalement, aucun groupe d'ordre 4 n'est non commutatif.
 		l'entier recherché est 6. Il suffit de regarder le groupe symétriques $S_3$ qui n'est pas commutatif car $(12)(23)=(123)\ne(132)=(23)(12)$ par exemple.	
 	\end{enumerate}
 	
-	\subsection{Sous-groupe d'un groupe cyclique \etoile{3}}
+	\subsection{Sous-groupe d'un groupe cyclique \centraleponts{3}}
 	\textcolor{blue}{\hyperref[Sous-groupe d'un groupe cyclique]{[Enoncé]}}\\
 	\label{Sous-groupe d'un groupe cyclique corrigé}
 	Notons $e$ le neutre de $G$.
@@ -6194,7 +6342,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Ainsi $\exists q\in \Z,\ k=q\cdot\displaystyle\frac{n}{d}$. On a alors $z=x^{q\cdot n/d}=y^q$ : $z\in \langle y\rangle$.\\
 	Finalement $H\subset \langle y\rangle$ et comme $|H|=d=|\langle y\rangle|,\ H=\langle y\rangle$.
 	
-	\subsection{Exposant d'un groupe abélien fini \etoile{4}}
+	\subsection{Exposant d'un groupe abélien fini \xens{4}}
 	\label{Exposant d'un groupe abélien fini corrigé}
 	\textcolor{blue}{\hyperref[Exposant d'un groupe abélien fini]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6229,9 +6377,9 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{enumerate}
 	\textit{Remarque : une conséquence de la question $4$ est le fait que $(\Z/p\Z)^*$ est cyclique.}
 	
-	\subsection{Un groupe d'inversible non cyclique}
-	\label{Un groupe d'inversible non cyclique corrigé}
-	\textcolor{blue}{\hyperref[Un groupe d'inversible non cyclique]{[Enoncé]}}\\
+	\subsection{Un groupe d'inversibles non cyclique \centraleponts{3}}
+	\label{Un groupe d'inversibles non cyclique corrigé}
+	\textcolor{blue}{\hyperref[Un groupe d'inversibles non cyclique]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item On écrit $a=2b+1$ avec $b\in \Z$. Montrons par récurrence sur $k$ le résultat suivant : "pour tout entier $k\geq 1$, $a^{2^k}\equiv 1[2^{k+2}]$".\\
 		$k=1$ : $a^{2^1}=a^2=1+4b+4b^2=1+4b(b+1)$. Parmi $b$ et $b+1$ il y a toujours un entier pair donc $a^2\equiv 1[8]$.\\
@@ -6242,7 +6390,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\item On sait que $(\Z/2^n\Z)^\times$ est un groupe d'ordre $\varphi(2^n)=2^n-2^{n-1}=2^{n-1}>2^{n-2}$ et qu'il est composé des classes d'entiers premiers avec $2^n$ càd celles des entiers impairs. Or d'après la question 1 les entiers impairs sont d'ordre au plus $2^{n-2}$ dans $(\Z/2^n\Z)^\times$. Donc $(\Z/2^n\Z)^\times$ n'est pas cyclique.
 	\end{enumerate}
 	
-	\subsection{Ordre dans un groupe de cardinal pair}
+	\subsection{Ordre dans un groupe de cardinal pair \telecom{2}}
 	\label{Ordre dans un groupe de cardinal pair corrigé}
 	\textcolor{blue}{\hyperref[Ordre dans un groupe de cardinal pair]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -6260,7 +6408,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Par conséquent, G admet un élément d'ordre deux.
 	\end{enumerate}
 	
-	\subsection{Ordre dans $\Z/n\Z$ \etoile{2}}
+	\subsection{Ordre dans $\Z/n\Z$ \telecom{2}}
 	\label{Ordre dans Z/nZ corrigé}
 	\textcolor{blue}{\hyperref[Ordre dans Z/nZ]{[Enoncé]}}\\
 	D'une part, $\displaystyle\frac{k}{k\wedge n}\in \N\implies\frac{n}{n\wedge k}\overline k=\frac{k}{n\wedge k}\overline n=\overline 0$. Donc $d|\displaystyle\frac{n}{n\wedge k}$.\\\\
@@ -6268,7 +6416,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Alors $\displaystyle\frac{n}{n\wedge k}|d\cdot\frac{k}{n\wedge k}$. Or $\pgcd\left(\displaystyle\frac{n}{n\land k},\frac{k}{n\wedge k}\right)=1$ donc d'après le lemme de Gauss, $\dfrac{n}{n\wedge k}|d$.\\
 	Ainsi comme $d\geq 0$ et $\displaystyle\frac{n}{n\wedge k}\geq 0,\ d=\frac{n}{n\wedge k}$.
 	
-	\subsection{Passage par les groupes}
+	\subsection{Passage par les groupes \centraleponts{2}}
 	\label{Passage par les groupes corrigé}
 	\textcolor{blue}{\hyperref[Passage par les groupes]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -6279,13 +6427,13 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On obtient donc une absurdité. Ainsi il n'existe pas de $n\geq 2$ tel que $n|2^n -1$. 
 	\end{enumerate}
 	
-	\subsection{Groupe infini non monogène \etoile{1}}
+	\subsection{Groupe infini non monogène \ccinp{1}}
 	\label{Groupe infini non monogène corrigé}
 	\textcolor{blue}{\hyperref[Groupe infini non monogène]{[Enoncé]}}\\
 	$(\Z^2,+)$ n'est pas monogène.\\
-	$\forall (a,b)\in \Z^2,\ <(a,b)>=\{(ka,kb),\ k\in \Z\}\ne \Z^2$.
+	$\forall (a,b)\in \Z^2,\ \langle (a,b)\rangle=\{(ka,kb),\ k\in \Z\}\ne \Z^2$.
 	
-	\subsection{Groupe non cyclique \etoile{2}}
+	\subsection{Groupe non cyclique \telecom{2}}
 	\label{Groupe non cyclique corrigé}
 	\textcolor{blue}{\hyperref[Groupe non cyclique]{[Enoncé]}}\\
 	Si $m\land n=1$ alors d'après le théorème des restes chinois on sait que $\Z/n\Z\times\Z/m\Z$ est isomorphe à $\Z/mn\Z$ en tant qu'anneau. Donc $(\Z/n\Z\times\Z/m\Z,+)$ est isomorphe à $(\Z/mn\Z,+)$ d'où $(\Z/n\Z\times\Z/m\Z,+)$ est cyclique.\\
@@ -6293,7 +6441,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Comme $m\vee n$ est un multiple de $m$ et de $n$, $(m\vee n)a=\overline{0}$ et $(m\vee n)b=\tilde 0$. Donc l'ordre de $(a,b)$, qui vaut $mn$ en tant que générateur, divise $m\vee n$.\\
 	Or $m\wedge n\times m\vee n=mn$. Donc $m\wedge n$ divise $1$ c'est à dire $m\wedge n=1$.
 	
-	\subsection{Ordre dans le groupe symétrique \etoile{1}}
+	\subsection{Ordre dans le groupe symétrique \ccinp{2}}
 	\label{Ordre dans le groupe symétrique corrigé}
 	\textcolor{blue}{\hyperref[Ordre dans le groupe symétrique]{[Enoncé]}}\\
 	Soient $n\in \N^*$ et $\sigma\in \mathcal S_n$.\\
@@ -6308,7 +6456,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{align*}
 	Ainsi $\sigma$ est d'ordre $m$.
 	
-	\subsection{Sous-groupe engendré par les nombres premiers}
+	\subsection{Sous-groupe engendré par les nombres premiers \ccinp{1}}
 	\label{Sous-groupe engendré par les nombres premiers corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupe engendré par les nombres premiers]{[Enoncé]}}\\
 	On a : \[\langle \mathcal{P}\rangle=\left\{\prod_{i=1}^{r}p_i^{k_i}, r\in\N ,\forall i\in\crblanc{1}{r}, p_i\in \mathcal{P}, k_i\in\Z\right\}\]
@@ -6317,11 +6465,12 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	D'après la décomposition en facteurs premiers de $a$ et $b$, on en déduit que $q\in \langle \mathcal{P}\rangle$.\\
 	Par conséquent, \[\langle \mathcal{P}\rangle=\Q^*\]
 	
-	\subsection{Sous-groupe engendré par le complémentaire d'un sous-groupe}
+	\subsection{Sous-groupe engendré par le complémentaire d'un sous-groupe \telecom{2}}
 	\label{Sous-groupe engendré par le complémentaire d'un sous-groupe corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupe engendré par le complémentaire d'un sous-groupe]{[Enoncé]}}\\
 	On note $e$ le neutre de $G$. On notera $\langle E\rangle$ le sous-groupe engendré par une partie $E$.
-	Commençons par des exemples.\begin{itemize}
+	Commençons par des exemples.
+	\begin{itemize}
 		\item $\Z\backslash a\Z$ contient $1$ donc tous ses multiples i.e $\langle\Z\backslash a\Z\rangle=\Z$.
 		\item Si $e^{i\theta}\in \U$ alors $e^{i\theta}=2e^{i\theta}\times 2^{-1}\in \langle\C^*\backslash\U\rangle$. $\langle\C^*\backslash\U\rangle=\C^*$.
 		\item $\mathcal S_n\backslash\mathcal A_n$ est l'ensemble des permutations de signature $-1$. Il contient toutes les transpositions. Celle-ci engendrant $\mathcal S_n$, $\langle S_n\backslash\mathcal A_n\rangle=\mathcal S_n$.
@@ -6330,21 +6479,21 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Si $z\in H$ alors $x=zy^{-1}\in H$ car $H$ est un groupe, ce qui est exclus. Donc $z\in E$ et par suite $x^{-1}z=y\in\langle E\rangle$.\\
 	Ainsi $H\subset \langle E\rangle$. De plus $E\subset \langle E\rangle$ donc $G=H\cup E\subset \langle E\rangle$ i.e $\langle G\backslash H\rangle=G$.
 	
-	\subsection{Partie génératrice}
+	\subsection{Partie génératrice \etoile{3} (HP)}
 	\label{Partie génératrice corrigé}
 	\textcolor{blue}{\hyperref[Partie génératrice]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item D'après le théorème de Lagrange $\dfrac{|G|}{|H|}$ est un entier supérieur strictement à $1$, c'est donc au moins $2$ i.e $2|H|\leq |G|$.
 		\item $G$ possède une partie génératrice (lui même), on peut donc considérer une partie génératrice de $G$ de cardinal minimal. Soit $E=\{x_1,\dots,x_m\}$ une telle partie. $m\leq \log_2(n)\iff 2^m\leq n$.\\
 		Posons pour $i\in \crblanc{1}{m},\ G_i=\langle x_1,\dots,x_i\rangle$.\\
-		On remarque que $\forall i\in \crblanc{1}{m-1},\ G_i\subsetneq G_{i+1}$. En effet, si pour un certain $i_0\in \crblanc{1}{m-1},\ G_{i_0}=G_{i_0+1}$ alors $\{a_1,\dots,a_{i_0},a_{i_0+2},\dots,a_m\}$ est une partie génératrice de $G$ ayant strictement moins d'éléments que $E$ ce qui est absurde.\\
+		On remarque que $\forall i\in \crblanc{1}{m-1},\ G_i\subsetneq G_{i+1}$. En effet, si pour un certain $i_0\in \crblanc{1}{m-1},\ G_{i_0}=G_{i_0+1}$ alors $\{x_1,\dots,x_{i_0},x_{i_0+2},\dots,x_m\}$ est une partie génératrice de $G$ ayant strictement moins d'éléments que $E$ ce qui est absurde.\\
 		Soit $i\in \crblanc{1}{m-1}$. $G_i$ est un sous-groupe strict de $G_{i+1}$ donc d'après la question 1, $2|G_i|\leq |G_{i+1}|$.\\
 		Par récurrence immédiate $n=|G|=|G_m|\geq 2^m$.
 		\item Soit $G=((\Z/2\Z)^m,+)$. $G$ est un $\Z/2\Z$-espace vectoriel de dimension $m$, il est donc de cardinal $m$ (même sans théorie sur les espaces vectoriels sur des corps finis on peut vérifier à la main qu'il y a unicité de l'écriture dans la base canonique).\\
 		Soit $E$ une partie de $G$ de cardinal inférieur strictement à $m$. D'après la question 1 de l'exercice sur le théorème de Cauchy, le cardinal de $\langle E\rangle$ est une puissance de $2$. Par définition de $E$, $|\langle E\rangle|<|G|$.
 	\end{enumerate}
 	
-	\subsection{Groupe alterné $\etoile{3}$}
+	\subsection{Groupe alterné \centraleponts{3}}
 	\label{Groupe alterné corrigé}
 	\textcolor{blue}{\hyperref[Groupe alterné]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6356,22 +6505,23 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Si $\tau_1=(i,j)$, et $\tau_2=(k,l)$ avec $i,j,k,l$ distincts alors $\tau_1\circ\tau_2=(i,j,k)\circ(j,k,l)$.
 	\end{enumerate}
 	
-	\subsection{Cardinal minimal d'une famille de transpositions engendrant $\mathcal{S}_n$}
+	\subsection{Cardinal minimal d'une famille de transpositions engendrant $\S_n$ \centraleponts{3}}
 	\label{Cardinal minimal d'une famille de transpositions engendrant Sn corrigé}
 	\textcolor{blue}{\hyperref[Cardinal minimal d'une famille de transpostions engendrant Sn]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item On rappelle que $\mathcal{S}_n$ est engendré par les transpositions.\\
+		\item On rappelle que $\S_n$ est engendré par les transpositions.\\
 		Ainsi, il suffit de montrer que toutes transpositions se décompose dans $(t_2,\dots,t_n)$.\\
 		Soit $(i,j)\in \crblanc{1}{n}^2$ \[(i \, j)= (1 \, i)(1 \, j)(1 \, i)\]
-		Donc $\{t_2,\dots,t_n\}$ engendre $\mathcal{S}_n$.
+		Donc $\{t_2,\dots,t_n\}$ engendre $\S_n$.
 		\item Pour la transposition $s=(i \, j)$, géométriquement, cela revient à dire que $u$ est une réflexion orthogonale d'hyperplan \[H=\{x\in \R^n, x_i=x_j\}\]
-		\item \textit{Première méthode} : Si $s$ est le produit de $p$ transpositions alors $\Ker(u_s-Id_E)$ contient l'intersection des $p$ hyperplans associées à chacune des transpositions.\\
-		Or, on remarque que $\Ker(u_s-Id_E)=\Vect(e_1+\dots+e_n)=1$ d'où le résultat.\\
+		\item \textit{Première méthode} : Si $s$ est le produit de $p$ transpositions alors $\Ker(u_s-\Id_E)$ contient l'intersection des $p$ hyperplans associées à chacune des transpositions.\\
+		Or, on remarque que $\Ker(u_s-\Id_E)=\Vect(e_1+\dots+e_n)=1$ d'où le résultat.\\
 		\textit{Deuxième méthode} :On observe que lorsque l'on multiplie une permutation $\sigma$ par une transposition, cela revient à rassembler deux cycles ou au contraire à couper en 2 un cycle.\\
 		Ainsi, en partant de l'identité qui a $n$ cycles, on en déduit que $s$ a au moins $n-p$ cycles d'après ce qui précède. Ainsi, puisque $s$ est un $n$-cycle, il a un unique cycle, donc on en déduit que $n-p\leq 1$, d'où $p\geq n-1$.
 		\item D'après ce qui précède, on en déduit que $n-1$ est ce minimum.
 	\end{enumerate}
-	\subsection{Partie génératrice de $\O(E)$}
+	
+	\subsection{Partie génératrice de $\O(E)$ \xens{4}}
 	\label{Partie génératrice de O(E) corrigé}
 	\textcolor{blue}{\hyperref[Partie génératrice de O(E)]{[Enoncé]}}\\
 	On rappelle qu'une réflexion (orthogonale) $s$ de $E$ est une symétrie orthogonale par rapport à un hyperplan $H$ de $E$. De plus, si l'on note $a\in E$ tel que $H=\Vect(a)^\bot$ alors $\forall x\in E,\ s(x)=x-2\dfrac{\proscal{a}{x}}{\norme{a}^2}a$. En effet $\forall x\in E,\ \exists h\in H,\ x=\displaystyle\proscal{\frac{a}{\norme a}}{x}\frac{a}{\norme a}+h$. Donc $s(x)=\displaystyle\frac{\proscal{a}{x}}{\norme{a}^2}s(a)+s(h)=-\frac{\proscal{a}{x}}{\norme{a}^2}a+h=x-2\frac{\proscal{a}{x}}{\norme{a}^2}a$.\\
@@ -6391,7 +6541,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On a alors $u=ss_m\dots s_1$.\\\\
 	\textit{\underline{Remarque :} La même preuve en adaptant l'hypothèse de récurrence montre en fait que tout endomorphisme orthogonal de E est produit d'au plus dim(E) réflexions.}
 	
-	\subsection{Groupe dans un plan euclidien}
+	\subsection{Groupe dans un plan euclidien \centraleponts{3}}
 	\label{Groupe dans un plan euclidien corrigé}
 	\textcolor{blue}{\hyperref[Groupe dans un plan euclidien]{[Enoncé]}}\\
 	On note dans tout l'exercice $B=(e_1,e_2)$ une base orthonormée de $E$.
@@ -6479,7 +6629,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\textit{Remarque} : On peut simplement regarder le déterminant des colonnes et remarquer que les colonnes de $P_\sigma$ correspond à la permutation $\sigma$ des colonnes de $I_n$ d'où le résultat car $\det$ est alterné.
 	\end{enumerate}
 	
-	\subsection{Groupe dérivé \etoile{5}}
+	\subsection{Groupe dérivé \etoile{4}}
 	\label{Groupe dérivé corrigé}
 	\textcolor{blue}{\hyperref[Groupe dérivé]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6521,7 +6671,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\end{enumerate}
 	\end{enumerate}
 	
-	\subsection{Sous-groupe discret de $\C$ et de SL$_2(\R)$ \etoile{5}}
+	\subsection{Sous-groupe discret de $\C$ et de SL$_2(\R)$ \xens{5}}
 	\label{Sous-groupe discret de C et de SL2(R) corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupe discret de C et de SL2(R)]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -7151,7 +7301,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Automorphismes de $\Q[\sqrt 2]$ \etoile{3}}
 	\label{Automorphismes de Qsqrt2 corrigé}
 	\textcolor{blue}{\hyperref[Automorphismes de Qsqrt2]{[Enoncé]}}\\
-	L'application $\fonction{\Phi}{\Q_1[X]}{\Q[\sqrt2]}{P}{P(\sqrt 2)}$ est un morphisme d'algèbre.\\
+	L'application $\fonction{\Phi}{\Q[X]}{\Q[\sqrt2]}{P}{P(\sqrt 2)}$ est un morphisme d'algèbre.\\
 	Donc $\Q[\sqrt 2]$ est une sous-algèbre de $\C$ et en particulier un sous-anneau de $\C$.\\
 	De plus, si $a+b\sqrt 2\in \Q[\sqrt 2]\backslash\{0\}$ alors $\displaystyle\frac{1}{a+b\sqrt 2}=\frac{a-b\sqrt 2}{a^2-2b^2}=c+d\sqrt 2$ avec $c=\displaystyle\frac{a}{a^2-2b^2}\in \Q$ et $d=-\displaystyle\frac{b}{a^2-2b^2}\in \Q$.\\
 	Donc $\displaystyle\frac{1}{a+b\sqrt 2}\in \Q[\sqrt 2]$ c'est à dire $\Q[\sqrt 2]$ est un sous-corps de $\C$.\\
@@ -7432,14 +7582,13 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	D'autre part, par le même raisonnement la valuation $p$-adique de $b^2$ est paire mais alors $v_p(a^2)=v_p(pb^2)=1+v_p(b^2)$ est impaire.\\
 	Ceci est absurde donc $\sqrt{p}$ n'est pas rationnel.
 	
-	
 	\subsection{Une suite périodique}
 	\label{Une suite périodique corrigé}
-		\textcolor{blue}{\hyperref[Une suite périodique]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Une suite périodique]{[Enoncé]}}\\
 	
 	\subsection{Racines de l'unité}
 	\label{Racines de l'unité corrigé}
-		\textcolor{blue}{\hyperref[Racines de l'unité]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Racines de l'unité]{[Enoncé]}}\\
 	Soit $x\in\U_{m\wedge n}$.\\
 	On sait que $m\wedge n$ divise $n$ par conséquent $x\in\U_n$.\\
 	De même, on a $x\in\U_m$.\\
@@ -7448,30 +7597,31 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	D'après le théorème de Bézout, il existe $u,v\in\Z$ tels que $un+vm=m\wedge n$, ainsi :
 	\[x^{m\wedge n}=x^{un}\times x^{vm}=1\times 1=1\]
 	Donc $x\in\U_{n\wedge m}$.\\
-	D'où \[U_n\cap\U_m=\U_{m\wedge n}\]
+	D'où \[\U_n\cap\U_m=\U_{m\wedge n}\]
+	
 	\subsection{Plus petit nombre premier ne divisant pas un entier donné}
 	\label{Plus petit nombre premier ne divisant pas un entier donné corrigé}
-		\textcolor{blue}{\hyperref[Plus petit nombre premier ne divisant pas un entier donné]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Plus petit nombre premier ne divisant pas un entier donné]{[Enoncé]}}\\
 	
 	\subsection{Théorème de Kurshak}
 	\label{Théorème de Kurshak corrigé}
-		\textcolor{blue}{\hyperref[Théorème de Kurshak]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Théorème de Kurshak]{[Enoncé]}}\\
 	
 	\subsection{Valuation $p$-adique de $\displaystyle\binom{p^n}{k}$}
 	\label{Valuation padique de binom(p^n)(k) corrigé}
-		\textcolor{blue}{\hyperref[Valuation padique de binom(p^n)(k)]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Valuation padique de binom(p^n)(k)]{[Enoncé]}}\\
 	
 	\subsection{Une équation dans $\N$}
 	\label{Une équation dans N corrigé}
-		\textcolor{blue}{\hyperref[Une équation dans N]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Une équation dans N]{[Enoncé]}}\\
 	
 	\subsection{Triplets pythagoriciens}
 	\label{Triplets pythagoriciens corrigé}
-		\textcolor{blue}{\hyperref[Triplets pythagoriciens]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Triplets pythagoriciens]{[Enoncé]}}\\
 	
 	\subsection{Théorème de Sophie Germain \etoile{3}}
 	\label{Théorème de Sophie Germain corrigé}
-		\textcolor{blue}{\hyperref[Théorème de Sophie Germain]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Théorème de Sophie Germain]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item $x^p+y^p+z^p=0$ Donc en divisant par $(x\wedge y\wedge z)^p$ on obtient $\displaystyle\left(\frac{x}{x\wedge y\wedge z}\right)^p+\left(\frac{y}{x\wedge y\wedge z}\right)^p+\left(\frac{z}{x\wedge y\wedge z}\right)^p=0$ avec $\displaystyle\frac{x}{x\wedge y\wedge z},\frac{y}{x\wedge y\wedge z}$ et $\displaystyle\frac{z}{x\wedge y\wedge z}$ des entiers premiers entre eux dans leur ensemble.\\
 		On peut donc supposer, quitte à diviser par leur pgcd, que $x\wedge y\wedge z=1$. Soit $k$ un diviseur premier commun à $x$ et $y$. Alors $k|x^p+y^p=-z^p$. Or comme $k$ est premier, d'après le lemme d'Euclide $k|z$ et donc $k|x\wedge y\wedge z=1$ ce qui est absurde car $k\geq 2$. On en déduit que $x$ et $y$ sont premiers entre eux. Par un raisonnement analogue, $x\wedge z=y\wedge z=1$.
@@ -7661,8 +7811,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\item 
 		Sans perte de généralités, supposons que les $n_i$ sont rangées dans l'ordre décroissant. Ainsi puisque les $(n_i)$ sont des entiers ont en déduit les inégalités suivantes: $$\forall i\in\crblanc{2}{k}\, ,\quad n_i\geq n_{1}+i-1$$
 		\\Par conséquent : $$\displaystyle\prod_{i=1}^k\left(1-\frac{1}{n_i}\right)\geq\prod_{i=1}^k\frac{n_{1}+i-2}{n_1+i-1}=\frac{n_1-1}{n_1+k-1}.$$
-		L'étude de la fonction: $x\mapsto\frac{x-1}{x+k-1}$ sur $[2,+\infty[$ donne : $$\prod_{i=1}^k\left(1-\frac{1}{n_i}\right)\geq\frac{1}{k+1}.$$
-		
+		L'étude de la fonction: $x\mapsto\dfrac{x-1}{x+k-1}$ sur $[2,+\infty[$ donne : $$\prod_{i=1}^k\left(1-\frac{1}{n_i}\right)\geq\frac{1}{k+1}.$$
 		\item Soit $n\in\N^*$.
 		\\ On décompose $n$ en facteurs premiers : $\displaystyle n=\prod_{i=1}^kp_i^{\alpha_i}$.
 		\\D'après le cours : $\displaystyle\varphi(n)=n\prod_{i=1}^k\left(1-\frac{1}{p_i}\right)$.
@@ -7671,9 +7820,9 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\\Par conséquent, $\displaystyle \varphi(n)\geq \frac{n\ln(2)}{\ln(2n)}$
 	\end{enumerate}
 	
-	\subsection{Théorème d'interversion de Möbius}
-	\label{Théorème d'interversion de Möbius corrigé}
-	\textcolor{blue}{\hyperref[Théorème d'intersersion de Möbius]{[Enoncé]}}\\
+	\subsection{Formule d'inversion de Möbius}
+	\label{Formule d'inversion de Möbius corrigé}
+	\textcolor{blue}{\hyperref[Formule d'inversion de Möbius]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item $1$ est le produit de $0$ nombre premiers distincts, donc : $\mu(1)=(-1)^0=1\ne 0$.
 		Soit $(m,n)\in(\N^*)^2$ tel que $m\wedge n=1$.
@@ -7683,7 +7832,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi : \[\mu(mn)=(-1)^{k+l}=(-1)^k(-1)^l=\mu(m)\mu(n)\]
 		Donc $\mu$ est multiplicative.
 		\item Il s'agit de montrer que : \[\sum_{d|n}\mu(d)=\begin{cases}
-			1 &\mbox{si }n=1\\
+			1&\mbox{si }n=1\\
 			0&\mbox{si }n\geq 2
 		\end{cases}\]
 		Soient $p_1,\dots,p_r$ les diviseurs premiers deux à deux distincts de l'entier $n$.
@@ -7943,13 +8092,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\textcolor{blue}{\hyperref[Théorème de Froda]{[Enoncé]}}\\
 	\label{Théorème de Froda corrigé}
 	
-	\subsection{Ouverts de $\R$}
-	\label{Ouverts de R}
+	\subsection{Ouverts de $\R$ \xens{4}}
+	\label{Ouverts de R corrigé}
 	\textcolor{blue}{\hyperref[Ouverts de R]{[Enoncé]}}\\
 	Soit $\mathcal U$ un ouvert de $\R$. $\forall x>0,\ \exists \varepsilon_x>0,\ I_x:=]x-\varepsilon_x,x+\varepsilon_x[\subset\mathcal U$. Alors on a clairement $\mathcal U=\displaystyle\bigcup_{x\in \mathcal U}I_x$. Or par densité de $\Q$ dans $\R$, chaque $I_x$ contient un rationnel $q_x$. Donc $\exists r_{q_x}=\min(|x-q_x|,q_x-x+\varepsilon_x,x+\varepsilon_x-q_x)>0,\ x\in J_{q_x}:=]q_x-r_{q_x},q_x+r_{q_x}[\subset \mathcal U$.\\
 	Par construction, $\mathcal U=\displaystyle\bigcup_{x\in \mathcal U}J_{q_x}$. Or $\Q$ étant dénombrable, l'ensemble $Q:=\{q_x,\ x\in \mathcal U\}\subset\Q$ est au plus dénombrable. Ainsi $\mathcal U=\displaystyle\bigcup_{q\in Q} J_q$ avec $Q$ au plus dénombrable.\\
-	On rappelle que les connexes par arcs de $\R$ sont exactement les intervalles de $\R$. Comme on a écrit $\mathcal U$ comme une réunion au plus dénombrable de connexes par arcs, $\mathcal U$ a un nombre au plus dénombrable de composantes connexe par arcs. De plus les composantes connexes par arcs d'un ouvert sont ouvertes. En effet, donnons nous $J$ une composante connexe par arcs de $\mathcal U$. Si $J=\R$ alors c'est bon. Sinon $J$ a une borne finie, disons que c'est son sup $s$. Si $s\in J$ alors par caractère ouvert de $\mathcal U,\ \exists \eta>0,\ [s,s+\eta[\subset \mathcal U$. Mais alors $J\subsetneq J\cup[s,s+\eta[\subset \mathcal U$ avec $J\cup[s,s+\eta[$ connexe par arcs ce qui contredit la maximalité de $J$ en tant que composante connexe par arcs. Donc $s\notin J$, càd $J$ est un intervalle ouvert. Enfin
-	$$\mathcal U=\bigcup_{J\T{ composante connexe par arcs de }\mathcal U}J$$
+	Pour réaliser une union disjointe on va utiliser les composantes connexes par arcs de $\mathcal U$, qui partitionnent $\mathcal U$ par définition.\\
+	On rappelle que les connexes par arcs de $\R$ sont exactement les intervalles. Comme on a écrit $\mathcal U$ comme une réunion au plus dénombrable de connexes par arcs, $\mathcal U$ a un nombre au plus dénombrable de composantes connexe par arcs. De plus les composantes connexes par arcs d'un ouvert sont ouvertes. En effet, donnons nous $J$ une composante connexe par arcs de $\mathcal U$. Si $J=\R$ alors c'est bon. Sinon $J$ a une borne finie, disons que c'est son sup $s$. Si $s\in J$ alors par caractère ouvert de $\mathcal U,\ \exists \eta>0,\ [s,s+\eta[\subset \mathcal U$. Mais alors $J\subsetneq J\cup[s,s+\eta[\subset \mathcal U$ avec $J\cup[s,s+\eta[$ connexe par arcs ce qui contredit la maximalité de $J$ en tant que composante connexe par arcs. Donc $s\notin J$, càd $J$ est un intervalle ouvert. Enfin
+	$$\mathcal U=\bigsqcup_{J\T{ composante connexe par arcs de }\mathcal U}J$$
 	
 	\subsection{Ensemble discret}
 	\textcolor{blue}{\hyperref[Ensemble discret]{[Enoncé]}}\\

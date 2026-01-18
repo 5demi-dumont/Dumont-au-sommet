@@ -1244,9 +1244,8 @@
 		\item Montrer que si $f$ et $g$ sont deux applications de $I$ dans $\R_+^*$ log-convexes alors $f+g$ et $f\times g$ le sont également.
 	\end{enumerate}
 	
-	\section{Etude d'une fonction définie implicitement \etoile{2}}
+	\section{Etude d'une fonction définie implicitement \telecom{3}}
 	\textcolor{blue}{\hyperref[sec:etude-dune-fonction-definie-implicitement]{[Corrigé]}}\\
-	\label{fdi}
 	\label{Etude d'une fonction définie implicitement}
 	Soit une application continue $g:\R\to\R$ telle que $\forall x\in\R$, $g^2(x)=g\circ g(x)=2g(x)-x$.
 	\begin{enumerate}
@@ -6078,23 +6077,32 @@ Alors, on a l'équivalence :
 		Ainsi d'après la question précédente $f+g$ est log-convexe.
 	\end{enumerate}
 	
-	\subsection{Etude d'une fonction définie implicitement}\label{sec:etude-dune-fonction-definie-implicitement}
-	\textcolor{blue}{\hyperref[fdi]{[Enoncé]}}\\
+	\subsection{Etude d'une fonction définie implicitement \telecom{2}}
+	\label{sec:etude-dune-fonction-definie-implicitement}
+	\textcolor{blue}{\hyperref[Etude d'une fonction définie implicitement]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-	\item On remarque que $g\circ(-g+2Id_\R)=Id_\R$ donc $g$ est bijective.\\
-	Puisque $g$ est bijective, elle est a fortiori injective , et puisque $g$ est continue, elle est strictement monotone.\\
+	\item On remarque que $g\circ(-g+2\Id_\R)=\Id_\R=(-g+2\Id_\R)\circ g$ donc $g$ est bijective.\\
+	Puisque $g$ est bijective, elle est a fortiori injective, et puisque $g$ est continue, elle est strictement monotone.\\
 	Supposons que $g$ est strictement décroissante.\\
 	Alors $g^2$ est strictement croissante, ce qui est absurde car une somme de deux fonctions décroissante est décroissante.\\
 	Donc $g$ est strictement croissante.
-	\item On pose $h=g-Id_\R$.\\
-	On remarque que pour tout $x\in\R$, $h(g(x))=h(x)$.\\
-	Montrons que $h$ est une fonction constante.\\
-	Puisque $g$ est bijective,pour tout $y\in\R$, il existe un unique $x\in\R$ tel que $g(x)=y$.\\
-	Ainsi, $h(y)=h(g(x))=h(x)$.
-	Par conséquent, en faisant parcourir $y$ sur $\R$, $x$ parcourt $\R$ également, ce qui impose que $h$ est constante.\\
-	Donc \[\exists c\in\R, \forall x\in\R, g(x)-x=c \text{ i.e. } g(x)=x+c\]
-	On vérifie  que $\forall c\in\R$ la fonction $x\mapsto x+c$ vérifie la propriété. 
-	
+	\item On pose $h=g-\Id_\R$.\\
+	On remarque que, $h\circ g=h$. Montrons que $h$ est une fonction constante.\\
+	Je n'ai pas trouvé de méthode qui utilise la question 1 ?\\
+	Fixons $x\in \R$. On pose $x_n=g^n(x)$. Par récurrence immédiate $\forall n\in \N,\ h(g^n(x))=h(x)$ i.e $x_{n+1}-x_n=h(x)$ donc $(x_n)_{n\in \N}$ est une suite arithmétique de raison $h(x)$.\\
+	Si $h(x)>0$ alors $x_n\unfty\longrightarrow+\infty$. Donc par continuité de $h$, $h(x)=\lim\limits_{+\infty}h:=b$.\\
+	De même si $h(x)<0$ alors $h(x)=\lim\limits_{-\infty}h:=a$.\\
+	De là faire une esquisse de la fonction donne la marche à suivre.\\
+	Le TVI assure que $\alpha:=\dfrac{2a+b}{3}$ et $\beta:=\dfrac{a+2b}{3}$ sont dans l'image de $h$. Si $a\ne b$ alors $\alpha,\beta\ne a,\ \alpha,\beta\ne b$ d'où $\alpha=\beta=0$ puis par suite $a=b$ ce qui est absurde.\\
+	Donc $a=b$, càd $h$ est constante.
+	Donc \[\exists c\in\R,\ \forall x\in\R,\ g(x)-x=c \text{ i.e. } g(x)=x+c\]
+	On vérifie que $\forall c\in\R$ la fonction $x\mapsto x+c$ vérifie la propriété.\\\\
+	\textit{La preuve qu'il y avait avant est fausse je crois :}\\
+	Puisque $g$ est bijective, pour tout $y\in \R$, il existe un unique $x\in \R$ tel que $g(x)=y$.\\
+	Ainsi $h(y)=h(g(x))=h(x)$.\\
+	\underline{Par conséquent, en faisant parcourir $y$ sur $\R$, $x$ parcourt $\R$ également}\\
+	\underline{ce qui impose que $h$ est constante.}\\
+	\textit{Le $x$ dépend de $y$, on a $\forall x\in \R,\ \exists y\in \R,\ h(x)=h(y)$ et non $\exists x\in \R,\ \forall y\in \R,\ h(x)=h(y)$.}
 	\end{enumerate}
 	
 	\subsection{Inégalités de Kolmogorov \etoile{4}}\label{sec:inegalite-de-kolmogorov-etoile4}
