@@ -3676,23 +3676,93 @@ Soient $A\in \mathcal S^{++}_n(\R)$ et $B\in\mathcal{S}^+_n(\R)$
 	\item Montrer que $\forall t\in]0,1[, \det(A)^t\det(B)^{1-t}\leq \det(tA+(1-t)B)$
 \end{enumerate}
 
-\section{\underline{Réduction des matrices antisymétriques} \centraleponts{4}}
-\label{Réduction des matrices antisymétriques}
-\textcolor{blue}{\hyperref[Réduction des matrices antisymétriques corrigé]{[Corrigé]}}\\
-Soit $A\in\M_n(\R)$ une matrice antisymétrique.
-\\Montrer que, par le biais d'une matrice de passage orthogonale, la matrice $A$ est semblable à une matrice diagonale par blocs avec sur la diagonale des zéros et/ou différents blocs $M_{\alpha}=\begin{pmatrix}
-	0&-\alpha\\ \alpha &0
-\end{pmatrix}\quad \text{avec}\; \alpha\in\R^*_+$.
+\section{Matrices antisymétriques réelles}
+On fixe dans les exercices qui suivent une matrice $A\in \A_n(\R)$.
+
+\subsection{Rang et déterminant}
+\label{Rang et déterminant}
+\textcolor{blue}{\hyperref[Rang et déterminant corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Montrer que si $A$ est de taille impaire alors elle n'est pas inversible.
+	\item Montrer que $\T{Sp}_\R(A)\subset\{0\}$.
+	\item En déduire que le rang de $A$ est pair et que $\det A\geq 0$.
+\end{enumerate}
+
+\subsection{Spectre}
+\label{Spectre}
+\textcolor{blue}{\hyperref[Spectre corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Montrer que $\T{Sp}_\R(A)\subset\{0\}$.
+	\item Exprimer $\T{Sp}_\C(A^2)$ en fonction de $\T{Sp}_\C(A)$.
+	\item En déduire que $\T{Sp}_\C(A)\subset i\R$.
+\end{enumerate}
+
+\subsection{Diagonalisabilité (1)}
+\label{Diagonalisabilité (1)}
+\textcolor{blue}{\hyperref[Diagonalisabilité (1) corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Montrer que $A^2$ est diagonalisable.
+	\item Montrer que $\Ker A^2=\Ker A$.
+	\item En déduire que $A$ est diagonalisable dans $\M_n(\C)$.
+\end{enumerate}
+
+\subsection{Diagonalisabilité (2)}
+\label{Diagonalisabilité (2)}
+\textcolor{blue}{\hyperref[Diagonalisabilité (2) corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Montrer que $\Ker A=(\Ima A)^\bot$.
+	\item En déduire qu'il existe $O\in \O_n(\R)$ et $B\in \A_n(\R)$ inversible telle que
+	$$A=O\begin{pmatrix}
+		0&0\\
+		0&B
+	\end{pmatrix}O^\top$$
+	\item En déduire que le rang de $A$ est pair.
+	\item Montrer que $A$ est diagonalisable dans $\M_n(\C)$.
+\end{enumerate}
+
+\subsection{Réduction}
+\label{Réduction}
+\textcolor{blue}{\hyperref[Réduction corrigé]{[Corrigé]}}\\
+Montrer que, par le biais d'une matrice de passage orthogonale, $A$ est semblable à une matrice diagonale par blocs avec sur sa diagonale des zéros et/ou différents blocs $M_\alpha=\begin{pmatrix}
+	0&-\alpha\\
+	\alpha&0
+\end{pmatrix}$ où $\alpha\in \R^*_+$.
+
+\section{Endomorphismes normaux}
+\label{Endomorphismes normaux}
+\textcolor{blue}{\hyperref[Endomorphismes normaux corrigé]{[Corrigé]}}\\
+Soit $u$ un endomorphisme d'un espace euclidien $E$. On suppose que $u$ est un endomorphisme \textit{normal}, c'est-à-dire que $u^*\circ u=u\circ u^*$.
+\begin{enumerate}
+	\item Montrer que $u$ et $u^*$ ont les mêmes éléments propres.
+	\item Montrer que les sous-espaces propres de $u$ sont deux à deux orthogonaux.
+\end{enumerate}
+
+\section{Réduction des normaux}
+\label{Réduction des normaux}
+\textcolor{blue}{\hyperref[Réduction des normaux corrigé]{[Corrigé]}}\\
+Soit $u$ un endomorphisme d'un espace euclidien $E$. On suppose que $u$ est un endomorphisme \textit{normal}, c'est-à-dire que $u^*\circ u=u\circ u^*$.
+\begin{enumerate}
+	\item On suppose dans cette question uniquement $\dim E=2$ et $\chi_u$ irréductible. Soit $\B$ une base orthonormée de $E$. Montrer que la matrice de $u$ dans la base $\B$ est de la forme $\begin{pmatrix}
+		a&-b\\
+		b&a
+	\end{pmatrix}$ avec $(a,b)\in \R\times \R^*$.
+	\item Soit $F$ un sous-espace vectoriel de $E$ stable par $u$. Montrer que $F^\bot$ est également stable par $u$ puis que les endomorphismes induits $u_F$ et $u_{F^\bot}$ sont des endomorphismes normaux de $F$ et $F^\bot$ respectivement.
+	\item Déduire de ce qui précède qu'il existe une base orthonormée de $E$ dans laquelle la matrice de $u$ est diagonale par blocs avec des blocs diagonaux de la forme $\begin{pmatrix}\lambda\end{pmatrix}$ avec $\lambda\in \R$ ou $\begin{pmatrix}
+		a&-b\\
+		b&a
+	\end{pmatrix}$ avec $(a,b)\in \R\times \R^*$.
+	\item Que peut-t-on dire si $u$ est autoadjoint ? anti-autoadjoint ? orthogonal ?
+\end{enumerate}
 
 \section{Caractérisation des matrices symétriques positives \centraleponts{3}}
 \label{Caractérisation des matrices symétriques positives}
 \textcolor{blue}{\hyperref[Caractérisation des matrices symétriques positives corrigé]{[Corrigé]}}\\
-On munit $\mathcal{M}_n(\R)$ muni de son produit scalaire canonique. On note $\mathcal{A}_n(\R)$ l'ensemble des matrices antisymétriques et $\mathcal{S}_n^+(\R)$ l'ensemble des matrices symétriques positives.
-\\ Soit $A\in\M_n(\R)$: $$\forall U\in\mathcal{O}_n(\R), \quad \Tr(AU)\leq\Tr(A)$$
+On munit $\M_n(\R)$ muni de son produit scalaire canonique. On note $\A_n(\R)$ l'ensemble des matrices antisymétriques et $\S_n^+(\R)$ l'ensemble des matrices symétriques positives.
+\\ Soit $A\in\M_n(\R)$: $$\forall U\in\O_n(\R), \quad \Tr(AU)\leq\Tr(A)$$
 \begin{enumerate}
-	\item Déterminer le supplémentaire orthogonal de $\mathcal{A}_n(\R)$.
-	\item Soit $B\in\mathcal{A}_n(\R)$. Montrer que $\forall x\in\R,\quad\exp(xB)\in\O_n(\R)$.
-	\item Montrer que $A\in\mathcal S_n^+(\R)$.
+	\item Déterminer le supplémentaire orthogonal de $\A_n(\R)$.
+	\item Soit $B\in\A_n(\R)$. Montrer que $\forall x\in\R,\quad\exp(xB)\in\O_n(\R)$.
+	\item Montrer que $A\in\S_n^+(\R)$.
 	\item Etudier la réciproque.
 \end{enumerate}
 
@@ -5307,6 +5377,9 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Racine $p$-ième d'une matrice}
 	\label{Racine pieme d'une matrice corrigé}
 	\textcolor{blue}{\hyperref[Racine pieme d'une matrice]{[Enoncé]}}\\
+	\underline{$1^{\T{ère}}$ méthode :}\\
+	$A$ admet un polynôme annulateur scindé à racines simples $P$. On pose $Q(X)=P(X^p)$. $Q$ est un polynôme annulateur de $B$. Comme $A$ est inversible, $Q'(X)=pX^{p-1}P'(X^p)$ n'a pas de racine commune avec $Q$. Donc $Q$ est scindé à racines simples dans $\C[X]$. Ainsi $Q$ est scindé à racines simples et $B$ est diagonalisable.\\
+	\underline{$2^{\T{nd}}$ méthode :}\\
 	$\M_{n,1}(\C)=\displaystyle\bigoplus_{\lambda\in \T{Sp}(B^p)}\ker(B^p-\lambda\Id)$.\\
 	Posons pour $\lambda\in \T{Sp}(A)$ et $k\in \crblanc{0}{p-1},\ \mu_{\lambda,k}=\sqrt[p]{|\lambda|}e^{i(2k\pi+\arg(\lambda))/p}$.\\
 	Dans ce cas les polynômes $X-\mu_{\lambda,0},\dots,X-\mu_{\lambda,p-1}$ sont deux à deux premiers entre eux et de produit $X^p-\lambda$. Et donc d'après le lemme des noyaux :\\
@@ -9414,9 +9487,109 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Réduction simultanée corrigé}
 	\textcolor{blue}{\hyperref[Réduction simultanée]{[Enoncé]}}\\
 	
-	\subsection{Réduction des matrices antisymétriques}
-	\label{Réduction des matrices antisymétriques corrigé}
-		\textcolor{blue}{\hyperref[Réduction des matrices antisymétriques]{[Enoncé]}}\\
+	\subsection{Matrices antisymétriques réelles}
+	\subsubsection{Rang et déterminant}
+	\label{Rang et déterminant corrigé}
+	\textcolor{blue}{\hyperref[Rang et déterminant]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $\det A=\det(A^\top)=\det(-A)=(-1)^n\det A=-\det A$ donc $\det A=0$ càd $A$ n'est pas inversible.
+		\item Soit $\lambda$ une valeur propre réelle de $A$ et $X$ un vecteur propre associé.\\
+		$AX=\lambda X\implies X^\top A^\top=\lambda X^\top$ donc $X^\top A=-\lambda X^\top$.\\
+		Ainsi d'une part $X^\top AX=\lambda X^\top X$ et d'autre part $X^\top AX=-\lambda X^\top X$.\\
+		Or $X^\top X\ne 0$ car $X\ne 0$ donc $\lambda=-\lambda$ d'où $\lambda=0$.
+		\item Comme $A$ est à coefficients réels, son polynôme caractéristique aussi. Donc les valeurs propres non réelles de $A$ sont conjugués deux à deux. Ainsi le rang de $A$, qui est le nombre de valeur propre non nulle et donc ici non réelle, est pair. On en déduit de plus que si $0$ n'est pas valeur propre de $A$ alors en notant $\lambda_1,\dots,\lambda_p\in \C$ tels que $\T{Sp}(A)=\{\lambda_1,\overline{\lambda_1},\dots,\lambda_p,\overline{\lambda_p}\}$, $\det A=\displaystyle\prod_{i=1}^p\lambda_i\prod_{i=1}^p\overline{\lambda_i}=\prod_{i=1}^p|\lambda_i|^2>0$. D'où $\det A\geq 0$.
+	\end{enumerate}
+	
+	\subsubsection{Spectre}
+	\label{Spectre corrigé}
+	\textcolor{blue}{\hyperref[Spectre]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $\lambda$ une valeur propre réelle de $A$ et $X$ un vecteur propre associé.\\
+		$AX=\lambda X\implies X^\top A^\top=\lambda X^\top$ donc $X^\top A=-\lambda X^\top$.\\
+		Ainsi d'une part $X^\top AX=\lambda X^\top X$ et d'autre part $X^\top AX=-\lambda X^\top X$.\\
+		Or $X^\top X\ne 0$ car $X\ne 0$ donc $\lambda=-\lambda$ d'où $\lambda=0$.
+		\item En trigonalisant $A$ dans $\M_n(\C)$ on remarque que les valeurs propres de $A^2$ sont les carrés des valeurs propres de $A$.
+		\item On remarque que $A^2$ est symétrique réelle donc d'après le théorème spectral $\T{Sp}_\C(A^2)\subset \R$. Ainsi $\forall \lambda\in \T{Sp}_\C(A),\ \lambda^2\in \R$. Donc $\lambda\in \R\cup i\R$. Mais puisque la seule valeur propre potentiellement réelle de $A$ est $0$, $\T{Sp}_\C(A)\subset i\R$.
+	\end{enumerate}
+	
+	\subsubsection{Diagonalisabilité (1)}
+	\label{Diagonalisabilité (1) corrigé}
+	\textcolor{blue}{\hyperref[Diagonalisabilité (1)]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item $(A^2)^\top=(A^\top)^2=(-A)^2=A^2$ donc $A^2\in \S_n(\R)$. D'après le théorème spectral elle est diagonalisable.
+		\item Il est clair que $\Ker A\subset \Ker A^2$. Réciproquement fixons $X\in \Ker A^2$.\\
+		$A^2X=0\implies -A^\top AX=0\implies X^\top A^\top AX=0\implies \proscal{AX}{AX}=0\implies AX=0\implies X\in \Ker A$.
+		\item D'après les questions précédentes $\C^n=\Ker(A^2)\oplus\displaystyle\bigoplus_{\lambda\in \T{Sp}(A^2)\backslash\{0\}}\Ker(A^2-\lambda I_n)$.\\
+		Or $\forall \lambda\in \T{Sp}(A^2)\backslash\{0\}$, $\exists \mu_\lambda\in \C^*,\ \lambda=\mu_\lambda^2$.\\
+		Dans ce cas les polynômes $X-\mu_\lambda$ et $X+\mu_\lambda$ sont premiers entre eux et de produit $X^2-\lambda$. Et donc d'après le lemme des noyaux :\\
+		$\C^n=\Ker(A)\oplus\displaystyle\bigoplus_{\lambda\in \T{Sp}(A^2)\backslash\{0\}}\Ker(A-\mu_\lambda I_n)\oplus\Ker(A+\mu_\lambda I_n)=\bigoplus_{\mu\in \T{Sp}(A)}\Ker(A-\mu I_n)$.\\
+		càd $A$ est diagonalisable (il n'y a pas trop de termes, certains des noyaux en jeu sont nuls).
+	\end{enumerate}
+	
+	\subsubsection{Diagonalisabilité (2)}
+	\label{Diagonalisabilité (2) corrigé}
+	\textcolor{blue}{\hyperref[Diagonalisabilité (2)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item D'après le théorème du rang $\dim\Ker A=n-\rg A=\dim(\Ima A)^\bot$. Ensuite si $X\in \Ker A$ alors pour tout $Z=AY\in \Ima A$, $\proscal{X}{Z}=Z^\top X=Y^\top A^\top X=-Y^\top AX=0$. Donc $\Ker A\subset (\Ima A)^\bot$.\\
+		Ainsi $\Ker A=(\Ima A)^\bot$.
+		\item D'après la question précédente on se donne une base orthonormée $\B=(f_1,\dots,f_{n-r},e_1,\dots,e_r)$ adaptée à la décomposition $E=\Ker A\oplus \Ima A$. On note $B=\Mat_(e_1,\dots,e_p)$ et $O$ la matrice de passage de la base canonique à la base $\B$. Alors $O\in \O_n(\R)$ et
+		$$A=O\begin{pmatrix}
+			0&0\\
+			0&B
+		\end{pmatrix}O^\top$$
+		En outre, $O\begin{pmatrix}
+			0&0\\
+			0&-B
+		\end{pmatrix}O^\top-A=A^\top=O\begin{pmatrix}
+			0&0\\
+			0&B^\top
+		\end{pmatrix}O^\top$ donc $B^\top=-B$ càd $B\in \A_r(\R)$.\\
+		Enfin $r=\rg B$ donc $B$ est inversible.
+		\item On sait que $\det B=\det(B^\top)=\det(-B)=(-1)^r\det B$ donc comme $B$ est inversible, $(-1)^r=1$ càd $r=\rg A$ est pair.
+		\item D'après la question 2 il suffit de traiter le cas où $A$ est inversible.\\
+		On remarque que $A^2$ est symétrique réelle. D'après le théorème spectral elle admet un polynôme annulateur $P$ scindé à racines simples.\\
+		On pose $Q(X)=P(X^2)$. $Q$ est un polynôme annulateur de $A$ et $Q'(X)=2XP'(X^2)$ n'a pas de racine commune avec $Q$ donc $Q$ est scindé à racines simples dans $\C[X]$. Ainsi $A$ est diagonalisable dans $\M_n(\C)$.
+	\end{enumerate}
+	
+	\subsubsection{Réduction}
+	\label{Réduction corrigé}
+	\textcolor{blue}{\hyperref[Réduction]{[Enoncé]}}\\
+	On montre (cf.\ref{Diagonalisabilité (2)}) qu'on peut se ramener au cas où $A$ est inversible et de taille paire. Ensuite on montre (cf.\ref{Spectre}) que $\T{Sp}_\C(A)\subset i\R$.\\
+	On montre par récurrence sur $n\in \N^*$ le résultat suivant : "Si $M\in \A_{2n}(\R)$ est inversible alors elle est orthogonalement semblable à une matrice diagonale par blocs avec différents blocs de la forme $M_\alpha=\begin{pmatrix}
+		0&-\alpha\\
+		\alpha&0
+	\end{pmatrix}$ où $\alpha\in \R^*_+$".\\
+	$n=2 :$ Fixons $A=\begin{pmatrix}
+		a&b\\
+		c&d
+	\end{pmatrix}\in \A_2(\R)$ inversible et notons $f\in \L(\R^n)$ l'endomorphisme canoniquement associé. $A^\top=-A\implies a=d=0$ et $b=-c$ et $\det A\ne 0\implies c^2\ne 0\implies c\ne 0$. Si $c>0$ alors c'est bon avec $O=I_2$, sinon on pose $O=\begin{pmatrix}
+		0&1\\
+		1&0
+	\end{pmatrix}\in \O_2(\R)$ et $A=O\begin{pmatrix}
+		0&c\\
+		-c&0
+	\end{pmatrix}O^\top$ conclut.\\
+	Supposons le résultat pour des matrices de taille $2n$ pour un certain $n\in \N^*$. Fixons $A\in \A_{2n+2}(\R)$ inversible et notons $f\in \L(\R^{2n+2})$ l'endomorphisme canoniquement associé.\\
+	Comme on a supposé $A$ inversible et comme $\chi_A$ est scindé sur $\C$, il existe $\alpha\in \R$ tel que $i\alpha$ soit valeur propre de $A$. En outre comme $\chi_A\in \R[X]$, $-i\alpha$ est aussi valeur propre de $A$. On peut donc choisir $\alpha>0$.\\
+	On fixe $Z\in \C^n$ un vecteur propre de $A$ associé à la valeur propre $i\alpha$. On note $Z=X+iY$ avec $X,Y\in \R^n$.\\
+	$AZ=i\alpha Z\iff AX+iAY=i\alpha X-\alpha Y\iff \begin{cases}
+		AX=-\alpha Y\\
+		AY=\alpha X
+	\end{cases}\implies (X\ne 0 \T{ et } Y\ne 0)$.\\
+	Ceci montre que le sous-espace réel $F=\Vect_\R(X,Y)$ est stable par $f$. $f^*=-f$ stabilise alors aussi $F$. Donc $f=(f^*)^*$ stabilise $F^\bot$.\\
+	Or $\dim F=2$, en effet s'il existe $(a,b)\in \R^2\backslash\{(0,0)\}$ tel que $aX+bY=0$ alors $\displaystyle A\left(\frac{a}{\alpha}Y-\frac{b}{\alpha}X\right)=aX+bY=0$ d'où $bY-aX=0$ puis en faisant la somme/différence des deux relations $a=b=0$ (en utilisant $X\ne 0$ et $Y\ne 0$).\\
+	Ainsi $A$ est semblable par la matrice de passage de la base canonique à n'importe quelle base orthonormée adaptée à la décomposition $\R^n=F\oplus F^\bot$ à une matrice $A'=\begin{pmatrix}
+		U&0\\
+		0&V
+	\end{pmatrix}$ où $U\in \A_2(\R)$ et $V\in \A_{2n}(\R)$. On conclut en appliquant l'hypothèse de récurrence à $V$ et l'initialisation à $U$.
+	
+	\subsection{Endomorphismes normaux}
+	\label{Endomorphismes normaux corrigé}
+	\textcolor{blue}{\hyperref[Endomorphismes normaux]{[Enoncé]}}\\
+	
+	\subsection{Réduction des normaux}
+	\label{Réduction des normaux corrigé}
+	\textcolor{blue}{\hyperref[Réduction des normaux]{[Enoncé]}}\\
 	
 	\subsection{Caractérisation des matrices symétriques positives}
 	\label{Caractérisation des matrices symétriques positives corrigé}
