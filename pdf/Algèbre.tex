@@ -4940,7 +4940,27 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Diagonalisabilité d'une matrice (1)}
 	\label{Diagonalisabilité d'une matrice (1) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (1)]{[Enoncé]}}\\
-	
+	Il est vrai que la matrice est symétrique mais pas forcément à coefficients réelles.\\
+	On calcule le polynôme caractéristique de $A$.\\
+	En développant par rapport à la première ligne, on obtient :
+	\[\chi_A=X^{n-2}(X^2-a_nX-S)\]
+	où $S=\sum_{k=0}^{n-1}a_k^2$.\\
+	On pose $Q=X^2-a_nX-S$.
+	$A$ est diagonalisable si et seulement si son polynôme minimal est scindé à racine simples.\\
+	Ici, $A$ est diagonalisable si et seulement si :
+	\begin{itemize}
+		\item $a_1=a_2=\dots=a_{n-1}=0$, dans ce cas $S=0$ et la matrice est diagonale donc a fortiori diagonalisable.
+		\item Au moins un $a_i\ne 0$ pour $i<n$. Dans ce cas, le rang de $A$ est au moins $1$ et la dimension du noyau égale à $n-2$. Pour que $A$ soit diagonalisable, il faut que :
+		\begin{itemize}
+			\item $S\ne 0$ pour que la valeur propre $0$ ne soit pas racine de $Q$.
+			\item Le discriminant de $Q$ soit non nulle. Pour que les deux racines de $Q$ soit distinctes.
+		\end{itemize}
+	\end{itemize}
+	Ainsi, $A$ est diagonalisable si et seulement si :
+	\begin{itemize}
+		\item $a_1=\dots=a_{n-1}=0$,
+		\item ou $S\ne 0$ et $a_n^2+4S\ne 0$
+	\end{itemize}
 	\subsection{Diagonalisabilité d'une matrice (2)}
 	\label{Diagonalisabilité d'une matrice (2) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (2)]{[Enoncé]}}\\
