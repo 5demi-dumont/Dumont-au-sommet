@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.4)  1 FEB 2026 21:50
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.22)  30 JAN 2026 20:39
->>>>>>> Stashed changes
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.22)  6 FEB 2026 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,7 +1005,21 @@ tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count356
 \l__pdf_internal_box=\box115
-) (Analyse.aux)
+) (Analyse.aux
+
+LaTeX Warning: Label `sec:calcul-de-derivees-partielles-1' multiply defined.
+
+
+LaTeX Warning: Label `sec:existence-de-derivees-partielles' multiply defined.
+
+
+LaTeX Warning: Label `sec:etude-dune-fonction' multiply defined.
+
+
+LaTeX Warning: Label `sec:une-equation-fonctionnelle-etoile2' multiply defined.
+
+
+)
 \openout1 = `Analyse.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1104,13 +1114,8 @@ Package hyperref Info: Link coloring ON on input line 26.
 \@outlinefile=\write4
 \openout4 = `Analyse.out'.
 
-<<<<<<< Updated upstream
-\c@lstlisting=\count387
-<Minerve-Meduse.jpg, id=1694, 963.6pt x 755.82375pt>
-=======
 \c@lstlisting=\count363
-<Minerve-Meduse.jpg, id=1682, 963.6pt x 755.82375pt>
->>>>>>> Stashed changes
+<Minerve-Meduse.jpg, id=1694, 963.6pt x 755.82375pt>
 File: Minerve-Meduse.jpg Graphic file (type jpg)
 <use Minerve-Meduse.jpg>
 Package pdftex.def Info: Minerve-Meduse.jpg  used on input line 42.
@@ -4134,15 +4139,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 5814--5821
  []
 
 [216]
-<<<<<<< Updated upstream
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 583
 4.
- (C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
-=======
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 580
-7.
  (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
->>>>>>> Stashed changes
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 Underfull \hbox (badness 10000) in paragraph at lines 5843--5844
@@ -4315,176 +4314,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 6109--6110
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6123--6131
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 6134--6135
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6098--6106
->>>>>>> Stashed changes
 
  []
 
 [227]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6140--6145
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6109--6110
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6140--6145
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6115--6120
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6140--6145
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6115--6120
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6140--6145
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6115--6120
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (90.03584pt too wide) detected at line 6165
 []
  []
 
 [228]
 Overfull \hbox (71.33887pt too wide) detected at line 6181
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6115--6120
-
- []
-
-[228]
-Overfull \hbox (90.03584pt too wide) detected at line 6140
-[]
- []
-
-
-Overfull \hbox (71.33887pt too wide) detected at line 6156
->>>>>>> Stashed changes
 []
  []
 
 [229] [230]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6213--6214
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6189
->>>>>>> Stashed changes
 
  []
 
 [231]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6241--6242
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6216--6217
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6251--6253
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6226--6228
->>>>>>> Stashed changes
 
  []
 
 [232]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6265--6266
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6240--6241
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6280--6282
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6255--6257
->>>>>>> Stashed changes
 
  []
 
 [233]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6297--6298
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6272--6273
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (72.36423pt too wide) detected at line 6307
-=======
-Overfull \hbox (72.36423pt too wide) detected at line 6282
->>>>>>> Stashed changes
 []
  []
 
 [234] [235] [236]
-<<<<<<< Updated upstream
 Overfull \hbox (13.2674pt too wide) in paragraph at lines 6390--6394
-=======
-Overfull \hbox (13.2674pt too wide) in paragraph at lines 6365--6369
->>>>>>> Stashed changes
 \T1/cmr/m/n/10 Alors $\OMS/cmsy/m/n/10 j []\OT1/cmr/m/n/10 ([])\OMS/cmsy/m/n/10
  j \OT1/cmr/m/n/10 = [] = [] = [] = [] \OMS/cmsy/m/n/10 2
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6397--6398
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6372--6373
->>>>>>> Stashed changes
 
  []
 
 [237]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6430--6431
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6405--6406
->>>>>>> Stashed changes
 
  []
 
 [238]
-<<<<<<< Updated upstream
 Overfull \hbox (53.50505pt too wide) in paragraph at lines 6444--6449
-=======
-Overfull \hbox (53.50505pt too wide) in paragraph at lines 6419--6424
->>>>>>> Stashed changes
 \OML/cmm/m/it/10 n\OT1/cmr/m/n/10 !\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 L[]; P\OM
 S/cmsy/m/n/10 i \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 h[]P\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] [][] 
@@ -4494,11 +4415,7 @@ ML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] [][]
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (6.33107pt too wide) detected at line 6450
-=======
-Overfull \hbox (6.33107pt too wide) detected at line 6425
->>>>>>> Stashed changes
 \OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 L[]; L[]\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 =
  [] [][] \OML/cmm/m/it/10 h[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10
  )\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/
@@ -4508,20 +4425,12 @@ OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 X[]; L[]\OMS/cmsy/m/n/10 i
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6458--6459
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6433--6434
->>>>>>> Stashed changes
 
  []
 
 [239]
-<<<<<<< Updated upstream
 Overfull \hbox (64.81209pt too wide) in paragraph at lines 6465--6469
-=======
-Overfull \hbox (64.81209pt too wide) in paragraph at lines 6440--6444
->>>>>>> Stashed changes
 []\T1/cmr/m/n/10 Soient $\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N$
  \T1/cmr/m/n/10 et $\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 = 2\OML/cmm/m/it/10 m$\T
 1/cmr/m/n/10 . $\OML/cmm/m/it/10 Q[] \OT1/cmr/m/n/10 = [] [](\OMS/cmsy/m/n/10 ^
@@ -4531,11 +4440,7 @@ mm/m/it/10 X[]$\T1/cmr/m/n/10 .
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (85.47618pt too wide) in paragraph at lines 6473--6478
-=======
-Overfull \hbox (85.47618pt too wide) in paragraph at lines 6448--6453
->>>>>>> Stashed changes
 \T1/cmr/m/n/10 Montrons par ré-cur-rence sur $\OML/cmm/m/it/10 k \OMS/cmsy/m/n/
 10 2 \U/stmry/m/n/10 J\OT1/cmr/m/n/10 0; \OML/cmm/m/it/10 n\U/stmry/m/n/10 K$ \
 T1/cmr/m/n/10 la pro-priété $\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
@@ -4544,20 +4449,12 @@ n/10 ^^@
  []
 
 [240]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6485--6486
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6460--6461
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (1.20262pt too wide) in paragraph at lines 6487--6491
-=======
-Overfull \hbox (1.20262pt too wide) in paragraph at lines 6462--6466
->>>>>>> Stashed changes
 []\T1/cmr/m/n/10 Soient $\OML/cmm/m/it/10 P; Q \OMS/cmsy/m/n/10 2 \U/msb/m/n/10
  R\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ]$\T1/cmr/m/n/10 . Alors $
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/
@@ -4568,50 +4465,17 @@ t/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6504--6505
 
  []
 
 [241]
 Underfull \hbox (badness 10000) in paragraph at lines 6518--6519
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6479--6480
-
- []
-
-[241]
-Underfull \hbox (badness 10000) in paragraph at lines 6493--6494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6497--6498
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6501--6502
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6505--6506
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6509--6510
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6522--6523
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6513--6514
->>>>>>> Stashed changes
 
  []
 
@@ -4621,45 +4485,21 @@ Overfull \hbox (17.49173pt too wide) detected at line 6539
  []
 
 [242]
-<<<<<<< Updated upstream
 Overfull \hbox (6.5605pt too wide) detected at line 6556
 [] \OT1/cmr/m/n/10 ^^H[](1) = []
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 6571--6572
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6517--6518
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6521--6522
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6525--6526
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6546--6547
->>>>>>> Stashed changes
 
  []
 
 [243]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6575--6576
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6550--6557
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6579--6580
 
  []
@@ -4696,37 +4536,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 6620--6627
 
 [245]
 Overfull \hbox (3.4682pt too wide) in paragraph at lines 6630--6642
-=======
-Overfull \hbox (3.4682pt too wide) in paragraph at lines 6560--6572
->>>>>>> Stashed changes
 []\T1/cmr/m/n/10 Supposons pas l'ab-surde qu'il existe deux po-ly-nômes à co-ef
 -fi-cients ra-tion-nels $\OML/cmm/m/it/10 B \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/
 10 b[]X[]$
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6630--6642
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6560--6572
-
- []
-
-[244]
-Underfull \hbox (badness 10000) in paragraph at lines 6583--6588
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6583--6588
->>>>>>> Stashed changes
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<<<<<<< Updated upstream
  [246]
 Underfull \hbox (badness 10000) in paragraph at lines 6653--6658
 
@@ -4734,34 +4556,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 6653--6658
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 6653--6658
-=======
- [245]
-Underfull \hbox (badness 10000) in paragraph at lines 6599--6600
-
- []
-
-[246]
-Underfull \hbox (badness 10000) in paragraph at lines 6614--6615
->>>>>>> Stashed changes
 
  []
 
 [247]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6669--6670
-=======
-
-LaTeX Warning: Hyper reference `gausslucas' on page 248 undefined on input line
- 6639.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6656--6666
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6684--6685
 
  []
@@ -4778,9 +4581,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 6726--6736
 
 
 Overfull \hbox (0.45483pt too wide) in paragraph at lines 6726--6736
-=======
-Overfull \hbox (0.45483pt too wide) in paragraph at lines 6656--6666
->>>>>>> Stashed changes
 \OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2 \U/stmry/m/n/10 J\OT1/cmr/m/n/10 1; \OML/
 cmm/m/it/10 r\U/stmry/m/n/10 K$\T1/cmr/m/n/10 . $\OML/cmm/m/it/10 a; b \OMS/cms
 y/m/n/10 2 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 ) = [](\OML/c
@@ -4791,34 +4591,12 @@ r/m/n/10 (\OML/cmm/m/it/10 ^^V[]; [] ; ^^V[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6726--6736
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6656--6666
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6726--6736
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6656--6666
-
- []
-
-[248]
-Underfull \hbox (badness 10000) in paragraph at lines 6666--6678
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 6736--6748
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6666--6678
->>>>>>> Stashed changes
 
  []
 
@@ -4827,7 +4605,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 6736--6748
 
  []
 
-<<<<<<< Updated upstream
+
+Underfull \hbox (badness 10000) in paragraph at lines 6736--6748
+
+ []
+
 [250]
 
 LaTeX Warning: Hyper reference `polycommutecos' on page 251 undefined on input 
@@ -4839,22 +4621,11 @@ Underfull \vbox (badness 3354) has occurred while \output is active []
  [251]
 [252]
 Underfull \hbox (badness 10000) in paragraph at lines 6801--6807
-=======
-LaTeX Warning: Hyper reference `polycommutecos' on page 250 undefined on input 
-line 6690.
-
-[250] [251]
-Underfull \hbox (badness 10000) in paragraph at lines 6731--6737
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (19.48967pt too wide) in paragraph at lines 6801--6807
-=======
-Overfull \hbox (19.48967pt too wide) in paragraph at lines 6731--6737
->>>>>>> Stashed changes
 \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R\OML/cmm
 /m/it/10 ;  P\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OML/cmm
 /m/it/10 P\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = 1 + [] \OML
@@ -4862,68 +4633,31 @@ Overfull \hbox (19.48967pt too wide) in paragraph at lines 6731--6737
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6801--6807
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6731--6737
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6801--6807
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6731--6737
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6753--6754
-
- []
-
-[252]
-Overfull \hbox (33.50748pt too wide) detected at line 6777
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6777--6781
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6782--6790
->>>>>>> Stashed changes
 
  []
 
 [253]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6823--6824
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6802--6803
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (33.50748pt too wide) detected at line 6847
 []
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 6847--6851
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6806--6807
->>>>>>> Stashed changes
 
  []
 
 [254]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6852--6860
 
  []
@@ -4940,193 +4674,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 6876--6877
 
 [255]
 Overfull \hbox (2.56477pt too wide) in paragraph at lines 6888--6888
-=======
-Overfull \hbox (2.56477pt too wide) in paragraph at lines 6818--6818
->>>>>>> Stashed changes
 |[]\T1/cmr/bx/n/12 Une condi-tion né-ces-saire pour qu'un po-ly-nôme soit scind
 é
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6890--6892
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6820--6822
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (11.48022pt too wide) in paragraph at lines 6892--6896
-=======
-Overfull \hbox (11.48022pt too wide) in paragraph at lines 6822--6826
->>>>>>> Stashed changes
 \T1/cmr/m/n/10 On sait alors que $[] \OT1/cmr/m/n/10 = [] []$ \T1/cmr/m/n/10 et
  par dé-ri-va-tion, $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U
 /msb/m/n/10 R \OMS/cmsy/m/n/10 n \OML/cmm/m/it/10 S;  [] \OT1/cmr/m/n/10 =
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6892--6896
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6822--6826
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6896--6908
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6826--6838
-
- []
-
-[255]
-Underfull \hbox (badness 10000) in paragraph at lines 6851--6853
->>>>>>> Stashed changes
 
  []
 
 [256]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6921--6923
 
  []
 
 [257]
 Underfull \hbox (badness 10000) in paragraph at lines 6950--6951
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6880--6881
 
  []
 
 
-LaTeX Warning: Reference `PolynÃ´me rÃ©ciproque' on page 257 undefined on input
- line 6890.
-
-[257]
-Underfull \hbox (badness 10000) in paragraph at lines 6895--6896
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
 LaTeX Warning: Reference `PolynÃ´me rÃ©ciproque' on page 258 undefined on input
  line 6960.
 
 [258]
 Underfull \hbox (badness 10000) in paragraph at lines 6965--6966
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6902--6903
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6972--6973
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6906--6907
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6976--6977
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6910--6911
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6980--6981
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6914--6915
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 6984--6985
 
  []
 
 
 Overfull \hbox (40.75186pt too wide) in paragraph at lines 6986--6990
-=======
-Overfull \hbox (40.75186pt too wide) in paragraph at lines 6916--6920
->>>>>>> Stashed changes
 [] []$\T1/cmr/m/n/10 . On a $\OML/cmm/m/it/10 [] \OT1/cmr/m/n/10 = [] [] = [] 
 = [] = \OMS/cmsy/m/n/10 ^^@[]$\T1/cmr/m/n/10 . 
  []
 
-<<<<<<< Updated upstream
 [259]
 Underfull \hbox (badness 10000) in paragraph at lines 7003--7004
-=======
-[258]
-Underfull \hbox (badness 10000) in paragraph at lines 6933--6934
-
- []
-
-[259]
-Underfull \hbox (badness 10000) in paragraph at lines 6945--6946
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6955--6956
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6961--6963
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6968--6969
->>>>>>> Stashed changes
 
  []
 
 [260]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7015--7016
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 6975--6977
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7025--7026
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 7031--7033
-=======
-LaTeX Warning: Hyper reference `polyrecip' on page 261 undefined on input line 
-6983.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6983--6984
->>>>>>> Stashed changes
 
  []
 
 [261]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7038--7039
 
  []
@@ -5142,25 +4781,17 @@ LaTeX Warning: Hyper reference `polyrecip' on page 262 undefined on input line
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 7053--7054
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7009--7011
->>>>>>> Stashed changes
 
  []
 
 [262]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7079--7081
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7013--7020
->>>>>>> Stashed changes
 
  []
 
 [263]
 Underfull \hbox (badness 10000) in paragraph at lines 7083--7090
 
-<<<<<<< Updated upstream
  []
 
 [264]
@@ -5168,19 +4799,11 @@ Underfull \vbox (badness 2452) has occurred while \output is active []
 
  [265]
 Underfull \hbox (badness 10000) in paragraph at lines 7117--7120
-=======
- [264]
-Underfull \hbox (badness 10000) in paragraph at lines 7047--7050
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (3.30246pt too wide) in paragraph at lines 7124--7129
-=======
-Overfull \hbox (3.30246pt too wide) in paragraph at lines 7054--7059
->>>>>>> Stashed changes
 \T1/cmr/m/n/10 Ces po-ly-nômes sont bien so-lu-tions puisque pour $\OML/cmm/m/i
 t/10  \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R\OMS/cmsy/m/n/10 n\U/msb/m/n/10 Q\OML/
 cmm/m/it/10 ;  P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 \OT1/cmr/m/n/10 ) \OMS/cmsy/
@@ -5189,21 +4812,12 @@ OML/cmm/m/it/10 P [] \OT1/cmr/m/n/10 =
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7132--7134
 
  []
 
 [266]
 Overfull \hbox (142.96138pt too wide) in paragraph at lines 7134--7135
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7062--7064
-
- []
-
-[265]
-Overfull \hbox (142.96138pt too wide) in paragraph at lines 7064--7065
->>>>>>> Stashed changes
 \U/msb/m/n/10 K[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ]$ \T1/cmr/
 m/n/10 res-pec-ti-ve-ment. Ainsi d'après le cours, la fa-mille $\U/eus/m/n/10 B
  \OT1/cmr/m/n/10 = ((1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 ; \
@@ -5215,77 +4829,34 @@ m/n/10 (0\OML/cmm/m/it/10 ; X[]\OT1/cmr/m/n/10 ))$
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7138--7144
 
  []
 
 [267]
 Overfull \hbox (26.09674pt too wide) in paragraph at lines 7162--7162
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7068--7074
-
- []
-
-[266]
-Overfull \hbox (26.09674pt too wide) in paragraph at lines 7092--7092
->>>>>>> Stashed changes
 |[]\T1/cmr/bx/n/12 Théorème de Liou-ville : Fer-mat pour les po-ly-nômes  []
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7164--7166
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7094--7096
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Overfull \hbox (30.35413pt too wide) in paragraph at lines 7166--7169
-=======
-Overfull \hbox (30.35413pt too wide) in paragraph at lines 7096--7099
->>>>>>> Stashed changes
 \OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 Q[] \OT1/cmr/m/n/10 = \
 OML/cmm/m/it/10 R[]  \OT1/cmr/m/n/10 =[]\OMS/cmsy/m/n/10 )  [][] \OT1/cmr/m/n/1
 0 + [][] = [][]$\T1/cmr/m/n/10 . Po-sons $\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ;
  []; []\OT1/cmr/m/n/10 ) = []$
  []
 
-<<<<<<< Updated upstream
 [268]
 Underfull \hbox (badness 10000) in paragraph at lines 7184--7194
-=======
-[267]
-Underfull \hbox (badness 10000) in paragraph at lines 7114--7124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7114--7124
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7114--7124
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7114--7124
-
- []
-
-[268]
-Underfull \hbox (badness 10000) in paragraph at lines 7129--7145
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7184--7194
 
  []
@@ -5297,78 +4868,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 7184--7194
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 7184--7194
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7129--7145
->>>>>>> Stashed changes
 
  []
 
 [269]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7199--7215
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7185--7188
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7199--7215
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7191--7192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7201--7202
->>>>>>> Stashed changes
 
  []
 
 [270]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7255--7258
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7203--7204
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7261--7262
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7205--7206
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7271--7272
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7214--7215
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7216--7222
->>>>>>> Stashed changes
 
  []
 
 [271]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7273--7274
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7226--7227
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7275--7276
 
  []
@@ -5380,14 +4913,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 7284--7285
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 7286--7292
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7239--7240
->>>>>>> Stashed changes
 
  []
 
 [272]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7296--7297
 
  []
@@ -5399,121 +4928,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 7309--7310
 
 [273]
 Overfull \hbox (12.59494pt too wide) detected at line 7341
-=======
-Overfull \hbox (12.59494pt too wide) detected at line 7271
->>>>>>> Stashed changes
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 y[]\
 OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^T [][][][] \OT1/cmr/m/n/10 + [][][][] = (
 [][] + [][])[][]
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7350--7351
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7280--7281
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7360--7361
 
  []
 
 [274] [275]
 Underfull \hbox (badness 10000) in paragraph at lines 7392--7393
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7290--7291
-
- []
-
-[273] [274]
-Underfull \hbox (badness 10000) in paragraph at lines 7322--7323
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7395--7396
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7325--7326
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7413--7414
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7343--7344
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7415--7416
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7345--7346
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7417--7418
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7347--7348
-
- []
-
-[275]
-Underfull \hbox (badness 10000) in paragraph at lines 7384--7385
->>>>>>> Stashed changes
 
  []
 
 [276]
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7454--7455
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7386--7388
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7389--7390
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7401--7402
-
- []
-
-[277]
-Underfull \hbox (badness 10000) in paragraph at lines 7423--7424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7437--7438
-
- []
-
-[278]
-Underfull \hbox (badness 10000) in paragraph at lines 7455--7456
->>>>>>> Stashed changes
 
  []
 
 [277]
 Underfull \hbox (badness 10000) in paragraph at lines 7456--7458
 
-<<<<<<< Updated upstream
  []
 
 
@@ -5546,107 +5008,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 7535--7540
 
  []
 
-[280]
-Underfull \hbox (badness 10000) in paragraph at lines 7557--7558
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7559--7560
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7465--7470
-
- []
-
-[279] [280]
-Underfull \hbox (badness 10000) in paragraph at lines 7510--7511
->>>>>>> Stashed changes
-
- []
-
-[281]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7597--7598
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7548--7549
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7599--7600
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7550--7551
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7601--7602
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7552--7553
->>>>>>> Stashed changes
+[280] [281]
+Underfull \hbox (badness 10000) in paragraph at lines 7580--7581
 
  []
 
 [282]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7608--7609
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7559--7560
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7618--7619
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7610--7611
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7561--7562
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7620--7621
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7612--7613
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7563--7564
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7614--7615
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7565--7567
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7568--7569
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7622--7623
 
  []
 
 [283]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7618--7619
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7574--7575
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7629--7630
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (0.66844pt too wide) detected at line 7631
-=======
-Overfull \hbox (0.66844pt too wide) detected at line 7587
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7631--7632
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7633--7634
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7635--7637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7638--7639
+
+ []
+
+[284]
+Underfull \hbox (badness 10000) in paragraph at lines 7644--7645
+
+ []
+
+
+Overfull \hbox (0.66844pt too wide) detected at line 7657
 \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/
 cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 8\OML/cmm/m
 /it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0
@@ -5657,321 +5070,177 @@ cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 8\OML/cmm/m
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7635--7636
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7591--7592
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7661--7662
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7638--7641
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7594--7597
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7664--7667
 
  []
 
-[284] [285]
+[285] [286]
 
-<<<<<<< Updated upstream
-LaTeX Warning: Command \o invalid in math mode on input line 7670.
+LaTeX Warning: Command \o invalid in math mode on input line 7696.
 
 Missing character: There is no ø in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 7677--7678
-=======
-LaTeX Warning: Command \o invalid in math mode on input line 7626.
-
-Missing character: There is no ø in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 7633--7634
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7703--7704
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7680--7681
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7636--7637
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7706--7707
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7682--7683
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7638--7639
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7708--7709
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7684--7685
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7640--7641
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7710--7711
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7688--7689
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7644--7645
->>>>>>> Stashed changes
-
- []
-
-[286]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7690--7694
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7646--7650
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7714--7715
 
  []
 
 [287]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7728--7729
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7684--7685
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7730--7731
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7686--7687
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7716--7720
 
  []
 
 [288]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7742--7743
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7698--7699
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7754--7755
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7744--7745
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7700--7701
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7752--7754
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7708--7710
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7756--7757
 
  []
 
 [289]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7763--7764
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7719--7720
+Underfull \hbox (badness 10000) in paragraph at lines 7768--7769
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7721--7722
+Underfull \hbox (badness 10000) in paragraph at lines 7770--7771
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7723--7724
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7727--7728
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7730--7731
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7733--7734
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7736--7737
+Underfull \hbox (badness 10000) in paragraph at lines 7778--7780
 
  []
 
 [290]
-Underfull \hbox (badness 10000) in paragraph at lines 7739--7740
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7789--7790
 
  []
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 7744.
-
-Missing character: There is no è in font cmr7!
-
-LaTeX Warning: Reference `Lemme des compacts emboÃ®tÃ©s' on page 291 undefined 
-on input line 7755.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7741--7758
-
- []
-
-<<<<<<< Updated upstream
-
-Underfull \hbox (badness 10000) in paragraph at lines 7767--7768
+Underfull \hbox (badness 10000) in paragraph at lines 7791--7792
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7771--7772
+Underfull \hbox (badness 10000) in paragraph at lines 7793--7794
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7774--7775
+Underfull \hbox (badness 10000) in paragraph at lines 7797--7798
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7777--7778
+Underfull \hbox (badness 10000) in paragraph at lines 7800--7801
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7780--7781
-
- []
-
-[290]
-Underfull \hbox (badness 10000) in paragraph at lines 7783--7784
+Underfull \hbox (badness 10000) in paragraph at lines 7803--7804
 
  []
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 7788.
-
-Missing character: There is no è in font cmr7!
-
-LaTeX Warning: Reference `Lemme des compacts emboÃ®tÃ©s' on page 291 undefined 
-on input line 7799.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7785--7802
+Underfull \hbox (badness 10000) in paragraph at lines 7806--7807
 
  []
 
 [291]
-Overfull \hbox (103.47807pt too wide) detected at line 7816
-=======
-[291]
-Overfull \hbox (103.47807pt too wide) detected at line 7772
->>>>>>> Stashed changes
-[]
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7821--7822
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7777--7778
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7809--7810
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7836--7837
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7792--7793
->>>>>>> Stashed changes
+LaTeX Warning: Command \` invalid in math mode on input line 7814.
+
+Missing character: There is no è in font cmr7!
+
+LaTeX Warning: Reference `Lemme des compacts emboÃ®tÃ©s' on page 292 undefined 
+on input line 7825.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7811--7828
 
  []
 
 [292]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7839--7840
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7795--7796
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Overfull \hbox (5.95602pt too wide) detected at line 7863
-=======
-Overfull \hbox (5.95602pt too wide) detected at line 7819
->>>>>>> Stashed changes
+Overfull \hbox (103.47807pt too wide) detected at line 7842
 []
  []
 
-[293]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7888--7889
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7844--7845
->>>>>>> Stashed changes
 
+Underfull \hbox (badness 10000) in paragraph at lines 7847--7848
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7862--7863
+
+ []
+
+[293]
+Underfull \hbox (badness 10000) in paragraph at lines 7865--7866
+
+ []
+
+
+Overfull \hbox (5.95602pt too wide) detected at line 7889
+[]
  []
 
 [294]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7892--7896
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7848--7852
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 7914--7915
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7870--7871
->>>>>>> Stashed changes
 
  []
 
 [295]
-<<<<<<< Updated upstream
-Overfull \hbox (23.94409pt too wide) in paragraph at lines 7932--7938
-=======
-Overfull \hbox (23.94409pt too wide) in paragraph at lines 7888--7894
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 7918--7922
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7940--7941
+
+ []
+
+[296]
+Overfull \hbox (23.94409pt too wide) in paragraph at lines 7958--7964
 \T1/cmr/m/n/10 D'autre part, $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OMS/cmsy/m/
 n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  [][] \OMS/cmsy/m/n/10 ^^T [][] \OT1/c
 mr/m/n/10 + [][] = [][][][] +
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (9.45369pt too wide) in paragraph at lines 7938--7943
-=======
-Overfull \hbox (9.45369pt too wide) in paragraph at lines 7894--7899
->>>>>>> Stashed changes
+Overfull \hbox (9.45369pt too wide) in paragraph at lines 7964--7969
 \T1/cmr/m/n/10 En po-sant pour $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/
 n/10 N$\T1/cmr/m/n/10 , $\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/i
 t/10 d[]X[]$ \T1/cmr/m/n/10 on a alors $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P[]\O
@@ -5982,233 +5251,128 @@ T1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 Z[]$ \T1/cmr/m/n/10 et $[][] [
 
 Underfull \vbox (badness 1960) has occurred while \output is active []
 
- [296]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7943--7948
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7899--7904
->>>>>>> Stashed changes
+ [297]
+Underfull \hbox (badness 10000) in paragraph at lines 7969--7974
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7951--7954
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7907--7910
->>>>>>> Stashed changes
-
- []
-
-[297]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7958--7959
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 7914--7920
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7924--7925
+Underfull \hbox (badness 10000) in paragraph at lines 7977--7980
 
  []
 
 [298]
-Underfull \hbox (badness 10000) in paragraph at lines 7946--7948
+Underfull \hbox (badness 10000) in paragraph at lines 7984--7990
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7994--7995
 
  []
 
 [299]
-Underfull \hbox (badness 10000) in paragraph at lines 7983--7984
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7996--7997
+Underfull \hbox (badness 10000) in paragraph at lines 8016--8018
 
  []
 
 [300]
-Underfull \hbox (badness 10000) in paragraph at lines 7998--7999
+Underfull \hbox (badness 10000) in paragraph at lines 8053--8054
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8000--8001
->>>>>>> Stashed changes
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8002--8003
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7982--7983
-
- []
-
-[298]
-Underfull \hbox (badness 10000) in paragraph at lines 7984--7985
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8004--8005
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7997--7998
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8006--8007
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 7999--8000
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8008--8009
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8001--8002
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8010--8011
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8003--8004
-
- []
-
-[299]
-Underfull \hbox (badness 10000) in paragraph at lines 8005--8006
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8014--8015
+Underfull \hbox (badness 10000) in paragraph at lines 8066--8067
 
  []
 
 [301]
-Underfull \hbox (badness 10000) in paragraph at lines 8016--8017
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8068--8069
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8007--8008
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8018--8019
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8070--8071
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8009--8010
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8020--8021
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8072--8073
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8011--8012
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8022--8023
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8074--8075
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8015--8016
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8024--8025
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8076--8077
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8017--8018
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8026--8027
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8078--8079
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8019--8020
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8030--8031
+Underfull \hbox (badness 10000) in paragraph at lines 8080--8081
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8084--8085
 
  []
 
 [302]
-Underfull \hbox (badness 10000) in paragraph at lines 8032--8033
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8086--8087
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8021--8022
-
- []
-
-[300]
-Underfull \hbox (badness 10000) in paragraph at lines 8023--8024
+Underfull \hbox (badness 10000) in paragraph at lines 8088--8089
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8025--8026
+Underfull \hbox (badness 10000) in paragraph at lines 8090--8091
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8027--8028
+Underfull \hbox (badness 10000) in paragraph at lines 8092--8093
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8031--8032
+Underfull \hbox (badness 10000) in paragraph at lines 8094--8095
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8033--8034
+Underfull \hbox (badness 10000) in paragraph at lines 8096--8097
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8035--8036
-
- []
-
-[301] [302]
-Overfull \hbox (15.90991pt too wide) in paragraph at lines 8047--8059
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8034--8035
+Underfull \hbox (badness 10000) in paragraph at lines 8100--8101
 
  []
 
 [303]
-Overfull \hbox (15.90991pt too wide) in paragraph at lines 8046--8058
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8102--8103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8104--8105
+
+ []
+
+[304]
+Overfull \hbox (15.90991pt too wide) in paragraph at lines 8116--8128
 \T1/cmr/m/n/10 Par construc-tion $\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 (\OML/cmm/m
 /it/10 AX[]\OT1/cmr/m/n/10 )[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] [] \OMS/c
 msy/m/n/10 j\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j[][]$ \T1/cmr/m/n/10 d'où $[]
@@ -6217,11 +5381,7 @@ mr/m/n/10 .
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (36.00569pt too wide) in paragraph at lines 8059--8067
-=======
-Overfull \hbox (36.00569pt too wide) in paragraph at lines 8058--8066
->>>>>>> Stashed changes
+Overfull \hbox (36.00569pt too wide) in paragraph at lines 8128--8136
 [] \OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 AX\OT1/cmr/m/n/10 )[]\OM
 S/cmsy/m/n/10 j \OT1/cmr/m/n/10 = [] [] \OMS/cmsy/m/n/10 ^^T [] [] j\OML/cmm/m/
 it/10 A[]\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n
@@ -6229,352 +5389,191 @@ it/10 A[]\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n
 m/it/10 A[]\OMS/cmsy/m/n/10 j ^^T [][] []$\T1/cmr/m/n/10 . 
  []
 
-<<<<<<< Updated upstream
-[303]
-Overfull \hbox (31.70877pt too wide) detected at line 8071
-=======
-[304]
-Overfull \hbox (31.70877pt too wide) detected at line 8070
->>>>>>> Stashed changes
+[305]
+Overfull \hbox (31.70877pt too wide) detected at line 8140
 [][] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 t[]t[]^^U[]\OMS/cmsy/m/n/10 h\OML
 /cmm/m/it/10 X[]; X[]\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 t
 []^^U[] \OMS/cmsy/m/n/10 ^^T [] [] [] \OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 = []
  [] [][]
  []
 
-<<<<<<< Updated upstream
-[304]
-Underfull \hbox (badness 10000) in paragraph at lines 8090--8091
-
- []
-
-[305]
-Underfull \hbox (badness 10000) in paragraph at lines 8122--8124
-=======
-[305]
-Underfull \hbox (badness 10000) in paragraph at lines 8089--8090
->>>>>>> Stashed changes
-
- []
-
 [306]
-<<<<<<< Updated upstream
-Overfull \hbox (2.28156pt too wide) in paragraph at lines 8140--8146
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8121--8123
+Underfull \hbox (badness 10000) in paragraph at lines 8159--8160
 
  []
 
 [307]
-Overfull \hbox (2.28156pt too wide) in paragraph at lines 8139--8145
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8191--8193
+
+ []
+
+[308]
+Overfull \hbox (2.28156pt too wide) in paragraph at lines 8209--8215
 \T1/cmr/m/n/10 Donc $[] \OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10
  M[] [] [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 K\OMS/cmsy/m/n/10 j\OML/cmm/m/it/
 10 M[] []
  []
 
-<<<<<<< Updated upstream
-[307]
-Underfull \hbox (badness 10000) in paragraph at lines 8171--8183
-=======
-[308]
-Underfull \hbox (badness 10000) in paragraph at lines 8170--8182
->>>>>>> Stashed changes
+[309]
+Underfull \hbox (badness 10000) in paragraph at lines 8240--8252
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (38.13692pt too wide) in paragraph at lines 8171--8183
-=======
-Overfull \hbox (38.13692pt too wide) in paragraph at lines 8170--8182
->>>>>>> Stashed changes
+Overfull \hbox (38.13692pt too wide) in paragraph at lines 8240--8252
 \T1/cmr/m/it/10 Remarque : On au-rait aussi pu ex-traire de ma-nière à ce que $
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 )$ \T1/cmr/m/it/10 et $\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 q[]\OT1/cmr/m/n/10 )$ \T1/cmr/m/it/10 soient bor
 -née(s)/monotone(s),
  []
 
-<<<<<<< Updated upstream
-[308] [309]
-Underfull \hbox (badness 10000) in paragraph at lines 8202--8203
-=======
-[309] [310]
-Underfull \hbox (badness 10000) in paragraph at lines 8201--8202
->>>>>>> Stashed changes
+[310] [311]
+Underfull \hbox (badness 10000) in paragraph at lines 8271--8272
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (1.12782pt too wide) in paragraph at lines 8206--8211
-\T1/cmr/m/n/10 construire par étape. Il faut jouer avec des par-ties de $\U/msb
-/m/n/10 R$ \T1/cmr/m/n/10 dont on connaît l'adhé-rence/l'intérieur
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8219--8220
-
- []
-
-[310]
-Underfull \hbox (badness 10000) in paragraph at lines 8232--8233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8238--8249
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8238--8249
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8218--8219
->>>>>>> Stashed changes
-
- []
-
-[311]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8258--8259
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8231--8232
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8280--8281
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8237--8248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8237--8248
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8288--8289
 
  []
 
 [312]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8299--8300
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8257--8258
+Underfull \hbox (badness 10000) in paragraph at lines 8301--8302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8279--8280
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8307--8318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8307--8318
 
  []
 
 [313]
-<<<<<<< Updated upstream
-Overfull \hbox (56.13329pt too wide) in paragraph at lines 8309--8331
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8298--8299
+Underfull \hbox (badness 10000) in paragraph at lines 8327--8328
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8349--8350
 
  []
 
 [314]
-Overfull \hbox (56.13329pt too wide) in paragraph at lines 8308--8330
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8368--8369
+
+ []
+
+[315]
+Overfull \hbox (56.13329pt too wide) in paragraph at lines 8378--8400
 \T1/cmr/m/n/10 Or APCR $[]$, $\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x[] \OMS/cmsy/
 m/n/10 ^^@ \OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 > []$ \T1/cm
 r/m/n/10 d'où $[] \OML/cmm/m/it/10 >
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8309--8331
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8308--8330
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8378--8400
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8309--8331
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8308--8330
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8378--8400
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<<<<<<< Updated upstream
- [314]
-Underfull \hbox (badness 10000) in paragraph at lines 8335--8336
-=======
- [315]
-Underfull \hbox (badness 10000) in paragraph at lines 8334--8335
->>>>>>> Stashed changes
+ [316]
+Underfull \hbox (badness 10000) in paragraph at lines 8404--8405
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (24.56866pt too wide) in paragraph at lines 8337--8339
-=======
-Overfull \hbox (24.56866pt too wide) in paragraph at lines 8336--8338
->>>>>>> Stashed changes
+Overfull \hbox (24.56866pt too wide) in paragraph at lines 8406--8408
 [] \OT1/cmr/m/n/10 = [] = [] = [] \OMS/cmsy/m/n/10 ^^T
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8337--8339
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8336--8338
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8406--8408
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8339--8343
+Underfull \hbox (badness 10000) in paragraph at lines 8408--8412
 
  []
 
-[315] [316]
-Underfull \hbox (badness 10000) in paragraph at lines 8397--8398
-
- []
-
-[317]
-Underfull \hbox (badness 10000) in paragraph at lines 8419--8420
-
- []
-
-[318]
-Underfull \hbox (badness 10000) in paragraph at lines 8437--8438
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8338--8342
-
- []
-
-[316] [317]
-Underfull \hbox (badness 10000) in paragraph at lines 8396--8397
-
- []
-
-[318]
-Underfull \hbox (badness 10000) in paragraph at lines 8418--8419
+[317] [318]
+Underfull \hbox (badness 10000) in paragraph at lines 8466--8467
 
  []
 
 [319]
-Underfull \hbox (badness 10000) in paragraph at lines 8436--8437
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8488--8489
+
+ []
+
+[320]
+Underfull \hbox (badness 10000) in paragraph at lines 8506--8507
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (25.6247pt too wide) in paragraph at lines 8443--8448
-=======
-Overfull \hbox (25.6247pt too wide) in paragraph at lines 8442--8447
->>>>>>> Stashed changes
+Overfull \hbox (25.6247pt too wide) in paragraph at lines 8512--8517
 \T1/cmr/m/n/10 On sait que $[] [] \OT1/cmr/m/n/10 = [] [] = []$\T1/cmr/m/n/10 .
  Par ailleurs, $[] [] \OT1/cmr/m/n/10 =
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (21.47058pt too wide) in paragraph at lines 8443--8448
-=======
-Overfull \hbox (21.47058pt too wide) in paragraph at lines 8442--8447
->>>>>>> Stashed changes
+Overfull \hbox (21.47058pt too wide) in paragraph at lines 8512--8517
 []$ \T1/cmr/m/n/10 et $[] [] \OT1/cmr/m/n/10 = []$\T1/cmr/m/n/10 . Par uni-cité
  de la li-mite, $[] \OT1/cmr/m/n/10 = [] =
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8452--8461
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8451--8460
-
- []
-
-[320]
-Underfull \hbox (badness 10000) in paragraph at lines 8466--8474
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8477--8478
->>>>>>> Stashed changes
-
- []
-
-[319]
-Underfull \hbox (badness 10000) in paragraph at lines 8467--8475
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8478--8479
-
- []
-
-[320]
-Underfull \hbox (badness 10000) in paragraph at lines 8490--8502
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8490--8502
+Underfull \hbox (badness 10000) in paragraph at lines 8521--8530
 
  []
 
 [321]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8517--8519
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8489--8501
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8536--8544
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8523--8532
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8489--8501
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8547--8548
 
  []
 
 [322]
-<<<<<<< Updated upstream
-Underfull \vbox (badness 1048) has occurred while \output is active []
-
- [323]
-Overfull \hbox (21.72693pt too wide) in paragraph at lines 8577--8578
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8516--8518
+Underfull \hbox (badness 10000) in paragraph at lines 8559--8571
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8522--8531
+Underfull \hbox (badness 10000) in paragraph at lines 8559--8571
 
  []
 
 [323]
+Underfull \hbox (badness 10000) in paragraph at lines 8586--8588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8592--8601
+
+ []
+
+[324]
 Underfull \vbox (badness 1048) has occurred while \output is active []
 
- [324]
-Overfull \hbox (21.72693pt too wide) in paragraph at lines 8576--8577
->>>>>>> Stashed changes
+ [325]
+Overfull \hbox (21.72693pt too wide) in paragraph at lines 8646--8647
 []$\OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 + \OML
 /cmm/m/it/10 Q\OT1/cmr/m/n/10 ) = [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 P[]\OT1
 /cmr/m/n/10 (0) + \OML/cmm/m/it/10 Q[]\OT1/cmr/m/n/10 (0)\OMS/cmsy/m/n/10 j ^^T
@@ -6583,13 +5582,8 @@ Overfull \hbox (21.72693pt too wide) in paragraph at lines 8576--8577
 j ^^T
  []
 
-<<<<<<< Updated upstream
-[324] [325]
-Overfull \hbox (0.50414pt too wide) in paragraph at lines 8615--8618
-=======
-[325] [326]
-Overfull \hbox (0.50414pt too wide) in paragraph at lines 8614--8617
->>>>>>> Stashed changes
+[326] [327]
+Overfull \hbox (0.50414pt too wide) in paragraph at lines 8684--8687
 []\T1/cmr/m/n/10 Supposons $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/1
 0 )[]$ \T1/cmr/m/n/10 stric-te-ment crois-sante. Alors $\OMS/cmsy/m/n/10 8\OML/
 cmm/m/it/10 k \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  x[] < x[]$ 
@@ -6597,52 +5591,30 @@ cmm/m/it/10 k \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N\OML/cmm/m/it/10 ;  x[] < x[]$
 1/cmr/m/n/10 ) =
  []
 
-<<<<<<< Updated upstream
-[326]
-Underfull \hbox (badness 10000) in paragraph at lines 8635--8637
-=======
-[327]
-Underfull \hbox (badness 10000) in paragraph at lines 8634--8636
->>>>>>> Stashed changes
+[328]
+Underfull \hbox (badness 10000) in paragraph at lines 8704--8706
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (80.27673pt too wide) in paragraph at lines 8637--8647
-=======
-Overfull \hbox (80.27673pt too wide) in paragraph at lines 8636--8646
->>>>>>> Stashed changes
+Overfull \hbox (80.27673pt too wide) in paragraph at lines 8706--8716
 \T1/cmr/m/n/10 Donc $\OML/cmm/m/it/10 V[] \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/
 it/10 dx[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 V[] [] dx[]$\T1/cmr/m/n/10 .
  
  []
 
-<<<<<<< Updated upstream
-[327]
-Underfull \hbox (badness 10000) in paragraph at lines 8647--8648
-=======
-[328]
-Underfull \hbox (badness 10000) in paragraph at lines 8646--8647
->>>>>>> Stashed changes
+[329]
+Underfull \hbox (badness 10000) in paragraph at lines 8716--8717
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8650--8670
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8649--8669
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8719--8739
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (18.5825pt too wide) in paragraph at lines 8670--8675
-=======
-Overfull \hbox (18.5825pt too wide) in paragraph at lines 8669--8674
->>>>>>> Stashed changes
+Overfull \hbox (18.5825pt too wide) in paragraph at lines 8739--8744
 []\T1/cmr/m/n/10 La for-mule de Stir-ling $\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ! 
 [] [][] []$ \T1/cmr/m/n/10 donne $[] \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 R\OT1/cmr/m/n/10 ) = 0 = [] \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\O
@@ -6652,184 +5624,95 @@ ML/cmm/m/it/10 R\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 .
 
 Underfull \vbox (badness 1668) has occurred while \output is active []
 
-<<<<<<< Updated upstream
- [328]
-Overfull \hbox (19.03671pt too wide) in paragraph at lines 8679--8687
-=======
- [329]
-Overfull \hbox (19.03671pt too wide) in paragraph at lines 8678--8686
->>>>>>> Stashed changes
+ [330]
+Overfull \hbox (19.03671pt too wide) in paragraph at lines 8748--8756
 \T1/cmr/m/n/10 On se place dans l'es-pace vec-to-riel $\OML/cmm/m/it/10 E \OT1/
 cmr/m/n/10 = \U/msb/m/n/10 R\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 
 ]$ \T1/cmr/m/n/10 que l'on muni de la norme uni-forme $[][] \OT1/cmr/m/n/10 =
  []
 
-<<<<<<< Updated upstream
-[329]
-Underfull \hbox (badness 10000) in paragraph at lines 8730--8731
-
- []
-
-[330]
-Underfull \hbox (badness 10000) in paragraph at lines 8734--8735
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8738--8739
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8742--8743
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8746--8747
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8750--8751
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8754--8755
-=======
-[330]
-Underfull \hbox (badness 10000) in paragraph at lines 8729--8730
->>>>>>> Stashed changes
-
- []
-
 [331]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8768--8769
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8733--8734
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8737--8738
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8741--8742
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8745--8746
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8749--8750
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8753--8754
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8799--8800
 
  []
 
 [332]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8804--8813
+Underfull \hbox (badness 10000) in paragraph at lines 8803--8804
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8813--8817
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8767--8768
->>>>>>> Stashed changes
-
- []
-
-[333]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8820--8821
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8803--8812
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8807--8808
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8823--8824
+Underfull \hbox (badness 10000) in paragraph at lines 8811--8812
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8827--8828
+Underfull \hbox (badness 10000) in paragraph at lines 8815--8816
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8835--8836
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8839--8840
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8843--8854
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8812--8816
->>>>>>> Stashed changes
-
- []
-
-[334]
-<<<<<<< Updated upstream
-Overfull \hbox (36.03247pt too wide) detected at line 8877
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 8819--8820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8822--8823
+Underfull \hbox (badness 10000) in paragraph at lines 8823--8824
+
+ []
+
+[333]
+Underfull \hbox (badness 10000) in paragraph at lines 8837--8838
+
+ []
+
+[334]
+Underfull \hbox (badness 10000) in paragraph at lines 8873--8882
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8826--8827
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8834--8835
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8838--8839
-
- []
-
-
-LaTeX Warning: Hyper reference `Partie convexe dense de R^n' on page 335 undefi
-ned on input line 8842.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8842--8853
+Underfull \hbox (badness 10000) in paragraph at lines 8882--8886
 
  []
 
 [335]
-Overfull \hbox (36.03247pt too wide) detected at line 8876
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8889--8890
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8892--8893
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8896--8897
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8904--8905
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8908--8909
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8912--8923
+
+ []
+
+[336]
+Overfull \hbox (36.03247pt too wide) detected at line 8946
 \OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 h[]; a\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 = \
 OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 h[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 h \
 OT1/cmr/m/n/10 + \OML/cmm/m/it/10 "a; a\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 + \OM
@@ -6842,30 +5725,17 @@ a\OMS/cmsy/m/n/10 ij ^^T [] [] \OML/cmm/m/it/10 < "
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8877--8889
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8876--8888
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8946--8958
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8877--8889
+Underfull \hbox (badness 10000) in paragraph at lines 8946--8958
 
  []
 
-[335]
-Overfull \hbox (42.92773pt too wide) in paragraph at lines 8911--8918
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8876--8888
-
- []
-
-[336]
-Overfull \hbox (42.92773pt too wide) in paragraph at lines 8910--8917
->>>>>>> Stashed changes
+[337]
+Overfull \hbox (42.92773pt too wide) in paragraph at lines 8980--8987
 \T1/cmr/m/n/10 On note $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Q[]; [] ; ^^Q[]; ;
  \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 0)$ \T1/cmr/m/n/10 le
 s co-or-don-nées de $\OML/cmm/m/it/10 Q[]$ \T1/cmr/m/n/10 et $\OT1/cmr/m/n/10 (
@@ -6874,11 +5744,7 @@ s co-or-don-nées de $\OML/cmm/m/it/10 Q[]$ \T1/cmr/m/n/10 et $\OT1/cmr/m/n/10 (
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (31.82503pt too wide) in paragraph at lines 8911--8918
-=======
-Overfull \hbox (31.82503pt too wide) in paragraph at lines 8910--8917
->>>>>>> Stashed changes
+Overfull \hbox (31.82503pt too wide) in paragraph at lines 8980--8987
 \OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ^^L; \OT1/cmr/m/n/10 0\OML/
 cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 0)$ \T1/cmr/m/n/10 s'an-nule. Au-tre-ment di
 t $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Q[]; [] ; ^^Q[]; \OT1/cmr/m/n/10 0\OML/c
@@ -6887,122 +5753,62 @@ mm/m/it/10 Q[]; Q[]\OT1/cmr/m/n/10 ]$\T1/cmr/m/n/10 .
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8911--8918
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8910--8917
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8980--8987
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 8911--8918
+Underfull \hbox (badness 10000) in paragraph at lines 8980--8987
 
  []
 
-[336]
-Overfull \hbox (30.91455pt too wide) in paragraph at lines 8919--8919
+[338]
+Overfull \hbox (30.91455pt too wide) in paragraph at lines 8988--8988
 |[]\T1/cmr/bx/n/12 Complémentaire d'une par-tie convexe ou-verte de $\U/msb/m/n
 /12 R[]$  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8924--8925
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 8910--8917
-
- []
-
-[337]
-Underfull \hbox (badness 10000) in paragraph at lines 8923--8924
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 8993--8994
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<<<<<<< Updated upstream
- [337]
-[338] [339] [340]
-Underfull \hbox (badness 10000) in paragraph at lines 8987--8994
+ [339]
+[340] [341] [342]
+Underfull \hbox (badness 10000) in paragraph at lines 9056--9063
 
  []
 
-[341]
-Underfull \hbox (badness 10000) in paragraph at lines 9030--9031
-
-=======
- [338]
-[339]
-Underfull \hbox (badness 10000) in paragraph at lines 8953--8960
-
- []
-
-[340] [341]
-Underfull \hbox (badness 10000) in paragraph at lines 8996--8997
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9008--9009
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9012--9015
-
- []
-
-[342]
-Overfull \hbox (11.52223pt too wide) in paragraph at lines 9022--9035
-[][] 
->>>>>>> Stashed changes
- []
-
-
-Overfull \hbox (11.52223pt too wide) in paragraph at lines 9022--9035
-[] 
- []
-
-<<<<<<< Updated upstream
-[342]
-Underfull \hbox (badness 10000) in paragraph at lines 9046--9047
-=======
 [343]
-Underfull \hbox (badness 10000) in paragraph at lines 9059--9060
+Underfull \hbox (badness 10000) in paragraph at lines 9099--9100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9103--9104
 
  []
 
 [344]
-Underfull \hbox (badness 10000) in paragraph at lines 9100--9101
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9115--9116
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9050--9053
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9104--9105
-
- []
-
-[345]
-Underfull \hbox (badness 10000) in paragraph at lines 9107--9108
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9119--9122
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (11.52223pt too wide) in paragraph at lines 9060--9073
+Overfull \hbox (11.52223pt too wide) in paragraph at lines 9129--9142
 [][] 
  []
 
 
-Overfull \hbox (11.52223pt too wide) in paragraph at lines 9060--9073
+Overfull \hbox (11.52223pt too wide) in paragraph at lines 9129--9142
 [] 
  []
 
@@ -7013,71 +5819,53 @@ Overfull \vbox (62.37416pt too high) has occurred while \output is active []
 Overfull \vbox (62.37416pt too high) has occurred while \output is active []
 
 
-[343] [344]
+[345] [346]
 
-LaTeX Warning: Reference `ConnexitÃ© de l'espace' on page 345 undefined on inpu
-t line 9090.
+LaTeX Warning: Reference `ConnexitÃ© de l'espace' on page 347 undefined on inpu
+t line 9159.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9097--9098
+Underfull \hbox (badness 10000) in paragraph at lines 9166--9167
 
  []
 
-[345]
-Underfull \hbox (badness 10000) in paragraph at lines 9138--9139
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9110--9111
->>>>>>> Stashed changes
+[347]
+Underfull \hbox (badness 10000) in paragraph at lines 9207--9208
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9142--9143
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9113--9115
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9211--9212
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9145--9146
+Underfull \hbox (badness 10000) in paragraph at lines 9214--9215
 
  []
 
-[346]
-Underfull \hbox (badness 10000) in paragraph at lines 9148--9149
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9151--9153
+[348]
+Underfull \hbox (badness 10000) in paragraph at lines 9217--9218
 
  []
 
 
-LaTeX Warning: Reference `rg1' on page 347 undefined on input line 9155.
+Underfull \hbox (badness 10000) in paragraph at lines 9220--9222
+
+ []
 
 
-Overfull \hbox (26.8326pt too wide) in paragraph at lines 9157--9162
-=======
-LaTeX Warning: Reference `rg1' on page 346 undefined on input line 9117.
+LaTeX Warning: Reference `rg1' on page 349 undefined on input line 9224.
 
 
-Overfull \hbox (26.8326pt too wide) in paragraph at lines 9119--9124
->>>>>>> Stashed changes
+Overfull \hbox (26.8326pt too wide) in paragraph at lines 9226--9231
 \T1/cmr/m/n/10 la mul-ti-pli-ca-tion par une ma-trice in-ver-sible conserve le 
 rang donc on a en-core $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M[]UV[]\OT1/cmr/m/n
 /10 ) =
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (15.88562pt too wide) in paragraph at lines 9157--9162
-=======
-Overfull \hbox (15.88562pt too wide) in paragraph at lines 9119--9124
->>>>>>> Stashed changes
+Overfull \hbox (15.88562pt too wide) in paragraph at lines 9226--9231
 \T1/cmr/m/n/10 Par consé-quent, $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OT1/cmr
 /m/n/10 + \OML/cmm/m/it/10 UV[]\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 M\OT1/cm
 r/m/n/10 ) + \OML/cmm/m/it/10 V[] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr
@@ -7087,30 +5875,17 @@ m/n/10 ) + \OML/cmm/m/it/10 V[] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr/m
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9166--9168
+Underfull \hbox (badness 10000) in paragraph at lines 9235--9237
 
  []
 
-[347]
-Underfull \hbox (badness 10000) in paragraph at lines 9182--9185
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9128--9130
-
- []
-
-[346]
-Underfull \hbox (badness 10000) in paragraph at lines 9144--9147
->>>>>>> Stashed changes
+[349]
+Underfull \hbox (badness 10000) in paragraph at lines 9251--9254
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (62.52428pt too wide) in paragraph at lines 9185--9192
-=======
-Overfull \hbox (62.52428pt too wide) in paragraph at lines 9147--9154
->>>>>>> Stashed changes
+Overfull \hbox (62.52428pt too wide) in paragraph at lines 9254--9261
 \OML/cmm/m/it/10 I[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 t^^UE[]$ \T1/cmr/m/n/10
  est conti-nue car af-fine. Par consé-quent la fonc-tion $\OML/cmm/m/it/10 h \O
 T1/cmr/m/n/10 : \OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cm
@@ -7120,84 +5895,45 @@ it/10 T[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t^^U[]\OT1/cmr/m/n/10 )\OML/cmm/m/it
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9196--9197
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9158--9159
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9265--9266
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9200--9201
-
- []
-
-[348]
-Underfull \vbox (badness 1082) has occurred while \output is active []
-
- [349]
-Underfull \hbox (badness 10000) in paragraph at lines 9225--9226
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9162--9163
-
- []
-
-
-Underfull \vbox (badness 2469) has occurred while \output is active []
-
- [347]
-[348]
-Underfull \hbox (badness 10000) in paragraph at lines 9187--9188
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9236--9245
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9198--9207
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9248--9249
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9210--9211
-
- []
-
-[349]
-Underfull \hbox (badness 10000) in paragraph at lines 9220--9230
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9233--9239
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9269--9270
 
  []
 
 [350]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9258--9268
+Underfull \vbox (badness 1082) has occurred while \output is active []
+
+ [351]
+Underfull \hbox (badness 10000) in paragraph at lines 9294--9295
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9271--9277
+Underfull \hbox (badness 10000) in paragraph at lines 9305--9314
 
  []
 
 
-Overfull \hbox (8.74194pt too wide) in paragraph at lines 9278--9290
-=======
-Overfull \hbox (8.74194pt too wide) in paragraph at lines 9240--9252
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9317--9318
+
+ []
+
+[352]
+Underfull \hbox (badness 10000) in paragraph at lines 9327--9337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9340--9346
+
+ []
+
+
+Overfull \hbox (8.74194pt too wide) in paragraph at lines 9347--9359
 \T1/cmr/m/n/10 Par consé-quent, $[][][][]\OML/cmm/m/it/10 MX \OT1/cmr/m/n/10 = 
 ([] [][])(\OML/cmm/m/it/10 ^^U X\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 j\OML/cmm/
 m/it/10 ^^U\OMS/cmsy/m/n/10 j[][][]\OML/cmm/m/it/10 X$ \T1/cmr/m/n/10 et $[][][
@@ -7205,45 +5941,27 @@ m/it/10 ^^U\OMS/cmsy/m/n/10 j[][][]\OML/cmm/m/it/10 X$ \T1/cmr/m/n/10 et $[][][
 /10 =
  []
 
-<<<<<<< Updated upstream
-[351]
-Underfull \hbox (badness 10000) in paragraph at lines 9296--9328
-=======
-
-Underfull \hbox (badness 10000) in paragraph at lines 9258--9290
->>>>>>> Stashed changes
+[353]
+Underfull \hbox (badness 10000) in paragraph at lines 9365--9397
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (31.02441pt too wide) in paragraph at lines 9296--9328
-=======
-Overfull \hbox (31.02441pt too wide) in paragraph at lines 9258--9290
->>>>>>> Stashed changes
+Overfull \hbox (31.02441pt too wide) in paragraph at lines 9365--9397
 \T1/cmr/m/n/10 D'autre part, $[][]\OML/cmm/m/it/10 QMQ[] \OT1/cmr/m/n/10 = [] [
 ] =
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (47.2206pt too wide) in paragraph at lines 9296--9328
-=======
-Overfull \hbox (47.2206pt too wide) in paragraph at lines 9258--9290
->>>>>>> Stashed changes
+Overfull \hbox (47.2206pt too wide) in paragraph at lines 9365--9397
 \T1/cmr/m/n/10 On pose alors en-fin $\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 = []$ \
 T1/cmr/m/n/10 et on vé-ri-fie que $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = \OML/cm
 m/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]; [] ; e[]\OT1/cmr/m/n/10 )\O
 ML/cmm/m/it/10 P[]$\T1/cmr/m/n/10 . 
  []
 
-<<<<<<< Updated upstream
 
-Overfull \hbox (85.80707pt too wide) in paragraph at lines 9328--9335
-=======
-[351]
-Overfull \hbox (85.80707pt too wide) in paragraph at lines 9290--9297
->>>>>>> Stashed changes
+Overfull \hbox (85.80707pt too wide) in paragraph at lines 9397--9404
 \T1/cmr/m/n/10 On pose $\OML/cmm/m/it/10 ^^M \OT1/cmr/m/n/10 : []$\T1/cmr/m/n/1
 0 . Il est clair que $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 2 \
 OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ;  []\OT
@@ -7252,20 +5970,12 @@ OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1]\OML/cmm/m/it/10 ;  []\OT
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9328--9335
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9290--9297
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9397--9404
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (5.59483pt too wide) in paragraph at lines 9328--9335
-=======
-Overfull \hbox (5.59483pt too wide) in paragraph at lines 9290--9297
->>>>>>> Stashed changes
+Overfull \hbox (5.59483pt too wide) in paragraph at lines 9397--9404
 \T1/cmr/m/n/10 Pour $\OML/cmm/m/it/10 SU[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1/
 cmr/m/n/10 )$ \T1/cmr/m/n/10 il suf-fit de re-mar-quer que $\OML/cmm/m/it/10 M 
 \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e[]; []
@@ -7274,36 +5984,20 @@ cmr/m/n/10 )$ \T1/cmr/m/n/10 il suf-fit de re-mar-quer que $\OML/cmm/m/it/10 M
  []
 
 
-<<<<<<< Updated upstream
 Underfull \vbox (badness 1163) has occurred while \output is active []
 
- [352]
-Underfull \hbox (badness 10000) in paragraph at lines 9351--9352
+ [354]
+Underfull \hbox (badness 10000) in paragraph at lines 9420--9421
 
  []
 
-[353]
-Underfull \hbox (badness 10000) in paragraph at lines 9357--9385
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9313--9314
->>>>>>> Stashed changes
+[355]
+Underfull \hbox (badness 10000) in paragraph at lines 9426--9454
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (19.12086pt too wide) in paragraph at lines 9357--9385
-=======
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [352]
-Underfull \hbox (badness 10000) in paragraph at lines 9319--9347
-
- []
-
-
-Overfull \hbox (19.12086pt too wide) in paragraph at lines 9319--9347
->>>>>>> Stashed changes
+Overfull \hbox (19.12086pt too wide) in paragraph at lines 9426--9454
 \T1/cmr/m/n/10 nale $\OML/cmm/m/it/10 D \OMS/cmsy/m/n/10 2 \U/eus/m/n/10 M[]\OT
 1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 et une ma-trice 
 $\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 2 [][]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1
@@ -7312,181 +6006,98 @@ $\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 2 [][]\OT1/cmr/m/n/10 (\U/msb/m/n/10 C\OT1
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9357--9385
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9319--9347
-
- []
-
-[353]
-Underfull \hbox (badness 10000) in paragraph at lines 9347--9370
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9426--9454
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9385--9408
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9347--9370
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9454--9477
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9385--9408
+Underfull \hbox (badness 10000) in paragraph at lines 9454--9477
 
  []
 
-[354]
-Underfull \hbox (badness 10000) in paragraph at lines 9412--9413
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9374--9375
->>>>>>> Stashed changes
+[356]
+Underfull \hbox (badness 10000) in paragraph at lines 9481--9482
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (25.26852pt too wide) in paragraph at lines 9414--9422
-=======
-Overfull \hbox (25.26852pt too wide) in paragraph at lines 9376--9384
->>>>>>> Stashed changes
+Overfull \hbox (25.26852pt too wide) in paragraph at lines 9483--9491
 \T1/cmr/m/n/10 Et si $\OML/cmm/m/it/10 ^^U[] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 
 = \OML/cmm/m/it/10 ^^U[]$ \T1/cmr/m/n/10 alors $\OMS/cmsy/m/n/10 j\OML/cmm/m/it
 /10 ^^V[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V[]\OMS/cmsy/m/n/10 j \OT1/cm
 r/m/n/10 = [] \OMS/cmsy/m/n/10 ^^U []$\T1/cmr/m/n/10 . 
  []
 
-<<<<<<< Updated upstream
-[355]
-Underfull \hbox (badness 10000) in paragraph at lines 9429--9439
-=======
-[354]
-Underfull \hbox (badness 10000) in paragraph at lines 9391--9401
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9444--9446
-
- []
-
-[356]
-Underfull \hbox (badness 10000) in paragraph at lines 9465--9466
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9469--9470
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9473--9474
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9477--9478
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9481--9482
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9485--9486
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9489--9490
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9493--9494
-
- []
-
 [357]
-Underfull \hbox (badness 10000) in paragraph at lines 9511--9512
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9406--9408
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9498--9508
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9513--9515
+
+ []
+
+[358]
+Underfull \hbox (badness 10000) in paragraph at lines 9534--9535
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9538--9539
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9542--9543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9546--9547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9550--9551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9554--9555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9558--9559
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9562--9563
+
+ []
+
+[359]
+Underfull \hbox (badness 10000) in paragraph at lines 9580--9581
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<<<<<<< Updated upstream
- [358]
-=======
- [355]
-Underfull \hbox (badness 10000) in paragraph at lines 9427--9428
->>>>>>> Stashed changes
+ [360]
 
-LaTeX Warning: Reference `ThÃ©orÃ¨me de Hall' on page 359 undefined on input li
-ne 9521.
+LaTeX Warning: Reference `ThÃ©orÃ¨me de Hall' on page 361 undefined on input li
+ne 9590.
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (4.6647pt too wide) in paragraph at lines 9520--9529
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9431--9432
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9435--9436
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9439--9440
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9443--9444
-
- []
-
-[356]
-Underfull \hbox (badness 10000) in paragraph at lines 9447--9448
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9451--9452
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9455--9456
-
- []
-
-[357]
-Underfull \hbox (badness 10000) in paragraph at lines 9473--9474
-
- []
-
-
-LaTeX Warning: Reference `ThÃ©orÃ¨me de Hall' on page 358 undefined on input li
-ne 9483.
-
-
-Overfull \hbox (4.6647pt too wide) in paragraph at lines 9482--9491
->>>>>>> Stashed changes
+Overfull \hbox (4.6647pt too wide) in paragraph at lines 9589--9598
 \T1/cmr/m/n/10 Alors d'après le théo-rème de Hall (cf.[]), $\OMS/cmsy/m/n/10 9\
 OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j[]; [] ; j[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/1
 0 2 [] \OML/cmm/m/it/10 A[];  \OMS/cmsy/m/n/10 8\OT1/cmr/m/n/10 (\OML/cmm/m/it/
@@ -7495,13 +6106,8 @@ OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j[]; [] ; j[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/1
 /cmm/m/it/10 k \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 =
  []
 
-<<<<<<< Updated upstream
 
-Overfull \hbox (7.91371pt too wide) in paragraph at lines 9530--9535
-=======
-[358]
-Overfull \hbox (7.91371pt too wide) in paragraph at lines 9492--9497
->>>>>>> Stashed changes
+Overfull \hbox (7.91371pt too wide) in paragraph at lines 9599--9604
 []\T1/cmr/m/n/10 Par hy-po-thèse de ré-cur-rence, $\OML/cmm/m/it/10 B[] \OMS/cm
 sy/m/n/10 2 []\OT1/cmr/m/n/10 (\U/eus/m/n/10 P[]\OT1/cmr/m/n/10 )$\T1/cmr/m/n/1
 0 . Donc $\OMS/cmsy/m/n/10 9\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^U[]; [] ; ^^U[]
@@ -7511,58 +6117,33 @@ sy/m/n/10 2 []\OT1/cmr/m/n/10 (\U/eus/m/n/10 P[]\OT1/cmr/m/n/10 )$\T1/cmr/m/n/1
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9530--9535
+Underfull \hbox (badness 10000) in paragraph at lines 9599--9604
 
  []
 
-[359] [360]
-Underfull \hbox (badness 10000) in paragraph at lines 9551--9552
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9492--9497
-
- []
-
-[359]
-Underfull \hbox (badness 10000) in paragraph at lines 9513--9514
->>>>>>> Stashed changes
+[361] [362]
+Underfull \hbox (badness 10000) in paragraph at lines 9620--9621
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9555--9556
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9517--9518
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9624--9625
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (9.9156pt too wide) in paragraph at lines 9557--9557
-=======
-Overfull \hbox (9.9156pt too wide) in paragraph at lines 9519--9519
->>>>>>> Stashed changes
+Overfull \hbox (9.9156pt too wide) in paragraph at lines 9626--9626
 |[]\T1/cmr/bx/n/12 Equation fonc-tion-nelle de l'ex-po-nen-tielle ma-tri-cielle
   []| 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9559--9560
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9521--9522
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9628--9629
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (9.40176pt too wide) in paragraph at lines 9561--9575
-=======
-Overfull \hbox (9.40176pt too wide) in paragraph at lines 9523--9537
->>>>>>> Stashed changes
+Overfull \hbox (9.40176pt too wide) in paragraph at lines 9630--9644
 \T1/cmr/m/n/10 Notons $\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\
 OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [] ; C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\
 OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 les co-lonnes de $\OML/cmm/m/it/10 '\OT1/cmr/m
@@ -7570,227 +6151,50 @@ OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 les co-lonnes de $\OML/cmm/m/it/10 '\OT1/cmr/m
  : []$
  []
 
-<<<<<<< Updated upstream
-[361]
-Underfull \hbox (badness 10000) in paragraph at lines 9586--9587
-=======
-[360]
-Underfull \hbox (badness 10000) in paragraph at lines 9548--9549
->>>>>>> Stashed changes
+[363]
+Underfull \hbox (badness 10000) in paragraph at lines 9655--9656
 
  []
 
 
-<<<<<<< Updated upstream
-Overfull \hbox (3.1203pt too wide) in paragraph at lines 9598--9602
-=======
-Overfull \hbox (3.1203pt too wide) in paragraph at lines 9560--9564
->>>>>>> Stashed changes
+Overfull \hbox (3.1203pt too wide) in paragraph at lines 9667--9671
 \T1/cmr/m/n/10 Et $\OML/cmm/m/it/10 k [] [] [][]\U/eus/m/n/10 O[][]$ \T1/cmr/m/
 n/10 et $[] [][] \OT1/cmr/m/n/10 = [] [] []
  []
 
-<<<<<<< Updated upstream
-[362]
-Overfull \hbox (82.36287pt too wide) in paragraph at lines 9612--9615
-=======
-[361]
-Overfull \hbox (82.36287pt too wide) in paragraph at lines 9574--9577
->>>>>>> Stashed changes
+[364]
+Overfull \hbox (82.36287pt too wide) in paragraph at lines 9681--9684
 \T1/cmr/m/n/10 Ainsi, $[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 )
  + [][](\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = [][] + [][] = [] [] =
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9618--9619
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9580--9581
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9687--9688
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9622--9623
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9584--9585
-
- []
-
-[362]
-Underfull \hbox (badness 10000) in paragraph at lines 9589--9590
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9593--9594
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9597--9598
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9601--9602
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9605--9606
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9609--9610
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9614--9615
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9618--9619
->>>>>>> Stashed changes
-
- []
-
-[363]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9627--9628
-
- []
-
-
-=======
->>>>>>> Stashed changes
-Underfull \hbox (badness 10000) in paragraph at lines 9631--9632
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9635--9636
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9639--9640
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9643--9644
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9647--9648
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9647--9649
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9652--9653
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9656--9657
-=======
-Overfull \hbox (72.72247pt too wide) in paragraph at lines 9649--9656
-\T1/cmr/m/n/10 Les so-lu-tions de $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OT1/cmr/
-m/n/10 )$ \T1/cmr/m/n/10 sur $\U/msb/m/n/10 R[]$ \T1/cmr/m/n/10 sont les fonc-t
-ions $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 : []$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9649--9656
->>>>>>> Stashed changes
-
- []
-
-[364]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9669--9670
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9665--9666
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9673--9674
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9668--9669
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9677--9678
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9671--9672
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9681--9682
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9674--9675
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9685--9687
-
- []
-
-
-Overfull \hbox (72.72247pt too wide) in paragraph at lines 9687--9694
-\T1/cmr/m/n/10 Les so-lu-tions de $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OT1/cmr/
-m/n/10 )$ \T1/cmr/m/n/10 sur $\U/msb/m/n/10 R[]$ \T1/cmr/m/n/10 sont les fonc-t
-ions $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 : []$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9687--9694
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9676--9677
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9691--9692
 
  []
 
 [365]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9703--9704
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9678--9679
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9696--9697
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9706--9707
+Underfull \hbox (badness 10000) in paragraph at lines 9700--9701
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9709--9710
+Underfull \hbox (badness 10000) in paragraph at lines 9704--9705
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9708--9709
 
  []
 
@@ -7800,164 +6204,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 9712--9713
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9714--9715
-
- []
-
-[366]
 Underfull \hbox (badness 10000) in paragraph at lines 9716--9717
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9681--9682
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9684--9685
+Underfull \hbox (badness 10000) in paragraph at lines 9721--9722
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9687--9688
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9690--9691
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9693--9694
->>>>>>> Stashed changes
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9719--9720
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9722--9723
-
- []
-
-
-<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 9725--9726
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9705--9706
 
  []
 
 [366]
-Underfull \hbox (badness 10000) in paragraph at lines 9708--9709
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9738--9739
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9728--9729
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9711--9712
+Underfull \hbox (badness 10000) in paragraph at lines 9742--9743
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9714--9729
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9746--9747
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9731--9732
-<<<<<<< Updated upstream
+Underfull \hbox (badness 10000) in paragraph at lines 9750--9751
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9737--9738
+Underfull \hbox (badness 10000) in paragraph at lines 9754--9756
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9740--9741
-
+Overfull \hbox (72.72247pt too wide) in paragraph at lines 9756--9763
+\T1/cmr/m/n/10 Les so-lu-tions de $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OT1/cmr/
+m/n/10 )$ \T1/cmr/m/n/10 sur $\U/msb/m/n/10 R[]$ \T1/cmr/m/n/10 sont les fonc-t
+ions $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 : []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9743--9744
-=======
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9756--9763
 
  []
 
 [367]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9746--9747
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9747--9749
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9772--9773
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9749--9750
+Underfull \hbox (badness 10000) in paragraph at lines 9775--9776
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9752--9767
+Underfull \hbox (badness 10000) in paragraph at lines 9778--9779
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9769--9770
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9761--9762
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9781--9782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9783--9784
 
  []
 
 [368]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9785--9787
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9766--9768
+Underfull \hbox (badness 10000) in paragraph at lines 9785--9786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9769--9770
+Underfull \hbox (badness 10000) in paragraph at lines 9788--9789
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9771--9772
+Underfull \hbox (badness 10000) in paragraph at lines 9791--9792
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9773--9774
+Underfull \hbox (badness 10000) in paragraph at lines 9794--9795
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9777--9778
+Underfull \hbox (badness 10000) in paragraph at lines 9797--9798
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9780--9782
->>>>>>> Stashed changes
-
- []
-
-[369]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9802--9803
+Underfull \hbox (badness 10000) in paragraph at lines 9800--9801
 
  []
 
@@ -7967,279 +6316,103 @@ Underfull \hbox (badness 10000) in paragraph at lines 9806--9807
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9810--9811
+Underfull \hbox (badness 10000) in paragraph at lines 9809--9810
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9814--9816
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9801--9803
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9812--9813
+
+ []
+
+[369]
+Underfull \hbox (badness 10000) in paragraph at lines 9815--9816
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9818--9819
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9821--9836
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9838--9839
 
  []
 
 [370]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9855--9856
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9861--9862
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9864--9865
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9867--9868
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9870--9871
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9873--9874
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9860--9861
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9854--9856
 
  []
 
 [371]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9875--9876
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9863--9864
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9877--9878
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9866--9867
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9879--9891
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9869--9870
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9895--9896
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 9871--9872
->>>>>>> Stashed changes
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9898--9899
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9873--9874
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9876--9877
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9901--9902
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9875--9887
->>>>>>> Stashed changes
-
- []
-
-[372]
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9904--9905
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9891--9892
->>>>>>> Stashed changes
+Underfull \hbox (badness 10000) in paragraph at lines 9880--9881
 
  []
 
 
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9907--9908
-=======
+Underfull \hbox (badness 10000) in paragraph at lines 9887--9889
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9890--9891
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9892--9893
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 9894--9895
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9897--9898
+Underfull \hbox (badness 10000) in paragraph at lines 9898--9899
+
+ []
+
+[372]
+Underfull \hbox (badness 10000) in paragraph at lines 9901--9903
+
+ []
+
+[373] [374]
+Underfull \hbox (badness 10000) in paragraph at lines 9977--9978
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9900--9901
+Underfull \hbox (badness 10000) in paragraph at lines 9979--9980
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9903--9904
+Underfull \hbox (badness 10000) in paragraph at lines 9982--9983
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9906--9907
+Underfull \hbox (badness 10000) in paragraph at lines 9985--9986
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9908--9909
->>>>>>> Stashed changes
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9910--9911
-
- []
-
-<<<<<<< Updated upstream
-
-Underfull \hbox (badness 10000) in paragraph at lines 9912--9913
-=======
-[373]
-Underfull \hbox (badness 10000) in paragraph at lines 9913--9914
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9914--9915
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9915--9916
->>>>>>> Stashed changes
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9917--9918
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9919--9920
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9923--9924
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9922--9923
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9926--9927
-
- []
-
-[373]
-Underfull \hbox (badness 10000) in paragraph at lines 9930--9931
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9925--9926
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9928--9929
-
- []
-
-[374]
->>>>>>> Stashed changes
-Underfull \hbox (badness 10000) in paragraph at lines 9934--9935
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9938--9939
-
- []
-
-[374]
-Underfull \hbox (badness 10000) in paragraph at lines 9945--9946
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9937--9938
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9949--9950
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9939--9940
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9953--9954
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 9941--9942
->>>>>>> Stashed changes
-
- []
-
-
-<<<<<<< Updated upstream
-Underfull \hbox (badness 10000) in paragraph at lines 9957--9958
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9961--9962
-
- []
-
-[375]
-Overfull \hbox (5.09338pt too wide) in paragraph at lines 9979--9982
-\T1/cmr/m/n/10 Autrement dit $\OML/cmm/m/it/10 f$ \T1/cmr/m/n/10 est so-lu-tion
- d'une équa-tion dif-fé-ren-tielle ho-mo-gène à co-ef-fi-cients constants. 
  []
 
 
@@ -8247,13 +6420,140 @@ Underfull \hbox (badness 10000) in paragraph at lines 9988--9989
 
  []
 
-[376] 
-enddocument/afterlastpage (AED): lastpage setting LastPage.
-(Analyse.aux)
-=======
+
+Underfull \hbox (badness 10000) in paragraph at lines 9991--9992
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9993--9994
+
+ []
+
+[375]
+Underfull \hbox (badness 10000) in paragraph at lines 9995--9996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9997--10009
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10013--10014
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10016--10017
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10019--10020
+
+ []
+
+[376]
+Underfull \hbox (badness 10000) in paragraph at lines 10022--10023
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10025--10026
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10028--10029
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10030--10031
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10032--10033
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10035--10036
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10037--10038
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10041--10042
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10044--10045
+
+ []
+
+[377]
+Underfull \hbox (badness 10000) in paragraph at lines 10048--10049
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10052--10053
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10056--10057
+
+ []
+
+[378]
+Underfull \hbox (badness 10000) in paragraph at lines 10063--10064
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10067--10068
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10071--10072
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10075--10076
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10079--10080
+
+ []
+
+[379]
+Overfull \hbox (5.09338pt too wide) in paragraph at lines 10097--10100
+\T1/cmr/m/n/10 Autrement dit $\OML/cmm/m/it/10 f$ \T1/cmr/m/n/10 est so-lu-tion
+ d'une équa-tion dif-fé-ren-tielle ho-mo-gène à co-ef-fi-cients constants. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10106--10107
+
+ []
+
+
 AED: lastpage setting LastPage
-[375] (Analyse.aux)
->>>>>>> Stashed changes
+[380] (Analyse.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -8262,23 +6562,18 @@ L3 programming layer <2024-01-04>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Analyse.out' has not changed.
 (rerunfilecheck)             Checksum: 4EEDCDB7073E7A686F37D49691E8EBFD;92860.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< Updated upstream
- 33452 strings out of 467871
- 616855 string characters out of 5418376
- 1166917 words of memory out of 5000000
- 59209 multiletter control sequences out of 15000+600000
- 656052 words of font info for 124 fonts, out of 8000000 for 9000
-=======
- 33365 strings out of 474486
- 616312 string characters out of 5743755
- 2005542 words of memory out of 5000000
- 52527 multiletter control sequences out of 15000+600000
+ 33420 strings out of 474486
+ 617523 string characters out of 5743755
+ 2007542 words of memory out of 5000000
+ 52553 multiletter control sequences out of 15000+600000
  586400 words of font info for 120 fonts, out of 8000000 for 9000
->>>>>>> Stashed changes
  1141 hyphenation exceptions out of 8191
  89i,14n,96p,1228b,1116s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
@@ -8323,17 +6618,9 @@ X/fonts/type1/public/hoekwater/stmary10.pfb><C:/Users/marco/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/hoekwater/stmary7.pfb><C:/Users/marco/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb><C:/Users/marco/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/yhmath/yhcmex.pfb>
-<<<<<<< Updated upstream
-Output written on Analyse.pdf (379 pages, 2758882 bytes).
+Output written on Analyse.pdf (383 pages, 2834271 bytes).
 PDF statistics:
- 7580 PDF objects out of 8907 (max. 8388607)
- 2578 named destinations out of 2984 (max. 500000)
+ 7626 PDF objects out of 8907 (max. 8388607)
+ 2600 named destinations out of 2984 (max. 500000)
  3404 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Output written on Analyse.pdf (378 pages, 2803294 bytes).
-PDF statistics:
- 7545 PDF objects out of 8907 (max. 8388607)
- 2571 named destinations out of 2984 (max. 500000)
- 3380 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> Stashed changes
 
