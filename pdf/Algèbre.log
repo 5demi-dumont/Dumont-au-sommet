@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.22)  7 FEB 2026 01:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.22)  7 FEB 2026 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5959,9 +5959,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\xens' on input line 3827.
 
-[131] [132
-
-]
+[131] [132]
 Chapitre XI.
 
 Overfull \hbox (10.0pt too wide) in paragraph at lines 3848--3848
@@ -6001,7 +5999,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\centraleponts' on input line 3850.
 
-[133]
+[133
+
+]
 Overfull \hbox (1.79865pt too wide) in paragraph at lines 3888--3890
 []\T1/lmr/m/n/10 On sup-pose que $\OML/lmm/m/it/10 A$ \T1/lmr/m/n/10 est dia-go
 -na-li-sable et on note $\OML/lmm/m/it/10 A \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 
@@ -8673,12 +8673,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 9624--9625
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9628--9630
+Underfull \hbox (badness 10000) in paragraph at lines 9628--9629
 
  []
 
 
-Overfull \hbox (41.34259pt too wide) detected at line 9631
+Overfull \hbox (29.12032pt too wide) detected at line 9631
 []\OT1/lmr/m/n/10 ((\OML/lmm/m/it/10 PMQ\OT1/lmr/m/n/10 )[]\OML/lmm/m/it/10 PMQ
 \OT1/lmr/m/n/10 ) = [](\OML/lmm/m/it/10 Q[]M[]P[]PMQ\OT1/lmr/m/n/10 ) = [](\OML
 /lmm/m/it/10 Q[]M[]MQ\OT1/lmr/m/n/10 ) = [](\OML/lmm/m/it/10 MQQ[]M[]\OT1/lmr/m
@@ -8686,7 +8686,7 @@ Overfull \hbox (41.34259pt too wide) detected at line 9631
  []
 
 
-Overfull \hbox (75.96262pt too wide) detected at line 9641
+Overfull \hbox (63.74034pt too wide) detected at line 9641
 [][] \OT1/lmr/m/n/10 = []((\OML/lmm/m/it/10 D[]P \OMS/lmsy/m/n/10 ^^@ \OML/lmm/
 m/it/10 PD[]\OT1/lmr/m/n/10 )[](\OML/lmm/m/it/10 D[]P \OMS/lmsy/m/n/10 ^^@ \OML
 /lmm/m/it/10 PD[]\OT1/lmr/m/n/10 )) = [](\OML/lmm/m/it/10 D[]P \OMS/lmsy/m/n/10
@@ -8702,37 +8702,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 9657--9659
  []
 
 
-Overfull \hbox (10.78506pt too wide) detected at line 9664
-[]
+Overfull \hbox (3.45958pt too wide) in paragraph at lines 9668--9676
+\T1/lmr/m/n/10 Par dÈ-fi-ni-tion, $\OML/lmm/m/it/10 m[] \OMS/lmsy/m/n/10 6\OT1/
+lmr/m/n/10 = 1$\T1/lmr/m/n/10 , ainsi puisque $\OML/lmm/m/it/10 M \OMS/lmsy/m/n
+/10 2 \U/eus/m/n/10 B[]\OT1/lmr/m/n/10 (\U/msb/m/n/10 R\OT1/lmr/m/n/10 )$\T1/lm
+r/m/n/10 , il existe $\OML/lmm/m/it/10 j; k \OMS/lmsy/m/n/10 ^^U \OML/lmm/m/it/
+10 i[]$ \T1/lmr/m/n/10 tel que $\OML/lmm/m/it/10 m[]; m[] >
  []
 
-
-Overfull \hbox (10.78506pt too wide) detected at line 9667
-[]
- []
-
-[338]
-Underfull \hbox (badness 10000) in paragraph at lines 9698--9699
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9702--9703
+[338] [339]
+Underfull \hbox (badness 10000) in paragraph at lines 9712--9713
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9706--9707
-
- []
-
-[339] [340]
-Underfull \hbox (badness 10000) in paragraph at lines 9713--9715
+Underfull \hbox (badness 10000) in paragraph at lines 9716--9717
 
  []
 
 
-Overfull \hbox (29.64516pt too wide) detected at line 9735
+Underfull \hbox (badness 10000) in paragraph at lines 9720--9721
+
+ []
+
+[340]
+Underfull \hbox (badness 10000) in paragraph at lines 9727--9729
+
+ []
+
+
+Overfull \hbox (29.64516pt too wide) detected at line 9749
 \OML/lmm/m/it/10 D \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 P [] P[][]N \OT1/lmr/m/n/
 10 = \OML/lmm/m/it/10 P [] P[]
  []
@@ -8740,10 +8739,10 @@ Overfull \hbox (29.64516pt too wide) detected at line 9735
 [341]
 
 LaTeX Warning: Reference `Codiagonalisation' on page 342 undefined on input lin
-e 9752.
+e 9766.
 
 
-Overfull \hbox (127.39111pt too wide) detected at line 9754
+Overfull \hbox (127.39111pt too wide) detected at line 9768
 \OT1/lmr/m/n/10 (\OML/lmm/m/it/10 N \OMS/lmsy/m/n/10 ^^@ \OML/lmm/m/it/10 N[]\O
 T1/lmr/m/n/10 )[] = [](\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 1)[][][][]\OML/lmm/m
 /it/10 N[] \OT1/lmr/m/n/10 = [](\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 1)[][][][]\
@@ -8754,10 +8753,10 @@ OML/lmm/m/it/10 N[] \OT1/lmr/m/n/10 + [](\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 1)
 [342]
 
 LaTeX Warning: Reference `Codiagonalisation' on page 343 undefined on input lin
-e 9780.
+e 9794.
 
 [343] [344]
-Overfull \hbox (10.26022pt too wide) in paragraph at lines 9804--9809
+Overfull \hbox (10.26022pt too wide) in paragraph at lines 9818--9823
 [][]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 PE[]P[]\OT1/lmr/m/n/10 ) = \OML/lmm/m/it/
 10 APE[]P[] \OMS/lmsy/m/n/10 ^^@ \OML/lmm/m/it/10 PE[]P[]A \OT1/lmr/m/n/10 = \O
 ML/lmm/m/it/10 PDE[]P[] \OMS/lmsy/m/n/10 ^^@ \OML/lmm/m/it/10 PE[]P[]DP[] \OT1/
@@ -8766,7 +8765,7 @@ lmr/m/n/10 = \OML/lmm/m/it/10 P\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 DE[] \OMS/lmsy
  []
 
 
-Overfull \hbox (41.34535pt too wide) in paragraph at lines 9809--9816
+Overfull \hbox (41.34535pt too wide) in paragraph at lines 9823--9830
 \T1/lmr/m/n/10 On vÈ-ri-fie ai-sÈ-ment que $[][] \OT1/lmr/m/n/10 = [][] + [][]$
  \T1/lmr/m/n/10 et que $[][] [][] \OT1/lmr/m/n/10 = [][] [][]$
  []
@@ -8775,7 +8774,7 @@ Overfull \hbox (41.34535pt too wide) in paragraph at lines 9809--9816
 Underfull \vbox (badness 3942) has occurred while \output is active []
 
  [345]
-Overfull \hbox (13.10799pt too wide) in paragraph at lines 9821--9833
+Overfull \hbox (13.10799pt too wide) in paragraph at lines 9835--9847
 \T1/lmr/m/n/10 Ainsi pour $\OML/lmm/m/it/10 k$ \T1/lmr/m/n/10 l'in-dice de nil-
 po-tence de $\OML/lmm/m/it/10 N$\T1/lmr/m/n/10 , si $\OML/lmm/m/it/10 B \OMS/lm
 sy/m/n/10 2 \U/eus/m/n/10 M[]\OT1/lmr/m/n/10 (\U/msb/m/n/10 C\OT1/lmr/m/n/10 )\
@@ -8784,27 +8783,27 @@ OML/lmm/m/it/10 ;  [][]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 B\OT1/lmr/m/n/10 ) = [
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9839--9840
+Underfull \hbox (badness 10000) in paragraph at lines 9853--9854
 
  []
 
 [346] [347]
-Underfull \hbox (badness 10000) in paragraph at lines 9870--9871
+Underfull \hbox (badness 10000) in paragraph at lines 9884--9885
 
  []
 
 [348]
-Underfull \hbox (badness 10000) in paragraph at lines 9899--9900
+Underfull \hbox (badness 10000) in paragraph at lines 9913--9914
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9911--9912
+Underfull \hbox (badness 10000) in paragraph at lines 9925--9926
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9922--9923
+Underfull \hbox (badness 10000) in paragraph at lines 9936--9937
 
  []
 
@@ -8812,32 +8811,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 9922--9923
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [349]
-Underfull \hbox (badness 10000) in paragraph at lines 9929--9930
+Underfull \hbox (badness 10000) in paragraph at lines 9943--9944
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9944--9945
+Underfull \hbox (badness 10000) in paragraph at lines 9958--9959
 
  []
 
 [350]
-Underfull \hbox (badness 10000) in paragraph at lines 9975--9977
+Underfull \hbox (badness 10000) in paragraph at lines 9989--9991
 
  []
 
 [351]
-Underfull \hbox (badness 10000) in paragraph at lines 9995--9996
+Underfull \hbox (badness 10000) in paragraph at lines 10009--10010
 
  []
 
 [352]
-Underfull \hbox (badness 10000) in paragraph at lines 10013--10014
+Underfull \hbox (badness 10000) in paragraph at lines 10027--10028
 
  []
 
 
-Overfull \hbox (10.50781pt too wide) in paragraph at lines 10020--10035
+Overfull \hbox (10.50781pt too wide) in paragraph at lines 10034--10049
 \T1/lmr/m/n/10 Alors $\OML/lmm/m/it/10 T \OT1/lmr/m/n/10 = \OMS/lmsy/m/n/10 f[]
 \OT1/lmr/m/n/10 (\OML/lmm/m/it/10 M\OT1/lmr/m/n/10 )\OML/lmm/m/it/10 ;  M \OMS/
 lmsy/m/n/10 2 \OML/lmm/m/it/10 G\OMS/lmsy/m/n/10 g \OT1/lmr/m/n/10 = [] \OMS/lm
@@ -8845,12 +8844,12 @@ sy/m/n/10 ^^Z []$\T1/lmr/m/n/10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10020--10035
+Underfull \hbox (badness 10000) in paragraph at lines 10034--10049
 
  []
 
 
-Overfull \hbox (18.1347pt too wide) in paragraph at lines 10020--10035
+Overfull \hbox (18.1347pt too wide) in paragraph at lines 10034--10049
 \T1/lmr/m/n/10 Fixons un couple de ma-trice $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 
 A; B\OT1/lmr/m/n/10 ) \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 G[]$ \T1/lmr/m/n/10 t
 el que $\OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 A\OT1/lmr/m/n/10 ) 
@@ -8861,7 +8860,7 @@ m/m/it/10 ;  []\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 AM[]\OT1/lmr/m/n/10 ) =
  []
 
 [353]
-Overfull \hbox (10.66028pt too wide) in paragraph at lines 10055--10065
+Overfull \hbox (10.66028pt too wide) in paragraph at lines 10069--10079
 \T1/lmr/m/n/10 D'aprËs l'ÈnoncÈ, $\OMS/lmsy/m/n/10 9\OML/lmm/m/it/10 R \OMS/lms
 y/m/n/10 2 \U/msb/m/n/10 K\OT1/lmr/m/n/10 [\OML/lmm/m/it/10 X[]; [] ; X[]\OT1/l
 mr/m/n/10 ]\OML/lmm/m/it/10 ;  \OMS/lmsy/m/n/10 8\OML/lmm/m/it/10 A \OT1/lmr/m/
@@ -8872,7 +8871,7 @@ L/lmm/m/it/10 a[]\OT1/lmr/m/n/10 )[])$\T1/lmr/m/n/10 .
  []
 
 
-Overfull \hbox (41.75067pt too wide) in paragraph at lines 10055--10065
+Overfull \hbox (41.75067pt too wide) in paragraph at lines 10069--10079
 \T1/lmr/m/n/10 On sait que GL$[]\OT1/lmr/m/n/10 (\U/msb/m/n/10 K\OT1/lmr/m/n/10
  )$ \T1/lmr/m/n/10 est en-gen-drÈ par les ma-trices de di-la-ta-tions $\OML/lmm
 /m/it/10 D[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 ^^U\OT1/lmr/m/n/10 ) = [] \OML/lm
@@ -8880,7 +8879,7 @@ m/m/it/10 ; ^^U \OMS/lmsy/m/n/10 2
  []
 
 [354]
-Overfull \hbox (5.59299pt too wide) in paragraph at lines 10065--10069
+Overfull \hbox (5.59299pt too wide) in paragraph at lines 10079--10083
 \OMS/lmsy/m/n/10 8\OML/lmm/m/it/10 ^^U; ^^V \OMS/lmsy/m/n/10 2 \U/msb/m/n/10 K[
 ]\OML/lmm/m/it/10 ;  P\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 ^^U^^V\OT1/lmr/m/n/10 )
  = \OML/lmm/m/it/10 ^^_\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 D[]\OT1/lmr/m/n/10 (\O
@@ -8895,22 +8894,22 @@ lmr/m/n/10 (\OML/lmm/m/it/10 ^^V\OT1/lmr/m/n/10 )$\T1/lmr/m/n/10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10072--10073
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 10086--10087
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10090--10091
+Underfull \hbox (badness 10000) in paragraph at lines 10100--10101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10104--10105
 
  []
 
 [355]
-Underfull \hbox (badness 10000) in paragraph at lines 10095--10096
+Underfull \hbox (badness 10000) in paragraph at lines 10109--10110
 
  []
 
@@ -8972,7 +8971,7 @@ pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/
 stmary7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfc
 han/uzcmi8a.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/yhmath/yhcmex.pfb>
-Output written on Alg√®bre.pdf (359 pages, 2750075 bytes).
+Output written on Alg√®bre.pdf (359 pages, 2752240 bytes).
 PDF statistics:
  6661 PDF objects out of 7423 (max. 8388607)
  2441 named destinations out of 2487 (max. 500000)
