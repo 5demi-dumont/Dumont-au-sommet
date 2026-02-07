@@ -3781,27 +3781,27 @@ Soient $E$ un ensemble fini et $A_1,\dots,A_n$ des parties de $E$. Montrer que $
 
 \section{\underline{Inégalité de Hoffman-Wielandt} \centraleponts{3}}
 \label{Inégalité de Hoffman-Wielandt}
-
 \textcolor{blue}{\hyperref[Inégalité de Hoffman-Wielandt corrigé]{[Corrigé]}}\\
-On munit $\M_n(\R)$ de la norme euclidienne canonique $\norme{.}_F$.
-\\Pour toute matrice symétrique réelle $M\in S_n(\R)$, on note $\lambda_1(M)\geq\dots\geq\lambda_n(M)$ ses valeurs propres rangées dans l'ordre décroissant.
+On munit $\M_n(\R)$ de sa norme euclidienne usuelle $\norme{\cdot}:A\mapsto \Tr(A^\top A)$.
+\\Pour toute matrice symétrique réelle $M\in \S_n(\R)$, on note $\lambda_1(M)\geq\dots\geq\lambda_n(M)$ ses valeurs propres rangées dans l'ordre décroissant.
 \\Soient $A$ et $B$ deux matrices de $S_n(\R)$.
 \begin{enumerate}
-	\item Montrer que, pour tout $M\in\M_n(\R)$ et pour tout $P$ et $Q$ dans $\O_n(\R)$, on a: $\norme{PMQ}_F=\norme{M}_F$.
-	\item On note $D_A=\text{diag}(\lambda_1(A),\dots,\lambda_n(A))$ et $D_B=\text{diag}(\lambda_1(B),\dots,\lambda_n(B))$. Montrer qu'il existe une matrice orthogonale $P=(p_{i,j})$ telle que $\norme{A-B}_F=\norme{D_AP-PD_B}_F$.
-	\item Montrer que $\norme{A-B}_F^2=\displaystyle\sum\limits_{1\leq i,j\leq n}p_{i,j}^2(\lambda_i(A)-\lambda_j(B))^2$
+	\item Montrer que, pour tout $M\in\M_n(\R)$ et pour tout $P,Q\in \O_n(\R)$, on a $\norme{PMQ}=\norme{M}$.
+	\item On note $D_A=\text{diag}(\lambda_1(A),\dots,\lambda_n(A))$ et $D_B=\text{diag}(\lambda_1(B),\dots,\lambda_n(B))$. Montrer qu'il existe une matrice orthogonale $P=(p_{i,j})_{1\leq i,j\leq n}$ telle que $\norme{A-B}=\norme{D_AP-PD_B}$.
+	\item Montrer que $\norme{A-B}^2=\displaystyle\sum\limits_{1\leq i,j\leq n}p_{i,j}^2(\lambda_i(A)-\lambda_j(B))^2$
 \end{enumerate}
-On note $\B_n(\R)$ l'ensemble des matrices bistochastiques de $\M_n(\R)$.
-\\On pose $\fonction{f}{\M_n(\R)}{\R}{M}{\displaystyle\sum\limits_{1\leq i,j\leq n }m_{i,j}(\lambda_i(A)-\lambda_j(B))^2}$.
+On note $\B_n(\R)$ l'ensemble des matrices bistochastiques de $\M_n(\R)$ :
+$$\B_n(\R)=\left\{M=(m_{i,j})_{1\leq i,j\leq n}\ |\ \forall i,j\in \crblanc{1}{n},\ m_{i,j}\geq 0,\ \sum_{k=1}^nm_{i,k}=\sum_{k=1}^nm_{k,j}=1\right\}$$
+On pose $\fonction{f}{\M_n(\R)}{\R}{M}{\displaystyle\sum\limits_{1\leq i,j\leq n }m_{i,j}(\lambda_i(A)-\lambda_j(B))^2}$.
 \begin{enumerate}[resume]
 	\item Justifier que $f$ admet un minimum sur $\B_n(\R)$.
 \end{enumerate}
 On se propose de montrer que ce minimum est atteint en la matrice identité.
 \begin{enumerate}[resume]
 	\item Soit $(i,j,k)\in\crblanc{1}{n}^3$ tel que $j\geq i$ et $k\geq i$. Montrer que, pour $M\in\M_n(\R)$ et pour $x\in\R^+$, $$f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,k})-f(M)=2x(\lambda_i(A)-\lambda_j(A))(\lambda_k(B)-\lambda_i(B))\leq 0$$
-	\item Soient $n\geq 2$ et $M=(m_{i,j})\in\B_n(\R)$ une matrice différente de l'identité. On note $i_0$ le plus petit entier appartenant à $\crblanc{1}{n}$ tel que $m_{i_0,i_0}\ne1$. Montrer qu'il existe une matrice $M'=(m_{i,j}')\in\B_n(\R)$ telle que $f(M')\leq f(M)$ et $m'_{j,j}=1$ pour tout $j\in\crblanc{1}{i_0}$.
+	\item Soient $n\geq 2$ et $M=(m_{i,j})\in\B_n(\R)$ une matrice différente de l'identité. On note $i_0$ le plus petit indice tel que $m_{i_0,i_0}\ne 1$. Montrer qu'il existe une matrice $M'=(m_{i,j}')\in\B_n(\R)$ telle que $f(M')\leq f(M)$ et $m'_{j,j}=1$ pour tout $j\in\crblanc{1}{i_0}$.
 	\item En déduire que $\min\{f(M)|M\in\B_n(\R)\}=f(I_n)$.
-	\item En déduire que $\forall (A,B)\in\mathcal{S}_n(\R)^2, \displaystyle\sum\limits_{i=1}^n(\lambda_i(A)-\lambda_i(B))^2\leq\norme{A-B}_F^2$.
+	\item En déduire que $\forall (A,B)\in\mathcal{S}_n(\R)^2, \displaystyle\sum\limits_{i=1}^n(\lambda_i(A)-\lambda_i(B))^2\leq\norme{A-B}^2$.
 \end{enumerate}
 
 \section{Distance aux matrices de rang au plus $r$}
@@ -3809,14 +3809,14 @@ On se propose de montrer que ce minimum est atteint en la matrice identité.
 \textcolor{blue}{\hyperref[Distance aux matrices de rang au plus r corrigé]{[Corrigé]}}\\
 On munit $\M_n(\R)$ de sa structure euclidienne canonique. Pour tout $r\in \crblanc{0}{n}$ on note $B_r$ l'ensemble des matrices de $\M_n(\R)$ de rang au plus $r$.
 \begin{enumerate}
-	\item Soit $A\in \mathcal S_n(\R)$. Montrer que la distance entre $A$ et $B_r$ est atteinte, et la calculer en fonction du spectre de $A$.
+	\item Soit $A\in \S_n(\R)$. Montrer que la distance entre $A$ et $B_r$ est atteinte, et la calculer en fonction du spectre de $A$.
 	\item Soit $A\in \M_n(\R)$. Montrer que la distance entre $A$ et $B_r$ est atteinte, et la calculer en fonction du spectre de $A$.
 \end{enumerate}
 
 \section{\underline{Théorème de Courant-Fischer} \centraleponts{3}}
 \label{Théorème de Courant-Fischer}
 \textcolor{blue}{\hyperref[Théorème de Courant-Fischer corrigé]{[Corrigé]}}\\
-Soit $u$ un endomorphisme autoadjoint d'un espace euclidien $E$ de dimension $n\geq1$ dont le produit scalaire est noté $\langle.,.\rangle$.\\ On note $\lambda_1\geq \lambda_2\geq\dots\geq\lambda_n$ les valeurs propres de $u$ comptées avec multiplicité, $S$ la sphère unité de $E$ et, pour tout $p\in\crblanc{1}{n}$, $\F_p$ l'ensemble de tous les sous-espaces vectoriels de $E$ de dimension $p$. \\Soit $p\in\crblanc{1}{n}$. Etablir que : $$\lambda_p=\sup\limits_{F\in\F_p}\left(\inf\limits_{x\in F\cap S}\langle u(x),x\rangle\right)=\inf\limits_{F\in\F_{n+1-p}}\left(\sup\limits_{x\in F\cap S}\langle u(x),x\rangle\right)$$
+Soit $u$ un endomorphisme autoadjoint d'un espace euclidien $E$ de dimension $n\geq1$ dont le produit scalaire est noté $\proscal{\cdot}{\cdot}$.\\ On note $\lambda_1\geq \lambda_2\geq\dots\geq\lambda_n$ les valeurs propres de $u$ comptées avec multiplicité, $S$ la sphère unité de $E$ et, pour tout $p\in\crblanc{1}{n}$, $\F_p$ l'ensemble de tous les sous-espaces vectoriels de $E$ de dimension $p$. \\Soit $p\in\crblanc{1}{n}$. Etablir que : $$\lambda_p=\sup\limits_{F\in\F_p}\left(\inf\limits_{x\in F\cap S}\langle u(x),x\rangle\right)=\inf\limits_{F\in\F_{n+1-p}}\left(\sup\limits_{x\in F\cap S}\langle u(x),x\rangle\right)$$
 
 \section{Principe de Ky-Fan}
 \label{Principe de Ky-Fan}
@@ -9632,65 +9632,65 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Inégalité de Hoffman-Wielandt corrigé}
 	\textcolor{blue}{\hyperref[Inégalité de Hoffman-Wielandt]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Soit $M\in\M_n(\R)$ et pour tout $P,Q\in\O_n(\R)$ donc :
+		\item Soit $M\in\M_n(\R)$. Pour tout $P,Q\in\O_n(\R)$ :
 		\[\Tr((PMQ)^\top PMQ)=\Tr(Q^\top M^\top P^\top PMQ)=\Tr(Q^\top M^\top M Q)=\Tr(MQQ^\top M^\top)=\Tr(MM^\top)\]
-		On a bien : $\normep{F}{PMQ}=\normep{F}{M}$.
-		\item D'après le théorème spectral, il existe $P,Q\in\O_n(\R)$, : $A=P^\top D_A P$ et $B=Q^\top D_B Q$.
+		On a bien : $\norme{PMQ}=\norme{M}$.
+		\item D'après le théorème spectral, il existe $P,Q\in\O_n(\R)$ telles que $A=P^\top D_AP$ et $B=Q^\top D_BQ$ (quitte à échanger les colonnes de $P$ et $Q$ on peut supposer les valeurs propres rangées par ordre décroissant sur dans la matrice diagonale).
 		Par conséquent, 
 		\begin{align*}
-			\normep{F}{A-B}&=\normep{F}{P^\top D_A P-Q^\top D_B Q}\\
-			&=\normep{F}{D_APQ^\top-PQ^\top D_B} &\text{d'après la question 1}
+			\norme{A-B}&=\norme{P^\top D_AP-Q^\top D_BQ}\\
+			&=\norme{P(P^\top D_AP-Q^\top D_BQ)Q^\top} &\text{d'après la question 1}\\
+			&=\norme{D_APQ^\top-PQ^\top D_B}
 		\end{align*}
 		On a bien le résultat souhaité car $PQ^\top$ est orthogonale.
 		\item On prend la notation de la question précédente. Ainsi,
-		\[\normep{F}{A-B}^2=\Tr((D_AP-PD_B)^\top(D_AP-PD_B))=\sum_{1\leq i,j\leq n}(D_AP-PD_B)_{i,j}^2=\sum_{1\leq i,j\leq n}p_{i,j}^2(\lambda_i(A)-\lambda_j(B))^2\]
-		\item Soit $M\in\mathcal{B}_n(\R)$.\\
+		$\norme{A-B}^2=\Tr((D_AP-PD_B)^\top(D_AP-PD_B))=\displaystyle\sum_{1\leq i,j\leq n}(D_AP-PD_B)_{i,j}^2=\sum_{1\leq i,j\leq n}p_{i,j}^2(\lambda_i(A)-\lambda_j(B))^2$
+		\item Soit $M\in\B_n(\R)$.\\
 		On a pour tout $i,j\in\crblanc{1}{n}$, 
-		\[0\leq m_{i,j}\leq \sum_{i=1}^{n}m_{i,j}=1\]
-		On pose les fonctions suivantes :
+		\[0\leq m_{i,j}\leq \sum_{i=1}^nm_{i,j}=1\]
+		On pose les fonctions de $\M_n(\R)$ dans $\R$ suivantes :
 		\begin{align*}
-			f_{i,j}:M\mapsto m_{i,j}
-			\varphi_i:M\mapsto \sum_{j=1}^{n}m_{i,j}
-			\psi_{j}:M\mapsto \sum_{i=1}^{n}m_{i,j}
+			&f_{i,j}:M\mapsto m_{i,j}\\
+			&\varphi_i:M\mapsto \sum_{j=1}^nm_{i,j}\\
+			&\psi_j:M\mapsto \sum_{i=1}^nm_{i,j}
 		\end{align*}
-		On remarque que \[\mathcal{B}_n(\R)=\bigcap_{1\leq i,j\leq n}f^{-1}([0,1])\bigcap_{1\leq i\leq n}\varphi_{i}(\{1\})\bigcap_{1\leq j\leq n}\psi_{j}(\{1\})\]
-		Les fonctions $f_{i,j}$, $\phi_i$ et $\psi_j$ sont continues car polynomiales.
-		$\{1\}$ et $[0,1]$ sont des fermés de $\R$ donc par intersection de fermés (image réciproque de fermé par des applications continues), $\mathcal{B}_n(\R)$ est fermé.
-		De plus, $\mathcal{B}_n(\R)$ est borné pour la norme $\norme: M\mapsto \max_{1\leq i,j\leq n}m_{i,j}$ par $1$.\\
-		Puisque $\mathcal{M}_n(\R)$ est de dimension finie, $\mathcal{B}_n{\R}$ est un compact.\\
-		On a que $f$ est continue (linéarité sur un espace de dimension finie) et que $\mathcal{B}_n(\R)$ est compact, ainsi d'après le théorème des bornes atteintes, $f$ admet un minimum sur $\B_n(\R)$.
-		\item Soit $M\in\mathcal{M}_n(\R)$ et soit $x\in\R^+$.\\
-		Par linéarité de $f$, on a : \\
+		On remarque que \[\B_n(\R)=\bigcap_{1\leq i,j\leq n}f^{-1}([0,1])\bigcap_{1\leq i\leq n}\varphi_i(\{1\})\bigcap_{1\leq j\leq n}\psi_j(\{1\})\]
+		Les fonctions $f_{i,j}$, $\phi_i$ et $\psi_j$ sont continues car polynomiales. $\{1\}$ et $[0,1]$ sont des fermés de $\R$ donc par intersection de fermés (image réciproque de fermé par des applications continues), $\B_n(\R)$ est fermé.
+		De plus, $\B_n(\R)$ est borné par $\normep{\infty}{\cdot} : M\mapsto \max\limits_{1\leq i,j\leq n}|m_{i,j}|$ par $1$ par exemple.\\
+		Puisque $\M_n(\R)$ est de dimension finie, $\B_n(\R)$ est un compact.\\
+		On a que $f$ est continue (linéarité sur un espace de dimension finie) et que $\B_n(\R)$ est compact, ainsi d'après le théorème des bornes atteintes, $f$ admet un minimum sur $\B_n(\R)$.
+		\item Soit $M\in\M_n(\R)$ et soit $x\in\R^+$.\\
+		Par linéarité de $f$, on a :
 		\begin{align*}
-			&f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,k})-f(M)=x\left(f(E_{i,i}+f(E_{j,k}+f(E_{i,k})+f(E_{j,k})\right)\\
-			&=x\left((\lambda_i(A)-\lambda_i(B))^2+(\lambda_j(A)-\lambda_k(B))^2-(\lambda_i(A)-\lambda_k(B))^2-(\lambda_j(A)-\lambda_k(B))^2\right)\\
-			&=2x\left(-\lambda_i(A)\lambda_i(B)-\lambda_j(A)\lambda_k(B)+\lambda_i(A)\lambda_k(B)+\lambda_j(A)\lambda_k(B)\right)\\
+			&f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,i})-f(M)=x\left(f(E_{i,i})+f(E_{j,k})-f(E_{i,k})-f(E_{j,i})\right)\\
+			&=x\left((\lambda_i(A)-\lambda_i(B))^2+(\lambda_j(A)-\lambda_k(B))^2-(\lambda_i(A)-\lambda_k(B))^2-(\lambda_j(A)-\lambda_i(B))^2\right)\\
+			&=2x\left(-\lambda_i(A)\lambda_i(B)-\lambda_j(A)\lambda_k(B)+\lambda_i(A)\lambda_k(B)+\lambda_j(A)\lambda_i(B)\right)\\
 			&=2x(\lambda_i(A)-\lambda_j(A))(\lambda_k(B)-\lambda_i(B))
 		\end{align*}
-		Puisque $j\geq i$ et $k\leq i$, on a :
-		\begin{align*}f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,k})-f(M)&=x\left(f(E_{i,i}+f(E_{j,k}+f(E_{i,k})+f(E_{j,k})\right)\\&=2x(\lambda_i(A)-\lambda_j(A))(\lambda_k(B)-\lambda_i(B))\\ &\leq 0
-		\end{align*}
+		Puisque $j\geq i$ et $k\geq i$ et $x\geq 0$, on a :
+		\[f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,i})-f(M)=2x(\lambda_i(A)-\lambda_j(A))(\lambda_k(B)-\lambda_i(B))\leq 0\]
 		\item Montrons que $i_0$ est bien définie.\\
-		On sait que $M\ne I_n$ ainsi il existe $i\in\crblanc{1}{n}$ tel que $m_{i,i}\ne 1$ par conséquent, $\{i\in\crblanc{1}{n}, m_{i,i}\ne 1\}$ est une partie de $\N$ non vide. De plus, cet ensemble est minoré par $1$. Donc, $i_0=\min \{i\in\crblanc{1}{n}, m_{i,i}\ne 1\}$ existe.\\
-		Par définition, $m_{i_0,i_0}\ne 1$, ainsi puisque $M\in\mathcal{B}_n(\R)$, il existe $j,k\geq i_0$ tel que $m_{i_0,j},m_{k,i_0}>0$.\\
-		On pose $x=\min m_{i_0,j},m_{k,i_0}$ et $M_1=M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,i}$.\\
-		Les coefficients de $M_1$ sont tous positifs et les sommes des coefficients pour chaque colonne et chaque ligne fait $1$. Ainsi $M_1\in\mathcal{B}_n(\R)$.\\
-		De plus, $f(M_1)\leq f(M)$ et on remarque que soit $m^1_{i_0,j}=0$ soit $m^1_{k,i_0}=0$.\\
-		En itérant l'opération, on obtient une suite de matrices de $B_n(\R)$ telle que $f(M)\geq f(M_1)\geq \dots \geq f(M_p)$.\\
-		Puisque le nombre de coefficients sur la colonne $i_0$ et la ligne $i_0$ est finie, le procédé va s'arrêter sur une matrice $M'\in\mathcal{B}_n(\R)$ tel que $f(M)\geq f(M')$  et $m_{j,j}=1$ pour tout $j\in\crblanc{1}{i_0}$.
-		
-		\item Soit $M\in\mathcal{B}_n(\R)$.\\
-		On construit par récurrence $M^(k+1)=(M^k)'$ tant que $M^k\ne I_n$.\\
-		L'algorithme va s'arrêter car le nombre de coefficients distincts de 1 est strictement décroissant. Et il s'arrêter sur la matrice $M^p=I_n$\\
-		De plus, d'après la question précédente, on a $f(M^p)\leq\dots\leq f(M)$.\\
-		Par conséquent, pour tout $M\in\mathcal{B}_n(\R)$ $f(I_n)\leq f(M)$.\\
+		On sait que $M\ne I_n$ ainsi il existe $i\in\crblanc{1}{n}$ tel que $m_{i,i}\ne 1$ par conséquent, $\{i\in\crblanc{1}{n}, m_{i,i}\ne 1\}$ est une partie de $\N$ non vide. Donc, $i_0=\min \{i\in\crblanc{1}{n}, m_{i,i}\ne 1\}$ existe.\\
+		Remarquons que comme $M\in \B_n(\R)$, si une ligne/colonne de $M$ contient un $1$ alors les autres coefficients de cette ligne/colonne doivent être nuls.
+		Par définition, $m_{i_0,i_0}<1$ et donc, puisque $M\in\B_n(\R)$, il existe $j,k\geq i_0$ tels que $m_{j,i_0},m_{i_0,k}>0$.\\
+		On pose $x=\min(m_{j,i_0},m_{i_0,k})$ et $M_1=M+xE_{i_0,i_0}+xE_{j,k}-xE_{i_0,k}-xE_{j,i_0}$.\\
+		Les coefficients de $M_1$ sont tous positifs et les sommes des coefficients pour chaque colonne et chaque ligne fait $1$. Ainsi $M_1\in\B_n(\R)$.\\
+		De plus d'après la question précédente, $f(M_1)\leq f(M)$ et on remarque que soit $m^1_{j,i_0}=0$ soit $m^1_{i_0,k}=0$.\\
+		En itérant l'opération, on obtient une suite de matrices de $\B_n(\R)$ telle que $f(M)\geq f(M_1)\geq \dots \geq f(M_p)$.\\
+		Puisque le nombre de coefficients sur la colonne $i_0$ et la ligne $i_0$ est finie, le procédé va s'arrêter. La matrice $M'$ alors obtenue vérifiera $M'\in\B_n(\R)$, $f(M)\geq f(M')$ et $m'_{i_0,i_0}=1$ et $m'_{i,i}=m_{i,i}=1$ si $i\leq i_0$.
+		\item Soit $M\in\B_n(\R)$.\\
+		On construit par récurrence $M^{(k+1)}=(M^{(k)})'$ tant que $M^{(k)}\ne I_n$.\\
+		L'algorithme va s'arrêter car le nombre de coefficients sur la diagonale distincts de 1 est strictement décroissant et donc la matrice obtenue sera l'identité.\\
+		De plus, d'après la question précédente, pour tout $k$ on a $f(M^{(k+1)})\leq f(M^{(k)})$.\\
+		Par conséquent, pour tout $M\in\B_n(\R)$ $f(I_n)\leq f(M)$.\\
 		De plus, $I_n\in\B_n(\R)$.\\
-		Par conséquent, \[f(I_n)=\min\{f(M), M\in\mathcal{B}_n(\R)\}\].
-		\item On note $Q=(p_{i,j}^2)_{1\leq i,j\leq n}$. Comme $P\in\O_n(\R)$, on a $Q\in\mathcal{B}_n(\R)$.\\
-		De plus, on a $\normep{F}{A-B}=f(Q)$ selon la question 3, or $f(Q)\geq f(I_n)$ selon la question 7.\\
-		On en déduit donc que pour tout $A,B\in S_n(\R)$ : 
-		\[\sum_{i=1}^{n}(\lambda_i(A)-\lambda_j(A))^2\leq \normep{F}{A-B}^2\]
+		Par conséquent, \[f(I_n)=\min\{f(M), M\in\B_n(\R)\}\]
+		\item On note $Q=(p_{i,j}^2)_{1\leq i,j\leq n}$. Comme $P\in\O_n(\R)$, on a $Q\in\B_n(\R)$.\\
+		De plus, on a $\norme{A-B}=f(Q)$ selon la question 3, or $f(Q)\geq f(I_n)$ selon la question 7.\\
+		On en déduit donc que pour tout $A,B\in \S_n(\R)$ : 
+		\[\sum_{i=1}^{n}(\lambda_i(A)-\lambda_j(A))^2\leq \norme{A-B}^2\]
 		\end{enumerate}
+	
 	\subsection{Distance aux matrices de rang au plus r}
 	\label{Distance aux matrices de rang au plus r corrigé}
 	\textcolor{blue}{\hyperref[Distance aux matrices de rang au plus r]{[Enoncé]}}
