@@ -9626,7 +9626,52 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Inégalité de Hoffman-Wielandt}
 	\label{Inégalité de Hoffman-Wielandt corrigé}
 	\textcolor{blue}{\hyperref[Inégalité de Hoffman-Wielandt]{[Enoncé]}}\\
-	
+	\begin{enumerate}
+		\item Soit $M\in\M_n(\R)$ et pour tout $P,Q\in\O_n(\R)$ donc :
+		\[\Tr((PMQ)^\top PMQ)=\Tr(Q^\top M^\top P^\top PMQ)=\Tr(Q^\top M^\top M Q)=\Tr(MQQ^\top M^\top)=\Tr(MM^\top)\]
+		On a bien : $\normep{F}{PMQ}=\normep{F}{M}$.
+		\item D'après le théorème spectral, il existe $P,Q\in\O_n(\R)$, : $A=P^\top D_A P$ et $B=Q^\top D_B Q$.
+		Par conséquent, 
+		\begin{align*}
+			\normep{F}{A-B}&=\normep{F}{P^\top D_A P-Q^\top D_B Q}\\
+			&=\normep{F}{D_APQ^\top-PQ^\top D_B} &\text{d'après la question 1}
+		\end{align*}
+		On a bien le résultat souhaité car $PQ^\top$ est orthogonale.
+		\item On prend la notation de la question précédente. Ainsi,
+		\[\normep{F}{A-B}^2=\Tr((D_AP-PD_B)^\top(D_AP-PD_B))=\sum_{1\leq i,j\leq n}(D_AP-PD_B)_{i,j}^2=\sum_{1\leq i,j\leq n}p_{i,j}^2(\lambda_i(A)-\lambda_j(B))^2\]
+		\item Soit $M\in\mathcal{B}_n(\R)$.\\
+		On a pour tout $i,j\in\crblanc{1}{n}$, 
+		\[0\leq m_{i,j}\leq \sum_{i=1}^{n}m_{i,j}=1\]
+		On pose les fonctions suivantes :
+		\begin{align*}
+			f_{i,j}:M\mapsto m_{i,j}
+			\varphi_i:M\mapsto \sum_{j=1}^{n}m_{i,j}
+			\psi_{j}:M\mapsto \sum_{i=1}^{n}m_{i,j}
+		\end{align*}
+		On remarque que \[\mathcal{B}_n(\R)=\bigcap_{1\leq i,j\leq n}f^{-1}([0,1])\bigcap_{1\leq i\leq n}\varphi_{i}(\{1\})\bigcap_{1\leq j\leq n}\psi_{j}(\{1\})\]
+		Les fonctions $f_{i,j}$, $\phi_i$ et $\psi_j$ sont continues car polynomiales.
+		$\{1\}$ et $[0,1]$ sont des fermés de $\R$ donc par intersection de fermés (image réciproque de fermé par des applications continues), $\mathcal{B}_n(\R)$ est fermé.
+		De plus, $\mathcal{B}_n(\R)$ est borné pour la norme $\norme: M\mapsto \max_{1\leq i,j\leq n}m_{i,j}$ par $1$.\\
+		Puisque $\mathcal{M}_n(\R)$ est de dimension finie, $\mathcal{B}_n{\R}$ est un compact.\\
+		On a que $f$ est continue (linéarité sur un espace de dimension finie) et que $\mathcal{B}_n(\R)$ est compact, ainsi d'après le théorème des bornes atteintes, $f$ admet un minimum sur $\B_n(\R)$.
+		\item Soit $M\in\mathcal{M}_n(\R)$ et soit $x\in\R^+$.\\
+		Par linéarité de $f$, on a : \\
+		\begin{align*}
+			&f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,k})-f(M)=x\left(f(E_{i,i}+f(E_{j,k}+f(E_{i,k})+f(E_{j,k})\right)\\
+			&=x\left((\lambda_i(A)-\lambda_i(B))^2+(\lambda_j(A)-\lambda_k(B))^2-(\lambda_i(A)-\lambda_k(B))^2-(\lambda_j(A)-\lambda_k(B))^2\right)\\
+			&=2x\left(-\lambda_i(A)\lambda_i(B)-\lambda_j(A)\lambda_k(B)+\lambda_i(A)\lambda_k(B)+\lambda_j(A)\lambda_k(B)\right)\\
+			&=2x(\lambda_i(A)-\lambda_j(A))(\lambda_k(B)-\lambda_i(B))
+		\end{align*}
+		Puisque $j\geq i$ et $k\leq i$, on a :
+		\begin{align*}f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,k})-f(M)&=x\left(f(E_{i,i}+f(E_{j,k}+f(E_{i,k})+f(E_{j,k})\right)\\&=2x(\lambda_i(A)-\lambda_j(A))(\lambda_k(B)-\lambda_i(B))\\ &\leq 0
+		\end{align*}
+		\item 
+		\item 
+		\item On note $Q=(p_{i,j}^2)_{1\leq i,j\leq n}$. Comme $P\in\O_n(\R)$, on a $Q\in\mathcal{B}_n(\R)$.\\
+		De plus, on a $\normep{F}{A-B}=f(Q)$ selon la question 3, or $f(Q)\geq f(I_n)$ selon la question 7.\\
+		On en déduit donc que pour tout $A,B\in S_n(\R)$ : 
+		\[\sum_{i=1}^{n}(\lambda_i(A)-\lambda_j(A))^2\leq \normep{F}{A-B}^2\]
+		\end{enumerate}
 	\subsection{Distance aux matrices de rang au plus r}
 	\label{Distance aux matrices de rang au plus r corrigé}
 	\textcolor{blue}{\hyperref[Distance aux matrices de rang au plus r]{[Enoncé]}}
