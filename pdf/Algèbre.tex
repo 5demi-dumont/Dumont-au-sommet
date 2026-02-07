@@ -8210,7 +8210,12 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Support d'une famille sommable}
 	\textcolor{blue}{\hyperref[Support d'une famille sommable]{[Enoncé]}}\\
 	\label{Support d'une famille sommable corrigé}
-	
+	On pose $E_n=\{i, |a_i|\geq \frac{1}{n}\}$ pour tout $n\in\N^*$.\\
+	Puisque $(a_i)$ est une famille sommable, on a :
+	\[+\infty> \sum_{i\in I}|a_i|\geq \sum_{i\in E_n} |a_i|\leq \sum_{i\in E_n}\frac{1}{n}\leq \frac{|E_n|}{n}\]
+	Par conséquent, $|E_n|$ est fini.\\
+	Ainsi, $S=\bigcup_{n\in\N^*} E_n$.\\
+	On en déduit que $S$ est au plus dénombrable.
 	\subsection{Théorème de Froda}
 	\textcolor{blue}{\hyperref[Théorème de Froda]{[Enoncé]}}\\
 	\label{Théorème de Froda corrigé}
