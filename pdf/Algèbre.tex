@@ -3799,7 +3799,7 @@ On note $\B_n(\R)$ l'ensemble des matrices bistochastiques de $\M_n(\R)$.
 On se propose de montrer que ce minimum est atteint en la matrice identité.
 \begin{enumerate}[resume]
 	\item Soit $(i,j,k)\in\crblanc{1}{n}^3$ tel que $j\geq i$ et $k\geq i$. Montrer que, pour $M\in\M_n(\R)$ et pour $x\in\R^+$, $$f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,k})-f(M)=2x(\lambda_i(A)-\lambda_j(A))(\lambda_k(B)-\lambda_i(B))\leq 0$$
-	\item Soient $n\geq 2$ et $M=(m_{i,j})\in\B_n(\R)$ une matrice différente de l'identité. On note $i$ le plus petit entier appartenant à $\crblanc{1}{n}$ tel que $m_{i,i}\ne1$. Montrer qu'il existe une matrice $M'=(m_{i,j}')\in\B_n(\R)$ telle que $f(M')\leq f(M)$ et $m_{j,j}=1$ pour tout $j\in\crblanc{1}{n}$.
+	\item Soient $n\geq 2$ et $M=(m_{i,j})\in\B_n(\R)$ une matrice différente de l'identité. On note $i_0$ le plus petit entier appartenant à $\crblanc{1}{n}$ tel que $m_{i_0,i_0}\ne1$. Montrer qu'il existe une matrice $M'=(m_{i,j}')\in\B_n(\R)$ telle que $f(M')\leq f(M)$ et $m'_{j,j}=1$ pour tout $j\in\crblanc{1}{i_0}$.
 	\item En déduire que $\min\{f(M)|M\in\B_n(\R)\}=f(I_n)$.
 	\item En déduire que $\forall (A,B)\in\mathcal{S}_n(\R)^2, \displaystyle\sum\limits_{i=1}^n(\lambda_i(A)-\lambda_i(B))^2\leq\norme{A-B}_F^2$.
 \end{enumerate}
@@ -4940,7 +4940,27 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Diagonalisabilité d'une matrice (1)}
 	\label{Diagonalisabilité d'une matrice (1) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (1)]{[Enoncé]}}\\
-	
+	Il est vrai que la matrice est symétrique mais pas forcément à coefficients réelles.\\
+	On calcule le polynôme caractéristique de $A$.\\
+	En développant par rapport à la première ligne, on obtient :
+	\[\chi_A=X^{n-2}(X^2-a_nX-S)\]
+	où $S=\sum_{k=0}^{n-1}a_k^2$.\\
+	On pose $Q=X^2-a_nX-S$.
+	$A$ est diagonalisable si et seulement si son polynôme minimal est scindé à racine simples.\\
+	Ici, $A$ est diagonalisable si et seulement si :
+	\begin{itemize}
+		\item $a_1=a_2=\dots=a_{n-1}=0$, dans ce cas $S=0$ et la matrice est diagonale donc a fortiori diagonalisable.
+		\item Au moins un $a_i\ne 0$ pour $i<n$. Dans ce cas, le rang de $A$ est au moins $1$ et la dimension du noyau égale à $n-2$. Pour que $A$ soit diagonalisable, il faut que :
+		\begin{itemize}
+			\item $S\ne 0$ pour que la valeur propre $0$ ne soit pas racine de $Q$.
+			\item Le discriminant de $Q$ soit non nulle. Pour que les deux racines de $Q$ soit distinctes.
+		\end{itemize}
+	\end{itemize}
+	Ainsi, $A$ est diagonalisable si et seulement si :
+	\begin{itemize}
+		\item $a_1=\dots=a_{n-1}=0$,
+		\item ou $S\ne 0$ et $a_n^2+4S\ne 0$
+	\end{itemize}
 	\subsection{Diagonalisabilité d'une matrice (2)}
 	\label{Diagonalisabilité d'une matrice (2) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (2)]{[Enoncé]}}\\
@@ -8190,7 +8210,12 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Support d'une famille sommable}
 	\textcolor{blue}{\hyperref[Support d'une famille sommable]{[Enoncé]}}\\
 	\label{Support d'une famille sommable corrigé}
-	
+	On pose $E_n=\{i, |a_i|\geq \frac{1}{n}\}$ pour tout $n\in\N^*$.\\
+	Puisque $(a_i)$ est une famille sommable, on a :
+	\[+\infty> \sum_{i\in I}|a_i|\geq \sum_{i\in E_n} |a_i|\leq \sum_{i\in E_n}\frac{1}{n}\leq \frac{|E_n|}{n}\]
+	Par conséquent, $|E_n|$ est fini.\\
+	Ainsi, $S=\bigcup_{n\in\N^*} E_n$.\\
+	On en déduit que $S$ est au plus dénombrable.
 	\subsection{Théorème de Froda}
 	\textcolor{blue}{\hyperref[Théorème de Froda]{[Enoncé]}}\\
 	\label{Théorème de Froda corrigé}
@@ -9606,10 +9631,70 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Inégalité de Hoffman-Wielandt}
 	\label{Inégalité de Hoffman-Wielandt corrigé}
 	\textcolor{blue}{\hyperref[Inégalité de Hoffman-Wielandt]{[Enoncé]}}\\
-	
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $M\in\M_n(\R)$ et pour tout $P,Q\in\O_n(\R)$ donc :
+		\[\Tr((PMQ)^\top PMQ)=\Tr(Q^\top M^\top P^\top PMQ)=\Tr(Q^\top M^\top M Q)=\Tr(MQQ^\top M^\top)=\Tr(MM^\top)\]
+		On a bien : $\normep{F}{PMQ}=\normep{F}{M}$.
+		\item D'après le théorème spectral, il existe $P,Q\in\O_n(\R)$, : $A=P^\top D_A P$ et $B=Q^\top D_B Q$.
+		Par conséquent, 
+		\begin{align*}
+			\normep{F}{A-B}&=\normep{F}{P^\top D_A P-Q^\top D_B Q}\\
+			&=\normep{F}{D_APQ^\top-PQ^\top D_B} &\text{d'après la question 1}
+		\end{align*}
+		On a bien le résultat souhaité car $PQ^\top$ est orthogonale.
+		\item On prend la notation de la question précédente. Ainsi,
+		\[\normep{F}{A-B}^2=\Tr((D_AP-PD_B)^\top(D_AP-PD_B))=\sum_{1\leq i,j\leq n}(D_AP-PD_B)_{i,j}^2=\sum_{1\leq i,j\leq n}p_{i,j}^2(\lambda_i(A)-\lambda_j(B))^2\]
+		\item Soit $M\in\mathcal{B}_n(\R)$.\\
+		On a pour tout $i,j\in\crblanc{1}{n}$, 
+		\[0\leq m_{i,j}\leq \sum_{i=1}^{n}m_{i,j}=1\]
+		On pose les fonctions suivantes :
+		\begin{align*}
+			f_{i,j}:M\mapsto m_{i,j}
+			\varphi_i:M\mapsto \sum_{j=1}^{n}m_{i,j}
+			\psi_{j}:M\mapsto \sum_{i=1}^{n}m_{i,j}
+		\end{align*}
+		On remarque que \[\mathcal{B}_n(\R)=\bigcap_{1\leq i,j\leq n}f^{-1}([0,1])\bigcap_{1\leq i\leq n}\varphi_{i}(\{1\})\bigcap_{1\leq j\leq n}\psi_{j}(\{1\})\]
+		Les fonctions $f_{i,j}$, $\phi_i$ et $\psi_j$ sont continues car polynomiales.
+		$\{1\}$ et $[0,1]$ sont des fermés de $\R$ donc par intersection de fermés (image réciproque de fermé par des applications continues), $\mathcal{B}_n(\R)$ est fermé.
+		De plus, $\mathcal{B}_n(\R)$ est borné pour la norme $\norme: M\mapsto \max_{1\leq i,j\leq n}m_{i,j}$ par $1$.\\
+		Puisque $\mathcal{M}_n(\R)$ est de dimension finie, $\mathcal{B}_n{\R}$ est un compact.\\
+		On a que $f$ est continue (linéarité sur un espace de dimension finie) et que $\mathcal{B}_n(\R)$ est compact, ainsi d'après le théorème des bornes atteintes, $f$ admet un minimum sur $\B_n(\R)$.
+		\item Soit $M\in\mathcal{M}_n(\R)$ et soit $x\in\R^+$.\\
+		Par linéarité de $f$, on a : \\
+		\begin{align*}
+			&f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,k})-f(M)=x\left(f(E_{i,i}+f(E_{j,k}+f(E_{i,k})+f(E_{j,k})\right)\\
+			&=x\left((\lambda_i(A)-\lambda_i(B))^2+(\lambda_j(A)-\lambda_k(B))^2-(\lambda_i(A)-\lambda_k(B))^2-(\lambda_j(A)-\lambda_k(B))^2\right)\\
+			&=2x\left(-\lambda_i(A)\lambda_i(B)-\lambda_j(A)\lambda_k(B)+\lambda_i(A)\lambda_k(B)+\lambda_j(A)\lambda_k(B)\right)\\
+			&=2x(\lambda_i(A)-\lambda_j(A))(\lambda_k(B)-\lambda_i(B))
+		\end{align*}
+		Puisque $j\geq i$ et $k\leq i$, on a :
+		\begin{align*}f(M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,k})-f(M)&=x\left(f(E_{i,i}+f(E_{j,k}+f(E_{i,k})+f(E_{j,k})\right)\\&=2x(\lambda_i(A)-\lambda_j(A))(\lambda_k(B)-\lambda_i(B))\\ &\leq 0
+		\end{align*}
+		\item Montrons que $i_0$ est bien définie.\\
+		On sait que $M\ne I_n$ ainsi il existe $i\in\crblanc{1}{n}$ tel que $m_{i,i}\ne 1$ par conséquent, $\{i\in\crblanc{1}{n}, m_{i,i}\ne 1\}$ est une partie de $\N$ non vide. De plus, cet ensemble est minoré par $1$. Donc, $i_0=\min \{i\in\crblanc{1}{n}, m_{i,i}\ne 1\}$ existe.\\
+		Par définition, $m_{i_0,i_0}\ne 1$, ainsi puisque $M\in\mathcal{B}_n(\R)$, il existe $j,k\geq i_0$ tel que $m_{i_0,j},m_{k,i_0}>0$.\\
+		On pose $x=\min m_{i_0,j},m_{k,i_0}$ et $M_1=M+xE_{i,i}+xE_{j,k}-xE_{i,k}-xE_{j,i}$.\\
+		Les coefficients de $M_1$ sont tous positifs et les sommes des coefficients pour chaque colonne et chaque ligne fait $1$. Ainsi $M_1\in\mathcal{B}_n(\R)$.\\
+		De plus, $f(M_1)\leq f(M)$ et on remarque que soit $m^1_{i_0,j}=0$ soit $m^1_{k,i_0}=0$.\\
+		En itérant l'opération, on obtient une suite de matrices de $B_n(\R)$ telle que $f(M)\geq f(M_1)\geq \dots \geq f(M_p)$.\\
+		Puisque le nombre de coefficients sur la colonne $i_0$ et la ligne $i_0$ est finie, le procédé va s'arrêter sur une matrice $M'\in\mathcal{B}_n(\R)$ tel que $f(M)\geq f(M')$  et $m_{j,j}=1$ pour tout $j\in\crblanc{1}{i_0}$.
+		
+		\item Soit $M\in\mathcal{B}_n(\R)$.\\
+		On construit par récurrence $M^(k+1)=(M^k)'$ tant que $M^k\ne I_n$.\\
+		L'algorithme va s'arrêter car le nombre de coefficients distincts de 1 est strictement décroissant. Et il s'arrêter sur la matrice $M^p=I_n$\\
+		De plus, d'après la question précédente, on a $f(M^p)\leq\dots\leq f(M)$.\\
+		Par conséquent, pour tout $M\in\mathcal{B}_n(\R)$ $f(I_n)\leq f(M)$.\\
+		De plus, $I_n\in\B_n(\R)$.\\
+		Par conséquent, \[f(I_n)=\min\{f(M), M\in\mathcal{B}_n(\R)\}\].
+		\item On note $Q=(p_{i,j}^2)_{1\leq i,j\leq n}$. Comme $P\in\O_n(\R)$, on a $Q\in\mathcal{B}_n(\R)$.\\
+		De plus, on a $\normep{F}{A-B}=f(Q)$ selon la question 3, or $f(Q)\geq f(I_n)$ selon la question 7.\\
+		On en déduit donc que pour tout $A,B\in S_n(\R)$ : 
+		\[\sum_{i=1}^{n}(\lambda_i(A)-\lambda_j(A))^2\leq \normep{F}{A-B}^2\]
+		\end{enumerate}
 	\subsection{Distance aux matrices de rang au plus r}
 	\label{Distance aux matrices de rang au plus r corrigé}
 	\textcolor{blue}{\hyperref[Distance aux matrices de rang au plus r]{[Enoncé]}}
+	
 	\subsection{Théorème de Courant-Fischer \etoile{3}}
 	\label{Théorème de Courant-Fischer corrigé}
 	\textcolor{blue}{\hyperref[Théorème de Courant-Fischer]{[Enoncé]}}\\

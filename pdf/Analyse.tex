@@ -7555,7 +7555,28 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\end{enumerate}
 	\subsection{Détermination d'une borne inférieure}\label{sec:determination-dune-borne-inferieure}
 		\textcolor{blue}{\hyperref[Détermination d'une borne inférieure]{[Enoncé]}}\\
-	\subsection{Normes usuelles sur $\mathcal{C}^1([0,1],\K)$}\label{sec:normes-usuelles-sur-mathcalc101k}
+		Soit $f\in E$.\\
+		On pose $g=f'-f$.\\
+		On cherche à résoudre l'équation différentielle $y'-y=g$ sur $[0,1]$.\\
+		Après résolution, on a pour tout $x\in[0,1]$
+		\[f(x)=Ce^x+e^x\int_{0}^{x}g(t)e^{-t}dt\]
+		Or $f(0)=0$ donc $C=0$.\\
+		Par conséquent, \[f(x)=e^x\int_{0}^{x}g(t)e^{-t}dt\]
+		De plus, puisque $f(1)=1$, on a \[\int_{0}^{1}g(t)e^{-t}dt=e^{-1}\].
+		Ainsi,
+		\[\int_{0}^{1}|g(t)|dt\geq \int_{0}^{1}g(t)e^{-t}dt=e^{-1}\]
+		Donc 
+		\[\inf_{f\in E}\int_0^1|f'(x)-f(x)|dx\geq e^{-1}\]
+		Montrons maintenant qu'il s'agit bien de l'infimum.\\
+		On pose pour tout $n\in\N$, $f_n:x\mapsto \frac{1}{e}\left(e^x-(1-x)^n\right)$.\\
+		Pour tout $n\in\N$, $f_n$ est de classe $\mathcal{C}^1$ sur $[0,1]$, $f(0)=0$ et $f(1)=1$.\\
+		Pour tout $n\in\N$ et pour tout $x\in[0,1]$ :
+		\[f_n'(x)=\frac{1}{e}\left(e^x-n(1-x)^{n-1}\right)\]
+		Et \[\int_{0}^{1}|f'(t)-f(t)|dt=\frac{1}{e}\left(1-\frac{1}{n+1}\right)\longrightarrow \frac{1}{e}\]
+		Par conséquent, on a :
+		\[\inf_{f\in E}\int_0^1|f'(x)-f(x)|dx=\frac{1}{e}\]
+		\textit{Remarque : on peut montrer que cette borne n'est pas atteinte.}
+		\subsection{Normes usuelles sur $\mathcal{C}^1([0,1],\K)$}\label{sec:normes-usuelles-sur-mathcalc101k}
 			\textcolor{blue}{\hyperref[Normes usuelles sur C1]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item \begin{itemize}
@@ -7612,6 +7633,11 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\textcolor{blue}{\hyperref[Une série vectorielle]{[Enoncé]}}\\
 	\subsection{Polytopes réguliers d'un espace vectoriel euclidien}\label{sec:polytopes-reguliers-dun-espace-vectoriel-euclidien}
 		\textcolor{blue}{\hyperref[Polytopes réguliers d'un espace vectoriel euclidien]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item Soit $H$ un hyperplan de $E$. Puisque $H\ne E$, il existe $b\in E$. Il suffit de faire le procédé de Gram-Schmidt pour obtenir le $a$ tel que $H=(\Vect(a))^\perp$.
+		\item Soit $f_1,f_2,g_1,g_2$ tels que $\norme{f_1}=\norme{f_2}=\norme{g_1}=\norme{g_2}=1$ et que $f_1,g_1,e$ et $f_2,g_2,e$ sont des triangles équilatéraux.\\
+		
+	\end{enumerate}
 	\newpage
 	\section{Correction Suites et séries de fonctions}
 	\subsection{Etude d'une suite de fonctions (1)}\label{sec:etude-dune-suite-de-fonctions-1}
@@ -7956,6 +7982,14 @@ Démontrer l'équivalence des deux affirmations suivantes :
 \section{Correction Séries entières}
 	\subsection{Lemme d'Abel}\label{sec:lemme-dabel}
 		\textcolor{blue}{\hyperref[Lemme d'Abel]{[Enoncé]}}\\
+		On rappelle le lemme d'Abel :\\
+		Soient $(a_n)$ une suite de complexes et $r$ un nombre réel strictement positif. Si la suite $(a_nr^n)$ est bornée, alors pour tout $z\in\C$ tel que $|z|<r$, la série est absolument convergente.\\
+		Passons à la démonstration :\\
+		Soient $(a_n)\C^\N$ et $r\in\R^*_+$ telle que $(a_nr^n)$ est bornée.
+		Fixons $z\in\C$ tel que $|z|<r$.\\
+		\[|a_nz^n|=|a_nr^n|\left|\frac{z^n}{r^n}\right|=\mathcal{O}(\left|\frac{z^n}{r^n}\right|) \]
+		Puisque $|z|< r$, la série $\sum \frac{z}{r}^n$ converge absolument.\\
+		Par conséquent, $\sum a_nz^n$ converge absolument également.
 	\subsection{Fonction non développable en série entière}\label{sec:fonction-non-developpable-en-serie-entiere}
 	\textcolor{blue}{\hyperref[Fonction non développable en série entière]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -7980,6 +8014,41 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	
 	\subsection{CCINP MP 2019}\label{sec:ccinp-mp-2019}
 	\textcolor{blue}{\hyperref[CCINP MP 2019]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item \[\frac{\binom{2n+2}{n+1}}{\binom{2n}{n}}=\frac{(2n+2)!}{(n+1)!^2}\frac{n!^2}{(2n)!}=\frac{(2n+1)(2n+2)}{(n+1)^2\sim 4}\]
+		On en déduit que le rayon de convergence $R$ de cette série entière est : $\frac{1}{4}$.
+		\item On pose pour tout $n\in\N$, $a_n=\binom{2n}{n}$.\\
+		Pour tout $x \in ]-R, R[$, la fonction $S$ est une série entière de rayon $R = \frac{1}{4}$. Elle est donc dérivable terme à terme sur cet intervalle :
+		\[ S(x) = \sum_{n=0}^{+\infty} a_n x^n \quad \text{et} \quad S'(x) = \sum_{n=1}^{+\infty} n a_n x^{n-1} \]
+		
+		Calculons l'expression $(1-4x)S'(x) - 2S(x)$ :
+		\begin{align*}
+			(1-4x)S'(x) - 2S(x) &= S'(x) - 4xS'(x) - 2S(x) \\
+			&= \sum_{n=1}^{+\infty} n a_n x^{n-1} - 4x \sum_{n=1}^{+\infty} n a_n x^{n-1} - 2 \sum_{n=0}^{+\infty} a_n x^n \\
+			&= \sum_{n=0}^{+\infty} (n+1) a_{n+1} x^n - \sum_{n=1}^{+\infty} 4n a_n x^n - \sum_{n=0}^{+\infty} 2a_n x^n
+		\end{align*}
+		
+		En isolant le terme pour $n=0$ et en regroupant le reste sous une seule somme :
+		\[ = \left( 1 \cdot a_1 - 2a_0 \right) + \sum_{n=1}^{+\infty} \left[ (n+1) a_{n+1} - 4n a_n - 2 a_n \right] x^n \]
+		\[ = \left( a_1 - 2a_0 \right) + \sum_{n=1}^{+\infty} \left[ (n+1) a_{n+1} - (4n+2) a_n \right] x^n \]
+		
+		Or, nous savons que :
+		\begin{itemize}
+			\item $a_1 = \binom{2}{1} = 2$ et $a_0 = \binom{0}{0} = 1$, donc $a_1 - 2a_0 = 2 - 2 = 0$.
+			\item D'après la relation de récurrence établie à la question 1 : $\frac{a_{n+1}}{a_n} = \frac{4n+2}{n+1}$, ce qui implique $(n+1)a_{n+1} = (4n+2)a_n$.
+		\end{itemize}
+		
+		Tous les coefficients sont donc nuls, ce qui prouve la relation :
+		\[ \forall x \in ]-R, R[, \quad (1-4x)S'(x) - 2S(x) = 0 \]
+		\item On pose $\displaystyle (E) : y'-\frac{2}{(1-4x)}y=0$.\\
+		Une primitive de $x\mapsto \frac{2}{1-4x}$ sur $]-R,R[$ est 
+		\[x\mapsto -\frac{1}{2}\ln(1-4x)\]
+		Ainsi, il existe $C\in\R$ tel que : 
+		\[S(x)=Ce^{-\frac{1}{2}\ln(1-4x)}\]
+		Pour $x=0$, on a $S(0)=\binom{0}{0}=1$ et $Ce^{-\frac{1}{2}\ln(1)}=1$.\\
+		Finalement, on a :
+		\[\forall x\in]-R,R[,\quad S(x)=e^{-\frac{1}{2}\ln(1-4x)}=\frac{1}{\sqrt{1-4x}}\]
+	\end{enumerate}
 	\subsection{Série entière de terme général binomial}\label{sec:serie-entiere-de-terme-general-binomial}
 	\textcolor{blue}{\hyperref[Série entière de terme général binomial]{[Enoncé]}}\\
 	\subsection{Formule de Cauchy}\label{sec:formule-de-cauchy}
@@ -9801,6 +9870,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{sec:calcul-de-derivees-partielles-1}
 	\textcolor{blue}{\hyperref[Calcul de dérivées partielles 1]{[Enoncé]}}\\
 	
+<<<<<<< Updated upstream
 	\subsection{Existence de dérivées partielles}
 	\label{sec:existence-de-derivees-partielles}
 	\textcolor{blue}{\hyperref[Existence de dérivées partielles]{[Enoncé]}}\\
@@ -9812,6 +9882,45 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Une équation fonctionnelle \etoile{2}}
 	\label{sec:une-equation-fonctionnelle-etoile2}
 	\textcolor{blue}{\hyperref[Une équation fonctionnelle]{[Enoncé]}}\\
+=======
+	\subsection{Calcul de dérivées partielles}\label{sec:calcul-de-derivees-partielles-1}
+		\textcolor{blue}{\hyperref[Calcul de dérivées partielles 1]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item $$\frac{\partial g}{\partial x}(x,y)=\frac{\partial f}{\partial y}(y,x), \quad \frac{\partial g}{\partial y}(x,y)=\frac{\partial f}{\partial x}(y,x)$$
+		\item On pose $h:x\mapsto (x,x)$. On a : $g=f\circ h$.\\
+		$$g'(x)=\frac{\partial f}{\partial x}(x,x)+\frac{\partial f}{\partial x}(x,x)$$
+		\item On pose $h:(x,y)\mapsto (y,f(x,x))$. On a : $g=f\circ h$.\\
+		$$\frac{\partial g}{\partial x}(x,y)=\frac{\partial f}{\partial y}(y,f(x,x))\left(\frac{\partial f}{\partial x}(x,x)+\frac{\partial f}{\partial y}(x,x)\right) \quad \frac{\partial g}{\partial y}(x,y)=\frac{\partial f}{\partial x}(y,f(x,x))$$
+		\item On pose $h:x\to(x,f(x,x))$. On a $g=f\circ h$.\\
+		$$g'(x)=\frac{\partial f}{\partial x}(x,x)+\frac{\partial f}{\partial y}(x,f(x,x))\left(\frac{\partial f}{\partial x}(x,x)+\frac{\partial f}{\partial y}(x,x)\right)$$
+	\end{enumerate}
+	\subsection{Existence de dérivées partielles}\label{sec:existence-de-derivees-partielles}
+		\textcolor{blue}{\hyperref[Existence de dérivées partielles]{[Enoncé]}}\\
+	
+	\subsection{Etude d'une fonction}\label{sec:etude-dune-fonction}
+		\textcolor{blue}{\hyperref[Etude d'une fonction]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item La fonction $(x,y)\mapsto \frac{1}{\sqrt{x^2+y^2}}$ ne s'annule pas sur $\R^2\setminus\{(0,0)\}$ donc par opérations usuelles $f$ est continue sur $\R^2\setminus\{(0,0)\}$.\\
+		De plus, pour tout $(x,y)\in\R^2$, $|f(x,y)|\leq |x^2+y^2|=\normep{2}{(x,y)}$ donc $\lim\limits_{(x,y)\to(0,0)} f(x,y)=0$.\\
+		Par conséquent, $f$ est continue sur $\R^2$.
+		\item \begin{enumerate}[label=\alph*.]
+			\item Les théorèmes classiques de dérivabilité de fonctions à variables réelles nous donnent que $f$ est dérivable sur $\R^2\setminus\{(0,0)\}$. De plus : 
+			\[\frac{f(x,0)-f(0,0)}{x-0}=x\sin\left(\frac{1}{|x|}\right)\underset{x\to 0}{\to} 0\]
+			et 
+			\[\frac{f(0,y)-f(0,0)}{y-0}=x\sin\left(\frac{1}{|y|}\right)\underset{x\to 0}{\to} 0\]
+			Finalement, $f$ admet des dérivées partielles en tout point de $\R^2$.
+			\item \[\frac{\partial f}{\partial x}(x,y)=2x\sin\left(\frac{1}{x^2+y^2}\right)-\frac{x}{\sqrt{x^2+y^2}}\cos\left(\frac{1}{x^2+y^2}\right)\]
+			et 
+			\[\frac{\partial f}{\partial x}(x,y)=2y\sin\left(\frac{1}{x^2+y^2}\right)-\frac{y}{\sqrt{x^2+y^2}}\cos\left(\frac{1}{x^2+y^2}\right)\]
+			Les dérivées partielles sont continues sur $\R^2\setminus\{(0,0)\}$.
+			Cependant, elles ne sont pas continues au voisinage de $(0,0)$. En effet, 
+			\[\frac{\partial f}{\partial x}\left(\frac{1}{\sqrt{2n\pi},0}\right)=-1 \quad \frac{\partial f}{\partial x}\left(\frac{1}{\sqrt{2n\pi+\frac{\pi}{2}}},0\right)\underset{n\to+\infty}{\to}0\]
+			\item Ainsi, $f$ ne peut être de classe $\mathcal{C}^1$ sur $\R^2$.
+		\end{enumerate}
+	\end{enumerate}
+	\subsection{Une équation fonctionnelle \etoile{2}}\label{sec:une-equation-fonctionnelle-etoile2}
+		\textcolor{blue}{\hyperref[Une équation fonctionnelle]{[Enoncé]}}\\
+>>>>>>> Stashed changes
 	\begin{enumerate}
 		\item Soit $f$ une fonction constante égale à $c$ solution $(1)$.
 		On a donc $2c=2c^2$ donc $c=0$ ou $c=1$.
@@ -9855,6 +9964,15 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	
 	\subsection{Application linéaire}\label{sec:application-lineaire}
 		\textcolor{blue}{\hyperref[Application linéaire]{[Enoncé]}}\\
+		On remarque que $f(0)=0$.
+		$f$ est différentiable en $0$ donc il existe $\ell$ une application linéaire telle que pour tout $h\in E$ : 
+		\[f(h)=f(0)+\ell(h)+\smallo{h}=\ell(h)+\smallo{h}\]
+		Ainsi pour tout $\lambda\in\R$ et tout $x\in E$ :
+			\[\lambda f(x)=f(\lambda x)=\lambda\ell(x)+\smallo{\lambda x}\]
+		Donc \[f(x)=\ell(x)+\norme{x}\frac{\smallo{\lambda\norme{x}}}{\lambda\norme{x}}\]
+		Par conséquent, quand $\lambda$ tend vers $0^+$, on a \[\frac{\smallo{\lambda\norme{x}}}{\lambda\norme{x}}\to 0\]
+		Ainsi, $f(x)=\ell(x)$ pour tout $x\in E$.\\
+		Donc, $f$ est linéaire (et égale à sa différentielle en $0$.)
 	\subsection{Opérateurs vectoriels}\label{sec:operateurs-vectoriels}
 		\textcolor{blue}{\hyperref[Opérateurs vectoriels]{[Enoncé]}}\\
 	\subsection{Laplacien en polaires}\label{sec:laplacien-en-polaires}
