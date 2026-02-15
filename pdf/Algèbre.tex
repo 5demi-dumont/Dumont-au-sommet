@@ -256,7 +256,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\section{Caractérisation des homothéties (2) \centraleponts{2}}
 	\label{Caractérisation des homothéties (2)}
 	\textcolor{blue}{\hyperref[Caractérisation des homothéties (2) corrigé]{[Enoncé]}}\\
-	Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$.\\
+	Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$. Soit $r<\dim(E)$ ($E$ est potentiellement de dimension infinie).\\
 	Montrer que si $u$ stabilise tous les sous-espaces de $E$ de dimension $r$ alors $u$ est une homothétie.
 	
 	\section{Espaces engendrés par les matrices inversibles et orthogonales \centraleponts{3}}
@@ -4407,13 +4407,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Si $n=1$ alors $\varphi$ est la fonction constante égale à la matrice $(1)$. Elle n'est donc ni injective ni surjective encore une fois.\\
 		Enfin si $n=2$ alors $\varphi:\begin{pmatrix}a&b\\c&d\end{pmatrix}\mapsto\begin{pmatrix}d&-c\\-b&a\end{pmatrix}$. On remarque alors que $\varphi^2=\Id_{\M_2(\K)}$ donc $\varphi$ est bijective.\\
 		Déterminons Im$(\varphi)$ dans le cas $\K=\C$. On vient de voir que si $n=1$ alors Im$(\varphi)=\{I_1\}$ et si $n=2$ alors Im$(\varphi)=\M_2(\C)$. Supposons maintenant $n\geq 3$.\\
-		On a vu que Im$(\varphi)\subset\text{GL}_n(\C)\cup\{A\in \M_n(\C),\ \rg(A)=1\}$.\\
+		On a vu que Im$(\varphi)\subset\text{GL}_n(\C)\cup\{A\in \M_n(\C),\ \rg(A)\leq 1\}$.\\
+		On a $\varphi(0)=0$.\\
 		Fixons $A\in \text{GL}_n(\C)$.\\
-		$\Com(M)=A\implies \det(\Com(M)^\top)=\det(A^\top)\implies\det(\det(M)M^{-1})=\det(A)\implies\det(M)^{n-1}=\det(A)$.\\
+		$\forall M\in \T{GL}_n(\C),\ \Com(M)=A\implies \det(\Com(M)^\top)=\det(A^\top)\implies\det(\det(M)M^{-1})=\det(A)\implies\det(M)^{n-1}=\det(A)$.\\
 		On sait qu'il existe $z\in \C$ tel que $z^{n-1}=\det(A)$. On pose donc $M=z\left(A^{-1}\right)^\top$.\\
 		On vérifie que $\Com(M)^\top=\det(M)M^{-1}=\displaystyle\frac{z^n}{\det(A)}\cdot\frac{A^\top}{z}=\frac{z^{n-1}}{\det(A)}A^\top=A^\top$ d'où $\Com(M)=A$.\\
 		Fixons $A\in \M_n(\C)$ de rang $1$. $\exists P,Q\in \text{GL}_n(\C),\ A=PJ_1Q$. On rappelle que $J_1=\Com(J_{n-1})$ et d'après ce qui précède, il existe deux matrices inversibles $P',Q'$ telles que $P=\Com(P')$ et $Q=\Com(Q')$. Donc $A=\Com(P')\Com(J_1)\Com(Q')$ et d'après la question $2$, $A=\Com(P'J_1Q')$.\\
-		Par suite, Im$(\varphi)=\text{GL}_n(\C)\cup\{A\in \M_n(\C),\ \rg(A)=1\}$.
+		Par suite, Im$(\varphi)=\text{GL}_n(\C)\cup\{A\in \M_n(\C),\ \rg(A)\leq 1\}$.
 	\end{enumerate}
 	
 	\subsection{Caractérisation des homothéties (1) \ccinp{2}}
@@ -4429,22 +4430,51 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{itemize}
 	On en déduit que $u$ est bien une homothétie.
 	
-	\subsection{Caractérisation des homothéties (2)}
+	\subsection{Caractérisation des homothéties (2) \centraleponts{2}}
 	\label{Caractérisation des homothéties (2) corrigé}
 	\textcolor{blue}{\hyperref[Caractérisation des homothéties (2)]{[Enoncé]}}\\
+	L'exercice précédent montre qu'il suffit que $u$ stabilise toutes les espaces de dimension 1 de $E$. Soit alors $D=\Vect(x)$ une droite de $E$. Montrons que $D$ est l'intersection d'espaces de dimension $r$.\\
+	Comme $r<\dim(E)$ il existe $x_1,\dots,x_r\in E$ tels que $(x,x_1,\dots,x_r)$ est libre. On note pour $i\in \crblanc{1}{r},\ F_i=\Vect(x,x_1,\dots,x_{i-1},x_{i+1},\dots,x_r)$.\\
+	$\forall i\in \crblanc{1}{r},\ \dim(F_i)=r$ et de plus $D=\displaystyle\bigcap_{i=1}^rF_i$.\\
+	En effet l'inclusion $D\subset \displaystyle\bigcap_{i=1}^rF_i$ est évidente et si $y\in \displaystyle\bigcap_{i=1}^rF_i$ alors :\\
+	$$\forall i\in \crblanc{1}{n},\ \exists \lambda_i,a_{i,1},\dots,a_{i,i-1},a_{i,i+1},\dots,a_{i,r}\in \K,\ (L_i) : y=\lambda_ix+\sum_{\substack{1\leq j\leq r\\j\ne i}}a_{ij}x_j$$
+	En faisant la différence $(L_i) - (L_j)$ pour tout $1\leq i\ne j\leq r$ on obtient :
+	$$0=(\lambda_i-\lambda_j)x+a_{ij}x_j-a_{ji}x_i+\sum_{\substack{1\leq k\leq r\\k\ne i,k\ne j}}(a_{ik}-a_{jk})x_k$$
+	Donc par liberté de $(x,x_1,\dots,x_r),\ \forall 1\leq i\ne j\leq r,\ a_{ij}=0$. D'où $y\in \Vect(x)$.
 	
-	\subsection{Espaces engendrés par les matrices inversibles et orthogonales}
+	\subsection{Espaces engendrés par les matrices inversibles et orthogonales \centraleponts{3}}
 	\label{Espaces engendrés par les matrice inversibles et orthogonales corrigé}
 	\textcolor{blue}{\hyperref[Espaces engendrés par les matrices inversibles et orthogonales]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $A\in \M_n(\K)$. On note $\eta=\min\{|\lambda|,\ \lambda\in \T{Sp}(A)\backslash\{0\}\}$ et on fixe $0<\varepsilon<\eta$. $\varepsilon$ n'est pas valeur propre de $A$ donc $A-\varepsilon I_n\in \T{GL}_n(\K)$.\\
+		Ainsi $A=\varepsilon I_n+(A-\varepsilon I_n)\in \Vect(\T{GL}_n(\K))$.
+		\item Il suffit de montrer que les matrices élémentaires $E_{ij}=(\delta_{ik}\delta_{jk})_{1\leq k,l\leq n}$ sont dans $\Vect(\O_n(\R))$. Fixons $(i,j)\in \crblanc{1}{n}^2$. On note $(E_1,\dots,E_n)$ la base canonique de $\M_{n,1}(\R)$.\\
+		On rappelle qu'une matrice est orthogonale si et seulement si les colonnes forment une base orthonormale de $\M_{n,1}(\R)$ munit de sa structure euclidienne usuelle.\\
+		On remarque alors que $E_{11}=\dfrac{1}{2}(I_n+\diag(1,-1,\dots,-1))\in \Vect(\O_n(\R))$.\\
+		Comme un produit de matrices orthogonales est une matrice orthogonale il est clair que $\Vect(\O_n(\R))$ est stable par multiplication par une matrice orthogonale.\\
+		La famille $(E_i)_{1\leq i\leq n}$ est une base orthonormale de $\M_{n,1}(\R)$ donc pour toute permutation $\sigma\in \S_n$ la matrice $P_\sigma=\displaystyle\sum_{i=1}^nE_{i\sigma(i)}$, dont les colonnes sont les $E_{\sigma(i)}$, est orthogonale.\\
+		Multiplier une matrice $M$ par $P_\sigma$ à gauche/droite revient à appliquer $\sigma$ aux lignes/colonnes de $M$.\\
+		Par conséquent $E_{ij}=P_{(i1)}E_{11}P_{(1j)}\in \Vect(\O_n(\R))$ d'où $\Vect(\O_n(\R))=\M_n(\R)$.\\\\
+		Un autre argument si on a accès à la décomposition polaire (cf.\ref{Décomposition polaire}) peut s'écrire comme suit :\\
+		Soit $A\in \M_n(\R)$. $\exists O\in \O_n(\R),\ S\in \S_n^+(\R),\ A=OS$. D'après le théorème spectral il existe $D=\diag(\lambda_1,\dots,\lambda_n)$ et $P$ orthogonale telle que $S=PDP^\top$.\\
+		Or $D=\displaystyle\sum_{k=1}^n\lambda_k E_{kk}$ donc $A\in \Vect(\O_n(\R))$.
+	\end{enumerate}
 	
-	\subsection{Espace engendré par les matrices nilpotentes}
+	\subsection{Espace engendré par les matrices nilpotentes \centraleponts{3}}
 	\label{Espace engendré par les matrices nilpotentes corrigé}
 	\textcolor{blue}{\hyperref[Espace engendré par les matrices nilpotentes]{[Enoncé]}}\\
+	Notons $\mathcal N$ l'ensemble des matrices nilpotentes et $H=\ker\Tr$ l'espace vectoriel des matrices de trace nulle.
+	Soit $N\in \M_n(\K)$ une matrice nilpotente. On sait que $N$ est trigonalisable dans $\M_n(\C)$ et que son spectre est réduit à $0$. On en déduit $\Tr(N)=\displaystyle\sum_{\lambda\in \T{Sp}(N)}\lambda=0$. Donc $\mathcal N\subset H$ d'où $\Vect(\mathcal N)\subset H$.\\
+	On sait que $\dim H=n^2-1$, il suffit donc de trouver $n^2-1$ matrices nilpotentes linéairement indépendantes.\\
+	On note $E_{i,j}=(\delta_{ik}\delta_{jl})_{1\leq k,l\leq n}$ les matrices élémentaires. On vérifie aisément que si $i\ne j$ alors $E_{i,j}^2=0$. Cela fait $n^2-n$ matrices.\\
+	Pour celle manquantes on pose pour $1\leq k\leq n-1,\ E_k=E_{k,k}-E_{k+1,k+1}+E_{k+1,k}-E_{k,k+1}$. La matrice $E_k$ est diagonale par bloc avec des blocs $(0)$ sauf le $k$-ième qui vaut $\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$.\\
+	Comme $\begin{pmatrix}1&-1\\1&-1\end{pmatrix}^2=\begin{pmatrix}0&0\\0&0\end{pmatrix}$ les matrices $E_k$ sont nilpotentes.\\
+	De plus pour $1\leq k\leq n-1$ la matrice $E_{k,k}-E_{k+1,k+1}$ est linéairement indépendante des $E_{i,j},\ 1\leq i\ne j\leq n$. Ainsi pour $1\leq k\leq n-1$ la matrice $E_k$ est linéairement indépendantes des $E_{i,j},\ 1\leq i\ne j\leq n$. Enfin les matrices $E_k,\ 1\leq k\leq n-1$ sont linéairement indépendantes donc $\dim\Vect(\mathcal N)\geq n^2-1$ et par suite $\Vect(\mathcal N)=H$.
 	
 	\subsection{Transmission d'information \centraleponts{3}}
 	\label{Transmission d'information corrigé}
 	\textcolor{blue}{\hyperref[Transmission d'information]{[Enoncé]}}\\
-	Supposons que $(A,B)\ne (0,0)$. Alors on peut se donner $x\in \M_{n,1}\backslash\Ker(A)$ et $y\in \text{Im}(B)\backslash\{0\}$. On complète la famille $(y)$ en une base $(y,e_2,\dots,e_n)$ de $\M_{n,1}(\K)$.\\
+	Supposons que $(A,B)\ne (0,0)$. Alors on peut se donner $x\in \M_{n,1}(\K)\backslash\Ker(A)$ et $y\in \text{Im}(B)\backslash\{0\}$. On complète la famille $(y)$ en une base $(y,e_2,\dots,e_n)$ de $\M_{n,1}(\K)$.\\
 	On définit la matrice carré $X$ en posant $Xy=x$ et $Xe_i=0$ pour $i\in \crblanc{2}{n}$.\\
 	Alors pour $z\in \M_{n,1}(\K)$ telle que $Bz=y$ on a : $AXBz=AXy=Ax\ne 0$. Donc $AXB\ne 0$.
 	
