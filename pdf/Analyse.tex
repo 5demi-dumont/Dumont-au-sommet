@@ -712,29 +712,52 @@
 	
 	\section{Divergence grossière}
 	\textcolor{blue}{\hyperref[Divergence grossière corrigé]{[Corrigé]}}\\
-	\label{divergencegrossière}
 	\label{Divergence grossière}
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $f$ une application continue par morceaux de $\R_+$ dans $\R$ admettant une limite $\ell$ en $+\infty$ et telle que l'intégrale $\displaystyle\int_0^{+\infty}f(t)dt$ converge. Montrer que $\ell=0$.
 		\item Soit $f$ une application uniformément continue de $\R_+$ dans $\R$ telle que l'intégrale $\displaystyle\int_0^{+\infty}f(t)dt$ converge. Montrer que $\lim\limits_{+\infty}f=0$.
 	\end{enumerate}
 	
-	\section{Espace $L^2$ et dérivation}
-	\textcolor{blue}{\hyperref[sec:espace-L2-et-derivation]{[Corrigé]}}\\
-	\label{L2}
-	\label{Espace L^2 et  dérivation}
+	\section{Norme $L^2$ et dérivation}
+	\textcolor{blue}{\hyperref[Norme L^2 et dérivation corrigé]{[Corrigé]}}\\
+	\label{Norme L^2 et dérivation}
 	Soit $f:\R\to \R$ de classe $\mathcal C^2$ telle que $f$ et $f''$ soit de carré intégrable sur $\R$.
 	\begin{enumerate}
 		\item Montrer que $f'$ est également de carré intégrable sur $\R$.
 		\item Montrer que $\displaystyle\left(\int_\R f'^2\right)^2\leq \left(\int_\R f^2\right)\left(\int_\R f''^2\right)$.
 	\end{enumerate}
 	
-	\section{Intégrale de Frullani \centraleponts{3}}
-	\textcolor{blue}{\hyperref[sec:integrale-de-frullani]{[Corrigé]}}\\
-	\label{frullani}
-	\label{Intégrale de Frullani}
-	Soit $f:[0,+\infty[ \to \R$ une fonction continue telle que l'intégrale $\displaystyle\int_0^{+\infty} \frac{f(t)}{t}dt$ converge et soient $a,b$ deux réels strictement positifs.
-	\\Démontrer que $\displaystyle\int_0^{+\infty} \frac{f(at)-f(bt)}{t}dt = f(0)\ln\left(\displaystyle\frac{b}{a}\right)$.
+	\section{ENS PC 2025 \xens{3}}
+	\textcolor{blue}{\hyperref[ENS PC 2025 corrigé]{[Corrigé]}}\\
+	\label{ENS PC 2025}
+	Soit $f\in \mathcal C([0,1],\R^*_+)$ telle que : $$\int_0^1f=\int_0^1\frac{1}{f}=1$$
+	Déterminer $f$.
+	
+	\section{Intégrale de Frullani (1) \centraleponts{3}}
+	\textcolor{blue}{\hyperref[Intégrales de Frullani (1) corrigé]{[Corrigé]}}\\
+	\label{Intégrales de Frullani (1)}
+	Soient $a<b$ des réels strictement positifs. Soit $f:\ ]0,+\infty[\to \R$ continue admettant des limites finies $\ell$ en $0$ et $L$ en $+\infty$.
+	\begin{enumerate}
+		\item Montrer que $\displaystyle\int_0^{+\infty}\frac{f(at)-f(bt)}{t}dt=(\ell-L)\ln\left(\frac{b}{a}\right)$.
+		\item En déduire la valeur de $\displaystyle\int_0^1\frac{t-1}{\ln t}dt$.
+	\end{enumerate}
+	
+	\section{Intégrales de Frullani (2) \centraleponts{3}}
+	\textcolor{blue}{\hyperref[Intégrales de Frullani (2) corrigé]{[Corrigé]}}\\
+	\label{Intégrales de Frullani (2)}
+	Soit $f:[0,+\infty[ \to \R$ une fonction continue telle que l'intégrale $\displaystyle\int_1^{+\infty} \frac{f(t)}{t}dt$ converge et soient $a<b$ deux réels strictement positifs.
+	\\Démontrer que $\displaystyle\int_0^{+\infty} \frac{f(at)-f(bt)}{t}dt=f(0)\ln\left(\frac{b}{a}\right)$.
+	
+	\subsection{Combinaisons linéaires de cosinus \xens{4}}
+	\textcolor{blue}{\hyperref[Combinaisons linéaires de cosinus corrigé]{[Corrigé]}}\\
+	\label{Combinaisons linéaires de cosinus}
+	Soient $a_1,\dots,a_n$ des réels strictement positifs.
+	\begin{enumerate}
+		\item Donner une condition nécessaire et suffisante sur $(\lambda_1,\dots,\lambda_n)\in \R^n$ pour que l'intégrale
+		$$I=\int_0^{+\infty}\frac{1}{t}\sum_{k=1}^n\lambda_k\cos(a_kt)dt$$
+		converge.
+		\item Calculer $I$ lorsque qu'elle converge.
+	\end{enumerate}
 	
 	\section{Calcul d'une intégrale (1) \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:calcul-dune-integrale-1-etoile3]{[Corrigé]}}\\
@@ -5473,13 +5496,74 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	
 	\subsection{Divergence grossière}
 	\label{Divergence grossière corrigé}
-	\textcolor{blue}{\hyperref[divergencegrossière]{[Enoncé]}}\\
-	\subsection{Espace $L^2$ et dérivation}\label{sec:espace-L2-et-derivation}
-	\textcolor{blue}{\hyperref[Espace L^2 et  dérivation]{[Enoncé]}}\\
-	\subsection{Intégrale de Frullani}\label{sec:integrale-de-frullani}
-	\textcolor{blue}{\hyperref[frullani]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Divergence grossière]{[Enoncé]}}\\
 	
-	\subsection{Calcul d'une intégrale (1) \etoile{3}}\label{sec:calcul-dune-integrale-1-etoile3}
+	\subsection{Inégalité de Kolmogorov}
+	\label{Inégalité de Kolmogorov corrigé}
+	\textcolor{blue}{\hyperref[Inégalité de Kolmogorov]{[Enoncé]}}\\
+	
+	\subsection{ENS PC 2025 \xens{3}}
+	\label{ENS PC 2025 corrigé}
+	\textcolor{blue}{\hyperref[ENS PC 2025]{[Enoncé]}}
+	\underline{$1^{\T{ère}}$ méthode :} Cauchy-Schwarz\\
+	Notons $E=\mathcal C([0,1],\R^*_+)$.\\
+	On rappelle que $\proscal{\cdot}{\cdot}:(g,h)\mapsto \displaystyle\int_0^1gh$ est un produit scalaire sur $E$.\\
+	Prenons $g=\sqrt f$ et $h=\dfrac{1}{\sqrt f}$.\\
+	On a $\displaystyle\int_0^1gh=\int_0^1 1=1=\sqrt{\int_0^1g^2}\sqrt{\int_0^1h^2}$.\\
+	$g$ et $h$ vérifient donc le cas d'égalité de l'inégalité de Cauchy-Schwarz. On en déduit qu'il existe $\lambda\in \R_+$ tel que $g=\lambda h$.\\
+	Ainsi $f^2=\lambda$ d'où comme $f>0$, $f=\sqrt\lambda$. Puis comme $\displaystyle\int_0^1f=1$, $f=1$.\\
+	\underline{$2^{\T{nd}}$ méthode :} Signe d'un trinôme\\
+	Posons $g=f+\dfrac{1}{f}-2$. Par hypothèse $g$ est continue sur $[0,1]$ et $\displaystyle\int_0^1g=0$.\\
+	Or $\forall x\in \R^*_+,\ x+\dfrac{1}{x}-2\geq 0\iff x^2-2x+1\geq 0\iff (x-1)^2\geq 0$. Donc $g$ est positive et par stricte positivité de l'intégrale $g=0$.\\
+	Autrement dit $(f-1)^2=0$ i.e $f=1$.
+	
+	\subsection{Intégrales de Frullani (1) \centraleponts{3}}
+	\label{Intégrales de Frullani (1) corrigé}
+	\textcolor{blue}{\hyperref[Intégrales de Frullani (1)]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item Fixons $\eta>\varepsilon>0$. Posons $F(\varepsilon,\eta)=\displaystyle\int_\varepsilon^{\eta}\frac{f(at)-f(bt)}{t}dt$.\\
+		En posant $u=at$ on a, $\displaystyle\int_\varepsilon^{\eta}\frac{f(at)}{t}dt=\int_{a\varepsilon}^{a\eta}\frac{f(u)}{u/a}\frac{du}{a}=\int_{a\varepsilon}^{a\eta}\frac{f(u)}{u}dt$. De même $\displaystyle\int_\varepsilon^\eta\frac{f(bt)}{t}dt=\int_{b\varepsilon}^{b\eta}\frac{f(u)}{u}dt$.\\
+		Donc $F(\varepsilon,\eta)=\displaystyle\int_{a\varepsilon}^{a\eta}\frac{f(t)}{t}dt-\int_{b\varepsilon}^{b\eta}\frac{f(t)}{t}dt=\int_{a\varepsilon}^{b\varepsilon}\frac{f(t)}{t}dt-\int_{b\varepsilon}^{b\eta}\frac{f(t)}{t}dt$.\\
+		Soit $\alpha>0$. Par hypothèse, il existe $\varepsilon_0>0$ tel que $\forall t\in [0,b\varepsilon_0],\ |f(t)-\ell|<\dfrac{\alpha}{2\ln\left(\frac{b}{a}\right)}$. De même il existe $\eta_0>0$ tel que $\forall t\in [a\eta_0,+\infty],\ |f(t)-L|\leq \dfrac{\alpha}{2\ln\left(\frac{b}{a}\right)}$.\\
+		Alors $\forall \varepsilon<\varepsilon_0,\ \forall \eta>\eta_0$, $$\left|F(\varepsilon,\eta)-(\ell-L)\ln\left(\frac{b}{a}\right)\right|\leq\int_{a\varepsilon}^{b\varepsilon}\frac{|f(t)-\ell|}{t}dt+\int_{a\eta}^{b\eta}\frac{|f(t)-L|}{t}dt\leq \alpha$$
+		Ainsi $\displaystyle\int_0^{+\infty}\frac{f(at)-f(bt)}{t}dt=\lim_{\eta\to +\infty}\lim_{\varepsilon\to 0^+}F(\varepsilon,\eta)=(\ell-L)\ln\left(\dfrac{b}{a}\right)$.
+		\item Posons $u=-\ln t$. $du=-\dfrac{dt}{t}$ i.e $dt=e^{-u}du$\\
+		$\displaystyle\int_0^1\frac{t-1}{\ln t}dt=\int_{+\infty}^0\frac{e^{-u}-1}{-u}(-e^{-u}du)=\int_0^{+\infty}\frac{e^{-u}-e^{-2u}}{u}du$.\\
+		La fonction $\exp$ est continue sur $]0,+\infty[$ et $\utzero\lim\ e^{-t}=1$ et $\utfty\lim e^{-t}=0$.\\
+		Donc d'après la question 1 $\displaystyle\int_0^1\frac{t-1}{\ln t}dt=(1-0)\ln\left(\frac{2}{1}\right)=\ln 2$.
+	\end{enumerate}
+	
+	\subsection{Intégrales de Frullani (2) \centraleponts{3}}
+	\label{Intégrales de Frullani (2) corrigé}
+	\textcolor{blue}{\hyperref[Intégrales de Frullani (2)]{[Enoncé]}}\\
+	Fixons $\varepsilon>0$. Posons $F(\varepsilon)=\displaystyle\int_\varepsilon^{+\infty}\frac{f(at)-f(bt)}{t}dt$.\\
+	Comme la dernière intégrale converge, $\displaystyle\int_\varepsilon^{+\infty}\frac{f(at)}{t}dt=\int_{a\varepsilon}^{+\infty}\frac{f(u)}{u/a}\frac{du}{a}=\int_{a\varepsilon}^{+\infty}\frac{f(u)}{u}dt$. De même $\displaystyle\int_\varepsilon^{+\infty}\frac{f(bt)}{t}dt=\int_{b\varepsilon}^{+\infty}\frac{f(u)}{u}dt$.\\
+	Donc $F(\varepsilon)=\displaystyle\int_\varepsilon^{+\infty}\frac{f(at)}{t}dt-\int_\varepsilon^{+\infty}\frac{f(bt)}{t}dt=\int_{a\varepsilon}^{b\varepsilon}\frac{f(t)}{t}dt=\int_a^b\frac{f(\varepsilon t)}{t}dt$.\\
+	Soit $\eta>0$. Par continuité de $f$ en $0^+$, il existe $\varepsilon_0>0$ tel que $\forall t\in [0,b\varepsilon_0],\ |f(t)-f(0)|<\eta$.\\
+	Alors $\forall \varepsilon<\varepsilon_0,\ \displaystyle\left|F(\varepsilon)-f(0)\ln\left(\frac{b}{a}\right)\right|\leq\int_a^b\frac{|f(\varepsilon t)-f(0)|}{t}dt\leq \eta(\ln(b)-\ln(a))$.\\
+	Ainsi $F(\varepsilon)\underset{\varepsilon\to 0^+}\longrightarrow f(0)\ln\left(\dfrac{b}{a}\right)$ ce qui conclut la question.
+	
+	\subsubsection{Combinaisons linéaires de cosinus \xens{4}}
+	\label{Combinaisons linéaires de cosinus corrigé}
+	\textcolor{blue}{\hyperref[Combinaisons linéaires de cosinus]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item Posons $f:t\mapsto \displaystyle\sum_{k=1}^n\lambda_k\cos(a_kt)$ et $g:t\mapsto \dfrac{f(t)}{t}$.\\
+		$g$ est continue sur $\R^*_+$ et de plus par IPP, $\forall \alpha>0$ :
+		$$\int_1^{+\infty}\frac{\cos(\alpha t)}{t}dt=\left[\frac{\sin(\alpha t)}{\alpha t}\right]_1^{+\infty}+\int_1^{+\infty}\frac{\sin(\alpha t)}{\alpha t^2}dt$$
+		où le crochet et l'intégrale converge, l'un par croissances comparées et l'autre car $\dfrac{\sin(\alpha t)}{\alpha t^2}\utfty=\bigO{\dfrac{1}{t^2}}$.\\
+		Enfin, il reste la convergence en $0^+$.\\
+		$f(t)\utzero=\displaystyle\sum_{k=1}^n\lambda_k\left(1+a_k^2\frac{t^2}{2}+\smallo{t^2}\right)$ donc si $S:=\displaystyle\sum_{k=1}^n\lambda_k\ne 0$, $g(t)\utzero\sim\dfrac{S}{t}$ et l'intégrale ne converge pas en $0^+$ Et si $S=0$ alors $g(t)\utzero=\bigO t$ et l'intégrale converge.\\
+		Ainsi $I$ converge si et seulement si $\displaystyle\sum_{k=1}^n\lambda_k\ne 0$.
+		\item Sans perte de généralité on suppose les $a_k$ rangés par ordre croissant.
+		On souhaite appliquer l'exercice précédent à $f=\cos$. Pour cela il suffit trouver des réels $\mu_1,\dots,\mu_{n-1}$ vérifiant $\displaystyle\sum_{k=1}^n\lambda_k\cos(a_kt)=\sum_{k=1}^{n-1}\mu_k(\cos(a_{k+1}t)-\cos(a_kt))$.\\
+		On a $\displaystyle\sum_{k=1}^{n-1}\mu_k(\cos(a_{k+1}t)-\cos(a_kt))=-\mu_1\cos(a_1t)+\sum_{k=2}^{n-1}(\mu_{k-1}-\mu_k)\cos(a_kt)+\mu_{n-1}\cos(a_nt)$.\\
+		Posons alors pour $k\in \crblanc{1}{n-1},\ \mu_k=-\displaystyle\sum_{i=1}^k\lambda_i$ de sorte que $\mu_{k-1}-\mu_k=\lambda_k$, $-\mu_1=\lambda_1$ et $\mu_{n-1}=\lambda_n-\displaystyle\sum_{i=1}^n\lambda_i=\lambda_n$.\\
+		Alors d'après l'exercice précédent,
+		$$I=\sum_{k=1}^{n-1}\mu_k(\ln(a_{k+1})-\ln(a_k))=-\mu_1\ln(a_1)+\sum_{k=2}^{n-1}(\mu_{k-1}-\mu_k)\ln(a_k)+\mu_{n-1}\ln(a_n)=\sum_{k=1}^n\lambda_k\ln(a_k)$$
+	\end{enumerate}
+	
+	\subsection{Calcul d'une intégrale (1) \etoile{3}}
+	\label{sec:calcul-dune-integrale-1-etoile3}
 	\textcolor{blue}{\hyperref[calculintégrale1]{[Enoncé]}}\\
 	Soit $n$ un entier supérieur ou égal à $2$.\\
 	Tout d'abord, $f_n:t\mapsto \displaystyle\prod\limits_{k=1}^n\frac{1}{t+k}$ est continue par morceaux sur $\R^*_+$ et $f_n(t)\utfty{\sim} \displaystyle\frac{1}{t^n}$. Donc $I_n=\displaystyle\int_0^{+\infty}f_n(t)dt$ converge par comparaison à une intégrale de Riemann ($n>1$).\\
