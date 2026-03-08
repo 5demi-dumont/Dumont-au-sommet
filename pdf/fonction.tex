@@ -91,8 +91,8 @@
 \newcommand{\utzero}[1]{\underset{t\to 0}{#1}}
 \newcommand{\independent}{\protect\mathpalette{\protect\independenT}{\perp}}
 \def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
-\newcommand{\dpartial}[3]{\displaystyle\frac{\partial^#2 #1}{\partial#3^#2}}
-\newcommand{\dpartials}[3]{\displaystyle\frac{\partial^2 #1}{\partial #2\partial #3}}
+\newcommand{\dpartial}[3]{\dfrac{\partial^{#2}#1}{\partial#3^{#2}}}
+\newcommand{\dpartials}[3]{\dfrac{\partial^2#1}{\partial#2\partial#3}}
 \usetikzlibrary{shapes.geometric}
 
 \newcommand{\etoile}[2][fill=Yellow,draw=Orange]{

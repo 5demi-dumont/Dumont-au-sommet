@@ -1289,10 +1289,10 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	Soit $G$ un groupe.\\
 	\begin{enumerate}[leftmargin=*]
 		\item Montrer que le centre de $G$ définit par:\\
-		$$Z(G)= \ens{a\in G,\ \forall x\in G,ax=xa}$$
+		$$Z(G)= \{a\in G,\ \forall x\in G,ax=xa\}$$
 		est un sous-groupe de $G$.
 		\item Montrer que pour tout $x \in G$, le commutant de $x$ définit par:
-		$$\mathcal{C}(x)=\ens{a\in G,\ ax=xa}$$
+		$$\mathcal{C}(x)=\{a\in G,\ ax=xa\}$$
 		est un sous groupe de $G$.
 	\end{enumerate}
 	
@@ -3413,6 +3413,21 @@ Dans toute cette section $n$ désigne un entier naturel non nul.\\\\
 \textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la comatrice corrigé]{[Corrigé]}}\\
 Résoudre dans $\M_n(\R)$ l'équation $A=\Com(A)$.
 
+\section{Equation matricielle faisant intervenir la transposée (1)}
+\label{Equation matricielle faisant intervenir la transposée (1)}
+\textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la transposée (1) corrigé]{[Corrigé]}}\\
+\begin{enumerate}
+	\item Soit $A\in \M_n(\R)$ telle que $A^2=A^\top$.\\
+	Montrer que $A$ est diagonalisable dans $\M_n(\C)$ et déterminer ses valeurs propres possibles.
+	\item Donner un exemple ayant toutes ces valeurs propres.
+\end{enumerate}
+
+\section{Equation matricielle faisant intervenir la transposée (2)}
+\label{Equation matricielle faisant intervenir la transposée (2)}
+\textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la transposée (2) corrigé]{[Corrigé]}}\\
+Déterminer les matrices $A\in \M_n(\R)$ telles que $\forall k\geq n,\ A+A^k=A^\top$.
+
+
 \section{\underline{Matrice de rotation} \ccinp{2}}
 \label{Matrice de rotation}
 \textcolor{blue}{\hyperref[Matrice de rotation corrigé]{[Corrigé]}}\\
@@ -3451,10 +3466,42 @@ Montrer que $\varphi$ est proportionnelle à la trace.
 \textcolor{blue}{\hyperref[Hyperplan de Mn(K) corrigé]{[Corrigé]}}\\
 Montrer que tout hyperplan de $\M_n(\K)$ rencontre GL$_n(\K)$.
 
-\section{\underline{Exemple de symétrie orthogonale} \ccinp{1}}
-\label{Exemple de syméttrie orthogonale}
-\textcolor{blue}{\hyperref[Exemple de symétrie orthogonale corrigé]{[Corrigé]}}\\
+\section{\underline{Une symétrie orthogonale matricielle} \ccinp{1}}
+\label{Une symétrie orthogonale matricielle}
+\textcolor{blue}{\hyperref[Une symétrie orthogonale matricielle corrigé]{[Corrigé]}}\\
 Montrer que $\fonction{s}{\M_n(\R)}{\M_n(\R)}{M}{M^\top}$ est une symétrie orthogonale pour le produit scalaire sur $\M_n(\R)$ pour le produit scalaire défini par $\langle A,B\rangle=\Tr(A^\top B)$ pour $A,B\in\M_n(\R)$.
+
+\section{Une isométrie vectorielle matricielle}
+\label{Une isométrie vectorielle matricielle}
+\textcolor{blue}{\hyperref[Une isométrie vectorielle matricielle corrigé]{[Corrigé]}}\\
+Soit $A\in \M_n(\R)$. Montrer que $f:M\in \M_n(\R)\mapsto AM$ est une isométrie vectorielle de $\M_n(\R)$ si et seulement si $A\in \O_n(\R)$.
+
+\section{Endomorphisme échangeur}
+\label{Endomorphisme échangeur}
+\textcolor{blue}{\hyperref[Endomorphisme échangeur corrigé]{[Corrigé]}}\\
+Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien de dimension $2n$.\\
+Soient $F$ et $G$ deux sous-espaces vectoriels de $E$, de dimension $n$, supplémentaires dans $E$. On note $p_F$ et $p_G$ les projecteurs respectivement sur $F$ parallèlement à $G$ et sur $G$ parallèlement à $F$.\\
+Soit $\varphi$ une isométrie vectorielle de $E$ telle que $\varphi(F)\subset G$.\\
+On pose $\fonction{f_\varphi}{E}{E}{x}{\varphi(p_F(x))+\varphi^{-1}(p_G(x))}$
+\begin{enumerate}
+	\item Démontrer que
+	$$\varphi(F)=G,\quad f_\varphi^2=\Id_E,\quad f_\varphi(F)=G,\quad f_\varphi(G)=F$$
+	\item On suppose que $\forall (u,v)\in F^2$,
+	$$\proscal{\varphi(u)}{v}=\proscal{u}{\varphi(v)}$$
+	Démontrer que $f_\varphi$ est un automorphisme orthogonal.
+	\item Démontrer la réciproque.
+\end{enumerate}
+
+\section{Réflexion qui commutent}
+\label{Réflexion qui commutent}
+\textcolor{blue}{\hyperref[Réflexion qui commutent corrigé]{[Corrigé]}}\\
+Soient $E$ un espace euclidien et $a\in E$ unitaire.
+\begin{enumerate}
+	\item Rappeler l'expression de la réflexion $s_a$ par rapport à $\Vect(a)$.
+	\item Montrer que si $g$ est un automorphisme orthogonal alors
+	$$g\circ s_a\circ g^{-1}=s_{g(a)}$$
+	\item Soit $b\in E$ unitaire non colinéaire à $a$. Montrer que $s_a$ et $s_b$ commutent si et seulement si $a$ et $b$ sont orthogonaux.
+\end{enumerate}
 
 \section{\underline{Caractérisations des projections orthogonales} \ccinp{2}}
 \label{Caractérisations des projections orthogonales}
@@ -3466,6 +3513,22 @@ Soient $E$ un espace euclidien et $p$ une projection de $E$. Etablir l'équivale
 	\item $\forall x \in E, \; \norme{p(x)}\leq \norme{x}$ 
 \end{enumerate}
 
+\section{Réduction des projecteurs orthogonaux}
+\label{Réduction des projecteurs orthogonaux}
+\textcolor{blue}{\hyperref[Réduction des projecteurs orthogonaux corrigé]{[Corrigé]}}\\
+Soit $E$ un espace euclidien et soit $p,q$ deux projecteurs orthogonaux de $E$.
+\begin{enumerate}
+	\item Montrer que $p$ et $q$ sont auto-adjoints.
+	\item Montrer que $p\circ q\circ p$ est auto-adjoint.
+	\item Montrer que $(\Ker p+\Ima q)^\bot=\Ima p\cap\Ker q$.
+	\item En déduire que $p\circ q$ est diagonalisable.
+\end{enumerate}
+
+\section{Base orthogonale associée à un endomorphisme}
+\label{Base orthogonale associée à un endomorphisme}
+\textcolor{blue}{\hyperref[Base orthogonale associée à un endomorphisme corrigé]{[Corrigé]}}\\
+Soient $E$ un espace euclidien et $f\in \L(E)$. Montrer qu'il existe une base orthonormée $\B$ de $E$ telle que $f(\B)$ soit orthogonale.
+
 \section{Norme d'une base orthogonale \xens{3}}
 \label{Norme d'une base orthogonale}
 \textcolor{blue}{\hyperref[Norme d'une base orthogonale corrigé]{[Corrigé]}}\\
@@ -3473,6 +3536,15 @@ Soit $(e_1,\dots e_n)$ une base orthogonale de $\R^n$
 \begin{enumerate}
 	\item Montrer qu'il existe un vecteur $u$ de $\R^n$ non nul tel que les projetés orthogonaux de $e_1,\dots,e_n$ sur $\text{Vect}(u)$ aient la même norme.
 	\item Montrer que cette norme commune est indépendante du vecteur $u$ choisi et l'exprimer en fonction de $\norme{e_1},\dots,\norme{e_n}$.
+\end{enumerate}
+
+\section{Famille de vecteurs unitaires équidistants d'un espace euclidien}
+\label{Famille de vecteurs unitaires équidistants d'un espace euclidien}
+\textcolor{blue}{\hyperref[Famille de vecteurs unitaires équidistants d'un espace euclidien corrigé]{[Corrigé]}}\\
+Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien de dimension $n$. Soient $p>n$ et $(x_1,\dots,x_p)$ une famille de vecteurs unitaires de $E$ tels que pour $i\ne j,\ \norme{x_i-x_j}=d>0$.
+\begin{enumerate}
+	\item Déterminer les valeurs propres de $A=(\proscal{x_i}{x_j})_{1\leq i,j\leq p}$.
+	\item En déduire la valeur de $d$ puis que $p=n+1$.
 \end{enumerate}
 
 \section{\underline{Matrice de Hilbert} \centraleponts{3}}
@@ -3488,6 +3560,26 @@ Soit $(e_1,\dots e_n)$ une base orthogonale de $\R^n$
 		\displaystyle\frac{1}{n}&\displaystyle\frac{1}{n+1}&\dots&\displaystyle\frac{1}{2n+1}
 	\end{pmatrix}$
 	est symétrique réelle définie positive.\\
+\end{enumerate}
+
+\section{Rayon spectral d'un endomorphisme auto-adjoint}
+\label{Rayon spectral d'un endomorphisme auto-adjoint}
+\textcolor{blue}{\hyperref[Rayon spectral d'un endomorphisme auto-adjoint corrigé]{[Corrigé]}}\\
+Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien et soit $f\in \S(E)$. On note $m$ la plus petite valeur propre de $f$ et $M$ sa plus grande. On note aussi $S=\{x\in E,\ \norme x=1\}$.
+\begin{enumerate}
+	\item Montrer que $\forall x\in S,\ m\leq \proscal{f(x)}{x}\leq M$.
+	\item Montrer que s'il existe $r\in \R$ tel que
+	$$\forall x\in S,\ \proscal{f(x)}{x}\leq r$$
+	Alors $r\geq M$.
+	\item Soit $t\in \R$. On pose
+	$$A=\begin{pmatrix}
+		t&1&0&\cdots&0\\
+		1&\ddots&\ddots&\ddots&\vdots\\
+		0&\ddots&\ddots&\ddots&0\\
+		\vdots&\ddots&\ddots&\ddots&1\\
+		0&\cdots&0&1&t
+	\end{pmatrix}$$
+	Montrer que $\max\T{Sp}(A)\leq t+2$.
 \end{enumerate}
 
 \section{\underline{Racine carrée d'un endomorphisme auto-adjoint positif} \telecom{2}}
@@ -3507,19 +3599,29 @@ Démontrer que $\displaystyle\frac{\Tr(M)}{n}\geq \det(M)^{1/n}$.
 \section{\underline{Inégalité à propos des matrices orthogonales} \telecom{3}}
 \label{Inégalité à propos des matrices orthogonales}
 \textcolor{blue}{\hyperref[Inégalité à propos des matrices orthogonales corrigé]{[Corrigé]}}\\
-Soit $A\in \O_n(\R)$. Montrer que\\
+Soit $M\in \O_n(\R)$. Montrer que\\
 $$\left|\sum_{1\leq i,j\leq n}m_{i,j}\right|\leq n \leq\sum_{1\leq i,j\leq n}|m_{i,j}|\leq n^{3/2}$$
 
-\section{Inégalité de la trace}
-\label{Inégalité de la trace}
-\textcolor{blue}{\hyperref[Inégalité de la trace corrigé]{[Corrigé]}}\\
+\section{Inégalité sur la trace de matrices symétriques positives}
+\label{Inégalité sur la trace de matrices symétriques positives}
+\textcolor{blue}{\hyperref[Inégalité sur la trace de matrices symétriques positives corrigé]{[Corrigé]}}\\
 Soient $A,B\in\S_n^+(\R)$. Montrer que $0\leq\Tr(AB)\leq\Tr(A)\Tr(B)$.
+
+\section{Inégalité de Golden-Thompson \xens{5}}
+\label{Inégalité de Golden-Thompson}
+\textcolor{blue}{\hyperref[Inégalité de Golden-Thompson corrigé]{[Corrigé]}}\\
+Soient $A,B\in \S_n(\R)$.
+\begin{enumerate}
+	\item Montrer que $\Tr(e^Ae^B)>0$.
+	\item Montrer que $\Tr(e^{A+B})\leq \Tr(e^Ae^B)$.\\
+	\textit{On pourra utiliser la formule de Trotter-Kato (cf.IX-4 tome Algèbre).}
+\end{enumerate}
 
 \section{\underline{Inégalité de Hadamard} \centraleponts{3}}
 \label{Inégalité de Hadamard}
 \textcolor{blue}{\hyperref[Inégalité de Hadamard corrigé]{[Corrigé]}}\\
 Soit $S=(s_{ij})\in\mathcal S_n^+(\R)$.
-On pourra se servir librement de l'inégalité arithmético-géométrique cf. I-47 tome Analyse.
+On pourra se servir librement de l'inégalité arithmético-géométrique (cf.I-47 tome Analyse).
 \begin{enumerate}
 	\item Montrer que $\det(S)\leq \left(\displaystyle\frac{1}{n}\Tr(S)\right)^n$.
 	\item Soient $\alpha=(\alpha_1,\dots,\alpha_n)\in\R^n$, $D=\text{diag}(\alpha_1,\dots,\alpha_n)$ et $S_{\alpha}=DSD$.\\
@@ -3527,6 +3629,11 @@ On pourra se servir librement de l'inégalité arithmético-géométrique cf. I-
 	\item On suppose $S$ inversible. Vérifier que les coefficients diagonaux de $S$ sont strictement positifs et, en introduisant des réels $\alpha_1,\dots,\alpha_n$ pertinemment choisis, établir que: $$\det(S)\leq \prod_{i=1}^n s_{ii}$$
 	\item Justifier que l'inégalité précédente est encore vraie lorsque $S$ n'est pas inversible.
 \end{enumerate}
+
+\section{Matrices orthogonales qui respectent $(\R_+)^n$}
+\label{Matrices orthogonales qui respectent (R_+)^n}
+\textcolor{blue}{\hyperref[Matrices orthogonales qui respectent (R_+)^n corrigé]{[Corrigé]}}\\
+Déterminer les matrices de $\O_n(\R)$ qui laissent stable $(\R_+)^n$.
 
 \section{Perturbations}
 \label{Perturbations}
@@ -3541,7 +3648,7 @@ Quelles sont les matrices $M\in \O_n(\R)$ telles que $A+M$ soit inversible ?
 
 \section{Somme de Cesàro de matrices orthogonales}
 \label{Somme de Cesàro de matrices orthogonales}
-\textcolor{blue}{\hyperref[Somme de Cesaro de mattrices orthogonales corrigé]{[Corrigé]}}\\
+\textcolor{blue}{\hyperref[Somme de Cesàro de matrices orthogonales corrigé]{[Corrigé]}}\\
 Soit $A\in \O_n(\R)$ telle que $-1\notin \text{Sp}(A)$.
 \begin{enumerate}
 	\item Montrer que la suite $\left(\displaystyle\frac{1}{p+1}\sum_{k=0}^pA^k\right)_{p\in \N}$ converge et déterminer sa limite.
@@ -3665,6 +3772,21 @@ Montrer que $\exp:\A_n(\R)\to \O_n(\R)$ est une application surjective.
 \textcolor{blue}{\hyperref[Théorème spectral corrigé]{[Corrigé]}}\\
 Enoncer et démontrer le théorème spectral.
 
+\section{Somme d'endomorphismes auto-adjoints positifs}
+\label{Somme d'endomorphismes auto-adjoints positifs}
+\textcolor{blue}{\hyperref[Somme d'endomorphismes auto-adjoints positifs corrigé]{[Corrigé]}}\\
+Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien.
+\begin{enumerate}
+	\item Soit $u\in \S(E)$. Montrer que $(\Ker u)^\bot=\Ima u$.
+	\item Soit $u\in \S^+(E)$. Montrer que $\forall x\in E,\ \proscal{u(x)}{x}=0\iff u(x)=0$.
+	\item Soit $(u,v)\in \S^+(E)^2$.
+	\begin{enumerate}[label=\alph*.]
+		\item Montrer que $u+v\in \S^+(E)$.
+		\item Montrer que $\Ker(u+v)=\Ker u\cap\Ker v$.
+		\item Montrer que $\Ima(u+v)=\Ima u+\Ima v$.
+	\end{enumerate}
+\end{enumerate}
+
 \section{Réduction simultanée \xens{4}}
 \label{Réduction simultanée}
 \textcolor{blue}{\hyperref[Réduction simultanée corrigé]{[Corrigé]}}\\
@@ -3675,6 +3797,26 @@ Soient $A\in \mathcal S^{++}_n(\R)$ et $B\in\mathcal{S}^+_n(\R)$
 	\item Montrer que $\det(A+B)\geq \det(A)+\det(B)$
 	\item Montrer que $\forall t\in]0,1[, \det(A)^t\det(B)^{1-t}\leq \det(tA+(1-t)B)$
 \end{enumerate}
+
+\section{Produit de Hadamard de matrices symétriques positives}
+\label{Produit de Hadamard de matrices symétriques positives}
+\textcolor{blue}{\hyperref[Produit de Hadamard de matrices symétriques positives corrigé]{[Corrigé]}}\\
+Soient $A,B\in \S_n^+(\R)$. On note $C=(A_{ij}B_{ij})_{1\leq i,j\leq n}$. Montrer que $C\in \S_n^+(\R)$.
+
+\section{Diagonale d'une matrice symétrique}
+\label{Diagonale d'une matrice symétrique}
+\textcolor{blue}{\hyperref[Diagonale d'une matrice symétrique corrigé]{[Corrigé]}}\\
+Soit $S\in \S_n(\R)$. Montrer que $S$ est diagonale si et seulement si ses valeurs propres sont ses coefficients diagonaux.
+
+\section{Diagonale d'une matrice symétrique positive}
+\label{Diagonale d'une matrice symétrique positive}
+\textcolor{blue}{\hyperref[Diagonale d'une matrice symétrique positive corrigé]{[Corrigé]}}\\
+Montrer que les coefficients diagonaux d'une matrice symétrique positive sont positifs.
+
+\section{Diagonale d'une matrice antisymétrique}
+\label{Diagonale d'une matrice antisymétrique}
+\textcolor{blue}{\hyperref[Diagonale d'une matrice antisymétrique corrigé]{[Corrigé]}}\\
+Soit $M\in \M_n(\R)$. Montrer que $M$ est antisymétrique si et seulement si pour toute matrice $P\in \O_n(\R),\ P^\top MP$ est de diagonale nulle.
 
 \section{Matrices antisymétriques réelles}
 On fixe dans les exercices qui suivent une matrice $A\in \A_n(\R)$.
@@ -9198,9 +9340,73 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	D'où $A=\Com(A)$.\\
 	Donc l'ensemble des solutions des matrices à coefficients réels vérifiant $A=\Com(A)$ est : \[\mathcal{SO}_n(\R)\cup\{0\}\]
 	
+	\subsection{Equation matricielle faisant intervenir la transposée (1)}
+	\label{Equation matricielle faisant intervenir la transposée (1) corrigé}
+	\textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la transposée (1)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item En élevant au carré $A^4=(A^\top)^2=(A^2)^\top=A$ donc $P=X^4-X=X(X-1)(X-j)(X-\overline j)$, où $j=e^{2i\pi/3}$, annule $A$. Donc $\T{Sp}(A)\subset \{0,1,j,\overline j\}$. De plus ce polynôme est scindé à racines simples sur $\C$ donc $A$ est diagonalisable dans $\M_n(\C)$.
+		\item Soit $A$ une matrice solution. Comme $A$ a 4 valeurs propres distinctes elle est au moins de taille 4. Pour se simplifier la tache on la cherche de taille 4.\\
+		Comme $A$ est diagonalisable dans $\M_4(\C)$ et comme $0,1\in \R$ on peut chercher $A$ sous la forme $\begin{pmatrix}
+			0&0&\\
+			0&1&\\
+			&&B
+		\end{pmatrix}$ où $B\in \M_2(\R)$ a pour valeur propre $j$ et $\overline j$ (on peut trouver un vecteur propre réel pour les valeurs propres $0$ et $1$).\\
+		De là on peut se rappeler que la matrice de rotation $R(\theta)=\begin{pmatrix}
+			\cos\theta&-\sin\theta\\
+			\sin\theta&\cos\theta
+		\end{pmatrix}$ d'angle $\theta$ a pour valeurs propres $e^{i\theta}$ et $e^{-i\theta}$ et vérifier que $B=R\left(\dfrac{2\pi}{3}\right)$ fonctionne. Sinon voici une manière de le retrouver :\\
+		On remarque que $A^2=A^\top\implies B^2=B^\top$. On peut maintenant conclure de plusieurs manières.\\
+		Comme $B^3$ est diagonalisable (car $B$ l'est) et comme $j^3=\overline j^3=1$, $B^3=I_2$. Donc $BB^\top=I_2$ i.e $B\in \O_2(\R)$. En outre $\det(B)=\det(B^\top)=\det(B^2)=\det(B)^2\geq 0$ donc $B\in \T{SO}_2(\R)$, càd $B$ est une matrice de rotation. Notons $\theta\in ]-\pi,\pi]$ son angle.\\
+		On sait que $\Tr(B)=2\cos(\theta)=j+\overline j$ d'où $\cos\theta=-\dfrac{1}{2}$. On en déduit $\theta=\pm\dfrac{2\pi}{3}$. $B=R\left(\pm\dfrac{2\pi}{3}\right)$ fonctionnent.\\
+		On peut aussi déterminer des contraintes sur les coefficients de $B$ à partir de $B^2=B^\top$ et vérifier qu'elles sont suffisantes.
+	\end{enumerate}
+	
+	\subsection{Equation matricielle faisant intervenir la transposée (2)}
+	\label{Equation matricielle faisant intervenir la transposée (2) corrigé}
+	\textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la transposée (2)]{[Enoncé]}}\\
+	Soit $A\in \M_n(\R)$ telle que $\forall k\geq n,\ A+A^k=A^\top$. Alors $\forall k\geq n,\ A^k=A^\top-A$.\\
+	\underline{$1^{\T{ère}}$ méthode :}\\
+	On remarque que $\forall k\geq n,\ A^k\in \A_n(\R)$.
+	Lemme : Si $M$ est antisymétrique alors $\T{Sp}_\R(M)\subset \{0\}$.\\
+	Soit $M\in \A_n(\R)$, $\lambda\in \T{Sp}_\R(M)$ et $X\in \R^n$ un vecteur propre associé. $AX=\lambda X\implies -X^\top A=X^\top A^\top=\lambda X^\top$.\\
+	Donc $X^\top AX=\lambda X^\top X$ et $X^\top AX=-\lambda X^\top X$. Or $X^\top X>0$ car $X\in \R^n$ n'est pas nul. Donc $\lambda=-\lambda$ i.e $\lambda=0$.\\
+	Par conséquent $\forall k\geq n,\ \T{Sp}_\R(A^k)\subset \{0\}$.\\
+	De plus la suite $(A^k)_{k\geq n}$ est constante. En particulier $A^n=A^{n+1}$ donc $\T{Sp}(A)\subset \{0,1\}$.\\
+	Or si $1$ est valeur propre de $A$, alors $1^n=1\in \T{Sp}(A^n)$ ce qui est absurde. Donc $\T{Sp}_\C(A)=\{0\}$, càd $A$ est nilpotente. Alors il existe $k\geq n$ tel que $A^k=0$.\\
+	On en déduit enfin $A=A^\top$. Mais alors $A$ est diagonalisable par le théorème spectral. N'ayant pour seule valeur propre $0$, $A=0$.\\\\
+	\underline{$2^{\T{nd}}$ méthode :}\\
+	On remarque que $\forall k\geq n,\ A^k\in \A_n(\R)$.\\
+	$A^{2n}=-(A^{2n})^\top=-[(A^n)^\top]^2=-[-A^n]^2=-A^{2n}$ d'où $A^{2n}=0$.\\
+	Donc $A^\top=A+A^{2n}=A$ et on conclut comme dans la $1^{\T{ère}}$ méthode.\\\\
+	\underline{$3^{\T{ème}}$ méthode :}\\
+	$\forall k\geq n,\ \Tr(A^k)=\Tr(A^\top-A)=\Tr(A^\top)-\Tr(A)=0$.\\
+	Lemme : Soit $M\in \M_n(\K)$ telle que $\forall k\geq n,\ \Tr(M^k)=0$. Alors $M$ est nilpotente.\\
+	On note $\lambda_0,\dots,\lambda_{r-1}$ les valeurs propres \textbf{non nulles distinctes} de $M$ ainsi que $m_0,\dots,m_{r-1}$ les multiplicités associées.\\
+	Comme $M$ est trigonalisable dans $\M_n(\C),\ \forall k\geq n,\ \displaystyle\sum_{i=0}^{r-1}m_i\lambda_i^k=0$. En particulier $VX=0$ avec $X=(m_1,\dots,m_r)^\top$ et 
+	$$V=(\lambda_i^{j+n})_{0\leq i,j\leq r-1}=\begin{pmatrix}
+		\lambda_0^n&\cdots&\lambda_0^{n+r-1}\\
+		\lambda_1^n&\cdots&\lambda_1^{n+r-1}\\
+		\vdots&&\vdots\\
+		\lambda_{r-1}^n&\cdots&\lambda_{r-1}^{n+r-1}
+	\end{pmatrix}$$
+	On reconnaît une matrice de Vandermonde. Par multilinéarité du déterminant $$\det(V)=\prod_{k=0}^{r-1}\lambda_k^n\times\begin{vmatrix}
+		1&\lambda_0&\cdots&\lambda_0^{r-1}\\
+		1&\lambda_1&\cdots&\lambda_1^{r-1}\\
+		\vdots&\vdots&&\vdots\\
+		1&\lambda_{r-1}&\cdots&\lambda_{r-1}^{r-1}
+	\end{vmatrix}=\prod_{k=0}^{r-1}\lambda_k^n\prod_{0\leq i<j\leq r-1}(\lambda_j-\lambda_i)\ne 0$$
+	On en déduit $X=0$ ce qui n'est possible que si $0$ est la seule valeur propre de $M$, i.e que $M$ est nilpotente.\\
+	Donc $A$ est nilpotente et on conclut comme dans la $1^{\T{ère}}$ méthode.\\\\
+	\underline{$4^{\T{ème}}$ méthode :} Sans théorème spectral\\
+	On montre comme dans la $1^{\T{ère}}$ méthode que $\T{Sp}_\C(A)=\{0\}$.
+	Lemme : Soit $M\in \M_n(\C)$. Alors il existe $P$ telle que $\overline P^\top P=I_n$ et $T$ triangulaire supérieure telles que $M=PTP^{-1}$.
+	On trigonalise $A$ dans $\M_n(\C)$ : $A=PTP^{-1}$ avec $T$ triangulaire supérieure, de diagonale nulle.\\
+	Alors comme $A\in \M_n(\R)$, $A^n=A^\top-A=\overline A^\top-A\iff PT^nP^{-1}=P\overline T^\top P^{-1}-PTP^{-1}\iff T^n=\overline T^\top-T$.\\
+	Or $T$ et $T^n$ sont triangulaires supérieures, $\overline T^\top$ triangulaire inférieure. Donc en identifiant les blocs triangulaires inférieurs, les coefficients non diagonaux de $T$ sont nuls d'où $T=0$ et par suite $A=0$.
+	
 	\subsection{Matrice de rotation}
 	\label{Matrice de rotation corrigé}
-		\textcolor{blue}{\hyperref[Matrice de rotation]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Matrice de rotation]{[Enoncé]}}\\
 	On pose $M=\text{Mat}_\mathcal{B}(u)$.
 	\[M^\top M=\frac{1}{9}\begin{pmatrix}
 		2&-2&1\\
@@ -9246,6 +9452,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	1\\0\\1
 	\end{pmatrix}, x, Mx)<0$.\\
 	Par conséquent, on a : $\theta<0$ i.e $\theta=-\arccos\left(\frac{1}{3}\right)$.
+	
 	\subsection{Produit mixte et produit vectoriel}
 	\label{Produit mixte et produit vectoriel corrigé}
 		\textcolor{blue}{\hyperref[Produit mixte et produit vectoriel]{[Enoncé]}}\\
@@ -9312,9 +9519,9 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{pmatrix}\] fonctionne (elle est inversible car c'est l'identité à permutations près).\\
 	On a montré que $QJP\in H\cap\T{GL}_n(\K)$.
 	
-	\subsection{Exemple de symétrie orthogonale}
-	\label{Exemple de symétrie orthogonale corrigé}
-		\textcolor{blue}{\hyperref[Exemple de syméttrie orthogonale]{[Enoncé]}}\\
+	\subsection{Une symétrie orthogonale matricielle}
+	\label{Une symétrie orthogonale matricielle corrigé}
+	\textcolor{blue}{\hyperref[Une symétrie orthogonale matricielle]{[Enoncé]}}\\
 	D'après le cours, il est évident que $s$ est un symétrie.\\
 	Montrons qu'elle est orthogonale.\\
 	On remarque que $\Ker(s-Id)=\mathcal{S}_n(\R)$ et que $\Ker(s+Id)=\mathcal{A}_n(\R)$.\\
@@ -9327,6 +9534,19 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Donc, par symétrie du produit scalaire, on en déduit que $\langle A, S\rangle =0$.
 	Donc $\mathcal{S}_n(\R)$ et $\mathcal{A}_n(\R)$ sont orthogonaux.\\
 	Ainsi $s$ est une symétrie orthogonale.
+	
+	\subsection{Une isométrie vectorielle matricielle}
+	\label{Une isométrie vectorielle matricielle corrigé}
+	\textcolor{blue}{\hyperref[Une isométrie vectorielle matricielle]{[Enoncé]}}\\
+	
+	\subsection{Endomorphisme échangeur}
+	\label{Endomorphismes échangeurs corrigé}
+	\textcolor{blue}{\hyperref[Endomorphismes échangeurs]{[Enoncé]}}\\
+	
+	\subsection{Réflexion qui commutent}
+	\label{Réflexion qui commutent corrigé}
+	\textcolor{blue}{\hyperref[Réflexion qui commutent]{[Enoncé]}}\\
+	
 	\subsection{Caractérisations des projections orthogonales}
 	\label{Caractérisations des projections orthogonales corrigé}
 	\textcolor{blue}{\hyperref[Caractérisations des projections orthogonales]{[Enoncé]}}\\
@@ -9360,9 +9580,45 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Donc \[\langle x,y\rangle=0\]
 	Donc $p$ est orthogonale.
 	
+	\subsection{Réduction des projecteurs orthogonaux}
+	\label{Réduction des projecteurs orthogonaux corrigé}
+	\textcolor{blue}{\hyperref[Réduction des projecteurs orthogonaux]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $\Ker p=(\Ima p)^\bot$ donc dans une base orthonormée adaptée à la décomposition $\Ima p\bigoplus \Ker p=E$ la matrice de $p$ est $\begin{pmatrix}
+			I_r&0\\
+			0&0
+		\end{pmatrix}$ où $r=\rg(p)$. En particulier celle-ci est symétrique donc $p$ est auto-adjoint. De même $q$ est auto-adjoint.
+		\item $(p\circ q\circ p)^*=p^*\circ (p\circ q)^*=p^*\circ q^*\circ p^*=p\circ q\circ p$.
+		\item Montrons que pour $F,G$ des sev de $E$ on a $(F+G)^\bot=F^\bot\cap G^\bot$.\\
+		Par double inclusion : $F\subset F+G$ donc $(F+G)^\bot\subset F^\bot$. De même $(F+G)^\bot \subset G^\bot$ donc $(F+G)^\bot\subset F^\bot\cap G^\bot$.\\
+		Réciproquement, fixons $x\in F^\bot\cap G^\bot$. Soit $z=f+g$ où $f\in F$ et $g\in G$.\\
+		Alors $\proscal{x}{z}=\proscal{x}{f}+\proscal{x}{g}=0$. Donc $x\in (F+G)^\bot$ d'où $F^\bot\cap G^\bot\subset (F+G)^\bot$.\\
+		Ainsi $(F+G)^\bot=F^\bot\cap G^\bot$.\\
+		En particulier pour $F=\Ker p$ et $G=\Ima q$, $(\Ker p+\Ima q)^\bot=\Ima p\cap\Ker q$.
+		\item \textit{Je n'ai réussi à utiliser la question 3... Il doit y avoir plus simple vu que c'est tombé à E3A/CCINP.}\\
+		Notons $V=\Ima p\cap\Ker q$ et $W=V^\bot$. Montrons que $p$ et $q$ stabilisent chacun $V$ et $W$.\\
+		Si $x\in V$ alors $q(x)=0\in V$ et $p(x)=x\in V$.\\
+		On sait alors aussi que $q^*$ et $p^*$ stabilisent $V^\bot$. Comme d'après la question 1 $p$ et $q$ sont auto-adjoints, ils stabilisent $V^\bot$.\\
+		$p$ et $q$ induisent des endomorphismes $p_V$ et $q_V$ sur $V$ ainsi que des endomorphismes $p_W$ et $q_W$ sur $W$.\\
+		Soit $f=p_V\circ q_V$. $\forall y\in V,\ p\circ q(y)=p\circ q\circ p(y)$ donc $f$ est la restriction de $p\circ q\circ p$ a $V$. D'après le théorème spectral et la question 2, ce dernier endomorphisme est diagonalisable donc $f$ est diagonalisable.\\
+		Enfin $p_W$ et $q_W$ sont des projections de $W$ comme restriction de projections de $E$, et elles sont orthogonales :\\
+		$\Ker p_W=\Ker p\cap W\subset \Ker p$ et $\Ima p_W=\Ker(p_W-\Id_W)=\Ker(p-\Id_E)\cap W\subset \Ima p$ donc
+		$$\forall x,y\in \Ker p_W\times \Ima p_W,\ \proscal{x}{y}=0$$
+		Puis par le théorème du rang, l'orthogonal de $\Ker p_W$ \underline{dans $W$} est $\Ima p_W$. De même pour $q_W$.\\
+		Par récurrence forte sur la dimension de $E$, $p\circ q$ est diagonalisable.
+	\end{enumerate}
+	
+	\subsection{Base orthogonale associée à un endomorphisme}
+	\label{Base orthogonale associée à un endomorphisme corrigé}
+	\textcolor{blue}{\hyperref[Base orthogonale associée à un endomorphisme]{[Enoncé]}}\\
+	Remarquons que $\forall (x,y)\in E^2,\ \proscal{f(x)}{f(y)}=\proscal{x}{f^*\circ f(y)}$.\\
+	Or $f^*\circ f\in \S(E)$, donc d'après le théorème spectral il existe $\B=(e_1,\dots,e_n)$ une base orthonormée de $E$ formée de vecteurs propres de $f^*\circ f$. On note $\lambda_j\in \R$ tel que $f^*\circ f(e_j)=\lambda_je_j$ pour tout $j\in \crblanc{1}{n}$.\\
+	Alors $\forall (i,j)\in \crblanc{1}{n}^2,\ i\ne j\implies \proscal{f(e_i)}{f(e_j)}=\proscal{e_i}{f^*\circ f(e_j)}=\lambda_j\proscal{e_i}{e_j}=0$.\\
+	Donc $(f(e_1),\dots,f(e_n))$ est une base orthogonale de $E$.
+	
 	\subsection{Norme d'une base orthogonale}
 	\label{Norme d'une base orthogonale corrigé}
-		\textcolor{blue}{\hyperref[Norme d'une base orthogonale]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Norme d'une base orthogonale]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Posons $\displaystyle u=\sum_{i=1}^{n}\frac{e_i}{\norme{e_i}^2}$.\\
 		Notons $p_u$ le projecteur orthogonal sur $\Vect(u)$.\\
@@ -9380,9 +9636,44 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\[\norme{u}^2=\sum_{i=1}^{n}\frac{\langle e_i,u\rangle^2}{\norme{e_i}^2}=\sum_{i=1}^{n}\frac{N^2\norme{u}^2}{\norme{e_i}^2}\]
 		Comme $u$ est non nul, 
 		\[N^2 = \left(\sum_{i=1}^{n}\frac{1}{\|e_i\|^2}\right)^{-1}\]
-		Finalement, $N$ ne dépend du choix du vecteur $u$ et on a obtenu une expression de $N$ en fonction de $e_1,\dots, e_n$.\\
-		
+		Finalement, $N$ ne dépend du choix du vecteur $u$ et on a obtenu une expression de $N$ en fonction de $e_1,\dots, e_n$.
 	\end{enumerate}
+	
+	\subsection{Famille de vecteurs unitaires équidistants d'un espace euclidien}
+	\label{Famille de vecteurs unitaires équidistants d'un espace euclidien corrigé}
+	\textcolor{blue}{\hyperref[Famille de vecteurs unitaires équidistants d'un espace euclidien]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On rappelle l'identité $\forall (x,y)\in E^2,\ 2\proscal{x}{y}=\norme x^2+\norme y^2-\norme{x-y}^2$.\\
+		\begin{align*}
+			2A&=\begin{pmatrix}
+				2&2-d^2&\cdots&\cdots&2-d^2\\
+				2-d^2&2&2-d^2&\cdots&2-d^2\\
+				\vdots&\ddots&\ddots&\ddots&\vdots\\
+				2-d^2&\cdots&2-d^2&2&2-d^2\\
+				2-d^2&\cdots&\cdots&2-d^2&2
+			\end{pmatrix}\\
+			&=(2-d^2)U+d^2I_p
+		\end{align*}
+		où $U$ est la matrice de $\M_p(\R)$ composée uniquement de $1$.\\
+		$U$ est de rang $1$ donc son polynôme caractéristique est $\chi_U=X^{p-1}(X-\Tr(U))=X^{p-1}(X-p)$. Celui-ci est scindé à racines simples donc $U$ est diagonalisable et en particulier $\exists P\in \T{GL}_p(\R),\ P^{-1}UP=\diag(p,0,\dots,0)$.\\
+		Donc $P^{-1}AP=\displaystyle\frac{2-d^2}{2}P^{-1}UP+\frac{d^2}{2}I_p=\frac{1}{2}\diag\left(2p+(1-p)d^2,d^2,\dots,d^2\right)$.\\
+		D'où $\T{Sp}(A)=\left\{p+\dfrac{1-p}{2}d^2,\dfrac{d^2}{2}\right\}$.
+		\item On reconnaît que $A$ est une matrice de Gram (cf.[Matrice de Gram]), montrons alors qu'elle n'est pas inversible.\\
+		On fixe $\B=(e_1,\dots,e_n)$ une base orthonormée de $E$. Notons $B=\Mat_\B(x_1,\dots,x_p)$.\\
+		On sait que $\forall i\in \crblanc{1}{p},\ x_i=\displaystyle\sum_{k=1}^n\proscal{x_i}{e_k}e_k$.\\
+		Donc $\forall i,j\in \crblanc{1}{p},\ (B^\top B)_{ij}=\displaystyle\sum_{k=1}^n\proscal{x_i}{e_k}\proscal{x_j}{e_k}=\proscal{x_i}{\sum_{k=1}^n\proscal{x_j}{e_k}e_k}=\proscal{x_i}{x_j}$.\\
+		Ainsi $A=B^\top B$. On ne peut pas utiliser le déterminant car $B$ n'est pas une matrice carrée. Montrons plutôt $\ker A=\ker B$.\\
+		Il est clair que $\ker B\subset \ker A$. Réciproquement, si $X\in \M_{p,1}(\R),\ AX=0\implies X^\top B^\top BX=0\implies \norme{BX}=0\implies BX=0$.\\
+		Or $\ker B\ne \{0\}$ puisque la famille de $p$ vecteurs $\B$ n'est pas libre dans $E$ qui est de dimension $n<p$. Donc $\ker A\ne \{0\}$ càd $0\in \T{Sp}(A)$.\\
+		Ainsi on en déduit d'après la question précédente, avec $d>0$, $d=\sqrt{\dfrac{2p}{p-1}}$.\\
+		Ensuite, la famille $(x_1,\dots,x_{n+1})$ est liée donc on dispose d'une relation $\displaystyle\sum_{i=1}^{n+1}a_ix_i=0$ où $(a_1,\dots,a_{n+1})\ne (0,\dots,0)$.\\
+		Notons $\alpha:=\dfrac{2-d^2}{2}=\dfrac{1}{1-p}$ et $S:=\displaystyle\sum_{i=1}^{n+1}a_i$.\\
+		$\forall j\in \crblanc{1}{n},\ 0=\displaystyle\sum_{i=1}^{n+1}a_i\proscal{x_i}{x_j}=a_j+\alpha\sum_{i\ne j}a_i=a_j+\alpha(S-a_j)=(1-\alpha)a_j+\alpha S$.\\
+		Donc en sommant sur $j$, $(1-\alpha)S+(n+1)\alpha S=0$ i.e $(n\alpha+1)S=0$.\\
+		Or il y a au moins un $a_j$ non nul donc si $S=0$, l'égalité $(1-\alpha)a_j+\alpha S=0$ donne $\alpha=1$ i.e $p=-1$ ce qui est absurde.\\
+		Ainsi $\alpha=-\dfrac{1}{n}$, i.e $p=n+1$.
+	\end{enumerate}
+	
 	\subsection{Matrice de Hilbert}
 	\label{Matrice de Hilbert corrigé}
 	\textcolor{blue}{\hyperref[Matrice de Hilbert]{[Enoncé]}}\\
@@ -9411,16 +9702,34 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 			&=\langle \sum_{i=1}^{n}x_iP_i, \sum_{j=1}^{n}x_jP_j\rangle &\text{par bilinéarité du produit scalaire}\\
 			&=\norme{P}^2 &\text{où} P=\sum_{i=0}^{n}x_iP_i\\
 		\end{align*}
-		Ainsi, on en déduit que $H$ est définie positive.
-		
+		Ainsi, on en déduit que $H$ est définie positive.	
 	\end{enumerate}
+	
+	\subsection{Rayon spectral d'un endomorphisme auto-adjoint}
+	\textcolor{blue}{\hyperref[Rayon spectral d'un endomorphisme auto-adjoint]{[Enoncé]}}\\
+	\label{Rayon spectral d'un endomorphisme auto-adjoint corrigé}
+	\begin{enumerate}[leftmargin=*]
+		\item On se donne par le théorème spectral une base orthonormée $(e_1,\dots,e_n)$ de $E$ formée de vecteurs propres de $f$. On note $f(e_i)=\lambda_ie_i$ pour tout $i\in \crblanc{1}{n}$. Alors pour $x=\displaystyle\sum_{k=1}^na_ke_k\in E$ unitaire,\\
+		$\displaystyle\proscal{f(x)}{x}=\proscal{\sum_{i=1}^na_i\lambda_ie_i}{\sum_{j=1}^na_je_j}=\sum_{i=1}^n\sum_{j=1}^n\lambda_ia_ia_j\proscal{e_i}{e_j}=\sum_{k=1}^n\lambda_ka_k^2$.\\
+		Donc $\proscal{f(x)}{x}\in \displaystyle\left[m\sum_{k=1}^na_k^2,M\sum_{k=1}^na_k^2\right]=[m,M]$.
+		\item Supposons qu'un tel $r$ existe.\\
+		Alors pour $j$ tel que $\lambda_j=M$ on a $\proscal{f(e_j)}{e_j}=M\leq r$.
+		\item Soit $f_A\in \L(\R^n)$ l'endomorphisme canoniquement associé à $A$. $f_A$ est auto-adjoint puisque sa matrice dans une base orthonormée (la base canonique) est $A\in \S_n(\R)$. Donc d'après la question précédente, il suffit de montrer que $\forall x\in S,\ \proscal{f_A(x)}{x}=x^\top Ax\leq t+2$.\\
+		Soit $x=(x_1,\dots,x_n)^\top\in S$.\\
+		$x^\top Ax=\displaystyle\sum_{1\leq i,j\leq n}x_ix_jA_{ij}=t\sum_{k=1}^nx_k^2+\sum_{k=1}^{n-1}x_kx_{k+1}+\sum_{k=2}^nx_kx_{k-1}=t+\sum_{k=1}^{n-1}x_kx_{k+1}+\sum_{k=2}^nx_kx_{k-1}$.\\
+		Par l'inégalité de Cauchy-Schwarz :
+		$$\sum_{k=1}^{n-1}x_kx_{k+1}\leq \sqrt{\sum_{k=1}^{n-1}x_k^2\sum_{k=1}^{n-1}x_{k+1}^2}=\sqrt{(1-x_n^2)(1-x_1^2)}$$
+		Et $$\sum_{k=2}^nx_kx_{k-1}\leq \sqrt{\sum_{k=2}^nx_k^2\sum_{k=2}^nx_{k-1}^2}=\sqrt{(1-x_n^2)(1-x_1^2)}$$
+		Donc $x^\top Ax\leq t+2\sqrt{(1-x_n^2)(1-x_1^2)}\leq t+2$.
+	\end{enumerate}
+	
 	\subsection{Racine carrée d'un endomorphisme auto-adjoint positif}
 	\textcolor{blue}{\hyperref[Racine carrée d'un endomorphisme auto-adjoint positif]{[Enoncé]}}\\
 	\label{Racine carrée d'un endomorphisme auto-adjoint positif corrigé}
 	
 	\subsection{Inégalité de convexité}
 	\label{Inégalité de convexité corrigé}
-		\textcolor{blue}{\hyperref[Inégalité de convexité]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Inégalité de convexité]{[Enoncé]}}\\
 	On note $\lambda_1, \dots, \lambda_n$ les valeurs à $M$ notée avec répétition.\\
 	Puisque $M\in\mathcal{S}^+_n(\R)$, on sait que pour tout $i\in\crblanc{1}{n}$, $\lambda_i\geq 0$.\\
 	Si l'un des $\lambda_i$ est nul, le résultat est vérifié immédiatement.\\
@@ -9431,41 +9740,58 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Inégalité à propos des matrices orthogonales corrigé}
 		\textcolor{blue}{\hyperref[Inégalité à propos des matrices orthogonales]{[Enoncé]}}\\
 	
-	\subsection{Inégalité de la trace}
-	\label{Inégalité de la trace corrigé}
-		\textcolor{blue}{\hyperref[Inégalité de la trace]{[Enoncé]}}\\
+	\subsection{Inégalité sur la trace de matrices symétriques positives}
+	\label{Inégalité sur la trace de matrices symétriques positives corrigé}
+	\textcolor{blue}{\hyperref[Inégalité sur la trace de matrices symétriques positives]{[Enoncé]}}\\
+	
+	\subsection{Inégalité de Golden-Thompson}
+	\label{Inégalité de Golden-Thompson corrigé}
+	\textcolor{blue}{\hyperref[Inégalité de Golden-Thompson]{[Enoncé]}}\\
 	
 	\subsection{Inégalité de Hadamard}
 	\label{Inégalité de Hadamard corrigé}
-		\textcolor{blue}{\hyperref[Inégalité de Hadamard]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Inégalité de Hadamard]{[Enoncé]}}\\
+	
+	\subsection{Matrices orthogonales qui respectent $(\R_+)^n$}
+	\label{Matrices orthogonales qui respectent (R_+)^n corrigé}
+	\textcolor{blue}{\hyperref[Matrices orthogonales qui respectent (R_+)^n]{[Enoncé]}}\\
+	Les premiers exemples de matrices auxquelles on peut penser sont les matrices de permutations. En effet celles-ci effectue une permutation des coordonnées du vecteur ce qui conserve le caractère positif de ses coefficients. On se demande alors si ce ne sont pas les seules.\\
+	Pour vérifier notre hypothèse on peut commencer par $\O_2(\R)$. On sait que dans ce cas $O\in \O_2(\R)$ est une matrice de rotation ou une matrice de réflexion. En faisant quelques dessins il est assez facile de se convaincre que les seules matrices orthogonales qui laissent stable $(\R_+)^2$ sont $I_2$ et $\begin{pmatrix}
+		0&1\\
+		1&0
+	\end{pmatrix}$, la réflexion par rapport à la première bissectrice.\\
+	Ce sont en effet les matrices de permutations de $\M_2(\R)$ mais étant donné qu'il y en a très peu il se peut que ce soit une coïncidence. On peut faire des exemples dans le cas $n=3$ pour se donner plus de pistes mais on ne va pas le faire ici.\\\\
+	Soit $O\in \O_n(\R)$ qui laisse stable $(\R_+)^n$. On notera $C_1,\dots,C_n$ ses colonnes ainsi que $L_1,\dots,L_n$ ses lignes. Notons aussi $(E_1,\dots,E_n)$ la base canonique de $\R^n$. On sait ou vérifie aisément que $\forall k\in \crblanc{1}{n},\ OE_k=C_k$. Cela montre que $O$ est à coefficients positifs.\\
+	Supposons maintenant que $O_{ij}>0$ pour un certain $(i,j)\in \crblanc{1}{n}^2$.\\
+	En utilisant le fait que $(L_1,\dots,L_n)$ est une base orthogonale de $\R^n$ on peut écrire pour $k\ne i$, $$0=\proscal{L_i}{L_k}=\sum_{l=1}^nO_{il}O_{kl}\geq O_{ij}O_{kj},\quad \T{puisque }O\T{ est à coefficients positifs}$$
+	D'où $O_{kj}=0$ si $1\leq k\ne i\leq n$.
+	Le même raisonnement sur les colonnes de $O$ donne $O_{ik}=0$ si $1\leq k\ne j\leq n$.\\
+	Il y a un donc un seul coefficient non nul par colonne et par ligne de $O$. Enfin puisque les colonnes par exemple de $O$ forme une base orthonormale de $\R^n$, le seul coefficient non nul par colonne vaut $1$.\\
+	Autrement dit $O$ est une matrice de permutation.
 	
 	\subsection{Perturbations}
 	\label{Perturbations corrigé}
 	\textcolor{blue}{\hyperref[Perturbations]{[Enoncé]}}\\
 	
 	\subsection{Somme de Cesàro de matrices orthogonales}
-	\label{Somme de Cesaro de mattrices orthogonales corrigé}
-	\textcolor{blue}{\hyperref[Somme de Cesàrp de matrices orthogonales]{[Enoncé]}}\\
+	\label{Somme de Cesàro de matrices orthogonales corrigé}
+	\textcolor{blue}{\hyperref[Somme de Cesàro de matrices orthogonales]{[Enoncé]}}\\
 	
 	\subsection{Transformation de Cayley}
 	\label{Transformation de Cayley corrigé}
-		\textcolor{blue}{\hyperref[Transformation de Cayley]{[Enoncé]}}\\
-		
-	
-	
-
+	\textcolor{blue}{\hyperref[Transformation de Cayley]{[Enoncé]}}\\
 	
 	\subsection{Optimisation (1)}
 	\label{Optimisation 1 corrigé}
-		\textcolor{blue}{\hyperref[Optimisation 1]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Optimisation 1]{[Enoncé]}}\\
 	
 	\subsection{Optimisation (2)}
 	\label{Optimisation 2 corrigé}
-		\textcolor{blue}{\hyperref[Optimisation 2]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Optimisation 2]{[Enoncé]}}\\
 	
 	\subsection{Optimisation (3)}
 	\label{Optimisation 3 corrigé}
-		\textcolor{blue}{\hyperref[Optimisation 3]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Optimisation 3]{[Enoncé]}}\\
 	
 	\subsection{Caractérisation des isométries anti-involutives}
 	\label{Caractérisation des isométries anti-involutives corrigé}
@@ -9507,7 +9833,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\subsection{Similitude entre matrices orthogonales}
 	\label{Similitude entre matrices orthogonales corrigé}
-		\textcolor{blue}{\hyperref[Similitude entre matrices orthogonales]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Similitude entre matrices orthogonales]{[Enoncé]}}\\
 	
 	\subsection{Propriété de l'adjoint}
 	\label{Propriété de l'adjoint corrigé}
@@ -9515,32 +9841,76 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\subsection{Autour de l'adjoint}
 	\label{Autour de l'adjoint corrigé}
-		\textcolor{blue}{\hyperref[Autour de l'adjoint]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Autour de l'adjoint]{[Enoncé]}}\\
 	
 	\subsection{Somme d'une matrice orthogonale et de sa transposée}
 	\label{Somme d'une matrice orthogonale et de sa transposée corrigé}
-		\textcolor{blue}{\hyperref[Somme d'une matrice orthogonale et de sa transposée]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Somme d'une matrice orthogonale et de sa transposée]{[Enoncé]}}\\
 	
 	\subsection{Déterminant d'une exponentielle}
 	\label{Déterminant d'une exponentielle corrigé}
-		\textcolor{blue}{\hyperref[Déterminant d'une exponentielle]{[Enoncé]}}\\
-		On pose $Sp(A)=\{\lambda_1,\dots,\lambda_n\}$.
+	\textcolor{blue}{\hyperref[Déterminant d'une exponentielle]{[Enoncé]}}\\
+	On pose $Sp(A)=\{\lambda_1,\dots,\lambda_n\}$.
 	On trigonalise $A$ dans $\M_n(\C)$ donc il existe $P\in \text{GL}_n(\C)$ et $T\M_n(\C)$ triangulaire supérieure tel que $A=PTP^{-1}$.
 	On sait que $e^A$ est semblable à $e^T$ par continuité de l'exponentielle matricielle.\\
 	Ainsi, $\det(e^A)=\det(e^T)$.
 	Or $\det(e^T)=\prod_{i=1}^ne^{\lambda_i}=e^{\sum_{i=1}^{n}\lambda_i}=e^{\Tr(T)}$
 	Et pour finir, puisque $A$ et $T$ sont semblables, on en déduit le résultat : \[\det(e^A)=e^{\Tr(A)}\]
+	
 	\subsection{Exponentielle de matrices antisymétrique}
 	\label{Exponentielle de matrices antisymétriques corrigé}
 	\textcolor{blue}{\hyperref[Exponentielle de matrices antisymétriques]{[Enoncé]}}\\
 	
 	\subsection{Théorème spectral}
 	\label{Théorème spectral corrigé}
-		\textcolor{blue}{\hyperref[Théorème spectral]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Théorème spectral]{[Enoncé]}}\\
+	
+	\subsection{Somme d'endomorphismes auto-adjoints positifs}
+	\label{Somme d'endomorphismes auto-adjoints positifs corrigé}
+	\textcolor{blue}{\hyperref[Somme d'endomorphismes auto-adjoints positifs]{[Enoncé]}}\\
 	
 	\subsection{Réduction simultanée}
 	\label{Réduction simultanée corrigé}
 	\textcolor{blue}{\hyperref[Réduction simultanée]{[Enoncé]}}\\
+	
+	\subsection{Produit de Hadamard de matrices symétriques positives}
+	\label{Produit de Hadamard de matrices symétriques positives corrigé}
+	\textcolor{blue}{\hyperref[Produit de Hadamard de matrices symétriques positives]{[Enoncé]}}\\
+	Tout d'abord $C\in \S_n(\R)$. Ensuite, d'après le théorème spectral il existe $P,Q\in \O_n(\R)$ ainsi que $\lambda_1,\dots,\lambda_n,\mu_1,\dots,\mu_n\geq 0$ tels que $A=P\diag(\lambda_1,\dots,\lambda_n)P^\top$ et $B=Q\diag(\mu_1,\dots,\mu_n)Q^\top$.
+	$$\forall (i,j)\in \crblanc{1}{n}^2,\ C_{ij}=A_{ij}B_{ij}=\sum_{k=1}^nP_{ik}\lambda_kP_{jk}\sum_{l=1}^nQ_{il}\mu_lQ_{jl}=\sum_{1\leq k,l\leq n}\lambda_k\mu_lP_{ik}P_{jk}Q_{il}Q_{jl}$$
+	Soit $X\in \R^n$. On a
+	\begin{align*}
+		X^\top CX&=\sum_{1\leq i,j\leq n}X_iX_jC_{ij}\\
+		&=\sum_{1\leq i,j\leq n}\\
+		&=\sum_{i=1}^nX_iX_j\sum_{1\leq k,l\leq n}\lambda_k\mu_lP_{ik}P_{jk}Q_{il}Q_{jl}\\
+		&=\sum_{1\leq k,l\leq n}\lambda_k\mu_l\sum_{i=1}^nX_iX_jP_{ik}\sum_{j=1}^nP_{jk}Q_{il}Q_{jl}\\
+		&=\sum_{1\leq k,l\leq n}\lambda_k\mu_l\left(\sum_{i=1}^nX_iP_{ik}Q_{il}\right)^2\geq 0
+	\end{align*}
+	Donc $C\in \S_n^+(\R)$.
+	
+	\subsection{Diagonale d'une matrice symétrique}
+	\label{Diagonale d'une matrice symétrique corrigé}
+	\textcolor{blue}{\hyperref[Diagonale d'une matrice symétrique]{[Enoncé]}}\\
+	Le sens direct est trivial. Pour la réciproque, montrons le résultat équivalent suivant : si $S$ est de diagonale nulle et si $D$ est une matrice diagonale telle que $S+D$ est semblable à $D$ alors $S=0$.
+	Il est bien équivalent à l'énoncé grâce au théorème spectral qui assure la diagonalisabilité de $S\in \S_n(\R)$.\\
+	Soit donc $S\in \S_n(\R)$ de diagonale nulle et soit $D$ diagonale telle que $S+D\sim D$. Alors $(S+D)^2\sim D^2$. En particulier elles ont même trace :
+	$$\Tr((S+D)^2)=\Tr(D^2)\implies \Tr(S^2)+\Tr(SD)+\Tr(DS)+\Tr(D^2)=\Tr(D^2)$$
+	Or un calcul rapide montre que $SD$ a une diagonale nulle. Donc $\Tr(DS)=\Tr(SD)=0$. Ainsi $\Tr(S^2)=0$ i.e $\Tr(S^\top S)=0$ i.e $\norme S^2=0$ i.e $S=0$.
+	
+	\subsection{Diagonale d'une matrice symétrique positive}
+	\label{Diagonale d'une matrice symétrique positive corrigé}
+	\textcolor{blue}{\hyperref[Diagonale d'une matrice symétrique positive]{[Enoncé]}}\\
+	Soit $S\in \S_n^+(\R)$.\\
+	Il suffit de remarquer que si l'on note $(E_1,\dots,E_n)$ la base canonique de $\R^n$ alors $E_i^\top SE_i=S_{ii}$.
+	
+	\subsection{Diagonale d'une matrice antisymétrique}
+	\label{Diagonale d'une matrice antisymétrique corrigé}
+	\textcolor{blue}{\hyperref[Diagonale d'une matrice antisymétrique]{[Enoncé]}}\\
+	Si $M\in \A_n(\R)$ alors $\forall P\in \O_n(\R),\ P^\top MP\in \A_n(\R)$. Une matrice antisymétrique ayant une diagonale nulle, le sens direct est démontré.\\
+	Réciproquement, supposons que pour toute matrice $P$ orthogonale, $P^\top MP$ soit de diagonale nulle.\\
+	On note $M=S+A$ avec $S\in \S_n(\R)$ et $A\in \A_n(\R)$. Il suffit de prendre $S=\dfrac{M+M^\top}{2}$ et $A=\dfrac{M-M^\top}{2}$.\\
+	Alors $\forall P\in \O_n(\R),\ P^\top MP=P^\top SP+P^\top AP$.\\
+	En particulier, en appliquant le théorème spectral à $S$, pour $P\in \O_n(\R)$ telle que $P^\top SP$ soit diagonale on obtient $P^\top SP=0$. En effet $P^\top MP$ est de diagonale nulle par hypothèse et $P^\top AP$ est de diagonale nulle car $A\in \A_n(\R)$. Ainsi $S=0$ et $M=A\in \A_n(\R)$.
 	
 	\subsection{Matrices antisymétriques réelles}
 	\subsubsection{Rang et déterminant}

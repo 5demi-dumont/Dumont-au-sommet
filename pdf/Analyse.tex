@@ -607,8 +607,10 @@
 	\textcolor{blue}{\hyperref[Intégrale de Gauss corrigé]{[Corrigé]}}
 	\label{gauss}
 	\label{Intégrale de Gauss}
+	
 	\subsection{Wallis \ccinp{3}}
 	En utilisant les intégrales de Wallis et la concavité du $\ln$, démontrer que $\displaystyle\int_0^{+\infty} e^{-t^2}dt=\frac{\sqrt{\pi}}{2}$
+	
 	\subsection{Intégrales auxiliaires \telecom{3}}
 	On pose $\forall n \in \N^{*}$ , $I_n=\displaystyle\int_0^1 \frac{1}{(1+t^2)^n}dt$ et $K_n=\displaystyle\int_0^{+\infty} \frac{1}{(1+t^2)^n}dt$
 	\begin{enumerate}
@@ -617,8 +619,7 @@
 	\end{enumerate}
 	
 	\subsection{Equivalent du reste \telecom{2}}
-	
-	A l'aide d'une IPP, trouver un équivalent de $\displaystyle\int_x^{+\infty}e^{\frac{-x^2}{2}}dx$ en $+\infty$.
+	A l'aide d'une IPP, trouver un équivalent de $\displaystyle\int_x^{+\infty}e^{\frac{-t^2}{2}}dt$ en $+\infty$.
 	
 	\section{Intégrale de Fresnel \centraleponts{3}}
 	\textcolor{blue}{\hyperref[Intégrale de Fresnel corrigé]{[Corrigé]}}\\
@@ -651,7 +652,7 @@
 	\end{enumerate}
 	
 	\subsection{Second calcul \ccinp{3}}
-	On pose $F:x\longmapsto \displaystyle\int_0^{+\infty} e^{xt}\times \frac{\sin(t)}{t}dt$.
+	On pose $F:x\longmapsto \displaystyle\int_0^{+\infty}\frac{\sin(t)}{t}e^{xt}dt$.
 	\begin{enumerate}
 		\item Démontrer que $\forall x \in \R^*_+,\ F'(x)=-\displaystyle\frac{1}{1+x^2}$.
 		\item En déduire que $I=\displaystyle\frac{\pi}{2}$.
@@ -662,7 +663,7 @@
 	\textcolor{blue}{\hyperref[Intégrale du reste de l'intégrale de Dirichlet corrigé]{[Corrigé]}}\\
 	\label{restedirichlet}
 	\label{Intégrale du reste de l'intégrale de Dirichlet}
-	Justifier l'existence et calculer l'intégrale $I=\displaystyle\int_0^{+\infty}\left(\int_x^{+\infty}\frac{\sin t}{t}dt\ \right)dx$.
+	Justifier l'existence et calculer l'intégrale $J=\displaystyle\int_0^{+\infty}\left(\int_x^{+\infty}\frac{\sin t}{t}dt\ \right)dx$.
 	
 	\section{Intégrale d'Euler \ccinp{2}}
 	\textcolor{blue}{\hyperref[Intégrale d'Euler corrigé]{[Corrigé]}}\\
@@ -682,12 +683,34 @@
 	Soit $I:x\mapsto\displaystyle\int_{0}^{+\infty} \frac{\ln(t)}{x^2+t^2}dt$. Justifier que $I$ est définie sur $\R^*_+$ et déterminer $\sup\limits_{x>0}I(x)$.
 	
 	\section{Intégrales de Bertrand}
-	\textcolor{blue}{\hyperref[Intégrale de Bertrand corrigé]{[Corrigé]}}\\
-	\label{intbertrand}
-	\label{Intégrales de BErtrand}
+	\textcolor{blue}{\hyperref[Intégrales de Bertrand corrigé]{[Corrigé]}}\\
+	\label{Intégrales de Bertrand}
 	\begin{enumerate}[leftmargin=*]
 		\item Pour quelles valeurs des réels $\alpha$ et $\beta$ l'intégrale $\displaystyle\int_e^{+\infty}\frac{dt}{t^\alpha(\ln t)^\beta}$ converge ?
 		\item Même question pour $\displaystyle\int_0^{e^{-1}}\frac{dt}{t^\alpha(\ln t)^\beta}$.
+	\end{enumerate}
+	
+	\section{Intégrales de Hardy (1)}
+	\textcolor{blue}{\hyperref[Intégrales de Hardy (1) corrigé]{[Corrigé]}}\\
+	\label{Intégrales de Hardy (1)}
+	Soient $\alpha\geq 0$ et $\beta>0$. On pose
+	$$I_{\alpha,\beta}=\int_0^{+\infty}\frac{t^\alpha}{1+t^\beta\sin^2t}dt$$
+	\begin{enumerate}
+		\item Calculer pour $x>-1$ l'intégrale
+		$$\varphi(x)=\int_0^\pi\frac{dt}{1+x\sin^2t}dt$$
+		\item Déterminer un équivalent de la suite $(I_n)_{n\in \N}$ de terme général
+		$$I_n=\int_{n\pi}^{(n+1)\pi}\frac{t^\alpha}{1+t^\beta\sin^2t}dt$$
+		\item En déduire que $I_{\alpha,\beta}$ converge si et seulement si $\beta>2\alpha+2$.
+		\item Etudier la limite de l'intégrande de $I_{\alpha,\beta}$.
+	\end{enumerate}
+	On suppose maintenant $\beta>2\alpha+2$. On considère la fonction $g:\ ]0,1]\to \R$ la fonction définie par
+	$$g(t)=\dfrac{t^{\alpha+\beta-2}}{t^\beta+\pi^\beta\sin^2\left(\dfrac{\pi}{t}\right)}$$
+	ainsi que l'intégrale $J=\displaystyle\int_0^1g(t)dt$.
+	\begin{enumerate}[resume]
+		\item Démontrer à l'aide d'un changement de variable l'égalité
+		$$J=\int_\pi^{+\infty}\frac{t^\alpha}{1+t^\beta\sin^2t}dt$$
+		et en déduire la nature de $J$.
+		\item On pose pour tout $n\in \N^*,\ S_n(g)=\displaystyle\frac{1}{n}\sum_{k=1}^ng\left(\frac{k}{n}\right)$. Montrer que $\unfty\lim S_n(g)=+\infty$.
 	\end{enumerate}
 	
 	\section{Intégrabilité des cosinus de polynôme}
@@ -705,10 +728,55 @@
 	\label{Nature d'une intégrale (1)}
 	Pour quelles valeurs du réel $\alpha$ l'intégrale $\displaystyle\int_0^1\frac{dt}{\arccos(t)^\alpha}$ converge-t-elle ?
 	
-	\section{Nature d'une intégrale (2)}
+	\section{Nature d'une intégrale (2) \ccinp{2}}
 	\textcolor{blue}{\hyperref[Nature d'une intégrale (2) corrigé]{[Corrigé]}}\\
 	\label{Nature d'une intégrale (2)}
-	Pour quelles valeurs du réel $\alpha$ l'intégrale $\displaystyle\int_0^{+\infty}\frac{\sin t}{t^\alpha}dt$ converge ?
+	Soit $f:[0,+\infty[\to \R$ continue telle que $\displaystyle\int_0^{+\infty}f(t)dt$ converge.
+	\begin{enumerate}
+		\item Montrer que pour toute suite $(x_n)_{n\in \N}$ et $(y_n)_{n\in \N}$ de réels divergeant vers $+\infty$, on a
+		$$\unfty\lim\int_{x_n}^{y_n}f(t)dt=0$$
+		\item En déduire que $\displaystyle\int_0^{+\infty}e^{-t\sin t}dt$ diverge.
+	\end{enumerate}
+	
+	\section{Nature d'une intégrale (3) \centraleponts{3}}
+	\textcolor{blue}{\hyperref[Nature d'une intégrale (3) corrigé]{[Corrigé]}}\\
+	\label{Nature d'une intégrale (3)}
+	Etudier en fonction de la valeur du réel $\alpha$ la nature de l'intégrale $\displaystyle\int_0^{+\infty}\frac{\sin t}{t^\alpha}dt$.
+	
+	\section{Nature d'une intégrale (4) \xens{4}}
+	\textcolor{blue}{\hyperref[Nature d'une intégrale (4) corrigé]{[Corrigé]}}\\
+	\label{Nature d'une intégrale (4)}
+	Soit $a\in \R$. Etudier la nature de l'intégrale $\displaystyle\int_0^{+\infty}\sin(t^a)dt$.\\
+	
+	\section{Pondération par la fonction inverse}
+	\textcolor{blue}{\hyperref[Pondération par la fonction inverse corrigé]{[Corrigé]}}\\
+	\label{Pondération par la fonction inverse}
+	Soit $f:[1,+\infty[\to \R$ une fonction continue telle que $\displaystyle\int_1^{+\infty}f(t)dt$ converge.\\
+	Montrer que $\displaystyle\int_1^{+\infty}\frac{f(t)}{t}dt$ converge.
+	
+	\section{Pondération par $\dfrac{1}{1+t^a}$}
+	\textcolor{blue}{\hyperref[Pondération par 1/(1+t^a) corrigé]{[Corrigé]}}\\
+	\label{Pondération par 1/(1+t^a)}
+	Soit $f:[0,+\infty[\to \R$ une fonction continue telle que $\displaystyle\int_0^{+\infty}f(t)dt$ converge.\\
+	Montrer que pour tout $a>0,\ \displaystyle\int_0^{+\infty}\frac{f(t)}{1+t^a}dt$ converge.
+	
+	\section{Pondération par le sinus}
+	\textcolor{blue}{\hyperref[Pondération par le sinus corrigé]{[Corrigé]}}\\
+	\label{Pondération par le sinus}
+	Soit $f:\R_+\to \R$ une fonction continue positive et décroissante. On pose $g=f\times \sin$.\\
+	Montrer que $g$ est intégrable sur $\R_+$ si et seulement si $f$ l'est.
+	
+	\section{Intégrale sur une période}
+	\textcolor{blue}{\hyperref[Intégrale sur une période corrigé]{[Corrigé]}}\\
+	\label{Intégrale sur une période}
+	Soit $T>0$ et soit $f:\R\to\R$ une fonction $T$-périodique.\\
+	Montrer que $\displaystyle\int_0^Tf(t)dt=0$ si et seulement si $\displaystyle\int_T^{+\infty}\frac{f(t)}{t}dt$ converge.
+	
+	\section{Changement de variable}
+	\textcolor{blue}{\hyperref[Changement de variable corrigé]{[Corrigé]}}\\
+	\label{Changement de variable}
+	Soit $f$ une fonction continue positive et intégrable sur $\R$. Montrer que $t\mapsto f\left(t-\dfrac{1}{t}\right)$ est intégrable sur $\R^*_-$ et sur $\R^*_+$ et que l'on a
+	$$\int_{-\infty}^0f\left(t-\frac{1}{t}\right)dt+\int_0^{+\infty}f\left(t-\frac{1}{t}\right)dt=\int_0^{+\infty}f(t)dt$$
 	
 	\section{Divergence grossière}
 	\textcolor{blue}{\hyperref[Divergence grossière corrigé]{[Corrigé]}}\\
@@ -718,9 +786,21 @@
 		\item Soit $f$ une application uniformément continue de $\R_+$ dans $\R$ telle que l'intégrale $\displaystyle\int_0^{+\infty}f(t)dt$ converge. Montrer que $\lim\limits_{+\infty}f=0$.
 	\end{enumerate}
 	
-	\section{Norme $L^2$ et dérivation}
-	\textcolor{blue}{\hyperref[Norme L^2 et dérivation corrigé]{[Corrigé]}}\\
-	\label{Norme L^2 et dérivation}
+	\section{Norme $L^2$}
+	\textcolor{blue}{\hyperref[Norme L^2 corrigé]{[Corrigé]}}\\
+	\label{Norme L^2}
+	Soit $f\in \mathcal C^1(\R_+,\R)$ vérifiant $f(0)=0$.
+	\begin{enumerate}
+		\item Montrer que $t\mapsto \dfrac{f(t)}{t}$ est prolongeable par continuité en $0$.
+		\item Montrer que $\forall x>0$,
+		$$\int_0^x\left(\frac{f(t)}{t}\right)^2\leq 2\frac{f'(t)f(t)}{t}dt$$
+		\item Montrer que si $f'$ est de carré intégrable alors il en est de même pour $t\mapsto \dfrac{f(t)}{t}$ et que de plus :
+		$$\int_0^{+\infty}\left(\frac{f(t)}{t}\right)^2dt\leq 4\int_0^{+\infty}f'(t)^2dt$$
+	\end{enumerate}
+	
+	\section{Inégalité de Kolmogorov}
+	\textcolor{blue}{\hyperref[Inégalité de Kolmogorov corrigé]{[Corrigé]}}\\
+	\label{Inégalité de Kolmogorov}
 	Soit $f:\R\to \R$ de classe $\mathcal C^2$ telle que $f$ et $f''$ soit de carré intégrable sur $\R$.
 	\begin{enumerate}
 		\item Montrer que $f'$ est également de carré intégrable sur $\R$.
@@ -813,7 +893,7 @@
 	\label{Intégrale de Bernoulli}
 	Démontrer que $\displaystyle\int_0^1\frac{dx}{x^x}=\sum_{n=1}^{+\infty}\frac{1}{n^n}$.
 	
-	\section{Lemme de Riemann-Lebesgue : cas des fonctions $\mathcal{C}^1$ \ccinp{1}}
+	\section{Lemme de Riemann-Lebesgue : cas des fonctions $\mathcal C^1$ \ccinp{1}}
 	\textcolor{blue}{\hyperref[sec:lemme-de-riemann-lebesgue--cas-des-fonctions-mathcalc1-etoile1]{[Corrigé]}}\\
 	\label{riemannlebesgue}
 	\label{Lemme de Riemann-Lebesgue : cas des fonction C1}
@@ -844,7 +924,7 @@
 		\end{cases}$
 	\end{enumerate}
 	
-	\section{Mines-Ponts MP 2024 (Chaïma Prime)}
+	\section{Mines-Ponts MP 2024}
 	\textcolor{blue}{\hyperref[sec:mines-ponts-mp-2024-chaima-prime]{[Corrigé]}}\\
 	\label{chaima}
 	\label{Mines-Ponts MP 2024}
@@ -885,10 +965,9 @@
 	\end{enumerate}
 	
 	
-	\section{Nombre d'Apery}
-	\textcolor{blue}{\hyperref[sec:nombre-dapery]{[Corrigé]}}\\
-	\label{Apery}
-	\label{Nombre d'Arery}
+	\section{Constante d'Apéry}
+	\textcolor{blue}{\hyperref[Constante d'Apéry corrigé]{[Corrigé]}}\\
+	\label{Constante d'Apéry}
 	On définit une suite $(u_n)$ de fonctions en posant :$$\forall n\geq 2,\; \forall t\in]0,1],\; u_n(t)=\frac{t^{n-1}\ln(t)}{n}$$
 	\begin{enumerate}
 		\item Calculer $\normep{\infty}{u_n}$.
@@ -897,18 +976,30 @@
 	\end{enumerate}
 	
 	\section{Comportement asymptotique (1)}
-	\textcolor{blue}{\hyperref[sec:comportement-asymptotique-1]{[Corrigé]}}\\
-	\label{comportementasymp1}
-	\label{Comportement asymptotique 1}
+	\textcolor{blue}{\hyperref[Comportement asymptotique (1) corrigé]{[Corrigé]}}\\
+	\label{Comportement asymptotique (1)}
 	Soit $f\in \mathcal C^1(\R_+,\R^*_+)$ telle que $\displaystyle\frac{f'(x)}{f(x)}\uxfty\sim\frac{2}{x}$.\\
 	Montrer que $\displaystyle\int_0^xf(t)dt\uxfty\sim\frac{xf(x)}{3}$.
 	
 	\section{Comportement asymptotique (2)}
-	\textcolor{blue}{\hyperref[sec:comportement-asymptotique-2]{[Corrigé]}}\\
-	\label{comportementasymp2}
-	\label{Comportement asymptotique 2}
+	\textcolor{blue}{\hyperref[Comportement asymptotique (2) corrigé]{[Corrigé]}}\\
+	\label{Comportement asymptotique (2)}
 	Soit $f\in \mathcal C^0(\R_+,\R_+)$ décroissante.\\
 	Montrer que si $f$ est intégrable sur $\R_+$ alors $\uxfty\lim xf(x)=0$. La réciproque est-elle vraie ?
+	
+	\section{Comportement asymptotique (3)}
+	\textcolor{blue}{\hyperref[Comportement asymptotique (3) corrigé]{[Corrigé]}}\\
+	\label{Comportement asymptotique (3)}
+	Soit $f\in \mathcal C^1(\R_+,\R^*_+)$ telle que
+	$$\exists \ell\in [0,1[,\ \uxfty\lim\frac{f(x+1)}{f(x)}=\ell$$
+	Montrer que $f$ est intégrable sur $\R_+$.
+	
+	\section{Comportement asymptotique (4)}
+	\textcolor{blue}{\hyperref[Comportement asymptotique (4) corrigé]{[Corrigé]}}\\
+	\label{Comportement asymptotique (4)}
+	Soit $f\in \mathcal C^1(\R_+,\R^*_+)$ telle que
+	$$\exists a<0,\ \uxfty\lim\frac{f'(x)}{f(x)}=a$$
+	Montrer que $f$ et $f'$ sont intégrables sur $\R_+$.
 	
 	\section{Théorème de d'Alembert-Gauss (1) \etoile{2}}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-dalembert-gauss-1-etoile2]{[Corrigé]}}\\
@@ -3656,10 +3747,10 @@ Soit $\varphi:\R\to \M_n(\K)$ une application telle que $\forall (s,t)\in \R^2,\
 	\item On suppose que $\varphi$ est continue en $0$ et que $\varphi(\R)\subset \text{GL}_n(\K)$. Déterminer $\varphi$.
 \end{enumerate}
 
-\section{Formule de Trotter-Kato \etoile{2}}
+\section{Formule de Trotter-Kato \centraleponts{2}}
 \textcolor{blue}{\hyperref[sec:formule-de-trotter-kato-etoile2]{[Corrigé]}}\\
 \label{Formule de Trotter-Kato}
-Soient $A$ et $B$ deux matrices de $\M_n(\K)$ que l'on munit d'une norme sous-multiplicative $\norme{.}$. Pour tout $k$ entier naturel non nul, on pose : $$X_k=\exp\left(\frac{A}{k}\right)\exp\left(\frac{B}{k}\right) \qquad \text{et} \qquad Y_k=\exp\left(\frac{A+B}{k}\right)$$
+Soient $A$ et $B$ deux matrices de $\M_n(\K)$ que l'on munit d'une norme sous-multiplicative $\norme{\cdot}$. Pour tout $k$ entier naturel non nul, on pose : $$X_k=\exp\left(\frac{A}{k}\right)\exp\left(\frac{B}{k}\right) \qquad \text{et} \qquad Y_k=\exp\left(\frac{A+B}{k}\right)$$
 \begin{enumerate}
 	\item Prouver les majoration: $$\forall k\in\N^*, \quad \norme{X_k}\leq\exp\left(\frac{\norme{A}+\norme{B}}{k}\right) \quad \text{et} \quad \norme{Y_k}\leq\exp\left(\frac{\norme{A}+\norme{B}}{k}\right)$$
 \end{enumerate}
@@ -3670,7 +3761,7 @@ On introduit la fonction $\fonction{h}{\R}{\M_n(\K)}{t}{e^{tA}e^{tB}-e^{t(A+B)}}
 	\item En déduire que $\displaystyle\ukfty{\lim}\left(\exp\left(\frac{A}{k}\right)\exp\left(\frac{B}{k}\right)\right)^k=\exp(A+B)$.
 \end{enumerate}
 
-\section{Série entière de matrice \etoile{2}}
+\section{Série entière de matrice \centraleponts{2}}
 \textcolor{blue}{\hyperref[sec:serie-entiere-de-matrice-etoile2]{[Corrigé]}}\\
 \label{Série entière de matrice}
 Soit $A\in\M_n(\K)$.
@@ -4010,8 +4101,8 @@ On définit les applications $\fonction{f_A}{\R}{\M_n(\K)}{t}{e^{tA}}$ et $\fonc
 \newpage
 \chapter{Calcul Différentiel}
 \section{Calcul de dérivées partielles}
-\textcolor{blue}{\hyperref[sec:calcul-de-derivees-partielles-1]{[Corrigé]}}\\
-\label{Calcul de dérivées partielles 1}
+\textcolor{blue}{\hyperref[Calcul de dérivées partielles corrigé]{[Corrigé]}}\\
+\label{Calcul de dérivées partielles}
 Soit $f$ une application de classe $\mathcal{C}^1$ sur $\R^2$. Calculer les dérivées partielles des fonctions suivantes en fonction des dérivées partielles de $f$.
 \begin{itemize}
 	\item $g(x,y)=f(y,x)$
@@ -4022,6 +4113,7 @@ Soit $f$ une application de classe $\mathcal{C}^1$ sur $\R^2$. Calculer les dér
 
 \section{Existence de dérivées partielles}
 \label{Existence de dérivées partielles}
+\textcolor{blue}{\hyperref[Existence de dérivées partielles corrigé]{[Corrigé]}}\\
 Etudier l'existence de dérivées partielles pour les fonctions suivantes.
 \begin{itemize}
 	\item $f(x,y)=\max(|x|,|y|)$
@@ -4034,6 +4126,7 @@ Etudier l'existence de dérivées partielles pour les fonctions suivantes.
 
 \section{Etude d'une fonction}
 \label{Etude d'une fonction}
+\textcolor{blue}{\hyperref[Etude d'une fonction corrigé]{[Corrigé]}}\\
 Soit $f:\R^2\mapsto\R$ définie par $f(x,y)=\begin{cases}(x^2+y^2)\displaystyle\sin\left(\frac{1}{\sqrt{x^2+y^2}}\right) &\text{si } (x,y)\ne(0,0) \\ \ \ \ \ \ \ \ \ \ \ \ \ 0 & \text{sinon}\end{cases}$
 \begin{enumerate}
 	\item Etudier la continuité de $f$.
@@ -4044,9 +4137,21 @@ Soit $f:\R^2\mapsto\R$ définie par $f(x,y)=\begin{cases}(x^2+y^2)\displaystyle\
 	\end{enumerate}
 \end{enumerate}
 
+\section{Intégrales de Hardy (2)}
+\label{Intégrales de Hardy (2)}
+\textcolor{blue}{\hyperref[Intégrales de Hardy (2) corrigé]{[Corrigé]}}\\
+Soient $a,b\in \R$. On pose pour $n\in \N^*$
+$$I_n(a,b)=\int_0^{\pi/2}\frac{dx}{(a\cos^2x+b\sin^2x)^n}$$
+\begin{enumerate}
+	\item Calculer $I_1$.
+	\item Justifier que $I_n$ est de classe $\mathcal C^\infty$ sur $\R^2$.
+	\item Montrer que $\dpartial{I_n}{}{a}+\dpartial{I_n}{}{b}=-nI_{n+1}$
+	\item En déduire l'expression $I_{n+1}=\displaystyle\frac{(-1)^n\pi}{2}\sum_{k=0}^n\binom{-1/2}{k}\binom{-1/2}{n-k}a^{-1/2-k}b^{-1/2+n-k}$.
+\end{enumerate}
+
 \section{Une équation fonctionnelle \etoile{2}}
 \label{Une équation fonctionnelle}
-\textcolor{blue}{\hyperref[sec:une-equation-fonctionnelle-etoile2]{[Corrigé]}}\\
+\textcolor{blue}{\hyperref[Une équation fonctionnelle corrigé]{[Corrigé]}}\\
 Le but de cet exercice est de déterminer les fonctions $f$ de classe $\mathcal{C}^2$ sur $\R$ solutions de l'équation: \begin{equation}
 	\forall (x,y)\in\R^2, f(x+y)+f(x-y)=2f(x)f(y)
 	\label{*}
@@ -4120,7 +4225,7 @@ On se donne $R\in\R_+^*$ et on définit $U=\{(x,y)\in\R^2, x^2+y^2<R^2\}$. Soit 
 Soit $M:\R\mapsto\M_n(\R)$ dérivable telle que pour tout $(s,t)\in\R^2$, $M(s)$ et $M(t)$ commutent.
 \begin{enumerate}
 	\item Justifier que $M\in\M_n(\R)$ est différentiable en 0 et calculer sa différentielle en 0.
-	\item En déduire que $\varphi:t\in\R\mapsto \exp(A(t))$ est dérivable sur $\R$ et que: $$\forall t\in\R, \varphi'(t)=A'(t)\exp(A(t))=\exp(A(t))A'(t)$$
+	\item En déduire que $\varphi:t\in\R\mapsto \exp(M(t))$ est dérivable sur $\R$ et que: $$\forall t\in\R, \varphi'(t)=M'(t)\exp(M(t))=\exp(M(t))M'(t)$$
 \end{enumerate}
 
 \section{Différentielle de la norme euclidienne}
@@ -4208,7 +4313,7 @@ Etudier mes extrema globaux de $f:(x,y)\mapsto 2x-y$ sous la contrainte $g(x,y)=
 \label{Utilisation des extrema liés 3}
 \textcolor{blue}{\hyperref[sec:utilisation-des-extremas-lies-3]{[Corrigé]}}\\
 Montrer que pour tous les $(x,y,z)\in (\R_+)^3$ tels que $x+y+z=\displaystyle\frac{\pi}{2}$,
-$$\sin(x)\sin(y)\sin(z)\leq \frac{\pi}{8}$$
+$$\sin(x)\sin(y)\sin(z)\leq \frac{1}{8}$$
 
 \section{Sinus complexe}
 \label{Sinus complexe}
@@ -5294,7 +5399,6 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\textcolor{blue}{\hyperref[gauss]{[Enoncé]}}
 	\subsubsection{Wallis}
 	
-	
 	\subsubsection{Intégrales auxiliaires}
 	
 	\subsubsection{Equivalent du reste}
@@ -5400,7 +5504,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		$$\displaystyle\int_0^{+\infty}\frac{\sin(t)}{t}dt=F(0)=-\arctan(0)+\frac{\pi}{2}=\frac{\pi}{2}$$
 	\end{enumerate}
 	
-	\subsection{Intégrale du reste de l'intégrale de Dirichlet \etoile{3}}
+	\subsubsection{Intégrale du reste de l'intégrale de Dirichlet \etoile{3}}
 	\label{Intégrale du reste de l'intégrale de Dirichlet corrigé}
 	\textcolor{blue}{\hyperref[restedirichlet]{[Enoncé]}}\\
 	On sait (cf. \ref{Intégrale de Dirichlet}) que pour tout $x\in \R_+$ l'intégrale $\displaystyle\int_x^{+\infty}\frac{\sin t}{t}dt$ converge.\\
@@ -5418,7 +5522,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{Intégrale d'Euler corrigé}
 	\textcolor{blue}{\hyperref[euler_1]{[Enoncé]}}\\
 	Démontrons avant de commencer que $I$ est bien défini.\\
-	La fonction $t\mapsto(\ln\sin(t))$ est continue par morceau sur $]0,\frac{\pi}{2}]$.\\
+	La fonction $t\mapsto(\ln\sin(t))$ est continue par morceau sur $\left]0,\dfrac{\pi}{2}\right]$.\\
 	On sait que : \[\sin(t)\underset{t\to 0}{\sim}t\]
 	Ainsi : \[\ln(\sin(t))=\ln(t+\underset{t\to 0}{o}(t))=\ln(t)+\ln(1+\underset{t\to 0}{o}(1))\]
 	Par conséquent, \[\ln(\sin(t))\underset{t\to 0}{\sim}\ln(t)=\underset{t\to 0}{o}\left(\frac{1}{\sqrt(t)}\right)\]
@@ -5426,7 +5530,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Donc l'intégrale est bien définie.
 	
 	\begin{enumerate}[leftmargin=*]
-		\item On pose $t=\frac{\pi}{2}-u$
+		\item On pose $t=\dfrac{\pi}{2}-u$
 		\[\int_0^{\pi/2}\ln(\sin(t))dt=\int_{\pi/2}^{0}\ln\left(\sin\left(\frac{\pi}{2}-u\right)\right)(-du)=\int_{0}^{\pi/2}\ln(\cos(u))du\]
 		D'où : \[I=J\]
 		\item On a : \[I+J=\int_{0}^{\pi/2}\ln(\sin(t)\cos(t))dt=\int_{0}^{\pi/2}\left[\ln(\sin(2t)-\ln(2)\right]dt\]
@@ -5441,7 +5545,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\end{enumerate}
 	
 	
-	\subsection{Fonction intégrale}
+	\subsection{Fonction intégrale \centraleponts{3}}
 	\label{Fonction intégrale corrigé}
 	\textcolor{blue}{\hyperref[fonction_intégrale]{[Enoncé]}}\\
 	Soit $x\in\R^*_+$.\\
@@ -5476,8 +5580,13 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Donc $I$ admet un maximum sur $\R^*_+$ qui est : \[\max\limits_{x\in\R^*_+}I=I(e)=\frac{\pi}{2e}\]
 	
 	\subsection{Intégrales de Bertrand}
-	\label{Intégrale de Bertrand corrigé}
-	\textcolor{blue}{\hyperref[intbertrand]{[Enoncé]}}\\
+	\label{Intégrales de Bertrand corrigé}
+	\textcolor{blue}{\hyperref[Intégrales de Bertrand]{[Enoncé]}}\\
+	
+	\subsection{Intégrales de Hardy (1)}
+	\label{Intégrales de Hardy (1) corrigé}
+	\textcolor{blue}{\hyperref[Intégrales de Hardy (1)]{[Enoncé]}}\\
+	
 	\subsection{Intégrabilité des cosinus de polynômes}
 	\label{Intégrabilité des cosinus de polynômes corrigé}
 	\textcolor{blue}{\hyperref[intégrabilitécospolynome]{[Enoncé]}}\\
@@ -5490,13 +5599,82 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Ainsi $\forall \alpha\in \R,\ \displaystyle\frac{1}{\arccos(t)^\alpha}\underset{t\to 1^-}\sim\frac{1}{2^{\alpha/2}(1-t)^{\alpha/2}}$.\\
 	On en déduit que $\displaystyle\int_0^1\frac{dt}{\arccos(t)^\alpha}$ converge si et seulement si $\alpha>2$.
 	
-	\subsection{Nature d'une intégrale (2)}
+	\subsection{Nature d'une intégrale (2) \ccinp{2}}
 	\label{Nature d'une intégrale (2) corrigé}
 	\textcolor{blue}{\hyperref[Nature d'une intégrale (2)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soient $(x_n)_{n\in \N}$ et $(y_n)_{n\in \N}$ deux suites de réels divergeant vers $+\infty$. Par hypothèse la fonction $F:x\mapsto \displaystyle\int_0^xf(t)dt$ admet une limite finie en $+\infty$. D'après le TFA elle est aussi continue donc par caractérisation séquentielle :
+		$$\int_{x_n}^{y_n}f(t)dt=\int_0^{y_n}f(t)dt-\int_0^{x_n}f(t)dt=F(y_n)-F(x_n)\unfty\longrightarrow 0$$
+		\item La fonction $f:t\mapsto e^{-t\sin t}$ est continue sur $[0,+\infty[$. Or pour les suites de terme général $x_n=(2n+1)\pi$ et $y_n=(2n+2)\pi$, on a $\unfty\lim x_n=\unfty\lim y_n=+\infty$ et $\forall t\in [x_n,y_n],\ -t\sin t\geq 0$ d'où $\displaystyle\int_{x_n}^{y_n}f(t)dt\geq \int_{x_n}^{y_n}dt=y_n-x_n=n\pi\unfty\longrightarrow+\infty$. Donc $\displaystyle\int_{x_n}^{y_n}e^{-t\sin t}dt\unfty\longrightarrow+\infty\ne 0$.\\
+		Ainsi par la contraposée de la question 1, $\displaystyle\int_0^{+\infty}e^{-t\sin t}dt$ diverge.
+	\end{enumerate}
+	
+	\subsection{Nature d'une intégrale (3) \centraleponts{3}}
+	\label{Nature d'une intégrale (3) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une intégrale (3)]{[Enoncé]}}\\
+	Posons $f_\alpha:t\mapsto \dfrac{\sin t}{t^\alpha}$. $f_\alpha$ est continue par morceaux sur $\R^*_+$. De plus $f_\alpha(t)\utzero\sim\dfrac{1}{t^{\alpha-1}}$ donc l'intégrale $\displaystyle\int_0^{+\infty}f_\alpha(t)dt$ converge en $0$ si et seulement si $\alpha<2$.\\
+	Et en $+\infty$ :
+	\begin{itemize}
+		\item Si $\alpha>0$ alors par IPP les intégrales $\displaystyle\int_1^{+\infty}f_\alpha(t)dt$ et $\displaystyle\int_1^{+\infty}\frac{\cos t}{t^{\alpha+1}}dt$ ont même nature.\\
+		Or $\dfrac{\cos t}{t^\alpha+1}\utfty=\bigO{\dfrac{1}{t^\alpha+1}}$. Comme $\alpha+1>1$, on en déduit que $\displaystyle\int_1^{+\infty}f_\alpha(t)dt$ converge;
+		\item Si $\alpha\leq 0$ alors posons $F_\alpha:x\mapsto \displaystyle\int_1^xf_\alpha(t)dt$. Soit $n\in \N^*$.\\
+		Comme $\sin$ est positif sur $[2n\pi,(2n+1)\pi]$,\\
+		$F_\alpha((2n+1)\pi)-F_\alpha(2n\pi)=\displaystyle\int_{2n\pi}^{(2n+1)\pi}t^{-\alpha}\sin tdt\geq (2n\pi)^{-\alpha}\int_{2n\pi}^{(2n+1)\pi}\sin t=2(2n\pi)^{-\alpha}$.\\
+		Donc la suite $(F_\alpha((2n+1)\pi)-F_\alpha(2n\pi))_{n\in \N}$ n'admet pas de limite finie. Donc l'intégrale $\displaystyle\int_1^{+\infty}f_\alpha(t)dt$ diverge.
+	\end{itemize}
+	Ainsi l'intégrale $\displaystyle\int_0^{+\infty}\frac{\sin t}{t^\alpha}dt$ converge si et seulement si $0<\alpha<2$.
+	
+	\subsection{Nature d'une intégrale (4) \xens{4}}
+	\label{Nature d'une intégrale (4) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une intégrale (4)]{[Enoncé]}}\\
+	Posons $I_a=\displaystyle\int_0^{+\infty}\sin(t^a)dt$. Si $a=0$, $I_a=\displaystyle\int_0^{+\infty}dt=+\infty$. Supposons maintenant $a\ne 0$.\\
+	Alors $\fonction{f_a}{\R^*_+}{\R^*_+}{t}{t^a}$ de classe $\mathcal C^1$ et bijective de réciproque $g_a:t\mapsto t^{1/a}$, on peut donc effectuer le changement de variable $t=g_a(u)$.\\
+	$dt=g_a'(u)du=\dfrac{u^{1/a-1}}{a}du$.\\
+	Si $a>0$, $f_a(0)=0$, $\utfty\lim f_a(t)=+\infty$ et
+	L'intégrale $I_a$ est de même nature que $\displaystyle\int_0^{+\infty}\frac{\sin(u)}{u^{\frac{a-1}{a}}}\frac{du}{a}$.\\
+	Si $a<0$, $\lim\limits_{t\to 0^+}f_a(t)=+\infty$, $\utfty\lim f_a(t)=0$ et
+	L'intégrale $I_a$ est de même nature que $\displaystyle\int_0^{+\infty}\frac{\sin(u)}{u^{\frac{a-1}{a}}}\frac{du}{-a}$.\\
+	On en déduit (cf.\ref{Nature d'une intégrale (3)}) que $I_a$ converge si et seulement si $0<\dfrac{a-1}{a}<2$ i.e $0<a-1<2a$ ou $0>a-1>2a$ i.e $|a|>1$.
+	
+	\subsection{Pondération par la fonction inverse}
+	\label{Pondération par la fonction inverse corrigé}
+	\textcolor{blue}{\hyperref[Pondération par la fonction inverse]{[Enoncé]}}\\
+	
+	\subsection{Pondération par $\dfrac{1}{1+t^a}$}
+	\label{Pondération par 1/(1+t^a) corrigé}
+	\textcolor{blue}{\hyperref[Pondération par 1/(1+t^a)]{[Enoncé]}}\\
+	
+	\subsection{Pondération par le sinus}
+	\label{Pondération par le sinus corrigé}
+	\textcolor{blue}{\hyperref[Pondération par le sinus]{[Enoncé]}}\\
+	
+	\subsection{Intégrale sur une période}
+	\label{Intégrale sur une période corrigé}
+	\textcolor{blue}{\hyperref[Intégrale sur une période]{[Enoncé]}}\\
+	
+	\subsection{Changement de variable}
+	\label{Changement de variable corrigé}
+	\textcolor{blue}{\hyperref[Changement de variable]{[Enoncé]}}\\
 	
 	\subsection{Divergence grossière}
 	\label{Divergence grossière corrigé}
 	\textcolor{blue}{\hyperref[Divergence grossière]{[Enoncé]}}\\
+	
+	\subsection{Norme $L^2$ \ccinp{2}}
+	\label{Norme L^2 corrigé}
+	\textcolor{blue}{\hyperref[Norme L^2]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Notons $g:t\mapsto \dfrac{f(t)}{t}$. $f$ est continue sur $\R^*_+$ donc $g$ aussi. De plus, $f$ est dérivable en $0$ donc $g(t)=\dfrac{f(t)-f(0)}{t-0}\utzero\longrightarrow f'(0)$.\\
+		Ainsi $g$ est prolongeable par continuité en $0$ en posant $g(0)=f'(0)$.
+		\item Soit $x>0$. Les fonctions $t\mapsto f(t)^2$ et $t\mapsto \dfrac{1}{t^2}$ sont de classes $\mathcal C^1$ sur $]0,x]$ donc, sous réserve de convergence, par IPP :
+		$$\int_0^xg(t)^2dt=\left[-\frac{f(t)^2}{t}\right]_0^x+\int_0^x\frac{2f'(t)f(t)}{t}dt$$
+		D'après la question 1 le crochet vaut $0$ en $0$. On en déduit
+		$$\int_0^xg(t)^2dt=-\frac{f(x)^2}{x}+2\int_0^x\frac{f'(t)f(t)}{t}dt\leq \int_0^x\frac{f'(t)f(t)}{t}dt$$
+		\item On montre que $\proscal{\cdot}{\cdot}:(g,h)\mapsto \displaystyle\int_0^xg(t)h(t)dt$ est un produit scalaire sur $\mathcal C([0,x],\R)$. Alors d'après l'inégalité de Cauchy-Schwarz :
+		$$\norme{g}^2=\int_0^xg(t)^2\leq 2\proscal{f'}{g}\leq 2\norme{f'}\norme{g}$$
+		Ainsi $\norme g\leq 2\norme{f'}$ d'où $\displaystyle\int_0^xg(t)^2dt=\norme{g}^2\leq 4\norme{f'}^2=4\int_0^xf'(t)^2dt$.\\
+		On conclut en faisant tendre $x$ vers $+\infty$.
+	\end{enumerate}
 	
 	\subsection{Inégalité de Kolmogorov}
 	\label{Inégalité de Kolmogorov corrigé}
@@ -5687,21 +5865,42 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Maintenant, si $\rho\in \R\setminus[-1,1]$, alors $\displaystyle\frac{1}{\rho}\in ]-1,1[$ et donc d'après la question $1$, $I(\rho)=2\pi\ln(|\rho|)+I\left(\displaystyle\frac{1}{\rho}\right)=2\pi\ln(|\rho|)$.
 	\end{enumerate}
 	
-	\subsection{Mines-Ponts MP 2024 (Chaïma Prime)}\label{sec:mines-ponts-mp-2024-chaima-prime}
+	\subsection{Mines-Ponts MP 2024}
+	\label{sec:mines-ponts-mp-2024-chaima-prime}
 	\textcolor{blue}{\hyperref[chaima]{[Enoncé]}}\\
 	
-	\subsection{Une suite d'intégrales (1)}\label{sec:une-suite-dintegrales-1}
+	\subsection{Une suite d'intégrales (1)}
+	\label{sec:une-suite-dintegrales-1}
 	\textcolor{blue}{\hyperref[suiteintégrale1]{[Enoncé]}}\\
-	\subsection{Une suite d'intégrales (2)}\label{sec:une-suite-dintegrales-2}
+	
+	\subsection{Une suite d'intégrales (2)}
+	\label{sec:une-suite-dintegrales-2}
 	\textcolor{blue}{\hyperref[suiteintégrale2]{[Enoncé]}}\\
-	\subsection{Une suite d'intégrales (3)}\label{sec:une-suite-dintegrales-3}
+	
+	\subsection{Une suite d'intégrales (3)}
+	\label{sec:une-suite-dintegrales-3}
 	\textcolor{blue}{\hyperref[suiteintégrale3]{[Enoncé]}}\\
-	\subsection{Nombre d'Apéry}\label{sec:nombre-dapery}
-	\textcolor{blue}{\hyperref[Apery]{[Enoncé]}}\\\\
-	\subsection{Comportement asymptotique (1)}\label{sec:comportement-asymptotique-1}
-	\textcolor{blue}{\hyperref[comportementasymp1]{[Enoncé]}}\\
-	\subsection{Comportement asymptotique (2)}\label{sec:comportement-asymptotique-2}
-	\textcolor{blue}{\hyperref[comportementasymp2]{[Enoncé]}}\\
+	
+	\subsection{Constante d'Apéry}
+	\label{Constante d'Apéry corrigé}
+	\textcolor{blue}{\hyperref[Constante d'Apéry]{[Enoncé]}}\\
+	
+	\subsection{Comportement asymptotique (1)}
+	\label{Comportement asymptotique (1) corrigé}
+	\textcolor{blue}{\hyperref[Comportement asymptotique (1)]{[Enoncé]}}\\
+	
+	\subsection{Comportement asymptotique (2)}
+	\label{Comportement asymptotique (2) corrigé}
+	\textcolor{blue}{\hyperref[Comportement asymptotique (2)]{[Enoncé]}}\\
+
+	\subsection{Comportement asymptotique (3)}
+	\label{Comportement asymptotique (3) corrigé}
+	\textcolor{blue}{\hyperref[Comportement asymptotique (3)]{[Enoncé]}}\\
+	
+	\subsection{Comportement asymptotique (4)}
+	\label{Comportement asymptotique (4) corrigé}
+	\textcolor{blue}{\hyperref[Comportement asymptotique (4)]{[Enoncé]}}\\
+	
 	\subsection{Théorème de d'Alembert-Gauss (1) \etoile{2}}\label{sec:theoreme-de-dalembert-gauss-1-etoile2}
 	\textcolor{blue}{\hyperref[alembertgauss1]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -9951,24 +10150,8 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\newpage
 \section{Correction Calcul différentiel}
 	\subsection{Calcul de dérivées partielles}
-	\label{sec:calcul-de-derivees-partielles-1}
-	\textcolor{blue}{\hyperref[Calcul de dérivées partielles 1]{[Enoncé]}}\\
-	
-<<<<<<< Updated upstream
-	\subsection{Existence de dérivées partielles}
-	\label{sec:existence-de-derivees-partielles}
-	\textcolor{blue}{\hyperref[Existence de dérivées partielles]{[Enoncé]}}\\
-	
-	\subsection{Etude d'une fonction}
-	\label{sec:etude-dune-fonction}
-	\textcolor{blue}{\hyperref[Etude d'une fonction]{[Enoncé]}}\\
-	
-	\subsection{Une équation fonctionnelle \etoile{2}}
-	\label{sec:une-equation-fonctionnelle-etoile2}
-	\textcolor{blue}{\hyperref[Une équation fonctionnelle]{[Enoncé]}}\\
-=======
-	\subsection{Calcul de dérivées partielles}\label{sec:calcul-de-derivees-partielles-1}
-		\textcolor{blue}{\hyperref[Calcul de dérivées partielles 1]{[Enoncé]}}\\
+	\label{Calculs de dérivées partielles corrigé}
+	\textcolor{blue}{\hyperref[Calcul de dérivées partielles]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item $$\frac{\partial g}{\partial x}(x,y)=\frac{\partial f}{\partial y}(y,x), \quad \frac{\partial g}{\partial y}(x,y)=\frac{\partial f}{\partial x}(y,x)$$
 		\item On pose $h:x\mapsto (x,x)$. On a : $g=f\circ h$.\\
@@ -9978,11 +10161,15 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\item On pose $h:x\to(x,f(x,x))$. On a $g=f\circ h$.\\
 		$$g'(x)=\frac{\partial f}{\partial x}(x,x)+\frac{\partial f}{\partial y}(x,f(x,x))\left(\frac{\partial f}{\partial x}(x,x)+\frac{\partial f}{\partial y}(x,x)\right)$$
 	\end{enumerate}
-	\subsection{Existence de dérivées partielles}\label{sec:existence-de-derivees-partielles}
-		\textcolor{blue}{\hyperref[Existence de dérivées partielles]{[Enoncé]}}\\
 	
-	\subsection{Etude d'une fonction}\label{sec:etude-dune-fonction}
-		\textcolor{blue}{\hyperref[Etude d'une fonction]{[Enoncé]}}\\
+	
+	\subsection{Existence de dérivées partielles}
+	\label{Existence de dérivées partielles corrigé}
+	\textcolor{blue}{\hyperref[Existence de dérivées partielles]{[Enoncé]}}\\
+	
+	\subsection{Etude d'une fonction}
+	\label{Etude d'une fonction corrigé}
+	\textcolor{blue}{\hyperref[Etude d'une fonction]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item La fonction $(x,y)\mapsto \frac{1}{\sqrt{x^2+y^2}}$ ne s'annule pas sur $\R^2\setminus\{(0,0)\}$ donc par opérations usuelles $f$ est continue sur $\R^2\setminus\{(0,0)\}$.\\
 		De plus, pour tout $(x,y)\in\R^2$, $|f(x,y)|\leq |x^2+y^2|=\normep{2}{(x,y)}$ donc $\lim\limits_{(x,y)\to(0,0)} f(x,y)=0$.\\
@@ -10002,9 +10189,14 @@ Démontrer l'équivalence des deux affirmations suivantes :
 			\item Ainsi, $f$ ne peut être de classe $\mathcal{C}^1$ sur $\R^2$.
 		\end{enumerate}
 	\end{enumerate}
-	\subsection{Une équation fonctionnelle \etoile{2}}\label{sec:une-equation-fonctionnelle-etoile2}
-		\textcolor{blue}{\hyperref[Une équation fonctionnelle]{[Enoncé]}}\\
->>>>>>> Stashed changes
+	
+	\subsection{Intégrales de Hardy (2)}
+	\label{Intégrales de Hardy (2) corrigé}
+	\textcolor{blue}{\hyperref[Intégrales de Hardy (2)]{[Enoncé]}}\\
+	
+	\subsection{Une équation fonctionnelle \etoile{2}}
+	\label{Une équation fonctionnelle corrigé}
+	\textcolor{blue}{\hyperref[Une équation fonctionnelle]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item Soit $f$ une fonction constante égale à $c$ solution $(1)$.
 		On a donc $2c=2c^2$ donc $c=0$ ou $c=1$.
@@ -10046,8 +10238,9 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\item On vérifie que tous ses solutions trouvées conviennes.
 	\end{enumerate}
 	
-	\subsection{Application linéaire}\label{sec:application-lineaire}
-		\textcolor{blue}{\hyperref[Application linéaire]{[Enoncé]}}\\
+	\subsection{Application linéaire}
+	\label{sec:application-lineaire}
+	\textcolor{blue}{\hyperref[Application linéaire]{[Enoncé]}}\\
 		On remarque que $f(0)=0$.
 		$f$ est différentiable en $0$ donc il existe $\ell$ une application linéaire telle que pour tout $h\in E$ : 
 		\[f(h)=f(0)+\ell(h)+\smallo{h}=\ell(h)+\smallo{h}\]
