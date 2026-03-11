@@ -390,14 +390,21 @@
 	\section{Nature d'une série (4) \xens{3}}
 	\label{Nature d'une série 4}
 	\textcolor{blue}{\hyperref[sec:nature-dune-serie-4]{[Corrigé]}}\\
-	Soit $(a_n)_{n\in \N^*}$ une suite strictement croissante d'entiers naturels non nuls.\\
-	Déterminer la nature de la série $\displaystyle\sum\limits_{n\geq 1}\frac{1}{\ppcm(a_1,\dots,a_n)}$.
+	Soit $(\alpha_n)_{n\in \N^*}$ une suite d'entiers strictement positifs deux à deux distincts. Déterminer la nature de la série
+	$$\sum_{n\geq 1}\frac{\alpha_n}{n^2}$$
 	
 	\section{Nature d'une série (5) \xens{3}}
 	\label{Nature d'une série 5}
 	\textcolor{blue}{\hyperref[sec:nature-dune-serie-5]{[Corrigé]}}\\
-	Soit $(\alpha_n)_{n\in \N^*}$ une suite d'entiers strictement positifs deux à deux distincts. Déterminer la nature de la série
-	$$\sum_{n\geq 1}\frac{\alpha_n}{n^2}$$
+	Soit $(a_n)_{n\in \N^*}$ une suite strictement croissante d'entiers naturels non nuls.\\
+	Déterminer la nature de la série $\displaystyle\sum\limits_{n\geq 1}\frac{1}{\ppcm(a_1,\dots,a_n)}$.
+	
+	\section{Nature d'une série (6) \xens{3}}
+	\label{Nature d'une série 6}
+	\textcolor{blue}{\hyperref[sec:nature-dune-serie-6]{[Corrigé]}}\\
+	On appelle nombre \textit{palindrome} tout entier naturel non nul possédant la même suite de chiffres, lue de droite à gauche et de gauche à droite : par exemple 3,11,161 et 5225 sont des nombres palindromes alors que 32 et 4987 n'en sont pas.\\
+	On note $P$ l'ensemble des nombres palindromes.\\
+	Déterminer la nature de la série $\displaystyle\sum_{n\in P}\frac{1}{n}$.
 	
 	\section{Calcul d'un équivalent \xens{4}}
 	\textcolor{blue}{\hyperref[sec:calcul-dun-equivalent-etoile3]{[Corrigé]}}\\
@@ -4949,26 +4956,51 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Nature d'une série (4) \xens{3}}
 	\label{sec:nature-dune-serie-4}
 	\textcolor{blue}{\hyperref[Nature d'une série 4]{[Enoncé]}}\\
+	Le premier cas qui saute aux yeux est celui pour $\alpha_k=k$ où on retrouve la série harmonique qui diverge. On peut alors penser à montrer la divergence de notre série de la même manière que pour la série harmonique
+	Soit $n\in \N^*$. Notons $(S_n)_{n\in \N^*}$ la suite des sommes partielles.
+	$$S_{2n}-S_n=\sum_{k=n+1}^{2n}\frac{\alpha_k}{k^2}\geq \sum_{k=n+1}^{2n}\frac{\alpha_k}{4n^2}\geq\frac{1}{4n^2}\sum_{k=1}^nk=\frac{n+1}{8n}\geq \frac{1}{8}$$
+	La deuxième inégalité est vraie car $\alpha_{n+1},\dots,\alpha_{2n}$ sont $n$ entiers distincts.\\
+	Donc $S_{2n}-S_n$ ne converge pas vers $0$ d'où $\displaystyle\sum_{k=1}^{+\infty}\frac{\alpha_k}{k^2}=+\infty$.\\\\
+	Une autre manière de faire qui exploite encore plus le lien avec la série harmonique se base sur le lemme suivant : (inégalité de réarrangement)\\
+	Soient $a_1>\dots>a_n,b_1<\dots<b_n$ des réels. Alors pour toute permutation $\sigma\in \S_n$,
+	$$S(\sigma):=\sum_{i=1}^na_ib_{\sigma(i)}\leq \sum_{i=1}^na_ib_i$$
+	Soient $\sigma\in \S_n$ tel que $S(\sigma)$ soit minimale et $\tau=(ij)$, où $i<j$, une transposition.\\
+	On remarque que $S(\sigma\circ\tau)-S(\sigma)=a_ib_{\sigma(j)}-a_ib_{\sigma(i)}+a_jb_{\sigma(i)}-a_jb_{\sigma(j)}=(a_j-a_i)(b_{\sigma(i)}-b_{\sigma(j)})$.\\
+	$S(\sigma\circ\tau)-S(\sigma)\geq 0$ par minimalité de $S(\sigma)$ et $a_j-a_i<0$ car $j>i$. Donc $b_{\sigma(i)}\leq b_{\sigma(j)}$ d'où $\sigma(i)\leq \sigma(j)$.\\
+	On a montré que $\sigma$ est une bijection de $\crblanc{1}{n}$ croissante, c'est donc l'identité d'où le résultat.\\
+	\textit{Remarque : on peut aussi faire une récurrence en isolant les termes faisant apparaître l'indice $n+1$, ce qui revient en fait au même.}\\\\
+	On va montrer que la série harmonique est "la plus petite somme" qu'on pourrait obtenir.\\
+	Fixons $n\in \N^*$. On peut minorer $\displaystyle\sum_{k=1}^n\frac{\alpha_k}{k^2}\geq \sum_{k=1}^n\frac{\beta_k}{k^2}$ avec $\{\beta_1,\dots,\beta_n\}=\crblanc{1}{n}$. En effet, il suffit de minorer le plus grand des $\alpha_i$ par $n$, le deuxième plus grand par $n-1$, etc... jusqu'au plus petit par $1$. Ceci est possible car $\alpha_1,\dots,\alpha_n$ sont tous distincts.
+	L'application $\sigma:k\in\crblanc{1}{n}\mapsto \beta_k$ est alors une bijection de $\S_n$.\\
+	D'après le lemme appliqué à $a_i=\dfrac{1}{i^2}$ et $b_i=i$ on a alors $\displaystyle\sum_{k=1}^n\frac{\alpha_k}{k^2}\geq \sum_{k=1}^n\frac{k}{k^2}=\sum_{k=1}^n\frac{1}{k}\unfty\longrightarrow+\infty$.
+	
+	\subsection{Nature d'une série (5) \xens{3}}
+	\label{sec:nature-dune-serie-5}
+	\textcolor{blue}{\hyperref[Nature d'une série 5]{[Enoncé]}}\\
 	Soit $n\geq 2$ un entier.\\
 	$\ppcm(a_1,\dots,a_n)\geq \ppcm(a_{n-1},a_n)=\displaystyle\frac{a_{n-1}a_n}{\pgcd(a_{n-1}a_n)}>0$.\\
 	Or on remarque que $\pgcd(a_{n-1},a_n)|a_n-a_{n-1}>0$. Donc $\pgcd(a_{n-1},a_n)\leq a_n-a_{n-1}$ d'où $\displaystyle\frac{\pgcd(a_{n-1},a_n)}{a_{n-1}a_n}\leq\frac{a_n-a_{n-1}}{a_{n-1}a_n}=\frac{1}{a_{n-1}}-\frac{1}{a_n}$.\\
 	On montre par récurrence que pour tout $n\in \N^*,\ a_n\geq a_1+n-1$ et on en déduit que $a_n\unfty{\longrightarrow}+\infty$.\\
 	Ainsi $\displaystyle\sum\limits_{n\geq 2}\frac{1}{\ppcm(a_1,\dots,a_n)}$ est une série à termes positifs majorée $\left(\text{par }\displaystyle\sum\limits_{n=2}^{+\infty}\frac{1}{a_{n-1}}-\frac{1}{a_n}=\frac{1}{a_1}\right)$ : elle converge.
 	
-	\subsection{Nature d'une série (5) \xens{4}}
-	\label{sec:nature-dune-serie-5}
-	\textcolor{blue}{\hyperref[Nature d'une série 5]{[Enoncé]}}\\
-	Montrons le lemme suivant : (inégalité de réarrangement)\\
-	Soient $a_1>\dots>a_n,b_1<\dots<b_n$ des réels. Alors pour toute permutation $\sigma\in \S_n$,
-	$$S(\sigma):=\sum_{k=1}^na_ib_{\sigma(i)}\leq \sum_{k=1}^na_ib_i$$
-	Soient $\sigma\in \S_n$ tel que $S(\sigma)$ soit minimale et $\tau=(ij)$, où $i<j$, une transposition.\\
-	On remarque que $S(\sigma\circ\tau)-S(\sigma)=a_ib_{\sigma(j)}-a_ib_{\sigma(i)}+a_jb_{\sigma(i)}-a_jb_{\sigma(j)}=(a_j-a_i)(b_{\sigma(i)}-b_{\sigma(j)})$.\\
-	$S(\sigma\circ\tau)-S(\sigma)\geq 0$ par minimalité de $S(\sigma)$ et $a_j-a_i<0$ car $j>i$. Donc $b_{\sigma(i)}\leq b_{\sigma(j)}$ d'où $\sigma(i)\leq \sigma(j)$.\\
-	On a montré que $\sigma$ est une bijection de $\crblanc{1}{n}$ croissante, c'est donc l'identité d'où le résultat.\\
-	\textit{Remarque : on peut aussi faire une récurrence en isolant les termes faisant apparaître l'indice $n+1$, ce qui revient en fait au même.}\\\\
-	Fixons $n\in \N$. Tout d'abord, on peut minorer $\displaystyle\sum_{k=1}^n\frac{\alpha_k}{k^2}\geq \sum_{k=1}^n\frac{b_k}{k^2}$ avec $\beta_1,\dots,\beta_n\in \crblanc{1}{n}$. En effet, si $k\in \crblanc{1}{n}\backslash\{\alpha_1,\dots,\alpha_n\}$ alors au moins un des $n$ entiers $\alpha_1,\dots,\alpha_n$ est supérieur strictement à $n$, et on le minore alors par $k$.\\
-	L'application $\sigma:k\in\crblanc{1}{n}\mapsto \beta_k$ est alors une bijection.\\
-	D'après le lemme appliqué à $a_i=\dfrac{1}{i^2}$ et $b_i=i$ on a alors $\displaystyle\sum_{k=1}^n\frac{\alpha_k}{k^2}\geq \sum_{k=1}^n\frac{k}{k^2}=\sum_{k=1}^n\frac{1}{k}\unfty\longrightarrow+\infty$.
+	\subsection{Nature d'une série (6) \xens{3}}
+	\label{sec:nature-dune-serie-6}
+	\textcolor{blue}{\hyperref[Nature d'une série 6]{[Enoncé]}}\\
+ 	On va partitionner $P$ suivant le nombre de chiffres de ces éléments. Notons pour $d\in \N^*,\ A_d$ l'ensemble des nombres palindromes à $d$ chiffres ainsi que $N(d)=|A_d|$. Tous les termes étant positifs d'après le théorème de sommation par paquets :\\
+	$$\sum_{n\in P}\frac{1}{n}=\sum_{d=1}^{+\infty}\sum_{n\in A_d}\frac{1}{n}$$
+	Fixons $d\in \N^*$. $\forall n\in A_d,\ 10^{d-1}\leq n<10^d$ donc $\displaystyle\sum_{n\in A_d}\frac{1}{n}\leq \frac{N(d)}{10^{d-1}}$.	Calculons maintenant $N(d)$.\\
+	Soit $n\in \N^*$. On note $n=\overline{a_d\dots a_1}:=\displaystyle\sum_{k=0}^da_k10^k$ où $a_1,\dots,a_d\in \crblanc{0}{9}$ et $a_d\ne 0$, autrement dit $a_1,\dots,a_d$ sont les chiffres de $n$.\\
+	Alors $n$ est un nombre palindrome si et seulement si $\forall k\in \crblanc{1}{d},\ a_{d-k}=a_k$. Pour construire un élément de $P_d$ il suffit donc de choisir
+	\begin{itemize}
+		\item $a_1,a_2,\dots,a_{(d+1)/2}$ si $d$ est impair;
+		\item $a_1,a_2,\dots,a_{d/2}$ si $d$ est pair.
+	\end{itemize}
+	Ce qui revient à choisir $a_1,a_2,\dots,a_{\lfloor(d+1)/2\rfloor}$. De manière plus formelle on dispose d'une bijection
+	$$\fonction{f}{\{(a_1,\dots,a_d)\in \crblanc{0}{9}^{d-1}\times\crblanc{1}{9},\ |\ \forall k\in \crblanc{1}{d},\ a_{d-k}=a_k\}}{A_d}{(a_1,\dots,a_d)}{\overline{a_d\dots a_1}}$$
+	et d'une bijection
+	$$\fonction{g}{\{(a_1,\dots,a_d)\in \crblanc{0}{9}^{d-1}\times\crblanc{1}{9},\ |\ \forall k\in \crblanc{1}{d},\ a_{d-k}=a_k\}}{\crblanc{1}{9}\times\crblanc{0}{9}^{\lfloor(d+1)/2\rfloor-1}}{(a_1,\dots,a_d)}{(a_1,\dots,a_{\lfloor(d+1)/2\rfloor})}$$
+	Donc $N(d)=9\times 10^{\lfloor(d+1)/2\rfloor-1}=9\times 10^{\lfloor(d+1)/2-1\rfloor}=9\times 10^{\lfloor(d-1)/2\rfloor}\leq 9\times 10^{(d-1)/2}$.\\
+	Finalement, $\displaystyle\sum_{n\in P}\frac{1}{n}\leq 9\sqrt{10}\sum_{d=1}^{+\infty}\left(\frac{1}{\sqrt{10}}\right)^d=9\sqrt{10}\cdot\frac{1}{1-\dfrac{1}{\sqrt{10}}}=\frac{9}{\sqrt{10}-1}<+\infty$.
 	
 	\subsection{Calcul d'un équivalent \xens{4}}
 	\label{sec:calcul-dun-equivalent-etoile3}
