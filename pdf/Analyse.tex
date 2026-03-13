@@ -402,14 +402,14 @@
 	\section{Nature d'une série (6) \xens{3}}
 	\label{Nature d'une série 6}
 	\textcolor{blue}{\hyperref[sec:nature-dune-serie-6]{[Corrigé]}}\\
-	On appelle nombre \textit{palindrome} tout entier naturel non nul possédant la même suite de chiffres, lue de droite à gauche et de gauche à droite : par exemple 3,11,161 et 5225 sont des nombres palindromes alors que 32 et 4987 n'en sont pas.\\
+	On appelle nombre \textit{palindrome} tout entier naturel non nul dont l'écriture décimale est un palindrome : par exemple 3,11,161 et 5225 sont des nombres palindromes alors que 32 n'en est pas un car $32\ne 23$.\\
 	On note $P$ l'ensemble des nombres palindromes.\\
 	Déterminer la nature de la série $\displaystyle\sum_{n\in P}\frac{1}{n}$.
 	
 	\section{Calcul d'un équivalent \xens{4}}
-	\textcolor{blue}{\hyperref[sec:calcul-dun-equivalent-etoile3]{[Corrigé]}}\\
+	\textcolor{blue}{\hyperref[Calcul d'un équivalent corrigé]{[Corrigé]}}\\
 	\label{Calcul d'un équivalent}
-	Déterminer un équivalent de $u_n=\left(\displaystyle\prod\limits_{k=1}^nk^k\right)^{1/n}$.
+	Déterminer un équivalent de la suite de terme général $u_n=\left(\displaystyle\prod\limits_{k=1}^nk^k\right)^{1/n}$.
 	
 	\section{Sommation de relations de comparaison \ccinp{1}}
 	\textcolor{blue}{\hyperref[sec:sommation-de-relations-de-comparaison]{[Corrigé]}}\\
@@ -5000,15 +5000,14 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	et d'une bijection
 	$$\fonction{g}{\{(a_1,\dots,a_d)\in \crblanc{0}{9}^{d-1}\times\crblanc{1}{9},\ |\ \forall k\in \crblanc{1}{d},\ a_{d-k}=a_k\}}{\crblanc{1}{9}\times\crblanc{0}{9}^{\lfloor(d+1)/2\rfloor-1}}{(a_1,\dots,a_d)}{(a_1,\dots,a_{\lfloor(d+1)/2\rfloor})}$$
 	Donc $N(d)=9\times 10^{\lfloor(d+1)/2\rfloor-1}=9\times 10^{\lfloor(d+1)/2-1\rfloor}=9\times 10^{\lfloor(d-1)/2\rfloor}\leq 9\times 10^{(d-1)/2}$.\\
-	Finalement, $\displaystyle\sum_{n\in P}\frac{1}{n}\leq 9\sqrt{10}\sum_{d=1}^{+\infty}\left(\frac{1}{\sqrt{10}}\right)^d=9\sqrt{10}\cdot\frac{1}{1-\dfrac{1}{\sqrt{10}}}=\frac{9}{\sqrt{10}-1}<+\infty$.
+	Finalement, $\displaystyle\sum_{n\in P}\frac{1}{n}\leq 9\sum_{d=0}^{+\infty}\left(\frac{1}{\sqrt{10}}\right)^d=\frac{9}{1-\dfrac{1}{\sqrt{10}}}=\frac{9\sqrt{10}}{\sqrt{10}-1}<+\infty$.\\\\
+	
+	\textit{Remarque : La base dans laquelle on travaille n'influe absolument pas le raisonnement. C'est-à-dire que si l'on note $P_b$ l'ensemble des entiers naturels non nuls dont l'écriture en base $b\geq 2$ est un palindrome alors on a
+	$$\displaystyle\sum_{n\in P_b}\frac{1}{n}\leq (b-1)\sum_{d=0}^{+\infty}\left(\frac{1}{\sqrt b}\right)^d=\frac{(b-1)\sqrt b}{\sqrt b-1}<+\infty$$}
 	
 	\subsection{Calcul d'un équivalent \xens{4}}
-	\label{sec:calcul-dun-equivalent-etoile3}
+	\label{Calcul d'un équivalent corrigé}
 	\textcolor{blue}{\hyperref[Calcul d'un équivalent]{[Enoncé]}}\\
-	\underline{$1^{ère}$ méthode :} Somme de Riemann\\
-	
-	
-	\underline{$2^{nd}$ méthode :} Comparaison série-intégrale\\
 	Posons $\forall n\in \N^*,\ S_n=n\ln(u_n)=\displaystyle\sum_{k=1}^nk\ln k$ ainsi que $f:t\in \R^*_+\mapsto t\ln t$.\\
 	On veut une estimation du type $u_n\unfty=U_n(1+\smallo 1)$ donc $\ln(u_n)\unfty=\ln(U_n)+\ln(1+\smallo 1)\unfty=\ln(U_n)+\smallo 1$. Il faut donc estimer $S_n$ à la précision $\smallo n$.\\
 	$f$ est dérivable sur $\R^*_+$ et $\forall t>0,\ f'(t)=\ln t+1$. Donc $f$ est croissante sur $[e^{-1},+\infty[\subset [1,+\infty[$.\\
@@ -5042,6 +5041,8 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		&\unfty=n^{\frac{n+1}{2}}e^{-\frac{n}{4}}e^{\smallo 1}\\
 		&\unfty\sim n^{\frac{n+1}{2}}e^{-\frac{n}{4}}
 	\end{align*}
+	
+	\textit{Remarque : on peut vouloir faire apparaître une somme de Riemann pour $f$ mais on obtient seulement $\ln(u_n)\unfty\sim-\dfrac{n}{4}+\dfrac{(n+1)\ln n}{2}$ ce qui ne suffit pas pour conclure. Malheureusement $f$ n'est que $\mathcal C^1$ sur $]0,1]$ donc l'exercice \ref{Sommes de Riemann} ne s'applique pas. Il faut donc tout de même montrer par le calcul que $T_n\unfty=\smallo 1$.}
 	
 	\subsection{Sommation de relations de comparaison \ccinp{1}}
 	\label{sec:sommation-de-relations-de-comparaison}
