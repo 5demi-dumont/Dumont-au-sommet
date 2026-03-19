@@ -5976,7 +5976,16 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Comportement asymptotique (2)}
 	\label{Comportement asymptotique (2) corrigé}
 	\textcolor{blue}{\hyperref[Comportement asymptotique (2)]{[Enoncé]}}\\
-
+	Puisque $f$ est intégrable sur $\R_+$, 
+	\[\int_{x/2}^{x}f(t)dt=0\]
+	De plus, puisque $f$ est décroissante sur $\R_+$,
+	\[\forall t\in[\frac{x}{2},x], f(t)\geq f(x)\]
+	Donc, \[\int_{x/2}^{x}f(t)dt\geq \frac{x}{2}f(x)\]
+	Donc $\lim\limits_{x\to =\infty}xf(x)=0$.\\
+	La réciproque est fausse. Observons la fonction $\fonction{f}{\R_+}{\R_+}{x}{\frac{1}{(x+2)\ln(x+2)}}$.
+	On a \[xf(x)\sim \frac{1}{\ln(x)}\longrightarrow 0\]
+	Cependant, une primitive de $f$ est : $x\mapsto \ln(\ln(x+2))$.\\
+	Cette fonction diverge quand $x\to\infty$ donc l'intégrale également, ce qui implique que $f$ n'est pas intégrable.
 	\subsection{Comportement asymptotique (3)}
 	\label{Comportement asymptotique (3) corrigé}
 	\textcolor{blue}{\hyperref[Comportement asymptotique (3)]{[Enoncé]}}\\
