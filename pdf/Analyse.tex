@@ -5913,7 +5913,40 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Une suite d'intégrales (3)}
 	\label{sec:une-suite-dintegrales-3}
 	\textcolor{blue}{\hyperref[suiteintégrale3]{[Enoncé]}}\\
-	
+	\begin{enumerate}
+		\item Les fonctions $x\mapsto \frac{x^{2n}}{1+x^n}$ et $x\mapsto \frac{x^{2n+1}}{1+x^n}$ sont continues par morceaux sur $[0,1]$. Donc $I_n$ et $J_n$ existent.\\
+		De plus, pour tout $x\in[O,1]$ :
+		\[x^n<x^n+1\]
+		donc \[0\leq \frac{x^{2n}}{1+x^n}<x^n\]
+		donc \[0\leq I_n\leq \int_{0}^{1}x^n dx=\frac{1}{n}\]
+		Par conséquent, \[\lim_{n\to+\infty}I_n=0\]
+		En procédant de même, on obtient que : \[\lim_{n\to+\infty}J_n=0\]
+		\item Pour tout $n\in\N^*$,\\
+		 \begin{align*}
+			|I_n-J_n|&=\left|\int_{0}^{1}\frac{x^{2n}-x^{2n+1}}{1+x^n}dx\right|\\
+			&\leq \int_{0}^{1}\frac{|x^{2n}-x^{2n+1}|}{1+x^n}dx\\
+			&\int_{0}^{1}x^{2n}-x^{2n+1}dx & \text{car } 0\leq \frac{1}{1+x^n}\leq 1\\
+			&\frac{1}{2n+1}-\frac{1}{2n+2}\\
+			&\frac{1}{4n^2}
+		\end{align*}
+		\item Pour tout $n\in\N^*$. On pose $u=x^n$.
+		\begin{align*}
+			J_{n-1}&=\int_{0}^{1}\frac{x^{2n-1}}{1+x^n}dx\\
+			&=\frac{1}{n}\int_{0}^{1}\frac{u}{1+u}du\\
+			&=\frac{1}{n}\int_{0}^{1}\left(1-\frac{1}{1+u}\right)du\\
+			&=\frac{1}{n}\left[u-\ln(1+u)\right]\\
+			&=\frac{1-\ln(2)}{n}
+		\end{align*}
+		Par conséquent, \[J_n=\frac{1-\ln(2)}{n+1}\]
+		\item Montrons que $I_n\sim J_n$.\\
+		\begin{align*}
+			\left|\frac{I_n}{J_n}-1\right|&=\frac{|I_n-J_n|}{J_n}\\
+			&\leq \frac{\frac{1}{4n^2}}{\frac{1-\ln(2)}{n+1}}\\
+			&\leq \frac{n+1}{4n^2(1-\ln(2))}\\
+			&\longrightarrow 0
+		\end{align*}
+		Donc \[I_n\sim J_n\sim \frac{1-\ln(2)}{n}\]
+	\end{enumerate}
 	\subsection{Constante d'Apéry}
 	\label{Constante d'Apéry corrigé}
 	\textcolor{blue}{\hyperref[Constante d'Apéry]{[Enoncé]}}\\
@@ -5921,6 +5954,24 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Comportement asymptotique (1)}
 	\label{Comportement asymptotique (1) corrigé}
 	\textcolor{blue}{\hyperref[Comportement asymptotique (1)]{[Enoncé]}}\\
+	On pose pour tout $x\in\R_+$, \[g(x)=xf(x)\]
+	La fonction $g$ est une fonction de classe $\mathcal{C}^1$ sur $\R_+$.\\
+	$\forall x\in\R_+$, $g'(x)=xf'(x)+f(x)=3f(x)+o(f(x))$.\\
+	Montrons que \[\int_{0}^{x}g'(x)dx=xf(x) \text{ diverge quand }x\rightarrow \infty\]
+	On sait que : \[\frac{f'(x)}{f(x)}\sim \frac{2}{x}\]
+	Donc il existe $A\in\R^*_+$ tel que pour tout $x\geq A$ : 
+	\[\frac{f'(x)}{f(x)}\geq \frac{1}{x}\]
+	Par conséquent, en intégrant entre $A$ et $x\geq A$, on a :
+	\[\ln(\frac{f(x)}{f(A)})\geq \ln(\frac{x}{A})\]
+	Ainsi, on en déduit que :
+	\[f(x)\geq f(A)\frac{x}{A}\]
+	Puisque $f(A)>0$, on a $f(x)\underset{x\to+\infty}{\rightarrow}+\infty$.\\
+	Ainsi, $\int_{0}^{x}g'(x)dx=xf(x) \text{ diverge quand }x\rightarrow \infty$.\\
+	Finalement, on a :
+	\[\int_{0}^{x}3f(x)dx\sim \int_{0}^{x}g'(t)dt\]
+	càd :
+	\[\int_{0}^{x}f(x)dt\sim \frac{xf(x)}{3}\]
+	
 	
 	\subsection{Comportement asymptotique (2)}
 	\label{Comportement asymptotique (2) corrigé}
