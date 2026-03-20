@@ -5802,6 +5802,30 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	
 	\subsection{Permutation Série-intégrale (1)}\label{sec:permutation-serie-integrale-1}
 	\textcolor{blue}{\hyperref[Permutation Série-Intégrale 1]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item On pose $f:x\mapsto e^{-x}cos(\sqrt{x})$.\\
+		$f$ est continue par morceaux sur $[0,\infty[$ et :
+		\[f(x)=\mathcal{O}(e^{-x})\]
+		Ainsi, $I$ converge.\\
+		\item On sait que pour tout $x\in\R$ :
+		\[\cos(x)=\sum_{n=0}^{+\infty}\frac{(-1)^n}{(2n)!}x^{2n}\]
+		Ainsi, \[I=\int_{0}^{\infty}\sum_{n=0}^{+\infty}\frac{(-1)^n}{(2n)!}e^{-x}x^n\]
+		On pose pour tout $n\in\N$, 
+		\[g_n:x\mapsto \frac{(-1)^n}{(2n)!}x^ne^{-x}\]
+		\begin{itemize}
+			\item $\forall n\in\N$ $g_n$ est continue par morceaux sur $\R_+$,
+			\item \[g_n(x)=o_{x\to+\infty}\left(\frac{1}{x^2}\right)\]
+			\item $\sum g_n$ converge simplement sur $\R_+$,
+			\item $x\mapsto e^{-x}\cos(\sqrt{x})$ est continue par morceaux.
+			\item \[I_n=\frac{1}{(2n)!}\int_0^{+\infty}x^ne^{-x}dx=\frac{\Gamma(n+1)}{(2n)!}=\frac{n!}{(2n)!}\]
+			D'après le critère de D'Alembert, la série des $(I_n)$ converge.
+		\end{itemize}
+		Ainsi d'après le théorème d'intégration terme à terme,
+		\[I=\sum_{n=0}^{+\infty}\frac{(-1)^n}{(2n)!}\int_{0}^{+\infty}e^{-x}x^ndx=\sum_{n=0}^{+\infty}\frac{(-1)^n}n!{(2n)!}\]
+	\end{enumerate}
+	
+	
+	
 	\subsection{Permutation Série-intégrale (2)}\label{sec:permutation-serie-integrale-2}
 	\textcolor{blue}{\hyperref[Permutation série-intégrale 2]{[Enoncé]}}\\
 	\subsection{Fonction d'écart Logarithmique intégral \etoile{2}}\label{sec:fonction-decart-logarithmique-integral-etoile2}
@@ -5947,9 +5971,11 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\end{align*}
 		Donc \[I_n\sim J_n\sim \frac{1-\ln(2)}{n}\]
 	\end{enumerate}
+	
 	\subsection{Constante d'Apéry}
 	\label{Constante d'Apéry corrigé}
 	\textcolor{blue}{\hyperref[Constante d'Apéry]{[Enoncé]}}\\
+	
 	
 	\subsection{Comportement asymptotique (1)}
 	\label{Comportement asymptotique (1) corrigé}
