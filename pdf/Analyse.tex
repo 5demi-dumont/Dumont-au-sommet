@@ -108,13 +108,14 @@
 	
 \chapter{Suite et série numérique}
 	
-	\section{Lemme de Césarò \ccinp{2}} 
-	\textcolor{blue}{\hyperref[sec:lemme-de-cesaro-etoile2]{[Corrigé]}}\\
-	\label{Lemme de Cesaro}
+	\section{Lemme de Cesàro \ccinp{2}} 
+	\textcolor{blue}{\hyperref[Lemme de Cesàro corrigé]{[Corrigé]}}\\
+	\label{Lemme de Cesàro}
 	Soit $(u_n)\in \C^\N$ une suite de limite $\ell\in \overline{\R}$.\\
-	 Démontrer que $(\sigma_n)_{n\in \N}$ définie par $\forall n \in \N,\  \sigma_n=\displaystyle\frac{1}{n+1}\displaystyle\sum\limits_{k=0}^nu_k$  tend également vers $\ell$.
+	Démontrer que $(\sigma_n)_{n\in \N}$ définie par $\forall n \in \N,\  \sigma_n=\displaystyle\frac{1}{n+1}\displaystyle\sum\limits_{k=0}^nu_k$  tend également vers $\ell$.
+	
 	\subsection{Lemme de l'escalier\etoile{1}}
-	Montrer que si $u_{n+1}-u_n$ tend vers un nombre $\ell\ne0$. Alors $u_n\sim\ell n$.
+	Montrer que si $(u_{n+1}-u_n)_{n\in \N}$ tend vers un réel $\ell\ne0$. Alors $u_n\unfty\sim\ell n$.
 	
 	\section{Théorèmes Taubériens d'Hardy \etoile{1}}
 	\textcolor{blue}{\hyperref[sec:theoremes-tauberiens-dhardy-etoile1]{[Corrigé]}}\\
@@ -1191,6 +1192,7 @@
 		\item On suppose que $f(a)=f'(a)=\dots=f^{(n-1)}(a)=f(b)=0$.\\
 		Démontrer que qu'il existe $c\in]a,b[$ tel que $f^{(n)}(c)=0$.
 	\end{enumerate}
+	
 	\section{Dérivée symétrique \ccinp{1}}
 	\textcolor{blue}{\hyperref[sec:derivee-symetrique-etoile1]{[Corrigé]}}\\
 	\label{deriveesymetrique}
@@ -1199,6 +1201,25 @@
 	\begin{enumerate}
 		\item Prouver la dérivabilité en $a$ est une condition suffisante de dérivabilité symétrique en $a$.
 		\item Est-ce une condition nécessaire ?
+	\end{enumerate}
+	
+	\section{Continuité au sens de Cesàro}
+	\textcolor{blue}{\hyperref[Continuité au sens de Cesàro corrigé]{[Corrigé]}}\\
+	\label{Continuité au sens de Cesàro}
+	Soit $f:\R\to \R$ telle que $\forall x,y\in \R,\ f(x+y)=e^yf(x)+e^xf(y)$.
+	Soit $f$ une fonction réelle. On dit que $f$ est \textit{continue au sens de Cesàro} en $a\in \R$ lorsque $$\forall (x_n)\in \R^\N,\ \displaystyle\frac{1}{n}\sum_{k=1}^nx_k\unfty\longrightarrow a\implies \frac{1}{n}\sum_{k=1}^nf(x_k)\unfty\longrightarrow f(a)$$
+	\begin{enumerate}
+		\item Montrer que si $f$ est continue au sens de Cesàro alors $\forall (x,y)\in \R^2,\ f\left(\dfrac{x+y}{2}\right)=\dfrac{f(x)+f(y)}{2}$.
+		\item En déduire l'ensemble des fonctions réelles continues au sens de Cesàro.
+	\end{enumerate}
+	
+	\section{Une équation fonctionnelle exponentielle}
+	\textcolor{blue}{\hyperref[Une équation fonctionnelle exponentielle corrigé]{[Corrigé]}}\\
+	\label{Une équation fonctionnelle exponentielle}
+	Soit $f:\R\to \R$ telle que $\forall x,y\in \R,\ f(x+y)=e^yf(x)+e^xf(y)$.
+	\begin{enumerate}
+		\item On suppose $f$ dérivable en $0$. Déterminer $f$.
+		\item On suppose $f$ continue sur $\R$. Déterminer $f$.
 	\end{enumerate}
 	
 	\section{Fonction de Pringsheim \etoile{2}}
@@ -4499,9 +4520,10 @@ Démontrer l'équivalence des deux affirmations suivantes :
 \newpage
 \chapter{Correction}
 
-\section{Correction Suite et série numérique}\label{sec:correction-suite-et-serie-numerique}
-	\subsection{Lemme de Césarò \etoile{2}}\label{sec:lemme-de-cesaro-etoile2}
-	\textcolor{blue}{\hyperref[Lemme de Cesaro]{[Enoncé]}}\\
+\section{Correction Suite et série numérique}
+	\subsection{Lemme de Cesàro \etoile{2}}
+	\label{Lemme de Cesàro corrigé}
+	\textcolor{blue}{\hyperref[Lemme de Cesàro]{[Enoncé]}}\\
 	Si $\ell\in \R$ alors $u_n-\ell\unfty{=}\smallo{1}$.\\
 	Or $\displaystyle\sum\limits_{n\geq 0} 1$ diverge et $(1)_{n\in \N}$ est de signe constant APCR donc \[\displaystyle\sum\limits_{k=0}^n(u_k-\ell)=\displaystyle\sum\limits_{k=0}^nu_k-(n+1)\ell\unfty{=} \smallo{\displaystyle\sum\limits_{k=0}^n{1}}=\smallo{n+1}\]
 	Ainsi, \[\displaystyle\frac{1}{n+1}\displaystyle\sum\limits_{k=0}^nu_k\unfty{\longrightarrow} \ell\]
@@ -4512,10 +4534,10 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Par le même raisonnement, si $\ell=-\infty$ alors $\displaystyle\frac{1}{n+1}\displaystyle\sum\limits_{k=0}^nu_k\unfty{\longrightarrow}-\infty$.
 	
 	\subsubsection{Lemme de l'escalier\etoile{1}}
-	On remarque que $\displaystyle\frac{1}{n}\sum_{k=0}^{n-1}(u_{k+1}-u_k)=\frac{1}{n}(u_n-u_0)$
-	\\Et d'après le lemme de Césarò: $\displaystyle\lim_{n\to+\infty}\frac{1}{n}\sum_{k=0}^{n-1}(u_{k+1}-u_k)=\ell$
-	\\Ainsi: on a $\displaystyle\lim_{n\to+\infty}\frac{1}{n}(u_n-u_0)=\ell$.
-	\\Par conséquent, on a bien: $u_n\sim\ell n$
+	On remarque que $\forall n\in \N^*,\ \displaystyle\frac{1}{n}\sum_{k=0}^{n-1}(u_{k+1}-u_k)=\frac{1}{n}(u_n-u_0)$
+	\\Et d'après le lemme de Cesàro: $\displaystyle\lim_{n\to+\infty}\frac{1}{n}\sum_{k=0}^{n-1}(u_{k+1}-u_k)=\ell$
+	\\Ainsi $\displaystyle\lim_{n\to+\infty}\frac{1}{n}(u_n-u_0)=\ell$.
+	\\Par conséquent, $u_n\unfty\sim\ell n$.
 	
 	\subsection{Théorèmes Taubériens d'Hardy \etoile{1}}\label{sec:theoremes-tauberiens-dhardy-etoile1}
 	\textcolor{blue}{\hyperref[Théorèmes Taubériens d'Hardy]{[Enoncé]}}\\
@@ -6160,6 +6182,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	
 	\subsection{Theorème de Rolle}\label{sec:theoreme-de-rolle}
 	\textcolor{blue}{\hyperref[Théorème de Rolle]{[Enoncé]}}\\
+	
 	\subsection{Dérivée symétrique \etoile{1}}\label{sec:derivee-symetrique-etoile1}
 	\textcolor{blue}{\hyperref[deriveesymetrique]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -6169,7 +6192,63 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		$f$ n'est pas dérivable en $0$ pourtant, $\displaystyle\frac{f(h)-f(-h)}{2h}=0\underset{h\to 0}{\longrightarrow}0$.
 	\end{enumerate}
 	
-	\subsection{Fonction de Pringsheim \etoile{2}}\label{sec:fonction-de-pringsheim-etoile2}
+	\subsection{Continuité au sens de Cesàro \centraleponts{3}}
+	\label{Continuité au sens de Cesàro corrigé}
+	\textcolor{blue}{\hyperref[Continuité au sens de Cesàro]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Supposons que $f$ est continue au sens de Cesàro.\\
+		Soit $(x,y)\in \R^2$. On définie une suite $(z_n)_{n\in \N^*}$ par $\forall n\in \N^*,\ z_{2n}=x,\ z_{2n-1}=y$. On note $\forall n\in \N^*,\ c_n=\displaystyle\frac{1}{n}\sum_{k=1}^nz_k$. Alors\\
+		\begin{itemize}
+			\item $c_{2n}=\displaystyle\frac{1}{2n}\sum_{k=1}^{2n}z_k=\frac{1}{2n}\left(\sum_{k=1}^nz_{2k}+\sum_{k=1}^nz_{2k-1}\right)=\frac{nx+ny}{2n}=\frac{x+y}{2}\unfty\longrightarrow\frac{x+y}{2}$;
+			\item $c_{2n+1}=\displaystyle\frac{1}{2n+1}\sum_{k=1}^{2n+1}z_k=\frac{1}{2n+1}\left(\sum_{k=1}^nz_{2k}+\sum_{k=1}^{n+1}z_{2k-1}\right)=\frac{nx+(n+1)y}{2n+1}\longrightarrow\frac{x+y}{2}$.
+		\end{itemize}
+		Ainsi $c_n\unfty\longrightarrow\dfrac{x+y}{2}$. Donc par continuité de Cesàro $f(c_n)\unfty\longrightarrow f\left(\dfrac{x+y}{2}\right)$.\\
+		Or on montre de même que pour $(c_n)$ que $f(c_n)\unfty\longrightarrow\dfrac{f(x)+f(y)}{2}$.\\
+		Donc par unicité de la limite, $f\left(\dfrac{x+y}{2}\right)=\dfrac{f(x)+f(y)}{2}$.
+		\item Soit $(x,y)\in \R^2$. Posons $g=f-f(0)$. $g$ vérifie la même équation que $f$ et est continue au sens de Cesàro.\\
+		En évaluant l'égalité en $(2x,0)$ on obtient $g(x)=\dfrac{g(2x)}{2}$.\\
+		Puis en évaluant l'égalité en $(2x,2y)$ on obtient $g(x+y)=\dfrac{g(2x)+g(2y)}{2}=g(x)+g(y)$.\\
+		On montre alors classiquement (cf. V.18 tome Algèbre) que $g_{|\Q}=g(1)\Id_\Q$.\\
+		On a envie de conclure par densité de $\Q$ en invoquant la continuité de $g$. Malheureusement la continuité au sens de Cesàro n'implique par la continuité usuelle (car la réciproque du lemme de Cesàro est fausse). Il faut donc réussir à écrire un réel $x$ quelconque comme limite d'une suite $(c_n)=\left(\displaystyle\frac{1}{n}\sum_{k=1}^nx_k\right)$ où $(x_n)\in \Q^\N$.\\
+		On sait que $x=\unfty\lim\dfrac{\lfloor nx\rfloor}{n}$. Donc par le lemme de Cesàro (cf.\ref{Lemme de Cesàro}) $x=\displaystyle\unfty\lim\frac{1}{n}\sum_{k=1}^n\frac{\lfloor kx\rfloor}{k}$.\\
+		On en déduit par densité de $\Q$ dans $\R$ que $g=g(1)\Id_\R$.\\
+		Par suite $\exists (m,p)=(g(1),f(0))\in \R^2,\ \forall x\in \R,\ f(x)=mx+p$.\\
+		Réciproquement, toutes les fonctions affines sont continues au sens de Cesàro.
+	\end{enumerate}
+	
+	\subsection{Une équation fonctionnelle exponentielle \telecom{3}}
+	\label{Une équation fonctionnelle exponentielle corrigé}
+	\textcolor{blue}{\hyperref[Une équation fonctionnelle exponentielle]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item En prenant $x=y=0$ on obtient $f(0)=2f(0)$ d'où $f(0)=0$. Etant donnée l'hypothèse que l'on a, faisons apparaître le taux d'accroissement de $f$ en $0$ :\\
+		$\forall x\in \R,\ \forall h\in \R,\ \dfrac{f(x+h)-f(x)}{h}=\dfrac{e^h-1}{h}f(x)+e^x\dfrac{f(h)}{h}$.\\
+		Par hypothèse $\dfrac{f(h)}{h}=\dfrac{f(h)-f(0)}{h-0}\underset{h\to 0}\longrightarrow f'(0)$ donc $\dfrac{f(x+h)-f(x)}{h}\underset{h\to 0}\longrightarrow f(x)+f'(0)e^x$.\\
+		Ainsi $f$ est solution sur $\R$ du problème de Cauchy
+		$$\begin{cases}
+			f'(x)=f(x)+f'(0)e^x\\
+			f(0)=0
+		\end{cases}$$
+		On en déduit $\forall x\in \R,\ f(x)=f'(0)xe^x$.
+		Réciproquement, $\forall \lambda\in \R,\ x\mapsto \lambda xe^x$ est solution.
+		\item
+		\underline{$1^{\T{ère}}$ méthode :}\\
+		Posons $F:x\mapsto \displaystyle\int_0^xf(t)dt$. Fixons $y\in \R$ et $z>0$. En intégrant l'équation par rapport à $x$ de $0$ à $z$ on obtient :\\
+		$F(y+z)-F(y)=\displaystyle\int_y^{y+z}f(t)dt=\int_0^zf(t+y)dt=e^yF(z)+(e^z-1)f(y)$.\\
+		Donc $f(y)=\dfrac{F(y+z)-F(y)-e^yF(z)}{e^z-1}$. Par le TFA cette expression est $\mathcal C^1$ en $y$ donc on est ramené au cas de la question 1.\\
+		\underline{$2^{\T{nd}}$ méthode :}\\
+		On remarque que $\forall (x,y)\in \R^2,\ \dfrac{f(x+y)}{e^{x+y}}=\dfrac{f(x)}{e^x}+\dfrac{f(y)}{e^y}$.\\
+		La fonction $g:t\mapsto \dfrac{f(t)}{e^t}$ vérifie donc :
+		$$\begin{cases}
+			\forall (x,y)\in \R^2,\ g(x+y)=g(x)+g(y)\\
+			g\mbox{ est continue sur }\R
+		\end{cases}$$
+		On montre alors classiquement (cf. V.18 tome Algèbre) que $g=g(1)\Id_\R$ et par suite $\forall t\in \R,\ f(t)=g(1)te^t$.\\
+		Réciproquement, $\forall \lambda\in \R,\ t\mapsto \lambda te^t$ est solution.\\\\
+		\textit{Remarque : La continuité de $f$ en $0$ donne sa continuité sur $\R$, en effet si $x\in \R$ alors $f(x+h)=e^hf(x)+e^xf(h)\underset{h\to 0}\longrightarrow f(x)+e^xf(0)=f(x)$ donc $f$ est continue en $x$.}
+	\end{enumerate}
+	
+	\subsection{Fonction de Pringsheim \etoile{2}}
+	\label{sec:fonction-de-pringsheim-etoile2}
 	\textcolor{blue}{\hyperref[fpringsheim]{[Enoncé]}}\\
 	On reconnaît bien évidemment la fonction indicatrice de $\Q$ !\\
 	Soit $x\in \Q$. On note $x=\displaystyle\frac{a}{b}$ avec $a\in \Z$ et $b\in \N^*$.\\\\
