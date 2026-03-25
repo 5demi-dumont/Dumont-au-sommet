@@ -157,23 +157,22 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item $M$ est une matrice d'homothétie.
 	\end{itemize}
 	
-	\section{Isomorphisme de $\M_n(\K)$ qui respecte les matrices de rang 1}
-	\label{Isomorphisme de M_n(K) qui respecte les matrices de rang 1}
-	\textcolor{blue}{\hyperref[Isomorphisme de M_n(K) qui respecte les matrices de rang 1 corrigé]{[Corrigé]}}\\
-	Soit $f\in \T{GL}(\M_n(\K))$ telle que $\forall M\in \M_n(\K),\ \rg(M)=1\implies \rg(f(M))=1$. On note $\mathcal C=\M_{n,1}(\K),\ \L=\M_{1,n}(\K)$ et $\mathcal R=\{CL,\ (C,L)\in \mathcal C\times\L\}$. On note aussi pour $i,j\in \crblanc{1}{n},\ E_{ij}$ la matrice élémentaire, dont tous les coefficients sont nuls sauf celui en position $(i,j)$ qui vaut $1$. Enfin on note $(E_i)_{1\leq i\leq n}$ la base canonique de $\M_{n,1}(\K)$.
+	\section{Isomorphisme qui respecte les matrices de rang 1 \centraleponts{4}}
+	\label{Isomorphisme qui respecte les matrices de rang 1}
+	\textcolor{blue}{\hyperref[Isomorphisme qui respecte les matrices de rang 1 corrigé]{[Corrigé]}}\\
+	Soit $f\in \T{GL}(\M_n(\K))$ telle que $\forall M\in \M_n(\K),\ \rg(M)=1\implies \rg(f(M))=1$.\\
+	On note $\mathcal C=\M_{n,1}(\K),\ \L=\M_{1,n}(\K)$ et $\mathcal R=\{CL,\ (C,L)\in \mathcal C\times\L\}$. On note aussi pour $i,j\in \crblanc{1}{n},\ E_{ij}$ la matrice élémentaire, dont tous les coefficients sont nuls sauf celui en position $(i,j)$ qui vaut $1$. Enfin on note $(E_i)_{1\leq i\leq n}$ la base canonique de $\mathcal C$.
 	\begin{enumerate}
-		\item Calculer le produit $E_j^\top E_i$ pour $i,j\in \crblanc{1}{n}$.
-		\item Montrer que $\mathcal R$ est l'ensemble des matrices de rang inférieur ou égal à $1$. En déduire que pour tout $i,j\in \crblanc{1}{n},\ \mathcal R=\{AE_{ij}B,\ A,B\in \T{GL}_n(\K)\}$.
-		\item Soient $(C_1,C_2)\in \mathcal C$ et $(L_1,L_2)\in \L$.\\
-		Montrer que $\rg(C_1L_1+C_2L_2)\geq 2$ si et seulement si $(C_1,C_2)$ et $(L_1,L_2)$ sont libres.
-		\item Soit $\{0\}\ne\mathcal F\subset \mathcal R$ un sous-espace vectoriel de $\M_n(\K)$. Déduire de ce qui précède l'existence d'une colonne non nulle $C$ telle que $\mathcal F\subset C\mathcal L$ ou bien d'une ligne non nulle $L$ telle que $\mathcal F\subset \mathcal CL$.
+		\item Montrer que $\mathcal R$ est l'ensemble des matrices de rang inférieur ou égal à $1$.
+		\item Soient $(C_1,C_2)\in \mathcal C^2$ et $(L_1,L_2)\in \L^2$.\\
+		Montrer que $C_1L_1+C_2L_2\in \mathcal R$ si et seulement si $C_1$ est colinéaire à $C_2$ ou $L_1$ est colinéaire à $L_2$.
+		\item Soit $\mathcal F\subset \mathcal R$ un sous-espace vectoriel non nul de $\M_n(\K)$. Déduire de ce qui précède l'existence d'une colonne non nulle $C$ telle que $\mathcal F\subset C\mathcal L$ ou bien d'une ligne non nulle $L$ telle que $\mathcal F\subset \mathcal CL$.
 		\item Justifier la décomposition $\M_n(\K)=\displaystyle\bigoplus_{i=1}^nE_i\L$.
 		\item En déduire l'existence de deux matrices $A,B\in \T{GL}_n(\K)$ vérifiant une des deux affirmations :
 		\begin{itemize}
-			\item $\forall i,j\in \crblanc{1}{n},\ f(E_{ij})=AE_{ij}B$
-			\item $\forall i,j\in \crblanc{1}{n},\ f(E_{ij})=AE_{ji}B$.
+			\item $\forall M\in \T{GL}_n(\K),\ f(M)=AMB$
+			\item $\forall M\in \T{GL}_n(\K),\ f(M)=AM^\top B$.
 		\end{itemize}
-		\item Déterminer $f$.
 	\end{enumerate}
 	
 	\section{\underline{Centre de $\M_n(\K)$} \centraleponts{2}}
@@ -1442,10 +1441,15 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Morphismes de Z/nZ dans Z/mZ corrigé]{[Corrigé]}}\\
 	Soient $m,n\in \N^*$. Déterminer les morphismes de groupes de $(\Z/n\Z,+)$ dans $(\Z/m\Z,+)$.
 	
-	\section{Morphismes de GL$_n(\R)$ dans $\Z /m\Z$ \xens{5}}
+	\section{Morphismes de GL$_n(\R)$ dans $\Z /m\Z$ \xens{4}}
 	\label{Morphismes de GLn(R) dans Z/mZ}
 	\textcolor{blue}{\hyperref[Morphismes de GLn(R) dans Z/mZ corrigé]{[Corrigé]}}\\
-	Soient $m,n \in \N^*$. Déterminer les morphismes de $(\text{GL}_n(\R),\times)$ dans $(\Z /m\Z,+)$.
+	Soient $m,n \in \N^*$. Déterminer les morphismes de groupes de $(\T{GL}_n(\R),\times)$ dans $(\Z/m\Z,+)$.
+	
+	\section{Morphismes polynomiaux de GL$_n(\K)$ \xens{5}}
+	\label{Morphismes polynomiaux de GLn(K)}
+	\textcolor{blue}{\hyperref[Morphismes polynomiaux de GLn(K) corrigé]{[Corrigé]}}\\
+	Soit $\chi:\T{GL}_n(\K)\to \K^*$ un morphisme de groupe polynomial.\\ Montrer que $\chi$ est une puissance du déterminant.
 	
 	\section{Quasi-morphisme \centraleponts{3}}
 	\label{Quasi-morphisme}
@@ -4272,11 +4276,6 @@ On se donne $G$ un sous-groupe fini de GL$(V)$ et on note :
 $$V^G=\{x\in V\ |\ \forall g\in G,\ g(x)=x\}$$
 Démontrer que $\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}\Tr(g)=\dim(V^G)$.
 
-\section{Caractères algébriques de GL$_n(\K)$}
-\label{Caractères algébriques de GLn(K)}
-\textcolor{blue}{\hyperref[Caractères algébriques de GLn(K) corrigé]{[Corrigé]}}\\
-Soit $\chi:\text{GL}_n(\K)\to \K^*$ un morphisme de groupe polynomial.\\ Montrer que $\chi$ est une puissance du déterminant.
-
 \section{Théorème de Fermat matriciel \xens{3} (HP)}
 \label{Théorème de Fermat matriciel}
 \textcolor{blue}{\hyperref[Théorème de Fermat matriciel corrigé]{[Corrigé]}}\\
@@ -4406,9 +4405,59 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Réciproquement, supposons que $M$ vérifie la propriété de l'énoncé.\\
 	Alors elle est vérifié en particulierr pour les matrices élémentaires, cela va nous fournir des conditions très restrictives sur les coefficients de $M$.\\ On en déduit que $M$ est une homothétie.
 	
-	\subsection{Isomorphisme de $\M_n(\K)$ qui respecte les matrices de rang 1}
-	\label{Isomorphisme de M_n(K) qui respecte les matrices de rang 1 corrigé}
-	\textcolor{blue}{\hyperref[Isomorphisme de M_n(K) qui respecte les matrices de rang 1]{[Enoncé]}}\\
+	\subsection{Isomorphisme de qui respecte les matrices de rang 1 \centraleponts{4}}
+	\label{Isomorphisme qui respecte les matrices de rang 1 corrigé}
+	\textcolor{blue}{\hyperref[Isomorphisme qui respecte les matrices de rang 1]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $0_n=0_{n,1}\times 0_{1,n}\in \mathcal R$.
+		Soit $M\in \M_n(\K)$ une matrice de rang $1$ dont on note $C_1,\dots,C_n$ les colonnes. Alors il existe une colonne $C_i$ non nulle ainsi que $a_1,\dots,a_{i-1},a_{i+1},\dots,a_n\in \K$ tels que $\forall k,\ C_j=a_jC_i$. Alors $M=CL$ avec $C=C_i$ et $L=(a_1,\dots,a_{i-1},1,a_{i+1},\dots,a_n)$.\\
+		Réciproquement, si $(C,L)\in \mathcal C\times \L$ alors $\Ima(CL)\subset \Vect(C)$ d'où $\rg(CL)\leq 1$.\\
+		Ensuite, on sait que pour tout $i,j\in \crblanc{1}{n},\ \rg(E_{ij})=1$. Comme deux matrices ont même rang si et seulement si elles sont équivalentes, $\mathcal R=\{AE_{ij}B,\ A,B\in \T{GL}_n(\K)\}\cup\{0\}$.
+		\item Supposons que $C_1$ et $C_2$ sont colinéaires. Quitte à échanger $C_1$ et $C_2$, il existe $\alpha\in \K$ tel que $C_2=\alpha C_1$. Alors $C_1L_1+C_2L_2=C_1(L_1+\alpha L_2)\in \mathcal R$. Donc $\rg(C_1L_1+C_2L_2)<2$.\\
+		De même si $L_1$ et $L_2$ sont colinéaires alors $C_1L_1+C_2L_2\in \mathcal R$.\\
+		Réciproquement, supposons que $(L_1,L_2)$ et $(C_1,C_2)$ sont libres. Alors,\\
+		$$\forall X\in \mathcal C,\ X\in (C_1L_1+C_2L_2)X=0\implies (L_1X)C_1+(L_2X)C_2=0\implies L_1X=L_2X=0$$
+		Donc $X\in \Ker(L_1)\cap\Ker(L_2)$. C'est une intersection de deux hyperplans non confondus car $(L_1,L_2)$ est libre. Ainsi $\dim(\Ker(C_1L_1+C_2L_2))\leq \dim(\Ker(L_1)\cap\Ker(L_2))\leq n-2$.\\
+		Par le théorème du rang, $\rg(C_1L_1+C_2L_2)\geq 2$ i.e $C_1L_1+C_2L_2\notin \mathcal R$.\\
+		On peut aussi compléter $(C_1,C_2)$ et $(L_1,L_2)$ en des bases $(C_1\dots,C_n)$ et $(L_1,\dots,L_n)$ de $\mathcal C$ et $\L$ respectivement. En notant $A$ la matrice dont les colonnes sont $C_1,\dots,C_n$ et $B$ celles dont les lignes sont $L_1,\dots,L_n$, i.e $AE_i=C_i$ et $E_i^\top B=L_i$, alors on a
+		$$A^{-1}(C_1L_1+C_2L_2)B^{-1}=E_{11}+E_{22}$$
+		qui est de rang $2$.
+		\item Notons $\B=(M_1,\dots,M_p)$ une base de $\F$. $\F$ est une sous-espace formé de matrices de rang au plus $1$ donc on peut écrire pour $i\in \crblanc{1}{p},\ M_i=C_iL_i$ avec $L_i\in \L$ et $C_i\in \mathcal C$.\\
+		Comme $\F$ n'est pas nul on peut supposer $M_1\ne 0$ et par suite, $L_1\ne 0$ et $C_1\ne 0$.\\
+		D'après la question précédente, $C_1L_1+C_iL_i\in \mathcal R$ impose $C_1$ colinéaire à $C_i$ ou $L_1$ colinéaire à $L_i$.\\
+		Si toutes les colonnes $C_i$ sont liées alors $\F\subset C_1\L$. Supposons que ce n'est pas le cas.\\
+		Quitte à réindicer on peut supposer $(C_1,C_2)$ libre. Alors $L_2$ est colinéaire à $L_1$. Et puis pour tout $i\geq 3$, $L_i$ est colinéaire à $L_1$ (sinon $C_i$ est colinéaire à $C_1$ et $C_2$).\\
+		Dans ce cas $\F\subset \mathcal CL_1$.
+		\item On sait que $\fonction{\Phi}{\L^n}{\M_n(\K)}{(L_1,\dots,L_n)}{\displaystyle\sum_{i=1}^nE_iL_i=\begin{pmatrix}
+				L_1\\
+				\hline
+				\vdots\\
+				\hline
+				L_n
+		\end{pmatrix}}$ est un isomorphisme.\\
+		Donc $\M_n(\K)=\displaystyle\bigoplus_{i=1}^nE_i\L$.
+		\item D'après la question précédente il suffit de déterminer $f$ sur les $E_i\L$.\\
+		Comme $f(E_i\L)$ est un sous-espace non nul inclus dans $\mathcal R$, la question 4 donne l'existence de $C_i\in \mathcal C\backslash\{0_{n,1}\}$ ou de $L_i\in \L\backslash\{0_{1,n}\}$ telle que $f(E_i\L)\subset C_i\L$ ou $f(E_i\L)\subset \mathcal CL_i$.\\
+		De plus, $f$ est un isomorphisme donc $\dim(f(E_i\L))=\dim(E_iL)=\dim(C_i\L)=\dim(\mathcal CL_i)$. On en déduit $f(E_i\L)=C_i\L$ ou $f(E_i\L)=\mathcal CL_i$.\\
+		Pour fixer les idées on peut voir que quitte à considérer $f\circ T$, où $T:M\mapsto M^\top$ est l'endomorphisme de transposition, on a $f(E_1\L)=C_1\L$. Montrons alors que $\forall i\in \crblanc{1}{n},\ f(E_i\L)=C_i\L$.\\
+		On sait que $f$ envoie une somme directe sur une somme directe. Or si $(C,L)\in \mathcal C\backslash\{0_{n,1}\}\times\L\backslash\{0_{1,n}\}$ alors $\dim(C\L\cap\mathcal CL)>0$.\\
+		Pour le vérifier, posons pour $A,B\in \T{GL}_n(\K),\ g_A:M\mapsto AM$ et $d_B:M\mapsto MB$. On choisit $A$ et $B$ telles que $A^{-1}C=E_1=LB^{-1}$.\\
+		Montrons que pour $\varphi=d_B\circ g_A$ on a $\varphi(E_1\L\cap\mathcal CE_1)\subset C\L\cap\mathcal CL$.\\
+		Si $M=E_1L_0=C_0E_1$ alors $\varphi(M)=AMB$. D'une part $AMB=AE_1L_0B=C(L_0B)\in C\L$ et d'autre part, $AMB=AC_0E_1B=(AC_0)L\in \mathcal CL$.\\
+		On en déduit $\dim(C\L\cap\mathcal CL)\geq \dim(\varphi(E_1\L\cap\mathcal CE_1))=\dim(E_1\L\cap\mathcal CE_1)$. Or $E_1\L\cap\mathcal CE_1$ est l'intersection des matrices qui n'ont que leur première ligne/colonne non nulle. C'est donc la droite vectorielle engendrée par $E_{11}$, qui est de dimension $1$.\\
+		Ainsi, $f(E_i\L_i)$ ne peut pas être de la forme $\mathcal CL$.\\
+		On a donc construit des matrices colonnes $C_1,\dots,C_n$, qui forment une famille libre par le caractère direct de la décomposition de $\M_n(\K)$, telles que $\forall i\in \crblanc{1}{n},\ f(E_i\L)=C_i\L$.\\
+		En particulier on a $f(E_{ij})=f(E_iE_j^\top)=C_iL_j$ pour de certains $L_j\in \L$.\\
+		Si on note $A$ la matrice dont les colonnes sont $C_1,\dots,C_n$ et $B$ celle dont les lignes sont $L_1,\dots,L_n$ alors on peut écrire :
+		$$f(E_{ij})=AE_iE_j^\top B=AE_{ij}B$$
+		On en déduit par linéarité que $\forall M\in \M_n(\K),\ f(M)=AMB$.\\
+		Pour conclure, rappelons nous que l'on avait fait un choix en regardant $f$ ou $f\circ T$. Ainsi, il existe $A$ et $B$ deux matrices inversibles telles que l'on ait une des deux affirmations :
+		\begin{itemize}
+			\item $\forall M\in \M_n(\K),\ f(M)=AMB$;
+			\item $\forall M\in \M_n(\K),\ f(M)=AM^\top B$.
+		\end{itemize}
+		\textit{Remarque : Les isomorphismes solutions conservent en fait le rang de manière générale.}
+	\end{enumerate}
 	
 	\subsection{Centre de $\M_n(\K)$ \centraleponts{2}}
 	\label{Centre de Mn(K) corrigé}
@@ -6444,7 +6493,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Ainsi si $f: \Z/n\Z \longrightarrow \Z/m\Z$ est un morphisme alors $nf(\overline{1})\equiv 0[m]$.\\
 	La réciproque est immédiate.
 	
-	\subsection{Morphismes de GL$_n(\R)$ dans $\Z /m\Z$ \xens{5}}
+	\subsection{Morphismes de GL$_n(\R)$ dans $\Z /m\Z$ \xens{4}}
 	\label{Morphismes de GLn(R) dans Z/mZ corrigé}
 	\textcolor{blue}{\hyperref[Morphismes de GLn(R) dans Z/mZ]{[Enoncé]}}\\
 	Soit $f$ un morphisme de $(\text{GL}_n(\R),\times)$ dans $(\Z/m\Z,+)$. On note $D_i(\lambda)=I_n+(1-\lambda)E^n_{ii}$ pour $i\in \crblanc{1}{n}$ et $\lambda\in \R^*$ les matrices de dilatations (où $E^n_{ij}$ représente la matrice carrée de taille $n$ ayant un $1$ en position $(i,j)$ et des $0$ partout ailleurs). On note $T_{ij}(\lambda)=I_n+\lambda E^n_{ij}$ pour $(i,j)\in \crblanc{1}{n}^2,i\ne j$ et $\lambda\in \R$ les matrices de transvections.\\
@@ -6469,11 +6518,41 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$MAN=\left(\begin{array}{c|c}1&0\\\hline0&M_1\end{array}\right)\left(\begin{array}{c|c}1&0\\\hline0&A_0\end{array}\right)\left(\begin{array}{c|c}1&0\\\hline0&N_1\end{array}\right)=\left(\begin{array}{c|c}1&0\\\hline0&M_1A_0N_1\end{array}\right)=\left(\begin{array}{c|c}1&0\\\hline0&D_{n-1}(\det A)\end{array}\right)=D_n(\det A)$ et $M,N$ soient des produits de matrices de transvection.\\
 	$\left(\begin{array}{c|c}1&0\\\hline0&M_1\end{array}\right)$ est bien une matrice de transvection car pour $(i,j)\in \crblanc{1}{n-1}^2$ et $\lambda\in \R$ tel que $M_1=I_{n-1}+\lambda E^{n-1}_{ij}$, on a $\left(\begin{array}{c|c}1&0\\\hline0&M_1\end{array}\right)=I_n+\lambda E^n_{ij}$. De même, $\left(\begin{array}{c|c}1&0\\\hline0&N_1\end{array}\right)$ est bien une matrice de transvection.\\\\
 	\textit{Remarque : on a en fait montré que} SL$_n(\R)$ \textit{est engendré par les matrices de transvection et que} GL$_n(\R)$ \textit{est engendré par les matrices de transvection et les matrices de dilatation.}\\\\
-	Revenons à $f$. Pour déterminer un morphisme, il suffit de déterminer l'image d'une partie génératrice. Comme $\Z/m\Z$ est d'ordre $m$, $\forall A\in \text{GL}_n(\R),\ f(A^m)=\overline{m}f(A)=\overline{0}$.\\
-	Puisque $T_{ij}(\lambda)=\displaystyle T_{ij}\left(\frac{\lambda}{m}\right)^m$, on a $f(T_{ij}(\lambda))=0$. On en déduit que pour tout $A\in \text{GL}_n(\R),\ f(A)=f(D_n(\det A))$.\\
+	Revenons à $f$. Pour déterminer un morphisme, il suffit de déterminer l'image d'une partie génératrice. Comme $\Z/m\Z$ est d'ordre $m$, $\forall A\in \text{GL}_n(\R),\ f(A^m)=\overline{m}f(A)=\overline 0$.\\
+	Puisque $T_{ij}(\lambda)=\displaystyle T_{ij}\left(\frac{\lambda}{m}\right)^m$, on a $f(T_{ij}(\lambda))=\overline 0$. On en déduit que pour tout $A\in \text{GL}_n(\R),\ f(A)=f(D_n(\det A))$.\\
 	Si $m$ est impair, pour tout $\lambda \in \R^*,\ D_n(\lambda)=D_n\left(\sqrt[m]\lambda\right)^m=\overline{0}$ et donc $f$ est le morphisme trivial.\\
 	Si $m$ est pair, pour tout $\lambda\in \R^*_+,\ D_n(\lambda)=D_n\left(\sqrt[m]\lambda\right)^m$ donc $f(A)=\overline{0}$ pour tout $A\in \text{GL}_n^+(\R)$. De plus, si $\lambda \in \R^*_-,\ D_n(\lambda)=D_n(-1)D_n(-\lambda)$ avec $-\lambda>0$. Ainsi, $\forall A\in \text{GL}_n^-(\R),\ f(A)=f(D_n(-1))$. Or $D_n(-1)^2=I_n$ donc $f(D_n(-1))=\overline{0}$ ou $f(D_n(-1))=\overline{\displaystyle\frac{m}{2}}$.\\
 	Finalement, $f$ est soit le morphisme trivial, soit le morphisme valant $\overline 0$ sur GL$_n^+(\R)$ et $\overline{\displaystyle\frac{m}{2}}$ et GL$_n^-(\R)$.
+	
+	\subsection{Morphismes polynomiaux de $GL_n(\K)$ \xens{5}}
+	\label{Morphismes polynomiaux de GLn(K) corrigé}
+	\textcolor{blue}{\hyperref[Morphismes polynomiaux de GLn(K)]{[Enoncé]}}\\
+	D'après l'énoncé, $\exists R\in \K[X_1,\dots,X_{n^2}],\ \forall A=(a_{ij})_{1\leq i,j\leq n}\in \T{GL}_n(\K),\ \chi(A)=R((a_{ij})_{1\leq i,j\leq n})$.\\
+	On sait que GL$_n(\K)$ est engendré par les matrices de dilatations $D_n(\lambda)=\left(\begin{array}{c|ccc}
+		\lambda & 0 & \cdots & 0\\
+		\hline
+		0 & & &\\
+		\vdots& & I_{n-1} &\\
+		0 & & &
+	\end{array}\right),\lambda\in \K^*$ et les matrices de transvections $T_{ij}(\lambda)=I_n+\lambda E_{ij},\ \lambda\in \K,i\ne j$. Il suffit donc de montrer que $\chi$ coïncide avec une puissance du déterminant sur ces matrices.
+	\begin{itemize}
+		\item Fixons $\lambda\in \K^*$.\\
+		On note $P=\chi(D_n(X))\in \K[X]$ et on note $d$ son degré. $P$ n'est pas le polynôme nul puisque $P(1)=\chi(I_n)=1$ donc $d$ est un entier naturel.\\
+		$\forall \lambda,\mu\in \K^*,\ P(\lambda\mu)=\chi(D_n(\lambda\mu))=\chi(D_n(\lambda)D_n(\mu))=\chi(D_n(\lambda))\chi(D_n(\mu))=P(\lambda)P(\mu)$. Donc comme $\K$ est infini, $P(X)P(\mu)=P(\mu X)$. Par dérivation successive on obtient $P(\mu)P^{(d)}(X)=\mu^d P^{(d)}(\mu X)$. Or $P^{(d)}$ est un polynôme constant non nul, donc $\forall \mu\in \K^*,\ P(\mu)=\mu^d$.\\
+		Autrement dit $\exists d\in \N,\ \forall \lambda\in \K^*,\ \chi(D_n(\lambda))=\lambda^d=\det(D_n(\lambda))^d$.
+		\item Fixons $i\ne j\in \crblanc{1}{n}$ et $\lambda,\mu\in \K$.\\
+		On note $Q_{ij}=\chi(T_{ij}(X))\in \K[X]$. $T_{ij}(\lambda)T_{ij}(\mu)=I_n+(\lambda+\mu)E_{ij}=T_{ij}(\lambda+\mu)$. On en déduit la relation $Q_{ij}(X+\mu)=Q_{ij}(\mu)Q_{ij}(X)$. Or les coefficients dominants de $Q_{ij}(X+\mu)$ et $Q_{ij}(X)$ sont égaux, donc $Q_{ij}(\mu)=1$. Ainsi $\forall \lambda\in \K,\ \forall i\ne j\in\crblanc{1}{n},\ \chi(T_{ij}(\lambda))=1=\det(T_{ij}(\lambda))^d$.
+	\end{itemize}
+	Finalement, $\chi=\det^d$.\\
+	
+	Pour $\K=\C$ on peut donner la preuve alternative suivante.
+	\begin{itemize}
+		\item Fixons $\lambda\in \C^*$.\\
+		On note $P=\chi(D_n(X))\in \C[X]$. $\forall \lambda\in \C^*,\ P(\lambda)=\chi(D_n(\lambda))\ne 0$. Donc $P$ n'a pas de racine non nulle. Si $P$ n'est pas constant alors $\exists d\in \N^*,\ P=X^d$. Sinon, comme $P(1)=\chi(I_n)=1,\ P=1$.
+		\item Fixons $i\ne j\in \crblanc{1}{n}$ et $\lambda\in \C$.\\
+		On note $Q_{ij}=\chi(T_{ij}(X))\in \C[X]$. $\forall \lambda\in \C,\ \chi(T_{ij}(\lambda))=Q_{ij}(\lambda)\ne 0$. Donc $Q_{ij}$ n'a pas de racine, c'est donc un polynôme constant. Comme $Q_{ij}(0)=\chi(I_n)=1$, $Q_{ij}=1$.
+	\end{itemize}
+	\textit{Remarque : La première preuve qu'on a donné fonctionne pour n'importe quel corps infini. Le résultat est aussi vrai sur les corps finis et ce montre toujours en passant par les matrices de transvections/dilatations, en montrant au préalable qu'elles engendrent toujours le groupe linéaire lorsque $\K$ est un corps quelconque.}
 	
 	\subsection{Quasi-morphisme \centraleponts{3}}
 	\label{Quasi-morphisme corrigé}
@@ -10469,37 +10548,6 @@ On a donc construit une injection de $G$ dans $T^d$ qui est un ensemble fini. On
 	On a $x=\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}g(x)$ donc $h(x)=\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}f_h(g)(x)=\frac{1}{|G|}\sum\limits_{g\in G}g(x)=x$.\\
 	Ainsi Im$(\varphi)=V^G$.\\
 	Finalement $\dim(V^G)=\rg(\varphi)=\Tr(\varphi)=\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}\Tr(g)$.
-	
-\subsection{Caractères algébriques de $GL_n(\K)$}
-\label{Caractères algébriques de GLn(K) corrigé}
-\textcolor{blue}{\hyperref[Caractères algébriques de GLn(K)]{[Enoncé]}}\\
-D'après l'énoncé, $\exists R\in \K[X_1,\dots,X_{n^2}],\ \forall A=(a_{ij})_{1\leq i,j\leq n}\in \T{GL}_n(\K),\ \chi(A)=R((a_{ij})_{1\leq i,j\leq n})$.\\
-On sait que GL$_n(\K)$ est engendré par les matrices de dilatations $D_n(\lambda)=\left(\begin{array}{c|ccc}
-	\lambda & 0 & \cdots & 0\\
-	\hline
-	0 & & &\\
-	\vdots& & I_{n-1} &\\
-	0 & & &
-\end{array}\right),\lambda\in \K^*$ et les matrices de transvections $T_{ij}(\lambda)=I_n+\lambda E_{ij},\ \lambda\in \K,i\ne j$. Il suffit donc de montrer que $\chi$ coïncide avec une puissance du déterminant sur ces matrices.
-\begin{itemize}
-	\item Fixons $\lambda\in \K^*$.\\
-	On note $P=\chi(D_n(X))\in \K[X]$ et on note $d$ son degré. $P$ n'est pas le polynôme nul puisque $P(1)=\chi(I_n)=1$ donc $d$ est un entier naturel.\\
-	$\forall \lambda,\mu\in \K^*,\ P(\lambda\mu)=\chi(D_n(\lambda\mu))=\chi(D_n(\lambda)D_n(\mu))=\chi(D_n(\lambda))\chi(D_n(\mu))=P(\lambda)P(\mu)$. Donc comme $\K$ est infini, $P(X)P(\mu)=P(\mu X)$. Par dérivation successive on obtient $P(\mu)P^{(d)}(X)=\mu^d P^{(d)}(\mu X)$. Or $P^{(d)}$ est un polynôme constant non nul, donc $\forall \mu\in \K^*,\ P(\mu)=\mu^d$.\\
-	Autrement dit $\exists d\in \N,\ \forall \lambda\in \K^*,\ \chi(D_n(\lambda))=\lambda^d=\det(D_n(\lambda))^d$.
-	\item Fixons $i\ne j\in \crblanc{1}{n}$ et $\lambda,\mu\in \K$.\\
-	On note $Q_{ij}=\chi(T_{ij}(X))\in \K[X]$. $T_{ij}(\lambda)T_{ij}(\mu)=I_n+(\lambda+\mu)E_{ij}=T_{ij}(\lambda+\mu)$. On en déduit la relation $Q_{ij}(X+\mu)=Q_{ij}(\mu)Q_{ij}(X)$. Or le coefficients dominants de $Q_{ij}(X+\mu)$ et $Q_{ij}(X)$ sont égaux, donc $Q_{ij}(\mu)=1$. Ainsi $\forall \lambda\in \K,\ \forall i\ne j\in\crblanc{1}{n},\ \chi(T_{ij}(\lambda))=1=\det(T_{ij}(\lambda))^d$.
-\end{itemize}
-Finalement, $\chi=\det^d$.\\
-
-Pour $\K=\C$ on peut donner la preuve alternative suivante.
-\begin{itemize}
-	\item Fixons $\lambda\in \C^*$.\\
-	On note $P=\chi(D_n(X))\in \C[X]$. $\forall \lambda\in \C^*,\ \chi(D_n(\lambda))=P(\lambda)\ne 0$. Donc $P$ n'a pas de racine non nulle. Si $P$ n'est pas constant alors $\exists d\in \N^*,\ P=X^d$. Sinon, comme $P(1)=\chi(I_n)=1,\ P=1$.
-	\item Fixons $i\ne j\in \crblanc{1}{n}$ et $\lambda\in \C$.\\
-	On note $Q_{ij}=\chi(T_{ij}(X))\in \C[X]$. $\forall \lambda\in \C,\ \chi(T_{ij}(\lambda))=Q_{ij}(\lambda)\ne 0$. Donc $Q_{ij}$ n'a pas de racine, c'est donc un polynôme constant. Comme $Q_{ij}(0)=\chi(I_n)=1$, $Q_{ij}=1$.
-\end{itemize}
-
-\textit{Remarque : La première preuve qu'on a donné fonctionne pour n'importe quel corps infini. Le résultat est aussi vrai sur les corps finis et ce montre toujours en passant par les matrices de transvections/dilatations, en montrant au préalable qu'elles engendrent toujours le groupe linéaire lorsque $\K$ est un corps quelconque.}
 
 \subsection{Théorème de Fermat matriciel}
 	\label{Théorème de Fermat matriciel corrigé}
