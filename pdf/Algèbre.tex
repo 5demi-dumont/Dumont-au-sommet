@@ -5185,7 +5185,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Diagonalisabilité d'une matrice (2)}
 	\label{Diagonalisabilité d'une matrice (2) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (2)]{[Enoncé]}}\\
-	
+	On pose $C=\begin{pmatrix}
+		1&2&\dots&n
+	\end{pmatrix}^\top$ et $L=\begin{pmatrix}
+	1&2&\dots&n
+	\end{pmatrix}$.\\
+	On remarque que $A=CL$ et donc $A$ est une matrice de rang $1$.\\
+	Donc d'après \ref{Réduction des matrices de rang 1}, $A$ est diagonalisable si et seulement si $\Tr(A)\ne 0$.\\
+	Ici $\Tr(A)=n$ donc $A$ est diagonalisable.
 	\subsection{Diagonalisibilité d'une matrice (3)}
 	\label{Diagonalisabilité d'une matrice (3) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (3)]{[Enoncé]}}\\
@@ -5907,7 +5914,25 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Une démonstration de Cayley-Hamilton}
 	\label{Une démonstration de Cayley-Hamilton corrigé}
 	\textcolor{blue}{\hyperref[Une démonstration de Cayley_Hamilton]{[Enoncé]}}\\
-	
+	\begin{enumerate}
+		\item On pose :
+		\[\Lambda=\{k\in\N^*, (x,f(x),\dots,f^{k-1}(x)) \text{ est libre}\}\]
+		On sait que $\Lambda\subset \N^*$ et que $(x,f(x),\dots,f^n(x))$ est liée puisque $\dim(E)=n$ donc $\Lambda$ est majorée par $n$.\\
+		Par conséquent, $\Lambda$ admet un maximum $p$.\\
+		Ainsi, il existe $(\alpha_0,\dots,\alpha_{p-1})\in\K^p$ non nul tel que :
+		\[\alpha_0x+\dots+\alpha_{p-1}f^{p-1}(x)=0\] 
+		\item On pose $F=\Vect(x,\dots,f^{p-1}(x))$.\\
+		Pour tout $i\in\crblanc{0}{p-2}$ ,\[f(f^i(x))=f^{i+1}(x)\in F\]
+		et \[f(f^{p-1}(x))=f^p(x)=-\sum_{i=0}^{p-1}\alpha_if^i(x)\in F\]
+		Donc $F$ est stable $f$.
+		\item On pose $P=\sum_{i=0}^{p-1}\alpha_i X^i$ et $C_P$ la matrice compagnon associé à $P$.\\ D'après \ref{Matrice compagnon (1)}, $\chi_{C_P}=P$
+		On remarque que :
+		\[\Mat_F(f)=\begin{pmatrix}
+			C_P&*\\0&*
+		\end{pmatrix}\]
+		Ainsi, $P=\chi_{C_P}|\chi_f$.
+		\item D'après la question 1, on a $P(f)=0$, ainsi puisque $P|\chi_f$ on en déduit le théorème de Cayley-Hamilton, \[\chi_f(f)=0\]
+	\end{enumerate}
 	\subsection{Indépendance de corps du polynôme minimal}
 	\label{Indépendance de corps du polynôme minimal corrigé}
 	\textcolor{blue}{\hyperref[Indépendance de corps du polynôme minimal]{[Enoncé]}}\\
