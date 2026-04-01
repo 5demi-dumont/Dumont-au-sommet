@@ -505,11 +505,13 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\section{Sommes et produits de valeurs propres}
 	\label{Sommes et produits de valeurs propres}
 	\textcolor{blue}{\hyperref[Sommes et produits de valeurs propres corrigé]{[Corrigé]}}\\
-	Soient $A,B\in \M_n(\C)$.
+	Soient $A,B\in \M_n(\C)$. On pose
+	$$\fonction{\Phi}{\M_n(\C)}{\M_n(\C)}{M}{AM+MB}\quad\fonction{\Psi}{\M_n(\C)}{\M_n(\C)}{M}{AMB}$$
+	On dit qu'un nombre complexe $\alpha$ est un \textit{entier algébrique} s'il est racine d'un polynôme unitaire à coefficients entiers.
 	\begin{enumerate}
-		\item Déterminer le spectre des applications linéaires suivantes :
-		$$\fonction{\Phi}{\M_n(\C)}{\M_n(\C)}{M}{AM+MB}\quad \fonction{\Psi}{\M_n(\C)}{\M_n(\C)}{M}{AMB}$$
-		\item En déduire que l'ensemble des entiers algébriques (racines dans $\C$ d'un polynôme unitaire à coefficients entiers) est un sous-anneau de $\C$.
+		\item Montrer que $\forall (\lambda,\mu)\in \T{Sp}(A)\times \T{Sp}(B),\ \lambda+\mu\in \T{Sp}(\Phi)$ et $\lambda\mu\in \T{Sp}(\Psi)$.
+		\item En déduire que l'ensemble des entiers algébriques est un sous-anneau de $\C$.
+		\item Déterminer les spectres de $\Phi$ et $\Psi$.
 	\end{enumerate}
 	
 	\section{\underline{Matrice compagnon (1)} \ccinp{2}}
@@ -737,11 +739,17 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\end{enumerate}
 	
 	
-	\section{Semi-simplicité \centraleponts{3}}
-	\label{Semi-simplicité}
-	\textcolor{blue}{\hyperref[Semi-simplicité corrigé]{[Corrigé]}}\\
+	\section{Supplémentaire stable \centraleponts{3}}
+	\label{Supplémentaire stable}
+	\textcolor{blue}{\hyperref[Supplémentaire stable corrigé]{[Corrigé]}}\\
+	Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$ de dimension finie.\\
+	Montrer que $u$ est diagonalisable si et seulement si tout sous-espace vectoriel de $E$ admet un supplémentaire dans $E$ stable par $u$.
+	
+	\section{Semi-simplicité (1) \centraleponts{3}}
+	\label{Semi-simplicité (1)}
+	\textcolor{blue}{\hyperref[Semi-simplicité (1) corrigé]{[Corrigé]}}\\
 	Soit $u$ un endomorphisme d'un $\C$-espace vectoriel $E$ de dimension finie.\\
-	Montrer que $u$ est diagonalisable si et seulement si tout sous-espace vectoriel de $E$ admet un supplémentaire dans $E$ stable par $u$. Le résultat persiste t-il pour des $\R$-espaces vectoriels ?
+	Montrer que $u$ est diagonalisable si et seulement si tout sous-espace vectoriel de $E$ stable par $u$ admet un supplémentaire dans $E$ stable par $u$. Le résultat persiste-t-il dans les $\R$-espaces vectoriels ?
 	
 	\section{Endomorphismes diagonalisables d'un $\R$-espace vectoriel \telecom{3}}
 	\label{Endomorphismes diagonalisables d'un R-espace vectoriel}
@@ -796,7 +804,12 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Rang et spectre de la comatrice corrigé]{[Corrigé]}}\\
 	Soit $A\in \M_n(\C)$. Déterminer le rang et le spectre de $\tilde A=\Com(A)^\top$.
 	
-	\section{Racine $p$-ième d'une matrice \telecom{3}}
+	\section{Une formule sur les polynômes \centraleponts{3}}
+	\label{Une formule sur les polynômes}
+	\textcolor{blue}{\hyperref[Une formule sur les polynômes corrigé]{[Corrigé]}}\\
+	Montrer que $\forall P\in \C_{n-1}[X],\ \displaystyle\sum\limits_{k=0}^n{(-1)^{n-k}\binom{n}{k}P(X+k)=0}$.
+	
+	\section{Racine $p$-ième d'une matrice \telecom{2}}
 	\label{Racine pieme d'une matrice}
 	\textcolor{blue}{\hyperref[Racine pieme d'une matrice corrigé]{[Corrigé]}}\\
 	Soient $A\in \text{GL}_n(\C)$ diagonalisable, $B\in \M_n(\C)$ et $p\in \N^*$ tels que $B^p=A$.\\
@@ -836,16 +849,24 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item On suppose $p\ne 0$. Montrer que $p$ est le plus petit entier naturel non nul vérifiant l'égalité précédente.
 	\end{enumerate}
 	
-	\section{Sous-espaces stables \centraleponts{3}}
+	\section{Sous-espaces stables \telecom{2}}
 	\label{Sous-espaces stables}
 	\textcolor{blue}{\hyperref[Sous-espaces stables corrigé]{[Corrigé]}}\\
 	Soient $u$ un endomorphisme d’un $\K$-espace vectoriel de dimension finie et $P\in \K[X]$ un polynôme unitaire annulateur de $u$. La décomposition de $P$ en facteurs irréductibles unitaires s’écrit $P=\displaystyle\prod\limits_{i=1}^r{P_i}$. Pour $i\in \crblanc{1}{r}$, on pose $N_i=\ker P_i(u)$.\\
 	Soit $F$ un sous-espace vectoriel de $E$ stable par $u$. Montrer que $F=\displaystyle\bigoplus\limits_{i=1}^r{F\cap N_i}$.
 	
-	\section{Une formule sur les polynômes \centraleponts{3}}
-	\label{Une formule sur les polynômes}
-	\textcolor{blue}{\hyperref[Une formule sur les polynômes corrigé]{[Corrigé]}}\\
-	Montrer que $\forall P\in \C_{n-1}[X],\ \displaystyle\sum\limits_{k=0}^n{(-1)^{n-k}\binom{n}{k}P(X+k)=0}$.
+	\section{Semi-simplicité (2) \centraleponts{4}}
+	\label{Semi-simplicité (2)}
+	\textcolor{blue}{\hyperref[Semi-simplicité (2) corrigé]{[Corrigé]}}\\
+	Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$ de dimension finie. On dit que $u$ est \textit{semi-simple} lorsque tout sous-espace de $E$ stable par $u$ admet un supplémentaire dans $E$ stable par $u$.
+	\begin{enumerate}
+		\item Pour $x\in E$ on note $E_x=\{P(u)(x),\ P\in \K[X]\}$.\\
+		Montrer que $E_x$ est un sous-espace vectoriel non nul de $E$ stable par $u$.
+		\item Soit $F$ un sous-espace vectoriel strict de $E$ stable par $u$ et soit $x\in E\backslash F$.\\
+		Montrer que si $\pi_u$ est irréductible alors $F$ et $E_x$ sont en somme directe.
+		\item En déduire que si $\pi_u$ est irréductible alors $u$ est semi-simple.
+		\item Montrer que $u$ est semi-simple si et seulement son le polynôme minimal n'a pas de facteur carré. Que dire dans le cas $\K=\C$ ?
+	\end{enumerate}
 	
 	\section{Ordre de matrice \xens{4}}
 	\label{Ordre de matrice}
@@ -5064,6 +5085,38 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Sommes et produits de valeurs propres}
 	\label{Sommes et produits de valeurs propres corrigé}
 	\textcolor{blue}{\hyperref[Sommes et produits de valeurs propres]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soient $\lambda\in \T{Sp}(A)$ et $\mu\in \T{Sp}(B)$.
+		On sait que $\T{Sp}(B^\top)=\T{Sp}(B)$ donc on peut se donner $X,Y\in \M_{n,1}(\C)$ tels que $AX=\lambda X$ et $B^\top Y=\mu Y$ i.e $Y^\top B=\mu Y^\top$. Posons $M=XY^\top\in \M_n(\C)$. Notons $X=\begin{pmatrix}
+			x_1\\\vdots\\x_n
+		\end{pmatrix},\ Y=X=\begin{pmatrix}
+			y_1\\\vdots\\y_n
+		\end{pmatrix}$. $X$ et $Y$ ne sont pas nuls donc ils ont chacun au moins un coefficient non nul. $M$ n'est pas nulle puisque $M_{ij}=x_iy_j$ n'est pas nul pour un certain $(i,j)\in \crblanc{1}{n}^2$. On calcule :\\
+		$\Phi(M)=AXY^\top+XY^\top B=\lambda XY\top +X(\mu Y^\top)=(\lambda+\mu)M$.\\
+		$\Psi(M)=AXY^\top B=\lambda XY^\top B=\lambda X(\mu Y^\top)=\lambda\mu M$.\\
+		Ainsi $\lambda+\mu\in \T{Sp}(\Phi)$ et $\lambda\mu\in \T{Sp}(\Psi)$.
+		\item $0$ et $1$ sont des entiers algébriques en tant que racine de $X$ et $X-1$ respectivement. Fixons $\lambda,\mu$ deux entiers algébriques. Il existe $P,Q\in \Z[X]$ unitaires tels que $P(\lambda)=Q(\mu)=0$.\\
+		Le polynôme $P(-X)$ annule $-\lambda$ et est unitaire à coefficients entiers donc $-\lambda$ est un entier algébrique.\\
+		Pour le produit et la somme on va utiliser la première question.\\
+		Notons $A$ et $B$ les matrices compagnons associées à $A$ et $B$ respectivement. C'est à dire qu'on a $P=\chi_A$ et $Q=\chi_B$. De plus $A$ et $B$ sont à coefficients entiers.\\
+		On sait alors que $\lambda+\mu\in \T{Sp}(\Phi)$ et $\lambda\mu\in \T{Sp}(\Psi)$. Ce sont donc des racines de leurs polynômes caractéristiques respectifs. On sait que ceux-ci sont unitaires. Mais ils sont en outre à coefficients entiers.\\
+		En effet, en notant $\B_c=(E_{ij})_{1\leq i,j\leq n}$ la base canonique de $\M_n(\C)$, les coefficients de $AM+MB$ et $AMB$ étant polynomiaux en ceux de $A,M,B$, il est clair que les coordonnées de $E_{ij}$ dans la base $\B_c$ sont entières. Ainsi $\Mat_{\B_c}(\Phi),\Mat_{\B_c}(\Psi)\in \M_n(\Z)$.\\
+		Enfin, comme les coefficients de $\chi_M$ sont polynomiaux en ceux de $M$ (c'est un calcul de déterminant) on a $\chi_\Phi,\chi_\Psi\in \Z[X]$.\\
+		On en déduit que $\lambda+\mu$ et $\lambda\mu$ sont des entiers algébriques et on conclut que les entiers algébriques forment un  sous-anneau de $\C$.\\
+		\textit{Remarque : ce n'est pas un corps puisque $2$ est un entier algébrique alors que $\dfrac{1}{2}$ n'en est pas un.}
+		\item Montrons que les valeurs propres de $\Phi$ et $\Psi$ sont exactement de la forme de la question 1.\\
+		Soit $\alpha\in \T{Sp}(\Phi)$. On note $M$ un vecteur propre associé.\\
+		Par définition on a $AM+MB=\alpha M$ d'où $AM=M(\alpha I_n-B)$.\\
+		Par récurrence immédiate on montre que $\forall k\in \N,\ A^kM=M(\alpha I_n-B)^k$. Toutes ces relations étant linéaires en $M$, on obtient $P(A)M=MP(\alpha I_n-B)$ pour tout $P\in \C[X]$.\\
+		En particulier, pour $P=\chi_A$ d'après le théorème de Cayley-Hamilton on a $0=M\chi_A(\alpha I_n-B)$.\\
+		Comme $M$ n'est pas nulle, $\chi_A(\alpha I_n-B)$ n'est pas inversible.\\
+		Or $\chi_A(\alpha I_n-B)=\displaystyle\prod_{\lambda\in \T{Sp}(A)}(\alpha I_n-B-\lambda I_n)^m_\lambda$. Et,\\
+		$\det(\chi_A(\alpha I_n-B))=0\implies \exists \lambda\in \T{Sp}(A),\ \det((\alpha-\lambda)I_n-B)=0\implies \exists \lambda\in \T{Sp}(A),\ \alpha-\lambda\in \T{Sp}(B)\implies \exists (\lambda,\mu)\in \T{Sp}(A)\times\T{Sp}(B),\ \alpha=\lambda+\mu$.\\
+		Donc $\T{Sp}(\Phi)=\{\lambda+\mu,\ (\lambda,\mu)\in \T{Sp}(A)\times\T{Sp}(B)\}$.\\\\
+		Soit $\beta\in \T{Sp}(\Psi)$. On note $N$ un vecteur propre associé.\\
+		Par définition on a $ANB=\beta N$. Si $B$ était inversible on pourrait écrire $AN=\beta NB^{-1}$ et réappliquer le raisonnement précédent en remplaçant $(\alpha I_n-B)$ par $\beta B^{-1}$.\\
+		Et si $B$ n'est pas inversible il 
+	\end{enumerate}
 	
 	\subsection{Matrice compagnon (1)}
 	\label{Matrice compagnon (1) corrigé}
@@ -5158,6 +5211,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\end{pmatrix}\]
 		n'est pas diagonalisable.
 	\end{enumerate}
+	
 	\subsection{Diagonalisabilité d'une matrice (1)}
 	\label{Diagonalisabilité d'une matrice (1) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (1)]{[Enoncé]}}\\
@@ -5182,6 +5236,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\item $a_1=\dots=a_{n-1}=0$,
 		\item ou $S\ne 0$ et $a_n^2+4S\ne 0$
 	\end{itemize}
+	
 	\subsection{Diagonalisabilité d'une matrice (2)}
 	\label{Diagonalisabilité d'une matrice (2) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (2)]{[Enoncé]}}\\
@@ -5193,10 +5248,10 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On remarque que $A=CL$ et donc $A$ est une matrice de rang $1$.\\
 	Donc d'après \ref{Réduction des matrices de rang 1}, $A$ est diagonalisable si et seulement si $\Tr(A)\ne 0$.\\
 	Ici $\Tr(A)=n$ donc $A$ est diagonalisable.
+	
 	\subsection{Diagonalisibilité d'une matrice (3)}
 	\label{Diagonalisabilité d'une matrice (3) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (3)]{[Enoncé]}}\\
-	
 	
 	\subsection{Cotrigonalisation (1)}
 	\label{Cotrigonalisation (1) corrigé}
@@ -5236,6 +5291,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi, il existe une base $\B$ de $H$ telle que $\Mat_\B(u_{|H})$ et $\Mat_\B(v_{|H})$ sont triangulaires.\\
 		Ainsi, il suffit de compléter $\B$ en une base de $E$ pour avoir le résultat souhaité.
 	\end{enumerate}
+	
 	\subsection{Cotrigonalisation (3)}
 	\label{Cotrigonalisation (3) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (3)]{[Enoncé]}}\\
@@ -5269,7 +5325,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{pmatrix}=\begin{pmatrix}
 	0\\0\\ \vdots \\0
 	\end{pmatrix}\]
-	On remarque que : \[[\begin{vmatrix}
+	On remarque que : \[\begin{vmatrix}
 		\lambda_1&\lambda_1^2&\dots&\lambda_1^r\\
 		\lambda_2&\lambda_2^2&\dots&\lambda2^r\\
 		\vdots&\vdots&&\vdots\\
@@ -5281,7 +5337,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\lambda_2&\lambda_2^2&\dots&\lambda2^r\\
 		\vdots&\vdots&&\vdots\\
 		\lambda_r&\lambda_r^2&\dots&\lambda_r^r\\
-	\end{pmatrix}\] est inversible \ref{Déterminant de Vandermonde} par conséquent, on a : \[\begin{pmatrix}
+	\end{pmatrix}\] est inversible (cf.\ref{Déterminant de Vandermonde}) par conséquent, on a : \[\begin{pmatrix}
 	m_1\\m_2\\\vdots\\m_r
 	\end{pmatrix}=\begin{pmatrix}
 	0\\0\\ \vdots \\0
@@ -5300,7 +5356,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\[\begin{pmatrix}
 		\lambda I_n& -A\\
 		-B&I_p
-	\end{pmatrix}=\begin{pmatrix}
+	\end{pmatrix}\cdot\begin{pmatrix}
 	I_n&0\\B&I_p
 	\end{pmatrix}=\begin{pmatrix}
 	\lambda I_n-AB&-A\\0&I_p-BA
@@ -5460,9 +5516,38 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Réciproquement on vérifie aisément que $\{0\},\Vect((1,\dots,1)),H=\left\{(x_1,\dots,x_n)\in \C^n,\ \displaystyle\sum_{i=1}^nx_i=0\right\}$ et $\C^n$ sont stables par tous les $u_\sigma,\ \sigma\in \mathcal S_n$.
 	\end{enumerate}
 	
-	\subsection{Semi-simplicité}
-	\label{Semi-simplicité corrigé}
-	\textcolor{blue}{\hyperref[Semi-simplicité]{[Enoncé]}}\\
+	\subsection{Supplémentaire stable \centraleponts{3}}
+	\label{Supplémentaire stable corrigé}
+	\textcolor{blue}{\hyperref[Supplémentaire stable]{[Enoncé]}}\\
+	Supposons que $u$ est diagonalisable et fixons $F$ un sous-espace vectoriel de $E$. On sait que $E$ admet une base formée de vecteurs propres de $u$. Ainsi en notant $(f_1,\dots,f_p)$ une base de $F$ le théorème de la base incomplète nous permet de la compléter en une base $(f_1,\dots,f_p,e_{p+1},\dots,e_n)$ de $E$ où $e_{p+1},\dots,e_n$ sont des vecteurs propres de $u$. Le sous-espace vectoriel $G:=\Vect(e_{p+1},\dots,e_n)$ est alors un supplémentaire de $F$ dans $E$ stable par $u$.\\
+	Réciproquement, supposons que tout sous-espace de $E$ admet un supplémentaire stable par $u$.\\
+	Soit $H$ un hyperplan de $E$. Il admet un supplémentaire dans $E$ stable par $u$. C'est une droite, on s'en donne un vecteur directeur $e_1$.\\
+	Supposons avoir construit $(e_1,\dots,e_p)$ une famille libre de $E$ formée de vecteurs propres de $u$. Soit maintenant $H$ un hyperplan de $E$ contenant les vecteurs $e_1,\dots,e_p$. Il admet un supplémentaire dans $E$ stable par $u$. C'est une droite on s'en donne donc un vecteur directeur $e_{p+1}$. C'est donc un vecteur propre de $u$ et de plus comme $H$ et $\Vect(e_{p+1})$ sont en somme directe, la famille $(e_1,\dots,e_{p+1})$ est libre.\\
+	Par récurrence on a construit une base $(e_1,\dots,e_n)$ de $E$ composée de vecteurs propres de $u$ : $u$ est diagonalisable.
+	
+	\subsection{Semi-simplicité (1) \centraleponts{3}}
+	\label{Semi-simplicité (1) corrigé}
+	\textcolor{blue}{\hyperref[Semi-simplicité (1)]{[Enoncé]}}\\
+	L'exercice précédent donne le sens direct.\\
+	Sinon on peut utiliser l'exercice \ref{Sous-espaces stables d'un endomorphisme diagonalisable} :\\
+	L'idée va être de fractionner le problème sur chaque sous-espace propre de $u$. Soit $F$ un sous-espace de $E$ stable par $u$.\\
+	Supposons que tout sous-espace de $E$ stable par $u$ admet un supplémentaire stable par $u$. On sait grâce à l'exercice \ref{Sous-espaces stables d'un endomorphisme diagonalisable} que :
+	$$F=\bigoplus_{\lambda\in \T{Sp}(u)}E_\lambda(u)\cap F$$
+	Notons $G_\lambda$ un supplémentaire de $E_\lambda(u)\cap F$ dans $E_\lambda(u)$. $G_\lambda$ est stable par $u$ car inclus dans un sous-espace propre. Vérifions que $\displaystyle\bigoplus_{\lambda\in \T{Sp}(u)}G_\lambda$ est un supplémentaire de $F$ dans $E$.\\
+	D'une part $$\left(\bigoplus_{\lambda\in \T{Sp}(u)}G_\lambda\right)\oplus\left(\bigoplus_{\lambda\in \T{Sp}(u)}E_\lambda(u)\cap F\right)=\bigoplus_{\lambda\in \T{Sp}(u)}G_\lambda\oplus(E_\lambda(u)\cap F)=\bigoplus_{\lambda\in \T{Sp}(u)}E_\lambda(u)=E$$
+	Et d'autre part $$\dim\left(\bigoplus_{\lambda\in \T{Sp}(u)}G_\lambda\right)+\dim(F)=\sum_{\lambda\in \T{Sp}(u)}\dim(G_\lambda)+\sum_{\lambda\in \T{Sp}(u)}\dim(E_\lambda(u)\cap F)=\sum_{\lambda\in \T{Sp}(u)}\dim(E_\lambda(u))=\dim(E)$$
+	Pour la réciproque on peut faire comme dans l'exercice :\\
+	supposons que tout sous-espace de $E$ admette un supplémentaire stable par $u$.\\
+	Comme $u$ est un endomorphisme d'un $\C$-espace vectoriel il admet un vecteur propre $e_1$.\\
+	Supposons avoir construit $(e_1,\dots,e_p)$ une famille libre de $E$ formée de vecteurs propres de $u$. $\Vect(e_1,\dots,e_p)$ est stable par $u$ donc admet un supplémentaire $S$ stable par $u$. L'endomorphisme $u_S$ induit sur $S$ admet un vecteur propre $e_{p+1}$ en tant qu'endomorphisme d'un $\C$-espace vectoriel. C'est donc un vecteur propre de $u$ appartenant à $S$. En particulier comme $S$ et $\Vect(e_1,\dots,e_p)$ sont en somme directe, la famille $(e_1,\dots,e_{p+1})$ est libre.\\
+	Sinon on peut noter $F=\displaystyle\bigoplus_{\lambda\in \T{Sp}(u)}E_\lambda(u)$. On va montrer que $F=E$.\\
+	$F$ admet un supplémentaire $G$ dans $E$ stable par $u$. Si $G\ne\{0\}$ alors l'endomorphisme induit par $u$ sur $u_G$ admet un vecteur propre $x\in G$ comme endomorphisme d'un $\C$-espace vectoriel non nul. Mais par définition $x\notin F$ ce qui est absurde. Donc $G=\{0\}$ et par suite $F=E$.
+	Ainsi par récurrence on a construit une base $(e_1,\dots,e_n)$ de $E$ formée de vecteurs propres de $u$ : $u$ est diagonalisable.\\\\
+	Ce résultat n'est plus vrai dans les $\R$-espaces vectoriels.\\
+	La matrice $\begin{pmatrix}
+		0&1\\
+		-1&0
+	\end{pmatrix}$ n'est pas diagonalisable dans $\M_n(\R)$ mais l'est dans $\M_n(\C)$, et est donc semi-simple. (Il y a des détails techniques car il n'est pas évident a priori que si l'endomorphisme de $\L(\C^n)$ associé à une matrice réelle est semi-simple alors celui de $\L(\R^n)$ l'est aussi. La notion sous-jacente qui rend cela très clair est celle de complexifié d'un espace vectoriel. L'exercice \ref{Semi-simplicité (2)} en donne une preuve par un résultat intermédiaire plus adapté au programme prépa.)
 	
 	\subsection{Endomorphismes diagonalisables d'un $\R$-espace vectoriel \telecom{3}}
 	\label{Endomorphismes diagonalisables d'un R-espace vectoriel corrigé}
@@ -5621,8 +5706,23 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On sait que $\tilde A$ est inversible donc $\lambda=0$ n'est pas racine de $\chi_{\tilde A}$.\\
 	Ainsi $\forall \lambda\in \C,\ \chi_{\tilde A}(\lambda)=0\iff \chi_A\left(\dfrac{\det(A)}{\lambda}\right)=0\iff \dfrac{\det(A)}{\lambda}\in \T{Sp}(A)$.\\
 	Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
+	
+	\subsection{Une formule sur les polynômes \centraleponts{3}}
+	\label{Une formule sur les polynômes corrigé}
+	\textcolor{blue}{\hyperref[Une formule sur les polynômes]{[Enoncé]}}\\
+	On considère l'endomorphisme de $S\in \L(\C_{n-1}[X])$ défini par $\forall P\in \C_{n-1}[X],\ S(P)=P(X+1)$.\\
+	Alors l'égalité se réécrit
+	$$\sum_{k=0}^n(-1)^{n-k}\binom{n}{k}S^k=0$$
+	Ou encore
+	$$(S-\Id)^n=0$$
+	Il suffit donc de montrer que $S-\Id$ est nilpotent (on dit que $S$ est unipotent) et le théorème de Cayley-Hamilton permettra de conclure.\\
+	Soit $\lambda$ une valeur propre de $S-\Id$ et $P$ un vecteur propre associé (que l'on peut prendre unitaire). On note $P(X)=X^d+Q(X)$ avec $d=\deg(P)$ (et $\deg(Q)<d$).\\
+	Alors $(S-\Id)(P)=(X+1)^d-X^d+Q(X+1)-Q(X)=\displaystyle\sum_{k=0}^{d-1}\binom{d}{k}X^k+Q(X+1)-Q(X)$.\\
+	On en déduit que $\deg((S-\Id)(P))\leq d-1<\deg(P)$. Or $(S-\Id)(P)=\lambda P$ donc si $\lambda\ne 0$, $\deg((S-\Id)(P))=\deg(P)$. Par conséquent $\lambda=0$.\\
+	Ainsi $S-\Id$ est un endomorphisme nilpotent de $\C_{n-1}[X]$ qui est un $\C$-espace vectoriel de dimension $n$, son polynôme caractéristique est donc $X^n$.\\
+	Finalement, d'après le théorème de Cayley-Hamilton $(S-\Id)^n=0$.
 
-	\subsection{Racine $p$-ième d'une matrice}
+	\subsection{Racine $p$-ième d'une matrice \telecom{2}}
 	\label{Racine pieme d'une matrice corrigé}
 	\textcolor{blue}{\hyperref[Racine pieme d'une matrice]{[Enoncé]}}\\
 	\underline{$1^{\T{ère}}$ méthode :}\\
@@ -5641,7 +5741,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		&&&0\\
 	\end{array}\right)$ convient car $B^2=0$.
 	
-	\subsection{Diagonalisabilité de $f$ dans le cas $f^2$ diagonalisable}
+	\subsection{Diagonalisabilité de $f$ dans le cas $f^2$ diagonalisable \centraleponts{3}}
 	\label{Diagonalisabilité de f dans le cas f^2 diagonalisable corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabilité de f dans le cas f^2 diagonalisable]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -5666,7 +5766,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Il faut et il suffit de plus que les produits $a_ia_{n+1-i}$ soient positifs, autrement dit que $a_i$ et $a_{n+1-i}$ soient de même signes lorsqu'ils sont non nuls.
 	\end{enumerate}
 	
-	\subsection{Endomorphismes diagonalisables non bijectifs}
+	\subsection{Endomorphismes diagonalisables non bijectifs \ccinp{2}}
 	\label{Endomorphismes diagonalisables non bijectifs corrigé}
 	\textcolor{blue}{\hyperref[Endomorphismes diagonalisables non bijectifs]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -5678,7 +5778,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\item Comme $f$ n'est pas injectif, $0$ est valeur propre de $f$ càd $\pi_f(0)=0$. De plus $f$ est diagonalisable donc $\pi_f$ est scindé à racines simples. Donc $\pi_f'(0)\ne 0$. Enfin $\pi_f$ est un polynôme annulateur de $f$ donc d'après la question précédente $E=\Ker f\bigoplus \T{Im}f$.
 	\end{enumerate}
 	
-	\subsection{Valuation du polynôme minimal}
+	\subsection{Valuation du polynôme minimal \centraleponts{3}}
 	\label{Valuation du polynôme minimal corrigé}
 	\textcolor{blue}{\hyperref[Valuation du polynôme minimal]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -5694,7 +5794,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Autrement dit $0$ n'est pas racine de $R$ d'où $X^p|X^q$ i.e $p\leq q$.
 	\end{enumerate}
 	
-	\subsection{Sous-espaces stables}
+	\subsection{Sous-espaces stables \telecom{2}}
 	\label{Sous-espaces stables corrigé}
 	\textcolor{blue}{\hyperref[Sous-espaces stables]{[Enoncé]}}\\
 	Considérons l'endomorphisme $u_F$ induit par $u$ sur $F$.\\
@@ -5702,20 +5802,43 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$P(u)=0\implies P(u_F)=0$.\\
 	Donc d'après le lemme des noyaux $F=\ker P(u_F)=\displaystyle\bigoplus_{i=1}^r\ker(P_i^{\alpha_i}(u_F))=\bigoplus_{i=1}^r F\cap N_i$.
 	
-	\subsection{Une formule sur les polynômes}
-	\label{Une formule sur les polynômes corrigé}
-	\textcolor{blue}{\hyperref[Une formule sur les polynômes]{[Enoncé]}}\\
-	On considère l'endomorphisme de $S\in \L(\C_{n-1}[X])$ défini par $\forall P\in \C_{n-1}[X],\ S(P)=P(X+1)$.\\
-	Alors l'égalité se réécrit
-	$$\sum_{k=0}^n(-1)^{n-k}\binom{n}{k}S^k=0$$
-	Ou encore
-	$$(S-\Id)^n=0$$
-	Il suffit donc de montrer que $S-\Id$ est nilpotent (on dit que $S$ est unipotent) et le théorème de Cayley-Hamilton permettra de conclure.\\
-	Soit $\lambda$ une valeur propre de $S-\Id$ et $P$ un vecteur propre associé (que l'on peut prendre unitaire). On note $P(X)=X^d+Q(X)$ avec $d=\deg(P)$ (et $\deg(Q)<d$).\\
-	Alors $(S-\Id)(P)=(X+1)^d-X^d+Q(X+1)-Q(X)=\displaystyle\sum_{k=0}^{d-1}\binom{d}{k}X^k+Q(X+1)-Q(X)$.\\
-	On en déduit que $\deg((S-\Id)(P))\leq d-1<\deg(P)$. Or $(S-\Id)(P)=\lambda P$ donc si $\lambda\ne 0$, $\deg((S-\Id)(P))=\deg(P)$. Par conséquent $\lambda=0$.\\
-	Ainsi $S-\Id$ est un endomorphisme nilpotent de $\C_{n-1}[X]$ qui est un $\C$-espace vectoriel de dimension $n$, son polynôme caractéristique est donc $X^n$.\\
-	Finalement, d'après le théorème de Cayley-Hamilton $(S-\Id)^n=0$.
+	\subsection{Semi-simplicité (2) \centraleponts{4}}
+	\label{Semi-simplicité (2) corrigé}
+	\textcolor{blue}{\hyperref[Semi-simplicité (2)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $x\in E$. $x=\Id_E(x)=1_\K[X](u)(x)\in E_x$. Fixons $P,Q\in \K[X]$ et $\lambda\in \K$.\\
+		$P(u)(x)+\lambda Q(u)(x)=(P+\lambda Q)(u)(x)\in E_x$. Ainsi $E_x$ est un sev non nul de $E$.\\
+		De plus, $u(P(u)(x))=(XP)(u)(x)\in E_x$ donc $E_x$ est stable par $u$.
+		\item Supposons qu'il existe un vecteur non nul $y\in E_x\cap F$. On note $y=P(u)(x)$. Comme $y$ est non nul, $P(u)\ne 0$ et donc $\pi_u\nmid P$. Puis comme $\pi_u$ est irréductible on en déduit $P\wedge \pi_u=1$. D'après le théorème de Bézout il existe alors $(U,V)\in \K[X]$ tels que $UP+V\pi_u=1$. En évaluant en $u$ puis en $x$ on obtient :
+		$$U(u)\circ(P(u))(x)+V(u)\circ(\pi_u(u))(x)=\Id_E(x)\quad\T{i.e}\quad U(u)(y)=x$$
+		Comme $F$ est stable par $u$, $y\in F\implies x\in F$ ce qui est absurde.\\
+		Ainsi $F\cap E_x=\{0\}$.
+		\item Notons $n=\dim E$.\\
+		Montrons par récurrence sur $k\in \crblanc{0}{n}$ la propriété suivante :\\
+		$H_k$ : "Si $F$ est un sev de $E$ stable par $u$ vérifiant $\dim F\geq n-k$ alors il admet un supplémentaire dans $E$ stable par $u$."\\
+		$k=0$ : $F=E$ admet le supplémentaire $\{0\}$ qui est stable par $u$.\\
+		Supposons $H_k$ pour un certain $k\in \crblanc{0}{n-1}$. Fixons $F$ un sev de $E$ de dimension $n-k-1$ stable par $u$. $\dim F<n$ donc il existe $x\in E\backslash F$. D'après la question précédente $E_x$ et $F$ sont en somme directe avec $E_x\ne\{0\}$ donc on peut appliquer $H_k$ à $F'=E_x\oplus F$. On dispose donc d'un sev $G$ stable par $u$ tel que $G\oplus E_x\oplus F=E$. $G\oplus E_x$ est donc un supplémentaire de $F$ dans $E$ stable par $u$.\\
+		$H_n$ donne le résultat voulu.
+		\item Supposons que $u$ est semi-simple, mais qu’il existe $P,Q\in \K[X]$ non constants tels que $\pi_u=P^2Q$. Le sous-espace vectoriel $F=\ker(P(u))$ est stable par $u$, donc par hypothèse, il existe un supplémentaire $G$ de $F$ qui est stable par $u$.\\
+		Montrons que $PQ$ annule $u$. Si $x\in G$, en notant $y=(PQ)(u)(x)$, on a
+		$$P(u)(y)=P(u)[(PQ)(u)(x)]=(P^2Q)(u)(x)=\pi_u(u)(x)=0$$
+		d'où $y\in F$. De plus, comme $G$ est stable par $u$, on a $y=(PQ)(u)(x)\in G$.\\
+		Ainsi, $y\in F\cap G=\{0\}$, et donc $PQ(u)$ est nul sur $G$. Finalement, il est immédiat que $PQ(u)$ est nul sur $F=\ker P(u)$, et comme $E=F\oplus G$, on en déduit que $(PQ)(u)$ est nul sur $E$. On obtient une contradiction par minimalité de $\pi_u$, donc les facteurs irréductibles de $\pi_u$ sont distincts deux à deux.\\
+		Réciproquement, supposons que $\pi_u=P_1\dots P_r$ où $P_1,\dots,P_r\in \K[X]$ sont irréductibles et distincts deux à deux.\\
+		Soit $F$ un sous-espace de $E$ stable par $u$. On note $N_i=\ker P_i(u)$ ainsi que $u_i$ l'endomorphisme induit par $u$ sur $N_i$.\\
+		D'après l'exercice précédent on sait que :
+		$$F=\displaystyle\bigoplus_{i=1}^rF\cap N_i$$\\
+		Comme $P_i$ est irréductible et que $P_i(u_i)=0$, le polynôme minimal de $u_i$ est $P_i$.\\
+		D'après la question 3 il existe donc un supplémentaire $G_i$ de $F_i$ dans $N_i$ stable par $u_i$.\\
+		Finalement, le sous-espace vectoriel $G=\displaystyle\bigoplus_{i=1}^rG_i$ est un supplémentaire de $F$ dans $E$ stable par $u$.\\\\
+		Dans le cas $\K=\C$, $\pi_u$ est toujours scindé donc il n'a pas de facteur carré si et seulement si il est scindé à racines simples.\\
+		Autrement dit la semi-simplicité équivaut à la semi-simplicité.\\\\
+		\textit{Remarque : On a toujours semi-simple$\implies$ diagonalisable mais sur $\K=\R$ la réciproque est fausse. En effet pour $E=\R^2$, la matrice de $u:(x,y)\mapsto (-y,x)$ dans la base canonique est $\begin{pmatrix}
+				0&1\\
+				-1&0
+			\end{pmatrix}$ donc son polynôme minimal est $X^2+1$ qui est bien sans facteur carré mais non scindé sur $\R$. Donc $u$ est semi-simple mais pas diagonalisable.\\
+			On a en fait montré que $u$ est diagonalisable si et seulement s'il est semi-simple et son polynôme minimal est scindé.}
+	\end{enumerate}
 	
 	\subsection{Ordre de matrice}
 	\label{Ordre de matrice corrigé}
