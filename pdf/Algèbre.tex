@@ -2853,12 +2853,14 @@ Soient $X_1,\dots,X_n$ des variables indépendantes et identiquement distribuée
 Soit $(X_n)_{n\geq1}$ une suite de variables aléatoires telle que, $\forall n\geq1,\ X_n\sim\B(n,p_n)$. On suppose que la suite $(np_n)_{n\geq1}$ converge vers un réel $\lambda>0$.
 \\ Démontrer que pour tout $k\in\N$, $\lim\limits_{n\to +\infty}\p(X_n=k)=\displaystyle\frac{\lambda^ke^{-\lambda}}{k!}$
 
-\section{Inégalité de Markov et inégalité de Bienaymé-Tchébychev \ccinp{1}}
-\label{Inégalité de Markov et inégalité de Bienaymé-Tchebychev}
-\textcolor{blue}{\hyperref[Inégalité de Markov et inégalité de Bienaymé-Tchébychev corrigé]{[Corrigé]}}\\
-Enoncer et démontrer les inégalités de Markov et de Bienaymé-Tchébychev.
+\section{Inégalités de Markov de Bienaymé-Tchebychev \ccinp{1}}
+\label{Inégalités de Markov et de Bienaymé-Tchebychev}
+\textcolor{blue}{\hyperref[Inégalités de Markov et de Bienaymé-Tchebychev corrigé]{[Corrigé]}}\\
+Enoncer et démontrer les inégalités de Markov et de Bienaymé-Tchebychev.
 
 \subsection{Utilisation de l'inégalité de Bienaymé-Tchebychev}
+\label{Utilisation de l'inégalité de Bienaymé-Tchebychev}
+\textcolor{blue}{\hyperref[Utilisation de l'inégalité de Bienaymé-Tchebychev corrigé]{[Corrigé]}}\\
 Soit $X$ une variable aléatoire discrète telle que  $\E(X)=10$ et $\V(X)=5$. Montrer que :
 $$\forall n\in\N,\ n\geq 50 \implies \p(10-n< X<10+n)\geq 0.99$$
 
@@ -3205,11 +3207,19 @@ Montrer que la probabilité $p(\lambda)$ que les solutions de cette équation di
 \textcolor{blue}{\hyperref[Série entière aléatoire corrigé]{[Corrigé]}}\\
 Soit $(X_n)_{n\in \N}$ une suite de variable aléatoire i.i.d. suivant une loi géométrique de paramètre $p$. Que peut-on dire du rayon de convergence de la série entière $\displaystyle\sum_{n\in \N}X_nz^n$ ?
 
+\section{Polynôme aléatoire \xens{4}}
+\label{Polynôme aléatoire}
+\textcolor{blue}{\hyperref[Polynôme aléatoire corrigé]{[Corrigé]}}\\
+Soient $n\in \N^*$ et $\varepsilon_1,\dots,\varepsilon_{n-1}$ des variables aléatoires i.i.d. suivant une loi de Bernoulli de paramètre $\dfrac{1}{2}$. On note $p_n$ la probabilité que le polynôme $X^n+\displaystyle\sum_{k=1}^{n-1}\varepsilon_kX^k+1$ admette une racine rationnelle. Montrer que $p_n\unfty\sim\displaystyle\sqrt{\frac{2}{\pi n}}$.
+
 \section{Permutation aléatoire}
 \label{Permutation aléatoire}
 \textcolor{blue}{\hyperref[Permutation aléatoire corrigé]{[Corrigé]}}\\
 Soient $X_1,\dots,X_{n-1}$ des variables aléatoires mutuellement indépendantes telles que $\forall i\in \crblanc{1}{n-1},\ X_i\sim\mathcal U(\crblanc{i}{n})$. Déterminer la loi de la permutation aléatoire :
 $$(n,X_n)\circ\cdots\circ(1,X_1)$$
+
+\section{Nombre moyen de point fixe d'une permutation \telecom{2}}
+Déterminer le nombre moyen de point fixe d'une permutation de $\S_n$.
 
 \section{Permutations composées d'un grand cycle}
 \label{Permutations composées d'un grand cycle}
@@ -8675,9 +8685,9 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	De plus, $-n\ln\left(1-\displaystyle\frac{k}{n}\right)\unfty{\longrightarrow}-k$ d'où $e^{-n\ln(1-k/n)}\unfty{\sim}e^{-k}$.\\
 	Ainsi, $\p(X_n=k)\unfty{\longrightarrow}\displaystyle\frac{\lambda^ke^{-\lambda}}{k!}$.
 	
-	\subsection{Inégalité de Markov et inégalité de Bienaymé-Tchébychev \etoile{1}}
-	\label{Inégalité de Markov et inégalité de Bienaymé-Tchébychev corrigé}
-		\textcolor{blue}{\hyperref[Inégalité de Markov et inégalité de Bienaymé-Tchebychev]{[Enoncé]}}\\
+	\subsection{Inégalités de Markov et de Bienaymé-Tchebychev \etoile{1}}
+	\label{Inégalités de Markov et de Bienaymé-Tchebychev corrigé}
+	\textcolor{blue}{\hyperref[Inégalités de Markov et de Bienaymé-Tchebychev]{[Enoncé]}}\\
 	\underline{Inégalité de Markov} :\\
 	Si $X\in L^1$ est une variable aléatoire réelle positive et $a\in \R^*_+$ alors,
 	$$\p(X\geq a)\leq \displaystyle\frac{\E(X)}{a}$$
@@ -8691,9 +8701,13 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	D'après l'inégalité de Markov,
 	$$\p(|X-\E(X)|\geq\varepsilon)=\p(Y\geq \varepsilon^2)\leq\displaystyle\frac{\E(Y)}{\varepsilon^2}=\frac{\V(X)}{\varepsilon^2}$$
 	
+	\subsubsection{Utilisation de l'inégalité de Bienaymé-Tchebychev}
+	\label{Utilisation de l'inégalité de Bienaymé-Tchebychev corrigé}
+	\textcolor{blue}{\hyperref[Utilisation de l'inégalité de Bienaymé-Tchebychev]{[Enoncé]}}\\
+	
 	\subsection{Paradoxe des anniversaires \etoile{2}}
 	\label{Paradoxe des anniversaires corrigé}
-		\textcolor{blue}{\hyperref[Paradoxe des anniversaires]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Paradoxe des anniversaires]{[Enoncé]}}\\
 	Notons $A_n$ l'évènement "Aucun des $n$ élèves de la classe ne sont nés le même jour" de sorte que $\p(A_n)=1-p_n$.\\
 	Notons pour $k\in \crblanc{1}{n},\ X_k$ la variable aléatoire qui associe au $k$-ième élève associe son jour de naissance $(X_k(\Omega)=\crblanc{1}{365})$.\\
 	L'énoncé nous invite à munir $\Omega$ de la probabilité uniforme pour laquelle on a $\forall (k,j)\in \crblanc{1}{n}\times\crblanc{1}{365},\ \p(X_k=j)=\displaystyle\frac{1}{365}$.\\
@@ -9141,43 +9155,89 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{enumerate}
 	
 	\subsection{Matrice aléatoire (2)}
-		\label{Matrice aléatoire 2 corrigé}
+	\label{Matrice aléatoire 2 corrigé}
 	\textcolor{blue}{\hyperref[Matrice aléatoire 2]{[Enoncé]}}\\
+	
 	\subsection{Matrice aléatoire (3)}
-		\label{Matrice aléatoire 3 corrigé}
+	\label{Matrice aléatoire 3 corrigé}
 	\textcolor{blue}{\hyperref[Matrice aléatoire 3]{[Enoncé]}}\\
+	
 	\subsection{Matrice aléatoire (4)}
-		\label{Matrice aléatoire 4 corrigé}
+	\label{Matrice aléatoire 4 corrigé}
 	\textcolor{blue}{\hyperref[Matrice aléatoire 4]{[Enoncé]}}\\
+	
 	\subsection{Matrice aléatoire (5)}
-		\label{Matrice aléatoire 5 corrigé}
+	\label{Matrice aléatoire 5 corrigé}
 	\textcolor{blue}{\hyperref[Matrice aléatoire 5]{[Enoncé]}}\\
+	
 	\subsection{Matrice aléatoire (6)}
-		\label{Matrice aléatoire 6 corrigé}
+	\label{Matrice aléatoire 6 corrigé}
 	\textcolor{blue}{\hyperref[Matrice aléatoire 6]{[Enoncé]}}\\
+	
 	\subsection{Matrice aléatoire (7)}
-		\label{Matrice aléatoire 7 corrigé}
+	\label{Matrice aléatoire 7 corrigé}
 	\textcolor{blue}{\hyperref[Matrice aléatoire 7]{[Enoncé]}}\\
 	
 	\subsection{Matrice de Rademacher}
 	\label{Matrice de Rademacher corrigé}
+	\textcolor{blue}{\hyperref[Matrice de Rademacher]{[Enoncé]}}\\
+	
 	\subsection{Vecteur propre aléatoire}
 	\label{Vecteur propre aléatoire corrigé}
+	\textcolor{blue}{\hyperref[Vecteur propre aléatoire]{[Enoncé]}}\\
+	
 	\subsection{Equation différentielle à coefficients aléatoires}
 	\label{Equation différentielle à coefficients aléatoires corrigé}
 	\textcolor{blue}{\hyperref[Equation différentielle à coefficients aléatoires]{[Enoncé]}}\\
+	
 	\subsection{Série entière aléatoire}
 	\label{Série entière aléatoire corrigé}
 	\textcolor{blue}{\hyperref[Série entière aléatoire]{[Enoncé]}}\\
+	
+	\subsection{Polynôme aléatoire \xens{3}}
+	\label{Polynôme aléatoire corrigé}
+	\textcolor{blue}{\hyperref[Polynôme aléatoire]{[Enoncé]}}\\
+	Soit $\eta_1,\dots,\eta_{n-1}\in \{0,1\}$. D'après le théorème de la racine rationnelle (cf.IV.19 tome Analyse), si $x=\dfrac{p}{q}$ avec $p\in \Z,\ q\in \N^*$ et $p\wedge q=1$ est racine de $P(X):=X^n+\displaystyle\sum_{k=1}^{n-1}\eta_kX^k+1$ alors $p|1$ et $q|1$. Donc $q=1$ et $p\in \{-1,1\}$ i.e $x\in \{-1,1\}$. De plus, $P(1)=2+\displaystyle\sum_{k=1}^{n-1}\eta_k\geq 2>0$. Donc la seule racine rationnelle possible est $-1$.\\
+	Notons $P_n(X)=\displaystyle X^n+\sum_{k=1}^{n-1}\varepsilon_kX^k+1$. On a montré que $p_n=\p(P_n(-1)=0)$.\\
+	On calcule $P_{2n+1}(-1)=\displaystyle\sum_{k=1}^{2n}\varepsilon_k(-1)^k=\sum_{k=1}^n\varepsilon_{2k}-\sum_{k=0}^{n-1}\varepsilon_{2k+1}$.\\
+	Donc $P_{2n+1}(-1)+n=\displaystyle\sum_{k=1}^n\varepsilon_{2k}+\sum_{k=0}^{n-1}(1-\varepsilon_{2k+1})$. Or si $\varepsilon\sim\B(p)$ alors $1-\varepsilon\sim\B(1-p)$. Donc en notant pour $1\leq k\leq 2n,\ \delta_k=\begin{cases}
+		\varepsilon_k&\mbox{si }k\mbox{ est pair}\\
+		1-\varepsilon_k&\mbox{sinon}
+	\end{cases}$ on a $P_{2n+1}(-1)+n=\displaystyle\sum_{k=1}^{2n}\delta_k$ avec les $\delta_k$ indépendantes par le lemme des coalitions et $\forall k\in \crblanc{1}{2n},\ \delta_k\sim\B\left(\dfrac{1}{2}\right)$.\\
+	Ainsi $P_{2n+1}(-1)+n\sim\B\left(2n,\dfrac{1}{2}\right)$. Donc $p_{2n+1}=\p(P_{2n+1}(-1)+n=n)=\displaystyle\frac{1}{2^{2n}}\binom{2n}{n}$.\\
+	De même $P_{2n}(-1)-2=\displaystyle\sum_{k=1}^{n-1}\varepsilon_{2k}-\sum_{k=0}^{n-1}\varepsilon_{2k+1}$ donc $P_{2n}+n-2\sim\B\left(2n-1,\dfrac{1}{2}\right)$.\\
+	Par conséquent $p_{2n}=\p(P_{2n}(-1)+n-2=n-2)=\displaystyle\frac{1}{2^{2n-1}}\binom{2n-1}{n-2}$.\\
+	Ensuite, d'après la formule de Stirling $\displaystyle\binom{2n}{n}=\frac{(2n)!}{(n!)^2}\unfty\sim\frac{(2n)^{2n}e^{-2n}\sqrt{4\pi n}}{n^{2n}e^{-2n}2\pi n}\unfty\sim 2^{2n}\sqrt{\frac{2}{(2n+1)\pi}}$.\\
+	Et avec $(an+b)^{an+b}=e^{(an+b)\ln(an+b)}=e^{(an+b)(\ln(an)+\ln(1+\frac{b}{an}))}=(an)^{an+b}e^{(an+b)(\frac{b}{an}+\smallo{\frac{1}{n}})}\sim e^b(an)^{an+b}$
+	\begin{align*}
+		\binom{2n-1}{n-2}&=\frac{(2n-1)!}{(n-2)!(n+1)!}\\
+		&\unfty\sim\frac{(2n-1)^{2n-1}e^{-2n+1}\sqrt{2\pi(2n-1)}}{(n-2)^{n-2}e^{-n+2}\sqrt{2\pi(n-2)}(n+1)^{n+1}e^{-n-1}\sqrt{2\pi(n+1)}}\\
+		&\unfty\sim\frac{e^{-1}(2n)^{2n-1}}{e^{-2}n^{n-2}e^1n^{n+1}\sqrt{\pi n}}\\
+		&=\unfty\sim 2^{2n-1}\sqrt{\frac{1}{\pi n}}\\
+		&=2^{2n-1}\sqrt{\frac{2}{2n\pi}}
+	\end{align*}
+	Finalement, $p_{2n+1}\unfty\sim\displaystyle\sqrt{\frac{2}{(2n+1)\pi}}$ et $p_{2n}\unfty\sim\displaystyle\sqrt{\frac{2}{2n\pi}}$ d'où $p_n\unfty\sim\displaystyle\sqrt{\frac{2}{\pi n}}$.
+	
 	\subsection{Permutation aléatoire}
 	\label{Permutation aléatoire corrigé}
 	\textcolor{blue}{\hyperref[Permutation aléatoire]{[Enoncé]}}\\
+	
+	\subsection{Nombre moyen de point fixe d'une permutation \telecom{2}}
+	\label{Nombre moyen de point fixe d'une permutation corrigé}
+	\textcolor{blue}{\hyperref[Nombre moyen de point fixe d'une permutation]{[Enoncé]}}\\
+	On munit $\S_n$ de la probabilité uniforme $\p$. Notons pour tout $1\leq k\leq n,\ X_k$ la variable aléatoire qui a une permutation $\sigma\in \S_n$ associe $1$ si $k$ est un point fixe de $\sigma$ et $0$ sinon. On pose $X=\displaystyle\sum_{k=0}^nX_k$. $X$ compte le nombre de point fixe d'une permutation donnée. On cherche donc l'espérance de $X$.\\
+	Par linéarité $\E(X)=\displaystyle\sum_{k=1}^n\E(X_k)$. Fixons $k\in \crblanc{1}{n}$. $X_k$ suit une loi de Bernoulli, son espérance est donc $\p(X_k=1)=\dfrac{|\{\sigma\in \S_n,\ \sigma(k)=k\}|}{n!}$.\\
+	Pour construire une permutation de $\S_n$ telle que $\sigma(k)=k$ il faut et suffit de choisir une permutation de $\crblanc{1}{n}\backslash\{k\}$. On en déduit $|\{\sigma\in \S_n,\ \sigma(k)=k\}|=|\S(\{1,\dots,k-1,k+1,\dots,n\})|=(n-1)!$.\\
+	Ainsi $\E(X)=\displaystyle\sum_{k=1}^n\frac{(n-1)!}{n!}=\sum_{k=1}^n\frac{1}{n}=1$.\\
+	En moyenne, une permutation choisie au hasard dans $\S_n$ possède $1$ point fixe (et étonnamment ce nombre ne dépend pas de $n$).
+	
 	\subsection{Permutations composées d'un grand cycle}
 	\label{Permutations composées d'un grand cycle corrigé}
 	\textcolor{blue}{\hyperref[Permutations composées d'un grand cycle]{[Enoncé]}}\\
+	
 	\subsection{Loi conjointe (1) \etoile{2}}
 	\label{Loi conjointe 1 corrigé}
-		\textcolor{blue}{\hyperref[Loi conjointe 1]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Loi conjointe 1]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item On doit avoir $\displaystyle\sum\limits_{(n,k)\in \N^2}\p(X=k,Y=n)=1$.\\
 		On applique le théorème de Fubini pour une famille positive,\\
@@ -9198,7 +9258,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\subsection{Loi conjointe (2) \etoile{3}}
 	\label{Loi conjointe 2 corrigé}
-		\textcolor{blue}{\hyperref[Loi conjointe 2]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Loi conjointe 2]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item On doit avoir $\displaystyle\sum\limits_{0\leq i,j\leq n}\p(X=i,Y=j)=1$.\\
 		Or, $\displaystyle\sum\limits_{0\leq i,j\leq n}\p(X=i,Y=j)=\lambda\sum\limits_{i=0}^n\binom{n}{i}\sum\limits_{j=0}^n\binom{n}{j}=\lambda\left(\sum\limits_{k=0}^n\binom{n}{k}1^k\cdot 1^{n-k}\right)^2=\lambda\left((1+1)^n\right)^2=\lambda 4^n$.\\
@@ -9223,7 +9283,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\subsection{Fonction caractéristique \etoile{2}}
 	\label{Fonction caractéristique corrigé}
-		\textcolor{blue}{\hyperref[Fonction caractéristique]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Fonction caractéristique]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item Si $t\in \R$, la famille $\left(\p(X=k)e^{itk}\right)_{k\in \Z}$ est sommable puisque $\displaystyle\sum\limits_{k\in \Z}\left|\p(X=k)e^{itk}\right|=\sum\limits_{k\in \Z}\p(X=k)=1<+\infty$. Ainsi $\varphi_X$ est définie sur $\R$. $\varphi_X$ est clairement $2\pi$-périodique.\\
 		Notons pour $k\in \Z,\ f_k:t\in \R\mapsto \p(X=k)e^{itk}$\\
@@ -9243,7 +9303,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\subsection{Fonction génératrice des moments \etoile{5}}
 	\label{Fonction génératrice des moments corrigé}
-		\textcolor{blue}{\hyperref[Fonction génératrice des moments]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Fonction génératrice des moments]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item $\E(e^{0\cdot X})=\E(1)=1<+\infty$. Donc $0\in I_X$. Si $I_X=\{0\}$ alors c'est un intervalle. Supposons que $I_X$ ne soit pas réduit à $\{0\}$.\\
 		Soient $a,b\in I_X$ tels que $a<b$ et soit $t\in [a,b]$.\\
