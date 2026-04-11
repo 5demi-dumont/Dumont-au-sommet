@@ -1378,7 +1378,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item Montrer que $a\Z\subset G$.
 		\item Montrer que $G=a\Z$.
 	\end{enumerate}
-	\newpage
+	
 	\section{\underline{Sous-groupes de $(\R,+)$} \centraleponts{3}}
 	\label{Sous-groupes de (R,+)}
 	\textcolor{blue}{\hyperref[Sous-groupes de R corrigé]{[Corrigé]}}\\
@@ -1451,9 +1451,14 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Endomorphismes continus de R corrigé]{[Corrigé]}}\\
 	Montrer que les endomorphismes de groupe de $(\R,+)$ continus sont les homothéties i.e les applications $x\mapsto \lambda x$ avec $\lambda \in \R$.
 	
+	\subsection{Morphismes monotones d'un sous-groupe de $\R$ dans $\R$}
+	\label{Morphismes monotones d'un sous-groupe de R dans R}
+	\textcolor{blue}{\hyperref[Morphismes monotones d'un sous-groupe de R dans R corrigé]{[Corrigé]}}\\
+	Soit $G$ un sous-groupe de $(\R,+)$. On considère $\varphi:G\to \R$ un morphisme de groupes monotone.\\
+	Montrer qu'il existe $\lambda\in \R$ tel que $\varphi=\lambda\Id_G$.
+	
 	\section{Morphismes de $\Q$ dans $\Z$ \ccinp{1}}
 	\label{Morphismes de Q dans Z}
-	
 	\textcolor{blue}{\hyperref[Morphismes de Q dans Z corrigé]{[Corrigé]}}\\
 	Déterminer les morphismes de groupes de $(\Q,+)$ dans $(\Z,+)$.
 	
@@ -1462,7 +1467,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\textcolor{blue}{\hyperref[Morphismes de Z/nZ dans Z/mZ corrigé]{[Corrigé]}}\\
 	Soient $m,n\in \N^*$. Déterminer les morphismes de groupes de $(\Z/n\Z,+)$ dans $(\Z/m\Z,+)$.
 	
-	\section{Morphismes de GL$_n(\R)$ dans $\Z /m\Z$ \xens{4}}
+	\section{Morphismes de GL$_n(\R)$ dans $\Z/m\Z$ \xens{4}}
 	\label{Morphismes de GLn(R) dans Z/mZ}
 	\textcolor{blue}{\hyperref[Morphismes de GLn(R) dans Z/mZ corrigé]{[Corrigé]}}\\
 	Soient $m,n \in \N^*$. Déterminer les morphismes de groupes de $(\T{GL}_n(\R),\times)$ dans $(\Z/m\Z,+)$.
@@ -6632,7 +6637,26 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$bf(x)=f(bx)=f(a)=af(1)$. Donc $f(x)=\displaystyle\frac{a}{b}f(1)=xf(1)$.\\
 	Les applications $f$ et $x\mapsto f(1)x$ coïncident sur $\Q$. Or $\Q$ est dense dans $\R$ et $f$ est continu sur $\R$ donc $f$ et $x\mapsto f(1)x$ coïncident sur $\R$.\\
 	Autrement dit $f$ est l'homothétie de rapport $f(1)$.\\
-	Réciproquement on vérifie que les homothéties sont des endomorphismes de $(\R,+)$ continus.
+	Réciproquement on vérifie que les homothéties sont des endomorphismes de $(\R,+)$ continus.\\\\
+	\textit{Remarque : on peut remplacer l'hypothèse continue par monotone puisqu'une fonction monotone est continue à gauche ou à droite ce qui suffit à conclure avec la densité de $\Q$.}
+	
+	\subsubsection{Morphismes monotones d'un sous-groupe de $\R$ dans $\R$ \centraleponts{3}}
+	\label{Morphismes monotones d'un sous-groupe de R dans R corrigé}
+	\textcolor{blue}{\hyperref[Morphismes monotones d'un sous-groupe de R dans R]{[Enoncé]}}\\
+	D'après l'exercice \ref{Sous-groupes de (R,+)} on sait que $G$ est ou bien dense dans $\R$ ou bien de la forme $a\Z$ avec $a\in \R_+$. Traitons ces deux cas séparément.\\
+	\underline{$G=a\Z$ :}\\
+	Soit $a\in \R_+$ tel que $G=a\Z$. Si $a=0$ comme on sait que $f(0)=0$, on a $f=\Id_G$. Supposons $a>0$.\\
+	Comme $f$ est un morphisme, $\forall k\in \Z,\ f(ka)=kf(a)=\dfrac{f(a)}{a}ka$. Donc $f=\dfrac{f(a)}{a}\Id_G$.\\\\
+	\underline{$G$ dense dans $\R$ :}\\
+	On va prolonger $f$ en un endomorphisme monotone de $(\R,+)$ puis utiliser l'exercice précédent. Quitte à considérer $-f$ on peut supposer $f$ croissante.\\
+	Soit $x\in \R$. Par densité de $G$ on se donne $(x_n)\in G^\N$ croissante de limite $x$ (on peut la construire par récurrence en prenant $x_{n+1}$ dans le voisinage $\left[x_n,x\right]$ de $x$ où $0\leq x-x_n<\dfrac{1}{n}$ par exemple).\\
+	On va alors prolonger $f$ en $x$ en posant $\tilde f(x)=\unfty\lim f(x_n)$.\\
+	Il faut vérifier que $\tilde f(x)$ est bien défini, c'est-à-dire que la suite $(f(x_n))_{n\in \N}$ converge et que la limite ne dépend pas de la suite croissante que l'on prend.\\
+	Tout d'abord il y a bien convergence car $(f(x_n))_{n\in \N}$ est une suite croissante majorée (par $f(x')$ avec $x<x'\in G$). Ensuite, on sait qu'une fonction croissante est continue à gauche en tout point donc la limite ne dépend pas de la suite croissante d'éléments de $G$ qui converge vers $x$.\\
+	Montrons ensuite que $\tilde f$ est un endomorphisme croissant de $(\R,+)$. Soient $x<y\in \R$.\\
+	On note $(x_n),(y_n)\in G^\N$ telles que $\tilde f(x)=\unfty\lim f(x_n)$ et $\tilde f(y)=\unfty\lim f(y_n)$.\\
+	APCR $x<y_n$ d'où par croissance de $f,\ \tilde f(x)\leq \tilde f(y)$. De plus, la suite $(x_n+y_n)_{n\in \N}$ est une suite d'éléments de $G$ croissante de limite $x+y$, donc en utilisant le caractère de morphisme de $f$, $\tilde f(x)+\tilde f(y)=\unfty\lim f(x_n)+f(y_n)=\unfty\lim f(x_n+y_n)=\tilde f(x+y)$.\\
+	Ainsi $\tilde f$ est un endomorphisme monotone de $(\R,+)$. D'après la remarque de l'exercice précédent $\exists \lambda\in \R,\ \tilde f=\lambda\Id_\R$. Par suite $f=\lambda\Id_G$.
 	
 	\subsection{Morphismes de $\Q$ dans $\Z$ \ccinp{1}}
 	\label{Morphismes de Q dans Z corrigé}
