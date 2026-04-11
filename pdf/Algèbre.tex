@@ -2533,11 +2533,15 @@ On souhaite montrer qu'il existe $c\geq 0$ tel que $\forall n\in \N^*,\ f(n)=c\l
 	\item Conclure.
 \end{enumerate}
 
-
 \section{Une majoration de la somme des diviseurs d'un entier \centraleponts{2}}
 \label{Une majorattion de la somme des diviseurs d'un entier}
 \textcolor{blue}{\hyperref[Une majoration de la somme des diviseurs d'un entier corrigé]{[Corrigé]}}\\
 On note pour $n\in \N^*$, $\sigma(n)$ la somme des diviseurs positifs de $n$. Montrer que $\sigma(n)\leq n+n\ln n$.
+
+\section{Nombres parfaits}
+\label{Nombres parfaits}
+\textcolor{blue}{\hyperref[Nombres parfaits corrigé]{[Corrigé]}}\\
+On dit qu'un entier naturel non nul $n$ est \textit{parfait} si la somme de ses diviseurs strict lui est égal. Montrer que $n$ est parfait si et seulement si $\displaystyle\sum_{d|n}\frac{1}{d}=2$.
 
 \section{Entiers algébriques \centraleponts{2}}
 \label{Entiers algébriques}
@@ -8410,13 +8414,30 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Fonctions arithmétiques réelles additives corrigé}
 	\textcolor{blue}{\hyperref[Fonctions arithmétiques réelles addtives]{[Enoncé]}}\\
 	
-	\subsection{Une majoration de la somme des diviseurs d'un entier}
+	\subsection{Une majoration de la somme des diviseurs d'un entier \centraleponts{2}}
 	\label{Une majoration de la somme des diviseurs d'un entier corrigé}
 	\textcolor{blue}{\hyperref[Une majorattion de la somme des diviseurs d'un entier]{[Enoncé]}}\\
+	Par définition $\sigma(n)=\displaystyle\sum_{d|n}d$ donc $\displaystyle\frac{\sigma(n)}{n}=\sum_{d|n}\frac{d}{n}$.\\
+	Or l'application $\fonction{f}{\{d,\ d|n\}}{\{d,\ d|n\}}{d}{\dfrac{n}{d}}$ est bijective (c'est une involution).\\
+	Donc $\displaystyle\sum_{d|n}\frac{d}{n}=\sum_{d|n}\frac{1}{f(d)}=\sum_{d|n}\frac{1}{d}$.\\
+	Ainsi $\displaystyle\frac{\sigma(n)}{n}=\sum_{d|n}\frac{1}{d}\leq \sum_{d=1}^n\frac{1}{d}$. On montre alors classiquement par une comparaison série-intégrale que $\dfrac{\sigma(n)}{n}\leq \ln n+1$ d'où $\sigma(n)\leq n+n\ln n$.
 	
-	\subsection{Entiers algébriques}
+	\subsection{Nombres parfaits \telecom{2}}
+	\label{Nombres parfaits corrigé}
+	\textcolor{blue}{\hyperref[Nombres parfaits]{[Enoncé]}}\\
+	Il faut d'abord bien traduire l'énoncé.\\
+	Par définition $n$ est parfait si et seulement si $\displaystyle\sum_{d|n}d=2n$.\\
+	Cela revient à $\displaystyle\sum_{d|n}\frac{d}{n}=2$.\\
+	Or l'application $\fonction{f}{\{d,\ d|n\}}{\{d,\ d|n\}}{d}{\dfrac{n}{d}}$ est bijective (c'est une involution).\\
+	Donc $\displaystyle\sum_{d|n}\frac{d}{n}=\sum_{d|n}\frac{1}{f(d)}=\sum_{d|n}\frac{1}{d}$ et par suite $n$ est parfait si et seulement si $\displaystyle\sum_{d|n}\frac{1}{d}=2$.
+	
+	\subsection{Entiers algébriques \centraleponts{2}}
 	\label{Entiers algébriques corrigé}
 	\textcolor{blue}{\hyperref[Entiers algébriques]{[Enoncé]}}\\
+	Tout d'abord un entier $k$ est un entier algébrique en tant que racine de $X-k$. Réciproquement, fixons $x$ un entier algébrique rationnel. On note $x=\dfrac{p}{q}$ avec $(p,q)\in \Z\times \N^*$ et $p\wedge q=1$. On note aussi $P=X^n+\displaystyle\sum_{k=0}^{n-1}a_kX^k\in \Z[X]$ qui annule $x$.\\
+	$P(x)=0\implies \displaystyle\left(\frac{p}{q}\right)^n+\sum_{k=0}^{n-1}a_k\left(\frac{p}{q}\right)^k=0\implies p^n=-q\sum_{k=0}^{n-1}a_kp^kq^{n-k-1}$.\\
+	Comme $\displaystyle\sum_{k=0}^{n-1}a_kp^kq^{n-k-1}$ est un entier, on en déduit que $q|p^n$. Puis comme $p\wedge q=1$, $q=1$ i.e $x\in \Z$.\\\\
+	\textit{Remarque : c'est un cas particulier du théorème de la racine rationnelle (cf.IV.19 tome Analyse).}
 	
 	\subsection{Majoration de la primorielle}
 	\label{Majoration de la primorielle corrigé}
