@@ -157,6 +157,12 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item $M$ est une matrice d'homothétie.
 	\end{itemize}
 	
+	\section{Formes multiplicatives de $\M_n(\K)$ \centraleponts{4}}
+	\label{Formes multiplicatives de M_n(K)}
+	\textcolor{blue}{\hyperref[Formes multiplicatives de M_n(K) corrigé]{[Corrigé]}}\\
+	Soit $f:\M_n(\K)\to \K$ non constante telle que $\forall (A,B)\in \M_n(\K)^2,\ f(AB)=f(A)f(B)$.\\
+	Montrer que $A\in \T{GL}_n(\K)\iff f(A)\ne 0$.
+	
 	\section{Isomorphisme qui respecte les matrices de rang 1 \centraleponts{4}}
 	\label{Isomorphisme qui respecte les matrices de rang 1}
 	\textcolor{blue}{\hyperref[Isomorphisme qui respecte les matrices de rang 1 corrigé]{[Corrigé]}}\\
@@ -175,14 +181,19 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\end{itemize}
 	\end{enumerate}
 	
+	\section{Egalité de noyaux \centraleponts{3}}
+	\label{Egalité de noyaux}
+	\textcolor{blue}{\hyperref[Egalité de noyaux corrigé]{[Corrigé]}}\\
+	Soient $A,B\in \M_n(\K)$. Montrer que $\ker A=\ker B\iff \exists P\in \T{GL}_n(\K),\ B=PA$.
+	
 	\section{\underline{Centre de $\M_n(\K)$} \centraleponts{2}}
 	\label{Centre de Mn(K)}
 	\textcolor{blue}{\hyperref[Centre de Mn(K) corrigé]{[Corrigé]}}\\
 	Déterminer le centre de $\M_n(\K)$ : $Z=\{A\in \M_n(\K),\ \forall B\in \M_n(\K),\ AB=BA\}$.
 	
-	\section{$\M_n(\K)$ est violemment non commutatif}
-	\label{Mn(K) est violemment non commutatif corrigé}
-	\textcolor{blue}{\hyperref[Mn(K) est violemment non commutatif]{[Corrigé]}}\\
+	\section{$\M_n(\K)$ n'est vraiment pas commutatif}
+	\label{Mn(K) n'est vraiment pas commutatif corrigé}
+	\textcolor{blue}{\hyperref[Mn(K) n'est vraiment pas commutatif]{[Corrigé]}}\\
 	\begin{enumerate}
 		\item Déterminer les matrices de $\M_n(\K)$ qui commutent avec toutes les matrices inversibles.
 		\item Déterminer les matrices de $\M_n(\K)$ qui commutent avec toutes les matrices de projecteur.
@@ -3498,12 +3509,17 @@ On appelle $u$ le produit vectoriel des vecteurs $x_1,\dots, x_{n-1}$ et on le n
 	\item Montrer que l'application $$(x_1,\dots,x_{n-1})\in E^{n-1}\mapsto x_1\wedge x_2\wedge\dots\wedge x_{n-1}$$ est une application $(n-1)$-linéaire alternée.
 \end{enumerate}
 
-\section{Une caractérisation de la trace}
-\label{Une caractérisation de la trace}
-\textcolor{blue}{\hyperref[Une caractérisation de la trace corrigé]{[Corrigé]}}\\
+\section{Caractérisation de la trace par la cyclicité \centraleponts{3}}
+\label{Caractérisation de la trace par la cyclicité}
+\textcolor{blue}{\hyperref[Caractérisation de la trace par la cyclicité corrigé]{[Corrigé]}}\\
 Soit $\varphi:\M_n(\R)\to\R$ une application linéaire vérifiant
 $$\forall A,B\in \M_n(\R),\ \varphi(AB)=\varphi(BA)$$
 Montrer que $\varphi$ est proportionnelle à la trace.
+
+\subsection{Morphismes d'algèbres de $\M_n(\K)$ \centraleponts{3}}
+\label{Morphismes d'algèbres de M_n(K)}
+\textcolor{blue}{\hyperref[Morphismes d'algèbres de M_n(K) corrigé]{[Corrigé]}}\\
+Soit $f$ un endomorphisme d'algèbres de $\M_n(\K)$. Montrer que $\Tr\circ f=\Tr$.
 
 \section{\underline{Hyperplan de $\M_n(\K)$} \xens{4}}
 \label{Hyperplan de Mn(K)}
@@ -4443,7 +4459,23 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\textcolor{blue}{\hyperref[L'ordre a son importance]{[Enoncé]}}\\
 	Il est clair que si $M$ est une homothétie alors \[\forall A,B\in \M_n(\R), \Tr(MAB)= \Tr(MBA)\]
 	Réciproquement, supposons que $M$ vérifie la propriété de l'énoncé.\\
-	Alors elle est vérifié en particulierr pour les matrices élémentaires, cela va nous fournir des conditions très restrictives sur les coefficients de $M$.\\ On en déduit que $M$ est une homothétie.
+	Alors elle est vérifié en particulier pour les matrices élémentaires, cela va nous fournir des conditions très restrictives sur les coefficients de $M$.\\ On en déduit que $M$ est une homothétie.
+	
+	\subsection{Formes multiplicatives de $\M_n(\K)$ \centraleponts{4}}
+	\label{Formes multiplicatives de M_n(K) corrigé}
+	\textcolor{blue}{\hyperref[Formes multiplicatives de M_n(K)]{[Enoncé]}}\\
+	$\forall M\in \M_n(\K),\ f(M)=f(M)f(I_n)$ donc comme $f$ n'est pas constante égale à $0$ on en déduit $f(I_n)=1$.\\
+	De même, $\forall M\in \M_n(\K),\ f(0)=f(0)f(M)$ donc comme $f$ n'est pas constante égale à $1$ on en déduit $f(0)=0$.\\
+	Soit $A\in \T{GL}_n(\K)$. $f(A)f(A^{-1})=f(I_n)=1$. Donc $f(A^{-1})=f(A)^{-1}$ et en particulier $f(A)\ne 0$.\\
+	Soit maintenant $A$ de rang $r<n$. On note la matrice par blocs $J_r=\begin{pmatrix}
+		I_r&0\\
+		0&0
+	\end{pmatrix}$.\\
+	On sait qu'il existe $P,Q\in \T{GL}_n(\K)$ telles que $A=PJ_rQ$. On a vu que $f(P)\ne 0$ et $f(Q)\ne 0$ donc $f(A)=0\iff f(P)f(J_r)f(Q)=0\iff f(J_r)=0$.\\
+	Ainsi la nullité de $f(A)$ est déterminée par le rang de $A$.\\
+	Notons maintenant pour $i\in \crblanc{1}{n},\ D_i=\diag(1,\dots,1,0,1,\dots,1)$ où le $1$ est sur la $i$-ème ligne. Pour tout $i$, $\rg(D_i)=n-1$.\\
+	On remarque que $J_r=\displaystyle\prod_{i=r+1}^nD_i$. En particulier $0=\displaystyle\prod_{i=1}^nD_i$ d'où l'existence de $i$ tel que $f(D_i)=0$. Mais alors vu que les $D_i$ ont tous le même rang, pour tout $i,\ f(D_i)=0$. Par conséquent $f(J_r)=0$.\\
+	On a montré que $f(A)=0\iff \rg(A)<n$ ce qui conclut l'exercice.
 	
 	\subsection{Isomorphisme de qui respecte les matrices de rang 1 \centraleponts{4}}
 	\label{Isomorphisme qui respecte les matrices de rang 1 corrigé}
@@ -4499,22 +4531,45 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\textit{Remarque : Les isomorphismes solutions conservent en fait le rang de manière générale.}
 	\end{enumerate}
 	
-	\subsection{Centre de $\M_n(\K)$ \centraleponts{2}}
+	\subsection{Egalité de noyaux \centraleponts{3}}
+	\label{Egalité de noyaux corrigé}
+	\textcolor{blue}{\hyperref[Egalité de noyaux]{[Enoncé]}}\\
+	Supposons qu'il existe $P\in \T{GL}_n(\K)$ telle que $B=PA$.\\
+	Alors $\forall X\in \K^n,\ AX=0\implies PAX=0\implies BX=0$ et $BX=0\implies P^{-1}BX=0\implies AX=0$. Donc $\ker A=\ker B$.\\
+	Réciproquement, supposons que $F:=\ker A=\ker B$. Notons $u_A$ et $u_B$ les endomorphismes canoniquement associés à $A$ et $B$. Notons $G$ un supplémentaire de $F$ dans $\K^n$ une base de $G$. On sait que $u_A$ et $u_B$ induisent des isomorphismes $\tilde u_A:G\to \Ima A$ et $\tilde u_B:G\to \Ima B$. En effet ils sont injectifs car $F$ et $G$ sont en somme directe et surjectifs car $F+G=\K^n$.\\
+	On définit alors $f\in \L(\K^n)$ par $f_{|F}=\Id_F$ et $f_{|G}=\tilde u_B\circ \tilde u_A^{-1}$.\\
+	$f$ est un automorphisme de $\K^n$, et de plus $u_B=f\circ u_A$ puisqu'il y a égalité sur $F$ et sur $G$.\\
+	Ainsi en notant $P$ la matrice de $f$ dans la base canonique de $\K^n$, on obtient $B=PA$.
+	
+	\subsection{Centre de $\M_n(\K)$ \telecom{2}}
 	\label{Centre de Mn(K) corrigé}
 	\textcolor{blue}{\hyperref[Centre de Mn(K)]{[Enoncé]}}\\
-	Soit $A\in Z$. On note pour $1\leq i,j\leq n,\ E_{ij}$ la matrice dont tous les coefficients sont nuls sauf celui sur la $i$-ième ligne, $j$-ième colonne qui vaut $1$. Fixons $(i,j)\in \crblanc{1}{n}^2$.\\
+	Soit $A\in Z$.
+	\underline{$1^{\T{ère}}$ méthode :}\\
+	On note pour $1\leq i,j\leq n,\ E_{ij}$ la matrice dont tous les coefficients sont nuls sauf celui sur la $i$-ième ligne, $j$-ième colonne qui vaut $1$. Fixons $(i,j)\in \crblanc{1}{n}^2$.\\
 	$AE_{ij}=E_{ij}A$ donc pour $(k,l)\in \crblanc{1}{n}^2$ on a :\\
 	$$\left(AE_{ij}\right)_{kl}=\displaystyle\sum_{p=1}^nA_{kp}\left(E_{ij}\right)_{pl}=A_{ki}\left(E_{ij}\right)_{il}=\left(E_{ij}\right)_{kj}A_{jl}=\sum_{p=1}^n\left(E_{ij}\right)_{kp}A_{pl}=\left(E_{ij}A\right)_{kl}$$
 	En particulier, pour $k=i,l=j$ on obtient $A_{ii}=A_{ii}\left(E_{ij}\right)_{ij}=\left(E_{ij}\right)_{ij}A_{jj}=A_{jj}$.\\
 	Et pour $k\ne i,l=j$ on obtient $A_{ki}=A_{ki}\left(E_{ij}\right)_{ij}=\left(E_{ij}\right)_{kj}A_{jj}=0$.\\
 	Ainsi $A=A_{11}I_n$ est une matrice scalaire.\\\\
+	\underline{$2^{\T{nd}}$ méthode :}\\
+	Notons $f\in \L(\K^n)$ l'endomorphisme canoniquement associé à $A$. Pour $x\in \K^n$ on note $g_x$ un projecteur sur $\Vect(x)$.\\
+	Comme $f$ commute avec $g_x$ on a $g_x(f(x))=f(g_x(x))=f(x)$. Ainsi $f(x)\in \Vect(x)$, autrement dit il existe $\lambda_x\in \K$ tel que $f(x)=\lambda_xx$.\\
+	On montre alors (cf.\ref{Caractérisation des homothéties (1)}) que $f$ est une homothétie.\\
+	Donc $A$ est une matrice scalaire (ou d'homothétie).\\\\
 	Réciproquement fixons $\alpha\in \K$.\\
 	$\forall B\in \M_n(\K),\ (\alpha I_n)B=\alpha B=B(\alpha I_n)$.\\
 	Finalement, les seules matrices qui commutent avec toutes les autres sont les matrices scalaires : $Z=\Vect(I_n)$.
 	
-	\subsection{$\M_n(\K)$ est violemment non commutatif}
-	\label{Mn(K) est violemment non commutatif}
-	\textcolor{blue}{\hyperref[Mn(K) est violemment non commutatif corrigé]{[Enoncé]}}\\
+	\subsection{$\M_n(\K)$ n'est vraiment pas commutatif}
+	\label{Mn(K) n'est vraiment pas commutatif}
+	\textcolor{blue}{\hyperref[Mn(K) n'est vraiment pas commutatif corrigé]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Si $A\in \M_n(\K)$ commute avec toutes les matrices inversibles alors elle commute avec toutes les combinaisons linéaires de matrices inversibles. Or pour $B\in \M_n(\K)$, $B=B-\varepsilon I_n+\varepsilon I_n$ avec $B-\varepsilon I_n$ inversible pour $\varepsilon>0$ assez petit ($\varepsilon<\min\{|\lambda|,\ \lambda\in \T{Sp}(B)\backslash\{0\}\}$ suffit). Donc d'après l'exercice précédent $A$ est une matrice scalaire.
+		\item De même, montrons que les matrices de projecteurs engendrent $\M_n(\K)$. il suffit de montrer que les $E_{ij}$ sont dans l'espace engendré. C'est évident pour les $E_{ii}$ puisque ce sont des matrices de projecteurs. Mais c'est aussi le cas de $E_{ii}+E_{ij}$ car $$(E_{ii}+E_{ij})^2=E_{ii}^2+E_{ii}E_{ij}+E_{ij}E_{ii}+E_{ij}^2=E_{ii}+E_{ij}+0+0=E_{ii}+E_{ij}$$
+		Ainsi $E_{ij}=(E_{ii}+E_{ij})-E_{ii}$ est combinaison linéaire de matrices de projecteurs pour tout $1\leq i,j\leq n$.\\
+		Par conséquent $A$ est une matrice scalaire.
+	\end{enumerate}
 	
 	\subsection{Racine carrée de la dérivation \xens{3}}
 	\label{Racine carrée de la dérivation corrigé}
@@ -4528,16 +4583,24 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Produit de matrices nilpotentes \xens{5}}
 	\label{Produit de matrices nilpotentes corrigé}
 	\textcolor{blue}{\hyperref[Produit de matrices nilpotentes]{[Enoncé]}}\\
+	\underline{$1^{\T{ère}}$ méthode :}\\
 	Montrons le lemme suivant : si $A$ est une matrice non nulle et $B$ est une matrice nilpotente qui commute avec $A$ alors $\rg(AB)<\rg(A)$.\\
 	Soient $A\in \M_n(\K)\backslash\{0_n\}$ et $B\in \M_n(\K)$ une matrice nilpotente qui commute avec $A$. Posons $\varphi_A$ et $\varphi_B$ les endomorphismes canoniquement associés à $A$ et $B$ respectivement.\\
 	Il est clair que $\text{Im}(AB)\subset \text{Im}(A)$ donc $\rg(AB)\leq \rg(A)$. Supposons par l'absurde que $\rg(AB)=\rg(A)$\\
 	Soit $Y\in \text{Im}(A)$. $\exists X\in \M_{n,1}(\K),\ Y=AX$. Donc $BY=BAX=ABX\in \text{Im}(A)$. Ainsi $\varphi_B$ induit un endomorphisme $\tilde \varphi_B$ sur Im($A$).\\
 	De plus, si $Y\in \Ker(\tilde \varphi_B)$ alors $BY=0$ et il existe $X\in \M_{n,1}(\K)$ telle que $Y=AX$. Autrement dit $BAX=0$ ou encore $X\in \Ker(BA)=\Ker(AB)$. Or $\Ker(A)\subset \Ker(AB)$ et on a supposé que $\rg(AB)=\rg(A)$. Donc à l'aide du théorème du rang on en déduit que $\Ker(AB)=\Ker(A)$. Mais alors $Y=0$ d'où $\tilde \varphi_B$ est injectif et donc bijectif.\\
 	Pourtant, on montre aisément que $\forall p\in \N^*,\forall X\in \M_{n,1}(\K)\ \varphi_B^p(X)=B^pX$. Par conséquent $\tilde \varphi_B$ est nilpotent en tant que restriction d'une application nilpotente; il ne peut pas être bijectif.\\
-	En outre, $\rg(AB)<\rg(A)$.\\
-	Par récurrence immédiate sur le nombre de matrice dans le produit on en déduit que $\rg\left(\displaystyle\prod_{i=1}^nN_i\right)=0$ c'est à dire que $\displaystyle\prod_{i=1}^nN_i=0$.
+	Par conséquent, $\rg(AB)<\rg(A)$.\\
+	Par récurrence immédiate sur le nombre de matrice dans le produit on en déduit que $\rg\left(\displaystyle\prod_{i=1}^nN_i\right)=0$ c'est à dire que $\displaystyle\prod_{i=1}^nN_i=0$.\\\\
+	\underline{$2^{\T{nd}}$ méthode :}\\
+	On montre que $n$ matrices trigonalisables qui commutent deux à deux sont cotrigonalisables (cf.\ref{Cotrigonalisation (1)}). On note alors $(e_1,\dots,e_n)$ une base de trigonalisation commune et $P$ la matrice de passage correspondante.\\
+	On a $P\displaystyle\left(\prod_{i=1}^nN_i\right)P^{-1}=\prod_{i=1}^nPN_iP^{-1}$ où $T_i:=PN_iP^{-1}$ est triangulaire supérieure stricte car $N_i$ est nilpotente.\\
+	Ainsi par définition $\forall i,j\in \crblanc{1}{n},\ T_ie_j\in \Vect(e_1,\dots,e_{j-1})$ ($T_ie_1=0$).\\
+	Ainsi $\forall j\in \crblanc{1}{n},\ \displaystyle\left(\prod_{i=1}^nT_i\right)e_j=0$. D'où $\displaystyle\prod_{i=1}^nT_i=0$ puis par suite $\displaystyle\prod_{i=1}^nN_i=0$.\\\\
 	
-	\subsection{Suites périodiques \etoile{4}}
+	\textit{Remarque : Une suite $\{0\}=F_0\subsetneq F_1\subsetneq \cdots\subsetneq F_n=\K^n$ de sev d'un ev $E$ de dimension $n$ est appelée drapeau total de $E$. Trigonaliser un endomorphisme $u$ de $E$ revient à trouver un drapeau total $(F_j)_{0\leq j\leq n}$ de $E$ stable par $u$, i.e vérifiant $\forall j,\ u(F_j)\subset F_j$. Dans le cas où $u$ est nilpotent on a en fait $\forall j,\ u(F_j)\subset F_{j-1}$ d'où le résultat.}
+	
+	\subsection{Suites périodiques \xens{4}}
 	\label{Suites périodiques corrigé}
 	\textcolor{blue}{\hyperref[Suites périodiques]{[Enoncé]}}\\
 	$(0)_{n\in \N}\in E$ car la suite nulle est $1$-périodique par exemple. Soit $(u_n)_{n\in \N}$ une suite $p$-périodique et $(v_n)_{n\in \N}$ une suite $q$-périodique pour un certain couple $(p,q)\in (\N^*)^2$. Fixons $\lambda\in \C$.\\
@@ -9789,9 +9852,9 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Produit mixte et produit vectoriel corrigé}
 		\textcolor{blue}{\hyperref[Produit mixte et produit vectoriel]{[Enoncé]}}\\
 	
-	\subsection{Une caractérisation de la trace}
-	\label{Une caractérisation de la trace corrigé}
-	\textcolor{blue}{\hyperref[Une caractérisation de la trace]{[Enoncé]}}\\
+	\subsection{Caractérisation de la trace par la cyclicité \centraleponts{3}}
+	\label{Caractérisation de la trace par la cyclicité corrigé}
+	\textcolor{blue}{\hyperref[Caractérisation de la trace par la cyclicité]{[Enoncé]}}\\
 	$\M_n(\R)$ est un espace euclidien donc d'après le théorème de représentation de Riesz, $\exists A\in \M_n(\R),\ \forall B\in \M_n(\R),\ \varphi(B)=\Tr(AB)$. Il suffit de montrer que $A$ est une matrice d'homothétie. Notons $E_{ij}$ la matrice dont tous les coefficients sont nuls, sauf celui en position $(i,j)$ qui vaut 1.\\
 	On vérifie que $\forall i,j,k,l\in \crblanc{1}{n},\ k\ne j\implies E_ijE_kl=0$ et $E_{ij}E_{jl}=E_{il}$.\\
 	Par hypothèse si $i\ne l,\ \varphi(E_{ij}E_{jl})=\varphi(E_{jl}E_{ij})=\varphi(0)=0$.\\
@@ -9802,7 +9865,16 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{cases}$\\
 	Donc $A_{li}=0$.\\
 	Et de plus, $A_{11}=\varphi(E_{11})=\varphi(E_{1i}E_{i1})=\varphi(E_{i1}E_{1i})=\varphi(E_{ii})=A_{ii}$. Ainsi $A=\lambda I_n$ avec $\lambda=A_{11}$.\\
-	Finalement, $\varphi=\lambda\Tr$.
+	Finalement, $\varphi=\lambda\Tr$.\\\\
+	
+	\textit{Remarque : Le résultat reste vrai sur $\M_n(\C)$ car on peut montrer un théorème de représentation de Riesz complètement analogue à celui qu'on a utilisé.}\\
+	\textit{Remarque bis : Rappelons nous de la définition suivante du déterminant matriciel "$\det$ est l'unique forme multilinéaire alternée sur $\M_n(\K)$ qui vaut $1$ en l'identité". Cet exercice montre qu'on peut donner une définition semblable de la trace : "$\Tr$ est l'unique forme linéaire sur $\M_n(\K)$ vérifiant la propriété de cyclicité qui vaut $n$ en l'identité."}
+	
+	\subsubsection{Morphismes d'algèbres de $\M_n(\R)$ \centraleponts{3}}
+	\label{Morphismes d'algèbres de M_n(R) corrigé}
+	\textcolor{blue}{\hyperref[Morphismes d'algèbres de M_n(R)]{[Enoncé]}}\\
+	Notons $g=\Tr\circ f$. $g$ est une forme linéaire de $\M_n(\K)$ vérifiant $$\forall (A,B)\in \M_n(\K)^2,\ g(AB)=\Tr(f(AB))=\Tr(f(A)f(B))=\Tr(f(B)f(A))=\Tr(f(BA))=g(BA)$$
+	D'après l'exercice précédent $g$ est donc proportionnelle à la trace. De plus $g(I_n)=\Tr(f(I_n))=\Tr(I_n)$ donc $g=\Tr$.
 	
 	\subsection{Hyperplan de $\M_n(\K)$}
 	\label{Hyperplan de Mn(K) corrigé}
