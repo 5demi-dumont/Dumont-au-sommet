@@ -1203,7 +1203,7 @@
 		\item Est-ce une condition nécessaire ?
 	\end{enumerate}
 	
-	\section{Continuité au sens de Cesàro}
+	\section{Continuité au sens de Cesàro \centraleponts{3}}
 	\textcolor{blue}{\hyperref[Continuité au sens de Cesàro corrigé]{[Corrigé]}}\\
 	\label{Continuité au sens de Cesàro}
 	Soit $f:\R\to \R$ telle que $\forall x,y\in \R,\ f(x+y)=e^yf(x)+e^xf(y)$.
@@ -1213,19 +1213,27 @@
 		\item En déduire l'ensemble des fonctions réelles continues au sens de Cesàro.
 	\end{enumerate}
 	
-	\section{Une équation fonctionnelle exponentielle}
-	\textcolor{blue}{\hyperref[Une équation fonctionnelle exponentielle corrigé]{[Corrigé]}}\\
-	\label{Une équation fonctionnelle exponentielle}
+	\section{Une équation fonctionnelle (1) \telecom{3}}
+	\textcolor{blue}{\hyperref[Une équation fonctionnelle (1) corrigé]{[Corrigé]}}\\
+	\label{Une équation fonctionnelle (1)}
 	Soit $f:\R\to \R$ telle que $\forall x,y\in \R,\ f(x+y)=e^yf(x)+e^xf(y)$.
 	\begin{enumerate}
 		\item On suppose $f$ dérivable en $0$. Déterminer $f$.
 		\item On suppose $f$ continue sur $\R$. Déterminer $f$.
 	\end{enumerate}
 	
+	\section{Une équation fonctionnelle (2)}
+	\textcolor{blue}{\hyperref[Une équation fonctionnelle (2) corrigé]{[Corrigé]}}\\
+	\label{Une équation fonctionnelle (2)}
+	\begin{enumerate}
+		\item Trouver les fonctions $f:\R\to \R$ monotones telles que $\forall (x,y)\in \R^2,\ f(xy)=f(x)f(y)$.
+		\item Trouver les fonctions $f:\R\to \R$ monotones telles que
+		$$\forall x\ne y\in \R,\ f\left(\frac{x+y}{x-y}\right)=\frac{f(x)+f(y)}{f(x)-f(y)}$$
+	\end{enumerate}
+	
 	\section{Fonction de Pringsheim \etoile{2}}
 	\textcolor{blue}{\hyperref[sec:fonction-de-pringsheim-etoile2]{[Corrigé]}}\\
 	\label{fpringsheim}
-	\label{FOnction de Pringsheim}
 	Reconnaître la fonction définie sur $\R$ par $f(x)=\lim\limits_{n\to+\infty} \lim\limits_{m\to+\infty} |\cos(n!\pi x)|^m$.
 	
 	\section{$f\circ f=\Id_{\R_+}$ \etoile{2}}
@@ -6204,13 +6212,16 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Ceci est absurde donc $\mathbbm{1}_\Q$ n'est pas continue en $a$.\\
 	Finalement $\mathbbm{1}_\Q$ n'est continue en aucun point de $\R$.
 	
-	\subsection{Fonction nulle part dérivable}\label{sec:fonction-nulle-part-derivable}
+	\subsection{Fonction nulle part dérivable}
+	\label{sec:fonction-nulle-part-derivable}
 	\textcolor{blue}{\hyperref[nullepartdérivable]{[Enoncé]}}\\
 	
-	\subsection{Theorème de Rolle}\label{sec:theoreme-de-rolle}
+	\subsection{Theorème de Rolle}
+	\label{sec:theoreme-de-rolle}
 	\textcolor{blue}{\hyperref[Théorème de Rolle]{[Enoncé]}}\\
 	
-	\subsection{Dérivée symétrique \etoile{1}}\label{sec:derivee-symetrique-etoile1}
+	\subsection{Dérivée symétrique \ccinp{1}}
+	\label{sec:derivee-symetrique-etoile1}
 	\textcolor{blue}{\hyperref[deriveesymetrique]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Supposons que $f$ soit dérivable en un point $a\in \R$.\\
@@ -6243,9 +6254,9 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Réciproquement, toutes les fonctions affines sont continues au sens de Cesàro.
 	\end{enumerate}
 	
-	\subsection{Une équation fonctionnelle exponentielle \telecom{3}}
-	\label{Une équation fonctionnelle exponentielle corrigé}
-	\textcolor{blue}{\hyperref[Une équation fonctionnelle exponentielle]{[Enoncé]}}\\
+	\subsection{Une équation fonctionnelle (1) \telecom{3}}
+	\label{Une équation fonctionnelle (1) corrigé}
+	\textcolor{blue}{\hyperref[Une équation fonctionnelle (1)]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item En prenant $x=y=0$ on obtient $f(0)=2f(0)$ d'où $f(0)=0$. Etant donnée l'hypothèse que l'on a, faisons apparaître le taux d'accroissement de $f$ en $0$ :\\
 		$\forall x\in \R,\ \forall h\in \R,\ \dfrac{f(x+h)-f(x)}{h}=\dfrac{e^h-1}{h}f(x)+e^x\dfrac{f(h)}{h}$.\\
@@ -6272,6 +6283,29 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		On montre alors classiquement (cf. V.18 tome Algèbre) que $g=g(1)\Id_\R$ et par suite $\forall t\in \R,\ f(t)=g(1)te^t$.\\
 		Réciproquement, $\forall \lambda\in \R,\ t\mapsto \lambda te^t$ est solution.\\\\
 		\textit{Remarque : La continuité de $f$ en $0$ donne sa continuité sur $\R$, en effet si $x\in \R$ alors $f(x+h)=e^hf(x)+e^xf(h)\underset{h\to 0}\longrightarrow f(x)+e^xf(0)=f(x)$ donc $f$ est continue en $x$.}
+	\end{enumerate}
+	
+	\subsection{Une équation fonctionnelle (2)}
+	\label{Une équation fonctionnelle (2) corrigé}
+	\textcolor{blue}{\hyperref[Une équation fonctionnelle (2)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Pour $(x,y)=(0,y)$ on obtient $f(0)=f(0)f(y)$ donc $f$ est constante égale à $1$ ou bien $f(0)=0$. Supposons $f$ non constamment égale à $1$.\\
+		On remarque aussi que pour $x\in \R,\ f(x^2)=f(x)^2\geq 0$. Donc $f(\R_+)\subset \R_+$ si bien que $f$ est croissante ou nulle sur $\R_+$.\\
+		Or on a aussi $f(1)=f(1)^2$ donc $f(1)\in \{-1,1\}$ d'où $f(1)=1$. Ainsi $f$ est croissante.\\
+		Ensuite $f(-1)^2=f(1)=1$ donc $f(-1)\in \{-1,1\}$ d'où $f(-1)=-1$. Mais alors $\forall x\in \R,\ f(-x)=f(-1)f(x)=-f(x)$ : $f$ est impaire.\\
+		Remarquons enfin que $\forall x>0,\ f(x)f(x^{-1})=f(1)=1$, et donc $f(x^{-1})=f(x)^{-1}$. Tout cela montre qu'il suffit d'étudier $f$ sur $[1,+\infty[$ (et au passage on a obtenu $f(\R^*_+)\subset \R^*_+$). On fixe $x>1$.\\
+		Par récurrence immédiate $\forall n\in \N,\ f(x^n)=f(x)^n$. Puis en appliquant ces égalités à $x^{-1}$ on a même $\forall n\in \Z,\ f(x^n)=f(x)^n$.\\
+		Ensuite si $a,b\in \Z\times \N^*,\ f(x^{a/b})^b=f(x^a)=f(x)^a$ d'où $f(x^{a/b})=f(x)^{a/b}$. Autrement dit, $\forall q\in \Q,\ f(x^q)=f(x)^q$.\\
+		Montrons que $\forall \alpha\in \R,\ f(x^\alpha)=f(x)^\alpha$. On suppose par l'absurde $f(x^\alpha)\ne f(x)^\alpha$.\\
+		On pose pour $n\in \N^*,\ \alpha_n=\lfloor n\alpha\rfloor$. $\forall n\in \N^*,\ \dfrac{\alpha_n}{n}\leq \alpha<\dfrac{\alpha_n+1}{n}$.\\
+		Si $f(x^\alpha)<f(x)^\alpha$, par croissance de $f$ avec $x>1$ on a $f(x)^{\frac{\alpha_n}{n}}=f(x^{\frac{\alpha_n}{n}})\leq f(x^\alpha)<f(x)^\alpha$.\\
+		Ainsi par le théorème des gendarmes $f(x^\alpha)=f(x)^\alpha$.\\
+		De même, si $f(x^\alpha)>f(x)^\alpha$ on a $f(x)^\alpha<f(x^\alpha)\leq f(x^{\frac{\alpha_n+1}{n}})=f(x)^{\frac{\alpha_n+1}{n}}$ ce qui donne $f(x^\alpha)=f(x)^\alpha$.\\
+		Dans tous les cas $f(x^\alpha)=f(x)^\alpha$.\\
+		Ainsi $\forall x>0,\ f(x)=f(e^{\ln x})=f(e)^{\ln x}=x^{\ln(f(e))}$.\\
+		En particulier, $\exists \lambda\geq 0,\ \forall x\in \R,\ f(x)=x^\lambda$. Finalement, comme $f$ est définie sur $\R$, $\lambda$ est un entier naturel impair.\\
+		On conclut que les fonctions monotones vérifiant $\forall (x,y)\in \R^2,\ f(xy)=f(x)f(y)$ sont, la fonction nulle et les fonctions $x\mapsto x^n$ avec $n$ un entier naturel nul ou impair.
+		\item 
 	\end{enumerate}
 	
 	\subsection{Fonction de Pringsheim \etoile{2}}

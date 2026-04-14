@@ -618,7 +618,8 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\begin{enumerate}
 		\item  Soient $u,v\in \mathcal L(E)$ trigonalisables et commutant. \\Montrer que $u$ et $v$ admettent une base de trigonalisation commune.
 		\item Soient $u_1,\dots,u_p\in \mathcal L(E)$ trigonalisables et commutant deux à deux.\\ Montrer que $u_1,\dots,u_n$ admettent une base de trigonalisation commune.
-		\item Soit $\A$ une sous-algèbre commutative de $\mathcal L(E)$ formée d'endomorphismes trigonalisables. \\Montrer qu'il existe une base de trigonalisation commune à tous les éléments de $\A$.
+		\item Soit $\A$ une sous-algèbre commutative de $\mathcal L(E)$ formée d'endomorphismes trigonalisables.\\
+		Montrer qu'il existe une base de trigonalisation commune à tous les éléments de $\A$.
 	\end{enumerate}
 	
 	\section{Cotrigonalisation (2) \centraleponts{3}}
@@ -656,6 +657,12 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\label{Cotrigonalisation (5)}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (5) corrigé]{[Corrigé]}}\\
 	Soit $(A,B)\in \M_n(\C)^2$ tel que $AB=0$. Montrer que $A$ et $B$ sont cotrigonalisables.
+	
+	\section{Trace des puissances de matrices \centraleponts{2}}
+	\label{Trace des puissances de matrices}
+	\textcolor{blue}{\hyperref[Trace des puissances de matrices corrigé]{[Corrigé]}}\\
+	Soient $A,B\in \M_n(\C)$ telles que $AB=0$.\\
+	Montrer que $\forall k\in \N^*,\ \Tr(A^k)+\Tr(B^k)=\Tr((A+B)^k)$.
 	
 	\section{Caractérisation des matrices nilpotentes par la trace \telecom{3}}
 	\label{Caractérisation des matrices nilpotente par la trace}
@@ -3239,12 +3246,24 @@ Soient $X_1,\dots,X_{n-1}$ des variables aléatoires mutuellement indépendantes
 $$(n,X_n)\circ\cdots\circ(1,X_1)$$
 
 \section{Nombre moyen de point fixe d'une permutation \telecom{2}}
+\label{Nombre moyen de point fixe d'une permutation}
+\textcolor{blue}{\hyperref[Nombre moyen de point fixe d'une permutation corrigé]{[Corrigé]}}\\
 Déterminer le nombre moyen de point fixe d'une permutation de $\S_n$.
 
 \section{Permutations composées d'un grand cycle}
 \label{Permutations composées d'un grand cycle}
 \textcolor{blue}{\hyperref[Permutations composées d'un grand cycle corrigé]{[Corrigé]}}\\
 Soit $n\in \N^*$. Soit $\sigma$ une variable aléatoire suivant la loi uniforme sur $\mathcal S_{2n}$. On note $p_n$ la probabilité que $\sigma$ ait dans sa décomposition en cycles à supports disjoints un cycle de longueur supérieure ou égale à $n$. Montrer que $(p_n)_{n\in \N^*}$ converge et calculer sa limite.
+
+\section{Longueur moyenne d'un cycle d'une permutation}
+\label{Longueur moyenne d'un cycle d'une permutation}
+\textcolor{blue}{\hyperref[Longueur moyenne d'un cycle d'une permutation corrigé]{[Corrigé]}}\\
+Soit $\sigma_n$ une variable aléatoire suivant une loi uniforme sur $\S_n$.
+\begin{enumerate}
+	\item Soit $L_n$ la longueur du cycle de $\sigma_n$ contenant $1$. Déterminer l'espérance de $L_n$.
+	\item Quelle est la probabilité que $1$ et $2$ soient dans un même cycle que $\sigma_n$ ?
+	\item On note $c_n$ le nombre de cycles de $\sigma_n$. Montrer que $\E(c_n)\unfty\sim\ln n$.
+\end{enumerate}
 
 \section{Loi conjointe (1) \ccinp{2}}
 \label{Loi conjointe 1}
@@ -5382,11 +5401,61 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Cotrigonalisation (4) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (4)]{[Enoncé]}}\\
 	
-	\subsection{Cotrigonalisation (5)}
+	\subsection{Cotrigonalisation (5) \centraleponts{3}}
 	\label{Cotrigonalisation (5) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (5)]{[Enoncé]}}\\
+	Procédons par récurrence sur la taille $n$ des matrices en jeux.\\
+	$n=1$ : toute matrice de taille $1$ est triangulaire.\\
+	Supposons le résultat vraie pour des matrices de tailles $n-1$.\\
+	On note $u$ et $v$ les endomorphismes canoniquement associés à $A$ et $B$ respectivement. On a $u\circ v=0$ donc $\Ima v\subset \Ker u$ et en particulier $v$ induit un endomorphisme $\tilde v$ sur $\Ker u$. Si $v$ est nul, il trigonalise dans n'importe quelle base et donc en particulier dans une base de trigonalisation de $u$. Sinon $\tilde v$ admet un vecteur propre $x$ en tant qu'endomorphisme d'un $\C$-espace vectoriel non nul (car $u$ n'est pas injectif). Par définition $x\in \Ker u$.\\
+	On complète la famille $(x)$ une une base de $\B$ de $E$ et on a alors $$\Mat_\B(u)=\left(\begin{array}{c|ccc}
+		0&*&\cdots&*\\
+		\hline
+		0&&&\\
+		\vdots&&A'&\\
+		0&&&
+	\end{array}\right)\quad\T{et}\quad \Mat_\B(v)=\left(\begin{array}{c|ccc}
+		\mu&*&\cdots&*\\
+		\hline
+		0&&&\\
+		\vdots&&B'&\\
+		0&&&
+	\end{array}\right)$$
+	Puis $AB=0\implies \Mat_\B(u)\Mat_\B(v)=0\implies A'B'=0$. On applique donc l'hypothèse de récurrence à $A',B'$ pour obtenir l'hérédité.
 	
-	\subsection{Caractérisation des matrices nilpotentes par la trace}
+	\subsection{Trace des puissances de matrices \centraleponts{2}}
+	\label{Trace des puissances de matrices corrigé}
+	\textcolor{blue}{\hyperref[Trace des puissances de matrices]{[Enoncé]}}\\
+	Ici $A$ et $B$ ne commutent pas forcément donc on ne peut pas utiliser le binôme de Newton. Essayons tout de même de trouver une expression de $(A+B)^k$.\\
+	$(A+B)^2=A^2+AB+BA+B^2=A^2+BA+B^2$.\\
+	$(A+B)^3=(A+B)(A^2+BA+B^2)=A^3+BA^2+B^2A+B^3$.\\
+	$(A+B)^4=A^4+BA^3+B^2A^2+B^3A+B^4$.\\
+	Ces exemples nous poussent à montrer par récurrence la relation $\forall k\in \N^*,\ (A+B)^k=\displaystyle\sum_{j=0}^kB^jA^{k-j}$.\\
+	L'initialisation est triviale. Supposons que ce soit vrai pour un certain $k\in \N^*$. Alors :
+	\begin{align*}
+		(A+B)^{k+1}&=(A+B)(A+B)^k\\
+		&=A\sum_{j=0}^kB^jA^{k-j}+B\sum_{j=0}^kB^jA^{k-j}\\
+		&=A^{k+1}+AB\sum_{j=1}^kB^{j-1}A^{k-j}+\sum_{j=0}^kB^{j+1}A^{k-j}\\
+		&=\sum_{j=0}^{k+1}B^jA^{k+1-j}
+	\end{align*}
+	d'où l'hérédité.\\
+	Ainsi par linéarité et cyclicité de la trace, $\forall k\in \N^*$,
+	\begin{align*}
+		\Tr((A+B)^k)&=\sum_{j=0}^{k+1}\Tr(B^jA^{k-j})\\
+		&=\Tr(A^k)+\sum_{j=1}^{k-1}\Tr((AB)B^{j-1}A^{k-1-j})+\Tr(B^k)\\
+		&=\Tr(A^k)+\Tr(B^k)
+	\end{align*}
+	\underline{Remarque :} Une autre méthode serait d'utiliser l'exercice précédent.\\
+	En notant $P\in \T{GL}_n(\C)$ telle que $T_A:=P^{-1}AP$ et $T_B:=P^{-1}BP$ soient triangulaires supérieures alors $\Tr(A^k+B^k)=\Tr(T_A^k+T_B^k)$ et $\Tr((A+B)^k))=\Tr((T_A+T_B)^k))$. Or en notant $\lambda_1,\dots,\lambda_n$ et $\mu_1,\dots,\mu_n$ les coefficients diagonaux de $T_A$ et $T_B$ respectivement on obtient les égalités $$\Tr(A^k+B^k)=\sum_{i=1}^n\lambda_i^k+\mu_i^k\quad\T{et}\quad\Tr((A+B)^k))=\sum_{i=1}^n(\lambda_i+\mu_i)^k$$
+	Cette fois-ci on est dans $\C$ et donc par la formule du binôme
+	\begin{align*}
+		\sum_{i=1}^n(\lambda_i+\mu_i)^k&=\sum_{i=1}^n\sum_{j=0}^k\binom{k}{j}\lambda_i^j\mu_i^{k-j}\\
+		&=\sum_{j=0}^k\sum_{i=1}^n\binom{k}{j}\lambda_i^j\mu_i^{k-j}\\
+		&=\Tr(A^k+B^k)+\sum_{j=1}^{k-1}\sum_{i=1}^n\binom{k}{j}\lambda_i^j\mu_i^{k-j}
+	\end{align*}
+	Enfin on remarque que $A^jB^{k-j}=PT_A^jT_B^{k-j}P^{-1}$ et donc que les $\lambda_i^j\mu_i^{k-j}$ sont les valeurs propres de $A^jB^{k-j}$. Dès lors que $1\leq j\leq k-1$ le produit $A^jB^{k-j}$ est nul et donc la somme restante est nulle ce qui donne l'égalité souhaitée.
+	
+	\subsection{Caractérisation des matrices nilpotentes par la trace \telecom{3}}
 	\label{Caractérisation des matrices nilpotente par la trace corrigé}
 	\textcolor{blue}{\hyperref[Caractérisation des matrices nilpotente par la trace]{[Enoncé]}}\\
 	Il est clair que si $A$ est nilpotente alors $\forall k\in\N^*, \Tr(A^k)=0$.\\
@@ -9302,7 +9371,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Série entière aléatoire corrigé}
 	\textcolor{blue}{\hyperref[Série entière aléatoire]{[Enoncé]}}\\
 	
-	\subsection{Polynôme aléatoire \xens{3}}
+	\subsection{Polynôme aléatoire \xens{4}}
 	\label{Polynôme aléatoire corrigé}
 	\textcolor{blue}{\hyperref[Polynôme aléatoire]{[Enoncé]}}\\
 	Soit $\eta_1,\dots,\eta_{n-1}\in \{0,1\}$. D'après le théorème de la racine rationnelle (cf.IV.19 tome Analyse), si $x=\dfrac{p}{q}$ avec $p\in \Z,\ q\in \N^*$ et $p\wedge q=1$ est racine de $P(X):=X^n+\displaystyle\sum_{k=1}^{n-1}\eta_kX^k+1$ alors $p|1$ et $q|1$. Donc $q=1$ et $p\in \{-1,1\}$ i.e $x\in \{-1,1\}$. De plus, $P(1)=2+\displaystyle\sum_{k=1}^{n-1}\eta_k\geq 2>0$. Donc la seule racine rationnelle possible est $-1$.\\
@@ -9342,6 +9411,10 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Permutations composées d'un grand cycle}
 	\label{Permutations composées d'un grand cycle corrigé}
 	\textcolor{blue}{\hyperref[Permutations composées d'un grand cycle]{[Enoncé]}}\\
+	
+	\subsection{Longueur moyenne d'un cycle d'une permutation}
+	\label{Longueur moyenne d'un cycle d'une permutation corrigé}
+	\textcolor{blue}{\hyperref[Longueur moyenne d'un cycle d'une permutation]{[Enoncé]}}\\
 	
 	\subsection{Loi conjointe (1) \etoile{2}}
 	\label{Loi conjointe 1 corrigé}
