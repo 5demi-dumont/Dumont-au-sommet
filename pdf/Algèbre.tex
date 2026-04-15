@@ -106,229 +106,235 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\setcounter{tocdepth}{1}
 	\tableofcontents
 	
-	\newpage
 \chapter{Algèbre linéaire}
-	
-	Dans toute cette section $n$ désigne un entier naturel non nul.\\
-	
-	\section{Extension de corps \etoile{2} (HP)}
-	\label{Extension de corps}
-	\textcolor{blue}{\hyperref[Extension de corps corrigé]{[Corrigé]}}\\
-	\begin{enumerate}[leftmargin=*]
-		\item Donner un exemple de sous-espace vectoriel réel d'un $\C$-espace vectoriel qui n'est pas un $\C$-espace vectoriel.
-		\item Soit $V$ un $\C$-espace vectoriel de dimension $n$.\\
-		Démontrer que $V$ est un $\R$-espace vectoriel de dimension $2n$.
-		\item On considère un corps commutatif $(\mathbb M,+,\times)$ et $\K\subset\mathbb L$ deux sous-corps de $\mathbb M$. \\
-		Démontrer l'équivalence des deux assertions :
-		\begin{enumerate}[label=(\roman*)]
-			\item $\mathbb M$ est un $\K$-espace vectoriel de dimension finie $m$;
-			\item $\mathbb M$ est un $\mathbb L$-espace vectoriel de dimension finie $k$ et $\mathbb L$ est un $\K$-espace vectoriel de dimension finie $p$.
-		\end{enumerate}
-		Montrer que dans ces conditions $m=kp$. (relation de multiplicativité des degrés)
+Dans toute ce chapitre $n$ désigne un entier naturel non nul.\\
+\section{Extension de corps \etoile{2} (HP)}
+\label{Extension de corps}
+\textcolor{blue}{\hyperref[Extension de corps corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Donner un exemple de sous-espace vectoriel réel d'un $\C$-espace vectoriel qui n'est pas un $\C$-espace vectoriel.
+	\item Soit $V$ un $\C$-espace vectoriel de dimension $n$.\\
+	Démontrer que $V$ est un $\R$-espace vectoriel de dimension $2n$.
+	\item On considère un corps commutatif $(\mathbb M,+,\times)$ et $\K\subset\mathbb L$ deux sous-corps de $\mathbb M$. \\
+	Démontrer l'équivalence des deux assertions :
+	\begin{enumerate}[label=(\roman*)]
+		\item $\mathbb M$ est un $\K$-espace vectoriel de dimension finie $m$;
+		\item $\mathbb M$ est un $\mathbb L$-espace vectoriel de dimension finie $k$ et $\mathbb L$ est un $\K$-espace vectoriel de dimension finie $p$.
 	\end{enumerate}
-	
-	\section{Passage du complexe au réel \etoile{2}}
-	\label{Passage du complexe au réel}
-	\textcolor{blue}{\hyperref[Passage du complexe au réel corrigé]{[Corrigé]}}\\
-	Soient $V$ un $\C$-espace vectoriel de dimension $n$ et $v\in \mathcal L(V)$. On note $W$ l'espace $V$ munit de sa structure naturelle de $\R$-espace vectoriel de dimension $2n$ et on note $u\in \mathcal L(W)$ l'endomorphisme de $W$ défini comme étant égal à $v$.\\
-	Montrer que $\det(w)=|\det(v)|^2$.
-	
-	\section{Dimension de $\R$ en tant que $\Q$-espace vectoriel \etoile{2} (HP)}
-	\label{Dimension de R en tant que Q espace vectoriel }
-	\textcolor{blue}{\hyperref[Dimenseion de R en tant que Q espace vectoriel corrigé]{[Corrigé]}}\\
-	\begin{enumerate}[leftmargin=*]
-		\item Montrer que $\R$ est un $\Q$-espace vectoriel.
-		\item Montrer que si $p_1,\dots,p_n$ sont des nombres premiers distincts alors la famille $(\ln(p_1),\dots,\ln(p_n))$ est $\Q$-libre.
-		\item Quelle est la dimension de $\R$ en tant que $\Q$-espace vectoriel ?
-	\end{enumerate}
-	
-	\section{Fonctions indépendantes \xens{3}}
-	\label{Fonctions indépendantes}
-	\textcolor{blue}{\hyperref[Fonctions indépendantes corrigé]{[Corrigé]}}\\
-	Soient $X$ un ensemble et $(f_1,\dots,f_n)$ une famille libre de $\C^X$.\\
-	Montrer qu'il existe $x_1,\dots,x_n\in X$ tels que la matrice $(f_i(x_j))_{1\leq i,j\leq n}$ soit inversible.
-	
-	\section{L'ordre a son importance \telecom{2}}
-	\label{L'ordre a son importance}
-	\textcolor{blue}{\hyperref[L'ordre a son importance corrigé]{[Corrigé]}}\\
-	Soit $M\in \M_n(\R)$.\\ Montrer l'équivalence entre les affirmations :
-	\begin{itemize}
-		\item $\forall A,B\in\M_n(\R), \,\Tr(MAB)=\Tr(MBA)$
-		\item $M$ est une matrice d'homothétie.
-	\end{itemize}
-	
-	\section{Formes multiplicatives de $\M_n(\K)$ \centraleponts{4}}
-	\label{Formes multiplicatives de M_n(K)}
-	\textcolor{blue}{\hyperref[Formes multiplicatives de M_n(K) corrigé]{[Corrigé]}}\\
-	Soit $f:\M_n(\K)\to \K$ non constante telle que $\forall (A,B)\in \M_n(\K)^2,\ f(AB)=f(A)f(B)$.\\
-	Montrer que $A\in \T{GL}_n(\K)\iff f(A)\ne 0$.
-	
-	\section{Isomorphisme qui respecte les matrices de rang 1 \centraleponts{4}}
-	\label{Isomorphisme qui respecte les matrices de rang 1}
-	\textcolor{blue}{\hyperref[Isomorphisme qui respecte les matrices de rang 1 corrigé]{[Corrigé]}}\\
-	Soit $f\in \T{GL}(\M_n(\K))$ telle que $\forall M\in \M_n(\K),\ \rg(M)=1\implies \rg(f(M))=1$.\\
-	On note $\mathcal C=\M_{n,1}(\K),\ \L=\M_{1,n}(\K)$ et $\mathcal R=\{CL,\ (C,L)\in \mathcal C\times\L\}$. On note aussi pour $i,j\in \crblanc{1}{n},\ E_{ij}$ la matrice élémentaire, dont tous les coefficients sont nuls sauf celui en position $(i,j)$ qui vaut $1$. Enfin on note $(E_i)_{1\leq i\leq n}$ la base canonique de $\mathcal C$.
-	\begin{enumerate}
-		\item Montrer que $\mathcal R$ est l'ensemble des matrices de rang inférieur ou égal à $1$.
-		\item Soient $(C_1,C_2)\in \mathcal C^2$ et $(L_1,L_2)\in \L^2$.\\
-		Montrer que $C_1L_1+C_2L_2\in \mathcal R$ si et seulement si $C_1$ est colinéaire à $C_2$ ou $L_1$ est colinéaire à $L_2$.
-		\item Soit $\mathcal F\subset \mathcal R$ un sous-espace vectoriel non nul de $\M_n(\K)$. Déduire de ce qui précède l'existence d'une colonne non nulle $C$ telle que $\mathcal F\subset C\mathcal L$ ou bien d'une ligne non nulle $L$ telle que $\mathcal F\subset \mathcal CL$.
-		\item Justifier la décomposition $\M_n(\K)=\displaystyle\bigoplus_{i=1}^nE_i\L$.
-		\item En déduire l'existence de deux matrices $A,B\in \T{GL}_n(\K)$ vérifiant une des deux affirmations :
-		\begin{itemize}
-			\item $\forall M\in \T{GL}_n(\K),\ f(M)=AMB$
-			\item $\forall M\in \T{GL}_n(\K),\ f(M)=AM^\top B$.
-		\end{itemize}
-	\end{enumerate}
-	
-	\section{Egalité de noyaux \centraleponts{3}}
-	\label{Egalité de noyaux}
-	\textcolor{blue}{\hyperref[Egalité de noyaux corrigé]{[Corrigé]}}\\
-	Soient $A,B\in \M_n(\K)$. Montrer que $\ker A=\ker B\iff \exists P\in \T{GL}_n(\K),\ B=PA$.
-	
-	\section{\underline{Centre de $\M_n(\K)$} \centraleponts{2}}
-	\label{Centre de Mn(K)}
-	\textcolor{blue}{\hyperref[Centre de Mn(K) corrigé]{[Corrigé]}}\\
-	Déterminer le centre de $\M_n(\K)$ : $Z=\{A\in \M_n(\K),\ \forall B\in \M_n(\K),\ AB=BA\}$.
-	
-	\section{$\M_n(\K)$ n'est vraiment pas commutatif}
-	\label{Mn(K) n'est vraiment pas commutatif corrigé}
-	\textcolor{blue}{\hyperref[Mn(K) n'est vraiment pas commutatif]{[Corrigé]}}\\
-	\begin{enumerate}
-		\item Déterminer les matrices de $\M_n(\K)$ qui commutent avec toutes les matrices inversibles.
-		\item Déterminer les matrices de $\M_n(\K)$ qui commutent avec toutes les matrices de projecteur.
-	\end{enumerate}
-	
-	\section{Racine carrée de la dérivation \xens{3}}
-	\label{Racine carrée de la dérivation}
-	\textcolor{blue}{\hyperref[Racine carrée de la dérivation corrigé]{[Corrigé]}}\\
-	On note $E=\mathcal C^\infty(\R,\R)$ et $\fonction{\Delta}{E}{E}{f}{f'}$.\\
-	Existe-t-il un endomorphisme $\delta\in \mathcal L(E)$ tel que $\delta^2=\Delta$ ?
-	
-	\section{\underline{Produit de matrices nilpotentes} \xens{5}}
-	\label{Produit de matrices nilpotentes}
-	\textcolor{blue}{\hyperref[Produit de matrices nilpotentes corrigé]{[Corrigé]}}\\
-	Soient $N_1,\dots,N_n\in \M_n(\K)$ des matrices nilpotentes qui commutent toutes entre elles.\\
-	Montrer que $\displaystyle\prod_{i=1}^nN_i=0$.
-	
-	\section{Suites périodiques \xens{4}}
-	\label{Suites périodiques}
-	\textcolor{blue}{\hyperref[Suites périodiques corrigé]{[Corrigé]}}\\
-	On note $E$ le sous-ensemble de $\C^\N$ composé des suites périodiques.\\
-	Montrer que $E$ est un espace vectoriel et en déterminer une base.
-	
-	\section{Dimension du commutant (1) \centraleponts{3}}
-	\label{Dimension du commutant (1)}
-	\textcolor{blue}{\hyperref[Dimension du commutant (1) corrigé]{[Corrigé]}}\\
-	Soit $A\in \M_n(\C)$.\\
-	On pose $\fonction{f_A}{\M_n(\C)}{\M_n(\C)}{B}{AB-BA}$ et on note $\mathcal C(A)=\{B\in \M_n(\C),\ AB=BA\}$.\\
-	On cherche à montrer que la dimension de $\mathcal C(A)$ est minorée par $n$.
-	\begin{enumerate}
-		\item Montrer que $f_A\in \L(\M_n(\C))$ et que $\mathcal C(A)$ est un sous-espace vectoriel de $\M_n(\C)$.
-		\item Montrer que l'on peut supposer $A$ triangulaire supérieure.\\
-		On le supposera dans la suite.
-		\item Montrer que $f_A$ induit un endomorphisme $\tilde f_A$ sur l'ensemble des matrices triangulaires supérieures.
-		\item En déduire que $\dim\mathcal C(A)\geq n$.
-	\end{enumerate}
-	
-	\section{Dimension du commutant (2) \centraleponts{4}}
-	\label{Dimension du commutant (2)}
-	\textcolor{blue}{\hyperref[Dimension du commutant (2) corrigé]{[Corrigé]}}\\
-	Soit $u$ un endomorphisme nilpotent d'un $\K$-espace vectoriel $E$ de dimension finie.\\
-	Pour $k\in \N^*$ on note $e_k(u)=\dim(\Ker(u^k))-\dim(\Ker(u^{k-1}))$.\\
-	On note aussi $\mathcal C(u)=\{v\in \L(E),\ u\circ v=v\circ u\}$.
-	\begin{enumerate}
-		\item Soit $v\in \mathcal C(u)$. Montrer que $v$ induit un endomorphisme $\tilde v$ sur l'image de $u$.
-		\item Soit $k\in \N$. Montrer que $\T{Im}(u)\cap\Ker(u^k)=u(\Ker(u^{k+1}))$ puis que $e_k(\tilde u)=e_{k+1}(u)$.
-		\item Montrer que
-		$$\fonction{\Phi}{\mathcal C(u)}{\mathcal C(\tilde u)}{v}{\tilde v}$$
-		est une application linéaire surjective.
-		\item En déduire que $\dim\mathcal C(u)=\displaystyle\sum_{k=1}^{+\infty}e_k(u)^2$.
-	\end{enumerate}
-	
-	\section{Etude de la comatrice \centraleponts{3}}
-	\label{Etude de la comatrice}
-	\textcolor{blue}{\hyperref[Etude de la comatrice corrigé]{[Corrigé]}}\\
-	\begin{enumerate}[leftmargin=*]
-		\item Calculer $\Com(J_r)$ pour $0\leq r\leq n$.
-		\item Démontrer que $\forall (A,B)\in \M_n(\K)^2,\ \Com(AB)=\Com(A)\Com(B)$.
-		\item En déduire le rang de la comatrice de $A$ en fonction du rang de $A$.
-		\item Soit $\fonction{\varphi}{\M_n(\K)}{\M_n(\K)}{A}{\Com(A)}$.\\
-		$\varphi$ est-elle injective ? Surjective ? \\Déterminer $\text{Im}(\varphi)$ dans le cas $\K=\C$.
-	\end{enumerate}
+	Montrer que dans ces conditions $m=kp$. (relation de multiplicativité des degrés)
+\end{enumerate}
 
-	\section{Caractérisation des homothéties (1) \ccinp{2}}
-	\label{Caractérisation des homothéties (1)}
-	\textcolor{blue}{\hyperref[Caractérisation des homothéties (1) corrigé]{[Corrigé]}}\\
-	Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$ tel que pour tout $x\in E$, $(x,u(x))$ est une famille liée.\\
-	Montrer que $u$ est une homothétie.
-	
-	\section{Caractérisation des homothéties (2) \centraleponts{2}}
-	\label{Caractérisation des homothéties (2)}
-	\textcolor{blue}{\hyperref[Caractérisation des homothéties (2) corrigé]{[Enoncé]}}\\
-	Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$. Soit $r<\dim(E)$ ($E$ est potentiellement de dimension infinie).\\
-	Montrer que si $u$ stabilise tous les sous-espaces de $E$ de dimension $r$ alors $u$ est une homothétie.
-	
-	\section{Espaces engendrés par les matrices inversibles et orthogonales \centraleponts{3}}
-	\label{Espaces engendrés par les matrices inversibles et orthogonales}
-	\textcolor{blue}{\hyperref[Espaces engendrés par les matrice inversibles et orthogonales corrigé]{[Corrigé]}}\\
-	\begin{enumerate}[leftmargin=*]
-		\item Déterminer $\Vect(\text{GL}_n(\K))$.
-		\item Déterminer $\Vect(\O_n(\R))$.
-	\end{enumerate}
-	
-	\section{Espace engendré par les matrices nilpotentes \centraleponts{3}}
-	\label{Espace engendré par les matrices nilpotentes}
-	\textcolor{blue}{\hyperref[Espace engendré par les matrices nilpotentes corrigé]{[Corrigé]}}\\
-	Montrer que l'espace vectoriel engendré par les matrice nilpotentes est l'ensemble des matrices de trace nulle.
-	
-	\section{Transmission d'information \centraleponts{3}}
-	\label{Transmission d'information}
-	\textcolor{blue}{\hyperref[Transmission d'information corrigé]{[Corrigé]}}\\
-	Soient $A,B\in \M_n(\K)$ telles que $\forall X\in \M_n(\K),\ AXB=0$.\\
-	Montrer que $A=0$ ou $B=0$.
-	
-	\section{Noyau et Image supplémentaires \ccinp{2}}
-	\label{Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires}
-	\textcolor{blue}{\hyperref[Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires corrigé]{[Corrigé]}}\\
-	Soit $f$ un endomorphisme d'un espace vectoriel $E$.
-\\	Montrer que les trois propositions sont équivalentes :
+\section{Passage du complexe au réel \etoile{2}}
+\label{Passage du complexe au réel}
+\textcolor{blue}{\hyperref[Passage du complexe au réel corrigé]{[Corrigé]}}\\
+Soient $V$ un $\C$-espace vectoriel de dimension $n$ et $v\in \mathcal L(V)$. On note $W$ l'espace $V$ munit de sa structure naturelle de $\R$-espace vectoriel de dimension $2n$ et on note $w\in \mathcal L(W)$ l'endomorphisme de $W$ défini comme étant égal à $v$.\\
+Montrer que $\det(w)=|\det(v)|^2$.
+
+\section{Dimension de $\R$ en tant que $\Q$-espace vectoriel \etoile{2} (HP)}
+\label{Dimension de R en tant que Q espace vectoriel }
+\textcolor{blue}{\hyperref[Dimenseion de R en tant que Q espace vectoriel corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Montrer que $\R$ est un $\Q$-espace vectoriel.
+	\item Montrer que si $p_1,\dots,p_n$ sont des nombres premiers distincts alors la famille $(\ln(p_1),\dots,\ln(p_n))$ est $\Q$-libre.
+	\item Quelle est la dimension de $\R$ en tant que $\Q$-espace vectoriel ?
+\end{enumerate}
+
+\section{Fonctions indépendantes \xens{3}}
+\label{Fonctions indépendantes}
+\textcolor{blue}{\hyperref[Fonctions indépendantes corrigé]{[Corrigé]}}\\
+Soient $X$ un ensemble et $(f_1,\dots,f_n)$ une famille libre de $\C^X$.\\
+Montrer qu'il existe $x_1,\dots,x_n\in X$ tels que la matrice $(f_i(x_j))_{1\leq i,j\leq n}$ soit inversible.
+
+\section{L'ordre a son importance \telecom{2}}
+\label{L'ordre a son importance}
+\textcolor{blue}{\hyperref[L'ordre a son importance corrigé]{[Corrigé]}}\\
+Soit $M\in \M_n(\R)$.\\ Montrer l'équivalence entre les affirmations :
+\begin{itemize}
+	\item $\forall A,B\in\M_n(\R), \,\Tr(MAB)=\Tr(MBA)$
+	\item $M$ est une matrice d'homothétie.
+\end{itemize}
+
+\section{Formes multiplicatives de $\M_n(\K)$ \centraleponts{3}}
+\label{Formes multiplicatives de M_n(K)}
+\textcolor{blue}{\hyperref[Formes multiplicatives de M_n(K) corrigé]{[Corrigé]}}\\
+Soit $f:\M_n(\K)\to \K$ non constante telle que $\forall (A,B)\in \M_n(\K)^2,\ f(AB)=f(A)f(B)$.\\
+Montrer que $A\in \T{GL}_n(\K)\iff f(A)\ne 0$.
+
+\section{Isomorphisme qui respecte les matrices de rang 1 \centraleponts{4}}
+\label{Isomorphisme qui respecte les matrices de rang 1}
+\textcolor{blue}{\hyperref[Isomorphisme qui respecte les matrices de rang 1 corrigé]{[Corrigé]}}\\
+Soit $f\in \T{GL}(\M_n(\K))$ telle que $\forall M\in \M_n(\K),\ \rg(M)=1\implies \rg(f(M))=1$.\\
+On note $\mathcal C=\M_{n,1}(\K),\ \L=\M_{1,n}(\K)$ et $\mathcal R=\{CL,\ (C,L)\in \mathcal C\times\L\}$. On note aussi pour $i,j\in \crblanc{1}{n},\ E_{ij}$ la matrice élémentaire, dont tous les coefficients sont nuls sauf celui en position $(i,j)$ qui vaut $1$. Enfin on note $(E_i)_{1\leq i\leq n}$ la base canonique de $\mathcal C$.
+\begin{enumerate}
+	\item Montrer que $\mathcal R$ est l'ensemble des matrices de rang inférieur ou égal à $1$.
+	\item Soient $(C_1,C_2)\in \mathcal C^2$ et $(L_1,L_2)\in \L^2$.\\
+	Montrer que $C_1L_1+C_2L_2\in \mathcal R$ si et seulement si $C_1$ est colinéaire à $C_2$ ou $L_1$ est colinéaire à $L_2$.
+	\item Soit $\mathcal F\subset \mathcal R$ un sous-espace vectoriel non nul de $\M_n(\K)$. Déduire de ce qui précède l'existence d'une colonne non nulle $C$ telle que $\mathcal F\subset C\mathcal L$ ou bien d'une ligne non nulle $L$ telle que $\mathcal F\subset \mathcal CL$.
+	\item Justifier la décomposition $\M_n(\K)=\displaystyle\bigoplus_{i=1}^nE_i\L$.
+	\item En déduire l'existence de deux matrices $A,B\in \T{GL}_n(\K)$ vérifiant une des deux affirmations :
 	\begin{itemize}
-		\item $E=\text{Im}(f)\oplus \text{Ker}(f)$
-		\item $\text{Im}(f^2)=\text{Im}(f)$
-		\item $\text{Ker}(f^2)=\text{Ker}(f)$
+		\item $\forall M\in \T{GL}_n(\K),\ f(M)=AMB$
+		\item $\forall M\in \T{GL}_n(\K),\ f(M)=AM^\top B$.
 	\end{itemize}
+\end{enumerate}
+
+\section{Egalité de noyaux \centraleponts{3}}
+\label{Egalité de noyaux}
+\textcolor{blue}{\hyperref[Egalité de noyaux corrigé]{[Corrigé]}}\\
+Soient $A,B\in \M_n(\K)$. Montrer que $\ker A=\ker B\iff \exists P\in \T{GL}_n(\K),\ B=PA$.
+
+\section{\underline{Centre de $\M_n(\K)$} \telecom{2}}
+\label{Centre de Mn(K)}
+\textcolor{blue}{\hyperref[Centre de Mn(K) corrigé]{[Corrigé]}}\\
+Déterminer le centre de $\M_n(\K)$ : $Z=\{A\in \M_n(\K),\ \forall B\in \M_n(\K),\ AB=BA\}$.
+
+\section{$\M_n(\K)$ n'est vraiment pas commutatif \centraleponts{3}}
+\label{Mn(K) n'est vraiment pas commutatif corrigé}
+\textcolor{blue}{\hyperref[Mn(K) n'est vraiment pas commutatif]{[Corrigé]}}\\
+\begin{enumerate}
+	\item Déterminer les matrices de $\M_n(\K)$ qui commutent avec toutes les matrices inversibles.
+	\item Déterminer les matrices de $\M_n(\K)$ qui commutent avec toutes les matrices de projecteur.
+\end{enumerate}
+
+\section{Racine carrée de la dérivation \centraleponts{3}}
+\label{Racine carrée de la dérivation}
+\textcolor{blue}{\hyperref[Racine carrée de la dérivation corrigé]{[Corrigé]}}\\
+On note $E=\mathcal C^\infty(\R,\R)$ et $\fonction{\Delta}{E}{E}{f}{f'}$.\\
+Existe-t-il un endomorphisme $\delta\in \mathcal L(E)$ tel que $\delta^2=\Delta$ ?
+
+\section{\underline{Produit de matrices nilpotentes} \xens{5}}
+\label{Produit de matrices nilpotentes}
+\textcolor{blue}{\hyperref[Produit de matrices nilpotentes corrigé]{[Corrigé]}}\\
+Soient $N_1,\dots,N_n\in \M_n(\K)$ des matrices nilpotentes qui commutent toutes entre elles.\\
+Montrer que $\displaystyle\prod_{i=1}^nN_i=0$.
+
+\section{Suites périodiques \xens{4}}
+\label{Suites périodiques}
+\textcolor{blue}{\hyperref[Suites périodiques corrigé]{[Corrigé]}}\\
+On note $E$ le sous-ensemble de $\C^\N$ composé des suites périodiques.\\
+Montrer que $E$ est un espace vectoriel et en déterminer une base.
+
+\section{Dimension du commutant (1) \centraleponts{3}}
+\label{Dimension du commutant (1)}
+\textcolor{blue}{\hyperref[Dimension du commutant (1) corrigé]{[Corrigé]}}\\
+Soit $A\in \M_n(\C)$.\\
+On pose $\fonction{f_A}{\M_n(\C)}{\M_n(\C)}{B}{AB-BA}$ et on note $\mathcal C(A)=\{B\in \M_n(\C),\ AB=BA\}$.\\
+On cherche à montrer que la dimension de $\mathcal C(A)$ est minorée par $n$.
+\begin{enumerate}
+	\item Montrer que $f_A\in \L(\M_n(\C))$ et que $\mathcal C(A)$ est un sous-espace vectoriel de $\M_n(\C)$.
+	\item Montrer que l'on peut supposer $A$ triangulaire supérieure.\\
+	On le supposera dans la suite.
+	\item Montrer que $f_A$ induit un endomorphisme $\tilde f_A$ sur l'ensemble des matrices triangulaires supérieures.
+	\item En déduire que $\dim\mathcal C(A)\geq n$.
+\end{enumerate}
 	
-	\section{Equation entre projecteurs \centraleponts{3}}
-	\label{Equation entre projecteurs}
-	\textcolor{blue}{\hyperref[Equation entre projecteurs corrigé]{[Corrigé]}}\\
-	Existe-t-il des projecteurs $p,q,r$ d'un espace euclidien $E$ non tous nuls vérifiant $\sqrt{2}p+\sqrt{3}q=r$ ?
+\section{Dimension du commutant (2) \centraleponts{4}}
+\label{Dimension du commutant (2)}
+\textcolor{blue}{\hyperref[Dimension du commutant (2) corrigé]{[Corrigé]}}\\
+Soit $u$ un endomorphisme nilpotent d'un $\K$-espace vectoriel $E$ de dimension finie.\\
+Pour $k\in \N^*$ on note $e_k(u)=\dim(\Ker(u^k))-\dim(\Ker(u^{k-1}))$.\\
+On note aussi $\mathcal C(u)=\{v\in \L(E),\ u\circ v=v\circ u\}$.
+\begin{enumerate}
+	\item Soit $v\in \mathcal C(u)$. Montrer que $v$ induit un endomorphisme $\tilde v$ sur l'image de $u$.
+	\item Soit $k\in \N$. Montrer que $\T{Im}(u)\cap\Ker(u^k)=u(\Ker(u^{k+1}))$ puis que $e_k(\tilde u)=e_{k+1}(u)$.
+	\item Montrer que
+	$$\fonction{\Phi}{\mathcal C(u)}{\mathcal C(\tilde u)}{v}{\tilde v}$$
+	est une application linéaire surjective.
+	\item En déduire que $\dim\mathcal C(u)=\displaystyle\sum_{k=1}^{+\infty}e_k(u)^2$.
+\end{enumerate}
+
+\section{Etude de la comatrice \centraleponts{3}}
+\label{Etude de la comatrice}
+\textcolor{blue}{\hyperref[Etude de la comatrice corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Calculer $\Com(J_r)$ pour $0\leq r\leq n$.
+	\item Démontrer que $\forall (A,B)\in \M_n(\K)^2,\ \Com(AB)=\Com(A)\Com(B)$.
+	\item En déduire le rang de la comatrice de $A$ en fonction du rang de $A$.
+	\item Soit $\fonction{\varphi}{\M_n(\K)}{\M_n(\K)}{A}{\Com(A)}$.\\
+	$\varphi$ est-elle injective ? Surjective ? \\Déterminer $\text{Im}(\varphi)$ dans le cas $\K=\C$.
+\end{enumerate}
+
+\section{Caractérisation des homothéties (1) \ccinp{2}}
+\label{Caractérisation des homothéties (1)}
+\textcolor{blue}{\hyperref[Caractérisation des homothéties (1) corrigé]{[Corrigé]}}\\
+Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$ tel que pour tout $x\in E$, $(x,u(x))$ est une famille liée.\\
+Montrer que $u$ est une homothétie.
+
+\section{Caractérisation des homothéties (2) \centraleponts{2}}
+\label{Caractérisation des homothéties (2)}
+\textcolor{blue}{\hyperref[Caractérisation des homothéties (2) corrigé]{[Enoncé]}}\\
+Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$. Soit $r<\dim(E)$ ($E$ est potentiellement de dimension infinie).\\
+Montrer que si $u$ stabilise tous les sous-espaces de $E$ de dimension $r$ alors $u$ est une homothétie.
+
+\section{Espaces engendrés par les matrices inversibles et orthogonales \centraleponts{3}}
+\label{Espaces engendrés par les matrices inversibles et orthogonales}
+\textcolor{blue}{\hyperref[Espaces engendrés par les matrice inversibles et orthogonales corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Déterminer $\Vect(\text{GL}_n(\K))$.
+	\item Déterminer $\Vect(\O_n(\R))$.
+\end{enumerate}
 	
-	\section{Théorème de Maschke}
-	\label{Théorème de Maschke}
-	\textcolor{blue}{\hyperref[Théorème de Maschke corrigé]{[Corrigé]}}\\
-	Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini de $GL(E)$ de cardinal $n$.
-	\begin{enumerate}
-		\item Etudions un objet mathématique courant dans l'étude des groupes dans le but de comprendre la méthode utilisé pour la suite.
-		\begin{enumerate}
-			\item Montrer que si $p$ est un projecteur, alors $\rg(p)=\Tr(p)$.
-			\item Soit $h\in G$. Montrer que $\varphi_h:g\in G\to h\circ g$ est une permutation de $G$.
-		\end{enumerate}
-		\item On pose $\displaystyle p=\frac{1}{n}\sum_{g\in G}g$.
-		\begin{enumerate}
-			\item Montrer que $p$ est un projecteur.
-			\item Montrer que $$\dim\left(\bigcap_{g\in G}\Ker(g-Id_E)\right)=\frac{1}{n}\sum_{g\in G}\Tr(g)$$
-		\end{enumerate}
-		
-		\item Soit $F$ un sous-espace vectoriel de $E$ stable par tous les éléments de $G$ et $H$ un supplémentaire de $F$. On note $q$ le projecteur sur $F$ parallèlement à $H$.
-		\\ Montrer qu'il existe un supplémentaire de $F$ stable par tous les éléments de $G$.
-		\\ \underline{Indication}: on étudiera $\displaystyle \frac{1}{n}\sum_{g\in G}g^{-1}\circ q\circ g$
+\section{Espace engendré par les matrices nilpotentes \centraleponts{3}}
+\label{Espace engendré par les matrices nilpotentes}
+\textcolor{blue}{\hyperref[Espace engendré par les matrices nilpotentes corrigé]{[Corrigé]}}\\
+Montrer que l'espace vectoriel engendré par les matrice nilpotentes est l'ensemble des matrices de trace nulle.
+
+\section{Transmission d'information \centraleponts{3}}
+\label{Transmission d'information}
+\textcolor{blue}{\hyperref[Transmission d'information corrigé]{[Corrigé]}}\\
+Soient $A,B\in \M_n(\K)$ telles que $\forall X\in \M_n(\K),\ AXB=0$.\\
+Montrer que $A=0$ ou $B=0$.
+
+\section{Noyau et Image supplémentaires \ccinp{2}}
+\label{Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires}
+\textcolor{blue}{\hyperref[Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires corrigé]{[Corrigé]}}\\
+Soit $f$ un endomorphisme d'un espace vectoriel $E$.\\
+Montrer que les trois propositions sont équivalentes :
+\begin{itemize}
+	\item $E=\text{Im}(f)\oplus \text{Ker}(f)$
+	\item $\text{Im}(f^2)=\text{Im}(f)$
+	\item $\text{Ker}(f^2)=\text{Ker}(f)$
+\end{itemize}
+
+\section{Partition de l'identité par des projecteurs \telecom{2}}
+\label{Partition de l'identité par des projecteurs}
+\textcolor{blue}{\hyperref[Partition de l'identité par des projecteurs corrigé]{[Corrigé]}}\\
+Soit $E$ un espace vectoriel de dimension $n$ finie. Soit aussi $k\in \N^*$ et $p_1,\dots,p_k$ des projecteurs non nuls de $E$ tels que
+$$\sum_{i=1}^kp_i=\Id_E$$
+\begin{enumerate}
+	\item Montrer que $k\leq n$.
+	\item Justifier la décomposition $E=\displaystyle\bigoplus_{i=1}^k\Ima(p_i)$.
+	\item En déduire que $\forall 1\leq i\ne j\leq k,\ p_i\circ p_j=0$.
+\end{enumerate}
+	
+\section{Equation entre projecteurs \centraleponts{3}}
+\label{Equation entre projecteurs}
+\textcolor{blue}{\hyperref[Equation entre projecteurs corrigé]{[Corrigé]}}\\
+Existe-t-il des projecteurs $p,q,r$ d'un espace euclidien $E$ non tous nuls vérifiant $\sqrt{2}p+\sqrt{3}q=r$ ?
+
+\section{Théorème de Maschke}
+\label{Théorème de Maschke}
+\textcolor{blue}{\hyperref[Théorème de Maschke corrigé]{[Corrigé]}}\\
+Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini de $\T{GL}(E)$ de cardinal $n$.
+\begin{enumerate}
+	\item Etudions un objet mathématique courant dans l'étude des groupes dans le but de comprendre la méthode utilisé pour la suite.
+	\begin{enumerate}[label=\alph*.]
+		\item Montrer que si $p$ est un projecteur, alors $\rg(p)=\Tr(p)$.
+		\item Soit $h\in G$. Montrer que $\varphi_h:g\in G\to h\circ g$ est une permutation de $G$.
 	\end{enumerate}
+	\item On pose $\displaystyle p=\frac{1}{n}\sum_{g\in G}g$.
+	\begin{enumerate}[label=\alph*.]
+		\item Montrer que $p$ est un projecteur.
+		\item Montrer que $$\dim\left(\bigcap_{g\in G}\Ker(g-Id_E)\right)=\frac{1}{n}\sum_{g\in G}\Tr(g)$$
+	\end{enumerate}
+	\item Soit $F$ un sous-espace vectoriel de $E$ stable par tous les éléments de $G$ et $H$ un supplémentaire de $F$. On note $q$ le projecteur sur $F$ parallèlement à $H$.
+	\\ Montrer qu'il existe un supplémentaire de $F$ stable par tous les éléments de $G$.
+	\\ \underline{Indication}: on étudiera $\displaystyle \frac{1}{n}\sum_{g\in G}g^{-1}\circ q\circ g$
+\end{enumerate}
 	
-	\newpage
 \chapter{Réduction géométrique}
-	Dans toute cette section $n$ désigne un entier supérieur ou égal à $1$.
-	\section{Réduction des matrices de rang $1$ \ccinp{2}}
+	Dans toute ce chapitre $n$ désigne un entier supérieur ou égal à $1$.
+	\section{\underline{Réduction des matrices de rang $1$} \ccinp{2}}
 	\label{Réduction des matrices de rang 1}
 	\textcolor{blue}{\hyperref[Réduction des matrices de rang 1 corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -609,7 +615,6 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		U&0 
 	\end{array}\right)$.\\
 	Déterminer une condition nécessaire et suffisante sur $U$ pour que $V$ soit diagonalisable.
-	
 
 	\section{\underline {Cotrigonalisation (1)} \centraleponts{3}}
 	\label{Cotrigonalisation (1)}
@@ -1143,7 +1148,6 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\label{P(A) nilpotente}
 	Soit $A\in \M_n(\C)$. Déterminer les polynômes $P\in \C[X]$ tels que $P(A)$ soit nilpotente.
 	
-	\newpage
 \chapter{Déterminant}
 	Dans toute cette section $n$ désigne un entier supérieur ou égal à $1$.\\
 	
@@ -1301,7 +1305,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	
 	\underline{Remarque :} Ce résultat permet de calculer le volume du simplexe (généralisation du triangle à une dimension quelconque).
 	\\Cette formule se simplifie en dimension 2. On reconnaît la formule de Héron d'Alexandrie : la surface $S$ d'un triangle de côté $a,b,c$ vérifie la relation $$S^2=p(p-a)(p-b)(p-c)$$ où $p$ est le demi périmètre.
-	\newpage
+	
 \chapter{Groupes}
 	\section{Existence d'un idempotent \xens{3}}
 	\label{Existence d'un idempotent}
@@ -1319,7 +1323,7 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 	\label{Groupe composé d'involutions}
 	\textcolor{blue}{\hyperref[Groupe composé d'involutions corrigé]{[Corrigé]}}\\
 	Soit $G$ un groupe de neutre $e$ pour lequel, $\forall x\in G,\ x^2=e$. \\Montrer que $G$ est commutatif.
-	\newpage
+	
 	\section{\underline{Centre et Commutant} \ccinp{1}}
 	\label{Centre et Commutant}
 	\label{Centre}
@@ -1755,8 +1759,6 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item Soient $\lambda\in \R^*$ et $\Gamma$ le sous-groupe engendré par $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ et $\begin{pmatrix}\lambda&0\\0&\lambda^{-1}\end{pmatrix}$. A quelle condition sur $\lambda$ le sous-groupe $\Gamma$ est-il discret ?
 	\end{enumerate}
 	
-	
-	\newpage
 \chapter{Anneaux et corps}
 	Pour $(A,+,\times)$ un anneau on désignera par $0_A$ ou simplement $0$ son neutre additif et par $1_A$ ou simplement $1$ son neutre multiplicatif.\\
 	
@@ -2267,8 +2269,6 @@ P.-P.-S. : Ce message est destiné à tous les futurs 5/2, je souhaiterais que p
 		\item En déduire que la constante de Liouville $\displaystyle\sum_{n=1}^{+\infty}\frac{1}{10^{n!}}$ est un nombre transcendant.
 	\end{enumerate}
 	
-	
-\newpage
 \chapter{Arithmétique}
 \section{Infinité des nombres premiers \ccinp{2}}
 \label{Infinité des nombres premiers}
@@ -2651,7 +2651,6 @@ On admettra le résultat des exercices \ref{Produit des nombres premiers inféri
 	\end{enumerate}
 \end{enumerate}
 
-\newpage
 \chapter{Dénombrement}
 \section{Identité de Vandermonde \centraleponts{2}}
 \label{Identité de Vandermonde}
@@ -2865,7 +2864,6 @@ Montrer que $K$ est un ensemble parfait, d'intérieur vide, compact et non déno
 \subsection{Théorème de Cantor-Bendixson}
 Montrer que toute partie fermée de $\R$ se décompose de façon unique comme réunion disjointe d'une partie dénombrable et d'un ensemble parfait.
 
-\newpage
 \chapter{Probabilités}
 Dans toute cette section les variables aléatoires sont définies sur un univers $\Omega$ au plus dénombrable.\\
 
@@ -3469,7 +3467,6 @@ Enfin, On fixe $t\in [0,1]$, on considère une suite de variable aléatoire $(X_
 	\item En déduire le théorème de d'approximation de Weierstrass.
 \end{enumerate}
 
-\newpage
 \chapter{Endomorphismes d'un espace euclidien}
 Dans toute cette section $n$ désigne un entier naturel non nul.\\\\
 
@@ -4065,7 +4062,6 @@ Soient $A$ et $B$ dans $\mathcal{S}_n(\R).$ On dit que $A\leq B$ lorsque $B-A\in
 	\\ Montrer que $f$ est décroissante.
 \end{enumerate}
 
-\newpage
 \chapter{Décomposition matricielle}
 Dans toute cette section $n$ désigne un entier supérieur ou égal à 1.\\
 \section{\underline{Décomposition de Dunford} \centraleponts{3}}
@@ -4314,7 +4310,6 @@ Déterminer les matrices de GL$_n(\K)$ semblables à leur inverse.
 \subsection{Bicommutant}
 	
 
-\newpage
 \chapter{Divers}
 \section{Fonction $\R$-linéaire mais pas $\C$-linéaire \etoile{1}}
 \label{Fonction R linéaire mais pas C linéaire}
@@ -4388,7 +4383,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Extension de corps corrigé}
 	\textcolor{blue}{\hyperref[Extension de corps]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item $\R$ est un $\R$-espace vectoriel de $\C$ qui est un $\C$-espace vectoriel. De plus $\R$ n'est pas un $\C$-espace vectoriel de $\C$ puisque $i\times 1_\C=i\ne \R$ par exemple.
+		\item $\R$ est un $\R$-espace vectoriel de $\C$ qui est un $\C$-espace vectoriel. De plus $\R$ n'est pas un $\C$-espace vectoriel de $\C$ puisque $i\times 1_\C=i\notin \R$ par exemple.
 		\item Soit $(v_1,\dots,v_n)$ une base du $\C$-espace vectoriel $V$. Soit $v\in V$.\\
 		$\exists (z_1,\dots,z_n)\in \C^n,\ v=\displaystyle\sum_{k=1}^nz_kv_k$.\\
 		Posons pour tout $k\in \crblanc{1}{n},\ x_k=\operatorname{Re}(z_k),\ y_k=\operatorname{Im}(z_k)$ et $w_k=iv_k\in V$ car $V$ est un $\C$-espace vectoriel.\\
@@ -4439,11 +4434,11 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\textcolor{blue}{\hyperref[Passage du complexe au réel]{[Enoncé]}}\\
 	\label{Passage du complexe au réel corrigé}
 	$\chi_v\in \C[X]$ est scindé donc $v$ est trigonalisable dans une certaine base $\B=(a_1,\dots,a_n)$ de $V$. On note $\Mat_\B(v)=(z_{ij})_{1\leq i,j\leq n}\in \M_n(\C)$. Pour tout $i,j\in \crblanc{1}{n}$ on note $z_{ij}=x_{ij}+iy_{ij}$ avec $x_{ij},y_{ij}\in \R$. On montre (cf.\ref{Extension de corps}) que $\tilde\B=(a_1,\dots,a_n,b_1,\dots,b_n)$, où $b_k=ia_k$, est une base de $W$.\\
-	Alors $\M_{\tilde B}(u)$ est triangulaire par blocs, avec pour blocs diagonaux $R_k:=\begin{pmatrix}
+	Alors $\Mat_{\tilde B}(w)$ est triangulaire par blocs, avec pour blocs diagonaux $R_k:=\begin{pmatrix}
 		x_{kk}&-y_{kk}\\
 		y_{kk}&x_{kk}
 	\end{pmatrix}$.\\
-	Ainsi $\det(u)=\displaystyle\prod_{k=1}^n\det(R_k)=\prod_{k=1}^n(x_k^2+y_k^2)=\prod_{k=1}^n|z_k|^2=|\det(v)|^2$.
+	Ainsi $\det(w)=\displaystyle\prod_{k=1}^n\det(R_k)=\prod_{k=1}^n(x_k^2+y_k^2)=\prod_{k=1}^n|z_k|^2=|\det(v)|^2$.
 	
 \subsection{Dimension de $\R$ en tant que $\Q$-espace vectoriel \etoile{2}}
 \label{Dimenseion de R en tant que Q espace vectoriel corrigé}
@@ -4454,7 +4449,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On note $I=\{i\in \crblanc{1}{n},\ \alpha_i\ne 0\}$ et pour tout $i\in I,\ \alpha_i=\displaystyle\frac{a_i}{b_i}$ avec $a_i\in \Z\backslash\{0\}$ et $b_i\in \N^*$. Enfin on note pour tout $i\in I,\ c_i=a_i\displaystyle\prod_{j=1}^nb_j\in \Z$\\
 		En multipliant par $\displaystyle\prod_{j=1}^nb_j$ on a $\displaystyle\sum_{i\in I}c_i\ln(p_i)=0$ puis $\displaystyle\sum_{\substack{i\in I\\c_i>0}}c_i\ln(p_i)=\sum_{\substack{i\in I\\c_i<0}}-c_i\ln(p_i)$.\\
 		Ou encore $\displaystyle\ln\left(\prod_{\substack{i\in I\\c_i>0}}p_i^{c_i}\right)=\ln\left(\prod_{\substack{i\in I\\c_i<0}}p_i^{-c_i}\right)$ c'est à dire $\displaystyle\prod_{\substack{i\in I\\c_i>0}}p_i^{c_i}=\prod_{\substack{i\in I\\c_i<0}}p_i^{-c_i}$.\\
-		Par unicité de la décomposition en produit de facteurs premiers et comme $\{i\in I,\ c_i>0\}\cap\{i\in I,\ c_i<0\}=\emptyset$, $\forall i\in I,\ c_i=0$. Donc $\forall i\in I,\ a_i=0$ et $\forall i\in \crblanc{1}{n},\ \alpha_i=0$.\\
+		Par unicité de la décomposition en produit de facteurs premiers et comme $\{i\in I,\ c_i>0\}\cap\{i\in I,\ c_i<0\}=\emptyset$, $\forall i\in I,\ c_i=0$. Cela donne $\alpha_i=0$ donc $I=\emptyset$ i.e $\forall i\in \crblanc{1}{n},\ \alpha_i=0$.\\
 		Ainsi $(\ln(p_1),\dots,\ln(p_n))$ est $\Q$-libre.
 		\item On sait qu'il existe une infinité de nombres premiers donc $\R$ n'admet pas de famille $\Q$-libre maximale : $\R$ est un $\Q$-espace vectoriel de dimension infinie.
 	\end{enumerate}
@@ -4476,11 +4471,11 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{L'ordre a son importance \telecom{2}}
 	\label{L'ordre a son importance corrigé}
 	\textcolor{blue}{\hyperref[L'ordre a son importance]{[Enoncé]}}\\
-	Il est clair que si $M$ est une homothétie alors \[\forall A,B\in \M_n(\R), \Tr(MAB)= \Tr(MBA)\]
+	Si $M$ est une homothétie alors par cyclicité de la trace \[\forall A,B\in \M_n(\R), \Tr(MAB)= \Tr(MBA)\]
 	Réciproquement, supposons que $M$ vérifie la propriété de l'énoncé.\\
-	Alors elle est vérifié en particulier pour les matrices élémentaires, cela va nous fournir des conditions très restrictives sur les coefficients de $M$.\\ On en déduit que $M$ est une homothétie.
+	Alors elle est vérifiée en particulier pour les matrices élémentaires, cela va nous fournir des conditions très restrictives sur les coefficients de $M$.\\ On en déduit que $M$ est une homothétie.
 	
-	\subsection{Formes multiplicatives de $\M_n(\K)$ \centraleponts{4}}
+	\subsection{Formes multiplicatives de $\M_n(\K)$ \centraleponts{3}}
 	\label{Formes multiplicatives de M_n(K) corrigé}
 	\textcolor{blue}{\hyperref[Formes multiplicatives de M_n(K)]{[Enoncé]}}\\
 	$\forall M\in \M_n(\K),\ f(M)=f(M)f(I_n)$ donc comme $f$ n'est pas constante égale à $0$ on en déduit $f(I_n)=1$.\\
@@ -4590,7 +4585,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Par conséquent $A$ est une matrice scalaire.
 	\end{enumerate}
 	
-	\subsection{Racine carrée de la dérivation \xens{3}}
+	\subsection{Racine carrée de la dérivation \centraleponts{3}}
 	\label{Racine carrée de la dérivation corrigé}
 	\textcolor{blue}{\hyperref[Racine carrée de la dérivation]{[Enoncé]}}\\
 	Supposons qu'il existe un tel endomorphisme $\delta$. Alors $\delta\circ\Delta=\delta^3=\Delta\circ\delta$.\\
@@ -4794,25 +4789,42 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires}
 	\label{Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires corrigé}
 	\textcolor{blue}{\hyperref[Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires]{[Enoncé]}}\\
-		On montre aisément que : $$\Ker(f)\subset \Ker(f^2) \quad \text{et} \quad \Ima(f^2)\subset\Ima{f}$$
-		Montrons que (i)$\implies$(ii)\\
-		Soit $y\in\Ima(f)$\\
-		IL existe $x\in E$ tel que $f(x)=y$.\\
-		D'après (i), il existe $(x_1,x_2)\in\Ima(f)\times\Ker(f)$.\\
-		Ainsi $f(x_1)=y$.\\
-		Puisque $x_1\in \Ima(f)$, il existe $y'\in E$ tel que $x_1=f(y')$ donc $f^2(y')=y$.\\
-		Donc $\Ima(f^2)=\Ima(f)$ par double inclusion.\\
-		Montrons que (ii)$\implies$(iii).\\
-		D'après le théorème du rang, $\dim(\Ker(f))=n-\dim(\Ima(f))=n-\dim(\Ima(f^2))=\dim(\Ker(f^2))$\\
-		Et puisque $\Ker(f)\subset\Ker(f^2)$, on en déduit que : $\Ker(f)=\Ker(f^2)$.\\
-		Montrons que (iii)$\implies$(i)\\
-		Soit $x\in\Ker(f)\cap\Ima(f)$\\
-			$f(x)=0$\\
-			$\exists y\in E, f(y)=x$\\
-		Ainsi, $f^2(y)=0$. Donc $y\in\Ker(f^2)=\Ker(f)$. Ce qui implique que $f(y)=0$. Donc $x=0$.\\
-		Par conséquent, $\Ker(f)$ et $\Ima(f)$ sont en somme directe.\\
-		De plus, d'après le théorème du rang : $\dim(\Ima(f))+\dim(\Ker(f))=n$.\\
-		Donc $\Ima(f)\oplus\Ker(f)=E$.
+	On montre aisément que : $$\Ker(f)\subset \Ker(f^2) \quad \text{et} \quad \Ima(f^2)\subset\Ima{f}$$
+	Montrons que (i)$\implies$(ii)\\
+	Soit $y\in\Ima(f)$\\
+	Il existe $x\in E$ tel que $f(x)=y$.\\
+	D'après (i), il existe $(x_1,x_2)\in\Ima(f)\times\Ker(f)$.\\
+	Ainsi $f(x_1)=y$.\\
+	Puisque $x_1\in \Ima(f)$, il existe $y'\in E$ tel que $x_1=f(y')$ donc $f^2(y')=y$.\\
+	Donc $\Ima(f^2)=\Ima(f)$ par double inclusion.\\
+	Montrons que (ii)$\implies$(iii).\\
+	D'après le théorème du rang, $\dim(\Ker(f))=n-\dim(\Ima(f))=n-\dim(\Ima(f^2))=\dim(\Ker(f^2))$\\
+	Et puisque $\Ker(f)\subset\Ker(f^2)$, on en déduit que : $\Ker(f)=\Ker(f^2)$.\\
+	Montrons que (iii)$\implies$(i)\\
+	Soit $x\in\Ker(f)\cap\Ima(f)$. $f(x)=0$ et	$\exists y\in E, f(y)=x$\\
+	Ainsi, $f^2(y)=0$. Donc $y\in\Ker(f^2)=\Ker(f)$. Ce qui implique que $f(y)=0$. Donc $x=0$.\\
+	Par conséquent, $\Ker(f)$ et $\Ima(f)$ sont en somme directe.\\
+	De plus, d'après le théorème du rang : $\dim(\Ima(f))+\dim(\Ker(f))=n$.\\
+	Donc $\Ima(f)\oplus\Ker(f)=E$.
+	
+	\subsection{Partition de l'identité par des projecteurs \telecom{2}}
+	\label{Partition de l'identité par des projecteurs corrigé}
+	\textcolor{blue}{\hyperref[Partition de l'identité par des projecteurs]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Rappelons que la trace d'un projecteur est égale à son rang. En effet la matrice d'un projecteur $p\in \L(E)$ dans une base adaptée à la décomposition $E=\Ker(p-\Id_E)\oplus \Ker(p)$ est $\begin{pmatrix}
+			I_r&0\\
+			0&0
+		\end{pmatrix}$, où $r=\dim\Ker(p-\Id_E)=\rg p$.\\
+		Ainsi en appliquant la trace à l'égalité de l'énoncé on obtient $n=\displaystyle\sum_{i=1}^k\rg p_i$.\\
+		Comme les $p_i$ ne sont pas nuls, leur rang vaut au moins $1$ d'où $n\geq k$.
+		\item On a déjà montré que $\dim E=\displaystyle\sum_{i=1}^k\dim\Ima(p_i)$ et puis $E=\displaystyle\Ima\left(\sum_{i=1}^kp_i\right)\subset \sum_{i=1}^k\Ima(p_i)$.\\
+		Par conséquent $E=\displaystyle\bigoplus_{i=1}^k\Ima(p_i)$.
+		\item Soit $j\in \crblanc{1}{k}$ et soit $x\in E$.\\
+		Par l'hypothèse de l'énoncé $\displaystyle\sum_{i\ne j}p_i=\Id_E-p_j$.\\
+		Puis en composant par $p_j$ à droite, $\displaystyle\sum_{i\ne j}p_i\circ p_j=0$.\\
+		Donc en évaluant en $x$ on obtient $\displaystyle\sum_{i\ne j}p_i\circ p_j(x)=0$.\\
+		Or $\forall i\ne j,\ p_i\circ p_j(x)\in \Ima(p_i)$. Ainsi comme les images des $p_i$ sont en somme directe, $\forall i\ne j,\ p_i\circ p_j(x)=0$.
+	\end{enumerate}
 	
 	\subsection{Equation entre projecteurs}
 	\label{Equation entre projecteurs corrigé}
@@ -4855,7 +4867,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\end{enumerate}
 		\item On pose $\displaystyle p=\frac{1}{n}\sum_{g\in G}{g^{-1}\circ q\circ g}$.\\
 		Montrons que $p$ est un projecteur.\\
-		Puisque pour tout $g\in G$ stabilise $F$, on en déduit que $p$ est à valeur dans $F$.\\
+		Puisque tout $g\in G$ stabilise $F$, on en déduit que $p$ est à valeur dans $F$.\\
 		Soit $x\in F$. On a $g(x)\in F$ donc $(p(g(x)))=g(x)$.
 		Donc \[g^{-1}\circ q\circ g(x)=g^{-1}\circ g(x)=x\]	
 		Par conséquent, $p$ agit comme identité sur $F$.\\
