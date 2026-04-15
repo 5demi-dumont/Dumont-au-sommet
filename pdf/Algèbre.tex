@@ -554,6 +554,16 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item En déduire que $A^\top$ est diagonalisable si et seulement $A$ l'est.
 	\end{enumerate}
 	
+	\section{Rang et spectre de la comatrice \xens{3}}
+	\label{Rang et spectre de la comatrice}
+	\textcolor{blue}{\hyperref[Rang et spectre de la comatrice corrigé]{[Corrigé]}}\\
+	Soit $A\in \M_n(\C)$. Déterminer le rang et le spectre de $\tilde A=\Com(A)^\top$.
+	
+	\section{Vecteurs propres de la transposée de la comatrice \centraleponts{3}}
+	\label{Vecteurs propres de la transposée de la comatrice}
+	\textcolor{blue}{\hyperref[Vecteurs propres de la transposée de la comatrice corrigé]{[Corrigé]}}\\
+	Soit $A\in \M_n(\K)$. Montrer que tout vecteur propre de $A$ est vecteur propre de $\Com(A)^\top$.
+	
 	\section{\underline{Algorithme de Faddeev} \centraleponts{3}}
 	\label{Algorithme de Faddeev}
 	\textcolor{blue}{\hyperref[Algorithme de Faddeev corrigé]{[Corrigé]}}\\
@@ -615,6 +625,17 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		U&0 
 	\end{array}\right)$.\\
 	Déterminer une condition nécessaire et suffisante sur $U$ pour que $V$ soit diagonalisable.
+	
+	\section{Codiagonalisation \centraleponts{3}}
+	\label{Codiagonalisation}
+	\textcolor{blue}{\hyperref[Codiagonalisation corrigé]{[Corrigé]}}\\
+	Soit $E$ un $\K$-espace vectoriel de dimension $n$ finie.
+	\begin{enumerate}
+		\item  Soient $u,v\in \mathcal L(E)$ diagonalisables et commutant. \\Montrer que $u$ et $v$ admettent une base de diagonalisation commune.
+		\item Soient $u_1,\dots,u_p\in \mathcal L(E)$ diagonalisables et commutant deux à deux.\\ Montrer que $u_1,\dots,u_n$ admettent une base de diagonalisation commune.
+		\item Soit $\A$ une sous-algèbre commutative de $\mathcal L(E)$ formée d'endomorphismes diagonalisables.\\
+		Montrer qu'il existe une base de diagonalisation commune à tous les éléments de $\A$.
+	\end{enumerate}
 
 	\section{\underline {Cotrigonalisation (1)} \centraleponts{3}}
 	\label{Cotrigonalisation (1)}
@@ -821,16 +842,6 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item Discuter du rang de $\Com(A)$ en fonction du rang de $A$.
 		\item En déduire l'ensemble des matrices recherchées.
 	\end{enumerate}
-	
-	\section{Rang et spectre de la comatrice \xens{3}}
-	\label{Rang et spectre de la comatrice}
-	\textcolor{blue}{\hyperref[Rang et spectre de la comatrice corrigé]{[Corrigé]}}\\
-	Soit $A\in \M_n(\C)$. Déterminer le rang et le spectre de $\tilde A=\Com(A)^\top$.
-	
-	\section{Vecteurs propres de la comatrice \centraleponts{3}}
-	\label{Vecteurs propres de la comatrice}
-	\textcolor{blue}{\hyperref[Vecteurs propres de la comatrice corrigé]{[Corrigé]}}\\
-	Soit $A\in \M_n(\K)$. Montrer que tout vecteur propre de $A$ est vecteur propre de $\Com(A)^\top$.
 	
 	\section{Une formule sur les polynômes \centraleponts{3}}
 	\label{Une formule sur les polynômes}
@@ -5270,52 +5281,107 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		0&\dots&\dots&\dots&0&-1
 	\end{vmatrix}\]
 	Ainsi, on a montré que $C_P=P$.
-	\subsection{Réduction de la transposée d'une matrice}
+	
+	\subsection{Réduction de la transposée d'une matrice \ccinp{1}}
 	\label{Réduction de la transposée d'une matrice corrigé}
 	\textcolor{blue}{\hyperref[Réduction de la transposée d'une matrice]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item On sait que pour tout $M\in\M_n(\K), \det(M)=\det(M^\top)$.\\
 		Ainsi, \[\chi_A=\det(XI_n-A)=\det((XI_n-A)^\top)=\det(XI_n-A^\top)=\chi_{A^\top}\]
-		\item On sait que pour tout $M\in\M_{n}(\K), \rg(M)=\rg(M^\top)$.\\
-		Ainsi, d'après le théorème du rang : \[\dim(E_\lambda(A))=\dim(\Ker(A-\lambda I_n))=\dim(\Ker(A^\top-\lambda I_n))=\dim(E_\lambda I_n)\]
-		\item Supposons que $A$ est diagonalisable. Alors \[\displaystyle n=\sum_{\lambda\in\text{Sp}(A)}\dim(E_\lambda(A))\].\\
-		Ainsi, à l'aide de la question précédente, on montre aisément que \[\displaystyle n=\sum_{\lambda\in\text{Sp}(A^\top)}\dim(E_\lambda(A^\top))\].\\
+		\item On sait que pour tout $M\in\M_n(\K), \rg(M)=\rg(M^\top)$.\\
+		Ainsi, d'après le théorème du rang : \[\dim E_\lambda(A)=\dim\Ker(A-\lambda I_n)=\dim\Ker(A^\top-\lambda I_n)=\dim E_\lambda(A^\top)\]
+		\item Supposons que $A$ est diagonalisable. Alors \[n=\sum_{\lambda\in\text{Sp}(A)}\dim(E_\lambda(A))\]
+		Ainsi, à l'aide de la question précédente, on montre aisément que \[n=\sum_{\lambda\in\text{Sp}(A^\top)}\dim(E_\lambda(A^\top))\]
 		Donc $A^\top$ est diagonalisable.\\
 		Puisque $(A^\top)^\top=A$, la réciproque est immédiate.
 	\end{enumerate}
+	
+	\subsection{Rang et spectre de la comatrice \xens{3}}
+	\label{Rang et spectre de la comatrice corrigé}
+	\textcolor{blue}{\hyperref[Rang et spectre de la comatrice]{[Enoncé]}}\\
+	Pour $n=1$ on déduit de la formule $A\tilde A=\det(A)I_n$ que $\tilde A=1$ si $A\ne 0$. $\tilde A=0$ si $A=0$. On suppose donc maintenant $n\geq 2$.\\
+	Si $\rg(A)=n$ i.e si $A$ est inversible, alors $\tilde A$ est inversible puisque $A\tilde A=\det(A)I_n$ avec $\det(A)\ne 0$.\\
+	Si $\rg(A)\leq n-2$ alors tous les mineurs de $A$ de taille $n-1$ sont nuls, comme déterminants de matrices extraites de $A$ de tailles strictement supérieures à $\rg(A)$, donc $\tilde A=0$ i.e $\rg(\tilde A)=0$.\\
+	Enfin, supposons que $\rg(A)=n-1$. On a $A\tilde A=\det(A)I_n=0$. Donc $\Ima(\tilde A)\subset \Ker(A)$. D'après le théorème du rang $\Ker(A)$ est de dimension $1$, donc $\tilde A$ est de rang $1$ ou $0$. $\tilde A$ n'est pas nulle puisque $A$, de rang $n-1$, a au moins un mineur de taille $n-1$ non nul. On en déduit que $\rg(\tilde A)=1$.\\
+	En résumé, $\rg(\tilde A)=\begin{cases}
+		n&\mbox{si }\rg(A)=n\\
+		1&\mbox{si }0<\rg(A)=n-1\\
+		0&\mbox{sinon}
+	\end{cases}$
+	Pour ce qui est du spectre, l'étude du rang nous permet déjà de dire que $\T{Sp}(\tilde A)=\{0\}$ si $\rg(A)<n-1$. Si $\rg(A)=n-1$ alors $\tilde A$ est de rang $1$. On en déduit qu'il existe $\lambda\in \C$ tel que $\chi_{\tilde A}(X)=X^{n-1}(X-\lambda)$. Comme on sait que le coefficient en $X^{n-1}$ de $\chi_{\tilde A}$ est $-\Tr(\tilde A)$ on en déduit que $\lambda=\Tr(\tilde A)$. Donc $\T{Sp}(\tilde A)=\{0,\Tr(\tilde A)\}$ (On a potentiellement $\Tr(\tilde A)=0$). On reviendra à la fin sur une expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$.\\
+	Enfin supposons que $\tilde A$ est inversible. Fixons $\lambda\in \C^*$.
+	\begin{align*}
+		\chi_{\tilde A}(\lambda)&=\det(\lambda I_n-\tilde A)\\
+		&=\det(A^{-1})\det(\lambda A-A\tilde A)\\
+		&=\frac{1}{\det(A)}\det(\lambda A-\det(A)I_n)\\
+		&=\frac{(-\lambda)^n}{\det(A)}\det\left(\frac{\det(A)}{\lambda}I_n-A\right)\\
+		&=\frac{\lambda^n}{(-1)^n\det(A)}\chi_A\left(\frac{\det(A)}{\lambda}\right)
+	\end{align*}
+	$\C^*$ étant infini on a l'égalité entre polynômes $\chi_{\tilde A}(X)=\dfrac{X^n}{(-1)^n\det(A)}\chi_A\left(\dfrac{\det(A)}{X}\right)$.\\
+	On sait que $\tilde A$ est inversible donc $\lambda=0$ n'est pas racine de $\chi_{\tilde A}$.\\
+	Ainsi $\forall \lambda\in \C,\ \chi_{\tilde A}(\lambda)=0\iff \chi_A\left(\dfrac{\det(A)}{\lambda}\right)=0\iff \dfrac{\det(A)}{\lambda}\in \T{Sp}(A)$.\\
+	Finalement $\T{Sp}(\tilde A)=\{\det(A)\lambda^{-1},\ \lambda\in \T{Sp}(A)\}$ ou encore en notant $\lambda_1,\dots,\lambda_n$ les valeurs propres de $A$ comptées avec multiplicités, $\T{Sp}(\tilde A)=\left\{\displaystyle\prod_{i\ne j}\lambda_i,\ 1\leq j\leq n\right\}$.\\
+	Pour finir, déterminons une expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$. On a l'expression suivante lorsque $A$ est inversible :
+	$$\Tr(\tilde A)=\sum_{j=1}^n\prod_{i\ne j}\lambda_i=(-1)^{n-1}\chi_A'(0)$$
+	La deuxième égalité s'obtient en dérivant formellement l'expression $\chi_A(X)=\displaystyle\prod_{i=1}^n(X-\lambda_i)$ pour obtenir $\chi_A'(X)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}(X-\lambda_i)$.\\
+	On montre que $\T{GL}_n(\C)$ est dense dans $\M_n(\C)$ (il suffit de considérer la suite de terme général $A_k=A-\dfrac{1}{k}I_n$). Les deux expressions $\Tr(\tilde A)$ et $(-1)^{n-1}\chi_A'(0)$ sont continues en $A$ car polynomiale en ses coefficients, par conséquent on a toujours $\Tr(\tilde A)=(-1)^{n-1}\chi_A'(0)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}\lambda_i$.
+	
+	\subsection{Vecteurs propres de la transposée de la comatrice \centraleponts{3}}
+	\label{Vecteurs propres de la transposée de la comatrice corrigé}
+	\textcolor{blue}{\hyperref[Vecteurs propres de la transposée de la comatrice]{[Enoncé]}}\\
+	Notons $B=\Com(A)^\top$. On rappelle la relation fondamentale $AB=BA=\det(A)I_n$. Fixons $X$ un vecteur propre de $A$ et notons $\lambda$ la valeur propre associée.\\
+	Par la relation on a $\lambda BX=\det(A)X$. Donc si $\lambda\ne 0$ alors $X$ est vecteur propre de $B$ pour la valeur propre $\dfrac{\det(A)}{\lambda}$.\\
+	Supposons maintenant $\lambda=0$. $A$ n'est pas inversible, on va différencier des cas suivant son rang.
+	\begin{itemize}
+		\item $B$ est composée de mineurs de $A$ de taille $n-1$, donc si $\rg(A)<n-1$ alors $B=0$ et $X$ est évidemment vecteur propre de $B$.
+		\item On suppose $\rg(A)=n-1$. Alors par le théorème du rang $\Ker(A)=\Vect(X)$.\\
+		Ensuite on sait que $AB=0$ donc en particulier $BX\in \Ker(A)$ d'où l'existence de $\mu\in \K$ tel que $BX=\mu X$.
+	\end{itemize}
+	Dans tous les cas $X$ est un vecteur propre de $B$.
+	
 	\subsection{Algorithme de Faddeev}
 	\label{Algorithme de Faddeev corrigé}
 	\textcolor{blue}{\hyperref[Algorithme de Faddeev]{[Enoncé]}}\\
 	
-	\subsection{Endomorphisme de transposition}
+	\subsection{Endomorphisme de transposition \ccinp{2}}
 	\label{Endomorphisme de transposition corrigé}
 	\textcolor{blue}{\hyperref[Endomorphisme de transposition]{[Enoncé]}}\\
-	On prend la base canonique $(E_{i,j})$ de $\M_{n}(\R)$.\\
-	On remarque que : \[\forall (i,j)\in(\crblanc{1}{n})^2, \Phi(E_{i,j})=E_{j,i}\]
+	\underline{$1^{\T{ère}}$ méthode :} Avec la réduction\\
+	Notons $\S_n(\R)$ (resp. $\A_n(\R)$) l'ensemble des matrices symétriques (resp. antisymétriques) réelles. Par définition, $\forall M\in \S_n(\R),\ \Phi(M)=M$ et $\forall M\in \A_n(\R),\ \Phi(M)=-M$. Ainsi $1$ est une valeur propre de $M$ de multiplicité géométrique au moins $\dim(\S_n(\R))=\dfrac{n(n+1)}{2}$, et de même $-1$ est une valeur propre de $\Phi$ de multiplicité géométrique au moins $\dim(\A_n(\R))=\dfrac{n(n-1)}{2}$.\\
+	Comme $\displaystyle\frac{n(n+1)}{2}+\frac{n(n-1)}{2}=n^2=\dim(\M_n(\R))$, $\S_n(\R)$ et $\A_n(\R)$ sont exactement les sous-espaces propres de $\Phi$. De plus comme toute matrice $M\in \M_n(\R)$ se décompose en $M=\dfrac{M+M^\top}{2}+\dfrac{M-M^\top}{2}\in \S_n(\R)+\A_n(\R)$ on a $\M_n(\R)=\S_n(\R)\oplus\A_n(\R)$ et donc $\Phi$ est diagonalisable. Les multiplicités algébriques $m_\lambda$ des valeurs propres $\lambda$ de $\Phi$ sont alors égales aux multiplicités géométriques.\\
+	Par conséquent, $\Phi$ étant diagonalisable, $\displaystyle\det(\Phi)=\prod_{\lambda\in\text{Sp}(\Phi)}\lambda^{m_\lambda}$ et $\displaystyle\Tr(\Phi)=\sum_{\lambda\in\text{Sp}(\Phi)}m_\lambda\lambda$, d'où :
+	\[\det(\Phi)=(-1)^{\frac{n(n-1)}{2}} \text{ et } \Tr(\Phi)=\frac{n(n+1)}{2}-\frac{n(n-1)}{2}=n\]
+	\underline{$2^{\T{nd}}$ méthode :} Sans la réduction\\
+	On considère la base canonique $(E_{i,j})$ de $\M_n(\R)$.\\
+	On remarque que : \[\forall (i,j)\in \crblanc{1}{n}^2, \Phi(E_{i,j})=E_{j,i}\]
 	Ainsi, \begin{itemize}
-		\item les matrices $E_{i,i}$ sont les vecteurs propres de $\Phi$,
+		\item $\forall i\in \crblanc{1}{n},\ \Phi(E_{i,i})=E_{i,i}$;
 		\item pour chaque paire $(i,j)$ avec $i<j$, l'espace engendré par $E_{i,j},E_{j,i}$ est stable par $\Phi$.\\
-		Dans cette base, $\Phi$ a pour matrice 
+		Dans cette base, l'endomorphisme induit par $\Phi$ a pour matrice 
 		\[\begin{pmatrix}
 			0&1\\
 			1&0
 		\end{pmatrix}\]
-		dont les valeurs propres sont $-1$ et $1$.
+		dont le déterminant vaut $-1$.
 	\end{itemize}
-	Par conséquent, puisque $\displaystyle\det(\Phi)=\prod_{\lambda\in\text{Sp}(\Phi)}\lambda$ et $\displaystyle\Tr(\Phi)=\sum_{\lambda\in\text{Sp}(\Phi)}\lambda$, on a :
-	\[\det(\Phi)=(-1)^{\frac{n(n-1)}{2}} \text{ et } \Tr(\Phi)=\frac{n(n+1)}{2}+\frac{n(n-1)}{2}=n\]
+	Par conséquent, dans une base bien choisie la matrice de $\Phi$ est diagonale par blocs avec un bloc $I_n$ et $\dfrac{n(n-1)}{2}$ blocs $\begin{pmatrix}
+		0&1\\
+		1&0
+	\end{pmatrix}$.\\
+	On en déduit \[\det(\Phi)=(-1)^{\frac{n(n-1)}{2}} \text{ et } \Tr(\Phi)=n\]
 	
-	\subsection{Exemple de matrice non diagonalisable}
+	\subsection{Exemple de matrice non diagonalisable \ccinp{1}}
 	\label{Exemple de matrice non diagonalisable corrigé}
 	\textcolor{blue}{\hyperref[Exemple de matrice non diagonalisable]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item La matrice $\begin{pmatrix}
 			1&1\\0&1
-		\end{pmatrix}$ n'est pas diagonalisable sur $\C$.
+		\end{pmatrix}$ n'est pas diagonalisable sur $\C$ car ayant pour unique valeur propre $1$, si elle était diagonalisable elle serait semblable à $I_2$ et donc égale à $I_2$.
 		\item La matrice $\begin{pmatrix}
 			0&1\\-1&0
-		\end{pmatrix}$ est diagonalisable sur $\C$ mais pas sur $\R$.
-		\item On pose $A=\begin{pmatrix}
+		\end{pmatrix}$ est diagonalisable sur $\C$ mais pas sur $\R$. En effet son polynôme caractéristique est $X^2+1$ qui est scindé à racines simples sur $\C$ mais pas scindé sur $\R$ (elle n'est même pas trigonalisable sur $\R$).
+		\item On rappelle (cf.\ref{Réduction des matrices de rang 1}) qu'une matrice de rang $1$ est diagonalisable si et seulement si sa trace n'est pas nulle.
+		On pose $A=\begin{pmatrix}
 			1&1\\1&1
 		\end{pmatrix}$ et $B=\begin{pmatrix}
 		0&1\\-1&0
@@ -5330,14 +5396,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		n'est pas diagonalisable.
 	\end{enumerate}
 	
-	\subsection{Diagonalisabilité d'une matrice (1)}
+	\subsection{Diagonalisabilité d'une matrice (1) \centraleponts{3}}
 	\label{Diagonalisabilité d'une matrice (1) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (1)]{[Enoncé]}}\\
-	Il est vrai que la matrice est symétrique mais pas forcément à coefficients réelles.\\
+	On pourrait être tenté d'utiliser le théorème spectral. Il est vrai que la matrice est symétrique mais pas par contre elle n'est pas forcément à coefficients réels !\\
 	On calcule le polynôme caractéristique de $A$.\\
 	En développant par rapport à la première ligne, on obtient :
 	\[\chi_A=X^{n-2}(X^2-a_nX-S)\]
-	où $S=\sum_{k=0}^{n-1}a_k^2$.\\
+	où $S=\displaystyle\sum_{k=0}^{n-1}a_k^2$.\\
 	On pose $Q=X^2-a_nX-S$.
 	$A$ est diagonalisable si et seulement si son polynôme minimal est scindé à racine simples.\\
 	Ici, $A$ est diagonalisable si et seulement si :
@@ -5355,27 +5421,30 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\item ou $S\ne 0$ et $a_n^2+4S\ne 0$
 	\end{itemize}
 	
-	\subsection{Diagonalisabilité d'une matrice (2)}
+	\subsection{Diagonalisabilité d'une matrice (2) \telecom{3}}
 	\label{Diagonalisabilité d'une matrice (2) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (2)]{[Enoncé]}}\\
 	On pose $C=\begin{pmatrix}
-		1&2&\dots&n
+		1&2&\cdots&n
 	\end{pmatrix}^\top$ et $L=\begin{pmatrix}
-	1&2&\dots&n
+	1&\dfrac{1}{2}&\cdots&\dfrac{1}{n}
 	\end{pmatrix}$.\\
-	On remarque que $A=CL$ et donc $A$ est une matrice de rang $1$.\\
-	Donc d'après \ref{Réduction des matrices de rang 1}, $A$ est diagonalisable si et seulement si $\Tr(A)\ne 0$.\\
+	On remarque que $A=CL$. Donc d'après \ref{Réduction des matrices de rang 1} $A$ est une matrice de rang $1$ et puis $A$ est diagonalisable si et seulement si $\Tr(A)\ne 0$.\\
 	Ici $\Tr(A)=n$ donc $A$ est diagonalisable.
 	
 	\subsection{Diagonalisibilité d'une matrice (3)}
 	\label{Diagonalisabilité d'une matrice (3) corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisabité d'une matrice (3)]{[Enoncé]}}\\
 	
-	\subsection{Cotrigonalisation (1)}
+	\subsection{Codiagonalisation \centraleponts{3}}
+	\label{Codiagonalisation corrigé}
+	\textcolor{blue}{\hyperref[Codiagonalisation]{[Enoncé]}}\\
+	
+	\subsection{Cotrigonalisation (1) \centraleponts{3}}
 	\label{Cotrigonalisation (1) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (1)]{[Enoncé]}}\\
 	
-	\subsection{Cotrigonalisation (2)}
+	\subsection{Cotrigonalisation (2) \centraleponts{3}}
 	\label{Cotrigonalisation (2) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (2)]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -5410,11 +5479,11 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi, il suffit de compléter $\B$ en une base de $E$ pour avoir le résultat souhaité.
 	\end{enumerate}
 	
-	\subsection{Cotrigonalisation (3)}
+	\subsection{Cotrigonalisation (3) \centraleponts{4}}
 	\label{Cotrigonalisation (3) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (3)]{[Enoncé]}}\\
 	
-	\subsection{Cotrigonalisation (4)}
+	\subsection{Cotrigonalisation (4) \centraleponts{4}}
 	\label{Cotrigonalisation (4) corrigé}
 	\textcolor{blue}{\hyperref[Cotrigonalisation (4)]{[Enoncé]}}\\
 	
@@ -5847,49 +5916,6 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 			\end{itemize}
 		\end{itemize}
 	\end{enumerate}
-	
-	\subsection{Rang et spectre de la comatrice \xens{3}}
-	\label{Rang et spectre de la comatrice corrigé}
-	\textcolor{blue}{\hyperref[Rang et spectre de la comatrice]{[Enoncé]}}\\
-	Pour $n=1$ on déduit de la formule $A\tilde A=\det(A)I_n$ que $\tilde A=1$ si $A\ne 0$. $\tilde A=0$ si $A=0$. On suppose donc maintenant $n\geq 2$.\\
-	Si $\rg(A)=n$ i.e si $A$ est inversible, alors $\tilde A$ est inversible puisque $A\tilde A=\det(A)I_n$ avec $\det(A)\ne 0$.\\
-	Si $\rg(A)\leq n-2$ alors tous les mineurs de $A$ de taille $n-1$ sont nuls, comme déterminants de matrices extraites de $A$ de tailles strictement supérieures à $\rg(A)$, donc $\tilde A=0$ i.e $\rg(\tilde A)=0$.\\
-	Enfin, supposons que $\rg(A)=n-1$. On a $A\tilde A=\det(A)I_n=0$. Donc $\Ima(\tilde A)\subset \Ker(A)$. D'après le théorème du rang $\Ker(A)$ est de dimension $1$, donc $\tilde A$ est de rang $1$ ou $0$. $\tilde A$ n'est pas nulle puisque $A$, de rang $n-1$, a au moins un mineur de taille $n-1$ non nul. On en déduit que $\rg(\tilde A)=1$.\\
-	En résumé, $\rg(\tilde A)=\begin{cases}
-		n&\mbox{si }\rg(A)=n\\
-		1&\mbox{si }0<\rg(A)=n-1\\
-		0&\mbox{sinon}
-	\end{cases}$
-	Pour ce qui est du spectre, l'étude du rang nous permet déjà de dire que $\T{Sp}(\tilde A)=\{0\}$ si $\rg(A)<n-1$. Si $\rg(A)=n-1$ alors $\tilde A$ est de rang $1$. On en déduit qu'il existe $\lambda\in \C$ tel que $\chi_{\tilde A}(X)=X^{n-1}(X-\lambda)$. Comme on sait que le coefficient en $X^{n-1}$ de $\chi_{\tilde A}$ est $-\Tr(\tilde A)$ on en déduit que $\lambda=\Tr(\tilde A)$. Donc $\T{Sp}(\tilde A)=\{0,\Tr(\tilde A)\}$ (On a potentiellement $\Tr(\tilde A)=0$). On reviendra à la fin sur une expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$.\\
-	Enfin supposons que $\tilde A$ est inversible. Fixons $\lambda\in \C^*$.
-	\begin{align*}
-		\chi_{\tilde A}(\lambda)&=\det(\lambda I_n-\tilde A)\\
-		&=\det(A^{-1})\det(\lambda A-A\tilde A)\\
-		&=\frac{1}{\det(A)}\det(\lambda A-\det(A)I_n)\\
-		&=\frac{(-\lambda)^n}{\det(A)}\det\left(\frac{\det(A)}{\lambda}I_n-A\right)\\
-		&=\frac{\lambda^n}{(-1)^n\det(A)}\chi_A\left(\frac{\det(A)}{\lambda}\right)
-	\end{align*}
-	$\C^*$ étant infini on a l'égalité entre polynômes $\chi_{\tilde A}(X)=\dfrac{X^n}{(-1)^n\det(A)}\chi_A\left(\dfrac{\det(A)}{X}\right)$.\\
-	On sait que $\tilde A$ est inversible donc $\lambda=0$ n'est pas racine de $\chi_{\tilde A}$.\\
-	Ainsi $\forall \lambda\in \C,\ \chi_{\tilde A}(\lambda)=0\iff \chi_A\left(\dfrac{\det(A)}{\lambda}\right)=0\iff \dfrac{\det(A)}{\lambda}\in \T{Sp}(A)$.\\
-	Finalement $\T{Sp}(\tilde A)=\{\det(A)\lambda^{-1},\ \lambda\in \T{Sp}(A)\}$ ou encore en notant $\lambda_1,\dots,\lambda_n$ les valeurs propres de $A$ comptées avec multiplicités, $\T{Sp}(\tilde A)=\left\{\displaystyle\prod_{i\ne j}\lambda_i,\ 1\leq j\leq n\right\}$.\\
-	Pour finir, déterminons une expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$. On a l'expression suivante lorsque $A$ est inversible :
-	$$\Tr(\tilde A)=\sum_{j=1}^n\prod_{i\ne j}\lambda_i=(-1)^{n-1}\chi_A'(0)$$
-	La deuxième égalité s'obtient en dérivant formellement l'expression $\chi_A(X)=\displaystyle\prod_{i=1}^n(X-\lambda_i)$ pour obtenir $\chi_A'(X)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}(X-\lambda_i)$.\\
-	On montre que $\T{GL}_n(\C)$ est dense dans $\M_n(\C)$ (il suffit de considérer la suite de terme général $A_k=A-\dfrac{1}{k}I_n$). Les deux expressions $\Tr(\tilde A)$ et $(-1)^{n-1}\chi_A'(0)$ sont continues en $A$ car polynomiale en ses coefficients, par conséquent on a toujours $\Tr(\tilde A)=(-1)^{n-1}\chi_A'(0)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}\lambda_i$.
-	
-	\subsection{Vecteurs propres de la comatrice \centraleponts{3}}
-	\label{Vecteurs propres de la comatrice corrigé}
-	\textcolor{blue}{\hyperref[Vecteurs propres de la comatrice]{[Enoncé]}}\\
-	Notons $B=\Com(A)^\top$. On rappelle la relation fondamentale $AB=BA=\det AI_n$. Fixons $X$ un vecteur propre de $A$ et notons $\lambda$ la valeur propre associée.\\
-	Par la relation on a $\lambda BX=\det AX$. Donc si $\lambda\ne 0$ alors $X$ est vecteur propre de $B$ pour la valeur propre $\dfrac{\det A}{\lambda}$.\\
-	Supposons maintenant $\lambda=0$. $A$ n'est pas inversible, on va différencier des cas suivant son rang.
-	\begin{itemize}
-		\item $B$ est composée de mineur de $A$ de taille $n-1$, donc si $\rg(A)<n-1$ alors $B=0$ et $X$ est évidemment vecteur propre de $B$.
-		\item On suppose $\rg(A)=n-1$. Alors par le théorème du rang $\Ker A=\Vect(X)$.\\
-		Ensuite on sait que $AB=0$ donc en particulier $BX\in \Ker A$ d'où l'existence de $\mu\in \K$ tel que $BX=\mu X$.
-	\end{itemize}
-	Dans tous les cas $X$ est un vecteur propre de $B$.
 	
 	\subsection{Une formule sur les polynômes \centraleponts{3}}
 	\label{Une formule sur les polynômes corrigé}
