@@ -827,6 +827,11 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\textcolor{blue}{\hyperref[Rang et spectre de la comatrice corrigé]{[Corrigé]}}\\
 	Soit $A\in \M_n(\C)$. Déterminer le rang et le spectre de $\tilde A=\Com(A)^\top$.
 	
+	\section{Vecteurs propres de la comatrice \centraleponts{3}}
+	\label{Vecteurs propres de la comatrice}
+	\textcolor{blue}{\hyperref[Vecteurs propres de la comatrice corrigé]{[Corrigé]}}\\
+	Soit $A\in \M_n(\K)$. Montrer que tout vecteur propre de $A$ est vecteur propre de $\Com(A)^\top$.
+	
 	\section{Une formule sur les polynômes \centraleponts{3}}
 	\label{Une formule sur les polynômes}
 	\textcolor{blue}{\hyperref[Une formule sur les polynômes corrigé]{[Corrigé]}}\\
@@ -5751,7 +5756,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\newpage
 
 \section{Correction Réduction algébrique}
-	\subsection{Equation matricielle polynomiale (1)}
+	\subsection{Equation matricielle polynomiale (1) \ccinp{2}}
 	\label{Equation matricielle polynomiale (1) corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle polynomiale (1)]{[Enoncé]}}\\
 	On raisonne par analyse synthèse. Soit $M\in \M_n(\C)$ telle que $M^5=M^2$ et $\Tr(M)=n$.\\
@@ -5764,7 +5769,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Le polynôme $X^3-1$ annule $M$ donc $M$ est diagonalisable. N'ayant que $1$ pour valeur propre, on conclut que $M=I_n$.\\
 	Enfin $I_n$ vérifie évidemment $I_n^5=I_n^2$.
 	
-	\subsection{Equation matricielle polynomiale (2)}
+	\subsection{Equation matricielle polynomiale (2) \telecom{2}}
 	\label{Equation matricielle polynomiale (2) corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle polynomiale (2)]{[Enoncé]}}\\
 		Soit $A\in \M_n(\R)$ telle que $A^3+A^2+A=0$. Le polynôme $X^3+X^2+X=X(X^2+X+1)$ annule $A$ donc $\text{Sp}(A)\subset\{0,j,\overline j\}$ en notant $j=e^{2i\pi/3}$.\\
@@ -5772,7 +5777,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Comme $A$ est à coefficients réels, $\chi_A\in \R[X]$. Donc $m_j=m_{\overline j}$. De plus d'après le théorème du rang $\rg(A)=n-m_0$.\\
 	Enfin on sait que $m_0+m_j+m_{\overline j}=n$ càd $2m_j=n-m_0=\rg(A)$. $\rg(A)$ est donc pair.
 	
-	\subsection{Equation matricielle avec la comatrice}
+	\subsection{Equation matricielle avec la comatrice \xens{4}}
 	\label{Equation matricielle avec la comatrice corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle avec la comatrice]{[Enoncé]}}\\
 	\begin{enumerate}
@@ -5843,20 +5848,19 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\end{itemize}
 	\end{enumerate}
 	
-	\subsection{Rang et spectre de la comatrice}
+	\subsection{Rang et spectre de la comatrice \xens{3}}
 	\label{Rang et spectre de la comatrice corrigé}
 	\textcolor{blue}{\hyperref[Rang et spectre de la comatrice]{[Enoncé]}}\\
 	Pour $n=1$ on déduit de la formule $A\tilde A=\det(A)I_n$ que $\tilde A=1$ si $A\ne 0$. $\tilde A=0$ si $A=0$. On suppose donc maintenant $n\geq 2$.\\
 	Si $\rg(A)=n$ i.e si $A$ est inversible, alors $\tilde A$ est inversible puisque $A\tilde A=\det(A)I_n$ avec $\det(A)\ne 0$.\\
-	Si $\rg(A)\leq n-2$ alors tous les mineurs de $A$ sont nuls, comme déterminants de matrices extraites de $A$ de tailles strictement supérieures à $\rg(A)$ donc $\tilde A=0$ i.e $\rg(\tilde A)=0$.\\
-	Enfin, supposons que $\rg(A)=n-1$. On a $A\tilde A=\det(A)I_n=0$. Donc $\T{Im}(\tilde A)\subset \Ker(A)$. D'après le théorème du rang $\Ker(A)$ est de dimension $1$, donc $\tilde A$ est de rang $1$ ou $0$. $\tilde A$ n'est pas nulle puisque $A$, de rang $n-1$, a au moins un mineur non nul. On en déduit que $\rg(\tilde A)=1$.\\
+	Si $\rg(A)\leq n-2$ alors tous les mineurs de $A$ de taille $n-1$ sont nuls, comme déterminants de matrices extraites de $A$ de tailles strictement supérieures à $\rg(A)$, donc $\tilde A=0$ i.e $\rg(\tilde A)=0$.\\
+	Enfin, supposons que $\rg(A)=n-1$. On a $A\tilde A=\det(A)I_n=0$. Donc $\Ima(\tilde A)\subset \Ker(A)$. D'après le théorème du rang $\Ker(A)$ est de dimension $1$, donc $\tilde A$ est de rang $1$ ou $0$. $\tilde A$ n'est pas nulle puisque $A$, de rang $n-1$, a au moins un mineur de taille $n-1$ non nul. On en déduit que $\rg(\tilde A)=1$.\\
 	En résumé, $\rg(\tilde A)=\begin{cases}
 		n&\mbox{si }\rg(A)=n\\
 		1&\mbox{si }0<\rg(A)=n-1\\
 		0&\mbox{sinon}
 	\end{cases}$
-	
-	Pour ce qui est du spectre, l'étude du rang nous permet déjà de dire que $\T{Sp}(\tilde A)=\{0\}$ si $\rg(A)<n-1$. Si $\rg(A)=n-1$ alors $\tilde A$ est de rang $1$. On en déduit qu'il existe $\lambda\in \C$ tel que $\chi_{\tilde A}(X)=X^{n-1}(X-\lambda)$. Comme on sait que le coefficient en $X^{n-1}$ de $\chi_{\tilde A}$ est $-\Tr(\tilde A)$ on en déduit que $\lambda=\Tr(\tilde A)$. Donc $\T{Sp}(\tilde A)=\{0,\Tr(\tilde A)\}$ (On a potentiellement $\Tr(\tilde A)=0$).\\
+	Pour ce qui est du spectre, l'étude du rang nous permet déjà de dire que $\T{Sp}(\tilde A)=\{0\}$ si $\rg(A)<n-1$. Si $\rg(A)=n-1$ alors $\tilde A$ est de rang $1$. On en déduit qu'il existe $\lambda\in \C$ tel que $\chi_{\tilde A}(X)=X^{n-1}(X-\lambda)$. Comme on sait que le coefficient en $X^{n-1}$ de $\chi_{\tilde A}$ est $-\Tr(\tilde A)$ on en déduit que $\lambda=\Tr(\tilde A)$. Donc $\T{Sp}(\tilde A)=\{0,\Tr(\tilde A)\}$ (On a potentiellement $\Tr(\tilde A)=0$). On reviendra à la fin sur une expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$.\\
 	Enfin supposons que $\tilde A$ est inversible. Fixons $\lambda\in \C^*$.
 	\begin{align*}
 		\chi_{\tilde A}(\lambda)&=\det(\lambda I_n-\tilde A)\\
@@ -5868,7 +5872,24 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$\C^*$ étant infini on a l'égalité entre polynômes $\chi_{\tilde A}(X)=\dfrac{X^n}{(-1)^n\det(A)}\chi_A\left(\dfrac{\det(A)}{X}\right)$.\\
 	On sait que $\tilde A$ est inversible donc $\lambda=0$ n'est pas racine de $\chi_{\tilde A}$.\\
 	Ainsi $\forall \lambda\in \C,\ \chi_{\tilde A}(\lambda)=0\iff \chi_A\left(\dfrac{\det(A)}{\lambda}\right)=0\iff \dfrac{\det(A)}{\lambda}\in \T{Sp}(A)$.\\
-	Finalement $\T{Sp}(\tilde A)=\{\det(A)\mu^{-1},\ \mu\in \T{Sp}(A)\}$.
+	Finalement $\T{Sp}(\tilde A)=\{\det(A)\lambda^{-1},\ \lambda\in \T{Sp}(A)\}$ ou encore en notant $\lambda_1,\dots,\lambda_n$ les valeurs propres de $A$ comptées avec multiplicités, $\T{Sp}(\tilde A)=\left\{\displaystyle\prod_{i\ne j}\lambda_i,\ 1\leq j\leq n\right\}$.\\
+	Pour finir, déterminons une expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$. On a l'expression suivante lorsque $A$ est inversible :
+	$$\Tr(\tilde A)=\sum_{j=1}^n\prod_{i\ne j}\lambda_i=(-1)^{n-1}\chi_A'(0)$$
+	La deuxième égalité s'obtient en dérivant formellement l'expression $\chi_A(X)=\displaystyle\prod_{i=1}^n(X-\lambda_i)$ pour obtenir $\chi_A'(X)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}(X-\lambda_i)$.\\
+	On montre que $\T{GL}_n(\C)$ est dense dans $\M_n(\C)$ (il suffit de considérer la suite de terme général $A_k=A-\dfrac{1}{k}I_n$). Les deux expressions $\Tr(\tilde A)$ et $(-1)^{n-1}\chi_A'(0)$ sont continues en $A$ car polynomiale en ses coefficients, par conséquent on a toujours $\Tr(\tilde A)=(-1)^{n-1}\chi_A'(0)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}\lambda_i$.
+	
+	\subsection{Vecteurs propres de la comatrice \centraleponts{3}}
+	\label{Vecteurs propres de la comatrice corrigé}
+	\textcolor{blue}{\hyperref[Vecteurs propres de la comatrice]{[Enoncé]}}\\
+	Notons $B=\Com(A)^\top$. On rappelle la relation fondamentale $AB=BA=\det AI_n$. Fixons $X$ un vecteur propre de $A$ et notons $\lambda$ la valeur propre associée.\\
+	Par la relation on a $\lambda BX=\det AX$. Donc si $\lambda\ne 0$ alors $X$ est vecteur propre de $B$ pour la valeur propre $\dfrac{\det A}{\lambda}$.\\
+	Supposons maintenant $\lambda=0$. $A$ n'est pas inversible, on va différencier des cas suivant son rang.
+	\begin{itemize}
+		\item $B$ est composée de mineur de $A$ de taille $n-1$, donc si $\rg(A)<n-1$ alors $B=0$ et $X$ est évidemment vecteur propre de $B$.
+		\item On suppose $\rg(A)=n-1$. Alors par le théorème du rang $\Ker A=\Vect(X)$.\\
+		Ensuite on sait que $AB=0$ donc en particulier $BX\in \Ker A$ d'où l'existence de $\mu\in \K$ tel que $BX=\mu X$.
+	\end{itemize}
+	Dans tous les cas $X$ est un vecteur propre de $B$.
 	
 	\subsection{Une formule sur les polynômes \centraleponts{3}}
 	\label{Une formule sur les polynômes corrigé}
