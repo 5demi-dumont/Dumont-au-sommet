@@ -5,8 +5,8 @@
 
 \linespread{1.05}
  \geometry{
- 	paperwidth=17cm,
- 	paperheight=23.9cm,
+ 	paperwidth=21cm,
+ 	paperheight=29.7cm,
  	top=2.5cm,
  	bottom=2.5cm,
  	left=1.5cm,
@@ -4779,7 +4779,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		La famille $(E_i)_{1\leq i\leq n}$ est une base orthonormale de $\M_{n,1}(\R)$ donc pour toute permutation $\sigma\in \S_n$ la matrice $P_\sigma=\displaystyle\sum_{i=1}^nE_{i\sigma(i)}$, dont les colonnes sont les $E_{\sigma(i)}$, est orthogonale.\\
 		Multiplier une matrice $M$ par $P_\sigma$ à gauche/droite revient à appliquer $\sigma$ aux lignes/colonnes de $M$.\\
 		Par conséquent $E_{ij}=P_{(i1)}E_{11}P_{(1j)}\in \Vect(\O_n(\R))$ d'où $\Vect(\O_n(\R))=\M_n(\R)$.\\\\
-		Un autre argument si on a accès à la décomposition polaire (cf.\ref{Décomposition polaire}) peut s'écrire comme suit :\\
+		\textbf{Un autre argument} si on a accès à la décomposition polaire (cf.\ref{Décomposition polaire}) peut s'écrire comme suit :\\
 		Soit $A\in \M_n(\R)$. $\exists O\in \O_n(\R),\ S\in \S_n^+(\R),\ A=OS$. D'après le théorème spectral il existe $D=\diag(\lambda_1,\dots,\lambda_n)$ et $P$ orthogonale telle que $S=PDP^\top$.\\
 		Or $D=\displaystyle\sum_{k=1}^n\lambda_k E_{kk}$ donc $A\in \Vect(\O_n(\R))$.
 	\end{enumerate}
@@ -5307,7 +5307,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		n&\mbox{si }\rg(A)=n\\
 		1&\mbox{si }0<\rg(A)=n-1\\
 		0&\mbox{sinon}
-	\end{cases}$
+	\end{cases}$\\
 	Pour ce qui est du spectre, l'étude du rang nous permet déjà de dire que $\T{Sp}(\tilde A)=\{0\}$ si $\rg(A)<n-1$. Si $\rg(A)=n-1$ alors $\tilde A$ est de rang $1$. On en déduit qu'il existe $\lambda\in \C$ tel que $\chi_{\tilde A}(X)=X^{n-1}(X-\lambda)$. Comme on sait que le coefficient en $X^{n-1}$ de $\chi_{\tilde A}$ est $-\Tr(\tilde A)$ on en déduit que $\lambda=\Tr(\tilde A)$. Donc $\T{Sp}(\tilde A)=\{0,\Tr(\tilde A)\}$ (On a potentiellement $\Tr(\tilde A)=0$). On reviendra à la fin sur une expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$.\\
 	Enfin supposons que $\tilde A$ est inversible. Fixons $\lambda\in \C^*$.
 	\begin{align*}
@@ -5321,7 +5321,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On sait que $\tilde A$ est inversible donc $\lambda=0$ n'est pas racine de $\chi_{\tilde A}$.\\
 	Ainsi $\forall \lambda\in \C,\ \chi_{\tilde A}(\lambda)=0\iff \chi_A\left(\dfrac{\det(A)}{\lambda}\right)=0\iff \dfrac{\det(A)}{\lambda}\in \T{Sp}(A)$.\\
 	Finalement $\T{Sp}(\tilde A)=\{\det(A)\lambda^{-1},\ \lambda\in \T{Sp}(A)\}$ ou encore en notant $\lambda_1,\dots,\lambda_n$ les valeurs propres de $A$ comptées avec multiplicités, $\T{Sp}(\tilde A)=\left\{\displaystyle\prod_{i\ne j}\lambda_i,\ 1\leq j\leq n\right\}$.\\
-	Pour finir, déterminons une expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$. On a l'expression suivante lorsque $A$ est inversible :
+	Pour finir, déterminons une	expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$. On a l'expression suivante lorsque $A$ est inversible :
 	$$\Tr(\tilde A)=\sum_{j=1}^n\prod_{i\ne j}\lambda_i=(-1)^{n-1}\chi_A'(0)$$
 	La deuxième égalité s'obtient en dérivant formellement l'expression $\chi_A(X)=\displaystyle\prod_{i=1}^n(X-\lambda_i)$ pour obtenir $\chi_A'(X)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}(X-\lambda_i)$.\\
 	On montre que $\T{GL}_n(\C)$ est dense dans $\M_n(\C)$ (il suffit de considérer la suite de terme général $A_k=A-\dfrac{1}{k}I_n$). Les deux expressions $\Tr(\tilde A)$ et $(-1)^{n-1}\chi_A'(0)$ sont continues en $A$ car polynomiale en ses coefficients, par conséquent on a toujours $\Tr(\tilde A)=(-1)^{n-1}\chi_A'(0)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}\lambda_i$.
@@ -5833,15 +5833,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$\Tr(M)=n\iff jm_j+\overline jm_{\overline j}+m_1=n$. En comparant la partie réelle et la partie imaginaire on obtient $\begin{cases}
 		m_1-\dfrac{m_j+m_{\overline j}}{2}=n\\
 		\dfrac{\sqrt 3}{2}(m_j-m_{\overline j})=0
-	\end{cases}$ Donc $m_j=m_{\overline j}$ et par suite $m_1-m_j=n$.\\
-	Or $\forall \lambda\in \C,\ m_\lambda\in \crblanc{0}{n}$ et de plus $m_0+m_1+m_j+m_{\overline j}=n$. Donc $m_1=n$ et $m_j=m_{\overline j}=m_0=0$. Autrement dit $1$ est la seule valeur propre de $M$. Mais alors en particulier $M$ est inversible d'où $M^3=I_n$.\\
+	\end{cases}$ Donc $m_j=m_{\overline j}$ et par suite $m_1-m_j=n$. Or $m_0,m_1,m_j,m_{\overline{j}}\in\crblanc{0}{n}$, donc $m_1=n$ et $m_j=m_{\overline j}=m_0=0$. Autrement dit $1$ est la seule valeur propre de $M$. Mais alors en particulier $M$ est inversible d'où $M^3=I_n$.\\
 	Le polynôme $X^3-1$ annule $M$ donc $M$ est diagonalisable. N'ayant que $1$ pour valeur propre, on conclut que $M=I_n$.\\
 	Enfin $I_n$ vérifie évidemment $I_n^5=I_n^2$.
 	
 	\subsection{Equation matricielle polynomiale (2) \telecom{2}}
 	\label{Equation matricielle polynomiale (2) corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle polynomiale (2)]{[Enoncé]}}\\
-		Soit $A\in \M_n(\R)$ telle que $A^3+A^2+A=0$. Le polynôme $X^3+X^2+X=X(X^2+X+1)$ annule $A$ donc $\text{Sp}(A)\subset\{0,j,\overline j\}$ en notant $j=e^{2i\pi/3}$.\\
+	Soit $A\in \M_n(\R)$ telle que $A^3+A^2+A=0$. Le polynôme $X^3+X^2+X=X(X^2+X+1)$ annule $A$ donc $\text{Sp}(A)\subset\{0,j,\overline j\}$ en notant $j=e^{2i\pi/3}$.\\
 	Pour $\lambda\in \C$ on note $m_\lambda$ la multiplicité algébrique de $\lambda$ en tant que valeur propre de $A$, càd en tant que racine de son polynôme caractéristique ($m_\lambda=0$ si $\lambda$ n'est pas valeur propre de $A$).\\
 	Comme $A$ est à coefficients réels, $\chi_A\in \R[X]$. Donc $m_j=m_{\overline j}$. De plus d'après le théorème du rang $\rg(A)=n-m_0$.\\
 	Enfin on sait que $m_0+m_j+m_{\overline j}=n$ càd $2m_j=n-m_0=\rg(A)$. $\rg(A)$ est donc pair.
@@ -5849,7 +5848,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Equation matricielle avec la comatrice \xens{4}}
 	\label{Equation matricielle avec la comatrice corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle avec la comatrice]{[Enoncé]}}\\
-	\begin{enumerate}
+	\begin{enumerate}[leftmargin=*]
 		\item On sait que si $M\in \T{GL}_n(\C)$ on a $\Com(M)^\top=\det(M)M^{-1}$.\\
 		Soit $A,B\in \T{GL}_n(\C)$. $\det(AB)=\det(A)\det(B)\ne 0$ donc $AB\in \text{GL}_n(\C)$.\\
 		Ainsi $\Com(AB)^\top=\det(AB)(AB)^{-1}=\det(B)B^{-1}\det(A)A^{-1}=\Com(B)^\top\Com(A)^\top$ i.e $\Com(AB)=\Com(A)\Com(B)$.\\
