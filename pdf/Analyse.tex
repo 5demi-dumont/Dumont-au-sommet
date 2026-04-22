@@ -1,9 +1,9 @@
 \documentclass{book}
 \input{usepackage}
 \linespread{1.05}
-\geometry{
-	paperwidth=17cm,
-	paperheight=23.9cm,
+ \geometry{
+	paperwidth=21cm,
+	paperheight=29.7cm,
 	top=2.5cm,
 	bottom=2.5cm,
 	left=1.5cm,
@@ -320,12 +320,17 @@
 		\item En déduire que l'on peut extraire de $(u_n)_{n\in \N}$ une suite convergente.
 	\end{enumerate}
 	
-	\section{$\R$ est complet \etoile{2}}
-	\textcolor{blue}{\hyperref[sec:r-est-complet-etoile2]{[Corrigé]}}\\
-	\label{R est complet}
-	On dit qu'une suite $(u_n)\in \R^\N$ est de Cauchy lorsqu'elle vérifie :
-	$$\forall \varepsilon>0,\ \exists N\in \N,\ \forall p,q\in \llbracket N;+\infty\llbracket,\ |u_p-u_q|\leq \varepsilon$$
-	\\Démontrer qu'une suite réelle est de Cauchy si et seulement si elle converge.
+	\section{Complétude \etoile{2}}
+	\textcolor{blue}{\hyperref[Complétude corrigé]{[Corrigé]}}\\
+	\label{Complétude}
+	\begin{enumerate}[leftmargin=*]
+		\item On dit qu'une suite $(u_n)\in \R^\N$ est de Cauchy lorsqu'elle vérifie :
+		$$\forall \varepsilon>0,\ \exists N\in \N,\ \forall p,q\in \llbracket N;+\infty\llbracket,\ |u_p-u_q|\leq \varepsilon$$
+		Démontrer qu'une suite réelle est de Cauchy si et seulement si elle converge.
+		\item Soit $E$ un $\R$-espace vectoriel normé. On dit qu'une suite $(u_n)\in \R^\N$ est de Cauchy lorsqu'elle vérifie :
+		$$\forall \varepsilon>0,\ \exists N\in \N,\ \forall p,q\in \llbracket N;+\infty\llbracket,\ \norme{u_p-u_q}\leq \varepsilon$$
+		Montrer que si $E$ est de dimension finie alors ses suites de Cauchy sont les suites convergentes.
+	\end{enumerate}
 	
 	\section{Récurrence de Cauchy \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:recurrence-de-cauchy]{[Corrigé]}}\\
@@ -4496,11 +4501,8 @@ Soit $x\in ]0,1]$.
 \textcolor{blue}{\hyperref[Lemme de Hochshild corrigé]{[Corrigé]}}\\
 \label{Lemme de Hochsild}
 On note $E=\mathcal C^\infty(\R,\R)$ et pour tout $f\in E$, $V_f=\Vect(x\mapsto f(x+a),\ a\in \R)$.
-\begin{enumerate}
-	\item Soit $V$ un sous-espace vectoriel de $E$ de dimension finie. Montrer qu'il existe un segment $I$ de $\R$ tel que $\normep{I}{f}=\sup\limits_{x\in I}|f(x)|$ définisse une norme sur $V$.
-	\item Déterminer les fonctions $f\in E$ telles que $V_f$ soit de dimension finie.\\
-	\textit{Indication : on pourra montrer que si $V_f$ est de dimension finie alors il est stable par dérivation.}
-\end{enumerate}
+Déterminer les fonctions $f\in E$ telles que $V_f$ soit de dimension finie.\\
+\textit{On pourra commencer par montrer que si $V_f$ est de dimension finie alors il est stable par dérivation.}
 
 \section{Théorème de Müntz \xens{5}}
 \label{Théorème de Muntz}
@@ -4843,23 +4845,32 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\textit{\underline{Remarque} : Le résultat s'étend de manière similaire à tout $\R$-espace vectoriel de dimension $p$ finie (et donc à tout $\C$-espace vectoriel de dimension $p$ finie, vu comme un $\R$-espace vectoriel de dimension $2p$) normé en procédant par récurrence, soit en extrayant de la suite des premières composantes, qui est bornée, une sous-suite convergente, puis une sous-sous-suite de cette sous-suite qui fait converger la suite des secondes composantes et ainsi de suite jusqu'à la suite des $p$-ième composantes, soit en montrant que le produit cartésien d'un nombre fini de compacts est un compact.}
 	\end{enumerate}
 	
-	\subsection{$\R$ est complet \etoile{2}}\label{sec:r-est-complet-etoile2}
-		\textcolor{blue}{\hyperref[R est complet]{[Enoncé]}}\\
-	Soit $(u_n)\in \R^\N$ une suite convergente. On note $l=\unfty{\lim}u_n$.\\
-	Soit $\varepsilon>0$.\\
-	$\exists N\in \N,\ \forall n\geq N,\ |u_n-l|\leq \displaystyle\frac{\varepsilon}{2}$.\\
-	Alors, $\forall (p,q)\in \llbracket N;+\infty\llbracket,\ |u_p-u_q|=|u_p-l+l-u_q|\leq |u_p-l|+|l-u_q|\leq \varepsilon$.\\
-	Donc $(u_n)_{n\in \N}$ est une suite de Cauchy.\\\\
-	Soit $(u_n)\in \R^\N$ une suite de Cauchy.\\
-	Montrons que $(u_n)$ est bornée, autrement dit que la suite $(|u_n|)$ ne tend pas vers $+\infty$.\\
-	Supposons par l'absurde que $\unfty{\lim}|u_n|=+\infty$. Fixons $\varepsilon>0$.\\
-	$\exists n_0\in \N,\ \forall p>q\geq n_0,\ |u_p-u_q|\leq \varepsilon$. Et $\exists n_1\in \N,\ \forall p\geq n_1,\ |u_p|>|u_q|+\varepsilon$.\\
-	Donc $\forall p\geq N=\max(q,n_1),\ \varepsilon<|\ |u_p|-|u_q|\ |\leq |u_p-u_q|\leq \varepsilon$.\\
-	Ceci est absurde donc $(u_n)$ est bornée.\\\\
-	Alors d'après le théorème de Bolzano-Weierstrass $(u_n)$ admet une valeur d'adhérence $\ell$. On note $\varphi:\N\to\N$ strictement croissante telle que $u_{\varphi(n)}\unfty{\longrightarrow}\ell$.\\
-	$\forall \varepsilon>0,\ \exists n\in \N,\ \forall k\geq n,\ |u_{\varphi(n)}-u_n|\leq \varepsilon$.\\
-	C'est-à-dire $u_{\varphi(n)}-u_n\unfty{\longrightarrow}0$.\\
-	Mais alors par somme, $u_n=u_n-u_{\varphi(n)}+u_{\varphi(n)}\unfty{\longrightarrow}\ell$.
+	\subsection{Complétude \etoile{2}}
+	\label{Complétude corrigé}
+	\textcolor{blue}{\hyperref[Complétude]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $(u_n)\in \R^\N$ une suite convergente. On note $l=\unfty{\lim}u_n$.\\
+		Soit $\varepsilon>0$.\\
+		$\exists N\in \N,\ \forall n\geq N,\ |u_n-l|\leq \displaystyle\frac{\varepsilon}{2}$.\\
+		Alors, $\forall (p,q)\in \llbracket N;+\infty\llbracket,\ |u_p-u_q|=|u_p-l+l-u_q|\leq |u_p-l|+|l-u_q|\leq \varepsilon$.\\
+		Donc $(u_n)_{n\in \N}$ est une suite de Cauchy.\\\\
+		Soit $(u_n)\in \R^\N$ une suite de Cauchy.\\
+		Montrons que $(u_n)$ est bornée, autrement dit que la suite $(|u_n|)$ ne tend pas vers $+\infty$.\\
+		Supposons par l'absurde que $\unfty{\lim}|u_n|=+\infty$. Fixons $\varepsilon>0$.\\
+		$\exists n_0\in \N,\ \forall p>q\geq n_0,\ |u_p-u_q|\leq \varepsilon$. Et $\exists n_1\in \N,\ \forall p\geq n_1,\ |u_p|>|u_q|+\varepsilon$.\\
+		Donc $\forall p\geq N=\max(q,n_1),\ \varepsilon<|\ |u_p|-|u_q|\ |\leq |u_p-u_q|\leq \varepsilon$.\\
+		Ceci est absurde donc $(u_n)$ est bornée.\\\\
+		Alors d'après le théorème de Bolzano-Weierstrass $(u_n)$ admet une valeur d'adhérence $\ell$. On note $\varphi:\N\to\N$ strictement croissante telle que $u_{\varphi(n)}\unfty{\longrightarrow}\ell$.\\
+		$\forall \varepsilon>0,\ \exists n\in \N,\ \forall k\geq n,\ |u_{\varphi(n)}-u_n|\leq \varepsilon$.\\
+		C'est-à-dire $u_{\varphi(n)}-u_n\unfty{\longrightarrow}0$.\\
+		Mais alors par somme, $u_n=u_n-u_{\varphi(n)}+u_{\varphi(n)}\unfty{\longrightarrow}\ell$.
+		\item Le sens convergente $\implies$ Cauchy est le même que dans la question 1. Soit $(u_n)\in E^\N$ une suite de Cauchy. On fixe une base $(e_1,\dots,e_p)$ de $E$.\\
+		$\forall n\in \N,\ \exists a_{1,n},\dots,a_{p,n}\in \R,\ u_n=\displaystyle\sum_{i=1}^pa_{i,n}e_i$.\\
+		Montrons que les suites de coordonnées $(a_{i,n})_{n\in \N}$ convergent.\\
+		On montre aisément que $(u_n)$ est de Cauchy pour toute norme équivalente à $\norme{\cdot}$. Par équivalence des normes sur $E$, $(u_n)_{n\in \N}$ est de Cauchy pour $N:u=\displaystyle\sum_{i=1}^na_ie_i\mapsto \max\limits_{1\leq i\leq p}|a_i|$.\\
+		Comme pour tous $1\leq i\leq p$ $|a_{i,n}|\leq N(u_n)$, les suites $(a_{i,n})_{n\in \N}$ sont de Cauchy. D'après la question 1 elles convergent donc $(u_n)_{n\in \N}$ converge.
+	\end{enumerate}
+	\textit{Remarque : Un espace dont les suites de Cauchy convergent dans l'espace est dit complet. On a montré que les $\R$-espaces vectoriels de dimension finie sont complets. La complétude est une notion très utile en analyse qui se substitue à la compacité, qui est une propriété bien trop restrictive en général.}
 	
 	\subsection{Récurrence de Cauchy}
 	\label{sec:recurrence-de-cauchy}
@@ -4880,7 +4891,8 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		On en déduit $\displaystyle\left(\frac{1}{n-1}\sum_{k=1}^{n-1}x_k\right)^{1-1/n}\geq \left(\prod_{k=1}^{n-1}x_k\right)^{1/n}$ et puis en élevant à la puissance $\dfrac{n}{n-1}$ : $\displaystyle\frac{1}{n-1}\sum_{k=1}^{n-1}x_k\geq \left(\prod_{k=1}^{n-1}x_k\right)^{1/(n-1)}$.\\
 		D'où $\P(n-1)$.\\
 		Montrons maintenant $\P(2n)$. On se donne $(x_1,\dots,x_n,y_1,\dots,y_n)\in (\R_+)^{2n}$. En appliquant $\P(2)$ sur $\displaystyle\left(\frac{1}{n}\sum_{k=1}^nx_k,\frac{1}{n}\sum_{k=1}^ny_k\right)$ puis deux fois $\P(n)$, une fois sur $(x_1\dots,x_n)$ et une fois sur $(y_1\dots,y_n)$ on a :\\
-		$\displaystyle\frac{1}{2n}\left(\sum_{k=1}^nx_k+\sum_{k=1}^ny_k\right)\geq \sqrt{\frac{1}{n}\sum_{k=1}^nx_k\cdot\frac{1}{n}\sum_{k=1}^ny_k}\geq\left(\prod_{k=1}^nx_k\prod_{k=1}^ny_k\right)^{1/2n}$.
+		$$\frac{1}{2n}\left(\sum_{k=1}^nx_k+\sum_{k=1}^ny_k\right)\geq \sqrt{\frac{1}{n}\sum_{k=1}^nx_k\cdot\frac{1}{n}\sum_{k=1}^ny_k}\geq\left(\prod_{k=1}^nx_k\prod_{k=1}^ny_k\right)^{1/2n}$$
+		On en déduit par la question 1 que la propriété est vraie pour tout entier naturel non nul $n$.
 	\end{enumerate}
 	
 	\subsection{Sommes de Riemann}
@@ -10513,29 +10525,43 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Lemme de Hochshild \xens{4}}
 	\label{Lemme de Hochshild corrigé}
 	\textcolor{blue}{\hyperref[Lemme de Hochsild]{[Enoncé]}}\\
-	\begin{enumerate}[leftmargin=*]
-		\item Soit $I$ un segment de $\R$. Comme les fonctions de $E$ sont continues $\normep{I}{\cdot}$ est bien définie sur $V_f$. On vérifie aisément l'homogénéité et l'inégalité triangulaire. Il s'agit de choisir $I$ pour que $\normep{I}{\cdot}$ vérifie l'axiome de séparation.\\
-		Fixons une base $(f_1,\dots,f_n)$ de $V$.\\
-		On montre (cf. I.4 tome Algèbre) qu'on peut trouver des réels $x_1,\dots,x_n$ tels que la matrice $M=(f_i(x_j))_{1\leq i,j\leq n}$ est inversible.\\
-		On pose $I=\left[\min\limits_{1\leq j\leq n}x_j,\max\limits_{1\leq j\leq n}x_j\right]$.\\
-		Alors pour tout $f=\displaystyle\sum_{i=1}^na_if_i\in V$, $\normep{I}{f}=0\implies \forall j\in \crblanc{1}{n},\ \displaystyle\sum_{i=1}^na_if_i(x_j)=0$.\\
-		Ou encore $M^\top\begin{pmatrix}a_1\\\vdots\\a_n\end{pmatrix}=0$ d'où $a_1=\cdots=a_n=0$ càd $f=0$.
-		\item Soit $f\in E$ telle que $\dim(V_f)=p<+\infty$. Montrons que $V_f$ est stable par dérivation. Il suffit de montrer que $f'\in V_f$.\\
-		On se donne un segment $I$ de $\R$ tel que $(V_f,\normep{I}{\cdot})$ soit un espace vectoriel normé.\\
-		$\forall x\in \R,\ f'(x)=\displaystyle\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\unfty\lim n\left[f\left(x+\frac{1}{n}\right)-f(x)\right]$.\\
-		On pose pour $n\in \N^*$, $f_n:x\mapsto n\left[f\left(x+\dfrac{1}{n}\right)-f(x)\right]$.\\
-		$(f_n)_{n\in \N^*}$ est à valeurs dans $V_f$. Or on sait qu'un sous-espace vectoriel normé de dimension finie d'un espace vectoriel est fermé donc on va montrer que $(f_n)_{n\in \N^*}$ converge vers $f'$ dans $(V_f,\normep{I}{\cdot})$.\\
-		Soient $n\in \N^*$ et $x\in I$. D'après l'inégalité de Taylor-Lagrange :
-		$$\frac{1}{n}|f_n(x)-f'(x)|=\left|f\left(x+\frac{1}{n}\right)-f(x)-\frac{1}{n}f'(x)\right|\leq \frac{\normep{I}{f''}}{2n^2}$$
-		D'où $\normep{I}{f_n-f'}\leq \dfrac{\normep{I}{f''}}{2n}\unfty\longrightarrow 0$.\\
-		Donc $f'\in V_f$. Par récurrence immédiate, $(f^{(n)})_{n\in \N}\in V_f^\N$.\\
-		On en déduit que la famille $(f,f',\dots,f^{(p)})$ est liée, càd :
-		$$\exists (a_0,\dots,a_p)\in \R^{p+1}\backslash\{(0,\dots,0)\},\ a_pf^{(p)}+\cdots+a_0f=0$$
-		Autrement dit $f$ est solution d'une équation différentielle homogène à coefficients constants.\\
-		Réciproquement supposons que $f$ est solution d'une équation différentielle homogène à coefficients constants que l'on peut prendre sous la forme :
-		$$f^{(p)}+a_{p-1}f^{(p-1)}+\cdots+a_0f=0$$
-		avec $a_0,\dots,a_{p-1}$ des réels non tous nuls. Alors pour tout $a\in \R$, $t\mapsto f(t+a)$ est solution de la même équation différentielle sur $\R$. Or on sait que l'ensemble des solutions de cette équation différentielle est un sous-espace vectoriel de $E$ de dimension finie. Donc $V_f$ est de dimension finie.
-	\end{enumerate}
+	On va faire deux preuves de ce résultat. Dans les deux on aura besoin du lemme suivant (cf. I-4 tome Algèbre) :\\
+	Soit $X$ un ensemble et $(f_1,\dots,f_n)$ une famille libre de $\C^X$. Alors il existe $x_1,\dots,x_n\in X$ tels que la matrice $M:=(f_j(x_i))_{1\leq i,j\leq n}$ soit inversible.\\
+	Supposons que $V_f$ est de dimension finie et donnons nous en une base $(f_1,\dots,f_p)$.\\
+	Montrons que $V_f$ est stable par dérivation.\\
+	On note pour $a\in \R$, $\tau_a:x\mapsto x+a$.\\
+	\underline{$1^{\T{ère}}$ méthode :}\\
+	$\forall a\in \R,\ g_a:a\mapsto f\circ \tau_a(x)=f(x+a)\in V_f$. Il existe donc des réels $\lambda_1(a),\dots,\lambda_p(a)$ tels que $g_a=\displaystyle\sum_{i=1}^p\lambda_i(a)f_i$.\\
+	En évaluant en les réels $x_1,\dots,x_n$ du lemme on obtient $G(a)=M\Lambda(a)$ avec $G(a)=(g_a(x_1),\dots,g_a(x_n))^\top$ et $\Lambda(a)=(\lambda_1(a),\dots,\lambda_n(a))^\top$ i.e $\Lambda(a)=M^{-1}G(a)$.\\
+	Or l'application $a\mapsto M^{-1}G(a)$ est dérivable car les composantes de $G(a)$ le sont et $N\in \M_p(\R)\mapsto M^{-1}N$ est linéaire.\\
+	Ainsi pour tous $1\leq i\leq n$ les applications $\lambda_i:a\mapsto \lambda_i(a)$ sont dérivables.\\
+	On en déduit que $\forall x\in \R,\ \forall a\in \R,\ f'(x+a)=\displaystyle\sum_{i=1}^n\lambda_i'(a)f_i(x)$. On a montré que
+	$$(f\circ \tau_a)'=\sum_{i=1}^n\lambda_i'(a)f_i\in V_f$$
+	En particulier $f'\in V_f$ puis par récurrence immédiate, $(f^{(n)})_{n\in \N}\in V_f^\N$.\\
+	On en déduit que la famille $(f,f',\dots,f^{(p)})$ est liée, càd :
+	$$\exists (a_0,\dots,a_p)\in \R^{p+1}\backslash\{(0,\dots,0)\},\ a_pf^{(p)}+\cdots+a_0f=0$$
+	Autrement dit $f$ est solution d'une équation différentielle homogène à coefficients constants.\\
+	Réciproquement supposons que $f$ est solution d'une équation différentielle homogène à coefficients constants que l'on peut prendre sous la forme :
+	$$f^{(p)}+a_{p-1}f^{(p-1)}+\cdots+a_0f=0$$
+	avec $a_0,\dots,a_{p-1}$ des réels non tous nuls. Alors pour tout $a\in \R$, $t\mapsto f(t+a)$ est solution de la même équation différentielle sur $\R$. Or on sait que l'ensemble des solutions de cette équation différentielle est un sous-espace vectoriel de $E$ de dimension finie. Donc $V_f$ est de dimension finie.\\\\
+	\underline{$2^{\T{nd}}$ méthode :}\\
+	Lemme : Si $V_f$ est de dimension finie alors il existe un segment $I$ de $\R$ tel que $\normep{I}{\cdot}:f\mapsto \sup\limits_{x\in I}|f(x)|$ définisse une norme sur $I$.\\
+	Soit $I$ un segment de $\R$. Comme les fonctions de $E$ sont continues $\normep{I}{\cdot}$ est bien définie sur $V_f$. On vérifie aisément l'homogénéité et l'inégalité triangulaire. Il s'agit de choisir $I$ pour que $\normep{I}{\cdot}$ vérifie l'axiome de séparation.\\
+	On se donne $x_1,\dots,x_n$ comme dans le lemme et posons $I=\left[\min\limits_{1\leq j\leq n}x_j,\max\limits_{1\leq j\leq n}x_j\right]$.\\
+	Alors pour tout $f=\displaystyle\sum_{i=1}^na_if_i\in V_f$, $\normep{I}{f}=0\implies \forall j\in \crblanc{1}{n},\ \displaystyle\sum_{i=1}^na_if_i(x_j)=0$.\\
+	Ou encore $M\begin{pmatrix}a_1\\\vdots\\a_n\end{pmatrix}=0$ d'où $a_1=\cdots=a_n=0$ càd $f=0$.
+	On se donne par le lemme un segment $I$ de $\R$ tel que $(V_f,\normep{I}{\cdot})$ soit un espace vectoriel normé.\\
+	$\forall x\in \R,\ f'(x)=\displaystyle\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\unfty\lim n\left[f\left(x+\frac{1}{n}\right)-f(x)\right]$.\\
+	On pose pour $n\in \N^*$, $g_n:x\mapsto n\left[f\left(x+\dfrac{1}{n}\right)-f(x)\right]$.\\
+	$(g_n)_{n\in \N^*}$ est à valeurs dans $V_f$.\\
+	On va montrer que $(g_n)_{n\in \N^*}$ converge vers $f'$ dans $(V_f,\normep{I}{\cdot})$.\\
+	\textit{Ici on pourrait être tenté, comme je l'ai été, d'utiliser la propriété qui dit qu'un sous-espace vectoriel de dimension finie d'un espace vectoriel normé est fermé. Cependant il n'est pas évident de poser une norme sur $E$... et surtout la norme $\normep{I}{\cdot}$ n'est pas une norme sur $E$. Cela nous empêche d'utiliser la propriété. On peut tout de même contourner ce problème avec un résultat de complétude mais qui est donc hors programme. (cf.\ref{R est complet})}\\
+	Soient $n\in \N^*$ et $x\in I$. D'après l'inégalité de Taylor-Lagrange :
+	$$\frac{1}{n}|g_n(x)-f'(x)|=\left|f\left(x+\frac{1}{n}\right)-f(x)-\frac{1}{n}f'(x)\right|\leq \frac{\normep{I}{f''}}{2n^2}$$
+	D'où $\normep{I}{g_n-f'}\leq \dfrac{\normep{I}{f''}}{2n}\unfty\longrightarrow 0$.\\
+	On en déduit que la suite $(g_n)_{n\in \N^*}$ est de Cauchy. Or un $\R$-espace vectoriel normé de dimension finie est complet. Elle admet donc une limite dans $V_f$ que l'on note $g$. A ce stade on sait seulement que $g$ coïncide avec $f$ sur $I$. Mais si $x\in \R$, alors en posant $K$ un segment qui contient $I$ et $x$, $\normep{K}{\cdot}$ est une norme sur $V_f$. En effet $\forall h\in V_f,\ \normep{K}{h}=0\implies \normep{I}{h}=0\implies h=0$. Donc par le même argument $g(x)=f'(x)$. Ceci étant vrai pour tout $x\in \R$, $g=f'$ et puis $f'\in V_f$. Quitte à remplacer $f$ par $f\circ \tau_a$ on obtient $(f\circ \tau_a)'\in V_f$.\\
+	On conclut comme dans la première preuve.\\
+	\textit{Le résultat hors programme n'est pas dur à montrer. Il s'agit de montrer que $\R$ est complet, c'est-à-dire que toutes les suites de Cauchy converge dans $\R$ (on montre qu'une suite de Cauchy est bornée et a au plus une valeur d'adhérence.), puis pour les suites de Cauchy d'un evn de dimension finie, on montre que les suites de coordonnées sont de Cauchy.}
 	
 	\subsection{Théorème de Müntz}
 	\label{sec:theoreme-de-muntz}
