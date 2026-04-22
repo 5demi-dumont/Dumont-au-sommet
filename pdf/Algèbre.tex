@@ -132,7 +132,7 @@ Montrer que $\det(w)=|\det(v)|^2$.
 
 \section{Dimension de $\R$ en tant que $\Q$-espace vectoriel \etoile{2} (HP)}
 \label{Dimension de R en tant que Q espace vectoriel }
-\textcolor{blue}{\hyperref[Dimenseion de R en tant que Q espace vectoriel corrigé]{[Corrigé]}}\\
+\textcolor{blue}{\hyperref[Dimension de R en tant que Q espace vectoriel corrigé]{[Corrigé]}}\\
 \begin{enumerate}[leftmargin=*]
 	\item Montrer que $\R$ est un $\Q$-espace vectoriel.
 	\item Montrer que si $p_1,\dots,p_n$ sont des nombres premiers distincts alors la famille $(\ln(p_1),\dots,\ln(p_n))$ est $\Q$-libre.
@@ -213,6 +213,30 @@ Montrer que $\displaystyle\prod_{i=1}^nN_i=0$.
 \textcolor{blue}{\hyperref[Suites périodiques corrigé]{[Corrigé]}}\\
 On note $E$ le sous-ensemble de $\C^\N$ composé des suites périodiques.\\
 Montrer que $E$ est un espace vectoriel et en déterminer une base.
+
+\section{Racine $8$-ième d'une matrice triangulaire \ccinp{2}}
+\label{Racine $8$-ième d'une matrice triangulaire}
+\textcolor{blue}{\hyperref[Racine $8$-ième d'une matrice triangulaire corrigé]{[Corrigé]}}\\
+On définit les matrices
+$$N=\begin{pmatrix}
+	0&1&0\\
+	0&0&1\\
+	0&0&0
+\end{pmatrix}\quad\T{et}\quad T=\begin{pmatrix}
+	1&2&3\\
+	0&1&2\\
+	0&0&1
+\end{pmatrix}$$
+Ainsi que $\mathcal C(N)=\{M\in \M_3(\R),\ NM=MN\}$.
+\begin{enumerate}
+	\item Montrer que $\mathcal C(N)$ est un espace vectoriel. Le déterminer.
+	\item Montrer que $N$ est un polynôme de degré $2$ en $T$.
+\end{enumerate}
+On définit $E=\{M\in \M_3(\R),\ M^8=T\}$.
+\begin{enumerate}[resume]
+	\item Montrer que toute matrice $M\in E$ est un polynôme en $N$.
+	\item Déterminer $E$.
+\end{enumerate}
 
 \section{Dimension du commutant (1) \centraleponts{3}}
 \label{Dimension du commutant (1)}
@@ -492,7 +516,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\section{\underline{Eléments propres d'un endomorphisme (4)} \centraleponts{3}}
 	\label{Eléments propres d'un endomorphismes (4)}
 	\textcolor{blue}{\hyperref[Eléments propres d'un endomorphisme (4) corrigé]{[Corrigé]}}\\
-	Soit $E=\mathcal{C}(\R^+,\R)$.\\
+	Soit $E=\mathcal{C}(\R_+,\R)$.\\
 	Pour $f\in E$ on définit l'application $T(f):x\in \R_+^*\longmapsto \displaystyle{\frac{1}{x}\int_0^x{f(t)\ dt}}$
 	\begin{enumerate}
 		\item Soit $f\in E$. Montrer que $T(f)$ est prolongeable par continuité en $0$ (on notera encore $T(f)$ le prolongement).
@@ -503,11 +527,6 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\label{Loi de Hooke}
 	\textcolor{blue}{\hyperref[Loi de Hooke corrigé]{[Corrigé]}}\\
 	Soit $\fonction{\varphi}{\M_n(\R)}{\M_n(\R)}{M}{M+\Tr(M)I_n}$. Déterminer les éléments propres de $\varphi$.
-	
-	\section{Existence d'une valeur propre double \centraleponts{3}}
-	\label{Existence d'une valeur propre double}
-	\textcolor{blue}{\hyperref[Existence d'une valeur propre double corrigé]{[Corrigé]}}\\
-	Soit $(A,B,C)\in \M_2(\K)^3$.\\ Montrer qu'il existe $(\alpha,\beta,\gamma)\in (\K^*)^3$ tel que $\alpha A+\beta B+\gamma C$ admette une valeur propre double.
 	
 	\section{Détermination de spectre \centraleponts{3}}
 	\label{Détermination de spectre}
@@ -530,7 +549,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item En déduire que l'ensemble des entiers algébriques est un sous-anneau de $\C$.
 		\item Déterminer les spectres de $\Phi$ et $\Psi$.
 	\end{enumerate}
-	a
+	
 	\section{\underline{Matrice compagnon (1)} \ccinp{2}}
 	\label{Matrice compagnon (1)}
 	\textcolor{blue}{\hyperref[Matrice compagnon (1) corrigé]{[Corrigé]}}\\
@@ -3000,6 +3019,18 @@ Soit $(X_n)_{n\geq1}$ une suite de variables indépendantes et identiquement dis
 	\item Déterminer un équivalent de $\E(Z_n)$ lorsque $n$ tend vers l'infini.
 \end{enumerate}
 
+\section{Dangereux échafaudage \ccinp{3}}
+\label{Dangereux échafaudage}
+\textcolor{blue}{\hyperref[Dangereux échafaudage corrigé]{[Corrigé]}}\\
+Une homme peint un mur en étant placé sur un échafaudage. Des passant passent sous son échafaudage et ont chacun une probabilité $p\in ]0,1[$ de se faire toucher par une goutte de peinture. Soit $X$ la variable aléatoire donnant le nombre de personnes ayant reçu une goutte de peinture sur une journée et $Y$ celle du nombre de personnes qui n'ont pas été touchée sur la même journée.
+\begin{enumerate}
+	\item On suppose que $n$ personnes passent dans la journée.
+	Donner les lois de $X$ et $Y$, puis déterminer si $X$ et $Y$ sont indépendantes.
+	\item On suppose dans la suite que $N$ personnes passent dans la journée où $N$ suit une loi de Poisson de paramètre $\lambda>0$.
+	\item Montrer que $X$ et $Y$ sont indépendantes.
+	\item Calculer $\operatorname{Cov}(X,N)$. Les variables $X$ et $N$ sont-elles indépendantes.
+\end{enumerate}
+
 \section{\underline{Formule de Wald} \centraleponts{3}}
 \label{Formule de Wald}
 \textcolor{blue}{\hyperref[Formule de Wald corrigé]{[Corrigé]}}\\
@@ -3510,7 +3541,7 @@ Dans toute cette section $n$ désigne un entier naturel non nul.\\\\
 \textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la comatrice corrigé]{[Corrigé]}}\\
 Résoudre dans $\M_n(\R)$ l'équation $A=\Com(A)$.
 
-\section{Equation matricielle faisant intervenir la transposée (1)}
+\section{Equation matricielle faisant intervenir la transposée (1) \telecom{3}}
 \label{Equation matricielle faisant intervenir la transposée (1)}
 \textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la transposée (1) corrigé]{[Corrigé]}}\\
 \begin{enumerate}
@@ -3519,11 +3550,20 @@ Résoudre dans $\M_n(\R)$ l'équation $A=\Com(A)$.
 	\item Donner un exemple ayant toutes ces valeurs propres.
 \end{enumerate}
 
-\section{Equation matricielle faisant intervenir la transposée (2)}
+\section{Equation matricielle faisant intervenir la transposée (2) \centraleponts{3}}
 \label{Equation matricielle faisant intervenir la transposée (2)}
 \textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la transposée (2) corrigé]{[Corrigé]}}\\
 Déterminer les matrices $A\in \M_n(\R)$ telles que $\forall k\geq n,\ A+A^k=A^\top$.
 
+\section{Anti-symétrie \ccinp{2}}
+\label{Anti-symétrie}
+\textcolor{blue}{\hyperref[Anti-symétrie corrigé]{[Corrigé]}}\\
+Soit $A\in \M_n(\R)$ telle que $A^\top A=AA^\top$ et $A^2=-I_n$.
+\begin{enumerate}
+	\item Calculer la trace de $A$.
+	\item Montrer que $(A^\top A)^2=I_n$.
+	\item Montrer que $A^\top A$ est symétrique positive et en déduire que $A$ est orthogonale.
+\end{enumerate}
 
 \section{\underline{Matrice de rotation} \ccinp{2}}
 \label{Matrice de rotation}
@@ -3534,7 +3574,7 @@ Soient $\B$ une base orthonormée d'un espace euclidien $E$ de dimension 3 ainsi
 	1& -2& 2
 \end{pmatrix}$
 \\Montrer que $u$ est une rotation.
-\\Question Bonus: Donner son axe et son angle.
+\\Question Bonus : Donner son axe et son angle.
 
 \section{Produit mixte et produit vectoriel \centraleponts{2}}
 \label{Produit mixte et produit vectoriel}
@@ -4467,7 +4507,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Ainsi $\det(w)=\displaystyle\prod_{k=1}^n\det(R_k)=\prod_{k=1}^n(x_k^2+y_k^2)=\prod_{k=1}^n|z_k|^2=|\det(v)|^2$.
 	
 \subsection{Dimension de $\R$ en tant que $\Q$-espace vectoriel \etoile{2}}
-\label{Dimenseion de R en tant que Q espace vectoriel corrigé}
+\label{Dimension de R en tant que Q espace vectoriel corrigé}
 \textcolor{blue}{\hyperref[Dimension de R en tant que Q espace vectoriel ]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item On sait que $\R$ est un $\R$-espace vectoriel et comme $\Q$ est un sous-corps de $\R$ on vérifie aisément les axiomes (cf. \ref{Extension de corps}).
@@ -4653,8 +4693,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	De plus pour un entier $r\in \N^*$ fixé, $X^r-1=\displaystyle\prod_{k=1}^r(X-\omega_r^k)$ en notant $\omega_r=e^{\frac{2i\pi}{r}}$.\\
 	Enfin pour $1\leq k_1\ne k_2\leq r, (X-\omega_r^{k_1})\wedge (X-\omega_r^{k_2})=1$.\\
 	Par conséquent d'après le lemme des noyaux, $\Ker(S^r-\Id_{\C^\N})=\displaystyle\bigoplus_{k=1}^r\Ker(S-\omega_r^k\Id_{\C^\N})$.\\
-	On sait que $\Ker(S-\omega_r^k\Id_{\C^n})=\{(u_n)\in \C^\N\ |\ \forall n\in \N,\ u_{n+1}=\omega_r^ku_n\}=\Vect\left((\omega_r^{kn})_{n\in \N}\right)$. On remarque enfin que $\forall (k,r,p)\in (\N^*)^3,\ (\omega_{pr}^{pkn})_{n\in \N}=(\omega_r^{kn})_{n\in \N}$ ce qui permet de se contenter des $(\omega_r^{kn})_{n\in \N}$ pour $r$ et $k$ premiers entre eux.\\
+	On sait que $\Ker(S-\omega_r^k\Id_{\C^n})=\{(u_n)\in \C^\N\ |\ \forall n\in \N,\ u_{n+1}=\omega_r^ku_n\}=\Vect\left((\omega_r^{kn})_{n\in \N}\right)$.\\
+	La famille $((\omega_r^{kn})_{n\in \N})_{k,r\in \N^*}$ est donc une famille génératrice de $E$.\\
+	On remarque enfin que $\forall (k,r,p)\in (\N^*)^3,\ (\omega_{pr}^{pkn})_{n\in \N}=(\omega_r^{kn})_{n\in \N}$ ce qui permet de se contenter des $(\omega_r^{kn})_{n\in \N}$ pour $r$ et $k$ premiers entre eux.\\
 	On a alors montré que $E=\Vect\left((\omega_r^{kn})_{n\in \N},\ r\wedge k=1\right)$. Cette famille est bien libre puisqu'elle est formée de vecteurs propres de $S$ associés à des valeurs propres différentes (ce qui est assuré par le fait que $k$ et $r$ sont pris premiers entre eux).
+	
+	\subsection{Racine $8$-ième d'une matrice triangulaire \ccinp{2}}
+	\label{Racine $8$-ième d'une matrice triangulaire corrigé}
+	\textcolor{blue}{\hyperref[Racine $8$-ième d'une matrice triangulaire (1)]{[Enoncé]}}\\
 	
 	\subsection{Dimension du commutant (1) \centraleponts{3}}
 	\label{Dimension du commutant (1) corrigé}
@@ -5212,10 +5258,6 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Loi de Hooke}
 	\label{Loi de Hooke corrigé}
 	\textcolor{blue}{\hyperref[Loi de Hooke]{[Enoncé]}}\\
-	
-	\subsection{Existence d'une valeur propre double}
-	\label{Existence d'une valeur propre double corrigé}
-	\textcolor{blue}{\hyperref[Existence d'une valeur propre double]{[Enoncé]}}\\
 	
 	\subsection{Détermination de spectre}
 	\label{Détermination de spectre corrigé}
@@ -9125,9 +9167,13 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi, $\E(Z_n)\unfty{\sim}-\displaystyle\frac{\ln(n)}{\ln(q)}=-\log_q(n)$.
 	\end{enumerate}
 	
+	\subsection{Dangereux échafaudage \ccinp{3}}
+	\label{Dangereux échafaudage corrigé}
+	\textcolor{blue}{\hyperref[Dangereux échafaudage]{[Enoncé]}}\\
+	
 	\subsection{Formule de Wald \etoile{3}}
 	\label{Formule de Wald corrigé}
-		\textcolor{blue}{\hyperref[Formule de Wald]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Formule de Wald]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item $S(\Omega)=\N$ est dénombrable. Soit $n\in \N$.\\
 		$\{S=n\}=\displaystyle\bigsqcup\limits_{p\in \N^*}\left(\{N=p\}\cap\left\{\sum\limits_{k=1}^pX_k=n\right\}\right)$.\\
@@ -9848,7 +9894,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\newpage
 \section{Correction Endomorphismes d'un espace euclidien}
 	
-	\subsection{Equations matricielles \etoile{1}}
+	\subsection{Equations matricielles \ccinp{2}}
 	\label{Equations matricielles corrigé}
 	\textcolor{blue}{\hyperref[Equations matricielles]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -9861,22 +9907,24 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Alors $N^4=\begin{pmatrix}0&0\\0&0\end{pmatrix}$ et donc $N$ est nilpotente. On en déduit que $\chi_N=X^2$. Mais alors d'après le théorème de Cayley-Hamilton, $N^2=\begin{pmatrix}0&0\\0&0\end{pmatrix}$ ce qui est absurde.
 	\end{enumerate}
 	
-	\subsection{Equation matricielle faisant intervenir la comatrice}
+	\subsection{Equation matricielle faisant intervenir la comatrice \centraleponts{3}}
 	\label{Equation matricielle faisant intervenir la comatrice corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la comatrice]{[Enoncé]}}\\
 	Soit $A\in\M_n(\R)$ telle que $\Com(A)=A$.\\
 	On rappelle que \[A\Com(A)^\top=\det(A)I_n\]
 	Ainsi, on en déduit que : $AA^\top=\det(A)I_n$.\\
-	Par passage au déterminant, $\det(A)^2=\det(A)$.Donc $\det(A)=0$ ou $\det(A)=1$.\\
-	\textbullet Si $\det(A)=0$ alors $AA^\top=0$. Ainsi, $\Tr(A^\top A)=0$ ce qui implique que : $A=0$.\\
-	\textbullet Si $\det(A)=1$ alors $AA^\top=I_n$ donc $A\in\mathcal{O}_n(\R)$.\\
+	Par passage à la trace $\det(A)=\dfrac{\Tr(AA^\top)}{n}\geq 0$.\\
+	Puis par passage au déterminant, $\det(A)^2=\det(A)^n$.\\
+	Donc $\det(A)=0$ ou $\det(A)=1$.\\
+	\textbullet Si $\det(A)=0$ alors $AA^\top=0$. Ainsi, $\Tr(A^\top A)=0$ ce qui implique $A=0$.\\
+	\textbullet Si $\det(A)=1$ alors $AA^\top=I_n$ donc $A\in\mathcal{SO}_n(\R)$.\\
 	Réciproquement, il est clair que si $A=0$ alors $\Com(A)=A$.\\
 	Si $A\in\mathcal{SO}_n(\R)$ alors $A^{-1}=A^\top$ et $\det(A)=1$.\\ 
 	Donc puisque \[A\Com(A)^\top=I_n\] par unicité de l'inverse $\Com(A)^\top=A^\top$.
 	D'où $A=\Com(A)$.\\
-	Donc l'ensemble des solutions des matrices à coefficients réels vérifiant $A=\Com(A)$ est : \[\mathcal{SO}_n(\R)\cup\{0\}\]
+	Donc l'ensemble des matrices à coefficients réels vérifiant $A=\Com(A)$ est : \[\mathcal{SO}_n(\R)\cup\{0\}\]
 	
-	\subsection{Equation matricielle faisant intervenir la transposée (1)}
+	\subsection{Equation matricielle faisant intervenir la transposée (1) \telecom{3}}
 	\label{Equation matricielle faisant intervenir la transposée (1) corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la transposée (1)]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -9897,23 +9945,22 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On peut aussi déterminer des contraintes sur les coefficients de $B$ à partir de $B^2=B^\top$ et vérifier qu'elles sont suffisantes.
 	\end{enumerate}
 	
-	\subsection{Equation matricielle faisant intervenir la transposée (2)}
+	\subsection{Equation matricielle faisant intervenir la transposée (2) \centraleponts{3}}
 	\label{Equation matricielle faisant intervenir la transposée (2) corrigé}
 	\textcolor{blue}{\hyperref[Equation matricielle faisant intervenir la transposée (2)]{[Enoncé]}}\\
 	Soit $A\in \M_n(\R)$ telle que $\forall k\geq n,\ A+A^k=A^\top$. Alors $\forall k\geq n,\ A^k=A^\top-A$.\\
 	\underline{$1^{\T{ère}}$ méthode :}\\
-	On remarque que $\forall k\geq n,\ A^k\in \A_n(\R)$.
+	On remarque que $\forall k\geq n,\ A^k\in \A_n(\R)$.\\
+	$A^{2n}=-(A^{2n})^\top=-[(A^n)^\top]^2=-[-A^n]^2=-A^{2n}$ d'où $A^{2n}=0$.\\
+	On en déduit enfin $A=A^\top$. Mais alors $A$ est diagonalisable par le théorème spectral. N'ayant pour seule valeur propre $0$, $A=0$.\\\\
+	\underline{$2^{\T{nd}}$ méthode :}\\
+	On remarque que $\forall k\geq n,\ A^k\in \A_n(\R)$.\\
 	Lemme : Si $M$ est antisymétrique alors $\T{Sp}_\R(M)\subset \{0\}$.\\
 	Soit $M\in \A_n(\R)$, $\lambda\in \T{Sp}_\R(M)$ et $X\in \R^n$ un vecteur propre associé. $AX=\lambda X\implies -X^\top A=X^\top A^\top=\lambda X^\top$.\\
 	Donc $X^\top AX=\lambda X^\top X$ et $X^\top AX=-\lambda X^\top X$. Or $X^\top X>0$ car $X\in \R^n$ n'est pas nul. Donc $\lambda=-\lambda$ i.e $\lambda=0$.\\
 	Par conséquent $\forall k\geq n,\ \T{Sp}_\R(A^k)\subset \{0\}$.\\
-	De plus la suite $(A^k)_{k\geq n}$ est constante. En particulier $A^n=A^{n+1}$ donc $\T{Sp}(A)\subset \{0,1\}$.\\
-	Or si $1$ est valeur propre de $A$, alors $1^n=1\in \T{Sp}(A^n)$ ce qui est absurde. Donc $\T{Sp}_\C(A)=\{0\}$, càd $A$ est nilpotente. Alors il existe $k\geq n$ tel que $A^k=0$.\\
-	On en déduit enfin $A=A^\top$. Mais alors $A$ est diagonalisable par le théorème spectral. N'ayant pour seule valeur propre $0$, $A=0$.\\\\
-	\underline{$2^{\T{nd}}$ méthode :}\\
-	On remarque que $\forall k\geq n,\ A^k\in \A_n(\R)$.\\
-	$A^{2n}=-(A^{2n})^\top=-[(A^n)^\top]^2=-[-A^n]^2=-A^{2n}$ d'où $A^{2n}=0$.\\
-	Donc $A^\top=A+A^{2n}=A$ et on conclut comme dans la $1^{\T{ère}}$ méthode.\\\\
+	De plus la suite $(A^k)_{k\geq n}$ est constante. En particulier $A^n=A^{n+1}$ donc $\T{Sp}_\C(A)\subset \{0,1\}$.\\
+	Or si $1$ est valeur propre de $A$, alors $1^n=1\in \T{Sp}(A^n)$ ce qui est absurde. Donc $\T{Sp}_\C(A)=\{0\}$, càd $A$ est nilpotente. Alors il existe $k\geq n$ tel que $A^k=0$ et on conclut comme dans la $1^{\T{ère}}$ méthode.\\\\
 	\underline{$3^{\T{ème}}$ méthode :}\\
 	$\forall k\geq n,\ \Tr(A^k)=\Tr(A^\top-A)=\Tr(A^\top)-\Tr(A)=0$.\\
 	Lemme : Soit $M\in \M_n(\K)$ telle que $\forall k\geq n,\ \Tr(M^k)=0$. Alors $M$ est nilpotente.\\
@@ -9934,11 +9981,21 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On en déduit $X=0$ ce qui n'est possible que si $0$ est la seule valeur propre de $M$, i.e que $M$ est nilpotente.\\
 	Donc $A$ est nilpotente et on conclut comme dans la $1^{\T{ère}}$ méthode.\\\\
 	\underline{$4^{\T{ème}}$ méthode :} Sans théorème spectral\\
-	On montre comme dans la $1^{\T{ère}}$ méthode que $\T{Sp}_\C(A)=\{0\}$.
-	Lemme : Soit $M\in \M_n(\C)$. Alors il existe $P$ telle que $\overline P^\top P=I_n$ et $T$ triangulaire supérieure telles que $M=PTP^{-1}$.
-	On trigonalise $A$ dans $\M_n(\C)$ : $A=PTP^{-1}$ avec $T$ triangulaire supérieure, de diagonale nulle.\\
+	On montre comme dans la $2^{\T{nd}}$ méthode que $\T{Sp}_\C(A)\subset\{0\}$.\\
+	Lemme : Soit $M\in \M_n(\C)$. Alors il existe $P$ telle que $\overline P^\top P=I_n$ et $T$ triangulaire supérieure telles que $M=PTP^{-1}$. (C'est le procédé de Gram-Schmidt)\\
+	On trigonalise $A$ dans $\M_n(\C)$ avec le lemme : $A=PTP^{-1}$ avec $T$ de diagonale nulle.\\
 	Alors comme $A\in \M_n(\R)$, $A^n=A^\top-A=\overline A^\top-A\iff PT^nP^{-1}=P\overline T^\top P^{-1}-PTP^{-1}\iff T^n=\overline T^\top-T$.\\
 	Or $T$ et $T^n$ sont triangulaires supérieures, $\overline T^\top$ triangulaire inférieure. Donc en identifiant les blocs triangulaires inférieurs, les coefficients non diagonaux de $T$ sont nuls d'où $T=0$ et par suite $A=0$.
+	
+	\subsection{Anti-symétrie \ccinp{2}}
+	\label{Anti-symétrie corrigé}
+	\textcolor{blue}{\hyperref[Anti-symétrie]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Le polynôme $X^2+1=(X-i)(X+i)$ annule $A$ donc $\T{Sp}(A)\subset\{-i,i\}$ et de plus $A$ est diagonalisable dans $\M_n(\C)$. De plus, $A$ étant une matrice réelle la multiplicité $m_i$ de $i$ en tant que valeur propre de $A$ est égale à $m_{-i}$ celle de $-i$. Ainsi $\Tr(A)=im_i-im_{-i}=0$.
+		\item Comme $A$ et $A^\top$ commutent, $(A^\top A)^2=(A^\top)^2A^2=-(A^2)^\top=I_n$.
+		\item $(A^\top A)^\top=A^\top A$ donc $A$ est symétrique réelle. Ensuite, si $X\in \R^n$ alors $X^\top A^\top AX=\norme{AX}^2\geq 0$. Donc $A^\top A\in \S_n^+(\R)$.\\
+		On en déduit que les valeurs propres de $A^\top A$ sont positives ou nulles. Or le polynôme $X^2-1=(X-1)(X+1)$ annule $A^\top A$ et donc $A^\top A$ est semblable à une matrice diagonale $\diag(\varepsilon_1,\dots,\varepsilon_n)$ où $\varepsilon_1,\dots,\varepsilon_n\in \{-1,1\}$. Ainsi $A^\top A$ est semblable à $I_n$ d'où $A^\top A=I_n$.
+	\end{enumerate}
 	
 	\subsection{Matrice de rotation}
 	\label{Matrice de rotation corrigé}

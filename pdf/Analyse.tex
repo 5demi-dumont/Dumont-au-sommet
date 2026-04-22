@@ -613,7 +613,16 @@
 	\label{Intégrale de Gauss}
 	
 	\subsection{Wallis \ccinp{3}}
-	En utilisant les intégrales de Wallis et la concavité du $\ln$, démontrer que $\displaystyle\int_0^{+\infty} e^{-t^2}dt=\frac{\sqrt{\pi}}{2}$
+	\begin{enumerate}[leftmargin=*]
+		\item On pose $u_n=\displaystyle\int_0^{\pi/2}\cos^{2n+1}(t)dt$. Calculer $u_0$.
+		\item Trouver une relation de récurrence vérifiée par $(u_n)_{n\in \N}$, puis exprimer $u_n$ à l'aide factorielles.
+		\item Sur $[0,+\infty[$, on pose $f_n:x\mapsto \begin{cases}
+			\left(1-\dfrac{x^2}{n}\right)^n&\mbox{si }0\leq x\leq \sqrt n\\
+			0&\mbox{si }\sqrt n<x
+		\end{cases}$. Montrer que
+		$$\unfty\lim \int_0^{+\infty}f_n(x)dx=\int_0^{+\infty}e^{-x^2}dx$$
+		\item Montrer que $\forall n\in \N,\ \displaystyle\int_0^{\sqrt n}f_n(x)dx=\sqrt nu_n$ puis en déduire la valeur de $\displaystyle\int_0^{+\infty}e^{-x^2}dx$.
+	\end{enumerate}
 	
 	\subsection{Intégrales auxiliaires \telecom{3}}
 	On pose $\forall n \in \N^{*}$ , $I_n=\displaystyle\int_0^1 \frac{1}{(1+t^2)^n}dt$ et $K_n=\displaystyle\int_0^{+\infty} \frac{1}{(1+t^2)^n}dt$
