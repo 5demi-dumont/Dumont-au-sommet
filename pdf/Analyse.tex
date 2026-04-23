@@ -287,15 +287,13 @@
 	\section{Théorème de Pringsheim \centraleponts{3}}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-pringsheim-etoile3]{[Corrigé]}}\\
 	\label{Théorème de Pringsheim}
-	
 	Soit $(a_n)_{n\in \N}$ une suite positive et décroissante telle que $\displaystyle\sum\limits_{n\in \N} a_n$ converge. \\Montrer que $(na_n)_{n\in \N}$ converge vers 0.
 	
 	\section{Lemme de Fekete \centraleponts{3}}
 	\label{Lemme de Fekete}
 	\textcolor{blue}{\hyperref[sec:lemme-de-fekete]{[Corrigé]}}\\
-	Soit $(u_n)_{n\in \N}$ une suite réelle vérifiant
+	Soit $(u_n)_{n\in \N}$ une suite réelle \textit{sous-additive}, c'est-à-dire vérifiant
 	$$\forall m,n\in \N,\ u_{n+m}\leq u_n+u_m$$
-	\textit{On dit que la suite est sous-additive.}\\
 	On veut montrer que la suite $\left(\dfrac{u_n}{n}\right)_{n\in \N^*}$ tend vers $\ell:=\inf\limits_{n\in \N^*}\dfrac{u_n}{n}$.
 	\begin{enumerate}
 		\item Soient $n\leq N$ des entiers positifs. On note $n=qN+r$ la division euclidienne de $n$ par $N$.\\
@@ -320,14 +318,14 @@
 		\item En déduire que l'on peut extraire de $(u_n)_{n\in \N}$ une suite convergente.
 	\end{enumerate}
 	
-	\section{Complétude \etoile{2}}
-	\textcolor{blue}{\hyperref[Complétude corrigé]{[Corrigé]}}\\
-	\label{Complétude}
+	\section{Suites de Cauchy \etoile{2}}
+	\textcolor{blue}{\hyperref[Suites de Cauchy corrigé]{[Corrigé]}}\\
+	\label{Suites de Cauchy}
 	\begin{enumerate}[leftmargin=*]
 		\item On dit qu'une suite $(u_n)\in \R^\N$ est de Cauchy lorsqu'elle vérifie :
 		$$\forall \varepsilon>0,\ \exists N\in \N,\ \forall p,q\in \llbracket N;+\infty\llbracket,\ |u_p-u_q|\leq \varepsilon$$
 		Démontrer qu'une suite réelle est de Cauchy si et seulement si elle converge.
-		\item Soit $E$ un $\R$-espace vectoriel normé. On dit qu'une suite $(u_n)\in \R^\N$ est de Cauchy lorsqu'elle vérifie :
+		\item Soit $(E,\norme{\cdot})$ un $\R$-espace vectoriel normé. On dit qu'une suite $(u_n)\in E^\N$ est de Cauchy lorsqu'elle vérifie :
 		$$\forall \varepsilon>0,\ \exists N\in \N,\ \forall p,q\in \llbracket N;+\infty\llbracket,\ \norme{u_p-u_q}\leq \varepsilon$$
 		Montrer que si $E$ est de dimension finie alors ses suites de Cauchy sont les suites convergentes.
 	\end{enumerate}
@@ -4845,9 +4843,9 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\textit{\underline{Remarque} : Le résultat s'étend de manière similaire à tout $\R$-espace vectoriel de dimension $p$ finie (et donc à tout $\C$-espace vectoriel de dimension $p$ finie, vu comme un $\R$-espace vectoriel de dimension $2p$) normé en procédant par récurrence, soit en extrayant de la suite des premières composantes, qui est bornée, une sous-suite convergente, puis une sous-sous-suite de cette sous-suite qui fait converger la suite des secondes composantes et ainsi de suite jusqu'à la suite des $p$-ième composantes, soit en montrant que le produit cartésien d'un nombre fini de compacts est un compact.}
 	\end{enumerate}
 	
-	\subsection{Complétude \etoile{2}}
-	\label{Complétude corrigé}
-	\textcolor{blue}{\hyperref[Complétude]{[Enoncé]}}\\
+	\subsection{Suites de Cauchy \etoile{2}}
+	\label{Suites de Cauchy corrigé}
+	\textcolor{blue}{\hyperref[Suites de Cauchy]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $(u_n)\in \R^\N$ une suite convergente. On note $l=\unfty{\lim}u_n$.\\
 		Soit $\varepsilon>0$.\\
@@ -4898,6 +4896,10 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Sommes de Riemann}
 	\label{sec:sommes-de-riemann}
 	\textcolor{blue}{\hyperref[Sommes de Riemann]{[Enoncé]}}\\
+	Fixons $n\in \N^*$. Comme $f$ est de classe $\mathcal C^1$ sur le segment $[0,1]$ on peut considérer $M:=\sup\limits_{[0,1]}|f'|$.\\
+	Remarquons aussi que $f(1)-f(0)=\displaystyle\int_0^1f'(t)dt$.\\
+	Par la formule de Chasles et l'inégalité triangulaire,
+	$$\left|\int_0^1f(t)dt-\frac{1}{n}\sum_{k=1}^nf\left(\frac{k}{n}\right)+\frac{1}{2n}(f(1)-f(0))\right|=\left|\sum_{k=1}^n\int_{(k-1)/n}^{k/n}\left[f(t)-f\left(\frac{k}{n}\right)+\frac{1}{2}f'(t)\right]dt\right|$$
 	
 	\subsection{Formule d'Euler-Maclaurin}
 	\label{sec:formule-deuler-maclaurin}

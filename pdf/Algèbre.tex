@@ -4397,6 +4397,15 @@ On définit sur $\C$ la relation binaire $\preceq$ par :
 $$\forall (z_1,z_2)\in \C^2,\ z_1\preceq z_2\iff [\Re(z_1)<\Re(z_2)\text{ ou } (\Re(z_1)=\Re(z_2)\text{ et }\Im(z_1)\leq\Im(z_2))]$$
 Montrer que $\preceq$ est une relation d'ordre sur $\C$ et qu'elle n'est pas totale. Que peut-on modifier pour quelle le soit ?
 
+\section{Inversibilité d'une matrice à coefficients rationnels \centraleponts{3}}
+\label{Inversibilité d'une matrice à coefficients rationnels}
+\textcolor{blue}{\hyperref[Inversibilité d'une matrice à coefficients rationnels corrigé]{[Corrigé]}}\\
+Soient $x,y,z$ des rationnels non nuls. Montrer que la matrice $\begin{pmatrix}
+	x&y&z\\
+	2y&z&2x\\
+	z&x&2y
+\end{pmatrix}$ est inversible.
+
 \section{Sous-groupes de GL$_n(\C)$ d'exposant fini \xens{5}}
 \label{Sous-groupes de GL_n(C) d'exposant fini}
 \textcolor{blue}{\hyperref[Sous-groupes de Gl_n(C) d'exposant fini corrigé]{[Corrigé]}}\\
@@ -11037,10 +11046,24 @@ Nonobstant $f(i\times 1)=-i\ne i=i\times f(1)$ donc $f$ n'est pas $\C$-linéaire
 
 \subsection{Ordre lexicographique}
 \label{Ordre lexicographique corrigé}
-\textcolor{blue}{\hyperref[Ordre lexicographique]{[Enoncé]}}
+\textcolor{blue}{\hyperref[Ordre lexicographique]{[Enoncé]}}\\
+
+\subsection{Inversibilité d'une matrice à coefficients rationnels \centraleponts{3}}
+\label{Inversibilité d'une matrice à coefficients rationnels corrigé}
+\textcolor{blue}{\hyperref[Inversibilité d'une matrice à coefficients rationnels]{[Enoncé]}}\\
+Par la règle de Sarrus $\det M=-2x^3-4y^3-z^3+6xyz$.\\
+Sans perte de généralité on écrit $x=\dfrac{X}{d},\ y=\dfrac{Y}{d},\ z=\dfrac{Z}{d}$ avec $X,Y,Z\in \Z,\ d\in \N^*$.\\
+Alors $\det M=0\iff 6XYZ=2X^3+4Y^3+Z^3$. On raisonne par l'absurde. Supposons que $(X,Y,Z)\in (\Z\backslash\{0\})^3$ vérifie l'équation.\\
+Alors $Z^3=6XYZ-2X^3-4Y^3$ est pair. On en déduit que $Z$ est pair. On écrit $Z=2Z'$.\\
+On a alors $8Z'^3=12XYZ'-2X^3-4Y^3$ i.e $X^3=6XYZ'-2Y^3-4Z'^3$. De même $X^3$ est pair donc $X$ aussi et on note $X=2X'$.\\
+On a alors $8X'^3=12X'YZ'-2Y^3-4Z'^3$ i.e $Y^3=6X'YZ'-4X'^3-2Z'^3$. On écrit $Y=2Y'$.\\
+Enfin on a $8Y'^3=12X'Y'Z'-4X'^3-2Z'^3$ i.e $6X'Y'Z'=2X'^3+4Y'^3+Z'^3$.\\
+On a construit un triplet $(X',Y',Z')\in (\Z\backslash\{0\})^3$ d'entiers strictement plus petit en module que $(X,Y,Z)$ et vérifiant la même équation. Cela contredit l'existence d'un minimum à l'ensemble $\{|X|,\ (X,Y,Z)\in (\Z\backslash\{0\})^3,\ 6XYZ=2X^3+4Y^3+Z^3\}$ par exemple.\\
+On en déduit que $\det M\ne 0$ i.e $M$ est inversible.
+
 \subsection{Sous-groupes de GL$_n(\C)$ d'exposant fini \etoile{5}}
 \label{Sous-groupes de Gl_n(C) d'exposant fini corrigé}
-	\textcolor{blue}{\hyperref[Sous-groupes de GL_n(C) d'exposant fini]{[Enoncé]}}\\
+\textcolor{blue}{\hyperref[Sous-groupes de GL_n(C) d'exposant fini]{[Enoncé]}}\\
 Soit $M\in G$.\\
 $M^k=I_n$ donc les valeurs propres de $M$ sont incluses dans l'ensemble des racines de $X^k-1$ c'est à dire $\U_k$. On remarque aussi que $M$ est diagonalisable ce qui servira plus tard.\\
 Alors $T=\{\Tr(M),\ M\in G\}=\displaystyle\left\{\sum\limits_{\lambda\in \text{Sp}(M)}m_\lambda(M)\lambda,\ M\in G\right\}\subset \left\{\sum\limits_{p=1}^n\lambda_p,\ (\lambda_1,\dots,\lambda_n)\in \U_k^n\right\}$.\\
