@@ -3655,7 +3655,7 @@ Soient $E$ un espace euclidien et $p$ une projection de $E$. Etablir l'équivale
 	\item $\forall x \in E, \; \norme{p(x)}\leq \norme{x}$ 
 \end{enumerate}
 
-\section{Réduction des projecteurs orthogonaux}
+\section{Réduction des projecteurs orthogonaux \ccinp{3}}
 \label{Réduction des projecteurs orthogonaux}
 \textcolor{blue}{\hyperref[Réduction des projecteurs orthogonaux corrigé]{[Corrigé]}}\\
 Soit $E$ un espace euclidien et soit $p,q$ deux projecteurs orthogonaux de $E$.
@@ -3666,7 +3666,7 @@ Soit $E$ un espace euclidien et soit $p,q$ deux projecteurs orthogonaux de $E$.
 	\item En déduire que $p\circ q$ est diagonalisable.
 \end{enumerate}
 
-\section{Base orthogonale associée à un endomorphisme}
+\section{Base orthogonale associée à un endomorphisme \telecom{2}}
 \label{Base orthogonale associée à un endomorphisme}
 \textcolor{blue}{\hyperref[Base orthogonale associée à un endomorphisme corrigé]{[Corrigé]}}\\
 Soient $E$ un espace euclidien et $f\in \L(E)$. Montrer qu'il existe une base orthonormée $\B$ de $E$ telle que $f(\B)$ soit orthogonale.
@@ -3680,7 +3680,13 @@ Soit $(e_1,\dots e_n)$ une base orthogonale de $\R^n$
 	\item Montrer que cette norme commune est indépendante du vecteur $u$ choisi et l'exprimer en fonction de $\norme{e_1},\dots,\norme{e_n}$.
 \end{enumerate}
 
-\section{Famille de vecteurs unitaires équidistants d'un espace euclidien}
+\section{Norme d'une famille de vecteurs unitaires d'un espace euclidien \xens{3}}
+\label{Norme d'une famille de vecteurs unitaires d'un espace euclidien}
+\textcolor{blue}{\hyperref[Norme d'une famille de vecteurs unitaires d'un espace euclidien corrigé]{[Corrigé]}}\\
+Soit $E$ un espace euclidien et soit $(e_1,\dots,e_n)$ une famille de vecteurs unitaires de $E$. Montrer qu'il existe $(\delta_1,\dots,\delta_n)\in \{-1,1\}^n$ telle que :
+$$\norme{\sum_{k=1}^n\delta_ke_k}\geq \sqrt n$$
+
+\section{Famille de vecteurs unitaires équidistants d'un espace euclidien \centraleponts{4}}
 \label{Famille de vecteurs unitaires équidistants d'un espace euclidien}
 \textcolor{blue}{\hyperref[Famille de vecteurs unitaires équidistants d'un espace euclidien corrigé]{[Corrigé]}}\\
 Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien de dimension $n$. Soient $p>n$ et $(x_1,\dots,x_p)$ une famille de vecteurs unitaires de $E$ tels que pour $i\ne j,\ \norme{x_i-x_j}=d>0$.
@@ -4406,13 +4412,21 @@ Soient $x,y,z$ des rationnels non nuls. Montrer que la matrice $\begin{pmatrix}
 	z&x&2y
 \end{pmatrix}$ est inversible.
 
+\section{Polynômes préservant les matrices orthogonales \centraleponts{3}}
+\label{Polynômes préservant les matrices orthogonales}
+\textcolor{blue}{\hyperref[Polynômes préservant les matrices orthogonales corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Soit $A\in \O_n(\R)$. Montrer que les valeurs propres de $A$ sont de module $1$.
+	\item Déterminer les polynômes $P\in \R[X]$ vérifiant $\forall A\in \O_n(\R),\ P(A)\in \O_n(\R)$.
+\end{enumerate}
+
 \section{Sous-groupes de GL$_n(\C)$ d'exposant fini \xens{5}}
 \label{Sous-groupes de GL_n(C) d'exposant fini}
-\textcolor{blue}{\hyperref[Sous-groupes de Gl_n(C) d'exposant fini corrigé]{[Corrigé]}}\\
+\textcolor{blue}{\hyperref[Sous-groupes de GL_n(C) d'exposant fini corrigé]{[Corrigé]}}\\
 Soit $n\in \N^*$.\\
 Soit $G$ un sous-groupe de GL$_n(\C)$ tel que $$\exists k\in \N^*,\ \forall M\in G,\ M^k=I_n$$
 Démontrer que $G$ est fini.\\
-On pourra montrer que l'ensemble $T$ des traces des éléments de $G$ est fini puis construire une injection de $G$ dans $T^d$ pour un certain $d\in \N^*$ bien choisi.
+On pourra montrer que l'ensemble $T$ des traces des éléments de $G$ est fini, puis construire une injection de $G$ dans $T^d$ pour un certain $d\in \N^*$ bien choisi.
 
 \section{Formule de Burnside \xens{4}}
 \label{Formule de Burnside}
@@ -4422,22 +4436,23 @@ On se donne $G$ un sous-groupe fini de GL$(V)$ et on note :
 $$V^G=\{x\in V\ |\ \forall g\in G,\ g(x)=x\}$$
 Démontrer que $\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}\Tr(g)=\dim(V^G)$.
 
-\section{Théorème de Fermat matriciel \xens{3} (HP)}
+\section{Théorème de Fermat matriciel \centraleponts{3} (HP)}
 \label{Théorème de Fermat matriciel}
 \textcolor{blue}{\hyperref[Théorème de Fermat matriciel corrigé]{[Corrigé]}}\\
-Soit $p\in\N$ un nombre premier. Soit $M\in\M_n(\Z)$.
+Soit $p$ un nombre premier. Soit $M\in\M_n(\Z)$.
 \begin{enumerate}
 	\item Démontrer que pour tout polynôme $P\in\Z[X]$,
 	on a : $P(X^p)-P(X)^p\in p\Z[X]$.
 	\item Justifier qu'il existe $A\in\M_n(\Z[X])$ telle que $(XI_n-M)^p-(X^pI_n-M^p)=pA$
-	\item Démontrer que $\chi_{M^p}(X^p)-\chi_M(X)^p\in \Z[X]$.
+	\item Démontrer que $\chi_{M^p}(X^p)-\chi_M(X)^p\in p\Z[X]$.
 	\item En déduire que $\Tr(M^p)\equiv \Tr(M)[p]$
 \end{enumerate}
 
 \section{Développement décimal propre d'un réel \xens{3}}
 \label{Développement décimal propre d'un réel}
 \textcolor{blue}{\hyperref[Développement décimal propre d'un réel corrigé]{[Corrigé]}}\\
-Démontrer que tout réel $x\in [0,1[$ s'écrit de manière unique $x=\displaystyle\sum_{n=1}^{+\infty}\frac{a_n}{10^n}$ avec $(a_n)_{n\in \N^*}$ une suite à valeurs dans $\crblanc{0}{9}$ qui ne stationne pas à $9$.
+Démontrer que tout réel $x\in [0,1[$ s'écrit de manière unique $x=\displaystyle\sum_{n=1}^{+\infty}\frac{a_n}{10^n}$ avec $(a_n)_{n\in \N^*}$ une suite à valeurs dans $\crblanc{0}{9}$ qui ne stationne pas à $9$.\\
+\textit{Cette écriture s'appelle développement décimal propre de $x$.}
 
 \subsection{Une caractérisation des rationnels \xens{3}}
 Soit $x\in [0,1[$. Montrer que $x\in \Q$ si et seulement si son développement décimal propre est périodique à partir d'un certain rang.
@@ -4447,7 +4462,7 @@ Soit $x\in [0,1[$. Montrer que $x\in \Q$ si et seulement si son développement d
 \textcolor{blue}{\hyperref[Distribution du premier chiffre des puissances de 2 corrigé]{[Corrigé]}}\\
 Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,\dots,2^n\}$ dont le premier chiffre dans l'écriture décimale est $i$. On note pour $x\in \R$, $\{x\}=x-\lfloor x\rfloor$ la partie fractionnaire de $x$.
 \begin{enumerate}
-	\item Montrer qu'en notant $\theta=\log_{10}(2)$, $N_i(n)$ est exactement le nombre d'entier $k\in \crblanc{1}{n}$ tels que $\{k\theta\}$ est dans $[\log_{10}(i),\log_{10}(i+1)[$.
+	\item Montrer qu'en notant $\theta=\log_{10}(2)$, $N_i(n)$ est exactement le nombre d'entier $k\in \crblanc{1}{n}$ tels que $\{k\theta\}$ est dans l'intervalle $[\log_{10}(i),\log_{10}(i+1)[$.
 	\item Montrer que la suite $(\{k\theta\})_{k\in \N^*}$ est dense dans $[0,1]$.
 	\item En déduire qu'il existe une infinité de puissances de $2$ dont le premier chiffre est $i$.
 \end{enumerate}
@@ -4459,7 +4474,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Extension de corps corrigé}
 	\textcolor{blue}{\hyperref[Extension de corps]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item $\R$ est un $\R$-espace vectoriel de $\C$ qui est un $\C$-espace vectoriel. De plus $\R$ n'est pas un $\C$-espace vectoriel de $\C$ puisque $i\times 1_\C=i\notin \R$ par exemple.
+		\item $\R$ est un $\R$-espace vectoriel de $\C$ qui est un $\C$-espace vectoriel. De plus $\R$ n'est pas un sous-$\C$-espace vectoriel de $\C$ puisque $i\times 1=i\notin \R$ par exemple.
 		\item Soit $(v_1,\dots,v_n)$ une base du $\C$-espace vectoriel $V$. Soit $v\in V$.\\
 		$\exists (z_1,\dots,z_n)\in \C^n,\ v=\displaystyle\sum_{k=1}^nz_kv_k$.\\
 		Posons pour tout $k\in \crblanc{1}{n},\ x_k=\operatorname{Re}(z_k),\ y_k=\operatorname{Im}(z_k)$ et $w_k=iv_k\in V$ car $V$ est un $\C$-espace vectoriel.\\
@@ -10007,7 +10022,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On en déduit que les valeurs propres de $A^\top A$ sont positives ou nulles. Or le polynôme $X^2-1=(X-1)(X+1)$ annule $A^\top A$ et donc $A^\top A$ est semblable à une matrice diagonale $\diag(\varepsilon_1,\dots,\varepsilon_n)$ où $\varepsilon_1,\dots,\varepsilon_n\in \{-1,1\}$. Ainsi $A^\top A$ est semblable à $I_n$ d'où $A^\top A=I_n$.
 	\end{enumerate}
 	
-	\subsection{Matrice de rotation}
+	\subsection{\underline{Matrice de rotation} \ccinp{2}}
 	\label{Matrice de rotation corrigé}
 	\textcolor{blue}{\hyperref[Matrice de rotation]{[Enoncé]}}\\
 	On pose $M=\text{Mat}_\mathcal{B}(u)$.
@@ -10058,7 +10073,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\subsection{Produit mixte et produit vectoriel}
 	\label{Produit mixte et produit vectoriel corrigé}
-		\textcolor{blue}{\hyperref[Produit mixte et produit vectoriel]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Produit mixte et produit vectoriel]{[Enoncé]}}\\
 	
 	\subsection{Caractérisation de la trace par la cyclicité \centraleponts{3}}
 	\label{Caractérisation de la trace par la cyclicité corrigé}
@@ -10084,7 +10099,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Notons $g=\Tr\circ f$. $g$ est une forme linéaire de $\M_n(\K)$ vérifiant $$\forall (A,B)\in \M_n(\K)^2,\ g(AB)=\Tr(f(AB))=\Tr(f(A)f(B))=\Tr(f(B)f(A))=\Tr(f(BA))=g(BA)$$
 	D'après l'exercice précédent $g$ est donc proportionnelle à la trace. De plus $g(I_n)=\Tr(f(I_n))=\Tr(I_n)$ donc $g=\Tr$.
 	
-	\subsection{Hyperplan de $\M_n(\K)$}
+	\subsection{Hyperplan de $\M_n(\K)$ \xens{4}}
 	\label{Hyperplan de Mn(K) corrigé}
 	\textcolor{blue}{\hyperref[Hyperplan de Mn(K)]{[Enoncé]}}\\
 	Soit $H$ un hyperplan de $\M_n(\K)$.\\
@@ -10131,7 +10146,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{pmatrix}\] fonctionne (elle est inversible car c'est l'identité à permutations près).\\
 	On a montré que $QJP\in H\cap\T{GL}_n(\K)$.
 	
-	\subsection{Une symétrie orthogonale matricielle}
+	\subsection{\underline{Une symétrie orthogonale matricielle} \ccinp{2}}
 	\label{Une symétrie orthogonale matricielle corrigé}
 	\textcolor{blue}{\hyperref[Une symétrie orthogonale matricielle]{[Enoncé]}}\\
 	D'après le cours, il est évident que $s$ est un symétrie.\\
@@ -10159,7 +10174,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Réflexion qui commutent corrigé}
 	\textcolor{blue}{\hyperref[Réflexion qui commutent]{[Enoncé]}}\\
 	
-	\subsection{Caractérisations des projections orthogonales}
+	\subsection{\underline{Caractérisations des projections orthogonales} \ccinp{2}}
 	\label{Caractérisations des projections orthogonales corrigé}
 	\textcolor{blue}{\hyperref[Caractérisations des projections orthogonales]{[Enoncé]}}\\
 	On pose $F=\Ker(p-Id_E)$
@@ -10192,7 +10207,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Donc \[\langle x,y\rangle=0\]
 	Donc $p$ est orthogonale.
 	
-	\subsection{Réduction des projecteurs orthogonaux}
+	\subsection{Réduction des projecteurs orthogonaux \ccinp{3}}
 	\label{Réduction des projecteurs orthogonaux corrigé}
 	\textcolor{blue}{\hyperref[Réduction des projecteurs orthogonaux]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -10220,7 +10235,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Par récurrence forte sur la dimension de $E$, $p\circ q$ est diagonalisable.
 	\end{enumerate}
 	
-	\subsection{Base orthogonale associée à un endomorphisme}
+	\subsection{Base orthogonale associée à un endomorphisme \telecom{2}}
 	\label{Base orthogonale associée à un endomorphisme corrigé}
 	\textcolor{blue}{\hyperref[Base orthogonale associée à un endomorphisme]{[Enoncé]}}\\
 	Remarquons que $\forall (x,y)\in E^2,\ \proscal{f(x)}{f(y)}=\proscal{x}{f^*\circ f(y)}$.\\
@@ -10228,7 +10243,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Alors $\forall (i,j)\in \crblanc{1}{n}^2,\ i\ne j\implies \proscal{f(e_i)}{f(e_j)}=\proscal{e_i}{f^*\circ f(e_j)}=\lambda_j\proscal{e_i}{e_j}=0$.\\
 	Donc $(f(e_1),\dots,f(e_n))$ est une base orthogonale de $E$.
 	
-	\subsection{Norme d'une base orthogonale}
+	\subsection{Norme d'une base orthogonale \xens{3}}
 	\label{Norme d'une base orthogonale corrigé}
 	\textcolor{blue}{\hyperref[Norme d'une base orthogonale]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -10250,6 +10265,32 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\[N^2 = \left(\sum_{i=1}^{n}\frac{1}{\|e_i\|^2}\right)^{-1}\]
 		Finalement, $N$ ne dépend du choix du vecteur $u$ et on a obtenu une expression de $N$ en fonction de $e_1,\dots, e_n$.
 	\end{enumerate}
+	
+	\subsection{Norme d'une famille de vecteurs unitaires d'un espace euclidien \xens{3}}
+	\label{Norme d'une famille de vecteurs unitaires d'un espace euclidien corrigé}
+	\textcolor{blue}{\hyperref[Norme d'une famille de vecteurs unitaires d'un espace euclidien]{[Enoncé]}}\\
+	\underline{$1^{\T{ère}}$ méthode :} Par récurrence\\
+	Le résultat est évidemment vrai pour un seul vecteur. Supposons le vrai pour $n-1$ vecteurs.\\
+	Par hypothèse de récurrence il existe $(\delta_1,\dots,\delta_{n-1})\in \{-1,1\}^{n-1}$ telle que $\displaystyle\norme{\sum_{k=1}^{n-1}\delta_ke_k}^2\geq n-1$.\\
+	Notons $e=\displaystyle\sum_{k=1}^{n-1}\delta_ke_k$. On choisit $\delta_n$ du même signe que $\proscal{e}{e_n}$ (pour que $e$ et $e_n$ soient "dans le même sens"). On calcule :\\
+	\begin{align*}
+		\norme{e+\delta_ne_n}^2&=\norme{e}^2+2\proscal{e}{\delta_ne_n}+\norme{\delta_ne_n}^2\\
+		&=\norme{e}^2+2\delta_n\proscal{e}{e_n}+1\\
+		&\geq\norme{e}^2+1\\
+		&\geq n
+	\end{align*}
+	
+	\underline{$2^{\T{nd}}$ méthode :} Approche probabiliste\\
+	L'idée va être de montrer que la quantité $\Delta:=\Delta(\delta_1,\dots,\delta_n):=\displaystyle\norme{\sum_{k=1}^n\delta_ke_k}^2$ est en moyenne plus grande que $n$. On en déduira l'existence d'un élément $(\delta_1,\dots,\delta_n)\in \{-1,1\}^n$ réalisant l'inégalité.\\
+	On considère sur $\Omega=\{-1,1\}$ des variables aléatoires $\delta_1,\dots,\delta_n$ i.i.d. suivant une loi de Rademacher : $\p(\delta_i=1)=\p(\delta_i=-1)=\dfrac{1}{2}$. $\Delta$ est une variable aléatoire sur $\Omega^n$ on peut donc calculer son espérance.\\
+	Tout d'abord, $\Delta=\displaystyle\sum_{k=1}^n\norme{\delta_ke_k}^2+\sum_{1\leq i\ne j\leq n}\proscal{\delta_ie_i}{\delta_je_j}=n+\sum_{1\leq i\ne j\leq n}\delta_i\delta_j\proscal{e_i}{e_j}$.\\
+	Donc par linéarité de l'espérance $\E(\Delta)=n+\displaystyle\sum_{1\leq i\ne j\leq n}\proscal{e_i}{e_j}\E(\delta_i\delta_j)$.
+	Enfin puisque $\delta_i$ et $\delta_j$ sont indépendantes, $\E(\delta_i\delta_j)=\E(\delta_i)\E(\delta_j)$. Or $\E(\delta_i)=\p(\delta_i=1)-\p(\delta_i=-1)=0$.\\
+	Ainsi $\E(\Delta)=n$.\\
+	Pour conclure, en reprenant l'expression de l'espérance que l'on simplifie par indépendance $$\E(\Delta)=\sum_{(\eta_1,\dots,\eta_n)\in \{-1,1\}^n}\p(\delta_1=\eta_1,\dots,\delta_n=\eta_n)\Delta(\eta_1,\dots,\eta_n)=\frac{1}{2^n}\sum_{(\eta_1,\dots,\eta_n)\in \{-1,1\}^n}\Delta(\eta_1,\dots,\eta_n)$$
+	Si l'inégalité recherchée n'est jamais vérifiée alors on peut majorer
+	$$\E(\Delta)<\frac{1}{2^n}\sum_{(\eta_1,\dots,\eta_n)\in \{-1,1\}^n}n=n$$
+	D'où le résultat.
 	
 	\subsection{Famille de vecteurs unitaires équidistants d'un espace euclidien}
 	\label{Famille de vecteurs unitaires équidistants d'un espace euclidien corrigé}
@@ -11058,29 +11099,53 @@ Alors $Z^3=6XYZ-2X^3-4Y^3$ est pair. On en déduit que $Z$ est pair. On écrit $
 On a alors $8Z'^3=12XYZ'-2X^3-4Y^3$ i.e $X^3=6XYZ'-2Y^3-4Z'^3$. De même $X^3$ est pair donc $X$ aussi et on note $X=2X'$.\\
 On a alors $8X'^3=12X'YZ'-2Y^3-4Z'^3$ i.e $Y^3=6X'YZ'-4X'^3-2Z'^3$. On écrit $Y=2Y'$.\\
 Enfin on a $8Y'^3=12X'Y'Z'-4X'^3-2Z'^3$ i.e $6X'Y'Z'=2X'^3+4Y'^3+Z'^3$.\\
-On a construit un triplet $(X',Y',Z')\in (\Z\backslash\{0\})^3$ d'entiers strictement plus petit en module que $(X,Y,Z)$ et vérifiant la même équation. Cela contredit l'existence d'un minimum à l'ensemble $\{|X|,\ (X,Y,Z)\in (\Z\backslash\{0\})^3,\ 6XYZ=2X^3+4Y^3+Z^3\}$ par exemple.\\
+On a construit un triplet $(X',Y',Z')\in (\Z\backslash\{0\})^3$ d'entiers strictement plus petit en module que $(X,Y,Z)$ et vérifiant la même équation. Cela contredit l'existence d'un minimum à l'ensemble $\{|X|,\ (X,Y,Z)\in (\Z\backslash\{0\})^3,\ 6XYZ=2X^3+4Y^3+Z^3\}\subset \N^*$ qui est non vide par hypothèse.\\
 On en déduit que $\det M\ne 0$ i.e $M$ est inversible.
 
-\subsection{Sous-groupes de GL$_n(\C)$ d'exposant fini \etoile{5}}
-\label{Sous-groupes de Gl_n(C) d'exposant fini corrigé}
+\subsection{Polynômes préservant les matrices orthogonales \centraleponts{3}}
+\label{Polynômes préservant les matrices orthogonales corrigé}
+\textcolor{blue}{\hyperref[Polynômes préservant les matrices orthogonales]{[Enoncé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Soient $\lambda$ une valeur propre de $A$ et $X$ un vecteur propre associé. On note $\overline M$ la matrice dont les coefficients sont les conjugués de ceux de $M$.\\
+	$AX=\lambda X$ donc $\overline{AX}=\overline{\lambda X}$ i.e comme $A$ est à coefficients réels, $A\overline X=\overline \lambda\,\overline X$. Puis $\overline{X}^\top A^\top=\overline \lambda\,\overline{X}^\top$.\\
+	Ainsi $\overline{X}^\top A^\top AX=|\lambda|^2\overline{X}^\top X$. D'autre part $A^\top A=I_n$ donc $\overline{X}^\top A^\top AX=\overline{X}^\top X$.\\
+	En notant $X=(x_1,\dots,x_n)^\top$ on a $\overline{X}^\top X=\displaystyle\sum_{i=1}^n|x_i|^2$. $X$ n'est pas nul en tant que vecteur propre donc $\overline{X}^\top X>0$. Ainsi $|\lambda|^2=1$ i.e $|\lambda|=1$.
+	\item Lemme : $\T{Sp}(P(A))=\{P(\lambda),\ \lambda\in \T{Sp}(A)\}$.\\
+	$A$ est trigonalisable dans $\M_n(\C)$ : il existe $Q\in \T{GL}_n(\C)$ et $T$ triangulaire supérieure telle que $A=QTQ^{-1}$. Alors $\forall k\in \N,\ A^k=QT^kQ^{-1}$ d'où $P(A)=QP(T)Q^{-1}$. Or en notant $\lambda_1,\dots,\lambda_n$ les coefficients de $T$, les coefficients diagonaux de $P(T)$ sont $P(\lambda_1),\dots,P(\lambda_n)$.\\
+	Ainsi $\T{Sp}(P(A))=\{P(\lambda),\ \lambda\in \T{Sp}(A)\}$.\\
+	Notons pour $\theta\in \R,\ R(\theta)=\begin{pmatrix}
+		\cos\theta&-\sin\theta\\
+		\sin\theta&\cos\theta
+	\end{pmatrix}$ la matrice de rotation d'angle $\theta$. Ses valeurs propres sont $e^{i\theta}$ et $e^{-i\theta}$. La matrice $A(\theta)=\begin{pmatrix}
+		R(\theta)&0\\
+		0&I_{n-2}
+	\end{pmatrix}$ est orthogonale donc $P(A(\theta))\in \O_n(\R)$.\\
+	Ainsi d'après le lemme et la question $1$, $P(e^{i\theta})\in \U$. $P$ vérifie donc $P(\U)\subset \U$.\\
+	On montre alors (cf. IV-50 tome Analyse) que $P=aX^d$ pour un certain $a\in \C$ de module $1$ et $d\in \N$. Enfin comme $P\in \R[X]$, $a\in \{-1,1\}$.\\
+	Réciproquement on vérifie aisément que $P=\pm X^d$ fonctionne car les puissances et l'opposée d'une matrice orthogonale sont des matrices orthogonales.
+\end{enumerate}
+
+\subsection{Sous-groupes de GL$_n(\C)$ d'exposant fini \xens{5}}
+\label{Sous-groupes de GL_n(C) d'exposant fini corrigé}
 \textcolor{blue}{\hyperref[Sous-groupes de GL_n(C) d'exposant fini]{[Enoncé]}}\\
 Soit $M\in G$.\\
 $M^k=I_n$ donc les valeurs propres de $M$ sont incluses dans l'ensemble des racines de $X^k-1$ c'est à dire $\U_k$. On remarque aussi que $M$ est diagonalisable ce qui servira plus tard.\\
-Alors $T=\{\Tr(M),\ M\in G\}=\displaystyle\left\{\sum\limits_{\lambda\in \text{Sp}(M)}m_\lambda(M)\lambda,\ M\in G\right\}\subset \left\{\sum\limits_{p=1}^n\lambda_p,\ (\lambda_1,\dots,\lambda_n)\in \U_k^n\right\}$.\\
+Alors $T=\{\Tr(M),\ M\in G\}=\displaystyle\left\{\sum_{\lambda\in \text{Sp}(M)}m_\lambda(M)\lambda,\ M\in G\right\}\subset \left\{\sum_{p=1}^n\lambda_p,\ (\lambda_1,\dots,\lambda_n)\in \U_k^n\right\}$.\\
 Ce dernier ensemble étant fini car $\U_k$ l'est, $T$ est fini.\\\\
 Ensuite, Considérons $V=\Vect(G)$. $V$ est de dimension finie comme sous-espace vectoriel de $\M_n(\C)$ on peut donc en prendre une base $(M_1,\dots,M_d)$.\\
 Posons alors l'application $\fonction{f}{G}{T^d}{M}{(\Tr(MM_1),\dots,\Tr(MM_d))}$ et montrons que $f$ est injective.\\
 Tout d'abord, $f$ est bien une application. En effet, $\forall M\in G,\ \forall p\in \crblanc{1}{d},\ M_p\in G\implies MM_p\in G$.\\
 Fixons un couple de matrice $(A,B)\in G^2$ tel que $f(A)=f(B)$ c'est à dire $\forall p\in \crblanc{1}{d},\ \Tr(AM_p)=\Tr(BM_p)$.\\
-Alors par linéarité de la trace, pour toute combinaison linéaire $M=\displaystyle\sum\limits_{p=1}^dx_pM_p,\ \Tr(AM)=\Tr(BM)$.\\
+Alors par linéarité de la trace, pour toute combinaison linéaire $M=\displaystyle\sum_{p=1}^dx_pM_p,\ \Tr(AM)=\Tr(BM)$.\\
 En particulier pour $B^{-1}\in G\subset V,\ \Tr(AB^{-1})=\Tr(I_n)=n$.\\
-Supposons alors par l'absurde que $A\ne B$ et donc que $C=AB^{-1}\ne I_n$. Alors le spectre de $C$ n'est pas réduit à $1$ (car sinon, $C$ étant diagonalisable on aurait $C=I_n$). On note $\lambda_0$ une valeur propre de $C$ différente de $1$.\\
-On a $\operatorname{Re}(\Tr(C))=\operatorname{Re}(\lambda_0)+\displaystyle\sum\limits_{\lambda\in \text{Sp}(C)\backslash\{\lambda_0\}}\operatorname{Re}(\lambda)\leq \operatorname{Re}(\lambda_0)+\sum\limits_{\lambda\in \text{Sp}(C)\backslash\{\lambda_0\}}1=\operatorname{Re}(\lambda_0)+n-1<n$.\\
+Supposons alors par l'absurde que $A\ne B$ et donc que $C=AB^{-1}\ne I_n$. On rappelle que $C$ est diagonalisable comme élément de $G$, son spectre n'est donc pas réduit à $1$ (car sinon on aurait $C=I_n$). De plus ses valeurs propres sont de module $1$ donc $\forall \lambda\in \T{Sp}(C),\ \operatorname{Re}(\lambda)\leq \lambda$ avec égalité si et seulement si $\lambda=1$.\\
+On note $\lambda_1,\dots,\lambda_n$ les valeurs propres de $C$ avec $\lambda_1\ne 1$.\\
+On a $\operatorname{Re}(\Tr(C))=\operatorname{Re}(\lambda_1)+\displaystyle\sum_{i=2}^n\operatorname{Re}(\lambda)\leq \operatorname{Re}(\lambda_1)+\sum_{i=2}^n1=\operatorname{Re}(\lambda_1)+n-1<n$.\\
 Ceci est absurde donc $A=B$.\\
 On a donc construit une injection de $G$ dans $T^d$ qui est un ensemble fini. On en déduit que $G$ est fini.
 	
 	
-\subsection{Formule de Burnside \etoile{4}}
+\subsection{Formule de Burnside \xens{4}}
 \label{Formule de Burnside corrigé}
 	\textcolor{blue}{\hyperref[Formule de Burnside]{[Enoncé]}}\\
 	Toutes les sommes écrites sont des sommes \textbf{finies}.\\
@@ -11089,25 +11154,48 @@ On a donc construit une injection de $G$ dans $T^d$ qui est un ensemble fini. On
 	On calcule $\varphi^2=\displaystyle\left(\frac{1}{|G|}\sum\limits_{g\in G}g\right)\left(\frac{1}{|G|}\sum\limits_{h\in G}h\right)=\frac{1}{|G|^2}\sum\limits_{g\in G}\sum\limits_{h\in G}gh$.\\
 	Or pour tout $g\in G$ l'application $f_g:h\in G\mapsto gh$ est bijective. En effet, sa bijection réciproque est $f_{g^{-1}}$.\\
 	Donc $\varphi^2=\displaystyle\frac{1}{|G|^2}\sum\limits_{g\in G}\sum\limits_{h\in G}f_g(h)=\frac{1}{|G|^2}\sum\limits_{g\in G}\sum\limits_{h\in G}h=\frac{1}{|G|^2}\sum\limits_{h\in G}\sum\limits_{g\in G}h=\frac{1}{|G|}\sum\limits_{h\in G}h=\varphi$.\\
-	On sait alors que $\Tr(\varphi)=\rg(\varphi)$ et que Im$(\varphi)=\text{Ker}(\varphi-\Id_V)$.
+	On sait alors que $\Tr(\varphi)=\rg(\varphi)$ et que Im$(\varphi)=\text{Ker}(\varphi-\Id_V)$.\\
 	Ensuite si $x\in V^G$ alors $\varphi(x)=\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}g(x)=\frac{1}{|G|}\sum\limits_{g\in G}x=x$ c'est à dire $x\in \text{Ker}(\varphi-\Id_V)$. Donc $V^G\subset \text{Im}(\varphi)$.\\
 	Réciproquement, donnons nous $x\in \text{Im}(\varphi)$ et fixons $h\in G$.\\
 	On a $x=\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}g(x)$ donc $h(x)=\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}f_h(g)(x)=\frac{1}{|G|}\sum\limits_{g\in G}g(x)=x$.\\
 	Ainsi Im$(\varphi)=V^G$.\\
 	Finalement $\dim(V^G)=\rg(\varphi)=\Tr(\varphi)=\displaystyle\frac{1}{|G|}\sum\limits_{g\in G}\Tr(g)$.
 
-\subsection{Théorème de Fermat matriciel}
-	\label{Théorème de Fermat matriciel corrigé}
-	\textcolor{blue}{\hyperref[Théorème de Fermat matriciel]{[Enoncé]}}\\
-	
+\subsection{Théorème de Fermat matriciel \centraleponts{3} (HP)}
+\label{Théorème de Fermat matriciel corrigé}
+\textcolor{blue}{\hyperref[Théorème de Fermat matriciel]{[Enoncé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Dans tout l'exercice on notera $\overline k$ la classe d'un entier $k$ dans $\Z/p\Z$. On notera de plus $\overline P$ le projeté d'un polynôme $P(X)=\displaystyle\sum_{k=0}^da_kX^k\in \Z[X]$ dans $(\Z/p\Z)[X]$ : $\overline P(X)=\displaystyle\sum_{k=0}^d\overline{a_k}X^k$.\\
+	Il s'agit alors ici de montrer que $\overline{P}(X)^p=\overline P(X^p)$. Procédons par récurrence sur le degré $d$ de $\overline P$.\\
+	$d=0$ : C'est le petit théorème de Fermat. Rappelons que la démonstration repose sur le fait suivant : $p|\displaystyle\binom{p}{j}$ pour $j\in \crblanc{1}{p-1}$. On peut l'obtenir à partir de la relation $\displaystyle j\binom{p}{j}=p\binom{p-1}{j-1}$. Et puisque $\overline j$ est inversible dans le corps $\Z/p\Z$, $\displaystyle\overline j\overline{\binom{p}{j}}=\overline 0\implies \overline{\binom{p}{j}}=\overline 0$.\\
+	Supposons le résultat vrai pour tous les polynômes de degré $d-1$ pour un certain $d\in \N^*$.\\
+	Soit $\overline P$ de degré $d$. On note $\overline P=\overline{a_d}X^d+\overline Q(X)$. Alors
+	\begin{align*}
+		\overline P(X)^p&=\sum_{j=0}^p\binom{p}{j}\overline{a_d}^jX^{dj}\overline Q(X)^{p-j}\\
+		&=\overline{a_d}^pX^{dp}+\overline{Q}(X)^p+\overline p\sum_{j=1}^{p-1}\binom{p-1}{j-1}\overline{j}^{-1}\overline{a_d}^jX^{dj}\overline Q(X)^{p-j}\\
+		&=\overline{a_d}X^{dp}+\overline{Q}(X^p)&(\T{petit théorème de Fermat + HR sur }\overline Q)\\
+		&=\overline{P}(X^p)
+	\end{align*}
+	\item Soit $(i,j)\in \crblanc{1}{n}^2$.\\
+	Par le petit théorème de Fermat $(X\overline{ \delta_{ij}}-\overline{M_{ij}})^p-(X^p\overline{\delta_{ij}}-\overline{M_{ij}}^p)=(X\overline{\delta_{ij}}-\overline{M_{ij}})^p-(X^p\overline{\delta_{ij}}-\overline{M_{ij}})$.\\
+	En posant $P_{ij}(X)=X\delta_{ij}-M_{ij}$ cette dernière expression est égale à $\overline{P_{ij}}(X)^p-\overline{P_{ij}}(X^p)$.\\
+	D'après la question $1$, $(X\delta_{ij}-M_{ij})^p-(X^p\delta_{ij}-M_{ij}^p)\in p\Z[X]$.\\
+	Ainsi la matrice $A=\left(\dfrac{P_{ij}(X)^p-P_{ij}(X^p)}{p}\right)\in \M_n(\Z[X])$ et vérifie $(XI_n-M)^p-(X^pI_n-M^p)=pA$.
+	\item On note $\overline B$ le projeté d'une matrice $B=(B_{ij})_{1\leq i,j\leq n}\in \M_n(\Z[X])$ dans $\M_n((\Z/p\Z)[X])$ : $\overline B=(\overline{B_{ij}})_{1\leq i,j\leq n}$. On remarque que comme le déterminant de $B$ est polynomial en ses coefficients on a l'identité $\overline{\det(B)}=\det(\overline B)$.\\
+	Ainsi en passant au déterminant dans l'égalité de la question 2 : $$(X\overline{I_n}-\overline M)^p=X^p\overline{I_n}-\overline{M}^p\implies \overline{\chi_M}(X)^p=\overline{\chi_{M^p}}(X^p)$$
+	\item Puis par la question $1$, $\overline{\chi_M}(X^p)=\overline{\chi_{M^p}}(X^p)$. Les coefficients de $\chi_M(X^p)-\chi_{M^p}(X^p)$ sont tous divisibles par $p$, c'est en particulier le cas du coefficient en $X^{p(n-1)}$ qui est $\Tr(M)-\Tr(M^p)$.\\
+	Ainsi $\Tr(M^p)\equiv \Tr(M)[p]$.
+\end{enumerate}
+
 \subsection{Développement décimal propre d'un réel}
-	\label{Développement décimal propre d'un réel corrigé}
-	\textcolor{blue}{\hyperref[Développement décimal propre d'un réel]{[Enoncé]}}\\
+\label{Développement décimal propre d'un réel corrigé}
+\textcolor{blue}{\hyperref[Développement décimal propre d'un réel]{[Enoncé]}}\\
+
 \subsubsection{Une caractérisation des rationnels}
 	
 \subsection{Distribution du premier chiffre des puissances de 2}
-	\label{Distribution du premier chiffre des puissances de 2 corrigé}
-	\textcolor{blue}{\hyperref[Distribution du premier chiffre des puissances de 2]{[Enoncé]}}\\
+\label{Distribution du premier chiffre des puissances de 2 corrigé}
+\textcolor{blue}{\hyperref[Distribution du premier chiffre des puissances de 2]{[Enoncé]}}\\
 	
 	
 	
