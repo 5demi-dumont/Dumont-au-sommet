@@ -3618,6 +3618,19 @@ Montrer que $\fonction{s}{\M_n(\R)}{\M_n(\R)}{M}{M^\top}$ est une symétrie orth
 \textcolor{blue}{\hyperref[Une isométrie vectorielle matricielle corrigé]{[Corrigé]}}\\
 Soit $A\in \M_n(\R)$. Montrer que $f:M\in \M_n(\R)\mapsto AM$ est une isométrie vectorielle de $\M_n(\R)$ si et seulement si $A\in \O_n(\R)$.
 
+\section{Matrice circulante et rotation de l'espace}
+\label{Matrice circulante et rotation de l'espace}
+\textcolor{blue}{\hyperref[Matrice circulante et rotation de l'espace corrigé]{[Corrigé]}}\\
+Soient $p,q,r\in \R$ et $M=\begin{pmatrix}
+	p&q&r\\
+	r&p&q\\
+	q&r&p
+\end{pmatrix}$.
+\begin{enumerate}
+	\item Montrer que $M\in \T{SO}_3(\R)$ si et seulement si $p,q,r$ sont les racines d'un polynôme $X^3-X^2+\lambda$ avec $\lambda\in \left[0,\dfrac{4}{27}\right]$.
+	\item Donner dans ce cas les éléments caractéristiques de $M$.
+\end{enumerate}
+
 \section{Endomorphisme échangeur}
 \label{Endomorphisme échangeur}
 \textcolor{blue}{\hyperref[Endomorphisme échangeur corrigé]{[Corrigé]}}\\
@@ -3710,7 +3723,20 @@ Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien de dimension $n$. Soient $
 	est symétrique réelle définie positive.\\
 \end{enumerate}
 
-\section{Rayon spectral d'un endomorphisme auto-adjoint}
+\section{Matrices entières positives \xens{3}}
+\label{Matrices entières positives}
+\textcolor{blue}{\hyperref[Matrices entières positives corrigé]{[Corrigé]}}\\
+Soient $E$ un ensemble fini et $A_1,\dots,A_n$ des parties de $E$. Montrer que $A=(|A_i\cap A_j|)_{1\leq i,j\leq n}$ est symétrique réelle définie positive.
+
+\section{Matrices binaires positives}
+\label{Matrices binaires positives}
+\textcolor{blue}{\hyperref[Matrices binaires positives corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Déterminer les matrices de $\mathcal S_n^{++}(\R)$ à coefficients dans $\{0,1\}$.
+	\item Déterminer les matrices de $\mathcal S_n^+(\R)$ à coefficients dans $\{0,1\}$ et les dénombrer.
+\end{enumerate}
+
+\section{Rayon spectral d'un endomorphisme auto-adjoint \ccinp{2}}
 \label{Rayon spectral d'un endomorphisme auto-adjoint}
 \textcolor{blue}{\hyperref[Rayon spectral d'un endomorphisme auto-adjoint corrigé]{[Corrigé]}}\\
 Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien et soit $f\in \S(E)$. On note $m$ la plus petite valeur propre de $f$ et $M$ sa plus grande. On note aussi $S=\{x\in E,\ \norme x=1\}$.
@@ -3744,7 +3770,7 @@ Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien et soit $f\in \S(E)$. On n
 Soit $M\in\S^+_n(\R)$.\\
 Démontrer que $\displaystyle\frac{\Tr(M)}{n}\geq \det(M)^{1/n}$.
 
-\section{\underline{Inégalité à propos des matrices orthogonales} \telecom{3}}
+\section{\underline{Inégalité à propos des matrices orthogonales} \centraleponts{3}}
 \label{Inégalité à propos des matrices orthogonales}
 \textcolor{blue}{\hyperref[Inégalité à propos des matrices orthogonales corrigé]{[Corrigé]}}\\
 Soit $M\in \O_n(\R)$. Montrer que\\
@@ -3778,12 +3804,12 @@ On pourra se servir librement de l'inégalité arithmético-géométrique (cf.I-
 	\item Justifier que l'inégalité précédente est encore vraie lorsque $S$ n'est pas inversible.
 \end{enumerate}
 
-\section{Matrices orthogonales qui respectent $(\R_+)^n$}
+\section{Matrices orthogonales qui respectent $(\R_+)^n$ \xens{4}}
 \label{Matrices orthogonales qui respectent (R_+)^n}
 \textcolor{blue}{\hyperref[Matrices orthogonales qui respectent (R_+)^n corrigé]{[Corrigé]}}\\
 Déterminer les matrices de $\O_n(\R)$ qui laissent stable $(\R_+)^n$.
 
-\section{Perturbations}
+\section{Perturbations \centraleponts{3}}
 \label{Perturbations}
 \textcolor{blue}{\hyperref[Perturbations corrigé]{[Corrigé]}}\\
 Soit $A\in \M_n(\R)$ la matrice Atilla $A=\begin{pmatrix}
@@ -3794,10 +3820,10 @@ Soit $A\in \M_n(\R)$ la matrice Atilla $A=\begin{pmatrix}
 \end{pmatrix}$.\\
 Quelles sont les matrices $M\in \O_n(\R)$ telles que $A+M$ soit inversible ?
 
-\section{Somme de Cesàro de matrices orthogonales}
+\section{Somme de Cesàro de matrices orthogonales \centraleponts{3}}
 \label{Somme de Cesàro de matrices orthogonales}
 \textcolor{blue}{\hyperref[Somme de Cesàro de matrices orthogonales corrigé]{[Corrigé]}}\\
-Soit $A\in \O_n(\R)$ telle que $-1\notin \text{Sp}(A)$.
+Soit $A\in \O_n(\R)$ telle que $1\notin \text{Sp}(A)$.
 \begin{enumerate}
 	\item Montrer que la suite $\left(\displaystyle\frac{1}{p+1}\sum_{k=0}^pA^k\right)_{p\in \N}$ converge et déterminer sa limite.
 	\item La suite $(A^p)_{p\in \N}$ converge-t-elle ?
@@ -4054,19 +4080,6 @@ On munit $\M_n(\R)$ muni de son produit scalaire canonique. On note $\A_n(\R)$ l
 	\item Soit $B\in\A_n(\R)$. Montrer que $\forall x\in\R,\quad\exp(xB)\in\O_n(\R)$.
 	\item Montrer que $A\in\S_n^+(\R)$.
 	\item Etudier la réciproque.
-\end{enumerate}
-
-\section{Matrices entières positives}
-\label{Matrices entières positives}
-\textcolor{blue}{\hyperref[Matrices entières positives corrigé]{[Corrigé]}}\\
-Soient $E$ un ensemble fini et $A_1,\dots,A_n$ des parties de $E$. Montrer que $A=(|A_i\cap A_j|)_{1\leq i,j\leq n}$ est symétrique réelle définie positive.
-
-\section{Matrices binaires positives}
-\label{Matrices binaires positives}
-\textcolor{blue}{\hyperref[Matrices binaires positives corrigé]{[Corrigé]}}\\
-\begin{enumerate}[leftmargin=*]
-	\item Déterminer les matrices de $\mathcal S_n^{++}(\R)$ à coefficients dans $\{0,1\}$.
-	\item Déterminer les matrices de $\mathcal S_n^+(\R)$ à coefficients dans $\{0,1\}$ et les dénombrer.
 \end{enumerate}
 
 \section{\underline{Inégalité de Hoffman-Wielandt} \centraleponts{3}}
@@ -10166,6 +10179,37 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Une isométrie vectorielle matricielle corrigé}
 	\textcolor{blue}{\hyperref[Une isométrie vectorielle matricielle]{[Enoncé]}}\\
 	
+	\subsection{Matrice circulante et rotation de l'espace}
+	\label{Matrice circulante et rotation de l'espace corrigé}
+	\textcolor{blue}{\hyperref[Matrice circulante et rotation de l'espace]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $M\in \T{SO}_3(\R)$ si et seulement si son déterminant vaut $1$ et ses colonnes forment une BON de $\R^3$. Ces conditions reviennent à
+		$$\begin{cases}
+			pq+pr+qr=0\\
+			p^2+q^2+r^2=1\\
+			p^3+q^3+r^3-3pqr=1
+		\end{cases}$$
+		On reconnaît pour la première ligne une relation coefficients racines, essayons de faire apparaître les autres.\\
+		On va montrer les formules sur les sommes de Newton : on note $s_k=p^k+q^k+r^k$ et $\sigma_1=p+q+r,\ \sigma_2=pq+pr+qr,\ \sigma_3=pqr$.\\
+		$$\begin{cases}
+			s_2-\sigma_1s_1=p^2+q^2+r^2-(p+q+r)^2=-2\sigma_2\\
+			s_3-s_2\sigma_1+s_1\sigma_2=p^3+q^3+r^3-(p^2+q^2+r^2)(p+q+r)+(p+q+r)(pq+pr+qr)=3pqr=3\sigma_3
+		\end{cases}$$
+		Alors en utilisant $\sigma_2=0$, on obtient $1=s_2=\sigma_1^2$ puis $\sigma_1^3=s_3-3\sigma_3=1$. Ainsi $\sigma_1=1$.\\
+		Par conséquent $M\in \T{SO}_3(\R)$ si et seulement si $p,q,r$ sont racines de $P=X^3-X^2+\sigma_3$. Montrons que dans ce cas $\lambda:=\sigma_3\in \left[0,\dfrac{4}{27}\right]$.\\
+		On peut faire une étude de fonctions :
+		\begin{center}
+			\begin{tikzpicture}
+				\tkzTabInit{$x$ / 1, $P'(x)$ / 1, $P(x)$ / 2}{$-\infty$, $0$, $\dfrac{2}{3}$, $+\infty$}
+				\tkzTabLine{, +, z, -, z, +}
+				\tkzTabVar{-/ $-\infty$, +/ $\lambda$, -/ $\lambda-\dfrac{4}{27}$, +/ $+\infty$}
+			\end{tikzpicture}
+		\end{center}
+		Rappelons que dans notre cas $P$ a trois racines réelles (potentiellement égales).
+		Si $\lambda<0$ alors $P$ s'annule une seule fois sur $\R$, la racine est donc triple ce qui contredit le fait que $P'$ s'annule deux fois. De même, si $\lambda>\dfrac{4}{27}$ alors $P$ ne s'annule qu'une seule fois sur $\R$. Ainsi $\lambda\in \left[0,\dfrac{4}{27}\right]$.
+		\item 
+	\end{enumerate}
+	
 	\subsection{Endomorphisme échangeur}
 	\label{Endomorphismes échangeurs corrigé}
 	\textcolor{blue}{\hyperref[Endomorphismes échangeurs]{[Enoncé]}}\\
@@ -10292,7 +10336,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	$$\E(\Delta)<\frac{1}{2^n}\sum_{(\eta_1,\dots,\eta_n)\in \{-1,1\}^n}n=n$$
 	D'où le résultat.
 	
-	\subsection{Famille de vecteurs unitaires équidistants d'un espace euclidien}
+	\subsection{Famille de vecteurs unitaires équidistants d'un espace euclidien \centraleponts{4}}
 	\label{Famille de vecteurs unitaires équidistants d'un espace euclidien corrigé}
 	\textcolor{blue}{\hyperref[Famille de vecteurs unitaires équidistants d'un espace euclidien]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -10327,7 +10371,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi $\alpha=-\dfrac{1}{n}$, i.e $p=n+1$.
 	\end{enumerate}
 	
-	\subsection{Matrice de Hilbert}
+	\subsection{\underline{Matrice de Hilbert} \centraleponts{3}}
 	\label{Matrice de Hilbert corrigé}
 	\textcolor{blue}{\hyperref[Matrice de Hilbert]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -10358,7 +10402,20 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi, on en déduit que $H$ est définie positive.	
 	\end{enumerate}
 	
-	\subsection{Rayon spectral d'un endomorphisme auto-adjoint}
+	\subsection{Matrices entières positives}
+	\label{Matrices entières positives corrigé}
+	\textcolor{blue}{\hyperref[Matrices entières positives]{[Enoncé]}}\\
+	Tout d'abord $A$ est symétrique réelle.\\
+	Notons $\mathbbm 1_X$ la fonction indicatrice d'une partie $X$ de $E$. On rappelle que $\forall X,Y\subset E,\ \mathbbm 1_{X\cap Y}=\mathbbm 1_X+\mathbbm 1_Y$.\\
+	Comme $E$ est fini, $\forall i,j\in \crblanc{1}{n},\ |A_i\cap A_j|=\displaystyle\sum_{x\in E}\mathbbm 1_{A_i}(x)\mathbbm 1_{A_j}(x)$.\\
+	Ainsi $A=\displaystyle\sum_{x\in E}A(x)$ où $A(x)=(\mathbbm 1_{A_i}(x)\mathbbm 1_{A_j}(x))_{1\leq i,j\leq n}$. De plus, en notant $L(x)=(\mathbbm 1_{A_1}(x),\dots,\mathbbm 1_{A_n}(x))$ on remarque que $A(x)=L(x)^\top L(x)$.\\
+	Ainsi $\forall X\in \R^n,\ X^\top AX=\displaystyle\sum_{x\in E}X^\top L(x)^\top L(x)X=\sum_{x\in E}\norme{L(x)X}^2\geq 0$.
+	
+	\subsection{Matrices binaires positives}
+	\label{Matrices binaires positives corrigé}
+	\textcolor{blue}{\hyperref[Matrices binaires positives]{[Enoncé]}}\\
+	
+	\subsection{Rayon spectral d'un endomorphisme auto-adjoint \ccinp{2}}
 	\textcolor{blue}{\hyperref[Rayon spectral d'un endomorphisme auto-adjoint]{[Enoncé]}}\\
 	\label{Rayon spectral d'un endomorphisme auto-adjoint corrigé}
 	\begin{enumerate}[leftmargin=*]
@@ -10376,22 +10433,23 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Donc $x^\top Ax\leq t+2\sqrt{(1-x_n^2)(1-x_1^2)}\leq t+2$.
 	\end{enumerate}
 	
-	\subsection{Racine carrée d'un endomorphisme auto-adjoint positif}
+	\subsection{\underline{Racine carrée d'un endomorphisme auto-adjoint positif} \telecom{2}}
 	\textcolor{blue}{\hyperref[Racine carrée d'un endomorphisme auto-adjoint positif]{[Enoncé]}}\\
 	\label{Racine carrée d'un endomorphisme auto-adjoint positif corrigé}
 	
-	\subsection{Inégalité de convexité}
+	\subsection{\underline{Inégalité de convexité} \telecom{2}}
 	\label{Inégalité de convexité corrigé}
 	\textcolor{blue}{\hyperref[Inégalité de convexité]{[Enoncé]}}\\
-	On note $\lambda_1, \dots, \lambda_n$ les valeurs à $M$ notée avec répétition.\\
-	Puisque $M\in\mathcal{S}^+_n(\R)$, on sait que pour tout $i\in\crblanc{1}{n}$, $\lambda_i\geq 0$.\\
+	On note $\lambda_1, \dots, \lambda_n$ les valeurs à $M$ notées avec répétition.\\
+	Puisque $M\in\mathcal S^+_n(\R)$, on sait que pour tout $i\in\crblanc{1}{n}$, $\lambda_i\geq 0$.\\
 	Si l'un des $\lambda_i$ est nul, le résultat est vérifié immédiatement.\\
-	Supposons qu'ils sont tous non nuls, on a donc d'après l'inégalité arithmético-géométrique (Tome I : I-47)que :
+	Supposons qu'ils sont tous non nuls, on a donc d'après l'inégalité arithmético-géométrique (cf. I-47 tome Analyse) :
 	\[\frac{1}{n}\sum_{i=1}^{n}\lambda_i\geq (\lambda_1\dots\lambda_n)^{1/n}\]
 	i.e \[\frac{\Tr(M)}{n}\geq \det(M)^{1/n}\]
-	\subsection{Inégalité à propos des matrices orthogonales}
+	
+	\subsection{\underline{Inégalité à propos des matrices orthogonales} \centraleponts{3}}
 	\label{Inégalité à propos des matrices orthogonales corrigé}
-		\textcolor{blue}{\hyperref[Inégalité à propos des matrices orthogonales]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Inégalité à propos des matrices orthogonales]{[Enoncé]}}\\
 	
 	\subsection{Inégalité sur la trace de matrices symétriques positives}
 	\label{Inégalité sur la trace de matrices symétriques positives corrigé}
@@ -10405,7 +10463,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Inégalité de Hadamard corrigé}
 	\textcolor{blue}{\hyperref[Inégalité de Hadamard]{[Enoncé]}}\\
 	
-	\subsection{Matrices orthogonales qui respectent $(\R_+)^n$}
+	\subsection{Matrices orthogonales qui respectent $(\R_+)^n$ \xens{4}}
 	\label{Matrices orthogonales qui respectent (R_+)^n corrigé}
 	\textcolor{blue}{\hyperref[Matrices orthogonales qui respectent (R_+)^n]{[Enoncé]}}\\
 	Les premiers exemples de matrices auxquelles on peut penser sont les matrices de permutations. En effet celles-ci effectue une permutation des coordonnées du vecteur ce qui conserve le caractère positif de ses coefficients. On se demande alors si ce ne sont pas les seules.\\
@@ -10422,13 +10480,31 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Il y a un donc un seul coefficient non nul par colonne et par ligne de $O$. Enfin puisque les colonnes par exemple de $O$ forme une base orthonormale de $\R^n$, le seul coefficient non nul par colonne vaut $1$.\\
 	Autrement dit $O$ est une matrice de permutation.
 	
-	\subsection{Perturbations}
+	\subsection{Perturbations \centraleponts{3}}
 	\label{Perturbations corrigé}
 	\textcolor{blue}{\hyperref[Perturbations]{[Enoncé]}}\\
+	Soit $M\in \O_n(\R)$.\\
+	$\det(A+M)=\det(AM^\top+I_n)\det(M)=\det(M)\chi_{-AM^\top}(1)$. $\det(M)\ne 0$ donc il suffit de calculer $\chi_{-AM^\top}(1)$.\\
+	$A$ est clairement de rang $1$ donc comme $\{0\}\ne\Ima(-AM^\top)\subset \Ima(A)$, $-AM^\top$ est aussi de rang $1$.\\
+	Son polynôme caractéristique est donc $X^{n-1}(X+\Tr(AM^\top))$.\\
+	Ainsi $A+M$ est inversible si et seulement si $\Tr(AM^\top)\ne -1$. Cela équivaut à $\displaystyle\sum_{1\leq i,j\leq n}M_{ij}\ne -1$.
 	
-	\subsection{Somme de Cesàro de matrices orthogonales}
+	\subsection{Somme de Cesàro de matrices orthogonales \centraleponts{3}}
 	\label{Somme de Cesàro de matrices orthogonales corrigé}
 	\textcolor{blue}{\hyperref[Somme de Cesàro de matrices orthogonales]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Notons $\normep{2}{M}=\sqrt{\Tr(M^\top M)}$ la norme euclidienne usuelle sur $\M_n(\R)$. $\forall M\in \O_n(\R),\ \normep{2}{M}=\sqrt{\Tr(I_n)}=\sqrt n$.\\
+		En particulier $\O_n(\R)$ est une partie bornée de $\M_n(\R)$, elle l'est donc pour toute norme par équivalence des normes sur $\M_n(\R)$ qui est de dimension finie. On pose $\norme{\cdot}$ une norme d'algèbre sur $\M_n(\R)$ et on note $C>0$ tel que $\forall M\in \O_n(\R),\ \norme M\leq C$.\\
+		$\forall p\in \N,\ (I_n-A)\displaystyle\sum_{k=0}^pA^k=I_n-A^{p+1}$. Or $I_n-A$ est inversible car $1\notin \T{Sp}(A)$.\\
+		Donc $\forall p\in \N,\ \displaystyle\norme{\sum_{k=0}^pA^k}=\norme{(I_n-A^{p+1})(I_n-A)^{-1}}\leq (\norme{I_n}+\norme{A^{p+1}})\norme{(I_n-A)^{-1}}$.\\
+		$A^{p+1}\in \O_n(\R)$ donc $\displaystyle\norme{\frac{1}{p+1}\sum_{k=0}^pA^k}\leq \frac{(\norme{I_n}+C)\norme{(I_n-A)^{-1}}}{p+1}\upfty\longrightarrow 0$.\\
+		Ainsi la suite $\left(\displaystyle\frac{1}{p+1}\sum_{k=0}^pA^k\right)_{p\in \N}$ converge vers la matrice nulle.
+		\item Supposons par l'absurde que $A^p$ converge vers une matrice $B\in \M_n(\R)$. Fixons $X\in \R^n$.\\
+		Par continuité des application linéaires $M\mapsto MX$ et $M\mapsto AMX$, la relation $A^{p+1}X=A\cdot A^pX$ impose $BX=ABX$. Puis comme $-1$ n'est pas valeur propre de $A$, on en déduit $BX=0$. Ceci étant vrai pour tout vecteur $X\in \R^n$, $B=0$.\\
+		Toutefois, $\forall p\in \N,\ \normep{2}{A^p}=\sqrt n$. Donc la suite $(\normep{2}{A^p})_{p\in \N}$ ne converge pas vers $0$ ce qui est absurde.\\
+		Par conséquent $(A^p)_{p\in \N}$ diverge.
+	\end{enumerate}
+	\textit{Remarque : C'est une généralisation dans $\M_n(\R)$ du contre-exemple $((-1)^p)_{p\in \N}$ dans $\R$ à la réciproque du lemme de Cesàro.}
 	
 	\subsection{Transformation de Cayley}
 	\label{Transformation de Cayley corrigé}
@@ -10672,14 +10748,6 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Caractérisation des matrices symétriques positives}
 	\label{Caractérisation des matrices symétriques positives corrigé}
 	\textcolor{blue}{\hyperref[Caractérisation des matrices symétriques positives]{[Enoncé]}}\\
-	
-	\subsection{Matrices entières positives}
-	\label{Matrices entières positives corrigé}
-	\textcolor{blue}{\hyperref[Matrices entières positives]{[Enoncé]}}\\
-	
-	\subsection{Matrices binaires positives}
-	\label{Matrices binaires positives corrigé}
-	\textcolor{blue}{\hyperref[Matrices binaires positives]{[Enoncé]}}\\
 	
 	\subsection{Inégalité de Hoffman-Wielandt}
 	\label{Inégalité de Hoffman-Wielandt corrigé}
