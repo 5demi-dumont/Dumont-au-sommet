@@ -3760,7 +3760,7 @@ Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien et soit $f\in \S(E)$. On n
 \label{Racine carrée d'un endomorphisme auto-adjoint positif}
 \textcolor{blue}{\hyperref[Racine carrée d'un endomorphisme auto-adjoint positif corrigé]{[Corrigé]}}\\
 \begin{enumerate}[leftmargin=*]
-	\item Soit $f$ un endomorphisme auto-adjoint positif d'un espace euclidien $E$. Montrer qu'il existe $g\in\S^+(E)$ tel que $g^2=f$.
+	\item Soit $f$ un endomorphisme auto-adjoint positif d'un espace euclidien $E$. Montrer qu'il existe un unique $g\in\S^+(E)$ tel que $g^2=f$.
 	\item Soit $f$ un endomorphisme auto-adjoint défini positif d'un espace euclidien $E$. Montrer qu'il existe un unique $g\in\S^{++}(E)$ tel que $g^2=f$.
 \end{enumerate}
 
@@ -3776,10 +3776,15 @@ Démontrer que $\displaystyle\frac{\Tr(M)}{n}\geq \det(M)^{1/n}$.
 Soit $M\in \O_n(\R)$. Montrer que\\
 $$\left|\sum_{1\leq i,j\leq n}m_{i,j}\right|\leq n \leq\sum_{1\leq i,j\leq n}|m_{i,j}|\leq n^{3/2}$$
 
-\section{Inégalité sur la trace de matrices symétriques positives}
-\label{Inégalité sur la trace de matrices symétriques positives}
-\textcolor{blue}{\hyperref[Inégalité sur la trace de matrices symétriques positives corrigé]{[Corrigé]}}\\
-Soient $A,B\in\S_n^+(\R)$. Montrer que $0\leq\Tr(AB)\leq\Tr(A)\Tr(B)$.
+\section{Inégalités sur la trace du produit de matrices symétriques positives \centraleponts{2}}
+\label{Inégalités sur la trace du produit de matrices symétriques positives}
+\textcolor{blue}{\hyperref[Inégalités sur la trace du produit de matrices symétriques positives corrigé]{[Corrigé]}}\\
+Soient $A,B\in\S_n^+(\R)$.
+\begin{enumerate}
+	\item Soit $(e_1,\dots,e_n)$ une base orthonormée de $\R^n$. Vérifier que $\forall M\in \M_n(\R),\ \Tr(M)=\displaystyle\sum_{i=1}^ne_i^\top Me_i$.
+	\item Montrer que $0\leq\Tr(AB)\leq\Tr(A)\Tr(B)$.
+	\item Déterminer les cas d'égalités dans la deuxième inégalité.
+\end{enumerate}
 
 \section{Inégalité de Golden-Thompson \xens{5}}
 \label{Inégalité de Golden-Thompson}
@@ -10402,7 +10407,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi, on en déduit que $H$ est définie positive.	
 	\end{enumerate}
 	
-	\subsection{Matrices entières positives}
+	\subsection{Matrices entières positives \xens{3}}
 	\label{Matrices entières positives corrigé}
 	\textcolor{blue}{\hyperref[Matrices entières positives]{[Enoncé]}}\\
 	Tout d'abord $A$ est symétrique réelle.\\
@@ -10436,6 +10441,15 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{\underline{Racine carrée d'un endomorphisme auto-adjoint positif} \telecom{2}}
 	\textcolor{blue}{\hyperref[Racine carrée d'un endomorphisme auto-adjoint positif]{[Enoncé]}}\\
 	\label{Racine carrée d'un endomorphisme auto-adjoint positif corrigé}
+	\begin{enumerate}
+		\item Procédons par analyse synthèse. Soit $g\in \S^+(E)$ tel que $g^2=f$.\\
+		Alors $g\circ f=g^3=f\circ g$. $g$ induit donc des endomorphismes $g_\lambda$ sur chaque sous-espace propre $E_\lambda(f)$ de $f$.\\
+		Par définition $g_\lambda^2=\lambda\Id_{E_\lambda(f)}$. Donc les valeurs propres possibles de $g_\lambda$ sont $\pm\sqrt\lambda$. Puisque les valeurs propres de $g$ sont positives, celles de $g_\lambda$ aussi d'où $\T{Sp}(g_\lambda)=\{\sqrt\lambda\}$. De plus $g_\lambda$ est diagonalisable car $g\in \S(E_\lambda(f))$. En effet :
+		$$\forall (x,y)\in E_\lambda(f),\ \proscal{g_\lambda(x)}{y}=\proscal{g(x)}{y}=\proscal{x}{g(y)}=\proscal{x}{g_\lambda(y)}$$
+		Donc $g_\lambda=\sqrt\lambda\Id_{E_\lambda(f)}$.\\
+		Enfin $f$ est diagonalisable par le théorème spectral donc $E=\displaystyle\bigoplus_{\lambda\in \T{Sp}(f)}E_\lambda(f)$. Ceci justifie qu'on définit un unique endomorphisme $g$ à partir des $g_\lambda$. On vérifie que cette définition donne bien un endomorphisme auto-adjoint positif car dans une base orthonormée adaptée à la décomposition $E=\displaystyle\bigoplus_{\lambda\in \T{Sp}(f)}E_\lambda(f)$ la matrice de $g$ est $\diag(\sqrt\lambda_1,\dots,\sqrt\lambda_n)$ où $\lambda_1,\dots,\lambda_n$ sont les valeurs propres de $f$ comptées avec multiplicité.
+		\item $\det(g)^2=\det(f)$ donc $g$ est inversible si et seulement si $f$ l'est.
+	\end{enumerate}
 	
 	\subsection{\underline{Inégalité de convexité} \telecom{2}}
 	\label{Inégalité de convexité corrigé}
@@ -10451,9 +10465,27 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Inégalité à propos des matrices orthogonales corrigé}
 	\textcolor{blue}{\hyperref[Inégalité à propos des matrices orthogonales]{[Enoncé]}}\\
 	
-	\subsection{Inégalité sur la trace de matrices symétriques positives}
-	\label{Inégalité sur la trace de matrices symétriques positives corrigé}
-	\textcolor{blue}{\hyperref[Inégalité sur la trace de matrices symétriques positives]{[Enoncé]}}\\
+	\subsection{Inégalités sur la trace du produit de matrices symétriques positives \centraleponts{2}}
+	\label{Inégalités sur la trace du produit de matrices symétriques positives corrigé}
+	\textcolor{blue}{\hyperref[Inégalités sur la trace du produit de matrices symétriques positives]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Comme $\B=(e_1,\dots,e_n)$ est orthonormée, la composante selon $e_i$ de $Me_i$ est $\proscal{Me_i}{e_i}=e_i^\top Me_i$.\\
+		Ainsi en notant $P$ la matrice de passage de la base canonique à la base $\B$, $\Tr(M)=\Tr(PMP^{-1})=\displaystyle\sum_{i=1}^ne_i^\top Me_i$.
+		\item D'après le théorème spectral il existe $\B=(e_1,\dots,e_n)$ une base orthonormée de $\R^n$ formée de vecteurs propres de $B$. On note $\mu_i\in \R_+$ tel que $Be_i=\mu_ie_i$.\\
+		$e_i^\top ABe_i=\mu_ie_i^\top Ae_i\geq 0$ car $\mu_i\geq 0$ et $e_i^\top Ae_i\geq 0$ ($A$ symétrique positive). Ainsi $\Tr(AB)=\displaystyle\sum_{i=1}^n\mu_ie_i^\top Ae_i\geq 0$.\\
+		Ensuite, par l'inégalité de Cauchy-Schwarz $\Tr(AB)=\Tr(A^\top B)\leq \sqrt{\Tr(A^2)\Tr(B^2)}$.\\
+		Or comme $B$ est diagonalisable à valeurs propres positives,
+		$$\Tr(B^2)=\displaystyle\sum_{i=1}^n\mu_i^2\leq \sum_{i=1}^n\mu_i^2+2\sum_{1\leq i<j\leq n}\mu_i\mu_j=\left(\sum_{i=1}^n\mu_i\right)^2=\Tr(B)^2$$
+		De même $\Tr(A^2)\leq \Tr(A)^2$ d'où $\Tr(AB)\leq \Tr(A)\Tr(B)$.
+		\item Excluons les cas $A=0$ ou $B=0$ pour lesquels l'égalité est évidemment vérifiée.\\
+		Si $A$ et $B$ vérifient $\Tr(AB)=\Tr(A)\Tr(B)$ alors toutes les inégalités dans la preuve précédente sont des égalités. En particulier $\Tr(A^2)=\Tr(A)^2$ et $\Tr(B^2)=\Tr(B)^2$.\\
+		Or $\Tr(B^2)=\Tr(B)^2\iff \displaystyle\sum_{1\leq i<j\leq n}\mu_i\mu_j=0$. Tous les termes de cette somme sont positifs, ils sont donc tous nuls.\\
+		$B$ étant diagonalisable et non nul, il a une valeur propre non nulle et on peut supposer quitte à les réordonner que c'est $\mu:=\mu_1$. Alors les égalités $\mu\mu_2=\cdots=\mu\mu_n=0$ imposent $\mu_2=\cdots=\mu_n=0$.\\
+		De même, $A$ n'a qu'une seule valeur propre non nulle $\lambda$.\\
+		De plus $A$ et $B$ réalisent le cas d'égalité de l'inégalité de Cauchy-Schwarz : $\exists \alpha\in \R^*,\ B=\alpha A$.\\
+		Ainsi $\Tr(AB)=\alpha\Tr(A^2)=\alpha\lambda^2$ et $\Tr(A)\Tr(B)=\alpha\Tr(A)^2=\alpha\lambda^2$.\\
+		Les seuls couples de matrices $(A,B)$ qui vérifient l'égalité sont les couples $(A,\alpha A)$ où $\alpha\in \R$ et $A$ a exactement une valeur propre non nulle ainsi que les couples $(0,B)$ et $(A,0)$ pour $A,B\in \S_n^+(\R)$.
+	\end{enumerate}
 	
 	\subsection{Inégalité de Golden-Thompson}
 	\label{Inégalité de Golden-Thompson corrigé}
