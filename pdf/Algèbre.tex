@@ -3840,9 +3840,9 @@ Soit $A\in \O_n(\R)$ telle que $1\notin \text{Sp}(A)$.
 Soit $A\in \A_n(\R)$.
 \begin{enumerate}
 	\item Déterminer les valeurs propres possibles de la matrice $A$.
-	\item En déduire que les matrices $A+I_n$ et $A-I_n$ sont inversibles.
-	\item Montrer que la matrice $\Omega=(A+I_n)(A-I_n)^{-1}$ est orthogonale. Et calculer $\det(\Omega)$
-	\item Démontrer que l'application $\fonction{\varphi}{\A_n(\R)}{\{\Omega\in \O_n(\R)|-1\notin \text{Sp}(\Omega)\}}{A}{(A+I_n)(A-I_n)^{-1}}$ est bijective.
+	\item En déduire que les matrices $I_n+1$ et $I_n-A$ sont inversibles.
+	\item Montrer que la matrice $\Omega=(I_n+A)(I_n-A)^{-1}$ est orthogonale. Et calculer $\det(\Omega)$
+	\item Démontrer que l'application $\fonction{\varphi}{\A_n(\R)}{\{\Omega\in \O_n(\R)|-1\notin \text{Sp}(\Omega)\}}{A}{(I_n+A)(I_n-A)^{-1}}$ est bijective.
 	\item En déduire que si $\Omega$ est une matrice orthogonale et que $-1\notin \text{Sp}(\Omega)$ alors $\det(\Omega)=1$. Pouvait-t-on constater cela d'une manière plus directe ?
 \end{enumerate}
 
@@ -10490,10 +10490,29 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Inégalité de Golden-Thompson}
 	\label{Inégalité de Golden-Thompson corrigé}
 	\textcolor{blue}{\hyperref[Inégalité de Golden-Thompson]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $e^A$ et $e^B$ sont symétriques définis positives donc d'après l'exercice précédent $\Tr(e^Ae^B)>0$.\\
+		En effet d'après le théorème spectral il existe $P\in \O_n(\R)$ et $\lambda_1,\dots,\lambda_n\in \R$ tels que $A=P\diag(\lambda_1,\dots,\lambda_n)P^\top$.\\
+		Alors $\forall p\in \N,\ A^p=P\diag(\lambda_1^p,\dots,\lambda_n^p)P^\top$ puis $\displaystyle\sum_{k=1}^p\frac{A^k}{k!}=P\sum_{k=0}^p\frac{\diag(\lambda_1^k,\dots,\lambda_n^k)}{k!}P^\top$.\\
+		Or l'application $M \mapsto PMP^\top$ est linéaire sur $\M_n(\R)$, qui est de dimension finie, donc continue. Ainsi par passage à la limite $e^A=P\diag(e^\lambda_1,\dots,e^{\lambda_n})P^\top$.\\
+		En particulier $(e^A)^\top=e^A$ et $\T{Sp}(e^A)\subset \R^*_+$ i.e $e^A\in \S_n^{++}(\R)$. De même $e^B\in \S_n^{++}(\R)$.
+		\item 
+	\end{enumerate}
 	
 	\subsection{Inégalité de Hadamard}
 	\label{Inégalité de Hadamard corrigé}
 	\textcolor{blue}{\hyperref[Inégalité de Hadamard]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Il suffit d'appliquer l'inégalité arithmético-géométrique aux valeurs propres de $S$ (cf.\ref{Inégalité de convexité corrigé})
+		\item $S_\alpha^\top=D^\top S^\top D^\top=DSD=S_\alpha$.\\
+		De plus $\forall X=(x_1,\dots,x_n)^\top\in \R^n,\ X^\top S_\alpha X=(\alpha_1x_1,\dots,\alpha_nx_n)S(\alpha_1x_1,\dots,\alpha_nx_n)^\top\geq 0$ car $S\in \S_n^+(\R)$.\\
+		Ensuite, en notant $(e_1,\dots,e_n)$ la base canonique de $\R^n$ on a $$\Tr(S_\alpha)=\displaystyle\sum_{i=1}^ne_i^\top S_\alpha e_i=\sum_{i=1}^n(0,\dots,0,\alpha_i,0,\dots,0)S(0,\dots,0,\alpha_i,0,\dots,0)^\top=\sum_{i=1}^n\alpha_i^2s_{ii}$$
+		\item $\forall i\in \crblanc{1}{n},\ s_{ii}=e_i^\top Se_i>0$. Par la question 1,\\
+		$$\det(S)\det(D)^2=\det(S_\alpha)\leq \left(\frac{1}{n}\Tr(S_\alpha)\right)^n=\left(\frac{1}{n}\sum_{i=1}^n\alpha_i^2s_{ii}\right)^n$$
+		Donc en prenant $\alpha_i=\dfrac{1}{\sqrt s_{ii}}$ on obtient
+		$$\det(S)\leq \left(\prod_{i=1}^ns_{ii}\right)\left(\frac{1}{n}\sum_{i=1}^n1\right)^n=\prod_{i=1}^ns_{ii}$$
+		\item Les deux membres étant continus en $S$, car ce sont des expressions polynomiales en ses coefficients, en considérant la suite de terme général $S_p=S+\dfrac{1}{p}I_n$, qui converge vers $S$ et qui est à valeurs dans $S_n^{++}(\R)$, on obtient le résultat pour $S$ non inversible aussi.
+	\end{enumerate}
 	
 	\subsection{Matrices orthogonales qui respectent $(\R_+)^n$ \xens{4}}
 	\label{Matrices orthogonales qui respectent (R_+)^n corrigé}
@@ -10538,9 +10557,43 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{enumerate}
 	\textit{Remarque : C'est une généralisation dans $\M_n(\R)$ du contre-exemple $((-1)^p)_{p\in \N}$ dans $\R$ à la réciproque du lemme de Cesàro.}
 	
-	\subsection{Transformation de Cayley}
+	\subsection{\underline{Transformation de Cayley} \centraleponts{3}}
 	\label{Transformation de Cayley corrigé}
 	\textcolor{blue}{\hyperref[Transformation de Cayley]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On montre que $\T{Sp}(A)\subset i\R$ (cf.\ref{Spectre}).
+		\item $1$ et $-1$ ne sont pas valeurs propres de $A$ donc $A+I_n$ et $A-I_n$ sont inversibles.
+		\item \begin{align*}
+			\Omega^\top\Omega&=(I_n-A^\top)^{-1}(I_n+A^\top)(I_n+A)(I_n-A)^{-1}\\
+			&=(I_n+A)^{-1}(I_n-A)(I_n+A)(I_n-A)^{-1}\\
+			&=(I_n+A)^{-1}(I_n-A^2)(I_n-A)^{-1}\\
+			&=(I_n+A)^{-1}(I_n+A)(I_n-A)(I_n-A)^{-1}\\
+			&=I_n
+		\end{align*}
+		$\det(\Omega)=\dfrac{\det(I_n+A)}{\det(I_n-A)}=\dfrac{\det(I_n+A)}{\det(I_n-A^\top)}=\dfrac{\det(I_n+A)}{\det(I_n+A)}=1$.\\
+		Puis $\det(I_n+\Omega)=\dfrac{\det(I_n-A+I_n+A)}{\det(I_n-A)}=\dfrac{2^n}{\det(I_n-A)}\ne 0$. Donc $-1\notin \T{Sp}(\Omega)$.
+		\item D'après les questions précédentes $\varphi$ est bien une application.\\
+		Attention ! ce n'est pas un morphisme, il serait très mal vu de déterminer son "noyau".\\
+		Exhibons plutôt la bijection réciproque.\\
+		Soit $\Omega\in \O_n(\R)$ telle que $-1\notin \T{Sp}(\Omega)$. $\forall A\in \A_n(\R)$,
+		\begin{align*}
+			\varphi(A)=\Omega&\iff I_n+A=\Omega(I_n-A)\\
+			&\iff 2I_n=(I_n+\Omega)(I_n-A)\\
+			&\iff A=I_n-2(I_n+\Omega)^{-1}
+		\end{align*}
+		Ainsi $\varphi$ est bijective et $\varphi^{-1}(\Omega)=I_n-2(I_n+\Omega)^{-1}$.
+		\item Soit $\Omega\in \O_n(\R)$ telle que $-1\notin\T{Sp}(A)$. D'après la question 4 il existe $A\in \A_n(\R)$ telle que $\Omega=(I_n+A)(I_n-A)^{-1}$. Alors d'après la question 3 $\det(\Omega)=1$.\\
+		On pouvait constater ce résultat autrement grâce au théorème de réduction des matrices orthogonales.\\
+		On sait que toute matrice orthogonale $\Omega$ est semblable à une matrice diagonale par blocs $\begin{pmatrix}
+			I_p&&&&\\
+			&-I_q&&\\
+			&&R(\theta_1)&\\
+			&&&\ddots&\\
+			&&&&R(\theta_r)
+		\end{pmatrix}$\\
+		où $R(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$.\\
+		Or $\det(R(\theta))=1$ donc si $-1$ n'est pas valeur propre de $\Omega$, alors $q=0$ et par suite $\det(\Omega)=1$.
+	\end{enumerate}
 	
 	\subsection{Optimisation (1)}
 	\label{Optimisation 1 corrigé}
