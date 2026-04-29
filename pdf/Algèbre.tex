@@ -2025,12 +2025,13 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\end{enumerate}
 	\end{enumerate}
 	
-	\section{Idéaux d'un espace de fonction}
+	\section{Idéaux d'un espace de fonction \xens{4} (HP)}
 	\label{Idéaux d'un espace de fonction}
 	\textcolor{blue}{\hyperref[Idéaux d'un espace de fonction corrigé]{[Corrigé]}}\\
 	Soit $K$ une partie compacte d'un espace vectoriel normé. On note $A=(\mathcal C^0(K,\R),+,\times)$. Pour tout $x\in K$, on note $m_x=\{f\in A,\ f(x)=0\}$.
 	\begin{enumerate}
-		\item Montrer que tout idéal propre de $A$ (i.e différent de $A$) est contenu dans un $m_x$.
+		\item Montrer que tout idéal propre de $A$ (i.e différent de $A$) est contenu dans un $m_x$.\\
+		\textit{Indication : on pourra penser à la définition de compacité de Borel-Lebesgue (cf. VII.17 tome Analyse).}
 		\item Donner un contre exemple quand $K$ n'est pas compact.
 	\end{enumerate}
 	
@@ -7965,9 +7966,30 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 			Finalement $J$ n'est pas principal.
 		\end{enumerate}
 	\end{enumerate}
-	\subsection{Idéaux d'un espace de  fonction}
+	
+	\subsection{Idéaux d'un espace de  fonction \xens{4} (HP)}
 	\label{Idéaux d'un espace de fonction corrigé}
-	\textcolor{blue}{\hyperref[Idéaux d'un espace de fonction]{[Enoncé]}}
+	\textcolor{blue}{\hyperref[Idéaux d'un espace de fonction]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $I$ un idéal de $A$. Supposons que $I$ n'est inclus dans aucun des $m_x,\ x\in K$. Alors $\forall x\in K,\ \exists f_x\in I,\ f_x(x)\ne 0$.\\
+		Comme les fonctions de $A$ sont continues sur $K$, il existe des ouverts $\O_x$ de $K$ qui contiennent $x$ tels que $\forall y\in \O_x,\ f_x(y)\ne 0$. Ainsi on a le recouvrement
+		$$K=\bigcup_{x\in K}\{x\}\subset \bigcup_{x\in K}\O_x$$
+		Par compacité de $K$ on dispose de $x_1,\dots,x_n$ tels que $K\subset \displaystyle\bigcup_{i=1}^n\O_{x_i}$.\\
+		Par absorbance les fonctions $f_{x_i}^2$ sont dans $I$. Puis $F=\displaystyle\sum_{i=1}^nf_{x_i}^2\in I$.\\
+		Par construction $\forall x\in K,\ \exists i\in \crblanc{1}{n},\ f_{x_i}(x)\ne 0$. Donc $F$ ne s'annule par sur $K$ : elle est inversible dans $A$.\\
+		$I$ est un idéal de $A$ qui contient un inversible donc $I=A$.\\
+		\textit{Remarque : on peut alors montrer que les $m_x$ sont exactement les idéaux maximaux de $A$.}
+		\item Prenons $K=\R$. On considère l'ensemble $I:=\mathcal C_c(\R,\R)$ des fonctions continues sur $\R$ à support compact, i.e qui s'annulent en dehors d'un segment (qui dépend de la fonction).\\
+		Vérifions que $I$ est un idéal de $A$ :
+		\begin{itemize}
+			\item La fonction nulle est à support compact (vide);
+			\item Si $f,g\in I$ s'annulent en dehors de segment $[a,b]$ et $[c,d]$ respectivement alors $f+g$ s'annule en dehors de $[\min(a,c),\ \max(b,d)]$ donc $f+g\in I$;
+			\item Si $f\in A$ et $g\in I$ alors il existe $\alpha<\beta$ tels que $\forall x\in \R\backslash[\alpha,\beta],\ g(x)=0$.\\
+			Et a fortiori $\forall x\in \R,\ f(x)g(x)=0$. Donc $fg\in I$.
+		\end{itemize}
+		Il est évident que l'on peut trouver en tout point une fonction continue à support compact qui ne s'annule pas.
+	\end{enumerate}
+	
 	\subsection{Radical d'un idéal \etoile{1}}
 	\label{Radical d'un idéal corrigé}
 	\textcolor{blue}{\hyperref[Radical d'un idéal]{[Enoncé]}}\\
