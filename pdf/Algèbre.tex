@@ -1956,19 +1956,9 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item En déduire tous les irréductibles de $\Z[i]$.
 	\end{enumerate}
 	
-	\section{Anneau Noethérien \etoile{4} (HP)}
-	\label{Anneau Noethérien}
-	\textcolor{blue}{\hyperref[Anneau Noethérien corrigé]{[Corrigé]}}\\
-	Un anneau commutatif $(A,+,\times)$ est dit \textit{noethérien} lorsque tous ses idéaux sont engendrés par un nombre fini d'élément (on dit que ses idéaux sont de types finis).\\
-	Soit $A$ un anneau commutatif. Montrer que les trois propositions suivantes sont équivalentes :
-	\begin{enumerate}[label=(\roman*)]
-		\item $A$ est noethérien;
-		\item toute suite croissante (pour l'inclusion) d'idéaux de $A$ stationne;
-		\item Tout ensemble non vide d'idéaux de $A$ admet un élément maximal pour l'inclusion.
-	\end{enumerate}
-	\textit{\underline{Remarque} : l'appellation d'anneau noethérien provient de la mathématicienne Emmy Noether qui s'est intéressée aux propriétés de tels anneaux. Son influence sur les sciences s'étend aussi à la physique notamment par le théorème de Noether qui explique le lien fondamental entre la symétrie et les lois de conservation.}
-	
-	\subsection{$\Z$ et $\K[X]$ sont noethériens \telecom{2}}
+	\section{$\Z$ et $\K[X]$ sont noethériens \telecom{2}}
+	\label{Z et K{X} sont noethériens}
+	\textcolor{blue}{\hyperref[Z et K{X} sont noethériens corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Montrer que toute suite croissante d'idéaux de $\Z$ stationne.
 		\item Montrer que toute suite croissante d'idéaux de $\K[X]$ stationne.
@@ -1978,7 +1968,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\label{Morphismes d'anneaux de fonctions réelles}
 	\textcolor{blue}{\hyperref[Morphismes d'anneaux de fonctions réelles corrigé]{[Corrigé]}}\\
 	On note $\mathcal C(\R,\R)$ l'ensemble des fonctions continues de $\R$ dans $\R$ et $\mathcal D(\R,\R)$ celui des fonctions dérivables de $\R$ dans $\R$.\\
-	Déterminer les morphismes d'anneaux de $\mathcal C(\R,\R)$ dans $\mathcal D(\R,\R)$.\\
+	Déterminer les morphismes d'anneaux de $(\mathcal C(\R,\R),+,\times)$ dans $(\mathcal D(\R,\R),+,\times)$.\\
 	\textit{\underline{Indication :} on pourra montrer qu'un tel morphisme est nécessairement à valeurs dans l'ensemble des fonctions constantes}
 	
 	\section{Caractérisation d'un corps par ses idéaux \telecom{2}}
@@ -2019,9 +2009,9 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item On note $A=(\mathcal C^{\infty}(\R,\R),+,\times)$. Pour chacun des cas présentés, Vérifier que l'ensemble est un idéal de $A$ et préciser s'il est principal, premier, maximal.
 		\begin{enumerate}[label=\alph*.]
 			\item l'ensemble $I$ des fonctions de $A$ qui s'annule en $0$.\\
-			\textit{On pourra considérer la fonction $g$ définie par $g(x)=\displaystyle\frac{f(x)}{x}$ si $x\ne 0$ et $g(0)=f'(0)$.}
+			\textit{On pourra considérer pour $f\in I$ la fonction $g$ définie par $g(x)=\displaystyle\frac{f(x)}{x}$ si $x\ne 0$ et $g(0)=f'(0)$.}
 			\item l'ensemble $J$ des fonctions $f$ de $A$ telle que $\forall k\in \N,\ f^{(k)}(0)=0$.\\
-			\textit{On pourra déterminer une fonction de $J$ et montrer qu'elle ne s'annule qu'en $0$.}
+			\textit{On pourra commencer par donner une fonction de $J$ et montrer qu'elle ne s'annule qu'en $0$.}
 		\end{enumerate}
 	\end{enumerate}
 	
@@ -2031,7 +2021,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	Soit $K$ une partie compacte d'un espace vectoriel normé. On note $A=(\mathcal C^0(K,\R),+,\times)$. Pour tout $x\in K$, on note $m_x=\{f\in A,\ f(x)=0\}$.
 	\begin{enumerate}
 		\item Montrer que tout idéal propre de $A$ (i.e différent de $A$) est contenu dans un $m_x$.\\
-		\textit{Indication : on pourra penser à la définition de compacité de Borel-Lebesgue (cf. VII.17 tome Analyse).}
+		\textit{\underline{Indication :} on pourra penser à la définition de compacité de Borel-Lebesgue (cf. VII.17 tome Analyse).}
 		\item Donner un contre exemple quand $K$ n'est pas compact.
 	\end{enumerate}
 	
@@ -7846,39 +7836,21 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On en déduit que la partie imaginaire de $S_{n,k}$ est nulle et donc que $S_{n,k}\in \Z$.
 	\end{enumerate}
 	
-	\subsection{Anneau Noethérien \etoile{4}}
-	\label{Anneau Noethérien corrigé}
-	\textcolor{blue}{\hyperref[Anneau Noethérien]{[Enoncé]}}\\
+	\subsection{$\Z$ et $\K[X]$ sont noethérien}
+	\label{Z et K{X} sont noethériens corrigé}
+	\textcolor{blue}{\hyperref[Z et K{X} sont noethériens]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Soit $(A,+,\times)$ un anneau commutatif.\\
-		(i)$\implies$(ii) :\\
-		On suppose $A$ noethérien et on se donne $(I_n)_{n\in \N}$ une suite d'idéaux de $A$ croissante pour l'inclusion, c'est à dire que $\forall n\in \N,\ I_n\subset I_{n+1}$.\\
-		Notons $N=\displaystyle\bigcup_{n\in \N}I_n$. Montrons que $N$ est un idéal de $A$ :
-		\begin{itemize}
-			\item $0_A\in I_0\implies 0_A\in N$;
-			\item Si $(x,y)\in N^2$ alors il existe $n,m\in \N$ tels que $x\in I_n$ et $y\in I_m$. Alors $(x,y)\in I_{\max(m,n)}^2$ d'où $x+y\in I_{\max(m,n)}$ puis $x+y\in N$;
-			\item Si $a\in A$ et $x\in N$ alors il existe $n\in \N$ tel que $x\in I_n$. Alors $ax\in I_n$ par absorbance puis $ax\in N$.
-		\end{itemize}
-		On en déduit, comme $A$ est noethérien, que $N$ est engendré par une famille $(a_i)_{i\in \crblanc{1}{p}}$ de $A$ finie.\\
-		Chacun des éléments de la famille appartient à $N$, il existe donc pour tout $i\in \crblanc{1}{p}$ un entier naturel $n_i$ pour lequel $a_i\in I_{n_i}$. Ainsi $(a_i)_{i\in \crblanc{1}{p}}$ est une famille de $I_m$ pour $m=\max(n_1,\dots,n_p)$. On en déduit que la partie engendré par cette famille, qui est $N$, est contenue dans $I_m$. Ainsi $N=I_m$ et donc $(I_n)_{n\in \N}$ stationne à $I_m$.\\\\
-		(ii)$\implies$(iii) :\\
-		On raisonne par contraposé. Supposons qu'il existe un ensemble non vide $E$ d'idéaux de $A$ qui n'admet pas d'élément maximal. Soit $I_0\in E$. On suppose qu'il existe pour un certain $p\in \N$ une famille $(I_n)_{n\in \crblanc{1}{p}}$ de $E$ vérifiant $\forall n\in \crblanc{0}{p-1},\ I_n\subsetneq I_{n+1}$. Alors comme $I_p$ n'est pas un élément maximal de $N$, il existe $I_{p+1}\in E$ tel que $I_p\subsetneq I_{p+1}$. Par récurrence on a construit une suite d'idéaux de $A$ strictement croissante, elle ne peut donc pas stationner. On en déduit que $E$ admet un élément maximal pour l'inclusion.\\\\
-		(iii)$\implies$(i) :\\
-		Considérons $E$ l'ensemble des idéaux de $A$ qui sont de type fini.\\
-		$E$ n'est pas vide car l'idéal nul appartient à $E$ par exemple. On sait donc que $E$ possède un élément $I$ maximal pour l'inclusion. Montrons que $A=I$.\\
-		On sait que $I$ est de type fini donc il existe une famille fini $(a_i)_{i\in \crblanc{1}{q}}$ qui engendre $I$. Supposons qu'il existe un élément $a\in A\backslash I$. Alors en posant $b_{q+1}=a$ et $\forall i\in \crblanc{1}{q},\ b_i=a_i$, l'idéal $J$ engendré par $(b_i)_{i\in \crblanc{1}{q+1}}$ est un idéal de $A$ de type fini. C'est donc un élément de $E$. Cependant $I$ ne peut contenir $J$ puisque $a\in J\backslash I$. Ceci contredit la maximalité de $I$ dans $E$ et on en déduit que $A=I$. Par conséquent que $A$ est de type fini (en tant qu'idéal de lui-même).\\
-		Ainsi un idéal quelconque de $A$ se doit d'être de type fini puisqu'il est contenu dans $A$.
-		\item La question précédente justifie immédiatement que tout anneau principal, où les idéaux sont engendrés par un seul élément, est noethérien et vérifie donc (ii). On sait ou on redémontre (cf. \ref{Sous-groupes de (Z,+)}) que $\Z$ est principal ce qui termine la question.\\
-		Toutefois on peut aussi le faire de manière directe : On se donne une suite croissante $(I_n)_{n\in \N}$ d'idéaux de $\Z$. On sait qu'il existe une suite $(N_n)_{n\in \N}$ d'entiers positifs tels que $\forall n\in \N,\ I_n=N_n\Z$. Si la suite $(I_n)_{n\in \N}$ ne stationne pas à $\{0\}$ alors APCR $N_n>0$.\\
+		\item On se donne une suite croissante $(I_n)_{n\in \N}$ d'idéaux de $\Z$. On sait qu'il existe une suite $(N_n)_{n\in \N}$ d'entiers positifs tels que $\forall n\in \N,\ I_n=N_n\Z$. Si la suite $(I_n)_{n\in \N}$ ne stationne pas à $\{0\}$ alors APCR $N_n>0$.\\
 		Or $\forall n\in \N,\ N_n\Z\subset N_{n+1}\Z\implies N_{n+1}|N_n$. Or comme APCR $N_n>0$, la suite $(N_n)_{n\in \N}$ est une suite d'entiers positifs décroissante APCR. On montre alors classiquement qu'elle stationne et donc que $(I_n)_{n\in \N}$ stationne.
-		\item De même, le cours fournit que $\K[X]$ est principal ce qui, associé à la question $1$, termine la question. Si l'on veut faire sans :\\
-		On se donne une suite croissante $(I_n)_{n\in \N}$ d'idéaux de $\K[X]$.\\
+		\item On se donne une suite croissante $(I_n)_{n\in \N}$ d'idéaux de $\K[X]$.\\
 		On sait qu'il existe une suite $(P_n)_{n\in \N}$ de $\K[X]$ telle que $\forall n\in \N,\ I_n=P_n\Z$. Si la suite $(I_n)_{n\in \N}$ ne stationne pas à $\{0_{\K[X]}\}$ alors APCR $\deg(P_n)\geq 0$.\\
 		Or $\forall n\in \N,\ (P_n\K[X]\subset P_{n+1}\K[X]\land P_n\ne 0_{\K[X]})\implies P_{n+1}|P_n\implies \deg(P_{n+1})\leq \deg(P_n)$. Or comme $\forall n\in \N,\ \deg(P_n)\geq 0$, la suite $(\deg(P_n))_{n\in \N}$ est une suite d'entiers positifs décroissante. On montre alors classiquement qu'elle stationne. On sait alors que APCR $P_n$ et $P_{n+1}$ sont associés. Deux polynômes associés engendrant le même idéal, on en déduit que $(I_n)_{n\in \N}$ stationne.
 	\end{enumerate}
+	
 	\subsection{Morphismes d'anneaux de fonctions réelles}
 	\label{Morphismes d'anneaux de fonctions réelles corrigé}
 	\textcolor{blue}{\hyperref[Morphismes d'anneaux de fonctions réelles]{[Enoncé]}}\\
+	
 	\subsection{Caractérisation d'un corps par ses idéaux \etoile{2}}
 	\label{Caractérisation d'un corps par ses idéaux corrigé}
 	\label{Idéaux d'un corps}

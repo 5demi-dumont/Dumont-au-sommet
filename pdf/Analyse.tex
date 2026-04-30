@@ -3158,91 +3158,10 @@ Montrer que $K=\displaystyle\bigcap\limits_{n\in \N} K_n$ est non vide.
 \section{Théorème de Baire \xens{5} (HP)}
 \label{Théorème de Baire}
 \textcolor{blue}{\hyperref[sec:theoreme-de-baire-etoile5]{[Corrigé]}}\\
-Soit $(E,||.||)$ un espace de Banach, c'est à dire un espace vectoriel normée complet, ou encore dans lequel toute suite de Cauchy \ref{Suite de Cauchy} converge.
+Soit $(E,\norme{\cdot})$ un espace de Banach, c'est à dire un espace vectoriel normée complet, ou encore dans lequel toute suite de Cauchy \ref{Suite de Cauchy} converge.
 \begin{enumerate}
 	\item Démontrer qu'une intersection dénombrable d'ouverts denses dans $E$ est dense dans $E$.
 	\item Montrer que cette propriété est équivalente à ce qu'une réunion dénombrable de fermés d'intérieurs vide soit d'intérieur vide.
-\end{enumerate}
-
-\subsection{$\R$ n'est pas dénombrable \etoile{2} (HP)}
-Démontrer, à l'aide du théorème de Baire, que $\R$ n'est pas dénombrable.
-
-\subsection{Base d'un espace de Banach \etoile{3} (HP)}
-Montrer qu'un espace de Banach ne peut pas admettre de base dénombrable.
-
-\subsection{Densité des fonctions nulle part dérivables (2) \etoile{4} (HP)}
-On souhaite montrer que l'ensemble $A$ des fonctions continues mais nulle part dérivables sur $[0,1]$ est dense dans l'ensemble $E$ des fonctions continues sur $[0,1]$ pour la norme uniforme.\\
-Pour cela on pose, pour tout $n\in \N$, $F_n=\{f\in E,\ \exists x\in I,\ \forall y\in I,\ |f(x)-f(y)|\leq n|x-y|\}$.
-\begin{enumerate}
-	\item Montrer que $A^c\subset \displaystyle\bigcup\limits_{n\in \N}F_n$.
-	\item Montrer que les $F_n$ sont fermés.
-	\item Soient $f\in F_n$ et $\varepsilon>0$.\\
-	Pour $N\in \N^*$ et on pose $g_N$ la fonction périodique, de période $\displaystyle\frac{1}{N}$ défini par :
-	$$g_N(x)=\begin{cases}
-		\displaystyle\frac{\varepsilon N}{2}x&\mbox{ si }x\in [0,\frac{1}{2N}]\\
-		\displaystyle\frac{\varepsilon}{2}-\frac{\varepsilon N}{2}x&\mbox{ si }x\in ]\frac{1}{2N},\frac{1}{N}]
-	\end{cases}$$
-	Montrer que pour une fonction $P$ et un certain $N$ bien choisis la fonction $g=P+g_N$ appartient à $F_n^c\cap B(f,\varepsilon)$.
-	\item Conclure.
-\end{enumerate}
-
-\subsection{Caractérisation des endomorphismes nilpotents d'un espace de Banach \etoile{2} (HP)}
-\begin{enumerate}[leftmargin=*]
-	\item Soit $E$ un espace de Banach. Soit $f\in \mathcal L_c(E)$ tel que,
-	$$\forall x\in E,\ \exists n_x\in \N^*,\ f^{n_x}(x)=0$$
-	Montrer que $f$ est nilpotent.
-	\item Donner un contre exemple dans $\R[X]$.
-\end{enumerate}
-
-\subsection{Lemme de Croft (2) \etoile{4} (HP)}
-Soit $f:\R^*_+\to\R$ une application telle que
-$$\forall x>0,\ \unfty\lim f(nx)=0$$
-\begin{enumerate}
-	\item On suppose $f$ uniformément continue. Montrer que $\uxfty\lim f(x)=0$.
-	\item On suppose seulement $f$ continue. Montrer à l'aide du théorème de Baire qu'on a toujours $\uxfty\lim f(x)=0$.
-	\item Le résultat est-t-il vrai sans hypothèse supplémentaire sur $f$ ?
-\end{enumerate}
-
-\subsection{Caractérisation des polynômes réels \etoile{5} (HP)}
-Soit $f\in \mathcal C^\infty(\R,\R)$ telle que $\forall x\in \R,\ \exists n\in \N,\ f^{(n)}(x)=0$. Le but de cet exercice est de montrer que $f$ est polynomiale. On note pour $n\in \N,\ F_n=\{x\in \R,\ f^{(n)}(x)=0\}$. On note aussi $\Omega=\displaystyle\bigcup_{n\in \N} \ring F_n$ et $\Phi=\R\setminus\Omega$. Enfin, on suppose que $\Phi$ n'est pas vide. On admettra que $\R$ est complet (cf. \ref{Suite de Cauchy}).
-\begin{enumerate}
-	\item Montrer qu'il existe $N\in \N$ tel que $\ring F_N\ne \emptyset$.
-	\item Soit $I$ un intervalle ouvert non vide de $F_N$.
-	\begin{enumerate}[label=\alph*.]
-		\item Soit $x\in I$. Montrer que $\forall k\geq N,\ x\in F_k$.
-		\item En déduire que $f$ est polynomiale sur $I$.
-	\end{enumerate}
-	\item Soit $J$ une composante connexe par arcs de $\Omega$ et $x_0\in J$.
-	\begin{enumerate}[label=\alph*.]
-		\item Montrer l'existence d'un intervalle ouvert et non vide $I$ et d'un polynôme $P$ tels que : $$\exists n\in \N,\ I\subset F_n\ \land\ \forall y\in I,\ f(y)=P(y)$$
-		On pose dans la suite $A=\{x\geq x_0\ |\ \forall y\in [x_0,x],\ f(y)=P(y)\}$.
-		\item Justifier que $A$ est un sous-ensemble non vide de $\ring J$. On note $s$ sa borne supérieure.
-		\item Montrer par l'absurde que $s\notin \Omega$ et en déduire que $s=\sup J$.
-		\item En déduire que $f$ est polynomiale sur $\ring J$.
-	\end{enumerate}
-	\item 
-	\begin{enumerate}[label=\alph*.]
-		\item On dit qu'un point de $x\in \Phi$ est \textit{isolé} lorsque, $\exists \varepsilon>0,\ ]x-\varepsilon,x+\varepsilon[\ \cap\ \Phi=\{x\}$.\\
-		Montrer que $\Phi$ n'a pas de point isolé.
-		\item Montrer que $\Phi$ est complet.
-		\item En déduire que l'on peut trouver un intervalle $I$ ouvert qui vérifie :
-		$$(\exists n_0\in \N,\ I\cap \Phi\subset F_{n_0})\ \land\ I\cap \Phi\ne \emptyset$$
-		On pourra commencer par écrire $\Phi=\displaystyle\bigcup_{n\in \N}(\Phi\cap F_n)$.
-		\item On se donne $x\in I\cap \Phi$. Montrer qu'il existe une suite de $I\cap \Phi$ qui converge, puis justifier que cette suite peut être prise croissante.
-		\item Montrer que $\forall n\geq n_0,\ x\in F_n$.
-		\item Soit $J=[u,v]$ une composante connexe par arcs de $I\cap \Omega$. Montrer que $u\in I\cap \Phi$ ou $v\in I\cap \Phi$ et en déduire que $J\subset F_{n_0}$.
-		\item En déduire que $I\subset \Omega$.
-	\end{enumerate}
-	\item Conclure.
-\end{enumerate}
-
-\subsection{Un raffinement \etoile{1} (HP)}
-\begin{enumerate}[leftmargin=*]
-	\item Expliquer comment adapter la démonstration précédente pour montrer le résultat suivant :\\
-	Si $f\in \mathcal C^\infty(\R,\R)$ et si $D$ est une partie au plus dénombrable qui vérifie
-	$$\forall x\in \R,\ \exists n\in \N,\ f^{(n)}(x)\in D$$
-	alors $f$ est polynomiale.
-	\item En déduire que si $f\in \mathcal C^\infty(\R,\R)$ n'est pas polynomiale alors il existe un réel en lequel toutes les dérivées successives de $f$ sont irrationnelles.
 \end{enumerate}
 
 \section{Volume d'une (hyper)boule \xens{4} (HP)}
@@ -4161,7 +4080,7 @@ Soit $f:\R^2\mapsto\R$ définie par $f(x,y)=\begin{cases}(x^2+y^2)\displaystyle\
 	\item \begin{enumerate}
 		\item Prouver l'existence de dérivées partielles premières de $f$ sur $\R^2$.
 		\item Etudier la continuité des dérivées partielles premières de $f$.
-		\item La fonction $f$ est-elle de classe $\mathcal{C}^1$ sur $\R^2$? 
+		\item La fonction $f$ est-elle de classe $\mathcal C^1$ sur $\R^2$? 
 	\end{enumerate}
 \end{enumerate}
 
@@ -4173,8 +4092,8 @@ $$I_n(a,b)=\int_0^{\pi/2}\frac{dx}{(a\cos^2x+b\sin^2x)^n}$$
 \begin{enumerate}
 	\item Calculer $I_1$.
 	\item Justifier que $I_n$ est de classe $\mathcal C^\infty$ sur $\R^2$.
-	\item Montrer que $\dpartial{I_n}{}{a}+\dpartial{I_n}{}{b}=-nI_{n+1}$
-	\item En déduire l'expression $I_{n+1}=\displaystyle\frac{(-1)^n\pi}{2}\sum_{k=0}^n\binom{-1/2}{k}\binom{-1/2}{n-k}a^{-1/2-k}b^{-1/2+n-k}$.
+	\item Montrer que $\dpartial{I_n}{}{a}(a,b)+\dpartial{I_n}{}{b}(a,b)=-nI_{n+1}(a,b)$
+	\item En déduire l'expression $I_{n+1}(a,b)=\displaystyle\frac{(-1)^n\pi}{2}\sum_{k=0}^n\binom{-1/2}{k}\binom{-1/2}{n-k}a^{-1/2-k}b^{-1/2+n-k}$.
 \end{enumerate}
 
 \section{Une équation fonctionnelle \etoile{2}}
@@ -4430,35 +4349,37 @@ Etant donné un nuage de points $(x_i,y_i)_{0\leq i\leq n}$ la droite des moindr
 	\end{enumerate}
 \end{enumerate}
 
-\section{Equation de la chaleur}
-\label{Equation de la chaleur}
-\textcolor{blue}{\hyperref[sec:equation-de-la-chaleur]{[Corrigé]}}\\
-On se place dans le plan $\R^2$ dont les éléments sont notés $(x,t)$. Pour tout $T>0$, on note:
-\begin{itemize}
-	\item $R_T=]0,\pi[\times]0,T[$
-	\item $C_T=(\{0\}\times[0,T])\cap([0,\pi]\times\{0\})\cap(\{\pi\}\times[0,T])$
-	\item $\Lambda_T=]0,\pi[\times\{T\}$.
-\end{itemize}
-de sorte que $R_T,C_T$ et $\Lambda_T$ soient disjoints et que leur réunion soit le rectangle fermé $\overline{R_T}$.
-\begin{enumerate}
-	\item Soit $\varphi:[0,\pi]\to\R$ une fonction de classe $\mathcal C^1$, telle que $\varphi(0)=\varphi(\pi)=0$.
-	\begin{enumerate}[label=\alph*.]
-		\item Montrer l'existence d'une suite réelle $(b_n)_{n\in \N}$ telle que $\displaystyle\sum_{n\in \N}|b_n|$ converge et telle que $$\forall x\in[0,\pi], \varphi(x)=\displaystyle\sum\limits_{n=0}^{+\infty}b_n\sin(nx).$$
-		\item Soit $T_0>0$. Construire une fonction $\Phi$ continue sur $\overline{R_{T_0}}$ telle que:
-		\begin{enumerate}[label=(\roman*)]
-			\item $\varphi$ est de classe $\mathcal C^2$ sur $R_{T_0}$ et $\displaystyle\frac{\partial^2\Phi}{\partial x^2}-\frac{\partial \Phi}{\partial t}=0$ sur $R_{T_0}$;
-			\item pour tout $t\in[0,T_0]$, $\Phi(0,t)=\Phi(\pi,t)=0$
-			\item pour tout $x\in [0,\pi]$, $\Phi(x,0)=\varphi(x)$.
-		\end{enumerate}
-		\item On veut montrer qu'il existe qu'une seule fonction $\Phi$ vérifiant (i),(ii) et (iii). Soit $f$ une fonction à valeurs réelles, continue sur $\overline{R_{T_0}}$ et de classe $\mathcal C^2$ sur $R_{T_0}$.
-		\begin{enumerate}
-			\item On suppose $\displaystyle\frac{\partial^2f}{\partial x^2}-\frac{\partial f}{\partial t}>0$ sur $R_{T_0}$, montrer que $f$ atteint son maximum sur $C_{T_0}$ (on pourra commencer par prouver le résultat sur $R_T$ et $C_T$ pour tout $T\in]0,T_0[$).
-			\item On suppose $\displaystyle\frac{\partial^2f}{\partial x^2}-\frac{\partial f}{\partial t}\geq0$ sur $R_{T_0}$, montrer que $f$ atteint son maximum sur $C_{T_0}$.
-			\item On suppose $f$ nulle sur $C_{T_0}$ et $\displaystyle\frac{\partial^2f}{\partial x^2}-\frac{\partial f}{\partial t}=0$ sur $R_{T_0}$, montrer que $f$ est nulle.
-			\item En déduire que la fonction $\Phi$ construite à la question (1b) est la seule fonction vérifiant (i),(ii) et (iii).
-		\end{enumerate}
-	\end{enumerate}
-\end{enumerate}
+% La première question au moins demande du cours sur les séries de Fourier. Si le reste est full prépa on peut peut-être juste l'admettre.
+
+%\section{Equation de la chaleur}
+%\label{Equation de la chaleur}
+%\textcolor{blue}{\hyperref[sec:equation-de-la-chaleur]{[Corrigé]}}\\
+%On se place dans le plan $\R^2$ dont les éléments sont notés $(x,t)$. Pour tout $T>0$, on note:
+%\begin{itemize}
+%	\item $R_T=]0,\pi[\times]0,T[$
+%	\item $C_T=(\{0\}\times[0,T])\cap([0,\pi]\times\{0\})\cap(\{\pi\}\times[0,T])$
+%	\item $\Lambda_T=]0,\pi[\times\{T\}$.
+%\end{itemize}
+%de sorte que $R_T,C_T$ et $\Lambda_T$ soient disjoints et que leur réunion soit le rectangle fermé $\overline{R_T}$.
+%\begin{enumerate}
+%	\item Soit $\varphi:[0,\pi]\to\R$ une fonction de classe $\mathcal C^1$, telle que $\varphi(0)=\varphi(\pi)=0$.
+%	\begin{enumerate}[label=\alph*.]
+%		\item Montrer l'existence d'une suite réelle $(b_n)_{n\in \N}$ telle que $\displaystyle\sum_{n\in \N}|b_n|$ converge et telle que $$\forall x\in[0,\pi], \varphi(x)=\displaystyle\sum\limits_{n=0}^{+\infty}b_n\sin(nx).$$
+%		\item Soit $T_0>0$. Construire une fonction $\Phi$ continue sur $\overline{R_{T_0}}$ telle que:
+%		\begin{enumerate}[label=(\roman*)]
+%			\item $\Phi$ est de classe $\mathcal C^2$ sur $R_{T_0}$ et $\displaystyle\frac{\partial^2\Phi}{\partial x^2}-\frac{\partial \Phi}{\partial t}=0$ sur $R_{T_0}$;
+%			\item pour tout $t\in[0,T_0]$, $\Phi(0,t)=\Phi(\pi,t)=0$
+%			\item pour tout $x\in [0,\pi]$, $\Phi(x,0)=\varphi(x)$.
+%		\end{enumerate}
+%		\item On veut montrer qu'il existe qu'une seule fonction $\Phi$ vérifiant (i),(ii) et (iii). Soit $f$ une fonction à valeurs réelles, continue sur $\overline{R_{T_0}}$ et de classe $\mathcal C^2$ sur $R_{T_0}$.
+%		\begin{enumerate}
+%			\item On suppose $\displaystyle\frac{\partial^2f}{\partial x^2}-\frac{\partial f}{\partial t}>0$ sur $R_{T_0}$, montrer que $f$ atteint son maximum sur $C_{T_0}$ (on pourra commencer par prouver le résultat sur $R_T$ et $C_T$ pour tout $T\in]0,T_0[$).
+%			\item On suppose $\displaystyle\frac{\partial^2f}{\partial x^2}-\frac{\partial f}{\partial t}\geq0$ sur $R_{T_0}$, montrer que $f$ atteint son maximum sur $C_{T_0}$.
+%			\item On suppose $f$ nulle sur $C_{T_0}$ et $\displaystyle\frac{\partial^2f}{\partial x^2}-\frac{\partial f}{\partial t}=0$ sur $R_{T_0}$, montrer que $f$ est nulle.
+%			\item En déduire que la fonction $\Phi$ construite à la question (1b) est la seule fonction vérifiant (i),(ii) et (iii).
+%		\end{enumerate}
+%	\end{enumerate}
+%\end{enumerate}
 
 
 \chapter{Divers}
@@ -9031,132 +8952,6 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\item Soit $(\Omega_n)\in E^\N$ une suite d'ouverts denses dans $E$.\\
 		Alors pour tout $n\in \N$, $\Omega_n^c$ le complémentaire dans $E$ de $\Omega_n$ est fermé et $\overline{\Omega_n}=E$ d'où $\ring{(\Omega_n^c)}=(\overline{\Omega_n})^c=\emptyset$. Ainsi par passage au complémentaire,
 		$$\displaystyle\overline{\bigcap\limits_{n\in \N}\Omega_n}=E\iff \widering{\bigcup\limits_{n\in \N}\Omega_n^c}=\emptyset$$
-	\end{enumerate}
-	\subsubsection{$\R$ n'est pas dénombrable \etoile{1} (HP)}
-	On montre que $\R$ est complet (cf. \ref{R est complet}).\\
-	Supposons que $\R$ est dénombrable. Pour tout $x\in\R$, $\{x\}$ est un fermé de $\R$ d'intérieur vide. Donc d'après le théorème de Baire $\R=\displaystyle\bigcup_{x\in \R}\{x\}$ est d'intérieur vide. Ceci est absurde donc $\R$ n'est pas dénombrable.
-	
-	\subsubsection{Base d'un espace de Banach \etoile{3} (HP)}
-	Soit $E$ un espace de Banach. Supposons par l'absurde que $E$ admette une base dénombrable $\B=(e_n)_{n\in \N}$.\\
-	On pose pour $n\in \N,\ F_n=\Vect(e_0,\dots,e_n)$. Fixons $n\in \N$.\\
-	$F_n$ est un sous-espace vectoriel de $E$. Il est d'intérieur vide car c'est un sous-espace strict de $E$ (cf. \ref{Intérieur d'un sev}) et il est fermé dans $E$ car il est de dimension finie (cf. \ref{Adhérence d'un sev}).\\
-	On peut écrire $E=\displaystyle\bigcup_{n\in \N} F_n$ donc d'après le théorème de Baire on en déduit que $E$ est d'intérieur vide ce qui est absurde.
-	
-	\subsubsection{Densité des fonctions nulle part dérivables (2) \etoile{4} (HP)}
-	Notons $I=[0,1]$ et $E=\mathcal C^0(I,\K)$.\\
-	\begin{enumerate}
-		\item Soit $f\in A^c$. Il existe alors un point $x\in I$ en lequel $f$ est dérivable.\\
-		C'est à dire que la quantité $\displaystyle\frac{f(x)-f(y)}{x-y}$ admet une limite finie quand $y\to x$.\\
-		$f$ étant continue sur $I$, la fonction $\fonction{Y}{I\setminus\{x\}}{\K}{y}{\displaystyle\frac{f(x)-f(y)}{x-y}}$ est continue sur $I\setminus\{x\}$ et prolongeable par continuité en $x$.\\
-		$I$ étant un segment on en déduit que $Y$ est bornée sur $I$. Ainsi $\exists N\in \N,\ N\geq {||f||}_\infty$ et donc $f\in F_N$.
-		\item Soit $n\in \N$.\\
-		Soit $(f_k)\in F_n^\N$ qui converge (uniformément) vers $f\in E$.\\
-		$(*) : \forall k\in \N,\ \exists x_k\in I,\ \forall y\in I,\ |f_k(x_k)-f_k(y)|\leq n|x_k-y|$\\
-		$(x_k)_{k\in \N}$ est une suite à valeur dans $I$ qui est compact donc il existe une suite extraite $(x_{\varphi(k)})_{k\in \N}$ qui converge. Notons $x$ sa limite.\\
-		Soit $k\in \N$.\\
-		$|f_{\varphi(k)}(x_{\varphi(x_k)})-f(x)|\leq |f_{\varphi(k)}(x_{\varphi(x_k)})-f(x_{\varphi(k)})|+|f(x_{\varphi(k)})-f(x)|\leq {||f_{\varphi(k)}-f||}_\infty+|f(x_{\varphi(k)})-f(x)|$.\\\\
-		Or, $|f(x_{\varphi(k)})-f(x)|\ukfty{\longrightarrow}0$ par continuité de $f$ et ${||f_{\varphi(k)}-f||}_\infty\ukfty{\longrightarrow}0$ par convergence uniforme.\\
-		Donc $f_{\varphi(k)}(x_{\varphi(x_k)})\ukfty{\longrightarrow}f(x)$.\\
-		Par passage à la limite dans $(*)$ on obtient directement $f\in F_n$.
-		\item Soit $n\in \N$.\\
-		D'après le théorème de Weierstrass, il existe une fonction polynomiale $P$ telle que ${||f-P||}_\infty\leq\displaystyle\frac{\varepsilon}{2}$.\\
-		$g_0$ est continue et ${||g_N||}_\infty=\displaystyle\frac{\varepsilon}{4}$
-		On a ${||f-g||}_\infty\leq {||f-P||}_\infty+{||g_N||}_\infty\leq\displaystyle\frac{\varepsilon}{2}+\frac{\varepsilon}{4}<\varepsilon$.\\
-		Ensuite, $\forall x,y\in I,\ |g(x)-g(y)|\geq |g_N(x)-g_N(y)|-|P(x)-P(y)|$.\\
-		De plus, $\forall x\in I,\ \exists k\in \crblanc{0}{2N-1},\ x\in \left[\displaystyle\frac{k}{2N},\frac{k+1}{2N}\right]$.\\
-		Soit alors $y\in \left[\displaystyle\frac{k}{2N},\frac{k+1}{2N}\right]$.\\
-		$|g_N(x)-g_N(y)|=\displaystyle\frac{\varepsilon N}{2}|x-y|$.\\
-		Aussi, par le théorème des accroissements finis, $|P(x)-P(y)|\leq {||P'||}_\infty|x-y|$.\\
-		Par conséquent, $\forall x\in I,\ \exists y\in I,\ |g(x)-g(y)|>\left(\displaystyle\frac{\varepsilon N}{2}-{||P'||}_\infty\right)|x-y|$.\\
-		Il suffit alors de prendre $N\geq \displaystyle\frac{2}{\varepsilon}(n+{||P'||}_\infty)$ pour obtenir $g\in F_n^c$.
-		\item On montré que $(F_n)_{n\in \N}$ est une suite de fermé d'intérieur vide de $E$. D'après le théorème de Baire, $\displaystyle\bigcup\limits_{n\in \N}F_n$ est donc d'intérieur vide.\\
-		Mais alors d'après la question $1$, $\widering{A^c}\subset \displaystyle\widering{\bigcup\limits_{n\in \N}F_n}=\emptyset$ d'où $\widering{A^c}=\emptyset$ c'est à dire $A$ est dense dans $E$.
-	\end{enumerate}
-
-	\subsubsection{Lemme de Croft \etoile{4} (HP)}
-\begin{enumerate}[leftmargin=*]
-	\item Soit $\varepsilon>0$. Par uniforme continuité $\exists \eta>0,\ \forall (x,y)\in (\R^*_+)^2,\ |x-y|\leq\eta\implies |f(x)-f(y)|<\dfrac{\varepsilon}{2}$.\\
-	On sait que $\unfty\lim f(n\eta)=0$ donc $\exists N\in \N^*,\ \forall n\geq N,\ |f(n\eta)|<\dfrac{\varepsilon}{2}$.\\
-	Soit $x\geq N\eta$. On pose $n=\left\lfloor\dfrac{x}{\eta}\right\rfloor$ de sorte que $|x-n\eta|\leq \eta$ et $n\geq N$.\\
-	On a alors $|f(x)|\leq |f(x-n\eta)|+|f(n\eta)|<\varepsilon$.\\
-	On a montré que $\forall x\geq N\eta,\ |f(x)|<\varepsilon$ i.e $f$ admet une limite nulle en $+\infty$.
-	\item Fixons $\varepsilon>0$. On pose pour $n\in \N,\ F_n=\{x>0,\ \forall p\geq n,\ |f(px)|\leq\varepsilon\}$. Par continuité de $f$, l'application $g_n:x\mapsto |f(nx)|$ est continue et par suite les ensembles $F_{n,p}:=\{x>0,\ |f(px)|<\varepsilon\}=g_n^{-1}([0,\varepsilon])$ sont fermés d'où $F_n=\displaystyle\bigcap_{p\geq n}F_{n,p}$ est fermé. Par hypothèse $\displaystyle\bigcup_{n\in \N} F_n=\R^*_+$. $\R^*_+$ n'est pas d'intérieur vide donc d'après la contraposée du théorème de Baire il existe un entier naturel $n$ tel que $\ring F_n\ne\emptyset$.\\
-	Ainsi il existe $0<\alpha<\beta$ tels que $\forall y>0,\ y\in ]\alpha,\beta[\implies \forall p\geq n,\ |f(py)|<\varepsilon$.\\
-	Autrement dit, $\forall z>0,\ z\in \displaystyle\bigcup_{p\geq n}\ ]p\alpha,p\beta[\implies |f(z)|<\varepsilon$.\\
-	Or pour $p>p_0:=\max\left(n,\left\lfloor\dfrac{\alpha}{\beta-\alpha}\right\rfloor\right),\ (p+1)\alpha\geq p\beta$. Donc $\displaystyle\bigcup_{p>p_0}\ ]p\alpha,p\beta[\ =\ ](p_0+1)\alpha,+\infty[$.\\
-	On a montré que si $y>(p_0+1)\alpha$ alors $|f(y)|<\varepsilon$. Ainsi $f$ admet une limite nulle en $+\infty$.
-	\item Ce n'est malheureusement pas aussi simple...\\
-	On va poser $f=\mathbbm 1_A$ avec $A$ non majoré et tel que le quotient de deux éléments distincts de $A$ ne soit jamais rationnel. En effet $A$ non majoré assure que $f$ n'ait pas de limite en $+\infty$. En outre, si $mx\leq nx\in A$ alors $\displaystyle\frac{n}{m}\in \Q$ est un quotient d'éléments de $A$ et donc $n=m$. Ceci assure que pour tout $x>0,\ nx\notin A$ APCR et donc $\unfty\lim f(nx)=0$.\\
-	On peut considérer $A=\{\pi^k,\ k\in \Z\}$ l'ensemble des puissances entières de $\pi$. $\pi>1$ donc $A$ n'est pas majoré et de plus pour tout $m<n\in \N$, si $\pi^{n-m}\in \Q$ alors $\pi$ est racine du polynôme à coefficients rationnels $X^{n-m}-\pi^{n-m}$. Il est bien connu que $\pi$ est transcendant donc ceci est absurde d'où $\pi^{n-m}\notin \Q$. On en déduit aussi $\pi^{m-n}\notin \Q$.\\
-	En fait il suffit de prendre l'ensemble des puissances entières de n'importe quel nombre transcendant réel positif. Sans même en expliciter on sait qu'il en existe car les nombres algébriques sont dénombrables. $\R_+$ étant non dénombrable il contient une infinité de nombres transcendants.
-\end{enumerate}
-
-	\subsubsection{Caractérisation des endomorphismes continus nilpotents dans un espace de Banach \etoile{3} (HP)}
-	\begin{enumerate}[leftmargin=*]
-		\item Posons pour $n\in \N^*,\ F_n=\{x\in E,\ f^n(x)=0\}$. $F_n$ est fermé.\\
-		$\displaystyle\bigcup_{n\in \N^*}F_n=E$. Donc d'après le théorème de Baire il existe $N\in \N^*$ tel que $\ring F_N\ne \emptyset$. On dispose donc d'un vecteur $a\in E$ et d'un réel $r>0$ tel que $B_f(a,r)\subset F_N$.\\
-		$\forall x\in E\setminus\{0\},\ f^N(x)=\displaystyle\frac{\norme x}{r}\left[f^N\left(a+\frac{x}{\norme x}r\right)-f^N(a)\right]=0$.\\
-		Donc $f$ est nilpotent.\\
-		\textit{Remarque : On pourra noter que dans un espace de dimension finie les hypothèses de continuité et de complétude sont automatiquement vérifiées.}
-		\item On note $E=\R[X]$. Posons $D\in \mathcal L(E)$ l'endomorphisme de dérivation. Pour $P\in E$ on pose $N(P)=\displaystyle\sum_{n=0}^{+\infty}|P^{(n)}(0)|$.\\
-		Vérifions que $N$ est une norme sur $E$. On fixe $P,Q\in E$ et $\lambda\in \R$.\\
-		Tout d'abord, $N$ est bien une application de $E$ dans $\R_+$ pour tout $P\in E$ la suite $(P^{(n)}(0))_{n\in \N}$ est nulle au moins à partir du rang $\deg P+1$. Ensuite,
-		\begin{itemize}
-			\item $N(\lambda P)=\displaystyle\sum_{n=0}^{\deg P+1}|\lambda P^{(n)}(0)|=|\lambda|N(P)$.
-			\item $N(P+Q)=\displaystyle\sum_{n=0}^{\deg(P+Q)+1}|P^{(n)}(0)+Q^{(n)}(0)|\leq \sum_{n=0}^{\deg(P+Q)+1}|P^{(n)}(0)|+\sum_{n=0}^{\deg(P+Q)+1}|Q^{(n)}(0)|\leq N(P)+N(Q)$.
-			\item Si $N(P)=0$ alors comme $\forall n\in \N,\ |P^{(n)}(0)|\geq 0$, on sait que $\forall n\in \N,\ |P^{(n)}(0)|=P^{(n)}(0)=0$.\\
-			Ainsi d'après la formule de Taylor, $P=\displaystyle\sum_{n=0}^{+\infty}\frac{P^{(n)}(0)}{n!}X^n=0$.
-		\end{itemize}
-		De plus, $D$ est continue pour cette norme. En effet, $\forall P\in E,\ N(D(P))=\displaystyle\sum_{n=1}^{+\infty}|P^{(n)}(0)|\leq N(P)$.\\
-		$D$ n'est pas nilpotent : $D^n$ n'est pas nul puisque $\Ker(D^n)=\R_{n-1}[X]\ne E$. Pourtant $\forall P\in E,\ D^{\deg P+1}(P)=0$.
-	\end{enumerate}
-	
-	\subsubsection{Caractérisation des polynômes réels \etoile{5} (HP)}
-	\begin{enumerate}[leftmargin=*]
-		\item L'hypothèse de l'énoncé se traduit en $\R=\displaystyle\bigcup_{n\in \N} F_n$. Pour tout $n\in \N$, $F_n=(f^{(n)})^{-1}(\{0\})$ est fermé car $f^{(n)}$ est continue. Donc d'après la contraposée du théorème de Baire, $\widering{\displaystyle\bigcup_{n\in \N} F_n}=\ring \R=\R\ne\emptyset\implies \exists N\in \N,\ \ring F_N\ne\emptyset$.
-		\item \begin{enumerate}[label=\alph*.]
-			\item $x\in \ring F_N$ donc $f^{(N)}$ s'annule sur un voisinage ouvert de $x$. Donc si $k\geq N$, $f^{(k)}$ s'annule sur ce même voisinage et en particulier en $x$.
-			\item La série de Taylor de $f$ converge en tout point $x\in I$ puisque $$\displaystyle\sum_{k=0}^{\infty}\dfrac{f^{(k)}(x)}{k!}(y-x)^k=\sum_{k=0}^{N-1}\dfrac{f^{(k)}(x)}{k!}(y-x)^k$$
-			$I$ étant un voisinage ouvert de $x$, $f$ est égale sur $I$ à sa série de Taylor en $x$, qui est une fonction polynomiale.
-		\end{enumerate}
-		\item \begin{enumerate}[label=\alph*.]
-			\item On sait que les connexes par arcs de $\R$ sont les intervalles. Si $J$ contient une de ses bornes, disons son sup $v$, alors comme $\Omega$ est ouvert, on peut trouver $\varepsilon>0$ tel que $v+\varepsilon\in \Omega$. Mais alors $J\cup [v,v+\varepsilon]\subset \Omega$ ce qui contredit la maximalité de $J$. De manière analogue, $J$ ne contient pas sa borne inférieure $u$ et donc $J=]u,v[$ est ouvert.
-			\item $x_0\in \Omega$ donc il existe un entier naturel $n$ tel que $x_0\in \ring F_n$ et donc il existe un intervalle ouvert $I_0$ tel que $x_0\in I\subset F_n$. Or comme $x_0\in J$ et comme $I$ est connexe par arcs, $I\subset J$. Alors $x_0\in I\subset F_n\cap J$. De plus, $I$ est non vide donc la question précédente donne l'existence d'un polynôme $P$ tel que $\forall y\in I,\ f(y)=P(y)$.
-			\item $x_0\in I$ donc $A$ est non vide. De plus $A$ est connexe par arcs, en effet si $y<z\in A$ alors $\forall t\in [0,1],\ [x_0,ty+(1-t)z]\subset [x_0,z]\implies ty+(1-t)z\in A$. Donc $A$ est connexe par arcs.\\
-			Ainsi comme $A$ contient un élément $x_0\in J$, $A\subset J$.
-			\item Supposons $s\in \Omega$. Notons $p\in \N$ tel que $s\in \ring F_p$. Alors $\exists \varepsilon\in ]0,s-x_0],\ I':=]s-\varepsilon,s+\varepsilon[\subset F_p$. D'après la question 2, $\exists Q\in \R[X],\ \forall y\in I',\ f(y)=Q(y)$.\\
-			$f$ et $Q$ coïncident sur l'intervalle $I'$, il en va donc de même pour leurs dérivées successives. Par ailleurs $f$ et $P$ coïncident sur le connexe par arcs $A$, il en va donc de même pour leurs dérivées successives.
-			Mais alors en $y=s-\varepsilon\in A\cap I'$, $\forall k\in \N,\ P^{(k)}(y)=f^{(k)}(y)=Q^{(k)}(y)$. On en déduit que $P=Q$ et donc que $s+\varepsilon\in A$ ce qui contredit la maximalité de $s$. On en déduit que $s\notin\Omega$.\\
-			Par conséquent, $s\notin J$. Pourtant $A\subset J\implies s\leq \sup J$, donc comme $J$ est un intervalle, $s=\sup J$.
-			\item On montre de la même manière qu'en notant $B=\{x\leq x_0\ |\ \forall y\in [x,x_0],\ f(y)=P(y)\}$, $B$ est un intervalle et on a $\inf B=\inf J$. $A\cup B$ est l'union de deux intervalles non disjoints ($x_0\in A\cap B$), c'est donc aussi un intervalle. En outre, $A\cup B\subset J$ et $\inf A\cup B=\inf J$ et $\sup A\cup B=\sup J$. Ainsi $J=A\cup B$ i.e $\forall y\in J,\ f(y)=P(y)$.
-		\end{enumerate}
-		\item \begin{enumerate}[label=\alph*.]
-			\item Soit $x\in \Phi$. Supposons $x$ isolé dans $\Phi$. Alors il existe $\varepsilon>0$ tel que $I_-:=]x-\varepsilon,x[\subset \Omega$ et $I_+:=]x,x+\varepsilon[\subset \Omega$. $I_-$ et $I_+$ Etant des intervalles de $\Omega$, la question 3 assure que $f$ est polynomiale sur $I_-$ et $I_+$. On note $P_-$ et $P_+$ tels que $\forall y\in I_-,\ f(y)=P_-(y)$ et $\forall y\in I_+,\ f(y)=P_+(y)$.\\
-			D'après le théorème de la limite de la dérivée, $\forall n\in \N,\ P_-^{(n)}(x)=f^{(n)}(x)=P_+^{(n)}(x)$. En particulier $x\in\ring F_{\max(deg(P),\deg(Q))+1}$ ce qui est absurde. Donc $\Phi$ n'a pas de point isolé.
-			\item $\Omega$ est ouvert en tant que réunion d'ouverts donc $\Phi$ est fermé. Ainsi si $(x_n)\in \Phi^\N$ est de Cauchy alors comme $\R$ est complet elle converge dans $\R$. Mais comme $\Phi$ est fermé, elle converge dans $\Phi$.\\
-			Par conséquent $\Phi$ est complet.
-			\item $\Phi=\R\cap\Phi=\displaystyle\left(\bigcup_{n\in \N} F_n\cap\Phi\right)=\bigcup_{n\in \N}(\Phi\cap F_n)$. On a supposé $\Phi$ non vide donc on peut se donner $x\in \Phi$. On sait que $x$ n'est pas isolé dans $\Phi$ donc $x$ appartient à l'intérieur \underline{dans $\Phi$} de $\Phi$ :
-			$$\forall \varepsilon>0,\ \exists x_\varepsilon\in \Phi,\ |x-x_\varepsilon|<\varepsilon$$
-			Notons pour toute partie $X\subset \Phi,\ \ring X_\Phi=\{x\in X,\ \exists \varepsilon>0,\ \emptyset\ne]x-\varepsilon,x+\varepsilon[\cap\Phi\subset X\}$ l'intérieur de $X$ dans $\Phi$.\\
-			Les $\Phi\cap F_n$ sont des fermés de $\Phi$ dont la réunion est d'intérieur non vide dans $\Phi$, d'après la contraposé du théorème de Baire $\exists n_0\in \N,\ \widering{(\Phi\cap F_n)}_\Phi\ne\emptyset$.\\
-			Autrement dit il existe un intervalle ouvert $I$ tel que $\emptyset\ne I\cap\Phi\subset F_{n_0}$.
-			\item Comme $x$ n'est pas isolé dans $\Phi$, $\forall n\in \N^*,\ \exists x_n\in \Phi\backslash\{x\},\ |x-x_n|<\dfrac{1}{n}$. $(x_n)_{n\in \N}$ converge vers $x$ et est APCR à valeurs dans $I$ (car c'est un ouvert). Quitte à réindicer on peut supposer $(x_n)_{n\in \N}$ à valeurs dans $I\cap\Phi\backslash\{x\}$. De plus d'après le lemme des pics (cf.\ref{Théorème de Bolzano-Weierstrass}) on peut extraire de $(x_n)_{n\in \N}$ une suite monotone. Cette suite converge toujours vers $x$ et ne stationne pas à $x$, on peut donc la supposer strictement monotone quitte à enlever des termes.
-			\item Supposons $(x_k)_{k\in \N}$ strictement croissante. Alors $\forall k\in \N,\ x_k<x_{k+1}$ et $f^{(n_0)}(x_{k-1})=f^{(n_0)}(x_k)=f^{(n_0)}(x_{k+1})=0$. D'après le théorème de Rolle il existe une suite $(y^1_k)_{k\in \N^*}$ telle que $\forall k\in \N,\ x_{k-1}<y^1_k<x_k<y^1_{k+1}<x_{k+1}<x$ et $f^{(n_0+1)}(y^1_k)=0$.\\
-			On construit comme ceci par récurrence des suites $(y^p_k)_{k\in \N^*}$ telles que $\forall p\in \N^*,\ \forall k\in \N^*,\ x_{k-1}<y^p_k<y^{p+1}_k<x$ et $f^{(n_0+p)}(y^p_k)=0$.\\
-			Par construction $\forall p\in \N^*,\ y^p_k\ukfty\longrightarrow x$ et $(y^p_k)_{k\in \N^*}\in F_{n_0+p}^{\N^*}$. Donc comme les $F_n,\ n\geq n_0$ sont des fermés, $\forall n\geq n_0,\ x\in F_n$.
-			\item Soit $J=]u,v[$ ($u,v\in \overline\R$) une composante connexe par arcs de $I\cap\Omega$. On remarque que $I=(I\cap\Phi)\sqcup(I\cup\Omega)$. Comme $I\cap\Phi\ne\emptyset$, $u\ne-\infty$ ou $v\ne+\infty$. Donc $u\in I\cap\Phi$ ou $v\in I\cap\Phi$. Supposons $v\in I\cap\Phi$, alors d'après la question précédente, $\forall n\geq n_0,\ f^{(n)}(v)=0$. Par ailleurs $J$ est un connexe par arcs de $\Omega$ donc d'après la question 3, $\exists P\in \R[X],\ \forall y\in J,\ f(y)=P(y)$.\\
-			Il suit $\forall n\geq n_0,\ P^{(n)}(v)=f^{(n)}(v)=0$. Puis par la formule de Taylor, $\deg(P)<n_0$ d'où $P^{(n_0)}=0$ et enfin $\forall y\in J,\ f^{(n_0)}(y)=0$ i.e $J\subset F_{n_0}$. On peut faire le même raisonnement si $u\in I\cap\Phi$.
-			\item $I$ est la réunion de $I\cap\Phi$ et des composantes connexes par arcs de $I\cap\Omega$. Tous ces ensembles sont inclus dans $F_{n_0}$ donc $I\subset F_{n_0}$. Et puis comme $I$ est ouvert, $I\subset \ring F_{n_0}\subset \Omega$.
-		\end{enumerate}
-		\item $I\subset \Omega\implies I\cap\Phi=\emptyset$. Cela contredit la définition de $I$ donc une hypothèse qu'on a fait est fausse. La seule hypothèse qu'on a fait est celle qui dit que $\Phi$ est non vide. On en déduit donc que $\Omega=\R$.\\
-		Sa seule composante connexe par arcs est donc $\R$ et la question 3 conclut l'exercice.
-	\end{enumerate}
-	
-	\textit{Remarque : Le résultat analogue pour les fonctions polynomiales complexes (fonctions entières) est vrai et surprenamment (ou pas) largement plus simple à démontrer.}
-	\subsubsection{Un raffinement \etoile{1} (HP)}
-	\begin{enumerate}[leftmargin=*]
-		\item Il suffit de considérer $\Omega=\displaystyle\bigcup_{(n,d)\in \N\times D}\ring F_{n,d}$ avec $F_{n,d}=\{x\in \R,\ f^{(n)}(x)=d\}$. Le reste de la démonstration ne change pas.
-		\item Application directe de la question 1 avec $D=\Q$.
 	\end{enumerate}
 	
 	\subsection{Volume d'une (hyper)boule \xens{4} (HP)}
