@@ -267,6 +267,16 @@ On note aussi $\mathcal C(u)=\{v\in \L(E),\ u\circ v=v\circ u\}$.
 	\item En déduire que $\dim\mathcal C(u)=\displaystyle\sum_{k=1}^{+\infty}e_k(u)^2$.
 \end{enumerate}
 
+\section{Sous-espace nilpotent \centraleponts{3}}
+\label{Sous-espace nilpotent}
+\textcolor{blue}{\hyperref[Sous-espace nilpotent corrigé]{[Corrigé]}}\\
+\begin{enumerate}[leftmargin=*]
+	\item Pour $M\in \M_n(\C)$ on définit $\fonction{\theta_M}{\M_n(\C)}{\C}{X}{\Tr(MX)}$.\\
+	Montrer que $\theta:M\in \M_n(\C)\mapsto \theta_M\in \L(\M_n(\C),\C)$ est un isomorphisme.
+	\item Montrer que si $A,B$ et $A+B$ sont des matrices nilpotentes alors $\Tr(AB)=0$.
+	\item En déduire que si $\mathcal N$ est un sous-espace de $\M_n(\C)$ formé de matrices nilpotentes alors $\dim(\mathcal N)\leq \dfrac{n^2}{2}$.
+\end{enumerate}
+
 \section{Etude de la comatrice \centraleponts{3}}
 \label{Etude de la comatrice}
 \textcolor{blue}{\hyperref[Etude de la comatrice corrigé]{[Corrigé]}}\\
@@ -283,6 +293,11 @@ On note aussi $\mathcal C(u)=\{v\in \L(E),\ u\circ v=v\circ u\}$.
 \textcolor{blue}{\hyperref[Caractérisation des homothéties (1) corrigé]{[Corrigé]}}\\
 Soit $u$ un endomorphisme d'un $\K$-espace vectoriel $E$ tel que pour tout $x\in E$, $(x,u(x))$ est une famille liée.\\
 Montrer que $u$ est une homothétie.
+
+\subsection{Matrices de trace nulle}
+\label{Matrices de trace nulle}
+\textcolor{blue}{\hyperref[Matrices de trace nulle corrigé]{[Corrigé]}}\\
+Soit $A\in \M_n(\K)$. Montrer que $A$ est de trace nulle si et seulement si elle est semblable à une matrice dont tous les coefficients diagonaux sont nuls.
 
 \section{Caractérisation des homothéties (2) \centraleponts{2}}
 \label{Caractérisation des homothéties (2)}
@@ -3939,6 +3954,11 @@ Montrer que $\exp:\A_n(\R)\to \O_n(\R)$ est une application surjective.
 \textcolor{blue}{\hyperref[Théorème spectral corrigé]{[Corrigé]}}\\
 Enoncer et démontrer le théorème spectral.
 
+\section{Sous-espace diagonalisable \xens{4}}
+\label{Sous-espace diagonalisable}
+\textcolor{blue}{\hyperref[Sous-espace diagonalisable corrigé]{[Corrigé]}}\\
+Quelle est la dimension maximale d'un sous-espace vectoriel de $\M_n(\R)$ formé uniquement de matrices diagonalisables ?
+
 \section{Somme d'endomorphismes auto-adjoints positifs}
 \label{Somme d'endomorphismes auto-adjoints positifs}
 \textcolor{blue}{\hyperref[Somme d'endomorphismes auto-adjoints positifs corrigé]{[Corrigé]}}\\
@@ -3984,6 +4004,12 @@ Montrer que les coefficients diagonaux d'une matrice symétrique positive sont p
 \label{Diagonale d'une matrice antisymétrique}
 \textcolor{blue}{\hyperref[Diagonale d'une matrice antisymétrique corrigé]{[Corrigé]}}\\
 Soit $M\in \M_n(\R)$. Montrer que $M$ est antisymétrique si et seulement si pour toute matrice $P\in \O_n(\R),\ P^\top MP$ est de diagonale nulle.
+
+\section{Translation par une matrice antisymétrique \xens{3}}
+\label{Translation par une matrice antisymétrique}
+\textcolor{blue}{\hyperref[Translation par une matrice antisymétrique corrigé]{[Corrigé]}}\\
+Fixons $n$ impair. Soit $M\in \M_n(\R)$ telle que pour toute matrice antisymétrique réelle $A$, $\det(A+M)=0$.\\
+Que dire de $M$ ?
 
 \section{Matrices antisymétriques réelles}
 On fixe dans les exercices qui suivent une matrice $A\in \A_n(\R)$.
@@ -4785,7 +4811,26 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		$$\dim\mathcal C(u)=\sum_{k=1}^{+\infty}e_k(u)^2$$
 	\end{enumerate}
 	
-	\subsection{Etude de la comatrice \etoile{3}}
+	\subsection{Sous-espace nilpotent \centraleponts{3}}
+	\label{Sous-espace nilpotent corrigé}
+	\textcolor{blue}{\hyperref[Sous-espace nilpotent]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On vérifie aisément que $\theta$ est une application, c'est à dire que pour tout $M\in \M_n(\C)$, $\theta_M$ est linéaire. On sait que $\dim(\M_n(\C))=\dim(\L(\M_n(\C),\C))$ donc il suffit de montrer que $\theta$ est injective.\\
+		Soit $M\in \Ker\theta$. $\forall X\in \M_n(\C),\ \Tr(MX)=0$. En particulier, pour $X=\overline M$ la matrice dont les coefficients sont les conjugués complexes de ceux de $M$, $\Tr(MX^\top)=0$.\\
+		Or $\Tr(M\overline{M}^\top)=\displaystyle\sum_{1\leq i,j\leq n}M_{ij}\overline{M_{ij}}=\sum_{1\leq i,j\leq n}|M_{ij}|^2$. Donc $\forall i,j\in \crblanc{1}{n},\ |M_{ij}|^2=0$ et par suite $M=0$.
+		\item Pour toute matrice nilpotente $M\in \M_n(\C)$, $M^2$ est nilpotente donc $\Tr(M^2)=0$ (car $M^2$ est trigonalisable et sa seule valeur propre est $0$).\\
+		Donc on déduit en passant à la trace dans la relation $(A+B)^2=A^2+AB+BA+B^2$ l'égalité $0=\Tr(AB)+\Tr(BA)=2\Tr(AB)$.\\
+		Ainsi $\Tr(AB)=0$.
+		\item Soit $\mathcal N$ un sous espace de $\M_n(\C)$ formé de matrices nilpotentes. Donnons nous une base $(N_1,\dots,N_p)$ de $\mathcal N$.\\
+		D'après la question 2, $\mathcal N\subset\displaystyle\bigcap_{i=1}^p\Ker(\theta_{N_i})$.\\
+		Or puisque la famille $(N_1,\dots,N_p)$ est de rang $p$, la dimension de l'intersection est exactement $n^2-p$.\\
+		En effet, posons $\Phi:M\in \M_n(\C)\mapsto (\theta_{N_1}(M),\dots,\theta_{N_p}(M))$. On a $\Ker(\Phi)=\displaystyle\bigcap_{i=1}^p\Ker(\theta_{N_i})$.\\
+		Comme $\theta$ est un isomorphisme, l'application $\fonction{\Psi}{\M_n(\C)^p}{\L(\M_n(\C),\C)^p}{(M_1,\dots,M_p)}{(\theta_{M_1},\dots,\theta_{M_p})}$ est un isomorphisme et conserve donc le rang d'une famille.\\
+		Donc $\rg(\Phi)=\rg(\Psi(N_1,\dots,N_p))=\rg(N_1,\dots,N_p)=p$.\\
+		On en déduit $\dim(\mathcal N)=p\leq \dim(\Ker(\Phi))=n^2-\rg(\Phi)=n^2-p$ d'où $p\leq \dfrac{n^2}{2}$.
+	\end{enumerate}
+	
+	\subsection{Etude de la comatrice \centraleponts{3}}
 	\label{Etude de la comatrice corrigé}
 	\textcolor{blue}{\hyperref[Etude de la comatrice]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -4840,6 +4885,10 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		$\lambda_1x_1=u(x_1)=u(\alpha x_2)=\alpha u(x_2)=\alpha\lambda_2x_2=\lambda_2x_1$. 
 	\end{itemize}
 	On en déduit que $u$ est bien une homothétie.
+	
+	\subsubsection{Matrices de trace nulle}
+	\label{Matrices de trace nulle corrigé}
+	\textcolor{blue}{\hyperref[Matrices de trace nulle]{[Enoncé]}}\\
 	
 	\subsection{Caractérisation des homothéties (2) \centraleponts{2}}
 	\label{Caractérisation des homothéties (2) corrigé}
@@ -10671,6 +10720,15 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Théorème spectral corrigé}
 	\textcolor{blue}{\hyperref[Théorème spectral]{[Enoncé]}}\\
 	
+	\subsection{Sous-espace diagonalisable}
+	\label{Sous-espace diagonalisable corrigé}
+	\textcolor{blue}{\hyperref[Sous-espace diagonalisable]{[Enoncé]}}\\
+	Le théorème spectral nous donne déjà un assez gros espace formé de matrices diagonalisable : les matrices symétriques réelles. Sa dimension est $\dfrac{n(n+1)}{2}$. Montrons que c'est la dimension maximale.\\
+	On fixe $V$ un sous-espace de $\M_n(\R)$ dont tous les éléments sont diagonalisables dans $\M_n(\R)$.\\
+	Il suffit de montrer que $V$ est en somme directe avec $\A_n(\R)$. Fixons $M\in V\cap\A_n(\R)$ et montrons que $M$ est nulle.\\
+	Comme $M$ est réelle et diagonalisable dans $\M_n(\R)$ ses valeurs propres sont réelles. Or on montre (cf.\ref{Spectre}) que la seule valeur propre réelle potentielle d'une matrice antisymétrique est $0$. Donc $M$ est semblable à la matrice nulle d'où $M=0$.\\
+	On en déduit $\dim(V)=\dim(V\oplus\A_n(\R))-\dim(\A_n(\R))\leq n^2-\dfrac{n(n-1)}{2}=\dfrac{n(n+1)}{2}$.
+	
 	\subsection{Somme d'endomorphismes auto-adjoints positifs}
 	\label{Somme d'endomorphismes auto-adjoints positifs corrigé}
 	\textcolor{blue}{\hyperref[Somme d'endomorphismes auto-adjoints positifs]{[Enoncé]}}\\
@@ -10717,6 +10775,34 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On note $M=S+A$ avec $S\in \S_n(\R)$ et $A\in \A_n(\R)$. Il suffit de prendre $S=\dfrac{M+M^\top}{2}$ et $A=\dfrac{M-M^\top}{2}$.\\
 	Alors $\forall P\in \O_n(\R),\ P^\top MP=P^\top SP+P^\top AP$.\\
 	En particulier, en appliquant le théorème spectral à $S$, pour $P\in \O_n(\R)$ telle que $P^\top SP$ soit diagonale on obtient $P^\top SP=0$. En effet $P^\top MP$ est de diagonale nulle par hypothèse et $P^\top AP$ est de diagonale nulle car $A\in \A_n(\R)$. Ainsi $S=0$ et $M=A\in \A_n(\R)$.
+	
+	\subsection{Translation par une matrice antisymétrique \xens{3}}
+	\label{Translation par une matrice antisymétrique corrigé}
+	\textcolor{blue}{\hyperref[Translation par une matrice antisymétrique]{[Enoncé]}}\\
+	Toute l'idée de cet exercice est de se ramener de proche en proche à des problèmes plus simples.\\
+	Tout d'abord classiquement $M=S+A$ avec $S=\dfrac{M+M^\top}{2}\in \S_n(\R)$ et $A=\dfrac{M-M^\top}{2}\in \A_n(\R)$.\\
+	Donc quitte à étudier $M-A$ on peut supposer $M\in \S_n(\R)$.\\
+	Alors d'après le théorème spectral il existe $P\in \O_n(\R)$ et $D\in \M_n(\R)$ une matrice diagonale telle que $M=PDP^\top$. Or on remarque que $\forall A\in \A_n(\R),\ PAP^\top\in \A_n(\R)$. Donc $D$ vérifie l'hypothèse de l'énoncé.\\
+	En effet, si $A\in \A_n(\R)$ alors $\det(PAP^\top+M)=0\implies \det(P)\det(A+D)\det(P^\top)=0\implies \det(A+D)=0$.\\
+	On a réussi à réduire le problème au cas d'une matrice diagonale. Notons $D=\diag(\lambda_1,\dots,\lambda_n)$.\\
+	On sait que $\forall a\in \R,\ 0=\left|\begin{array}{ccccccccccc}
+		\lambda_1&a&&&&&&&&&\\
+		-a&\lambda_2&&&&&&&&&\\
+		&&\ddots&&&&&&&&\\
+		&&&\lambda_{i-2}&a&&&(0)&&\\
+		&&&-a&\lambda_{i-1}&&&&&\\
+		&&&&&\lambda_i&&&&\\
+		&&&&&&\lambda_{i+1}&a&&&\\
+		&&&(0)&&&-a&\lambda_{i+2}&&&\\
+		&&&&&&&&\ddots&&\\
+		&&&&&&&&&\lambda_{2m}&a\\
+		&&&&&&&&&-a&\lambda_{2m+1}
+	\end{array}\right|$\\
+	Ce déterminant est le produit de $\lambda_i$ avec des déterminants par blocs $\begin{vmatrix}
+		\lambda_j&a\\
+		-a&\lambda_{i+1}
+	\end{vmatrix}=\lambda_i\lambda_{i+1}+a^2$. Pour $a$ assez grand (par exemple $a>\max\limits_{1\leq j\leq n}|\lambda_j|$) les déterminants par blocs ne sont pas nuls d'où $\lambda_i=0$. Ceci étant vrai pour un $i\in \crblanc{1}{n}$ arbitraire $D=0$ d'où $S=0$ puis $M=A\in \A_n(\R)$.\\
+	On peut vérifier que toutes les matrices antisymétriques vérifient l'hypothèse puisque la somme de deux matrices antisymétrique est antisymétrique et $\forall A\in \A_n(\R),\ \det(A)=\det(A^\top)=\det(-A)=(-1)^n\det(A)=-\det(A)$ i.e $\det(A)=0$.
 	
 	\subsection{Matrices antisymétriques réelles}
 	\subsubsection{Rang et déterminant}

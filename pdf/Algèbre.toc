@@ -16,16 +16,18 @@
 \contentsline {section}{\numberline {I.14}Racine $8$-ième d'une matrice triangulaire \ccinp {2}}{15}{section.1.14}%
 \contentsline {section}{\numberline {I.15}Dimension du commutant (1) \centraleponts {3}}{15}{section.1.15}%
 \contentsline {section}{\numberline {I.16}Dimension du commutant (2) \centraleponts {4}}{16}{section.1.16}%
-\contentsline {section}{\numberline {I.17}Etude de la comatrice \centraleponts {3}}{16}{section.1.17}%
-\contentsline {section}{\numberline {I.18}Caractérisation des homothéties (1) \ccinp {2}}{16}{section.1.18}%
-\contentsline {section}{\numberline {I.19}Caractérisation des homothéties (2) \centraleponts {2}}{16}{section.1.19}%
-\contentsline {section}{\numberline {I.20}Espaces engendrés par les matrices inversibles et orthogonales \centraleponts {3}}{16}{section.1.20}%
-\contentsline {section}{\numberline {I.21}Espace engendré par les matrices nilpotentes \centraleponts {3}}{17}{section.1.21}%
-\contentsline {section}{\numberline {I.22}Transmission d'information \centraleponts {3}}{17}{section.1.22}%
-\contentsline {section}{\numberline {I.23}Noyau et Image supplémentaires \ccinp {2}}{17}{section.1.23}%
-\contentsline {section}{\numberline {I.24}Partition de l'identité par des projecteurs \telecom {2}}{17}{section.1.24}%
-\contentsline {section}{\numberline {I.25}Equation entre projecteurs \centraleponts {3}}{17}{section.1.25}%
-\contentsline {section}{\numberline {I.26}Théorème de Maschke}{17}{section.1.26}%
+\contentsline {section}{\numberline {I.17}Sous-espace nilpotent \centraleponts {3}}{16}{section.1.17}%
+\contentsline {section}{\numberline {I.18}Etude de la comatrice \centraleponts {3}}{16}{section.1.18}%
+\contentsline {section}{\numberline {I.19}Caractérisation des homothéties (1) \ccinp {2}}{16}{section.1.19}%
+\contentsline {subsection}{\numberline {I.19.1}Matrices de trace nulle}{16}{subsection.1.19.1}%
+\contentsline {section}{\numberline {I.20}Caractérisation des homothéties (2) \centraleponts {2}}{17}{section.1.20}%
+\contentsline {section}{\numberline {I.21}Espaces engendrés par les matrices inversibles et orthogonales \centraleponts {3}}{17}{section.1.21}%
+\contentsline {section}{\numberline {I.22}Espace engendré par les matrices nilpotentes \centraleponts {3}}{17}{section.1.22}%
+\contentsline {section}{\numberline {I.23}Transmission d'information \centraleponts {3}}{17}{section.1.23}%
+\contentsline {section}{\numberline {I.24}Noyau et Image supplémentaires \ccinp {2}}{17}{section.1.24}%
+\contentsline {section}{\numberline {I.25}Partition de l'identité par des projecteurs \telecom {2}}{17}{section.1.25}%
+\contentsline {section}{\numberline {I.26}Equation entre projecteurs \centraleponts {3}}{17}{section.1.26}%
+\contentsline {section}{\numberline {I.27}Théorème de Maschke}{18}{section.1.27}%
 \contentsline {chapter}{\numberline {II}Réduction géométrique}{19}{chapter.2}%
 \contentsline {section}{\numberline {II.1}\underline {Réduction des matrices de rang $1$} \ccinp {2}}{19}{section.2.1}%
 \contentsline {subsection}{\numberline {II.1.1}Application \ccinp {1}}{19}{subsection.2.1.1}%
@@ -244,18 +246,18 @@
 \contentsline {section}{\numberline {VII.11}Théorème de Sophie Germain \centraleponts {3}}{63}{section.7.11}%
 \contentsline {section}{\numberline {VII.12}Une équation diophantienne \centraleponts {3}}{63}{section.7.12}%
 \contentsline {section}{\numberline {VII.13}Calcul d'une somme \centraleponts {3}}{63}{section.7.13}%
-\contentsline {section}{\numberline {VII.14}\underline {Nombres de Mersenne} \ccinp {2}}{64}{section.7.14}%
+\contentsline {section}{\numberline {VII.14}\underline {Nombres de Mersenne} \ccinp {2}}{63}{section.7.14}%
 \contentsline {section}{\numberline {VII.15}\underline {Un exercice pour les années impaires} \xens {4}}{64}{section.7.15}%
 \contentsline {section}{\numberline {VII.16}\underline {Equation du second degré dans $\mathbb {Z}/n\mathbb {Z}$} \telecom {2}}{64}{section.7.16}%
 \contentsline {section}{\numberline {VII.17}Un problème de congruence \centraleponts {3}}{64}{section.7.17}%
 \contentsline {section}{\numberline {VII.18}Un multiple de 2026 qui ne s'écrit qu'avec des $2$ \xens {3}}{64}{section.7.18}%
 \contentsline {section}{\numberline {VII.19}Somme des puissances $k$-ièmes dans $\mathbb {Z}/p\mathbb {Z}$ \xens {3}}{64}{section.7.19}%
-\contentsline {section}{\numberline {VII.20}Théorème de Wilson \telecom {2}}{65}{section.7.20}%
+\contentsline {section}{\numberline {VII.20}Théorème de Wilson \telecom {2}}{64}{section.7.20}%
 \contentsline {section}{\numberline {VII.21}Problème Putnam (2011) \xens {5}}{65}{section.7.21}%
 \contentsline {section}{\numberline {VII.22}Critère d'Euler \centraleponts {4}}{65}{section.7.22}%
 \contentsline {section}{\numberline {VII.23}\underline {Indicatrice d'Euler} \centraleponts {3}}{65}{section.7.23}%
 \contentsline {section}{\numberline {VII.24}Une minoration de l'indicatrice d'Euler \centraleponts {3}}{65}{section.7.24}%
-\contentsline {section}{\numberline {VII.25}\underline {Formule d'inversion de Möbius} \centraleponts {3}}{66}{section.7.25}%
+\contentsline {section}{\numberline {VII.25}\underline {Formule d'inversion de Möbius} \centraleponts {3}}{65}{section.7.25}%
 \contentsline {section}{\numberline {VII.26}Probabilité que deux entiers soient premiers entre eux \xens {4}}{66}{section.7.26}%
 \contentsline {section}{\numberline {VII.27}Limite d'une fonction arithmétique multiplicative \centraleponts {3}}{66}{section.7.27}%
 \contentsline {section}{\numberline {VII.28}Fonctions arithmétiques réelles additives \centraleponts {4}}{67}{section.7.28}%
@@ -405,27 +407,29 @@
 \contentsline {section}{\numberline {X.45}\underline {Déterminant d'une exponentielle} \ccinp {1}}{101}{section.10.45}%
 \contentsline {section}{\numberline {X.46}Exponentielle de matrices antisymétriques \xens {3}}{101}{section.10.46}%
 \contentsline {section}{\numberline {X.47}Théorème spectral \etoile {3}}{101}{section.10.47}%
-\contentsline {section}{\numberline {X.48}Somme d'endomorphismes auto-adjoints positifs}{101}{section.10.48}%
-\contentsline {section}{\numberline {X.49}Réduction simultanée \xens {4}}{102}{section.10.49}%
-\contentsline {section}{\numberline {X.50}Produit de Hadamard de matrices symétriques positives}{102}{section.10.50}%
-\contentsline {section}{\numberline {X.51}Diagonale d'une matrice symétrique}{102}{section.10.51}%
-\contentsline {section}{\numberline {X.52}Diagonale d'une matrice symétrique positive}{102}{section.10.52}%
-\contentsline {section}{\numberline {X.53}Diagonale d'une matrice antisymétrique}{102}{section.10.53}%
-\contentsline {section}{\numberline {X.54}Matrices antisymétriques réelles}{102}{section.10.54}%
-\contentsline {subsection}{\numberline {X.54.1}Rang et déterminant}{102}{subsection.10.54.1}%
-\contentsline {subsection}{\numberline {X.54.2}Spectre}{103}{subsection.10.54.2}%
-\contentsline {subsection}{\numberline {X.54.3}Diagonalisabilité (1)}{103}{subsection.10.54.3}%
-\contentsline {subsection}{\numberline {X.54.4}Diagonalisabilité (2)}{103}{subsection.10.54.4}%
-\contentsline {subsection}{\numberline {X.54.5}Réduction}{103}{subsection.10.54.5}%
-\contentsline {section}{\numberline {X.55}Endomorphismes normaux}{103}{section.10.55}%
-\contentsline {section}{\numberline {X.56}Réduction des normaux}{103}{section.10.56}%
-\contentsline {section}{\numberline {X.57}Caractérisation des matrices symétriques positives \centraleponts {3}}{104}{section.10.57}%
-\contentsline {section}{\numberline {X.58}\underline {Inégalité de Hoffman-Wielandt} \centraleponts {3}}{104}{section.10.58}%
-\contentsline {section}{\numberline {X.59}Distance aux matrices de rang au plus $r$}{105}{section.10.59}%
-\contentsline {section}{\numberline {X.60}\underline {Théorème de Courant-Fischer} \centraleponts {3}}{105}{section.10.60}%
-\contentsline {section}{\numberline {X.61}Principe de Ky-Fan}{105}{section.10.61}%
-\contentsline {section}{\numberline {X.62}Théorème de Cartan-Dieudonnée \xens {4}}{105}{section.10.62}%
-\contentsline {section}{\numberline {X.63}Relation d'ordre des matrices symétriques}{105}{section.10.63}%
+\contentsline {section}{\numberline {X.48}Sous-espace diagonalisable \xens {4}}{101}{section.10.48}%
+\contentsline {section}{\numberline {X.49}Somme d'endomorphismes auto-adjoints positifs}{102}{section.10.49}%
+\contentsline {section}{\numberline {X.50}Réduction simultanée \xens {4}}{102}{section.10.50}%
+\contentsline {section}{\numberline {X.51}Produit de Hadamard de matrices symétriques positives}{102}{section.10.51}%
+\contentsline {section}{\numberline {X.52}Diagonale d'une matrice symétrique}{102}{section.10.52}%
+\contentsline {section}{\numberline {X.53}Diagonale d'une matrice symétrique positive}{102}{section.10.53}%
+\contentsline {section}{\numberline {X.54}Diagonale d'une matrice antisymétrique}{102}{section.10.54}%
+\contentsline {section}{\numberline {X.55}Translation par une matrice antisymétrique \xens {3}}{102}{section.10.55}%
+\contentsline {section}{\numberline {X.56}Matrices antisymétriques réelles}{103}{section.10.56}%
+\contentsline {subsection}{\numberline {X.56.1}Rang et déterminant}{103}{subsection.10.56.1}%
+\contentsline {subsection}{\numberline {X.56.2}Spectre}{103}{subsection.10.56.2}%
+\contentsline {subsection}{\numberline {X.56.3}Diagonalisabilité (1)}{103}{subsection.10.56.3}%
+\contentsline {subsection}{\numberline {X.56.4}Diagonalisabilité (2)}{103}{subsection.10.56.4}%
+\contentsline {subsection}{\numberline {X.56.5}Réduction}{103}{subsection.10.56.5}%
+\contentsline {section}{\numberline {X.57}Endomorphismes normaux}{103}{section.10.57}%
+\contentsline {section}{\numberline {X.58}Réduction des normaux}{104}{section.10.58}%
+\contentsline {section}{\numberline {X.59}Caractérisation des matrices symétriques positives \centraleponts {3}}{104}{section.10.59}%
+\contentsline {section}{\numberline {X.60}\underline {Inégalité de Hoffman-Wielandt} \centraleponts {3}}{104}{section.10.60}%
+\contentsline {section}{\numberline {X.61}Distance aux matrices de rang au plus $r$}{105}{section.10.61}%
+\contentsline {section}{\numberline {X.62}\underline {Théorème de Courant-Fischer} \centraleponts {3}}{105}{section.10.62}%
+\contentsline {section}{\numberline {X.63}Principe de Ky-Fan}{105}{section.10.63}%
+\contentsline {section}{\numberline {X.64}Théorème de Cartan-Dieudonnée \xens {4}}{105}{section.10.64}%
+\contentsline {section}{\numberline {X.65}Relation d'ordre des matrices symétriques}{105}{section.10.65}%
 \contentsline {chapter}{\numberline {XI}Décomposition matricielle}{107}{chapter.11}%
 \contentsline {section}{\numberline {XI.1}\underline {Décomposition de Dunford} \centraleponts {3}}{107}{section.11.1}%
 \contentsline {subsection}{\numberline {XI.1.1}Diagonalisabilité de l'exponentielle d'une matrice \centraleponts {3}}{107}{subsection.11.1.1}%
@@ -482,21 +486,23 @@
 \contentsline {subsection}{\numberline {XIII.1.14}Racine $8$-ième d'une matrice triangulaire \ccinp {2}}{121}{subsection.13.1.14}%
 \contentsline {subsection}{\numberline {XIII.1.15}Dimension du commutant (1) \centraleponts {3}}{121}{subsection.13.1.15}%
 \contentsline {subsection}{\numberline {XIII.1.16}Dimension du commutant (2) \centraleponts {4}}{122}{subsection.13.1.16}%
-\contentsline {subsection}{\numberline {XIII.1.17}Etude de la comatrice \etoile {3}}{123}{subsection.13.1.17}%
-\contentsline {subsection}{\numberline {XIII.1.18}Caractérisation des homothéties (1) \ccinp {2}}{124}{subsection.13.1.18}%
-\contentsline {subsection}{\numberline {XIII.1.19}Caractérisation des homothéties (2) \centraleponts {2}}{124}{subsection.13.1.19}%
-\contentsline {subsection}{\numberline {XIII.1.20}Espaces engendrés par les matrices inversibles et orthogonales \centraleponts {3}}{124}{subsection.13.1.20}%
-\contentsline {subsection}{\numberline {XIII.1.21}Espace engendré par les matrices nilpotentes \centraleponts {3}}{125}{subsection.13.1.21}%
-\contentsline {subsection}{\numberline {XIII.1.22}Transmission d'information \centraleponts {3}}{125}{subsection.13.1.22}%
-\contentsline {subsection}{\numberline {XIII.1.23}Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires}{125}{subsection.13.1.23}%
-\contentsline {subsection}{\numberline {XIII.1.24}Partition de l'identité par des projecteurs \telecom {2}}{126}{subsection.13.1.24}%
-\contentsline {subsection}{\numberline {XIII.1.25}Equation entre projecteurs}{126}{subsection.13.1.25}%
-\contentsline {subsection}{\numberline {XIII.1.26}Théorème de Maschle}{127}{subsection.13.1.26}%
+\contentsline {subsection}{\numberline {XIII.1.17}Sous-espace nilpotent \centraleponts {3}}{123}{subsection.13.1.17}%
+\contentsline {subsection}{\numberline {XIII.1.18}Etude de la comatrice \centraleponts {3}}{123}{subsection.13.1.18}%
+\contentsline {subsection}{\numberline {XIII.1.19}Caractérisation des homothéties (1) \ccinp {2}}{124}{subsection.13.1.19}%
+\contentsline {subsubsection}{Matrices de trace nulle}{125}{subsection.13.1.19}%
+\contentsline {subsection}{\numberline {XIII.1.20}Caractérisation des homothéties (2) \centraleponts {2}}{125}{subsection.13.1.20}%
+\contentsline {subsection}{\numberline {XIII.1.21}Espaces engendrés par les matrices inversibles et orthogonales \centraleponts {3}}{125}{subsection.13.1.21}%
+\contentsline {subsection}{\numberline {XIII.1.22}Espace engendré par les matrices nilpotentes \centraleponts {3}}{126}{subsection.13.1.22}%
+\contentsline {subsection}{\numberline {XIII.1.23}Transmission d'information \centraleponts {3}}{126}{subsection.13.1.23}%
+\contentsline {subsection}{\numberline {XIII.1.24}Condition nécessaire et suffisante pour que l'image et le noyau soient supplémentaires}{126}{subsection.13.1.24}%
+\contentsline {subsection}{\numberline {XIII.1.25}Partition de l'identité par des projecteurs \telecom {2}}{126}{subsection.13.1.25}%
+\contentsline {subsection}{\numberline {XIII.1.26}Equation entre projecteurs}{127}{subsection.13.1.26}%
+\contentsline {subsection}{\numberline {XIII.1.27}Théorème de Maschle}{127}{subsection.13.1.27}%
 \contentsline {section}{\numberline {XIII.2}Correction Réduction géométrique}{129}{section.13.2}%
 \contentsline {subsection}{\numberline {XIII.2.1}Réduction des matrices de rang $1$}{129}{subsection.13.2.1}%
-\contentsline {subsubsection}{Application \ccinp {2}}{129}{Item.894}%
-\contentsline {subsubsection}{Dimension du commutant d'une matrice de rang 1 \centraleponts {3}}{130}{Item.894}%
-\contentsline {subsubsection}{Diagonalisabilité d'une matrice \centraleponts {3}}{130}{Item.894}%
+\contentsline {subsubsection}{Application \ccinp {2}}{129}{Item.900}%
+\contentsline {subsubsection}{Dimension du commutant d'une matrice de rang 1 \centraleponts {3}}{130}{Item.900}%
+\contentsline {subsubsection}{Diagonalisabilité d'une matrice \centraleponts {3}}{130}{Item.900}%
 \contentsline {subsection}{\numberline {XIII.2.2}\underline {Matrices réelles semblables} \centraleponts {2}}{131}{subsection.13.2.2}%
 \contentsline {subsection}{\numberline {XIII.2.3}Complément de Schur \telecom {2}}{131}{subsection.13.2.3}%
 \contentsline {subsection}{\numberline {XIII.2.4}Produit de Kronecker \ccinp {2}}{131}{subsection.13.2.4}%
@@ -602,9 +608,9 @@
 \contentsline {subsection}{\numberline {XIII.5.10}\underline {Matrices inversibles à coefficients entiers} \telecom {2}}{169}{subsection.13.5.10}%
 \contentsline {subsection}{\numberline {XIII.5.11}\underline {Sous-groupes de $(\mathbb {Z},+)$} \ccinp {2}}{169}{subsection.13.5.11}%
 \contentsline {subsection}{\numberline {XIII.5.12}\underline {Sous-groupes de $(\mathbb {R},+)$} \centraleponts {3}}{170}{subsection.13.5.12}%
-\contentsline {subsubsection}{Fonction (multi)périodique \centraleponts {3}}{170}{Item.999}%
-\contentsline {subsubsection}{$\cos (\mathbb {N})$ \centraleponts {3}}{171}{Item.999}%
-\contentsline {subsubsection}{Valeur d'adhérence du cercle unité \centraleponts {3}}{171}{Item.999}%
+\contentsline {subsubsection}{Fonction (multi)périodique \centraleponts {3}}{170}{Item.1005}%
+\contentsline {subsubsection}{$\cos (\mathbb {N})$ \centraleponts {3}}{171}{Item.1005}%
+\contentsline {subsubsection}{Valeur d'adhérence du cercle unité \centraleponts {3}}{171}{Item.1005}%
 \contentsline {subsection}{\numberline {XIII.5.13}Sous-groupes distingué \etoile {1}}{171}{subsection.13.5.13}%
 \contentsline {subsection}{\numberline {XIII.5.14}Nature d'une suite}{171}{subsection.13.5.14}%
 \contentsline {subsection}{\numberline {XIII.5.15}Une relation utile sur les morphismes de groupes \etoile {2}}{171}{subsection.13.5.15}%
@@ -650,7 +656,7 @@
 \contentsline {subsection}{\numberline {XIII.6.1}Centre d'un anneau \etoile {1}}{187}{subsection.13.6.1}%
 \contentsline {subsection}{\numberline {XIII.6.2}Calcul d'un inverse \etoile {3}}{187}{subsection.13.6.2}%
 \contentsline {subsection}{\numberline {XIII.6.3}Anneau de Boole \etoile {2}}{187}{subsection.13.6.3}%
-\contentsline {subsubsection}{L'anneau de Boole est principal \etoile {3}}{188}{Item.1060}%
+\contentsline {subsubsection}{L'anneau de Boole est principal \etoile {3}}{188}{Item.1066}%
 \contentsline {subsection}{\numberline {XIII.6.4}Condition suffisante pour qu'un anneau soit commutatif \etoile {3}}{189}{subsection.13.6.4}%
 \contentsline {subsection}{\numberline {XIII.6.5}Anneaux commutatifs ou anti-commutatifs \etoile {4}}{189}{subsection.13.6.5}%
 \contentsline {subsection}{\numberline {XIII.6.6}Anneau régulier \etoile {4}}{190}{subsection.13.6.6}%
@@ -710,17 +716,17 @@
 \contentsline {subsection}{\numberline {XIII.7.17}Un problème de congruence}{211}{subsection.13.7.17}%
 \contentsline {subsection}{\numberline {XIII.7.18}Un multiple de 2026 qui ne s'écrit qu'avec des $2$}{211}{subsection.13.7.18}%
 \contentsline {subsection}{\numberline {XIII.7.19}Somme des puissances $k$-ièmes dans $\mathbb {Z}/p\mathbb {Z}$}{211}{subsection.13.7.19}%
-\contentsline {subsection}{\numberline {XIII.7.20}Théorème de Wilson \etoile {2}}{211}{subsection.13.7.20}%
+\contentsline {subsection}{\numberline {XIII.7.20}Théorème de Wilson \etoile {2}}{212}{subsection.13.7.20}%
 \contentsline {subsection}{\numberline {XIII.7.21}Problème Putnam (2011) \etoile {5}}{212}{subsection.13.7.21}%
-\contentsline {subsection}{\numberline {XIII.7.22}Critère d'Euler}{212}{subsection.13.7.22}%
+\contentsline {subsection}{\numberline {XIII.7.22}Critère d'Euler}{213}{subsection.13.7.22}%
 \contentsline {subsection}{\numberline {XIII.7.23}Indicatrice d'Euler}{213}{subsection.13.7.23}%
 \contentsline {subsection}{\numberline {XIII.7.24}Une minoration de l'indicatrice d'Euler}{215}{subsection.13.7.24}%
-\contentsline {subsection}{\numberline {XIII.7.25}Formule d'inversion de Möbius}{215}{subsection.13.7.25}%
+\contentsline {subsection}{\numberline {XIII.7.25}Formule d'inversion de Möbius}{216}{subsection.13.7.25}%
 \contentsline {subsection}{\numberline {XIII.7.26}Probabilité que deux entiers soient premiers entre eux}{217}{subsection.13.7.26}%
 \contentsline {subsection}{\numberline {XIII.7.27}Limite d'une fonction arithmétique multiplicative}{217}{subsection.13.7.27}%
 \contentsline {subsection}{\numberline {XIII.7.28}Fonctions arithmétiques réelles additives}{217}{subsection.13.7.28}%
 \contentsline {subsection}{\numberline {XIII.7.29}Une majoration de la somme des diviseurs d'un entier \centraleponts {2}}{217}{subsection.13.7.29}%
-\contentsline {subsection}{\numberline {XIII.7.30}Nombres parfaits \telecom {2}}{217}{subsection.13.7.30}%
+\contentsline {subsection}{\numberline {XIII.7.30}Nombres parfaits \telecom {2}}{218}{subsection.13.7.30}%
 \contentsline {subsection}{\numberline {XIII.7.31}Entiers algébriques \centraleponts {2}}{218}{subsection.13.7.31}%
 \contentsline {subsection}{\numberline {XIII.7.32}Majoration de la primorielle}{218}{subsection.13.7.32}%
 \contentsline {subsection}{\numberline {XIII.7.33}Théorèmes de Mertens}{219}{subsection.13.7.33}%
@@ -773,7 +779,7 @@
 \contentsline {subsection}{\numberline {XIII.9.17}Lancer de dés équitable \etoile {3}}{234}{subsection.13.9.17}%
 \contentsline {subsection}{\numberline {XIII.9.18}Espérance conditionnelle \etoile {3}}{235}{subsection.13.9.18}%
 \contentsline {subsection}{\numberline {XIII.9.19}Problème du collectionneur \etoile {2}}{235}{subsection.13.9.19}%
-\contentsline {subsubsection}{Généralisation}{236}{Item.1204}%
+\contentsline {subsubsection}{Généralisation}{236}{Item.1210}%
 \contentsline {subsection}{\numberline {XIII.9.20}Problème de la ruine du joueur}{236}{subsection.13.9.20}%
 \contentsline {subsection}{\numberline {XIII.9.21}Passager d'un avion}{236}{subsection.13.9.21}%
 \contentsline {subsection}{\numberline {XIII.9.22}Fonction de répartition \etoile {4}}{236}{subsection.13.9.22}%
@@ -806,9 +812,9 @@
 \contentsline {subsection}{\numberline {XIII.9.49}Modes de convergences}{247}{subsection.13.9.49}%
 \contentsline {subsection}{\numberline {XIII.9.50}Marche aléatoire sur $\mathbb {Z}^d$ \etoile {3}}{247}{subsection.13.9.50}%
 \contentsline {subsubsection}{Le cas $d=1$ \etoile {2}}{247}{subsection.13.9.50}%
-\contentsline {subsubsection}{Le cas $d=2$}{249}{Item.1245}%
-\contentsline {subsubsection}{Le cas général}{249}{Item.1245}%
-\contentsline {subsubsection}{Marche aléatoire auto-évitante}{249}{Item.1245}%
+\contentsline {subsubsection}{Le cas $d=2$}{249}{Item.1251}%
+\contentsline {subsubsection}{Le cas général}{249}{Item.1251}%
+\contentsline {subsubsection}{Marche aléatoire auto-évitante}{249}{Item.1251}%
 \contentsline {subsection}{\numberline {XIII.9.51}Matrice de covariance \etoile {2}}{249}{subsection.13.9.51}%
 \contentsline {subsection}{\numberline {XIII.9.52}Maximisation de la variance sous-contrainte}{249}{subsection.13.9.52}%
 \contentsline {subsection}{\numberline {XIII.9.53}Inégalité de Kosmanek \etoile {1}}{250}{subsection.13.9.53}%
@@ -864,62 +870,64 @@
 \contentsline {subsection}{\numberline {XIII.10.45}Déterminant d'une exponentielle}{270}{subsection.13.10.45}%
 \contentsline {subsection}{\numberline {XIII.10.46}Exponentielle de matrices antisymétrique}{270}{subsection.13.10.46}%
 \contentsline {subsection}{\numberline {XIII.10.47}Théorème spectral}{270}{subsection.13.10.47}%
-\contentsline {subsection}{\numberline {XIII.10.48}Somme d'endomorphismes auto-adjoints positifs}{270}{subsection.13.10.48}%
-\contentsline {subsection}{\numberline {XIII.10.49}Réduction simultanée}{270}{subsection.13.10.49}%
-\contentsline {subsection}{\numberline {XIII.10.50}Produit de Hadamard de matrices symétriques positives}{270}{subsection.13.10.50}%
-\contentsline {subsection}{\numberline {XIII.10.51}Diagonale d'une matrice symétrique}{271}{subsection.13.10.51}%
-\contentsline {subsection}{\numberline {XIII.10.52}Diagonale d'une matrice symétrique positive}{271}{subsection.13.10.52}%
-\contentsline {subsection}{\numberline {XIII.10.53}Diagonale d'une matrice antisymétrique}{271}{subsection.13.10.53}%
-\contentsline {subsection}{\numberline {XIII.10.54}Matrices antisymétriques réelles}{271}{subsection.13.10.54}%
-\contentsline {subsubsection}{Rang et déterminant}{271}{subsection.13.10.54}%
-\contentsline {subsubsection}{Spectre}{272}{Item.1317}%
-\contentsline {subsubsection}{Diagonalisabilité (1)}{272}{Item.1320}%
-\contentsline {subsubsection}{Diagonalisabilité (2)}{272}{Item.1323}%
-\contentsline {subsubsection}{Réduction}{273}{Item.1327}%
-\contentsline {subsection}{\numberline {XIII.10.55}Endomorphismes normaux}{273}{subsection.13.10.55}%
-\contentsline {subsection}{\numberline {XIII.10.56}Réduction des normaux}{273}{subsection.13.10.56}%
-\contentsline {subsection}{\numberline {XIII.10.57}Caractérisation des matrices symétriques positives}{273}{subsection.13.10.57}%
-\contentsline {subsection}{\numberline {XIII.10.58}Inégalité de Hoffman-Wielandt}{273}{subsection.13.10.58}%
-\contentsline {subsection}{\numberline {XIII.10.59}Distance aux matrices de rang au plus r}{275}{subsection.13.10.59}%
-\contentsline {subsection}{\numberline {XIII.10.60}Théorème de Courant-Fischer \etoile {3}}{275}{subsection.13.10.60}%
-\contentsline {subsection}{\numberline {XIII.10.61}Principe de Ky-Fan}{276}{subsection.13.10.61}%
-\contentsline {subsection}{\numberline {XIII.10.62}Théorème de Cartan-Dieudonnée}{276}{subsection.13.10.62}%
-\contentsline {subsection}{\numberline {XIII.10.63}Relation d'ordre des matrices symétriques}{276}{subsection.13.10.63}%
-\contentsline {section}{\numberline {XIII.11}Correction Décompositions matricielles}{277}{section.13.11}%
-\contentsline {subsection}{\numberline {XIII.11.1}Décomposition de Dunford \etoile {2}}{277}{subsection.13.11.1}%
-\contentsline {subsubsection}{Diagonalisabilité de l'exponentielle d'une matrice \etoile {3}}{278}{Item.1338}%
-\contentsline {subsubsection}{Surjectivité de l'exponentielle matricielle \etoile {4}}{278}{Item.1338}%
-\contentsline {subsubsection}{Opérateur de commutation \etoile {3}}{279}{Item.1340}%
-\contentsline {subsubsection}{Deux applications non continues}{280}{Item.1342}%
-\contentsline {subsection}{\numberline {XIII.11.2}Décomposition polaire \etoile {3}}{280}{subsection.13.11.2}%
-\contentsline {subsubsection}{Sous-groupe compact maximal de GL$_n(\mathbb {R})$ \etoile {3}}{281}{Item.1349}%
-\contentsline {subsubsection}{Enveloppe convexe des matrices orthogonales}{282}{Item.1355}%
-\contentsline {subsubsection}{Points extrémaux des matrices orthogonales}{283}{Item.1361}%
-\contentsline {subsubsection}{Matrice extraite d'une matrice orthogonale}{283}{Item.1361}%
-\contentsline {subsubsection}{Matrices qui respectent le volume de $k$-parallélépipèdes rectangles}{283}{Item.1361}%
-\contentsline {subsection}{\numberline {XIII.11.3}Décomposition QR}{283}{subsection.13.11.3}%
-\contentsline {subsubsection}{Matrice de Householder}{283}{subsection.13.11.3}%
-\contentsline {subsection}{\numberline {XIII.11.4}Décomposition LU}{283}{subsection.13.11.4}%
-\contentsline {subsubsection}{$\mathbb {K}=\mathbb {R}$ ou $\mathbb {C}$}{283}{subsection.13.11.4}%
-\contentsline {subsubsection}{$\mathbb {K}=\mathbb {Z}/p\mathbb {Z}$}{283}{subsection.13.11.4}%
-\contentsline {subsubsection}{Algorithme de calcul}{283}{subsection.13.11.4}%
-\contentsline {subsubsection}{Décomposition de Cholesky}{283}{subsection.13.11.4}%
-\contentsline {subsection}{\numberline {XIII.11.5}Lemme de Fitting}{283}{subsection.13.11.5}%
-\contentsline {subsection}{\numberline {XIII.11.6}Réduction de Jordan}{284}{subsection.13.11.6}%
-\contentsline {subsubsection}{Application}{284}{Item.1366}%
-\contentsline {subsection}{\numberline {XIII.11.7}Réduction de Frobenius}{284}{subsection.13.11.7}%
-\contentsline {subsubsection}{$M\sim M^\top $}{284}{subsection.13.11.7}%
-\contentsline {subsubsection}{Matrices semblables à leur inverse}{284}{subsection.13.11.7}%
-\contentsline {subsubsection}{Bicommutant}{284}{subsection.13.11.7}%
-\contentsline {section}{\numberline {XIII.12}Correction Divers}{285}{section.13.12}%
-\contentsline {subsection}{\numberline {XIII.12.1}Fonction $\mathbb {R}$-linéaire mais pas $\mathbb {C}$-linéaire \etoile {1}}{285}{subsection.13.12.1}%
-\contentsline {subsection}{\numberline {XIII.12.2}Relation d'ordre}{285}{subsection.13.12.2}%
-\contentsline {subsection}{\numberline {XIII.12.3}Ordre lexicographique}{285}{subsection.13.12.3}%
-\contentsline {subsection}{\numberline {XIII.12.4}Inversibilité d'une matrice à coefficients rationnels \centraleponts {3}}{285}{subsection.13.12.4}%
-\contentsline {subsection}{\numberline {XIII.12.5}Polynômes préservant les matrices orthogonales \centraleponts {3}}{285}{subsection.13.12.5}%
-\contentsline {subsection}{\numberline {XIII.12.6}Sous-groupes de GL$_n(\mathbb {C})$ d'exposant fini \xens {5}}{286}{subsection.13.12.6}%
-\contentsline {subsection}{\numberline {XIII.12.7}Formule de Burnside \xens {4}}{286}{subsection.13.12.7}%
-\contentsline {subsection}{\numberline {XIII.12.8}Théorème de Fermat matriciel \centraleponts {3} (HP)}{287}{subsection.13.12.8}%
-\contentsline {subsection}{\numberline {XIII.12.9}Développement décimal propre d'un réel}{287}{subsection.13.12.9}%
-\contentsline {subsubsection}{Une caractérisation des rationnels}{288}{subsection.13.12.9}%
-\contentsline {subsection}{\numberline {XIII.12.10}Distribution du premier chiffre des puissances de 2}{288}{subsection.13.12.10}%
+\contentsline {subsection}{\numberline {XIII.10.48}Sous-espace diagonalisable}{270}{subsection.13.10.48}%
+\contentsline {subsection}{\numberline {XIII.10.49}Somme d'endomorphismes auto-adjoints positifs}{270}{subsection.13.10.49}%
+\contentsline {subsection}{\numberline {XIII.10.50}Réduction simultanée}{271}{subsection.13.10.50}%
+\contentsline {subsection}{\numberline {XIII.10.51}Produit de Hadamard de matrices symétriques positives}{271}{subsection.13.10.51}%
+\contentsline {subsection}{\numberline {XIII.10.52}Diagonale d'une matrice symétrique}{271}{subsection.13.10.52}%
+\contentsline {subsection}{\numberline {XIII.10.53}Diagonale d'une matrice symétrique positive}{271}{subsection.13.10.53}%
+\contentsline {subsection}{\numberline {XIII.10.54}Diagonale d'une matrice antisymétrique}{271}{subsection.13.10.54}%
+\contentsline {subsection}{\numberline {XIII.10.55}Translation par une matrice antisymétrique \xens {3}}{272}{subsection.13.10.55}%
+\contentsline {subsection}{\numberline {XIII.10.56}Matrices antisymétriques réelles}{272}{subsection.13.10.56}%
+\contentsline {subsubsection}{Rang et déterminant}{272}{subsection.13.10.56}%
+\contentsline {subsubsection}{Spectre}{273}{Item.1323}%
+\contentsline {subsubsection}{Diagonalisabilité (1)}{273}{Item.1326}%
+\contentsline {subsubsection}{Diagonalisabilité (2)}{273}{Item.1329}%
+\contentsline {subsubsection}{Réduction}{274}{Item.1333}%
+\contentsline {subsection}{\numberline {XIII.10.57}Endomorphismes normaux}{274}{subsection.13.10.57}%
+\contentsline {subsection}{\numberline {XIII.10.58}Réduction des normaux}{274}{subsection.13.10.58}%
+\contentsline {subsection}{\numberline {XIII.10.59}Caractérisation des matrices symétriques positives}{274}{subsection.13.10.59}%
+\contentsline {subsection}{\numberline {XIII.10.60}Inégalité de Hoffman-Wielandt}{274}{subsection.13.10.60}%
+\contentsline {subsection}{\numberline {XIII.10.61}Distance aux matrices de rang au plus r}{276}{subsection.13.10.61}%
+\contentsline {subsection}{\numberline {XIII.10.62}Théorème de Courant-Fischer \etoile {3}}{276}{subsection.13.10.62}%
+\contentsline {subsection}{\numberline {XIII.10.63}Principe de Ky-Fan}{276}{subsection.13.10.63}%
+\contentsline {subsection}{\numberline {XIII.10.64}Théorème de Cartan-Dieudonnée}{277}{subsection.13.10.64}%
+\contentsline {subsection}{\numberline {XIII.10.65}Relation d'ordre des matrices symétriques}{277}{subsection.13.10.65}%
+\contentsline {section}{\numberline {XIII.11}Correction Décompositions matricielles}{278}{section.13.11}%
+\contentsline {subsection}{\numberline {XIII.11.1}Décomposition de Dunford \etoile {2}}{278}{subsection.13.11.1}%
+\contentsline {subsubsection}{Diagonalisabilité de l'exponentielle d'une matrice \etoile {3}}{279}{Item.1344}%
+\contentsline {subsubsection}{Surjectivité de l'exponentielle matricielle \etoile {4}}{279}{Item.1344}%
+\contentsline {subsubsection}{Opérateur de commutation \etoile {3}}{280}{Item.1346}%
+\contentsline {subsubsection}{Deux applications non continues}{281}{Item.1348}%
+\contentsline {subsection}{\numberline {XIII.11.2}Décomposition polaire \etoile {3}}{281}{subsection.13.11.2}%
+\contentsline {subsubsection}{Sous-groupe compact maximal de GL$_n(\mathbb {R})$ \etoile {3}}{282}{Item.1355}%
+\contentsline {subsubsection}{Enveloppe convexe des matrices orthogonales}{283}{Item.1361}%
+\contentsline {subsubsection}{Points extrémaux des matrices orthogonales}{284}{Item.1367}%
+\contentsline {subsubsection}{Matrice extraite d'une matrice orthogonale}{284}{Item.1367}%
+\contentsline {subsubsection}{Matrices qui respectent le volume de $k$-parallélépipèdes rectangles}{284}{Item.1367}%
+\contentsline {subsection}{\numberline {XIII.11.3}Décomposition QR}{284}{subsection.13.11.3}%
+\contentsline {subsubsection}{Matrice de Householder}{284}{subsection.13.11.3}%
+\contentsline {subsection}{\numberline {XIII.11.4}Décomposition LU}{284}{subsection.13.11.4}%
+\contentsline {subsubsection}{$\mathbb {K}=\mathbb {R}$ ou $\mathbb {C}$}{284}{subsection.13.11.4}%
+\contentsline {subsubsection}{$\mathbb {K}=\mathbb {Z}/p\mathbb {Z}$}{284}{subsection.13.11.4}%
+\contentsline {subsubsection}{Algorithme de calcul}{284}{subsection.13.11.4}%
+\contentsline {subsubsection}{Décomposition de Cholesky}{284}{subsection.13.11.4}%
+\contentsline {subsection}{\numberline {XIII.11.5}Lemme de Fitting}{284}{subsection.13.11.5}%
+\contentsline {subsection}{\numberline {XIII.11.6}Réduction de Jordan}{285}{subsection.13.11.6}%
+\contentsline {subsubsection}{Application}{285}{Item.1372}%
+\contentsline {subsection}{\numberline {XIII.11.7}Réduction de Frobenius}{285}{subsection.13.11.7}%
+\contentsline {subsubsection}{$M\sim M^\top $}{285}{subsection.13.11.7}%
+\contentsline {subsubsection}{Matrices semblables à leur inverse}{285}{subsection.13.11.7}%
+\contentsline {subsubsection}{Bicommutant}{285}{subsection.13.11.7}%
+\contentsline {section}{\numberline {XIII.12}Correction Divers}{286}{section.13.12}%
+\contentsline {subsection}{\numberline {XIII.12.1}Fonction $\mathbb {R}$-linéaire mais pas $\mathbb {C}$-linéaire \etoile {1}}{286}{subsection.13.12.1}%
+\contentsline {subsection}{\numberline {XIII.12.2}Relation d'ordre}{286}{subsection.13.12.2}%
+\contentsline {subsection}{\numberline {XIII.12.3}Ordre lexicographique}{286}{subsection.13.12.3}%
+\contentsline {subsection}{\numberline {XIII.12.4}Inversibilité d'une matrice à coefficients rationnels \centraleponts {3}}{286}{subsection.13.12.4}%
+\contentsline {subsection}{\numberline {XIII.12.5}Polynômes préservant les matrices orthogonales \centraleponts {3}}{286}{subsection.13.12.5}%
+\contentsline {subsection}{\numberline {XIII.12.6}Sous-groupes de GL$_n(\mathbb {C})$ d'exposant fini \xens {5}}{287}{subsection.13.12.6}%
+\contentsline {subsection}{\numberline {XIII.12.7}Formule de Burnside \xens {4}}{287}{subsection.13.12.7}%
+\contentsline {subsection}{\numberline {XIII.12.8}Théorème de Fermat matriciel \centraleponts {3} (HP)}{288}{subsection.13.12.8}%
+\contentsline {subsection}{\numberline {XIII.12.9}Développement décimal propre d'un réel}{288}{subsection.13.12.9}%
+\contentsline {subsubsection}{Une caractérisation des rationnels}{289}{subsection.13.12.9}%
+\contentsline {subsection}{\numberline {XIII.12.10}Distribution du premier chiffre des puissances de 2}{289}{subsection.13.12.10}%
