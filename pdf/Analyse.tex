@@ -4416,7 +4416,21 @@ Soit $x\in ]0,1]$.
 	\end{enumerate}
 \end{enumerate}
 
-\section{Lemme de Hochshild \xens{4}}
+\section{Intégrale des puissances d'une fonction}
+\textcolor{blue}{\hyperref[Intégrale des puissances d'une fonction corrigé]{[Corrigé]}}\\
+\label{Intégrale des puissances d'une fonction}
+Soit $f:[0,1]\to \R$ continue, positive et non identiquement nulle.\\
+On pose pour $n\in \N,\ I_n=\displaystyle\int_0^1f(t)^ndt$.
+\begin{enumerate}
+	\item Rappeler la définition du rayon de convergence d'une série entière.
+	\item Calculer le rayon de convergence $R$ de la série entière $\displaystyle\sum_{n\in \N}I_nx^n$. On note $S$ sa somme.
+	\item Montrer que $\forall n\in \N^*,\ I_n^2\leq I_{n-1}I_{n+1}$.
+	\item En déduire que $I_{n+1}\unfty\sim \normep{\infty}{f}I_n$.
+	\item Montrer que $\forall x\in ]-R,R[,\ S(x)=\displaystyle\int_0^1\frac{1}{1-xf(t)}dt$.
+	\item En déduire un calcul de $\displaystyle\sum_{n=0}^{+\infty}(-1)^n\int_0^{\pi/2}\sin^n(t)dt$.
+\end{enumerate}
+
+\section{Lemme de Hochshild \xens{5}}
 \textcolor{blue}{\hyperref[Lemme de Hochshild corrigé]{[Corrigé]}}\\
 \label{Lemme de Hochsild}
 On note $E=\mathcal C^\infty(\R,\R)$ et pour tout $f\in E$, $V_f=\Vect(x\mapsto f(x+a),\ a\in \R)$.
@@ -5245,10 +5259,14 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		On constate que pour $u=0$ et $v=-\frac{1}{2\pi}$, on obtient bien le résultat pour tout $n\in\N^*$.\\
 		On a encore : \[\lim\limits_{p\to+\infty}\sum_{n=1}^{p}\frac{(-1)^n}{n^2}=-\frac{u\pi^2}{4}-\frac{v\pi^3}{6}=\frac{\pi^2}{12}\]
 	\end{enumerate}
+	
 	\subsubsection{Série de fonctions}
+	
 	\subsubsection{Série entière}
-	\subsection{Nombre moyen de diviseurs d'un entier \etoile{4}}\label{sec:nombre-moyen-de-diviseurs-dun-entier-etoile4}
-		\textcolor{blue}{\hyperref[Nombre moyen de diviseurs d'un entier]{[Enoncé]}}\\
+	
+	\subsection{Nombre moyen de diviseurs d'un entier \etoile{4}}
+	\label{sec:nombre-moyen-de-diviseurs-dun-entier-etoile4}
+	\textcolor{blue}{\hyperref[Nombre moyen de diviseurs d'un entier]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item Soit $x\in [1,+\infty[$.
 		\begin{align*}
@@ -5286,7 +5304,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	
 	
 	\subsection{Théorème de réarrangement de Riemann \etoile{5}}\label{sec:theoreme-de-rearrangement-de-riemann-etoile5}
-		\textcolor{blue}{\hyperref[Théorème de réarrangement de Riemann]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Théorème de réarrangement de Riemann]{[Enoncé]}}\\
 	Montrons dans un premier temps que la suite $(a_n)_{n\in \N}$ prend une infinité de valeurs positives et négatives. On note $P=\{n\in \N,\ a_n\geq 0\}$ et $N=\N\setminus P=\{n\in \N,\ a_n<0\}$\\
 	Supposons par l'absurde que $(a_n)_{n\in \N}$ prenne un nombre fini de valeurs négatives.\\
 	Alors on peut noter $n_0=\max N$ et dans ce cas la série $\displaystyle\sum\limits_{n\in \N}a_n$ est de même nature que $\displaystyle\sum\limits_{n>n_0}a_n=\sum\limits_{n>n_0}|a_n|$. Donc $\displaystyle\sum\limits_{n\in \N}a_n$ diverge ce qui est absurde.\\
@@ -5317,7 +5335,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	On a donc construit une bijection $\sigma$ de $\N$ dans $\N$ telle que $\displaystyle\sum\limits_{n=0}^{+\infty}a_{\sigma(n)}=\alpha$.
 	
 	\subsection{Moyennes arithmétique, géométrique et harmonique \etoile{1}}\label{sec:moyennes-arithmetique-geometrique-et-harmonique-etoile1}
-		\textcolor{blue}{\hyperref[Moyennes arithémtique, géométrique et harmonique]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Moyennes arithémtique, géométrique et harmonique]{[Enoncé]}}\\
 	On rappelle que $\ln$ est concave sur $\R^*_+$.\\
 	$\displaystyle\sum\limits_{k=1}^n\frac{1}{n}=1$ et $\displaystyle\frac{1}{n}\geq 0$ donc d'après l'inégalité de Jensen :
 	$$\displaystyle\frac{1}{n}\sum\limits_{k=1}^n\ln(a_k)\leq \ln\left(\displaystyle\frac{1}{n}\sum\limits_{k=1}^n a_k\right)$$
@@ -5337,7 +5355,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 \section{Correction Intégrale}
 	\subsection{Règle de Bioche}
 	\label{Règle de Bioche corrigé}
-		\textcolor{blue}{\hyperref[bioche]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[bioche]{[Enoncé]}}\\
 		
 	\subsection{Intégrale de Wallis \etoile{2}}
 	\label{Intégrale de Wallis corrigé}
@@ -10319,46 +10337,88 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{sec:serie-de-engel}
 	\textcolor{blue}{\hyperref[Série de Engel]{[Enoncé]}}\\
 	
-	\subsection{Lemme de Hochshild \xens{4}}
+	\subsection{Intégrale des puissances d'une fonction \centraleponts{3}}
+	\label{Intégrale des puissances d'une fonction corrigé}
+	\textcolor{blue}{\hyperref[Intégrale des puissances d'une fonction]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Le rayon de convergence $R$ d'une série entière $\displaystyle\sum_{n\in \N}a_nx^n$ est défini par $$R=\sup\{\rho\geq 0,\ (a_n\rho^n)_{n\in \N}\T{ est bornée}\}=\inf\{\rho\geq 0,\ \displaystyle\sum_{n\in \N}a_n\rho^n\T{ diverge grossièrement}\}$$
+		\item $f$ étant continue sur un segment elle est bornée. On note $\normep{\infty}{f}=\sup\limits_{[0,1]}|f|>0$.\\
+		On remarque que $\forall n\in \N,\ \left|I_n\cdot\normep{\infty}{f}^{-n}\right|\leq\displaystyle\int_0^1\left(\frac{|f(t)|}{\normep{\infty}{f}}\right)^ndt\leq 1$. Donc $R\geq \normep{\infty}{f}^{-1}$.\\
+		De plus, pour tout $\rho>\normep{\infty}{f}^{-1},\ I_n\rho^n>\displaystyle\int_0^1dt=1$. Donc $\displaystyle\sum_{n\in \N}I_n\rho^n$ diverge grossièrement.\\
+		Ainsi $R=\normep{\infty}{f}^{-1}$.
+		\item Soit $n\in \N^*$. On sait que $\proscal{f}{g}=\displaystyle\int_0^1f(t)g(t)dt$ définit un produit scalaire sur $\mathcal C^0([0,1],\R)$.\\
+		On rappelle que $f$ est positive donc par l'inégalité de Cauchy-Schwarz :
+		$$I_n^2=\left(\int_0^1f(t)^ndt\right)^2\leq \left(\int_0^1f(t)^{\frac{n-1}{2}}f(t)^{\frac{n+1}{2}}dt\right)^2\leq\int_0^1f(t)^{n-1}dt\int_0^1f(t)^{n+1}dt=I_{n-1}I_{n+1}$$
+		\item $f^n$ étant continue et positive pour tout $n\in \N$, par stricte positivité de l'intégrale $I_n\geq 0$ et $I_n=0\implies f^n=0\implies f=0$. Donc $I_n>0$ pour tout $n\in \N$.\\
+		Par conséquent en divisant par $I_nI_{n-1}$ dans l'inégalité de la question précédente on obtient la croissance de la suite $\left(\dfrac{I_n}{I_{n-1}}\right)_{n\in \N^*}$.\\
+		En outre cette suite est bornée puisque $\forall n\in \N,\ I_{n+1}=\displaystyle\int_0^1f(t)^nf(t)dt\leq \normep{\infty}{f}I_n$. d'après le théorème de convergence monotone cette suite converge donc vers un réel $\ell$.\\
+		Or d'après le critère de d'Alembert, on sait que si la suite de terme général $\left|\dfrac{I_{n+1}}{I_n}\right|=\dfrac{I_{n+1}}{I_n}$ converge vers une limite $L$ alors le rayon de convergence de $S$ vaut $\dfrac{1}{L}$.\\
+		On en déduit d'après la question 2 que $\ell=\normep{\infty}{f}$.\\
+		Ainsi $I_{n+1}\unfty\sim\normep{\infty}{f}I_n$.
+		\item Appliquons le théorème d'intégration terme à terme pour des fonctions positives. On pose pour $x\in ]-R,R[$ et $n\in \N,\ h_{n,x}:t\in [0,1]\mapsto f(t)^nx^n$.
+		\begin{itemize}
+			\item $\forall n\in \N,\ h_{n,x}$ est continue par morceaux et intégrable sur $[0,1]$.
+			\item Comme $|x|<R$, $\displaystyle\sum_{n\in \N}h_{n,x}$ converge simplement vers la fonction $s_x:t\mapsto \displaystyle\sum_{n=0}^{+\infty}f(t)^nx^n$ sur $[0,1]$.
+			\item $\forall t\in [0,1],\ |f(t)x|<\normep{\infty}fR<1$ donc $\forall t\in [0,1],\ s_x(t)=\dfrac{1}{1-xf(t)}$. Donc $s_x$ est continue par morceaux sur $[0,1]$.
+		\end{itemize}
+		On en déduit l'égalité $\displaystyle\int_0^1s_x(t)dt=\sum_{n=0}^{+\infty}\int_0^1h_{n,x}(t)dt$. Ainsi $S(x)=\displaystyle\int_0^1\sum_{n=0}^{+\infty}f(t)^nx^ndt=\int_0^1\dfrac{dt}{1-xf(t)}$.
+		\item Posons $g:t\mapsto \sin\left(\dfrac{\pi}{2}t\right)$ ainsi que $W_n=\displaystyle\int_0^1g(t)^ndt$. $\forall n\in \N,\ W_n=\displaystyle\frac{2}{\pi}\int_0^{\pi/2}\sin(t)^ndt$. $g$ est continue, positive et non identiquement nulle sur $[0,1]$. $\normep{\infty}{g}=1$.\\
+		D'après les questions précédentes le rayon de convergence de $\displaystyle\sum_{n\in \N}W_nx^n$ est $1$ et
+		$$\forall x\in ]-1,1[,\ W(x):=\sum_{n=0}^{+\infty}W_nx^n=\int_0^1\frac{dt}{1-x\sin\left(\frac{\pi}{2}t\right)}=\frac{2}{\pi}\int_0^{\pi/2}\frac{dt}{1-x\sin t}$$
+		Le rayon de convergence de $\displaystyle\sum_{n\in \N}(-1)^nW_nx^n$ est aussi $1$ et sa somme est $W(-x)$. On va lui appliquer le théorème de convergence radiale d'Abel.\\
+		Il faut vérifier que $\displaystyle\sum_{n\in \N}(-1)^nW_n$ converge. Appliquons le CSSA :
+		\begin{itemize}
+			\item $\forall n\in \N,\ W_{n+1}=\displaystyle\frac{2}{\pi}\int_0^{\pi/2}\sin(t)^n\sin(t)dt\leq \frac{2}{\pi}\int_0^{\pi/2}\sin(t)^ndt=W_n$;
+			\item La suite de fonction $(\sin^n)_{n\in \N}$ converge simplement sur $\left[0,\dfrac{\pi}{2}\right]$ vers $\mathbbm 1_{\{\pi/2\}}$ qui est continue par morceaux. C'est une suite de fonctions continues par morceaux et dominées par $t\mapsto 1$ qui est continue par morceaux et intégrable sur $\left[0,\dfrac{\pi}{2}\right]$.\\
+			Par le TCD $W_n\unfty\longrightarrow\displaystyle\frac{2}{\pi}\int_0^{\pi/2}\mathbbm 1_{\{\pi/2\}}dt=0$.
+		\end{itemize}
+		Donc par le CSSA $\displaystyle\sum_{n=0}^{+\infty}(-1)^nW_n\in \R$.\\
+		Ainsi par le théorème de convergence radiale d'Abel $x\mapsto W(-x)$ admet une limite en $1^-$ et $\displaystyle\lim_{x\to 1^-}W(-x)=\sum_{n=0}^{+\infty}(-1)^nW_n$.\\
+		D'autre part, $\displaystyle\lim_{x\to 1^-}W(-x)=\frac{2}{\pi}\int_0^{\pi/2}\frac{dt}{1+\sin t}$. Puis par le changement de variable $u=\dfrac{\pi}{2}-t$,
+		$$\int_0^{\pi/2}\frac{dt}{1+\sin t}=\int_0^{\pi/2}\frac{du}{1+\cos u}=\int_0^{\pi/2}\frac{du}{2\cos\left(\frac{u}{2}\right)^2}=\left[\tan\left(\frac{u}{2}\right)\right]_0^{\pi/2}=1$$
+		Ainsi on calcule $\displaystyle\sum_{n=0}^{+\infty}(-1)^n\int_0^{\pi/2}\sin^n(t)dt=\frac{\pi}{2}\sum_{n=0}^{+\infty}(-1)^nW_n=\frac{\pi}{2}$.
+	\end{enumerate}
+	
+	\subsection{Lemme de Hochshild \xens{5}}
 	\label{Lemme de Hochshild corrigé}
 	\textcolor{blue}{\hyperref[Lemme de Hochsild]{[Enoncé]}}\\
 	On va faire deux preuves de ce résultat. Dans les deux on aura besoin du lemme suivant (cf. I-4 tome Algèbre) :\\
-	Soit $X$ un ensemble et $(f_1,\dots,f_n)$ une famille libre de $\C^X$. Alors il existe $x_1,\dots,x_n\in X$ tels que la matrice $M:=(f_j(x_i))_{1\leq i,j\leq n}$ soit inversible.\\
+	Soit $(f_1,\dots,f_p)$ une famille libre de $\R^\R$. Alors il existe $x_1,\dots,x_n\in \R$ tels que la matrice $M:=(f_j(x_i))_{1\leq i,j\leq p}$ soit inversible.\\
 	Supposons que $V_f$ est de dimension finie et donnons nous en une base $(f_1,\dots,f_p)$.\\
 	Montrons que $V_f$ est stable par dérivation.\\
 	On note pour $a\in \R$, $\tau_a:x\mapsto x+a$.\\
 	\underline{$1^{\T{ère}}$ méthode :}\\
-	$\forall a\in \R,\ g_a:a\mapsto f\circ \tau_a(x)=f(x+a)\in V_f$. Il existe donc des réels $\lambda_1(a),\dots,\lambda_p(a)$ tels que $g_a=\displaystyle\sum_{i=1}^p\lambda_i(a)f_i$.\\
-	En évaluant en les réels $x_1,\dots,x_n$ du lemme on obtient $G(a)=M\Lambda(a)$ avec $G(a)=(g_a(x_1),\dots,g_a(x_n))^\top$ et $\Lambda(a)=(\lambda_1(a),\dots,\lambda_n(a))^\top$ i.e $\Lambda(a)=M^{-1}G(a)$.\\
+	$\forall a\in \R,\ g_a:x\mapsto f\circ \tau_a(x)=f(x+a)\in V_f$. Il existe donc des réels $\lambda_1(a),\dots,\lambda_p(a)$ tels que $g_a=\displaystyle\sum_{i=1}^p\lambda_i(a)f_i$.\\
+	En évaluant en les réels $x_1,\dots,x_p$ du lemme on obtient $G(a)=M\Lambda(a)$ avec $G(a)=(g_a(x_1),\dots,g_a(x_p))^\top$ et $\Lambda(a)=(\lambda_1(a),\dots,\lambda_p(a))^\top$ i.e $\Lambda(a)=M^{-1}G(a)$.\\
 	Or l'application $a\mapsto M^{-1}G(a)$ est dérivable car les composantes de $G(a)$ le sont et $N\in \M_p(\R)\mapsto M^{-1}N$ est linéaire.\\
-	Ainsi pour tous $1\leq i\leq n$ les applications $\lambda_i:a\mapsto \lambda_i(a)$ sont dérivables.\\
-	On en déduit que $\forall x\in \R,\ \forall a\in \R,\ f'(x+a)=\displaystyle\sum_{i=1}^n\lambda_i'(a)f_i(x)$. On a montré que
-	$$(f\circ \tau_a)'=\sum_{i=1}^n\lambda_i'(a)f_i\in V_f$$
+	Ainsi pour tous $1\leq i\leq p$ les applications $\lambda_i:a\mapsto \lambda_i(a)$ sont dérivables.\\
+	On en déduit que $\forall x\in \R,\ \forall a\in \R,\ f'(x+a)=\displaystyle\sum_{i=1}^p\lambda_i'(a)f_i(x)$. On a montré que
+	$$(f\circ \tau_a)'=\sum_{i=1}^p\lambda_i'(a)f_i\in V_f$$
 	En particulier $f'\in V_f$ puis par récurrence immédiate, $(f^{(n)})_{n\in \N}\in V_f^\N$.\\
 	On en déduit que la famille $(f,f',\dots,f^{(p)})$ est liée, càd :
 	$$\exists (a_0,\dots,a_p)\in \R^{p+1}\backslash\{(0,\dots,0)\},\ a_pf^{(p)}+\cdots+a_0f=0$$
 	Autrement dit $f$ est solution d'une équation différentielle homogène à coefficients constants.\\
-	Réciproquement supposons que $f$ est solution d'une équation différentielle homogène à coefficients constants que l'on peut prendre sous la forme :
-	$$f^{(p)}+a_{p-1}f^{(p-1)}+\cdots+a_0f=0$$
-	avec $a_0,\dots,a_{p-1}$ des réels non tous nuls. Alors pour tout $a\in \R$, $t\mapsto f(t+a)$ est solution de la même équation différentielle sur $\R$. Or on sait que l'ensemble des solutions de cette équation différentielle est un sous-espace vectoriel de $E$ de dimension finie. Donc $V_f$ est de dimension finie.\\\\
+	Réciproquement supposons que $f$ est solution d'une équation différentielle homogène à coefficients constants de la forme :
+	$$a_pf^{(p)}+a_{p-1}f^{(p-1)}+\cdots+a_0f=0$$
+	avec $a_0,\dots,a_p$ des réels non tous nuls. Alors pour tout $a\in \R$, $t\mapsto f(t+a)$ est solution de la même équation différentielle sur $\R$. Or on sait que l'ensemble des solutions de cette équation différentielle est un sous-espace vectoriel de $E$ de dimension finie. Donc $V_f$ est de dimension finie.\\\\
 	\underline{$2^{\T{nd}}$ méthode :}\\
 	Lemme : Si $V_f$ est de dimension finie alors il existe un segment $I$ de $\R$ tel que $\normep{I}{\cdot}:f\mapsto \sup\limits_{x\in I}|f(x)|$ définisse une norme sur $I$.\\
 	Soit $I$ un segment de $\R$. Comme les fonctions de $E$ sont continues $\normep{I}{\cdot}$ est bien définie sur $V_f$. On vérifie aisément l'homogénéité et l'inégalité triangulaire. Il s'agit de choisir $I$ pour que $\normep{I}{\cdot}$ vérifie l'axiome de séparation.\\
-	On se donne $x_1,\dots,x_n$ comme dans le lemme et posons $I=\left[\min\limits_{1\leq j\leq n}x_j,\max\limits_{1\leq j\leq n}x_j\right]$.\\
-	Alors pour tout $f=\displaystyle\sum_{i=1}^na_if_i\in V_f$, $\normep{I}{f}=0\implies \forall j\in \crblanc{1}{n},\ \displaystyle\sum_{i=1}^na_if_i(x_j)=0$.\\
-	Ou encore $M\begin{pmatrix}a_1\\\vdots\\a_n\end{pmatrix}=0$ d'où $a_1=\cdots=a_n=0$ càd $f=0$.
-	On se donne par le lemme un segment $I$ de $\R$ tel que $(V_f,\normep{I}{\cdot})$ soit un espace vectoriel normé.\\
-	$\forall x\in \R,\ f'(x)=\displaystyle\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\unfty\lim n\left[f\left(x+\frac{1}{n}\right)-f(x)\right]$.\\
-	On pose pour $n\in \N^*$, $g_n:x\mapsto n\left[f\left(x+\dfrac{1}{n}\right)-f(x)\right]$.\\
-	$(g_n)_{n\in \N^*}$ est à valeurs dans $V_f$.\\
-	On va montrer que $(g_n)_{n\in \N^*}$ converge vers $f'$ dans $(V_f,\normep{I}{\cdot})$.\\
-	\textit{Ici on pourrait être tenté, comme je l'ai été, d'utiliser la propriété qui dit qu'un sous-espace vectoriel de dimension finie d'un espace vectoriel normé est fermé. Cependant il n'est pas évident de poser une norme sur $E$... et surtout la norme $\normep{I}{\cdot}$ n'est pas une norme sur $E$. Cela nous empêche d'utiliser la propriété. On peut tout de même contourner ce problème avec un résultat de complétude mais qui est donc hors programme. (cf.\ref{R est complet})}\\
-	Soient $n\in \N^*$ et $x\in I$. D'après l'inégalité de Taylor-Lagrange :
-	$$\frac{1}{n}|g_n(x)-f'(x)|=\left|f\left(x+\frac{1}{n}\right)-f(x)-\frac{1}{n}f'(x)\right|\leq \frac{\normep{I}{f''}}{2n^2}$$
-	D'où $\normep{I}{g_n-f'}\leq \dfrac{\normep{I}{f''}}{2n}\unfty\longrightarrow 0$.\\
-	On en déduit que la suite $(g_n)_{n\in \N^*}$ est de Cauchy. Or un $\R$-espace vectoriel normé de dimension finie est complet. Elle admet donc une limite dans $V_f$ que l'on note $g$. A ce stade on sait seulement que $g$ coïncide avec $f$ sur $I$. Mais si $x\in \R$, alors en posant $K$ un segment qui contient $I$ et $x$, $\normep{K}{\cdot}$ est une norme sur $V_f$. En effet $\forall h\in V_f,\ \normep{K}{h}=0\implies \normep{I}{h}=0\implies h=0$. Donc par le même argument $g(x)=f'(x)$. Ceci étant vrai pour tout $x\in \R$, $g=f'$ et puis $f'\in V_f$. Quitte à remplacer $f$ par $f\circ \tau_a$ on obtient $(f\circ \tau_a)'\in V_f$.\\
+	On se donne des réels $x_1,\dots,x_p$ comme dans le lemme et on pose $I=\left[\min\limits_{1\leq j\leq n}x_j,\max\limits_{1\leq j\leq n}x_j\right]$.\\
+	Alors pour tout $f=\displaystyle\sum_{i=1}^pa_if_i\in V_f$, $\normep{I}{f}=0\implies \forall j\in \crblanc{1}{p},\ \displaystyle\sum_{i=1}^pa_if_i(x_j)=0$.\\
+	Ou encore $M\begin{pmatrix}a_1\\\vdots\\a_p\end{pmatrix}=0$ d'où $a_1=\cdots=a_p=0$ càd $f=0$.
+	Ainsi $(V_f,\normep{I}{\cdot})$ est un espace vectoriel normé.\\
+	On sait que $\forall x\in \R,\ f'(x)=\displaystyle\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\unfty\lim n\left[f\left(x+\frac{1}{n}\right)-f(x)\right]$.\\
+	On pose pour $n\in \N^*$, $h_n:x\mapsto n\left[f\left(x+\dfrac{1}{n}\right)-f(x)\right]$.\\
+	$(h_n)_{n\in \N^*}$ est à valeurs dans $V_f$.\\
+	On va montrer que $(h_n)_{n\in \N^*}$ converge vers $f'$ dans $(V_f,\normep{I}{\cdot})$.\\
+	\textit{Ici on pourrait être tenté, comme je l'ai été, d'utiliser la propriété qui dit qu'un sous-espace vectoriel de dimension finie d'un espace vectoriel normé est fermé. Cependant il n'est pas évident de poser une norme sur $E$... et surtout la norme $\normep{I}{\cdot}$ n'est pas une norme sur $E$. Cela nous empêche d'utiliser la propriété. On peut tout de même contourner ce problème avec un résultat de complétude mais qui est donc hors programme. (cf.\ref{Suites de Cauchy})}\\
+	Soient $n\in \N^*$ et $x\in I$. Comme $I$ est un segment, d'après l'inégalité de Taylor-Lagrange :
+	$$\frac{1}{n}|h_n(x)-f'(x)|=\left|f\left(x+\frac{1}{n}\right)-f(x)-\frac{1}{n}f'(x)\right|\leq \frac{\normep{I}{f''}}{2n^2}$$
+	D'où $\normep{I}{h_n-f'}\leq \dfrac{\normep{I}{f''}}{2n}\unfty\longrightarrow 0$.\\
+	On en déduit que la suite $(h_n)_{n\in \N^*}$ est de Cauchy. Or un $\R$-espace vectoriel normé de dimension finie est complet. Elle admet donc une limite dans $V_f$ que l'on note $h$. A ce stade on sait seulement que $h$ coïncide avec $f$ sur $I$ puisque $\normep{I}{h-f'}\leq \normep{I}{h-h_n}+\normep{I}{h_n-f'}\unfty\longrightarrow 0$. Mais si $x\in \R$, alors en posant $K$ un segment qui contient $I$ et $x$, $\normep{K}{\cdot}$ est une norme sur $V_f$. En effet $\forall g\in V_f,\ \normep{K}{g}=0\implies \normep{I}{g}=0\implies g=0$. Donc par le même argument $h(x)=f'(x)$. Ceci étant vrai pour tout $x\in \R$, $h=f'$ et puis $f'\in V_f$. Quitte à remplacer $f$ par $f\circ \tau_a$ on obtient $(f\circ \tau_a)'\in V_f$.\\
 	On conclut comme dans la première preuve.\\
-	\textit{Le résultat hors programme n'est pas dur à montrer. Il s'agit de montrer que $\R$ est complet, c'est-à-dire que toutes les suites de Cauchy converge dans $\R$ (on montre qu'une suite de Cauchy est bornée et a au plus une valeur d'adhérence.), puis pour les suites de Cauchy d'un evn de dimension finie, on montre que les suites de coordonnées sont de Cauchy.}
+	\textit{Le résultat hors programme n'est pas dur à montrer. Il s'agit de montrer que $\R$ est complet, c'est-à-dire que toutes les suites de Cauchy converge dans $\R$ (on montre qu'une suite de Cauchy est bornée et a au plus une valeur d'adhérence), puis pour les suites de Cauchy d'un evn de dimension finie, on montre que les suites de coordonnées sont de Cauchy.}
 	
 	\subsection{Théorème de Müntz}
 	\label{sec:theoreme-de-muntz}
