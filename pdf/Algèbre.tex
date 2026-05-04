@@ -1579,10 +1579,10 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item En déduire que $\Phi$ est nul.
 	\end{enumerate}
 
-	\section{Groupes de matrices \xens{3}}
-	\label{Sous-groupes de GLn(R)}
-	\textcolor{blue}{\hyperref[Sous-groupes de GLn(R) corrigé]{[Corrigé]}}\\
-	Soit $G$ une partie de $\M_n(\K)$ tel que $(G,\times)$ est un groupe non trivial.\\
+	\section{Groupes de matrices \centraleponts{3}}
+	\label{Groupes de matrices}
+	\textcolor{blue}{\hyperref[Groupes de matrices corrigé]{[Corrigé]}}\\
+	Soit $G$ une partie de $\M_n(\K)$ telle que $(G,\times)$ est un groupe non trivial.\\
 	Montrer qu'il existe $r\in \crblanc{1}{n}$ tel que $G$ soit isomorphe à un sous-groupe de GL$_r(\K)$.
 	
 	\section{Caractérisation de la finitude d'un groupe par ses sous-groupes \xens{3}}
@@ -1760,7 +1760,6 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\begin{enumerate}[leftmargin=*]
 		\item Déterminer les sous-groupes finis de $\mathcal{SO}(E)$.
 		\item Caractériser les sous-groupes finis de $\O(E)$.
-		\item Soit $G$ un sous-groupe fini de GL$(E)$. Déterminer un produit scalaire pour lequel tous les éléments de $G$ sont des automorphismes orthogonaux.
 	\end{enumerate}
 	
 	\section{Groupe diédral \centraleponts{3}}
@@ -1778,7 +1777,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item En déduire que $D_n=\{I_2,R,\dots,R^{n-1},S,SR,\dots,SR^{n-1}\}$.
 		\item Déterminer les groupes diédraux abéliens.
 	\end{enumerate}
-	On note $G_n$ le polygone du plan régulier à $n$ côtés centrés en l'origine et dont l'un des sommets est $(1,0)$.
+	On note $G_n$ le polygone du plan régulier à $n$ côtés centré en l'origine et dont l'un des sommets est $(1,0)$.
 	\begin{enumerate}[resume]
 		\item Déterminer les coordonnées des sommets de $G_n$
 		\item Soit $\Delta_n$ l'ensemble des isométries vectorielles de $\R^2$ préservant $G_n$, c'est-à-dire effectuant une permutation de ses sommets. Après avoir brièvement justifié que $\Delta_n$ est un groupe, montrer qu'il est isomorphe à $D_n$.
@@ -7089,32 +7088,31 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Finalement $\Phi=0$.
 	\end{enumerate}
 	
-	\subsection{Groupes de matrices \xens{3}}
-	\label{Sous-groupes de GLn(R) corrigé}
-	\textcolor{blue}{\hyperref[Sous-groupes de GLn(R)]{[Enoncé]}}\\
+	\subsection{Groupes de matrices \centraleponts{3}}
+	\label{Groupes de matrices corrigé}
+	\textcolor{blue}{\hyperref[Groupes de matrices]{[Enoncé]}}\\
 	Notons $E$ le neutre de $G$.\\
 	Par définition du neutre $E^2=E$ donc $E$ est une matrice de projection. On sait (ou redémontre aisément) alors que $E$ est semblable, par la matrice de passage $P$ de la base canonique de $\K^n$ à une base adaptée à la décomposition $\M_n(\K)=\ker(E-I_n)\bigoplus\ker(E)$, à $J_r=\left(\begin{array}{c|c}
 		I_r&0\\
 		\hline
 		0&0
 	\end{array}\right)$.\\
-	En particulier l'application $\fonction{f}{\T{GL}_r(\K)}{G}{M}{P^{-1}\left(\begin{array}{c|c}
-			M&0\\
-			\hline
-			0&0
-		\end{array}\right)P}$ est un morphisme de groupes injectif.\\
-	Ainsi $G$ est isomorphe à $f^{-1}(G)$ qui est un sous-groupe de GL$_r(\K)$.
+	Soit maintenant $M\in G$. On note $M=P\begin{pmatrix}
+		A&B\\
+		C&D
+	\end{pmatrix}P^{-1}$. Alors la relation $EM=M=ME$ donne $B=C=D=0$. Par conséquent l'application $\fonction{f}{G}{\T{GL}_r(\K)}{M}{A}$ est un morphisme de groupes injectif.\\
+	Ainsi $G$ est isomorphe à $\Ima(f)$ qui est un sous-groupe de GL$_r(\K)$.
 	
 	\subsection{Caractérisation de la finitude d'un groupe par ses sous-groupes \xens{3}}
 	\label{Caractérisation de la finitude d'un groupe par ses sous-groupes corrigé}
 	\textcolor{blue}{\hyperref[Caractérisation de la finitude d'un groupe par ses sous-groupes]{[Enoncé]}}\\
 	Notons $g$ l'ensemble des sous-groupes de $G$.\\
-	Si $G$ est fini alors $|\mathcal{P}(G)|=2^{|G|}$. Donc $g\subset \mathcal{P}(G)$ est fini.\\
+	Si $G$ est fini alors $|\P(G)|=2^{|G|}$. Donc $g\subset \P(G)$ est fini.\\
 	Supposons que $g$ est fini.\\
-	On écrit $G=\displaystyle\bigcup\limits_{x\in G}<x>$.\\
-	Par hypothèse, il existe une sous partie $G_0$ finie de $G$ telle que $\{<x>,\ x\in G\}=\{<x>,\ x\in G_0\}$.\\
-	De plus, pour tout $x\in G$, $<x>$ est fini. En effet, Si $<x>$ est infini alors les ensembles $<x^{2^n}>$ pour $n\in \N$ sont des sous-groupes de $G$ tous distincts $\left(<x^{2^{n+1}}>\ \subset\ <x^{2^n}>\text{ et }x^{2^n}\notin <x^{2^{n+1}}>\right)$ et $g$ n'est pas fini.\\
-	Donc $|G|=\displaystyle\left|\bigcup\limits_{x\in G_0}<x>\right|\leq \sum\limits_{x\in G_0}|<x>|<+\infty$.
+	On écrit $G=\displaystyle\bigcup_{x\in G}\langle x\rangle$.\\
+	Par hypothèse, il existe une sous partie $G_0$ finie de $G$ telle que $\{\langle x\rangle,\ x\in G\}=\{\langle x\rangle,\ x\in G_0\}$.\\
+	De plus, pour tout $x\in G$, $\langle x\rangle$ est fini. En effet, Si $\langle x\rangle$ est infini alors les ensembles $\langle x^{2^n}\rangle$ pour $n\in \N$ sont des sous-groupes de $G$ tous distincts $\left(\langle x^{2^{n+1}}\rangle\ \subset\ \langle x^{2^n}\rangle\text{ et }x^{2^n}\notin \langle x^{2^{n+1}}\rangle\right)$ et $g$ n'est pas fini.\\
+	Donc $|G|=\displaystyle\left|\bigcup_{x\in G_0}\langle x\rangle\right|\leq \sum_{x\in G_0}|\langle x\rangle|<+\infty$.
 	
 	\subsection{Sous-groupe des éléments d'ordre fini \xens{4}}
 	\label{Sous-groupes des éléments d'ordre fini corrigé}
@@ -7449,25 +7447,24 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 				1&0\\
 				0&-1
 			\end{pmatrix}$) est appelé groupe diédral d'ordre $2n$. Quitte à changer la base au départ on peut toujours se ramener à cette matrice. On a donc montré que les sous-groupes finis de $\O_2(\R)$ sont cycliques ou diédraux. L'exercice suivant s'intéresse de plus près aux groupes diédraux.}
-		\item Il me manque tellement rien pour y arriver sans gros théorème de Maschke :[
 	\end{enumerate}
 	
 	\subsection{Groupe diédral \centraleponts{3}}
 	\label{Groupe diédral corrigé}
 	\textcolor{blue}{\hyperref[Groupe diédral]{[Enoncé]}}
 	\begin{enumerate}[leftmargin=*]
-		\item $R$ est une matrice de rotation et $S$ une matrice de symétrie donc $D_n$ est un sous-groupe de $\O_2(\R)$. On rappelle $\O_2(\R)$ est composé seulement de matrices rotations et de réflexions, qui sont distinguées (hormis $I_2$) par le signe de leur déterminant.\\
+		\item $R$ est une matrice de rotation et $S$ une matrice de symétrie donc $D_n$ est un sous-groupe de $\O_2(\R)$. On rappelle que $\O_2(\R)$ est composé seulement de matrices rotations et de réflexions, qui sont distinguées (hormis $I_2$) par le signe de leur déterminant.\\
 		Tout d'abord, $SR=R^{-1}S\iff SR=(SR)^{-1}\iff (SR)^2=I_2$. Autrement dit il s'agit de montrer que $SR$ est une symétrie. Cela est vrai car $\det(RS)=\det(R)\det(S)=-1$.\\\\
 		\textit{Remarque : Ici le calcul matriciel est simple mais la méthode présentée fonctionne pour n'importe quelle rotation et n'importe quelle réflexion.}
 		\item Commençons par remarquer que comme $R$ est la matrice de rotation d'angle $\dfrac{2\pi}{n}$, elle est d'ordre $n$ càd $\langle R\rangle=\{I_2,R,\dots,R^{n-1}\}$. En particulier $R^{-1}=R^{n-1}$. Ainsi avec $S^2=I_2$, la question 1 justifie qu'un mot de $\langle R,S\rangle$ s'écrit toujours $R^iS^j$ avec $0\leq i\leq n-1$ et $j\in \{0,1\}$.\\
-		Reste à montrer que ces éléments sont tous distincts. On a déjà justifier que les $R^i$, $1\leq i\leq n-1$ le sont. Il sont distincts des $R^iS$ car ces derniers sont des symétries non triviales et non des rotations. Enfin, les $R^iS$ sont distincts entre eux car $R^i\mapsto R^iS$ est une bijection.\\
+		Reste à montrer que ces éléments sont tous distincts. On a déjà justifié que les $R^i$, $1\leq i\leq n-1$ le sont. Il sont distincts des $R^iS$ car ces derniers sont des symétries non triviales et non des rotations. Enfin, les $R^iS$ sont distincts entre eux car $R^i\mapsto R^iS$ est une bijection.\\
 		Ainsi $D_n=\{I_2,R,\dots,R^{n-1},S,SR,\dots,SR^{n-1}\}$.
 		\item $D_1=\{I_2,S\}$ et $D_2=\{I_2,-I_2,S,-S\}$ sont clairement abéliens. Et si $n\geq 3$, $R^{-1}$ est la matrice de rotation d'angle $-\dfrac{2\pi}{n}\not\equiv\dfrac{2\pi}{n}[2\pi]$. Donc $SR=R^{-1}S\ne RS$.
 		\item Une approche pratique pour les notations est de travailler dans $\C$. On va montrer que les points $z_k$ d'affixes $e^{2ik\pi/n}$ pour $0\leq k\leq n-1$ sont les sommets de $G_n$ dans le plan complexe. $z_0=e^{i0}=1$ donc il suffit de montrer que les distances $|z_{k+1}-z_k|$ sont toutes égales.\\
 		On calcule $|z_{k+1}-z_k|=|e^{2i\pi/n}z_k-z_k|=|e^{2i\pi/n}-1||z_k|=|e^{2i\pi/n}-1|$.\\
 		Ainsi les coordonnées des sommets de $G_n$ sont $\left(\cos\left(\dfrac{2k\pi}{n}\right),\sin\left(\dfrac{2k\pi}{n}\right)\right)$ pour $0\leq k\leq n-1$.
-		\item Une composée de transformations du plan qui conservent une figure conserve cette même figure. Les isométries vectorielles de $\R^2$ formant un groupe, $\Delta_n$ est bien un groupe.\\
-		Ensuite, en notant $\B=((1,0),(0,1))$ la base canonique de $\R^2$ on dispose d'un isomorphisme de $\O(\R^2)$ dans $\O_2(\R)$ donné par $\varphi:u\mapsto \Mat_\B(u)$. Montrons que $\varphi(\Delta_n)=D_n$. En premier $G_n$ est invariant par rotation d'angle $\dfrac{2\pi}{n}$ et par symétrie par rapport à l'axe des abscisses. Donc $\varphi^{-1}(D_n)\subset\Delta_n$.\\
+		\item Une composée de transformations du plan qui conservent une figure conserve cette même figure. De même si une transformation du plan conserve une figure alors sa transformation inverse conserve la même figure. Les isométries vectorielles de $\R^2$ formant un groupe, $\Delta_n$ en est un sous-groupe.\\
+		Ensuite, en notant $\B=((1,0),(0,1))$ la base canonique de $\R^2$ on dispose d'un isomorphisme de $\O(\R^2)$ dans $\O_2(\R)$ donné par $\varphi:u\mapsto \Mat_\B(u)$. Montrons que $\varphi(\Delta_n)=D_n$. En premier lieu $G_n$ est invariant par rotation d'angle $\dfrac{2\pi}{n}$ et par symétrie par rapport à l'axe des abscisses. Donc $\varphi^{-1}(D_n)\subset\Delta_n$.\\
 		Réciproquement, si $u\in \Delta_n$ alors :
 		\begin{itemize}
 			\item Si $\det(u)>0$, $u$ est une rotation dont on note $\theta$ l'angle. $u(1,0)=(\cos\theta,\sin\theta)$ est un des sommets de $G_n$, autrement dit $\exists k\in \crblanc{0}{n-1},\ \theta=\dfrac{2k\pi}{n}$. Et on donc $\varphi(u)=R^k\in D_n$.
