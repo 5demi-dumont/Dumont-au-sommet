@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.4)  4 MAY 2026 21:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.4)  11 MAY 2026 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1369,7 +1369,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\xens' on input line 142.
+(hyperref)                removing `\centraleponts' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -8624,7 +8624,7 @@ pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/
 stmary7.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfc
 han/uzcmi8a.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/yhmath/yhcmex.pfb>
-Output written on Algèbre.pdf (292 pages, 2789967 bytes).
+Output written on Algèbre.pdf (292 pages, 2789950 bytes).
 PDF statistics:
  6855 PDF objects out of 7423 (max. 8388607)
  2575 named destinations out of 2984 (max. 500000)
