@@ -4430,9 +4430,9 @@ On pose pour $n\in \N,\ I_n=\displaystyle\int_0^1f(t)^ndt$.
 	\item En déduire un calcul de $\displaystyle\sum_{n=0}^{+\infty}(-1)^n\int_0^{\pi/2}\sin^n(t)dt$.
 \end{enumerate}
 
-\section{Lemme de Hochshild \xens{5}}
-\textcolor{blue}{\hyperref[Lemme de Hochshild corrigé]{[Corrigé]}}\\
-\label{Lemme de Hochsild}
+\section{Lemme de Hochschild \xens{5}}
+\textcolor{blue}{\hyperref[Lemme de Hochschild corrigé]{[Corrigé]}}\\
+\label{Lemme de Hochschild}
 On note $E=\mathcal C^\infty(\R,\R)$ et pour tout $f\in E$, $V_f=\Vect(x\mapsto f(x+a),\ a\in \R)$.
 Déterminer les fonctions $f\in E$ telles que $V_f$ soit de dimension finie.\\
 \textit{On pourra commencer par montrer que si $V_f$ est de dimension finie alors il est stable par dérivation.}
@@ -10380,8 +10380,8 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\end{enumerate}
 	
 	\subsection{Lemme de Hochshild \xens{5}}
-	\label{Lemme de Hochshild corrigé}
-	\textcolor{blue}{\hyperref[Lemme de Hochsild]{[Enoncé]}}\\
+	\label{Lemme de Hochschild corrigé}
+	\textcolor{blue}{\hyperref[Lemme de Hochschild]{[Enoncé]}}\\
 	On va faire deux preuves de ce résultat. Dans les deux on aura besoin du lemme suivant (cf. I-4 tome Algèbre) :\\
 	Soit $(f_1,\dots,f_p)$ une famille libre de $\R^\R$. Alors il existe $x_1,\dots,x_n\in \R$ tels que la matrice $M:=(f_j(x_i))_{1\leq i,j\leq p}$ soit inversible.\\
 	Supposons que $V_f$ est de dimension finie et donnons nous en une base $(f_1,\dots,f_p)$.\\
@@ -10392,7 +10392,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	En évaluant en les réels $x_1,\dots,x_p$ du lemme on obtient $G(a)=M\Lambda(a)$ avec $G(a)=(g_a(x_1),\dots,g_a(x_p))^\top$ et $\Lambda(a)=(\lambda_1(a),\dots,\lambda_p(a))^\top$ i.e $\Lambda(a)=M^{-1}G(a)$.\\
 	Or l'application $a\mapsto M^{-1}G(a)$ est dérivable car les composantes de $G(a)$ le sont et $N\in \M_p(\R)\mapsto M^{-1}N$ est linéaire.\\
 	Ainsi pour tous $1\leq i\leq p$ les applications $\lambda_i:a\mapsto \lambda_i(a)$ sont dérivables.\\
-	On en déduit que $\forall x\in \R,\ \forall a\in \R,\ f'(x+a)=\displaystyle\sum_{i=1}^p\lambda_i'(a)f_i(x)$. On a montré que
+	On en déduit en dérivant par rapport à $a$ : $\forall x\in \R,\ \forall a\in \R,\ f'(x+a)=\displaystyle\sum_{i=1}^p\lambda_i'(a)f_i(x)$. On a montré que
 	$$(f\circ \tau_a)'=\sum_{i=1}^p\lambda_i'(a)f_i\in V_f$$
 	En particulier $f'\in V_f$ puis par récurrence immédiate, $(f^{(n)})_{n\in \N}\in V_f^\N$.\\
 	On en déduit que la famille $(f,f',\dots,f^{(p)})$ est liée, càd :
