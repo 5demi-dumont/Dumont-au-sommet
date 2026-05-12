@@ -773,7 +773,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\label{Dimension du commutant d'une matrice diagonalisable}
 	\textcolor{blue}{\hyperref[Dimension du commutant d'une matrice diagonalisable corrigé]{[Corrigé]}}\\
 	Soit $A\in \M_n(\K)$ diagonalisable.\\
-	On note $\operatorname{Sp}(A)=\{\lambda_1,\dots,\lambda_r\}$ ainsi que $n_1\dots,n_r$ leur multiplicité respective.\\ On note également $\mathcal{C}(A)=\{ M\in \M_n(\K),\ AM=MA\}$ le commutant de $A$.\\
+	On note $\operatorname{Sp}(A)=\{\lambda_1,\dots,\lambda_r\}$ ainsi que $n_1\dots,n_r$ leurs multiplicités respectives.\\ On note également $\mathcal{C}(A)=\{ M\in \M_n(\K),\ AM=MA\}$ le commutant de $A$.\\
 	\begin{enumerate}
 		\item Montrer que $\dim\mathcal{C}(A)=\displaystyle\sum\limits_{\lambda\in \operatorname{Sp}(A)}{\dim E_\lambda(A)^2}$
 		\item En déduire que $\dim \mathcal{C}(A)=n\iff \dim \K[A]=n\iff r=n\iff \mathcal{C}(A)=\K[A]$.
@@ -793,7 +793,8 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\section{Caractérisation de la diagonalisabilité par les hyperplans \centraleponts{3}}
 	\label{Caractérisation de la diagonalisabilité par les hyperplans}
 	\textcolor{blue}{\hyperref[Caractérisation de la diagonalisabilité par les hyperplans corrigé]{[Corrigé]}}\\
-	Soient $E$ un $\R$-espace vectoriel de dimension $n$ et $f\in \L(E)$.\\ Montrer que $f$ est diagonalisable si et seulement s'il existe $n$ hyperplans $H_1,\dots,H_n$ de $E$ stables par $f$ tels que $\displaystyle\bigcap\limits_{i=1}^n{H_i}=\{0_E\}$.
+	Soient $E$ un $\K$-espace vectoriel de dimension $n$ et $f\in \L(E)$.\\
+	Montrer que $f$ est diagonalisable si et seulement s'il existe $n$ hyperplans $H_1,\dots,H_n$ de $E$ stables par $f$ tels que $\displaystyle\bigcap\limits_{i=1}^n{H_i}=\{0\}$.
 	
 	\section{Hyperplans stables}
 	\label{Hyperplans stables}
@@ -802,7 +803,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item Soit $u$ un endomorphisme d'un $\C$-espace vectoriel $E$ de dimension finie.\\
 		Soit $H$ un hyperplan de $E$. Montrer que $H$ est stable par $u$ si et seulement si il existe $\lambda\in \C$ tel que $\T{Im}(u-\lambda\Id_E)\subset H$.
 		\item Soient $A\in \M_n(\R)$ et $u\in \L(\R^n)$ l'endomorphisme canoniquement associé.\\
-		Soit $X\in \R^n\backslash\{0\}$. Montrer que l'hyperplan $H=X^\bot$ est stable par $u$ si et seulement si $X$ est valeur propre de $A^\top$.
+		Soit $X\in \R^n\backslash\{0\}$. Montrer que l'hyperplan $H=X^\bot$ est stable par $u$ si et seulement si $X$ est vecteur propre de $A^\top$.
 	\end{enumerate}
 	
 	\section{Sous-espaces stables d'un endomorphisme à spectre simple \centraleponts{3}}
@@ -1263,7 +1264,6 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		(b)& &0\\
 	\end{pmatrix}\in \M_n(\C)$.
 	
-	
 	\section{\underline{Déterminant de Vandermonde}\ccinp{1}}
 	\label{Déterminant de Vandermonde}
 	\textcolor{blue}{\hyperref[Déterminant de Vandermonde corrigé]{[Corrigé]}}\\
@@ -1566,7 +1566,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	$$\forall (x,y)\in G^2,\ |f(xy)-f(x)f(y)|\leq \delta$$
 	\begin{enumerate}
 		\item Montrer que $f$ ne s'annule pas.
-		\item Soit $(z_n)\in G^\N$ telle que $(|f(z_n)|)_{n\in \N}$ diverge vers $+\infty$. Pour $x$ fixé, exprimer $f(x)$ à l'aide de $(z^n)_{n\in \N}$.
+		\item Soit $(z_n)\in G^\N$ telle que $(|f(z_n)|)_{n\in \N}$ diverge vers $+\infty$. Pour $x$ fixé, exprimer $f(x)$ à l'aide de $(z_n)_{n\in \N}$.
 		\item En déduire que $f$ est un morphisme.
 	\end{enumerate}
 	
