@@ -2496,15 +2496,15 @@ Soit $p$ un nombre premier impair.\\
 Montrer qu'il existe au moins $\displaystyle\frac{p+1}{2}$ valeurs de $n$ dans $\crblanc{0}{p-1}$ telles que $p$ ne divise pas $\displaystyle\sum_{k=0}^{p-1}k!n^k$.\\
 \textit{On admettra qu'un polynôme à coefficient dans $\Z/p\Z$ a toujours moins de racines que son degré.}
 
-ylo\section{Critère d'Euler \centraleponts{4}}
+\section{Critère d'Euler \centraleponts{4}}
 \label{Critère d'Euler}
 \textcolor{blue}{\hyperref[Critère d'Euler corrigé]{[Corrigé]}}\\
 Soit $p$ un nombre premier distinct de 2. On pose $\mathbb{F}_p=\Z/p\Z$ et $\mathbb F_p^*=\mathbb F_p\backslash \{\overline{0}\}$.
 \begin{enumerate}[leftmargin=*]
 	\item On pose $\mathcal C=\{x^2,x\in \mathbb F_p^*\}$. Montrer que $\Card(\mathcal C)=\displaystyle\frac{p-1}{2}$.
-	\item Soit $a\in\F_p^*$. Montrer que $a^{\frac{p-1}{2}}\in \{-\overline 1,\overline 1\}$.
+	\item Soit $a\in\mathbb F_p^*$. Montrer que $a^{\frac{p-1}{2}}\in \{-\overline 1,\overline 1\}$.
 	\item Soient $d\in \N^*$ et $P\in \Z_{d-1}[X]$. Soit $(a_1,\dots,a_d)\in \Z^d$ telle que les $a_i$ soient distincts modulo $p$ et telle que $\forall i\in \crblanc{1}{d},\ p|P(a_i)$. Montrer que $\forall n\in \Z,\ p|P(n)$.
-	\item Montrer alors que $a^{\frac{p-1}{2}}=
+	\item Montrer alors que $\forall a\in \mathbb F_p^*,\ a^{\frac{p-1}{2}}=
 	\begin{cases}
 		\overline 1 & \mbox{si } a\in \mathcal C\\
 		-\overline 1 & \mbox{sinon}
@@ -8472,7 +8472,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\subsection{Racine carré d'un nombre premier \etoile{2}}
 	\label{Racine carré d'un nombre premier corrigé}
-		\textcolor{blue}{\hyperref[Racine carré d'un nombre premier]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Racine carré d'un nombre premier]{[Enoncé]}}\\
 	Supposons par l'absurde que $\sqrt{p}\in \Q$. Alors il existe un couple d'entiers $(a,b)\in \Z\times \N^*$ premiers entre eux tel que $\sqrt{p}=\displaystyle\frac{a}{b}$.\\
 	Il suit que $pb^2=a^2$. Intéressons nous à la valuation $p$-adique de $a^2$.\\
 	D'une part, si on écrit $a=\displaystyle\prod_{q\text{ premier}}q^{v_q(a)}$ la décomposition en facteur premier de $a$ alors $a^2=\displaystyle\prod_{q\text{ premier}}q^{2v_q(a)}$ d'où $v_p(a^2)=2v_p(a)$ est paire.\\
@@ -8627,25 +8627,25 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Critère d'Euler corrigé}
 	\textcolor{blue}{\hyperref[Critère d'Euler]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Soit $x,y\in \mathbb F_p^*$.\\
+		\item Soit $x,y\in \mathbb F_p^*$. Par intégrité du corps $\mathbb F_p$,\\
 		\[x^2=y^2\Leftrightarrow (x+y)(x-y)=0\Leftrightarrow x=y \text{ ou } x=-y\]
-		Comme $p\ne 2$, $y\ne -y$, ainsi tout élément de $\mathcal{C}$ admet exactement deux antécédent par l'application $x\mapsto x^2$.\\
-		Ainsi puisque $\mathcal{C}$ est l'image de cette application et que $\Card(\mathbb F_p^*)=p-1$, on obtient : \[\Card(\mathcal{C})=\frac{p-1}{2}\]
-		\item Puisque $\Card(\mathbb F_p^*)=p-1$, on a $\left(a^{\frac{p-1}{2}}\right)^2=1$.\\
-		Ainsi par intégrité du corps $\mathbb F_p^*$, $a^{\frac{p-1}{2}}\in\{\pm\overline{1}\}$.
-		\item On rappelle que les polynômes de Lagrange $L_i=\prod_{j\ne i}\frac{X-a_j}{a_i-a_j}$ forme une base de $\R[X]$.\\
-		Par conséquent, on peut écrire \[P=\sum_{i=1}^{d}P(a_d)L_i\]
+		Comme $p\ne 2$, $y\ne -y$ et par conséquent tout élément de $\mathcal C$ admet exactement deux antécédent par l'application $x\mapsto x^2$.\\
+		Ainsi puisque $\mathcal C$ est l'image de cette application et que $\Card(\mathbb F_p^*)=p-1$, on obtient : \[\Card(\mathcal C)=\frac{p-1}{2}\]
+		\item Puisque $\mathbb F_p^*$ est un groupe de cardinal $p-1$, si $a\in \mathbb F_p^*$ alors $\left(a^{\frac{p-1}{2}}\right)^2=a^{p-1}=\overline 1$.\\
+		Ainsi, $a^{\frac{p-1}{2}}\in\{\pm\overline 1\}$.
+		\item On rappelle que les polynômes de Lagrange $L_i=\displaystyle\prod_{j\ne i}\frac{X-a_j}{a_i-a_j}$ vérifient \[P=\sum_{i=1}^{d}P(a_d)L_i\]
 		Il existe donc des entiers $n_1,\dots,n_d$ tels que 
-		\[\left(\prod_{1\leq i<j\leq n}a_j-a_i\right)P=\sum_{i=1}^{n}P(a_i)\prod_{j\ne i}(X-a_j)\]
-		Ainsi pour tout $n\in\Z$, \[\left(\prod_{1\leq i<j\leq n}a_j-a_i\right)P(n)=\sum_{i=1}^{n}P(a_i)\prod_{j\ne i}(n-a_j)\]
-		On sait que $p|P(a_i)$ pour tout $i\in\crblanc{1}{n}$, ainsi $p$ divise le membre de droite.\\
-		Puisque que les $a_i$ sont distincts modulo $p$, $p$ ne divise pas $\left(\prod_{1\leq i<j\leq n}a_j-a_i\right)$ donc d'après le lemme d'Euclide $p|P(n)$.
-		\item D'après le théorème de Lagrange, pour tout $a\in\mathcal{C}$, $a^{\frac{p-1}{2}}=\overline{1}$.
-		Donc \[\mathcal{C}\subset\{a\in\mathbb F_p^*,a^{\frac{p-1}{2}}=\overline{1}\}\]
-		On pose $P=X^{\frac{p-1}{2}}-\overline{1}\in \R_{\frac{p-1}{2}}[X]$.\\
-		Supposons qu'il existe $a\in\mathbb F_p^*\setminus\mathcal{C}$ tel que $a^{\frac{p-1}{2}}=\overline{1}$.\\
-		Ainsi, $P$ admet $\frac{p-1}{2}+1$ racines donc $p$ divise toutes les racines de $P$ ainsi d'après la question précédente pour tout $n\in\Z$, $p|P(n)$ ce qui est absurde car $p\not\mid P(0)=-\overline{1}$.\\
-		Ainsi, $\mathcal{C}=\{a\in\mathbb F_p^*,a^{\frac{p-1}{2}}=\overline{1}\}$.
+		\[\left(\prod_{1\leq i<j\leq n}(a_j-a_i)\right)P=\sum_{i=1}^nn_iP(a_i)\prod_{j\ne i}(X-a_j)\]
+		Ainsi pour tout $n\in\Z$, \[\left(\prod_{1\leq i<j\leq n}(a_j-a_i)\right)P(n)=\sum_{i=1}^nn_iP(a_i)\prod_{j\ne i}(n-a_j)\]
+		On sait que $p|P(a_i)$ pour tout $i\in\crblanc{1}{n}$ donc $p$ divise le membre de droite.\\
+		Puisque que les $a_i$ sont distincts modulo $p$, $p$ ne divise pas $\left(\displaystyle\prod_{1\leq i<j\leq n}(a_j-a_i)\right)$ donc d'après le lemme d'Euclide $p|P(n)$.
+		\item Soit $a=x^2\in\mathcal C$, $a^{\frac{p-1}{2}}=x^{p-1}=\overline 1$.
+		Donc \[\mathcal C\subset\{a\in\mathbb F_p^*,a^{\frac{p-1}{2}}=\overline 1\}\]
+		On pose $P=X^{\frac{p-1}{2}}-1\in \Z_{\frac{p-1}{2}}[X]$.\\
+		Supposons qu'il existe $\overline a\in\mathbb F_p^*\backslash\mathcal C$ tel que $\overline{a}^{\frac{p-1}{2}}=\overline 1$.\\
+		Alors, $p$ divise tous les de $P(x)$ pour $\overline x\in \mathcal C$ ainsi que $P(a)$. De plus tous ces éléments sont distincts dans $\mathbb F_p$.\\ 
+		Ainsi d'après la question précédente pour tout $n\in\Z$, $p|P(n)$ ce qui est absurde car $p\nmid P(0)=-1$.\\
+		Ainsi, $\mathcal C=\{a\in\mathbb F_p^*,a^{\frac{p-1}{2}}=\overline 1\}$.
 	\end{enumerate}
 	
 	\subsection{Indicatrice d'Euler}
