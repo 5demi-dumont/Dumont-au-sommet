@@ -1156,7 +1156,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\section{Diagonalisabilité du produit de deux matrices \centraleponts{3}}
 	\label{Diagonalisabilité du produit de deux matrices}
 	\textcolor{blue}{\hyperref[Diagonalisabilité du produit de deux matrices corrigé]{[Corrigé]}}\\
-	Soit $(A,B)\in \M_{n,p}(\K)\times \M_{p,n}{\K}$. On suppose que $AB$ est diagonalisable et inversible.\\
+	Soit $(A,B)\in \M_{n,p}(\K)\times \M_{p,n}(\K)$. On suppose que $AB$ est diagonalisable et inversible.\\
 	Montrer que $BA$ est diagonalisable
 	\begin{itemize}
 		\item avec des arguments de réduction algébrique
@@ -2068,7 +2068,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\begin{enumerate}
 		\item Soit $I$ un idéal de $A$. Montrer que $I$ est maximal si et seulement si $\forall a\in A\backslash I,\ I+aA=A$.
 		\item Montrer que $x\in J\iff \forall a\in A,\ 1_A-ax\in A^\times$.\\
-		\textit{On admettra le théorème de Krull : Dans un anneau commutatif unitaire, tout idéal autre que l'anneau lui-même est contenu dans un idéal maximal.}
+		\textit{On admettra le théorème de Krull : Dans un anneau commutatif, tout idéal autre que l'anneau lui-même est contenu dans un idéal maximal.}
 	\end{enumerate}
 	
 	\section{Idéaux de $\M_n(\K)$}
@@ -2083,7 +2083,6 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\subsection{Idéaux bilatère \centraleponts{3}}
 	Soit $J$ un idéal bilatère de $\M_n(\K)$.
 	\begin{enumerate}
-		\item Montrer que si $I_n\in J$ alors $J=\M_n(\K)$.
 		\item Montrer que si $J$ contient une matrice inversible alors $J=\M_n(\K)$.
 		\item On suppose que $J$ n'est pas réduit à $\{0\}$ et on fixe une matrice $A\in J$ de rang $r$ non nul.
 		\begin{enumerate}[label=\alph*.]
@@ -2104,12 +2103,12 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\begin{enumerate}[label=\alph*.]
 			\item Justifier l'existence, pour tout $i\in \crblanc{1}{q}$, d'un unique élément $\varepsilon_i\in S$ tel que $u(\varepsilon_i)=v(e_i)$.
 			\item En déduire l'existence de $w\in \mathcal L(\R^q,\R^p)$ telle que $v=u\circ w$.
-			\item Soit $(A,B)\in \M_{n,p}(\K)\times\M_{n,q}{\K}$ tel que $\text{Im}(B)\subset \text{Im}(A)$.\\
+			\item Soit $(A,B)\in \M_{n,p}(\K)\times\M_{n,q}(\K)$ tel que $\text{Im}(B)\subset \text{Im}(A)$.\\
 			Déduire de ce qui précède l'existence d'une matrice $C\in \M_{p,q}(\K)$ vérifiant que $B=AC$.
 		\end{enumerate}
 		\item Soient $A,B$ et $C$ trois matrices carrées d'ordre $n$ à coefficients dans $\K$ telles que $\text{Im}(C)\subset\text{Im}(A)+\text{Im}(B)$.
 		\begin{enumerate}[label=\alph*.]
-			\item On désigne par $D=(A|B)$ la matrice de $\M_{n,2n}{\K}$ obtenue en juxtaposant les matrices $A$ et $B$, c'est à dire que les $n$ première colonnes de $D$ sont celles de $A$ et les $n$ dernières sont celles de $B$.\\
+			\item On désigne par $D=(A|B)$ la matrice de $\M_{n,2n}(\K)$ obtenue en juxtaposant les matrices $A$ et $B$, c'est à dire que les $n$ première colonnes de $D$ sont celles de $A$ et les $n$ dernières sont celles de $B$.\\
 			Montrer que $\text{Im}(D)=\text{Im}(A)+\text{Im}(B)$
 			\item En déduire l'existence de deux matrices $U,V\in \M_n(\K)$ vérifiant $C=AU+BV$.
 		\end{enumerate}
@@ -2131,8 +2130,8 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\begin{enumerate}[label=\alph*.]
 			\item Montrer que $(u(e_1),\dots,u(e_r))$ est une famille libre de $\R^p$.
 			\item Montrer qu'il existe $w\in \mathcal L(\R^p,\R^q)$ telle $v=w\circ u$.
-			\item Soit $(A,B)\in \M_{p,n}{\K}\times \M_{q,n}{\K}$ tel que $\Ker(A)\subset \Ker(B)$.\\
-			Déduire de ce qui précède l'existence d'une matrice $C\in \M_{q,p}{\K}$ vérifiant $B=CA$.
+			\item Soit $(A,B)\in \M_{p,n}(\K)\times \M_{q,n}(\K)$ tel que $\Ker(A)\subset \Ker(B)$.\\
+			Déduire de ce qui précède l'existence d'une matrice $C\in \M_{q,p}(\K)$ vérifiant $B=CA$.
 		\end{enumerate}
 		\item Soient $A,B$ et $C$ trois matrices carrées d'ordre $n$ à coefficients dans $\K$ telles que $\Ker(A)\cap\Ker(B)\subset \Ker(C)$.\\
 		Montrer qu'il existe deux matrices $U,V\in \M_n(\K)$ telles que $C=UA+VB$.
@@ -2266,14 +2265,9 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\textcolor{blue}{\hyperref[Corps des nombres algébriques corrigé]{[Corrigé]}}\\
 	On note $\mathbb A=\{z\in \C\ |\ \exists P\in \Q[X]\backslash\{0\},\ P(z)=0\}$ l'ensemble des nombres algébriques.\\\\
 	Montrer que $(\mathbb A,+,\times)$ est un corps.\\
-	\textit{\underline{Indication}: pour la stabilité par somme et par produit on pourra poser pour} $(x,y)\in \mathbb A^2$,\\
-
-
-	\[V=\bigl(\begin{smallmatrix}
-		1 & x & x^{2} & \cdots & x^{n-1} & y & xy & x^{2}y & \cdots & x^{n-1}y & \cdots & x^{n-1}y^{m-1}
-	\end{smallmatrix}\bigr)\]
-
-		\textit{avec $n$ et $m$ les degrés de polynômes unitaires de $\Q[X]$ qui annulent $x$ et $y$ respectivement, puis montrer qu'il existe deux matrices $A,B\in \M_{nm}(\Q)$ telles que $AV^\top=xV^\top$ et $BV^\top=yV^\top$.}
+	\textit{\underline{Indication}: pour la stabilité par somme et par produit on pourra poser pour} $(x,y)\in \mathbb A^2$,
+	$$V=(1,x,x^{2},\cdots,x^{n-1},y,xy,x^{2}y,\cdots,x^{n-1}y,\cdots,x^{n-1}y^{m-1})^\top$$
+	\textit{avec $n$ et $m$ les degrés de polynômes unitaires de $\Q[X]$ qui annulent $x$ et $y$ respectivement, puis montrer qu'il existe deux matrices $A,B\in \M_{nm}(\Q)$ telles que $AV^\top=xV^\top$ et $BV^\top=yV^\top$.}
 	
 	\section{Théorème de Kronecker \xens{4}}
 	\label{Théorème de Kronecker}
@@ -2296,6 +2290,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	On pose pour $n\in \N,\ I_n=\displaystyle\int_0^1x^ne^xdx$.\\
 	\begin{enumerate}
 		\item Déterminer la limite de $(I_n)_{n\in \N}$.
+		\item Déterminer une relation entre $I_{n+1}$ et $I_n$.
 		\item En déduire que $e$ est irrationnel.
 	\end{enumerate}
 	
@@ -8404,9 +8399,29 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Irrationalité de e (1)}
 	\label{Irrationalité de e (1) corrigé}
 	\textcolor{blue}{\hyperref[Irrationalité de e (1)]{[Enoncé]}}\\
+	Supposons par l'absurde que $e=\dfrac{p}{q}$ avec $p,q\in \N^*$.\\
+	$q!p=\displaystyle\sum_{k=0}^q\frac{q!q}{k!}+q\sum_{k=q+1}^{+\infty}\frac{q!}{k!}$.\\
+	On remarque que le premier terme est un entier puisque $k!|q!$ pour tout $k\leq q$.\\
+	Montrons que le deuxième terme $\varepsilon_q=\displaystyle\sum_{k=q+1}^{+\infty}\frac{q!}{k!}$ n'est pas entier.\\
+	On sait que $(q+1)!=(q+1)q!$ et $\forall k>q+1,\ k!>q!(q+1)^{q-k}$. Donc $\varepsilon_q<q\displaystyle\sum_{k=q+1}^{+\infty}\frac{1}{(q+1)^{k-q}}=\frac{q}{q+1}\cdot\frac{1}{1-(q+1)^{-1}}=1$.\\
+	Il est clair que $\varepsilon_q>0$ donc $\varepsilon_q$ n'est pas un entier. Ceci contredit le fait que $\varepsilon_q$ est la différence de deux entiers donc $e\notin\Q$.
+	
 	\subsection{Irrationalité de e (2)}
 	\label{Irrationalité de e (2) corrigé}
 	\textcolor{blue}{\hyperref[Irrationalité de e (2)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $0\leq I_n\leq e\displaystyle\int_0^1x^ndx=\frac{e}{n+1}\unfty\longrightarrow 0$. Donc $I_n\unfty\longrightarrow 0$.
+		\item Par IPP $\forall n\in \N,\ I_{n+1}=\displaystyle[x^{n+1}e^x]_0^1-(n+1)\int_0^1x^ne^xdx=e-(n+1)I_n$.\\
+		Montrons la propriété par récurrence :\\
+		$I_0=\displaystyle\int_0^1e^xdx=e-1$ donc la propriété est vraie au rang $0$ pour $a_0=-1$ et $b_0=1$.\\
+		Supposons qu'il existe $a_n,b_n\in \Z$ tels que $I_n=a_n+b_ne$.\\
+		Alors $I_{n+1}=e-(n+1)I_n=e-(n+1)(a_n+b_ne)=(1-(n+1)b_n)e-(n+1)a_n$. D'où la propriété au rang $n+1$ avec $a_{n+1}=-(n+1)a_n$ et $b_{n+1}=(1-(n+1)b_n)$.
+		\item Supposons que $e=\dfrac{p}{q}$ avec $p,q\in \N^*$.\\
+		Alors $\forall n\in \N,\ qI_n=qa_n+pb_n\in \Z$.\\
+		D'autre part d'après la question 1, $qI_n\unfty\longrightarrow 0$. Il est classique de montrer qu'une suite d'entiers qui converge stationne. Donc $I_n$ stationne à $0$.\\
+		Ceci est absurde car par stricte positivité de l'intégrale, $\forall n\in \N,\ I_n>0$.\\
+		Ainsi $e\notin\Q$.
+	\end{enumerate}
 	
 	\subsection{Irrationalité de $\pi$}
 	\label{Irrationalité de pi corrigé}
