@@ -8643,7 +8643,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Donc \[\mathcal C\subset\{a\in\mathbb F_p^*,a^{\frac{p-1}{2}}=\overline 1\}\]
 		On pose $P=X^{\frac{p-1}{2}}-1\in \Z_{\frac{p-1}{2}}[X]$.\\
 		Supposons qu'il existe $\overline a\in\mathbb F_p^*\backslash\mathcal C$ tel que $\overline{a}^{\frac{p-1}{2}}=\overline 1$.\\
-		Alors, $p$ divise tous les de $P(x)$ pour $\overline x\in \mathcal C$ ainsi que $P(a)$. De plus tous ces éléments sont distincts dans $\mathbb F_p$.\\ 
+		Alors, $p$ divise tous les de $P(x)$ pour $\overline x\in \mathcal C$ ainsi que $P(a)$. De plus tous ces éléments sont distincts dans $\mathbb F_p$.\\
 		Ainsi d'après la question précédente pour tout $n\in\Z$, $p|P(n)$ ce qui est absurde car $p\nmid P(0)=-1$.\\
 		Ainsi, $\mathcal C=\{a\in\mathbb F_p^*,a^{\frac{p-1}{2}}=\overline 1\}$.
 	\end{enumerate}
@@ -8971,9 +8971,33 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Enfin $1\leq\Card(K)\leq n$ donc par hypothèse de récurrence il existe un système de représentant $(y_i)_{i\in K}$ de $(C_k)_{k\in K}$.\\
 	Mais alors par construction si $k\in K$, $y_k\in A_k$ n'est pas un élément de la famille $(y_i)_{i\in I\cup K\backslash\{k\}}$. Ainsi $(y_i)_{i\in I\cup K}$ est un système de représentant de $(A_i)_{1\leq i\leq n+1}$ ce qui termine l'hérédité.
 	
-	\subsection{Formule du Crible}
-		\textcolor{blue}{\hyperref[Formule du crible]{[Enoncé]}}\\
+	\subsection{\underline{Formule du Crible} \centraleponts{3}}
+	\textcolor{blue}{\hyperref[Formule du crible]{[Enoncé]}}\\
 	\label{Formule du crible corrigé}
+	On rappelle que si $A$ et $B$ sont des parties de $E$ alors leurs fonctions indicatrices $\mathbbm 1_A$ et $\mathbbm 1_B$ vérifient :
+	\begin{itemize}
+		\item $\mathbbm 1_A=\mathbbm 1_B\iff A=B$;
+		\item $\mathbbm 1_{\overline A}=1-\mathbbm 1_A$ avec $\overline A=E\backslash A$ et $1=\mathbbm 1_E$;
+		\item $\mathbbm 1_{A\cap B}=\mathbbm 1_A\mathbbm 1_B$;
+		\item $\mathbbm 1_{A\cup B}=\mathbbm 1_A+\mathbbm 1_B-\mathbbm 1_A\mathbbm 1_B$;
+		\item $\#(A)=\displaystyle\sum_{x\in E}\mathbbm 1_A(x)$.
+	\end{itemize}
+	\underline{$1^{\T{ère}}$ méthode :}\\
+	D'après les formules de Morgan $\displaystyle\overline{\bigcup_{i=1}^nA_i}=\bigcap_{i=1}^n\overline{A_i}$.\\
+	Donc en notant $\chi=\mathbbm 1_{\bigcup\limits_{i=1}^nA_i}$ on a $1-\chi=\displaystyle\prod_{i=1}^n(1-\mathbbm 1_{A_i})$.\\
+	Pour développer le produit on choisit pour chaque facteur quel terme distribuer :\\
+	$$\prod_{i=1}^n(1-\mathbbm 1_{A_i})=\sum_{I\subset\crblanc{1}{n}}\prod_{i\in I}(-\mathbbm 1_{A_i})=1+\sum_{k=1}^n(-1)^k\sum_{1\leq i_1<\dots<i_k\leq n}\mathbbm 1_{A_{i_1}}\dots\mathbbm 1_{A_{i_k}}$$
+	La deuxième égalité est obtenue en partitionnant selon le cardinal de $I$ dont on note les éléments $i_1<\cdots<i_k$, où on a mit a part le terme pour $I=\emptyset$.\\
+	Ainsi
+	\begin{align*}
+		\#\left(\bigcup_{i=1}^nA_i\right)&=\sum_{x\in E}\chi(x)\\
+		&=\sum_{x\in E}\sum_{k=1}^n(-1)^{k+1}\sum_{1\leq i_1<\cdots<i_k\leq n}\prod_{j=1}^k\mathbbm 1_{A_{i_j}}(x)\\
+		&=\sum_{k=1}^n(-1)^{k+1}\sum_{1\leq i_1<\cdots<i_k\leq n}\sum_{x\in E}\mathbbm 1_{\bigcap\limits_{j=1}^kA_{i_j}}(x)\\
+		&=\sum_{k=1}^n(-1)^{k+1}\sum_{1\leq i_1<\cdots<i_k\leq n}\#\left(\bigcap_{j=1}^kA_{i_j}\right)
+	\end{align*}
+	
+	\underline{$2^{\T{nd}}$ méthode :}\\
+	Procédons par récurrence.
 	
 	\subsection{Cardinal de $GL_n(K)$ et $SL_n(K)$}
 	\textcolor{blue}{\hyperref[Cardinal de GL_n et SL_n]{[Enoncé]}}\\
