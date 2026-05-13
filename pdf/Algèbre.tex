@@ -2563,9 +2563,19 @@ Si $f$ et $g$ sont deux fonctions arithmétiques, le produit de convolution de $
 \label{Probabilité que deux entiers soient premiers entre eux}
 \textcolor{blue}{\hyperref[Probabilité que deux entiers soient premiers entre eux corrigé]{[Corrigé]}}\\
 Pour tout $n\in \N^*$, on note $d_n$ le nombre de couple $(a,b)\in \crblanc{1}{n}^2$ tel que $a$ et $b$ soient premiers entre eux.
-Soit $\mu$ la fonction de Möbius (définie dans l'exercice précédent).
-\begin{enumerate}[leftmargin=*]
-	\item Montrer que $d_n=\displaystyle{\sum\limits_{d=1}^{n}{\mu(d)\left\lfloor \frac{n}{d}\right\rfloor^2}}$. On pourra utiliser la formule du crible (cf. \ref{Formule du crible})
+\begin{enumerate}
+	\item Soient $E$ un ensemble fini et $A_1,\dots,A_n$ des parties de $E$. Démontrer la formule du crible :
+	$$\#\left(\bigcup_{k=1}^nA_i\right)=\sum_{1\leq i_1<\cdots<i_k\leq n}(-1)^{k+1}\#\left(\bigcap_{j=1}^kA_{i_j}\right)$$
+	\textit{Indication : On pourra commencer par développer le produit $(1-\mathbbm 1_{A_1})\cdots(1-\mathbbm 1_{A_n})$.}
+\end{enumerate}
+Soit $\mu:\N^*\to \N$ la fonction de Möbius définie par $$\mu(n)=\begin{cases}
+	0&\mbox{si }n\mbox{ est divisible par le carré d'un nombre premier}\\
+	(-1)^k&\mbox{si }n\mbox{ est le produit de }k\mbox{ nombres premiers distincts}
+\end{cases}$$
+On note $p_1,\dots,p_r$ les nombres premiers inférieurs ou égaux à $n$.\\
+Pour $i\in \crblanc{1}{r}$ on pose $A_i=\{(a,b)\in \crblanc{1}{n}^2,\ p_i|a\T{ et }p_i|b\}$.
+\begin{enumerate}[resume]
+	\item Montrer que $d_n=\displaystyle{\sum\limits_{d=1}^{n}{\mu(d)\left\lfloor \frac{n}{d}\right\rfloor^2}}$.
 	\item En déduire que $\displaystyle{\frac{d_n}{n^2} \unfty{\longrightarrow} \frac{6}{\pi^2}}$.
 \end{enumerate}
 
@@ -2817,7 +2827,7 @@ Soient $n\in \N^*$ et $E$ un ensemble fini. Considérons $A_1,\dots,A_n\subset E
 \label{Formule du crible}
 \textcolor{blue}{\hyperref[Formule du crible corrigé]{[Corrigé]}}\\
 Soient $E$ un ensemble fini et $(A_i)_{1\leq i\leq n}$ une famille de parties de $E$. Montrer que:
-\\ $${\displaystyle \operatorname {Card} \left(\bigcup _{i=1}^{n}A_{i}\right)=\sum _{k=1}^{n}\left((-1)^{k+1}\sum _{1\leq i_{1}<i_{2}<\cdots <i_{k} \leq n}\operatorname {Card} \left(\bigcap _{j=1}^{k}A_{i_{j}}\right)\right)}$$
+\\ $$\#\left(\bigcup_{i=1}^nA_i\right)=\sum _{k=1}^n(-1)^{k+1}\sum_{1\leq i_1<i_2<\cdots<i_k\leq n}\#\left(\bigcap_{j=1}^kA_{i_j}\right)$$
 
 \section{Cardinal de GL$_n(K)$ et SL$_n(K)$ \etoile{4} (HP)}
 \label{Cardinal de GL_n et SL_n}
@@ -8767,6 +8777,30 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Probabilité que deux entiers soient premiers entre eux}
 	\label{Probabilité que deux entiers soient premiers entre eux corrigé}
 	\textcolor{blue}{\hyperref[Probabilité que deux entiers soient premiers entre eux]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item cf.\ref{Formule du crible corrigé}.
+		\item Comme deux entiers ne sont pas premiers entre eux si et seulement s'ils ont un facteur premier commun, il est clair que $\{(a,b)\in \crblanc{1}{n}^2,\ a\wedge b\ne 1\}=\displaystyle\bigcup_{i=1}^rA_i$ et on va pouvoir appliquer la formule du crible.\\
+		Pour cela calculons le cardinal de $\displaystyle\bigcap_{i\in I}A_i$ pour toute partie non vide $I$ de $\crblanc{1}{n}$.\\
+		Soit $(a,b)\in \crblanc{1}{n}^2$. $(a,b)\in \displaystyle\bigcap_{i\in \T I}A_i\iff \forall i\in I,\ p_i|a\T{ et }p_i|b\iff \displaystyle\prod_{i\in I}p_i:=P_I|a\T{ et }P_I|b$.\\
+		Le cardinal de $\displaystyle\bigcap_{i\in I}A_i$ est donc le carré du nombre de multiples de $P_I$ dans $\crblanc{1}{n}$.\\
+		Or les multiples de $P_I$ dans $\crblanc{1}{n}$ sont exactement les $dP_I$ pour $d\in \N^*$ tel que que $dP_I\leq n$, i.e tel que $d\leq \dfrac{n}{P_I}$. Il y en a donc $\left\lfloor\dfrac{n}{P_I}\right\rfloor$.\\
+		Ainsi $\displaystyle\#\left(\bigcap_{i\in I}A_i\right)=\left\lfloor\dfrac{n}{P_I}\right\rfloor^2$ et d'après la formule du crible :
+		\begin{align*}
+			n^2-d_n&=\sum_{k=1}^r(-1)^{k+1}\sum_{1\leq i_1<\cdots<i_k\leq r}\#\left(\bigcap_{j=1}^kA_{i_j}\right)\\
+			&=\sum_{k=1}^r(-1)^{k+1}\sum_{1\leq i_1<\cdots<i_k\leq r}\left\lfloor\frac{n}{p_{i_1}\dots p_{i_k}}\right\rfloor^2\\
+			&=-\sum_{k=1}^r\sum_{1\leq i_1<\cdots<i_k\leq r}\mu(p_{i_1}\dots p_{i_k})\left\lfloor\frac{n}{p_{i_1}\dots p_{i_k}}\right\rfloor^2\\
+			&=-\sum_{d=2}^n\mu(d)\left\lfloor\frac{n}{d}\right\rfloor^2&\T{(on a rajouté des termes nuls)}
+		\end{align*}
+		Donc $d_n=n^2+\displaystyle\sum_{d=2}^n\mu(d)\left\lfloor\frac{n}{d}\right\rfloor^2=\sum_{d=1}^n\mu(d)\left\lfloor\frac{n}{d}\right\rfloor^2$.
+		\item En notant $S_n=\displaystyle\sum_{d=1}^n\frac{\mu(d)}{d^2}$, on encadre
+		\begin{align*}
+			\frac{1}{n^2}\sum_{d=1}^n\mu(d)\left(\frac{n}{d}-1\right)^2&\leq \frac{d_n}{n^2}\leq \sum_{d=1}^n\frac{\mu(d)}{d^2}\\
+			S_n-\frac{2}{n}\sum_{d=1}^n\frac{\mu(d)}{d}+\frac{1}{n^2}\sum_{d=1}^n\mu(d)&\leq \frac{d_n}{n^2}\leq S_n
+		\end{align*}
+		Or $\displaystyle\left|\frac{1}{n^2}\sum_{d=1}^n\mu(d)\right|\leq \frac{1}{n^2}\sum_{d=1}^n1=\frac{1}{n}\unfty\longrightarrow 0$ et $\left|\dfrac{\mu(d)}{d}\right|\leq \dfrac{1}{d}\underset{d\to +\infty}\longrightarrow 0$ donc par le lemme de Cesàro $\displaystyle\left|\frac{2}{n}\sum_{d=1}^n\frac{\mu(d)}{d}\right|\unfty\longrightarrow 0$.\\
+		De plus $\left|\dfrac{\mu(d)}{d^2}\right|\leq \dfrac{1}{d^2}$ donc la série $\displaystyle\sum_{d\in \N^*}\frac{\mu(d)}{d^2}$ converge absolument.\\
+		On en déduit que $\displaystyle\frac{d_n}{n^2}\unfty\longrightarrow\sum_{d=1}^{+\infty}\frac{\mu(d)}{d^2}$.
+	\end{enumerate}
 	
 	\subsection{Limite d'une fonction arithmétique multiplicative}
 	\label{Limite d'une fonction arithmétique multiplicative corrigé}
