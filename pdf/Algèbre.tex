@@ -8814,6 +8814,25 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Limite d'une fonction arithmétique multiplicative}
 	\label{Limite d'une fonction arithmétique multiplicative corrigé}
 	\textcolor{blue}{\hyperref[Limite d'une fonction arithmétique multiplicative]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Commençons par montrer que $f$ est bornée.\\
+		Pour $\varepsilon=1$ on sait que $\exists N\in \N^*,\ \forall q\in Q,\ q\geq N\implies |f(q)|\leq 1$.\\
+		Fixons $n\in \N^*$. On écrit $n=\displaystyle\prod_{i=1}^rp_i^{\alpha_i}$ la décomposition en facteurs premiers de $n$.\\
+		On sait que $|f(n)|=\displaystyle\prod_{i=1}^n|f(p_i^{\alpha_i})|\leq \prod_{\substack{1\leq i\leq r\\p_i^{\alpha_i}<N}}|f(p_i^{\alpha_i})|$.\\
+		Donc $f$ est bornée par $M:=\displaystyle\max\left\{\prod_{i\in I}|f(q)|,\ I\subset\{q\in Q,\ q<N\}\right\}$. Ce maximum est bien défini puisque l'ensemble $Q_N:=\{q\in Q,\ q<N\}$ est fini : pour tout nombre premier $p<N$ il existe $k\in \N^*$ tel que $p^k\geq N$ et si $p\geq N$ alors $p\notin Q_N$.\\
+		Montrons maintenant que $f$ est de limite nulle.\\
+		On fixe $\varepsilon>0$. Par hypothèse, il existe $N(\varepsilon)\in \N^*$ tel que $\forall q\in Q,\ q\geq N(\varepsilon)\implies |f(q)|\leq \dfrac{\varepsilon}{M}$.\\
+		Soit $n=\displaystyle\prod_{i=1}^rp_i^{\alpha_i}\geq K(\varepsilon)$ où $K(\varepsilon)\in \N^*$ est choisi tel que tout entier plus grand que $K(\varepsilon)$ ait dans sa décomposition en facteur premier au moins un facteur plus grand que $N(\varepsilon)$ (typiquement $K(\varepsilon)=\max\left\{\displaystyle\prod_{i\in I}q,\ I\subset Q_{N(\varepsilon)}\right\}$ suffit).\\
+		Par définition il existe $i\in \crblanc{1}{r}$ tel que $p_i^{\alpha_i}\geq N(\varepsilon)$. Ainsi $|f(n)|=|f(np_i^{-\alpha_i})|\cdot|f(p_i^{\alpha_i})|\leq \varepsilon$.\\
+		Ainsi $\unfty\lim f(n)=0$.
+		\item On sait d'après le cours que $\varphi$ est multiplicative (c'est le théorème des restes chinois) donc $f_\delta : n\mapsto \dfrac{n^{1-\delta}}{\varphi(n)}$ est multiplicative.\\
+		Fixons $\varepsilon>0$. Soient $p$ un nombre premier et $k\in \N^*$.
+		$$|f_\delta(p^k)|=\frac{p^{k(1-\delta)}}{\varphi(p^k)}=\frac{p^{k(1-\delta)}}{p^k-p^{k-1}}=\frac{p^{1-k\delta}}{p-1}=\frac{p}{p-1}p^{-k\delta}$$
+		Donc si $p^k\geq N(\varepsilon):=\left\lceil\left(\dfrac{p}{(p-1)\varepsilon}\right)^{1/\delta}\right\rceil\in \N^*$ alors $|f(p^k)|\leq \varepsilon$.\\
+		Ainsi d'après la première question $\unfty\lim f_\delta(n)=0$.
+		\item Pour $\delta=0$ le même calcul nous donne $f_0(p^k)=\dfrac{p}{p-1}$.\\
+		Si $f_0$ admettait une limite $\ell$ en $+\infty$ alors comme $p^k\ukfty\longrightarrow +\infty$ on aurait $\ell=\ell_p:=\dfrac{p}{p-1}$. Ceci étant vrai pour tout $p$ premier et comme par exemple $\ell_2=2\ne \dfrac{3}{2}=\ell_3$, $f_0$ n'admet pas de limite.
+	\end{enumerate}
 	
 	\subsection{Fonctions arithmétiques réelles additives}
 	\label{Fonctions arithmétiques réelles additives corrigé}

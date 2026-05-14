@@ -725,9 +725,9 @@
 \contentsline {subsection}{\numberline {XIII.7.26}Probabilité que deux entiers soient premiers entre eux}{218}{subsection.13.7.26}%
 \contentsline {subsection}{\numberline {XIII.7.27}Limite d'une fonction arithmétique multiplicative}{220}{subsection.13.7.27}%
 \contentsline {subsection}{\numberline {XIII.7.28}Fonctions arithmétiques réelles additives}{220}{subsection.13.7.28}%
-\contentsline {subsection}{\numberline {XIII.7.29}Une majoration de la somme des diviseurs d'un entier \centraleponts {2}}{220}{subsection.13.7.29}%
-\contentsline {subsection}{\numberline {XIII.7.30}Nombres parfaits \telecom {2}}{220}{subsection.13.7.30}%
-\contentsline {subsection}{\numberline {XIII.7.31}Entiers algébriques \centraleponts {2}}{220}{subsection.13.7.31}%
+\contentsline {subsection}{\numberline {XIII.7.29}Une majoration de la somme des diviseurs d'un entier \centraleponts {2}}{221}{subsection.13.7.29}%
+\contentsline {subsection}{\numberline {XIII.7.30}Nombres parfaits \telecom {2}}{221}{subsection.13.7.30}%
+\contentsline {subsection}{\numberline {XIII.7.31}Entiers algébriques \centraleponts {2}}{221}{subsection.13.7.31}%
 \contentsline {subsection}{\numberline {XIII.7.32}Majoration de la primorielle}{221}{subsection.13.7.32}%
 \contentsline {subsection}{\numberline {XIII.7.33}Théorèmes de Mertens}{222}{subsection.13.7.33}%
 \contentsline {subsection}{\numberline {XIII.7.34}Théorèmes de Tchebychev}{222}{subsection.13.7.34}%
@@ -779,7 +779,7 @@
 \contentsline {subsection}{\numberline {XIII.9.17}Lancer de dés équitable \etoile {3}}{238}{subsection.13.9.17}%
 \contentsline {subsection}{\numberline {XIII.9.18}Espérance conditionnelle \etoile {3}}{239}{subsection.13.9.18}%
 \contentsline {subsection}{\numberline {XIII.9.19}Problème du collectionneur \etoile {2}}{239}{subsection.13.9.19}%
-\contentsline {subsubsection}{Généralisation}{240}{Item.1215}%
+\contentsline {subsubsection}{Généralisation}{240}{Item.1218}%
 \contentsline {subsection}{\numberline {XIII.9.20}Problème de la ruine du joueur}{240}{subsection.13.9.20}%
 \contentsline {subsection}{\numberline {XIII.9.21}Passager d'un avion}{240}{subsection.13.9.21}%
 \contentsline {subsection}{\numberline {XIII.9.22}Fonction de répartition \etoile {4}}{240}{subsection.13.9.22}%
@@ -812,9 +812,9 @@
 \contentsline {subsection}{\numberline {XIII.9.49}Modes de convergences}{251}{subsection.13.9.49}%
 \contentsline {subsection}{\numberline {XIII.9.50}Marche aléatoire sur $\mathbb {Z}^d$ \etoile {3}}{251}{subsection.13.9.50}%
 \contentsline {subsubsection}{Le cas $d=1$ \etoile {2}}{251}{subsection.13.9.50}%
-\contentsline {subsubsection}{Le cas $d=2$}{253}{Item.1256}%
-\contentsline {subsubsection}{Le cas général}{253}{Item.1256}%
-\contentsline {subsubsection}{Marche aléatoire auto-évitante}{253}{Item.1256}%
+\contentsline {subsubsection}{Le cas $d=2$}{253}{Item.1259}%
+\contentsline {subsubsection}{Le cas général}{253}{Item.1259}%
+\contentsline {subsubsection}{Marche aléatoire auto-évitante}{253}{Item.1259}%
 \contentsline {subsection}{\numberline {XIII.9.51}Matrice de covariance \etoile {2}}{253}{subsection.13.9.51}%
 \contentsline {subsection}{\numberline {XIII.9.52}Maximisation de la variance sous-contrainte}{253}{subsection.13.9.52}%
 \contentsline {subsection}{\numberline {XIII.9.53}Inégalité de Kosmanek \etoile {1}}{254}{subsection.13.9.53}%
@@ -880,10 +880,10 @@
 \contentsline {subsection}{\numberline {XIII.10.55}Translation par une matrice antisymétrique \xens {3}}{276}{subsection.13.10.55}%
 \contentsline {subsection}{\numberline {XIII.10.56}Matrices antisymétriques réelles}{276}{subsection.13.10.56}%
 \contentsline {subsubsection}{Rang et déterminant}{276}{subsection.13.10.56}%
-\contentsline {subsubsection}{Spectre}{277}{Item.1328}%
-\contentsline {subsubsection}{Diagonalisabilité (1)}{277}{Item.1331}%
-\contentsline {subsubsection}{Diagonalisabilité (2)}{277}{Item.1334}%
-\contentsline {subsubsection}{Réduction}{278}{Item.1338}%
+\contentsline {subsubsection}{Spectre}{277}{Item.1331}%
+\contentsline {subsubsection}{Diagonalisabilité (1)}{277}{Item.1334}%
+\contentsline {subsubsection}{Diagonalisabilité (2)}{277}{Item.1337}%
+\contentsline {subsubsection}{Réduction}{278}{Item.1341}%
 \contentsline {subsection}{\numberline {XIII.10.57}Endomorphismes normaux}{278}{subsection.13.10.57}%
 \contentsline {subsection}{\numberline {XIII.10.58}Réduction des normaux}{278}{subsection.13.10.58}%
 \contentsline {subsection}{\numberline {XIII.10.59}Caractérisation des matrices symétriques positives}{278}{subsection.13.10.59}%
@@ -895,16 +895,16 @@
 \contentsline {subsection}{\numberline {XIII.10.65}Relation d'ordre des matrices symétriques}{281}{subsection.13.10.65}%
 \contentsline {section}{\numberline {XIII.11}Correction Décompositions matricielles}{282}{section.13.11}%
 \contentsline {subsection}{\numberline {XIII.11.1}Décomposition de Dunford \etoile {2}}{282}{subsection.13.11.1}%
-\contentsline {subsubsection}{Diagonalisabilité de l'exponentielle d'une matrice \etoile {3}}{283}{Item.1349}%
-\contentsline {subsubsection}{Surjectivité de l'exponentielle matricielle \etoile {4}}{283}{Item.1349}%
-\contentsline {subsubsection}{Opérateur de commutation \etoile {3}}{284}{Item.1351}%
-\contentsline {subsubsection}{Deux applications non continues}{285}{Item.1353}%
+\contentsline {subsubsection}{Diagonalisabilité de l'exponentielle d'une matrice \etoile {3}}{283}{Item.1352}%
+\contentsline {subsubsection}{Surjectivité de l'exponentielle matricielle \etoile {4}}{283}{Item.1352}%
+\contentsline {subsubsection}{Opérateur de commutation \etoile {3}}{284}{Item.1354}%
+\contentsline {subsubsection}{Deux applications non continues}{285}{Item.1356}%
 \contentsline {subsection}{\numberline {XIII.11.2}Décomposition polaire \etoile {3}}{285}{subsection.13.11.2}%
-\contentsline {subsubsection}{Sous-groupe compact maximal de GL$_n(\mathbb {R})$ \etoile {3}}{286}{Item.1360}%
-\contentsline {subsubsection}{Enveloppe convexe des matrices orthogonales}{287}{Item.1366}%
-\contentsline {subsubsection}{Points extrémaux des matrices orthogonales}{288}{Item.1372}%
-\contentsline {subsubsection}{Matrice extraite d'une matrice orthogonale}{288}{Item.1372}%
-\contentsline {subsubsection}{Matrices qui respectent le volume de $k$-parallélépipèdes rectangles}{288}{Item.1372}%
+\contentsline {subsubsection}{Sous-groupe compact maximal de GL$_n(\mathbb {R})$ \etoile {3}}{286}{Item.1363}%
+\contentsline {subsubsection}{Enveloppe convexe des matrices orthogonales}{287}{Item.1369}%
+\contentsline {subsubsection}{Points extrémaux des matrices orthogonales}{288}{Item.1375}%
+\contentsline {subsubsection}{Matrice extraite d'une matrice orthogonale}{288}{Item.1375}%
+\contentsline {subsubsection}{Matrices qui respectent le volume de $k$-parallélépipèdes rectangles}{288}{Item.1375}%
 \contentsline {subsection}{\numberline {XIII.11.3}Décomposition QR}{288}{subsection.13.11.3}%
 \contentsline {subsubsection}{Matrice de Householder}{288}{subsection.13.11.3}%
 \contentsline {subsection}{\numberline {XIII.11.4}Décomposition LU}{288}{subsection.13.11.4}%
@@ -914,7 +914,7 @@
 \contentsline {subsubsection}{Décomposition de Cholesky}{288}{subsection.13.11.4}%
 \contentsline {subsection}{\numberline {XIII.11.5}Lemme de Fitting}{288}{subsection.13.11.5}%
 \contentsline {subsection}{\numberline {XIII.11.6}Réduction de Jordan}{289}{subsection.13.11.6}%
-\contentsline {subsubsection}{Application}{289}{Item.1377}%
+\contentsline {subsubsection}{Application}{289}{Item.1380}%
 \contentsline {subsection}{\numberline {XIII.11.7}Réduction de Frobenius}{289}{subsection.13.11.7}%
 \contentsline {subsubsection}{$M\sim M^\top $}{289}{subsection.13.11.7}%
 \contentsline {subsubsection}{Matrices semblables à leur inverse}{289}{subsection.13.11.7}%
