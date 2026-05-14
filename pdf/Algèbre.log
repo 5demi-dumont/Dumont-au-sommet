@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.4)  14 MAY 2026 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.4)  14 MAY 2026 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4454,7 +4454,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\centraleponts' on input line 2621.
+(hyperref)                removing `\telecom' on input line 2621.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -7422,7 +7422,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
  (C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Comparaison indicatrice d'Euler.PNG, id=5431, 380.42125pt x 253.44687pt>
+<Comparaison indicatrice d'Euler.PNG, id=5430, 380.42125pt x 253.44687pt>
 File: Comparaison indicatrice d'Euler.PNG Graphic file (type png)
 <use Comparaison indicatrice d'Euler.PNG>
 Package pdftex.def Info: Comparaison indicatrice d'Euler.PNG  used on input lin
@@ -7430,7 +7430,7 @@ e 8707.
 (pdftex.def)             Requested size: 304.3374pt x 202.75777pt.
 
 [215]
-<Comparaison Crible d'EratostÃ¨ne.png, id=5465, 379.4175pt x 253.44687pt>
+<Comparaison Crible d'EratostÃ¨ne.png, id=5464, 379.4175pt x 253.44687pt>
 File: Comparaison Crible d'EratostÃ¨ne.png Graphic file (type png)
 <use Comparaison Crible d'EratostÃ¨ne.png>
 Package pdftex.def Info: Comparaison Crible d'EratostÃ¨ne.png  used on input li
@@ -7448,7 +7448,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8733--8735
  []
 
 [217]
-Underfull \hbox (badness 10000) in paragraph at lines 8779--8780
+Underfull \hbox (badness 10000) in paragraph at lines 8778--8779
 
  []
 
@@ -7457,72 +7457,42 @@ Underfull \vbox (badness 2781) has occurred while \output is active []
 
  [218]
 [219]
-Underfull \hbox (badness 10000) in paragraph at lines 8816--8817
+Underfull \hbox (badness 10000) in paragraph at lines 8815--8816
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8839--8840
+Underfull \hbox (badness 10000) in paragraph at lines 8838--8839
 
  []
 
-[220]
-Underfull \hbox (badness 10000) in paragraph at lines 8860--8865
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8868--8869
-
- []
-
-[221]
-Underfull \hbox (badness 10000) in paragraph at lines 8926--8927
+[220] [221]
+Underfull \hbox (badness 10000) in paragraph at lines 8884--8889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8930--8931
+Underfull \hbox (badness 10000) in paragraph at lines 8892--8893
 
  []
 
 [222]
-Underfull \hbox (badness 10000) in paragraph at lines 8937--8938
+Underfull \hbox (badness 10000) in paragraph at lines 8950--8951
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8941--8942
+Underfull \hbox (badness 10000) in paragraph at lines 8954--8955
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 8945--8946
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8949--8950
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8953--8954
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8957--8958
-
- []
-
-
+[223]
 Underfull \hbox (badness 10000) in paragraph at lines 8961--8962
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8967--8969
+Underfull \hbox (badness 10000) in paragraph at lines 8965--8966
 
  []
 
@@ -7531,92 +7501,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 8969--8970
 
  []
 
-[223]
-Underfull \hbox (badness 10000) in paragraph at lines 8999--9000
+
+Underfull \hbox (badness 10000) in paragraph at lines 8973--8974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9003--9004
+Underfull \hbox (badness 10000) in paragraph at lines 8977--8978
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9007--9008
+Underfull \hbox (badness 10000) in paragraph at lines 8981--8982
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8985--8986
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8991--8993
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8993--8994
 
  []
 
 [224]
-Underfull \hbox (badness 10000) in paragraph at lines 9010--9035
+Underfull \hbox (badness 10000) in paragraph at lines 9023--9024
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9010--9035
+Underfull \hbox (badness 10000) in paragraph at lines 9027--9028
 
  []
 
 
-Overfull \hbox (8.97368pt too wide) in paragraph at lines 9010--9035
+Underfull \hbox (badness 10000) in paragraph at lines 9031--9032
+
+ []
+
+[225]
+Underfull \hbox (badness 10000) in paragraph at lines 9034--9059
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9034--9059
+
+ []
+
+
+Overfull \hbox (8.97368pt too wide) in paragraph at lines 9034--9059
 [] [] \OT1/lmr/m/n/10 = [] [] = [] [] = [] [] \OMS/lmsy/m/n/10 ^^U [] [] ^^@
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [225]
-Underfull \hbox (badness 10000) in paragraph at lines 9047--9051
+ [226]
+Underfull \hbox (badness 10000) in paragraph at lines 9071--9075
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9070--9071
+Underfull \hbox (badness 10000) in paragraph at lines 9094--9095
 
  []
 
-[226] [227] [228] [229]
-Underfull \hbox (badness 10000) in paragraph at lines 9162--9167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9162--9167
+[227] [228] [229] [230]
+Underfull \hbox (badness 10000) in paragraph at lines 9186--9191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9175--9176
+Underfull \hbox (badness 10000) in paragraph at lines 9186--9191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9199--9200
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [230]
-Underfull \hbox (badness 10000) in paragraph at lines 9200--9201
+ [231]
+Underfull \hbox (badness 10000) in paragraph at lines 9224--9225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9213--9215
-
- []
-
-[231]
-Underfull \hbox (badness 10000) in paragraph at lines 9240--9242
+Underfull \hbox (badness 10000) in paragraph at lines 9237--9239
 
  []
 
 [232]
-Underfull \hbox (badness 10000) in paragraph at lines 9273--9275
+Underfull \hbox (badness 10000) in paragraph at lines 9264--9266
+
+ []
+
+[233]
+Underfull \hbox (badness 10000) in paragraph at lines 9297--9299
 
  []
 
 
 Underfull \vbox (badness 5161) has occurred while \output is active []
 
- [233]
-Overfull \hbox (45.75758pt too wide) in paragraph at lines 9277--9280
+ [234]
+Overfull \hbox (45.75758pt too wide) in paragraph at lines 9301--9304
 \U/msb/m/n/10 P\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 X \OT1/lmr/m/n/10 = \OML/lmm/m
 /it/10 k\OT1/lmr/m/n/10 ) = [] \U/msb/m/n/10 P\OT1/lmr/m/n/10 (\OML/lmm/m/it/10
  N \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 n\OT1/lmr/m/n/10 )\U/msb/m/n/10 P\OT1/lmr
@@ -7627,76 +7627,76 @@ Overfull \hbox (45.75758pt too wide) in paragraph at lines 9277--9280
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9286--9288
+Underfull \hbox (badness 10000) in paragraph at lines 9310--9312
 
  []
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 9299.
+LaTeX Warning: Command \` invalid in math mode on input line 9323.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9299--9306
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9299--9306
+Underfull \hbox (badness 10000) in paragraph at lines 9323--9330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9299--9306
-
- []
-
-[234]
-Underfull \hbox (badness 10000) in paragraph at lines 9321--9323
+Underfull \hbox (badness 10000) in paragraph at lines 9323--9330
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [235]
-Underfull \hbox (badness 10000) in paragraph at lines 9354--9355
+Underfull \hbox (badness 10000) in paragraph at lines 9323--9330
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 9358--9360
-
- []
-
-[236]
-Underfull \hbox (badness 10000) in paragraph at lines 9366--9374
+[235]
+Underfull \hbox (badness 10000) in paragraph at lines 9345--9347
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [237]
-Underfull \hbox (badness 10000) in paragraph at lines 9413--9414
+ [236]
+Underfull \hbox (badness 10000) in paragraph at lines 9378--9379
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9427--9429
+Underfull \hbox (badness 10000) in paragraph at lines 9382--9384
 
  []
 
-[238]
-Underfull \hbox (badness 10000) in paragraph at lines 9429--9436
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9436--9441
+[237]
+Underfull \hbox (badness 10000) in paragraph at lines 9390--9398
 
  []
 
 
-Overfull \hbox (4.3105pt too wide) in paragraph at lines 9436--9441
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [238]
+Underfull \hbox (badness 10000) in paragraph at lines 9437--9438
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9451--9453
+
+ []
+
+[239]
+Underfull \hbox (badness 10000) in paragraph at lines 9453--9460
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9460--9465
+
+ []
+
+
+Overfull \hbox (4.3105pt too wide) in paragraph at lines 9460--9465
 \U/msb/m/n/10 E\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 X\OT1/lmr/m/n/10 ) = [] \OML/l
 mm/m/it/10 x\U/msb/m/n/10 P\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 X \OT1/lmr/m/n/10 
 = \OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) = [] [] \OML/lmm/m/it/10 x\U/msb/m/n/10 P
@@ -7710,12 +7710,12 @@ m/n/10 (\OML/lmm/m/it/10 X\OT1/lmr/m/n/10 )\U/msb/m/n/10 P\OT1/lmr/m/n/10 (\OML
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9445--9447
+Underfull \hbox (badness 10000) in paragraph at lines 9469--9471
 
  []
 
 
-Overfull \hbox (19.60046pt too wide) in paragraph at lines 9449--9450
+Overfull \hbox (19.60046pt too wide) in paragraph at lines 9473--9474
 []\T1/lmr/m/n/10 Pour tout $\OML/lmm/m/it/10 i \OMS/lmsy/m/n/10 2 \U/stmry/m/n/
 10 J\OT1/lmr/m/n/10 1; \OML/lmm/m/it/10 n\U/stmry/m/n/10 K$\T1/lmr/m/n/10 , l'e
 x-pé-rience aléa-toire as-so-ciée à $\OML/lmm/m/it/10 X[]$ \T1/lmr/m/n/10 n'est
@@ -7723,8 +7723,8 @@ x-pé-rience aléa-toire as-so-ciée à $\OML/lmm/m/it/10 X[]$ \T1/lmr/m/n/10 n'est
 /lmr/m/n/10 .
  []
 
-[239]
-Overfull \hbox (9.36613pt too wide) in paragraph at lines 9463--9464
+[240]
+Overfull \hbox (9.36613pt too wide) in paragraph at lines 9487--9488
 []$\U/msb/m/n/10 E\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 R[]\OT1/lmr/m/n/10 ) = [] [
 ](\OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 x[]; [] ; x[]\OMS/lmsy/m/n/10 g\OT1/lmr/m/
 n/10 )\U/msb/m/n/10 P\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 X \OT1/lmr/m/n/10 = \OML
@@ -7735,135 +7735,105 @@ OT1/lmr/m/n/10 ) [] \U/msb/m/n/10 P\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 X \OT1/lmr
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9476--9477
+Underfull \hbox (badness 10000) in paragraph at lines 9500--9501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9480--9481
+Underfull \hbox (badness 10000) in paragraph at lines 9504--9505
 
  []
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 9498.
+LaTeX Warning: Command \` invalid in math mode on input line 9522.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9489--9507
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9489--9507
-
- []
-
-[240]
-
-LaTeX Warning: Command \` invalid in math mode on input line 9513.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9512--9524
+Underfull \hbox (badness 10000) in paragraph at lines 9513--9531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9512--9524
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9512--9524
-
- []
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 9527.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9524--9539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9524--9539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9524--9539
+Underfull \hbox (badness 10000) in paragraph at lines 9513--9531
 
  []
 
 [241]
 
-LaTeX Warning: Command \` invalid in math mode on input line 9542.
+LaTeX Warning: Command \` invalid in math mode on input line 9537.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9562--9563
+Underfull \hbox (badness 10000) in paragraph at lines 9536--9548
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9566--9568
+Underfull \hbox (badness 10000) in paragraph at lines 9536--9548
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9536--9548
+
+ []
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 9551.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9548--9563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9548--9563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9548--9563
 
  []
 
 [242]
-Underfull \hbox (badness 10000) in paragraph at lines 9579--9587
+
+LaTeX Warning: Command \` invalid in math mode on input line 9566.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9586--9587
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9590--9592
 
  []
 
 [243]
-Underfull \hbox (badness 10000) in paragraph at lines 9587--9589
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9589--9591
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9597--9599
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9615--9617
+Underfull \hbox (badness 10000) in paragraph at lines 9603--9611
 
  []
 
 [244]
-Underfull \hbox (badness 10000) in paragraph at lines 9632--9633
+Underfull \hbox (badness 10000) in paragraph at lines 9611--9613
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9636--9637
+Underfull \hbox (badness 10000) in paragraph at lines 9613--9615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9640--9641
+Underfull \hbox (badness 10000) in paragraph at lines 9621--9623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9644--9645
+Underfull \hbox (badness 10000) in paragraph at lines 9639--9641
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 9648--9649
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9652--9653
-
- []
-
-
+[245]
 Underfull \hbox (badness 10000) in paragraph at lines 9656--9657
 
  []
@@ -7883,33 +7853,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 9668--9669
 
  []
 
-[245]
-Underfull \hbox (badness 10000) in paragraph at lines 9696--9697
+
+Underfull \hbox (badness 10000) in paragraph at lines 9672--9673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9676--9677
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9680--9681
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9684--9685
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9688--9689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9692--9693
 
  []
 
 [246]
-Underfull \hbox (badness 10000) in paragraph at lines 9709--9710
+Underfull \hbox (badness 10000) in paragraph at lines 9720--9721
+
+ []
+
+[247]
+Underfull \hbox (badness 10000) in paragraph at lines 9733--9734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9713--9714
+Underfull \hbox (badness 10000) in paragraph at lines 9737--9738
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9717--9719
+Underfull \hbox (badness 10000) in paragraph at lines 9741--9743
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9719--9723
+Underfull \hbox (badness 10000) in paragraph at lines 9743--9747
 
  []
 
 
-Overfull \hbox (11.1825pt too wide) in paragraph at lines 9727--9732
+Overfull \hbox (11.1825pt too wide) in paragraph at lines 9751--9756
 \U/msb/m/n/10 P\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 X \OT1/lmr/m/n/10 = \OML/lmm/m
 /it/10 k\OT1/lmr/m/n/10 ) = [] \U/msb/m/n/10 P\OT1/lmr/m/n/10 (\OML/lmm/m/it/10
  X \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 k; Y \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 n
@@ -7917,28 +7917,28 @@ Overfull \hbox (11.1825pt too wide) in paragraph at lines 9727--9732
 it/10 p [][] [] [] [][] \OT1/lmr/m/n/10 = []$\T1/lmr/m/n/10 . 
  []
 
-[247]
-Underfull \hbox (badness 10000) in paragraph at lines 9738--9740
+[248]
+Underfull \hbox (badness 10000) in paragraph at lines 9762--9764
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9747--9755
+Underfull \hbox (badness 10000) in paragraph at lines 9771--9779
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9747--9755
+Underfull \hbox (badness 10000) in paragraph at lines 9771--9779
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9747--9755
+Underfull \hbox (badness 10000) in paragraph at lines 9771--9779
 
  []
 
 
-Overfull \hbox (12.71825pt too wide) in paragraph at lines 9747--9755
+Overfull \hbox (12.71825pt too wide) in paragraph at lines 9771--9779
 \T1/lmr/m/n/10 Donc $\OMS/lmsy/m/n/10 8\OML/lmm/m/it/10 p \OMS/lmsy/m/n/10 2 \U
 /msb/m/n/10 N[]\OML/lmm/m/it/10 ;  B[] \OT1/lmr/m/n/10 = [][] = \OML/lmm/m/it/1
 0 C [][] C[] \OT1/lmr/m/n/10 = [][] \OML/lmm/m/it/10 CC[] \OT1/lmr/m/n/10 = [][
@@ -7946,192 +7946,192 @@ Overfull \hbox (12.71825pt too wide) in paragraph at lines 9747--9755
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9763--9765
-
- []
-
-[248]
-Underfull \hbox (badness 10000) in paragraph at lines 9769--9774
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9769--9774
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9774--9779
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9774--9779
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9783--9784
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9798--9819
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9798--9819
+Underfull \hbox (badness 10000) in paragraph at lines 9787--9789
 
  []
 
 [249]
-Underfull \hbox (badness 10000) in paragraph at lines 9823--9824
+Underfull \hbox (badness 10000) in paragraph at lines 9793--9798
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9840--9841
+Underfull \hbox (badness 10000) in paragraph at lines 9793--9798
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9798--9803
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9798--9803
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9807--9808
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9822--9843
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9822--9843
 
  []
 
 [250]
-Underfull \hbox (badness 10000) in paragraph at lines 9861--9862
+Underfull \hbox (badness 10000) in paragraph at lines 9847--9848
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9865--9866
+Underfull \hbox (badness 10000) in paragraph at lines 9864--9865
 
  []
 
 [251]
-Underfull \hbox (badness 10000) in paragraph at lines 9891--9901
+Underfull \hbox (badness 10000) in paragraph at lines 9885--9886
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9891--9901
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9891--9901
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9891--9901
+Underfull \hbox (badness 10000) in paragraph at lines 9889--9890
 
  []
 
 [252]
-Underfull \hbox (badness 10000) in paragraph at lines 9914--9916
+Underfull \hbox (badness 10000) in paragraph at lines 9915--9925
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9915--9925
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9915--9925
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9915--9925
 
  []
 
 [253]
-Underfull \hbox (badness 10000) in paragraph at lines 9957--9958
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9971--9973
+Underfull \hbox (badness 10000) in paragraph at lines 9938--9940
 
  []
 
 [254]
-Underfull \hbox (badness 10000) in paragraph at lines 9985--9997
+Underfull \hbox (badness 10000) in paragraph at lines 9981--9982
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9985--9997
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9985--9997
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9998--10000
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10005--10007
+Underfull \hbox (badness 10000) in paragraph at lines 9995--9997
 
  []
 
 [255]
-Underfull \hbox (badness 10000) in paragraph at lines 10017--10019
+Underfull \hbox (badness 10000) in paragraph at lines 10009--10021
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10032--10034
+Underfull \hbox (badness 10000) in paragraph at lines 10009--10021
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10037--10044
+Underfull \hbox (badness 10000) in paragraph at lines 10009--10021
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10049--10058
+Underfull \hbox (badness 10000) in paragraph at lines 10022--10024
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10049--10058
+Underfull \hbox (badness 10000) in paragraph at lines 10029--10031
+
+ []
+
+[256]
+Underfull \hbox (badness 10000) in paragraph at lines 10041--10043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10049--10058
-
- []
-
-[256] [257]
-Underfull \hbox (badness 10000) in paragraph at lines 10081--10082
+Underfull \hbox (badness 10000) in paragraph at lines 10056--10058
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10111--10112
-
- []
-
-[258]
-Underfull \hbox (badness 10000) in paragraph at lines 10132--10151
+Underfull \hbox (badness 10000) in paragraph at lines 10061--10068
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10132--10151
+Underfull \hbox (badness 10000) in paragraph at lines 10073--10082
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10162--10171
+Underfull \hbox (badness 10000) in paragraph at lines 10073--10082
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10073--10082
+
+ []
+
+[257] [258]
+Underfull \hbox (badness 10000) in paragraph at lines 10105--10106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10135--10136
 
  []
 
 [259]
-Underfull \hbox (badness 10000) in paragraph at lines 10174--10175
+Underfull \hbox (badness 10000) in paragraph at lines 10156--10175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10233--10234
+Underfull \hbox (badness 10000) in paragraph at lines 10156--10175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10186--10195
 
  []
 
 [260]
-Overfull \hbox (1.33847pt too wide) in paragraph at lines 10237--10249
+Underfull \hbox (badness 10000) in paragraph at lines 10198--10199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10257--10258
+
+ []
+
+[261]
+Overfull \hbox (1.33847pt too wide) in paragraph at lines 10261--10273
 \U/eus/m/n/10 M[]\OT1/lmr/m/n/10 (\U/msb/m/n/10 R\OT1/lmr/m/n/10 )$ \T1/lmr/m/n
 /10 est un es-pace eu-cli-dien donc d'après le théo-rème de re-pré-sen-ta-tion 
 de Riesz, $\OMS/lmsy/m/n/10 9\OML/lmm/m/it/10 A \OMS/lmsy/m/n/10 2 \U/eus/m/n/1
@@ -8142,266 +8142,266 @@ L/lmm/m/it/10 B\OT1/lmr/m/n/10 ) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10237--10249
+Underfull \hbox (badness 10000) in paragraph at lines 10261--10273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10237--10249
+Underfull \hbox (badness 10000) in paragraph at lines 10261--10273
 
  []
 
 
-LaTeX Warning: Hyper reference `Morphismes d'algÃ¨bres de M_n(R)' on page 261 u
-ndefined on input line 10255.
-
-[261]
-Underfull \hbox (badness 10000) in paragraph at lines 10278--10298
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10308--10314
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10324--10325
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10328--10329
-
- []
+LaTeX Warning: Hyper reference `Morphismes d'algÃ¨bres de M_n(R)' on page 262 u
+ndefined on input line 10279.
 
 [262]
-Underfull \hbox (badness 10000) in paragraph at lines 10335--10338
+Underfull \hbox (badness 10000) in paragraph at lines 10302--10322
 
  []
 
 
-LaTeX Warning: Hyper reference `Endomorphismes Ã©changeurs' on page 263 undefin
-ed on input line 10359.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10359--10360
+Underfull \hbox (badness 10000) in paragraph at lines 10332--10338
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10363--10364
+Underfull \hbox (badness 10000) in paragraph at lines 10348--10349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10352--10353
 
  []
 
 [263]
-Underfull \hbox (badness 10000) in paragraph at lines 10400--10401
+Underfull \hbox (badness 10000) in paragraph at lines 10359--10362
+
+ []
+
+
+LaTeX Warning: Hyper reference `Endomorphismes Ã©changeurs' on page 264 undefin
+ed on input line 10383.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10383--10384
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10387--10388
 
  []
 
 [264]
-Underfull \hbox (badness 10000) in paragraph at lines 10436--10437
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10459--10464
+Underfull \hbox (badness 10000) in paragraph at lines 10424--10425
 
  []
 
 [265]
-Underfull \hbox (badness 10000) in paragraph at lines 10485--10486
+Underfull \hbox (badness 10000) in paragraph at lines 10460--10461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10487--10488
+Underfull \hbox (badness 10000) in paragraph at lines 10483--10488
 
  []
 
 [266]
-Underfull \hbox (badness 10000) in paragraph at lines 10520--10521
+Underfull \hbox (badness 10000) in paragraph at lines 10509--10510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10523--10524
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10525--10526
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10528--10529
+Underfull \hbox (badness 10000) in paragraph at lines 10511--10512
 
  []
 
 [267]
-Underfull \hbox (badness 10000) in paragraph at lines 10560--10561
+Underfull \hbox (badness 10000) in paragraph at lines 10544--10545
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10547--10548
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10549--10550
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10552--10553
 
  []
 
 [268]
-Underfull \hbox (badness 10000) in paragraph at lines 10605--10606
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10609--10610
+Underfull \hbox (badness 10000) in paragraph at lines 10584--10585
 
  []
 
 [269]
-Underfull \hbox (badness 10000) in paragraph at lines 10631--10632
+Underfull \hbox (badness 10000) in paragraph at lines 10629--10630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10643--10644
+Underfull \hbox (badness 10000) in paragraph at lines 10633--10634
 
  []
 
 [270]
-Underfull \hbox (badness 10000) in paragraph at lines 10649--10650
+Underfull \hbox (badness 10000) in paragraph at lines 10655--10656
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10658--10667
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10684--10685
+Underfull \hbox (badness 10000) in paragraph at lines 10667--10668
 
  []
 
 [271]
-Underfull \hbox (badness 10000) in paragraph at lines 10701--10702
+Underfull \hbox (badness 10000) in paragraph at lines 10673--10674
 
  []
 
 
-Overfull \hbox (38.54677pt too wide) in paragraph at lines 10724--10735
+Underfull \hbox (badness 10000) in paragraph at lines 10682--10691
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10708--10709
+
+ []
+
+[272]
+Underfull \hbox (badness 10000) in paragraph at lines 10725--10726
+
+ []
+
+
+Overfull \hbox (38.54677pt too wide) in paragraph at lines 10748--10759
 \T1/lmr/m/n/10 On sait que toute ma-trice or-tho-go-nale $\OT1/lmr/m/n/10 
 $ \T1/lmr/m/n/10 est sem-blable à une ma-trice dia-go-nale par blocs $[]$ 
  []
 
-[272]
-Underfull \hbox (badness 10000) in paragraph at lines 10739--10740
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10743--10744
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10747--10748
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10751--10752
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10755--10756
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10759--10761
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10789--10790
-
- []
-
 [273]
-Underfull \hbox (badness 10000) in paragraph at lines 10793--10794
+Underfull \hbox (badness 10000) in paragraph at lines 10763--10764
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10797--10798
+Underfull \hbox (badness 10000) in paragraph at lines 10767--10768
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10801--10802
+Underfull \hbox (badness 10000) in paragraph at lines 10771--10772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10815--10816
+Underfull \hbox (badness 10000) in paragraph at lines 10775--10776
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10819--10820
+Underfull \hbox (badness 10000) in paragraph at lines 10779--10780
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10832--10833
+Underfull \hbox (badness 10000) in paragraph at lines 10783--10785
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10836--10837
+Underfull \hbox (badness 10000) in paragraph at lines 10813--10814
 
  []
 
-[274] [275]
-Underfull \hbox (badness 10000) in paragraph at lines 10908--10909
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10920--10921
-
- []
-
-[276]
-Underfull \hbox (badness 10000) in paragraph at lines 10932--10934
+[274]
+Underfull \hbox (badness 10000) in paragraph at lines 10817--10818
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10946--10947
+Underfull \hbox (badness 10000) in paragraph at lines 10821--10822
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10825--10826
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10839--10840
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10843--10844
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10856--10857
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10860--10861
+
+ []
+
+[275] [276]
+Underfull \hbox (badness 10000) in paragraph at lines 10932--10933
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10944--10945
 
  []
 
 [277]
-Underfull \hbox (badness 10000) in paragraph at lines 11003--11004
+Underfull \hbox (badness 10000) in paragraph at lines 10956--10958
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11007--11008
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11011--11012
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11015--11016
+Underfull \hbox (badness 10000) in paragraph at lines 10970--10971
 
  []
 
 [278]
-Overfull \hbox (12.86249pt too wide) in paragraph at lines 11028--11030
+Underfull \hbox (badness 10000) in paragraph at lines 11027--11028
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11031--11032
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11035--11036
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11039--11040
+
+ []
+
+[279]
+Overfull \hbox (12.86249pt too wide) in paragraph at lines 11052--11054
 []\T1/lmr/m/n/10 On prend la no-ta-tion de la ques-tion pré-cé-dente. Ainsi, $[
 ][] \OT1/lmr/m/n/10 = []((\OML/lmm/m/it/10 D[]P \OMS/lmsy/m/n/10 ^^@ \OML/lmm/m
 /it/10 PD[]\OT1/lmr/m/n/10 )[](\OML/lmm/m/it/10 D[]P \OMS/lmsy/m/n/10 ^^@ \OML/
@@ -8409,28 +8409,28 @@ lmm/m/it/10 PD[]\OT1/lmr/m/n/10 )) = [](\OML/lmm/m/it/10 D[]P \OMS/lmsy/m/n/10
 ^^@
  []
 
-[279]
-Underfull \hbox (badness 10000) in paragraph at lines 11100--11101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11104--11105
-
- []
-
 [280]
-Underfull \hbox (badness 10000) in paragraph at lines 11108--11109
+Underfull \hbox (badness 10000) in paragraph at lines 11124--11125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11128--11129
 
  []
 
 [281]
-Underfull \hbox (badness 10000) in paragraph at lines 11115--11117
+Underfull \hbox (badness 10000) in paragraph at lines 11132--11133
+
+ []
+
+[282]
+Underfull \hbox (badness 10000) in paragraph at lines 11139--11141
 
  []
 
 
-Overfull \hbox (13.58008pt too wide) detected at line 11156
+Overfull \hbox (13.58008pt too wide) detected at line 11180
 \OT1/lmr/m/n/10 (\OML/lmm/m/it/10 N \OMS/lmsy/m/n/10 ^^@ \OML/lmm/m/it/10 N[]\O
 T1/lmr/m/n/10 )[] = [](\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 1)[][][][]\OML/lmm/m
 /it/10 N[] \OT1/lmr/m/n/10 = [](\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 1)[][][][]\
@@ -8439,7 +8439,7 @@ OML/lmm/m/it/10 N[] \OT1/lmr/m/n/10 + [](\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 1)
  []
 
 
-Overfull \hbox (8.66934pt too wide) in paragraph at lines 11163--11176
+Overfull \hbox (8.66934pt too wide) in paragraph at lines 11187--11200
 []\T1/lmr/m/n/10 Supposons que $\OML/lmm/m/it/10 A$ \T1/lmr/m/n/10 est dia-go-n
 a-li-sable. Alors il existe une ma-trice in-ver-sible $\OML/lmm/m/it/10 P$ \T1/
 lmr/m/n/10 et une ma-trice dia-go-nale $\OML/lmm/m/it/10 D \OT1/lmr/m/n/10 = []
@@ -8447,19 +8447,19 @@ lmr/m/n/10 et une ma-trice dia-go-nale $\OML/lmm/m/it/10 D \OT1/lmr/m/n/10 = []
  []
 
 
-Overfull \hbox (27.03397pt too wide) in paragraph at lines 11163--11176
+Overfull \hbox (27.03397pt too wide) in paragraph at lines 11187--11200
 \T1/lmr/m/n/10 Ainsi par uni-cité de la dé-com-po-si-tion de Dun-ford, $\OML/lm
 m/m/it/10 e[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 e[] \OMS/lmsy/m/n/10 ^^@ \OML/lm
 m/m/it/10 I[]\OT1/lmr/m/n/10 ) = \OML/lmm/m/it/10 N[] \OT1/lmr/m/n/10 = 0$\T1/l
 mr/m/n/10 . Or on sait que $[] [] \OT1/lmr/m/n/10 = [] [] =
  []
 
-[282]
+[283]
 Underfull \vbox (badness 1107) has occurred while \output is active []
 
- [283]
-[284]
-Overfull \hbox (13.21036pt too wide) in paragraph at lines 11223--11235
+ [284]
+[285]
+Overfull \hbox (13.21036pt too wide) in paragraph at lines 11247--11259
 \T1/lmr/m/n/10 On en dé-duit par ré-cur-rence simple que $\OMS/lmsy/m/n/10 8\OM
 L/lmm/m/it/10 p \OMS/lmsy/m/n/10 2 \U/msb/m/n/10 N[]\OML/lmm/m/it/10 ;  \OMS/lm
 sy/m/n/10 9\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 ^^L[]; [] ; ^^L[]\OT1/lmr/m/n/10 )
@@ -8470,12 +8470,12 @@ $\T1/lmr/m/n/10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11241--11242
+Underfull \hbox (badness 10000) in paragraph at lines 11265--11266
 
  []
 
-[285]
-Overfull \hbox (4.71368pt too wide) in paragraph at lines 11272--11273
+[286]
+Overfull \hbox (4.71368pt too wide) in paragraph at lines 11296--11297
 []\T1/lmr/m/n/10 Soit $\OML/lmm/m/it/10 A \OMS/lmsy/m/n/10 2 \U/eus/m/n/10 M[]\
 OT1/lmr/m/n/10 (\U/msb/m/n/10 R\OT1/lmr/m/n/10 )$\T1/lmr/m/n/10 . Re-mar-quons 
 que $\OML/lmm/m/it/10 A[]A \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 S[]\OT1/lmr/m/n/
@@ -8486,84 +8486,84 @@ AX \OT1/lmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11272--11273
+Underfull \hbox (badness 10000) in paragraph at lines 11296--11297
 
  []
 
-[286]
-Underfull \hbox (badness 10000) in paragraph at lines 11301--11302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11313--11314
+[287]
+Underfull \hbox (badness 10000) in paragraph at lines 11325--11326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11324--11325
+Underfull \hbox (badness 10000) in paragraph at lines 11337--11338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11348--11349
 
  []
 
 
 Underfull \vbox (badness 4739) has occurred while \output is active []
 
- [287]
-Underfull \hbox (badness 10000) in paragraph at lines 11331--11332
+ [288]
+Underfull \hbox (badness 10000) in paragraph at lines 11355--11356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11346--11347
-
- []
-
-[288]
-Underfull \hbox (badness 10000) in paragraph at lines 11377--11379
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11397--11398
+Underfull \hbox (badness 10000) in paragraph at lines 11370--11371
 
  []
 
 [289]
-Underfull \hbox (badness 10000) in paragraph at lines 11415--11416
+Underfull \hbox (badness 10000) in paragraph at lines 11401--11403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11419--11420
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11436--11437
+Underfull \hbox (badness 10000) in paragraph at lines 11421--11422
 
  []
 
 [290]
-Underfull \hbox (badness 10000) in paragraph at lines 11459--11475
+Underfull \hbox (badness 10000) in paragraph at lines 11439--11440
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11443--11444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11460--11461
 
  []
 
 [291]
-Underfull \hbox (badness 10000) in paragraph at lines 11495--11496
+Underfull \hbox (badness 10000) in paragraph at lines 11483--11499
+
+ []
+
+[292]
+Underfull \hbox (badness 10000) in paragraph at lines 11519--11520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11521--11522
+Underfull \hbox (badness 10000) in paragraph at lines 11545--11546
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11527--11528
+Underfull \hbox (badness 10000) in paragraph at lines 11551--11552
 
  []
 
-[292] [293] 
+[293] [294] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (AlgÃ¨bre.aux)
  ***********
@@ -8575,14 +8575,14 @@ L3 programming layer <2025-11-06>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `AlgÃ¨bre.out' has not changed.
-(rerunfilecheck)             Checksum: A92A7880D7AC2A8EEABC0F76A4CD4BAD;96035.
+(rerunfilecheck)             Checksum: 1C552550FECEAC109347BECA81BC44B6;96029.
  ) 
 Here is how much of TeX's memory you used:
- 34398 strings out of 467871
- 637314 string characters out of 5418376
+ 34394 strings out of 467871
+ 637304 string characters out of 5418376
  1210946 words of memory out of 5000000
- 60086 multiletter control sequences out of 15000+600000
- 746310 words of font info for 153 fonts, out of 8000000 for 9000
+ 60082 multiletter control sequences out of 15000+600000
+ 725715 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,20n,107p,1227b,1422s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\estev\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\bbm10
@@ -8621,9 +8621,9 @@ pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/
 stmary7.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfc
 han/uzcmi8a.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/yhmath/yhcmex.pfb>
-Output written on AlgÃ¨bre.pdf (296 pages, 2812078 bytes).
+Output written on AlgÃ¨bre.pdf (297 pages, 2818236 bytes).
 PDF statistics:
- 6884 PDF objects out of 7423 (max. 8388607)
- 2589 named destinations out of 2984 (max. 500000)
+ 6894 PDF objects out of 7423 (max. 8388607)
+ 2595 named destinations out of 2984 (max. 500000)
  3465 words of extra memory for PDF output out of 10000 (max. 10000000)
 
