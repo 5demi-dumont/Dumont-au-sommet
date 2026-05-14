@@ -8799,7 +8799,16 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\end{align*}
 		Or $\displaystyle\left|\frac{1}{n^2}\sum_{d=1}^n\mu(d)\right|\leq \frac{1}{n^2}\sum_{d=1}^n1=\frac{1}{n}\unfty\longrightarrow 0$ et $\left|\dfrac{\mu(d)}{d}\right|\leq \dfrac{1}{d}\underset{d\to +\infty}\longrightarrow 0$ donc par le lemme de Cesàro $\displaystyle\left|\frac{2}{n}\sum_{d=1}^n\frac{\mu(d)}{d}\right|\unfty\longrightarrow 0$.\\
 		De plus $\left|\dfrac{\mu(d)}{d^2}\right|\leq \dfrac{1}{d^2}$ donc la série $\displaystyle\sum_{d\in \N^*}\frac{\mu(d)}{d^2}$ converge absolument.\\
-		On en déduit que $\displaystyle\frac{d_n}{n^2}\unfty\longrightarrow\sum_{d=1}^{+\infty}\frac{\mu(d)}{d^2}$.
+		On en déduit que $\displaystyle\frac{d_n}{n^2}\unfty\longrightarrow\sum_{d=1}^{+\infty}\frac{\mu(d)}{d^2}$. Calculons maintenant cette somme.\\
+		On veut montrer que $\displaystyle\sum_{d=1}^{+\infty}\frac{\mu(d)}{d^2}=\frac{6}{\pi^2}=\left(\sum_{d=1}^{+\infty}\frac{1}{d^2}\right)^{-1}$.\\
+		La famille $\left(\dfrac{\mu(n)}{(mn)^2}\right)_{m,n\geq 1}$ étant sommable, par le théorème de sommation par paquets (selon la valeur de $mn$), $$\sum_{m=1}^{+\infty}\frac{1}{m^2}\sum_{n=1}^{+\infty}\frac{\mu(n)}{n^2}=\sum_{n,m\geq 1}\frac{\mu(n)}{(mn)^2}=\sum_{N=1}^{+\infty}\sum_{d|N}\frac{\mu(d)}{N^2}$$
+		Reste à calculer $\displaystyle\sum_{d|N}\mu(d)$. On montre alors classiquement que pour $N=1$ la somme vaut $1$ et que pour $N>1$ la somme est nulle :\\
+		On écrit $N=\displaystyle\prod_{i=1}^sp_i^{\alpha_i}$ la décomposition en facteurs premiers de $N$. Les seuls diviseurs qui ont une contribution non nulle dans la somme sont les $P_I:=\displaystyle\prod_{i\in I}p_i$ pour $I\subset \crblanc{1}{s}$.\\
+		Donc $\displaystyle\sum_{d|N}\mu(d)=\sum_{I\subset \crblanc{1}{s}}\mu(P_I)=\sum_{k=0}^s\sum_{\substack{I\subset \crblanc{1}{s}\\\#(I)=k}}\mu(P_I)=\sum_{k=0}^s\binom{s}{k}(-1)^k=(1-1)^s=0$.\\
+		Par conséquent, $\displaystyle\sum_{m=1}^{+\infty}\frac{1}{m^2}\sum_{n=1}^{+\infty}\frac{\mu(n)}{n^2}=1$ et puis $\dfrac{d_n}{n^2}\unfty\longrightarrow\dfrac{6}{\pi^2}$.\\
+		\textit{Remarque : on peut interpréter ce résultat de la manière suivante : pour $n$ grand, la probabilité que $2$ entiers tirés au hasard dans $\crblanc{1}{n}$ soient premiers entre eux tend vers $\dfrac{1}{\zeta(2)}$.\\
+		Le sujet X Maths B 2022 généralise ce résultat de la sorte : pour $n$ grand, la probabilité que $k$ entiers tirés au hasard dans $\crblanc{1}{n}$ soient premiers entre eux tend vers $\dfrac{1}{\zeta(k)}$
+		Le sujet Mines-Ponts maths 2 PSI 2026 étudie par des méthodes similaires le résultat suivant : pour $n$ grand, la probabilité qu'un entier choisi au hasard dans $\crblanc{1}{n}$ soit sans facteur à la puissance $k$ tend vers $\dfrac{1}{\zeta(k)}$.}
 	\end{enumerate}
 	
 	\subsection{Limite d'une fonction arithmétique multiplicative}
