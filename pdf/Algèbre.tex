@@ -3033,7 +3033,8 @@ Un homme peint un mur en étant placé sur un échafaudage. Des passant passent 
 \begin{enumerate}
 	\item On suppose que $n$ personnes passent dans la journée.
 	Donner les lois de $X$ et $Y$, puis déterminer si $X$ et $Y$ sont indépendantes.
-	\item On suppose dans la suite que $N$ personnes passent dans la journée où $N$ suit une loi de Poisson de paramètre $\lambda>0$.
+	\item On suppose dans la suite que $N$ personnes passent dans la journée où $N$ suit une loi de Poisson de paramètre $\lambda>0$.\\
+	Donner les lois de $X$ et $Y$, puis l'espérance et la variance de $X$.
 	\item Montrer que $X$ et $Y$ sont indépendantes.
 	\item Calculer $\operatorname{Cov}(X,N)$. Les variables $X$ et $N$ sont-elles indépendantes.
 \end{enumerate}
@@ -4780,8 +4781,65 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\subsection{Racine $8$-ième d'une matrice triangulaire \ccinp{2}}
 	\label{Racine $8$-ième d'une matrice triangulaire corrigé}
-	\textcolor{blue}{\hyperref[Racine $8$-ième d'une matrice triangulaire (1)]{[Enoncé]}}\\
-	
+	\textcolor{blue}{\hyperref[Racine $8$-ième d'une matrice triangulaire]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]	
+		\item Soit $M=\begin{pmatrix}
+			a&b&c\\
+			d&e&f\\
+			g&h&i
+		\end{pmatrix}\in\mathcal{C}(N)$.
+		\[MN=\begin{pmatrix}
+			0&a&b\\
+			0&d&e\\
+			0&g&h
+		\end{pmatrix}
+		\quad\text{et}\quad 
+		NM=\begin{pmatrix}
+			d&e&f\\
+			g&h&i\\
+			0&0&0
+		\end{pmatrix}\]
+		On en déduit donc que $d=g=h=0$, $a=e=i$ et $b=f$.\\
+		Ainsi $\mathcal{C}(N)\subset\left\{\begin{pmatrix}
+			a&b&c\\
+			0&a&b\\
+			0&0&a		
+		\end{pmatrix}, (a,b,c)\in\R^3\right\}$.\\
+		Le sens réciproque se montre assez aisément.\\
+		On montre aussi que $\mathcal{C}(N)=\R[N]$. Donc $\C(N)$ est un espace vectoriel.
+		\item \[T^2=\begin{pmatrix}
+			1&4&10\\
+			0&1&4\\
+			0&0&1
+		\end{pmatrix}\]
+		On montre que \[N=-\frac{3}{4}T^2+\frac{10}{4}T-\frac{7}{4}I_3\]
+		\item Soit $M\in E$.\\
+		$M$ est donc un polynôme en $T$ par conséquent $M$ commute avec tous les polynômes en $T$ en particulier avec $N$.\\
+		En particulier, $M\in\C(N)$ et donc $M$ est un polynôme en $N$.
+		\item Soit $M\in E$.\\
+		Il existe $a,b,c\in\R$ tels que $M=aI_3+bN+cN^2$.
+		On pose $J=bN+cN^2$ de sorte que $M=aI_3+J$.\\
+		On remarque que $J^2=bN^2$ et $J^3=0$.\\
+		De plus, puisque $I_3$ et $J$ commutent, d'après le binôme de Newton :
+		\[M^8=\sum_{k=0}^{8}\binom{8}{k}a^{8-k}J^k=a^8I_3+8a^7J+28a^6J^2=\begin{pmatrix}
+			a^8&8a^7b&8a^7c+28a^6b^2\\
+			0&a^8&8a^7b\\
+			0&0&a^8
+		\end{pmatrix}\]
+		Puisque $M^8=T$, on en déduit que $a^8=1$, par conséquent $a=1$ ou $a=-1$ ($a\in\R$).\\
+		Supposons que $a=1$, on a alors $8b=2$ donc $b=\frac{1}{4}$.\\
+		Ainsi, $8c+\frac{28}{16}=3$ donc $c=\frac{5}{32}$.
+		A présent, supposons que $a=-1$, on a alors $b=-\frac{1}{4}$ et $c=-\frac{5}{32}$.
+		On en déduit que \[E=\left\{\begin{pmatrix}
+			1&\frac{1}{4}&\frac{5}{32}\\
+			0&1&\frac{1}{4}\\
+			0&0&1
+		\end{pmatrix}, \begin{pmatrix}
+		-1&-\frac{1}{4}&-\frac{5}{32}\\
+		0&-1&-\frac{1}{4}\\
+		0&0&-1
+		\end{pmatrix}\right\}\]
+	\end{enumerate}
 	\subsection{Dimension du commutant (1) \centraleponts{3}}
 	\label{Dimension du commutant (1) corrigé}
 	\textcolor{blue}{\hyperref[Dimension du commutant (1)]{[Enoncé]}}\\
@@ -6439,7 +6497,18 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Matrice de Gram}
 	\label{Matrice de Gram corrigé}
 	\textcolor{blue}{\hyperref[Matrice de Gram]{[Enoncé]}}\\
-	
+	\begin{enumerate}[leftmargin=*]
+		\item Par définition, $A=(\langle x_i,e_j\rangle)_{i,j\in\crblanc{1}{p}}$.\\
+		Ainsi, pour tout $i,j\in\crblanc{1}{p}$ : \[(A^\top A)_{ij}=\sum_{k=1}^{n}\langle x_i,e_k\rangle \langle x_j,e_k\rangle=\left\langle x_i, \sum_{k=1}^{n}\langle x_j, e_k\rangle e_k\right\rangle=\langle x_i,x_j\rangle\]
+		Par conséquent, \[G(x_1,\dots,x_p)=A^\top A\]
+		\item Montrons que $G(x_1,\dots,x_p)$ est une matrice symétrique positive.\\
+		Soit $X\in\M_{p,1}(\R)$.
+		\[X^\top G(x_1,\dots,x_p)X=X^\top A^\top AX=\norme{AX}^2\geq 0\]
+		Par conséquent, on en déduit que les valeurs propres de $G$ sont positives ou nulles.
+		\item On remarque $\sum_{i=1}^{p}\norme{x_i}^2$ est la trace de $G$.\\
+		Puisque, la somme des valeurs propres est la trace de $G$ et que les valeurs propres sont positives, on en déduit que :
+		\[\forall \lambda\in Sp(G),\quad \lambda\leq \sum_{i=1}^{p}\norme{x_i}^2\].
+	\end{enumerate}
 	\subsection{Matrice circulante}
 	\label{Matrice circulante corrigé}
 	\textcolor{blue}{\hyperref[Matrice circulante]{[Enoncé]}}\\
@@ -9395,7 +9464,41 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Dangereux échafaudage \ccinp{3}}
 	\label{Dangereux échafaudage corrigé}
 	\textcolor{blue}{\hyperref[Dangereux échafaudage]{[Enoncé]}}\\
-	
+	\begin{enumerate}
+		\item La variable $X$ compte le nombre de succès "être touché" Elle suit donc une loi binomiale de paramètres $n$ et $p$.\\
+		De même $Y$ suit une loi binomiale de paramètres $n$ et $1-p$ de succès "ne pas être touché".\\
+		Puisque connaître la valeur de $X$ fixe la valeur de $Y$, elles ne peuvent pas être indépendantes.
+		Par exemple, \[\p(X=n\cap Y=n)=0\ne \p(X=n)\p(Y=n)=p^n(1-p)^n\]
+		\item Pour tout $k\in\N$,
+		\begin{align*}
+			\p(X=k)&=\sum_{n=k}^{+\infty}\p(X=k|N=n)\p(N=n)\\
+			&=\sum_{n=k}^{+\infty}\binom{n}{k}p^k(1-p)^{n-k}e^{-\lambda}\frac{\lambda^n}{n!}\\
+			&=e^{-\lambda}\frac{p^k}{k!}\sum_{n=k}^{+\infty}\frac{(1-p)^{n-k}\lambda^n}{(n-k)!}\\
+			&=e^{-\lambda}\frac{(\lambda p)^k}{k!}\sum_{j=0}^{+\infty}\frac{(\lambda(1-p)^j)}{j!}
+			&=e^{-\lambda p}\frac{(\lambda p)^k}{k!}
+		\end{align*}
+		Ainsi $X\sim \mathcal{P}(\lambda p)$.\\
+		Par un raisonnement symétrique, on obtient $Y\sim \mathcal{P}(\lambda(1-p))$.
+		Puisque $X$ suit une loi de Poisson de paramètres $\lambda p$, on a :
+		\begin{align*}
+			\E(X)=\lambda p\\
+			\V(X)=\lambda p
+		\end{align*}
+		\item On évalue la probabilité conjointe.\\
+		Soient $k,j\in\N$.\\
+		L'événement $\{X=k\cap Y=j\}$ signifie qu'il y a eu exactement $k+j$ passants en tout, donc $N=k+j$.\\
+		\begin{align*}
+			\p(X=k\cap Y=j)&=\p(X=k\cap N=k+j)\\
+			&=\p(X=k|N=k+j)\p(N=k+j)\\
+			&=\left[\frac{(k+j)!}{k!j!}p^k(1-p)^j\right]\left[e^{-\lambda}\frac{\lambda^n}{n!}\right]
+			&=\left[e^{-\lambda p}\frac{(\lambda p)^k}{k!}{e^{-\lambda(1-p)}\frac{(\lambda(1-p))^j}{j!}}\right]
+			&=\p(X=k)\p(Y=j)
+		\end{align*}
+		Par conséquent, $X$ et $Y$ sont indépendantes.
+		\item \[\operatorname{Cov}(X,N)=\operatorname{Cov}(X,X+Y)=\operatorname{Cov}(X,X)+\operatorname{Cov}(X,Y)=\V(X)\]
+		Ainsi, \[Cov(X,N)=\lambda p\]
+		et donc $X$ et $N$ ne sont pas indépendantes.
+	\end{enumerate}
 	\subsection{Formule de Wald \etoile{3}}
 	\label{Formule de Wald corrigé}
 	\textcolor{blue}{\hyperref[Formule de Wald]{[Enoncé]}}\\
