@@ -9557,7 +9557,43 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Obtenir trois pile consécutifs}
 	\label{Obtenir trois pile consécutifs corrigé}
 	\textcolor{blue}{\hyperref[Obtenir trois pile consécutifs]{[Enoncé]}}\\
-	
+	\begin{enumerate}
+		\item On trace le tableau de variation de $P$.\\
+		\begin{center}\begin{tikzpicture}
+			 \tkzTab{$x$ / 1 , $P'$ / 1, $P$ / 1.5}{$-\infty$, $-\dfrac{1}{3}$, 1,$+\infty$}
+			{,+,z,-,z,+, }
+			{-/ $-\infty$, +/ -$\frac{22}{7}$, -/-2, +/$+\infty$}
+		\end{tikzpicture}\end{center}
+		De plus, $P(2)=1>0$ et $P$ est strictement croissante entre $1$ et $2$ et d'après le TVI et le tableau de variation, $P$ s'annule une unique fois en $a\in]1,2[$ sur $R$.
+		Ainsi, il existe $b\in \C\setminus \R$ tel que :
+		\[P=(X-a)(X-b)(X-\overline{b}\]
+		D'après les relations coefficients-racines, on a :
+		\[ab\overline{b}=a|b|^2=1\]
+		Puisque $a>1$, on a a fortiori $|b|<1$.\\
+		\item Raisonnons sur le nombre de suites possibles.\\
+		On note $S_k$ le nombre de suites de longueur $k$ ne contenant pas le motif PPP. Une telle suite se termine forcément par :
+		\begin{itemize}
+			\item F précédé d'une suite de longueur $k-1$ ne contenant pas la séquence PPP,
+			\item FP " " " " " " ",
+			\item FPP " " " " " " ",
+		\end{itemize}
+		On a donc la relation $S_{k}=S_{k-1}+S_{k-2}+S_{k-3}$.\\
+		La probabilité $p_{n+3}$ correspond aux suites de longueur $n+3$ formées d'une suite ne contenant pas la séquence PPP de longueur $n-1$, suivie obligatoirement d'un F, puis de PPP. Le nombre de ces suites favorables est exactement $S_{n-1}$.\\
+		\[p_{n+3}=\frac{S_{n-1}}{2^{n+3}}=\frac{1}{2}\frac{S_{n-2}}{2^{n+2}}+\frac{1}{4}\frac{S_{n-3}}{2^{n+1}}+\frac{1}{8}\frac{S_{n-4}}{2^{n}}\]
+		Ainsi, on en déduit que :
+		\[p_{n+3}=\frac{1}{2}p_{n+2}+\frac{1}{4}p_{n+1}+\frac{1}{8}p_{n}\]
+		\item L'équation caractéristique est :
+		\[Q(r)=r^3-\frac{1}{2}r^2-\frac{1}{4}r-\frac{1}{8}=0\]
+		Ainsi, en posant $X=2r$, on remarque que :
+		\[Q(2X)=\frac{1}{8}P(X)\]
+		Ainsi, les racines de l'équation caractéristique sont :
+		\[\frac{a}{2},\frac{b}{2},\frac{\overline{b}}{2}\]
+		Il existe donc $A,B,C\in\C$ telles que pour tout $n\in\N^*$ :
+		\[p_n=A\left(\frac{a}{2}\right)^n+B\left(\frac{b}{2}\right)^n+C\left(\frac{\overline{b}}{2}\right)^n\]
+		Le terme dominant de cette égalité est $\left(\frac{a}{2}\right)^n$ lorsque $n\to+\infty$.\\
+		Ainsi :
+		\[p_n\underset{n\to\infty}{\sim}A\left(\frac{a}{2}\right)^2\]
+		\end{enumerate}
 	\subsection{Lancer de dés équitable \etoile{3}}
 	\label{Lancer de dés équitable corrigé}
 		\textcolor{blue}{\hyperref[Lancer de dés équitable]{[Enoncé]}}\\
