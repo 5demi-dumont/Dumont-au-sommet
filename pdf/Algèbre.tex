@@ -3625,10 +3625,10 @@ Soit $\varphi:\M_n(\R)\to\R$ une application linéaire vérifiant
 $$\forall A,B\in \M_n(\R),\ \varphi(AB)=\varphi(BA)$$
 Montrer que $\varphi$ est proportionnelle à la trace.
 
-\subsection{Morphismes d'algèbres de $\M_n(\K)$ \centraleponts{3}}
-\label{Morphismes d'algèbres de M_n(K)}
-\textcolor{blue}{\hyperref[Morphismes d'algèbres de M_n(K) corrigé]{[Corrigé]}}\\
-Soit $f$ un endomorphisme d'algèbres de $\M_n(\K)$. Montrer que $\Tr\circ f=\Tr$.
+\subsection{Endomorphisme d'algèbre de $\M_n(\K)$ \centraleponts{3}}
+\label{Endomorphisme d'algèbre de Mn(R)}
+\textcolor{blue}{\hyperref[Endomorphisme d'algèbre de Mn(R) corrigé]{[Corrigé]}}\\
+Soit $f$ un endomorphisme d'algèbres de $\M_n(\R)$. Montrer que $\Tr\circ f=\Tr$.
 
 \section{\underline{Hyperplan de $\M_n(\K)$} \xens{4}}
 \label{Hyperplan de Mn(K)}
@@ -10436,11 +10436,13 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\textit{Remarque : Le résultat reste vrai sur $\M_n(\C)$ car on peut montrer un théorème de représentation de Riesz complètement analogue à celui qu'on a utilisé.}\\
 	\textit{Remarque bis : Rappelons nous de la définition suivante du déterminant matriciel "$\det$ est l'unique forme multilinéaire alternée sur $\M_n(\K)$ qui vaut $1$ en l'identité". Cet exercice montre qu'on peut donner une définition semblable de la trace : "$\Tr$ est l'unique forme linéaire sur $\M_n(\K)$ vérifiant la propriété de cyclicité qui vaut $n$ en l'identité."}
 	
-	\subsubsection{Morphismes d'algèbres de $\M_n(\R)$ \centraleponts{3}}
-	\label{Morphismes d'algèbres de M_n(R) corrigé}
-	\textcolor{blue}{\hyperref[Morphismes d'algèbres de M_n(R)]{[Enoncé]}}\\
-	Notons $g=\Tr\circ f$. $g$ est une forme linéaire de $\M_n(\K)$ vérifiant $$\forall (A,B)\in \M_n(\K)^2,\ g(AB)=\Tr(f(AB))=\Tr(f(A)f(B))=\Tr(f(B)f(A))=\Tr(f(BA))=g(BA)$$
-	D'après l'exercice précédent $g$ est donc proportionnelle à la trace. De plus $g(I_n)=\Tr(f(I_n))=\Tr(I_n)$ donc $g=\Tr$.
+	\subsubsection{Endomorphisme d'algèbre de $\M_n(\R)$ \centraleponts{3}}
+	\label{Endomorphisme d'algèbre de Mn(R) corrigé}
+	\textcolor{blue}{\hyperref[Endomorphisme d'algèbre de Mn(R)]{[Enoncé]}}\\
+	Notons $g=\Tr\circ f$. $g$ est une forme linéaire de $\M_n(\R)$ vérifiant $$\forall (A,B)\in \M_n(\R)^2,\ g(AB)=\Tr(f(AB))=\Tr(f(A)f(B))=\Tr(f(B)f(A))=\Tr(f(BA))=g(BA)$$
+	D'après l'exercice précédent $g$ est donc proportionnelle à la trace. De plus $g(I_n)=\Tr(f(I_n))=\Tr(I_n)$ donc $g=\Tr$.\\\\
+	
+	\textit{Remarque : Pour les mêmes raisons que dans l'exercice précédent, le résultat reste valable sur $\M_n(\C)$.}
 	
 	\subsection{Hyperplan de $\M_n(\K)$ \xens{4}}
 	\label{Hyperplan de Mn(K) corrigé}
@@ -10508,6 +10510,16 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Une isométrie vectorielle matricielle}
 	\label{Une isométrie vectorielle matricielle corrigé}
 	\textcolor{blue}{\hyperref[Une isométrie vectorielle matricielle]{[Enoncé]}}\\
+	Tout d'abord $f$ est linéaire.\\
+	Supposons que $A$ soit orthogonale.\\
+	Alors $\forall M\in \M_n(\R),\ \norme{AM}^2=\proscal{AM}{AM}=\proscal{M}{A^\top AM}=\proscal{M}{M}=\norme{M}^2$.\\
+	$f$ conserve la norme, c'est donc une isométrie vectorielle de $\M_n(\R)$.\\
+	Réciproquement, supposons que $f\in \O(\M_n(\R))$.\\
+	Notons $(E_{ij})_{1\leq i,j\leq n}$ la base canonique de $\M_n(\R)$ et notons $C_1,\dots,C_n$ les colonnes de $A$.\\
+	On remarque que $AE_{ij}=C_j$.\\
+	Donc comme $f$ conserve le produit scalaire, $\forall i,j\in \crblanc{1}{n},\ \delta_{ij}=\proscal{E_{1i}}{E_{1j}}=\proscal{f(E_{1i})}{f(E_{1j})}=\proscal{C_i}{C_j}$.\\
+	Les colonnes de $A$ forment une base orthonormée de $\M_{n,1}(\R)$ donc $A\in \O_n(\R)$.\\\\
+	On peut aussi remarquer qu'à partir de l'égalité $AE_{ij}=C_j$ la matrice de $f$ dans la base canonique, qui est orthonormée, prise dans un ordre précis est $B=\diag(A,\dots,A)$. Et $B^\top B=I_{n^2}\iff A^\top A=I_n$.
 	
 	\subsection{Matrice circulante et rotation de l'espace}
 	\label{Matrice circulante et rotation de l'espace corrigé}
@@ -10541,19 +10553,51 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\end{enumerate}
 	
 	\subsection{Endomorphisme échangeur}
-	\label{Endomorphismes échangeurs corrigé}
-	\textcolor{blue}{\hyperref[Endomorphismes échangeurs]{[Enoncé]}}\\
+	\label{Endomorphisme échangeur corrigé}
+	\textcolor{blue}{\hyperref[Endomorphisme échangeur]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item $\varphi$ est un isomorphisme donc $\dim\varphi(F)=\dim F=n=\dim G$. Ainsi $\varphi(F)\subset G\implies \varphi(F)=G$.\\
+		Soit $x\in E$.\\
+		$f_\varphi$ est clairement linéaire par linéarité de $p_F,p_G,\varphi$ et $\varphi^{-1}$.\\
+		Donc comme $\Ker(p_F)=G=\Ima(p_G)$ et $\Ker(p_G)=F=\Ima(p_F)$ on obtient $p_F\circ \varphi=p_G\circ \varphi^{-1}=0$, $p_G\circ \varphi=\varphi$ et $p_F\circ \varphi^{-1}=\varphi^{-1}$ :
+		\begin{align*}
+			f_\varphi^2(x)&=f_\varphi(\varphi(p_F(x)))+f_\varphi(\varphi^{-1}(p_G(x)))\\
+			&=\varphi\circ p_F\circ \varphi \circ p_F(x)+\varphi^{-1}\circ p_G\circ \varphi\circ p_F(x)+\varphi\circ p_F\circ \varphi^{-1}\circ p_G(x)+\varphi^{-1}\circ p_G\circ \varphi^{-1}\circ p_G(x)\\
+			&=\varphi^{-1}\circ p_G\circ \varphi\circ p_F(x)+\varphi\circ p_F\circ \varphi^{-1}\circ p_G(x)\\
+			&=p_F(x)+p_G(x)\\
+			&=x
+		\end{align*}
+		Ensuite, $f_\varphi\circ p_F=\varphi\circ p_F^2+\varphi^{-1}\circ p_G\circ p_F=\varphi\circ p_F$. Donc $f_\varphi(F)=f\circ p_F(E)=\varphi\circ p_F(E)=\varphi(F)=G$.\\
+		De même, $f_\varphi(G)=F$.
+		\item Soit $(u,v)\in F^2$. On a $\proscal{f_\varphi(u)}{v}=\proscal{\varphi(u)}{v}=\proscal{u}{\varphi(v)}=\proscal{u}{f_\varphi(v)}$.\\
+		Soit $(w,t)\in G^2$. Il existe $(u,v)\in F^2$ tel que $w=f_\varphi(u)$ et $t=f_\varphi(v)$.\\
+		Donc $\proscal{f_\varphi(w)}{t}=\proscal{u}{f_\varphi(v)}=\proscal{f_\varphi(u)}{t}=\proscal{w}{f_\varphi(t)}$.\\
+		Ainsi comme $E=F\oplus G$, $\forall (a,b)\in E^2,\ \proscal{f_\varphi(a)}{b}=\proscal{a}{f_\varphi(b)}$ et $f_\varphi\in \O(E)$.
+		\item Cela découle directement de $f_\varphi\circ p_F=\varphi\circ p_F$.
+	\end{enumerate}
 	
 	\subsection{Réflexion qui commutent}
 	\label{Réflexion qui commutent corrigé}
 	\textcolor{blue}{\hyperref[Réflexion qui commutent]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On sait que $\forall x\in E,\ s_a(x)=x-2p_a(x)=x-2\proscal{a}{x}a$ où $p_a(x)$ est la projection orthogonale de $x$ sur $\Vect(a)$ (faire un dessin).\\
+		En effet $s_a(x)=s_a(x-p_a(x)+p_a(x))=s_a(x-p_a(x))+s_a(p_a(x))=x-2p_a(x)$.
+		\item Soit $g\in \O(E)$, i.e $g^{-1}=g^*$. Soit $x\in E$.\\
+		$g\circ s_a\circ g^{-1}(x)=g(g^{-1}(x)-2\proscal{a}{g^*(x)}a)=x-2\proscal{g(a)}{x}g(a)=s_{g(a)}(x)$.
+		\item Une réflexion est un endomorphisme orthogonal, en effet par le théorème de Pythagore, $$\forall x\in E,\ \norme{s_a(x)}^2=\norme{x-2p_a(x)}^2=\norme{-p_a(x)}^2+\norme{x-p_a(x)}^2=\norme{p_a(x)}^2+\norme{x-p_a(x)}^2=\norme{x}^2$$
+		Donc d'après la question précédente, $s_b\circ s_a\circ s_b^{-1}=s_{s_b(a)}$.
+		$s_a$ et $s_b$ commutent ssi $s_b\circ s_a\circ s_b^{-1}=s_a$, donc ssi $s_a=s_{s_b(a)}$.\\
+		Si $s_a=s_{s_b(a)}$ alors $s_b(a)\in\Vect(a)$.\\
+		Et puisque $\norme{s_b(a)}=\norme a=1$, $s_b(a)=a$ ou $s_b(a)=-a$. Ou encore $a\in \Vect(b)$ ou $a\in \Vect(b)^\bot$. Dans ce cas, puisque $b$ n'est pas colinéaire à $a$, $b$ est orthogonal à $a$.\\
+		Réciproquement, si $\proscal{a}{b}=0$ alors $s_b(a)=a-2\proscal{b}{a}b=a$ d'où $s_a=s_{s_b(a)}$ puis $s_a\circ s_b=s_b\circ s_a$.
+	\end{enumerate}
 	
 	\subsection{\underline{Caractérisations des projections orthogonales} \ccinp{2}}
 	\label{Caractérisations des projections orthogonales corrigé}
 	\textcolor{blue}{\hyperref[Caractérisations des projections orthogonales]{[Enoncé]}}\\
-	On pose $F=\Ker(p-Id_E)$
-	Montrons que i. $\Rightarrow$ ii.\\
-	On sait que pour tout $x\in E$ $(p(x)-x)\in F^\perp$.\\
+	On pose $F=\Ker(p-\Id_E)$
+	Montrons que i. $\implies$ ii.\\
+	On sait que pour tout $x\in E$, $p(x)-x\in F^\perp$.\\
 	Ainsi pour tout $x,y\in E$, \[\langle p(x)-x,p(y)\rangle=0 \text{ i.e } \langle p(x),p(y)\rangle=\langle x,p(y)\rangle\]
 	Ainsi par symétrie du produit scalaire : 
 	\begin{align*}
@@ -10562,22 +10606,22 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		&=\langle y,p(x)\rangle\\
 		&=\langle p(x), y\rangle
 	\end{align*}
-	Montrons que ii. $\Rightarrow$ iii.\\
+	Montrons que ii. $\implies$ iii.\\
 	On a pour tout $x\in E$, \[\norme{p(x)}^2=\langle p(x),p(x)\rangle=\langle x, p(x)\rangle\]
 	D'après l'inégalité de Cauchy-Schwarz 
 	\[\norme{p(x)}^2\leq \norme{x}\norme{p(x)}\]
-	Si $p(x)=0$, l'inégalité de vérifié automatiquement, sinon l'inégalité précédente donne le résultat.\\
-	Montrons que iii. $\Rightarrow$ i.\\
+	Si $p(x)=0$, l'inégalité est vérifiée automatiquement, sinon l'inégalité précédente donne le résultat.\\
+	Montrons que iii. $\implies$ i.\\
 	Soient $x\in \Ima(p)$ et $y\in\Ker(p)$.\\
-	Si $y=0$, $x\perp y=0$.\\
+	Si $y=0$, $\proscal{x}{y}=0$.\\
 	Supposons que $y\ne 0$.\\
 	Soit $\lambda\in\R$.
 	D'une part, \[\norme{p(x+\lambda y)}^2=\norme{x}^2\]
-	D'autre part, \[\norme{x+\lambda y}^2)=\norme{x}^2+2\lambda\langle x, y\rangle+\lambda^2\norme{y}^2\]
+	D'autre part, \[\norme{x+\lambda y}^2=\norme{x}^2+2\lambda\langle x, y\rangle+\lambda^2\norme{y}^2\]
 	D'après ii., on a pour tout $\lambda\in\R$,
 	\[\lambda\langle x,y\rangle+\lambda^2\norme{y}^2\geq 0\]
-	On pose $P=\norme{y}^2X^2+\langle x,y\rangle X$.\\
-	Ce polynôme est positif sur $\R$, il possède donc un discriminant négatif, ce qui correspond : \[\langle x,y\rangle^2\leq 0\]
+	On pose $P(X)=\norme{y}^2X^2+\langle x,y\rangle X$.\\
+	Ce polynôme est positif sur $\R$, il possède donc un discriminant négatif, ce qui correspond à : \[\langle x,y\rangle^2\leq 0\]
 	Donc \[\langle x,y\rangle=0\]
 	Donc $p$ est orthogonale.
 	
