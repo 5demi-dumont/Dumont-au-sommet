@@ -4468,13 +4468,10 @@ Soient $x,y,z$ des rationnels non nuls. Montrer que la matrice $\begin{pmatrix}
 	z&x&2y
 \end{pmatrix}$ est inversible.
 
-\section{Polynômes préservant les matrices orthogonales \centraleponts{3}}
+\section{Polynômes préservant les matrices orthogonales \centraleponts{4}}
 \label{Polynômes préservant les matrices orthogonales}
 \textcolor{blue}{\hyperref[Polynômes préservant les matrices orthogonales corrigé]{[Corrigé]}}\\
-\begin{enumerate}[leftmargin=*]
-	\item Soit $A\in \O_n(\R)$. Montrer que les valeurs propres de $A$ sont de module $1$.
-	\item Déterminer les polynômes $P\in \R[X]$ vérifiant $\forall A\in \O_n(\R),\ P(A)\in \O_n(\R)$.
-\end{enumerate}
+Déterminer les polynômes $P\in \R[X]$ vérifiant $\forall A\in \O_n(\R),\ P(A)\in \O_n(\R)$.
 
 \section{Sous-groupes de GL$_n(\C)$ d'exposant fini \xens{5}}
 \label{Sous-groupes de GL_n(C) d'exposant fini}
@@ -11660,28 +11657,27 @@ Enfin on a $8Y'^3=12X'Y'Z'-4X'^3-2Z'^3$ i.e $6X'Y'Z'=2X'^3+4Y'^3+Z'^3$.\\
 On a construit un triplet $(X',Y',Z')\in (\Z\backslash\{0\})^3$ d'entiers strictement plus petit en module que $(X,Y,Z)$ et vérifiant la même équation. Cela contredit l'existence d'un minimum à l'ensemble $\{|X|,\ (X,Y,Z)\in (\Z\backslash\{0\})^3,\ 6XYZ=2X^3+4Y^3+Z^3\}\subset \N^*$ qui est non vide par hypothèse.\\
 On en déduit que $\det M\ne 0$ i.e $M$ est inversible.
 
-\subsection{Polynômes préservant les matrices orthogonales \centraleponts{3}}
+\subsection{Polynômes préservant les matrices orthogonales \centraleponts{4}}
 \label{Polynômes préservant les matrices orthogonales corrigé}
 \textcolor{blue}{\hyperref[Polynômes préservant les matrices orthogonales]{[Enoncé]}}\\
-\begin{enumerate}[leftmargin=*]
-	\item Soient $\lambda$ une valeur propre de $A$ et $X$ un vecteur propre associé. On note $\overline M$ la matrice dont les coefficients sont les conjugués de ceux de $M$.\\
-	$AX=\lambda X$ donc $\overline{AX}=\overline{\lambda X}$ i.e comme $A$ est à coefficients réels, $A\overline X=\overline \lambda\,\overline X$. Puis $\overline{X}^\top A^\top=\overline \lambda\,\overline{X}^\top$.\\
-	Ainsi $\overline{X}^\top A^\top AX=|\lambda|^2\overline{X}^\top X$. D'autre part $A^\top A=I_n$ donc $\overline{X}^\top A^\top AX=\overline{X}^\top X$.\\
-	En notant $X=(x_1,\dots,x_n)^\top$ on a $\overline{X}^\top X=\displaystyle\sum_{i=1}^n|x_i|^2$. $X$ n'est pas nul en tant que vecteur propre donc $\overline{X}^\top X>0$. Ainsi $|\lambda|^2=1$ i.e $|\lambda|=1$.
-	\item Lemme : $\T{Sp}(P(A))=\{P(\lambda),\ \lambda\in \T{Sp}(A)\}$.\\
-	$A$ est trigonalisable dans $\M_n(\C)$ : il existe $Q\in \T{GL}_n(\C)$ et $T$ triangulaire supérieure telle que $A=QTQ^{-1}$. Alors $\forall k\in \N,\ A^k=QT^kQ^{-1}$ d'où $P(A)=QP(T)Q^{-1}$. Or en notant $\lambda_1,\dots,\lambda_n$ les coefficients de $T$, les coefficients diagonaux de $P(T)$ sont $P(\lambda_1),\dots,P(\lambda_n)$.\\
-	Ainsi $\T{Sp}(P(A))=\{P(\lambda),\ \lambda\in \T{Sp}(A)\}$.\\
-	Notons pour $\theta\in \R,\ R(\theta)=\begin{pmatrix}
-		\cos\theta&-\sin\theta\\
-		\sin\theta&\cos\theta
-	\end{pmatrix}$ la matrice de rotation d'angle $\theta$. Ses valeurs propres sont $e^{i\theta}$ et $e^{-i\theta}$. La matrice $A(\theta)=\begin{pmatrix}
-		R(\theta)&0\\
-		0&I_{n-2}
-	\end{pmatrix}$ est orthogonale donc $P(A(\theta))\in \O_n(\R)$.\\
-	Ainsi d'après le lemme et la question $1$, $P(e^{i\theta})\in \U$. $P$ vérifie donc $P(\U)\subset \U$.\\
-	On montre alors (cf. IV-50 tome Analyse) que $P=aX^d$ pour un certain $a\in \C$ de module $1$ et $d\in \N$. Enfin comme $P\in \R[X]$, $a\in \{-1,1\}$.\\
-	Réciproquement on vérifie aisément que $P=\pm X^d$ fonctionne car les puissances et l'opposée d'une matrice orthogonale sont des matrices orthogonales.
-\end{enumerate}
+Lemme : les valeurs propres de $A$ sont de module $1$.\\
+Soient $\lambda$ une valeur propre de $A$ et $X$ un vecteur propre associé. On note $\overline M$ la matrice dont les coefficients sont les conjugués de ceux de $M$.\\
+$AX=\lambda X$ donc $\overline{AX}=\overline{\lambda X}$ i.e comme $A$ est à coefficients réels, $A\overline X=\overline \lambda\,\overline X$. Puis $\overline{X}^\top A^\top=\overline \lambda\,\overline{X}^\top$.\\
+Ainsi $\overline{X}^\top A^\top AX=|\lambda|^2\overline{X}^\top X$. D'autre part $A^\top A=I_n$ donc $\overline{X}^\top A^\top AX=\overline{X}^\top X$.\\
+En notant $X=(x_1,\dots,x_n)^\top$ on a $\overline{X}^\top X=\displaystyle\sum_{i=1}^n|x_i|^2$. $X$ n'est pas nul en tant que vecteur propre donc $\overline{X}^\top X>0$. Ainsi $|\lambda|^2=1$ i.e $|\lambda|=1$.\\
+Lemme : $\T{Sp}(P(A))=\{P(\lambda),\ \lambda\in \T{Sp}(A)\}$.\\
+$A$ est trigonalisable dans $\M_n(\C)$ : il existe $Q\in \T{GL}_n(\C)$ et $T$ triangulaire supérieure telle que $A=QTQ^{-1}$. Alors $\forall k\in \N,\ A^k=QT^kQ^{-1}$ d'où $P(A)=QP(T)Q^{-1}$. Or en notant $\lambda_1,\dots,\lambda_n$ les coefficients de $T$, les coefficients diagonaux de $P(T)$ sont $P(\lambda_1),\dots,P(\lambda_n)$.\\
+Ainsi $\T{Sp}(P(A))=\{P(\lambda),\ \lambda\in \T{Sp}(A)\}$.\\
+Notons pour $\theta\in \R,\ R(\theta)=\begin{pmatrix}
+	\cos\theta&-\sin\theta\\
+	\sin\theta&\cos\theta
+\end{pmatrix}$ la matrice de rotation d'angle $\theta$. Ses valeurs propres sont $e^{i\theta}$ et $e^{-i\theta}$. La matrice $A(\theta)=\begin{pmatrix}
+	R(\theta)&0\\
+	0&I_{n-2}
+\end{pmatrix}$ est orthogonale donc $P(A(\theta))\in \O_n(\R)$.\\
+Ainsi d'après les deux lemmes, $P(e^{i\theta})\in \U$. $P$ vérifie donc $P(\U)\subset \U$.\\
+On montre alors (cf. IV-50 tome Analyse) que $P=aX^d$ pour un certain $a\in \C$ de module $1$ et $d\in \N$. Enfin comme $P\in \R[X]$, $a\in \{-1,1\}$.\\
+Réciproquement on vérifie aisément que $P=\pm X^d$ fonctionne car les puissances et l'opposée d'une matrice orthogonale sont des matrices orthogonales.
 
 \subsection{Sous-groupes de GL$_n(\C)$ d'exposant fini \xens{5}}
 \label{Sous-groupes de GL_n(C) d'exposant fini corrigé}

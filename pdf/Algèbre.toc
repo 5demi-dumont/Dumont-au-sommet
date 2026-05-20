@@ -462,8 +462,8 @@
 \contentsline {section}{\numberline {XII.2}Relation d'ordre \etoile {2}}{113}{section.12.2}%
 \contentsline {section}{\numberline {XII.3}Ordre lexicographique \etoile {1}}{113}{section.12.3}%
 \contentsline {section}{\numberline {XII.4}Inversibilité d'une matrice à coefficients rationnels \centraleponts {3}}{113}{section.12.4}%
-\contentsline {section}{\numberline {XII.5}Polynômes préservant les matrices orthogonales \centraleponts {3}}{113}{section.12.5}%
-\contentsline {section}{\numberline {XII.6}Sous-groupes de GL$_n(\mathbb {C})$ d'exposant fini \xens {5}}{114}{section.12.6}%
+\contentsline {section}{\numberline {XII.5}Polynômes préservant les matrices orthogonales \centraleponts {4}}{113}{section.12.5}%
+\contentsline {section}{\numberline {XII.6}Sous-groupes de GL$_n(\mathbb {C})$ d'exposant fini \xens {5}}{113}{section.12.6}%
 \contentsline {section}{\numberline {XII.7}Formule de Burnside \xens {4}}{114}{section.12.7}%
 \contentsline {section}{\numberline {XII.8}Théorème de Fermat matriciel \centraleponts {3} (HP)}{114}{section.12.8}%
 \contentsline {section}{\numberline {XII.9}Développement décimal propre d'un réel \xens {3}}{114}{section.12.9}%
@@ -501,9 +501,9 @@
 \contentsline {subsection}{\numberline {XIII.1.27}Théorème de Maschle}{128}{subsection.13.1.27}%
 \contentsline {section}{\numberline {XIII.2}Correction Réduction géométrique}{130}{section.13.2}%
 \contentsline {subsection}{\numberline {XIII.2.1}Réduction des matrices de rang $1$}{130}{subsection.13.2.1}%
-\contentsline {subsubsection}{Application \ccinp {2}}{130}{Item.909}%
-\contentsline {subsubsection}{Dimension du commutant d'une matrice de rang 1 \centraleponts {3}}{131}{Item.909}%
-\contentsline {subsubsection}{Diagonalisabilité d'une matrice \centraleponts {3}}{131}{Item.909}%
+\contentsline {subsubsection}{Application \ccinp {2}}{130}{Item.907}%
+\contentsline {subsubsection}{Dimension du commutant d'une matrice de rang 1 \centraleponts {3}}{131}{Item.907}%
+\contentsline {subsubsection}{Diagonalisabilité d'une matrice \centraleponts {3}}{131}{Item.907}%
 \contentsline {subsection}{\numberline {XIII.2.2}\underline {Matrices réelles semblables} \centraleponts {2}}{132}{subsection.13.2.2}%
 \contentsline {subsection}{\numberline {XIII.2.3}Complément de Schur \telecom {2}}{132}{subsection.13.2.3}%
 \contentsline {subsection}{\numberline {XIII.2.4}Produit de Kronecker \ccinp {2}}{132}{subsection.13.2.4}%
@@ -609,9 +609,9 @@
 \contentsline {subsection}{\numberline {XIII.5.10}\underline {Matrices inversibles à coefficients entiers} \telecom {2}}{170}{subsection.13.5.10}%
 \contentsline {subsection}{\numberline {XIII.5.11}\underline {Sous-groupes de $(\mathbb {Z},+)$} \ccinp {2}}{170}{subsection.13.5.11}%
 \contentsline {subsection}{\numberline {XIII.5.12}\underline {Sous-groupes de $(\mathbb {R},+)$} \centraleponts {3}}{171}{subsection.13.5.12}%
-\contentsline {subsubsection}{Fonction (multi)périodique \centraleponts {3}}{171}{Item.1017}%
-\contentsline {subsubsection}{$\cos (\mathbb {N})$ \centraleponts {3}}{172}{Item.1017}%
-\contentsline {subsubsection}{Valeur d'adhérence du cercle unité \centraleponts {3}}{172}{Item.1017}%
+\contentsline {subsubsection}{Fonction (multi)périodique \centraleponts {3}}{171}{Item.1015}%
+\contentsline {subsubsection}{$\cos (\mathbb {N})$ \centraleponts {3}}{172}{Item.1015}%
+\contentsline {subsubsection}{Valeur d'adhérence du cercle unité \centraleponts {3}}{172}{Item.1015}%
 \contentsline {subsection}{\numberline {XIII.5.13}Sous-groupes distingué \etoile {1}}{172}{subsection.13.5.13}%
 \contentsline {subsection}{\numberline {XIII.5.14}Nature d'une suite}{172}{subsection.13.5.14}%
 \contentsline {subsection}{\numberline {XIII.5.15}Une relation utile sur les morphismes de groupes \etoile {2}}{172}{subsection.13.5.15}%
@@ -657,7 +657,7 @@
 \contentsline {subsection}{\numberline {XIII.6.1}Centre d'un anneau \etoile {1}}{188}{subsection.13.6.1}%
 \contentsline {subsection}{\numberline {XIII.6.2}Calcul d'un inverse \etoile {3}}{188}{subsection.13.6.2}%
 \contentsline {subsection}{\numberline {XIII.6.3}Anneau de Boole \etoile {2}}{188}{subsection.13.6.3}%
-\contentsline {subsubsection}{L'anneau de Boole est principal \etoile {3}}{189}{Item.1077}%
+\contentsline {subsubsection}{L'anneau de Boole est principal \etoile {3}}{189}{Item.1075}%
 \contentsline {subsection}{\numberline {XIII.6.4}Condition suffisante pour qu'un anneau soit commutatif \etoile {3}}{190}{subsection.13.6.4}%
 \contentsline {subsection}{\numberline {XIII.6.5}Anneaux commutatifs ou anti-commutatifs \etoile {4}}{190}{subsection.13.6.5}%
 \contentsline {subsection}{\numberline {XIII.6.6}Anneau régulier \etoile {4}}{191}{subsection.13.6.6}%
@@ -780,7 +780,7 @@
 \contentsline {subsection}{\numberline {XIII.9.17}Lancer de dés équitable \etoile {3}}{242}{subsection.13.9.17}%
 \contentsline {subsection}{\numberline {XIII.9.18}Espérance conditionnelle \etoile {3}}{242}{subsection.13.9.18}%
 \contentsline {subsection}{\numberline {XIII.9.19}Problème du collectionneur \etoile {2}}{243}{subsection.13.9.19}%
-\contentsline {subsubsection}{Généralisation}{244}{Item.1242}%
+\contentsline {subsubsection}{Généralisation}{244}{Item.1240}%
 \contentsline {subsection}{\numberline {XIII.9.20}Problème de la ruine du joueur}{244}{subsection.13.9.20}%
 \contentsline {subsection}{\numberline {XIII.9.21}Passager d'un avion}{244}{subsection.13.9.21}%
 \contentsline {subsection}{\numberline {XIII.9.22}Fonction de répartition \etoile {4}}{244}{subsection.13.9.22}%
@@ -814,9 +814,9 @@
 \contentsline {subsection}{\numberline {XIII.9.50}Modes de convergences}{255}{subsection.13.9.50}%
 \contentsline {subsection}{\numberline {XIII.9.51}Marche aléatoire sur $\mathbb {Z}^d$ \etoile {3}}{255}{subsection.13.9.51}%
 \contentsline {subsubsection}{Le cas $d=1$ \etoile {2}}{255}{subsection.13.9.51}%
-\contentsline {subsubsection}{Le cas $d=2$}{257}{Item.1283}%
-\contentsline {subsubsection}{Le cas général}{257}{Item.1283}%
-\contentsline {subsubsection}{Marche aléatoire auto-évitante}{257}{Item.1283}%
+\contentsline {subsubsection}{Le cas $d=2$}{257}{Item.1281}%
+\contentsline {subsubsection}{Le cas général}{257}{Item.1281}%
+\contentsline {subsubsection}{Marche aléatoire auto-évitante}{257}{Item.1281}%
 \contentsline {subsection}{\numberline {XIII.9.52}Matrice de covariance \etoile {2}}{257}{subsection.13.9.52}%
 \contentsline {subsection}{\numberline {XIII.9.53}Maximisation de la variance sous-contrainte}{257}{subsection.13.9.53}%
 \contentsline {subsection}{\numberline {XIII.9.54}Inégalité de Kosmanek \etoile {1}}{258}{subsection.13.9.54}%
@@ -882,10 +882,10 @@
 \contentsline {subsection}{\numberline {XIII.10.55}Translation par une matrice antisymétrique \xens {3}}{281}{subsection.13.10.55}%
 \contentsline {subsection}{\numberline {XIII.10.56}Matrices antisymétriques réelles}{281}{subsection.13.10.56}%
 \contentsline {subsubsection}{Rang et déterminant}{281}{subsection.13.10.56}%
-\contentsline {subsubsection}{Spectre}{281}{Item.1361}%
-\contentsline {subsubsection}{Diagonalisabilité (1)}{282}{Item.1364}%
-\contentsline {subsubsection}{Diagonalisabilité (2)}{282}{Item.1367}%
-\contentsline {subsubsection}{Réduction}{282}{Item.1371}%
+\contentsline {subsubsection}{Spectre}{281}{Item.1359}%
+\contentsline {subsubsection}{Diagonalisabilité (1)}{282}{Item.1362}%
+\contentsline {subsubsection}{Diagonalisabilité (2)}{282}{Item.1365}%
+\contentsline {subsubsection}{Réduction}{282}{Item.1369}%
 \contentsline {subsection}{\numberline {XIII.10.57}Endomorphismes normaux}{283}{subsection.13.10.57}%
 \contentsline {subsection}{\numberline {XIII.10.58}Réduction des normaux}{283}{subsection.13.10.58}%
 \contentsline {subsection}{\numberline {XIII.10.59}Caractérisation des matrices symétriques positives}{283}{subsection.13.10.59}%
@@ -897,16 +897,16 @@
 \contentsline {subsection}{\numberline {XIII.10.65}Relation d'ordre des matrices symétriques}{286}{subsection.13.10.65}%
 \contentsline {section}{\numberline {XIII.11}Correction Décompositions matricielles}{287}{section.13.11}%
 \contentsline {subsection}{\numberline {XIII.11.1}Décomposition de Dunford \etoile {2}}{287}{subsection.13.11.1}%
-\contentsline {subsubsection}{Diagonalisabilité de l'exponentielle d'une matrice \etoile {3}}{288}{Item.1382}%
-\contentsline {subsubsection}{Surjectivité de l'exponentielle matricielle \etoile {4}}{288}{Item.1382}%
-\contentsline {subsubsection}{Opérateur de commutation \etoile {3}}{289}{Item.1384}%
-\contentsline {subsubsection}{Deux applications non continues}{290}{Item.1386}%
+\contentsline {subsubsection}{Diagonalisabilité de l'exponentielle d'une matrice \etoile {3}}{288}{Item.1380}%
+\contentsline {subsubsection}{Surjectivité de l'exponentielle matricielle \etoile {4}}{288}{Item.1380}%
+\contentsline {subsubsection}{Opérateur de commutation \etoile {3}}{289}{Item.1382}%
+\contentsline {subsubsection}{Deux applications non continues}{290}{Item.1384}%
 \contentsline {subsection}{\numberline {XIII.11.2}Décomposition polaire \etoile {3}}{290}{subsection.13.11.2}%
-\contentsline {subsubsection}{Sous-groupe compact maximal de GL$_n(\mathbb {R})$ \etoile {3}}{291}{Item.1393}%
-\contentsline {subsubsection}{Enveloppe convexe des matrices orthogonales}{292}{Item.1399}%
-\contentsline {subsubsection}{Points extrémaux des matrices orthogonales}{293}{Item.1405}%
-\contentsline {subsubsection}{Matrice extraite d'une matrice orthogonale}{293}{Item.1405}%
-\contentsline {subsubsection}{Matrices qui respectent le volume de $k$-parallélépipèdes rectangles}{293}{Item.1405}%
+\contentsline {subsubsection}{Sous-groupe compact maximal de GL$_n(\mathbb {R})$ \etoile {3}}{291}{Item.1391}%
+\contentsline {subsubsection}{Enveloppe convexe des matrices orthogonales}{292}{Item.1397}%
+\contentsline {subsubsection}{Points extrémaux des matrices orthogonales}{293}{Item.1403}%
+\contentsline {subsubsection}{Matrice extraite d'une matrice orthogonale}{293}{Item.1403}%
+\contentsline {subsubsection}{Matrices qui respectent le volume de $k$-parallélépipèdes rectangles}{293}{Item.1403}%
 \contentsline {subsection}{\numberline {XIII.11.3}Décomposition QR}{293}{subsection.13.11.3}%
 \contentsline {subsubsection}{Matrice de Householder}{293}{subsection.13.11.3}%
 \contentsline {subsection}{\numberline {XIII.11.4}Décomposition LU}{293}{subsection.13.11.4}%
@@ -916,7 +916,7 @@
 \contentsline {subsubsection}{Décomposition de Cholesky}{293}{subsection.13.11.4}%
 \contentsline {subsection}{\numberline {XIII.11.5}Lemme de Fitting}{293}{subsection.13.11.5}%
 \contentsline {subsection}{\numberline {XIII.11.6}Réduction de Jordan}{294}{subsection.13.11.6}%
-\contentsline {subsubsection}{Application}{294}{Item.1410}%
+\contentsline {subsubsection}{Application}{294}{Item.1408}%
 \contentsline {subsection}{\numberline {XIII.11.7}Réduction de Frobenius}{294}{subsection.13.11.7}%
 \contentsline {subsubsection}{$M\sim M^\top $}{294}{subsection.13.11.7}%
 \contentsline {subsubsection}{Matrices semblables à leur inverse}{294}{subsection.13.11.7}%
@@ -926,7 +926,7 @@
 \contentsline {subsection}{\numberline {XIII.12.2}Relation d'ordre}{295}{subsection.13.12.2}%
 \contentsline {subsection}{\numberline {XIII.12.3}Ordre lexicographique}{295}{subsection.13.12.3}%
 \contentsline {subsection}{\numberline {XIII.12.4}Inversibilité d'une matrice à coefficients rationnels \centraleponts {3}}{295}{subsection.13.12.4}%
-\contentsline {subsection}{\numberline {XIII.12.5}Polynômes préservant les matrices orthogonales \centraleponts {3}}{295}{subsection.13.12.5}%
+\contentsline {subsection}{\numberline {XIII.12.5}Polynômes préservant les matrices orthogonales \centraleponts {4}}{295}{subsection.13.12.5}%
 \contentsline {subsection}{\numberline {XIII.12.6}Sous-groupes de GL$_n(\mathbb {C})$ d'exposant fini \xens {5}}{296}{subsection.13.12.6}%
 \contentsline {subsection}{\numberline {XIII.12.7}Formule de Burnside \xens {4}}{296}{subsection.13.12.7}%
 \contentsline {subsection}{\numberline {XIII.12.8}Théorème de Fermat matriciel \centraleponts {3} (HP)}{297}{subsection.13.12.8}%
