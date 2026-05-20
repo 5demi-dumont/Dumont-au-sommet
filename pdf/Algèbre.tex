@@ -3739,7 +3739,7 @@ Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien de dimension $n$. Soient $
 \label{Matrice de Hilbert}
 \textcolor{blue}{\hyperref[Matrice de Hilbert corrigé]{[Corrigé]}}\\
 \begin{enumerate}
-	\item Montrer que l'application $\fonction{\proscal{\cdot}{\cdot}}{\R_{n-1}[X]^2}{\R}{(P,Q)}{\displaystyle\int_0^1P(t)Q(t)}$ définie un produit scalaire sur $\R_{n-1}[X]$.
+	\item Montrer que l'application $\fonction{\proscal{\cdot}{\cdot}}{\R_{n-1}[X]^2}{\R}{(P,Q)}{\displaystyle\int_0^1P(t)Q(t)dt}$ définie un produit scalaire sur $\R_{n-1}[X]$.
 	\item Montrer que la matrice de Hilbert $H=\displaystyle\left(\frac{1}{i+j+1}\right)_{0\leq i,j\leq n-1}=
 	\begin{pmatrix}
 		1&\displaystyle\frac{1}{2}&\dots&\displaystyle\frac{1}{n}\\
@@ -3800,7 +3800,7 @@ Démontrer que $\displaystyle\frac{\Tr(M)}{n}\geq \det(M)^{1/n}$.
 \section{\underline{Inégalité à propos des matrices orthogonales} \centraleponts{3}}
 \label{Inégalité à propos des matrices orthogonales}
 \textcolor{blue}{\hyperref[Inégalité à propos des matrices orthogonales corrigé]{[Corrigé]}}\\
-Soit $M\in \O_n(\R)$. Montrer que\\
+Soit $M=(m_{i,j})_{1\leq i,j\leq n}\in \O_n(\R)$. Montrer que
 $$\left|\sum_{1\leq i,j\leq n}m_{i,j}\right|\leq n \leq\sum_{1\leq i,j\leq n}|m_{i,j}|\leq n^{3/2}$$
 
 \section{Inégalités sur la trace du produit de matrices symétriques positives \centraleponts{2}}
@@ -3826,10 +3826,10 @@ Soient $A,B\in \S_n(\R)$.
 \section{\underline{Inégalité de Hadamard} \centraleponts{3}}
 \label{Inégalité de Hadamard}
 \textcolor{blue}{\hyperref[Inégalité de Hadamard corrigé]{[Corrigé]}}\\
-Soit $S=(s_{ij})\in\mathcal S_n^+(\R)$.
+Soit $S=(s_{ij})_{1\leq i,j\leq n}\in\mathcal S_n^+(\R)$.
 On pourra se servir librement de l'inégalité arithmético-géométrique (cf.I-47 tome Analyse).
 \begin{enumerate}
-	\item Montrer que $\det(S)\leq \left(\displaystyle\frac{1}{n}\Tr(S)\right)^n$.
+	\item Montrer que $\det(S)\leq \left(\dfrac{1}{n}\Tr(S)\right)^n$.
 	\item Soient $\alpha=(\alpha_1,\dots,\alpha_n)\in\R^n$, $D=\text{diag}(\alpha_1,\dots,\alpha_n)$ et $S_{\alpha}=DSD$.\\
 	Vérifier que $S_{\alpha}\in\S_n^+(\R)$ et exprimer $\Tr(S_{\alpha})$.
 	\item On suppose $S$ inversible. Vérifier que les coefficients diagonaux de $S$ sont strictement positifs et, en introduisant des réels $\alpha_1,\dots,\alpha_n$ pertinemment choisis, établir que: $$\det(S)\leq \prod_{i=1}^n s_{ii}$$
@@ -3867,7 +3867,7 @@ Soit $A\in \O_n(\R)$ telle que $1\notin \text{Sp}(A)$.
 Soit $A\in \A_n(\R)$.
 \begin{enumerate}
 	\item Déterminer les valeurs propres possibles de la matrice $A$.
-	\item En déduire que les matrices $I_n+1$ et $I_n-A$ sont inversibles.
+	\item En déduire que les matrices $I_n+A$ et $I_n-A$ sont inversibles.
 	\item Montrer que la matrice $\Omega=(I_n+A)(I_n-A)^{-1}$ est orthogonale. Et calculer $\det(\Omega)$
 	\item Démontrer que l'application $\fonction{\varphi}{\A_n(\R)}{\{\Omega\in \O_n(\R)|-1\notin \text{Sp}(\Omega)\}}{A}{(I_n+A)(I_n-A)^{-1}}$ est bijective.
 	\item En déduire que si $\Omega$ est une matrice orthogonale et que $-1\notin \text{Sp}(\Omega)$ alors $\det(\Omega)=1$. Pouvait-t-on constater cela d'une manière plus directe ?
@@ -3978,7 +3978,7 @@ Montrer que $\exp:\A_n(\R)\to \O_n(\R)$ est une application surjective.
 \textcolor{blue}{\hyperref[Théorème spectral corrigé]{[Corrigé]}}\\
 Enoncer et démontrer le théorème spectral.
 
-\section{Sous-espace diagonalisable \xens{4}}
+\section{Sous-espace diagonalisable \xens{3}}
 \label{Sous-espace diagonalisable}
 \textcolor{blue}{\hyperref[Sous-espace diagonalisable corrigé]{[Corrigé]}}\\
 Quelle est la dimension maximale d'un sous-espace vectoriel de $\M_n(\R)$ formé uniquement de matrices diagonalisables ?
@@ -4001,7 +4001,7 @@ Soit $(E,\proscal{\cdot}{\cdot})$ un espace euclidien.
 \section{Réduction simultanée \xens{4}}
 \label{Réduction simultanée}
 \textcolor{blue}{\hyperref[Réduction simultanée corrigé]{[Corrigé]}}\\
-Soient $A\in \mathcal S^{++}_n(\R)$ et $B\in\mathcal{S}^+_n(\R)$
+Soient $A\in \S^{++}_n(\R)$ et $B\in\S^+_n(\R)$
 \begin{enumerate}
 	\item Montrer qu'il existe $P\in \text{GL}_n(\R)$ et $D\in\M_n(\R)$ diagonale à coefficients diagonaux strictement positifs  telles que: $$A=P^\top P \quad \text{et} \quad B=P^\top DP$$
 	\item Montrer que le polynôme $x\mapsto \det(xA-B)$ est scindé sur $\R$
@@ -4120,7 +4120,7 @@ On munit $\M_n(\R)$ muni de son produit scalaire canonique. On note $\A_n(\R)$ l
 \\ Soit $A\in\M_n(\R)$: $$\forall U\in\O_n(\R), \quad \Tr(AU)\leq\Tr(A)$$
 \begin{enumerate}
 	\item Déterminer le supplémentaire orthogonal de $\A_n(\R)$.
-	\item Soit $B\in\A_n(\R)$. Montrer que $\forall x\in\R,\quad\exp(xB)\in\O_n(\R)$.
+	\item Soit $B\in\A_n(\R)$. Montrer que $\forall x\in\R,\ \exp(xB)\in\O_n(\R)$.
 	\item Montrer que $A\in\S_n^+(\R)$.
 	\item Etudier la réciproque.
 \end{enumerate}
@@ -11073,7 +11073,6 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Soit $X\in \R^n$. On a
 	\begin{align*}
 		X^\top CX&=\sum_{1\leq i,j\leq n}X_iX_jC_{ij}\\
-		&=\sum_{1\leq i,j\leq n}\\
 		&=\sum_{i=1}^nX_iX_j\sum_{1\leq k,l\leq n}\lambda_k\mu_lP_{ik}P_{jk}Q_{il}Q_{jl}\\
 		&=\sum_{1\leq k,l\leq n}\lambda_k\mu_l\sum_{i=1}^nX_iX_jP_{ik}\sum_{j=1}^nP_{jk}Q_{il}Q_{jl}\\
 		&=\sum_{1\leq k,l\leq n}\lambda_k\mu_l\left(\sum_{i=1}^nX_iP_{ik}Q_{il}\right)^2\geq 0
