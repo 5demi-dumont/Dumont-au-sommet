@@ -6275,7 +6275,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Si $d=1$, on en déduit que $\mu=\frac{1}{\lambda}=\overline{\lambda}$. Par conséquent, $t=2\text{Re}(\lambda)$. \\Ainsi $\text{Re}(\lambda)\in\{0 , \pm \frac{1}{2},\pm 1 \}$.
 	On en déduit donc les couples suivants (à l'ordre près entre $\lambda$ et $\mu$) :\[(i,-i); (j,j^2); (-j, -j^2); (1,1) \text{ et } (-1,-1)\]
 	Dans les trois premiers cas, $M$ est diagonalisable et l'on obtient respectivement les ordres 4, 3 et 6.\\
-	Dans les cas, où $\lambda=\mu=\pm$, M est semblable à une matrice de la forme \[\begin{pmatrix}
+	Dans les cas, où $\lambda=\mu=\pm 1$, M est semblable à une matrice de la forme \[\begin{pmatrix}
 		\pm1 & a\\
 		0&\pm1
 	\end{pmatrix}\]
@@ -6448,11 +6448,76 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Endomorphismes cycliques}
 	\label{Endomorphismes cycliques corrigé}
 	\textcolor{blue}{\hyperref[Endomorphismes cycliques]{[Enoncé]}}\\
-	
+	\begin{enumerate}
+		\item Soit $f\in E$.\\
+		Supposons que $f$ est cyclique.\\
+		Ainsi, il existe $x_0\in E$ tel que $\mathcal{B}=(x_0,\dots,f^{n-1}(x_0))$ est une base de $E$.\\
+		Puisque $\mathcal{B}$ est une base de $E$, il existe $(a_0,\dots,a_{n-1})\in\K^n$ tel que :
+		\[f^n(x_0)=\sum_{i=0}^{n-1}a_if^i(x_0)\]
+		Par conséquent, la matrice de $f$ dans $B$ est :
+		\[\begin{pmatrix}
+			0&\dots&\dots&0&a_0\\
+			1&\ddots&\ &\vdots&a_1\\
+			0&\ddots&\ddots&\vdots&\vdots\\
+			\vdots&\ddots&\ddots&0&a_{n-2}\\
+			0&\dots&0&1&a_{n-1}
+		\end{pmatrix}=C_Q\]
+		où $Q=X^n-\sum_{i=0}^{n-1}a_iX^i$.\\
+		Réciproquement, supposons qu'il existe $Q$ unitaire de degré $n$ et une base de $E$ dans laquelle la matrice de $f$ est $C_Q$ où $Q=X^n+\sum_{i=0}^{n-1}a_iX^i$.\\
+		On note $\mathcal{B}=(x_0,\dots,x_{n-1})$ cette base.\\
+		Par lecture de la matrice, on a :
+		\[\forall i\in\crblanc{0}{n-1}, f(x_i)=x_{i+1}\]
+		Ainsi, par récurrence, on en déduit que :
+		\[\forall i\in\crblanc{0}{n-2}, f^i(x_0)=x_i\]
+		Par conséquent, $\mathcal{B}=(x_0,f(x_0),\dots,f^{n-1}(x_0))$, et donc $f$ est cyclique.
+		\item \begin{enumerate}[label=\alph*.]
+			\item Supposons que $M$ est diagonalisable.\\
+			Alors il existe $P,D\in\M_{n}(\K)$ où $P$ est inversible et $D$ diagonale tel que $M=PDP^{-1}$.
+			\[M^\top=(P^{-1})^\top DP^\top\]
+			On pose $R=(P^{-1})^\top$. $R$ est inversible et $M^\top=RDR^{-1}$.\\
+			Ainsi, $M^\top$ est diagonalisable.\\
+			De plus, puisque $(M^\top)^\top=M$, la réciproque est immédiate.
+			\item Soit $\lambda$ une valeur propre de $C_Q^\top$.\\
+			Soit $X=\begin{pmatrix}
+				x_1\\x_2\\ \vdots \\ x_n
+			\end{pmatrix}\in E_\lambda$.
+			On a le système suivant : 
+			\[\left \{
+			\begin{array}{rcl}
+				x_2=\lambda x_1\\
+				\vdots\\
+				x_n=\lambda x_{n-1}\\
+				-a_0x_1-a_1x_2\dots-a_{n-1}x_n=\lambda x_n
+			\end{array}
+			\right. \]
+			Par récurrence, on a : \[\forall i\in\crblanc{2}{n}, x_i=\lambda^{i-1}x_1\] donc \[X=x_i\begin{pmatrix}
+				1\\\lambda\\\vdots\\\lambda^{n-1}
+			\end{pmatrix}\]
+			Par conséquent, $E_\lambda$ est de dimension $1$.\\
+			Ainsi, $C_Q^\top$ est diagonalisable si et seulement $Q$ est scindé à racines simples.\\
+			Ainsi on en déduit que $f$ est diagonalisable ssi $C_Q$ est diagonalisable ssi $C_Q^\top$ est diagonalisable ssi $Q$ est scindé à racines simples.
+		\end{enumerate}
+	\end{enumerate}
 	\subsection{Commutant d'un endomorphisme cyclique}
 	\label{Commutant d'un endomorphisme cyclique corrigé}
 	\textcolor{blue}{\hyperref[Commutant d'un endomorphisme cyclique]{[Enoncé]}}\\
-	
+	\begin{enumerate}
+		\item Soit $x\in E$.\\
+		Il existe $(a_0,\dots,a_{n-1})\in\K^n$ tel que \[x=\sum_{j=0}^{n-1}a_jf^j(x_0)\]
+		\begin{align*}
+			g(x)&=\sum_{j=0}^{n-1}a_jg\circ f^j(x_0)\\
+			&=\sum_{j=0}^{n-1}a_jf^j\circ g(x_0)\\
+			&=\sum_{j=0}^{n-1}a_jf^j\left(\sum_{k=0}^{n-1}\lambda_kf^k(x_0)\right)\\
+			&=\sum_{j=0}^{n-1}\sum_{k=0}^{n-1}a_j\lambda_k f^{j+k}(x_0)\\
+			&=\sum_{k=0}^{n-1}\lambda_kf^k\left(\sum_{j=0}^{n-1}a_jf^j(x_0)\right)\\
+			&=\sum_{j=0}^{n-1}\lambda_kf^k(x)
+		\end{align*}
+		Donc $g=\sum_{j=0}^{n-1}\lambda_jf^j\in\K_{n-1}[f]$.
+		\item On a montré que $\mathcal{C}(f)\subset \K_{n-1}[f]$.\\
+		De plus, on sait que $f$ commutent avec tous les polynômes en $f$ donc $\K_{n-1}[f]\subset \mathcal{C}(f)$.
+		Ainsi, par double inclusion, on a montré que :
+		\[\mathcal{C}(f)=\K_{n-1}[f]\]
+	\end{enumerate}
 	\subsection{Une démonstration de Cayley-Hamilton}
 	\label{Une démonstration de Cayley-Hamilton corrigé}
 	\textcolor{blue}{\hyperref[Une démonstration de Cayley_Hamilton]{[Enoncé]}}\\
@@ -6517,14 +6582,102 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Diagonalisation d'une matrice par bloc}
 	\label{Diagonalisation d'une matrice par bloc corrigé}
 	\textcolor{blue}{\hyperref[Diagonalisation d'une matrice par bloc]{[Enoncé]}}\\
-	
+	\begin{enumerate}
+		\item On a : $\chi_M=\chi_A^2$ donc $Sp(M)=Sp(A)$.
+		\item Montrons par récurrence que pour tout $k\in\N$ :
+		\[M^k=\left(\begin{array}{c|c}
+			A^k&0  \\
+			\hline
+			kA^k&A^k
+		\end{array}\right)\]
+		L'hypothèse est vérifiée est vérifié au rang $0$ et $1$.\\
+		Supposons que pour un certain $k\in\N$, l'hypothèse est vérifiée.\\
+		\[M^{k+1}=M^kM=\left(\begin{array}{c|c}
+			A^k&0  \\
+			\hline
+			kA^k&A^k
+		\end{array}\right)\left(\begin{array}{c|c}
+		A&0  \\
+		\hline
+		A&A
+		\end{array}\right)=\left(\begin{array}{c|c}
+		A^{k+1}&0  \\
+		\hline
+		(k+1)A^{k+1}&A^{k+1}
+		\end{array}\right)\]
+		Ainsi, l'hypothèse est vérifiée pour tout $k\in\N$.\\
+		Par conséquent, on en déduit que :
+		\[\forall P\in\K[X], P(M)=\left(\begin{array}{c|c}
+			P(A)&0  \\
+			\hline
+			AP'(A)&P(A)
+		\end{array}\right)\]
+		\item Supposons que $M$ est diagonalisable.\\
+		Alors il existe $P$ scindé à racines simples tel que $P(M)=0$.\\
+		Alors \[P(M)=\left(\begin{array}{c|c}
+			P(A)&0  \\
+			\hline
+			AP'(A)&P(A)
+		\end{array}\right)=\left(\begin{array}{c|c}
+		0&0  \\
+		\hline
+		0&0
+		\end{array}\right)\]
+		Ainsi, $P(A)=0$ donc $A$ est diagonalisable car $P$ est scindé à racines simples.\\
+		De plus, pour $\lambda\in Sp(A)$, $P(\lambda)=0$ et $P'(\lambda)\ne 0$.\\
+		Soit $X$ un vecteur propre de $A$ associée à $\lambda$.\\
+		\[AP'(A)X=\lambda P'(\lambda)X=0\]
+		Par conséquent, on en déduit que $\lambda=0$.\\
+		Ainsi, $A$ est a fortiori la matrice nulle.
+		Supposons que $A$ est la matrice nulle.\\
+		Alors $M=0$ également et donc $M$ est diagonalisable.\\
+		On en conclut que $M$ est diagonalisable si et seulement si $A$ est la matrice nulle.
+	\end{enumerate}
 	\subsection{Exponentielle matricielle}
 	\label{Exponentielle matricielle corrigé}
 	\textcolor{blue}{\hyperref[Exponentielle matricielle]{[Enoncé]}}\\
 	
+		Soit $A\in\M_n(\R)$.\\
+		La fonction transposée est continue car linéaire sur $\M_n(\R)$ qui est de dimension finie.\\
+		Ainsi :
+		\begin{align*}
+			\exp(A)^\top&=\sum_{n=0}^{+\infty}\left(\frac{A^n}{n!}\right)^\top\\
+			&=\sum_{n=0}^{+\infty}\frac{(A^\top)^n}{n!}\\
+			&=\exp(A^\top)
+		\end{align*}
+		\begin{enumerate}
+		\item Soit $A\in\S_n(\R)$.\\
+		On a \[\exp(A)^\top=\exp(A^\top)=\exp(A)\]
+		Donc $\exp(A)\in\S_n(\R)$.
+		\item Soit $A\in\A_n(\R)$.\\
+		On a \[\exp(A)^\top=\exp(-A)\]
+		Puisque $A$ et $-A$ commutent, on en déduit que :
+		\[\exp(A)^\top\exp(A)=\exp(-A+A)=\exp(0_n)=I_n\]
+		De plus, on peut montrer que :
+		\[\forall M\in\M_n(\R), \det(\exp(M))=\exp(\Tr(M))\]
+		Or $\Tr(A)=0$ par conséquent, $\det(\exp(A))=e^0=1$.\\
+		Par conséquent, $\exp(A)\in  \text{SO}_n(\R)$.
+	\end{enumerate}
 	\subsection{Exponentiel d'un endomorphisme nilpotent}
 	\label{Exponentiel d'un endomorphisme nilpotent corrigé}
 	\textcolor{blue}{\hyperref[Exponentiel d'un endomorphisme nilpotent]{[Enoncé]}}\\
+	Puisque $u$ est nilpotente, il existe $n\in\N$ tel que :
+	\[\exp(u)=\sum_{k=0}^{n}\frac{u^k}{k!}\]
+	Ainsi, en posant, $v=\sum_{k=0}^{n-1}\frac{u^{k}}{(k+1)!}$, on a 
+	\[\exp(u)-Id_E=u\circ v=v\circ u\]
+	Montrons que $v$ est inversible.
+	On pose $w=v-Id_E$.\\
+	\[(Id_E+w)\sum_{k=0}^{n-1}(-w)^k=Id_E-w^n=Id_E\]
+	donc $v$ est inversible.\\
+	Ainsi, pour tout $x\in E$,
+	\[(\exp(u)-Id_E)(x)=0\Leftrightarrow v\circ u(x)=0\Leftrightarrow u(x)=0\]
+	car $v$ est inversible.\\
+	Par conséquent, \[\Ker(\exp(u)-Id_E)=\Ker(u)\]
+	Puisque $\exp(u)-Id_E=u\circ v$, on en déduit que \[\Ima(\exp(u)-Id_E)\subset\Ima(u)\]
+	De plus d'après le théorème du rang, \[\dim(\Ima(\exp(u)-Id_E))+\dim(\Ker(\exp(u)-Id_E))=\dim=\dim(\Ima(u)))+\dim(\Ker(u))\]
+	Ainsi, puisque $\Ker(\exp(u)-Id_E)=\Ker(u)$, on a :
+	\[\dim(\Ima(\exp(u)-Id_E))=\dim(\Ima(u))\]
+	On en conclut que : \[\Ima(\exp(u)-Id_E)=\Ima(u)\]
 	
 	\subsection{Endomorphismes anticommutants}
 	\label{Endomorphimes anticommutants corrigé}
