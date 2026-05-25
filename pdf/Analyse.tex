@@ -603,9 +603,9 @@
 	\textcolor{blue}{\hyperref[Formule de Stirling corrgié]{[Corrigé]}}\\
 	\label{stirling}
 	\label{Formule de Stirling}
-	On pose pour tout $n\in\N^*$, $\displaystyle u_n=\frac{n^ne^n\sqrt{n}}{n!}$.
+	On pose pour tout $n\in\N^*$, $\displaystyle u_n=\frac{n^ne^{-n}\sqrt{n}}{n!}$.
 	\begin{enumerate}
-		\item Pour tout $n\in\N^*$, on pose $v_n=\ln(u_n)$. Montrer que : \(v_n=\underset{n\to+\infty}{\mathcal{O}}\left(\frac{1}{n^2}\right)\)
+		\item Pour tout $n\in\N^*$, on pose $v_n=\ln\left(\frac{u_{n+1}}{u_n}\right)$. Montrer que : \(v_n=\underset{n\to+\infty}{\mathcal{O}}\left(\frac{1}{n^2}\right)\)
 		\item En déduire que $u_n$ converge vers un certain $\ell\in\R^*_+$.
 		\item Montrer que \(\displaystyle\ell=\frac{1}{\sqrt{2\pi}}\) et en déduire que un équivalent de $n!$.
 	\end{enumerate}
@@ -2373,7 +2373,7 @@
 	\label{Polytopes réguliers d'un espace vectoriel euclidien}
 	On note $E$ un espace euclidien de dimension $n\in\N^*$. On note $\langle\cdot,\cdot\rangle$ le produit scalaire et $\norme{.}$ la norme associée.
 	\begin{enumerate}
-		\item Montrer que si $H$ est un hyperplan de $E$, alors il existe $a$ dans $E$ tel que $H=\left(\vect(a)\right)^\perp$.
+		\item Montrer que si $H$ est un hyperplan de $E$, alors il existe $a$ dans $E$ tel que $H=\left(\Vect(a)\right)^\perp$.
 		\item Dans cette question uniquement, on prend $E=\R^2$ et $\langle\cdot,\cdot\rangle$ désigne le produit scalaire canonique. On pose $e=(0,1)$.
 		\\Trouver $f,g$ dans $E$ tels que $\norme{f}=\norme{g}=1$ et le triangle (dont les sommets sont) $e$,$f$,$g$ est équilatéral.
 		\\Prouver (à permutation près) l'unicité de cette solution.
@@ -5399,7 +5399,25 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Formule de Stirling}
 	\label{Formule de Stirling corrgié}
 	\textcolor{blue}{\hyperref[stirling]{[Enoncé]}}\\
-	
+	\begin{enumerate}[leftmargin=*]
+		\item Pour tout $n\in\N^*$, \[\frac{u_{n+1}}{u_n}=e^{-1}\left(\frac{n+1}{n}\right)^{n+\tfrac{1}{2}}\]
+		Ainsi pour tout $n\in\N^*$\[v_n=\left(n+\frac{1}{2}\right)\ln\left(\frac{n+1}{n}\right)-1\]
+		On rappelle que : 
+		\[\ln(1+x)=x-\frac{x^2}{2}+\bigO{x^3} \text{quand }x\rightarrow 0\]
+		Ainsi \[v_n=1-\frac{1}{
+		2n}+\bigO{\frac{1}{n^2}}+\frac{1}{2n}-1=\bigO{\frac{1}{n^2}}\]
+		\item Puisque $v_n=\bigO{\frac{1}{n^2}}$, on a que $\sum v_n$ converge i.e. $(\ln(u_n))$ converge puisque qu'il s'agit d'une série télescopique.\\
+		Donc $(\ln(u_n))$ converge vers un certain $a\in\R$.\\
+		Par continuité de l'exponentielle, \[u_n\rightarrow e^a>0\]
+		Donc $(u_n)$ converge vers un certain $\ell\in\R^*_+$.
+		\item D'après \ref{Intégrale de Wallis}, 
+		\[W_{2n}=\frac{(2n)!}{2^{2n}(n!)^2}\frac{\pi}{2}\sim\sqrt{\frac{\pi}{2n}}\]
+		Ainsi, \[\frac{(2n)!}{2^{2n}(n!)^2}\sim\sqrt{\frac{1}{\pi n}}\]
+		Or d'après la question 2, on a :
+		\[n!\sim \frac{1}{\ell^2}n^ne^{-n}\sqrt{n}\]
+		Ainsi, on en déduit que : \[\ell\sim\frac{1}{\sqrt{2\pi}}\text{ ie } \ell=\frac{1}{\sqrt{2\pi}}\]
+		Par conséquent, \[n!\sim \sqrt{2\pi n}\left(\frac{n}{e}\right)^n\]
+	\end{enumerate}
 	\subsection{Intégrale de Gauss}
 	\label{Intégrale de Gauss corrigé}
 	\textcolor{blue}{\hyperref[gauss]{[Enoncé]}}
