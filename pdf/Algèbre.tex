@@ -1523,9 +1523,21 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\textcolor{blue}{\hyperref[Automorphismes intérieurs corrigé]{[Corrigé]}}\\
 	Soit $G$ un groupe. On définit pour un élément $a\in G$ l'application:
 	$$\fonction{\varphi_a}{G}{G}{x}{axa^{-1}}$$
-	\begin{enumerate}[leftmargin=*]
+	\begin{enumerate}
 		\item Soit $a\in G$. Montrer que $\varphi_a$ est un automorphisme de $G$.
 		\item On pose $\mathfrak{J}(G)=\{\varphi_a,a\in G\}$. Montrer que $\mathfrak{J}(G)$ est un sous-groupe de $(\text{Aut}(G),\circ)$.\\
+	\end{enumerate}
+	
+	\section{Morphismes continus de $\U$ dans $\C^*$ \centraleponts{3}}
+	\label{Morphismes continus de U dans C*}
+	\textcolor{blue}{\hyperref[Morphismes continus de U dans C* corrigé]{[Corrigé]}}\\
+	Soit $f$ un morphisme de groupes continu de $(\U,\times)$ dans $(\C^*,\times)$.
+	\begin{enumerate}
+		\item Montrer que $f(\U)\subset \U$.
+		\item Soit $n\in \N$. Montrer l'existence d'un entier $k_n$ tel que $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)=\exp\left(\dfrac{2ik_n\pi}{2^n}\right)$.
+		\item Montrer que $k_n\unfty=\smallo{2^n}$.
+		\item Montrer que la suite $(k_n)_{n\in \N}$ converge.
+		\item Conclure qu'il existe $k\in \N$ tel que $\forall z\in \U,\ f(z)=z^k$.
 	\end{enumerate}
 	
 	\section{Endomorphismes continus de $\R$ \telecom{2}}
@@ -7190,6 +7202,10 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Donc $\Phi(ab)=\Phi(a)\circ\Phi(b)$.\\
 		Ainsi $\mathfrak{J}(G)=\text{Im}(\Phi)$ est un sous-groupe de $(\text{Aut}(G),\circ)$.
 	\end{enumerate}
+	
+	\subsection{Morphismes continus de $\U$ dans $\C^*$ \centraleponts{3}}
+	\label{Morphismes continus de U dans C* corrigé}
+	\textcolor{blue}{\hyperref[Morphismes continus de U dans C*]{[Enoncé]}}\\
 	
 	\subsection{Endomorphismes continus de $\R$ \telecom{2}}
 	\label{Endomorphismes continus de R corrigé}
