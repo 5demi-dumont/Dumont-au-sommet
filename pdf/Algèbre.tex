@@ -1416,7 +1416,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\label{Sous-groupes finis de U}
 	\textcolor{blue}{\hyperref[Sous-groupes finis de U corrigé]{[Corrigé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Déterminer les sous-groupes finis de $\U$.
+		\item Montrer que les sous-groupes finis de $\U$ sont les $\U_k$ pour $k\in \N^*$.
 	\end{enumerate}
 	On fixe $m$ et $n$ deux entiers naturels.
 	\begin{enumerate}[resume,leftmargin=*]
@@ -7612,8 +7612,8 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On remarque que $\forall i\in \crblanc{1}{m-1},\ G_i\subsetneq G_{i+1}$. En effet, si pour un certain $i_0\in \crblanc{1}{m-1},\ G_{i_0}=G_{i_0+1}$ alors $\{x_1,\dots,x_{i_0},x_{i_0+2},\dots,x_m\}$ est une partie génératrice de $G$ ayant strictement moins d'éléments que $E$ ce qui est absurde.\\
 		Soit $i\in \crblanc{1}{m-1}$. $G_i$ est un sous-groupe strict de $G_{i+1}$ donc d'après la question 1, $2|G_i|\leq |G_{i+1}|$.\\
 		Par récurrence immédiate $n=|G|=|G_m|\geq 2^m$.
-		\item Soit $G=((\Z/2\Z)^m,+)$. $G$ est un $\Z/2\Z$-espace vectoriel de dimension $m$, il est donc de cardinal $m$ (même sans théorie sur les espaces vectoriels sur des corps finis on peut vérifier à la main qu'il y a unicité de l'écriture dans la base canonique).\\
-		Soit $E$ une partie de $G$ de cardinal inférieur strictement à $m$. D'après la question 1 de l'exercice sur le théorème de Cauchy, le cardinal de $\langle E\rangle$ est une puissance de $2$. Par définition de $E$, $|\langle E\rangle|<|G|$.
+		\item Soit $G=((\Z/2\Z)^m,+)$. $G$ est un $\Z/2\Z$-espace vectoriel de dimension $m$, il est donc de cardinal $2^m$ (même sans théorie sur les espaces vectoriels sur des corps finis on peut vérifier à la main qu'il y a unicité de l'écriture dans la base canonique).\\
+		Soit $E$ une partie de $G$ de cardinal inférieur strictement à $m=\log_2(|G|)$. D'après la question 1 de l'exercice sur le théorème de Cauchy, le cardinal de $\langle E\rangle$ est une puissance de $2$. Par définition de $E$, $|\langle E\rangle|<|G|$.
 	\end{enumerate}
 	
 	\subsection{Groupe alterné \centraleponts{3}}
@@ -9545,7 +9545,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	
 	\subsection{Maximum de deux lois géométriques indépendantes \etoile{1}}
 	\label{Maximum de deux lois géométriques indépendantes corrigé}
-		\textcolor{blue}{\hyperref[Maximum de deux lois géométriques indépendantes]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[Maximum de deux lois géométriques indépendantes]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item $M(\Omega)=\N^*\cup\{+\infty\}$. Fixons $k\in \N^*$.\\
 		$\{M>k\}=\{X>k\}\cap\{Y>k\}$. Donc par indépendance $\p(M>k)=\p(X>k)\p(Y>k)$\\
