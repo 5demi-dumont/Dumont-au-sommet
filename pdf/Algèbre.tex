@@ -1528,13 +1528,13 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item On pose $\mathfrak{J}(G)=\{\varphi_a,a\in G\}$. Montrer que $\mathfrak{J}(G)$ est un sous-groupe de $(\text{Aut}(G),\circ)$.\\
 	\end{enumerate}
 	
-	\section{Morphismes continus de $\U$ dans $\C^*$ \centraleponts{3}}
+	\section{Morphismes continus de $\U$ dans $\C^*$ \centraleponts{4}}
 	\label{Morphismes continus de U dans C*}
 	\textcolor{blue}{\hyperref[Morphismes continus de U dans C* corrigé]{[Corrigé]}}\\
 	Soit $f$ un morphisme de groupes continu de $(\U,\times)$ dans $(\C^*,\times)$.
 	\begin{enumerate}
 		\item Montrer que $f(\U)\subset \U$.
-		\item Soit $n\in \N$. Montrer l'existence d'un entier $k_n$ tel que $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)=\exp\left(\dfrac{2ik_n\pi}{2^n}\right)$.
+		\item Soit $n\in \N^*$. Montrer l'existence d'un entier $k_n$ tel que $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)=\exp\left(\dfrac{2ik_n\pi}{2^n}\right)$.
 		\item Montrer que $k_n\unfty=\smallo{2^n}$.
 		\item Montrer que la suite $(k_n)_{n\in \N}$ converge.
 		\item Conclure qu'il existe $k\in \N$ tel que $\forall z\in \U,\ f(z)=z^k$.
@@ -7254,10 +7254,19 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi $\mathfrak{J}(G)=\text{Im}(\Phi)$ est un sous-groupe de $(\text{Aut}(G),\circ)$.
 	\end{enumerate}
 	
-	\subsection{Morphismes continus de $\U$ dans $\C^*$ \centraleponts{3}}
+	\subsection{Morphismes continus de $\U$ dans $\C^*$ \centraleponts{4}}
 	\label{Morphismes continus de U dans C* corrigé}
 	\textcolor{blue}{\hyperref[Morphismes continus de U dans C*]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
+		\item $\U$ est une partie bornée de $\C$ donc $f(\U)$ aussi. Soit $z\in \U$ tel que $|f(z)|>1$. Alors $|f(z^n)|=|f(z)|^n\unfty\longrightarrow+\infty$ ce qui est absurde. Similairement, si $|f(z)|<1$ alors $|f(z^{-1})|=|f(z)|^{-1}>1$ ce qui est absurde.\\
+		Ainsi $f(\U)\subset \U$.
+		\item On remarque que $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)^{2^n}=f(\exp(2i\pi))=f(1)=1$. Donc $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)\in \U_{2^n}$ d'où l'existence de $k_n\in \Z$ tel que $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)=\exp\left(\dfrac{2ik_n\pi}{2^n}\right)$.
+		\item Par continuité de $f\circ\exp$, $\exp\left(\dfrac{2ik_n\pi}{2^n}\right)\unfty\longrightarrow f\circ\exp(0)=1$. On en déduit $\exp\left(\dfrac{-2ik_n\pi}{2^n}\right)\unfty\longrightarrow 1$.\\
+		Or on peut toujours choisir $k_n$ compris entre $-2^{n-1}$ et $2^{n-1}-1$ donc $\forall n\in \N^*,\ \left|\dfrac{k_n}{2^n}\right|\leq \dfrac{1}{2}$.\\
+		Par le théorème de Bolzano-Weierstrass on peut alors considérer une suite extraite $\left(\dfrac{k_{\varphi(n)}}{2^{\varphi(n)}}\right)$ qui converge vers un réel $\ell$ tel que $|\ell|\leq\dfrac{1}{2}$.\\
+		On a alors par unicité de la limite $e^{2i\ell\pi}=1$ d'où $2\ell\pi\equiv 0[2\pi]$. Et puisque $2\ell\pi\in [-\pi,\pi]$, $\ell=0$.\\
+		Enfin, la suite $\left(\dfrac{k_n}{2^n}\right)$ n'a qu'une seule valeur d'adhérence donc elle converge.
+		\item 
 		\item 
 	\end{enumerate}
 	
