@@ -1630,7 +1630,7 @@
 	\label{Bernstein}
 	On note $I=[0,1]$ et $\mathcal C$ l'espace vectoriel des fonctions continues de $I$ dans $\C$. \\ On note, pour toute fonction $f\in\mathcal C$ et $n\in\N^*$: $$\fonction{B_n(f)}{I}{\C}{x}{\displaystyle\sum_{k=0}^{n}f\left(\frac{k}{n}\right)b_k^n(x)} \ \text{avec} \ b_k^n(x)=\binom{n}{k}x^k(1-x)^{n-k}$$
 	\begin{enumerate}
-		\item Calculer explicitement l'expression $\displaystyle\sum_{k=0}^n\left( \frac{k}{n}-x\right)b_k^n(x)$, puis en déduire que: $$\forall\mu>0, \ \forall x\in I, \ \displaystyle\sum\limits_{\substack{0\leq k\leq n\\|\frac{k}{n}-x|\geq \mu}}{b_n^k(x)} \leq \frac{1}{n\mu^2}$$
+		\item Calculer explicitement l'expression $\displaystyle\sum_{k=0}^n\left( \frac{k}{n}-x\right)^2b_k^n(x)$, puis en déduire que: $$\forall\mu>0, \ \forall x\in I, \ \displaystyle\sum\limits_{\substack{0\leq k\leq n\\|\frac{k}{n}-x|\geq \mu}}{b_k^n(x)} \leq \frac{1}{n\mu^2}$$
 		\item \textit{Théorème de Bernstein}: Pour tout $f\in\mathcal C$, montrer que la suite de fonctions $(B_n(f))$ converge uniformément vers $f$ sur $[0,1]$. En déduire le théorème de Weierstrass.
 	\end{enumerate}
 	
@@ -2190,7 +2190,7 @@
 		\item Montrer que l'application est bien définie sur $E$.
 		\item Montrer que $N^*$ est une norme sur $E$.
 		\item On suppose que $E=\R^n$.\\
-		Déterminer $N^*$ lorsque $N$ est la norme $\normep{2}{.},\ \normep{\infty}{.}$ ou $\normep{1}{.}$.
+		Déterminer $N^*$ lorsque $N$ est la norme $\normep{2}{.},\ \normep{1}{.}$ ou $\normep{\infty}{.}$.
 	\end{enumerate}
 	
 	\section{Norme à partir d'une famille libre}
@@ -7687,10 +7687,63 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Ainsi, on a $N(P+Q)=N(P-Q)=2$ et $N(P)=N(Q)=1$. ce qui contredit l'identité du parallélogramme.
 	\subsection{Norme invariante par similitude}\label{sec:norme-invariante-par-similitude}
 		\textcolor{blue}{\hyperref[Norme invariante par similitude]{[Enoncé]}}\\
+		\begin{enumerate}
+			\item Soit $A\in\M_n(\K)$ et $P\in\text{Gl}_n(\K)$.\\
+			\[\norme{AP}=\norme{P^{-1}PAP}=\norme{PA}\]
+			Soit $B\in\M_n(\K)$.\\
+			Soit $(B_p)_{p\in\N}$ une suite de matrice inversible qui tend vers $B$.\\
+			On pose $\varphi_1:M\mapsto\norme{AM}$ et $\varphi_2 M\mapsto \norme{MA}$.\\
+			Les deux fonctions sont continues et égale sur $\text{Gl}_n(\K)$ qui est dense dans $\M_n(\K)$, par conséquent $\varphi_1=\varphi_2$ sur $\M_n(\K)$.
+			C'est-à-dire :
+			\[\norme{AB}=\norme{BA}\]
+			\item On pose $A=E_{1,1}$ et $B=E_{1,2}$.\\
+			\[AB=B\quad\text{ et }\quad BA=0\]
+			Ainsi, d'après ce qui précède, $\norme{B}=0$ ce qui absurde.
+			Par conséquent, aucune norme matricielle est invariante par similitude.
+		\end{enumerate}
 	\subsection{Equivalence des normes dans un espace vectoriel normé de dimension finie}\label{sec:equivalence-des-normes-dans-un-espace-vectoriel-norme-de-dimension-finie}
 		\textcolor{blue}{\hyperref[Equivalence des normes dans un espace vectoriel normée de dimension finie]{[Enoncé]}}\\
+		\begin{enumerate}
+			\item \underline{Séparation :} Soit $x\in E$ \begin{align*}
+				N_0(x)=0 &\Leftrightarrow \forall i\in\crblanc{1}{n}, x_i=0\\
+				&\Leftrightarrow x=0
+			\end{align*}
+			\underline{Homogénéïté :} Soient $x\in E$ et $\lambda\in\K$.\\
+			\[N_0(\lambda x)=\sup_{i\in\crblanc{1}{n}}|\lambda x_i|=|\lambda|\sup_{i\in\crblanc{1}{n}}|x_i|=|\lambda|N_0(x)\]
+			\underline{Inégalité triangulaire :} Soient $x,y\in E$.
+			\[\forall i\in\crblanc{1}{n}, |x_i+y_i|\leq |x_i|+|y_i|\leq N_0(x)+N_0(y)\]
+			Ainsi, on en déduit que :
+			\[N_0(x+y)\leq N_0(x)+N_0(y)\]
+			Ainsi, $N_0$ est une norme sur $E$.
+			\item Soit $x\in E$.\\
+			\[N(x)=N\left(\sum_{i=1}^{n}x_ie_i\right)\leq \sum_{i=1}^{n}|x_i|N(e_i)\leq \beta N_0(x)\]
+			où $\beta=\sum_{i=1}^{n}N(e_i)$
+			\item \begin{enumerate}[label=\alph*.]
+				\item $T$ est linéaire donc $T$ est continue sur $E$ car $E$ est de dimension finie.
+				\item  On pose $S_{\infty}=\{(x_1,\dots,x_n)\in\K^n, \normep{\infty}{(x_1,\dots,x_n)}=1\}$.\\
+				On remarque que $T(S_{\infty})=S_{N_0}$.\\
+				On sait que $S_\infty$ est un compacte de $\K^n$ par conséquent, on en déduit que $S_{N_0}$ est un compact de $(E,N_0)$.
+				\item Soit $x,y\in E$.\\
+				\[|N(x)-N(y)|\leq N(x-y)\leq \beta N_0(x-y)\]
+				Ainsi $N$ est $\beta$-lipschitzienne sur $(E,N_0)$, par conséquent $N$ est continue sur $(E,N_0)$.
+				Puisque $S_{N_0}$ est un compacte de $(E,N_0)$, on en déduit que $N$ est admet un minimum sur $S_{N_0}$ d'après le théorème des bornes atteintes.\\
+				On pose $\alpha=\min\limits_{x\in S_{N_0}} N(x)$.
+				Soit $x\in E$. On a :
+				\[N\left(\frac{x}{N_0(x)}\right)\geq \alpha\]
+				Par conséquent, \[N(x)\geq \alpha N_0(x)\]
+			\end{enumerate}
+			\item On a montré que toute norme sur $E$ est équivalente à la norme $N_0$.\\
+			Ainsi, par transitivité de l'équivalence, on en déduit que toutes les normes de $E$ sont équivalentes.
+		\end{enumerate}
 	\subsection{Normes non équivalentes}\label{sec:normes-non-equivalentes}
 		\textcolor{blue}{\hyperref[Normes non équivalentes]{[Enoncé]}}\\
+		On pose $E=\mathcal{C}^1([0,1])$ et les deux normes sur $E$ :
+		\[N_1(f)=\normep{\infty}{f}\quad \text{ et }\quad N_2(f)=\normep{\infty}{f}+\normep{\infty}{f'}\]
+		On pose la suite de fonctions \[f_n:x\mapsto e^{nx}\]
+		On a \[N_1(f_n)=1\quad\text{ et }\quad N_2(f_n)=1+n\]
+		Par conséquent $\displaystyle \frac{N_1(f_n)}{N_2(f_n)}\rightarrow 0$.
+		Ainsi, $N_1$ et $N_2$ ne sont par équivalentes.
+		
 	\subsection{Normes semblables à la norme uniforme sur $\K[X]$}\label{sec:normes-semblables-a-la-norme-uniforme-sur-kx}
 	\textcolor{blue}{\hyperref[Normes semblables à la norme uniforme sur KX]{[Enoncé]}}\\
 	Il est clair que $N_A$ vérifie l'homogénéité et l'inégalité triangulaire, en revanche elle ne vérifie pas forcément la séparation.\\
@@ -7725,7 +7778,18 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		
 	\subsection{Comparaisons de normes usuelles sur $\mathcal{C}^0([a,b],\K)$}\label{sec:comparaison-de-normes-usuelles-sur-mathcalc0abk}
 		\textcolor{blue}{\hyperref[Comparaisons de normes usuelles sur C0]{[Enoncé]}}\\
-		
+		\begin{enumerate}
+			\item D'après le cours, $\normep{1}{.}$, $\normep{2}{.}$ et $\normep{\infty}{.}$ sont des normes.\\ \textit{Il est toujours bon de le redémontrer pour bien maîtriser la définition de la norme.}
+			\item \[\normep{1}{f}\leq\int_{a}^{b}\normep{\infty}{f}dt=(b-a)\normep{\infty}{f}\]
+			\[\normep{2}{f}\leq \sqrt{\int_{a}^{b}\normep{\infty}{f}^2}=\sqrt{b-a}\normep{\infty}{f}\]
+			D'après l'inégalité de Cauchy-Schwarz :
+			\[\normep{1}{f}\leq\sqrt{\int_{a}^{b}dt}\normep{2}{f}=\sqrt{b-a}\normep{2}{f}\]
+			\item On pose pour tout $n\in\N$ $f_n:x\mapsto (x-a)^n$.
+			\[\normep{\infty}{f}=(b-a)^n\quad\normep{1}{f}=\frac{(b-a)^{n+1}}{n+1}\quad\text{ et }\quad \normep{2}{f}=\frac{\sqrt{b-a}(b-a)^n}{\sqrt{2n+1}}\]
+			On a :
+			\[\frac{\normep{1}{f}}{\normep{2}{f}}\to 0\quad \frac{\normep{1}{f}}{\normep{\infty}{f}}\to 0\quad \frac{\normep{2}{f}}{\normep{\infty}{f}}\to 0\]
+			Ainsi, on en déduit que aucune de ces normes n'est équivalentes à une norme.
+		\end{enumerate}
 		
 	\subsection{Normes $p$}\label{sec:normes-p}
 		\textcolor{blue}{\hyperref[Normes p]{[Enoncé]}}
@@ -7806,12 +7870,43 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsubsection{Norme infinie}
 	On a montré précédemment dans la sous-section précédente que : \[\forall p\geq 1, \forall x\in \K^n,\quad \normep{\infty}{x}\leq\normep{p}{x}\leq n^{\frac{1}{p}}\normep{\infty}{x}\]
 	On en déduit que $p\mapsto\normep{p}{x}$ admet pour limite $\normep{\infty}{x}$ quand $p\to+\infty$.
+	
 	\subsection{Normes de Sobolev}\label{sec:normes-de-sobolev}
 		\textcolor{blue}{\hyperref[Normes de Sobolev]{[Enoncé]}}\\
 		
 	\subsection{Norme duale}\label{sec:norme-duale}
 		\textcolor{blue}{\hyperref[Norme duale]{[Enoncé]}}\\
-		
+		\begin{enumerate}
+			\item Soit $y\in E$.\\
+			D'après l'inégalité de Cauchy-Schwarz, \[|\langle x,y\rangle|\leq\norme{x}\norme{y}\]
+			Puisque $E$ est de dimension finie, on en déduit que :
+			\[\exists C\in\R^*_+,\norme{y}\leq CN(y)\]
+			donc \[|\langle x,y\rangle|\leq C\norme{x}N(y)=C\norme{x}\]
+			Par conséquent, l'ensemble $\{|\langle x,y\rangle|, y\in S\}$ est majoré et non vide, ce qui implique que $N*(x)$ est bien définie.
+			\item \underline{Séparation :} Soit $x\in E$ tel que $N^*(x)=0$.\\
+			\[N^*(x)=0\Leftrightarrow \forall y\in S, \langle x,y\rangle=0\Leftrightarrow x\in S^\perp \Leftrightarrow x=0\]
+			\underline{Homogénéïté :} Soit $x\in E$ et $\lambda\in\R$.\\
+			\[N^*(\lambda x)=\sup\limits_{y\in S}|\langle \lambda x,y\rangle|=\sup\limits_{y\in S}|\lambda||\langle x,y\rangle|=|\lambda|N^*(x)\]
+			\underline{Inégalité triangulaire :} Soient $x_1,x_2,y\in E$.
+			\[|\langle x_1+x_2,y\rangle |\leq |\langle x_1,y\rangle|+|\langle x_2,y\rangle|\leq N^*(x_1)+N^*(x_2)\]
+			On en déduit que :
+			\[N^*(x_1+x_2)\leq N^*(x_1)+N^*(x_2)\]
+			\item 
+			 Soit $x\in E$.\\
+			 Supposons que $N=\normep{2}{.}$. Alors pour tout $y\in S$, d'après l'inégalité de Cauchy-Schwarz,
+			\[|\langle x,y\rangle|\leq \normep{2}{x}\normep{2}{y}=\normep{2}{x}\]
+			Par conséquent, $N^*(x)\leq\normep{2}{x}$. De plus,pour $x$ non nul et $y=\frac{x}{\normep{2}{x}}$, on a :\[|\langle x,y\rangle|=\normep{2}{x} \quad\text{ donc }\quad N^*(x)\geq \normep{2}{x}\]
+			Finalement, $N^*=\normep{2}{.}$.\\
+			Maintenant prenons $N=\normep{1}{.}$. Pour tout $y\in S$,
+			\[|\langle x,y\rangle|=\left|\sum_{k=1}^{n}x_ky_k\right|\leq\sum_{k=1}^{n}|x_k||y_k|\leq \normep{\infty}{x}\sum_{k=1}^{n}|y_k|=\normep{\infty}{x}\normep{1}{y}=\normep{\infty}{x}\]
+			Ainsi, $N^*(x)\leq\normep{\infty}{x}$.\\
+			Il existe $j\in\crblanc{1}{n}$ tel que $|x_j|=\normep{\infty}{x}$. On pose $y=(\delta_{k,j})$. On a alors \[|\langle x,y\rangle|=\normep{\infty}{x}\]
+			On en déduit que $N^*(x)\geq \normep{\infty}{x}$. Et donc, $N^*=\normep{\infty}{.}$.
+			Et enfin pour $N=\normep{\infty}{.}$.\\
+			Pour tout $y\in S$, \[|\langle x,y\rangle|\leq \normep{1}{x}\normep{\infty}{y}=\normep{1}{x}\]
+			On a alors $N^*(x)\leq\normep{1}{x}$. On pose $y\in \R^n$ tel que $y_k=1$ si $x_k\leq 0$ et $y_k=-1$ sinon. Il est évident que $y\in S$ et \[|\langle x,y\rangle|=\normep{1}{x}\]
+			On en déduit que $N^*(x)\geq\normep{1}{x}$. Finalement $N^*=\normep{\infty}{.}$
+		\end{enumerate}
 	\subsection{Norme à partir d'une famille libre}\label{sec:norme-a-partir-dune-famille-libre}
 	\textcolor{blue}{\hyperref[Norme à partir d'une famille libre]{[Enoncé]}}\\
 	On montre aisément que $N$ vérifie l'homogénéité et l'inégalité triangulaire.\\
@@ -7831,6 +7926,21 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\textcolor{blue}{\hyperref[Quelques normes matricielles]{[Enoncé]}}\\
 	\subsection{Caractérisation des sous-espaces de dimension finie de $\mathcal{C}^0([0,1],\K)$}\label{sec:caracterisation-des-sous-espaces-de-dimension-finie-de-mathcalc001k}
 		\textcolor{blue}{\hyperref[Caractérisation des sous-espaces de dimension finie de C0]{[Enoncé]}}\\
+		\begin{enumerate}
+			\item Soit $f\in E$.
+			\[\normep{2}{f}^2\leq\int_{0}^{1}\normep{\infty}{f}^2dt=\normep{\infty}{f}^2\]
+			Ainsi pour $b=1$, $\normep{2}{f}\leq b\normep{\infty}{f}$ pour tout $f\in E$.
+			\item Puisque $V$ est de dimension finie, les normes $\normep{\infty}{.}$ et $\normep{2}{.}$ sont équivalentes sur $V$ d'où l'inégalité voulue.
+			\item On munit $V$ du produit scalaire $(f,g)\mapsto\int_{0}^{1}f(t)g(t)dt$. On fixe une famille libre de $V$ à $p$ éléments.On applique le procédé de Gram-Schimidt pour obtenir une famille orthonormale. On la notera $(f_i)_{i\in\crblanc{1}{p}}$ Soit $x\in[0,1]$. Alors pour tout $(a_i)\in\R^n$, \[\left(\sum_{i=1}^{p}a_if_i(x)\right)^2\leq\normep{\infty}{\sum_{i=1}{p}a_if_i}\leq n^2\normep{2}{\sum_{i=1}^{p}a_if_i}\]
+			D'après le théorème de Pythagore, \[\normep{2}{\sum_{i=1}^{p}a_if_i}=\sum_{i=1}^{p}\lambda_i^2\]
+			Ainsi, en prenant $\lambda_i=f_i(x)$ pour tout $i\in\crblanc{1}{p}$, on a :
+			\[\left(\sum_{i=1}^{p}f_i(x)^2\right)^2\leq n^2\sum_{i=1}^{p}f_i(x)^2\]
+			et donc
+			\[\sum_{i=1}^{p}f_i(x)^2\leq n^2\]
+			Par conséquent, en intégrant de $0$ à $1$, on obtient :
+			\[p=\sum_{i=1}^{p}\normep{2}{f_i}^2\leq n^2\]
+			Ainsi, une famille libre est a fortiori de taille au plus $n^2$, ce qui implique que $V$ est de dimension finie et que la dimension de $V$ est majorer par $n^2$.
+		\end{enumerate}
 	\subsection{Distance}\label{sec:distance}
 		\textcolor{blue}{\hyperref[Distance]{[Enoncé]}}\\
 		\begin{enumerate}[leftmargin=*]
@@ -8034,6 +8144,29 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\end{enumerate}
 	\subsection{Intersection des boules unités subordonnées d'un espace vectoriel normé de dimension finie}\label{sec:intersection-des-boules-unites-subordonnees-dun-espace-vectoriel-norme-de-dimension-finie}
 		\textcolor{blue}{\hyperref[Intersection des boules unités subordonnées d'un espace vectoriel normé de dimension finie]{[Enoncé]}}\\
+	On va montrer que $B=\{\lambda M, |\lambda|\leq1\}$.\\
+	Soit $\lambda\in\C$ tel que $|\lambda|\leq 1$.\\
+	Par définition, pour tout $N\in\mathcal{N}, N(I_n)=1$.\\
+	Ainsi, \[N(\lambda I_n)=|\lambda|\]
+	Et puisque $|\lambda|\leq 1$, il s'ensuit que $N(\lambda I_n)\leq 1$ pour tout $N\in\mathcal{N}$.\\
+	Ceci prouve que $\{\lambda I_n, |\lambda|\leq1\}\subset B$.\\
+	Réciproquement, soit $M\in B$. Montrons que $M$ est une homothétie.\\
+	Raisonnons par l'absurde, supposons que $M$ n'est pas une homothétie.\\
+	Alors, il existe $x\in\C^n$ non nul tel que la famille $(x,Mx)$ est libre.\\
+	On complète cette famille en une base$\B$ de $\C^n$. On note $(e_i)_{i\in\crblanc{1}{n}}$ les vecteurs de cette base de sorte que $e_1=x$ et $e_2=Mx$.\\
+	Pour tout $u=\sum_{i=1}^{n}a_ie_i\in\C^n$, on pose : 
+	\[\normep{\alpha}{u}=|a_1|+\alpha|a_2|+\sum_{i=3}^{n}|a_i|\]
+	où $\alpha>0$.\\
+	On vérifie que $N_\alpha$ est une norme sur $\C^n$.\\
+	On note $N_\alpha$ la norme subordonnée à $\normep{\alpha}{.}$. Par définition de la norme subordonnée : 
+	\[N_\alpha(M)\geq \frac{\normep{\alpha}{Mx}}{\normep{\alpha}{x}}\]
+	Par définition de $\normep{\alpha}{.}$, on a $\normep{\alpha}{x}=1$ et $\normep{\alpha}{Mx}=\alpha$.
+	Ainsi, \[N_\alpha(M)\geq\alpha\]
+	Ainsi, on choisissant $\alpha=2$, \[N_2(M)\geq2>1\]
+	Ceci contredit que $N(M)\leq 1$ pour toute norme subordonnée de $C^n$.\\
+	Par conséquent, pour tout $x\in\C^n$, $(x,Mx)$ sont liées et d'après (à chercher) dans le tome d'Algèbre, on en déduit que $M$ est une homothétie. Son rapport vérifie a fortiori $|\lambda|<1$.
+	Ainsi, on a montré que :
+	\[B=\{\lambda I_n, |\lambda|<1\}\]
 	\subsection{Modes de convergence}\label{sec:modes-de-convergence}
 		\textcolor{blue}{\hyperref[Modes de convergence]{[Enoncé]}}\\
 	\subsection{Moyenne des itérés et projection sur l'espace des invariants d'une application linéaire contractante}\label{sec:moyenne-des-iteres-et-projection-sur-lespace-des-invariants-dune-application-lineaire-contractante}
