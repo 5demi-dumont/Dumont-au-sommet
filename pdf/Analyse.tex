@@ -8169,6 +8169,28 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\[B=\{\lambda I_n, |\lambda|<1\}\]
 	\subsection{Modes de convergence}\label{sec:modes-de-convergence}
 		\textcolor{blue}{\hyperref[Modes de convergence]{[Enoncé]}}\\
+		\begin{enumerate}
+			\item \begin{enumerate}[label=\alph*.]
+				\item Soit $(x_n)\in E^\N$ convergeant faiblement vers $\ell_1$ et vers $\ell_2$.\\
+				C'est-à-dire pour tout $y\in E$ :
+				\begin{align*}
+					\lim\limits_{n\to+\infty}\langle x_n-\ell_1,y\rangle=0\\
+					\lim\limits_{n\to+\infty}\langle x_n-\ell_2,y\rangle=0
+				\end{align*}
+				Par conséquent, \[\langle \ell_1-\ell_2,y\rangle=0\]
+				On en déduit que $\ell_1-\ell_2\in E^\perp=\{0\}$, ie $\ell_1=\ell_2$.
+				\item Soit $(x_n)\in E^\N$ convergeant fortement vers un $x\in E$.\\
+				Soit $y\in E$. D'après l'inégalité de Cauchy-Schwarz :
+				\[|\langle x_n-x,y|\leq\norme{x_n-x}\norme{y}\]
+				Ainsi puisque $\lim\limits_{n\to+\infty}\norme{x_n-x}=0$, on en déduit que pour tout $y\in E$, \[\lim\limits_{n\to+\infty}\langle x_n-x,y\rangle\]
+				Par conséquent, la convergence forte implique la convergence faible.
+			\end{enumerate}
+			\item Supposons que $(x_n)$ converge fortement vers $x$.
+			Alors d'après 1b., $(x_n)$ converge faiblement vers $x$.\\
+			D'après la seconde inégalité triangulaire :
+			\[|\norme{x_n}-\norme{x}|\leq\norme{x_n-x}\]
+			on en déduit que \[\lim\limits_{n\to+\infty}\norme{x_n}=\norme{x}\]
+		\end{enumerate}
 	\subsection{Moyenne des itérés et projection sur l'espace des invariants d'une application linéaire contractante}\label{sec:moyenne-des-iteres-et-projection-sur-lespace-des-invariants-dune-application-lineaire-contractante}
 		\textcolor{blue}{\hyperref[Moyenne des itérés et projection sur l'espace des invariants d'une application linéaire contractante]{[Enoncé]}}\\
 	\subsection{Matrice de projecteur}\label{sec:matrice-de-projecteur}
