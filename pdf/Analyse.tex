@@ -8220,8 +8220,54 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Ainsi par unicité de la limite, $L^2=L$, c'est-à-dire $L$ est une matrice de projecteur.
 	\subsection{Matrice de rotation}\label{sec:matrice-de-rotation}
 		\textcolor{blue}{\hyperref[Matrice de rotation]{[Enoncé]}}\\
+		On commence par étudier la fonction \[\fonction{\varphi}{\C}{\M_2(\R)}{z=x+iy}{\begin{pmatrix}
+				x&-y \\y&x
+		\end{pmatrix}}\]
+	Montrons que $\varphi$ est un morphisme de $\R$-algèbre.\\
+	On remarque que \[\varphi(1+0i)=\begin{pmatrix}
+		1&-0\\0&1
+	\end{pmatrix}=I_2\]
+	Soit $x_1,x_2,y_1,y_2,\lambda\in\R$.\\
+	\begin{align*}
+		\varphi(x_1+ix_2+\lambda(x_2+iy_2))&=\varphi(x_1+\lambda x_2+i(y_1+\lambda y_2))\\&=\begin{pmatrix}
+			x_1+\lambda x_2&-(y_1+\lambda y_2)\\
+			y_1+\lambda y_2&x_1+\lambda x_2
+		\end{pmatrix}\\&=\begin{pmatrix}
+			x_1&-y_1\\y_1&x_1
+		\end{pmatrix}+\lambda \begin{pmatrix}
+			x_2&-y_2\\y_2&x_2
+		\end{pmatrix}\\&=\varphi(x_1+iy_1)+\lambda\varphi(x_2+iy_2)
+	\end{align*}
+	et 
+	\begin{align*}
+		\varphi(x_1+ix_2)\varphi(x_2+iy_2)&=\begin{pmatrix}
+			x_1&-y_1\\x_1&y_2
+		\end{pmatrix}\begin{pmatrix}
+		x_2&-y_2\\y_2&x_2
+		\end{pmatrix}\\&=\begin{pmatrix}
+		x_1x_2-y_1y_2&-y_2x_1-y_1x_2\\y_2x_1+y_1x_2&x_1x_2-y_1y_2		
+		\end{pmatrix}\\&=\varphi(x_1x_2-y_1y_2+i(x_1y_2+x_2y_1))\\&=\varphi((x_1+iy_1)(x_2+iy_2))
+	\end{align*}
+	Par conséquent, $\varphi$ est bien un morphisme d'algèbre.
+	Ainsi, en posant $\displaystyle z_n=1+\frac{a}{n}$, on a :
+	\[A_n^n=\varphi(z_n)^n=\varphi(z_n^n)\]
+	Et puisque $\varphi$ est linéaire sur un espace de dimension finie, il s'en suit que $\varphi$ est continue et que \[\lim\limits_{n\to+\infty}A_n^n=\varphi\left(\lim\limits_{n\to+\infty}z_n^n\right)\]
+	Il nous reste donc à calculer $\lim\limits_{n\to+\infty}z_n^n$.\\
+	\[|z_n|=\sqrt{1+\frac{a^2}{n^2}}\quad\text{donc }|z_n|^n=\left(1+\frac{a^2}{n^2}\right)^\frac{n}{2}=\exp(\frac{n}{2}\ln\left(1+\frac{a^2}{n^2}\right))\underset{n\to+\infty}{\longrightarrow}1\]
+	et un argument de $z_n$ est $\theta_n=\arctan\left(\frac{a}{n}\right)$, par conséquent un argument de $z_n^n$ est $n\theta_n=n\arctan\left(\frac{a}{n}\right)\underset{n\to+\infty}{\longrightarrow}a$.\\
+	Ainsi, $\lim\limits_{n\to\infty}z_n^n=1e^{ia}$.\\
+	Par conséquent, on en déduit que :
+	\[\lim\limits_{A_n^n}=\varphi\left(\lim\limits_{n\to+\infty}z_n^n\right)=\varphi(e^{ia})=\begin{pmatrix}
+		\cos(a)&-\sin(a)\\ \sin(a)&\cos(a)
+	\end{pmatrix}\]
 	\subsection{Applications contractantes}\label{sec:applications-contractantes}
 		\textcolor{blue}{\hyperref[Application contractantes]{[Enoncé]}}\\
+		Puisque $f$ est $k$-lipschitzienne, on sait que pour tout $n\in\N$
+		\[\norme{u_{n+1}-u_n}\norme{f(u_n)-f(u_{n-1})}\leq k\norme{u_n-u_{n-1}}\]
+		On montre alors par récurrence que pour tout $n\in\N$ :
+		\[\norme{u_{n+1}-u_n}\leq k^n\norme{u_1-u_0}\]
+		Puisque $k\in]0,1[$, la série $\displaystyle \sum_{n\in\N}k^n\norme{u_1-u_0}$ et donc $\sum_{n\in\N}u_{n+1}-u_n$ converge.
+		Puisque $\sum_{n\in\N}u_{n+1}-u_n$ converge, on a que $(u_n)$ converge.
 	\subsection{Une série vectorielle}\label{sec:une-serie-vectorielle}
 		\textcolor{blue}{\hyperref[Une série vectorielle]{[Enoncé]}}\\
 	\subsection{Polytopes réguliers d'un espace vectoriel euclidien}\label{sec:polytopes-reguliers-dun-espace-vectoriel-euclidien}
@@ -8608,7 +8654,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{CCINP MP 2019}\label{sec:ccinp-mp-2019}
 	\textcolor{blue}{\hyperref[CCINP MP 2019]{[Enoncé]}}\\
 	\begin{enumerate}
-		\item \[\frac{\binom{2n+2}{n+1}}{\binom{2n}{n}}=\frac{(2n+2)!}{(n+1)!^2}\frac{n!^2}{(2n)!}=\frac{(2n+1)(2n+2)}{(n+1)^2\sim 4}\]
+		\item \[\frac{\binom{2n+2}{n+1}}{\binom{2n}{n}}=\frac{(2n+2)!}{(n+1)!^2}\frac{n!^2}{(2n)!}=\frac{(2n+1)(2n+2)}{(n+1)^2}\sim 4\]
 		On en déduit que le rayon de convergence $R$ de cette série entière est : $\frac{1}{4}$.
 		\item On pose pour tout $n\in\N$, $a_n=\binom{2n}{n}$.\\
 		Pour tout $x \in ]-R, R[$, la fonction $S$ est une série entière de rayon $R = \frac{1}{4}$. Elle est donc dérivable terme à terme sur cet intervalle :
@@ -8644,6 +8690,30 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\end{enumerate}
 	\subsection{Série entière de terme général binomial}\label{sec:serie-entiere-de-terme-general-binomial}
 	\textcolor{blue}{\hyperref[Série entière de terme général binomial]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item \[\frac{\binom{n+1+p}{p}}{\binom{n+p}{p}}=\frac{n+1+p}{n+1}\underset{n\to\infty}{\longrightarrow}1\]
+		On en déduit donc que le rayon de convergence de cette série est $1$.
+		\item Puisque $f$ est développable en série entière sur $]-1,1[$, elle est dérivable sur $]-1,1[$.\\
+		\[\forall x\in]-1,1[, f'(x)=\sum_{n=0}^{+\infty}n\binom{n+p}{p}x^n\]
+		Or, on remarque que \begin{align*}
+			n\binom{n+p}{p}&=n\frac{(n+p)!}{n!p!}\\
+			&=(p+1)\frac{(n-1+(p+1))!}{(p+1)!(n-1)!}\\
+			&=(p+1)\binom{n+p}{p+1}
+		\end{align*}
+		Ainsi \[\forall x\in]-1,1[, f'(x)=(p+1)\sum_{n=0}^{+\infty}\binom{n+p+1}{p+1}x^n\]
+		Donc$\forall x\in]-1,1[,$ \[ (1-x)f'(x)=(p+1)\sum_{n=0}^{+\infty}\binom{n+p+1}{p+1}x^n-(p+1)\sum_{n=0}^{+\infty}\binom{n+p}{p+1}x^n=(p+1)+(p+1)\sum_{n=0}^{+\infty}\left(\binom{n+p+1}{p+1}-\binom{n+p}{p}\right)x^n\]
+		Or d'après le triangle de Pascal, $\displaystyle\binom{n+p+1}{p+1}-\binom{n+p}{p+1}=\binom{n+p}{p}$, ainsi 
+		\[(1-x)f'(x)=(p+1)(1+f(x))\]
+		On cherche donc à résoudre sur $]-1,1[$ l'équation différentielle 
+		\[(E):y'-\frac{p+1}{1-x}y=\frac{p+1}{1-x}\]
+		L'ensemble des solutions de l'équation homogène est :
+		\[\left\{y:x\in]-1,1[\mapsto Ce^{-(p+1)\ln(1-x)}=\frac{C}{(1-x)^{p+1}},C\in\R\right\}\]
+		On remarque que $y:x\in]-1,1[\mapsto -1$ est une solution particulière de $E$.
+		Ainsi, l'ensemble des solutions de $(E)$ est 
+		\[\left\{y:x\in]-1,1[\mapsto \frac{C}{(1-x)^{p+1}}-1,C\in\R\right\}\]
+		Ainsi, il existe $C\in\R$ tel que pour tout $x\in]-1,1[$ \[f(x)=\frac{C}{(1-x)^{p+1}}-1\]
+		Or $f(0)=1$ donc \[f(x)=\frac{2}{(1-x)^{p+1}}-1\]
+	\end{enumerate}
 	\subsection{Formule de Cauchy}\label{sec:formule-de-cauchy}
 	\textcolor{blue}{\hyperref[Formule de Cauchy]{[Enoncé]}}\\
 	Soit $r\in[0,R[$, pour tout $\theta\in[0,2\pi[$, $|re^{i\theta}|=r\leq R$.\\
@@ -8657,6 +8727,15 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\[\int_{0}^{2\pi}f(re^{i\theta})e^{-in\theta}d\theta=2\pi a_nr^n\]
 	\subsection{Principe des zéros isolés}\label{sec:principe-des-zeros-isoles}
 	\textcolor{blue}{\hyperref[Principe des zéros isolés]{[Enoncé]}}\\
+	Supposons par l'absurde qu'il existe au moins au moins un coefficient $a_n$ non nul.\\
+	L'ensemble $\{n\in\N, a_n\ne 0\}$ est alors une partie non vide de $\N$. Elle admet donc un plus petit élément que nous noterons $k$.\\
+	\[f(z)=z^k\sum_{n=k}^{+\infty}a_nz^{n-k}=z^k\sum_{n=0}^{+\infty}a_{n+k}z^n\]
+	On pose $g(z)=\sum_{n=0}^{+\infty}a_{n+k}z^n$.
+	Ainsi, pour tout $p\in\N$,\[f(z_p)=z_p^kg(z_p)\]
+	Puisque les termes de la suite $(z_p)$ sont tous non nuls, on en déduit que $z_p^k\ne 0$. Ainsi, on en déduit que \[\forall p\in\N, g(z_p)=0\]
+	Sachant que $z_p\to 0$, on en déduit que :
+	\[a_k=g(0)=\lim\limits_{p\to+\infty}g(z_p)=0\]
+	Ce qui est absurde donc on a montré par l'absurde que tous les $a_n$ sont nuls.
 	\subsection{Produit de Hadamard}\label{sec:produit-de-hadamard}
 	\textcolor{blue}{\hyperref[Produit de Hadamard]{[Enoncé]}}\\
 	\subsection{Théorème de Liouville}\label{sec:theoreme-de-liouville}
