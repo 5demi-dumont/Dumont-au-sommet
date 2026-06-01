@@ -8190,6 +8190,26 @@ Démontrer l'équivalence des deux affirmations suivantes :
 			D'après la seconde inégalité triangulaire :
 			\[|\norme{x_n}-\norme{x}|\leq\norme{x_n-x}\]
 			on en déduit que \[\lim\limits_{n\to+\infty}\norme{x_n}=\norme{x}\]
+			Réciproquement, supposons que $(x_n)$ converge faiblement vers $x$ et que $\lim\limits_{n\to+\infty}\norme{x_n}=\norme{x}$.\\
+			\[\norme{x_n}^2=\norme{x_n-x+x}^2=\norme{x_n-x}^2+\norme{x}^2+2\langle x_n-x,x\rangle\]
+			ie \[\norme{x_n-x}^2=\norme{x_n}^2-\norme{x}^2-2\langle x_n-x,x\rangle\]
+			Ainsi d'après les hypothèses, on en déduit que \[\lim\limits_{n\to+\infty}\norme{x_n-x}^2=0\]
+			d'où le résultat.
+			\item Supposons que $E$ est de dimension finie $d$.\\
+			On prend $(e_i)_{i\in\crblanc{1}{d}}$ une base orthonormale de $E$.\\
+			Soit $(x_n)\in E^\N$ convergent faiblement vers $x\in E$. 
+			Ainsi \[\norme{x_n-x}^2=\sum_{i=1}^{n}\langle x_n-x,e_i\rangle^2\]
+			On en déduit donc que \[\lim\limits_{n\to+\infty}\norme{x_n-x}^2=0\]
+			d'où le résultat.
+			\item Considérons $E=\ell^2(\N)$. On munit cette espace de son produit scalaire canonique : 
+			\[\langle u,v\rangle=\sum_{k=0}^{+\infty}u_kv_k\]
+			On définit $(x_n)=(\delta_{n,k})_{k\in\N}$
+			Montrons que $(x_n)$ convergence faiblement vers $0$.\\
+			Soit $(y_n)\in E$. 
+			\[\langle x_n,y\rangle=\sum_{k=0}^{+\infty}\delta_{n,k}y_k=y_n\]
+			Puisque $(y_n)\in E$, on sait que $\lim\limits_{n\to+\infty}y_n=0$, ce qui prouve la convergence faible de la suite $(x_n)$ vers $0$.
+			De plus, \[\norme{x_n}^2=\sum_{k=0}^{+\infty}\delta_{n,k}^2=1\ne 0\]
+			Ainsi, on n'a pas la convergence forte de la suite $(x_n)$.
 		\end{enumerate}
 	\subsection{Moyenne des itérés et projection sur l'espace des invariants d'une application linéaire contractante}\label{sec:moyenne-des-iteres-et-projection-sur-lespace-des-invariants-dune-application-lineaire-contractante}
 		\textcolor{blue}{\hyperref[Moyenne des itérés et projection sur l'espace des invariants d'une application linéaire contractante]{[Enoncé]}}\\
