@@ -3674,11 +3674,11 @@ Le but de cet exercice est de montrer l'existence de points fixes de l'exponenti
 \section{Théorème du relèvement}
 \textcolor{blue}{\hyperref[sec:theoreme-du-relevement]{[Corrigé]}}\\
 \label{Théorème du relèvement}
-Soient $I$ un intervalle de $\R$, $f:I\to \C$ une fonction de classe $\mathcal C^n$ et $t_0\in I$. Soit aussi $\theta_0$ un argument de $f(t_0)$.
+Soient $I$ un intervalle de $\R$, $f:I\to \C^*$ une fonction de classe $\mathcal C^n$. 
 \begin{enumerate}
-	\item Montrer qu'il existe une unique fonction $\theta:I\to \R$ de classe $\mathcal C^n$ telle que $\forall t\in I,\ f(t)=|f(t)|e^{2i\pi\theta(t)}$.\\
+	\item Montrer qu'il existe une unique fonction $\theta:I\to \R$ de classe $\mathcal C^n$ telle que $\forall t\in I,\ f(t)=|f(t)|e^{2i\pi\theta(t)}$ à une constante additive près.\\
 	On dit que $\theta$ est un \textit{argument} de $f$.
-	\item Supposons que $I=[a,b]$ avec $a<b$ et $f(a)=f(b)$. On définit $N_\theta(f)=\theta(b)-\theta(a)$ où $\theta$ est un argument de $f$. Montrer que $N_\theta(f)$ est indépendant de $f$.\\
+	\item Supposons que $I=[a,b]$ avec $a<b$ et $f(a)=f(b)$. On définit $N_\theta(f)=\theta(b)-\theta(a)$ où $\theta$ est un argument de $f$. Montrer que $N_\theta(f)$ est indépendant de $\theta$.\\
 	On appelle cette quantité le \textit{nombre de tours} de $f$.
 	\item Démontrer qu'il n'existe aucune fonction continue $L:\C^*\to \C$ telle que $\exp\circ L=\Id_{\C^*}$.\\
 	On pourra montrer par exemple que si il en existe une, alors $t\mapsto\displaystyle\frac{1}{2i\pi}L(e^{2i\pi t})$ est un argument de $t\mapsto e^{2i\pi t}$.
@@ -8740,6 +8740,23 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\textcolor{blue}{\hyperref[Produit de Hadamard]{[Enoncé]}}\\
 	\subsection{Théorème de Liouville}\label{sec:theoreme-de-liouville}
 	\textcolor{blue}{\hyperref[Théorème de Liouville]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item Supposons que $f$ est bornée par un certain $M\in\R_+$ sur $\C$.\\
+		D'après \ref{Formule de Cauchy}, on sait que :
+		\[\forall n\in\N,\forall r\in\R_+, a_nr^n=\frac{1}{2\pi}\int_{0}^{2\pi}f(re^{i\theta})e^{-in\theta}d\theta\]
+		Ainsi, pour $n\in\N^*$ et $r\in\R_+$, \[|a_nr^n|\leq \frac{1}{2\pi}\int_{0}^{2\pi}Md\theta=M\]
+		Par conséquent, \[|a_n|\leq\frac{M}{r^n}\]
+		Ainsi pour $r\to+\infty$, on en déduit que :\[a_n=0\]
+		Ainsi, $f$ est constante égale à $a_0$.
+		\item Supposons qu'il existe $P$ à coefficients positifs tel que $\forall z\in\C, |f(z)|\leq P(|z|)$.\\
+		On note $d=\deg(P)$.\\
+		En procédant de même, on obtient :
+		\[\forall n\in\N, \forall r\in\R_+, |a_n|\leq \frac{P(r)}{r^n}\]
+		Puisque $\displaystyle P(r)=\underset{r\to+\infty}{\mathcal{O}}\left(r^d\right)$, on en déduit que :
+		\[|a_n|=\underset{r\to+\infty}{\mathcal{O}}\left(\frac{1}{r^{n-d}}\right)\]
+		c'est-à-dire que pour tout $n>d$, $a_n=0$.
+		Par conséquent, $f$ est un polynôme.
+	\end{enumerate}
 	\subsection{Inverse d'une série entière}\label{sec:inverse-dune-serie-entiere}
 	\textcolor{blue}{\hyperref[Inverse d'une série entière]{[Enoncé]}}\\
 	\subsection{Equivalent de séries entières}\label{sec:equivalent-de-series-entieres}
@@ -10165,7 +10182,35 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Théorème du relèvement}
 	\label{sec:theoreme-du-relevement}
 	\textcolor{blue}{\hyperref[Théorème du relèvement]{[Enoncé]}}\\
-	
+	\begin{enumerate}
+		\item \underline{Unicité :} Soient $\theta_1$ et $\theta_2$ deux fonctions de classe $\C^n$ vérifiant la condition. Pour tout $t\in I$, on a :
+		\[|f(t)|e^{2i\pi\theta_1(t)}=|f(t)|e^{2i\pi\theta_2(t)}\]
+		Puisque $f$ est à valeurs dans $\C^*$, on a $|f(t)|\ne0$ et donc :
+		\[e^{2i\pi(\theta_1(t)-\theta_2(t))}=1\]
+		Cela implique que pour tout $t\in I$, la différence $\theta_1-\theta_2$ est à valeurs dans $\Z$. Puisque $\theta_1$ et $\theta_2$ sont continue sur $I$, on en déduit que l'image de $I$ par la fonction $\theta_1-\theta_2$ doit être un intervalle de $\Z$ c'est-à-dire un singleton.\\
+		Par conséquent, il existe $k\in\Z$ tel que $\theta_1=\theta_2+k$.\\
+		\underline{Existence :} \textbf{A faire plus tard}
+		\item On a montré que tous arguments de $f$ diffère d'une constante. Par conséquent, il est immédiat que $N_\theta(f)$ ne dépend pas de $\theta$.
+		\item Supposons qu'il existe une fonction continue $L:\C^*\to\C$ telle que $\exp\circ L=Id_{\C^*}$.\\
+		On pose $f:t\in[0,1]\mapsto e^{2i\pi t}$. On remarque que $f(0)=f(1)=1$.\\
+		On pose également $\theta(t)=\frac{1}{2i\pi}L(f(t))$.\\
+		$f$ est continue et $L$ est supposée continue, donc par composition $\theta$ est continue sur $I$.\\
+		Pour tout $t\in[0,1]$
+		\[f(t)=\exp(L(f))\]
+		Par conséquent en passant par le module, on en déduit que :
+		\[|\exp(L(f(t)))|=e^{\Re(L(f(t)))}=1\]
+		et donc $L(f(t))$ est un imaginaire pur donc $\theta$ est à valeurs dans $\R$.\\
+		Il reste donc à montrer que $\theta$ vérifie l'équation du relèvement, ce qui est évident.\\
+		Maintenant, trouvons l'absurdité.\\
+		Puisque $f(0)=f(1)$, on peut calculer le nombre de tours $N_\theta(f)$. 
+		\[N_\theta(f)=\frac{1}{2i\pi}\left(L(f(1))-L(f(0))\right)\]
+		Or $f(0)=L(1)$ donc $L(f(0))=L(f(1))$,ce qui donne :
+		\[N_\theta(f)=0\]
+		On remarque que la fonction $\theta':t\in[0,1]\mapsto t$ est aussi un argument de $f$.\\
+		Calculons le nombre de tours avec ce relèvement :
+		\[N_{\theta'}(f)=\theta'(1)-\theta'(0)=1\]
+		D'après la question $2$, on doit avoir $N_\theta(f)=N_{\theta'}(f)$, on a donc obtenu une absurdité par conséquent il n'existe aucune fonction continue $L:\C^*\to\C$ telle que $\exp\circ L=Id_{C^*}$
+	\end{enumerate}
 	\subsection{Equation fonctionnelle de l'exponentielle matricielle \etoile{3}}
 	\label{sec:equation-fonctionnelle-de-lexponentielle-matricielle-etoile3}
 	\textcolor{blue}{\hyperref[Equation fonctionnelle de l'exponentielle matricielle]{[Enoncé]}}\\
@@ -10228,7 +10273,17 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Expression d'un projecteur}
 	\label{sec:expression-dun-projecteur}
 	\textcolor{blue}{\hyperref[Expression d'un projecteur]{[Enoncé]}}\\
-	
+	Puisque $A\in\S_n^{++}$, il existe $P\in \O_n(\R)$ et $D=\diag(\lambda_1,\dots,\lambda_n)\in\D_n(\R)$ tel que $A=PDP^\top$.
+	Ainsi, $A^2+x^2I_n=P(D^2+x^2+I_n)P^\top$, par conséquent :
+	\[\int_{0}^{+\infty}A(A^2+x^2I_n)^{-1}dx=P\left(\int_{0}^{+\infty}D(D^2+x^2I_n)^{-1}\right)P^{-1}\]
+	$D(D^2+x^2I_n)$ est une matrice diagonale de coefficients $\displaystyle \frac{\lambda_i}{\lambda_i^2+x^2}$.\\
+	Ainsi, \begin{align*}
+		\int_{0}^{+\infty}A(A^2+x^2I_n)^{-1}dx&=P\diag\left(\int_{0}^{+\infty}\frac{\lambda_i}{\lambda_i^2+x^2}dx\right)_{i\in\crblanc{1}{n}}P^\top\\
+		&=P\diag\left(\left[arctan\left(\frac{x}{\lambda_i}\right)\right]_0^{+\infty}\right)P^\top\\
+		&=P\frac{\pi}{2}I_nP^\top\\
+		&=\frac{\pi}{2}I_n
+	\end{align*}
+	Ainsi, l'intégrale existe et \[\int_{0}^{+\infty}A(A^2+x^2I_n)^{-1}dx=\frac{\pi}{2}I_n\]
 	\subsection{Une preuve analytique de Cayley-Hamilton}
 	\label{sec:une-preuve-analytique-de-cayley-hamilton}
 	\textcolor{blue}{\hyperref[Une preuve analytique de Cayley-Hamilton]{[Enoncé]}}\\
