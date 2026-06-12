@@ -154,6 +154,11 @@ Soit $M\in \M_n(\R)$.\\ Montrer l'équivalence entre les affirmations :
 	\item $M$ est une matrice d'homothétie.
 \end{itemize}
 
+\section{Trace multiplicative \telecom{2}}
+\label{Trace multiplicative}
+\textcolor{blue}{\hyperref[Trace multiplicative corrigé]{[Corrigé]}}\\
+Déterminer les matrices $A\in \M_n(\K)$ telles que $\forall B\in \M_nn(\K),\ \Tr(AB)=\Tr(A)\Tr(B)$.
+
 \section{Formes multiplicatives de $\M_n(\K)$ \centraleponts{3}}
 \label{Formes multiplicatives de M_n(K)}
 \textcolor{blue}{\hyperref[Formes multiplicatives de M_n(K) corrigé]{[Corrigé]}}\\
@@ -208,7 +213,7 @@ Existe-t-il un endomorphisme $\delta\in \mathcal L(E)$ tel que $\delta^2=\Delta$
 Soient $N_1,\dots,N_n\in \M_n(\K)$ des matrices nilpotentes qui commutent toutes entre elles.\\
 Montrer que $\displaystyle\prod_{i=1}^nN_i=0$.
 
-\section{Suites périodiques \xens{4}}
+\section{Suites périodiques \centraleponts{4}}
 \label{Suites périodiques}
 \textcolor{blue}{\hyperref[Suites périodiques corrigé]{[Corrigé]}}\\
 On note $E$ le sous-ensemble de $\C^\N$ composé des suites périodiques.\\
@@ -4682,6 +4687,17 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Réciproquement, supposons que $M$ vérifie la propriété de l'énoncé.\\
 	Alors elle est vérifiée en particulier pour les matrices élémentaires, cela va nous fournir des conditions très restrictives sur les coefficients de $M$.\\ On en déduit que $M$ est une homothétie.
 	
+	\subsection{Trace multiplicative \telecom{2}}
+	\label{Trace multiplicative corrigé}
+	\textcolor{blue}{\hyperref[Trace multiplicative]{[Enoncé]}}\\
+	Soit $A\in \M_n(\K)$ telle que $\forall B\in \M_n(\K),\ \Tr(AB)=\Tr(A)\Tr(B)$.\\
+	Alors $\Tr(A)=\Tr(A)\Tr(I_n)=n\Tr(A)$ donc $\Tr(A)=0$ dès que $n>2$. Si $n=1$ alors toute matrice $A$ vérifie la propriété on suppose donc $n>2$ à partir de maintenant.\\
+	Notons $A=(a_{ij})_{1\leq i,j\leq n}$ et $A^*=(\overline{a_{ji}})_{1\leq i,j\leq n}$.\\
+	D'une part $\Tr(A^*A)=0$ et d'autre part, $\Tr(A^*A)=\displaystyle\sum_{1\leq i,j\leq n}|a_{ij}|^2$.\\
+	Donc $\forall i,j\in \crblanc{1}{n},\ |a_{ij}|^2=0$ d'où $A=0$.\\
+	Réciproquement $A=0$ fonctionne.\\
+	On aurait aussi pu évaluer $B$ en les vecteurs de la base canonique : $\Tr(AE_{ij})=a_{ji}=0$ d'où $A=0$.
+	
 	\subsection{Formes multiplicatives de $\M_n(\K)$ \centraleponts{3}}
 	\label{Formes multiplicatives de M_n(K) corrigé}
 	\textcolor{blue}{\hyperref[Formes multiplicatives de M_n(K)]{[Enoncé]}}\\
@@ -4819,9 +4835,9 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Ainsi par définition $\forall i,j\in \crblanc{1}{n},\ T_ie_j\in \Vect(e_1,\dots,e_{j-1})$ ($T_ie_1=0$).\\
 	Ainsi $\forall j\in \crblanc{1}{n},\ \displaystyle\left(\prod_{i=1}^nT_i\right)e_j=0$. D'où $\displaystyle\prod_{i=1}^nT_i=0$ puis par suite $\displaystyle\prod_{i=1}^nN_i=0$.\\\\
 	
-	\textit{Remarque : Une suite $\{0\}=F_0\subsetneq F_1\subsetneq \cdots\subsetneq F_n=\K^n$ de sev d'un ev $E$ de dimension $n$ est appelée drapeau total de $E$. Trigonaliser un endomorphisme $u$ de $E$ revient à trouver un drapeau total $(F_j)_{0\leq j\leq n}$ de $E$ stable par $u$, i.e vérifiant $\forall j,\ u(F_j)\subset F_j$. Dans le cas où $u$ est nilpotent on a en fait $\forall j,\ u(F_j)\subset F_{j-1}$ d'où le résultat.}
+	\textit{Remarque : une suite $\{0\}=F_0\subsetneq F_1\subsetneq \cdots\subsetneq F_n=E$ de sev d'un ev $E$ de dimension $n$ est appelée drapeau total de $E$. Trigonaliser un endomorphisme $u$ de $E$ revient à trouver un drapeau total $(F_j)_{0\leq j\leq n}$ de $E$ stable par $u$, i.e vérifiant $\forall j,\ u(F_j)\subset F_j$. Dans le cas où $u$ est nilpotent on a en fait $\forall j,\ u(F_j)\subset F_{j-1}$ d'où le résultat.}
 	
-	\subsection{Suites périodiques \xens{4}}
+	\subsection{Suites périodiques \centraleponts{4}}
 	\label{Suites périodiques corrigé}
 	\textcolor{blue}{\hyperref[Suites périodiques]{[Enoncé]}}\\
 	$(0)_{n\in \N}\in E$ car la suite nulle est $1$-périodique par exemple. Soit $(u_n)_{n\in \N}$ une suite $p$-périodique et $(v_n)_{n\in \N}$ une suite $q$-périodique pour un certain couple $(p,q)\in (\N^*)^2$. Fixons $\lambda\in \C$.\\
