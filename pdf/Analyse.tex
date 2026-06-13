@@ -1443,7 +1443,7 @@
 	\textcolor{blue}{\hyperref[sec:lemme-de-croft-etoile2]{[Corrigé]}}\\
 	\label{croft}
 	\label{Lemme de Croft}
-	Soit $f: \R_+\longmapsto \R$ uniformément continue sur $\R_+$ telle que pour tout $x>0$, la suite $(f(nx))_{n\in\N}$ tend vers $0$.
+	Soit $f:\R_+\longmapsto \R$ uniformément continue sur $\R_+$ telle que pour tout $x>0$, la suite $(f(nx))_{n\in\N}$ tend vers $0$.
 	\\ Montrer que $\lim\limits_{x\to +\infty} f(x)=0$.
 	
 	\section{Inégalité intégrale de Jensen \etoile{1}}
@@ -2382,7 +2382,6 @@
 		\end{enumerate}	
 	\end{enumerate}
 	
-	
 \chapter{Suites et séries de fonctions}
 	\section{Etude d'une suite de fonctions (1)}
 	\textcolor{blue}{\hyperref[sec:etude-dune-suite-de-fonctions-1]{[Corrigé]}}\\
@@ -2516,26 +2515,26 @@
 	\section{Interversion Série-Intégrale}
 	\textcolor{blue}{\hyperref[sec:interversion-serie-integrale]{[Corrigé]}}\\
 	\label{Interversion Série-Intégrale}
-	Pour $x\in]-1,1[$, on pose $F(x)=\displaystyle\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{1}{1-x\cos(t)}dt$
+	Pour $x\in]-1,1[$, on pose $F(x)=\displaystyle\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{1}{1-x\cos(t)}dt$.
 	\begin{enumerate}[leftmargin=*]
-		\item Etablir que pour tout $x\in]-1,1[, \ F(x)=\displaystyle\sum\limits_{n=0}^{+\infty}\frac{1}{4^n}\binom{n}{2n}x^{2n}$
-		\item Montrer que $\forall x\in]-1,1[, \displaystyle\frac{1}{\sqrt{1-x^2}}=\displaystyle\sum\limits_{n=0}^{+\infty}\frac{1}{4^n}\binom{n}{2n}x^{2n}$
-		\item $\displaystyle\sum\limits_{n=0}^{+\infty}\frac{3}{(2n+1)4^{2n}}\binom{2n}{n}=\pi$
+		\item Etablir que pour tout $x\in]-1,1[, \ F(x)=\displaystyle\sum_{n=0}^{+\infty}\frac{1}{4^n}\binom{2n}{n}x^{2n}$.
+		\item Montrer que $\forall x\in]-1,1[, \displaystyle\frac{1}{\sqrt{1-x^2}}=\sum_{n=0}^{+\infty}\frac{1}{4^n}\binom{2n}{n}x^{2n}$.
+		\item $\displaystyle\sum_{n=0}^{+\infty}\frac{3}{(2n+1)4^{2n}}\binom{2n}{n}=\pi$.
 	\end{enumerate}
 	
 	\section{Série de fonction matricielle}
 	\textcolor{blue}{\hyperref[sec:serie-de-fonction-matricielle]{[Corrigé]}}\\
-	\label{Série de fonction matricielle}
-	On munit $\M_n(\R)$ d'une norme d'algèbre $\norme{.}$.
-	\\Soient $A\in\M_n(\R)$ non nulle et $I=]-\alpha,\alpha[$ avec $\alpha=\displaystyle\frac{1}{\norme{A}}$. Pour tout $t\in I$, on pose $f(t)=\displaystyle\sum\limits_{k=0}^{+\infty}(tA)^k$
-	\begin{enumerate}[leftmargin=*, noitemsep]
+	\label{Série de fonction matricielle}\\
+	On munit $\M_n(\R)$ d'une norme d'algèbre $\norme{\cdot}$.\\
+	Soient $A\in\M_n(\R)$ non nulle et $I=]-\alpha,\alpha[$ avec $\alpha=\dfrac{1}{\norme{A}}$. Pour tout $t\in I$, on pose $f(t)=\displaystyle\sum_{k=0}^{+\infty}(tA)^k$
+	\begin{enumerate}
 		\item Montrer que $f$ est bien définie sur $I$ et que $\forall t\in I,\ f(t)=(I_n-tA)^{-1}$.
-		\item Justifier que $f$ est de classe $\mathcal C^1$ sur $I$ et que $\forall t\in I,\ f'(t)=A(f(t))^2$. % Y a un problème non ? A(f(t)) ça veut rien dire je crois
+		\item Justifier que $f$ est de classe $\mathcal C^1$ sur $I$ et que $\forall t\in I,\ f'(t)=Af(t)^2$.
 	\end{enumerate}
 	
 	\section{Fonction $\zeta$ de Riemann}
 	\textcolor{blue}{\hyperref[sec:fonction-zeta-de-riemann]{[Corrigé]}}\\
-	\label{Fonction zeta de Riemann}
+	\label{Fonction zeta de Riemann}\\
 	On pose $\zeta(x)=\displaystyle\sum\limits_{n=1}^{+\infty}\frac{1}{n^x}$ et pour tout $n\in\N^* f_n:x\mapsto\displaystyle\frac{1}{n^x}$
 	\\On pose également $\eta(x)=\displaystyle\sum\limits_{n=1}^{+\infty}\frac{(-1)^{n-1}}{n^x}$ 
 	\begin{enumerate}[leftmargin=*,noitemsep]
