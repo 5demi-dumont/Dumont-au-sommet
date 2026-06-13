@@ -2873,7 +2873,7 @@ On note $A_n$ le nombre de permutation alternée ascendante de $\S_n$. Par conve
 \begin{enumerate}
 	\item Montrer qu'il y a autant de permutations alternées ascendantes que descendantes.
 	\item Démontrer que $\forall n\in \N,\ 2A_{n+1}=\displaystyle\sum_{k=0}^n\binom{n}{k}A_kA_{n-k}$.
-	\item En déduire que la série entière $\displaystyle\sum_{n\in \N}\frac{A_n}{n!}x^n$ a un rayon de convergence $R$ non nul. On note $A$ sa somme.
+	\item Montrer que la série entière $\displaystyle\sum_{n\in \N}\frac{A_n}{n!}x^n$ a un rayon de convergence $R$ non nul. On note $A$ sa somme.
 	\item Démontrer que $\forall x\in\,]-R,R[,\ 2A'(x)=A(x)^2+1$.
 	\item En déduire que $\forall x\in\, ]-R,R[,\ A(x)=\dfrac{1}{\cos x}+\tan x$ et la valeur de $R$.
 \end{enumerate}
@@ -3059,7 +3059,7 @@ Soit $F$ un sous-espace vectoriel d'un espace vectoriel normé $E$.
 \section{Adhérence d'un sous-espace \centraleponts{3}}
 \label{Adhérence d'un sev}
 \textcolor{blue}{\hyperref[sec:adherence-dun-sev]{[Corrigé]}}\\
-Soit $E$ un espace vectoriel normée.
+Soit $E$ un espace vectoriel normé.
 \begin{enumerate}
 	\item Soit $F$ un sous-espace vectoriel de $E$. Montrer que $\overline F$ est encore un sous-espace vectoriel.
 	\item Soit $F$ un sous-espace vectoriel de dimension finie de $E$. Montrer que $F$ est fermé dans $E$.
@@ -3190,14 +3190,14 @@ Donner un exemple de partie fermée bornée non compacte d'un espace vectoriel n
 \label{Théorème de compacité de Riesz}
 \textcolor{blue}{\hyperref[sec:theoreme-de-compacite-de-riesz-etoile4]{[Corrigé]}}\\
 Soit $(E,\norme{.})$ un $K$-espace vectoriel normé.
-\begin{enumerate}[leftmargin=*]
+\begin{enumerate}
 	\item Soit $F$ un sous-espace vectoriel fermé de $E$ tel que $F\ne E$.
 	\begin{enumerate}[label=\alph*.]
-		\item Soit $x\in E\setminus F$. Justifier que $\delta=d(x,F)>0$.
+		\item Soit $x\in E\backslash F$. Justifier que $\delta=d(x,F)>0$.
 		\item Justifier qu'il existe $v\in F$ tel que $0<\norme{x-v}\leq 2\delta$.
-		\item On pose $u=\displaystyle\frac{x-v}{\norme{x-v}}$. Justifier que $d(u,F)\geq \displaystyle\frac{1}{2}$.
+		\item On pose $u=\dfrac{x-v}{\norme{x-v}}$. Justifier que $d(u,F)\geq \dfrac{1}{2}$.
 	\end{enumerate}
-	\item On note $B$ la boule unité fermée de $E$ i.e. $B=\{x\in E,\ \norme{x}\leq1\}$. Montrer que si $E$ n'est pas de dimension finie, alors $B$ n'est pas compacte.
+	\item On note $B$ la boule unité fermée de $E$ i.e. $B=\{x\in E,\ \norme x\leq 1\}$. Montrer que si $E$ n'est pas de dimension finie, alors $B$ n'est pas compacte.
 \end{enumerate}
 
 \section{Sphère et boule unité \centraleponts{3}}
