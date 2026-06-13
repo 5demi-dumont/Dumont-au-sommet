@@ -2630,7 +2630,7 @@
 	\end{enumerate}
 	
 	\section{Théorème de Chudnovsky \etoile{4}}
-		\textcolor{blue}{\hyperref[sec:theoreme-de-chudnovsky-etoile4]{[Corrigé]}}\\
+	\textcolor{blue}{\hyperref[sec:theoreme-de-chudnovsky-etoile4]{[Corrigé]}}\\
 	\label{Théorème de Chudnovsky}
 	On se donne deux réels $a,b$ tels que $0<a\leq b<1$. Le but de cet exercice est de démontrer que toute fonction continue sur $[a,b]$ est limite uniforme sur $[a,b]$ d'une suite de fonctions polynomiales à coefficients entiers. On munit $\mathcal C([a,b],\R)$ de sa norme uniforme.
 	\begin{enumerate}
@@ -2659,7 +2659,7 @@
 \section{Lemme d'Abel}
 \label{Lemme d'Abel}
 \textcolor{blue}{\hyperref[sec:lemme-dabel]{[Corrigé]}}\\
-Enoncé et démontrer le lemme d'Abel
+Enoncer et démontrer le lemme d'Abel
 
 \section{Fonction non développable en série entière}
 \label{Fonction non développable en série entière}
@@ -2722,6 +2722,7 @@ Soit $\displaystyle\sum_{n\in \N} a_nz^n$ une série entière dont le rayon de c
 \label{Inverse d'une série entière}
 \textcolor{blue}{\hyperref[sec:inverse-dune-serie-entiere]{[Corrigé]}}\\
 Soit $1+\displaystyle\sum_{n\geq1}a_nz^n$ une série entière de rayon de convergence non nul, et $S$ la somme de cette série sur son disque de convergence. Montrer que $\displaystyle\frac{1}{S}$ est développable en série entière autour de l'origine.
+
 \section{Equivalent de séries entières}
 \label{Equivalent de séries entières}
 \textcolor{blue}{\hyperref[sec:equivalent-de-series-entieres]{[Corrigé]}}\\
@@ -2764,9 +2765,7 @@ Dans la suite, on dira que $P:\N\to \C$ est quasi-polynomiale si c'est la restri
 \label{Série génératrice d'une fonction quasi-polynomiale}
 Soit $P$ une fonction quasi-polynomiale. Montrer que le rayon de convergence de la série $\displaystyle\sum_{n\in \N}P(n)x^n$ est supérieur ou égal à $1$.
 
-
 \subsection{Partitions d'un entier}
-
 \label{Partitions d'un entier}
 Soient $k\geq 2$ un entier et $a_1,\dots,a_k\in \N^*$ que l'on suppose premier entre eux dans leur ensemble. On définit une fonction $P:\N\to \C$ en posant pour tout $n\in \N$:
 $$P(n)=\Card\left(\left\{(n_1,\dots,n_k)\in \N^k,\ \sum_{i=1}^ka_ix_i=n\right\}\right)$$
@@ -2788,13 +2787,12 @@ Soit $(a_n)_{n\in \N}$ une suite complexe quelconque.
 
 \section{Série de Lambert}
 \label{Série de Lambert}
-
 \textcolor{blue}{\hyperref[sec:serie-de-lambert]{[Corrigé]}}\\
 Soient $\alpha\in \N^*$ et $x\in [0,1[$.
 \begin{enumerate}
 	\item Montrer que la série $\displaystyle\sum_{n\in \N^*}\frac{n^\alpha x^n}{1-x^n}$ converge.
 	\item Donner un équivalent, lorsque $x\to 1^-$, de sa somme $\varphi(x)=\displaystyle\sum_{n=1}^{+\infty}\frac{n^\alpha x^n}{1-x^n}$ sous la forme de la somme d'une série double.\\
-	\textit{\underline{Indication :} On pourra considérer le développement en série entière de $\displaystyle\frac{\varphi(x)}{1-x}$.}
+	\textit{\underline{Indication :} On pourra considérer le développement en série entière de $\dfrac{\varphi(x)}{1-x}$.}
 \end{enumerate}
 
 \section{Somme de Goldbach}
@@ -2832,9 +2830,7 @@ Soit $f:x\in]-1,1[\mapsto \displaystyle\frac{\arcsin(x)}{\sqrt{1-x^2}}$
 \section{Série génératrice du nombre de points à coordonnées entières dans un quart de disque}
 \label{Série génératrice du nombre de points à coordonnées entières dans un quart de disque}
 \textcolor{blue}{\hyperref[sec:serie-generatrice-du-nombre-de-points-a-coordonnees-entieres-dans-un-quart-de-disque]{[Corrigé]}}\\
-On note $p_n = \Card\{(a,b)\in \N^2 \mid a^2+b^2\leq n\}$
-
-
+On note $p_n=\Card\{(a,b)\in \N^2 \mid a^2+b^2\leq n\}$
 \begin{enumerate}
 	\item Déterminer le rayon de convergence $R$ de la série entière $\displaystyle\sum_{n\in \N}p_nx^n$.
 	\item Démontrer que $\forall x\in ]-R,R[,\ \displaystyle\sum_{n=0}^{+\infty}p_nx^n=\frac{1}{1-x}\left(\sum_{n=0}^{+\infty}x^{n^2}\right)^2$.
@@ -2842,7 +2838,7 @@ On note $p_n = \Card\{(a,b)\in \N^2 \mid a^2+b^2\leq n\}$
 
 \subsection{Nombres de points à coordonnées entières dans un disque}
 \label{Nombre de points à coordonnées entières dans un disque}
-On munit $\R^2$ de sa norme euclidienne canonique $\norme{.}$. Pour $x\in \R_+$ on définit les ensembles $C(x)=\{u\in \Z^2,\ \norme u\leq x\}$ et $C_+(x)=C(x)\cap\N^2$.
+On munit $\R^2$ de sa norme euclidienne canonique $\norme{\cdot}$. Pour $x\in \R_+$ on définit les ensembles $C(x)=\{u\in \Z^2,\ \norme u\leq x\}$ et $C_+(x)=C(x)\cap\N^2$.
 \begin{enumerate}
 	\item Ecrire un programme python qui calcule $N_+(x)$.
 	\item Montrer que $\forall x\in \R_+,\ 4N_+(x)-N(x)-4\lfloor x\rfloor=3$.
@@ -2851,9 +2847,10 @@ On munit $\R^2$ de sa norme euclidienne canonique $\norme{.}$. Pour $x\in \R_+$ 
 \end{enumerate}
 
 \subsection{Prolongement du problème}
+\label{Prolongement du problème}
 \begin{enumerate}
 	\item Déduire de \ref{Série génératrice du nombre de points à coordonnées entières dans un quart de disque} et \ref{Nombre de points à coordonnées entières dans un disque} un équivalent en $1^-$ de $\displaystyle\sum_{n=0}^{+\infty}x^{n^2}$.
-	\item Montrer à l'aide d'une comparaison série intégrale que $$\displaystyle\sum_{n=0}^{+\infty}x^{n^2}\underset{x\to 1^-}{\sim}\frac{1}{\sqrt{x-1}}\int_0^{+\infty}e^{-t^2}dt$$
+	\item Montrer à l'aide d'une comparaison série intégrale que $$\displaystyle\sum_{n=0}^{+\infty}x^{n^2}\underset{x\to 1^-}{\sim}\frac{1}{\sqrt{1-x}}\int_0^{+\infty}e^{-t^2}dt$$
 	\item En déduire la valeur de l'intégrale $\displaystyle\int_{-\infty}^{+\infty}e^{-t^2}dt$.
 \end{enumerate} 
 
