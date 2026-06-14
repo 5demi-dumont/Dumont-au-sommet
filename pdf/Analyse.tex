@@ -3151,6 +3151,12 @@ $$\forall x,y\in K,\ x\ne y\implies \norme{f(x)-f(y)}<\norme{x-y}$$
 	\item Donner un contre-exemple en ne supposant plus $K$ compact.
 \end{enumerate}
 
+\section{Espace des endomorphismes préservant un compact \centraleponts{4}}
+\label{Espace des endomorphismes préservant un compact}
+\textcolor{blue}{\hyperref[Espace des endomorphismes préservant un compact corrigé]{[Corrigé]}}\\
+Soit $K$ un compact d'un espace vectoriel $E$ de dimension finie $n\geq 1$. On pose $\L_K=\{f\in \L(E),\ f(K)\subset K\}$.\\
+Montrer que $\L_K$ est compact dans $\L(E)$ si et seulement si $\Vect(K)=E$.
+
 \section{Théorème de Heine \etoile{2}}
 \label{Théorème de Heine}
 \textcolor{blue}{\hyperref[sec:theoreme-de-heine]{[Corrigé]}}\\
@@ -3159,7 +3165,7 @@ Démontrer qu'une fonction continue sur un compact est uniformément continue su
 \section{Lemme des compacts emboîtés \telecom{1}}
 \label{Lemme des compacts emboités}
 \textcolor{blue}{\hyperref[sec:lemme-des-compacts-emboites-etoile1]{[Corrigé]}}\\
-Soient $E$ un espace-vectoriel normé et $(K_n)_{n\in \N}$ une suite décroissante de compacts non vides de $E$.\\
+Soient $E$ un espace vectoriel normé et $(K_n)_{n\in \N}$ une suite décroissante de compacts non vides de $E$.\\
 Montrer que $K=\displaystyle\bigcap\limits_{n\in \N} K_n$ est non vide.
 
 \section{Théorème de Baire \xens{5} (HP)}
@@ -9252,6 +9258,28 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		On sait que $\unfty\lim\norme{x_{\varphi(n)}-a}=\unfty\lim\norme{x_{\varphi(n)+1}}=\norme{\ell-a}$. Par ailleurs, $\unfty\lim\norme{x_{\varphi(n)}-a}=\norme{x-a}$ et $\unfty\lim\norme{x_{\varphi(n)+1}-a}=\norme{f(x)-a}$. Par unicité de la limite, $\norme{x-a}=\norme{f(x)-a}=\norme{f(x)-f(a)}$. Donc $x=a$.\\
 		On a montré que la seule valeur d'adhérence de $(x_n)_{n\in \N}$ est $a$, càd $\unfty\lim f^n(x_0)=a$.
 	\end{enumerate}
+	
+	\subsection{Espace des endomorphismes préservant un compact \centraleponts{4}}
+	\label{Espace des endomorphismes préservant un compact corrigé}
+	\textcolor{blue}{\hyperref[Espace des endomorphismes préservant un compact]{[Enoncé]}}\\
+	$E$ et $\L(E)$ étant de dimensions finies, la notion de compacité ne dépend pas de la norme choisie. On fait le choix de considérer une norme $\norme{\cdot}$ sur $E$ et de travailler avec sa norme subordonnée $|||\cdot|||$ sur $\L(E)$.\\\\
+	Commençons par montrer que $\L_K$ est toujours fermé.\\
+	Soit $(f_n)\in \L_K^\N$ qui converge dans $\L(E)$ vers une fonction $f$. On fixe $x\in K$.\\
+	D'une part, la suite $(f_n(x))$ est à valeurs dans le compact $K$ donc on peut en extraire une sous-suite qui converge vers un vecteur $\ell\in K$.\\
+	D'autre part, $\norme{f_n(x)-f(x)}\leq |||f_n-f|||\norme x\unfty\longrightarrow 0$. Donc $f_n(x)\unfty\longrightarrow f(x)$.\\
+	Ainsi par unicité de la limite $f(x)=\ell\in K$ d'où $f\in \L_K$.\\
+	L'énoncé est donc réduit à montrer que $\L_K$ est borné si et seulement si $\Vect(K)=E$.\\\\
+	Pour le sens direct on raisonne par contraposée : supposons que $\Vect(K)\ne E$ et montrons que $\L_K$ n'est pas borné.\\
+	On considère un supplémentaire $F$ de $\Vect(K)$ dans $E$, qui est non nul par hypothèse. On peut construire des fonctions de $\L_K$ qui prennent des valeurs arbitraires sur $F$ : par exemple la suite d'endomorphismes $(f_n)$ définie par $\forall x\in K,\ f_n(x)=x$ et $\forall x\in F,\ f_n(x)=nx$ est à valeurs dans $\L_K$.\\
+	Or puisque $F$ n'est pas réduit au sous-espace nul, pour $x\in F\backslash\{0\}$ on a $\dfrac{\norme{f_n(x)}}{\norme x}=n$ d'où $|||f_n|||\geq n$ puis $|||f_n|||\unfty\longrightarrow +\infty$.\\
+	Donc $\L_K$ n'est pas borné.\\\\
+	Pour le sens réciproque, supposons que $\Vect(K)=E$. On peut alors trouver une base $(e_1,\dots,e_n)$ de $E$ formée d'éléments de $K$.\\
+	Fixons $f\in \L_K$. On rappelle que $|||f|||=\sup\limits_{\substack{x\in E\\\norme x=1}}\norme{f(x)}$.\\
+	Fixons $x\in E$ unitaire. On sait que $x=\displaystyle\sum_{i=1}^ne_i^*(x)e_i$ avec $e_i^*$ la $i$-ème forme linéaire coordonnée.\\
+	Par inégalité triangulaire, $\norme x\leq \displaystyle\sum_{i=1}^n|e_i^*(x)|\norme{e_i}$.\\
+	Or $K$ est borné donc $\exists M\geq 0,\ \forall z\in K,\ \norme z\leq M$. En outre, pour tout $i\in \crblanc{1}{n}$, $e_i^*$ est continue car linéaire sur $E$ qui est de dimension finie et la sphère unité de $E$ est compacte, toujours car $E$ est de dimension finie. Donc $e_i^*$ admet un maximum $A_i$ sur la sphère unité de $E$.\\
+	On en déduit que $\norme{f(x)}\leq M\displaystyle\sum_{i=1}^nA_i$ d'où $|||f|||\leq M\displaystyle\sum_{i=1}^nA_i$.
+	Ceci montre que $\L_K$ est borné et cela conclut l'exercice.
 	
 	\subsection{Théorème de Heine \etoile{2}}
 	\label{sec:theoreme-de-heine}
