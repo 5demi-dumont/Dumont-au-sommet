@@ -10806,7 +10806,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	$$a_pf^{(p)}+a_{p-1}f^{(p-1)}+\cdots+a_0f=0$$
 	avec $a_0,\dots,a_p$ des réels non tous nuls. Alors pour tout $a\in \R$, $t\mapsto f(t+a)$ est solution de la même équation différentielle sur $\R$. Or on sait que l'ensemble des solutions de cette équation différentielle est un sous-espace vectoriel de $E$ de dimension finie. Donc $V_f$ est de dimension finie.\\\\
 	\underline{$2^{\T{nd}}$ méthode :}\\
-	Lemme : Si $V_f$ est de dimension finie alors il existe un segment $I$ de $\R$ tel que $\normep{I}{\cdot}:f\mapsto \sup\limits_{x\in I}|f(x)|$ définisse une norme sur $I$.\\
+	Lemme : Si $V_f$ est de dimension finie alors il existe un segment $I$ de $\R$ tel que $\normep{I}{\cdot}:f\mapsto \sup\limits_{x\in I}|f(x)|$ définisse une norme sur $V_f$.\\
 	Soit $I$ un segment de $\R$. Comme les fonctions de $E$ sont continues $\normep{I}{\cdot}$ est bien définie sur $V_f$. On vérifie aisément l'homogénéité et l'inégalité triangulaire. Il s'agit de choisir $I$ pour que $\normep{I}{\cdot}$ vérifie l'axiome de séparation.\\
 	On se donne des réels $x_1,\dots,x_p$ comme dans le lemme et on pose $I=\left[\min\limits_{1\leq j\leq n}x_j,\max\limits_{1\leq j\leq n}x_j\right]$.\\
 	Alors pour tout $f=\displaystyle\sum_{i=1}^pa_if_i\in V_f$, $\normep{I}{f}=0\implies \forall j\in \crblanc{1}{p},\ \displaystyle\sum_{i=1}^pa_if_i(x_j)=0$.\\
