@@ -2081,7 +2081,7 @@
 	\textcolor{blue}{\hyperref[sec:une-norme-non-euclidienne]{[Corrigé]}}\\
 	\label{Une norme non euclidienne}
 	Soient $n\in \N^*$ et $\alpha_0,\dots,\alpha_n$ des réels distincts. \\
-	Montrer que l'application $N$ définie sur $\R_n[X]$ par $\forall P\in \R_n[X],\ N(P)=\sum_{k=0}^n|P(\alpha_k)|$ est une norme non euclidienne.
+	Montrer que l'application $N$ définie sur $\R_n[X]$ par $\forall P\in \R_n[X],\ N(P)=\displaystyle\sum_{k=0}^n|P(\alpha_k)|$ est une norme non euclidienne.
 	
 	\section{Norme invariante par similitude}
 	\textcolor{blue}{\hyperref[sec:norme-invariante-par-similitude]{[Corrigé]}}\\
@@ -2207,6 +2207,15 @@
 	\begin{enumerate}
 		\item Montrer que $N_1$,$N_2$,$N_3$ et $N_4$ sont des normes sur $\M_{n,p}(\R)$.
 		\item Montrer que si $n=p$, ce sont des normes d'algèbre sur $\M_n(\R)$.
+	\end{enumerate}
+	
+	\section{Norme d'algèbre \telecom{1}}
+	\textcolor{blue}{\hyperref[Norme d'algèbre corrigé]{[Corrigé]}}\\
+	\label{Norme d'algèbre}
+	Soit $||\cdot||$ une norme sur $\M_n(\K)$.
+	\begin{enumerate}
+		\item Justifier l'existence d'une constante $k>0$ telle que $\forall A,B\in \M_n(\K),\ ||AB||\leq k||A||\cdot||B||$.
+		\item En déduire que $||\cdot||$ est proportionnelle à une norme d'algèbre.
 	\end{enumerate}
 	
 	\section{Caractérisation des sous-espaces de dimension finie de $\mathcal C^0([0,1],\K)$}
@@ -7933,10 +7942,9 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\[\sum_{k=1}^{n}\lambda_kx_k=0 \Longleftrightarrow \norme{\sum_{k=1}^{n}\lambda_kx_k}=0\].
 	Donc par séparation, $(\lambda_1,\dots,\lambda_n)=0$.
 	
-	
-		
-	\subsection{Quelques normes matricielles}\label{sec:quelques-normes-matricielles}
-		\textcolor{blue}{\hyperref[Quelques normes matricielles]{[Enoncé]}}\\
+	\subsection{Quelques normes matricielles}
+	\label{sec:quelques-normes-matricielles}
+	\textcolor{blue}{\hyperref[Quelques normes matricielles]{[Enoncé]}}\\
 	\subsection{Caractérisation des sous-espaces de dimension finie de $\mathcal{C}^0([0,1],\K)$}\label{sec:caracterisation-des-sous-espaces-de-dimension-finie-de-mathcalc001k}
 		\textcolor{blue}{\hyperref[Caractérisation des sous-espaces de dimension finie de C0]{[Enoncé]}}\\
 		\begin{enumerate}
@@ -7954,8 +7962,20 @@ Démontrer l'équivalence des deux affirmations suivantes :
 			\[p=\sum_{i=1}^{p}\normep{2}{f_i}^2\leq n^2\]
 			Ainsi, une famille libre est a fortiori de taille au plus $n^2$, ce qui implique que $V$ est de dimension finie et que la dimension de $V$ est majorer par $n^2$.
 		\end{enumerate}
-	\subsection{Distance}\label{sec:distance}
-		\textcolor{blue}{\hyperref[Distance]{[Enoncé]}}\\
+	
+	\subsection{Norme d'algèbre \telecom{1}}
+	\label{Norme d'algèbre corrigé}
+	\textcolor{blue}{\hyperref[Norme d'algèbre]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item L'application $\fonction{b}{\M_n(\K)^2}{\M_n(\K)}{(A,B)}{AB}$ est bilinéaire sur $\M_n(\K)$ qui est de dimension finie.\\
+		Elle est donc continue i.e $\exists k>0,\ \forall (A,B)\in \M_n(\K)^2,\ ||b(A,B)||=||AB||\leq k||A||\cdot||B||$.
+		\item On vérifie aisément que $N:=k||\cdot||$ est une norme sur $\M_n(\K)$. Et d'après la première question c'est une norme d'algèbre :
+		$$\forall (A,B)\in \M_n(\K)^2,\ N(AB)=k||AB||\leq k^2||A||\cdot||B||=N(A)N(B)$$
+	\end{enumerate}
+	
+	\subsection{Distance}
+	\label{sec:distance}
+	\textcolor{blue}{\hyperref[Distance]{[Enoncé]}}\\
 		\begin{enumerate}[leftmargin=*]
 			\item \begin{itemize}
 				\item $\forall x,y\in E$, $\norme{x-y}=|-1|\norme{y-x}=\norme{y-x}$
