@@ -9159,8 +9159,8 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi $\unfty\lim f(n)=0$.
 		\item On sait d'après le cours que $\varphi$ est multiplicative (c'est le théorème des restes chinois) donc $f_\delta : n\mapsto \dfrac{n^{1-\delta}}{\varphi(n)}$ est multiplicative.\\
 		Fixons $\varepsilon>0$. Soient $p$ un nombre premier et $k\in \N^*$.
-		$$|f_\delta(p^k)|=\frac{p^{k(1-\delta)}}{\varphi(p^k)}=\frac{p^{k(1-\delta)}}{p^k-p^{k-1}}=\frac{p^{1-k\delta}}{p-1}=\frac{p}{p-1}p^{-k\delta}$$
-		Donc si $p^k\geq N(\varepsilon):=\left\lceil\left(\dfrac{p}{(p-1)\varepsilon}\right)^{1/\delta}\right\rceil\in \N^*$ alors $|f(p^k)|\leq \varepsilon$.\\
+		$$|f_\delta(p^k)|=\frac{p^{k(1-\delta)}}{\varphi(p^k)}=\frac{p^{k(1-\delta)}}{p^k-p^{k-1}}=\frac{p^{-k\delta}}{1-\dfrac{1}{p}}\leq 2p^{-k\delta}$$
+		Donc si $p^k\geq N(\varepsilon):=\left\lceil\left(\dfrac{\varepsilon}{2}\right)^{1/\delta}\right\rceil\in \N^*$ alors $|f(p^k)|\leq \varepsilon$.\\
 		Ainsi d'après la première question $\unfty\lim f_\delta(n)=0$.
 		\item Pour $\delta=0$ le même calcul nous donne $f_0(p^k)=\dfrac{p}{p-1}$.\\
 		Si $f_0$ admettait une limite $\ell$ en $+\infty$ alors comme $p^k\ukfty\longrightarrow +\infty$ on aurait $\ell=\ell_p:=\dfrac{p}{p-1}$. Ceci étant vrai pour tout $p$ premier et comme par exemple $\ell_2=2\ne \dfrac{3}{2}=\ell_3$, $f_0$ n'admet pas de limite.

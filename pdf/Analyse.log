@@ -1,56 +1,56 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.22)  4 AUG 2026 21:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.4)  22 AUG 2026 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./Analyse.tex
 (Analyse.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
-Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
-File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count187
-\c@chapter=\count188
-\c@section=\count189
-\c@subsection=\count190
-\c@subsubsection=\count191
-\c@paragraph=\count192
-\c@subparagraph=\count193
-\c@figure=\count194
-\c@table=\count195
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
 )
 (usepackage.tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen141
-\Gin@req@width=\dimen142
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -59,75 +59,75 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip50
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen143
+\ex@=\dimen151
 ))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen144
+\pmbraise@=\dimen152
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count196
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count197
-\leftroot@=\count198
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count199
-\DOTSCASE@=\count266
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box51
-\strutbox@=\box52
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen145
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count267
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count268
-\dotsspace@=\muskip16
-\c@parentequation=\count269
-\dspbrk@lvl=\count270
+\inf@bad=\count284
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count285
+\leftroot@=\count286
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count287
+\DOTSCASE@=\count288
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen153
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count289
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count290
+\dotsspace@=\muskip17
+\c@parentequation=\count291
+\dspbrk@lvl=\count292
 \tag@help=\toks20
-\row@=\count271
-\column@=\count272
-\maxfields@=\count273
+\row@=\count293
+\column@=\count294
+\maxfields@=\count295
 \andhelp@=\toks21
-\eqnshift@=\dimen146
-\alignsep@=\dimen147
-\tagshift@=\dimen148
-\tagwidth@=\dimen149
-\totwidth@=\dimen150
-\lineht@=\dimen151
+\eqnshift@=\dimen154
+\alignsep@=\dimen155
+\tagshift@=\dimen156
+\tagwidth@=\dimen157
+\totwidth@=\dimen158
+\lineht@=\dimen159
 \@envbody=\toks22
-\multlinegap=\skip51
-\multlinetaggap=\skip52
+\multlinegap=\skip52
+\multlinetaggap=\skip53
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\yhmath.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\yhmath.sty
 Package: yhmath 2020/03/17 v1.6
 \symyhlargesymbols=\mathgroup6
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 29.
@@ -161,749 +161,751 @@ LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 97.
 LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 99.
 LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 101.
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup7
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\eucal.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\eucal.sty
 Package: eucal 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/mathdots\mathdots.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/mathdots\mathdots.sty
 Package: mathdots 2014/06/11 v0.9 Improve and add various macros for dots in ma
 th.
-\MDo@unit=\dimen152
-\MDo@dotsbox=\box53
-\MDoprekern=\muskip17
-\MDopostkern=\muskip18
-\MDodotkern=\muskip19
-) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\stmaryrd.sty
+\MDo@unit=\dimen160
+\MDo@dotsbox=\box55
+\MDoprekern=\muskip18
+\MDopostkern=\muskip19
+\MDodotkern=\muskip20
+) (C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\stmaryrd.sty
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 \symstmry=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
-) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/bbm\bbm.sty
+) (C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/bbm\bbm.sty
 Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
 LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 (Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count274
-\Gm@cntv=\count275
-\c@Gm@tempcnt=\count276
-\Gm@bindingoffset=\dimen153
-\Gm@wd@mp=\dimen154
-\Gm@odd@mp=\dimen155
-\Gm@even@mp=\dimen156
-\Gm@layoutwidth=\dimen157
-\Gm@layoutheight=\dimen158
-\Gm@layouthoffset=\dimen159
-\Gm@layoutvoffset=\dimen160
+\Gm@cnth=\count296
+\Gm@cntv=\count297
+\c@Gm@tempcnt=\count298
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
 \Gm@dimlist=\toks24
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip53
-\f@nch@offset@elh=\skip54
-\f@nch@offset@erh=\skip55
-\f@nch@offset@olh=\skip56
-\f@nch@offset@orh=\skip57
-\f@nch@offset@elf=\skip58
-\f@nch@offset@erf=\skip59
-\f@nch@offset@olf=\skip60
-\f@nch@offset@orf=\skip61
-\f@nch@height=\skip62
-\f@nch@footalignment=\skip63
-\f@nch@widthL=\skip64
-\f@nch@widthC=\skip65
-\f@nch@widthR=\skip66
+\f@nch@headwidth=\skip54
+\f@nch@offset@elh=\skip55
+\f@nch@offset@erh=\skip56
+\f@nch@offset@olh=\skip57
+\f@nch@offset@orh=\skip58
+\f@nch@offset@elf=\skip59
+\f@nch@offset@erf=\skip60
+\f@nch@offset@olf=\skip61
+\f@nch@offset@orf=\skip62
+\f@nch@height=\skip63
+\f@nch@footalignment=\skip64
+\f@nch@widthL=\skip65
+\f@nch@widthC=\skip66
+\f@nch@widthR=\skip67
 \@temptokenb=\toks25
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
 Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
 
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex
  v1.42, 2010/05/14 <tvz>
-\multido@count=\count277
-\multidocount=\count278
+\multido@count=\count299
+\multidocount=\count300
 \multido@stuff=\toks26
 )
 File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2024/01/07 v24.1 The Babel package
-\babel@savecnt=\count279
-\U@D=\dimen161
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
+\babel@savecnt=\count301
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2050.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2052.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2054.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2055.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2056.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2058.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2083.
+\U@D=\dimen169
 \l@unhyphenated=\language79
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count280
+\bbl@dirlevel=\count302
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4175.
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.l
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
+-french.tex)
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 4298.
+
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.l
 df
 Language: french 2025-08-15 v4.0e French support from the babel system
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french3.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french3.
 ldf
 Language: french 2025-08-15 v3.7e French support from the babel system
-\FB@stdchar=\count281
+\FB@stdchar=\count303
 Package babel Info: Making : an active character on input line 273.
 Package babel Info: Making ; an active character on input line 274.
 Package babel Info: Making ! an active character on input line 275.
 Package babel Info: Making ? an active character on input line 276.
-\FBguill@level=\count282
+\FBguill@level=\count304
 \FBold@everypar=\toks27
-\FB@Mht=\dimen162
-\mc@charclass=\count283
-\mc@charfam=\count284
-\mc@charslot=\count285
-\std@mcc=\count286
-\dec@mcc=\count287
-\FB@pardim=\dimen163
-\listindentFB=\dimen164
-\descindentFB=\dimen165
-\labelindentFB=\dimen166
-\labelwidthFB=\dimen167
-\leftmarginFB=\dimen168
-\parindentFFN=\dimen169
-\FBfnindent=\dimen170
+\FB@Mht=\dimen170
+\mc@charclass=\count305
+\mc@charfam=\count306
+\mc@charslot=\count307
+\std@mcc=\count308
+\dec@mcc=\count309
+\FB@pardim=\dimen171
+\listindentFB=\dimen172
+\descindentFB=\dimen173
+\labelindentFB=\dimen174
+\labelwidthFB=\dimen175
+\leftmarginFB=\dimen176
+\parindentFFN=\dimen177
+\FBfnindent=\dimen178
 )))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
--french.tex
-Package babel Info: Importing font and identification data for french
-(babel)             from babel-fr.ini. Reported on input line 11.
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip67
-\enit@outerparindent=\dimen171
+\labelindent=\skip68
+\enit@outerparindent=\dimen179
 \enit@toks=\toks28
-\enit@inbox=\box54
-\enit@count@id=\count288
-\enitdp@description=\count289
+\enit@inbox=\box56
+\enit@count@id=\count310
+\enitdp@description=\count311
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
 keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
 ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
 .sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
-.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
-Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count290
+\c@section@level=\count312
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count291
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count313
 )
-\@linkdim=\dimen172
-\Hy@linkcounter=\count292
-\Hy@pagecounter=\count293
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen180
+\Hy@linkcounter=\count314
+\Hy@pagecounter=\count315
+ (C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count294
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count316
+ (C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4064.
-Package hyperref Info: Hyper figures OFF on input line 4181.
-Package hyperref Info: Link nesting OFF on input line 4186.
-Package hyperref Info: Hyper index ON on input line 4189.
-Package hyperref Info: Plain pages OFF on input line 4196.
-Package hyperref Info: Backreferencing OFF on input line 4201.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4066.
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4448.
-\c@Hy@tempcnt=\count295
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count317
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
-\Urlmuskip=\muskip20
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip21
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4786.
-\XeTeXLinkMargin=\dimen173
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen181
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
 .sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count296
-\Field@Width=\dimen174
-\Fld@charsize=\dimen175
-Package hyperref Info: Hyper figures OFF on input line 6065.
-Package hyperref Info: Link nesting OFF on input line 6070.
-Package hyperref Info: Hyper index ON on input line 6073.
-Package hyperref Info: backreferencing OFF on input line 6080.
-Package hyperref Info: Link coloring ON on input line 6083.
-Package hyperref Info: Link coloring with OCG OFF on input line 6090.
-Package hyperref Info: PDF/A mode OFF on input line 6095.
-
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count297
-\c@Item=\count298
-\c@Hfootnote=\count299
+\Fld@menulength=\count318
+\Field@Width=\dimen182
+\Fld@charsize=\dimen183
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring ON on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count319
+\c@Item=\count320
+\c@Hfootnote=\count321
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
-with kernel methods
-)
-\Fld@listcount=\count300
-\c@bookmark@seq@number=\count301
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count322
+\c@bookmark@seq@number=\count323
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
 ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip68
+\Hy@SectionHShift=\skip69
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
-Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
+Package: exscale 2025/06/05 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
-\big@size=\dimen176
+\big@size=\dimen184
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
 Package: lastpage 2025/08/14 v2.1h lastpage: 2.09 or 2e? (HMM)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
 Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (H
 MM)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpageclassi
-c.sty
-Package: lastpageclassic 2025/08/14 v2.1h Refers to last page's name (HMM; JPG)
-
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpagemodern
+.sty
+Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count324
 ) 
 ))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
 y
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
 \pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen177
-\pgfutil@tempdimb=\dimen178
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box55
+\pgfutil@abb=\box57
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
 sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
 sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s.code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
 \pgfkeys@pathtoks=\toks30
 \pgfkeys@temptoks=\toks31
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 libraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen179
-\pgf@y=\dimen180
-\pgf@xa=\dimen181
-\pgf@ya=\dimen182
-\pgf@xb=\dimen183
-\pgf@yb=\dimen184
-\pgf@xc=\dimen185
-\pgf@yc=\dimen186
-\pgf@xd=\dimen187
-\pgf@yd=\dimen188
+\pgf@x=\dimen187
+\pgf@y=\dimen188
+\pgf@xa=\dimen189
+\pgf@ya=\dimen190
+\pgf@xb=\dimen191
+\pgf@yb=\dimen192
+\pgf@xc=\dimen193
+\pgf@yc=\dimen194
+\pgf@xd=\dimen195
+\pgf@yd=\dimen196
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count302
-\c@pgf@countb=\count303
-\c@pgf@countc=\count304
-\c@pgf@countd=\count305
+\c@pgf@counta=\count325
+\c@pgf@countb=\count326
+\c@pgf@countc=\count327
+\c@pgf@countd=\count328
 \t@pgf@toka=\toks33
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count306
+\pgf@sys@id@count=\count329
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count307
-\pgfsyssoftpath@bigbuffer@items=\count308
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count330
+\pgfsyssoftpath@bigbuffer@items=\count331
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 e.code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
 code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen189
-\pgfmath@count=\count309
-\pgfmath@box=\box56
+\pgfmath@dimen=\dimen197
+\pgfmath@count=\count332
+\pgfmath@box=\box58
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
 \pgfmath@stack@operation=\toks38
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.basic.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.trigonometric.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.random.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.comparison.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.base.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.round.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.misc.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.integerarithmetics.code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
 code.tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count310
+\c@pgfmathroundto@lastzeros=\count333
 ))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen190
-\pgf@picmaxx=\dimen191
-\pgf@picminy=\dimen192
-\pgf@picmaxy=\dimen193
-\pgf@pathminx=\dimen194
-\pgf@pathmaxx=\dimen195
-\pgf@pathminy=\dimen196
-\pgf@pathmaxy=\dimen197
-\pgf@xx=\dimen198
-\pgf@xy=\dimen199
-\pgf@yx=\dimen256
-\pgf@yy=\dimen257
-\pgf@zx=\dimen258
-\pgf@zy=\dimen259
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen198
+\pgf@picmaxx=\dimen199
+\pgf@picminy=\dimen256
+\pgf@picmaxy=\dimen257
+\pgf@pathminx=\dimen258
+\pgf@pathmaxx=\dimen259
+\pgf@pathminy=\dimen260
+\pgf@pathmaxy=\dimen261
+\pgf@xx=\dimen262
+\pgf@xy=\dimen263
+\pgf@yx=\dimen264
+\pgf@yy=\dimen265
+\pgf@zx=\dimen266
+\pgf@zy=\dimen267
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen260
-\pgf@path@lasty=\dimen261
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen268
+\pgf@path@lasty=\dimen269
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen262
-\pgf@shorten@start@additional=\dimen263
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen270
+\pgf@shorten@start@additional=\dimen271
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box57
-\pgf@hbox=\box58
-\pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count311
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count334
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen264
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen272
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen265
-\pgf@pt@y=\dimen266
-\pgf@pt@temp=\dimen267
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen273
+\pgf@pt@y=\dimen274
+\pgf@pt@temp=\dimen275
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eobjects.code.tex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen268
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen276
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen269
-\pgf@sys@shading@range@num=\count312
-\pgf@shadingcount=\count313
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen277
+\pgf@sys@shading@range@num=\count335
+\pgf@shadingcount=\count336
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box60
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box62
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransparency.code.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epatterns.code.tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 erdf.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box61
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box63
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen270
-\pgf@nodesepend=\dimen271
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen278
+\pgf@nodesepend=\dimen279
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
 y
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
 ty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen272
-\pgffor@skip=\dimen273
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen280
+\pgffor@skip=\dimen281
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
 ))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count314
-\pgfplotmarksize=\dimen274
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count337
+\pgfplotmarksize=\dimen282
 )
-\tikz@lastx=\dimen275
-\tikz@lasty=\dimen276
-\tikz@lastxsaved=\dimen277
-\tikz@lastysaved=\dimen278
-\tikz@lastmovetox=\dimen279
-\tikz@lastmovetoy=\dimen280
-\tikzleveldistance=\dimen281
-\tikzsiblingdistance=\dimen282
-\tikz@figbox=\box62
-\tikz@figbox@bg=\box63
-\tikz@tempbox=\box64
-\tikz@tempbox@bg=\box65
-\tikztreelevel=\count315
-\tikznumberofchildren=\count316
-\tikznumberofcurrentchild=\count317
-\tikz@fig@count=\count318
+\tikz@lastx=\dimen283
+\tikz@lasty=\dimen284
+\tikz@lastxsaved=\dimen285
+\tikz@lastysaved=\dimen286
+\tikz@lastmovetox=\dimen287
+\tikz@lastmovetoy=\dimen288
+\tikzleveldistance=\dimen289
+\tikzsiblingdistance=\dimen290
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count338
+\tikznumberofchildren=\count339
+\tikznumberofcurrentchild=\count340
+\tikz@fig@count=\count341
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count319
-\pgfmatrixcurrentcolumn=\count320
-\pgf@matrix@numberofcolumns=\count321
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count342
+\pgfmatrixcurrentcolumn=\count343
+\pgf@matrix@numberofcolumns=\count344
 )
-\tikz@expandcount=\count322
+\tikz@expandcount=\count345
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/tkz-tab\tkz-tab.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/tkz-tab\tkz-tab.sty
 Package: tkz-tab 2020/04/29 v2.12c variations (ctan version)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks41
 \XKV@tempa@toks=\toks42
 )
-\XKV@depth=\count323
+\XKV@depth=\count346
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: tikzlibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen283
+File: pgflibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\arrowsize=\dimen291
 ))
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarypatterns.code.tex
-File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: tikzlibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 arypatterns.code.tex
-File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgflibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-\tkz@XF=\dimen284
-\tkz@YF=\dimen285
-\c@tkz@cnt@line=\count324
-\c@tkz@cnt@lg=\count325
-\c@tkz@cnt@cl=\count326
-\c@tkz@cnt@pred=\count327
-\c@tkz@cnt@temp=\count328
-\c@tkz@cnt@arrow=\count329
-\c@tkz@cnt@zone=\count330
-\c@tkz@cnt@lgnext=\count331
-\c@tkz@cnt@clnext=\count332
-\c@tkz@cnt@pair=\count333
-\c@tkz@cnt@impair=\count334
-\c@tkz@cnt@aw=\count335
+\tkz@XF=\dimen292
+\tkz@YF=\dimen293
+\c@tkz@cnt@line=\count347
+\c@tkz@cnt@lg=\count348
+\c@tkz@cnt@cl=\count349
+\c@tkz@cnt@pred=\count350
+\c@tkz@cnt@temp=\count351
+\c@tkz@cnt@arrow=\count352
+\c@tkz@cnt@zone=\count353
+\c@tkz@cnt@lgnext=\count354
+\c@tkz@cnt@clnext=\count355
+\c@tkz@cnt@pair=\count356
+\c@tkz@cnt@impair=\count357
+\c@tkz@cnt@aw=\count358
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box66
-\beforetitleunit=\skip69
-\aftertitleunit=\skip70
-\ttl@plus=\dimen286
-\ttl@minus=\dimen287
+\ttl@box=\box68
+\beforetitleunit=\skip70
+\aftertitleunit=\skip71
+\ttl@plus=\dimen294
+\ttl@minus=\dimen295
 \ttl@toksa=\toks43
-\titlewidth=\dimen288
-\titlewidthlast=\dimen289
-\titlewidthfirst=\dimen290
+\titlewidth=\dimen296
+\titlewidthlast=\dimen297
+\titlewidthfirst=\dimen298
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/changepage\changepage.s
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/changepage\changepage.s
 ty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count336
-\cp@tempcnt=\count337
-) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
+\c@cp@cntr=\count359
+\cp@tempcnt=\count360
+) (C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks44
 \inpenc@posthook=\toks45
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen291
-\ESO@tempdimb=\dimen292
+\ESO@tempdima=\dimen299
+\ESO@tempdimb=\dimen300
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
-Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count338
-\mult@box=\box67
-\multicol@leftmargin=\dimen293
-\c@unbalance=\count339
-\c@collectmore=\count340
-\doublecol@number=\count341
-\multicoltolerance=\count342
-\multicolpretolerance=\count343
-\full@width=\dimen294
-\page@free=\dimen295
-\premulticols=\dimen296
-\postmulticols=\dimen297
-\multicolsep=\skip71
-\multicolbaselineskip=\skip72
-\partial@page=\box68
-\last@line=\box69
-\mc@boxedresult=\box70
-\maxbalancingoverflow=\dimen298
-\mult@rightbox=\box71
-\mult@grightbox=\box72
-\mult@firstbox=\box73
-\mult@gfirstbox=\box74
-\@tempa=\box75
-\@tempa=\box76
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count361
+\mult@box=\box69
+\multicol@leftmargin=\dimen301
+\c@unbalance=\count362
+\c@collectmore=\count363
+\doublecol@number=\count364
+\multicoltolerance=\count365
+\multicolpretolerance=\count366
+\full@width=\dimen302
+\page@free=\dimen303
+\premulticols=\dimen304
+\postmulticols=\dimen305
+\multicolsep=\skip72
+\multicolbaselineskip=\skip73
+\partial@page=\box70
+\last@line=\box71
+\mc@boxedresult=\box72
+\maxbalancingoverflow=\dimen306
+\mult@rightbox=\box73
+\mult@grightbox=\box74
+\mult@firstbox=\box75
+\mult@gfirstbox=\box76
 \@tempa=\box77
 \@tempa=\box78
 \@tempa=\box79
@@ -938,60 +940,72 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box108
 \@tempa=\box109
 \@tempa=\box110
-\c@minrows=\count344
-\c@columnbadness=\count345
-\c@finalcolumnbadness=\count346
-\last@try=\dimen299
-\multicolovershoot=\dimen300
-\multicolundershoot=\dimen301
-\mult@nat@firstbox=\box111
-\colbreak@box=\box112
-\mc@col@check@num=\count347
+\@tempa=\box111
+\@tempa=\box112
+\c@minrows=\count367
+\c@columnbadness=\count368
+\c@finalcolumnbadness=\count369
+\last@try=\dimen307
+\multicolovershoot=\dimen308
+\multicolundershoot=\dimen309
+\mult@nat@firstbox=\box113
+\colbreak@box=\box114
+\mc@col@check@num=\count370
+\g__mc_curr_col_int=\count371
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count348
-\lst@gtempboxa=\box113
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count372
+\lst@gtempboxa=\box115
 \lst@token=\toks46
-\lst@length=\count349
-\lst@currlwidth=\dimen302
-\lst@column=\count350
-\lst@pos=\count351
-\lst@lostspace=\dimen303
-\lst@width=\dimen304
-\lst@newlines=\count352
-\lst@lineno=\count353
-\lst@maxwidth=\dimen305
+\lst@length=\count373
+\lst@currlwidth=\dimen310
+\lst@column=\count374
+\lst@pos=\count375
+\lst@lostspace=\dimen311
+\lst@width=\dimen312
+\lst@newlines=\count376
+\lst@lineno=\count377
+\lst@maxwidth=\dimen313
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count354
-\lst@skipnumbers=\count355
-\lst@framebox=\box114
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count378
+\lst@skipnumbers=\count379
+\lst@framebox=\box116
+)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-Package: listings 2023/02/27 1.9 (Carsten Heinz)
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.st
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)) (C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.st
 y
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
-\RW=\skip73
-\mylen=\skip74
-\myhi=\skip75
-\px=\skip76
-\py=\skip77
-\pyy=\skip78
-\pxx=\skip79
+\RW=\skip74
+\mylen=\skip75
+\myhi=\skip76
+\px=\skip77
+\py=\skip78
+\pyy=\skip79
+\pxx=\skip80
 ) (fonction.tex
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
 pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
 Package french3.ldf Info: Setting StandardItemizeEnv=true for
 (french3.ldf)             compatibility with enumitem package,
@@ -1000,12 +1014,14 @@ Package french3.ldf Info: Setting StandardEnumerateEnv=true for
 (french3.ldf)             compatibility with enumitem package,
 (french3.ldf)             reported on input line 26.
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count356
-\l__pdf_internal_box=\box115
-) (Analyse.aux)
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count380
+) (Analyse.aux
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported on input line 12.
+)
 \openout1 = `Analyse.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1027,26 +1043,26 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count357
-\scratchdimen=\dimen306
-\scratchbox=\box116
-\nofMPsegments=\count358
-\nofMParguments=\count359
+\scratchcounter=\count381
+\scratchdimen=\dimen314
+\scratchbox=\box117
+\nofMPsegments=\count382
+\nofMParguments=\count383
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count360
-\MPscratchDim=\dimen307
-\MPnumerator=\count361
-\makeMPintoPDFobject=\count362
+\MPscratchCnt=\count384
+\MPscratchDim=\dimen315
+\MPnumerator=\count385
+\makeMPintoPDFobject=\count386
 \everyMPtoPDFconversion=\toks48
 )
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1056,7 +1072,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
@@ -1100,7 +1116,7 @@ Package hyperref Info: Link coloring ON on input line 26.
 \@outlinefile=\write4
 \openout4 = `Analyse.out'.
 
-\c@lstlisting=\count363
+\c@lstlisting=\count387
 <Minerve-Meduse.jpg, id=1778, 963.6pt x 755.82375pt>
 File: Minerve-Meduse.jpg Graphic file (type jpg)
 <use Minerve-Meduse.jpg>
@@ -1114,7 +1130,7 @@ Package pdftex.def Info: lycee_dumont_urville-1-copie.jpg  used on input line 5
 (pdftex.def)             Requested size: 153.64644pt x 59.94379pt.
  [0
 
-{C:/Users/marco/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Minerve-Me
+{C:/Users/estev/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Minerve-Me
 duse.jpg> <./lycee_dumont_urville-1-copie.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has 
 been already used, duplicate ignored
@@ -1160,48 +1176,43 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
 
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
 
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
 84.
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\omxyhex.fd
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\omxyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 84
 .
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 8
 4.
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
 Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
 [1] [2
 
-]
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-05.
- (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
-File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) (Analyse.toc [3]
+] (Analyse.toc [3]
 LaTeX Font Info:    Trying to load font information for U+eus on input line 108
 .
 
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueus.fd
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
 [4] [5] [6] [7] [8]
@@ -1220,7 +1231,7 @@ Overfull \hbox (2.98668pt too wide) in paragraph at lines 383--383
 Chapitre I.
 LaTeX Font Info:    Trying to load font information for OT1+pzc on input line 1
 07.
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pzc.fd
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pzc.fd
 File: ot1pzc.fd 2020/03/25 font definitions for OT1/pzc.
 )
 LaTeX Font Info:    Font shape `OT1/pzc/m/n' in size <76> not available
@@ -1238,7 +1249,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\etoile' on input line 117.
 
-[13{C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported on input line 136.
+[13{C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\ccinp' on input line 140.
@@ -2594,7 +2607,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\etoile' on input line 2588.
 
 [71]
-\c@saveenum=\count364
+\c@saveenum=\count388
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -3298,94 +3311,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 4535--4538
 
 
 LaTeX Warning: Hyper reference `SÃ©rie Harmonique' on page 121 undefined on inp
-ut line 4543.
+ut line 4544.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4543--4544
+Underfull \hbox (badness 10000) in paragraph at lines 4544--4545
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4545--4550
+Underfull \hbox (badness 10000) in paragraph at lines 4546--4551
 
  []
 
 [121]
-Underfull \hbox (badness 10000) in paragraph at lines 4558--4559
+Underfull \hbox (badness 10000) in paragraph at lines 4559--4560
 
  []
 
 [122]
-Underfull \hbox (badness 10000) in paragraph at lines 4591--4593
+Underfull \hbox (badness 10000) in paragraph at lines 4592--4594
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4593--4603
+Underfull \hbox (badness 10000) in paragraph at lines 4594--4604
 
  []
 
 [123]
-Underfull \hbox (badness 10000) in paragraph at lines 4618--4619
+Underfull \hbox (badness 10000) in paragraph at lines 4619--4620
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4621--4622
+Underfull \hbox (badness 10000) in paragraph at lines 4622--4623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4624--4630
+Underfull \hbox (badness 10000) in paragraph at lines 4625--4631
 
  []
 
 [124]
-Underfull \hbox (badness 10000) in paragraph at lines 4652--4654
+Underfull \hbox (badness 10000) in paragraph at lines 4653--4655
 
  []
 
 
 LaTeX Warning: Reference `Lemme de Cesaro' on page 125 undefined on input line 
-4661.
+4662.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4665--4666
+Underfull \hbox (badness 10000) in paragraph at lines 4666--4667
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4669--4671
+Underfull \hbox (badness 10000) in paragraph at lines 4670--4672
 
  []
 
 [125]
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4683
+Underfull \hbox (badness 10000) in paragraph at lines 4683--4684
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4685--4686
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4687
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4688--4689
+Underfull \hbox (badness 10000) in paragraph at lines 4689--4690
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4691--4692
+Underfull \hbox (badness 10000) in paragraph at lines 4692--4693
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4697--4701
+Underfull \hbox (badness 10000) in paragraph at lines 4698--4702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4705--4706
+Underfull \hbox (badness 10000) in paragraph at lines 4706--4707
 
  []
 
@@ -3393,47 +3406,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 4705--4706
 Underfull \vbox (badness 3954) has occurred while \output is active []
 
  [127]
-Underfull \hbox (badness 10000) in paragraph at lines 4765--4766
+Underfull \hbox (badness 10000) in paragraph at lines 4766--4767
 
  []
 
 [128]
-Underfull \hbox (badness 10000) in paragraph at lines 4782--4785
+Underfull \hbox (badness 10000) in paragraph at lines 4783--4786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4788--4789
+Underfull \hbox (badness 10000) in paragraph at lines 4789--4790
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4795--4801
+Underfull \hbox (badness 10000) in paragraph at lines 4796--4802
 
  []
 
 [129]
-Underfull \hbox (badness 10000) in paragraph at lines 4805--4806
+Underfull \hbox (badness 10000) in paragraph at lines 4806--4807
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4807--4822
+Underfull \hbox (badness 10000) in paragraph at lines 4808--4823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4807--4822
+Underfull \hbox (badness 10000) in paragraph at lines 4808--4823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4832--4833
+Underfull \hbox (badness 10000) in paragraph at lines 4833--4834
 
  []
 
 [130]
-Overfull \hbox (21.17285pt too wide) in paragraph at lines 4839--4849
+Overfull \hbox (21.17285pt too wide) in paragraph at lines 4840--4850
 \T1/cmr/m/n/10 Montrons main-te-nant $\U/eus/m/n/10 P\OT1/cmr/m/n/10 (2\OML/cmm
 /m/it/10 n\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 . On se donne $\OT1/cmr/m/n/10 (\OML
 /cmm/m/it/10 x[]; [] ; x[]; y[]; [] ; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \
@@ -3442,162 +3455,162 @@ OT1/cmr/m/n/10 (\U/msb/m/n/10 R[]\OT1/cmr/m/n/10 )[]$\T1/cmr/m/n/10 . En ap-pli
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4839--4849
+Underfull \hbox (badness 10000) in paragraph at lines 4840--4850
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4864--4865
+Underfull \hbox (badness 10000) in paragraph at lines 4865--4866
 
  []
 
 [131] [132] [133]
-Underfull \hbox (badness 10000) in paragraph at lines 4951--4956
+Underfull \hbox (badness 10000) in paragraph at lines 4952--4957
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4956--4966
+Underfull \hbox (badness 10000) in paragraph at lines 4957--4967
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4978--4980
+Underfull \hbox (badness 10000) in paragraph at lines 4979--4981
 
  []
 
 [134]
-Underfull \hbox (badness 10000) in paragraph at lines 4991--4994
+Underfull \hbox (badness 10000) in paragraph at lines 4992--4995
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4991--4994
+Underfull \hbox (badness 10000) in paragraph at lines 4992--4995
 
  []
 
 [135] [136]
 
-LaTeX Warning: Command \` invalid in math mode on input line 5047.
+LaTeX Warning: Command \` invalid in math mode on input line 5048.
 
 Missing character: There is no è in font cmr7!
 
-Underfull \hbox (badness 10000) in paragraph at lines 5059--5061
+Underfull \hbox (badness 10000) in paragraph at lines 5060--5062
 
  []
 
 [137]
-Underfull \hbox (badness 10000) in paragraph at lines 5087--5089
+Underfull \hbox (badness 10000) in paragraph at lines 5088--5090
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5103--5105
+Underfull \hbox (badness 10000) in paragraph at lines 5104--5106
 
  []
 
 [138]
-Underfull \hbox (badness 10000) in paragraph at lines 5120--5122
+Underfull \hbox (badness 10000) in paragraph at lines 5121--5123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5133--5135
+Underfull \hbox (badness 10000) in paragraph at lines 5134--5136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5146--5147
+Underfull \hbox (badness 10000) in paragraph at lines 5147--5148
 
  []
 
 [139]
-Underfull \hbox (badness 10000) in paragraph at lines 5179--5180
+Underfull \hbox (badness 10000) in paragraph at lines 5180--5181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5185--5187
+Underfull \hbox (badness 10000) in paragraph at lines 5186--5188
 
  []
 
 [140]
-Underfull \hbox (badness 10000) in paragraph at lines 5197--5198
+Underfull \hbox (badness 10000) in paragraph at lines 5198--5199
 
  []
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 5225.
+LaTeX Warning: Command \` invalid in math mode on input line 5226.
 
 Missing character: There is no è in font cmr7!
 
-LaTeX Warning: Command \` invalid in math mode on input line 5229.
+LaTeX Warning: Command \` invalid in math mode on input line 5230.
 
 Missing character: There is no è in font cmr7!
 
-Underfull \hbox (badness 10000) in paragraph at lines 5224--5232
+Underfull \hbox (badness 10000) in paragraph at lines 5225--5233
 
  []
 
 [141]
-Underfull \hbox (badness 10000) in paragraph at lines 5235--5236
+Underfull \hbox (badness 10000) in paragraph at lines 5236--5237
 
  []
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 5257.
-
-Missing character: There is no ø in font cmr10!
-
-LaTeX Warning: Command \o invalid in math mode on input line 5257.
+LaTeX Warning: Command \o invalid in math mode on input line 5258.
 
 Missing character: There is no ø in font cmr10!
 
 LaTeX Warning: Command \o invalid in math mode on input line 5258.
 
 Missing character: There is no ø in font cmr10!
+
+LaTeX Warning: Command \o invalid in math mode on input line 5259.
+
+Missing character: There is no ø in font cmr10!
 [142]
-Underfull \hbox (badness 10000) in paragraph at lines 5291--5293
+Underfull \hbox (badness 10000) in paragraph at lines 5292--5294
 
  []
 
 [143] [144]
-Underfull \hbox (badness 10000) in paragraph at lines 5329--5344
+Underfull \hbox (badness 10000) in paragraph at lines 5330--5345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5347--5358
+Underfull \hbox (badness 10000) in paragraph at lines 5348--5359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5347--5358
+Underfull \hbox (badness 10000) in paragraph at lines 5348--5359
 
  []
 
 [145]
-Underfull \hbox (badness 10000) in paragraph at lines 5374--5375
+Underfull \hbox (badness 10000) in paragraph at lines 5375--5376
 
  []
 
 [146]
-Underfull \hbox (badness 10000) in paragraph at lines 5380--5381
+Underfull \hbox (badness 10000) in paragraph at lines 5381--5382
 
  []
 
 [147]
-Underfull \hbox (badness 10000) in paragraph at lines 5423--5424
+Underfull \hbox (badness 10000) in paragraph at lines 5424--5425
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5454--5456
+Underfull \hbox (badness 10000) in paragraph at lines 5455--5457
 
  []
 
 [148]
-Overfull \hbox (4.3814pt too wide) in paragraph at lines 5465--5466
+Overfull \hbox (4.3814pt too wide) in paragraph at lines 5466--5467
 \T1/cmr/m/n/10 Ainsi d'après le théo-rème de trans-fert $\U/eus/m/n/10 C[]$\T1/
 cmr/m/n/10 , $\OML/cmm/m/it/10 I$ \T1/cmr/m/n/10 est $\U/eus/m/n/10 C[]$ \T1/cm
 r/m/n/10 sur $[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] = \U/ms
@@ -3608,121 +3621,121 @@ it/10 x\OT1/cmr/m/n/10 ) = [][] \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2\OML/cmm/m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5485--5486
+Underfull \hbox (badness 10000) in paragraph at lines 5486--5487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5487--5503
+Underfull \hbox (badness 10000) in paragraph at lines 5488--5504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5487--5503
+Underfull \hbox (badness 10000) in paragraph at lines 5488--5504
 
  []
 
 [149] [150]
-Underfull \hbox (badness 10000) in paragraph at lines 5533--5535
+Underfull \hbox (badness 10000) in paragraph at lines 5534--5536
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5555--5566
+Underfull \hbox (badness 10000) in paragraph at lines 5556--5567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5555--5566
+Underfull \hbox (badness 10000) in paragraph at lines 5556--5567
 
  []
 
 [151] [152]
-Underfull \hbox (badness 10000) in paragraph at lines 5612--5615
+Underfull \hbox (badness 10000) in paragraph at lines 5613--5616
 
  []
 
 [153]
-Underfull \hbox (badness 10000) in paragraph at lines 5630--5631
+Underfull \hbox (badness 10000) in paragraph at lines 5631--5632
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5634--5635
+Underfull \hbox (badness 10000) in paragraph at lines 5635--5636
 
  []
 
 
 LaTeX Warning: Hyper reference `IntÃ©grabilitÃ© des cosinus de polynÃ´mes' on p
-age 154 undefined on input line 5638.
+age 154 undefined on input line 5639.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5638--5639
+Underfull \hbox (badness 10000) in paragraph at lines 5639--5640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5651--5652
+Underfull \hbox (badness 10000) in paragraph at lines 5652--5653
 
  []
 
 [154]
-Underfull \hbox (badness 10000) in paragraph at lines 5688--5689
+Underfull \hbox (badness 10000) in paragraph at lines 5689--5690
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5692--5693
+Underfull \hbox (badness 10000) in paragraph at lines 5693--5694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5696--5697
+Underfull \hbox (badness 10000) in paragraph at lines 5697--5698
 
  []
 
 [155]
-Underfull \hbox (badness 10000) in paragraph at lines 5700--5701
+Underfull \hbox (badness 10000) in paragraph at lines 5701--5702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5704--5705
+Underfull \hbox (badness 10000) in paragraph at lines 5705--5706
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5708--5709
+Underfull \hbox (badness 10000) in paragraph at lines 5709--5710
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5712--5713
+Underfull \hbox (badness 10000) in paragraph at lines 5713--5714
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5728--5729
+Underfull \hbox (badness 10000) in paragraph at lines 5729--5730
 
  []
 
 [156]
-Underfull \hbox (badness 10000) in paragraph at lines 5747--5749
+Underfull \hbox (badness 10000) in paragraph at lines 5748--5750
 
  []
 
 [157]
-Underfull \hbox (badness 10000) in paragraph at lines 5773--5775
+Underfull \hbox (badness 10000) in paragraph at lines 5774--5776
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5792--5802
+Underfull \hbox (badness 10000) in paragraph at lines 5793--5803
 
  []
 
 
-Overfull \hbox (7.83534pt too wide) in paragraph at lines 5792--5802
+Overfull \hbox (7.83534pt too wide) in paragraph at lines 5793--5803
 \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 2 \U/stmry/m/n/10 J\OT1/c
 mr/m/n/10 1; \OML/cmm/m/it/10 n\U/stmry/m/n/10 K\OML/cmm/m/it/10 ;  ^^U[] \OT1/
 cmr/m/n/10 = [](\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 k\OT1/cmr
@@ -3731,49 +3744,49 @@ cmr/m/n/10 = [](\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 k\OT1/cmr
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5792--5802
+Underfull \hbox (badness 10000) in paragraph at lines 5793--5803
 
  []
 
 
-Overfull \hbox (35.31807pt too wide) in paragraph at lines 5792--5802
+Overfull \hbox (35.31807pt too wide) in paragraph at lines 5793--5803
 \T1/cmr/m/n/10 Or, $[] [][] [] [] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr
 /m/n/10 ) [] [][] + [][][][][] + [] [][] [](\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )
 $ 
  []
 
 [158]
-Underfull \hbox (badness 10000) in paragraph at lines 5812--5813
+Underfull \hbox (badness 10000) in paragraph at lines 5813--5814
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5815--5816
+Underfull \hbox (badness 10000) in paragraph at lines 5816--5817
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5818--5819
+Underfull \hbox (badness 10000) in paragraph at lines 5819--5820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5820--5821
+Underfull \hbox (badness 10000) in paragraph at lines 5821--5822
 
  []
 
 [159]
-Underfull \hbox (badness 10000) in paragraph at lines 5843--5844
+Underfull \hbox (badness 10000) in paragraph at lines 5844--5845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5846--5850
+Underfull \hbox (badness 10000) in paragraph at lines 5847--5851
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5854--5856
+Underfull \hbox (badness 10000) in paragraph at lines 5855--5857
 
  []
 
@@ -3781,12 +3794,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 5854--5856
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [160]
-Underfull \hbox (badness 10000) in paragraph at lines 5871--5872
+Underfull \hbox (badness 10000) in paragraph at lines 5872--5873
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5871--5872
+Underfull \hbox (badness 10000) in paragraph at lines 5872--5873
 
  []
 
@@ -3794,171 +3807,171 @@ Underfull \hbox (badness 10000) in paragraph at lines 5871--5872
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [161]
-Underfull \hbox (badness 10000) in paragraph at lines 5897--5913
+Underfull \hbox (badness 10000) in paragraph at lines 5898--5914
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5897--5913
+Underfull \hbox (badness 10000) in paragraph at lines 5898--5914
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5897--5913
+Underfull \hbox (badness 10000) in paragraph at lines 5898--5914
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5917--5918
+Underfull \hbox (badness 10000) in paragraph at lines 5918--5919
 
  []
 
 [162]
-Underfull \hbox (badness 10000) in paragraph at lines 5921--5922
+Underfull \hbox (badness 10000) in paragraph at lines 5922--5923
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5925--5926
+Underfull \hbox (badness 10000) in paragraph at lines 5926--5927
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5929--5930
+Underfull \hbox (badness 10000) in paragraph at lines 5930--5931
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5933--5934
+Underfull \hbox (badness 10000) in paragraph at lines 5934--5935
 
  []
 
 [163]
-Underfull \hbox (badness 10000) in paragraph at lines 5972--5973
+Underfull \hbox (badness 10000) in paragraph at lines 5973--5974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5976--5977
+Underfull \hbox (badness 10000) in paragraph at lines 5977--5978
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5979--5980
+Underfull \hbox (badness 10000) in paragraph at lines 5980--5981
 
  []
 
 [164] [165]
-Underfull \hbox (badness 10000) in paragraph at lines 6039--6041
+Underfull \hbox (badness 10000) in paragraph at lines 6040--6042
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6045--6047
+Underfull \hbox (badness 10000) in paragraph at lines 6046--6048
 
  []
 
 [166]
-Underfull \hbox (badness 10000) in paragraph at lines 6092--6093
+Underfull \hbox (badness 10000) in paragraph at lines 6093--6094
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6097--6099
+Underfull \hbox (badness 10000) in paragraph at lines 6098--6100
 
  []
 
 <trapeze.png, id=4948, 526.96875pt x 401.5pt>
 File: trapeze.png Graphic file (type png)
 <use trapeze.png>
-Package pdftex.def Info: trapeze.png  used on input line 6105.
+Package pdftex.def Info: trapeze.png  used on input line 6106.
 (pdftex.def)             Requested size: 307.2929pt x 234.13832pt.
 [167] [168 <./trapeze.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 6154--6158
+Underfull \hbox (badness 10000) in paragraph at lines 6155--6159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6160--6161
+Underfull \hbox (badness 10000) in paragraph at lines 6161--6162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6164--6165
+Underfull \hbox (badness 10000) in paragraph at lines 6165--6166
 
  []
 
 [169] [170]
-Underfull \hbox (badness 10000) in paragraph at lines 6171--6178
+Underfull \hbox (badness 10000) in paragraph at lines 6172--6179
 
  []
 
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 619
-1.
-(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
+2.
+(C:\Users\estev\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [171]
-Underfull \hbox (badness 10000) in paragraph at lines 6201--6202
+Underfull \hbox (badness 10000) in paragraph at lines 6202--6203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6205--6206
+Underfull \hbox (badness 10000) in paragraph at lines 6206--6207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6209--6210
+Underfull \hbox (badness 10000) in paragraph at lines 6210--6211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6219--6220
+Underfull \hbox (badness 10000) in paragraph at lines 6220--6221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6221--6224
+Underfull \hbox (badness 10000) in paragraph at lines 6222--6225
 
  []
 
 [172]
-Underfull \hbox (badness 10000) in paragraph at lines 6243--6244
+Underfull \hbox (badness 10000) in paragraph at lines 6244--6245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6266--6270
+Underfull \hbox (badness 10000) in paragraph at lines 6267--6271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6274--6275
+Underfull \hbox (badness 10000) in paragraph at lines 6275--6276
 
  []
 
 [173]
-Underfull \hbox (badness 10000) in paragraph at lines 6297--6308
+Underfull \hbox (badness 10000) in paragraph at lines 6298--6309
 
  []
 
 [174]
-Underfull \hbox (badness 10000) in paragraph at lines 6346--6347
+Underfull \hbox (badness 10000) in paragraph at lines 6347--6348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6361--6362
+Underfull \hbox (badness 10000) in paragraph at lines 6362--6363
 
  []
 
 [175]
-Underfull \hbox (badness 10000) in paragraph at lines 6386--6387
+Underfull \hbox (badness 10000) in paragraph at lines 6387--6388
 
  []
 
 
-Overfull \hbox (8.28284pt too wide) in paragraph at lines 6409--6419
+Overfull \hbox (8.28284pt too wide) in paragraph at lines 6410--6420
 []\T1/cmr/m/n/10 On dé-duit de la for-mule d'ad-di-tion de $[] \OT1/cmr/m/n/10 
 : \OMS/cmsy/m/n/10 8\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ) \OM
 S/cmsy/m/n/10 2 [][] \OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\
@@ -3968,47 +3981,47 @@ T1/cmr/m/n/10 + \OML/cmm/m/it/10 b\OT1/cmr/m/n/10 ) = []$\T1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6409--6419
+Underfull \hbox (badness 10000) in paragraph at lines 6410--6420
 
  []
 
 [176]
-Underfull \hbox (badness 10000) in paragraph at lines 6423--6424
+Underfull \hbox (badness 10000) in paragraph at lines 6424--6425
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6426--6428
+Underfull \hbox (badness 10000) in paragraph at lines 6427--6429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6451--6452
+Underfull \hbox (badness 10000) in paragraph at lines 6452--6453
 
  []
 
 [177]
-Underfull \hbox (badness 10000) in paragraph at lines 6455--6456
+Underfull \hbox (badness 10000) in paragraph at lines 6456--6457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6470--6472
+Underfull \hbox (badness 10000) in paragraph at lines 6471--6473
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6472--6487
+Underfull \hbox (badness 10000) in paragraph at lines 6473--6488
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6472--6487
+Underfull \hbox (badness 10000) in paragraph at lines 6473--6488
 
  []
 
 
-Overfull \hbox (7.14438pt too wide) in paragraph at lines 6472--6487
+Overfull \hbox (7.14438pt too wide) in paragraph at lines 6473--6488
 \OMS/cmsy/m/n/10 8\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/
 cmsy/m/n/10 2 \OML/cmm/m/it/10 I[];  f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Ux \O
 T1/cmr/m/n/10 + (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )\O
@@ -4017,31 +4030,31 @@ L/cmm/m/it/10 f [] \OMS/cmsy/m/n/10 ^^T [] \OT1/cmr/m/n/10 = [] =
  []
 
 [178]
-Underfull \hbox (badness 10000) in paragraph at lines 6489--6490
+Underfull \hbox (badness 10000) in paragraph at lines 6490--6491
 
  []
 
 
 LaTeX Warning: Reference `ThÃ©orÃ¨me de Froda' on page 179 undefined on input l
-ine 6503.
+ine 6504.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6508--6509
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6510--6514
+Underfull \hbox (badness 10000) in paragraph at lines 6509--6510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6514--6519
+Underfull \hbox (badness 10000) in paragraph at lines 6511--6515
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6515--6520
 
  []
 
 [179]
-Overfull \hbox (7.00624pt too wide) in paragraph at lines 6524--6541
+Overfull \hbox (7.00624pt too wide) in paragraph at lines 6525--6542
 \OT1/cmr/m/n/10 ^^H(\OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^
 Uf\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 c[] \OT1
 /cmr/m/n/10 + (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U\OT1/cmr/m/n/10 )\OML
@@ -4055,72 +4068,72 @@ t/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )[] +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6549--6550
+Underfull \hbox (badness 10000) in paragraph at lines 6550--6551
 
  []
 
 [180]
-Underfull \hbox (badness 10000) in paragraph at lines 6563--6571
+Underfull \hbox (badness 10000) in paragraph at lines 6564--6572
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6574--6575
+Underfull \hbox (badness 10000) in paragraph at lines 6575--6576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6580--6585
+Underfull \hbox (badness 10000) in paragraph at lines 6581--6586
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6580--6585
+Underfull \hbox (badness 10000) in paragraph at lines 6581--6586
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6580--6585
+Underfull \hbox (badness 10000) in paragraph at lines 6581--6586
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6580--6585
+Underfull \hbox (badness 10000) in paragraph at lines 6581--6586
 
  []
 
 [181] [182] [183]
-Underfull \hbox (badness 10000) in paragraph at lines 6653--6654
+Underfull \hbox (badness 10000) in paragraph at lines 6654--6655
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6681--6682
+Underfull \hbox (badness 10000) in paragraph at lines 6682--6683
 
  []
 
 [184]
-Underfull \hbox (badness 10000) in paragraph at lines 6691--6693
+Underfull \hbox (badness 10000) in paragraph at lines 6692--6694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6705--6706
+Underfull \hbox (badness 10000) in paragraph at lines 6706--6707
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6720--6722
+Underfull \hbox (badness 10000) in paragraph at lines 6721--6723
 
  []
 
 [185]
-Underfull \hbox (badness 10000) in paragraph at lines 6737--6738
+Underfull \hbox (badness 10000) in paragraph at lines 6738--6739
 
  []
 
 [186]
-Overfull \hbox (6.73367pt too wide) in paragraph at lines 6774--6779
+Overfull \hbox (6.73367pt too wide) in paragraph at lines 6775--6780
 \T1/cmr/m/n/10 D'après le théo-rème des bornes at-teintes $\OML/cmm/m/it/10 h$ 
 \T1/cmr/m/n/10 est bor-née sur $\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m
 /n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1]$ \T1/cmr/m/n/10 donc $\OML/cmm/m/i
@@ -4129,12 +4142,12 @@ t/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = [] [] [][]\U/eus/m
  []
 
 [187]
-Underfull \hbox (badness 10000) in paragraph at lines 6837--6838
+Underfull \hbox (badness 10000) in paragraph at lines 6838--6839
 
  []
 
 [188]
-Overfull \hbox (1.47186pt too wide) in paragraph at lines 6864--6866
+Overfull \hbox (1.47186pt too wide) in paragraph at lines 6865--6867
 \T1/cmr/m/n/10 Si $\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\U/msb/m/n/10 Z\OT1/cmr/m
 /n/10 ) \OMS/cmsy/m/n/10 ^^Z \U/msb/m/n/10 Z$ \T1/cmr/m/n/10 alors par ré-cur-r
 ence im-mé-diate $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 2 \U/st
@@ -4148,728 +4161,728 @@ mry/m/n/10 J\OT1/cmr/m/n/10 0; \OML/cmm/m/it/10 n\U/stmry/m/n/10 K\OML/cmm/m/it
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6870--6871
+Underfull \hbox (badness 10000) in paragraph at lines 6871--6872
 
  []
 
 [189]
-Underfull \hbox (badness 10000) in paragraph at lines 6898--6899
+Underfull \hbox (badness 10000) in paragraph at lines 6899--6900
 
  []
 
 [190]
-Underfull \hbox (badness 10000) in paragraph at lines 6925--6926
+Underfull \hbox (badness 10000) in paragraph at lines 6926--6927
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6944--6945
+Underfull \hbox (badness 10000) in paragraph at lines 6945--6946
 
  []
 
 [191]
-Underfull \hbox (badness 10000) in paragraph at lines 6958--6959
+Underfull \hbox (badness 10000) in paragraph at lines 6959--6960
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6962--6963
+Underfull \hbox (badness 10000) in paragraph at lines 6963--6964
 
  []
 
 [192]
-Underfull \hbox (badness 10000) in paragraph at lines 7011--7012
+Underfull \hbox (badness 10000) in paragraph at lines 7012--7013
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7015--7016
+Underfull \hbox (badness 10000) in paragraph at lines 7016--7017
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7019--7020
+Underfull \hbox (badness 10000) in paragraph at lines 7020--7021
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7023--7024
+Underfull \hbox (badness 10000) in paragraph at lines 7024--7025
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7027--7028
+Underfull \hbox (badness 10000) in paragraph at lines 7028--7029
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7031--7032
+Underfull \hbox (badness 10000) in paragraph at lines 7032--7033
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7035--7036
+Underfull \hbox (badness 10000) in paragraph at lines 7036--7037
 
  []
 
 [193]
-Underfull \hbox (badness 10000) in paragraph at lines 7056--7057
+Underfull \hbox (badness 10000) in paragraph at lines 7057--7058
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7060--7067
+Underfull \hbox (badness 10000) in paragraph at lines 7061--7068
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7070--7082
+Underfull \hbox (badness 10000) in paragraph at lines 7071--7083
 
  []
 
 [194]
-Underfull \hbox (badness 10000) in paragraph at lines 7093--7098
+Underfull \hbox (badness 10000) in paragraph at lines 7094--7099
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7093--7098
+Underfull \hbox (badness 10000) in paragraph at lines 7094--7099
 
  []
 
 [195]
-Underfull \hbox (badness 10000) in paragraph at lines 7109--7110
+Underfull \hbox (badness 10000) in paragraph at lines 7110--7111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7124--7125
+Underfull \hbox (badness 10000) in paragraph at lines 7125--7126
 
  []
 
 [196]
 
 LaTeX Warning: Hyper reference `gausslucas' on page 197 undefined on input line
- 7149.
+ 7150.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7166--7176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7166--7176
+Underfull \hbox (badness 10000) in paragraph at lines 7167--7177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7166--7176
+Underfull \hbox (badness 10000) in paragraph at lines 7167--7177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7167--7177
 
  []
 
 [197]
-Underfull \hbox (badness 10000) in paragraph at lines 7176--7188
+Underfull \hbox (badness 10000) in paragraph at lines 7177--7189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7176--7188
+Underfull \hbox (badness 10000) in paragraph at lines 7177--7189
 
  []
 
 
 LaTeX Warning: Hyper reference `polycommutecos' on page 198 undefined on input 
-line 7200.
+line 7201.
 
 [198]
-Underfull \hbox (badness 10000) in paragraph at lines 7241--7247
+Underfull \hbox (badness 10000) in paragraph at lines 7242--7248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7241--7247
+Underfull \hbox (badness 10000) in paragraph at lines 7242--7248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7241--7247
+Underfull \hbox (badness 10000) in paragraph at lines 7242--7248
 
  []
 
 [199]
-Underfull \hbox (badness 10000) in paragraph at lines 7263--7264
+Underfull \hbox (badness 10000) in paragraph at lines 7264--7265
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7287--7291
+Underfull \hbox (badness 10000) in paragraph at lines 7288--7292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7292--7300
+Underfull \hbox (badness 10000) in paragraph at lines 7293--7301
 
  []
 
 [200]
-Underfull \hbox (badness 10000) in paragraph at lines 7312--7313
+Underfull \hbox (badness 10000) in paragraph at lines 7313--7314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7316--7317
+Underfull \hbox (badness 10000) in paragraph at lines 7317--7318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7330--7332
+Underfull \hbox (badness 10000) in paragraph at lines 7331--7333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7332--7336
+Underfull \hbox (badness 10000) in paragraph at lines 7333--7337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7336--7348
+Underfull \hbox (badness 10000) in paragraph at lines 7337--7349
 
  []
 
 [201]
-Underfull \hbox (badness 10000) in paragraph at lines 7361--7363
+Underfull \hbox (badness 10000) in paragraph at lines 7362--7364
 
  []
 
 [202]
-Underfull \hbox (badness 10000) in paragraph at lines 7390--7391
+Underfull \hbox (badness 10000) in paragraph at lines 7391--7392
 
  []
 
 
 LaTeX Warning: Reference `PolynÃ´me rÃ©ciproque' on page 203 undefined on input
- line 7400.
+ line 7401.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7405--7406
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7412--7413
+Underfull \hbox (badness 10000) in paragraph at lines 7406--7407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7416--7417
+Underfull \hbox (badness 10000) in paragraph at lines 7413--7414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7420--7421
+Underfull \hbox (badness 10000) in paragraph at lines 7417--7418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7421--7422
 
  []
 
 [203]
-Underfull \hbox (badness 10000) in paragraph at lines 7424--7425
+Underfull \hbox (badness 10000) in paragraph at lines 7425--7426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7443--7444
+Underfull \hbox (badness 10000) in paragraph at lines 7444--7445
 
  []
 
 [204]
-Underfull \hbox (badness 10000) in paragraph at lines 7455--7456
+Underfull \hbox (badness 10000) in paragraph at lines 7456--7457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7465--7466
+Underfull \hbox (badness 10000) in paragraph at lines 7466--7467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7471--7473
+Underfull \hbox (badness 10000) in paragraph at lines 7472--7474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7478--7479
+Underfull \hbox (badness 10000) in paragraph at lines 7479--7480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7485--7487
+Underfull \hbox (badness 10000) in paragraph at lines 7486--7488
 
  []
 
 [205]
 
 LaTeX Warning: Hyper reference `polyrecip' on page 206 undefined on input line 
-7493.
+7494.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7493--7494
+Underfull \hbox (badness 10000) in paragraph at lines 7494--7495
 
  []
 
 [206]
-Underfull \hbox (badness 10000) in paragraph at lines 7519--7521
+Underfull \hbox (badness 10000) in paragraph at lines 7520--7522
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7523--7530
+Underfull \hbox (badness 10000) in paragraph at lines 7524--7531
 
  []
 
 [207]
-Underfull \hbox (badness 10000) in paragraph at lines 7557--7560
+Underfull \hbox (badness 10000) in paragraph at lines 7558--7561
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7572--7574
+Underfull \hbox (badness 10000) in paragraph at lines 7573--7575
 
  []
 
 [208]
-Underfull \hbox (badness 10000) in paragraph at lines 7578--7584
+Underfull \hbox (badness 10000) in paragraph at lines 7579--7585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7604--7606
+Underfull \hbox (badness 10000) in paragraph at lines 7605--7607
 
  []
 
 [209]
-Underfull \hbox (badness 10000) in paragraph at lines 7624--7634
+Underfull \hbox (badness 10000) in paragraph at lines 7625--7635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7624--7634
+Underfull \hbox (badness 10000) in paragraph at lines 7625--7635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7624--7634
+Underfull \hbox (badness 10000) in paragraph at lines 7625--7635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7624--7634
+Underfull \hbox (badness 10000) in paragraph at lines 7625--7635
 
  []
 
 [210]
-Underfull \hbox (badness 10000) in paragraph at lines 7639--7655
+Underfull \hbox (badness 10000) in paragraph at lines 7640--7656
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7639--7655
+Underfull \hbox (badness 10000) in paragraph at lines 7640--7656
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7695--7698
+Underfull \hbox (badness 10000) in paragraph at lines 7696--7699
 
  []
 
 [211]
-Underfull \hbox (badness 10000) in paragraph at lines 7701--7702
+Underfull \hbox (badness 10000) in paragraph at lines 7702--7703
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7711--7713
+Underfull \hbox (badness 10000) in paragraph at lines 7712--7714
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7713--7714
+Underfull \hbox (badness 10000) in paragraph at lines 7714--7715
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7721--7722
+Underfull \hbox (badness 10000) in paragraph at lines 7722--7723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7727--7729
+Underfull \hbox (badness 10000) in paragraph at lines 7728--7730
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7732--7734
+Underfull \hbox (badness 10000) in paragraph at lines 7733--7735
 
  []
 
 [212]
-Underfull \hbox (badness 10000) in paragraph at lines 7740--7741
+Underfull \hbox (badness 10000) in paragraph at lines 7741--7742
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7748--7749
+Underfull \hbox (badness 10000) in paragraph at lines 7749--7750
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7777--7778
+Underfull \hbox (badness 10000) in paragraph at lines 7778--7779
 
  []
 
 [213]
-Underfull \hbox (badness 10000) in paragraph at lines 7779--7785
+Underfull \hbox (badness 10000) in paragraph at lines 7780--7786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7789--7790
+Underfull \hbox (badness 10000) in paragraph at lines 7790--7791
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7802--7804
+Underfull \hbox (badness 10000) in paragraph at lines 7803--7805
 
  []
 
 [214]
-Underfull \hbox (badness 10000) in paragraph at lines 7854--7855
+Underfull \hbox (badness 10000) in paragraph at lines 7855--7856
 
  []
 
 [215]
-Underfull \hbox (badness 10000) in paragraph at lines 7864--7865
+Underfull \hbox (badness 10000) in paragraph at lines 7865--7866
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7897--7898
+Underfull \hbox (badness 10000) in paragraph at lines 7898--7899
 
  []
 
 [216]
-Underfull \hbox (badness 10000) in paragraph at lines 7900--7902
+Underfull \hbox (badness 10000) in paragraph at lines 7901--7903
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7908--7909
+Underfull \hbox (badness 10000) in paragraph at lines 7909--7910
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7909--7911
+Underfull \hbox (badness 10000) in paragraph at lines 7910--7912
 
  []
 
 [217]
-Underfull \hbox (badness 10000) in paragraph at lines 7947--7948
+Underfull \hbox (badness 10000) in paragraph at lines 7948--7949
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7949--7951
+Underfull \hbox (badness 10000) in paragraph at lines 7950--7952
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7968--7969
+Underfull \hbox (badness 10000) in paragraph at lines 7969--7970
 
  []
 
 [218]
-Underfull \hbox (badness 10000) in paragraph at lines 7978--7979
+Underfull \hbox (badness 10000) in paragraph at lines 7979--7980
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8015--8016
+Underfull \hbox (badness 10000) in paragraph at lines 8016--8017
 
  []
 
 [219]
-Underfull \hbox (badness 10000) in paragraph at lines 8017--8019
+Underfull \hbox (badness 10000) in paragraph at lines 8018--8020
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8020--8021
+Underfull \hbox (badness 10000) in paragraph at lines 8021--8022
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8032--8033
+Underfull \hbox (badness 10000) in paragraph at lines 8033--8034
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8054--8055
+Underfull \hbox (badness 10000) in paragraph at lines 8055--8056
 
  []
 
 [220]
-Underfull \hbox (badness 10000) in paragraph at lines 8068--8069
+Underfull \hbox (badness 10000) in paragraph at lines 8069--8070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8086--8087
+Underfull \hbox (badness 10000) in paragraph at lines 8087--8088
 
  []
 
 [221]
-Underfull \hbox (badness 10000) in paragraph at lines 8096--8101
+Underfull \hbox (badness 10000) in paragraph at lines 8097--8102
 
  []
 
 [222]
-Underfull \hbox (badness 10000) in paragraph at lines 8141--8142
+Underfull \hbox (badness 10000) in paragraph at lines 8142--8143
 
  []
 
 [223]
-Underfull \hbox (badness 10000) in paragraph at lines 8204--8206
+Underfull \hbox (badness 10000) in paragraph at lines 8205--8207
 
  []
 
 [224]
-Underfull \hbox (badness 10000) in paragraph at lines 8225--8227
+Underfull \hbox (badness 10000) in paragraph at lines 8226--8228
 
  []
 
 [225]
-Underfull \hbox (badness 10000) in paragraph at lines 8248--8249
+Underfull \hbox (badness 10000) in paragraph at lines 8249--8250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8262--8264
+Underfull \hbox (badness 10000) in paragraph at lines 8263--8265
 
  []
 
 [226]
-Underfull \hbox (badness 10000) in paragraph at lines 8287--8289
+Underfull \hbox (badness 10000) in paragraph at lines 8288--8290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8305--8306
+Underfull \hbox (badness 10000) in paragraph at lines 8306--8307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8307--8309
+Underfull \hbox (badness 10000) in paragraph at lines 8308--8310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8310--8311
+Underfull \hbox (badness 10000) in paragraph at lines 8311--8312
 
  []
 
 [227]
-Underfull \hbox (badness 10000) in paragraph at lines 8316--8317
+Underfull \hbox (badness 10000) in paragraph at lines 8317--8318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8333--8334
+Underfull \hbox (badness 10000) in paragraph at lines 8334--8335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8336--8339
+Underfull \hbox (badness 10000) in paragraph at lines 8337--8340
 
  []
 
 [228]
 
-LaTeX Warning: Command \o invalid in math mode on input line 8368.
+LaTeX Warning: Command \o invalid in math mode on input line 8369.
 
 Missing character: There is no ø in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 8375--8376
+Underfull \hbox (badness 10000) in paragraph at lines 8376--8377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8378--8379
+Underfull \hbox (badness 10000) in paragraph at lines 8379--8380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8380--8381
+Underfull \hbox (badness 10000) in paragraph at lines 8381--8382
 
  []
 
 [229]
-Underfull \hbox (badness 10000) in paragraph at lines 8382--8383
+Underfull \hbox (badness 10000) in paragraph at lines 8383--8384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8386--8387
+Underfull \hbox (badness 10000) in paragraph at lines 8387--8388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8388--8392
+Underfull \hbox (badness 10000) in paragraph at lines 8389--8393
 
  []
 
 [230]
-Underfull \hbox (badness 10000) in paragraph at lines 8426--8427
+Underfull \hbox (badness 10000) in paragraph at lines 8427--8428
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8428--8429
+Underfull \hbox (badness 10000) in paragraph at lines 8429--8430
 
  []
 
 [231]
-Underfull \hbox (badness 10000) in paragraph at lines 8440--8441
+Underfull \hbox (badness 10000) in paragraph at lines 8441--8442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8442--8443
+Underfull \hbox (badness 10000) in paragraph at lines 8443--8444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8450--8452
+Underfull \hbox (badness 10000) in paragraph at lines 8451--8453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8461--8462
+Underfull \hbox (badness 10000) in paragraph at lines 8462--8463
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8463--8464
+Underfull \hbox (badness 10000) in paragraph at lines 8464--8465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8465--8466
+Underfull \hbox (badness 10000) in paragraph at lines 8466--8467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8469--8470
+Underfull \hbox (badness 10000) in paragraph at lines 8470--8471
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8472--8473
+Underfull \hbox (badness 10000) in paragraph at lines 8473--8474
 
  []
 
 [232]
-Underfull \hbox (badness 10000) in paragraph at lines 8475--8476
+Underfull \hbox (badness 10000) in paragraph at lines 8476--8477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8478--8479
+Underfull \hbox (badness 10000) in paragraph at lines 8479--8480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8481--8482
+Underfull \hbox (badness 10000) in paragraph at lines 8482--8483
 
  []
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 8486.
+LaTeX Warning: Command \` invalid in math mode on input line 8487.
 
 Missing character: There is no è in font cmr7!
 
 LaTeX Warning: Reference `Lemme des compacts emboÃ®tÃ©s' on page 233 undefined 
-on input line 8497.
+on input line 8498.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8483--8500
+Underfull \hbox (badness 10000) in paragraph at lines 8484--8501
 
  []
 
 [233]
-Underfull \hbox (badness 10000) in paragraph at lines 8519--8520
+Underfull \hbox (badness 10000) in paragraph at lines 8520--8521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8534--8535
+Underfull \hbox (badness 10000) in paragraph at lines 8535--8536
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8537--8538
+Underfull \hbox (badness 10000) in paragraph at lines 8538--8539
 
  []
 
 [234]
-Underfull \hbox (badness 10000) in paragraph at lines 8586--8587
+Underfull \hbox (badness 10000) in paragraph at lines 8587--8588
 
  []
 
 [235]
-Underfull \hbox (badness 10000) in paragraph at lines 8590--8594
+Underfull \hbox (badness 10000) in paragraph at lines 8591--8595
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8612--8613
+Underfull \hbox (badness 10000) in paragraph at lines 8613--8614
 
  []
 
 [236]
-Underfull \hbox (badness 10000) in paragraph at lines 8641--8646
+Underfull \hbox (badness 10000) in paragraph at lines 8642--8647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8649--8652
+Underfull \hbox (badness 10000) in paragraph at lines 8650--8653
 
  []
 
 [237]
-Underfull \hbox (badness 10000) in paragraph at lines 8656--8662
+Underfull \hbox (badness 10000) in paragraph at lines 8657--8663
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8666--8667
+Underfull \hbox (badness 10000) in paragraph at lines 8667--8668
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8688--8690
+Underfull \hbox (badness 10000) in paragraph at lines 8689--8691
 
  []
 
 [238]
-Underfull \hbox (badness 10000) in paragraph at lines 8725--8727
+Underfull \hbox (badness 10000) in paragraph at lines 8726--8728
 
  []
 
 [239]
-Underfull \hbox (badness 10000) in paragraph at lines 8729--8730
+Underfull \hbox (badness 10000) in paragraph at lines 8730--8731
 
  []
 
 
-Overfull \hbox (16.55428pt too wide) detected at line 8737
+Overfull \hbox (16.55428pt too wide) detected at line 8738
 \OT1/cmr/m/n/10 (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML
 /cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = (\OML/cm
 m/m/it/10 p \OT1/cmr/m/n/10 + 1) [] []\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@
@@ -4879,112 +4892,112 @@ t/10 p \OT1/cmr/m/n/10 + 1) [] [] \OML/cmm/m/it/10 x[]
  []
 
 [240]
-Underfull \hbox (badness 10000) in paragraph at lines 8762--8765
+Underfull \hbox (badness 10000) in paragraph at lines 8763--8766
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8773--8774
+Underfull \hbox (badness 10000) in paragraph at lines 8774--8775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8775--8777
+Underfull \hbox (badness 10000) in paragraph at lines 8776--8778
 
  []
 
 [241]
-Underfull \hbox (badness 10000) in paragraph at lines 8796--8797
+Underfull \hbox (badness 10000) in paragraph at lines 8797--8798
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8800--8801
+Underfull \hbox (badness 10000) in paragraph at lines 8801--8802
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8804--8805
+Underfull \hbox (badness 10000) in paragraph at lines 8805--8806
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8808--8809
+Underfull \hbox (badness 10000) in paragraph at lines 8809--8810
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8812--8813
+Underfull \hbox (badness 10000) in paragraph at lines 8813--8814
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8820--8821
+Underfull \hbox (badness 10000) in paragraph at lines 8821--8822
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8824--8825
+Underfull \hbox (badness 10000) in paragraph at lines 8825--8826
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8828--8829
+Underfull \hbox (badness 10000) in paragraph at lines 8829--8830
 
  []
 
 [242]
-Underfull \hbox (badness 10000) in paragraph at lines 8832--8833
+Underfull \hbox (badness 10000) in paragraph at lines 8833--8834
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8836--8837
+Underfull \hbox (badness 10000) in paragraph at lines 8837--8838
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8840--8841
+Underfull \hbox (badness 10000) in paragraph at lines 8841--8842
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8844--8845
+Underfull \hbox (badness 10000) in paragraph at lines 8845--8846
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8852--8853
+Underfull \hbox (badness 10000) in paragraph at lines 8853--8854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8856--8857
+Underfull \hbox (badness 10000) in paragraph at lines 8857--8858
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8860--8861
+Underfull \hbox (badness 10000) in paragraph at lines 8861--8862
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8864--8865
+Underfull \hbox (badness 10000) in paragraph at lines 8865--8866
 
  []
 
 [243] [244]
-Underfull \hbox (badness 10000) in paragraph at lines 8922--8923
+Underfull \hbox (badness 10000) in paragraph at lines 8923--8924
 
  []
 
 [245]
-Underfull \hbox (badness 10000) in paragraph at lines 8954--8956
+Underfull \hbox (badness 10000) in paragraph at lines 8955--8957
 
  []
 
 [246]
-Overfull \hbox (1.78352pt too wide) in paragraph at lines 8982--8987
+Overfull \hbox (1.78352pt too wide) in paragraph at lines 8983--8988
 \T1/cmr/m/n/10 Tout d'abord c'est bien une par-tie de $\OML/cmm/m/it/10 `[]$ \T
 1/cmr/m/n/10 puis-qu'une suite conver-gente est bor-née. En-suite, don-nons nou
 s $\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 u[]\OT1/cmr/m/n/10 )[])[] \OMS/cmsy/m/n/1
@@ -4992,116 +5005,116 @@ s $\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 u[]\OT1/cmr/m/n/10 )[])[] \OMS/cmsy/m/n/1
  []
 
 [247]
-Underfull \hbox (badness 10000) in paragraph at lines 9003--9015
+Underfull \hbox (badness 10000) in paragraph at lines 9004--9016
 
  []
 
 [248]
-Underfull \hbox (badness 10000) in paragraph at lines 9034--9035
+Underfull \hbox (badness 10000) in paragraph at lines 9035--9036
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9051--9052
+Underfull \hbox (badness 10000) in paragraph at lines 9052--9053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9064--9065
+Underfull \hbox (badness 10000) in paragraph at lines 9065--9066
 
  []
 
 
 LaTeX Warning: Reference `R est complet' on page 249 undefined on input line 90
-80.
+81.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9070--9081
+Underfull \hbox (badness 10000) in paragraph at lines 9071--9082
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9070--9081
+Underfull \hbox (badness 10000) in paragraph at lines 9071--9082
 
  []
 
 [249]
-Underfull \hbox (badness 10000) in paragraph at lines 9090--9091
+Underfull \hbox (badness 10000) in paragraph at lines 9091--9092
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9112--9113
+Underfull \hbox (badness 10000) in paragraph at lines 9113--9114
 
  []
 
 [250]
-Underfull \hbox (badness 10000) in paragraph at lines 9131--9132
+Underfull \hbox (badness 10000) in paragraph at lines 9132--9133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9141--9163
+Underfull \hbox (badness 10000) in paragraph at lines 9142--9164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9141--9163
+Underfull \hbox (badness 10000) in paragraph at lines 9142--9164
 
  []
 
 [251]
-Underfull \hbox (badness 10000) in paragraph at lines 9167--9168
+Underfull \hbox (badness 10000) in paragraph at lines 9168--9169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9169--9171
+Underfull \hbox (badness 10000) in paragraph at lines 9170--9172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9171--9175
+Underfull \hbox (badness 10000) in paragraph at lines 9172--9176
 
  []
 
 [252]
-Underfull \hbox (badness 10000) in paragraph at lines 9229--9230
+Underfull \hbox (badness 10000) in paragraph at lines 9230--9231
 
  []
 
 [253]
-Underfull \hbox (badness 10000) in paragraph at lines 9251--9252
+Underfull \hbox (badness 10000) in paragraph at lines 9252--9253
 
  []
 
 [254]
-Underfull \hbox (badness 10000) in paragraph at lines 9269--9270
+Underfull \hbox (badness 10000) in paragraph at lines 9270--9271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9284--9303
+Underfull \hbox (badness 10000) in paragraph at lines 9285--9304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9284--9303
+Underfull \hbox (badness 10000) in paragraph at lines 9285--9304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9284--9303
+Underfull \hbox (badness 10000) in paragraph at lines 9285--9304
 
  []
 
 [255]
-Underfull \hbox (badness 10000) in paragraph at lines 9306--9315
+Underfull \hbox (badness 10000) in paragraph at lines 9307--9316
 
  []
 
 
-Overfull \hbox (2.33768pt too wide) in paragraph at lines 9315--9317
+Overfull \hbox (2.33768pt too wide) in paragraph at lines 9316--9318
 \U/msb/m/n/10 N[]\OML/cmm/m/it/10 ;  [][] \OMS/cmsy/m/n/10 ^^T [][] \OT1/cmr/m/
 n/10 + [][] [] 0$\T1/cmr/m/n/10 . Au-tre-ment dit $[]\OML/cmm/m/it/10 y[] \OT1/
 cmr/m/n/10 = \OML/cmm/m/it/10 x$\T1/cmr/m/n/10 . Pour-tant $\OT1/cmr/m/n/10 (\O
@@ -5109,37 +5122,37 @@ ML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y[]\OT1/cmr/m/n/10 ))[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9321--9329
+Underfull \hbox (badness 10000) in paragraph at lines 9322--9330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9332--9333
+Underfull \hbox (badness 10000) in paragraph at lines 9333--9334
 
  []
 
 [256]
-Underfull \hbox (badness 10000) in paragraph at lines 9344--9356
+Underfull \hbox (badness 10000) in paragraph at lines 9345--9357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9344--9356
+Underfull \hbox (badness 10000) in paragraph at lines 9345--9357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9363--9365
+Underfull \hbox (badness 10000) in paragraph at lines 9364--9366
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9375--9376
+Underfull \hbox (badness 10000) in paragraph at lines 9376--9377
 
  []
 
 [257]
-Underfull \hbox (badness 10000) in paragraph at lines 9378--9398
+Underfull \hbox (badness 10000) in paragraph at lines 9379--9399
 
  []
 
@@ -5147,112 +5160,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 9378--9398
 Underfull \vbox (badness 2460) has occurred while \output is active []
 
  [258]
-Underfull \hbox (badness 10000) in paragraph at lines 9458--9459
+Underfull \hbox (badness 10000) in paragraph at lines 9459--9460
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9462--9463
+Underfull \hbox (badness 10000) in paragraph at lines 9463--9464
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9466--9467
+Underfull \hbox (badness 10000) in paragraph at lines 9467--9468
 
  []
 
 [259]
-Underfull \hbox (badness 10000) in paragraph at lines 9470--9471
+Underfull \hbox (badness 10000) in paragraph at lines 9471--9472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9474--9475
+Underfull \hbox (badness 10000) in paragraph at lines 9475--9476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9478--9479
+Underfull \hbox (badness 10000) in paragraph at lines 9479--9480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9482--9483
+Underfull \hbox (badness 10000) in paragraph at lines 9483--9484
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9496--9497
+Underfull \hbox (badness 10000) in paragraph at lines 9497--9498
 
  []
 
 [260]
-Underfull \hbox (badness 10000) in paragraph at lines 9532--9541
+Underfull \hbox (badness 10000) in paragraph at lines 9533--9542
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9541--9545
+Underfull \hbox (badness 10000) in paragraph at lines 9542--9546
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9548--9549
+Underfull \hbox (badness 10000) in paragraph at lines 9549--9550
 
  []
 
 [261]
-Underfull \hbox (badness 10000) in paragraph at lines 9551--9552
+Underfull \hbox (badness 10000) in paragraph at lines 9552--9553
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9555--9556
+Underfull \hbox (badness 10000) in paragraph at lines 9556--9557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9563--9564
+Underfull \hbox (badness 10000) in paragraph at lines 9564--9565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9567--9568
+Underfull \hbox (badness 10000) in paragraph at lines 9568--9569
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9571--9582
+Underfull \hbox (badness 10000) in paragraph at lines 9572--9583
 
  []
 
 [262]
-Underfull \hbox (badness 10000) in paragraph at lines 9605--9617
+Underfull \hbox (badness 10000) in paragraph at lines 9606--9618
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9605--9617
+Underfull \hbox (badness 10000) in paragraph at lines 9606--9618
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9639--9646
+Underfull \hbox (badness 10000) in paragraph at lines 9640--9647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9639--9646
+Underfull \hbox (badness 10000) in paragraph at lines 9640--9647
 
  []
 
 [263]
-Underfull \hbox (badness 10000) in paragraph at lines 9652--9653
+Underfull \hbox (badness 10000) in paragraph at lines 9653--9654
 
  []
 
 [264]
-Overfull \hbox (45.27078pt too wide) in paragraph at lines 9665--9673
+Overfull \hbox (45.27078pt too wide) in paragraph at lines 9666--9674
 \T1/cmr/m/n/10 On peut déjà re-mar-quer que si $\OML/cmm/m/it/10 a; a[] \OMS/cm
 sy/m/n/10 2 \OML/cmm/m/it/10 A$ \T1/cmr/m/n/10 alors par convexité l'arc de cer
 cle formé par $[]$ et $[]$ est $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 e[];  t \OMS
@@ -5260,22 +5273,22 @@ cle formé par $[]$ et $[]$ est $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 e[];  t \OMS
  []
 
 [265]
-Underfull \hbox (badness 10000) in paragraph at lines 9715--9722
+Underfull \hbox (badness 10000) in paragraph at lines 9716--9723
 
  []
 
 [266]
-Underfull \hbox (badness 10000) in paragraph at lines 9758--9759
+Underfull \hbox (badness 10000) in paragraph at lines 9759--9760
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9762--9763
+Underfull \hbox (badness 10000) in paragraph at lines 9763--9764
 
  []
 
 [267]
-Overfull \hbox (0.41145pt too wide) in paragraph at lines 9767--9769
+Overfull \hbox (0.41145pt too wide) in paragraph at lines 9768--9770
 \T1/cmr/m/n/10 Ensuite, pour tout $\OML/cmm/m/it/10 i \OMS/cmsy/m/n/10 6\OT1/cm
 r/m/n/10 = \OML/cmm/m/it/10 j \OMS/cmsy/m/n/10 2 \U/stmry/m/n/10 J\OML/cmm/m/it
 /10 d \OT1/cmr/m/n/10 + 1; \OML/cmm/m/it/10 n\U/stmry/m/n/10 K$\T1/cmr/m/n/10 ,
@@ -5289,121 +5302,121 @@ cmr/m/n/10 0\OMS/cmsy/m/n/10 g ^^Z
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9774--9775
+Underfull \hbox (badness 10000) in paragraph at lines 9775--9776
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9778--9781
+Underfull \hbox (badness 10000) in paragraph at lines 9779--9782
 
  []
 
 [268]
 
 LaTeX Warning: Reference `ConnexitÃ© de l'espace' on page 269 undefined on inpu
-t line 9818.
+t line 9819.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9825--9826
+Underfull \hbox (badness 10000) in paragraph at lines 9826--9827
 
  []
 
 [269]
-Underfull \hbox (badness 10000) in paragraph at lines 9866--9867
+Underfull \hbox (badness 10000) in paragraph at lines 9867--9868
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9870--9871
+Underfull \hbox (badness 10000) in paragraph at lines 9871--9872
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9873--9874
+Underfull \hbox (badness 10000) in paragraph at lines 9874--9875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9876--9877
+Underfull \hbox (badness 10000) in paragraph at lines 9877--9878
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9879--9881
+Underfull \hbox (badness 10000) in paragraph at lines 9880--9882
 
  []
 
 
-LaTeX Warning: Reference `rg1' on page 270 undefined on input line 9883.
+LaTeX Warning: Reference `rg1' on page 270 undefined on input line 9884.
 
 [270]
-Underfull \hbox (badness 10000) in paragraph at lines 9894--9896
+Underfull \hbox (badness 10000) in paragraph at lines 9895--9897
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9910--9913
+Underfull \hbox (badness 10000) in paragraph at lines 9911--9914
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9924--9925
+Underfull \hbox (badness 10000) in paragraph at lines 9925--9926
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9928--9929
+Underfull \hbox (badness 10000) in paragraph at lines 9929--9930
 
  []
 
 [271]
-Underfull \hbox (badness 10000) in paragraph at lines 9953--9954
+Underfull \hbox (badness 10000) in paragraph at lines 9954--9955
 
  []
 
 [272]
-Underfull \hbox (badness 10000) in paragraph at lines 9964--9973
+Underfull \hbox (badness 10000) in paragraph at lines 9965--9974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9976--9977
+Underfull \hbox (badness 10000) in paragraph at lines 9977--9978
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9986--9996
+Underfull \hbox (badness 10000) in paragraph at lines 9987--9997
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9999--10005
+Underfull \hbox (badness 10000) in paragraph at lines 10000--10006
 
  []
 
 [273]
-Underfull \hbox (badness 10000) in paragraph at lines 10024--10056
+Underfull \hbox (badness 10000) in paragraph at lines 10025--10057
 
  []
 
 
-Overfull \hbox (37.54675pt too wide) in paragraph at lines 10024--10056
+Overfull \hbox (37.54675pt too wide) in paragraph at lines 10025--10057
 \T1/cmr/m/n/10 D'autre part, $[][]\OML/cmm/m/it/10 QMQ[] \OT1/cmr/m/n/10 = [] [
 ] = []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10056--10063
+Underfull \hbox (badness 10000) in paragraph at lines 10057--10064
 
  []
 
 [274]
-Underfull \hbox (badness 10000) in paragraph at lines 10079--10080
+Underfull \hbox (badness 10000) in paragraph at lines 10080--10081
 
  []
 
 
-Overfull \hbox (14.07722pt too wide) in paragraph at lines 10081--10085
+Overfull \hbox (14.07722pt too wide) in paragraph at lines 10082--10086
 \T1/cmr/m/n/10 On note $\OML/cmm/m/it/10 A$ \T1/cmr/m/n/10 l'en-semble des po-l
 y-nôme uni-taire de de-gré $\OML/cmm/m/it/10 n$ \T1/cmr/m/n/10 scindé à ra-cine
 s simples sur $\U/msb/m/n/10 R\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/1
@@ -5411,92 +5424,92 @@ s simples sur $\U/msb/m/n/10 R\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X\OT1/cmr/m/n/1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10085--10113
+Underfull \hbox (badness 10000) in paragraph at lines 10086--10114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10085--10113
+Underfull \hbox (badness 10000) in paragraph at lines 10086--10114
 
  []
 
 [275]
-Underfull \hbox (badness 10000) in paragraph at lines 10113--10136
+Underfull \hbox (badness 10000) in paragraph at lines 10114--10137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10113--10136
+Underfull \hbox (badness 10000) in paragraph at lines 10114--10137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10140--10141
+Underfull \hbox (badness 10000) in paragraph at lines 10141--10142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10157--10167
+Underfull \hbox (badness 10000) in paragraph at lines 10158--10168
 
  []
 
 [276]
-Underfull \hbox (badness 10000) in paragraph at lines 10172--10174
+Underfull \hbox (badness 10000) in paragraph at lines 10173--10175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10193--10194
+Underfull \hbox (badness 10000) in paragraph at lines 10194--10195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10197--10198
+Underfull \hbox (badness 10000) in paragraph at lines 10198--10199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10201--10202
+Underfull \hbox (badness 10000) in paragraph at lines 10202--10203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10205--10206
+Underfull \hbox (badness 10000) in paragraph at lines 10206--10207
 
  []
 
 [277]
-Underfull \hbox (badness 10000) in paragraph at lines 10209--10210
+Underfull \hbox (badness 10000) in paragraph at lines 10210--10211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10213--10214
+Underfull \hbox (badness 10000) in paragraph at lines 10214--10215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10217--10218
+Underfull \hbox (badness 10000) in paragraph at lines 10218--10219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10221--10222
+Underfull \hbox (badness 10000) in paragraph at lines 10222--10223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10239--10240
+Underfull \hbox (badness 10000) in paragraph at lines 10240--10241
 
  []
 
 [278]
 
 LaTeX Warning: Reference `ThÃ©orÃ¨me de Hall' on page 279 undefined on input li
-ne 10249.
+ne 10250.
 
 
-Overfull \hbox (2.16962pt too wide) in paragraph at lines 10258--10263
+Overfull \hbox (2.16962pt too wide) in paragraph at lines 10259--10264
 []\T1/cmr/m/n/10 Par hy-po-thèse de ré-cur-rence, $\OML/cmm/m/it/10 B[] \OMS/cm
 sy/m/n/10 2 []\OT1/cmr/m/n/10 (\U/eus/m/n/10 P[]\OT1/cmr/m/n/10 )$\T1/cmr/m/n/1
 0 . Donc $\OMS/cmsy/m/n/10 9\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^U[]; [] ; ^^U[]
@@ -5507,27 +5520,27 @@ sy/m/n/10 2 []\OT1/cmr/m/n/10 (\U/eus/m/n/10 P[]\OT1/cmr/m/n/10 )$\T1/cmr/m/n/1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10258--10263
+Underfull \hbox (badness 10000) in paragraph at lines 10259--10264
 
  []
 
 [279]
-Underfull \hbox (badness 10000) in paragraph at lines 10276--10277
+Underfull \hbox (badness 10000) in paragraph at lines 10277--10278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10280--10282
+Underfull \hbox (badness 10000) in paragraph at lines 10281--10283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10312--10313
+Underfull \hbox (badness 10000) in paragraph at lines 10313--10314
 
  []
 
 
-Overfull \hbox (65.16695pt too wide) in paragraph at lines 10314--10328
+Overfull \hbox (65.16695pt too wide) in paragraph at lines 10315--10329
 \T1/cmr/m/n/10 Notons $\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\
 OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [] ; C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\
 OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 les co-lonnes de $\OML/cmm/m/it/10 '\OT1/cmr/m
@@ -5537,391 +5550,391 @@ OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 les co-lonnes de $\OML/cmm/m/it/10 '\OT1/cmr/m
  []
 
 [280]
-Underfull \hbox (badness 10000) in paragraph at lines 10339--10340
+Underfull \hbox (badness 10000) in paragraph at lines 10340--10341
 
  []
 
 
-Overfull \hbox (41.41391pt too wide) in paragraph at lines 10351--10355
+Overfull \hbox (41.41391pt too wide) in paragraph at lines 10352--10356
 [] \OMS/cmsy/m/n/10 ^^T [] [][] [] [][] \OT1/cmr/m/n/10 = [] [] [] [][] = [] \O
 ML/cmm/m/it/10 k [] [][]$\T1/cmr/m/n/10 . 
  []
 
 [281]
-Underfull \hbox (badness 10000) in paragraph at lines 10385--10386
+Underfull \hbox (badness 10000) in paragraph at lines 10386--10387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10389--10390
+Underfull \hbox (badness 10000) in paragraph at lines 10390--10391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10393--10394
+Underfull \hbox (badness 10000) in paragraph at lines 10394--10395
 
  []
 
 [282]
-Underfull \hbox (badness 10000) in paragraph at lines 10397--10398
+Underfull \hbox (badness 10000) in paragraph at lines 10398--10399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10401--10402
+Underfull \hbox (badness 10000) in paragraph at lines 10402--10403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10405--10406
+Underfull \hbox (badness 10000) in paragraph at lines 10406--10407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10409--10410
+Underfull \hbox (badness 10000) in paragraph at lines 10410--10411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10414--10415
+Underfull \hbox (badness 10000) in paragraph at lines 10415--10416
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10418--10419
+Underfull \hbox (badness 10000) in paragraph at lines 10419--10420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10431--10432
+Underfull \hbox (badness 10000) in paragraph at lines 10432--10433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10435--10436
+Underfull \hbox (badness 10000) in paragraph at lines 10436--10437
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10439--10440
+Underfull \hbox (badness 10000) in paragraph at lines 10440--10441
 
  []
 
 [283]
-Underfull \hbox (badness 10000) in paragraph at lines 10443--10444
+Underfull \hbox (badness 10000) in paragraph at lines 10444--10445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10447--10449
+Underfull \hbox (badness 10000) in paragraph at lines 10448--10450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10449--10456
+Underfull \hbox (badness 10000) in paragraph at lines 10450--10457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10465--10466
+Underfull \hbox (badness 10000) in paragraph at lines 10466--10467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10468--10469
+Underfull \hbox (badness 10000) in paragraph at lines 10469--10470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10471--10472
+Underfull \hbox (badness 10000) in paragraph at lines 10472--10473
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10474--10475
+Underfull \hbox (badness 10000) in paragraph at lines 10475--10476
 
  []
 
 [284]
-Underfull \hbox (badness 10000) in paragraph at lines 10476--10477
+Underfull \hbox (badness 10000) in paragraph at lines 10477--10478
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10478--10479
+Underfull \hbox (badness 10000) in paragraph at lines 10479--10480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10481--10482
+Underfull \hbox (badness 10000) in paragraph at lines 10482--10483
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10484--10485
+Underfull \hbox (badness 10000) in paragraph at lines 10485--10486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10487--10488
+Underfull \hbox (badness 10000) in paragraph at lines 10488--10489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10490--10491
+Underfull \hbox (badness 10000) in paragraph at lines 10491--10492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10493--10494
+Underfull \hbox (badness 10000) in paragraph at lines 10494--10495
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10499--10500
+Underfull \hbox (badness 10000) in paragraph at lines 10500--10501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10502--10503
+Underfull \hbox (badness 10000) in paragraph at lines 10503--10504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10505--10506
+Underfull \hbox (badness 10000) in paragraph at lines 10506--10507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10508--10509
+Underfull \hbox (badness 10000) in paragraph at lines 10509--10510
 
  []
 
 [285]
-Underfull \hbox (badness 10000) in paragraph at lines 10511--10512
+Underfull \hbox (badness 10000) in paragraph at lines 10512--10513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10514--10529
+Underfull \hbox (badness 10000) in paragraph at lines 10515--10530
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10531--10532
+Underfull \hbox (badness 10000) in paragraph at lines 10532--10533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10547--10549
+Underfull \hbox (badness 10000) in paragraph at lines 10548--10550
 
  []
 
 [286] [287]
-Underfull \hbox (badness 10000) in paragraph at lines 10564--10566
+Underfull \hbox (badness 10000) in paragraph at lines 10565--10567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10567--10568
+Underfull \hbox (badness 10000) in paragraph at lines 10568--10569
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10569--10570
+Underfull \hbox (badness 10000) in paragraph at lines 10570--10571
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10571--10572
+Underfull \hbox (badness 10000) in paragraph at lines 10572--10573
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10578--10579
+Underfull \hbox (badness 10000) in paragraph at lines 10579--10580
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10582--10584
+Underfull \hbox (badness 10000) in paragraph at lines 10583--10585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10605--10606
+Underfull \hbox (badness 10000) in paragraph at lines 10606--10607
 
  []
 
 [288]
-Underfull \hbox (badness 10000) in paragraph at lines 10609--10611
+Underfull \hbox (badness 10000) in paragraph at lines 10610--10612
 
  []
 
 [289]
-Underfull \hbox (badness 10000) in paragraph at lines 10664--10665
+Underfull \hbox (badness 10000) in paragraph at lines 10665--10666
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10666--10667
+Underfull \hbox (badness 10000) in paragraph at lines 10667--10668
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10669--10670
+Underfull \hbox (badness 10000) in paragraph at lines 10670--10671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10672--10673
+Underfull \hbox (badness 10000) in paragraph at lines 10673--10674
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10675--10676
+Underfull \hbox (badness 10000) in paragraph at lines 10676--10677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10678--10679
+Underfull \hbox (badness 10000) in paragraph at lines 10679--10680
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10680--10681
+Underfull \hbox (badness 10000) in paragraph at lines 10681--10682
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10682--10683
+Underfull \hbox (badness 10000) in paragraph at lines 10683--10684
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10684--10696
+Underfull \hbox (badness 10000) in paragraph at lines 10685--10697
 
  []
 
 [290]
-Underfull \hbox (badness 10000) in paragraph at lines 10700--10701
+Underfull \hbox (badness 10000) in paragraph at lines 10701--10702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10703--10704
+Underfull \hbox (badness 10000) in paragraph at lines 10704--10705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10706--10707
+Underfull \hbox (badness 10000) in paragraph at lines 10707--10708
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10709--10710
+Underfull \hbox (badness 10000) in paragraph at lines 10710--10711
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10712--10713
+Underfull \hbox (badness 10000) in paragraph at lines 10713--10714
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10715--10716
+Underfull \hbox (badness 10000) in paragraph at lines 10716--10717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10717--10718
+Underfull \hbox (badness 10000) in paragraph at lines 10718--10719
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10719--10720
+Underfull \hbox (badness 10000) in paragraph at lines 10720--10721
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10722--10723
+Underfull \hbox (badness 10000) in paragraph at lines 10723--10724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10724--10725
+Underfull \hbox (badness 10000) in paragraph at lines 10725--10726
 
  []
 
 [291]
-Underfull \hbox (badness 10000) in paragraph at lines 10728--10729
+Underfull \hbox (badness 10000) in paragraph at lines 10729--10730
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10731--10732
+Underfull \hbox (badness 10000) in paragraph at lines 10732--10733
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10735--10736
+Underfull \hbox (badness 10000) in paragraph at lines 10736--10737
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10739--10740
+Underfull \hbox (badness 10000) in paragraph at lines 10740--10741
 
  []
 
 
 LaTeX Warning: Hyper reference `Equation de la chaleur' on page 292 undefined o
-n input line 10743.
+n input line 10744.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10743--10744
+Underfull \hbox (badness 10000) in paragraph at lines 10744--10745
 
  []
 
 [292]
-Underfull \hbox (badness 10000) in paragraph at lines 10750--10751
+Underfull \hbox (badness 10000) in paragraph at lines 10751--10752
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10754--10755
+Underfull \hbox (badness 10000) in paragraph at lines 10755--10756
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10758--10759
+Underfull \hbox (badness 10000) in paragraph at lines 10759--10760
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10762--10763
+Underfull \hbox (badness 10000) in paragraph at lines 10763--10764
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10766--10767
+Underfull \hbox (badness 10000) in paragraph at lines 10767--10768
 
  []
 
 [293] [294]
-Underfull \hbox (badness 10000) in paragraph at lines 10826--10841
+Underfull \hbox (badness 10000) in paragraph at lines 10827--10842
 
  []
 
 [295]
-Underfull \hbox (badness 10000) in paragraph at lines 10849--10850
+Underfull \hbox (badness 10000) in paragraph at lines 10850--10851
 
  []
 
-
-AED: lastpage setting LastPage
-[296] (Analyse.aux)
+[296] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(Analyse.aux)
  ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
  ***********
 
 
@@ -5931,56 +5944,56 @@ Package rerunfilecheck Info: File `Analyse.out' has not changed.
 (rerunfilecheck)             Checksum: 7CA8D5064BBA75CBD07ABB2A103C399D;97149.
  ) 
 Here is how much of TeX's memory you used:
- 33476 strings out of 474486
- 620006 string characters out of 5743755
- 2018542 words of memory out of 5000000
- 52635 multiletter control sequences out of 15000+600000
- 586400 words of font info for 120 fonts, out of 8000000 for 9000
+ 33531 strings out of 467871
+ 619601 string characters out of 5418376
+ 1177917 words of memory out of 5000000
+ 59292 multiletter control sequences out of 15000+600000
+ 656052 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,14n,96p,1228b,1116s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\bbm10
-.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
-rm0700.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
-600\ecti1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecbx1440.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ecbx1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/p
-k/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\marco\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\marco\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\marco\AppD
-ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\marc
-o\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\User
-s\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:
-/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cmextra/cmex7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/marco/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/marco/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/marco/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/marco/Ap
+ 89i,14n,107p,1228b,1117s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\estev\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\bbm10
+.pk> <C:\Users\estev\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
+rm0700.pk> <C:\Users\estev\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\ecti1000.pk> <C:\Users\estev\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecbx1440.pk> <C:\Users\estev\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
+appen/ec/dpi600\ecbx1000.pk> <C:\Users\estev\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\estev\AppData\Local\MiKTeX\fonts/p
+k/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\estev\AppData\Local\MiKTeX\f
+onts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\estev\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\estev\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\estev\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\este
+v\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\User
+s\estev\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:
+/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cmextra/cmex7.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/estev/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/estev/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/estev/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/estev/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
-marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
-:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5
-.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/marco/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/marco/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/marco/
+estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
+:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5
+.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/estev/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/estev/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/estev/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/estev/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm7.pfb><C:/U
-sers/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/symbols/msbm5.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/symbols/msbm7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/hoekwater/stmary10.pfb><C:/Users/marco/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/hoekwater/stmary7.pfb><C:/Users/marco/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb><C:/Users/marco/AppData
+sers/estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/ms
+bm10.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/symbols/msbm5.pfb><C:/Users/estev/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/symbols/msbm7.pfb><C:/Users/estev/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/hoekwater/stmary10.pfb><C:/Users/estev/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/hoekwater/stmary7.pfb><C:/Users/estev/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb><C:/Users/estev/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on Analyse.pdf (299 pages, 2781349 bytes).
+Output written on Analyse.pdf (299 pages, 2726229 bytes).
 PDF statistics:
  7443 PDF objects out of 8907 (max. 8388607)
  2574 named destinations out of 2984 (max. 500000)
