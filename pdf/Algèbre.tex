@@ -603,16 +603,16 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\textcolor{blue}{\hyperref[Vecteurs propres de la transposée de la comatrice corrigé]{[Corrigé]}}\\
 	Soit $A\in \M_n(\K)$. Montrer que tout vecteur propre de $A$ est vecteur propre de $\Com(A)^\top$.
 	
-	\section{\underline{Algorithme de Faddeev} \centraleponts{3}}
+	\section{\underline{Algorithme de Faddeev} \centraleponts{4}}
 	\label{Algorithme de Faddeev}
 	\textcolor{blue}{\hyperref[Algorithme de Faddeev corrigé]{[Corrigé]}}\\
 	Soit $A\in \M_n(\K)$. Pour $\lambda \in \K$ on pose $B(\lambda)=\operatorname{Com}(\lambda I_n-A)^\top$.
 	\begin{enumerate}[leftmargin=*]
 		\item Montrer qu'il existe des matrices $B_0,\dots,B_{n-1}$ de $\M_n(\K)$ telles que:$$B(\lambda)=\sum\limits_{k=0}^{n-1}{\lambda^{n-1-k}B_k}$$
 		\item Montrer que $\chi_A'(\lambda)=\Tr(B(\lambda))$ Pour tout $\lambda\in \K$.
-		\item On pose $\chi_A=X^n-\sum\limits_{k=1}^n{p_kX^{n-k}}$ et $B_n=0$. Montrer que $\forall k\in \crblanc{1}{n-1}$,
+		\item On pose $\chi_A=X^n-\displaystyle\sum\limits_{k=1}^n{p_kX^{n-k}}$ et $B_n=0$. Montrer que $\forall k\in \crblanc{1}{n-1}$,
 		$$\begin{cases}
-			p_k=\displaystyle\frac{1}{k}\Tr(AB_{k-1})\\
+			p_k=\dfrac{1}{k}\Tr(AB_{k-1})\\
 			B_k=AB_{k-1}-p_kI_n
 		\end{cases}$$
 		et préciser $B_0$.
@@ -4256,6 +4256,22 @@ On pose $\fonction{\operatorname{Comm}_A}{\M_n(\C)}{\M_n(\C)}{B}{AB-BA}$.
 	\item On suppose que $A$ est diagonalisable et on note $A=PDP^{-1}$ avec $D=\diag(\lambda_1,\dots,\lambda_n)$.\\
 	Montrer que $\operatorname{Comm}_A$ est diagonalisable.
 	\item On suppose que $\operatorname{Comm}_A$ est diagonalisable. Déterminer la décomposition de Dunford de $\operatorname{Comm}_A$ en fonction de celle de $A$ et en déduire que $A$ est diagonalisable.
+\end{enumerate}
+
+\subsection{Théorème spectral (2) \centraleponts{3}}
+\label{Théorème spectral (2)}
+\textcolor{blue}{\hyperref[Théorème spectral (2) corrigé]{[Corrigé]}}\\
+Le but de cet exercice est de démontrer le théorème spectral.\\
+Pour $M\in \M_n(\C)$ on note $M^*=\overline{M}^\top$.
+\begin{enumerate}
+	\item Montrer que $\forall M\in \M_n(\C),\ \Tr(M^*M)\geq 0$ et $\Tr(M^*M)=0\implies M=0$.
+	\item Montrer qu'une matrice $N\in \M_n(\C)$ nilpotente et symétrique est nulle.
+\end{enumerate}
+Soit $S\in \S_n(\R)$.
+\begin{enumerate}[resume]
+	\item Soit $x\in \R$. Montrer que si $ix\in \T{Sp}(S)$ alors $x=0$.
+	\item En déduire que $S$ est diagonalisable dans $\M_n(\R)$.
+	\item Démontrer le théorème spectral.
 \end{enumerate}
 
 \subsection{Deux applications non continues}
@@ -11712,6 +11728,28 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi comme $\operatorname{Comm}_A$ est diagonalisable, $\operatorname{Comm}_N$ doit être nul.\\
 		Ceci impose que $N$ doit commuter avec toutes les matrices de $\M_n(\C)$.\\
 		$N$ est donc une matrice scalaire $N=\alpha I_n$ (cf. \ref{Centre de Mn(K)}). Etant nilpotente, elle est nulle et $A=D$ est diagonalisable.
+	\end{enumerate}
+	
+	\subsubsection{Théorème spectral (2) \centraleponts{3}}
+	\label{Théorème spectral (2) corrigé}
+	\textcolor{blue}{\hyperref[Théorème spectral (2)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $M\in \M_n(\C)$. $\forall i,j\in \crblanc{1}{n},\ (M^*M)_{ij}=\displaystyle\sum_{k=1}^n\overline{m_ki}m_{kj}$ donc $\Tr(M^*M)=\displaystyle\sum_{j=1}^n\sum_{i=1}^n\overline{m_{ij}}m_{ij}=\sum_{1\leq i,j\leq n}|m_{ij}|^2\geq 0$.\\
+		De plus, si $\Tr(M^*M)=0$ alors $\forall i,j\in \crblanc{1}{n},\ |m_{ij}|^2=0$ i.e $\forall i,j\in \crblanc{1}{n},\ m_{ij}=0$ i.e $M=0$.
+		\item Soit $N\in \M_n(\C)$ nilpotente et symétrique.\\
+		Alors $\Tr(N^*N)=\Tr(N^2)=0$. En effet, $N$ est semblable à une matrice triangulaire supérieure stricte, donc $N^2$ aussi, d'où $\Tr(N^2)=0$.\\
+		Ainsi d'après la question précédente, $N=0$.
+		\item Supposons que $ix\in \T{Sp}(S)$ et notons $X$ un vecteur propre associé.\\
+		Alors $0\geq (SX)^*SX=-x^2X^*X\leq 0$. Donc $x=0$.
+		\item Il s'agit de montrer que $S$ est diagonalisable à valeurs propres réelles.\\
+		Notons $S=D+N$ la décomposition de Dunford de $S$.\\
+		On sait que $N$ est un polynôme en $S$, en particulier $N$ est symétrique et nilpotente. D'après la question 2 elle est donc nulle et $S$ est diagonalisable.\\
+		Fixons maintenant $z=a+ib$ une valeur propre de $S$.\\
+		On remarque que $ib$ est valeur propre de la matrice symétrique réelle $S-aI_n$. Donc d'après la question 1 $b=0$ i.e $z\in \R$.
+		\item On rappelle l'énoncé du théorème spectral : toute matrice symétrique réelle est diagonalisable en base orthonormale dans $\M_n(\R)$.\\
+		Il faut donc montrer que $S$ est diagonalisable en base orthonormée, et sachant qu'elle est diagonalisable dans $\M_n(\R)$, il suffit de montrer que ses sous-espaces propres sont orthogonaux entre eux.\\
+		On fixe $\lambda\ne \mu$ deux valeurs propres de $S$ ainsi que $X_\lambda\in E_\lambda(S)$ et $X_\mu\in E_\mu(S)$.\\
+		Alors $\lambda\proscal{X_\lambda}{X_\mu}=\proscal{SX_\lambda}{X_\mu}=\proscal{X_\lambda}{SX_\mu}=\mu\proscal{X_\lambda}{X_\mu}$. Ainsi $\proscal{X_\lambda}{X_\mu}=0$.
 	\end{enumerate}
 	
 	\subsubsection{Deux applications non continues}
