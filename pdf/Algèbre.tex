@@ -5701,6 +5701,18 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		$$\Tr(B(\lambda))=\sum_{j=1}^n\prod_{i\ne j}(\lambda-\lambda_i)=\chi_A'(\lambda)$$
 		La deuxième égalité s'obtient en dérivant formellement l'expression $\chi_A(X)=\displaystyle\prod_{i=1}^n(X-\lambda_i)$ pour obtenir $\chi_A'(X)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}(X-\lambda_i)$.
 		Enfin, comme $A$ n'a qu'un nombre fini de valeur propre, par continuité des deux membres, qui sont des expressions polynomiales en $\lambda$, $\forall \lambda\in \K,\ \Tr(B(\lambda))=\chi_A'(\lambda)$.
+		\item On sait que pour tout $\lambda\in \K,\ (\lambda I_n-A)B(\lambda)=\chi_A(\lambda)I_n$.\\
+		C'est-à-dire $\displaystyle\sum_{k=0}^{n-1}\left(\lambda^{n-k}B_k-\lambda^{n-1-k}AB_k\right)=\left(\lambda^n-\sum_{k=1}^np_k\lambda^{n-k}\right)I_n$.\\
+		Ou encore $\lambda^nB_0+\displaystyle\sum_{k=1}^n\lambda^{n-k}B_k=\lambda^nI_n+\sum_{k=1}^n\lambda^{n-k}(AB_{k-1}-p_kI_n)$.\\
+		$\K$ étant infini on a l'égalité entre polynôme i.e
+		$$\begin{cases}
+			B_0=I_n\\
+			\forall\, 1\leq k\leq n-1,\ B_k=AB_{k-1}-p_kI_n
+		\end{cases}$$
+		De plus, $n\lambda^{n-1}-\displaystyle\sum_{k=1}^{n-1}(n-k)p_k\lambda^{n-k-1}=\chi_A'(\lambda)=\Tr(B(\lambda))=\sum_{k=0}^{n-1}\Tr(B_k)\lambda^{n-1-k}$.\\
+		et en particulier $\forall\, 1\leq k\leq n-1,\ (k-n)p_k=\Tr(B_k)=\Tr(AB_{k-1})-np_k$ i.e $p_k=\dfrac{1}{k}\Tr(AB_{k-1})$.
+		\item Si $A$ est inversible alors $A^{-1}=-(-A)^{-1}=-\dfrac{1}{\det(-A)}\Com(-A)^\top=-\frac{1}{(-1)^n\det(A)}B(0)=\frac{1}{p_n}B_{n-1}$.
+		\item 
 	\end{enumerate}
 	
 	\subsection{Endomorphisme de transposition \ccinp{2}}
