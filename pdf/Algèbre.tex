@@ -5629,7 +5629,13 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Pour finir, déterminons une	expression de $\Tr(\tilde A)$ à partir des valeurs propres de $A$. On a l'expression suivante lorsque $A$ est inversible :
 	$$\Tr(\tilde A)=\sum_{j=1}^n\prod_{i\ne j}\lambda_i=(-1)^{n-1}\chi_A'(0)$$
 	La deuxième égalité s'obtient en dérivant formellement l'expression $\chi_A(X)=\displaystyle\prod_{i=1}^n(X-\lambda_i)$ pour obtenir $\chi_A'(X)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}(X-\lambda_i)$.\\
-	On montre que $\T{GL}_n(\C)$ est dense dans $\M_n(\C)$ (il suffit de considérer la suite de terme général $A_k=A-\dfrac{1}{k}I_n$). Les deux expressions $\Tr(\tilde A)$ et $(-1)^{n-1}\chi_A'(0)$ sont continues en $A$ car polynomiale en ses coefficients, par conséquent on a toujours $\Tr(\tilde A)=(-1)^{n-1}\chi_A'(0)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}\lambda_i$.
+	On peut alors conclure de deux manières :
+	\begin{itemize}
+		\item On montre que $\T{GL}_n(\C)$ est dense dans $\M_n(\C)$ (il suffit de considérer la suite de terme général $A_k=A-\dfrac{1}{k}I_n$). Les deux expressions $\Tr(\tilde A)$ et $(-1)^{n-1}\chi_A'(0)$ sont continues en $A$ car polynomiale en ses coefficients, par conséquent on a toujours $\Tr(\tilde A)=(-1)^{n-1}\chi_A'(0)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}\lambda_i$.
+		\item On pose pour $\lambda\in \C,\ \tilde A(\lambda)=\Com(A-\lambda I_n)^\top$. On sait que $(A-\lambda I_n)\tilde A(\lambda)=(-1)^n\chi_A(\lambda)I_n$ donc $\tilde A(\lambda)$ est inversible partout sauf en un nombre fini de valeurs de $\lambda$ ($\lambda$ non valeur propre de $A$).\\
+		Pour ces valeurs on a $\Tr(\tilde A(\lambda))=\displaystyle\sum_{j=1}^n\prod_{i\ne j}(\lambda_i-\lambda)=(-1)^{n-1}\chi_A'(\lambda)$.\\
+		Donc par continuité des deux membres, qui sont des expressions polynomiales en $\lambda$, $\Tr(\tilde A)=(-1)^{n-1}\chi_A'(0)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}\lambda_i$.
+	\end{itemize}
 	
 	\subsection{Vecteurs propres de la transposée de la comatrice \centraleponts{3}}
 	\label{Vecteurs propres de la transposée de la comatrice corrigé}
@@ -5647,6 +5653,55 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Algorithme de Faddeev}
 	\label{Algorithme de Faddeev corrigé}
 	\textcolor{blue}{\hyperref[Algorithme de Faddeev]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On sait que les coefficients de $B(\lambda)$ sont polynomiaux en $\lambda$ car ce sont aux signes près des calculs de déterminants.\\
+		De plus on a l'identité $(A-\lambda I_n)B(\lambda)=\chi_A(\lambda)I_n$.\\
+		Ainsi comme $\chi_A(X)$ est de degré $n$, $B(X)$ est de degré $n-1$.\\
+		Cela montre qu'il existe des matrices $B_0,\dots,B_{n-1}\in \M_n(\K)$ telles que $\forall \lambda\in \K,\ B(\lambda)=\displaystyle\sum_{k=0}^{n-1}\lambda^{n-1-k}B_k$.
+		\item On peut donner plusieurs preuves de ce résultats.\\
+		\underline{$1^{ère}$ méthode :}\\
+		On note $C_j(\lambda)=\lambda E_j-A_j$ avec $A_j$ la $j$-ème colonne de $A$ et $(E_1,\dots,E_n)$ la base canonique de $\K^n$.\\
+		On note aussi $\Delta_{ij}(\lambda)$ le mineur de $(\lambda I_n-A)$ obtenu en supprimant la $i$-ème ligne et la $j$-ème colonne.\\
+		Comme $\det:(\K^n)^n\to\K$ est multilinéaire on calcule : 
+		\begin{align*}
+			\chi_A'(\lambda)&=\frac{d}{d\lambda}\det(\lambda I_n-A)\\
+			&=\frac{d}{d\lambda}\det\left(\begin{array}{c|c|c}
+				&&\\
+				C_1(\lambda)&\cdots&C_n(\lambda)\\
+				&&
+			\end{array}\right)\\
+			&=\sum_{j=1}^n\det\left(\begin{array}{c|c|c|c|c|c|c}
+				&&&&&&\\
+				C_1(\lambda)&\cdots&C_{j-1}(\lambda)&C_j'(\lambda)&C_{j+1}(\lambda)&\cdots&C_n(\lambda)\\
+				&&&&&&
+			\end{array}\right)\\
+			&=\sum_{j=1}^n\det\left(\begin{array}{c|c|c|c|c|c|c}
+				&&&&&&\\
+				C_1(\lambda)&\cdots&C_{j-1}(\lambda)&E_j&C_{j+1}(\lambda)&\cdots&C_n(\lambda)\\
+				&&&&&&
+			\end{array}\right)\\
+			(\T{dvlpt/}j^e\T{ col})&=\sum_{j=1}^n(-1)^{j+j}\Delta_{jj}(\lambda)\\
+			&=\Tr(B(\lambda))
+		\end{align*}
+		\underline{$2^{\T{nd}}$ méthode :}\\
+		Déterminons les valeurs propres de $B(\lambda)$. On note $A(\lambda)=\lambda I_n-A$ et on fixe $x\in \K^*$.\\
+		Si $\lambda$ n'est pas valeur propre de $A$ alors $A(\lambda)$ et $B(\lambda)$ sont inversibles et :
+		\begin{align*}
+			\chi_{B(\lambda)}(x)&=\det(xI_n-B(\lambda))\\
+			&=\det(A(\lambda)^{-1})\det(xA(\lambda)-A(\lambda)B(\lambda))\\
+			&=\frac{1}{\det(A(\lambda))}\det(xA(\lambda)-\det(A(\lambda))I_n)\\
+			&=\frac{(-x)^n}{\det(A(\lambda))}\det\left(\frac{\det(A(\lambda))}{x}I_n-A(\lambda)\right)\\
+			&=\frac{x^n}{(-1)^n\det(A(\lambda))}\chi_{A(\lambda)}\left(\frac{\det(A(\lambda))}{x}\right)
+		\end{align*}
+		$\K^*$ étant infini on a l'égalité entre polynômes $\chi_{B(\lambda)}(X)=\dfrac{X^n}{(-1)^n\det(A(\lambda))}\chi_{A(\lambda)}\left(\dfrac{\det(A(\lambda))}{X}\right)$.\\
+		On sait que $B(\lambda)$ est inversible donc $x=0$ n'est pas racine de $\chi_{B(\lambda)}$.\\
+		Ainsi $\forall x\in \K,\ \chi_{B(\lambda)}(x)=0\iff \chi_{A(\lambda)}\left(\dfrac{\det(A(\lambda))}{x}\right)=0\iff \dfrac{\det(A(\lambda))}{x}\in \T{Sp}(A(\lambda))$.\\
+		Finalement $\T{Sp}(B(\lambda))=\{\det(A(\lambda))\mu^{-1},\ \mu\in \T{Sp}(A(\lambda))\}$ ou encore en notant $\lambda_1,\dots,\lambda_n$ les valeurs propres de $A$ comptées avec multiplicités, $\T{Sp}(B(\lambda))=\left\{\displaystyle\prod_{i\ne j}(\lambda-\lambda_i),\ 1\leq j\leq n\right\}$.\\
+		On a l'expression suivante lorsque $\lambda$ n'est pas valeur propre de $A$ :
+		$$\Tr(B(\lambda))=\sum_{j=1}^n\prod_{i\ne j}(\lambda-\lambda_i)=\chi_A'(\lambda)$$
+		La deuxième égalité s'obtient en dérivant formellement l'expression $\chi_A(X)=\displaystyle\prod_{i=1}^n(X-\lambda_i)$ pour obtenir $\chi_A'(X)=\displaystyle\sum_{j=1}^n\prod_{i\ne j}(X-\lambda_i)$.
+		Enfin, comme $A$ n'a qu'un nombre fini de valeur propre, par continuité des deux membres, qui sont des expressions polynomiales en $\lambda$, $\forall \lambda\in \K,\ \Tr(B(\lambda))=\chi_A'(\lambda)$.
+	\end{enumerate}
 	
 	\subsection{Endomorphisme de transposition \ccinp{2}}
 	\label{Endomorphisme de transposition corrigé}
