@@ -2496,20 +2496,29 @@
 	On suppose qu'une suite de fonctions $(f_n)$ de $[a,b]$ vers $\R$ converge uniformément vers $f:[a,b]\to\R$ continue et on considère une suite $(x_n)$ d'éléments de $[a,b]$ convergeant vers $x$.
 	\\ Montrer que $$f_n(x_n)\unfty{\longrightarrow} f(x)$$
 	
-	\section{Convergence des suites de polynômes}
-	\textcolor{blue}{\hyperref[sec:convergence-des-suites-de-polynomes]{[Corrigé]}}\\
-	\label{Convergence des suites de polynômes}
-	Soient $d\in\N$ et $(P_n)_{n\in \N}$ une suite de polynômes de $\R_d[X]$. Montrer que les propositions suivantes sont équivalentes:
-	\begin{enumerate}[label=(\roman*)]
-		\item $(P_n) \ \text{converge dans} \ \R_d[X].$
-		\item $(P_n) \ \text{converge simplement sur}\ [0,1].$
-		\item $(P_n) \ \text{converge uniformément sur}\ [0,1].$
+	\section{Limite d'une suite implicite \centraleponts{2}}
+	\textcolor{blue}{\hyperref[Limite d'une suite implicite Corrigé]{[Corrigé]}}\\
+	\label{Limite d'une suite implicite}
+	On pose pour tout $n\in \N,\ P_n:x\in \R\mapsto\displaystyle\sum_{k=0}^n\frac{x^{2k+1}}{(2k+1)!}$. On fixe $\alpha\in \R$.
+	\begin{enumerate}
+		\item Montrer que $\forall n\in \N,\ \exists!\, x_n\in \R,\ P_n(x_n)=\alpha$.
+		\item Montrer que $x_n\unfty\longrightarrow \ln\left(\alpha+\sqrt{\alpha^2+1}\right)$.
 	\end{enumerate}
 	
-	\section{Un théorème de Weierstrass sur $\R$ ?}
-	\textcolor{blue}{\hyperref[sec:un-theoreme-de-weierstrass-sur-r-]{[Corrigé]}}\\
-	\label{Un théorème de Weierstrass sur R}
-	Soit $f\in \mathcal{C}^0(\R,\C)$ limite uniforme sur $\R$ d'une suite de fonctions polynomiales. Démontrer que $f$ est une fonction polynomiale.
+	\section{Convergence des suites de polynômes \xens{3}}
+	\textcolor{blue}{\hyperref[Convergence des suites de polynômes Corrigé]{[Corrigé]}}\\
+	\label{Convergence des suites de polynômes}
+	Soient $d\in\N$ et $(P_n)_{n\in \N}$ une suite de polynômes de $\R_d[X]$. Montrer que les propositions suivantes sont équivalentes :
+	\begin{enumerate}[label=(\roman*)]
+		\item $(P_n)_{n\in \N} \ \text{converge dans} \ \R_d[X].$
+		\item $(P_n)_{n\in \N} \ \text{converge simplement sur}\ [0,1].$
+		\item $(P_n)_{n\in \N} \ \text{converge uniformément sur}\ [0,1].$
+	\end{enumerate}
+	
+	\section{Un théorème de Weierstrass sur $\R$ ? \centraleponts{3}}
+	\textcolor{blue}{\hyperref[Un théorème de Weierstrass sur R ? Corrigé]{[Corrigé]}}\\
+	\label{Un théorème de Weierstrass sur R ?}
+	Soit $f\in \mathcal C^0(\R,\C)$ limite uniforme sur $\R$ d'une suite de fonctions polynomiales. Démontrer que $f$ est une fonction polynomiale.
 	
 	\section{Approximation paire}
 	\textcolor{blue}{\hyperref[sec:approximation-paire]{[Corrigé]}}\\
@@ -8423,12 +8432,17 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		On remarque alors que comme $\displaystyle\frac{a+1}{2}\in [0,1],\ 2g(a)=g\left(\frac{a}{2}\right)+g\left(\frac{a+1}{2}\right)\leq g\left(\frac{a}{2}\right)+g(a)$ i.e $g\left(\dfrac{a}{2}\right)\geq g(a)$. Comme $\dfrac{a}{2}\in [0,1]$, $g(a)=g\left(\dfrac{a}{2}\right)$. Par récurrence immédiate $\forall n\in \N,\ g(a)=g\left(\dfrac{a}{2^n}\right)$. Donc par continuité de $g$ en $0$, $g(a)=g(0)=0$. D'où $g=0$ sur $[0,1]$, puis sur $\R$ par $1$-périodicité.
 	\end{enumerate}
 	
-	\subsection{Etude d'une fonction définie par une série alternée (1)}\label{sec:etude-dune-fonction-definie-par-une-serie-alternee-1}
-		\textcolor{blue}{\hyperref[Etude d'une fonction définie par une série alternée 1]{[Enoncé]}}\\
-	\subsection{Etude d'une fonction définie par une série alternée (2)}\label{sec:etude-dune-fonction-definie-par-une-serie-alternee-2}
-		\textcolor{blue}{\hyperref[Etude d'une fonction définie par une série alternée 2]{[Enoncé]}}\\
-	\subsection{Convergence vers une dérivée}\label{sec:convergence-vers-une-derivee}
-		\textcolor{blue}{\hyperref[Convergence vers une dérivée]{[Enoncé]}}\\
+	\subsection{Etude d'une fonction définie par une série alternée (1)}
+	\label{sec:etude-dune-fonction-definie-par-une-serie-alternee-1}
+	\textcolor{blue}{\hyperref[Etude d'une fonction définie par une série alternée 1]{[Enoncé]}}\\
+		
+	\subsection{Etude d'une fonction définie par une série alternée (2)}
+	\label{sec:etude-dune-fonction-definie-par-une-serie-alternee-2}
+	\textcolor{blue}{\hyperref[Etude d'une fonction définie par une série alternée 2]{[Enoncé]}}\\
+	
+	\subsection{Convergence vers une dérivée}
+	\label{sec:convergence-vers-une-derivee}
+	\textcolor{blue}{\hyperref[Convergence vers une dérivée]{[Enoncé]}}\\
 		On sait que : \[\frac{f(x+h)-f(x)}{h}\underset{h\to 0}{\to}f'(x)\]
 		donc \[\frac{f\left(x+\frac{1}{n}\right)-f(x)}{\frac{1}{n}}\underset{n\to +\infty}{\to}f'(x)\]
 		Donc $(g_n)$ converge simplement vers $f'$ sur $\R$.\\
@@ -8437,31 +8451,67 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		donc \[|g_n(x)-f'(x)|\leq\frac{\normep{\infty}{f''}}{2n}\]
 		d'où \[\normep{\infty}{g_n-f'}\leq \frac{\normep{\infty}{f''}}{2n}\to 0\]
 		Ainsi $(g_n)$ converge uniformément vers $f'$ sur $\R$.
-	\subsection{Limite ponctuelle et uniforme d'une suite de fonctions}\label{sec:limite-ponctuelle-et-uniforme-dune-suite-de-fonctions}
-		\textcolor{blue}{\hyperref[Limite ponctuelle et uniforme d'une suite de fonctions]{[Enoncé]}}\\
-	\subsection{Convergence des suites de polynômes}\label{sec:convergence-des-suites-de-polynomes}
-		\textcolor{blue}{\hyperref[Convergence des suites de polynômes]{[Enoncé]}}\\
 	
+	\subsection{Limite ponctuelle et uniforme d'une suite de fonctions}
+	\label{sec:limite-ponctuelle-et-uniforme-dune-suite-de-fonctions}
+	\textcolor{blue}{\hyperref[Limite ponctuelle et uniforme d'une suite de fonctions]{[Enoncé]}}\\
 	
+	\subsection{Limite d'une suite implicite \centraleponts{2}}
+	\label{Limite d'une suite implicite Corrigé}
+	\textcolor{blue}{\hyperref[Limite d'une suite implicite]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $n\in \N$. $P_n$ est continue et strictement croissante sur $\R$ en tant que somme de fonctions continues et strictement croissantes sur $\R$. De plus $\lim\limits_{x\to \pm\infty}\lim P_n(x)=\pm\infty$. Donc par le théorème de la bijection $\exists!\, x_n\in \R,\ P_n(x_n)=\alpha$.
+		\item Remarquons que comme $P_n$ est impaire pour tout $n$, $P_n(-x_n)=-P_n(x_n)=-\alpha$. On peut donc supposer $\alpha\geq 0$ et donc $x_n\geq 0$ :
+		$$-x_n\unfty\longrightarrow \ln\left(-\alpha+\sqrt{\alpha^2+1}\right)\implies x_n\unfty\longrightarrow\ln\left(\frac{1}{\sqrt{\alpha^2+1}-\alpha}\right)=\ln\left(\alpha+\sqrt{\alpha^2+1}\right)$$
+		Alors on a $P_{n+1}(x_{n+1})=\alpha=P_n(x_n)\leq P_{n+1}(x_n)$ d'où par croissance de $P_{n+1},\ x_{n+1}\leq x_n$.\\
+		$(x_n)_{n\in \N}$ est décroissante et minorée (par $0$) donc elle converge vers un réel $x$.\\
+		On sait par le cours sur les séries entières (ou l'inégalité de Taylor-Lagrange) que $(P_n)_{n\in \N}$ converge uniformément vers $\sh$ sur $[-x_0,x_0]$. La suite $(x_n)_{n\in \N}$ est à valeurs dans ce segment et $\sh$ est une fonction continue sur ce segment.\\
+		Alors d'après l'exercice \ref{Limite ponctuelle et uniforme d'une suite de fonctions} $P_n(x_n)\unfty\longrightarrow \sh(x)$.\\\\
+		\textit{Remarque : on peut aussi appliquer les théorèmes de Dini mais ces résultats sont bien plus compliqués à démontrer.}\\\\
+		On en déduit que $\sh(x)=\alpha$, i.e $e^{2x}-2\alpha e^x-1=0$.\\
+		En posant $y=e^x$ il faut résoudre $y^2-2\alpha y-1=0$.\\
+		Le discriminant de cette équation est $4\alpha^2+4=4(\alpha^2+1)>0$, il y a donc deux solutions réelles qui sont $y=\dfrac{2\alpha\pm2\sqrt{\alpha^2+1}}{2}=\alpha\pm\sqrt{\alpha^2+1}$.\\
+		Or $\sqrt{\alpha^2+1}>\alpha$ donc $\alpha-\sqrt{\alpha^2+1}<0$.\\
+		Donc comme $y=e^x>0$, $y=\alpha+\sqrt{\alpha^2+1}$ i.e $x=\ln\left(\alpha+\sqrt{\alpha^2+1}\right)$.
+	\end{enumerate}
 	
-	\subsection{Un théorème de Weierstrass sur $\R$ ?}\label{sec:un-theoreme-de-weierstrass-sur-r-}
-		\textcolor{blue}{\hyperref[Un théorème de Weierstrass sur R]{[Enoncé]}}\\
-	Par hypothèse, la suite $(P_n)$ converge uniformément vers $f$ sur $\R$. Ecrivons la définition de cette convergence pour une distance $\varepsilon=1$.\\
+	\subsection{Convergence des suites de polynômes \xens{3}}
+	\label{Convergence des suites de polynômes Corrigé}
+	\textcolor{blue}{\hyperref[Convergence des suites de polynômes]{[Enoncé]}}\\
+	On procède par implications circulaires, montrons que $(i)\implies (iii)\implies (ii)\implies (i)$.\\
+	$(i)\implies (iii)$ :\\
+	Supposons que $(P_n)$ converge dans $\R_d[X]$. $\R_d[X]$ étant de dimension finie, $(P_n)$ converge au sens de n'importe quelle norme sur $\R_d[X]$. En particulier elle converge pour la norme $\normep{\infty}{P}=\sup\limits_{x\in [0,1]}|P(x)|$ (qui est bien une norme car $[0,1]$ est infini). Càd $(P_n)$ converge uniformément sur $[0,1]$.\\\\
+	$(iii)\implies (ii)$ :\\
+	C'est du cours.\\\\
+	$(ii)\implies (i)$ :\\
+	Supposons que $(P_n)$ converge simplement sur $[0,1]$ vers une fonction $f$ (qui est a priori seulement continue sur $[0,1]$).\\
+	On se donne $x_0,\dots,x_d$ $d+1$ points distincts de $[0,1]$ et on note $L_0,\dots,L_d$ la base de $\R_d[X]$ des polynômes de Lagrange associés. $(P_n)$ converge dans $\R_d[X]$ ssi il y a convergence coordonnée par coordonnée dans cette base.\\
+	On conclut car $P_n=\displaystyle\sum_{i=0}^dP_n(x_i)L_i\unfty\longrightarrow \sum_{i=0}^df(x_i)L_i\in \R_d[X]$.
+	
+	\subsection{Un théorème de Weierstrass sur $\R$ ? \centraleponts{3}}
+	\label{Un théorème de Weierstrass sur R ? Corrigé}
+	\textcolor{blue}{\hyperref[Un théorème de Weierstrass sur R ?]{[Enoncé]}}\\
+	Soit $(P_n)$ une suite de fonctions polynomiales qui converge uniformément vers $f$ sur $\R$. Ecrivons la définition de cette convergence pour une distance $\varepsilon=1$.\\
 	Il existe un rang $N\in\N$ tel que pour tout $n\geq N$ et pour tout $x\in\R$ :
 	\[|P_n(x)-f(x)|\leq 1\]
 	Soit $n\geq N$ quelconque. Pour tout $x\in \R$\\
 	\[|P_n(x)-P_N(x)|=|P_n(x)-f(x)+f(x)-P_N(x)|\]
 	donc \[|P_n(x)-P_N(x)|\leq |P_n(x)-f(x)|+|f(x)-P_N(x)|\leq 2\]
 	On pose $Q_n=P_n-P_N$.\\
-	Ce polynôme est de degré $0$ car il est borné. En effet, si $Q_n$ n'est pas de degré $0$, on aurait \[\lim\limits_{|x|\to+\infty}|Q_n(x)|=+\infty\]
-	Ainsi il existe $c_n\in\R$ tel que $P_n(x)=P_N(x)+c_n$.\\
+	Ce polynôme constant car il est borné. En effet, si $Q_n$ n'est pas constant, on aurait \[\lim\limits_{|x|\to+\infty}|Q_n(x)|=+\infty\]
+	Ainsi il existe $c_n\in\R$ tel que $\forall x\in \R,\ P_n(x)=P_N(x)+c_n$.\\
 	Puisque $P_n$ converge simplement vers $f$, on a que $c_n$ converge vers un certain $\lambda\in\R$.\\
-	Par conséquent $f=P_n+\lambda$.\\
-	Donc $f$ est un polynôme à coefficients dans $\R$. 
-	\subsection{Approximation paire}\label{sec:approximation-paire}
-		\textcolor{blue}{\hyperref[Approximation paire]{[Enoncé]}}\\
-	\subsection{Approximation croissante}\label{sec:approximation-croissante}
-		\textcolor{blue}{\hyperref[Approximation croissante]{[Enoncé]}}\\
+	Par conséquent $f=P_N+\lambda$.\\
+	Donc $f$ est une fonction polynomiale à coefficients dans $\R$.
+	
+	\subsection{Approximation paire}
+	\label{sec:approximation-paire}
+	\textcolor{blue}{\hyperref[Approximation paire]{[Enoncé]}}\\
+	
+	\subsection{Approximation croissante}
+	\label{sec:approximation-croissante}
+	\textcolor{blue}{\hyperref[Approximation croissante]{[Enoncé]}}\\
+	
 	\subsection{Interversion Série-Intégrale}\label{sec:interversion-serie-integrale}
 		\textcolor{blue}{\hyperref[Interversion Série-Intégrale]{[Enoncé]}}\\
 	
