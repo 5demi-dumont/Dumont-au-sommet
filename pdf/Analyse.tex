@@ -2586,17 +2586,17 @@
 		\item Montrer que la série $\displaystyle\sum\limits_{n\geq1}a_nf_n$ converge uniformément sur $\R$ si et seulement si la suite $(na_n)$ converge vers $0$.
 	\end{enumerate}
 	
-	\section{Théorème de Dini \etoile{4}}
-	\textcolor{blue}{\hyperref[sec:theoreme-de-dini-etoile4]{[Corrigé]}}\\
+	\section{Théorème de Dini \xens{4}}
+	\textcolor{blue}{\hyperref[Théorème de Dini corrigé]{[Corrigé]}}\\
 	\label{Théorème de Dini}
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $(f_n)_{n\in \N}$ une suite croissante de fonctions réelles continues sur un segment $[a,b]$ de $\R$. Montrer que si $(f_n)_{n\in \N}$ converge simplement vers une fonction $f$ continue sur $[a,b]$, alors la convergence est uniforme.
 		\item Soit $(f_n)_{n\in \N}$ une suite de fonctions réelles croissantes et continues sur un segment $[a,b]$ de $\R$. Montrer que si $(f_n)_{n\in \N}$ converge simplement vers une fonction $f$ continue sur $[a,b]$, alors la converge est uniforme.
 	\end{enumerate}
 	
-	\section{Suite de fonction lipschitzienne \etoile{3}}
-	\textcolor{blue}{\hyperref[sec:suite-de-fonction-lipschitzienne-etoile3]{[Corrigé]}}\\
-	\label{Suite de fonction lipschitzienne}
+	\section{Suite de fonctions lipschitziennes \centraleponts{3}}
+	\textcolor{blue}{\hyperref[Suite de fonctions lipschitziennes corrigé]{[Corrigé]}}\\
+	\label{Suite de fonctions lipschitziennes}
 	Soit $(f_n)_{n\in \N}$ une suite de fonctions réelles $L$-lipschitziennes convergeant simplement vers une fonction $f$ sur un segment $[a,b]$ de $\R$.
 	\begin{enumerate}
 		\item Montrer que $f$ est $L$-lipschitzienne.
@@ -2637,7 +2637,7 @@
 		\begin{enumerate}
 			\item Montrer que $(p_n)$ est une séquence de Dirac.
 			\item Soit $f\in E$, nulle en dehors de $I=\displaystyle\left[-\frac{1}{2},\frac{1}{2}\right]$. Pour tout $n\in\N$, montrer que $f*p_n$ est une fonction polynomiale. Conclure.
-			\item En déduire le théorème de Weierstrass: si $I$ est un segment de $\R$ et si $f:I\mapsto\C$ est continue, alors $f$ est limite uniforme sur $I$ d'une suite de fonctions polynomiale.
+			\item En déduire le théorème de Weierstrass: si $I$ est un segment de $\R$ et si $f:I\mapsto\C$ est continue, alors $f$ est limite uniforme sur $I$ d'une suite de fonctions polynomiales.
 		\end{enumerate}
 		\item \underline{Application:}
 		\begin{enumerate}   
@@ -8416,8 +8416,9 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\end{align*}
 		Donc $g(x)\uxzero=\displaystyle-\frac{\pi^2x}{6}+\sum_{k=1}^{+\infty}\frac{2x}{k^2-x^2}+\smallo{x}\uxzero=\smallo{1}$.\\
 		Càd $g$ est prolongeable par continuité en $0$ en posant $g(0)=0$. Par $1$-périodicité, $g$ est prolongeable par continuité sur $\R$ en posant $g(k)=0$ pour tout entier $k$.
-		\item $\displaystyle f\left(\frac{x}{2}\right)+f\left(\frac{x+1}{2}\right)=\sum_{k=-\infty}^{+\infty}\frac{2}{x-2k}+\sum_{k=-\infty}^{+\infty}\frac{2}{x-2k+1}$.
-		Or on a en fait montré dans la question précédente qu'on a la convergence normale des séries en jeux sur $]0,1[$. Donc d'après le théorème de sommation par paquets,
+		\item Soit $x\in ]0,1[$.\\
+		$f_n\left(\frac{x}{2}\right)+f_n\left(\frac{x+1}{2}\right)=\displaystyle\sum_{k=-n}^n\frac{2}{x-2k}+\sum_{k=-n}^n\frac{2}{x+1-2k}=2f_{2n}(x)+\frac{2}{x+1-2n}$.\\
+		Donc par passage à la limite :
 		$$f(x)=\frac{f\left(\frac{x}{2}\right)+f\left(\frac{x+1}{2}\right)}{2}$$
 		Ensuite,\begin{align*}
 			\cotan\left(\frac{\pi x}{2}\right)+\cotan\left(\frac{\pi(x+1)}{2}\right)&=\frac{\cos(\frac{\pi x}{2})\sin(\frac{\pi(x+1)}{2})+\cos(\frac{\pi(x+1)}{2})\sin(\frac{\pi x}{2})}{\sin(\frac{\pi x}{2})\sin(\frac{\pi(x+1)}{2})}\\
@@ -8484,7 +8485,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	$(iii)\implies (ii)$ :\\
 	C'est du cours.\\\\
 	$(ii)\implies (i)$ :\\
-	Supposons que $(P_n)$ converge simplement sur $[0,1]$ vers une fonction $f$ (qui est a priori seulement continue sur $[0,1]$).\\
+	Supposons que $(P_n)$ converge simplement sur $[0,1]$ vers une fonction $f$ (qui n'est a priori pas polynomiale).\\
 	On se donne $x_0,\dots,x_d$ $d+1$ points distincts de $[0,1]$ et on note $L_0,\dots,L_d$ la base de $\R_d[X]$ des polynômes de Lagrange associés. $(P_n)$ converge dans $\R_d[X]$ ssi il y a convergence coordonnée par coordonnée dans cette base.\\
 	On conclut car $P_n=\displaystyle\sum_{i=0}^dP_n(x_i)L_i\unfty\longrightarrow \sum_{i=0}^df(x_i)L_i\in \R_d[X]$.
 	
@@ -8498,7 +8499,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\[|P_n(x)-P_N(x)|=|P_n(x)-f(x)+f(x)-P_N(x)|\]
 	donc \[|P_n(x)-P_N(x)|\leq |P_n(x)-f(x)|+|f(x)-P_N(x)|\leq 2\]
 	On pose $Q_n=P_n-P_N$.\\
-	Ce polynôme constant car il est borné. En effet, si $Q_n$ n'est pas constant, on aurait \[\lim\limits_{|x|\to+\infty}|Q_n(x)|=+\infty\]
+	Ce polynôme est constant car il est borné. En effet, si $Q_n$ n'est pas constant, on aurait \[\lim\limits_{|x|\to+\infty}|Q_n(x)|=+\infty\]
 	Ainsi il existe $c_n\in\R$ tel que $\forall x\in \R,\ P_n(x)=P_N(x)+c_n$.\\
 	Puisque $P_n$ converge simplement vers $f$, on a que $c_n$ converge vers un certain $\lambda\in\R$.\\
 	Par conséquent $f=P_N+\lambda$.\\
@@ -8512,24 +8513,29 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{sec:approximation-croissante}
 	\textcolor{blue}{\hyperref[Approximation croissante]{[Enoncé]}}\\
 	
-	\subsection{Interversion Série-Intégrale}\label{sec:interversion-serie-integrale}
-		\textcolor{blue}{\hyperref[Interversion Série-Intégrale]{[Enoncé]}}\\
+	\subsection{Interversion Série-Intégrale}
+	\label{sec:interversion-serie-integrale}
+	\textcolor{blue}{\hyperref[Interversion Série-Intégrale]{[Enoncé]}}\\
 	
+	\subsection{Série de fonction matricielle}
+	\label{sec:serie-de-fonction-matricielle}
+	\textcolor{blue}{\hyperref[Série de fonction matricielle]{[Enoncé]}}\\
 	
-	\subsection{Série de fonction matricielle}\label{sec:serie-de-fonction-matricielle}
-		\textcolor{blue}{\hyperref[Série de fonction matricielle]{[Enoncé]}}\\
+	\subsection{Fonction $\zeta$ de Riemann}
+	\label{sec:fonction-zeta-de-riemann}
+	\textcolor{blue}{\hyperref[Fonction zeta de Riemann]{[Enoncé]}}\\
 	
-	\subsection{Fonction $\zeta$ de Riemann}\label{sec:fonction-zeta-de-riemann}
-		\textcolor{blue}{\hyperref[Fonction zeta de Riemann]{[Enoncé]}}\\
+	\subsection{Expression de suites sous forme de séries}
+	\label{sec:expression-de-suites-sous-forme-de-series}
+	\textcolor{blue}{\hyperref[Expression de suites sous forme de séries]{[Enoncé]}}\\
 	
-	\subsection{Expression de suites sous forme de séries}\label{sec:expression-de-suites-sous-forme-de-series}
-		\textcolor{blue}{\hyperref[Expression de suites sous forme de séries]{[Enoncé]}}\\
+	\subsection{Etude d'une série de fonctions}
+	\label{sec:etude-dune-serie-de-fonctions}
+	\textcolor{blue}{\hyperref[Etude d'une série de fonctions]{[Enoncé]}}\\
 	
-	\subsection{Etude d'une série de fonctions}\label{sec:etude-dune-serie-de-fonctions}
-		\textcolor{blue}{\hyperref[Etude d'une série de fonctions]{[Enoncé]}}\\
-	
-	\subsection{Théorème de Dini \etoile{4}}\label{sec:theoreme-de-dini-etoile4}
-		\textcolor{blue}{\hyperref[Théorème de Dini]{[Enoncé]}}\\
+	\subsection{Théorème de Dini \xens{4}}
+	\label{Théorème de Dini corrigé}
+	\textcolor{blue}{\hyperref[Théorème de Dini]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $\varepsilon>0$.\\
 		Tout d'abord, quel que soit $x\in [a,b]$, la suite $(f_n(x))_{n\in \N}$ est croissante et converge vers $f(x)$ donc $\forall n\in \N,\ f_n(x)\leq f(x)$.\\
@@ -8566,8 +8572,9 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Finalement, $\normep{\infty}{f-f_n}\unfty\longrightarrow 0$ et $(f_n)_{n\in \N}$ converge uniformément vers $f$.
 	\end{enumerate}
 	
-	\subsection{Suite de fonction lipschitzienne \etoile{3}}\label{sec:suite-de-fonction-lipschitzienne-etoile3}
-		\textcolor{blue}{\hyperref[Suite de fonction lipschitzienne]{[Enoncé]}}\\
+	\subsection{Suite de fonctions lipschitziennes \centraleponts{3}}
+	\label{Suite de fonctions lipschitziennes corrigé}
+	\textcolor{blue}{\hyperref[Suite de fonctions lipschitziennes]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $(x,y)\in [a,b]^2$.\\
 		$\forall n\in \N,\ |f_n(x)-f_n(y)|\leq L|x-y|$.\\
@@ -8581,21 +8588,23 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		$(f_n)_{n\in \N}$ converge donc uniformément vers $f$ sur $[0,1]$.
 	\end{enumerate}
 	
-	\subsection{Phénomène de Runge}\label{sec:phenomene-de-runge}
-		\textcolor{blue}{\hyperref[Phénomène de Runge]{[Enoncé]}}\\
+	\subsection{Phénomène de Runge}
+	\label{sec:phenomene-de-runge}
+	\textcolor{blue}{\hyperref[Phénomène de Runge]{[Enoncé]}}\\
 	
-	\subsection{Théorème de Weierstrass}\label{sec:theoreme-de-weierstrass}
-		\textcolor{blue}{\hyperref[Théorème de Weierstrass]{[Enoncé]}}\\
+	\subsection{Théorème de Weierstrass}
+	\label{sec:theoreme-de-weierstrass}
+	\textcolor{blue}{\hyperref[Théorème de Weierstrass]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item\begin{enumerate}[label=\alph*.]
-		 \item Soit $f,g\in E$.\\
+		\item \begin{enumerate}[label=\alph*.]
+		\item Soit $f,g\in E$.\\
 		$\forall x\in\R$
 		\begin{align*}
 			(f*g)(x)&=\int_{-\infty}^{+\infty}f(x-t)g(t)dt\\
 			&=\int_{+\infty}^{-\infty}f(t)g(x-u)(-du)&\text{on pose }u=x-t\\
 			&=(g*f)(x) 
 		\end{align*}
-		Soit $f,g,h\in E$.\\
+		Soient $f,g,h\in E$.\\
 		$\forall x\in \R$
 		\begin{align*}
 			((f+g)*h)(x)&=\int_{-\infty}^{+\infty}(f+g)(x-t)h(t)dt\\
@@ -8611,7 +8620,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 			&=\int_{|t|<\alpha}\left|f(x-t)-f(x)\right|\chi_n(t)dt+\int_{|t|\geq\alpha}\left|f(x-t)-f(x)\right|\chi_n(t)dt
 		\end{align*}
 		D'après l'énoncé, $f$ est continue sur un compact donc elle est uniformément continue d'après le théorème de Heine.\\
-		Ainsi $\forall \varepsilon>0, \exists \alpha >0, \forall t\in\R, |(x-t)-t|<\alpha \Rightarrow |f(x-t)-f(x)|<\frac{\varepsilon}{2}$.\\
+		Ainsi $\forall \varepsilon>0, \exists \alpha >0, \forall x,y\in\R, |x-y|<\alpha \implies |f(x)-f(y)|<\frac{\varepsilon}{2}$.\\
 		Par conséquent, \[\int_{|t|<\alpha}|f(x-t)-f(x)|\chi_n(t)dt<\frac{\varepsilon}{2}\int_{|t|<\alpha}\chi_n(t)dt\]
 		d'où \[\int_{|t|<\alpha}|f(x-t)-f(x)|\chi_n(t)dt<\frac{\varepsilon}{2}\int_{-\infty}^{+\infty}\chi_n(t)dt=\frac{\varepsilon}{2}\]
 		De plus, puisque $f$ est continue à valeurs dans un compact, elle est bornée d'après le théorème des bornes atteintes, ainsi il existe $M\in \R$ tel que :
@@ -8625,27 +8634,27 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\end{enumerate}
 		\item\begin{enumerate}
 		 \item Il est clair que $(p_n)$ est une suite de fonctions positives.\\
-		Par définition, il a \[\int_{-\infty}^{+\infty}p_n(t)dt=1\]
+		Par définition, on a \[\int_{-\infty}^{+\infty}p_n(t)dt=1\]
 		Soit $\alpha>0$.\\
 		Si $\alpha\geq1$, on a \[\int_{|t|\geq\alpha}p_n(t)dt=0\]
 		Si $\alpha<1$, on a 
 			\[a_n=2\int_{0}^{1}(1-t^2)^ndt\geq2\int_{0}^{1}t(1-t^2)^ndt=\frac{1}{n+1}\]
 		Ainsi, \[\int_{|t|\geq\alpha}p_n(t)dt=\frac{2}{a_n}\int_{\alpha}{1}(1-t^2)^ndt\leq \frac{(1-\alpha^2)^n}{a_n}\leq2(n+1)(1-\alpha^2)^n\]
-		Par croissance comparée, 
+		Par croissances comparées, 
 		\[\lim\limits_{n\to+\infty}\int_{|t|\geq\alpha}p_n(t)dt=0\]
 		Donc, $(p_n)$ est une séquence de Dirac.
 		\item Soit $n\in\N$ et soit $x\in\R$.\\
-		\[(f*p_n)(x)=(p_n*f)(x)=\int_{-\frac{1}{2}}^{\frac{1}{2}}p_(x-t)f(t)dt\]
-		Puisque $p_n$ est polynomiale, on peut réécrire $p_n(x-t)$ comme étant de la forme $\sum_{i=0}^{+\infty}q_i(t)x^i$.\\
-		Ainsi, 
-		\[(f*p_n)(x)=\sum_{i=0}^{+\infty}\int_{-\frac{1}{2}}^{\frac{1}{2}}q_i(t)f(t)dtx^i\]
+		\[(f*p_n)(x)=(p_n*f)(x)=\int_{-\frac{1}{2}}^{\frac{1}{2}}p_n(x-t)f(t)dt\]
+		Puisque $p_n$ est polynomiale, on peut réécrire $p_n(x-t)$ comme étant de la forme $\displaystyle\sum_{i=0}^{+\infty}q_i(t)x^i$ avec $q_i(t)$ nulle pour $i$ grand.\\
+		Ainsi,
+		\[(f*p_n)(x)=\sum_{i=0}^{+\infty}\left(\int_{-\frac{1}{2}}^{\frac{1}{2}}q_i(t)f(t)dt\right)x^i\]
 		(on peut bien intervertir somme et intégrale car la somme est finie.)\\
 		Par conséquent, $(f*p_n)$ est polynomiale.\\
-		On vient de montrer que $(f*p_n)$ est une suite de fonctions polynomiale qui tend uniformément vers $f$ sur $\R$.\\
+		On vient de montrer que $(f*p_n)$ est une suite de fonctions polynomiales qui converge uniformément vers $f$ sur $\R$.\\
 		\item Soit $f$ une fonction continue sur un segment $I=[a,b]$ de $\R$.\\
-		On prolonge $f$ sur $\R$ de telle sorte que en considérant $[c,d]$ tels que $[a,b]\subset [c,d]$ on puisse prolonger $f$ sur $[c,a]$ par une fonction affine telle que $f(c)=0$ et idem sur $[b,d]$ telle que $f(d)=0$ et que $f(x)=0$ en dehors du segment $[c,d]$.\\
+		On prolonge $f$ sur $\R$ de telle sorte que en considérant $[c,d]$ tels que $[a,b]\subset [c,d]$ on puisse prolonger continûment $f$ sur $[c,a]$ par une fonction affine telle que $f(c)=0$ et idem sur $[b,d]$ telle que $f(d)=0$ et que $f(x)=0$ en dehors du segment $[c,d]$.\\
 		Ce prolongement de $f$ appartient à $E$.\\
-		En procédant à un changement de variable affine, on se ramène à une fonction nulle en dehors de $[-\frac{1}{2},\frac{1}{2}]$, donc la fonction $f$ est alors limite uniforme de fonctions polynomiales sur $[c,d]$ d'après la question précédente, en particulier sur $[a,b]$.
+		En procédant à un changement de variable affine, on se ramène à une fonction nulle en dehors de $[-\frac{1}{2},\frac{1}{2}]$, donc la fonction $f$ est alors limite uniforme de fonctions polynomiales sur $[c,d]$ d'après la question précédente, et en particulier sur $[a,b]$.
 	\end{enumerate}
 	\item \begin{enumerate}
 	\item Par linéarité, on a pour tout $P\in\R[X]$ 
@@ -8656,11 +8665,13 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Puisque la convergence est uniforme, on peut intervertir limite et intégrale donc 
 	\[\int_{0}^{1}f^2(t)dt=0\]	
 	Puisque $f^2$ est continue et positive sur $[0,1]$, $f^2\equiv 0$ et donc $f\equiv 0$.
+	\item Soit $n\in \N^*$. La fonction $f_n:t\mapsto f(t)e^{-nt}$ est continue sur $\R_+$.
 	\end{enumerate}
 	\end{enumerate}
 	
-	\subsection{Théorème de Chudnovsky \etoile{4}}\label{sec:theoreme-de-chudnovsky-etoile4}
-		\textcolor{blue}{\hyperref[Théorème de Chudnovsky]{[Enoncé]}}\\
+	\subsection{Théorème de Chudnovsky \etoile{4}}
+	\label{sec:theoreme-de-chudnovsky-etoile4}
+	\textcolor{blue}{\hyperref[Théorème de Chudnovsky]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $x\in \R$. Posons pour $n\in \N^*$, $x_n=\displaystyle\frac{\lfloor 2^nx\rfloor}{2^n}$. $(x_n)_{n\in \N^*}$ est une suite à valeur dans $\mathcal D$.\\
 		De plus $\forall n\in \N^*,\ x_n\leq x\leq x+\displaystyle\frac{1}{2^n}$. Donc $x_n\unfty\longrightarrow x$.\\
@@ -8681,19 +8692,19 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\item Soient $f,g\in \mathcal Z$. Notons $(P_n)_{n\in \N}$ et $(Q_n)_{n\in \N}$ deux suites de fonctions polynomiales qui convergent uniformément vers $f$ et $g$ respectivement. On peut d'abord remarquer que $f,g$ sont continues comme limites uniformes de fonctions continues (polynomiales).\\
 		D'une part, $\forall n\in \N,\ \normep{\infty}{f+g-(P_n+Q_n)}\leq \normep{\infty}{f-P_n}+\normep{\infty}{g-Q_n}\unfty\longrightarrow 0$.\\
 		Donc $(P_n+Q_n)_{n\in \N}$, qui est une suite de fonctions polynomiales à coefficients entiers, converge uniformément vers $f+g$ i.e $f+g\in \mathcal Z$.\\
-		D'autre part, $\forall n\in \N,\ \normep{\infty}{fg-P_nQ_n}\leq \normep{\infty}{fg-P_ng}+\normep{\infty}{P_ng-P_nQ_n}=\normep{\infty}{g}\normep{\infty}{f-P_n}+\normep{\infty}{P_n}\normep{\infty}{g-Q_n}$.\\
+		D'autre part, $\forall n\in \N,\ \normep{\infty}{fg-P_nQ_n}\leq \normep{\infty}{fg-P_ng}+\normep{\infty}{P_ng-P_nQ_n}\leq\normep{\infty}{g}\normep{\infty}{f-P_n}+\normep{\infty}{P_n}\normep{\infty}{g-Q_n}$.\\
 		La suite $(P_n)_{n\in \N}$ converge pour la norme uniforme, elle est donc bornée pour cette norme d'où $\normep{\infty}{fg-P_nQ_n}\unfty\longrightarrow 0$.\\
 		Ainsi $(P_nQ_n)_{n\in \N}$, qui est une suite de fonctions polynomiales à coefficients entiers, converge uniformément vers $fg$ i.e $fg\in \mathcal Z$.
-		\item D'après la question $2$, $x\mapsto \displaystyle\frac{1}{2}\in \mathcal Z$. De plus on remarque que toutes les fonctions $f$ constantes égales à un entier sont dans $\mathcal Z$ (comme limite de la suite constante égale à $f$) Donc d'après la question $3$, quel que soit $d\in \mathcal D,\ x\mapsto d\in \mathcal Z$. De plus n'importe quelle fonction polynomiale $g$ associé à un monôme est aussi dans $\mathcal Z$ (comme limite de la suite constante égale à $g$)\\
-		Ainsi, si $P=\displaystyle\sum_{k=0}^pa_kX^k\in \R[X]$ alors d'après la question $1$ on peut trouver des suites $(d_n^0),\dots,(d_n^p)\in \mathcal D^\N$ telles que $\forall k\in \crblanc{0}{p},\ a_k=\unfty\lim d_n^k$.\\
-		En posant pour $n\in \N$, $P_n=\displaystyle\sum_{k=0}^pd_n^kX^k$ on a alors $(P_n)\in \mathcal Z^\N$ et $\normep{\infty}{x\mapsto P(x)-P_n(x)}\unfty\longrightarrow 0$. On en déduit que $\mathcal Z$ contient l'ensemble des fonctions polynomiales à coefficients réels.\\
+		\item D'après la question $2$, $x\mapsto \displaystyle\frac{1}{2}\in \mathcal Z$. De plus on remarque que toutes les fonctions $f$ constantes égales à un entier sont dans $\mathcal Z$ (comme limite de la suite constante égale à $f$) Donc d'après la question $3$, quel que soit $d\in \mathcal D,\ x\mapsto d\in \mathcal Z$. De plus n'importe quelle fonction polynomiale $g$ associée à un monôme est aussi dans $\mathcal Z$ (comme limite de la suite constante égale à $g$)\\
+		Ainsi, pour $P:x\mapsto \displaystyle\sum_{k=0}^pa_kx^k$ est une fonction polynomiale à coefficients réels alors d'après la question $1$ on peut trouver des suites $(d_n^0),\dots,(d_n^p)\in \mathcal D^\N$ telles que $\forall k\in \crblanc{0}{p},\ a_k=\unfty\lim d_n^k$.\\
+		En posant pour $n\in \N$, $P_n:x\mapsto \displaystyle\sum_{k=0}^pd_n^kx^k$ on a alors $(P_n)\in \mathcal Z^\N$ et $\normep{\infty}{P-P_n}\unfty\longrightarrow 0$. On en déduit que $\mathcal Z$ contient l'ensemble des fonctions polynomiales à coefficients réels.\\
 		Fixons maintenant $f\in \mathcal C([a,b],\R)$. D'après le théorème d'approximation de Weierstrass, il existe une suite $(P_n)_{n\in \N}$ de fonctions polynomiales à coefficients réels convergeant uniformément vers $f$. Finalement, $f\in \mathcal Z$.\\
 		\textit{Remarque : on aurait pu formuler la réponse à l'aide du théorème de la double limite.}
 		\item Le choix de $a$ et $b$ est important ! En effet si le segment $[a,b]$ contient un entier alors on ne peut pas atteindre toutes les fonctions continues de $[a,b]$:\\
 		si $k\in \Z\cap[a,b]$ et si $(P_n)_{n\in \N}$ est une suite de fonctions polynomiales à coefficients entiers convergeant uniformément vers une fonction $P$ alors $(P_n(k))_{n\in \N}$ est une suite d'entier qui converge vers $P(k)$. $P(k)$ est donc un entier (cf. \ref{Topologie de Z}).\\\\
 		Le résultat actuel ne permet pas d'obtenir une fonction qui prendrait une valeur complexe car un polynôme à coefficients entiers est à valeurs réelles sur $[a,b]$.\\
 		On peut cependant avoir un résultat analogue en considérant des polynômes à coefficients dans l'anneau des entiers de Gauss $\Z[i]=\{a+ib,\ (a,b)\in \Z^2\}$ :\\
-		Soit $h:[a,b]\to\C$. On note $h=f+ig$ avec $f$ et $g$ des fonctions réelles. On dispose de $(P_n),(Q_n)\in \Z[X]^\N$ qui convergent uniformément sur $[a,b]$ vers $f$ et $g$ respectivement. Alors $\normep{\infty}{h-(P_n+iQ_n)}\leq \normep{\infty}{f-P_n}+|i|\normep{\infty}{g-Q_n}\unfty\longrightarrow0$ avec $(P_n+iQ_n)\in (\Z[i])[X]^\N$.
+		Soit $h:[a,b]\to\C$. On note $h=f+ig$ avec $f$ et $g$ des fonctions réelles. On dispose de $(P_n),(Q_n)\in \Z[X]^\N$ qui convergent uniformément sur $[a,b]$ vers $f$ et $g$ respectivement. Alors $\normep{\infty}{h-(P_n+iQ_n)}\leq \normep{\infty}{f-P_n}+\normep{\infty}{g-Q_n}\unfty\longrightarrow0$ avec $(P_n+iQ_n)\in (\Z[i])[X]^\N$.
 	\end{enumerate}
 	
 	\subsection{Théorème de sélection de Helly}\label{sec:theoreme-de-selection-de-helly}
