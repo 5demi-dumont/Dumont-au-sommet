@@ -1,7 +1,7 @@
 \documentclass{book}
 \input{usepackage}
 \linespread{1.05}
- \geometry{
+\geometry{
 	paperwidth=21cm,
 	paperheight=29.7cm,
 	top=2.5cm,
@@ -2663,6 +2663,52 @@
 		Montrer que $\mathcal Z$ est stable par somme et par produit.
 		\item Conclure.
 		\item Le résultat est-il encore vrai pour $a\leq b$ des réels quelconques ? Que peut-on dire pour des fonctions à valeurs dans $\C$ ?
+	\end{enumerate}
+	
+	\section{Théorème de Korovkin \xens{4}}
+	\textcolor{blue}{\hyperref[Théorème de Korovkin corrigé]{[Corrigé]}}\\
+	\label{Théorème de Korovkin}
+	Soit $E=\mathcal C([0,1],\R)$ muni de la norme uniforme.\\
+	Pour $u\in \L(E)$ on dit que $u$ est un \textit{opérateur positif} (ce que l'on note $u\geq 0$) si :
+	$$\forall f\in E,\ f\geq 0\implies u(f)\geq 0$$
+	\begin{enumerate}
+		\item Soit $u\in \L(E)$ un opérateur positif. Montrer que $u$ est continu.\\
+		\underline{Indication :} on pourra commencer par montrer que $|u(f)|\leq u(|f|)$.
+		\item Soit $f\in E$. On fixe $\varepsilon>0$.\\
+		Montrer que $\exists c>0,\ \forall (x,y)\in [0,1]^2,\ |f(x)-f(y)|\leq \varepsilon+c(x-y)^2$.
+		\item Pour $k\in \N$, on note $e_k:x\in [0,1]\mapsto x^k$.\\
+		Soit $(u_n)\in \L(E)^\N$ une suite d'opérateurs positifs. On suppose que pour $k\in \{0,1,2\}$, la suite $(u_n(e_k))$ converge uniformément vers $e_k$.\\
+		Prouver que pour toute fonction $f\in E$, la suite $(u_n(f))$ converge uniformément vers $f$.
+		\item Bonus : en déduire le théorème d'approximation de Weierstrass.
+	\end{enumerate}
+	
+	\section{Théorème de Fejér}
+	\textcolor{blue}{\hyperref[Théorème de Fejér corrigé]{[Corrigé]}}\\
+	\label{Théorème de Fejér}
+	On note $E=\mathcal C_{2\pi}(\R)$ l'espace vectoriel des fonctions réelle continue sur $\R$ et $2\pi$-périodique, muni de la norme uniforme.\\
+	Pour $u\in \L(E)$ on dit que $u$ est un \textit{opérateur positif} (ce que l'on note $u\geq 0$) si :
+	$$\forall f\in E,\ f\geq 0\implies u(f)\geq 0$$
+	\begin{enumerate}
+		\item Soit $u\in \L(E)$ un opérateur positif. Montrer que $u$ est continue.\\
+		\underline{Indication :} on pourra commencer par montrer que $|u(f)|\leq u(|f|)$.
+		\item Soit $f\in E$. On fixe $\varepsilon>0$.\\
+		Montrer que $\exists c>0,\ \forall x,y\in \R,\ |f(x)-f(y)|\leq \varepsilon+c(1-\cos(x-y))$.
+		\item On note $f_0\in E$ la fonction constante égale à $1$.\\
+		Soit $(u_n)\in \L(E)^\N$ une suite d'opérateurs positifs. On suppose que les suites $(u_n(f_0))$, $(u_n(\cos))$ et $(u_n(\sin))$ convergent uniformément vers $f_0,\cos$ et $\sin$ respectivement.\\
+		Prouver que pour toute fonction $f\in E$, la suite $(u_n(f))$ converge uniformément vers $f$.
+	\end{enumerate}
+	
+	Soit $f:\R\to \C$ une fonction continue et $2\pi$-périodique. On note pour $k\in \Z,\ c_k(f)=\displaystyle\frac{1}{2\pi}\int_{-\pi}^{\pi}f(t)e^{-ikt}dt$.\\
+	Pour tout $n\in \N$, on pose
+	$$S_n:x\mapsto \sum_{k=-n}^nc_k(f)e^{ikx}\quad\T{et}\quad\sigma_n(f)=\frac{1}{n+1}\sum_{k=0}^nS_k(f)$$
+	On appelle polynôme trigonométrique complexes (resp. réels) toute fonction $P$ à valeurs complexes (resp. réelles) définie par une somme finie d'exponentielles :\\
+	$\forall x\in \R,\ P(x)=\displaystyle\sum_{k=-\infty}^{+\infty}c_ke^{ikx}$, avec $c_k$ des complexes nuls pour $|k|$ assez grand.
+	
+	\begin{enumerate}[resume]
+		\item Montrer que si $P:x\mapsto \displaystyle\sum_{k=-\infty}^{+\infty}c_ke^{ikx}$ est un polynôme trigonométrique alors $\forall k\in \Z,\ c_k(P)=c_k$.
+		\item En déduire qu'un polynôme trigonométrique $P$ est à valeurs réelles si et seulement si $\forall k\in \N,\ c_{-k}(P)=\overline{c_k(P)}$, si et seulement si $P$ est une combinaisons linéaires à coefficients réels des fonctions $x\mapsto \cos(kx),\ x\mapsto \sin(kx)$ pour $k\in \N$.
+		\item En appliquant la question 3 à $(\sigma_n)$, démontrer que les polynômes trigonométrique réels sont denses dans $\mathcal C_{2\pi}(\R)$ muni de la norme uniforme.
+		\item Démontrer que les polynômes trigonométrique complexes sont denses dans l'espace $\mathcal C_{2\pi}(\C)$ des fonctions $f:\R\to \C$ continue $2\pi$-périodique muni de la norme uniforme.
 	\end{enumerate}
 	
 	\section{Théorème de sélection de Helly}
@@ -8707,8 +8753,152 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Soit $h:[a,b]\to\C$. On note $h=f+ig$ avec $f$ et $g$ des fonctions réelles. On dispose de $(P_n),(Q_n)\in \Z[X]^\N$ qui convergent uniformément sur $[a,b]$ vers $f$ et $g$ respectivement. Alors $\normep{\infty}{h-(P_n+iQ_n)}\leq \normep{\infty}{f-P_n}+\normep{\infty}{g-Q_n}\unfty\longrightarrow0$ avec $(P_n+iQ_n)\in (\Z[i])[X]^\N$.
 	\end{enumerate}
 	
-	\subsection{Théorème de sélection de Helly}\label{sec:theoreme-de-selection-de-helly}
-		\textcolor{blue}{\hyperref[Théorème de sélection de Helly]{[Enoncé]}}\\
+	\subsection{Théorème de Korovkin \xens{4}}
+	\label{Théorème de Korovkin corrigé}
+	\textcolor{blue}{\hyperref[Théorème de Korovkin]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On remarque que $\forall f,g\in E,\ f\leq g\implies u(f)\leq u(g)$.\\
+		En effet, $g-f\geq 0\implies u(g)-u(f)=u(g-f)\geq 0$.\\
+		Ainsi $u(f)\leq u(|f|)$. Mais aussi $-u(f)=u(-f)\leq u(|f|)$.\\
+		Ainsi $|u(f)|\leq u(|f|)$. On en déduit ensuite en notant $e_0:x\in [0,1]\mapsto 1$ que $|u(f)|\leq u(e_0)\normep{\infty}{f}$, puis par suite $\normep{\infty}{u(f)}\leq \normep{\infty}{u(e_0)}\normep{\infty}{f}$.\\
+		Ceci montre que $u$ est continue et que sa norme est inférieure à $\normep{\infty}{u(e_0)}$.\\
+		(De plus il y a égalité pour $f=e_0$ donc la norme de $u$ est exactement $\normep{\infty}{u(e_0)}$.)
+		\item $f$ est continue sur un compact donc d'après le théorème de Heine elle y est uniformément continue :
+		$$\exists \delta>0,\ \forall (x,y)\in [0,1]^2,\ |x-y|\leq \delta\implies |f(x)-f(y)|\leq \varepsilon$$
+		De plus, si $|x-y|>\delta$ alors pour $c>\max\left(0,\dfrac{2\normep{\infty}{f}-\varepsilon}{\delta^2}\right)$ on a :
+		$$c>0 \T{ et } \varepsilon+c\delta^2>2\normep{\infty}{f}\geq |f(x)-f(y)|$$
+		Ainsi $\forall (x,y)\in [0,1]^2,\ |f(x)-f(y)|\leq \varepsilon+c(x-y)^2$.
+		\item Soit $f\in E$. Soient $\varepsilon>0$ et $x\in [0,1]$.\\
+		D'après la question précédente $\exists c>0,\ \forall y\in [0,1],\ |f(x)-f(y)|\leq \varepsilon+c(x^2-2xy+y^2)$.\\
+		Donc $|f(x)e_0-f|\leq \varepsilon e_0+cx^2e_0-2cxe_1+ce_2$.\\
+		Or $u_n(f)-f=u_n(f-f(x)e_0)+f(x)u_n(e_0)-f$.\\
+		Donc 
+		\begin{align*}
+			|(u_n(f)-f)(x)|&\leq |u_n(f-f(x)e_0)(x)|+|f(x)(u_n(e_0)(x)-e_0(x))|\\
+			&\leq u_n(|f-f(x)e_0|)(x)+\normep{\infty}{f}\normep{\infty}{u_n(e_0)-e_0}\\
+			&\leq \varepsilon \normep{\infty}{u_n(e_0)}+c(x^2u_n(e_0)(x)-2xu_n(e_1)(x)+u_n(e_2)(x))+\normep{\infty}{f}\normep{\infty}{u_n(e_0)-e_0}
+		\end{align*}
+		Ceci étant vrai pour tout $x\in [0,1],\ |u_n(f)-f|\leq \varepsilon\normep{\infty}{u_n(e_0)}+c(e_2u_n(e_0)-2e_1u_n(e_1)+u_n(e_2))+\normep{\infty}{f}\normep{\infty}{u_n(e_0)-e_0}$.\\
+		D'où $\normep{\infty}{u_n(f)-f}\leq \varepsilon\normep{\infty}{u_n(e_0)}+c\normep{\infty}{e_2u_n(e_0)-2e_1u_n(e_1)+u_n(e_2)}+\normep{\infty}{f}\normep{\infty}{u_n(e_0)-e_0}$.\\
+		Or $\unfty\lim\normep{\infty}{u_n(e_0)}=\normep{\infty}{e_0}=1,\ \unfty\lim\normep{\infty}{e_2u_n(e_0)-2e_1u_n(e_1)+u_n(e_2)}=\normep{\infty}{e_2-2e_1^2+e_2}=0$ et $\unfty\lim\normep{\infty}{u_n(e_0)-e_0}=0$.\\
+		Donc pour $N$ assez grand, $\forall n\geq N,\ \normep{\infty}{u_n(f)-f}\leq \varepsilon(1-\varepsilon)+c\varepsilon+\normep{\infty}{f}\varepsilon\underset{\varepsilon\to 0}{\longrightarrow} 0$.\\
+		i.e $\normep{\infty}{u_n(f)-f}\unfty\longrightarrow 0$.
+		\item Soit $f\in E$. On pose pour $n\in \N,\ B_n(f)=\displaystyle\sum_{k=0}^nf\left(\frac{k}{n}\right)b_k^n$ avec $b_k^n:x\mapsto \displaystyle\binom{n}{k}x^k(1-x)^{n-k}$.\\
+		On va montrer que la suite de fonctions polynomiales $(B_n(f))_{n\in \N}$ converge uniformément vers $f$ sur $[0,1]$.\\
+		$(B_n)_{n\in \N^*}$ est une suite d'opérateurs positifs.\\
+		Une approche qui facilite grandement les calculs est la modélisation probabiliste.\\
+		A $x$ et $n$ fixés, $(b_k^n(x))_{0\leq k\leq n}$ est la loi de probabilité d'une variable aléatoire $X_n(x)\sim \B(n,x)$.\\
+		Et alors on reconnaît par la formule de transfert l'identité $\E\left(f\left(\dfrac{X_n(x)}{n}\right)\right)=B_n(f)(x)$.\\
+		Ainsi $B_n(e_0)(x)=\E\left(1\right)=1=e_0(x)$, $B_n(e_1)(x)=\displaystyle\E\left(\frac{X_n(x)}{n}\right)=\frac{1}{n}\E(X_n(x))=x=e_1(x)$.\\
+		Et $B_n(e_2)(x)=\displaystyle\E\left(\frac{X_n(x)^2}{n^2}\right)=\frac{1}{n^2}\left(\V(X_n(x))+\E(X_n(x))^2\right)=\frac{1}{n^2}\left(nx(1-x)+(nx)^2\right)=x^2+\frac{x-x^2}{n}=e_2(x)+\frac{e_1(x)-e_2(x)}{n}$.\\
+		On en déduit que $B_n(e_0)=e_0$ et $B_n(e_1)=e_1$ converge uniformément vers $e_0$ et $e_1$ respectivement. Puis $\normep{\infty}{B_n(e_2)-e_2}=\normep{\infty}{\dfrac{e_1-e_2}{n}}\leq \dfrac{2}{n}\unfty\longrightarrow 0$.\\
+		Ainsi d'après le théorème de Korovkin, $\forall f\in E,\ \normep{\infty}{B_n(f)-f}\longrightarrow 0$.
+	\end{enumerate}
+	
+	\subsection{Théorème de Fejér}
+	\label{Théorème de Fejér corrigé}
+	\textcolor{blue}{\hyperref[Théorème de Fejér]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On remarque que $\forall f,g\in E,\ f\leq g\implies u(f)\leq u(g)$.\\
+		En effet, $g-f\geq 0\implies u(g)-u(f)=u(g-f)\geq 0$.\\
+		Ainsi $u(f)\leq u(|f|)$. Mais aussi $-u(f)=u(-f)\leq u(|f|)$.\\
+		Ainsi $|u(f)|\leq u(|f|)$. On en déduit ensuite en notant $f_0:x\in \R\mapsto 1$ que $|u(f)|\leq u(f_0)\normep{\infty}{f}$, puis par suite $\normep{\infty}{u(f)}\leq \normep{\infty}{u(f_0)}\normep{\infty}{f}$.\\
+		Ceci montre que $u$ est continue et que sa norme est inférieure à $\normep{\infty}{u(f_0)}$.\\
+		(De plus il y a égalité pour $f=f_0$ donc la norme de $u$ est exactement $\normep{\infty}{u(f_0)}$.)
+		\item $f$ est continue sur le compact $[0,4\pi]$ donc d'après le théorème de Heine :
+		$$\exists \delta>0,\ \forall (x,y)\in [0,4\pi]^2,\ |x-y|\leq \delta\implies |f(x)-f(y)|\leq \varepsilon$$
+		Par $2\pi$-périodicité il suffit de vérifier le résultat pour $x,y\in [0,2\pi]$. Sans perte de généralité on suppose $x\leq y$.\\
+		Si $y-x<\delta$ alors la condition est automatiquement vérifiée.\\
+		Mais de plus si $x+2\pi-y<\delta$ alors par $2\pi$-périodicité on se ramène au cas précédent en remplaçant $x$ par $x+2\pi$.\\
+		Finalement si $y-x\geq \delta$ et $x+2\pi-y\geq \delta$ i.e $\delta\leq y-x\leq 2\pi-\delta$ alors $\cos(x-y)\leq \cos(\delta)=\cos(2\pi-\delta)$.\\
+		\begin{center}
+			\begin{tikzpicture}
+				\draw (0,0) node[anchor=north east] {$0$};
+				\draw (-0.05,1) -- (0.05,1) node[left] {$1$};
+				\draw (pi,-0.05) -- (pi,0.05) node[below] {$\pi$};
+				\draw (2*pi,-0.05) -- (2*pi,0.05) node[below] {$2\pi$};
+				\draw[->] (-1,0) -- (5*pi/2,0) node[right] {$x$};
+				\draw[->] (0,-1.5) -- (0,1.5) node[above] {$\cos(x)$};
+				\draw[blue, thick, smooth, samples=100, domain=0:2*pi] 
+				plot (\x, {cos(\x r)});
+				\fill [pattern={Lines[distance=2mm,angle=45,line width=0.3mm]},pattern color=gray] (0,-1.5) rectangle (0.9,1.5);
+				\fill [pattern={Lines[distance=2mm,angle=45,line width=0.3mm]},pattern color=gray] (2*pi-0.9,-1.5) rectangle (2*pi,1.5);
+				\draw[red] (0.9,-0.05) -- (0.9,0.05) node[anchor=north west] {$\delta$};
+				\draw[red] (2*pi-0.9,-0.05) -- (2*pi-0.9,0.05) node[anchor=north east] {$2\pi-\delta$};
+				\draw[red] (-0.05,{cos(0.9 r)}) -- (0.05,{cos(0.9 r)}) node[left] {$\cos(\delta)$};
+				\draw[red,dashed] (0,{cos(0.9 r)}) -- (2*pi,{cos(0.9 r)});
+				\draw[red,dashed] (0.9,-1.5) -- (0.9,1.5);
+				\draw[red,dashed] (2*pi-0.9,-1.5) -- (2*pi-0.9,1.5);
+			\end{tikzpicture}
+		\end{center}
+		càd $1-\cos(x-y)\geq 1-\cos(\delta)$. Donc $|f(x)-f(y)|\leq 2\normep{\infty}{f}\leq \varepsilon+c(1-\cos(x-y))$ pour $c>\max\left(0,\dfrac{2\normep{\infty}{f}-\varepsilon}{1-\cos(\delta)}\right)>0$.
+		\item Soit $f\in \mathcal C_{2\pi}(\R)$. Soient $\varepsilon>0$ et $x\in \R$. D'après la question précédente,\\
+		$\exists c>0,\ \forall y\in \R,\ |f(x)-f(y)|\leq \varepsilon+c(1-\cos(x)\cos(y)-\sin(x)\sin(y))$.\\
+		Donc $|f(x)f_0-f|\leq \varepsilon f_0+c(f_0-\cos(x)\cos-\sin(x)\sin)$.\\
+		Or $u_n(f)-f=u_n(f-f(x)f_0)+f(x)u_n(f_0)-f$.\\
+		Donc 
+		\begin{align*}
+			|(u_n(f)-f)(x)|&\leq |u_n(f-f(x)f_0)(x)|+|f(x)(u_n(f_0)(x)-f_0(x))|\\
+			&\leq u_n(|f-f(x)f_0|)(x)+\normep{\infty}{f}\normep{\infty}{u_n(f_0)-f_0}\\
+			&\leq \varepsilon u_n(f_0)(x)+c(u_n(f_0)-\cos(x)u_n(\cos)-\sin(x)u_n(\sin))+|f(x)||(u_n(f_0)-f_0)(x)|
+		\end{align*}
+		Ceci étant vrai pour tout réel $x,\ |u_n(f)-f|\leq \varepsilon u_n(f_0)+c(u_n(f_0)+\cos u_n(\cos)-\sin u_n(\sin))+|f||u_n(f_0)-f_0|$.\\
+		D'où $\normep{\infty}{u_n(f)-f}\leq \varepsilon\normep{\infty}{u_n(f_0)}+c\normep{\infty}{u_n(f_0)+\cos u_n(\cos)-\sin u_n(\sin)}+\normep{\infty}{f}\normep{\infty}{u_n(f_0)-f_0}$.\\
+		Or $\unfty\lim\normep{\infty}{u_n(f_0)}=\normep{\infty}{f_0}=1,\ \unfty\lim\normep{\infty}{u_n(f_0)+\cos u_n(\sin)-\sin u_n(\cos)}=\normep{\infty}{1-\cos^2-\sin^2}=0$ et $\unfty\lim\normep{\infty}{u_n(f_0)-f_0}=0$.\\
+		Donc pour $N$ assez grand, $\forall n\geq N,\ \normep{\infty}{u_n(f)-f}\leq \varepsilon(1-\varepsilon)+c\varepsilon+\normep{\infty}{f}\varepsilon\underset{\varepsilon\to 0}{\longrightarrow} 0$.\\
+		i.e $\normep{\infty}{u_n(f)-f}\unfty\longrightarrow 0$.
+		\item Soient $k,l\in \Z$.\\
+		Si $k\ne l,\ \displaystyle\int_{-\pi}^\pi e^{i(l-k)t}dt=\left[\frac{e^{i(l-k)t}}{i(l-k)}\right]_{-\pi}^\pi=0$.\\
+		Et si $k=l$, $\displaystyle\int_{-\pi}^\pi e^{i(l-k)t}dt=\int_{-\pi}^\pi dt=2\pi$.\\
+		Donc par linéarité, $\forall k\in \Z,\ c_k(P)=c_k$.
+		\item On raisonne par implication circulaire.\\
+		Si $P\in \Vect_\R(x\mapsto \cos(kx),x\mapsto \sin(kx),\ k\in \N)$ alors $P$ est à valeurs réelles.\\
+		Si $P$ est à valeurs réelles alors :
+		$$\forall k\in \Z,\ c_{-k}(P)=\frac{1}{2\pi}\int_{-\pi}^\pi P(t)e^{ikt}dt=\frac{1}{2\pi}\int_{-\pi}^\pi \overline{P(t)e^{-ikt}}dt=\overline{\frac{1}{2\pi}\int_{-\pi}^\pi P(t)e^{-ikt}dt}=\overline{c_k(P)}$$
+		Enfin supposons que $\forall k\in \Z,\ c_{-k}=c_{-k}(P)=\overline{c_k(P)}=\overline{c_k}$. On note $c_k=a_k+ib_k$ avec $a_k,b_k\in \R$. Soit $x\in \R$.\\
+		\begin{align*}
+			P(x)&=\sum_{k=-n}^nc_ke^{ikx}\\
+			&=c_0+\sum_{k=1}^nc_ke^{ikx}+c_{-k}e^{-ikx}\\
+			&=c_0+\sum_{k=1}^nc_ke^{ikx}+\overline{c_ke^{ikx}}\\
+			&=c_0+\sum_{k=1}^n2\operatorname{Re}(c_ke^{ikx})\\
+			&=c_0+2\sum_{k=1}^na_k\cos(kx)-b_k\sin(kx)
+		\end{align*}
+		Comme $c_0=\overline{c_0}$, $c_0\in \R$ et $c_0=c_0\cos(0x)$, cela conclut.
+		\item Soient $f,g\in \mathcal C_{2\pi}(\R)$ et $\lambda\in \R$.\\
+		$\forall k\in \Z,\ c_k(f+\lambda g)=c_k(f)+\lambda c_k(g)$.\\
+		Donc $\forall n\in \N,\ S_n(f+\lambda g)=S_n(f)+\lambda S_n(g)$. D'où $\forall n\in \N,\ \sigma_n(f+\lambda g)=\sigma_n(f)+\lambda \sigma_n(g)$.\\
+		Fixons $N\in \N$ et $x\in \R$.\\
+		$\sigma_N(f)(x)=\displaystyle\frac{1}{N+1}\sum_{n=0}^N\sum_{k=-n}^nc_k(f)e^{ikx}=\frac{1}{2\pi(N+1)}\int_{-\pi}^\pi f(t)\sum_{n=0}^N\sum_{k=-n}^ne^{ik(x-t)}dt$.\\
+		Pour montrer que $\sigma_N$ est un opérateur (positif) de $\mathcal C_{2\pi}(\R)$ il suffit de montrer que $K_N(u):=\displaystyle\sum_{n=0}^N\sum_{k=-n}^ne^{iku}$ est un réel (positif) pour tout $u\notin 2\pi\Z$.\\
+		Soit $u\notin 2\pi\Z$.\\
+		Comme $e^{iu}\ne 1,\ \displaystyle\sum_{n=-n}^ne^{iku}=e^{-inu}\sum_{k=0}^{2n}e^{iku}=e^{-inu}\frac{e^{i(2n+1)u}-1}{e^{iu}-1}=\frac{\sin\left((2n+1)\frac{u}{2}\right)}{\sin\left(\frac{u}{2}\right)}$.\\
+		On pose $v=\dfrac{u}{2}$.\\
+		\begin{align*}
+			K_n(u)&=\frac{1}{\sin(v)}\sum_{n=0}^N\sin((2n+1)v)\\
+			&=\frac{1}{\sin(v)}\operatorname{Im}\left(\sum_{n=0}^Ne^{i(2n+1)v}\right)\\
+			&=\frac{1}{\sin(v)}\operatorname{Im}\left(e^{iv}\frac{e^{i(2N+1)v-1}}{e^{2iv}-1}\right)\\
+			&=\frac{1}{\sin(v)}\operatorname{Im}\left(e^{i(N+1)v}\frac{\sin((N+1)v)}{\sin(v)}\right)\\
+			&=\frac{\sin^2((N+1)v)}{\sin^2(v)}\geq 0
+		\end{align*}
+		Montrons ensuite que $(\sigma_n(f_0)),\ (\sigma_n(\cos))$ et $(\sigma_n(\cos))$ converge uniformément vers $f_0,\cos$ et $\sin$ respectivement.\\
+		On calcule $c_0(f_0)=1$ et $c_k(f_0)=0$ pour $k\ne 0$. Donc $\forall n\in \N,\ S_n(f_0)=f_0$ puis $\sigma_n(f_0)=f_0$ converge uniformément vers $f_0$.\\
+		Ensuite on sait que $\forall x\in \R,\ \cos(x)=\dfrac{1}{2}e^{ix}+\dfrac{1}{2}e^{-ix}$. Alors d'après la question $4$, $c_1(\cos)=c_{-1}(\cos)=\dfrac{1}{2}$ et $c_k(\cos)=0$ pour $k\notin\{-1,1\}$. Donc $S_0(\cos)=0$ et $\forall n\in \N^*,\ S_n(\cos)=\cos$. Donc $\forall n\in \N,\ \sigma_n(\cos)=\dfrac{n}{n+1}\cos$ converge uniformément vers $\cos$.\\
+		De même l'identité $\forall x\in \R,\ \sin(x)=\dfrac{1}{2i}e^{ix}-\dfrac{1}{2i}e^{-ix}$ donne $\sigma_n(\sin)=\dfrac{n}{n+1}\sin$ converge uniformément vers $\sin$.\\
+		Ainsi d'après la question 3, pour toute fonction $f\in \mathcal C_{2\pi}(\R),\ (\sigma_n(f))$ converge uniformément vers $f$ sur $\R$.\\
+		Enfin, $\sigma_n$ est clairement à valeurs dans les polynômes trigonométriques complexes. En outre, si $f$ est à valeur réelle $\forall k\in \Z,\ c_{-k}(f)=\overline{c_k(f)}$ et donc par la question 5 $S_n(f)$ est un polynôme trigonométrique réel quel que soit $n\in \N$, puis $\sigma_n(f)$ aussi.\\
+		Ceci démontre que l'ensemble des polynômes trigonométriques réels est dense dans $\mathcal C_{2\pi}(\R)$ pour la norme uniforme.
+		\item Appuyons nous sur le cas réel.\\
+		Soit $f\in \mathcal C_{2\pi}(\C)$. On écrit $f=g+ih$ avec $g$ et $h$ des fonctions réelles.\\
+		Alors $g,h\in \mathcal C_{2\pi}(\R)$. En effet elles sont continues par définition et $\forall x\in \R,\ f(x+2\pi)=f(x)\implies \begin{cases}
+			g(x+2\pi)=g(x)\\
+			h(x+2\pi)=h(x)
+		\end{cases}$.\\
+		Donc $(\sigma_n(g))$ et $(\sigma_n(h))$ convergent uniformément vers $g$ et $h$ respectivement. Par conséquent, $\sigma_n$ étant un endomorphisme de $\mathcal C_{2\pi}(\C),\ (\sigma_n(g+ih))=(\sigma_n(g)+i\sigma_n(h))$ est une suite de polynômes trigonométriques complexes convergeant uniformément vers $g+ih=f$.
+	\end{enumerate}
+	
+	\subsection{Théorème de sélection de Helly}
+	\label{sec:theoreme-de-selection-de-helly}
+	\textcolor{blue}{\hyperref[Théorème de sélection de Helly]{[Enoncé]}}\\
 	%https://agreg-maths.fr/uploads/versions/842/Theoreme_de_selection_de_Helly.pdf
 	%https://les-mathematiques.net/vanilla/discussion/363714/principe-dextraction-diagonale
 	
