@@ -2707,17 +2707,21 @@
 	\begin{enumerate}[resume]
 		\item Montrer que si $P:x\mapsto \displaystyle\sum_{k=-\infty}^{+\infty}c_ke^{ikx}$ est un polynôme trigonométrique alors $\forall k\in \Z,\ c_k(P)=c_k$.
 		\item En déduire qu'un polynôme trigonométrique $P$ est à valeurs réelles si et seulement si $\forall k\in \N,\ c_{-k}(P)=\overline{c_k(P)}$, si et seulement si $P$ est une combinaisons linéaires à coefficients réels des fonctions $x\mapsto \cos(kx),\ x\mapsto \sin(kx)$ pour $k\in \N$.
-		\item En appliquant la question 3 à $(\sigma_n)$, démontrer que les polynômes trigonométrique réels sont denses dans $\mathcal C_{2\pi}(\R)$ muni de la norme uniforme.
+		\item En appliquant la question 3 à $(\sigma_n)$, démontrer que les polynômes trigonométriques réels sont denses dans $\mathcal C_{2\pi}(\R)$ muni de la norme uniforme.
 		\item Démontrer que les polynômes trigonométrique complexes sont denses dans l'espace $\mathcal C_{2\pi}(\C)$ des fonctions $f:\R\to \C$ continue $2\pi$-périodique muni de la norme uniforme.
 	\end{enumerate}
 	
-	\section{Théorème de sélection de Helly}
-	\textcolor{blue}{\hyperref[sec:theoreme-de-selection-de-helly]{[Corrigé]}}\\
+	\section{Théorème de sélection de Helly \xens{4}}
+	\textcolor{blue}{\hyperref[Théorème de sélection de Helly corrigé]{[Corrigé]}}\\
 	\label{Théorème de sélection de Helly}
-	Soit $(f_n)_{n\in \N}$ une suite de fonctions croissantes d'un intervalle ouvert $I$ dans $\R$ telle que, pour tout $x\in I$, la suite $(f_n(x))_{n\in \N}$ est bornée. Démontrer qu'il existe une sous-suite $(f_{\varphi(n)})_{n\in \N}$ et une fonction croissante $f:I \to\R$, telle que cette sous-suite converge simplement vers $f$.
-	%https://agreg-maths.fr/uploads/versions/842/Theoreme_de_selection_de_Helly.pdf
-	%https://les-mathematiques.net/vanilla/discussion/363714/principe-dextraction-diagonale
-	
+	Soit $I\subset \R$ un intervalle ouvert.\\
+	Soit $(f_n)_{n\in \N}$ une suite de fonctions croissantes de $I$ dans $\R$ telle que, pour tout $x\in I$, la suite $(f_n(x))_{n\in \N}$ est bornée.
+	\begin{enumerate}
+		\item Soit $f:I\to \R$ une fonction croissante.\\
+		Montrer que l'ensemble des points de discontinuité de $f$ est au plus dénombrable.
+		\item Démontrer qu'il existe une sous-suite $(f_{\varphi(n)})_{n\in \N}$ et une fonction croissante $f:I\cap \Q \to\R$ telle que cette sous-suite converge simplement vers $f$ sur $I\cap \Q$.
+		\item Démontrer qu'il existe une sous-suite $(f_{\varphi(n)})_{n\in \N}$ et une fonction croissante $f:I \to\R$ telle que cette sous-suite converge simplement vers $f$ sur $I$.
+	\end{enumerate}
 
 \chapter{Série entière}
 \section{Lemme d'Abel}
@@ -8896,11 +8900,41 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Donc $(\sigma_n(g))$ et $(\sigma_n(h))$ convergent uniformément vers $g$ et $h$ respectivement. Par conséquent, $\sigma_n$ étant un endomorphisme de $\mathcal C_{2\pi}(\C),\ (\sigma_n(g+ih))=(\sigma_n(g)+i\sigma_n(h))$ est une suite de polynômes trigonométriques complexes convergeant uniformément vers $g+ih=f$.
 	\end{enumerate}
 	
-	\subsection{Théorème de sélection de Helly}
-	\label{sec:theoreme-de-selection-de-helly}
+	\subsection{Théorème de sélection de Helly \xens{4}}
+	\label{Théorème de sélection de Helly corrigé}
 	\textcolor{blue}{\hyperref[Théorème de sélection de Helly]{[Enoncé]}}\\
-	%https://agreg-maths.fr/uploads/versions/842/Theoreme_de_selection_de_Helly.pdf
-	%https://les-mathematiques.net/vanilla/discussion/363714/principe-dextraction-diagonale
+	\begin{enumerate}[leftmargin=*]
+		\item Notons $D$ l'ensemble des points de discontinuité de $f$. Comme $f$ est croissante sur un intervalle ouvert $I$ elle admet en tout point $x\in I$ une limite à gauche $\ell_x^-$ et à droite $\ell_x^+$. $D$ est alors exactement l'ensemble des points où $\ell_x^-<\ell_x^+$.\\
+		Pour tout $x\in D$ on se donne par densité de $\Q$ $q_x\in\, ]\ell_x^-,\ell_x^+[\,\cap\, \Q$.\\
+		Montrons que $\fonction{\omega}{D}{\Q}{x}{q_x}$ est strictement croissante, et donc injective.\\
+		Soient $x<y\in D$. Par croissance de $f$ on a $q_x<\ell_x^+\leq \ell_y^-<q_y$.\\
+		$D$ s'injecte dans $\Q$ qui est dénombrable, il est donc au plus dénombrable.
+		\item On se donne $(q_n)_{n\in \N}$ une énumération de l'ensemble dénombrable $I\cap \Q$.\\
+		On va appliquer ce qu'on appelle un \textit{procédé d'extraction diagonal}.\\
+		La suite $(f_n(q_0))$ est bornée donc par le théorème de Bolzano-Weierstrass on peut en extraire une sous-suite $(f_{\varphi_0(n)}(q_0))$ qui converge.\\
+		Puis la suite $(f_{\varphi_0(n)}(q_1))$ est bornée donc on peut en extraire une sous-suite $(f_{\varphi_0\circ\varphi_1(n)}(q_1))$ qui converge. Par ailleurs la suite $(f_{\varphi_0\circ \varphi_1(n)}(q_0))$ converge en tant que suite extraite d'une suite convergente.\\
+		Par récurrence on construit pour tout $k\in \N$ une extractrice $\psi_k=\varphi_0\circ\cdots\circ\varphi_k$ telle que $\forall i\leq k,\ (f_{\psi_k(n)}(q_i))_{n\in \N}$ converge.\\
+		On définit $\varphi:\N\to \N$ par $\varphi(n)=\psi_n(n)$ (d'où le terme extraction diagonal). $\varphi$ est strictement croissante car $\varphi(n+1)=\psi_{n+1}(n+1)=\psi_n(\varphi_{n+1}(n+1))\geq \psi_n(n+1)>\psi_n(n)=\varphi(n)$.\\
+		Montrons que la suite $(f_{\varphi(n)})$ converge simplement sur $I\cap \Q$.\\
+		Soit $q_i\in I\cap \Q$. Fixons $\varepsilon>0$.\\
+		On sait que $\forall k\geq i,\ \exists \ell_k\in \R,\ \exists N_k\in \N,\ \forall n\geq N_k,\ |f_{\psi_k(n)}(q_i)-\ell_k|<\varepsilon$.\\
+		Alors $\forall n\geq \max(i,N_i),\ |f_{\varphi(n)}(q_i)-\ell_i|=|f_{\psi_n(n)}(q_i)-\ell_i|<\varepsilon$.\\
+		Ainsi $(f_{\varphi(n)})$ converge simplement vers la fonction $f:q_i\mapsto \ell_i$ sur $I\cap \Q$.\\
+		Enfin $f$ est croissante comme limite simple de fonctions croissantes.
+		\item D'après la question 2, quitte à extraire on peut supposer que $(f_n)$ converge simplement vers une fonction croissante $f$ sur $I\cap \Q$.\\
+		On peut prolonger $f$ en une fonction croissante de $I$ dans $\R$ :\\
+		Pour $x\in \R$ on se donne une suite croissante $(x_n)\in (I\cap \Q)^\N$ qui converge vers $x$. La suite $(f(x_n))$ est croissante et majorée (par $f(q_x)$ avec $q_x\in I\cap \Q$ tel que $x<q_x$ par exemple) donc converge par le théorème de la limite monotone. On note $f(x)$ cette limite.\\
+		Si $x<y\in I$, pour $(y_n)\in (I\cap \Q)^\N$ croissante telle que $\unfty\lim y_n=y$, APCR $y_n>x$ d'où $f(y)=\unfty\lim f(y_n)\geq f(x)$.\\
+		Ainsi d'après la question 1, l'ensemble $D$ des points de discontinuité de $f$ est au plus dénombrable.\\
+		Si $D$ est fini on peut par extractions successives trouver une sous-suite $(f_{\varphi(n)})$ qui converge simplement sur $D$ et si $D$ est dénombrable on peut utiliser un procédé d'extraction diagonal comme dans la question 2 pour obtenir le même résultat.\\
+		Il reste alors à montrer que $(f_{\varphi(n)})$ converge simplement sur $I\setminus D$. On fixe $x\in I\setminus D$. Il suffit de montrer que $(f_n(x))$ converge.\\
+		Soit $\varepsilon>0$. $f$ est continue en $x$ donc il existe $\eta>0$ tel que $\forall y\in [x-\eta,x+\eta]\cap \Q,\ |f(x)-f(y)|<\varepsilon$.\\
+		Par conséquent, en se donnant $\alpha\in [x-\eta,x]\cap \Q$ et $\beta\in [x,x+\eta]\cap \Q$ on a $\forall n\in \N,\ f_n(\alpha)\leq f_n(x)\leq f_n(\beta)$ et $f(x)-f(\alpha)<\varepsilon,\ f(\beta)-f(x)<\varepsilon$.\\
+		Or $f_n(\alpha)\unfty\longrightarrow f(\alpha)$ et $f_n(\beta)\unfty\longrightarrow f(\beta)$. Donc on en déduit que APCR :
+		$$f(x)-2\varepsilon\leq f(\alpha)-\varepsilon\leq f_n(\alpha)\leq f_n(x)\leq f_n(\beta)\leq f(\beta)+\varepsilon\leq f(x)+2\varepsilon$$
+		i.e $|f_n(x)-f(x)|\leq 2\varepsilon$ d'où $f_n(x)\unfty\longrightarrow f(x)$.\\
+		Finalement la sous-suite $(f_{\varphi(n)})$ converge simplement sur $I=D\cup (I\setminus D)$. Enfin la fonction limite est croissante comme limite simple de fonctions croissantes.
+	\end{enumerate}
 	
 	\newpage
 \section{Correction Séries entières}
