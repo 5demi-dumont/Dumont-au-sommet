@@ -247,9 +247,9 @@
 \contentsline {section}{\numberline {V.12}Norme duale}{62}{section.5.12}%
 \contentsline {section}{\numberline {V.13}Norme à partir d'une famille libre}{62}{section.5.13}%
 \contentsline {section}{\numberline {V.14}Quelques normes matricielles}{62}{section.5.14}%
-\contentsline {section}{\numberline {V.15}Norme d'algèbre \telecom {1}}{62}{section.5.15}%
-\contentsline {section}{\numberline {V.16}Caractérisation des sous-espaces de dimension finie de $\EuScript C^0([0,1],\mathbb {K})$}{63}{section.5.16}%
-\contentsline {section}{\numberline {V.17}Distance}{63}{section.5.17}%
+\contentsline {section}{\numberline {V.15}Norme d'algèbre \telecom {2}}{62}{section.5.15}%
+\contentsline {section}{\numberline {V.16}Caractérisation des sous-espaces de dimension finie de $\EuScript C^0([0,1],\mathbb {R})$ \centraleponts {3}}{63}{section.5.16}%
+\contentsline {section}{\numberline {V.17}Distance \ccinp {1}}{63}{section.5.17}%
 \contentsline {section}{\numberline {V.18}Distance à une partie}{63}{section.5.18}%
 \contentsline {section}{\numberline {V.19}Distance d'un élément à une partie (1)}{63}{section.5.19}%
 \contentsline {section}{\numberline {V.20}Distance d'un élément à une partie (2)}{63}{section.5.20}%
@@ -294,7 +294,7 @@
 \contentsline {section}{\numberline {VI.26}Théorème de Weierstrass}{72}{section.6.26}%
 \contentsline {section}{\numberline {VI.27}Théorème de Chudnovsky \etoile {4}}{73}{section.6.27}%
 \contentsline {section}{\numberline {VI.28}Théorème de Korovkin \xens {4}}{73}{section.6.28}%
-\contentsline {section}{\numberline {VI.29}Théorème de Fejér}{73}{section.6.29}%
+\contentsline {section}{\numberline {VI.29}Théorème de Fejér \xens {5}}{73}{section.6.29}%
 \contentsline {section}{\numberline {VI.30}Théorème de sélection de Helly \xens {4}}{74}{section.6.30}%
 \contentsline {chapter}{\numberline {VII}Série entière}{75}{chapter.7}%
 \contentsline {section}{\numberline {VII.1}Lemme d'Abel}{75}{section.7.1}%
@@ -740,14 +740,14 @@
 \contentsline {subsection}{\numberline {XIII.5.12}Norme duale}{217}{subsection.13.5.12}%
 \contentsline {subsection}{\numberline {XIII.5.13}Norme à partir d'une famille libre}{218}{subsection.13.5.13}%
 \contentsline {subsection}{\numberline {XIII.5.14}Quelques normes matricielles}{218}{subsection.13.5.14}%
-\contentsline {subsection}{\numberline {XIII.5.15}Caractérisation des sous-espaces de dimension finie de $\EuScript {C}^0([0,1],\mathbb {K})$}{218}{subsection.13.5.15}%
-\contentsline {subsection}{\numberline {XIII.5.16}Norme d'algèbre \telecom {1}}{219}{subsection.13.5.16}%
-\contentsline {subsection}{\numberline {XIII.5.17}Distance}{219}{subsection.13.5.17}%
+\contentsline {subsection}{\numberline {XIII.5.15}Norme d'algèbre \telecom {2}}{218}{subsection.13.5.15}%
+\contentsline {subsection}{\numberline {XIII.5.16}Caractérisation des sous-espaces de dimension finie de $\EuScript C^0([0,1],\mathbb {R})$ \centraleponts {3}}{218}{subsection.13.5.16}%
+\contentsline {subsection}{\numberline {XIII.5.17}Distance \ccinp {1}}{219}{subsection.13.5.17}%
 \contentsline {subsection}{\numberline {XIII.5.18}Distance à une partie}{220}{subsection.13.5.18}%
 \contentsline {subsection}{\numberline {XIII.5.19}Distance d'un élément à une partie (1)}{220}{subsection.13.5.19}%
 \contentsline {subsection}{\numberline {XIII.5.20}Distance d'un élément à une partie (2)}{220}{subsection.13.5.20}%
-\contentsline {subsection}{\numberline {XIII.5.21}Passage par les matrices orthogonales}{220}{subsection.13.5.21}%
-\contentsline {subsection}{\numberline {XIII.5.22}Diamètre d'une partie bornée}{221}{subsection.13.5.22}%
+\contentsline {subsection}{\numberline {XIII.5.21}Passage par les matrices orthogonales}{221}{subsection.13.5.21}%
+\contentsline {subsection}{\numberline {XIII.5.22}Diamètre d'une partie bornée}{222}{subsection.13.5.22}%
 \contentsline {subsection}{\numberline {XIII.5.23}Détermination d'une borne inférieure}{222}{subsection.13.5.23}%
 \contentsline {subsection}{\numberline {XIII.5.24}Normes usuelles sur $\EuScript {C}^1([0,1],\mathbb {K})$}{223}{subsection.13.5.24}%
 \contentsline {subsection}{\numberline {XIII.5.25}Intersection des boules unités subordonnées d'un espace vectoriel normé de dimension finie}{224}{subsection.13.5.25}%
@@ -787,7 +787,7 @@
 \contentsline {subsection}{\numberline {XIII.6.26}Théorème de Weierstrass}{235}{subsection.13.6.26}%
 \contentsline {subsection}{\numberline {XIII.6.27}Théorème de Chudnovsky \etoile {4}}{237}{subsection.13.6.27}%
 \contentsline {subsection}{\numberline {XIII.6.28}Théorème de Korovkin \xens {4}}{238}{subsection.13.6.28}%
-\contentsline {subsection}{\numberline {XIII.6.29}Théorème de Fejér}{239}{subsection.13.6.29}%
+\contentsline {subsection}{\numberline {XIII.6.29}Théorème de Fejér \xens {5}}{239}{subsection.13.6.29}%
 \contentsline {subsection}{\numberline {XIII.6.30}Théorème de sélection de Helly \xens {4}}{242}{subsection.13.6.30}%
 \contentsline {section}{\numberline {XIII.7}Correction Séries entières}{244}{section.13.7}%
 \contentsline {subsection}{\numberline {XIII.7.1}Lemme d'Abel}{244}{subsection.13.7.1}%

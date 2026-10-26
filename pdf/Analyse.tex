@@ -2209,7 +2209,7 @@
 		\item Montrer que si $n=p$, ce sont des normes d'algèbre sur $\M_n(\R)$.
 	\end{enumerate}
 	
-	\section{Norme d'algèbre \telecom{1}}
+	\section{Norme d'algèbre \telecom{2}}
 	\textcolor{blue}{\hyperref[Norme d'algèbre corrigé]{[Corrigé]}}\\
 	\label{Norme d'algèbre}
 	Soit $||\cdot||$ une norme sur $\M_n(\K)$.
@@ -2218,10 +2218,10 @@
 		\item En déduire que $||\cdot||$ est proportionnelle à une norme d'algèbre.
 	\end{enumerate}
 	
-	\section{Caractérisation des sous-espaces de dimension finie de $\mathcal C^0([0,1],\K)$}
-	\textcolor{blue}{\hyperref[sec:caracterisation-des-sous-espaces-de-dimension-finie-de-mathcalc001k]{[Corrigé]}}\\
+	\section{Caractérisation des sous-espaces de dimension finie de $\mathcal C^0([0,1],\R)$ \centraleponts{3}}
+	\textcolor{blue}{\hyperref[Caractérisation des sous-espaces de dimension finie de C0 corrigé]{[Corrigé]}}\\
 	\label{Caractérisation des sous-espaces de dimension finie de C0}
-	On note $E=\mathcal C^0([0,1],\K)$. Pour $f\in E$ on pose $\normep{\infty}{f}=\sup\limits_{[0,1]}|f|$ et $\normep{2}{f}=\displaystyle\left(\int_{[0,1]}f^2\right)^{1/2}$.
+	On note $E=\mathcal C^0([0,1],\R)$. Pour $f\in E$ on pose $\normep{\infty}{f}=\sup\limits_{[0,1]}|f|$ et $\normep{2}{f}=\displaystyle\left(\int_0^1f^2\right)^{1/2}$.
 	\begin{enumerate}
 		\item Montrer qu'il existe $b>0$ tel que $\forall f\in E,\ \normep{2}{f}\leq b\normep{\infty}{f}$.
 		\item Soit $V$ un sous-espace vectoriel de $E$ de dimension finie. Montrer qu'il existe $c>0$ tel que $\forall f\in V,\ \normep{\infty}{f}\leq c\normep{2}{f}$.
@@ -2229,8 +2229,8 @@
 		Montrer que $V$ est de dimension finie et que $\dim V\leq n^2$.
 	\end{enumerate}
 	
-	\section{Distance}
-	\textcolor{blue}{\hyperref[sec:distance]{[Corrigé]}}\\
+	\section{Distance \ccinp{1}}
+	\textcolor{blue}{\hyperref[Distance corrigé]{[Corrigé]}}\\
 	\label{Distance}
 	Soit $A$ un ensemble.
 	On appelle distance sur $A$ toute application $d:A^2\to \R_+$ qui vérifie les axiomes :
@@ -2240,7 +2240,7 @@
 		\item D'inégalité triangulaire : $\forall (x,y,z)\in A^3,\ d(x,y)\leq d(x,z)+d(z,y)$.
 	\end{itemize}
 	\begin{enumerate}[leftmargin=*]
-		\item Soit $(E\norme{.})$ un espace vectoriel normé. montrer que $\fonction{d}{E^2}{\R_+}{(x,y)}{\norme{x-y}}$ est une distance sur $E$.
+		\item Soit $(E\norme{\cdot})$ un espace vectoriel normé. montrer que $\fonction{d}{E^2}{\R_+}{(x,y)}{\norme{x-y}}$ est une distance sur $E$.
 		\item Pour $(x,y)\in \R^2$ on pose $d(x,y)=\arctan|x-y|$. Montrer que $d$ est une distance sur $\R$ et qu'elle ne peut pas s'exprimer comme la distance de la question précédente.
 	\end{enumerate}
 	
@@ -2650,7 +2650,7 @@
 	\section{Théorème de Chudnovsky \etoile{4}}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-chudnovsky-etoile4]{[Corrigé]}}\\
 	\label{Théorème de Chudnovsky}
-	On se donne deux réels $a,b$ tels que $0<a\leq b<1$. Le but de cet exercice est de démontrer que toute fonction continue sur $[a,b]$ est limite uniforme sur $[a,b]$ d'une suite de fonctions polynomiales à coefficients entiers. On munit $\mathcal C([a,b],\R)$ de sa norme uniforme.
+	On se donne deux réels $a,b$ tels que $0<a\leq b<1$. Le but de cet exercice est de démontrer que toute fonction continue sur $[a,b]$ est limite uniforme sur $[a,b]$ d'une suite de fonctions polynomiales à coefficients entiers. On munit $\mathcal C([a,b],\R)$ de la norme uniforme.
 	\begin{enumerate}
 		\item Montrer que l'ensemble des nombres dyadiques $\mathcal D=\left\{\displaystyle\frac{p}{2^q},\ (p,q)\in \Z\times\N\right\}$ est dense dans $\R$.
 		\item On pose $\fonction{\varphi}{\R}{\R}{x}{2x(1-x)}$ et pour $n\in \N$ on définit $\varphi_n=\varphi\overset{n}{\overbrace{\circ\dots\circ}}\varphi$. Par convention $\varphi_0=\varphi$.
@@ -2658,9 +2658,7 @@
 			\item Montrer que $(\varphi_n)_{n\in \N}$ converge simplement vers la fonction constante égale à $\displaystyle\frac{1}{2}$ sur $[a,b]$.
 			\item Montrer que $(\varphi_n)_{n\in \N}$ converge uniformément vers la fonction constante égale à $\displaystyle\frac{1}{2}$ sur $[a,b]$.
 		\end{enumerate}
-		\item On note $\mathcal Z$ l'ensemble des limites uniformes de suites de fonctions polynomiales à coefficients entiers:
-		$$\mathcal Z=\{f\in \R^{[a,b]},\ \exists (P_n)\in \Z[X]^\N,\ \unfty{\lim}\normep{\infty}{x\mapsto f(x)-P_n(x)}=0\}$$
-		Montrer que $\mathcal Z$ est stable par somme et par produit.
+		\item Montrer que $\mathcal Z$, l'adhérence de l'ensemble des fonctions polynomiales à coefficients entiers, est un sous-anneau de $\mathcal C([a,b],\R)$.
 		\item Conclure.
 		\item Le résultat est-il encore vrai pour $a\leq b$ des réels quelconques ? Que peut-on dire pour des fonctions à valeurs dans $\C$ ?
 	\end{enumerate}
@@ -2682,7 +2680,7 @@
 		\item Bonus : en déduire le théorème d'approximation de Weierstrass.
 	\end{enumerate}
 	
-	\section{Théorème de Fejér}
+	\section{Théorème de Fejér \xens{5}}
 	\textcolor{blue}{\hyperref[Théorème de Fejér corrigé]{[Corrigé]}}\\
 	\label{Théorème de Fejér}
 	On note $E=\mathcal C_{2\pi}(\R)$ l'espace vectoriel des fonctions réelle continue sur $\R$ et $2\pi$-périodique, muni de la norme uniforme.\\
@@ -7989,41 +7987,24 @@ Démontrer l'équivalence des deux affirmations suivantes :
 			On a alors $N^*(x)\leq\normep{1}{x}$. On pose $y\in \R^n$ tel que $y_k=1$ si $x_k\leq 0$ et $y_k=-1$ sinon. Il est évident que $y\in S$ et \[|\langle x,y\rangle|=\normep{1}{x}\]
 			On en déduit que $N^*(x)\geq\normep{1}{x}$. Finalement $N^*=\normep{\infty}{.}$
 		\end{enumerate}
+	
 	\subsection{Norme à partir d'une famille libre}\label{sec:norme-a-partir-dune-famille-libre}
 	\textcolor{blue}{\hyperref[Norme à partir d'une famille libre]{[Enoncé]}}\\
 	On montre aisément que $N$ vérifie l'homogénéité et l'inégalité triangulaire.\\
 	Montrons que $N$ vérifie la séparation si et seulement si $(x_1,\dots,x_n)$ est libre.\\
 	Supposons que $(x_1,\dots,x_n)\in E$ est libre.\\
 	Ainsi, pour $\lambda=(\lambda_1,\dots,\lambda_n)\in\R^n$ tel que $N(\lambda)=0$.\\
-	On a alors : \[\sum_{k=1}^{n}\lambda_kx_k=0\]
-	Donc : $\lambda=0$ car $(x_1,\dots,x_n)\in E$ est libre.\\
-	Supposons que $N$ vérifie la séparation.
-	$\forall (\lambda_1,\dots,\lambda_n)\in\R^n$, 
-	\[\sum_{k=1}^{n}\lambda_kx_k=0 \Longleftrightarrow \norme{\sum_{k=1}^{n}\lambda_kx_k}=0\].
-	Donc par séparation, $(\lambda_1,\dots,\lambda_n)=0$.
+	On a alors : \[\sum_{k=1}^n\lambda_kx_k=0\]
+	Donc $\lambda=0$ car $(x_1,\dots,x_n)\in E$ est libre.\\
+	Réciproquement, supposons que $N$ vérifie la séparation. Alors $\forall (\lambda_1,\dots,\lambda_n)\in\R^n$,
+	\[\sum_{k=1}^{n}\lambda_kx_k=0 \implies N(\lambda_1,\dots,\lambda_n)=\norme{\sum_{k=1}^n\lambda_kx_k}=0\implies \lambda_1=\dots=\lambda_n=0\]
+	Donc $(x_1,\dots,x_n)$ est libre.
 	
 	\subsection{Quelques normes matricielles}
 	\label{sec:quelques-normes-matricielles}
 	\textcolor{blue}{\hyperref[Quelques normes matricielles]{[Enoncé]}}\\
-	\subsection{Caractérisation des sous-espaces de dimension finie de $\mathcal{C}^0([0,1],\K)$}\label{sec:caracterisation-des-sous-espaces-de-dimension-finie-de-mathcalc001k}
-		\textcolor{blue}{\hyperref[Caractérisation des sous-espaces de dimension finie de C0]{[Enoncé]}}\\
-		\begin{enumerate}
-			\item Soit $f\in E$.
-			\[\normep{2}{f}^2\leq\int_{0}^{1}\normep{\infty}{f}^2dt=\normep{\infty}{f}^2\]
-			Ainsi pour $b=1$, $\normep{2}{f}\leq b\normep{\infty}{f}$ pour tout $f\in E$.
-			\item Puisque $V$ est de dimension finie, les normes $\normep{\infty}{.}$ et $\normep{2}{.}$ sont équivalentes sur $V$ d'où l'inégalité voulue.
-			\item On munit $V$ du produit scalaire $(f,g)\mapsto\int_{0}^{1}f(t)g(t)dt$. On fixe une famille libre de $V$ à $p$ éléments.On applique le procédé de Gram-Schimidt pour obtenir une famille orthonormale. On la notera $(f_i)_{i\in\crblanc{1}{p}}$ Soit $x\in[0,1]$. Alors pour tout $(a_i)\in\R^n$, \[\left(\sum_{i=1}^{p}a_if_i(x)\right)^2\leq\normep{\infty}{\sum_{i=1}{p}a_if_i}\leq n^2\normep{2}{\sum_{i=1}^{p}a_if_i}\]
-			D'après le théorème de Pythagore, \[\normep{2}{\sum_{i=1}^{p}a_if_i}=\sum_{i=1}^{p}\lambda_i^2\]
-			Ainsi, en prenant $\lambda_i=f_i(x)$ pour tout $i\in\crblanc{1}{p}$, on a :
-			\[\left(\sum_{i=1}^{p}f_i(x)^2\right)^2\leq n^2\sum_{i=1}^{p}f_i(x)^2\]
-			et donc
-			\[\sum_{i=1}^{p}f_i(x)^2\leq n^2\]
-			Par conséquent, en intégrant de $0$ à $1$, on obtient :
-			\[p=\sum_{i=1}^{p}\normep{2}{f_i}^2\leq n^2\]
-			Ainsi, une famille libre est a fortiori de taille au plus $n^2$, ce qui implique que $V$ est de dimension finie et que la dimension de $V$ est majorer par $n^2$.
-		\end{enumerate}
 	
-	\subsection{Norme d'algèbre \telecom{1}}
+	\subsection{Norme d'algèbre \telecom{2}}
 	\label{Norme d'algèbre corrigé}
 	\textcolor{blue}{\hyperref[Norme d'algèbre]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -8033,8 +8014,30 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		$$\forall (A,B)\in \M_n(\K)^2,\ N(AB)=k||AB||\leq k^2||A||\cdot||B||=N(A)N(B)$$
 	\end{enumerate}
 	
-	\subsection{Distance}
-	\label{sec:distance}
+	\subsection{Caractérisation des sous-espaces de dimension finie de $\mathcal C^0([0,1],\R)$ \centraleponts{3}}
+	\label{Caractérisation des sous-espaces de dimension finie de C0 corrigé}
+	\textcolor{blue}{\hyperref[Caractérisation des sous-espaces de dimension finie de C0]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item Soit $f\in E$.
+		\[\normep{2}{f}^2=\int_0^1f(t)^2dt\leq \int_0^1\normep{\infty}{f}^2dt=\normep{\infty}{f}^2\]
+		Ainsi pour $b=1$, $\normep{2}{f}\leq b\normep{\infty}{f}$ pour tout $f\in E$.
+		\item Puisque $V$ est de dimension finie, les normes $\normep{\infty}{\cdot}$ et $\normep{2}{\cdot}$ sont équivalentes sur $V$ d'où l'inégalité voulue.
+		\item On munit $V$ du produit scalaire $(f,g)\mapsto\displaystyle\int_0^1f(t)g(t)dt$.\\
+		Il suffit de montrer que montrer que toute famille libre de $V$ a moins de $n^2$ éléments.\\
+		On fixe une famille libre de $V$ à $p$ éléments. On lui applique le procédé de Gram-Schmidt pour obtenir une famille orthonormale $(f_i)_{i\in\crblanc{1}{p}}$.\\
+		Soit $x\in[0,1]$. Pour tout $(a_i)\in\R^n$, \[\left(\sum_{i=1}^pa_if_i(x)\right)^2\leq\normep{\infty}{\sum_{i=1}^pa_if_i}^2\leq n^2\normep{2}{\sum_{i=1}^pa_if_i}^2\]
+		Or d'après le théorème de Pythagore, \[\normep{2}{\sum_{i=1}^pa_if_i}^2=\sum_{i=1}^pa_i^2\]
+		Ainsi, en prenant $a_i=f_i(x)$ pour tout $i\in\crblanc{1}{p}$, on a :
+		\[\left(\sum_{i=1}^pf_i(x)^2\right)^2\leq n^2\sum_{i=1}^pf_i(x)^2\]
+		et donc
+		\[\sum_{i=1}^pf_i(x)^2\leq n^2\]
+		Par conséquent, en intégrant de $0$ à $1$, on obtient :
+		\[p=\sum_{i=1}^p\normep{2}{f_i}^2\leq n^2\]
+		Ainsi $V$ est de dimension finie et sa dimension est majorée par $n^2$.
+	\end{enumerate}
+	
+	\subsection{Distance \ccinp{1}}
+	\label{Distance corrigé}
 	\textcolor{blue}{\hyperref[Distance]{[Enoncé]}}\\
 		\begin{enumerate}[leftmargin=*]
 			\item \begin{itemize}
@@ -8043,30 +8046,31 @@ Démontrer l'équivalence des deux affirmations suivantes :
 				\item $\forall x,y,z\in E, \norme{x-y}=\norme{x-z+z-y}\leq \norme{x-z}+\norme{z-y}$
 			\end{itemize}
 			Donc $d$ est une distance sur $E$.
-			\item On admet que $\varphi:(x,y)\in\R^2\mapsto |x-y|$ est une distance sur $\R$.
+			\item D'après la première question $\varphi:(x,y)\in\R^2\mapsto |x-y|$ est une distance sur $\R$.
 			\begin{itemize}
 				\item La symétrie vient de la symétrie de la valeur absolue
 				\item La séparation vient du fait que $\arctan(x)=0$ admet une unique solution qui est $0$ et donc puisque $\varphi$ est une distance, on a $x=y\Longleftrightarrow \arctan|x-y|=0$
 				\item Soient $x,y,z\in\R$.\\
-				 D'après l'inégalité triangulaire sur la valeur absolue, on a 
-				 \[|x-y|\leq|x-z|+|z-y|\]
-				 Comme la fonction $\arctan$ est croissante sur $\R$, on a :
-				 \[\arctan|x-y|\leq \arctan\left(|x-z|+|z-y|\right)\]
-				 Montrons que pour tout $a,b\in\R_+$ tels que :
-				 \[\arctan(a+b)\leq\arctan(a)+\arctan(b)\]
-				 On fixe $a\in\R_+$.\\
-				 On pose $\fonction{f}{\R_+}{\R}{t}{\arctan(a+t)-\arctan(a)-\arctan(t}$.\\
-				 Cette fonction est de classe $\mathcal{C}^1$ sur $\R_+$.
-				 \[f'(t)=\frac{1}{1+(a+t)^2}-\frac{1}{1+t^2}\]
-				 On a $f'(t)\leq 0$ pour tout $t\geq 0$. Donc $f$ est décroissante sur $\R_+$.\\
-				 En particulier, on a : \[\forall t\in\R_+, f(t)\leq f(0)\]
-				 i.e. \[\arctan(a+t)-\arctan(t)-\arctan(a)\leq 0\]
-				 D'où le résultat.
-				 Par conséquent, on a pour $a=|x-z|$ et $b=|z-y|$, on a : 
-				 \[\arctan|x-y|\leq \arctan|x-z|+\arctan|z-y|\]			\end{itemize}
-				 Donc $d$ est bien une distance.\\
-				 Supposons maintenant que $d$ est induite d'une norme.
-			On a alors pour tout $\lambda\in\R$ et pour tous $(x,y)\in\R$, 
+				D'après l'inégalité triangulaire sur la valeur absolue, on a 
+				\[|x-y|\leq|x-z|+|z-y|\]
+				Comme la fonction $\arctan$ est croissante sur $\R$, on a :
+				\[\arctan|x-y|\leq \arctan\left(|x-z|+|z-y|\right)\]
+				Montrons que pour tout $a,b\in\R_+$ :
+				\[\arctan(a+b)\leq\arctan(a)+\arctan(b)\]
+				On fixe $a\in\R_+$.\\
+				On pose $\fonction{f}{\R_+}{\R}{b}{\arctan(a+b)-\arctan(a)-\arctan(b)}$\\
+				Cette fonction est de classe $\mathcal C^1$ sur $\R_+$ et :
+				\[\forall b\in \R_+,\ f'(b)=\frac{1}{1+(a+b)^2}-\frac{1}{1+b^2}\leq 0\]
+				Donc $f$ est décroissante sur $\R_+$.\\
+				En particulier, on a : \[\forall b\in\R_+, f(b)\leq f(0)\]
+				i.e. \[\arctan(a+b)-\arctan(b)-\arctan(a)\leq 0\]
+				D'où le résultat.
+				Par conséquent, on a pour $a=|x-z|$ et $b=|z-y|$, on a :
+				\[\arctan|x-y|\leq \arctan|x-z|+\arctan|z-y|\]
+			\end{itemize}
+			Donc $d$ est bien une distance.\\
+			Supposons maintenant que $d$ est induite d'une norme.
+			On a alors pour tout $\lambda\in\R$ et pour tous $x,y\in\R$, 
 			\[d(\lambda x,\lambda y)=|\lambda|d(x,y)\]
 			Or puisque $\Ima(\arctan)=[-\frac{\pi}{2},\frac{\pi}{2}]$, le résultat ne peut être vérifié pour un $\lambda$ grand (exemple : $\lambda=100$).
 			Donc cette distance n'est pas induite d'une norme.
@@ -8739,18 +8743,18 @@ Démontrer l'équivalence des deux affirmations suivantes :
 			Par conséquent $\forall n\in \N^*,\ \displaystyle\normep{\infty}{\varphi_n-\frac{1}{2}}\leq \frac{1}{2}-\varphi_{n-1}(c)\unfty\longrightarrow 0$.\\
 			On conclut que $(\varphi_n)_{n\in \N}$ CVU vers la fonction constante égale à $\displaystyle\frac{1}{2}$ sur $[a,b]$.
 		\end{enumerate}
-		\item Soient $f,g\in \mathcal Z$. Notons $(P_n)_{n\in \N}$ et $(Q_n)_{n\in \N}$ deux suites de fonctions polynomiales qui convergent uniformément vers $f$ et $g$ respectivement. On peut d'abord remarquer que $f,g$ sont continues comme limites uniformes de fonctions continues (polynomiales).\\
+		\item Soient $f,g\in \mathcal Z$. Notons $(P_n)_{n\in \N}$ et $(Q_n)_{n\in \N}$ deux suites de fonctions polynomiales qui convergent uniformément vers $f$ et $g$ respectivement.\\
 		D'une part, $\forall n\in \N,\ \normep{\infty}{f+g-(P_n+Q_n)}\leq \normep{\infty}{f-P_n}+\normep{\infty}{g-Q_n}\unfty\longrightarrow 0$.\\
-		Donc $(P_n+Q_n)_{n\in \N}$, qui est une suite de fonctions polynomiales à coefficients entiers, converge uniformément vers $f+g$ i.e $f+g\in \mathcal Z$.\\
+		Donc $(P_n+Q_n)_{n\in \N}$, qui est une suite de fonctions polynomiales à coefficients entiers, converge uniformément vers $f+g$ d'où $f+g\in \mathcal Z$.\\
 		D'autre part, $\forall n\in \N,\ \normep{\infty}{fg-P_nQ_n}\leq \normep{\infty}{fg-P_ng}+\normep{\infty}{P_ng-P_nQ_n}\leq\normep{\infty}{g}\normep{\infty}{f-P_n}+\normep{\infty}{P_n}\normep{\infty}{g-Q_n}$.\\
 		La suite $(P_n)_{n\in \N}$ converge pour la norme uniforme, elle est donc bornée pour cette norme d'où $\normep{\infty}{fg-P_nQ_n}\unfty\longrightarrow 0$.\\
-		Ainsi $(P_nQ_n)_{n\in \N}$, qui est une suite de fonctions polynomiales à coefficients entiers, converge uniformément vers $fg$ i.e $fg\in \mathcal Z$.
+		Ainsi $(P_nQ_n)_{n\in \N}$, qui est une suite de fonctions polynomiales à coefficients entiers, converge uniformément vers $fg$ d'où $fg\in \mathcal Z$.
 		\item D'après la question $2$, $x\mapsto \displaystyle\frac{1}{2}\in \mathcal Z$. De plus on remarque que toutes les fonctions $f$ constantes égales à un entier sont dans $\mathcal Z$ (comme limite de la suite constante égale à $f$) Donc d'après la question $3$, quel que soit $d\in \mathcal D,\ x\mapsto d\in \mathcal Z$. De plus n'importe quelle fonction polynomiale $g$ associée à un monôme est aussi dans $\mathcal Z$ (comme limite de la suite constante égale à $g$)\\
-		Ainsi, pour $P:x\mapsto \displaystyle\sum_{k=0}^pa_kx^k$ est une fonction polynomiale à coefficients réels alors d'après la question $1$ on peut trouver des suites $(d_n^0),\dots,(d_n^p)\in \mathcal D^\N$ telles que $\forall k\in \crblanc{0}{p},\ a_k=\unfty\lim d_n^k$.\\
+		Ainsi pour $P:x\mapsto \displaystyle\sum_{k=0}^pa_kx^k$ une fonction polynomiale à coefficients réels on peut trouver d'après la question $1$ des suites $(d_n^0),\dots,(d_n^p)\in \mathcal D^\N$ telles que $\forall k\in \crblanc{0}{p},\ a_k=\unfty\lim d_n^k$.\\
 		En posant pour $n\in \N$, $P_n:x\mapsto \displaystyle\sum_{k=0}^pd_n^kx^k$ on a alors $(P_n)\in \mathcal Z^\N$ et $\normep{\infty}{P-P_n}\unfty\longrightarrow 0$. On en déduit que $\mathcal Z$ contient l'ensemble des fonctions polynomiales à coefficients réels.\\
 		Fixons maintenant $f\in \mathcal C([a,b],\R)$. D'après le théorème d'approximation de Weierstrass, il existe une suite $(P_n)_{n\in \N}$ de fonctions polynomiales à coefficients réels convergeant uniformément vers $f$. Finalement, $f\in \mathcal Z$.\\
 		\textit{Remarque : on aurait pu formuler la réponse à l'aide du théorème de la double limite.}
-		\item Le choix de $a$ et $b$ est important ! En effet si le segment $[a,b]$ contient un entier alors on ne peut pas atteindre toutes les fonctions continues de $[a,b]$:\\
+		\item Le choix de $a$ et $b$ est important ! En effet si le segment $[a,b]$ contient un entier alors on ne peut pas atteindre toutes les fonctions continues sur $[a,b]$:\\
 		si $k\in \Z\cap[a,b]$ et si $(P_n)_{n\in \N}$ est une suite de fonctions polynomiales à coefficients entiers convergeant uniformément vers une fonction $P$ alors $(P_n(k))_{n\in \N}$ est une suite d'entier qui converge vers $P(k)$. $P(k)$ est donc un entier (cf. \ref{Topologie de Z}).\\\\
 		Le résultat actuel ne permet pas d'obtenir une fonction qui prendrait une valeur complexe car un polynôme à coefficients entiers est à valeurs réelles sur $[a,b]$.\\
 		On peut cependant avoir un résultat analogue en considérant des polynômes à coefficients dans l'anneau des entiers de Gauss $\Z[i]=\{a+ib,\ (a,b)\in \Z^2\}$ :\\
@@ -8799,7 +8803,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Ainsi d'après le théorème de Korovkin, $\forall f\in E,\ \normep{\infty}{B_n(f)-f}\longrightarrow 0$.
 	\end{enumerate}
 	
-	\subsection{Théorème de Fejér}
+	\subsection{Théorème de Fejér \xens{5}}
 	\label{Théorème de Fejér corrigé}
 	\textcolor{blue}{\hyperref[Théorème de Fejér]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -8907,7 +8911,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\item Notons $D$ l'ensemble des points de discontinuité de $f$. Comme $f$ est croissante sur un intervalle ouvert $I$ elle admet en tout point $x\in I$ une limite à gauche $\ell_x^-$ et à droite $\ell_x^+$. $D$ est alors exactement l'ensemble des points où $\ell_x^-<\ell_x^+$.\\
 		Pour tout $x\in D$ on se donne par densité de $\Q$ $q_x\in\, ]\ell_x^-,\ell_x^+[\,\cap\, \Q$.\\
 		Montrons que $\fonction{\omega}{D}{\Q}{x}{q_x}$ est strictement croissante, et donc injective.\\
-		Soient $x<y\in D$. Par croissance de $f$ on a $q_x<\ell_x^+\leq \ell_y^-<q_y$.\\
+		Soient $x<y\in D$. Par croissance de $f$ on a $q_x\leq \ell_x^+<\ell_y^-\leq q_y$.\\
 		$D$ s'injecte dans $\Q$ qui est dénombrable, il est donc au plus dénombrable.
 		\item On se donne $(q_n)_{n\in \N}$ une énumération de l'ensemble dénombrable $I\cap \Q$.\\
 		On va appliquer ce qu'on appelle un \textit{procédé d'extraction diagonal}.\\
