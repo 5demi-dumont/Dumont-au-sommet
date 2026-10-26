@@ -1373,23 +1373,20 @@
 	$$\forall (x,y)\in I^2,\ \displaystyle f\left(\frac{x+y}{2}\right)\leq \frac{f(x)+f(y)}{2}$$
 	On pourra penser à faire une récurrence de Cauchy (cf. \ref{Récurrence de Cauchy}).
 	
-	\section{Convexe sur un ouvert $\implies$ continue \etoile{3}}
-	\textcolor{blue}{\hyperref[sec:convexe-sur-un-ouvert-implies-continue-etoile3]{[Corrigé]}}\\
-	\label{convexeouvert}
+	\section{Convexe sur un ouvert $\implies$ continue \etoile{2}}
+	\textcolor{blue}{\hyperref[Convexe sur un ouvert implique continue corrigé]{[Corrigé]}}\\
 	\label{Convexe sur un ouvert implique continue}
 	Soit $f$ une fonction réelle convexe sur un intervalle ouvert $I$.
 	\begin{enumerate}
 		\item Montrer que $f$ est continue sur $I$.
 		\item Le résultat est-il encore vrai pour un intervalle qui n'est pas ouvert ?
-		\item Démontrer que l'ensemble des points de $I$ où $f$ n'est pas dérivable est au plus dénombrable (on pourra penser au théorème de Froda cf. \ref{Théorème de Froda}).
 	\end{enumerate}
 	
 	\section{Fonctions logarithmiquement convexes \etoile{3}}
-	\textcolor{blue}{\hyperref[sec:fonctions-logarithmiquement-convexes-etoile3]{[Corrigé]}}\\
-	\label{logconvexe}
+	\textcolor{blue}{\hyperref[Fonctions logarithmiquement convexes corrigé]{[Corrigé]}}\\
 	\label{Fonctions logarithmiquement convexes}
 	On dit qu'une fonction réelle $f$ à valeurs dans $]0,+\infty[$ est logarithmiquement convexe si la fonction $\ln\circ f$ est convexe.
-	Soit $I$ un intervalle de $\R$ et $f:I\to\R_+^*$ une application.
+	Soit $I$ un intervalle de $\R$ et $f:I\to\R_+^*$.
 	\begin{enumerate}
 		\item Montrer que si $f$ est log-convexe, alors $f$ est convexe. La réciproque est-elle vraie ?
 		\item Montrer que $f$ est log-convexe si et seulement si $f^\alpha$ est convexe quel que soit $\alpha>0$.
@@ -6543,8 +6540,9 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	$\forall (x,y)\in I^2,\ f(\lambda x+(1-\lambda)y)=\displaystyle f\left(\frac{ax+(b-a)y}{b}\right)=f\left(\frac{x_1+\dots+x_b}{b}\right)\leq\frac{f(x_1)+\dots+f(x_b)}{b}=\frac{af(x)+(b-a)f(y)}{b}=\lambda f(x)+(1-\lambda)f(y)$.\\
 	On conclut par densité de $\Q$ dans $\R$ et continuité de $f$.
 	
-	\subsection{Convexe sur un ouvert $\implies$ continue \etoile{3}}\label{sec:convexe-sur-un-ouvert-implies-continue-etoile3}
-	\textcolor{blue}{\hyperref[convexeouvert]{[Enoncé]}}\\
+	\subsection{Convexe sur un ouvert $\implies$ continue \etoile{2}}
+	\label{Convexe sur un ouvert implique continue corrigé}
+	\textcolor{blue}{\hyperref[Convexe sur un ouvert implique continue]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Soit $x\in I$.\\
 		La fonction $p_x:y\mapsto \displaystyle\frac{f(x)-f(y)}{x-y}$ est croissante sur $I\setminus\{x\}$ donc elle admet une limite en $x$ par valeurs supérieures et par valeurs inférieures. Ces deux limites sont finies car $x$ est un point intérieur à $I$ donc $f$ est dérivable, à gauche et à droite, en $x$. On note $f_g'(x)$ et $f_d'(x)$ ces deux limites.\\
@@ -6557,13 +6555,11 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		De plus, si $\lambda\in [0,1]$ et $x>0$, $f(\lambda x+(1-\lambda)\times0)=e^{\lambda x}\leq \lambda e^x$ par convexité de la fonction exponentielle sur $\R_+$.\\
 		Ainsi $f(\lambda x+(1-\lambda)\times0)\leq \lambda e^x+(1-\lambda)=\lambda f(x)+(1-\lambda)f(0)$ d'où $f$ est convexe sur $\R_+$.\\
 		Pourtant $f$ n'est pas continue en $0$.
-		\item On sait que $f$ est dérivable à droite et gauche en tout point de $I$. Soit $(x,y)\in I^2$ tel que $x<y$. Pour tous $s,t\in I$ tels que $x\ne s<y$ et $x<t\ne y$, $p_x(s)\leq p_x(y)=p_y(x)\leq p_x(t)$. En faisant tendre $s$ vers $x^\pm$ et $t$ vers $y^\pm$ on en déduit que $f_g'(x)\leq f_g'(y),\ f_d'(x)\leq f_d'(y),\ f_g'(x)\leq f_d'(y),\ f_d'(x)\leq f_g'(y)$.\\
-		En particulier $f_d'$ est croissante donc d'après le théorème de Froda (cf. \ref{Théorème de Froda}) l'ensemble de ses points de discontinuité est au plus dénombrable. Montrons qu'en tous les points $x\in I$ où $f_d'$ est continue, $f_g'$ et $f_d'$ coïncident, auquel cas $f$ est dérivable en $x$.\\
-		Fixons $x\in I$ tel que $f_d'$ est continue en $I$. Pour tout $s\in I$ tel que $s<x$, on a $f_d'(s)\leq f_g'(x)\leq f_d'(x)$. Donc par continuité de $f_g'$ en $x$ et le théorème des gendarmes, en faisant tendre $s$ vers $x$, il suit que $f_g'(x)=f_d'(x)$.
 	\end{enumerate}
 	
-	\subsection{Fonctions logarithmiquement convexes \etoile{3}}\label{sec:fonctions-logarithmiquement-convexes-etoile3}
-	\textcolor{blue}{\hyperref[logconvexe]{[Enoncé]}}\\
+	\subsection{Fonctions logarithmiquement convexes \etoile{3}}
+	\label{Fonctions logarithmiquement convexes corrigé}
+	\textcolor{blue}{\hyperref[Fonctions logarithmiquement convexes]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item Supposons que $f$ est log-convexe. Fixons $(x,y)\in I^2$ et $\lambda\in ]0,1[$. Par hypothèse,\\
 		$\ln(f(\lambda x+(1-\lambda)y))\leq \lambda\ln(f(x))+(1-\lambda)\ln(f(y))$ puis par concavité du logarithme, $\lambda\ln(f(x))+(1-\lambda)\ln(f(y))\leq \ln(\lambda f(x)+(1-\lambda)f(y))$.\\

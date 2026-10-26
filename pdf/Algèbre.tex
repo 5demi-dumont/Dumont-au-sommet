@@ -2881,10 +2881,10 @@ Montrer que l'ensemble des nombres complexes qui sont racine d'un polynôme non 
 Soit $E$ un ensemble. Montrer qu'il n'existe pas de surjection de $\mathcal P(E)$ dans $E$.\\
 En déduire que l'ensemble des parties d'un ensemble dénombrable n'est pas dénombrable.
 
-\section{Fonction qui intervertit rationnels et irrationnels \centraleponts{3}}
+\section{Fonction qui intervertit rationnels et irrationnels \telecom{2}}
 \label{Fonction qui intervertit rationnels et irrationnels}
 \textcolor{blue}{\hyperref[Fonction qui intervertit rationnels et irrationnels corrigé]{[Corrigé]}}\\
-Existe-t-il une fonction continue $f:\R\to\R$ telle que $f(\Q)\subset \R\backslash\Q$ et $f(\R\backslash\Q)\subset \Q$.
+Existe-t-il une fonction continue $f:\R\to\R$ telle que $f(\Q)\subset \R\setminus\Q$ et $f(\R\setminus\Q)\subset \Q$.
 
 \section{Support d'une famille sommable \telecom{2}}
 \label{Support d'une famille sommable}
@@ -2894,9 +2894,11 @@ Soit $(a_i)_{i\in I}$ une famille sommable de nombres complexes. Montrer que son
 \section{Théorème de Froda \centraleponts{3}}
 \label{Théorème de Froda}
 \textcolor{blue}{\hyperref[Théorème de Froda corrigé]{[Corrigé]}}\\
-Soit $f$ une fonction monotone sur un intervalle $I$ de $\R$.
-On définit l'oscillation de $f$ en $x\in I$ par $\omega(x)=\left|\lim\limits_{x^+}f-\lim\limits_{x^-}f\right|$.\\
-Justifier que $\omega$ est bien définie sur $I$ puis montrer que l'ensemble des points de discontinuité de $f$ est au plus dénombrable.
+\begin{enumerate}[leftmargin=*]
+	\item Soit $f$ une fonction monotone sur un intervalle $I$ de $\R$. Montrer que l'ensemble des points de discontinuité de $f$ est au plus dénombrable.
+	\item Application : soit $f$ une fonction convexe sur un intervalle ouvert $I$ de $\R$.\\
+	Démontrer que l'ensemble des points de $I$ où $f$ n'est pas dérivable est au plus dénombrable.
+\end{enumerate}
 
 \section{Ouverts de $\R$ \xens{4}}
 \label{Ouverts de R}
@@ -2907,7 +2909,7 @@ Montrer que tout ouvert de $\R$ s'écrit comme réunion au plus dénombrable d'i
 \label{Ensemble discret}
 \textcolor{blue}{\hyperref[Ensemble discret corrigé]{[Corrigé]}}\\
 Soit $E$ un espace vectoriel normé. On dit qu'un point $x$ d'une partie $A$ de $E$ est isolé lorsqu'il existe un voisinage $\mathcal V(x)$ de $x$ tel que $\mathcal V(x)\cap A=\{x\}$. Lorsque tous les points de $A$ sont isolés, on dit que $A$ est un ensemble discret.\\
-\textit{Remarque : Un point qui n'est pas isolé est aussi appelé point d'accumulation.}
+\textit{Remarque : Un point qui n'est pas isolé est appelé point d'accumulation.}
 \begin{enumerate}
 	\item L'ensemble $A=\displaystyle\left\{\frac{1}{n},\ n\in \N^*\right\}$ est-t-elle une partie discrète de $\R$ ? Même question pour $B=A\cup\{0\}$.
 	\item Montrer qu'une partie discrète de $\R$ est au plus dénombrable.
@@ -2921,7 +2923,7 @@ Soit $E$ un espace vectoriel normé. Un sous-ensemble $A$ de $E$ est dit \textit
 
 \subsection{Poussière de Cantor}
 On admet (cf. \ref{Développement décimal propre d'un réel}) que tout réel $x\in [0,1[$ s'écrit de manière unique $x=\displaystyle\sum_{n=1}^{+\infty}\frac{a_n}{3^n}$ où $(a_n)_{n\in \N^*}$ une suite à valeurs dans $\{0,1,2\}$ qui ne stationne pas à $2$. On définit \textit{l'ensemble de Cantor} $K=\displaystyle\left\{\sum_{n=1}^{+\infty}\frac{a_n}{3^n}\ |\ \forall n\in \N^*,\ a_n\in \{0,2\}\right\}$.\\
-Montrer que $K$ est un ensemble parfait, d'intérieur vide, compact et non dénombrable.
+Montrer que $K$ est un ensemble parfait compact et non dénombrable.
 
 \subsection{Parfaits de $\R$}
 \begin{enumerate}[leftmargin=*]
@@ -9521,22 +9523,38 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\textcolor{blue}{\hyperref[Théorème de Cantor]{[Enoncé]}}\\
 	\label{Théorème de Cantor corrigé}
 	
-	\subsection{Fonction qui intervertit rationnels et irrationnels}
+	\subsection{Fonction qui intervertit rationnels et irrationnels \telecom{2}}
 	\textcolor{blue}{\hyperref[Fonction qui intervertit rationnels et irrationnels]{[Enoncé]}}\\
 	\label{Fonction qui intervertit rationnels et irrationnels corrigé}
+	Supposons par l'absurde qu'il existe une telle fonction $f$.\\
+	Comme $f$ est continue par le TVI $f(\R)$ est un intervalle. Or $f(\R)=f(\Q)\cup f(\R\setminus\Q)$ avec $f(\Q)$ au plus dénombrable car $\Q$ l'est et $f(\R\setminus\Q)$ au plus dénombrable car inclus dans $\Q$. Ainsi $f(\R)$ est un intervalle au plus dénombrable, c'est donc un singleton.\\
+	Mais alors $f(\R)\subset \Q$ ou $f(\R)\subset \R\setminus\Q$ ce qui est absurde.
 	
-	\subsection{Support d'une famille sommable}
+	\subsection{Support d'une famille sommable \telecom{2}}
 	\textcolor{blue}{\hyperref[Support d'une famille sommable]{[Enoncé]}}\\
 	\label{Support d'une famille sommable corrigé}
 	On pose $E_n=\{i, |a_i|\geq \frac{1}{n}\}$ pour tout $n\in\N^*$.\\
 	Puisque $(a_i)$ est une famille sommable, on a :
 	\[+\infty> \sum_{i\in I}|a_i|\geq \sum_{i\in E_n} |a_i|\leq \sum_{i\in E_n}\frac{1}{n}\leq \frac{|E_n|}{n}\]
 	Par conséquent, $|E_n|$ est fini.\\
-	Ainsi, $S=\bigcup_{n\in\N^*} E_n$.\\
-	On en déduit que $S$ est au plus dénombrable.
-	\subsection{Théorème de Froda}
+	Comme $S=\displaystyle\bigcup_{n\in\N^*}E_n$, on en déduit que $S$ est au plus dénombrable.
+	
+	\subsection{Théorème de Froda \centraleponts{3}}
 	\textcolor{blue}{\hyperref[Théorème de Froda]{[Enoncé]}}\\
 	\label{Théorème de Froda corrigé}
+	\begin{enumerate}[leftmargin=*]
+		\item $f$ étant monotone elle admet en tout point $x\in I$ une limite à gauche $\ell_x^-$ et à droite $\ell_x^+$. Quitte à considérer $-f$ on peut supposer que $f$ est croissante.\\
+		L'ensemble $D$ des points de discontinuité de $f$ est alors exactement l'ensemble des points $x\in I$ pour lesquels $\ell_x^-<\ell_x^+$.\\
+		Par densité de $\Q$ dans $\R$, pour tout point $x\in D$ on dispose d'un rationnel $q_x\in\, ]\ell_x^-,\ell_x^+[$. Montrons alors que la fonction $\fonction{\omega}{D}{\Q}{x}{q_x}$ est strictement croissante (et donc injective).\\
+		Soient $x<y\in D$. Par croissance de $f,\ q_x<\ell_x^+\leq \ell_y^-<q_y$.\\
+		Ainsi comme $\Q$ est dénombrable, $D$ est au plus dénombrable.
+		\item Soit $x\in I$.\\
+		La fonction $p_x:y\mapsto \dfrac{f(x)-f(y)}{x-y}$ est croissante sur $I\setminus\{x\}$ donc, comme $x$ est un point intérieur à $I$, elle admet une limite finie en $x$ par valeurs supérieures et par valeurs inférieures.\\
+		Autrement dit $f$ est dérivable à droite et gauche en $x$.\\
+		Soit $(x,y)\in I^2$ tel que $x<y$. Pour tous $s,t\in I$ tels que $x\ne s<y$ et $x<t\ne y$, $p_x(s)\leq p_x(y)=p_y(x)\leq p_x(t)$. En faisant tendre $s$ vers $x^\pm$ et $t$ vers $y^\pm$ on en déduit que $f_g'(x)\leq f_g'(y),\ f_d'(x)\leq f_d'(y),\ f_g'(x)\leq f_d'(y),\ f_d'(x)\leq f_g'(y)$.\\
+		En particulier $f_d'$ est croissante donc d'après le théorème de Froda l'ensemble de ses points de discontinuité est au plus dénombrable. Montrons qu'en tous les points $x\in I$ où $f_d'$ est continue, $f_g'$ et $f_d'$ coïncident, auquel cas $f$ est dérivable en $x$.\\
+		Fixons $x\in I$ tel que $f_d'$ est continue en $I$. Pour tout $s\in I$ tel que $s<x$, on a $f_d'(s)\leq f_g'(x)\leq f_d'(x)$. Donc par continuité de $f_g'$ en $x$ et le théorème des gendarmes, en faisant tendre $s$ vers $x$, il suit que $f_g'(x)=f_d'(x)$.
+	\end{enumerate}
 	
 	\subsection{Ouverts de $\R$ \xens{4}}
 	\label{Ouverts de R corrigé}
