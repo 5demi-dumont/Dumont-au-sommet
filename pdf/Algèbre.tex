@@ -2097,7 +2097,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	$$\forall A\in \M_n(\K),\ \forall M\in J,\ AM\in J$$
 	Lorsque $J$ est à la fois un idéal à gauche et à droite, on dit que $J$ est un \textit{idéal bilatère}.
 	
-	\subsection{Idéaux bilatère \centraleponts{3}}
+	\subsection{Idéaux bilatère \ccinp{2}}
 	Soit $J$ un idéal bilatère de $\M_n(\K)$.
 	\begin{enumerate}
 		\item Montrer que si $J$ contient une matrice inversible alors $J=\M_n(\K)$.
@@ -2224,6 +2224,21 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item Déterminer le centre de $\mathbb H$ (cf. \ref{Centre d'un anneau}).
 	\end{enumerate}
 	
+	\section{$\Phi$-dérivations de $\K[X]$ \telecom{2}}
+	\label{Phi-dérivations des polynômes}
+	\textcolor{blue}{\hyperref[Phi-dérivations des polynômes corrigé]{[Corrigé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Déterminer tous les morphismes d'algèbres $\Phi:\K[X]\to \K$
+		\item Si $\Phi:\K[X]\to \K$ est un morphisme d'algèbres, on appelle $\Phi$-dérivation de $\K[X]$ toute forme linéaire $\delta:\K[X]\to\K$ vérifiant :
+		$$\forall P,Q\in \K[X],\ \delta(PQ)=\Phi(P)\delta(Q)+\Phi(Q)\delta(P)$$
+		Déterminer toutes les $\Phi$-dérivations de $\K[X]$.
+	\end{enumerate}
+	
+	\section{Automorphisme d'algèbres de $\K[X]$}
+	\label{Automorphisme d'algèbres des polynômes}
+	\textcolor{blue}{\hyperref[Automorphisme d'algèbres des polynômes corrigé]{[Corrigé]}}\\
+	Déterminer les automorphismes d'algèbres de $\K[X]$.
+	
 	\section{Une définition de $\C$ \ccinp{2}}
 	\label{Une définition de C}
 	\textcolor{blue}{\hyperref[Une définition de C corrigé]{[Corrigé]}}\\
@@ -2242,7 +2257,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\end{enumerate}
 	
 	\section{$\R$-algèbre commutative intègre de dimension finie \centraleponts{4}}
-	\label{R algèbre commuttative intègre de dimension finie}
+	\label{R algèbre commutative intègre de dimension finie}
 	\textcolor{blue}{\hyperref[R algèbre commutative intègre de dimension finie corrigé]{[Corrigé]}}\\
 	Soit $\K$ une $\R$-algèbre commutative intègre de dimension finie $n\geq 2$.
 	\begin{enumerate}
@@ -3944,8 +3959,8 @@ Soit $E$ un plan orienté.
 \section{Similitude entre matrices orthogonales \centraleponts{3}}
 \label{Similitude entre matrices orthogonales}
 \textcolor{blue}{\hyperref[Similitude entre matrices orthogonales corrigé]{[Corrigé]}}\\
-Soit $(A,B)\in \O_n(\R)^2$. 
-\\ Montrer que $A$ et $B$ sont semblables si et seulement $\chi_A=\chi_B$.
+Soit $(A,B)\in \O_n(\R)^2$.\\
+Montrer que $A$ et $B$ sont orthogonalement semblables si et seulement $\chi_A=\chi_B$.
 
 \section{\underline{Propriété de l'adjoint} \ccinp{2}}
 \label{Propriété de l'adjoint}
@@ -8603,10 +8618,10 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On en déduit que $f(x)=x$ et $f=\Id_\R$.
 	\end{enumerate}
 	
-	\subsection{Automorphismes de $\Q[\sqrt 2]$ \etoile{3}}
+	\subsection{Automorphismes de $\Q[\sqrt 2]$ \centraleponts{3}}
 	\label{Automorphismes de Qsqrt2 corrigé}
 	\textcolor{blue}{\hyperref[Automorphismes de Qsqrt2]{[Enoncé]}}\\
-	L'application $\fonction{\Phi}{\Q[X]}{\Q[\sqrt2]}{P}{P(\sqrt 2)}$ est un morphisme d'algèbre.\\
+	L'application $\fonction{\Phi}{\Q[X]}{\Q[\sqrt2]}{P}{P(\sqrt 2)}$ est un morphisme d'algèbres.\\
 	Donc $\Q[\sqrt 2]$ est une sous-algèbre de $\C$ et en particulier un sous-anneau de $\C$.\\
 	De plus, si $a+b\sqrt 2\in \Q[\sqrt 2]\backslash\{0\}$ alors $\displaystyle\frac{1}{a+b\sqrt 2}=\frac{a-b\sqrt 2}{a^2-2b^2}=c+d\sqrt 2$ avec $c=\displaystyle\frac{a}{a^2-2b^2}\in \Q$ et $d=-\displaystyle\frac{b}{a^2-2b^2}\in \Q$.\\
 	Donc $\displaystyle\frac{1}{a+b\sqrt 2}\in \Q[\sqrt 2]$ c'est à dire $\Q[\sqrt 2]$ est un sous-corps de $\C$.\\
@@ -8616,12 +8631,38 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Ensuite, on sait que $f(0)=0$ et $f(1)=1$ donc par récurrence immédiate à l'aide de la relation $f(x+y)=f(x)+f(y),\ \forall n\in \N,\ f(n)=n$. Donc $\forall n\in \N,\ 0=f(0)=f(n-n)=f(n)-f(n)$ d'où $\forall k\in \Z,\ f(k)=k$.\\
 	Fixons $x=\displaystyle\frac{p}{q}$ avec $p\in \Z$ et $q\in \N^*$.\\
 	On a $qf(x)=f(qx)=f(p)=p$. Donc $f(x)=\displaystyle\frac{p}{q}=x$.\\
-	Ainsi si $z=a+b\sqrt 2\in \Q[\sqrt 2]$ alors $f(x)=f(a)+f(b)f(\sqrt 2)=a+\varepsilon b\sqrt 2$.\\
-	On vérifie que si $\varepsilon\in \{-1,1\},\ \fonction{f_\varepsilon}{\Q[\sqrt 2]}{\Q[\sqrt 2]}{a+b\sqrt 2}{a+\varepsilon b\sqrt 2}$ est un automorphisme de $\Q[\sqrt 2]$. Ce sont dont les seuls automorphismes de $\Q[\sqrt 2]$.
+	Ainsi si $x=a+b\sqrt 2\in \Q[\sqrt 2]$ alors $f(x)=f(a)+f(b)f(\sqrt 2)=a+\varepsilon b\sqrt 2$.\\
+	On vérifie que si $\varepsilon\in \{-1,1\},\ \fonction{f_\varepsilon}{\Q[\sqrt 2]}{\Q[\sqrt 2]}{a+b\sqrt 2}{a+\varepsilon b\sqrt 2}$ est un automorphisme de $\Q[\sqrt 2]$.
 	
 	\subsection{Algèbre des quaternions}
 	\label{Algèbre des quaternions corrigé}
 	\textcolor{blue}{\hyperref[Algèbre des quaternions]{[Enoncé]}}\\
+	
+	\subsection{$\Phi$-dérivations de $\K[X]$ \telecom{2}}
+	\label{Phi-dérivations des polynômes corrigé}
+	\textcolor{blue}{\hyperref[Phi-dérivations des polynômes]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $\Phi:\K[X]\to \K$ un morphisme d'algèbres.\\
+		Alors $\forall P=\displaystyle\sum_{k=0}^na_kX^k,\ \Phi(P)=\sum_{k=0}^na_k\Phi(X)^k$. Autrement dit $\Phi(P)=P(\lambda)$ avec $\lambda=\Phi(X)$.\\
+		Réciproquement, pour tout $\lambda\in \C$, $P\mapsto P(\lambda)$ est bien un morphisme d'algèbres.
+		\item Soit $\lambda\in \C$, $\Phi:P\in \K[X]\mapsto P(\lambda)$. Soit $\delta$ une $\Phi$-dérivation :
+		$$\forall P,Q\in \K[X],\ \delta(PQ)=P(\lambda)\delta(Q)+Q(\lambda)\delta(P)$$
+		Alors avec $P=Q=1$, $\delta(1)=1\times\delta(1)+1\times\delta(1)=2\delta(1)$ d'où $\delta(1)=0$.\\
+		Puis avec $P=Q=X-\lambda$, $\delta((X-\lambda)^2)=0$.\\
+		Et donc pour $P$ quelconque, $\delta((X-\lambda)P)=P(\lambda)\delta(X-\lambda)=0$.\\
+		Ainsi pour $P$ quelconque, $P=\displaystyle\sum_{k=0}^n\frac{P^{(k)}(\lambda)}{k!}(X-\lambda)^k$ d'où $\delta(P)=\displaystyle\sum_{k=0}^n\frac{P^{(k)}(\lambda)}{k!}\delta(X-\lambda)=P'(\lambda)\delta(X-\lambda)=\delta(X)P'(\lambda)$.\\
+		Réciproquement, pour tout $a\in \C$, $P\mapsto aP'(\lambda)$ est une $\Phi$-dérivation.
+	\end{enumerate}
+	
+	\subsection{Automorphisme d'algèbres de $\K[X]$}
+	\label{Automorphisme d'algèbres des polynômes corrigé}
+	\textcolor{blue}{\hyperref[Automorphisme d'algèbres des polynômes]{[Enoncé]}}\\
+	Soit $\Phi$ un automorphisme d'algèbres.\\
+	$\forall P=\displaystyle\sum_{k=0}^{+\infty}a_kX^k,\ \Phi(P)=\sum_{k=0}^{+\infty}a_k\Phi(X)^k=P\circ \Phi(X)$.\\
+	Or $\Phi(X)$ ne peut pas être constant car sinon $\Phi(X-\Phi(X))=0$ alors que $X-\Phi(X)\ne 0$ ce qui contredit l'injectivité de $\Phi$. Donc $\deg(P\circ \Phi(X))=\deg(P)\deg(\Phi(X))$.\\
+	Par conséquent $\Phi(X)$ est de degré $1$. En effet, on a déjà vu que $\deg(\Phi)\geq 1$ et si $\deg(\Phi)>1$ alors $\Phi(P)$ est ou bien constant si $P$ est constant ou bien de degré $\deg(P)\deg(\Phi(X))>\deg(P)\geq 1$ ce qui contredit la surjectivité de $\Phi$.\\
+	Ainsi $\exists a\in \K^*,\ b\in \K,\ \Phi(X)=aX+b$ et $\Phi=P\mapsto P(aX+b)$.\\
+	Réciproquement on vérifie que ces applications sont bien des morphismes d'algèbres et qu'ils sont inversibles (l'inverse est donné par $P\mapsto P\left(\dfrac{X-b}{a}\right)$.
 	
 	\subsection{Une définition de $\C$ \etoile{2}}
 	\label{Une définition de C corrigé}
@@ -8657,9 +8698,9 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Donc par continuité de $\Phi$, $\exp(A_\theta)=\Phi(e^{i\theta})=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$.
 	\end{enumerate}
 	
-	\subsection{$\R$-algèbre commutative intègre de dimension finie \etoile{4}}
+	\subsection{$\R$-algèbre commutative intègre de dimension finie \centraleponts{4}}
 	\label{R algèbre commutative intègre de dimension finie corrigé}
-	\textcolor{blue}{\hyperref[R algèbre commuttative intègre de dimension finie]{[Enoncé]}}\\
+	\textcolor{blue}{\hyperref[R algèbre commutative intègre de dimension finie]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item $\forall x,y\in \K,\ \forall \lambda\in \R,\ f(x+\lambda y)=a(x+y)=ax+\lambda ay=f(x)+\lambda f(y)$.\\
 		De plus, si $z\in \K$ tel que $f(z)=0$ alors $az=0$ d'où $z=0$ par intégrité de $\K$, vu que $a$ n'est pas nul. Donc $f$ est un endomorphisme injectif de l'espace vectoriel $\K$ de dimension fini, c'est donc un automorphisme de $\K$. On en déduit qu'il existe $x\in \K,\ ax=1$. Autrement dit $a$ est inversible d'inverse $x$.
@@ -8676,7 +8717,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Finalement, $(1,i)$ est une base de $\K$ et donc $\K$ est de dimension $2$. On sait donc que $\K$ est isomorphe à $\C$ en tant que $\R$-algèbre.
 	\end{enumerate}
 	
-	\subsection{Théorie algébrique des corps \etoile{4}}
+	\subsection{Théorie algébrique des corps \xens{4}}
 	\label{Théorie algébrique des corps corrigé}
 	\textcolor{blue}{\hyperref[Théorie algébrique des corps]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -8738,7 +8779,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		$\Phi$ est $\Q$-linéaire comme composée d'applications linéaires. Si la famille $(\sqrt p_1,\dots,\sqrt p_n)$ était $\Q$-liée alors la famille $(\Phi(\sqrt p_1),\dots,\Phi(\sqrt p_n))$ le serait aussi. Ceci n'est pas possible puisque la matrice dont cette famille représente les lignes est inversible. Donc par contraposée, la famille $(\sqrt p_1,\dots,,\sqrt p_n)$ est $\Q$-libre.
 	\end{enumerate}
 	
-	\subsection{Corps des nombres algébriques \etoile{4}}
+	\subsection{Corps des nombres algébriques \centraleponts{4}}
 	\label{Corps des nombres algébriques corrigé}
 	\textcolor{blue}{\hyperref[Corps des nombres algébriques]{[Enoncé]}}\\
 	Fixons $(x,y)\in \mathbb A^2$ avec $x\ne 0$. On note $P,Q\in \Q[X]$ tels que $P(x)=Q(y)=0$. Quitte à les diviser par leurs coefficients dominants on peut supposer que $P$ et $Q$ sont unitaires.\\
@@ -8803,7 +8844,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\textit{Remarque : Par la même démonstration on obtient que l'ensemble des entiers algébriques i.e l'ensemble des nombres complexes racines d'un polynôme unitaire à coefficients entiers non nul, est un sous-anneau de $\C$. Ce n'est cependant pas un corps car par exemple $\frac{1}{2}$ n'est pas un entier algébrique}
 	\end{itemize}
 	
-	\subsection{Théorème de Kronecker \etoile{4}}
+	\subsection{Théorème de Kronecker \xens{4}}
 	\label{Théorème de Kronecker corrigé}
 	\textcolor{blue}{\hyperref[Théorème de Kronecker]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -8824,7 +8865,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Enfin comme $\lambda_i\ne 0$, cela implique $\lambda_i\in \U_{|k_i-k'_i|}$.
 	\end{enumerate}
 	
-	\subsection{Irrationalité de e (1)}
+	\subsection{Irrationalité de e (1) \centraleponts{2}}
 	\label{Irrationalité de e (1) corrigé}
 	\textcolor{blue}{\hyperref[Irrationalité de e (1)]{[Enoncé]}}\\
 	Supposons par l'absurde que $e=\dfrac{p}{q}$ avec $p,q\in \N^*$.\\
@@ -8834,7 +8875,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On sait que $(q+1)!=(q+1)q!$ et $\forall k>q+1,\ k!>q!(q+1)^{q-k}$. Donc $\varepsilon_q<q\displaystyle\sum_{k=q+1}^{+\infty}\frac{1}{(q+1)^{k-q}}=\frac{q}{q+1}\cdot\frac{1}{1-(q+1)^{-1}}=1$.\\
 	Il est clair que $\varepsilon_q>0$ donc $\varepsilon_q$ n'est pas un entier. Ceci contredit le fait que $\varepsilon_q$ est la différence de deux entiers donc $e\notin\Q$.
 	
-	\subsection{Irrationalité de e (2)}
+	\subsection{Irrationalité de e (2) \telecom{2}}
 	\label{Irrationalité de e (2) corrigé}
 	\textcolor{blue}{\hyperref[Irrationalité de e (2)]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -8851,11 +8892,11 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Ainsi $e\notin\Q$.
 	\end{enumerate}
 	
-	\subsection{Irrationalité de $\pi$}
+	\subsection{\underline{Irrationalité de $\pi$} \xens{4}}
 	\label{Irrationalité de pi corrigé}
 	\textcolor{blue}{\hyperref[Irrationalité de pi]{[Enoncé]}}\\
 	
-	\subsection{Critère de transcendance de Liouville \etoile{4}}
+	\subsection{\underline{Critère de transcendance de Liouville} \xens{4}}
 	\label{Critère de transcendance de Liouville corrigé}
 	\textcolor{blue}{\hyperref[Critère de transcendance de Liouville]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -11360,9 +11401,34 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Et donc, $r=\Id_E$  ou $r=-\Id_E$.
 	\end{enumerate}
 	
-	\subsection{Similitude entre matrices orthogonales}
+	\subsection{Similitude entre matrices orthogonales \centraleponts{3}}
 	\label{Similitude entre matrices orthogonales corrigé}
 	\textcolor{blue}{\hyperref[Similitude entre matrices orthogonales]{[Enoncé]}}\\
+	Si $A$ et $B$ sont orthogonalement semblables alors $\chi_A=\chi_B$.\\
+	Réciproquement supposons que $\chi_A=\chi_B$.\\
+	On note pour $\theta\in \R,\ R(\theta)=\begin{pmatrix}
+		\cos(\theta)&-\sin(\theta)\\
+		\sin(\theta)&\cos(\theta)
+	\end{pmatrix}$. On calcule $\chi_{R(\theta)}=X^2-2\cos(\theta)X+1$.\\
+	On sait d'après le cours qu'il existe deux matrices orthogonales $P,Q$, des entiers $r,s,k,l,p,q$ et des réels $\alpha_1,\dots,\alpha_p,\beta_1,\beta_q\in[-\pi,\pi]\setminus\pi\Z$ tels que
+	$$A=P\begin{pmatrix}
+		I_r&&&\\
+		&-I_k&&\\
+		&&R(\alpha_1)&&\\
+		&&&\ddots&\\
+		&&&&R(\alpha_p)
+	\end{pmatrix}P^\top\quad \T{et}\quad B=Q\begin{pmatrix}
+		I_s&&&\\
+		&-I_l&&\\
+		&&R(\beta_1)&&\\
+		&&&\ddots&\\
+		&&&&R(\beta_q)
+	\end{pmatrix}Q^\top$$
+	Donc $\chi_A=(X-1)^r(X+1)^k\displaystyle\prod_{j=1}^p(X^2-2\cos(\alpha_j)X+1)$ et $\chi_B=(X-1)^s(X+1)^l\displaystyle\prod_{j=1}^q(X^2-2\cos(\beta_j)X+1)$.\\
+	Par unicité de la décomposition en irréductible dans $\R[X]$ on a $r=s,k=l,p=q$ et, quitte à réindicer, $\cos(\alpha_j)=\cos(\beta_j)$.\\
+	Cette dernière condition donne $\alpha_j=\pm\beta_j$.\\
+	Remarquons alors que si $M=NR(\theta)N^\top$ avec $N=(C_1|C_2)\in \O_2(\R)$ alors $M=\tilde NR(-\theta){\tilde N}^\top$ avec $\tilde N=(C_1|-C_2)\in \O_2(\R)$.\\
+	Par conséquent quitte à changer le signe de certaines colonnes de $Q$ on a $\alpha_j=\beta_j$ ce qui conclut.
 	
 	\subsection{Propriété de l'adjoint}
 	\label{Propriété de l'adjoint corrigé}
