@@ -1169,7 +1169,7 @@
 	\end{enumerate}
 	
 	
-\chapter{Fonctions réelles}
+\chapter{Fonction réelle}
 	\section{Formule de Leibniz \ccinp{1}}
 	\textcolor{blue}{\hyperref[sec:formule-de-leibniz-etoile1]{[Corrigé]}}\\
 	\label{leibniz}
@@ -1452,7 +1452,7 @@
 	\\ On pourra passer par des sommes de Riemann.
 	
 	
-\chapter{Polynômes}
+\chapter{Polynôme}
 	\section{Théorème de d'Alembert-Gauss (2) \etoile{3}}
 	\textcolor{blue}{\hyperref[sec:theoreme-de-dalembert-gauss-2]{[Corrigé]}}\\
 	\label{alembertgauss2}
@@ -2059,7 +2059,7 @@
 	\end{enumerate}
 	
 	
-\chapter{Espace vectoriels normés}
+\chapter{Espace vectoriel normé}
 	\section{Suite de Cauchy \etoile{2}}
 	\textcolor{blue}{\hyperref[sec:suite-de-cauchy-etoile-2]{[Corrigé]}}\\
 	\label{Suite de Cauchy}
@@ -2389,7 +2389,7 @@
 		\end{enumerate}	
 	\end{enumerate}
 	
-\chapter{Suites et séries de fonctions}
+\chapter{Suite et série de fonctions}
 	\section{Etude d'une suite de fonctions (1)}
 	\textcolor{blue}{\hyperref[sec:etude-dune-suite-de-fonctions-1]{[Corrigé]}}\\
 	\label{Etude d'une suite de fonctions 1}
@@ -3729,7 +3729,7 @@ On note $\mathcal{P}_n$ l'ensemble des matrices de permutation d'ordre $n$ (Tome
 \end{enumerate}
 
 
-\chapter{Fonctions à valeurs vectorielles}
+\chapter{Fonction à valeurs vectorielles}
 Dans toute cette section, $n$ désigne un entier naturel non nul.\\
 
 \section{Point fixe de l'exponentielle complexe}
@@ -3861,8 +3861,8 @@ Soit $E$ un espace vectoriel euclidien et $f:[a,b]\to E$ continue sur $[a,b]$ et
 En considérant $\varphi(t)=\langle f(b)-f(a),f(t)\rangle$, démontrer qu'il existe $c\in]a,b[$ tel que \[\norme{ f(b)-f(a)}\leq (b-a)\norme{f'(c)}\]
 
 
-\chapter{Equations différentielles}
-\section{Equations différentielles du premier ordre}
+\chapter{Equation différentielle}
+\section{Equations différentielles linéaires du premier ordre}
 \textcolor{blue}{\hyperref[sec:equations-differentielles-du-premier-ordre]{[Corrigé]}}\\
 \label{Equations différentielles du premier ordre}
 Résoudre ces équations différentielles:
@@ -3874,7 +3874,7 @@ Résoudre ces équations différentielles:
 	\item $y'+\cotan(t)y=\cos^2(t)$ sur $]0,\pi[$.
 \end{enumerate}
 
-\section{Equations différentielles du second ordre}
+\section{Equations différentielles linéaires du second ordre}
 \textcolor{blue}{\hyperref[sec:equations-differentielles-du-second-ordre]{[Corrigé]}}\\
 \label{Equations différentielles du second ordre}
 Résoudre ces équations différentielles
@@ -3885,10 +3885,13 @@ Résoudre ces équations différentielles
 	\item $y''-(1-i)y'-2(1+i)y=0$ sur $\C$ avec $y(0)=y'(0)=1$.
 \end{enumerate}
 
-\section{Une équation quasi-différentielle}
-\textcolor{blue}{\hyperref[Une équation quasi-différentielle corrigé]{[Corrigé]}}\\
-\label{Une équation quasi-différentielle}
-Déterminer l'ensemble des fonctions $f\in \mathcal C^1(\R,\C)$ telles que $\forall x\in \R,\ f'(x)=f(-x)$.
+\section{Une autre équation différentielle \telecom{2}}
+\textcolor{blue}{\hyperref[Une autre équation différentielle corrigé]{[Corrigé]}}\\
+\label{Une autre équation différentielle}
+\begin{enumerate}[leftmargin=*]
+	\item Déterminer l'ensemble des fonctions $f\in \mathcal C^1(\R,\C)$ telles que $\forall x\in \R,\ f'(x)=f(-x)$.
+	\item Soit $\gamma\in [-1,1]$. Déterminer l'ensemble des fonctions $f\in \mathcal C^1(\R,\C)$ telles que $\forall x\in \R,\ f'(x)=f(\gamma x)$.
+\end{enumerate}
 
 \section{Problèmes de raccordement}
 \textcolor{blue}{\hyperref[sec:problemes-de-raccordement]{[Corrigé]}}\\
@@ -3911,6 +3914,23 @@ Soit $\alpha\in\R$.
 	%Je sais pas pourquoi l'exo doit se faire par récurrence alors qu'on peut juste vérifier que ce que l'on pense fonctionne.
 	% Bah alors enlève par récurrence je trouve ça mieux aussi, Monsieur Esteve.
 \end{enumerate}
+
+\section{Solution impaire \telecom{2}}
+\textcolor{blue}{\hyperref[Solution impaire corrigé]{[Corrigé]}}\\
+\label{Solution impaire}
+Soient $a,b\in \mathcal C(\R,\R)$.
+\begin{enumerate}
+	\item On suppose $a$ impaire et $b$ paire.\\
+	Montrer qu'il existe une unique solution impaire à l'équation $y'+ay+b=0$.
+	\item Donner des conditions sur $a$ et $b$ pour que l'équation $y'+ay+b=0$ admette une solution impaire.
+\end{enumerate}
+
+\section{Un principe des zéros isolés \xens{3}}
+\textcolor{blue}{\hyperref[Un principe des zéros isolés corrigé]{[Corrigé]}}\\
+\label{Un principe des zéros isolés}
+Soient $I$ un intervalle ouvert de $\R$ et $a_0,\dots,a_{n-1}\in \mathcal C(I,\R)$.\\
+Montrer que toute solution non nulle de $y^{(n)}+a_{n-1}y^{(n-1)}+\cdots+a_0y=0$ a ses zéros isolés.\\
+Autrement dit, $\forall x\in I,\ y(x)=0\implies \exists \varepsilon>0,\ \forall x_0\in\, ]x-\varepsilon,x+\varepsilon[\,\setminus\{x\},\ y(x_0)\ne 0$.
 
 \section{Equation de Bernoulli (1)}
 \textcolor{blue}{\hyperref[sec:equation-de-bernoulli-1]{[Corrigé]}}\\
@@ -3997,21 +4017,22 @@ On pose pour $n\in \N$ et $x\in \R\setminus\Z$, $f_n(x)=\displaystyle\sum_{k=-n}
 	\\Calculer le wronskien de $f_1,\dots,f_n$ en fonction de sa valeur en un point $a$ de $I$.
 \end{enumerate}
 
-\section{Utilité du wronskien}
-\textcolor{blue}{\hyperref[sec:utilite-du-wronskien]{[Corrigé]}}\\
-\label{Utilité du wronskien}
-Soient $q$ une fonction continue et intégrable sur $\R_+$. On considère l'équation différentielle $(E):y''+qy=0$.
+\section{Solution non bornée \centraleponts{3}}
+\textcolor{blue}{\hyperref[Solution non bornée corrigé]{[Corrigé]}}\\
+\label{Solution non bornée}
+Soit $p:\R\to \R$ continue et intégrable. On considère l'équation $(E) : y''+py=0$.
 \begin{enumerate}
-	\item Soit $f$ une solution bornée de $(E)$ sur $\R_+$. Montrer que $f'$ admet une limite en $+\infty$ puis déterminer la valeur de cette limite.
-	\item Soient $f$ et $g$ deux solutions bornées de $(E)$ sur $\R_+$. Etudier le wronskien $W=fg'-f'g$ des solutions $f$ et $g$.
-	\\En déduire que $f$ et $g$ sont liées. Que peut-on en conclure ?
+	\item Rappeler la définition du wronskien et son lien avec les solutions d'une équation linéaire homogène d'ordre $2$.
+	\item Montrer que $\Phi'$ admet une limite finie $\ell$ en $+\infty$.
+	\item Montrer que $\ell=0$.
+	\item En déduire que $(E)$ admet une solution non bornée.
 \end{enumerate}
 
 \section{Principe d'entrelacement des zéros de Sturm}
 \textcolor{blue}{\hyperref[sec:principe-dentrelacement-des-zeros-de-sturm]{[Corrigé]}}\\
 \label{Principe d'entrelacement des zéros de Sturm}
 \begin{enumerate}[leftmargin=*]
-	\item Soient $p$ et $q$ deux fonctions continues sur $\R$ telles que $p\leq q$ sur $\R$. Soient $u$ et $v$ deux fonctions de classe $\mathcal{C}^2$ telles que $u''+pu=0$ et $v''+qv=0$. On suppose que $u$ s'annule en des réels $a$ et $b$ avec $a<b$ mais qu'elle n s'annule pas sur $]a,b[$.
+	\item Soient $p$ et $q$ deux fonctions continues sur $\R$ telles que $p\leq q$ sur $\R$. Soient $u$ et $v$ deux fonctions de classe $\mathcal C^2$ telles que $u''+pu=0$ et $v''+qv=0$. On suppose que $u$ s'annule en des réels $a$ et $b$ avec $a<b$ mais qu'elle n s'annule pas sur $]a,b[$.
 	\begin{enumerate}[label=\alph*.]
 		\item On pose le \textit{pseudo-wronskien} $W=u'v-uv'$. Déterminer $W'$.
 		\item En déduire que $v$ s'annule sur $[a,b]$.
@@ -4066,12 +4087,12 @@ On considère un système différentiel sur $\C^n$, $(E):Y'=AY$ où $A:\R\to\M_n
 	\item On considère $n$ solutions $V_1,\dots,V_n$ de $(E)$ linéairement indépendantes. En notant $M(t)$ la matrice carrée dont les vecteurs colonnes sont $V_1,\dots,V_n$, montrer que : $$\exists C\in \text{GL}_n(\C),\forall t\in\R,\quad M(t+T)=M(t)C$$ 
 \end{enumerate}
 
-\section{Méthode de Lagrange (1)}
-\textcolor{blue}{\hyperref[sec:methode-de-lagrange-1]{[Corrigé]}}\\
-\label{Méthode de Lagrange 1}
+\section{Méthode de Lagrange (1) \ccinp{3}}
+\textcolor{blue}{\hyperref[Méthode de Lagrange (1) corrigé]{[Corrigé]}}\\
+\label{Méthode de Lagrange (1)}
 On étudie l'équation différentielle suivante sur $]0,+\infty[$,$$(E):xy''+3y'-4x^3y=0$$
 \begin{enumerate}
-	\item Chercher une solution $\varphi$ développable en série entière au voisinage de $0$ et non nulle.
+	\item Chercher une solution $\varphi$ non nulle de $(E)$ développable en série entière au voisinage de $0$ à droite.
 	\item Terminer de résoudre l'équation par le changement de fonction inconnue $y(x)=\varphi(x)z(x)$.
 \end{enumerate}
 
@@ -4086,6 +4107,18 @@ $$(E_n):x(x-1)y''+(1-2x)y'+n(n-1)y=0$$
 	\item Déterminer les polynômes $P\in \C[X]$ qui vérifient $P''|P$.
 \end{enumerate}
 
+\section{Solution de norme constante \centraleponts{3}}
+\textcolor{blue}{\hyperref[Solution de norme constante corrigé]{[Corrigé]}}\\
+\label{Solution de norme constante}
+On munit $\M_n(\R)$ de sa structure euclidienne canonique et on se donne $A\in \M_n(\R)$. Montrer que les solutions de l'équation différentielle $X'=AX,\ X\in \M_{n,1}(\R)$ sont toutes de norme constante si et seulement si $A$ est antisymétrique.
+
+\section{Préservation d'un sous-espace \centraleponts{2}}
+\textcolor{blue}{\hyperref[Préservation d'un sous-espace corrigé]{[Corrigé]}}\\
+\label{Préservation d'un sous-espace}
+Soient $E$ un $\K$-espace vectoriel de dimension $n\in \N^*$ et $F$ un sous-espace vectoriel de $E$.\\
+Soit $u\in \L(E)$ qui préserve $F$.\\
+Montrer que si $x$ est solution de l'équation différentielle $x'=u(x)$ et s'il existe $t_0\in \R$ tel que $x(t_0)\in F$ alors $x$ est à valeur dans $F$.
+
 \section{Equation différentielle matricielle non linéaire}
 \label{Equation différentielle matricielle non linéaire}
 \textcolor{blue}{\hyperref[sec:equation-differentielle-matricielle-non-lineaire]{[Corrigé]}}\\
@@ -4096,30 +4129,42 @@ Soit $A_0\in\mathcal S_n(\R)$ à spectre dans $\R_-$.
 \end{cases}$.\\
 Montrer que la solution $t\mapsto A(t)$ tend vers une limite finie en $+\infty$, à préciser.
 
-\section{Système dynamique}
-\textcolor{blue}{\hyperref[sec:systeme-dynamique]{[Corrigé]}}\\
-\label{Système dynamique}
-Soit $n\in \N^*$. Soient $A:\R\to\M_n(\R)$ de classe $\mathcal C^1$ et $B:\R\to \M_n(\R)$ vérifiant :
+\section{Système de Lax \xens{4}}
+\textcolor{blue}{\hyperref[Système de Lax corrigé]{[Corrigé]}}\\
+\label{Système de Lax}
+Soient $A:\R\to \M_n(\C)$ de classe $\mathcal C^1$ et $B:\R\to \M_n(\C)$ continue telles que :
 $$\forall t\in \R,\ A'(t)=A(t)B(t)-B(t)A(t)$$
 \begin{enumerate}
-	\item On suppose que $B$ est constante égale à $B_0$.\\
-	Montrer que $\chi_{A(t)}$ est indépendant de $t$.
-	\item Montrer que $\chi_{A(t)}$ est indépendant de $t$.
+	\item On suppose que $B$ est constante. Montrer que $\T{Sp}(A(t))$ ne dépend pas de $t$.\\
+	\textit{Indication : on pourra étudier l'application $t\mapsto e^{-tB}Ce^{tB}$ pour une matrice $C\in \M_n(\C)$ bien choisie.}
+	\item justifier la dérivabilité et calculer la dérivée de l'application $t\mapsto \Tr(A(t)^k)$ pour $k\in \N^*$.
+	\item Montrer que $\T{Sp}(A(t))$ ne dépend pas de $t$.
 \end{enumerate}
 
-\section{Solutions de norme constante \etoile{3}}
-\textcolor{blue}{\hyperref[sec:solutions-de-norme-constante-etoile3]{[Corrigé]}}\\
-\label{Solutions de norme constante}
-On munit $\M_n(\R)$ de sa structure euclidienne canonique et on se donne $A\in \M_n(\R)$. Montrer que les solutions de l'équation différentielle $X'=AX,\ X\in \M_{n,1}(\R)$ sont toutes de norme constante si et seulement si $A$ est antisymétrique.
-
-\section{Exponentielles de matrices qui commutent \etoile{2}}
+\section{Exponentielles de matrices qui commutent \centraleponts{2}}
 \textcolor{blue}{\hyperref[sec:exponentielles-de-matrices-qui-commutent-etoile2]{[Corrigé]}}\\
 \label{Exponentielles de matrices qui commutent}
 Soient $A$ et $B$ deux matrices de $\M_n(\K)$ qui commutent. \\
 On définit les applications $\fonction{f_A}{\R}{\M_n(\K)}{t}{e^{tA}}$ et $\fonction{g}{\R}{\M_n(\K)}{t}{e^{t(A+B)}e^{-tB}}$
 \begin{enumerate}
-	\item Montrer que l'application $f_A$ et l'application $g$ sont solutions d'un même problème de Cauchy. En déduire une démonstration de la relation: $$\forall t\in\R, \quad e^{t(A+B)}=e^{tA}e^{tB}$$
+	\item Montrer que l'application $f_A$ et l'application $g$ sont solutions d'un même problème de Cauchy. En déduire une démonstration de la relation : $$\forall t\in\R, \quad e^{t(A+B)}=e^{tA}e^{tB}$$
 	\item Réciproquement, montrer que si $\forall t\in\R, \quad e^{t(A+B)}=e^{tA}e^{tB}$ alors $A$ et $B$ commutent.
+\end{enumerate}
+
+\section{Exponentielles de matrice qui commutent avec le commutateur}
+\textcolor{blue}{\hyperref[Exponentielles de matrices qui commutent avec leur commutateur corrigé]{[Corrigé]}}\\
+\label{Exponentielles de matrices qui commutent avec leur commutateur}
+Soient $A,B\in \M_n(\K)$.\\
+On définit les applications $\fonction{\phi}{\R}{\M_n(\K)}{t}{e^{tA}e^{tB}e^{-t(A+B)}}$ et $\fonction{f}{\R}{\M_n(\K)}{t}{e^{tB}Ae^{-tB}}$.
+\begin{enumerate}
+	\item Montrer qu'en général $e^{A+B}\ne e^Ae^B$.
+\end{enumerate}
+On suppose que $A$ et $B$ commutent avec leur commutateur $[A,B]:=AB-BA$.
+\begin{enumerate}[resume]
+	\item Montrer que $\forall t\in \R,\ f(t)=A-t[A,B]$.
+	\item Montrer que $\forall t\in \R,\ \phi'(t)=A\phi(t)-e^{tA}e^{tB}Ae^{-t(A+B)}$.
+	\item En déduire la relation :
+	$$e^Ae^B=e^{A+B+\frac{1}{2}[A,B]}$$
 \end{enumerate}
 
 
@@ -6220,7 +6265,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\textcolor{blue}{\hyperref[residus]{[Enoncé]}}\\
 	
 	\newpage
-\section{Correction Fonctions réelles}
+\section{Correction Fonction réelle}
 	\subsection{Formule de Leibniz \etoile{1}}\label{sec:formule-de-leibniz-etoile1}
 	\textcolor{blue}{\hyperref[leibniz]{[Enoncé]}}\\
 	Soient $I$ un intervalle de $\R,\ n\in \N$ et $f,g$ deux fonctions de classe $\mathcal C^n$ sur $I$ à valeurs dans $\R$. $f\times g$ est de classe $\mathcal C^n$ sur $I$ et :
@@ -6702,7 +6747,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	$$\displaystyle\varphi\left(\frac{1}{b-a}\int_a^bf(t)dt\right)\leq \frac{1}{b-a}\int_a^b\varphi\circ f(t)dt$$
 	
 	\newpage
-\section{Correction Polynômes}
+\section{Correction Polynôme}
 	\subsection{Théorème de d'Alembert-Gauss (2) \etoile{3}}
 	\label{sec:theoreme-de-dalembert-gauss-2}
 	\textcolor{blue}{\hyperref[alembertgauss2]{[Enoncé]}}\\
@@ -7689,7 +7734,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\end{enumerate}
 	
 	\newpage
-\section{Correction Espaces vectoriels normés}
+\section{Correction Espace vectoriel normé}
 	\subsection{Suite de Cauchy \etoile{2}}\label{sec:suite-de-cauchy-etoile-2}
 		\textcolor{blue}{\hyperref[Suite de Cauchy]{[Enoncé]}}\\
 	Soit $(u_n)\in E^\N$ une suite convergente. On note $l=\unfty{\lim}u_n$.\\
@@ -8372,7 +8417,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		
 	\end{enumerate}
 	\newpage
-	\section{Correction Suites et séries de fonctions}
+	\section{Correction Suite et série de fonctions}
 	\subsection{Etude d'une suite de fonctions (1)}\label{sec:etude-dune-suite-de-fonctions-1}
 		\textcolor{blue}{\hyperref[Etude d'une suite de fonctions 1]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -8938,7 +8983,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\end{enumerate}
 	
 	\newpage
-\section{Correction Séries entières}
+\section{Correction Série entière}
 	\subsection{Lemme d'Abel}\label{sec:lemme-dabel}
 		\textcolor{blue}{\hyperref[Lemme d'Abel]{[Enoncé]}}\\
 		On rappelle le lemme d'Abel :\\
@@ -10557,7 +10602,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsubsection{Points extrémaux des matrices bistochastiques}
 	
 	\newpage
-\section{Correction Fonctions à valeurs vectorielles}
+\section{Correction Fonction à valeurs vectorielles}
 	\subsection{Point fixe de l'exponentielle complexe}
 	\label{sec:point-fixe-de-lexponentielle-complexe}
 	\textcolor{blue}{\hyperref[Point fixe de l'exponentielle complexe]{[Enoncé]}}\\
@@ -10695,7 +10740,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{sec:inegalite-des-accroissements-finis-pour-un-espace-euclidien}
 	\textcolor{blue}{\hyperref[Inégalité des accroissements finis pour un espace euclidien]{[Enoncé]}}\\
 
-\section{Correction Equations différentielles}
+\section{Correction Equation différentielle}
 	\subsection{Equations différentielles du premier ordre}
 	\label{sec:equations-differentielles-du-premier-ordre}
 	\textcolor{blue}{\hyperref[Equations différentielles du premier ordre]{[Enoncé]}}\\
@@ -10704,14 +10749,25 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{sec:equations-differentielles-du-second-ordre}
 	\textcolor{blue}{\hyperref[Equations différentielles du second ordre]{[Enoncé]}}\\
 	
-	\subsection{Une équation quasi-différentielle \ccinp{1}}
-	\label{Une équation quasi-différentielle corrigé}
-	\textcolor{blue}{\hyperref[Une équation quasi-différentielle]{[Enoncé]}}\\
-	Soit $f:\R\to\C$ de classe $\mathcal C^1$ solution de l'équation. Alors $x\mapsto f(-x)$ est de classe $\mathcal C^1$ d'où $f$ est de classe $\mathcal C^2$.\\
-	En dérivant dans l'équation : $\forall x\in \R,\ f''(x)=-f'(-x)=-f(x)$.\\
-	Ainsi $f$ est solution de l'équation différentielle $y''+y=0$ sur $\R$.\\
-	L'ensemble des solutions de cette équation est $\Vect(\cos,\sin)$.\\
-	Réciproquement, si $f\in \Vect(\cos,\sin)$ alors $f$ est de classe $\mathcal C^1$ sur $\R$ et $\forall x\in \R,\ f'(x)=f(-x)$.
+	\subsection{Une autre équation différentielle \telecom{2}}
+	\label{Une autre équation différentielle corrigé}
+	\textcolor{blue}{\hyperref[Une autre équation différentielle]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $f$ solution. Alors $x\mapsto f(-x)$ est de classe $\mathcal C^1$ d'où $f$ est de classe $\mathcal C^2$.\\
+		En dérivant dans l'équation : $\forall x\in \R,\ f''(x)=-f'(-x)=-f(x)$.\\
+		Ainsi $f$ est solution de l'équation différentielle $y''+y=0$ sur $\R$.\\
+		L'ensemble des solutions de cette équation est $\Vect(\cos,\sin)$ donc $\exists a,b\in \C,\ f=a\cos+b\sin$. Notons $\alpha=f(0)$. On sait que $f'(0)=f(0)=\alpha$.\\
+		Ces conditions donnent $a=b=\alpha$. réciproquement, on vérifie que $\alpha(\cos+\sin)$ est solution du problème.\\
+		L'ensemble des solutions du problème est donc $\Vect(\cos+\sin)$.
+		\item Soit $f$ solution. $x\mapsto f(\gamma x)$ est de classe $\mathcal C^1$ sur $\R$ donc $f'$ aussi i.e $f$ est de classe $\mathcal C^2$ sur $\R$. Par récurrence $f$ est de classe $\mathcal C^\infty$ sur $\R$.\\
+		On montre alors par récurrence que $\forall n\in \N,\ \forall x\in \R,\ f^{(n)}(x)=\gamma^{n(n-1)/2}f(\gamma^nx)$. En particulier $f^{(n)}(0)=\gamma^{n(n-1)/2}f(0)$.\\
+		Comme $|\gamma|\leq 1$, $\forall x\in \R,\ \displaystyle\sum_{n=0}^{+\infty}\left|\frac{\gamma^{n(n-1)/2}}{n!}x^n\right|\leq \sum_{n=0}^{+\infty}\frac{|x|^n}{n!}=e^{|x|}<+\infty$.\\
+		Ainsi cette série entière a un rayon de convergence infini et $f$ est égale à sa série de Taylor sur $\R$.
+		Vérifions que $g:x\mapsto \displaystyle\sum_{n=0}^{+\infty}\frac{\gamma^{n(n-1)/2}}{n!}x^n$ est bien solution.\\
+		D'après le cours $g$ est de classe $\mathcal C^1$ sur $\R$ et de plus :
+		$$\forall x\in \R,\ g'(x)=\sum_{n=1}^{+\infty}\frac{\gamma^{n(n-1)/2}}{(n-1)!}x^{n-1}=\sum_{n=0}^{+\infty}\frac{\gamma^{n(n+1)/2}}{n!}x^n=\sum_{n=0}^{+\infty}\frac{\gamma^{n(n-1)/2}}{n!}(\gamma x)^n=g(\gamma x)$$
+		L'ensemble des solutions du problème est donc $\Vect(g)$.
+	\end{enumerate}
 	
 	\subsection{Problèmes de raccordement}
 	\label{sec:problemes-de-raccordement}
@@ -10720,6 +10776,55 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Suite d'équations différentielles}
 	\label{sec:suite-dequations-differentielles}
 	\textcolor{blue}{\hyperref[Suite d'équations différentielles]{[Enoncé]}}\\
+	
+	\subsection{Solution impaire \telecom{2}}
+	\label{Solution impaire corrigé}
+	\textcolor{blue}{\hyperref[Solution impaire]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Si $y$ est une solution impaire alors elle satisfait le problème de Cauchy
+		$$\begin{cases}
+			y'+ay+b=0\\
+			y(0)=0
+		\end{cases}$$
+		D'après le théorème de Cauchy linéaire, il existe une unique solution $y$ à ce problème de Cauchy. Vérifions que $y$ est impaire.\\
+		$x\mapsto -y(-x)$ est solution du même problème de Cauchy donc $\forall x\in \R,\ y(-x)=-y(x)$.
+		\item Supposons que l'équation $y'+ay+b=0$ admette une solution $y$ impaire. Alors $y'$ est paire, en effet $\forall x\in \R,\ -y(-x)=y(x)\implies \forall x\in \R,\ y'(-x)=y'(x)$.\\
+		Alors $\forall x\in \R$ :
+		$$\begin{cases}
+			(L_1) : y'(x)+a(x)y(x)+b(x)=0\\
+			(L_2) : y'(-x)+a(-x)y(-x)b(-x)=0
+		\end{cases}$$
+		Càd
+		$$\begin{cases}
+			(L_1) : y'(x)+a(x)y(x)+b(x)=0\\
+			(L_2) : y'(x)-a(-x)y(x)+b(-x)=0
+		\end{cases}$$
+		Ainsi en faisant la différence $(L_1)-(L_2) : (a(x)+a(-x))y(x)+b(x)-b(-x)=0$.\\
+		On rappelle qu'on peut écrire une fonction avec sa partie paire et sa partie impaire $f=f_p+f_i$ où $f_p:x\mapsto \dfrac{f(x)+f(-x)}{2}$ est paire et $f_i:x\mapsto \dfrac{f(x)-f(-x)}{2}$ est impaire.\\
+		On a donc montré qu'on a la relation $a_p(x)y(x)+b_i(x)=0$.
+	\end{enumerate}
+	
+	\subsection{Un principe des zéros isolés \xens{3}}
+	\label{Un principe des zéros isolés corrigé}
+	\textcolor{blue}{\hyperref[Un principe des zéros isolés]{[Enoncé]}}\\
+	Soit $y$ non nulle solution. Supposons par l'absurde que $y$ n'a pas ses zéros isolés.\\
+	\underline{$1^{\T{ère}}$ méthode :}\\
+	Soient $x,x_0\in I$ tel que $y(x_0)=0$. On suppose $x>x_0$.\\
+	La fonction nulle est solution de l’équation différentielle avec condition initiale $y(0)=y'(0)=\cdots=y^{(n-1)}(0)=0$. Par unicité de la solution d'un problème de Cauchy, il existe $k\in \crblanc{0}{n-1}$ tel que $y^{(k)}(x_0)\ne 0$. Prenons $p$ le plus petit entier naturel tel que $y^{(p)}(x_0)\ne 0$.\\
+	$y$ est de classe $\mathcal C^{p+1}$ sur $]x_0,x[$, et $\mathcal C^p$ sur $[x_0,x]$. Donc par la formule de Taylor-reste intégral :
+	$$y(x)=y(x_0)+\sum_{k=1}^{p-1}\frac{y^{(k)}(x_0)}{k!}(x-x_0)^k+\int_{x_0}^x\frac{(t-x_0)^{p-1}}{(p-1)!}y^{(p)}(t)dt=\int_{x_0}^x\frac{(t-x_0)^p}{p!}y^{(p)}(t)dt$$
+	Or $\displaystyle\frac{(t-x_0)^{p-1}}{(p-1)!}y^p(t)\underset{t\to x_0}\sim\frac{(t-x_0)^{p-1}}{(p-1)!}y^{(p)}(x_0)$ et l'intégrale $\displaystyle\int_{x_0}^x\frac{(t-x_0)^{p-1}}{(p-1)!}y^{(p)}(x_0)dt=\frac{y^{(p)}(x_0)}{p!}(x-x_0)^p$ converge. donc par intégration de relation de comparaison $y(x)\underset{x\to x_0}\sim\dfrac{y^{(p)}(x_0)}{p!}(x-x_0)^p$.\\
+	La fonction $x\mapsto \dfrac{y^{(p)}(x_0)}{p!}(x-x_0)^p$ ne s'annule pas sur un voisinage épointé de $x_0$, donc $y$ non plus ce qui conclut.\\\\
+	\underline{$2^{\T{nd}}$ méthode :}\\
+	On peut alors trouver une suite de zéros \textbf{distincts} $(x_n)_{n\in \N}=(x_n^{(0)})_{n\in \N}$ de $y$ qui converge vers un zéro de $y$. On montre (cf. \ref{Théorème de Bolzano-Weierstrass}) que quitte à extraire on peut supposer $(x_n)$ strictement monotone. Disons qu'elle est strictement croissante.\\
+	Pour tout $n\in \N$, $y$ est dérivable sur $]x_n,x_{n+1}[$, continue sur $[x_n,x_{n+1}]$ donc d'après le théorème de Rolle, $\exists x_n^{(1)}\in ]x_n,x_{n+1}[,\ y'\left(x_n^{(1)}\right)=0$.\\
+	Par récurrence sur $j\in \crblanc{1}{n}$ on construit en appliquant Rolle à $y^{(j-1)}$ des suites $\left(x_n^{(j)}\right)_{n\in \N}$ vérifiant $\forall n\in \N,\ y^{(j)}\left(x_n^{(j)}\right)=0$ et $x_n^{(j)}\in ]x_n^{(j-1)},x_n^{(j-1)}[\ \subset\ ]x_n,x_{n+1}[$.\\
+	Ainsi par le théorème des gendarmes $\forall j\in \crblanc{1}{n},\ x_n^{(j)}\unfty\longrightarrow x$. Et par continuité de $y^{(j)}$ en $x$, on en déduit que $x$ est un zéro de $y,y',\dots,y^{(n)}$. Par conséquent $y$ est solution du problème de Cauchy :
+	$$\begin{cases}
+		y^{(n)}+a_{n-1}y^{(n-1)}+\cdots+a_0y=0\\
+		y(x)=y'(x)=\cdots=y^{(n-1)}(x)=0
+	\end{cases}$$
+	La fonction nulle est aussi solution de ce problème de Cauchy donc par le théorème de Cauchy linéaire $y=0$. On peut faire exactement le même raisonnement si $(x_n)_{n\in \N}$ est strictement décroissante en considérant les intervalles $]x_{n+1},x_n[$.
 	
 	\subsection{Equation de Bernoulli (1)}
 	\label{sec:equation-de-bernoulli-1}
@@ -10764,8 +10869,23 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Wronskien}\label{sec:wronskien}
 		\textcolor{blue}{\hyperref[Wronskien]{[Enoncé]}}\\
 	
-	\subsection{Utilité du wronskien}\label{sec:utilite-du-wronskien}
-		\textcolor{blue}{\hyperref[Utilité du wronskien]{[Enoncé]}}\\
+	\subsection{Solution non bornée \centraleponts{3}}
+	\label{Solution non bornée corrigé}
+	\textcolor{blue}{\hyperref[Solution non bornée]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Si $I$ est un intervalle de $\R$ et $a,b\in \mathcal C^0(I,\R)$ alors le wronskien $W(y_1,y_2)$ de deux solutions de l'équation différentielle $y''+ay'+b=0$ est définie par $W=\begin{vmatrix}y_1&y_2\\y_1'&y_2'\end{vmatrix}=y_1y_2'-y_2y_1'$.\\
+		Le wronskien de $y_1,y_2$ est nul sur $I$ si et seulement s'il est nul en un point si et seulement si $y_1$ et $y_2$ sont liées.\\
+		Il vérifie de plus l'équation différentielle $W'(t)=a(t)W(t)$.
+		\item $\forall t\in \R,\ \Phi''(t)=-p(t)\Phi(t)$. En intégrant entre $0$ et $t$, $\forall t\in \R,\ \Phi'(t)=\Phi'(0)-\displaystyle\int_0^tp(s)\Phi(s)ds$.\\
+		Or $\displaystyle\int_0^{+\infty}|p(s)\Phi(s)|ds\leq \normep{\infty}{\Phi}\int_0^{+\infty}|p(s)|ds<+\infty$ donc l'intégrale $\displaystyle\int_0^{+\infty}p(s)\Phi(s)ds$ converge (absolument).\\
+		On en déduit que $\Phi'$ a une limite en $+\infty$, $\ell=\Phi'(0)-\displaystyle\int_0^{+\infty}p(s)\Phi(s)ds\in \R$.
+		\item Supposons que $\ell\ne 0$. Alors $\Phi'(t)\utfty\sim\ell$. Or $\displaystyle\int_0^{+\infty}\ell dt$ diverge donc d'après les théorèmes d'intégration de relation de comparaison $\Phi(t)-\Phi(0)\utfty\sim t\ell$.\\
+		Ceci contredit le fait que $\Phi$ est bornée donc $\ell=0$.
+		\item Supposons que toutes les solutions de $(E)$ sont bornées. Donnons nous $(y_1,y_2)$ une base de l'espace des solutions de $(E)$.\\
+		Comme $(E)$ n'a pas de terme en $y'$, $W(y_1,y_2)'=0$, càd $W(y_1,y_2)$ est constant.\\
+		Pourtant $|W(y_1,y_2)(t)|\leq \normep{\infty}{y_1}|y_2'(t)|+\normep{\infty}{y_2}|y_1'(t)|\utfty\longrightarrow 0$ par les questions précédentes.\\
+		On en déduit $W(y_1,y_2)=0$ ce qui contredit le fait que $(y_1,y_2)$ est libre. Ainsi $(E)$ admet une solution non bornée.
+	\end{enumerate}
 	
 	\subsection{Principe d'entrelacement des zéros de Sturm}\label{sec:principe-dentrelacement-des-zeros-de-sturm}
 		\textcolor{blue}{\hyperref[Principe d'entrelacement des zéros de Sturm]{[Enoncé]}}\\
@@ -10785,20 +10905,51 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Théorème de Floquet}\label{sec:theoreme-de-floquet}
 		\textcolor{blue}{\hyperref[Théorème de Floquet]{[Enoncé]}}\\
 	
-	\subsection{Méthode de Lagrange (1)}\label{sec:methode-de-lagrange-1}
-		\textcolor{blue}{\hyperref[Méthode de Lagrange 1]{[Enoncé]}}\\
+	\subsection{Méthode de Lagrange (1) \ccinp{3}}
+	\label{Méthode de Lagrange (1) corrigé}
+	\textcolor{blue}{\hyperref[Méthode de Lagrange (1)]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Toute solution de $(E)$ étant continue sur $]0,+\infty[$, l'équation reste vraie en $x=0$.\\
+		Soit une solution $\varphi:x\mapsto \displaystyle\sum_{n=0}^{+\infty}a_nx^n$ définie sur un intervalle d'intérieur non vide $I\subset \R_+$ contenant $0$. Fixons $x\in I$.
+		\begin{align*}
+			0&=x\varphi''(x)+3\varphi'(x)-4x^3\varphi(x)\\
+			&=\sum_{n=0}^{+\infty}n(n-1)a_nx^{n-1}+\sum_{n=0}^{+\infty}3na_nx^{n-1}-\sum_{n=0}^{+\infty}4a_nx^{n+3}\\
+			&=3a_1+8a_2x+15a_3x^2+\sum_{n=3}^{+\infty}[(n+1)(n+3)a_{n+1}-4a_{n-3}]x^n
+		\end{align*}
+		Donc par unicité du développement en série entière on obtient :\\
+		$\begin{cases}
+			a_1=a_2=a_3=0\\
+			\forall n\geq 0,\ (n+4)(n+6)a_{n+4}-4a_n=0
+		\end{cases}$\\
+		Par récurrence immédiate on remarque que $\forall n\in \N,\ a_{4n+1}=a_{4n+2}=a_{4n+3}=0$. De plus la suite de terme général $u_n=a_{4n}$ vérifie :\\
+		$\forall n\in \N,\ (4n+4)(4n+6)u_{n+1}=4u_n$ i.e $u_{n+1}=\dfrac{1}{2(n+1)(2n+3)}u_n$.\\
+		On suppose $\varphi$ non nulle donc $(u_n)_{n\in \N}$ n'est pas nulle d'où $u_0\ne 0$ puis par récurrence immédiate $\forall n\in \N,\ u_n\ne 0$.\\
+		Ainsi $\forall n\in \N,\ \displaystyle\frac{u_{n+1}}{u_n}=\frac{1}{2(n+1)(2n+3)}$. On en déduit par produit que $\displaystyle\frac{u_n}{u_0}=\frac{1}{2^nn!}\prod_{k=0}^{n-1}\frac{1}{(2k+3)}$.\\
+		On calcule $\displaystyle\prod_{k=0}^{n-1}(2k+3)=\prod_{\substack{3\leq k\leq 2n+1\\k\text{ impair}}}k=\frac{\prod\limits_{k=3}^{2n+1}k}{\prod\limits_{k=2}^n2k}=\frac{(2n+1)!}{2^nn!}$.\\
+		Ainsi $\forall n\in \N,\ u_n=\dfrac{u_0}{(2n+1)!}$.\\
+		Autrement dit $\forall x\in I\backslash\{0\},\ \varphi(x)=\displaystyle\sum_{n=0}^{+\infty}a_{4n}x^{4n}=\sum_{n=0}^{+\infty}\frac{a_0}{(2n+1)!}x^{4n}=\frac{a_0}{x^2}\sum_{n=0}^{+\infty}\frac{(x^2)^{2n+1}}{(2n+1)!}=a_0\frac{\sh(x^2)}{x^2}$.\\
+		On vérifie que $x\mapsto \dfrac{\sh(x^2)}{x^2}$ est solution de $(E)$ sur $]0,+\infty[$.
+		\item On cherche $y$ solution de $(E)$ sous la forme $y=\varphi\times z$ où $z\in \mathcal C^1(]0,+\infty[,\R)$.\\
+		$\forall x>0,\ y'(x)=\varphi'(x)z(x)+\varphi(x)z'(x)$ puis $y''(x)=\varphi''(x)z(x)+2\varphi'(x)z'(x)+\varphi(x)z''(x)$. Donc :
+		\begin{align*}
+			0&=xy''+3y'-4x^3y\\
+			&=(x\varphi''(x)+3\varphi'(x)-4x^3\varphi(x))z+(2x\varphi'(x)+3\varphi(x))z'+x\varphi(x) z''\\
+			&=(2x\varphi'(x)+3\varphi(x))z'+x\varphi(x) z'' & \text{car }\varphi\text{ est solution de }(E)
+		\end{align*}
+		Or $x\mapsto x\varphi(x)$ ne s'annule pas sur $]0,+\infty[$ donc $y$ est solution de $(E)$ sur $]0,+\infty[$ si et seulement si $z'$ est solution sur $]0,+\infty[$ de l'équation
+		$$(E') : u'+\displaystyle\left(2\frac{\varphi'(x)}{\varphi(x)}+\frac{3}{x}\right)u=0$$
+		$\forall x>0,\ \displaystyle\int_1^x\left(2\frac{\varphi'(t)}{\varphi(t)}+\frac{3}{t}\right)dt=\left[2\ln(|\varphi(t)|)+3\ln(t)\right]_1^x=2\ln(\varphi(x))+3\ln(x)-2\ln(\varphi(1))$.\\
+		Ainsi $u:x\mapsto \exp(2\ln(\varphi(1))-2\ln(\varphi(x))-3\ln(x))=\dfrac{\varphi(1)^2}{x^3\varphi(x)^2}=\dfrac{\sh(1)^2x}{\sh(x^2)^2}$ est solution de $(E')$ sur $]0,+\infty[$.\\
+		Finalement l'ensemble des solutions de $(E)$ est $\displaystyle\Vect\left(x\mapsto \frac{\sh(x^2)}{x^2},x\mapsto \frac{\sh(x^2)}{x^2}\int_1^x\frac{t}{\sh(t^2)^2}dt\right)$.
+	\end{enumerate}
 	
-	\subsection{Méthode de Lagrange (2)}\label{sec:methode-de-lagrange-2}
-		\textcolor{blue}{\hyperref[Méthode de Lagrange 2]{[Enoncé]}}\\
+	\subsection{Méthode de Lagrange (2)}
+	\label{sec:methode-de-lagrange-2}
+	\textcolor{blue}{\hyperref[Méthode de Lagrange 2]{[Enoncé]}}\\
 	
-	\subsection{Equation différentielle matricielle non linéaire}\label{sec:equation-differentielle-matricielle-non-lineaire}
-		\textcolor{blue}{\hyperref[Equation différentielle matricielle non linéaire]{[Enoncé]}}\\
-	
-	\subsection{Système dynamique}\label{sec:systeme-dynamique}
-	\textcolor{blue}{\hyperref[Système dynamique]{[Enoncé]}}\\
-	
-	\subsection{Solutions de norme constante \etoile{3}}\label{sec:solutions-de-norme-constante-etoile3}
-		\textcolor{blue}{\hyperref[Solutions de norme constante]{[Enoncé]}}\\
+	\subsection{Solution de norme constante \centraleponts{3}}
+	\label{Solution de norme constante corrigé}
+	\textcolor{blue}{\hyperref[Solution de norme constante]{[Enoncé]}}\\
 	Supposons que $A\in \mathcal A_n(\R)$.\\
 	Soit $X$ une solution du système différentiel $Y'=AY$. On sait que $\forall t\in \R,\ X(t)=e^{tA}X(0)$.\\
 	Or $\forall t\in \R,\ e^{tA}\in \O_n(\R)$. En effet, par continuité de la transposition, $\forall t\in \R,\ \left(e^{tA}\right)^\top=e^{tA^\top}=e^{-tA}=\left(e^{tA}\right)^{-1}$.\\
@@ -10814,8 +10965,46 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	$X_\lambda^\top(A^\top+A)X_\lambda=0\implies X_\lambda^\top(\lambda X_\lambda)=\lambda\norme{X_\lambda}^2=0\implies \lambda=0$.\\
 	Ainsi $A^\top+A$ est semblable à la matrice nulle et est donc nulle, c'est à dire $A=-A^\top$ ou encore $A\in \mathcal A_n(\R)$.
 	
-	\subsection{Exponentielles de matrices qui commutent \etoile{2}}\label{sec:exponentielles-de-matrices-qui-commutent-etoile2}
-		\textcolor{blue}{\hyperref[Exponentielles de matrices qui commutent]{[Enoncé]}}\\
+	\subsection{Préservation d'un sous-espace \centraleponts{2}}
+	\label{Préservation d'un sous-espace corrigé}
+	\textcolor{blue}{\hyperref[Préservation d'un sous-espace]{[Enoncé]}}\\
+	D'après le cours $\forall t\in \R,\ x(t)=e^{(t-t_0)u}(x(t_0))$.\\
+	Or il est classique de montrer que $e^u$ est un polynôme en $u$ :\\
+	$\forall n\in \N,\ \displaystyle\sum_{k=0}^n\frac{u^k}{k!}\in \K[u]$. Or $\K[u]$ est fermé en tant que sous-espace de dimension finie (égale au degré du polynôme minimal de $u$) de $\L(E)$. Donc $e^u=\unfty\lim\displaystyle\sum_{k=0}^n\frac{u^k}{k!}\in \K[u]$.\\
+	On en déduit que $\forall t\in \R,\ e^{(t-t_0)u}\in \K[u]$. En particulier $e^{(t-t_0)u}(F)\subset F$ d'où $x(\R)\subset F$.
+	
+	\subsection{Equation différentielle matricielle non linéaire}
+	\label{sec:equation-differentielle-matricielle-non-lineaire}
+	\textcolor{blue}{\hyperref[Equation différentielle matricielle non linéaire]{[Enoncé]}}\\
+	
+	\subsection{Système de Lax \xens{4}}
+	\label{Système de Lax corrigé}
+	\textcolor{blue}{\hyperref[Système de Lax]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Posons $\Phi_B:M\in \M_n(\C)\mapsto MB-
+		BM$. $\Phi_B$ est clairement linéaire.\\
+		On remarque que $\forall t\in \R,\ A'(t)=A(t)B-BA(t)=\Phi_B(A(t))$.\\
+		Posons ensuite $\tilde A:t\mapsto e^{-tB}A(0)e^{tB}$. L'application $\fonction{f}{\M_n(\C)^3}{\M_n(\C)}{(M,N,P)}{MNP}$ est trilinéaire donc $\tilde A$ est de classe $\mathcal C^1$ et $\forall t\in \R,\ \tilde A'(t)=-Be^{-tB}A(0)e^{tB}+e^{-tB}A(0)e^{tB}B=\Phi_B(\tilde A(t))$.\\
+		En outre, $\tilde A(0)=A(0)$ donc d'après le théorème de Cauchy linéaire $A=\tilde A$ càd $\forall t\in \R,\ A(t)=e^{-tB}A(0)e^{tB}$. Or $\forall t\in \R,\ (e^{tB})^{-1}=e^{-tB}$. On a donc montré que $A(t)$ et $A(0)$ sont semblables pour tout $t\in \R$. En particulier elles ont même polynôme spectre.
+		\item Soit $k\in \N^*$. Notons $g_k:t\mapsto \Tr(A(t)^k)$.\\
+		$\Tr$ est linéaire, $(M_1,\dots,M_k)\mapsto M_1\dots M_k$ est $k$-linéaire et $A$ est dérivable donc $g_k$ est dérivable et
+		$$\forall t\in \R,\ g_k'(t)=\Tr\left(\sum_{j=0}^{k-1}A(t)^jA'(t)A(t)^{k-j-1}\right)$$
+		Fixons $t\in \R$.\\
+		$g_k'(t)=\displaystyle\sum_{j=0}^{k-1}\Tr(A(t)^jA'(t)A(t)^{k-j-1})=\sum_{j=0}^{k-1}\Tr(A'(t)A(t)^{k-1})=\Tr(kA'(t)A(t)^{k-1})$.\\
+		Enfin $A'(t)=A(t)B(t)-B(t)A(t)$ donc $g_k'(t)=k[\Tr(A(t)B(t)A(t)^{k-1})-\Tr(B(t)A(t)^k)]=0$.\\
+		On en déduit que $g_k$ est constante. En particulier, $\forall k\in \N^*,\ \Tr(A(t)^k)=\Tr(A(0)^k)$.\\
+		On rappelle que comme $A(t)$ est trigonalisable dans $\C$ alors si on note $\lambda_{t,1},\dots,\lambda_{t,n}$ ses valeurs propres on a la relation $\Tr(A(t)^k)=\displaystyle\sum_{i=1}^n\lambda_{t,i}^k:=T_k$.\\
+		Considérons le développement $$\frac{1}{1-\lambda_{t,i}z}=\sum_{k=0}^{+\infty}\lambda_{t,i}^kz^k$$
+		valable pour $|z|<\alpha:=\min\limits_{1\leq i\leq n}\left\{\dfrac{1}{|\lambda|},\ \lambda\in \T{Sp}(A(t))\backslash\{0\}\right\}$.\\
+		Alors $\forall z\in \C,\ |z|<\alpha\implies \displaystyle-\sum_{i=1}^n\frac{\lambda_{t,i}}{1-\lambda_{t,i}z}=-\sum_{k=0}^{+\infty}T_{k+1}z^k$. On reconnaît la décomposition de $\dfrac{P_t'}{P_t}$ dans le membre de gauche pour $P_t=\displaystyle\prod_{i=1}^n(1-\lambda_{t,i}X)$. On en déduit que $P_t$ ne dépend pas de $t$.\\
+		Ainsi ses racines ne dépendent pas de $t$, càd $\T{Sp}(A(t))$ ne dépend pas de $t$.\\\\
+		\textit{Remarque : En faisant intervenir des résultats sur les sommes de Newton on peut montrer que $\chi_{A(t)}$ ne dépend pas de $t$.}\\
+		\textit{Remarque bis : On verra dans un exercice ultérieur que $A(t)$ est en fait toujours semblable à $A(0)$ pour tout $t$}
+	\end{enumerate}
+	
+	\subsection{Exponentielles de matrices qui commutent \centraleponts{2}}
+	\label{sec:exponentielles-de-matrices-qui-commutent-etoile2}
+	\textcolor{blue}{\hyperref[Exponentielles de matrices qui commutent]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item On sait d'après le cours que $f_M$ est $\mathcal C^1$ sur $\R$ quel que soit $M\in \M_n(\R)$ et $\forall t\in \R,\ f_M'(t)=Me^{tM}=e^{tM}M$. De plus l'application $h:(M,N)\in \M_n(\R)^2\mapsto AB$ est bilinéaire. Ainsi $g=t\in \R \mapsto h(f_{A+B}(t),f_{-B}(t))$ est $\mathcal C^1$ sur $\R$ et,\\
 		$\forall t\in \R,\ g'(t)=h(f_{A+B}'(t),f_{-B}(t))+h(f_{A+B}(t),f_{-B}'(t))=(A+B)e^{t(A+B)}e^{-tB}+e^{t(A+B)}(-B)e^{-tB}$.\\
@@ -10843,7 +11032,12 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Ou encore :
 		$$BA=AB$$
 	\end{enumerate}
-		
+	
+	\subsection{Exponentielles de matrices qui commutent avec leur commutateur}
+	\label{Exponentielles de matrices qui commutent avec leur commutateur corrigé}
+	\textcolor{blue}{\hyperref[Exponentielles de matrices qui commutent avec leur commutateur]{[Enoncé]}}\\
+	
+	
 	\newpage
 \section{Correction Calcul différentiel}
 	\subsection{Calcul de dérivées partielles}
