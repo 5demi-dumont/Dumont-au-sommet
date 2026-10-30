@@ -1541,7 +1541,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		\item Montrer que $f(\U)\subset \U$.
 		\item Soit $n\in \N^*$. Montrer l'existence d'un entier $k_n$ tel que $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)=\exp\left(\dfrac{2ik_n\pi}{2^n}\right)$.
 		\item Montrer que $k_n\unfty=\smallo{2^n}$.
-		\item Montrer que la suite $(k_n)_{n\in \N}$ converge.
+		\item Montrer que la suite $(k_n)_{n\in \N}$ stationne.
 		\item Conclure qu'il existe $k\in \N$ tel que $\forall z\in \U,\ f(z)=z^k$.
 	\end{enumerate}
 	
@@ -1550,7 +1550,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\textcolor{blue}{\hyperref[Endomorphismes continus de R corrigé]{[Corrigé]}}\\
 	Montrer que les endomorphismes de groupe de $(\R,+)$ continus sont les homothéties i.e les applications $x\mapsto \lambda x$ avec $\lambda \in \R$.
 	
-	\subsection{Morphismes monotones d'un sous-groupe de $\R$ dans $\R$}
+	\subsection{Morphismes monotones d'un sous-groupe de $\R$ dans $\R$ \centraleponts{4}}
 	\label{Morphismes monotones d'un sous-groupe de R dans R}
 	\textcolor{blue}{\hyperref[Morphismes monotones d'un sous-groupe de R dans R corrigé]{[Corrigé]}}\\
 	Soit $G$ un sous-groupe de $(\R,+)$. On considère $\varphi:G\to \R$ un morphisme de groupes monotone.\\
@@ -7376,14 +7376,23 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\begin{enumerate}[leftmargin=*]
 		\item $\U$ est une partie bornée de $\C$ donc $f(\U)$ aussi. Soit $z\in \U$ tel que $|f(z)|>1$. Alors $|f(z^n)|=|f(z)|^n\unfty\longrightarrow+\infty$ ce qui est absurde. Similairement, si $|f(z)|<1$ alors $|f(z^{-1})|=|f(z)|^{-1}>1$ ce qui est absurde.\\
 		Ainsi $f(\U)\subset \U$.
-		\item On remarque que $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)^{2^n}=f(\exp(2i\pi))=f(1)=1$. Donc $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)\in \U_{2^n}$ d'où l'existence de $k_n\in \Z$ tel que $f\left(\exp\left(\dfrac{2i\pi}{2^n}\right)\right)=\exp\left(\dfrac{2ik_n\pi}{2^n}\right)$.
-		\item Par continuité de $f\circ\exp$, $\exp\left(\dfrac{2ik_n\pi}{2^n}\right)\unfty\longrightarrow f\circ\exp(0)=1$. On en déduit $\exp\left(\dfrac{-2ik_n\pi}{2^n}\right)\unfty\longrightarrow 1$.\\
+		\item Dans toute la suite on notera $z_n=\exp\left(\dfrac{2i\pi}{2^n}\right)$ pour $n\in \N$.\\
+		On remarque que $f(z_n)^{2^n}=f(z_n^{2^n})=f(1)=1$. Donc $f(z_n)\in \U_{2^n}$ d'où l'existence de $k_n\in \Z$ tel que $f(z_n)=\exp\left(\dfrac{2ik_n\pi}{2^n}\right)=z_n^{k_n}$.
+		\item Par continuité de $f\circ\exp$, $\exp\left(\dfrac{2ik_n\pi}{2^n}\right)=f\circ\exp\left(\dfrac{2i\pi}{2^n}\right)\unfty\longrightarrow f\circ\exp(0)=1$. On en déduit $\exp\left(\dfrac{-2ik_n\pi}{2^n}\right)\unfty\longrightarrow 1$.\\
 		Or on peut toujours choisir $k_n$ compris entre $-2^{n-1}$ et $2^{n-1}-1$ donc $\forall n\in \N^*,\ \left|\dfrac{k_n}{2^n}\right|\leq \dfrac{1}{2}$.\\
 		Par le théorème de Bolzano-Weierstrass on peut alors considérer une suite extraite $\left(\dfrac{k_{\varphi(n)}}{2^{\varphi(n)}}\right)$ qui converge vers un réel $\ell$ tel que $|\ell|\leq\dfrac{1}{2}$.\\
-		On a alors par unicité de la limite $e^{2i\ell\pi}=1$ d'où $2\ell\pi\equiv 0[2\pi]$. Et puisque $2\ell\pi\in [-\pi,\pi]$, $\ell=0$.\\
-		Enfin, la suite $\left(\dfrac{k_n}{2^n}\right)$ n'a qu'une seule valeur d'adhérence donc elle converge.
-		\item 
-		\item 
+		On a alors par unicité de la limite $e^{2i\ell\pi}=1$ d'où $2\ell\pi\equiv 0[2\pi]$ i.e $\ell\in \Z$. Donc $\ell=0$.\\
+		Enfin, la suite $\left(\dfrac{k_n}{2^n}\right)$ n'a qu'une seule valeur d'adhérence donc elle converge vers celle-ci.
+		\item Remarquons que $z_n=z_{n+1}^2$. Donc en évaluant en $f$, $\exp\left(\dfrac{2ik_n\pi}{2^n}\right)=\exp\left(\dfrac{2ik_{n+1}\pi}{2^n}\right)$.\\
+		Cela donne $2^n|k_{n+1}-k_n$.\\
+		D'autre part, d'après la question précédente $\exists N\in \N^*,\ \forall n\geq N,\ |k_n|<\dfrac{2^n}{3}$.\\
+		Mais alors $\forall n\geq N,\ |k_{n+1}-k_n|<\dfrac{1}{3}(2^{n+1}+2^n)=2^n$. On en déduit que $\forall n\geq N,\ k_{n+1}-k_n=0$.\\
+		Autrement dit $(k_n)$ est stationnaire.
+		\item On note $k$ la valeur à laquelle stationne $(k_n)$ : $\exists N\in \N^*,\ \forall n\geq N,\ k_n=k$.\\
+		Alors pour tout nombre dyadique, càd de la forme $\dfrac{m}{2^n}$ avec $m,n\in \Z$, on a $f\left(\exp\left(\dfrac{2im\pi}{2^n}\right)\right)=f(z_n^m)=f(z_N)^{m2^{N-n}}=z_N^{km2^{N-n}}=(z_n^m)^k$.\\
+		Ainsi $t\mapsto f\circ \exp(2i\pi t)$ et $t\mapsto e^{2ik\pi t}$ coïncident sur l'ensemble des nombres dyadiques.\\
+		Or les nombres dyadiques sont denses dans $\R$. En effet, pour tout réel $t$, $\left(\dfrac{\lfloor2^nt\rfloor}{2^n}\right)_{n\in \N}$ est une suite de nombres dyadiques qui converge vers $t$.\\
+		Les deux fonctions en jeux étant continues, elles sont égales sur $\R$, i.e $\forall z\in \U,\ f(z)=z^k$.
 	\end{enumerate}
 	
 	\subsection{Endomorphismes continus de $\R$ \telecom{2}}
@@ -7399,7 +7408,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Réciproquement on vérifie que les homothéties sont des endomorphismes de $(\R,+)$ continus.\\\\
 	\textit{Remarque : on peut remplacer l'hypothèse continue par monotone puisqu'une fonction monotone est continue à gauche ou à droite ce qui suffit à conclure avec la densité de $\Q$.}
 	
-	\subsubsection{Morphismes monotones d'un sous-groupe de $\R$ dans $\R$ \centraleponts{3}}
+	\subsubsection{Morphismes monotones d'un sous-groupe de $\R$ dans $\R$ \centraleponts{4}}
 	\label{Morphismes monotones d'un sous-groupe de R dans R corrigé}
 	\textcolor{blue}{\hyperref[Morphismes monotones d'un sous-groupe de R dans R]{[Enoncé]}}\\
 	D'après l'exercice \ref{Sous-groupes de (R,+)} on sait que $G$ est ou bien dense dans $\R$ ou bien de la forme $a\Z$ avec $a\in \R_+$. Traitons ces deux cas séparément.\\
@@ -7414,7 +7423,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Tout d'abord il y a bien convergence car $(f(x_n))_{n\in \N}$ est une suite croissante majorée (par $f(x')$ avec $x<x'\in G$). Ensuite, on sait qu'une fonction croissante est continue à gauche en tout point donc la limite ne dépend pas de la suite croissante d'éléments de $G$ qui converge vers $x$.\\
 	Montrons ensuite que $\tilde f$ est un endomorphisme croissant de $(\R,+)$. Soient $x<y\in \R$.\\
 	On note $(x_n),(y_n)\in G^\N$ telles que $\tilde f(x)=\unfty\lim f(x_n)$ et $\tilde f(y)=\unfty\lim f(y_n)$.\\
-	APCR $x<y_n$ d'où par croissance de $f,\ \tilde f(x)\leq \tilde f(y)$. De plus, la suite $(x_n+y_n)_{n\in \N}$ est une suite d'éléments de $G$ croissante de limite $x+y$, donc en utilisant le caractère de morphisme de $f$, $\tilde f(x)+\tilde f(y)=\unfty\lim f(x_n)+f(y_n)=\unfty\lim f(x_n+y_n)=\tilde f(x+y)$.\\
+	APCR $x_n\leq x\leq y_n$ d'où par croissance de $f,\ \tilde f(x)\leq \tilde f(y)$. De plus, la suite $(x_n+y_n)_{n\in \N}$ est une suite d'éléments de $G$ croissante de limite $x+y$, donc en utilisant le caractère de morphisme de $f$, $\tilde f(x)+\tilde f(y)=\unfty\lim f(x_n)+f(y_n)=\unfty\lim f(x_n+y_n)=\tilde f(x+y)$.\\
 	Ainsi $\tilde f$ est un endomorphisme monotone de $(\R,+)$. D'après la remarque de l'exercice précédent $\exists \lambda\in \R,\ \tilde f=\lambda\Id_\R$. Par suite $f=\lambda\Id_G$.
 	
 	\subsection{Morphismes de $\Q$ dans $\Z$ \ccinp{1}}
