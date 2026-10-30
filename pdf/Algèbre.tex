@@ -1372,13 +1372,13 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\\Cette formule se simplifie en dimension 2. On reconnaît la formule de Héron d'Alexandrie : la surface $S$ d'un triangle de côté $a,b,c$ vérifie la relation $$S^2=p(p-a)(p-b)(p-c)$$ où $p$ est le demi périmètre.
 	
 \chapter{Groupes}
-	\section{Existence d'un idempotent \xens{3}}
+	\section{Existence d'un idempotent \centraleponts{3}}
 	\label{Existence d'un idempotent}
 	\textcolor{blue}{\hyperref[Existence d'un idempotent corrigé]{[Corrigé]}}\\
 	Soit $(E,\cdot)$ un semi-groupe (c'est à dire que la loi $\cdot$ est une loi de composition interne associative sur $E$) non vide et fini.\\
 	Montrer qu'il existe $s\in E$ tel que $s\cdot s=s$.
 	
-	\section{Sous-semi-groupes finis de $\M_n(\K)$}
+	\section{Sous-semi-groupes finis de $\M_n(\K)$ \centraleponts{3}}
 	\label{Sous-semi-groupes finis de Mn(K)}
 	\textcolor{blue}{\hyperref[Sous-semi-groupes finis de Mn(K) corrigé]{[Corrigé]}}\\
 	Soit $(U,\cdot)$ un sous-semi-groupe de $\M_n(\K)$ (i.e $U$ est stable par produit) non vide et fini.\\
@@ -1482,7 +1482,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 		Montrer que $G$ est dense dans $\R$.
 	\end{enumerate}
 	
-	\subsection{Fonction (multi)périodique \centraleponts{3}}
+	\subsection{Fonction (multi)périodique \xens{4}}
 	Soit $f:\R \longrightarrow \R$ continue, $1$-périodique et $\pi$-périodique.\\
 	Montrer que $f$ est constante.
 	
@@ -1492,7 +1492,7 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\subsection{Valeur d'adhérence du cercle unité \centraleponts{3}}
 	Soit $z\in \U$. Montrer que $1$ est une valeur d'adhérence de la suite $(z^n)_{n\in \N}$.
 	
-	\section{Sous-groupes distingué}
+	\section{Sous-groupes distingué \etoile{1}}
 	\label{Sous-groupes distingués}
 	\textcolor{blue}{\hyperref[Sous-groupes distingué corrigé]{[Corrigé]}}\\
 	Soit $G$ un groupe\\
@@ -1512,11 +1512,11 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\end{enumerate}
 	\textit{Un jour peut-être Marconot se rappellera pourquoi il a mit cet exo là et quelle est la mystérieuse question 2...}
 	
-	\section{Une relation utile sur les morphismes de groupes}
-	\label{Une relation utile sur les morphismes de groupes}
-	\textcolor{blue}{\hyperref[Une relation utile sur les morphismes de groupes corrigé]{[Corrigé]}}\\
-	Soit $G$ un groupe fini et $G'$ un groupe. Soit $f:G\to G'$ un morphisme de groupes.\\
-	Montrer que $|G|=|\Ker(f)|\times|\text{Im}(f)|$.
+%	\section{Une relation utile sur les morphismes de groupes}
+%	\label{Une relation utile sur les morphismes de groupes}
+%	\textcolor{blue}{\hyperref[Une relation utile sur les morphismes de groupes corrigé]{[Corrigé]}}\\
+%	Soit $G$ un groupe fini et $G'$ un groupe. Soit $f:G\to G'$ un morphisme de groupes.\\
+%	Montrer que $|G|=|\Ker(f)|\times|\text{Im}(f)|$.
 	
 	\section{Automorphisme d'inversion \ccinp{1}}
 	\label{Automorphisme d'inversion}
@@ -1664,11 +1664,11 @@ Soit $E$ un espace vectoriel de dimension finie et soit $G$ un sous-groupe fini 
 	\section{Exposant d'un groupe abélien fini \xens{4} (HP)}
 	\label{Exposant d'un groupe abélien fini}
 	\textcolor{blue}{\hyperref[Exposant d'un groupe abélien fini corrigé]{[Corrigé]}}\\
-	Soit $G$ un groupe abélien fini. Pour tout $x\in G$, on note $O(x)$ l'ordre de $x$.
+	Soit $G$ un groupe abélien fini. Pour tout $x\in G$, on note $\smallo x$ l'ordre de $x$.
 	\begin{enumerate}[leftmargin=*]
-		\item Soit $(x,y)\in G^2$ \text{ tel que }$O(x)\wedge O(y)=1$. Montrer que $O(xy)=O(x)O(y)$. Dans le cas général, a-t-on $O(xy)=\ppcm(O(x),O(y))$ ?
+		\item Soit $(x,y)\in G^2$ \text{ tel que }$\smallo x\wedge \smallo y=1$. Montrer que $\smallo{xy}=\smallo x\smallo y$. Dans le cas général, a-t-on $\smallo{xy}=\ppcm(\smallo x,\smallo y)$ ?
 		\item Soit $(m,n)\in (\N^*)^2$. Montrer l'existence de $(m',n')\in (\N^*)^2$ tel que $m'|m,\ n'|n,\ \pgcd(m',n')=1 \text{ et } \ppcm(m,n)=m'n'$.
-		\item Montrer qu'il existe $z\in G$ tel que $O(z)$ soit le ppcm des ordres des éléments de $G$ (ce ppcm est appelé l'exposant du groupe $G$)
+		\item Montrer qu'il existe $z\in G$ tel que $\smallo z$ soit le ppcm des ordres des éléments de $G$ (ce ppcm est appelé l'exposant du groupe $G$)
 		\item Soient $\K$ un corps commutatif et $G$ un sous-groupe fini du groupe multiplicatif $\K^*$. Démontrer que $G$ est cyclique.\\
 		$\textit{On admettra qu'un polynôme à coefficients dans $\K$ admet toujours moins de racines que son degré.}$
 	\end{enumerate}
@@ -7202,17 +7202,18 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Donc $|z_1|=1$ et $\left(z_1z_2^{-1}\right)^{p^{k_1+k_2}}=\left(z_1^{p^{k_1}}\right)^{p^{k_2}}\left(z_2^{p^{k_2}}\right)^{-p^{k_1}}=1^{p^{k_2}}\times 1^{-p^{k_1}}=1$.\\
 		Ainsi $G_p$ est un sous-groupe de $\U$.
 		\item $G_p=\{z\in \C,\ \exists k\in \N,\ z\in \U_{p^k}\}=\displaystyle\bigcup\limits_{k\in \N}\U_{p^k}$.
-		\item Montrons que les sous-groupes de $G_p$ sont les $\U_{p^k}$ pour $k\in \N$.\\
-		Remarquons d'abord que la suite $\left(\U_{p^k}\right)_{k\in \N}$ est croissante pour l'inclusion de sorte que si $k\in \N$ et si $z\notin\U_{p^k}$ alors $\forall i\leq k,\ z\notin \U_i$.\\
+		\item Montrons que les sous-groupes stricts de $G_p$ sont les $\U_{p^k}$ pour $k\in \N$.\\
 		Soit $H$ un sous-groupe strict de $G_p$. Supposons par l'absurde que $H$ est infini.\\
-		Alors $H$ n'est inclus dans aucun des $\U_{p^k}$ pour $k\in \N$. Autrement dit $\forall k\in \N,\ \exists z\in H,\ z^{p^k}\ne 1$. Ou encore puisque $H\subset G_p,\ \forall k\in \N^*,\ \exists z\in H,\ z^{p^k}=1\land z^{p^{k-1}}\ne 1$.\\
-		Fixons alors $k\in \N^*$ et $z\in H\cap\U_{p^k}\backslash\U_{p^{k-1}}$.\\
-		L'ordre de $z$ dans $\U_{p^k}$ divise l'ordre de $\U_{p^k}$ c'est à dire $p^k$. Donc comme $p$ est premier, l'ordre de $z$ est une puissance de $p$ inférieure à $p^k$. Cependant il ne peut pas être strictement inférieur car sinon on aurait $z\in \U_{p^{k-1}}$. Donc $z$ est d'ordre $p^k$ et est un générateur de $\U_{p^k}$. On en déduit que $\U_{p^k}\subset H$. Ceci étant vrai pour tout $k\in \N^*$, $G_p\subset H$ puis $H=G_p$ ce qui est absurde.\\
+		Remarquons que par le théorème de Lagrange l'ordre d'un élément $z\in G_p$ divise une puissance de $p$, c'est donc une puissance de $p$.\\
+		Comme $H$ est infini, il n'est inclus dans aucun des $\U_{p^k}$ pour $k\in \N$. Autrement dit $\forall k\in \N,\ \exists z\in H,\ z^{p^k}\ne 1$. Ainsi l'ordre $p^l$ de $z$ est supérieur strictement à $p^k$.\\
+		On sait que $z$ est un générateur de $\U_{p^l}$ donc $\U_{p^l}\subset H$. Ceci étant vrai pour des entiers $l$ arbitrairement grands, $G_p\subset H$ puis $H=G_p$ ce qui est absurde.\\
 		Par conséquent $H$ est fini.
 		Enfin, $\forall z\in H,\ z^{|H|}=1$. C'est à dire $H\subset \U_{|H|}$ puis $H=\U_{|H|}$ puisqu'il y a égalité des cardinaux.\\
 		On en déduit que $H$ est cyclique.\\
-		Pour être plus précis, $H$ est inclus dans $\U_{p^r}$ pour $r\in \N^*$ tel que $p^r\geq |H|$. Donc $|H|$ est lui-même une puissance de $p$.\\
-		Pour conclure, les $\U_{p^k}$ pour $k\in \N$ sont bien des sous-groupes de $G_p$.
+		Pour être plus précis, pour $z\in H$ de cardinal $|H|$ on sait qu'il existe $k\in \N$ tel que $z^{p^k}=1$ car $z\in G_p$. Donc l'ordre de $z$ divise $p^k$, d'où $|H|$ est lui-même une puissance de $p$.\\
+		Pour conclure, les $\U_{p^k}$ pour $k\in \N$ sont bien des sous-groupes de $G_p$.\\
+		Aucun d'eux n'est maximal pour l'inclusion puisque si $k<l$ alors $\U_{p^k}\subsetneq \U_{p^l}$.\\
+		\textit{Remarque : Ce groupe fournit un contre-exemple à une sorte de réciproque de la proposition qui dit que tout sous-groupe d'un groupe monogène est monogène : on a un groupe dont tous les sous-groupes stricts sont monogènes (même cycliques) alors que le groupe entier n'est lui pas monogène (en effet tous ces éléments sont d'ordre fini, et lui est d'ordre infini).}
 	\end{enumerate}
 	
 	\subsection{Sous-groupes de GL$_n(\C)$ qui intersectent trivialement le groupe spécial linéaire \centraleponts{3}}
@@ -7282,7 +7283,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Comme $kx\in G$ on a prouvé que $G$ est dense dans $\R$.
 	\end{enumerate}
 	
-	\subsubsection{Fonction (multi)périodique \centraleponts{3}}
+	\subsubsection{Fonction (multi)périodique \xens{4}}
 	On considère $P=\{T\in \R,\ \forall x\in \R,\ f(x+T)=f(x)\}$ l'ensemble des périodes de $f$.\\
 	Montrons que $P$ est un sous-groupe de $\R$.\\
 	Tout d'abord $0\in P$. Fixons $(T_1,T_2)\in P^2$. Soit $x\in \R$.\\
@@ -7334,24 +7335,23 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Nature d'une suite corrigé}
 	\textcolor{blue}{\hyperref[Nature d'une suite]{[Enoncé]}}\\
 	
-	\subsection{Une relation utile sur les morphismes de groupes \etoile{2}}
-	\label{Une relation utile sur les morphismes de groupes corrigé}
-	\textcolor{blue}{\hyperref[Une relation utile sur les morphismes de groupes]{[Enoncé]}}\\
-	On admet que la relation sur $G$ suivante est une relation d'équivalence sur $G$. $$\forall g_1,g_2\in G , g_1 \sim g_2 \Leftrightarrow g_1^{-1}g_2\in \Ker(f)$$
-	Ses classes d'équivalence sont les $g\Ker(f)=\{gk , k\in\Ker(f)\}$ pour $g\in G$.\\
-	Montrons que $|g\Ker(f)|=|\Ker(f)|$\\
-	On pose $\fonction{\varphi}{\Ker(f)}{g\Ker(f)}{k}{gk}$ et  $\fonction{\psi}{g\Ker(f)}{\Ker(f)}{k}{g^{-1}k}$.\\
-	On remarque que : $\varphi\circ\psi=\Id_G=\psi\circ\varphi$ donc $\varphi$ est une bijection et $|g\Ker(f)|=|\Ker(f)|$.\\
-	De plus, on remarque que $f$ est constante sur les classes d'équivalence définies précédemment.\\
-	En effet, pour tout $g_1 , g_2 \in G$ tel que $g_1\sim g_2$, on a $f(g_1^{-1}g_2)=e$ donc $f(g_1)=f(g_2)$ car $f$ est un morphisme de groupe.\\
-	Ainsi, on en déduit que le nombre de classes d'équivalences est $|\Ima(f)|$.\\
-	Finalement, puisque les classes d'équivalences forment une partition de $G$, on en déduit : $$|G|=\sum_{g\in\Ima(f)}|g\Ker(f)|=\sum_{g\in\Ima(f)}|\Ker(g)|=|\Ker(f)|\times|\Ima(f)|$$
+%	\subsection{Une relation utile sur les morphismes de groupes \etoile{2}}
+%	\label{Une relation utile sur les morphismes de groupes corrigé}
+%	\textcolor{blue}{\hyperref[Une relation utile sur les morphismes de groupes]{[Enoncé]}}\\
+%	On admet que la relation sur $G$ suivante est une relation d'équivalence sur $G$. $$\forall g_1,g_2\in G , g_1 \sim g_2 \Leftrightarrow g_1^{-1}g_2\in \Ker(f)$$
+%	Ses classes d'équivalence sont les $g\Ker(f)=\{gk , k\in\Ker(f)\}$ pour $g\in G$.\\
+%	Montrons que $|g\Ker(f)|=|\Ker(f)|$\\
+%	On pose $\fonction{\varphi}{\Ker(f)}{g\Ker(f)}{k}{gk}$ et  $\fonction{\psi}{g\Ker(f)}{\Ker(f)}{k}{g^{-1}k}$.\\
+%	On remarque que : $\varphi\circ\psi=\Id_G=\psi\circ\varphi$ donc $\varphi$ est une bijection et $|g\Ker(f)|=|\Ker(f)|$.\\
+%	De plus, on remarque que $f$ est constante sur les classes d'équivalence définies précédemment.\\
+%	En effet, pour tout $g_1 , g_2 \in G$ tel que $g_1\sim g_2$, on a $f(g_1^{-1}g_2)=e$ donc $f(g_1)=f(g_2)$ car $f$ est un morphisme de groupe.\\
+%	Ainsi, on en déduit que le nombre de classes d'équivalences est $|\Ima(f)|$.\\
+%	Finalement, puisque les classes d'équivalences forment une partition de $G$, on en déduit : $$|G|=\sum_{g\in\Ima(f)}|g\Ker(f)|=\sum_{g\in\Ima(f)}|\Ker(g)|=|\Ker(f)|\times|\Ima(f)|$$
 	
 	\subsection{Automorphisme d'inversion \ccinp{1}}
 	\textcolor{blue}{\hyperref[Automorphisme d'inversion]{[Enoncé]}}\\
 	\label{Automorphisme d'inversion corrigé}
-	Notons $e$ le neutre de $G$.
-	Soit $x\in G$ tel que $f(x)=e$. Alors $x^{-1}=e$ c'est à dire $e=x$.\\
+	$f\circ f=\Id$ donc $f$ est bijective.\\
 	$\forall (x,y)\in G^2,\ f(xy)=(xy)^{-1}=y^{-1}x^{-1}$.\\
 	Donc $f\in \text{Aut}(G)\iff \forall (x,y)\in G^2,\ y^{-1}x^{-1}=f(xy)=f(x)f(y)=x^{-1}y^{-1} \iff \forall (x,y)\in G^2,\ (y^{-1}x^{-1})^{-1}=(x^{-1}y^{-1})^{-1}\iff \forall (x,y)\in G^2,\ xy=yx$.
 	
@@ -7359,10 +7359,10 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Automorphismes intérieurs corrigé}
 	\textcolor{blue}{\hyperref[Automorphismes intérieurs]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Notons $e$ le neutre de $G$. Soient $x,y\in G$.\\
-		$\varphi_a(xy)=axya^{-1}=(axa^{-1})(aya^{-1})=\varphi_a(x)\varphi_a(y)$.\\
-		$\forall x\in G,\ \varphi_a(x)=e\implies axa^{-1}=e\iff ax=a\implies x=e$.\\
-		Donc $\varphi_a\in \text{Aut}(G)$.
+		\item Soient $x,y\in G$.\\
+		$\varphi_a(xy)=axya^{-1}=(axa^{-1})(aya^{-1})=\varphi_a(x)\varphi_a(y)$. Ainsi $\varphi_a$ est un endomorphisme de $G$.\\
+		En outre $\varphi_a(x)=y\iff x=a^{-1}ya=\varphi_{a^{-1}}(y)$.\\
+		Donc $\varphi_a\in \text{Aut}(G)$ et $(\varphi_a)^{-1}=\varphi_{a^{-1}}$.
 		\item Montrons que $\fonction{\Phi}{(G,*)}{(\text{Aut}(G),\circ)}{a}{\varphi_a}$ est un morphisme de groupes.\\
 		Soient $a,b\in G$. Fixons $x\in G$.\\
 		$\Phi(ab)(x)=abx(ab)^{-1}=a(bxb^{-1})a^{-1}=a\Phi(b)(x)a^{-1}=\Phi(a)\circ\Phi(b)(x)$.\\
@@ -7506,7 +7506,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\item Fixons $i\ne j\in \crblanc{1}{n}$ et $\lambda\in \C$.\\
 		On note $Q_{ij}=\chi(T_{ij}(X))\in \C[X]$. $\forall \lambda\in \C,\ \chi(T_{ij}(\lambda))=Q_{ij}(\lambda)\ne 0$. Donc $Q_{ij}$ n'a pas de racine, c'est donc un polynôme constant. Comme $Q_{ij}(0)=\chi(I_n)=1$, $Q_{ij}=1$.
 	\end{itemize}
-	\textit{Remarque : La première preuve qu'on a donné fonctionne pour n'importe quel corps infini. Le résultat est aussi vrai sur les corps finis et ce montre toujours en passant par les matrices de transvections/dilatations, en montrant au préalable qu'elles engendrent toujours le groupe linéaire lorsque $\K$ est un corps quelconque.}
+	\textit{Remarque : La première preuve qu'on a donné fonctionne pour n'importe quel corps de caractéristique nulle. Le résultat est aussi vrai sur les corps finis et ce montre toujours en passant par les matrices de transvections/dilatations, en montrant au préalable qu'elles engendrent toujours le groupe linéaire lorsque $\K$ est un corps quelconque.}
 	
 	\subsection{Quasi-morphisme \centraleponts{3}}
 	\label{Quasi-morphisme corrigé}
@@ -7638,14 +7638,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Il s'agit de montrer que $G$ possède un élément d'ordre $p$. Soit $x\in G$.\\
 	D'après le théorème de Lagrange l'ordre de $x$ divise $p$. Alors comme $p$ est premier, $x$ est d'ordre $1$ ou d'ordre $p$.\\
 	Si tous les éléments de $G$ sont d'ordre $1$ alors $G=\{e\}$ n'est pas de cardinal $p\geq 2$.\\
-	Ainsi il existe $x\in G$ d'ordre $p$ et donc $G=<x>$.
+	Ainsi il existe $x\in G$ d'ordre $p$ et donc $G=\langle x\rangle$.
 	
 	\subsubsection{Plus petit groupe non commutatif \centraleponts{3}}
 	\label{Plus petit groupe non commutatif corrigé}
 	\textcolor{blue}{\hyperref[Plus petit groupe non commutatif]{[Enoncé]}}
 	\begin{enumerate}
 		\item Soit $G$ un groupe cyclique. Il existe $x\in G$ tel que $G=\langle x \rangle$. Donc $G$ est a fortiori commutatif.
-		\item Déjà à partir de l'exercice précédent, nous pouvons éliminer les groupes d'ordre 2, 3 et 5. Et évidemment le groupe trivial est commutatif.\\
+		\item Déjà à partir de l'exercice précédent, on peut éliminer les groupes d'ordre 2, 3 et 5. Et évidemment le groupe trivial est commutatif.\\
 		Montrons que l'on peut également éliminer $4$.\\
 		Soit $G$ un groupe d'ordre $4$.\\ 
 		D'après le théorème de Lagrange, l'ordre de tout élément de $G$ divise l'ordre de $G$ ainsi les ordres possibles pour les éléments différents du neutre sont $2$ ou $4$.
@@ -7654,14 +7654,14 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 			\item Sinon tous les éléments de $G$ différents du neutre sont d'ordre $2$. D'après l'exercice \ref{Groupe composé d'involutions}, $G$ est commutatif.\\
 		\end{itemize}
 		Finalement, aucun groupe d'ordre 4 n'est non commutatif.
-		l'entier recherché est 6. Il suffit de regarder le groupe symétriques $S_3$ qui n'est pas commutatif car $(12)(23)=(123)\ne(132)=(23)(12)$ par exemple.	
+		l'entier recherché est 6. Il suffit de regarder le groupe symétriques $\S_3$ qui n'est pas commutatif car $(12)(23)=(123)\ne(132)=(23)(12)$ par exemple.	
 	\end{enumerate}
 	
 	\subsection{Sous-groupe d'un groupe cyclique \centraleponts{3}}
 	\textcolor{blue}{\hyperref[Sous-groupe d'un groupe cyclique]{[Enoncé]}}\\
 	\label{Sous-groupe d'un groupe cyclique corrigé}
 	Notons $e$ le neutre de $G$.
-	Posons $x$ un générateur de $G$ puis posons $y=x^{n/d}$.\\
+	Donnons-nous $x$ un générateur de $G$ puis posons $y=x^{n/d}$.\\
 	Par définition $x$ est d'ordre $n$ donc $y^d=x^n=e$ et $\forall k\in \crblanc{1}{d-1},\ \displaystyle\frac{nk}{d}<n\implies y^k=x^{nk/d}\ne e$. Ainsi $y$ est d'ordre $d$ d'où $\langle y\rangle$ est un sous-groupe (cyclique) de $G$ d'ordre $d$.\\
 	Maintenant, soit $H$ un sous-groupe de $G$ d'ordre $d$. Fixons $z\in H$.\\
 	Comme $z\in G,\ \exists k\in \crblanc{1}{n},\ z=x^k$.\\
@@ -7673,12 +7673,12 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\label{Exposant d'un groupe abélien fini corrigé}
 	\textcolor{blue}{\hyperref[Exposant d'un groupe abélien fini]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item $(xy)^{O(x)O(y)}=\left(x^{O(x)}\right)^{O(y)}\cdot\left(y^{O(y)}\right)^{O(x)}=e$ donc $O(xy)|O(x)O(y)$. De plus $(xy)^{O(xy)}=x^{O(xy)}y^{O(xy)}\implies x^{O(xy)}=y^{-O(xy)}$.\\
-		Donc en passant à l'exposant $O(y),\ x^{O(xy)O(y)}=e$ d'où $O(x)|O(xy)O(y)$.\\
-		Or $O(x)\land O(y)=1$ donc d'après le lemme de Gauss, $O(x)|O(xy)$.\\
-		De même, $O(y)|O(xy)$ puis comme $O(x)\land O(y)=1,\ O(x)O(y)|O(xy)$.\\
-		Finalement $O(xy)=O(x)O(y)$.\\
-		Dans le cas général on a pas $O(xy)=\ppcm(O(x),O(y))$. Par exemple pour $x=y^{-1}$ avec $x\ne e,\ xy=e$ est d'ordre $1$ alors que $\ppcm(O(x),O(y))=\ppcm(O(x),O(x))=O(x)\ne 1$.
+		\item $(xy)^{\smallo x\smallo y}=\left(x^{\smallo x}\right)^{\smallo y}\cdot\left(y^{\smallo y}\right)^{\smallo x}=e$ donc $\smallo{xy}|\smallo x\smallo y$. De plus $(xy)^{\smallo{xy}}=x^{\smallo{xy}}y^{\smallo{xy}}\implies x^{\smallo{xy}}=y^{-\smallo{xy}}$.\\
+		Donc en passant à l'exposant $\smallo y,\ x^{\smallo{xy}\smallo y}=e$ d'où $\smallo x|\smallo{xy}\smallo y$.\\
+		Or $\smallo x\land \smallo y=1$ donc d'après le lemme de Gauss, $\smallo x|\smallo{xy}$.\\
+		De même, $\smallo y|\smallo{xy}$ puis comme $\smallo x\land \smallo y=1,\ \smallo x\smallo y|\smallo{xy}$.\\
+		Finalement $\smallo{xy}=\smallo x\smallo y$.\\
+		Dans le cas général on a pas $\smallo{xy}=\ppcm(\smallo x,\smallo y)$. Par exemple pour $x=y^{-1}$ avec $x\ne e,\ xy=e$ est d'ordre $1$ alors que $\ppcm(\smallo x,\smallo y)=\ppcm(\smallo x,\smallo x)=\smallo x\ne 1$.
 		\item Pour que $m'|m$ et $n'|n$ il faut et il suffit que pour tout $p$ premier $v_p(m')\leq v_p(m)$ et $v_p(n')\leq v_p(n)$. Pour que $m'$ et $n'$ soit premier entre eux il faut et il suffit que pour tout $p$ premier $v_p(n')=0$ ou $v_p(m')=0$. Enfin pour que $\ppcm(m,n)=m'n'$ il faut et il suffit que pour tout $p$ premier $\max(v_p(m),v_p(n))=v_p(m')+v_p(n')$.\\
 		On pose donc naturellement $m'=\displaystyle\prod\limits_{p\text{ premier}}p^{\alpha_p}$ et $n=\displaystyle\prod\limits_{p\text{ premier}}p^{\beta_p}$ avec :\\
 		$$\begin{cases}
@@ -7690,12 +7690,12 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 			\beta_p=v_p(n)&\mbox{ si }v_p(n)>v_p(m)\\
 			\beta_p=0&\mbox{ sinon}
 		\end{cases}$$
-		\item Notons $G=\{x_1,\dots,x_n\}$. Montrons par récurrence que pour tout $k\in \crblanc{1}{n},\ \exists z_k\in G,\ O(z_k)=\ppcm(O(x_1),\dots,O(x_k))$.\\
-		Pour $k=1,\ z_1=x_1\in G$ et $O(z_1)=O(x_1)$.\\
+		\item Notons $G=\{x_1,\dots,x_n\}$. Montrons par récurrence que pour tout $k\in \crblanc{1}{n},\ \exists z_k\in G,\ \smallo{z_k}=\ppcm(\smallo{x_1},\dots,\smallo{x_k})$.\\
+		Pour $k=1,\ z_1=x_1\in G$ et $\smallo{z_1}=\smallo{x_1}$.\\
 		Supposons le résultat vrai pour un certain $k\in \crblanc{1}{n-1}$.\\
-		D'après la question précédente, il existe $m',n'\in \N^*$ tels que $m'|O(z_k),\ n'|O(x_{k+1}),\ \pgcd(m',n')=1,\ m'n'=\ppcm(O(z_k),O(x_{k+1}))$.\\
-		Alors $z_k^{O(z_k)/m'}$ et $x_{k+1}^{O(x_{k+1})/n'}$ sont d'ordres $m'$ et $n'$ respectivement, et d'après la question $1$,\\
-		pour $z_{k+1}=z_k^{O(z_k)/m'}x_{k+1}^{O(x_{k+1})/n'}\in G,\ O(z_{k+1})=m'n'=\ppcm(O(x_1),\dots,O(x_{k+1}))$.\\
+		D'après la question précédente, il existe $m',n'\in \N^*$ tels que $m'|\smallo{z_k},\ n'|\smallo{x_{k+1}},\ \pgcd(m',n')=1,\ m'n'=\ppcm(\smallo{z_k},\smallo{x_{k+1}})$.\\
+		Alors $z_k^{\smallo{z_k}/m'}$ et $x_{k+1}^{\smallo{x_{k+1}}/n'}$ sont d'ordres $m'$ et $n'$ respectivement, et d'après la question $1$,\\
+		pour $z_{k+1}=z_k^{\smallo{z_k}/m'}x_{k+1}^{\smallo{x_{k+1}}/n'}\in G,\ \smallo{z_{k+1}}=m'n'=\ppcm(\smallo{x_1},\dots,\smallo{x_{k+1}})$.\\
 		Par conséquent la propriété est vrai en particulier au rang $n$ ce qui répond à la question.
 		\item Notons $n=|G|$. $G$ est cyclique si et seulement s'il existe un élément de $G$ d'ordre $n$, si et seulement si $G$ est d'exposant $n$. Notons $m$ l'exposant de $G$.\\
 		$\forall x\in G,\ x^m=1$. C'est à dire $\forall x\in G,\ x^m-1=0$. Le polynôme $X^m-1$ a donc au moins $n$ racines dans $\K$. Or ce polynôme à au plus $m$ racines dans $\K$. Ainsi $n\leq m$.\\
@@ -7724,15 +7724,17 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		\item
 		Réflexivité : Trivial, pour tout $x\in G, x=x$\\
 		Symétrie : Par symétrie de l'égalité et par unicité de l'inverse, pour tout $x,y \in G, x=y \Rightarrow y=x $ et $ x=y^{-1} \Rightarrow y=x^{-1}$\\
-		Transitivité : Soit $x,y,z$ tel que $x\mathcal{R} y$ et $y\mathcal{R} z$.
+		Transitivité : Soit $x,y,z$ tel que $x\mathcal R y$ et $y\mathcal{R} z$.
 		\begin{itemize}
-			\item Si $x=y$ alors on a immédiatement $x\mathcal{R} z$.
+			\item Si $x=y$ alors on a immédiatement $x\mathcal R z$.
 			\item Si $x=y^{-1}$, on sait que : $y=z$ ou $y=z^{-1}$ donc $x^{-1}=z$ ou $x^{-1}=z^{-1}$. D'où le résultat. 
 		\end{itemize}
-		Ainsi cette relation $\mathcal{R}$ sur $G$ est une relation d'équivalence sur $G$.
-		\item On remarque que les classes d'équivalence sont de la forme : $\text{cl}(x)=\{x,x^{-1}\}$ pour tout $x\in G$. On remarque également que $\text{cl}(e)=\{e\}$. Ainsi chaque classe d'équivalence contient $1$ ou $2$ éléments. Et puisque $\text{cl}(e)$ contient un unique élément et que le cardinal de $G$ est pair, il existe une autre classe $\text{cl}(x)$ avec $x\ne e$ de cardinal $1$.\\
-		Ainsi $x=x^{-1}$ cad $x^2=e$.
-		Par conséquent, G admet un élément d'ordre deux.
+		Ainsi cette relation $\mathcal R$ sur $G$ est une relation d'équivalence sur $G$.
+		\item On remarque que les classes d'équivalence de $\mathcal R$ sont de la forme : $\text{cl}(x)=\{x,x^{-1}\}$ pour tout $x\in G$. On remarque également que $\text{cl}(e)=\{e\}$. Ainsi chaque classe d'équivalence contient $1$ ou $2$ éléments.\\
+		Or on sait que $G=\displaystyle\bigsqcup_{i=1}^r\text{cl}(x_i)$ avec $\{x_1,\dots,x_n\}$ un système de représentant de la relation $\mathcal R$.\\
+		Donc $2n=\displaystyle\sum_{i=1}^n|\text{cl}(x_i)|$, et puisque $\text{cl}(e)$ contient un unique élément, il existe une autre classe $\text{cl}(x)$ avec $x\ne e$ de cardinal $1$.\\
+		Ainsi $x=x^{-1}$ càd $x^2=e$.
+		Par conséquent, $G$ admet un élément d'ordre deux.
 	\end{enumerate}
 	
 	\subsection{Ordre dans $\Z/n\Z$ \telecom{2}}
@@ -7768,7 +7770,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	Comme $m\vee n$ est un multiple de $m$ et de $n$, $(m\vee n)a=\overline{0}$ et $(m\vee n)b=\tilde 0$. Donc l'ordre de $(a,b)$, qui vaut $mn$ en tant que générateur, divise $m\vee n$.\\
 	Or $m\wedge n\times m\vee n=mn$. Donc $m\wedge n$ divise $1$ c'est à dire $m\wedge n=1$.
 	
-	\subsection{Ordre dans le groupe symétrique \ccinp{2}}
+	\subsection{Ordre dans le groupe symétrique \telecom{2}}
 	\label{Ordre dans le groupe symétrique corrigé}
 	\textcolor{blue}{\hyperref[Ordre dans le groupe symétrique]{[Enoncé]}}\\
 	Soient $n\in \N^*$ et $\sigma\in \mathcal S_n$.\\
@@ -7786,11 +7788,11 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	\subsection{Sous-groupe engendré par les nombres premiers \ccinp{1}}
 	\label{Sous-groupe engendré par les nombres premiers corrigé}
 	\textcolor{blue}{\hyperref[Sous-groupe engendré par les nombres premiers]{[Enoncé]}}\\
-	On a : \[\langle \mathcal{P}\rangle=\left\{\prod_{i=1}^{r}p_i^{k_i}, r\in\N ,\forall i\in\crblanc{1}{r}, p_i\in \mathcal{P}, k_i\in\Z\right\}\]
-	Il est clair que : \[\langle \mathcal{P}\rangle \subset \Q^*\]
-	Soit $q=\frac{a}{b}$.\\
-	D'après la décomposition en facteurs premiers de $a$ et $b$, on en déduit que $q\in \langle \mathcal{P}\rangle$.\\
-	Par conséquent, \[\langle \mathcal{P}\rangle=\Q^*\]
+	On a : \[\langle \mathcal{P}\rangle=\left\{\prod_{i=1}^{r}p_i^{k_i},\ r\in\N,\forall i\in\crblanc{1}{r},\ p_i\in \mathcal P,\ k_i\in\Z\right\}\]
+	Il est clair que : \[\langle \mathcal P\rangle \subset \Q^*\]
+	Soit $q=\dfrac{a}{b}\in \Q^*$.\\
+	En utilisant la décomposition en facteurs premiers de $a$ et $b$, on obtient $q\in \langle \mathcal P\rangle$.\\
+	Par conséquent, \[\langle \mathcal P\rangle=\Q^*\]
 	
 	\subsection{Sous-groupe engendré par le complémentaire d'un sous-groupe \telecom{2}}
 	\label{Sous-groupe engendré par le complémentaire d'un sous-groupe corrigé}
@@ -7798,13 +7800,13 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 	On note $e$ le neutre de $G$. On notera $\langle E\rangle$ le sous-groupe engendré par une partie $E$.
 	Commençons par des exemples.
 	\begin{itemize}
-		\item $\Z\backslash a\Z$ contient $1$ donc tous ses multiples i.e $\langle\Z\backslash a\Z\rangle=\Z$.
-		\item Si $e^{i\theta}\in \U$ alors $e^{i\theta}=2e^{i\theta}\times 2^{-1}\in \langle\C^*\backslash\U\rangle$. $\langle\C^*\backslash\U\rangle=\C^*$.
-		\item $\mathcal S_n\backslash\mathcal A_n$ est l'ensemble des permutations de signature $-1$. Il contient toutes les transpositions. Celle-ci engendrant $\mathcal S_n$, $\langle S_n\backslash\mathcal A_n\rangle=\mathcal S_n$.
+		\item $\Z\setminus a\Z$ contient $1$ donc tous ses multiples i.e $\langle\Z\setminus a\Z\rangle=\Z$.
+		\item Si $z\in \U$ alors $e^{i\theta}=2z\times 2^{-1}\in \langle\C^*\setminus\U\rangle$ car $2z,2^{-1}\in \C^*\setminus\U$. $\langle\C^*\setminus\U\rangle=\C^*$.
+		\item $\mathcal S_n\setminus\mathcal A_n$ est l'ensemble des permutations de signature $-1$. Il contient toutes les transpositions. Celle-ci engendrant $\mathcal S_n$, $\langle S_n\setminus\mathcal A_n\rangle=\mathcal S_n$.
 	\end{itemize}
-	Il semble que le résultat attendu soit $\langle G\backslash H\rangle=G$. Notons $E=G\backslash H$ et montrons $H\subset \langle E\rangle$. Par hypothèse il existe $x\in E$. Soit $y\in H$. On pose $z=xy$.\\
+	Il semble que le résultat attendu soit $\langle G\setminus H\rangle=G$. Notons $E=G\setminus H$ et montrons $H\subset \langle E\rangle$. Par hypothèse il existe $x\in E$. Soit $y\in H$. On pose $z=xy$.\\
 	Si $z\in H$ alors $x=zy^{-1}\in H$ car $H$ est un groupe, ce qui est exclus. Donc $z\in E$ et par suite $x^{-1}z=y\in\langle E\rangle$.\\
-	Ainsi $H\subset \langle E\rangle$. De plus $E\subset \langle E\rangle$ donc $G=H\cup E\subset \langle E\rangle$ i.e $\langle G\backslash H\rangle=G$.
+	Ainsi $H\subset \langle E\rangle$. De plus $E\subset \langle E\rangle$ donc $G=H\cup E\subset \langle E\rangle$ i.e $\langle G\setminus H\rangle=G$.
 	
 	\subsection{Partie génératrice \etoile{3} (HP)}
 	\label{Partie génératrice corrigé}
@@ -7816,8 +7818,8 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		On remarque que $\forall i\in \crblanc{1}{m-1},\ G_i\subsetneq G_{i+1}$. En effet, si pour un certain $i_0\in \crblanc{1}{m-1},\ G_{i_0}=G_{i_0+1}$ alors $\{x_1,\dots,x_{i_0},x_{i_0+2},\dots,x_m\}$ est une partie génératrice de $G$ ayant strictement moins d'éléments que $E$ ce qui est absurde.\\
 		Soit $i\in \crblanc{1}{m-1}$. $G_i$ est un sous-groupe strict de $G_{i+1}$ donc d'après la question 1, $2|G_i|\leq |G_{i+1}|$.\\
 		Par récurrence immédiate $n=|G|=|G_m|\geq 2^m$.
-		\item Soit $G=((\Z/2\Z)^m,+)$. $G$ est un $\Z/2\Z$-espace vectoriel de dimension $m$, il est donc de cardinal $2^m$ (même sans théorie sur les espaces vectoriels sur des corps finis on peut vérifier à la main qu'il y a unicité de l'écriture dans la base canonique).\\
-		Soit $E$ une partie de $G$ de cardinal inférieur strictement à $m=\log_2(|G|)$. D'après la question 1 de l'exercice sur le théorème de Cauchy, le cardinal de $\langle E\rangle$ est une puissance de $2$. Par définition de $E$, $|\langle E\rangle|<|G|$.
+		\item Soit $G=(\Z/2\Z)^m$. $G$ est un $(\Z/2\Z)$-espace vectoriel de dimension $m$, il est donc de cardinal $2^m$ (même sans théorie sur les espaces vectoriels sur des corps finis on peut vérifier à la main qu'il y a unicité de l'écriture dans la base canonique).\\
+		Soit $E$ une partie de $G$ de cardinal inférieur strictement à $m=\log_2(|G|)$. D'après la question 1 de l'exercice sur le théorème de Cauchy, le cardinal de $\langle E\rangle$ est $2^k$ avec $k$ le cardinal d'une base de $\langle E\rangle$. Or une base de $\langle E\rangle$ peut toujours être prise composée d'éléments de $E$ seulement, et comme toutes les bases ont même cardinal, $k\leq |E|$. D'où $2^k=|\langle E\rangle|<|G|=2^m$.
 	\end{enumerate}
 	
 	\subsection{Groupe alterné \centraleponts{3}}
@@ -7883,13 +7885,12 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 			\sin\theta&\cos\theta
 		\end{pmatrix}\right)$ on déduit de ce qui précède que les sous-groupes fini de $\mathcal{SO}(E)$ sont les $U_n:=\{r_{2k\pi/n},\ 0\leq k\leq n-1\}$ pour $n\in \N^*$.
 		\item On rappelle que $\O(E)$ ne contient que des rotations et des réflexions, qui sont distinguées par le signe de leurs déterminants.\\
-		Soit $G$ un sous-groupe fini de $\O(E)$. On note $G^+$ (resp. $G^-$) l'ensemble des automorphismes de $G$ dont le déterminant est positif (resp. négatif). $G^+$ n'est pas vide puisque si $s\in G$ est une symétrie, $s^2=I_2\in G^+$.\\
+		Soit $G$ un sous-groupe fini de $\O(E)$. On note $G^+$ (resp. $G^-$) l'ensemble des automorphismes de $G$ dont le déterminant est positif (resp. négatif).\\
 		$G^+=G\cap\mathcal{SO}(E)$ est un sous-groupe fini de $\mathcal{SO}(E)$. Il est donc de la forme $U_n$ pour un certain $n\in \N^*$.\\
 		Si $G^-$ est vide on a fini. Sinon, on dispose d'une symétrie $s\in G$. Alors $\fonction{f}{G^-}{G^+}{u}{s\circ u}$ est clairement une application bijective.\\
 		Ainsi, $G^-=sU_n$. Finalement en notant $r=r_{2\pi/n},\ G=\{\Id_E,r,\dots,r^{n-1},s,sr,\dots,sr^{n-1}\}=\langle r,s\rangle$ (tous ces éléments sont bien distincts car $G^+\cap G^-=\emptyset$).\\
-		Finalement $G$ en notant est de la forme :
-		$$\langle r_{2\pi/n}\rangle\T{ ou }\langle r_{2\pi/n},s\rangle$$
-		avec $n\in \N^*$ et $s$ une réflexion de $E$.\\\\
+		Finalement $G$ est de la forme :
+		$\langle r_{2\pi/n}\rangle\T{ ou }\langle r_{2\pi/n},s\rangle$ avec $n\in \N^*$ et $s$ une réflexion de $E$.\\\\
 		\textit{\underline{Remarque :} le groupe engendré par les matrices de $r_{2\pi/n}$ et de la réflexion d'axe $e_1$ (càd $\begin{pmatrix}
 				1&0\\
 				0&-1
@@ -7920,7 +7921,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		Dans tous les cas, $\varphi(u)\in D_n$. Donc $\varphi(\Delta_n)\subset D_n$ puis $\varphi(\Delta_n)=D_n$.
 	\end{enumerate}
 	
-	\subsection{Matrices de permutation \etoile{1}}
+	\subsection{Matrices de permutation \telecom{1}}
 	\label{Matrices de permutation corrigé}
 	\textcolor{blue}{\hyperref[Matrices de permutation]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
@@ -7932,7 +7933,8 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 		De plus, $\forall \sigma\in \mathcal S_n,\ f(\sigma)=I_n\implies \forall i\in \crblanc{1}{n},\ \delta_{i,\sigma(i)}=1\implies \forall i\in \crblanc{1}{n},\ \sigma(i)=i\implies \sigma=\Id$. Donc $f$ est un isomorphisme de groupes.
 		\item $\forall \sigma\in \mathcal S_n,\ \forall (i,j)\in \crblanc{1}{n}^2,\ (P_\sigma^\top)_{i,j}=\delta_{j,\sigma(i)}=\delta_{\sigma^{-1}(j),i}=(P_{\sigma^{-1}})_{i,j}=(P_\sigma^{-1})_{i,j}$.\\
 		Donc $\forall \sigma\in \mathcal S_n,\ P_\sigma^\top=P_\sigma^{-1}$.\\
-		On a montré que $\mathcal P_n\subset \O_n(\R)$.
+		On a montré que $\mathcal P_n\subset \O_n(\R)$.\\
+		\textit{Remarque : on peut aussi simplement remarquer que les colonnes de $P_\sigma$ forment une base orthonormée de $\R^n$ car ce sont celles de l'identité à permutation près.}
 		\item Soit $\sigma\in \mathcal S_n$.\\
 		Par la formule du déterminant : On sait que $\det(P_\sigma)=\displaystyle\sum\limits_{\tau\in \mathcal S_n}\varepsilon(\tau)\prod\limits_{i=1}^n(P_\sigma)_{i,\tau(i)}=\sum\limits_{\tau\in \mathcal S_n}\varepsilon(\tau)\prod\limits_{i=1}^n\delta_{i,\sigma\circ\tau(i)}$.\\
 		Or $\tau\ne \sigma^{-1}\implies \exists i\in \crblanc{1}{n},\ i\ne \sigma\circ\tau(i)\implies \displaystyle\prod\limits_{i=1}^n\delta_{i\sigma\circ\tau(i)}=0$ et, $\tau=\sigma^{-1}\implies \forall i\in \crblanc{1}{n},\ i=\sigma\circ\tau(i)\implies \displaystyle\prod\limits_{i=1}^n\delta_{i\sigma\circ\tau(i)}=1$.\\
@@ -7951,11 +7953,11 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 			&\ \ \ \ =-\det(I_n)\\
 			&\ \ \ \ =-1
 		\end{align*}
-		D'où $\det(P_\sigma)=\varepsilon(\sigma)$.
-		\textit{Remarque} : On peut simplement regarder le déterminant des colonnes et remarquer que les colonnes de $P_\sigma$ correspond à la permutation $\sigma$ des colonnes de $I_n$ d'où le résultat car $\det$ est alterné.
+		D'où $\det(P_\sigma)=\varepsilon(\sigma)$.\\
+		\textit{Remarque : On peut en fait même le faire directement en remarquant que les colonnes de $P_\sigma$ correspondent à la permutation $\sigma$ des colonnes de $I_n$ d'où le résultat car $\det$ est alterné.}
 	\end{enumerate}
 	
-	\subsection{Groupe dérivé \etoile{4}}
+	\subsection{Groupe dérivé \xens{4}}
 	\label{Groupe dérivé corrigé}
 	\textcolor{blue}{\hyperref[Groupe dérivé]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
