@@ -1199,6 +1199,18 @@
 		Démontrer que qu'il existe $c\in\, ]a,b[$ tel que $f^{(n)}(c)=0$.
 	\end{enumerate}
 	
+	\section{Inégalité intégrale de Jensen \ccinp{1}}
+	\textcolor{blue}{\hyperref[Inégalité intégrale de Jensen corrigé]{[Corrigé]}}\\
+	\label{Inégalité intégrale de Jensen}
+	Soit $f:[a,b]\to\R$ une fonction continue par morceaux à valeurs dans un intervalle $J$. Soit $\varphi$ une fonction continue et convexe sur $J$. Démontrer que: $$\varphi\left(\frac{1}{b-a}\int_a^bf(t)dt\right)\leq\frac{1}{b-a}\int_a^b\varphi\circ f(t)dt$$
+	On pourra passer par des sommes de Riemann.
+	
+	\section{Lemme de Croft \centraleponts{2}}
+	\textcolor{blue}{\hyperref[Lemme de Croft corrigé]{[Corrigé]}}\\
+	\label{Lemme de Croft}
+	Soit $f:\R_+\mapsto \R$ uniformément continue sur $\R_+$ telle que pour tout $x>0$ la suite $(f(nx))_{n\in\N}$ tend vers $0$.\\
+	Montrer que $\lim\limits_{x\to +\infty} f(x)=0$.
+	
 	\section{Dérivée symétrique \ccinp{1}}
 	\textcolor{blue}{\hyperref[sec:derivee-symetrique-etoile1]{[Corrigé]}}\\
 	\label{deriveesymetrique}
@@ -1361,10 +1373,10 @@
 	\section{Théorème de Darboux \centraleponts{4}}
 	\textcolor{blue}{\hyperref[Théorème de Darboux corrigé]{[Corrigé]}}\\
 	\label{Théorème de Darboux}
-	Soient $I$ un intervalle et $f:I\to \R$ une fonction dérivable sur $I$.
+	Soient $I$ un intervalle de $\R$ et $f:I\to \R$ une fonction dérivable.
 	\begin{enumerate}
 		\item Démontrer que $f'(I)$ est un intervalle.
-		\item En déduire que $f$ est de classe $\mathcal C^1$ sur $I$.
+		\item On suppose de plus $f$ convexe. Montrer que $f$ est de classe $\mathcal C^1$.
 	\end{enumerate}
 	
 	\subsection{Réciproque du TVI \ccinp{1}}
@@ -1442,17 +1454,62 @@
 		\end{enumerate}
 	\end{enumerate}
 	
-	\section{Lemme de Croft \centraleponts{2}}
-	\textcolor{blue}{\hyperref[Lemme de Croft corrigé]{[Corrigé]}}\\
-	\label{Lemme de Croft}
-	Soit $f:\R_+\mapsto \R$ uniformément continue sur $\R_+$ telle que pour tout $x>0$ la suite $(f(nx))_{n\in\N}$ tend vers $0$.\\
-	Montrer que $\lim\limits_{x\to +\infty} f(x)=0$.
+	\section{Vers le principe des zéros isolés \centraleponts{3}}
+	\textcolor{blue}{\hyperref[Vers le principe des zéros isolés corrigé]{[Corrigé]}}\\
+	\label{Vers le principe des zéros isolés}
+	Soit $f\in \mathcal C^\infty(\R,\R)$.
+	\begin{enumerate}
+		\item Soit $a\in \R$ tel que $f(a)=0$. On suppose qu'il existe $n\in \N^*$ tel que $f^{(n)}(a)\ne 0$. Montrer qu'il existe $h>0$ tel que :
+		$$\forall x\in\, ]a-h,a+h[\setminus\{a\},\ f(x)\ne 0$$
+		\item Soit $S$ un segment de $\R$. On suppose que pour tout zéro $a$ de $f$, il existe $n\in \N^*$ tel que $f^{(n)}(a)\ne 0$. Montrer que $f$ ne s'annule qu'un nombre fini de fois sur $S$.
+	\end{enumerate}
 	
-	\section{Inégalité intégrale de Jensen \ccinp{1}}
-	\textcolor{blue}{\hyperref[Inégalité intégrale de Jensen corrigé]{[Corrigé]}}\\
-	\label{Inégalité intégrale de Jensen}
-	Soit $f:[a,b]\to\R$ une fonction continue par morceaux à valeurs dans un intervalle $J$. Soit $\varphi$ une fonction continue et convexe sur $J$. Démontrer que: $$\varphi\left(\frac{1}{b-a}\int_a^bf(t)dt\right)\leq\frac{1}{b-a}\int_a^b\varphi\circ f(t)dt$$
-	\\ On pourra passer par des sommes de Riemann.
+	\section{Fonction test}
+	\textcolor{blue}{\hyperref[Fonction test corrigé]{[Corrigé]}}\\
+	\label{Fonction test}
+	Soient $a<b$ des réels. Le but de cet exercice est de construire une fonction de classe $\mathcal C^\infty$ de support $[a,b]$, c'est-à-dire s'annulant exactement sur $\R\setminus[a,b]$. On pose\\
+	$$\varphi:t\mapsto \begin{cases}
+		0&\mbox{si }t\leq 0\\
+		e^{-1/t}&\mbox{si }t>0
+	\end{cases}$$
+	\begin{enumerate}
+		\item Montrer que $\forall n\in \N,\ \exists P_n\in \R[X],\ \forall t>0,\ \varphi^{(n)}(t)=P_n\left(\dfrac{1}{t}\right)e^{-1/t}$.
+		\item En déduire que $\varphi$ est de classe $\mathcal C^\infty$ sur $\R$.
+		\item Conclure.
+	\end{enumerate}
+	
+	\section{Fonction plateau}
+	\textcolor{blue}{\hyperref[Fonction plateau corrigé]{[Corrigé]}}\\
+	\label{Fonction plateau}
+	Le but de cet exercice est de construire une fonction réelle positive $\rho$, de classe $\mathcal C^\infty$ sur $\R$ et telle que $\forall t\in \R,\ |t|\leq 1\implies \rho(t)=1$ et $|t|>2\implies \rho(t)=0$. On pose
+	$$\psi:t\mapsto \begin{cases}
+		0&\mbox{si }t\notin [-1,1]\\
+		e^{1/(t^2-1)}&\mbox{sinon}
+	\end{cases}$$
+	\begin{enumerate}
+		\item En exprimant $\psi$ à partir de $\varphi$, montrer que $\psi\in \mathcal C^\infty(\R,\R)$.
+		\item Soit $\theta$ l'unique primitive de $\psi$ s'annulant en $0$. Montrer que $\theta$ est $\mathcal C^\infty$ sur $\R$, constante sur $]-\infty,1]$ et sur $[1,+\infty[$. Vérifier que les constantes en questions sont différentes.
+		\item Conclure.
+	\end{enumerate}
+	
+	\section{Théorème de réalisation de Borel \centraleponts{4}}
+	\textcolor{blue}{\hyperref[Théorème de réalisation de Borel corrigé]{[Corrigé]}}\\
+	\label{Théorème de réalisation de Borel}
+	Soit $(a_n)_{n\in \N}$ une suite complexe quelconque.
+	\\Soit $\varphi:\R\mapsto\R$ une application de classe $\mathcal C^\infty$ telle que $\varphi(x)=1$ pour $x\in[-1,1]$ et $\varphi(x)=0$ pour $|x|>2$ (l'exercice précédent en donne une construction). On pose pour $n\in \N,\ \varphi_n:x\mapsto x^n\varphi(x)$ et on note $M_n=\max\limits_{0\leq i\leq n-1}\normep{\infty}{\varphi_n^{(i)}}$, et on choisit une suite réelle $(\lambda_n)_{n\in \N}$ vérifiant $\lambda_n\geq1$ pour tout $n\in\N$, tendant vers $+\infty$, et telle que $\displaystyle\sum\limits_{n\in \N}\frac{|a_n|M_n}{\lambda_n}$ converge.
+	\\Montrer que la fonction $f:x\mapsto\displaystyle\sum\limits_{n=0}^{+\infty}a_n\frac{x^n}{n!}\varphi(\lambda_nx)$ est bien définie, de classe $\mathcal C^\infty$ sur $\R$ et vérifie $f^{(n)}(0)=a_n$ pour tout $n\in\N$.
+	
+	\subsection{Prolongement de classe $\mathcal C^\infty$ \etoile{1}}
+	\textcolor{blue}{\hyperref[Prolongement de classe C infini corrigé]{[Corrigé]}}\\
+	\label{Prolongement de classe C infini}
+	Soient $a<b$ des réels.\\
+	Montrer que toute fonction de classe $\mathcal C^\infty$ sur $[a,b]$, c'est-à-dire $\mathcal C^\infty$ sur $]a,b[$ et qui admet des dérivées à tout ordre à droite en $a$ et à gauche en $b$, est prolongeable en une fonction de classe $\mathcal C^\infty$ sur $\R$.
+	
+	\subsection{Fonction paire de classe $\mathcal C^\infty$}
+	\textcolor{blue}{\hyperref[Fonction paire de classe C infini corrigé]{[Corrigé]}}\\
+	\label{Fonction paire de classe C infini}
+	Soit $f\in \mathcal C^\infty(\R,\R)$ une fonction paire. Montrer qu'il existe $g\in \mathcal C^\infty(\R,\R)$ telle que :
+	$$\forall x\in \R,\ f(x)=g(x^2)$$
 	
 	
 \chapter{Polynôme}
@@ -2848,14 +2905,6 @@ On définit ensuite la série entière $F(x)=\displaystyle\sum_{n=0}^{+\infty}P(
 	\item Soient $\omega$ une racine de l'unité et $p\in \N^*$. On note $f:x\mapsto \displaystyle\frac{1}{(1-\omega x)^p}$ et $f(x)=\displaystyle\sum_{n=0}^{+\infty}R(n)x^n$ son développement en série entière. Montrer que $R$ est une fonction quasi-polynomiale, puis déterminer son degré et son coefficient dominant.
 	\item En déduire que $P$ est quasi-polynomiale et déterminer son coefficient dominant.
 \end{enumerate}
-
-\section{Théorème de réalisation de Borel}
-\label{Théorème de réalisation de Borel}
-\textcolor{blue}{\hyperref[sec:theoreme-de-realisation-de-borel]{[Corrigé]}}\\
-Soit $(a_n)_{n\in \N}$ une suite complexe quelconque.
-\\Soit $\varphi:\R\mapsto\R$ une application de classe $\mathcal C^\infty$ telle que $\varphi(x)=1$ pour $x\in[-1,1]$ et $\varphi(x)=0$ pour $|x|\geq2$. On pose $\varphi_n=x^n\varphi(x)$, on note $M_n$ un majorant de $|\varphi'|,|\varphi''|,\dots,|\varphi^{(n-1)}|$ sur $\R$, et on choisit une suite réelle $(\lambda_n)_{n\in \N}$ vérifiant $\lambda_n\geq1$ pour tout $n\in\N$, tendant vers $+\infty$, et telle que $\displaystyle\sum\limits_{n\in \N}\frac{|a_n|M_n}{\lambda_n}$ converge.
-\\Montrer que la fonction $f:x\mapsto\displaystyle\sum\limits_{n=0}^{+\infty}a_nx^n\varphi(\lambda_nx)$ est bien définie, de classe $C^{\infty}$ sur $\R$ et vérifie $\displaystyle\frac{f^{(n)}(0)}{n!}=a_n$ pour tout $n\in\N$.
-\\ \textit{\underline{Remarque:} On vient de montrer que pour suite $(a_n)_{n\in \N}$ de nombres complexes, il existe une fonction $f:\R\mapsto\C$ de classe $\mathcal C^\infty$ telle que, pour tout entier $n\in\N$, $f^n(0)=a_n$.}
 
 \section{Série de Lambert}
 \label{Série de Lambert}
@@ -4536,7 +4585,7 @@ Soit $i\in \crblanc{1}{9}$. On note $N_i(n)$ le nombre d'éléments de $\{2,2^2,
 \section{Série de Engel}
 \textcolor{blue}{\hyperref[sec:serie-de-engel]{[Corrigé]}}\\
 \label{Série de Engel}
-Soit $x\in ]0,1]$.
+Soit $x\in\, ]0,1]$.
 \begin{enumerate}
 	\item Montrer qu'il existe une unique suite $(q_n)_{n\in \N}$ d'entiers naturels supérieurs ou égaux à $2$ telle que $x=\displaystyle\sum_{n=0}^{+\infty}\frac{1}{q_0q_1\dots q_n}$.
 	\item Montrer que $x$ est rationnel si et seulement si la suite $(q_n)_{n\in \N}$ est stationnaire.
@@ -4546,7 +4595,25 @@ Soit $x\in ]0,1]$.
 	\end{enumerate}
 \end{enumerate}
 
-\section{Intégrale des puissances d'une fonction}
+\section{Lemme d'Hadamard (1) \centraleponts{2}}
+\textcolor{blue}{\hyperref[Lemme d'Hadamard (1) corrigé]{[Corrigé]}}\\
+\label{Lemme d'Hadamard (1)}
+Soient $n\geq 1$ et $f\in \mathcal C^\infty(\R,\R)$. Démontrer l'équivalence des propositions suivantes :
+\begin{itemize}
+	\item $f(0)=f'(0)=\cdots=f^{(n-1)}(0)=0$
+	\item $\exists g\in \mathcal C^\infty(\R,\R),\ \forall x\in \R,\ f(x)=x^ng(x)$.
+\end{itemize}
+
+\section{Lemme d'Hadamard (2) \xens{4}}
+\textcolor{blue}{\hyperref[Lemme d'Hadamard (2) corrigé]{[Corrigé]}}\\
+\label{Lemme d'Hadamard (2)}
+Soient $n\geq 1$ et $f\in \mathcal C^\infty(\R^n,\R)$. Démontrer l'équivalence des propositions suivantes :
+\begin{itemize}
+	\item $f(0)=0$ et $df(0)=0$
+	\item $\exists (g_{i,j})_{1\leq i,j\leq n}\in \mathcal C^\infty(\R^n,\R),\ \forall x=(x_1,\dots,x_n)\in \R^n,\ f(x)=\displaystyle\sum_{1\leq i,j\leq n}x_ix_jg_{i,j}(x)$.
+\end{itemize}
+
+\section{Intégrale des puissances d'une fonction \centraleponts{3}}
 \textcolor{blue}{\hyperref[Intégrale des puissances d'une fonction corrigé]{[Corrigé]}}\\
 \label{Intégrale des puissances d'une fonction}
 Soit $f:[0,1]\to \R$ continue, positive et non identiquement nulle.\\
@@ -4556,7 +4623,7 @@ On pose pour $n\in \N,\ I_n=\displaystyle\int_0^1f(t)^ndt$.
 	\item Calculer le rayon de convergence $R$ de la série entière $\displaystyle\sum_{n\in \N}I_nx^n$. On note $S$ sa somme.
 	\item Montrer que $\forall n\in \N^*,\ I_n^2\leq I_{n-1}I_{n+1}$.
 	\item En déduire que $I_{n+1}\unfty\sim \normep{\infty}{f}I_n$.
-	\item Montrer que $\forall x\in ]-R,R[,\ S(x)=\displaystyle\int_0^1\frac{1}{1-xf(t)}dt$.
+	\item Montrer que $\forall x\in\, ]-R,R[,\ S(x)=\displaystyle\int_0^1\frac{1}{1-xf(t)}dt$.
 	\item En déduire un calcul de $\displaystyle\sum_{n=0}^{+\infty}(-1)^n\int_0^{\pi/2}\sin^n(t)dt$.
 \end{enumerate}
 
@@ -6313,6 +6380,27 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{sec:theoreme-de-rolle}
 	\textcolor{blue}{\hyperref[Théorème de Rolle]{[Enoncé]}}\\
 	
+	\subsection{Inégalité intégrale de Jensen \ccinp{1}}
+	\label{Inégalité intégrale de Jensen corrigé}
+	\textcolor{blue}{\hyperref[Inégalité intégrale de Jensen]{[Enoncé]}}\\
+	Soit $n\in \N^*$. Notons pour $k\in \crblanc{0}{n-1},\ x_k=a+k\times\displaystyle\frac{b-a}{n}\in [a,b]$.\\
+	$\displaystyle\frac{1}{n}\geq 0$ et $\displaystyle\sum_{k=0}^{n-1}\frac{1}{n}=1$ donc d'après l'inégalité de Jensen appliquée à $\varphi$ qui est convexe :\\
+	$\displaystyle\varphi\left(\sum_{k=0}^{n-1}\frac{1}{n}f(x_k)\right)\leq \sum_{k=0}^{n-1}\frac{1}{n}\varphi\circ f(x_k)$.\\
+	Or comme $\varphi\circ f$ est continue par morceaux sur $[a,b]$, d'après le cours $\displaystyle\frac{b-a}{n}\sum_{k=0}^{n-1}\varphi\circ f(x_k)\unfty{\longrightarrow}\int_a^b\varphi\circ f(t)dt$.\\
+	De même, $\displaystyle\frac{b-a}{n}\sum_{k=0}^{n-1}f(x_k)\unfty{\longrightarrow}\int_a^bf(t)dt$.\\
+	Ainsi par continuité de $\varphi$, le passage à la limite donne :
+	$$\displaystyle\varphi\left(\frac{1}{b-a}\int_a^bf(t)dt\right)\leq \frac{1}{b-a}\int_a^b\varphi\circ f(t)dt$$
+	
+	\subsection{Lemme de Croft \centraleponts{2}}
+	\label{Lemme de Croft corrigé}
+	\textcolor{blue}{\hyperref[Lemme de Croft]{[Enoncé]}}\\
+	Soit $\varepsilon>0$. Par uniforme continuité de $f,\ \exists\eta>0,\ \forall (x,y)\in \R_+^2,\ |x-y|\leq\eta\implies|f(x)-f(y)|\leq\displaystyle\frac{\varepsilon}{2}$.\\
+	Par hypothèse la suite $(f(n\eta))_{n\in \N}$ converge vers $0$. Donc $\exists N\in \N,\ \forall n\geq N,\ |f(n\eta)|\leq\displaystyle\frac{\varepsilon}{2}$.\\
+	Soit $x\geq N\eta$. $\exists n=\displaystyle\lfloor x\rfloor\geq N,\ n\eta\leq x\eta<(n+1)\eta$.\\
+	D'une part, $|x-n\eta|\leq \eta$ donc $|f(x)-f(n\eta)|\leq\displaystyle\frac{\varepsilon}{2}$ et d'autre part, $n\geq N$ donc $|f(n\eta)|\leq\displaystyle\frac{\varepsilon}{2}$.\\
+	Ainsi par inégalité triangulaire, $|f(x)|\leq |f(x)-f(n\eta)|+|f(n\eta)|\leq \varepsilon$.\\
+	Par conséquent $\uxfty{\lim}f(x)=0$.
+	
 	\subsection{Dérivée symétrique \ccinp{1}}
 	\label{sec:derivee-symetrique-etoile1}
 	\textcolor{blue}{\hyperref[deriveesymetrique]{[Enoncé]}}\\
@@ -6580,16 +6668,16 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	$$\forall (x,y)\in I^2,\ \displaystyle f\left(\frac{x+y}{2}\right)=f(\lambda x+(1-\lambda)y)\leq\lambda f(x)+(1-\lambda)f(y)=\frac{f(x)+f(y)}{2}$$
 	Réciproquement, supposons que $\forall (x,y)\in I^2,\ \displaystyle f\left(\frac{x+y}{2}\right)\leq \frac{f(x)+f(y)}{2}$.\\
 	Montrons par récurrence la propriété $\mathcal P(n):"\forall (x_1,\dots,x_n)\in I^n,\ \displaystyle f\left(\frac{x_1+\dots+x_n}{n}\right)\leq \frac{f(x_1)+\dots+f(x_n)}{n}"$ pour $n\geq 2$.\\
-	$\mathcal P(1)$ est vraie par hypothèse. Supposons $\mathcal P(n)$ pour un certain $n\geq 2$ puis montrons $\mathcal P(2n)$ et $\mathcal P(n-1)$ si $n\ne 2$. Fixons $(x_1,\dots,x_{2n}\in I^{2n})$.\\
+	$\mathcal P(1)$ est vraie par hypothèse. Supposons $\mathcal P(n)$ pour un certain $n\geq 2$ puis montrons $\mathcal P(2n)$ et $\mathcal P(n-1)$ si $n\ne 2$. Fixons $(x_1,\dots,x_{2n})\in I^{2n}$.\\
 	En posant $x=\displaystyle\frac{x_1+\dots+x_n}{n}$ et $y=\displaystyle\frac{x_{n+1}+\dots+x_{2n}}{n}$ on a $(x,y)\in I^2$ d'où :\\
 	$\displaystyle f\left(\frac{x_1+\dots+x_{2n}}{2n}\right)=f\left(\frac{x+y}{2}\right)\leq \frac{f(x)+f(y)}{2}$.\\
 	Puis par hypothèse de récurrence, $f(x)\leq \displaystyle\frac{f(x_1)+\dots+f(x_n)}{n}$ et $f(y)\leq \displaystyle\frac{f(x_{n+1})+\dots+f(x_{2n})}{n}$ d'où $\mathcal P(n+1)$.\\\\
-	Ensuite, supposons que $n\ne 2$ et donnons nous un $n-1$-uplet $(x_1,\dots,x_{n-1})$ de $I^{n-1}$.\\
+	Ensuite, supposons que $n\ne 2$ et donnons nous $(x_1,\dots,x_{n-1})\in I^{n-1}$.\\
 	Posons $x_n=\displaystyle\frac{x_1+\dots+x_{n-1}}{n-1}$. On a :\\
 	$\displaystyle f(x_n)=f\left(\frac{x_1+\dots+x_n}{n}\right)\leq\frac{f(x_1)+\dots+f(x_n)}{n}$.\\
 	C'est à dire $f(x_n)\leq \displaystyle\frac{f(x_1)+\dots+f(x_{n-1})}{n-1}$ d'où $\mathcal P(n-1)$.\\
 	Ainsi par récurrence de Cauchy, pour tout entier $n\geq 2,\ \mathcal P(n)$.\\\\
-	On peut alors en déduire que si $\lambda=\displaystyle\frac{a}{b}\in ]0,1[$ avec $a\in \N$ et $b\in \N\setminus\{0,1\}$ alors, en posant $x_1=\dots=x_a=x$ et $x_{a+1}=\dots=x_b=y$ on a par $\mathcal P(b)$:\\
+	On peut alors en déduire que si $\lambda=\displaystyle\frac{a}{b}\in\, ]0,1[$ avec $a\in \N$ et $b\in \N\setminus\{0,1\}$ alors, en posant $x_1=\dots=x_a=x$ et $x_{a+1}=\dots=x_b=y$ on a par $\mathcal P(b)$:\\
 	$\forall (x,y)\in I^2,\ f(\lambda x+(1-\lambda)y)=\displaystyle f\left(\frac{ax+(b-a)y}{b}\right)=f\left(\frac{x_1+\dots+x_b}{b}\right)\leq\frac{f(x_1)+\dots+f(x_b)}{b}=\frac{af(x)+(b-a)f(y)}{b}=\lambda f(x)+(1-\lambda)f(y)$.\\
 	On conclut par densité de $\Q$ dans $\R$ et continuité de $f$.
 	
@@ -6780,26 +6868,60 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\end{enumerate}
 	\end{enumerate}
 	
-	\subsection{Lemme de Croft \centraleponts{2}}
-	\label{Lemme de Croft corrigé}
-	\textcolor{blue}{\hyperref[Lemme de Croft]{[Enoncé]}}\\
-	Soit $\varepsilon>0$. Par uniforme continuité de $f,\ \exists\eta>0,\ \forall (x,y)\in \R_+^2,\ |x-y|\leq\eta\implies|f(x)-f(y)|\leq\displaystyle\frac{\varepsilon}{2}$.\\
-	Par hypothèse la suite $(f(n\eta))_{n\in \N}$ converge vers $0$. Donc $\exists N\in \N,\ \forall n\geq N,\ |f(n\eta)|\leq\displaystyle\frac{\varepsilon}{2}$.\\
-	Soit $x\geq N\eta$. $\exists n=\displaystyle\lfloor x\rfloor\geq N,\ n\eta\leq x\eta<(n+1)\eta$.\\
-	D'une part, $|x-n\eta|\leq \eta$ donc $|f(x)-f(n\eta)|\leq\displaystyle\frac{\varepsilon}{2}$ et d'autre part, $n\geq N$ donc $|f(n\eta)|\leq\displaystyle\frac{\varepsilon}{2}$.\\
-	Ainsi par inégalité triangulaire, $|f(x)|\leq |f(x)-f(n\eta)|+|f(n\eta)|\leq \varepsilon$.\\
-	Par conséquent $\uxfty{\lim}f(x)=0$.
+	\subsection{Vers le principe des zéros isolés \centraleponts{3}}
+	\label{Vers le principe des zéros isolés corrigé}
+	\textcolor{blue}{\hyperref[Vers le principe des zéros isolés]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Notons $p$ le plus petit entier naturel non nul tel que $f^{(p)}(a)\ne 0$. $f$ est de classe $\mathcal C^{p-1}$ sur un voisinage de $a$ donc d'après la formule de Taylor-Young :
+		$$f(x)\underset{x\to a}=\sum_{k=0}^p\frac{f^{(k)}(a)}{k!}(x-a)^k+\smallo{(x-a)^p}\underset{x\to a}=\frac{f^{(p)}(a)}{p!}(x-a)^p+\smallo{(x-a)^p}\underset{x\to a}\sim\frac{f^{(p)}(a)}{p!}(x-a)^p$$
+		$\dfrac{f^{(p)}(a)}{p!}(x-a)^p$ ne s'annule pas sur un voisinage épointé de $a$ donc $f$ non plus.
+		\item Supposons que $f$ s'annule une infinité de fois sur $S$. On dispose alors d'une suite $(a_n)\in S^\N$ d'éléments distincts de $S$ tels que $\forall n\in \N,\ f(a_n)=0$. $S$ est compact donc quitte à extraire on peut supposer que $(a_n)$ converge vers $a\in S$. Alors par continuité de $f$, $f(a)=0$.\\
+		D'après la première question il existe $h>0$ tel que $\forall x\in\, ]a-h,a+h[,\ f(x)=0\implies x=a$.\\
+		Or APCR $a_n\in\, ]a-h,a+h[$ donc la suite $(a_n)$ stationne à $a$. Ceci est absurde car on a supposé les $a_n$ distincts.\\
+		Par conséquent $f$ ne s'annule qu'un nombre fini de fois sur $S$.
+	\end{enumerate}
 	
-	\subsection{Inégalité intégrale de Jensen \ccinp{1}}
-	\label{Inégalité intégrale de Jensen corrigé}
-	\textcolor{blue}{\hyperref[Inégalité intégrale de Jensen]{[Enoncé]}}\\
-	Soit $n\in \N^*$. Notons pour $k\in \crblanc{0}{n-1},\ x_k=a+k\times\displaystyle\frac{b-a}{n}\in [a,b]$.\\
-	$\displaystyle\frac{1}{n}\geq 0$ et $\displaystyle\sum_{k=0}^{n-1}\frac{1}{n}=1$ donc d'après l'inégalité de Jensen appliquée à $\varphi$ qui est convexe :\\
-	$\displaystyle\varphi\left(\sum_{k=0}^{n-1}\frac{1}{n}f(x_k)\right)\leq \sum_{k=0}^{n-1}\frac{1}{n}\varphi\circ f(x_k)$.\\
-	Or comme $\varphi\circ f$ est continue par morceaux sur $[a,b]$, d'après le cours $\displaystyle\frac{b-a}{n}\sum_{k=0}^{n-1}\varphi\circ f(x_k)\unfty{\longrightarrow}\int_a^b\varphi\circ f(t)dt$.\\
-	De même, $\displaystyle\frac{b-a}{n}\sum_{k=0}^{n-1}f(x_k)\unfty{\longrightarrow}\int_a^bf(t)dt$.\\
-	Ainsi par continuité de $\varphi$, le passage à la limite donne :
-	$$\displaystyle\varphi\left(\frac{1}{b-a}\int_a^bf(t)dt\right)\leq \frac{1}{b-a}\int_a^b\varphi\circ f(t)dt$$
+	\subsection{Fonction test}
+	\label{Fonction test corrigé}
+	\textcolor{blue}{\hyperref[Fonction test]{[Enoncé]}}\\
+	
+	\subsection{Fonction plateau}
+	\label{Fonction plateau corrigé}
+	\textcolor{blue}{\hyperref[Fonction plateau]{[Enoncé]}}\\
+	
+	\subsection{Théorème de réalisation de Borel \centraleponts{4}}
+	\label{Théorème de réalisation de Borel corrigé}
+	\textcolor{blue}{\hyperref[Théorème de réalisation de Borel]{[Enoncé]}}\\
+	Comme $\lambda_n\unfty\longrightarrow +\infty,\ \forall x\in \R^*,\ \exists n_x\in \N,\ \forall n\geq n_x,\ |\lambda_nx|>2$. Donc en tout $x\in \R^*$, $f$ est bien définie : $f(x)=\displaystyle\sum_{n=0}^{n_x}a_n\frac{x^n}{n!}\varphi(\lambda_nx)$.\\
+	De plus $f(0)=a_0$ donc $f$ est bien définie sur $\R$.\\
+	Pour montrer que $f$ est de classe $\mathcal C^\infty$ on va appliquer un théorème de dérivation sous le signe somme.\\
+	Soit $x\in \R$. Si $|x|>2$ alors $\forall n\in \N,\ |\lambda_nx|>2$ d'où $f(x)=0$. On suppose maintenant que $|x|\leq 2$.\\
+	Pour tout $n\in \N$ la fonction $f_n:x\mapsto a_n\dfrac{x^n}{n!}\varphi(\lambda_nx)=\dfrac{a_n}{\lambda_n^nn!}\varphi_n(\lambda_nx)$ est de classe $\mathcal C^\infty$ sur $\R$ et $\forall p<n$,
+	$$|f_n^{(p)}(x)|=\frac{|a_n|}{\lambda_n^{n-p}}|\varphi_n^{(p)}(\lambda_nx)|\leq\frac{|a_n|M_n}{\lambda_n}$$
+	Ainsi pour tout entier naturel $p$, $\normep{\infty}{f_n^{(p)}}\leq \dfrac{|a_n|M_n}{\lambda_n}$ APCR. Donc comme $\displaystyle\sum_{n\in \N}\frac{|a_n|M_n}{\lambda_n}$ converge, la série de fonctions $\displaystyle\sum_{n\in \N}f_n^{(p)}$ converge normalement sur $\R$.\\
+	Par conséquent $f$ est $\mathcal C^\infty$ sur $\R$ et $\forall p\in \N,\ \forall x\in \R,\ f^{(p)}(x)=\displaystyle\sum_{n=0}^{+\infty}f_n^{(p)}(x)$.\\
+	Pour conclure, remarquons que $\forall x\in [-1,1],\ f_n(x)=a_n\dfrac{x^n}{n!}$.\\
+	Donc $\forall x\in [-1,1],\ \forall p\in \N,\ f^{(p)}(x)=\displaystyle\sum_{k=p}^{+\infty}a_n\frac{x^{n-p}}{(n-p)!}$. En particulier, $f^{(p)}(0)=a_p$.\\\\
+	Pour conclure, justifions l'existence des objets de l'énoncé.\\
+	Comme $\varphi_n$ est nulle en dehors de $[-2,2]$ alors toutes ses dérivées successives le sont aussi, et donc $M_n$ est bien défini pour tout $n\in \N$ par le théorème des bornes atteintes.\\
+	Pour $(\lambda_n)_{n\in \N}$ on peut prendre $\lambda_n=1+n+n^2|a_n|M_n$.
+	
+	\subsubsection{Prolongement de classe $\mathcal C^\infty$ \etoile{1}}
+	\label{Prolongement de classe C infini corrigé}
+	\textcolor{blue}{\hyperref[Prolongement de classe C infini]{[Enoncé]}}\\
+	Soit $f:\ ]a,b[\to \C$ une telle fonction.\\
+	D'après le théorème de réalisation de Borel, il existe des fonctions $u,v\in \mathcal C^\infty(\R,\C)$ telles que $\forall n\in \N,\ u^{(n)}(0)=f^{(n)}(a^+)$ et $v^{(n)}(0)=f^{(n)}(b^-)$.\\
+	D'après le cours la fonction $$\tilde f:x\mapsto \begin{cases}
+		u(x-a)&\mbox{si }x\leq a\\
+		f(x)&\mbox{si }a<x<b\\
+		v(x-b)&\mbox{si }b\leq x
+	\end{cases}$$
+	est un prolongement $\mathcal C^\infty$ sur $\R$ de $f$.
+	
+	\subsubsection{Fonction paire de classe $\mathcal C^\infty$}
+	\label{Fonction paire de classe C infini corrigé}
+	\textcolor{blue}{\hyperref[Fonction paire de classe C infini]{[Enoncé]}}\\
+	
 	
 	\newpage
 \section{Correction Polynôme}
@@ -6975,7 +7097,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		\item $\alpha\in \pi\Q\iff \dfrac{\pi}{2}-\alpha\in\pi\Q$. Donc avec $\sin(\alpha)=\cos\left(\dfrac{\pi}{2}-\alpha\right)$, Les couples possibles sont :
 		$$(0,0),\left(\pm\frac{\pi}{2},\pm1\right),\left(\pm\frac{\pi}{6},\pm\frac{1}{2}\right),\left(\pm\frac{5\pi}{6},\pm\frac{1}{2}\right)$$
 		\item Supposons $\tan(\alpha)\in \Q$ avec $\alpha\in \left]-\dfrac{\pi}{2},\dfrac{\pi}{2}\right[$. Comme $\cos(2\alpha)=\dfrac{1-\tan^2(\alpha)}{1+\tan^2(\alpha)}$, $\cos(2\alpha)\in \Q$.\\
-		$\cos(2\alpha)\ne -1$ donc on a $\tan^2(\alpha)=\dfrac{1-\cos(2\alpha)}{1+\cos(2\alpha)}$ d'où $\tan(\alpha)\in \left\{0,\pm1,\pm\sqrt 3,\pm\dfrac{\sqrt 3}{3}\right\}$. En enlevant les valeur irrationnelle reste $\tan(\alpha)\in\{-1,0,1\}$. Cela donne $\alpha\in \left\{-\dfrac{\pi}{4},0,\dfrac{\pi}{4}\right\}$.
+		$\cos(2\alpha)\ne -1$ donc on a $\tan^2(\alpha)=\dfrac{1-\cos(2\alpha)}{1+\cos(2\alpha)}$ d'où $\tan(\alpha)\in \left\{0,\pm1,\pm\sqrt 3,\pm\dfrac{\sqrt 3}{3}\right\}$. En enlevant les valeurs irrationnelles on obtient $\tan(\alpha)\in\{-1,0,1\}$. Cela donne $\alpha\in \left\{-\dfrac{\pi}{4},0,\dfrac{\pi}{4}\right\}$.
 	\end{enumerate}
 	
 	\subsubsection{Triangle à angles rationnels sont tous les côtés ont un longueur rationnelle \etoile{2}}
@@ -7003,7 +7125,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 			1&\mbox{si }p=0\\
 			0&\mbox{sinon}
 		\end{cases}$\\
-		Donc $\Delta^l(H_k)=\begin{cases}
+		Donc $\Delta^l(H_k)(0)=\begin{cases}
 			1&\mbox{si }k=l\\
 			0&\mbox{sinon}
 		\end{cases}$
@@ -9215,10 +9337,6 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	
 	\subsubsection{Partition d'un entier}
 	
-	\subsection{Théorème de réalisation de Borel}
-	\label{sec:theoreme-de-realisation-de-borel}
-	\textcolor{blue}{\hyperref[Théorème de réalisation de Borel]{[Enoncé]}}\\
-	
 	\subsection{Série de Lambert}
 	\label{sec:serie-de-lambert}
 	\textcolor{blue}{\hyperref[Série de Lambert]{[Enoncé]}}\\
@@ -11309,6 +11427,24 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Série de Engel}
 	\label{sec:serie-de-engel}
 	\textcolor{blue}{\hyperref[Série de Engel]{[Enoncé]}}\\
+	
+	\subsection{Lemme d'Hadamard (1) \centraleponts{2}}
+	\label{Lemme d'Hadamard (1) corrigé}
+	\textcolor{blue}{\hyperref[Lemme d'Hadamard (1)]{[Enoncé]}}\\
+	Supposons qu'il existe $g\in \mathcal C^\infty(\R,\R)$ telle que $\forall x\in \R,\ f(x)=x^ng(x)$.\\
+	Alors d'après la formule de Leibniz, $\forall x\in \R,\ \forall k\in \crblanc{0}{n-1},\ f^{(k)}(x)=\displaystyle\sum_{j=0}^k\binom{k}{j}\frac{n!}{(n-j)!}x^{n-j}g^{(k-j)}(x)$.\\
+	$(\forall j\in \crblanc{0}{k},\ n-j>0)\implies f^{(k)}(0)=\displaystyle\sum_{j=0}^k0=0$.\\
+	Réciproquement, supposons que $f(0)=f'(0)=\cdots=f^{(n-1)}(0)=0$.\\
+	Alors d'après la formule de Taylor avec reste intégral :
+	$$\forall x\in \R,\ f(x)=\displaystyle\sum_{k=0}^{n-1}\dfrac{f^{(k)}(0)}{k!}x^k+\int_0^x\frac{(t-x)^{n-1}}{(n-1)!}f^{(n)}(t)dt=\int_0^x\frac{(x-t)^{n-1}}{(n-1)!}f^{(n)}(t)dt$$
+	Si $x\ne 0$ on effectue le changement de variable $u=\dfrac{t}{x}$ :\\
+	$f(x)=\displaystyle\int_0^1\frac{(x-xu)^{n-1}}{(n-1)!}f^{(n)}(xu)(xdu)=x^n\int_0^1\frac{(1-u)^{n-1}}{(n-1)!}f^{(n)}(xu)du$.\\
+	Posons alors $g:x\mapsto \displaystyle\int_0^1\frac{(1-u)^{n-1}}{(n-1)!}f^{(n)}(xu)du$. On sait que $\forall x\in \R,\ f(x)=x^ng(x)$.\\
+	En outre, pour tout $u\in [0,1]$ la fonction $x\mapsto \dfrac{(1-u)^{n-1}}{(n-1)!}f^{(n)}(xu)$ est de classe $\mathcal C^\infty$ sur $\R$. Ainsi d'après le théorème de transfert de classe $\mathcal C^\infty$, $g$ est de classe $\mathcal C^\infty$ sur $\R$ (on peut dominer sur tout segment $[-a,a]$ de $\R$ par $\sup\limits_{[-a,a]}|f^{(n)}|$ par exemple) donc ceci conclut.
+	
+	\subsection{Lemme d'Hadamard (2) \xens{4}}
+	\label{Lemme d'Hadamard (2) corrigé}
+	\textcolor{blue}{\hyperref[Lemme d'Hadamard (2)]{[Enoncé]}}\\
 	
 	\subsection{Intégrale des puissances d'une fonction \centraleponts{3}}
 	\label{Intégrale des puissances d'une fonction corrigé}
