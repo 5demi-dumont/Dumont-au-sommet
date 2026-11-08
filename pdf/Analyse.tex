@@ -4595,23 +4595,22 @@ Soit $x\in\, ]0,1]$.
 	\end{enumerate}
 \end{enumerate}
 
-\section{Lemme d'Hadamard (1) \centraleponts{2}}
-\textcolor{blue}{\hyperref[Lemme d'Hadamard (1) corrigé]{[Corrigé]}}\\
-\label{Lemme d'Hadamard (1)}
-Soient $n\geq 1$ et $f\in \mathcal C^\infty(\R,\R)$. Démontrer l'équivalence des propositions suivantes :
-\begin{itemize}
-	\item $f(0)=f'(0)=\cdots=f^{(n-1)}(0)=0$
-	\item $\exists g\in \mathcal C^\infty(\R,\R),\ \forall x\in \R,\ f(x)=x^ng(x)$.
-\end{itemize}
-
-\section{Lemme d'Hadamard (2) \xens{4}}
-\textcolor{blue}{\hyperref[Lemme d'Hadamard (2) corrigé]{[Corrigé]}}\\
-\label{Lemme d'Hadamard (2)}
-Soient $n\geq 1$ et $f\in \mathcal C^\infty(\R^n,\R)$. Démontrer l'équivalence des propositions suivantes :
-\begin{itemize}
-	\item $f(0)=0$ et $df(0)=0$
-	\item $\exists (g_{i,j})_{1\leq i,j\leq n}\in \mathcal C^\infty(\R^n,\R),\ \forall x=(x_1,\dots,x_n)\in \R^n,\ f(x)=\displaystyle\sum_{1\leq i,j\leq n}x_ix_jg_{i,j}(x)$.
-\end{itemize}
+\section{Lemme d'Hadamard \centraleponts{4}}
+\textcolor{blue}{\hyperref[Lemme d'Hadamard corrigé]{[Corrigé]}}\\
+\label{Lemme d'Hadamard}
+\begin{enumerate}
+	\item Soient $n\geq 1$ et $f\in \mathcal C^\infty(\R,\R)$. Démontrer l'équivalence des propositions suivantes :
+	\begin{itemize}
+		\item $f(0)=f'(0)=\cdots=f^{(n-1)}(0)=0$
+		\item $\exists g\in \mathcal C^\infty(\R,\R),\ \forall x\in \R,\ f(x)=x^ng(x)$.
+	\end{itemize}
+	\item Soient $n\geq 1$ et $f\in \mathcal C^\infty(\R^n,\R)$. Démontrer l'équivalence des propositions suivantes :
+	\begin{itemize}
+		\item $f(0)=0$ et $df(0)=0$
+		\item $\exists (g_{i,j})_{1\leq i,j\leq n}\in \mathcal C^\infty(\R^n,\R),\ \forall x=(x_1,\dots,x_n)\in \R^n,\ f(x)=\displaystyle\sum_{1\leq i,j\leq n}x_ix_jg_{i,j}(x)$.
+	\end{itemize}
+	On pourra écrire la formule de Taylor reste intégral pour $g:t\mapsto f(tx)$.
+\end{enumerate}
 
 \section{Intégrale des puissances d'une fonction \centraleponts{3}}
 \textcolor{blue}{\hyperref[Intégrale des puissances d'une fonction corrigé]{[Corrigé]}}\\
@@ -11428,23 +11427,34 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{sec:serie-de-engel}
 	\textcolor{blue}{\hyperref[Série de Engel]{[Enoncé]}}\\
 	
-	\subsection{Lemme d'Hadamard (1) \centraleponts{2}}
-	\label{Lemme d'Hadamard (1) corrigé}
-	\textcolor{blue}{\hyperref[Lemme d'Hadamard (1)]{[Enoncé]}}\\
-	Supposons qu'il existe $g\in \mathcal C^\infty(\R,\R)$ telle que $\forall x\in \R,\ f(x)=x^ng(x)$.\\
-	Alors d'après la formule de Leibniz, $\forall x\in \R,\ \forall k\in \crblanc{0}{n-1},\ f^{(k)}(x)=\displaystyle\sum_{j=0}^k\binom{k}{j}\frac{n!}{(n-j)!}x^{n-j}g^{(k-j)}(x)$.\\
-	$(\forall j\in \crblanc{0}{k},\ n-j>0)\implies f^{(k)}(0)=\displaystyle\sum_{j=0}^k0=0$.\\
-	Réciproquement, supposons que $f(0)=f'(0)=\cdots=f^{(n-1)}(0)=0$.\\
-	Alors d'après la formule de Taylor avec reste intégral :
-	$$\forall x\in \R,\ f(x)=\displaystyle\sum_{k=0}^{n-1}\dfrac{f^{(k)}(0)}{k!}x^k+\int_0^x\frac{(t-x)^{n-1}}{(n-1)!}f^{(n)}(t)dt=\int_0^x\frac{(x-t)^{n-1}}{(n-1)!}f^{(n)}(t)dt$$
-	Si $x\ne 0$ on effectue le changement de variable $u=\dfrac{t}{x}$ :\\
-	$f(x)=\displaystyle\int_0^1\frac{(x-xu)^{n-1}}{(n-1)!}f^{(n)}(xu)(xdu)=x^n\int_0^1\frac{(1-u)^{n-1}}{(n-1)!}f^{(n)}(xu)du$.\\
-	Posons alors $g:x\mapsto \displaystyle\int_0^1\frac{(1-u)^{n-1}}{(n-1)!}f^{(n)}(xu)du$. On sait que $\forall x\in \R,\ f(x)=x^ng(x)$.\\
-	En outre, pour tout $u\in [0,1]$ la fonction $x\mapsto \dfrac{(1-u)^{n-1}}{(n-1)!}f^{(n)}(xu)$ est de classe $\mathcal C^\infty$ sur $\R$. Ainsi d'après le théorème de transfert de classe $\mathcal C^\infty$, $g$ est de classe $\mathcal C^\infty$ sur $\R$ (on peut dominer sur tout segment $[-a,a]$ de $\R$ par $\sup\limits_{[-a,a]}|f^{(n)}|$ par exemple) donc ceci conclut.
-	
-	\subsection{Lemme d'Hadamard (2) \xens{4}}
-	\label{Lemme d'Hadamard (2) corrigé}
-	\textcolor{blue}{\hyperref[Lemme d'Hadamard (2)]{[Enoncé]}}\\
+	\subsection{Lemme d'Hadamard \centraleponts{4}}
+	\label{Lemme d'Hadamard corrigé}
+	\textcolor{blue}{\hyperref[Lemme d'Hadamard]{[Enoncé]}}\\
+	\begin{enumerate}
+		\item Supposons qu'il existe $g\in \mathcal C^\infty(\R,\R)$ telle que $\forall x\in \R,\ f(x)=x^ng(x)$.\\
+		Alors d'après la formule de Leibniz, $\forall x\in \R,\ \forall k\in \crblanc{0}{n-1},\ f^{(k)}(x)=\displaystyle\sum_{j=0}^k\binom{k}{j}\frac{n!}{(n-j)!}x^{n-j}g^{(k-j)}(x)$.\\
+		$(\forall j\in \crblanc{0}{k},\ n-j>0)\implies f^{(k)}(0)=\displaystyle\sum_{j=0}^k0=0$.\\
+		Réciproquement, supposons que $f(0)=f'(0)=\cdots=f^{(n-1)}(0)=0$.\\
+		$f$ est de classe $\mathcal C^n$ sur $\R$ donc d'après la formule de Taylor avec reste intégral :
+		$$\forall x\in \R,\ f(x)=\displaystyle\sum_{k=0}^{n-1}\dfrac{f^{(k)}(0)}{k!}x^k+\int_0^x\frac{(t-x)^{n-1}}{(n-1)!}f^{(n)}(t)dt=\int_0^x\frac{(x-t)^{n-1}}{(n-1)!}f^{(n)}(t)dt$$
+		Si $x\ne 0$ on effectue le changement de variable $u=\dfrac{t}{x}$ :\\
+		$f(x)=\displaystyle\int_0^1\frac{(x-xu)^{n-1}}{(n-1)!}f^{(n)}(xu)(xdu)=x^n\int_0^1\frac{(1-u)^{n-1}}{(n-1)!}f^{(n)}(xu)du$.\\
+		Posons alors $g:x\mapsto \displaystyle\int_0^1\frac{(1-u)^{n-1}}{(n-1)!}f^{(n)}(xu)du$. On sait que $\forall x\in \R,\ f(x)=x^ng(x)$.\\
+		En outre, pour tout $u\in [0,1]$ la fonction $x\mapsto \dfrac{(1-u)^{n-1}}{(n-1)!}f^{(n)}(xu)$ est de classe $\mathcal C^\infty$ sur $\R$. Ainsi d'après le théorème de transfert de classe $\mathcal C^\infty$, $g$ est de classe $\mathcal C^\infty$ sur $\R$ (on peut dominer sur tout segment $[-a,a]$ de $\R$ par $\sup\limits_{[-a,a]}|f^{(n)}|$ par exemple) donc ceci conclut.
+		\item On rappelle que pour une fonction $f:\R^n\to \R$ de classe $\mathcal C^1$, $\forall x,h\in \R^n,\ df(x)\cdot h=\displaystyle\sum_{i=1}^n\frac{\partial f}{\partial x_i}(x)h_i$.\\
+		Supposons qu'il existe $(g_{i,j})_{1\leq i,j\leq n}\in \mathcal C^\infty(\R^n,\R)$ telles que $\forall x\in \R^n,\ f(x)=\displaystyle\sum_{1\leq i,j\leq n}x_ix_jg_{ij}(x)$.\\
+		Evidemment $f(0)=0$. Pour montrer que $df(0)=0$ il suffit de montrer que toutes les dérivées partielles de $f$ sont nulles en $0$.\\
+		$\forall k\in \crblanc{1}{n},\ \forall x\in \R^n,\ \dfrac{\partial f}{\partial x_k}(x)=\displaystyle\sum_{1\leq i,j\leq n}x_ix_j\frac{g_{ij}}{\partial x_k}(x)+2\sum_{i=1}^nx_ig_{ij}(x)$. Donc $\forall k\in \crblanc{1}{n},\ \dfrac{\partial f}{\partial x_k}(0)=0$.\\
+		réciproquement, supposons que $f(0)=0$ et $df(0)=0$. Fixons $x\in \R^n$.\\
+		$\fonction{g}{\R}{\R}{t}{f(tx)}$ est de classe $\mathcal C^2$ sur $\R$ donc par la formule de Taylor reste intégral :
+		$$\forall t\in \R,\ g(t)=g(0)+g'(0)t+\int_0^t(t-u)g''(u)du$$
+		$g(0)=f(0)=0$. Calculons $g'$ et $g''$. On note $\gamma:t\mapsto tx$.\\
+		$g=f\circ \gamma$ donc $\forall t\in \R,\ g'(t)=df(\gamma(t))\cdot\gamma'(t)=df(tx)\cdot x=\displaystyle\sum_{i=1}^n\frac{\partial f}{\partial x_i}(tx)x_i$.\\
+		Donc $g'(0)=df(0)\cdot x=0$. Puis pour tout $i$, $\dfrac{\partial f}{\partial x_i}$ est de classe $\mathcal C^1$ donc par le même calcul, $\forall t\in \R,\ g''(t)=\displaystyle\sum_{i=1}^n\left(\sum_{j=1}^n\frac{\partial f}{\partial x_j\partial x_i}(tx)x_j\right)x_i=\sum_{1\leq i,j\leq n}x_ix_j\frac{\partial f}{\partial x_j\partial x_i}(tx)$.\\
+		Ainsi en évaluant en $t=1$ :
+		$$f(x)=\sum_{1\leq i,j\leq n}x_ix_j\int_0^1(1-u)\frac{\partial f}{\partial x_j\partial x_i}(ux)du$$
+		On pose alors $g_{ij} : x\mapsto \displaystyle\int_0^1(1-u)\frac{\partial f}{\partial x_j\partial x_i}(ux)du$. Ces fonctions sont $\mathcal C^\infty$ par le théorème de transfert $\mathcal C^\infty$ des intégrales à paramètre.
+	\end{enumerate}
 	
 	\subsection{Intégrale des puissances d'une fonction \centraleponts{3}}
 	\label{Intégrale des puissances d'une fonction corrigé}
