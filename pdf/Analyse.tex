@@ -362,9 +362,14 @@
 	\label{Nature d'une suite}
 	Déterminer la nature de la suite $(\sin n)_{n\in \N}$.
 	
-	\section{Valeurs d'adhérence d'une suite \centraleponts{4}}
-	\label{Valeurs d'adhérence d'une suite}
-	\textcolor{blue}{\hyperref[sec:valeurs-dadherence-dune-suite]{[Corrigé]}}\\
+	\section{Etude d'une suite avec une condition de convergence}
+	\textcolor{blue}{\hyperref[Etude d'une suite avec une condition de convergence corrigé]{[Corrigé]}}\\
+	\label{Etude d'une suite avec une condition de convergence}
+	Soit $(u_n)_{n\in \N}$ une suite de réels positifs ou nuls telle que $n(u_n+u_{2n})\unfty\longrightarrow 1$. Montrer que $(nu_n)_{n\in \N}$ converge et calculer sa limite.
+	
+	\section{Valeurs d'adhérences d'une suite \centraleponts{4}}
+	\label{Valeurs d'adhérences d'une suite}
+	\textcolor{blue}{\hyperref[Valeurs d'adhérences d'une suite corrigé]{[Corrigé]}}\\
 	On pose pour $n\in \N^*,\ z_n=\displaystyle\prod_{k=1}^n\left(1+\frac{i}{k}\right)$.
 	\begin{enumerate}
 		\item Rappeler le théorème de sommation de relation de comparaison pour des suites équivalentes.
@@ -373,36 +378,41 @@
 	\end{enumerate}
 	
 	\section{Nature d'une série (1) \ccinp{1}}
-	\textcolor{blue}{\hyperref[sec:nature-dune-serie-1etoile1]{[Corrigé]}}\\
-	\label{Nature d'une série 1}
+	\label{Nature d'une série (4)}
+	\textcolor{blue}{\hyperref[Nature d'une série (4) corrigé]{[Corrigé]}}\\
 	Déterminer la nature de la série $\displaystyle\sum\limits_{n\geq 0} \sin\left(\pi\sqrt{1+n^2}\right)$.
 	
 	\section{Nature d'une série (2) \telecom{2}}
-	\textcolor{blue}{\hyperref[sec:nature-dune-serie-2-etoile2]{[Corrigé]}}\\
-	\label{Nature d'une série 2}
+	\label{Nature d'une série (4)}
+	\textcolor{blue}{\hyperref[Nature d'une série (4) corrigé]{[Corrigé]}}\\
 	Déterminer la nature de la série $\displaystyle\sum\limits_{n\geq 0}\sin\left(\pi(2+\sqrt 3)^n\right)$.
 	\\On pourra s'intéresser pour $n\in \N$ à la quantité $(2+\sqrt 3)^n+(2-\sqrt 3)^n$.
 	
 	\section{Nature d'une série (3) \centraleponts{3}}
-	\textcolor{blue}{\hyperref[sec:nature-dune-serie-3-etoile3]{[Corrigé]}}\\
-	\label{Nature d'une série 3}
+	\label{Nature d'une série (4)}
+	\textcolor{blue}{\hyperref[Nature d'une série (4) corrigé]{[Corrigé]}}\\
 	Déterminer la nature de la série $\displaystyle\sum_{n\geq 1}\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ en fonction de la valeur de $\alpha\in \R$.
 	
-	\section{Nature d'une série (4) \xens{3}}
-	\label{Nature d'une série 4}
-	\textcolor{blue}{\hyperref[sec:nature-dune-serie-4]{[Corrigé]}}\\
+	\section{Nature d'une série (4)}
+	\label{Nature d'une série (4)}
+	\textcolor{blue}{\hyperref[Nature d'une série (4) corrigé]{[Corrigé]}}\\
+	Déterminer la nature de la série $\displaystyle\sum_{n\in \N}\sin(\pi en!)$.
+	
+	\section{Nature d'une série (5) \xens{4}}
+	\label{Nature d'une série (5)}
+	\textcolor{blue}{\hyperref[Nature d'une série (5) corrigé]{[Corrigé]}}\\
 	Soit $(\alpha_n)_{n\in \N^*}$ une suite d'entiers strictement positifs deux à deux distincts. Déterminer la nature de la série
 	$$\sum_{n\geq 1}\frac{\alpha_n}{n^2}$$
 	
-	\section{Nature d'une série (5) \xens{3}}
-	\label{Nature d'une série 5}
-	\textcolor{blue}{\hyperref[sec:nature-dune-serie-5]{[Corrigé]}}\\
+	\section{Nature d'une série (6) \xens{4}}
+	\label{Nature d'une série (6)}
+	\textcolor{blue}{\hyperref[Nature d'une série (6) corrigé]{[Corrigé]}}\\
 	Soit $(a_n)_{n\in \N^*}$ une suite strictement croissante d'entiers naturels non nuls.\\
 	Déterminer la nature de la série $\displaystyle\sum\limits_{n\geq 1}\frac{1}{\ppcm(a_1,\dots,a_n)}$.
 	
-	\section{Nature d'une série (6) \xens{3}}
-	\label{Nature d'une série 6}
-	\textcolor{blue}{\hyperref[sec:nature-dune-serie-6]{[Corrigé]}}\\
+	\section{Nature d'une série (7) \xens{3}}
+	\label{Nature d'une série (7)}
+	\textcolor{blue}{\hyperref[Nature d'une série (7) corrigé]{[Corrigé]}}\\
 	On appelle nombre \textit{palindrome} tout entier naturel non nul dont l'écriture décimale est un palindrome : par exemple 3,11,161 et 5225 sont des nombres palindromes alors que 32 n'en est pas un car $32\ne 23$.\\
 	On note $P$ l'ensemble des nombres palindromes.\\
 	Déterminer la nature de la série $\displaystyle\sum_{n\in P}\frac{1}{n}$.
@@ -5051,9 +5061,18 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Par unicité de la limite on a $(1-\ell^2)\sin(1)^2=\ell^2(\cos(1)-1)^2$. Pourtant $\ell=0$ et $\ell^2=\dfrac{1}{2}$ ne satisfont pas cette équation.
 	Ceci est absurde donc $(\sin(n))_{n\in \N}$ diverge.
 	
-	\subsection{Valeurs d'adhérence d'une suite \centraleponts{4}}
-	\label{sec:valeurs-dadherence-dune-suite}
-	\textcolor{blue}{\hyperref[Valeurs d'adhérence d'une suite]{[Enoncé]}}
+	\subsection{Etude d'une suite avec une condition de convergence}
+	\label{Etude d'une suite avec une condition de convergence corrigé}
+	\textcolor{blue}{\hyperref[Etude d'une suite avec une condition de convergence]{[Enoncé]}}\\
+	Posons $v_n=nu_n$. $n(u_n+u_{2n})\unfty\longrightarrow 1\iff v_n+\dfrac{1}{2}v_{2n}\unfty\longrightarrow 1$.\\
+	Montrons que $(v_n)$ n'a qu'une seule valeur d'adhérence. Si $\ell$ est une valeur d'adhérence de $(v_n)$ alors par unicité de la limite $\ell+\dfrac{\ell}{2}=1$ i.e $\ell=\dfrac{2}{3}$.\\
+	Reste à montrer que $(v_n)$ admet une valeur d'adhérence. Si on montre que $(v_n)$ est bornée alors elle admet une valeur d'adhérence par le théorème de Bolzano-Weierstrass. Supposons par l'absurde que $(v_n)$ n'est pas bornée.\\
+	Alors $\forall N\in \N,\ \exists n\geq N,\ v_n\geq 2$, et donc puisque $v_n\geq 0$ pour tout $n$, $|v_n+v_{2n}-1|=v_n+v_{2n}-1\geq 1$. Ceci contredit la définition de la limite d'une suite pour $\varepsilon=1$ donc on en déduit que $(v_n)$ est bornée.\\
+	Finalement $v_n\unfty\longrightarrow \dfrac{2}{3}$.
+	
+	\subsection{Valeurs d'adhérences d'une suite \centraleponts{4}}
+	\label{Valeurs d'adhérences d'une suite corrigé}
+	\textcolor{blue}{\hyperref[Valeurs d'adhérences d'une suite]{[Enoncé]}}
 	\begin{enumerate}[leftmargin=*]
 		\item Soient $(u_n)_{n\in \N}$ et $(v_n)_{n\in \N}$ deux suites réelles équivalentes avec $(v_n)$ de signe constant APCR. Alors les séries $\displaystyle\sum_{n\in \N}u_n$ et $\displaystyle\sum_{n\in \N}v_n$ sont de même nature.
 		\item Soit $n\in \N^*$.\\
@@ -5079,8 +5098,8 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\end{enumerate}
 	
 	\subsection{Nature d'une série (1) \ccinp{1}}
-	\label{sec:nature-dune-serie-1etoile1}
-	\textcolor{blue}{\hyperref[Nature d'une série 1]{[Enoncé]}}\\
+	\label{Nature d'une série (1) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une série (1)]{[Enoncé]}}\\
 	On remarque que: \begin{align*}
 		\sin\left(\pi\sqrt{1+n^2}\right)&\ \ \ =\ \ \ \sin\left(\pi n\sqrt{1+\frac{1}{n^2}}\right)\\
 		&\unfty{=}\sin\left(\pi n\left[1+\frac{1}{2n^2}+\bigO{\frac{1}{n^3}}\right]\right)\\
@@ -5091,8 +5110,8 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\\Donc $\displaystyle\sum\limits_{n\geq 0}\sin(\pi\sqrt{1+n^2})$ converge.
 	
 	\subsection{Nature d'une série (2) \telecom{2}}
-	\label{sec:nature-dune-serie-2-etoile2}
-	\textcolor{blue}{\hyperref[Nature d'une série 2]{[Enoncé]}}\\
+	\label{Nature d'une série (2) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une série (2)]{[Enoncé]}}\\
 	Soit $n\in \N$. En séparant les deux sommes en termes impairs et pairs,\\
 	$(2+\sqrt 3)^n+(2-\sqrt 3)^n=\displaystyle\sum_{k=0}^n\binom{n}{k}\sqrt{3}^k2^{n-k}+\sum_{k=0}^n\binom{n}{k}(-1)^k\sqrt{3}^k2^{n-k}=\sum_{k=0}^{\lfloor n/2\rfloor}\binom{n}{2k}3^k2^{n-2k+1}:=K_n\in \Z$.\\
 	Donc \begin{align*}
@@ -5104,8 +5123,8 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	La série $\displaystyle\sum_{n\in \N}(2-\sqrt 3)^n$ est à termes positifs et convergente donc par théorème de comparaison $\displaystyle\sum_{n\in \N}\sin((2+\sqrt 3)^n)$ est absolument convergente.
 	
 	\subsection{Nature d'une série (3) \centraleponts{3}}
-	\label{sec:nature-dune-serie-3-etoile3}
-	\textcolor{blue}{\hyperref[Nature d'une série 3]{[Enoncé]}}\\
+	\label{Nature d'une série (3) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une série (3)]{[Enoncé]}}\\
 	Soit $\alpha\in \R$. Soit $n\in \N^*$.\\
 	Remarquons déjà que $\displaystyle\frac{n^\alpha}{1+n^\alpha}\in [0,1]$ donc $\displaystyle\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ est bien défini.\\
 	Si $\alpha<0$, $\displaystyle\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)\unfty\longrightarrow\arccos(0)=\frac{\pi}{2}$.\\
@@ -5119,8 +5138,22 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	On en déduit que $\displaystyle\sum_{n\in \N}\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ converge si et seulement si $\alpha>2$.
 	
 	\subsection{Nature d'une série (4) \xens{3}}
-	\label{sec:nature-dune-serie-4}
-	\textcolor{blue}{\hyperref[Nature d'une série 4]{[Enoncé]}}\\
+	\label{Nature d'une série (4) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une série (4)]{[Enoncé]}}\\
+	Soit $n\in \N$. $en!=\displaystyle\sum_{k=0}^{+\infty}\frac{n!}{k!}=a_n+\sum_{k=n+1}^{+\infty}\frac{n!}{k!}$ avec $a_n=\displaystyle\sum_{k=0}^n\frac{n!}{k!}\in \N$. Donc,\\
+	$\sin(\pi en!)=\sin(\pi a_n+\pi(en!-a_n))=\sin(\pi a_n)\cos(\pi(en!-a_n))+\cos(\pi a_n)\sin(\pi(en!-a_n))=(-1)^{a_n}\sin(\pi(en!-a_n))$.\\
+	Naturellement en premier lieu on se demande si on peut montrer la convergence absolue. Cependant on se heurte à un problème :\\ $en!-a_n=\displaystyle\frac{1}{n+1}+\frac{1}{(n+1)(n+2)}+\sum_{k=n+3}\frac{n!}{k!}$.\\
+	Donc $\left|en!-a_n-\displaystyle\frac{1}{n+1}\right|\leq \frac{1}{n^2}+\sum_{k=n+3}^{+\infty}\frac{1}{k^3}=\smallo{\frac{1}{n}}$ donc $en!-a_n=\displaystyle\frac{1}{n}+\smallo{\frac{1}{n}}\unfty\sim\frac{1}{n}$.\\
+	Ainsi $|\sin(\pi en!)|\unfty\sim\dfrac{1}{n}$ et la série ne converge pas absolument.\\
+	Utilisons le critère spécial des séries alternées.\\
+	Tout d'abord déterminons la parité de $a_n$ en fonction de celle de $n$.\\ $a_n=\displaystyle\sum_{k=0}^{n-2}\frac{n!}{k!}+n+1\equiv n+1[2]$ puisque $2|n(n-1)|\displaystyle\sum_{k=0}^{n-2}\frac{n!}{k!}$. Ainsi $(-1)^{a_n}=(-1)^{n+1}$.\\
+	Ensuite, $\sin(\pi(en!-a_n))\unfty\longrightarrow 0$.\\
+	Enfin, comme $\sin$ est croissante sur $\left[0,\dfrac{\pi}{2}\right]$ et comme APCR $\pi(en!-a_n)\in \left[0,\dfrac{\pi}{2}\right]$, APCR la monotonie de $(\sin(\pi(en!-a_n)))$ est celle de $(en!-a_n)=\left(\displaystyle\sum_{k=n+1}^{+\infty}\frac{n!}{k!}\right)$. On calcule :\\ $\displaystyle\sum_{k=n+2}^{+\infty}\frac{(n+1)!}{k!}-\sum_{k=n+1}^{+\infty}\frac{n!}{k!}=(n+1)\sum_{k=n+2}^{+\infty}\frac{n!}{k!}-\sum_{k=n+1}^{+\infty}\frac{n!}{k!}=\sum_{k=n+2}^{+\infty}\frac{nn!}{k!}-\frac{1}{n+1}\geq \frac{n}{(n+1)(n+2)}-\frac{1}{n+1}\geq 0$.\\
+	Ainsi $(\sin(\pi(en!-a_n)))$ est croissante APCR d'où la convergence par le critère spécial des séries alternées.
+	
+	\subsection{Nature d'une série (5) \xens{4}}
+	\label{Nature d'une série (5) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une série (5)]{[Enoncé]}}\\
 	Le premier cas qui saute aux yeux est celui pour $\alpha_k=k$ où on retrouve la série harmonique qui diverge. On peut alors penser à montrer la divergence de notre série de la même manière que pour la série harmonique
 	Soit $n\in \N^*$. Notons $(S_n)_{n\in \N^*}$ la suite des sommes partielles.
 	$$S_{2n}-S_n=\sum_{k=n+1}^{2n}\frac{\alpha_k}{k^2}\geq \sum_{k=n+1}^{2n}\frac{\alpha_k}{4n^2}\geq\frac{1}{4n^2}\sum_{k=1}^nk=\frac{n+1}{8n}\geq \frac{1}{8}$$
@@ -5139,18 +5172,18 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	L'application $\sigma:k\in\crblanc{1}{n}\mapsto \beta_k$ est alors une bijection de $\S_n$.\\
 	D'après le lemme appliqué à $a_i=\dfrac{1}{i^2}$ et $b_i=i$ on a alors $\displaystyle\sum_{k=1}^n\frac{\alpha_k}{k^2}\geq \sum_{k=1}^n\frac{k}{k^2}=\sum_{k=1}^n\frac{1}{k}\unfty\longrightarrow+\infty$.
 	
-	\subsection{Nature d'une série (5) \xens{3}}
-	\label{sec:nature-dune-serie-5}
-	\textcolor{blue}{\hyperref[Nature d'une série 5]{[Enoncé]}}\\
+	\subsection{Nature d'une série (6) \xens{4}}
+	\label{Nature d'une série (6) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une série (6)]{[Enoncé]}}\\
 	Soit $n\geq 2$ un entier.\\
 	$\ppcm(a_1,\dots,a_n)\geq \ppcm(a_{n-1},a_n)=\displaystyle\frac{a_{n-1}a_n}{\pgcd(a_{n-1}a_n)}>0$.\\
 	Or on remarque que $\pgcd(a_{n-1},a_n)|a_n-a_{n-1}>0$. Donc $\pgcd(a_{n-1},a_n)\leq a_n-a_{n-1}$ d'où $\displaystyle\frac{\pgcd(a_{n-1},a_n)}{a_{n-1}a_n}\leq\frac{a_n-a_{n-1}}{a_{n-1}a_n}=\frac{1}{a_{n-1}}-\frac{1}{a_n}$.\\
 	On montre par récurrence que pour tout $n\in \N^*,\ a_n\geq a_1+n-1$ et on en déduit que $a_n\unfty{\longrightarrow}+\infty$.\\
 	Ainsi $\displaystyle\sum\limits_{n\geq 2}\frac{1}{\ppcm(a_1,\dots,a_n)}$ est une série à termes positifs majorée $\left(\text{par }\displaystyle\sum\limits_{n=2}^{+\infty}\frac{1}{a_{n-1}}-\frac{1}{a_n}=\frac{1}{a_1}\right)$ : elle converge.
 	
-	\subsection{Nature d'une série (6) \xens{3}}
-	\label{sec:nature-dune-serie-6}
-	\textcolor{blue}{\hyperref[Nature d'une série 6]{[Enoncé]}}\\
+	\subsection{Nature d'une série (7) \xens{3}}
+	\label{Nature d'une série (7) corrigé}
+	\textcolor{blue}{\hyperref[Nature d'une série (7)]{[Enoncé]}}\\
  	On va partitionner $P$ suivant le nombre de chiffres de ces éléments. Notons pour $d\in \N^*,\ A_d$ l'ensemble des nombres palindromes à $d$ chiffres ainsi que $N(d)=|A_d|$. Tous les termes étant positifs d'après le théorème de sommation par paquets :\\
 	$$\sum_{n\in P}\frac{1}{n}=\sum_{d=1}^{+\infty}\sum_{n\in A_d}\frac{1}{n}$$
 	Fixons $d\in \N^*$. $\forall n\in A_d,\ 10^{d-1}\leq n<10^d$ donc $\displaystyle\sum_{n\in A_d}\frac{1}{n}\leq \frac{N(d)}{10^{d-1}}$.	Calculons maintenant $N(d)$.\\
@@ -11460,10 +11493,13 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{Intégrale des puissances d'une fonction corrigé}
 	\textcolor{blue}{\hyperref[Intégrale des puissances d'une fonction]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item Le rayon de convergence $R$ d'une série entière $\displaystyle\sum_{n\in \N}a_nx^n$ est défini par $$R=\sup\{\rho\geq 0,\ (a_n\rho^n)_{n\in \N}\T{ est bornée}\}=\inf\{\rho\geq 0,\ \displaystyle\sum_{n\in \N}a_n\rho^n\T{ diverge grossièrement}\}$$
+		\item Le rayon de convergence $R$ d'une série entière $\displaystyle\sum_{n\in \N}a_nx^n$ est défini par $$R=\sup\{\rho\geq 0,\ (a_n\rho^n)_{n\in \N}\text{ est bornée}\}(=\inf\{\rho\geq 0,\ \displaystyle\sum_{n\in \N}a_n\rho^n\text{ diverge grossièrement}\})$$
 		\item $f$ étant continue sur un segment elle est bornée. On note $\normep{\infty}{f}=\sup\limits_{[0,1]}|f|>0$.\\
 		On remarque que $\forall n\in \N,\ \left|I_n\cdot\normep{\infty}{f}^{-n}\right|\leq\displaystyle\int_0^1\left(\frac{|f(t)|}{\normep{\infty}{f}}\right)^ndt\leq 1$. Donc $R\geq \normep{\infty}{f}^{-1}$.\\
-		De plus, pour tout $\rho>\normep{\infty}{f}^{-1},\ I_n\rho^n>\displaystyle\int_0^1dt=1$. Donc $\displaystyle\sum_{n\in \N}I_n\rho^n$ diverge grossièrement.\\
+		Ensuite fixons $\rho>\normep{\infty}{f}^{-1}$. Comme $f$ est continue et positive, par le théorème des bornes atteintes il existe $x\in [0,1]$ tel que $f(x)=\normep{\infty}{f}$.\\
+		Alors $f(x)\rho>1$ et, toujours par continuité de $f$, il existe $\varepsilon>0$ et un intervalle $J\subset [0,1]$ de longueur $\varepsilon$ contenant $x$ tel que $\forall t\in J,\ f(t)\rho\geq \dfrac{1+f(x)\rho}{2}:=\alpha>1$. (prendre $J=\ \left]x-\dfrac{\varepsilon}{2},x+\dfrac{\varepsilon}{2}\right[$ pose problème si $x\in\{0,1\}$)\\
+		Ainsi $|I_n\rho^n|=\displaystyle\int_0^1(f(t)\rho)^ndt\geq \int_J(f(t)\rho)^ndt\geq \int_J\alpha^ndt=\varepsilon\alpha^n\unfty\longrightarrow+\infty$.\\
+		Donc $(I_n\rho^n)_{n\in \N}$ n'est par bornée.\\
 		Ainsi $R=\normep{\infty}{f}^{-1}$.
 		\item Soit $n\in \N^*$. On sait que $\proscal{f}{g}=\displaystyle\int_0^1f(t)g(t)dt$ définit un produit scalaire sur $\mathcal C^0([0,1],\R)$.\\
 		On rappelle que $f$ est positive donc par l'inégalité de Cauchy-Schwarz :
