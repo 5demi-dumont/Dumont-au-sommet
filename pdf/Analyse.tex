@@ -109,24 +109,26 @@
 	\textcolor{blue}{\hyperref[Lemme de Cesàro corrigé]{[Corrigé]}}\\
 	\label{Lemme de Cesàro}
 	Soit $(u_n)\in \C^\N$ une suite de limite $\ell\in \overline{\R}$.\\
-	Démontrer que $(\sigma_n)_{n\in \N}$ définie par $\forall n \in \N,\  \sigma_n=\displaystyle\frac{1}{n+1}\displaystyle\sum\limits_{k=0}^nu_k$  tend également vers $\ell$.
+	Démontrer que $(\sigma_n)_{n\in \N}$ définie par $\forall n\in \N,\ \sigma_n=\displaystyle\frac{1}{n+1}\sum_{k=0}^nu_k$ tend également vers $\ell$.
 	
-	\subsection{Lemme de l'escalier\etoile{1}}
-	Montrer que si $(u_{n+1}-u_n)_{n\in \N}$ tend vers un réel $\ell\ne0$. Alors $u_n\unfty\sim\ell n$.
+	\subsection{Lemme de l'escalier \etoile{1}}
+	\textcolor{blue}{\hyperref[Lemme de l'escalier corrigé]{[Corrigé]}}\\
+	\label{Lemme de l'escaclier}
+	Montrer que si $(u_{n+1}-u_n)_{n\in \N}$ tend vers un réel $\ell\ne 0$. Alors $u_n\unfty\sim\ell n$.
 	
 	\section{Théorèmes Taubériens d'Hardy \etoile{1}}
-	\textcolor{blue}{\hyperref[sec:theoremes-tauberiens-dhardy-etoile1]{[Corrigé]}}\\
+	\textcolor{blue}{\hyperref[Théorèmes Taubériens d'Hardy corrigé]{[Corrigé]}}\\
 	\label{Théorèmes Taubériens d'Hardy}
 	Soit $(u_n)_{n\in \N}$ une suite quelconque à valeurs complexe.
 	\\On pose $\forall n \in \N,\ \sigma_n=\displaystyle\frac{1}{n+1}\displaystyle\sum\limits_{k=0}^nu_k \ \text{et}\ \varepsilon_n=u_{n+1}-u_n$
 	\\Vérifier que la réciproque du lemme de Césarò n'est pas toujours vraie en exhibant une suite $(u_n) \in\R^\N$ qui ne converge pas et telle que $(\sigma_n)$ converge dans $\R$.
 	
-	\subsection{Hardy Faible \etoile{2}}
+	\subsection{Hardy Faible \telecom{2}}
 	Soit $\ell\in\C$.
 	\\Démontrer que si $\lim\limits_{n\to+\infty} \sigma_n=\ell$ et $\varepsilon_n\unfty{=}\smallo{\displaystyle\frac{1}{n}}$ alors $\lim\limits_{n\to+\infty} u_n=\ell$.
 	\\Indication: on pourra démontrer que pour tout $n\geq 1 \displaystyle\sum\limits_{k=0}^n k\varepsilon_k=nu_{n+1}-\sum\limits_{k=1}^nu_k$.
 	
-	\subsection{Hardy Fort \xens{3}}
+	\subsection{Hardy Fort \xens{4}}
 	Soit $(u_n)\in \C^\N$ et $\ell\in\C$.
 	\\On souhaite démontrer que si $\lim\limits_{n\to+\infty} \sigma_n=\ell$ et $\varepsilon_n\unfty{=}\bigO{\displaystyle\frac{1}{n}}$ alors $\lim\limits_{n\to+\infty} u_n=\ell$.
 	\begin{enumerate}[leftmargin=*]
@@ -138,7 +140,7 @@
 	\end{enumerate}
 	
 	\section{Série harmonique \ccinp{3}}
-	\textcolor{blue}{\hyperref[sec:serie-harmonique-etoile3]{[Corrigé]}}\\
+	\textcolor{blue}{\hyperref[Série harmonique corrigé]{[Corrigé]}}\\
 	\label{Série harmonique}
 	Soit $(H_n)_{n\in \N^*}$ la suite définie par $\forall n \in \N^*, \ H_n=\displaystyle\sum\limits_{k=1}^{n}\frac{1}{k}$.\\
 	\begin{enumerate}
@@ -527,13 +529,14 @@
 	On pose pour tout $n\in \N^*,\ u_n=\displaystyle\sum\limits_{k=1}^n\frac{\ln(k)}{k}-\frac{1}{2}\ln(n)^2$.
 	\begin{enumerate}[leftmargin=*]
 		\item Montrer que $(u_n)_{n\in \N^*}$ converge.
-		\item Calculer la somme $\displaystyle\sum\limits_{n=1}^{+\infty}\frac{(-1)^n\ln(n)}{n}$.
+		\item Justifier la convergence et calculer la somme de la série $\displaystyle\sum_{n\in \N^*}\frac{(-1)^n\ln(n)}{n}$.
 	\end{enumerate}
 	
-	\section{Calcul d'une somme de série (4)}
+	\section{Calcul d'une somme de série (4) \telecom{2}}
 	\label{Calcul d'une somme de série (4)}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (4) corrigé]{[Corrigé]}}\\
-	Justifier la convergence et calculer la somme de la série $\displaystyle\sum_{n\in \N^*}\arctan\left(\frac{1}{n^2+n+1}\right)$.
+	Justifier la convergence et calculer la somme de la série $\displaystyle\sum_{n\in \N}\arctan\left(\frac{1}{n^2+n+1}\right)$.\\
+	\textit{Indication : faire apparaître un télescopage.}
 	
 	\section{Calcul d'une somme de série (5)}
 	\label{Calcul d'une somme de série (5)}
@@ -548,7 +551,7 @@
 	\section{Calcul d'une somme de série (7) \centraleponts{2}}
 	\label{Calcul d'une somme de série (7)}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (7) corrigé]{[Corrigé]}}\\
-	Calculer la somme $\displaystyle\sum_{n=2}^{+\infty}\frac{\zeta(n)-1}{n}$ où $\zeta(n)=\displaystyle\sum_{k=1}^{+\infty}\frac{1}{k^n}$.
+	justifier la convergence et calculer la somme $\displaystyle\sum_{n=2}^{+\infty}\frac{\zeta(n)-1}{n}$ où $\zeta(n)=\displaystyle\sum_{k=1}^{+\infty}\frac{1}{k^n}$.
 	
 	\section{Calcul d'une somme de série (8) \xens{4}}
 	\label{Calcul d'une somme de série (8)}
@@ -4694,7 +4697,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 \chapter{Correction}
 
 \section{Correction Suite et série numérique}
-	\subsection{Lemme de Cesàro \etoile{2}}
+	\subsection{Lemme de Cesàro \ccinp{2}}
 	\label{Lemme de Cesàro corrigé}
 	\textcolor{blue}{\hyperref[Lemme de Cesàro]{[Enoncé]}}\\
 	Si $\ell\in \R$ alors $u_n-\ell\unfty{=}\smallo{1}$.\\
@@ -4706,25 +4709,28 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Ainsi $\forall n>\max(n_0,n_1),\ \displaystyle\frac{1}{n+1}\displaystyle\sum\limits_{k=0}^nu_k\geq A$.\\ Donc $\displaystyle\frac{1}{n+1}\displaystyle\sum\limits_{k=0}^nu_k\unfty{\longrightarrow}+\infty$.\\\\
 	Par le même raisonnement, si $\ell=-\infty$ alors $\displaystyle\frac{1}{n+1}\displaystyle\sum\limits_{k=0}^nu_k\unfty{\longrightarrow}-\infty$.
 	
-	\subsubsection{Lemme de l'escalier\etoile{1}}
+	\subsubsection{Lemme de l'escalier \etoile{1}}
+	\label{Lemme de l'escalier corrigé}
+	\textcolor{blue}{\hyperref[Lemme de l'escalier]{[Enoncé]}}\\
 	On remarque que $\forall n\in \N^*,\ \displaystyle\frac{1}{n}\sum_{k=0}^{n-1}(u_{k+1}-u_k)=\frac{1}{n}(u_n-u_0)$
 	\\Et d'après le lemme de Cesàro: $\displaystyle\lim_{n\to+\infty}\frac{1}{n}\sum_{k=0}^{n-1}(u_{k+1}-u_k)=\ell$
 	\\Ainsi $\displaystyle\lim_{n\to+\infty}\frac{1}{n}(u_n-u_0)=\ell$.
 	\\Par conséquent, $u_n\unfty\sim\ell n$.
 	
-	\subsection{Théorèmes Taubériens d'Hardy \etoile{1}}\label{sec:theoremes-tauberiens-dhardy-etoile1}
+	\subsection{Théorèmes Taubériens d'Hardy \etoile{1}}
+	\label{Théorèmes Taubériens d'Hardy corrigé}
 	\textcolor{blue}{\hyperref[Théorèmes Taubériens d'Hardy]{[Enoncé]}}\\
 	Posons pour tout $n\in \N,\ u_n=(-1)^n$.\\
 	$\forall n\in \N,\ \begin{cases}\sigma_{2n}=\displaystyle\frac{1}{2n+1}\\\sigma_{2n+1}=0\end{cases}$. Donc $\sigma_n\unfty{\longrightarrow}0$ alors que $(u_n)_{n\in \N}$ diverge.
 	
-	\subsubsection{Hardy Faible \etoile{2}}
+	\subsubsection{Hardy Faible \telecom{2}}
 	Soit $n\in \N$.\\
 	$\displaystyle\sum_{k=0}^nk\varepsilon_k=\sum_{k=1}^nk(u_{k+1}-u_k)=\sum_{k=1}^n(ku_{k+1}-(k-1)u_k)-\sum_{k=1}^nu_k=nu_{n+1}-\sum_{k=1}^nu_k$.\\
 	Donc $(n+1)\sigma_n-u_0=\displaystyle\sum_{k=1}^nu_k=nu_{n+1}-\sum_{k=1}^nk\varepsilon_k$ \\d'où $\forall n\geq 2,\ u_n=\displaystyle\frac{n}{n-1}\sigma_{n-1}+\frac{1}{n-1}\sum_{k=0}^{n-1}k\varepsilon_k-\frac{u_0}{n-1}$.\\
 	Or, $n\varepsilon_n\unfty{=}\smallo{1}$ et $\displaystyle\sum_{n\in \N}1$ diverge donc $\displaystyle\sum_{k=0}^{n-1}k\varepsilon_k\unfty{=}\smallo{\sum_{k=0}^{n-1}1}\unfty{=}\smallo{n}$.\\
 	Ainsi, $u_n\unfty{=}\ell+\smallo{1}$, c'est à dire $u_n\unfty{\longrightarrow}\ell$.
 	
-	\subsubsection{Hardy Fort \etoile{3}}
+	\subsubsection{Hardy Fort \xens{4}}
 	\begin{enumerate}[leftmargin=*]
 		\item
 		\begin{align*}
@@ -4758,12 +4764,12 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		C'est à dire $u_n\unfty\longrightarrow \ell$.
 	\end{enumerate}
 	
-	\subsection{Série Harmonique \etoile{3}}
-	\label{sec:serie-harmonique-etoile3}
-	\textcolor{blue}{\hyperref[Série Harmonique]{[Enoncé]}}\\
+	\subsection{Série harmonique \ccinp{3}}
+	\label{Série harmonique corrigé}
+	\textcolor{blue}{\hyperref[Série harmonique]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
 		\item \underline{Première méthode :} Sommation de relations de comparaisons\\
-		On remarque que $\ln(n+1)-\ln(n)=\ln\left(1+\displaystyle\frac{1}{n}\right)\underset{\nfty}{\sim}\displaystyle\frac{1}{n}$. \\O $(\ln(n+1)-\ln(n))_{n\in \N^*}$ est de signe constant APCR et $\displaystyle\sum\limits_{n\in \N^*}{\ln(n+1)-\ln(n)}$ diverge puisque de même nature que la suite $(\ln n)_{n\in \N^*}$. \\
+		On remarque que $\ln(n+1)-\ln(n)=\ln\left(1+\displaystyle\frac{1}{n}\right)\underset{\nfty}{\sim}\displaystyle\frac{1}{n}$.\\ $(\ln(n+1)-\ln(n))_{n\in \N^*}$ est de signe constant APCR et $\displaystyle\sum\limits_{n\in \N^*}{\ln(n+1)-\ln(n)}$ diverge puisque de même nature que la suite $(\ln n)_{n\in \N^*}$. \\
 		Donc $H_n\underset{\nfty}{\sim}\ln n$.\\\\
 		\underline{Seconde méthode :} Comparaison série-intégrale\\
 		Soit $n\in \N^*$.
@@ -5477,9 +5483,15 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\label{Calcul d'une somme de série (3) corrigé}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (3)]{[Enoncé]}}\\
 	
-	\subsection{Calcul d'une somme de série (4)}
+	\subsection{Calcul d'une somme de série (4) \telecom{2}}
 	\label{Calcul d'une somme de série (4) corrigé}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (4)]{[Enoncé]}}\\
+	$\arctan$ est positive sur $\R_+$ donc le calcul justifiera la convergence.\\
+	On rappelle la formule $\tan(a-b)=\dfrac{\tan(a)-\tan(b)}{1+\tan(a)\tan(b)}$ qui est vraie dès lors que $\tan(a),\tan(b)$ sont bien définis et que le dénominateur ne s'annule pas.\\
+	Donc si $xy\ne -1$, en prenant $a=\arctan(x)$ et $b=\arctan(y)$ et en composant l'égalité par $\arctan$ on obtient :
+	$$\arctan(x)-\arctan(y)=\arctan\left(\frac{x-y}{1+xy}\right)$$
+	Pour $x=n+1$ et $y=n$ cela donne $\arctan(n+1)-\arctan(n)=\arctan\left(\dfrac{n+1-n}{1+(n+1)n}\right)=\arctan\left(\dfrac{1}{n^2+n+1}\right)$.\\
+	Ainsi $\displaystyle\sum_{n=0}^{+\infty}\arctan\left(\frac{1}{n^2+n+1}\right)=\sum_{n=0}^{+\infty}\arctan(n+1)-\arctan(n)=\unfty\lim\arctan(n)-\arctan(0)=\frac{\pi}{2}$.
 	
 	\subsection{Calcul d'une somme de série (5)}
 	\label{Calcul d'une somme de série (5) corrigé}
@@ -5492,6 +5504,13 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\subsection{Calcul d'une somme de série (7) \centraleponts{2}}
 	\label{Calcul d'une somme de série (7) corrigé}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (7)]{[Enoncé]}}\\
+	Comme tous les termes sont positifs on peut calculer dans $\R_+\cup\{+\infty\}$.\\
+	Par le théorème de Fubini, $\displaystyle\sum_{n=2}^{+\infty}\frac{\zeta(n)-1}{n}=\sum_{n=2}^{+\infty}\sum_{k=2}^{+\infty}\frac{1}{nk^n}=\sum_{k=2}^{+\infty}\sum_{n=2}^{+\infty}\frac{1}{nk^n}$.\\
+	Comme $\forall k\geq 2,\ \dfrac{1}{k}\in\, ]-1,1[$ on reconnaît le développement en série entière de $x\mapsto -\ln(1-x)$ en $\dfrac{1}{k}$ :\\
+	$\displaystyle \sum_{n=2}^{+\infty}\frac{\zeta(n)-1}{n}=\sum_{k=2}^{+\infty}-\ln\left(1-\frac{1}{k}\right)-\frac{1}{k}=\sum_{k=2}^{+\infty}\ln(k)-\ln(k-1)-\frac{1}{k}$.\\
+	Pour finir passons par les sommes partielles :\\
+	$\forall n\geq 2,\ \displaystyle\sum_{k=2}^n\ln(k)-\ln(k-1)-\frac{1}{k}=\ln(n)+1-\sum_{k=1}^n\frac{1}{k}$. Or on montre classiquement que $\left(\displaystyle\ln(n)-\sum_{k=1}^n\frac{1}{k}\right)$ converge (cf. \ref{Série harmonique}) et on note la limite $-\gamma$.\\
+	Ainsi $\displaystyle\sum_{n=1}^{+\infty}\frac{\zeta(n)-1}{n}=1-\gamma$.
 	
 	\subsection{Calcul d'une somme de série (8) \xens{4}}
 	\label{Calcul d'une somme de série (8) corrigé}
