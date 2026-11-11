@@ -395,7 +395,7 @@
 	\textcolor{blue}{\hyperref[Nature d'une série (4) corrigé]{[Corrigé]}}\\
 	Déterminer la nature de la série $\displaystyle\sum_{n\geq 1}\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ en fonction de la valeur de $\alpha\in \R$.
 	
-	\section{Nature d'une série (4)}
+	\section{Nature d'une série (4) \centraleponts{3}}
 	\label{Nature d'une série (4)}
 	\textcolor{blue}{\hyperref[Nature d'une série (4) corrigé]{[Corrigé]}}\\
 	Déterminer la nature de la série $\displaystyle\sum_{n\in \N}\sin(\pi en!)$.
@@ -538,15 +538,16 @@
 	Justifier la convergence et calculer la somme de la série $\displaystyle\sum_{n\in \N}\arctan\left(\frac{1}{n^2+n+1}\right)$.\\
 	\textit{Indication : faire apparaître un télescopage.}
 	
-	\section{Calcul d'une somme de série (5)}
+	\section{Calcul d'une somme de série (5) \centraleponts{2}}
 	\label{Calcul d'une somme de série (5)}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (5) corrigé]{[Corrigé]}}\\
 	Justifier la convergence et calculer la somme de la série $\displaystyle\sum_{m,n\in \N^*}\frac{(-1)^{mn}}{m^2n^2}$.
 	
-	\section{Calcul d'une somme de série (6)}
+	\section{Calcul d'une somme de série (6) \ccinp{2}}
 	\label{Calcul d'une somme de série (6)}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (6) corrigé]{[Corrigé]}}\\
-	Justifier la convergence et calculer la somme de la série $\displaystyle\sum_{\substack{a,b\in \N^*\\a|b}}\frac{1}{a^2b^2}$
+	On note $d_n$ le nombre de diviseurs positifs de $n\in \N^*$. Justifier la convergence et calculer la somme $\displaystyle\sum_{n=1}^{+\infty}\frac{d_n}{n^2}$.\\
+	\textit{Indication : on pourra poser pour tout $n\in \N^*,\ E_n=\{(a,b)\in (\N^*)^2,\ ab=n\}$.}
 	
 	\section{Calcul d'une somme de série (7) \centraleponts{2}}
 	\label{Calcul d'une somme de série (7)}
@@ -556,7 +557,7 @@
 	\section{Calcul d'une somme de série (8) \xens{4}}
 	\label{Calcul d'une somme de série (8)}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (8) corrigé]{[Corrigé]}}\\
-	Soit $a>1$. On note $\varphi$ la fonction indicatrice d'Euler. Calculer la somme $\displaystyle\sum_{n=1}^{+\infty}\frac{\varphi(n)}{a^n-1}$.
+	Soit $a>1$. On note $\varphi$ la fonction indicatrice d'Euler. Justifier la convergence et calculer la somme $\displaystyle\sum_{n=1}^{+\infty}\frac{\varphi(n)}{a^n-1}$.
 	
 	\section{Calcul d'une somme de série (9)}
 	\label{Calcul d'une somme de série (9)}
@@ -586,6 +587,7 @@
 		\item Exprimer la somme de la série $\displaystyle\sum_{n\in \N^*}\frac{1}{(2n-1)^2}$ en fonction de $\zeta(2)$ et en déduire sa valeur.
 		\item En adaptant les réels de la question 2, justifier la convergence et calculer les sommes des séries $\displaystyle\sum_{n\in \N^*}\frac{(-1)^{n-1}}{n^2}$.
 	\end{enumerate}
+	
 	\subsection{Série de fonctions \ccinp{3}}
 	Pour tout $m\in \N^*$ on pose $f_m:\theta \in ]-\pi,\pi[ \displaystyle\longmapsto\frac{\sin((2m+1)\theta)}{\sin^{2m+1}(\theta)}$
 	\begin{enumerate}
@@ -5178,7 +5180,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Or $\sin(x)\uxzero\sim x$ donc $\displaystyle\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)\unfty\sim\frac{\sqrt 2}{n^{\alpha/2}}$.\\
 	On en déduit que $\displaystyle\sum_{n\in \N}\arccos\left(\frac{n^\alpha}{1+n^\alpha}\right)$ converge si et seulement si $\alpha>2$.
 	
-	\subsection{Nature d'une série (4) \xens{3}}
+	\subsection{Nature d'une série (4) \centraleponts{3}}
 	\label{Nature d'une série (4) corrigé}
 	\textcolor{blue}{\hyperref[Nature d'une série (4)]{[Enoncé]}}\\
 	Soit $n\in \N$. $en!=\displaystyle\sum_{k=0}^{+\infty}\frac{n!}{k!}=a_n+\sum_{k=n+1}^{+\infty}\frac{n!}{k!}$ avec $a_n=\displaystyle\sum_{k=0}^n\frac{n!}{k!}\in \N$. Donc,\\
@@ -5493,13 +5495,27 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Pour $x=n+1$ et $y=n$ cela donne $\arctan(n+1)-\arctan(n)=\arctan\left(\dfrac{n+1-n}{1+(n+1)n}\right)=\arctan\left(\dfrac{1}{n^2+n+1}\right)$.\\
 	Ainsi $\displaystyle\sum_{n=0}^{+\infty}\arctan\left(\frac{1}{n^2+n+1}\right)=\sum_{n=0}^{+\infty}\arctan(n+1)-\arctan(n)=\unfty\lim\arctan(n)-\arctan(0)=\frac{\pi}{2}$.
 	
-	\subsection{Calcul d'une somme de série (5)}
+	\subsection{Calcul d'une somme de série (5) \centraleponts{2}}
 	\label{Calcul d'une somme de série (5) corrigé}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (4)]{[Enoncé]}}\\
+	La famille $\left(\dfrac{(-1)^{mn}}{m^2n^2}\right)_{m,n\in \N^*}$ est sommable, en effet par le théorème de Fubini :
+	$$\sum_{m,n\in \N^*}\frac{1}{m^2n^2}=\left(\sum_{k=1}^{+\infty}\frac{1}{k^2}\right)=\frac{\pi^2}{36}<+\infty$$
+	Donc d'après le théorème de sommation par paquets,
+	$$\sum_{m,n\in \N^*}\frac{(-1)^{mn}}{m^2n^2}=\sum_{m=1}^{+\infty}\sum_{n=1}^{+\infty}\frac{(-1)^{2mn}}{(2m)^2n^2}+\sum_{m=0}^{+\infty}\sum_{n=1}^{+\infty}\frac{(-1)^{(2m+1)n}}{(2m+1)^2n^2}=\sum_{m=1}^{+\infty}\frac{1}{4m^2}\sum_{n=1}^{+\infty}\frac{1}{n^2}+\sum_{m=0}^{+\infty}\frac{1}{(2m+1)^2}\sum_{n=1}^{+\infty}\frac{(-1)^n}{n^2}$$
+	Le premier terme vaut $\displaystyle\frac{\pi^2}{24}\cdot\frac{\pi^2}{6}=\frac{\pi^4}{144}$.\\
+	A l'aide du théorème de sommation par paquets on remarque que pour le deuxième, d'une part $$\sum_{m=0}^{+\infty}\frac{1}{(2m+1)^2}=\sum_{m=1}^{+\infty}\frac{1}{m^2}-\sum_{m=1}^{+\infty}\frac{1}{(2m)^2}=\frac{\pi^2}{6}-\frac{\pi^2}{24}=\frac{\pi^2}{8}$$
+	et d'autre part comme la famille $\left(\dfrac{(-1)^n}{n^2}\right)$ est sommable,
+	$$\sum_{n=1}^{+\infty}\frac{(-1)^n}{n^2}=\sum_{n=1}^{+\infty}\frac{1}{(2n)^2}-\sum_{n=0}^{+\infty}\frac{1}{(2n+1)^2}=\frac{\pi^2}{24}-\frac{\pi^2}{8}=-\frac{\pi^2}{12}$$
+	Par conséquent, $\displaystyle\sum_{m,n\in \N^*}\frac{(-1)^{mn}}{m^2n^2}=\frac{\pi^4}{144}-\frac{\pi^4}{96}=-\frac{\pi^4}{288}$.
 	
-	\subsection{Calcul d'une somme de série (6)}
+	\subsection{Calcul d'une somme de série (6) \ccinp{2}}
 	\label{Calcul d'une somme de série (6) corrigé}
 	\textcolor{blue}{\hyperref[Calcul d'une somme de série (6)]{[Enoncé]}}\\
+	Tous les termes sont positifs donc le calcul justifiera la convergence.\\
+	Remarquons que $E_n=\left\{\left(d,\dfrac{n}{d}\right),\ n\in \N^*,\ d|n\right\}$, et donc $|E_n|=d_n$ et $(\N^*)^2=\displaystyle \bigsqcup_{n=1}^{+\infty}E_n$. Alors par le théorème de sommation par paquets,\\
+	$$\sum_{n=1}^{+\infty}\frac{d_n}{n^2}=\sum_{n=1}^{+\infty}|E_n|\frac{1}{d^2}\left(\frac{d}{n}\right)^2=\sum_{n=1}^{+\infty}\sum_{(a,b)\in E_n}\frac{1}{a^2b^2}=\sum_{a,b\in \N^*}\frac{1}{a^2b^2}$$
+	Puis par le théorème de Fubini :
+	$$\sum_{n=1}^{+\infty}\frac{d_n}{n^2}=\sum_{a,b\in \N^*}\frac{1}{a^2b^2}=\left(\sum_{k=1}^{+\infty}\frac{1}{k^2}\right)^2=\frac{\pi^4}{36}$$
 	
 	\subsection{Calcul d'une somme de série (7) \centraleponts{2}}
 	\label{Calcul d'une somme de série (7) corrigé}
@@ -5554,19 +5570,19 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Par intégration par parties, on a 
 		\[\int_{0}^{\pi}x\cos(nx)dx=\frac{-1+(-1)^n}{n^2}\]
 		et \[\int_{0}^{\pi}x^2\cos(nx)dx=\frac{2(-1)^n\pi}{n^2}\]
-		Il suffit donc de prendre $u=-1$ et $v=\frac{1}{2\pi}$ pour avoir 
-		\[\int_{0}^{pi}(ax+bx^2)\cos(nx)dx=\frac{1}{n^2}\]
+		Il suffit donc de prendre $u=-1$ et $v=\dfrac{1}{2\pi}$ pour avoir 
+		\[\int_{0}^{\pi}(ax+bx^2)\cos(nx)dx=\frac{1}{n^2}\]
 		\item Soit $x\in]0,\pi]$. Puisque $e^{ix}\ne 1$,
-		\[\sum_{k=1}^{n}e^{ikx} = e^{ix}\frac{e^{inx}-1}{e^{ix}-1} = e^{i\frac{(n+1)x}{2}}\frac{e^{i\frac{nx}{2}}-e^{-i\frac{nx}{2}}}{e^{i\frac{x}{2}}-e^{-i\frac{x}{2}}} = e^{i\frac{(n+1)x}{2}}\frac{\sin\left(\frac{nx}{2}\right)}{\sin\left(\frac{x}{2}\right)}\]
+		\[\sum_{k=1}^ne^{ikx} = e^{ix}\frac{e^{inx}-1}{e^{ix}-1} = e^{i\frac{(n+1)x}{2}}\frac{e^{i\frac{nx}{2}}-e^{-i\frac{nx}{2}}}{e^{i\frac{x}{2}}-e^{-i\frac{x}{2}}} = e^{i\frac{(n+1)x}{2}}\frac{\sin\left(\frac{nx}{2}\right)}{\sin\left(\frac{x}{2}\right)}\]
 		Ainsi, en passant à la partie réelle, 
-		\[\sum_{k=1}^{n}\cos(kx)=\frac{\sin\left(\frac{nx}{2}\right)}{\sin\left(\frac{x}{2}\right)}\]
-		\item $\varphi$ est une fonction de classe $\mathcal{C}^1$ sur $]0,\pi]$.\\
-		De plus, $\lim\limits_{x\to 0}\varphi(x)=2$ car $\sin\left(\frac{x}{2}\right)\underset{x\to 0}{\sim}\frac{x}{2}$.\\
+		\[\sum_{k=1}^n\cos(kx)=\frac{\sin\left(\frac{nx}{2}\right)}{\sin\left(\frac{x}{2}\right)}\]
+		\item $\varphi$ est une fonction de classe $\mathcal C^1$ sur $]0,\pi]$.\\
+		De plus, $\lim\limits_{x\to 0}\varphi(x)=2$ car $\sin\left(\dfrac{x}{2}\right)\underset{x\to 0}{\sim}\dfrac{x}{2}$.\\
 		Pour tout $x\in]0,1]$, \[\varphi'(x)=\frac{\sin\left(\frac{x}{2}\right)-\frac{x}{2}\cos\left(\frac{x}{2}\right)}{\sin^2\left(\frac{x}{2}\right)}\]
-		On sait que $\sin\left(\frac{x}{2}\right)=\frac{x}{2}+\o_{x\to 0}(x^2)$ et $\cos\left(\frac{x}{2}\right)=1+\o_{x\to 0}(x)$ donc 
-		\[\varphi'(x)=\o_{x\to 0}(1)\]
+		On sait que $\sin\left(\dfrac{x}{2}\right)=\dfrac{x}{2}+\underset{x\to 0}{\smallo{x^2}}$ et $\cos\left(\frac{x}{2}\right)=1+\underset{x\to 0}{\smallo{x}}$ donc 
+		\[\varphi'(x)=\underset{x\to 0}{\smallo{1}}\]
 		et donc \[\lim\limits_{x\to 0}\varphi'(x)=0\]
-		Donc $\varphi$ est prolongeable par continuité en une fonction de classe $\mathcal{C}^1$ sur $[0,\pi]$.
+		Donc $\varphi$ est prolongeable par continuité en une fonction de classe $\mathcal C^1$ sur $[0,\pi]$.
 		\item Soit $p\in\N^*$
 		\begin{align*}
 			\sum_{n=1}^{p}\frac{1}{n^2}&=\sum_{n=1}^{p}\int_{0}^{\pi}(ux+vx^2)\cos(nx)dx\\
@@ -5581,13 +5597,13 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		d'où : 
 		\[\zeta(2)=\frac{\pi^2}{6}\]
 		\item 
-		On remarque qu'il s'agit de la somme des $\frac{1}{n^2}$ mais seulement en gardant les termes pour $n$ impairs. Cette somme est plus petite que $\zeta(2)$ à termes positifs donc elle converge.\\
+		On remarque qu'il s'agit de la somme des $\dfrac{1}{n^2}$ mais seulement en gardant les termes pour $n$ impairs. Cette somme est plus petite que $\zeta(2)$ à termes positifs donc elle converge.\\
 		Ainsi \[\sum_{n=1}^{+\infty}\frac{1}{(2n-1)^2}=\zeta(2)-\sum_{n=1}^{+\infty}\frac{1}{(2n)^2}\]
-		Donc : 
-		\[\sum_{n=1}^{+\infty}=\left(1-\frac{1}{4}\right)\zeta(2)=\frac{3}{4}\zeta(2)=\frac{\pi^2}{8}\]
+		Donc :
+		\[\sum_{n=1}^{+\infty}\frac{1}{(2n-1)^2}=\left(1-\frac{1}{4}\right)\zeta(2)=\frac{3}{4}\zeta(2)=\frac{\pi^2}{8}\]
 		\item On peut appliquer le CSSA sinon on peut simplement dire que la série converge absolument donc elle converge.\\
 		On réapplique la même méthode. On cherche des constantes $u$ et $v$ tels que \[\forall n\in\N^*, \int_{0}^\pi(ux+vx^2)\cos(nx)dx=\frac{(-1)^n}{n^2}\]
-		On constate que pour $u=0$ et $v=-\frac{1}{2\pi}$, on obtient bien le résultat pour tout $n\in\N^*$.\\
+		On constate que pour $u=0$ et $v=-\dfrac{1}{2\pi}$, on obtient bien le résultat pour tout $n\in\N^*$.\\
 		On a encore : \[\lim\limits_{p\to+\infty}\sum_{n=1}^{p}\frac{(-1)^n}{n^2}=-\frac{u\pi^2}{4}-\frac{v\pi^3}{6}=\frac{\pi^2}{12}\]
 	\end{enumerate}
 	
@@ -5595,7 +5611,7 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	
 	\subsubsection{Série entière}
 	
-	\subsection{Nombre moyen de diviseurs d'un entier \etoile{4}}
+	\subsection{Nombre moyen de diviseurs d'un entier \xens{4}}
 	\label{sec:nombre-moyen-de-diviseurs-dun-entier-etoile4}
 	\textcolor{blue}{\hyperref[Nombre moyen de diviseurs d'un entier]{[Enoncé]}}\\
 	\begin{enumerate}
