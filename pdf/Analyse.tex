@@ -2113,18 +2113,44 @@
 		\\Que peut-on dire si le degré de $P$ est impair ?
 	\end{enumerate}
 	
-	\section{Polynômes surjectifs \etoile{5}}
-	\textcolor{blue}{\hyperref[sec:polynomes-surjectifs-etoile5]{[Corrigé]}}\\
-	\label{polysurj}
-	\label{Polynômes surjectifs}
-	Déterminer les polynômes $P\in \C[X]$ vérifiant :
-	\begin{enumerate}
-		\item $P(\C)=\C$
-		\item $P(\U)=\U$
-		\item $P(\R)=\R$
-		\item $P(\Q)=\Q$
-		\item $P(\R\backslash\Q)=\R\backslash\Q$
-		\item $P(\Z)=\Z$
+	\section{Surjection de $\U$}
+	\textcolor{blue}{\hyperref[Surjection de U corrigé]{[Corrigé]}}\\
+	\label{Surjection de U}
+	\begin{enumerate}[leftmargin=*]
+		\item Déterminer les polynômes $P\in \C[X]$ tels que $P(\U)=\U$.
+		\item Déterminer les fractions rationnelles $F\in \C(X)$ telles que $F(\U)=\U$.
+	\end{enumerate}
+	
+	\section{Surjection de $\C$ et $\R$}
+	\textcolor{blue}{\hyperref[Surjection de C et R corrigé]{[Corrigé]}}\\
+	\label{Surjection de C et R}
+	\begin{enumerate}[leftmargin=*]
+		\item Déterminer les polynômes $P\in \C[X]$ tels que $P(\C)=\C$.
+		\item Déterminer les polynômes $P\in \C[X]$ tels que $P(\R)=\R$.
+	\end{enumerate}
+	
+	\section{Surjection de $\Q$}
+	\textcolor{blue}{\hyperref[Surjection de Q corrigé]{[Corrigé]}}\\
+	\label{Surjection de Q}
+	\begin{enumerate}[leftmargin=*]
+		\item Soit $P\in \C[X]$ tel que $P(\Q)\subset \Q$. Montrer que $P\in \Q[X]$.
+		\item Soit $P\in \Z[X]$ de degré $d\geq 2$ tel que $P(\Q)=\Q$.	Soit $p$ un nombre premier et $(a,b)\in \Z\times \N^*$ tel que $P\left(\dfrac{a}{b}\right)=\dfrac{1}{p}$.\\
+		Montrer que $p$ divise le coefficient dominant de $P$.
+		\item Conclure que, pour tout $P\in \C[X]$, $P(\Q)=\Q\iff \exists (\alpha,\beta)\in \Q^*\times \Q,\ P=\alpha X+\beta$.
+	\end{enumerate}
+	
+	\section{Surjection de $\R\setminus\Q$}
+	\textcolor{blue}{\hyperref[Surjection de R-Q corrigé]{[Corrigé]}}\\
+	\label{Surjection de R-Q}
+	Déterminer les polynômes $P\in \C[X]$ tels que $P(\R\setminus\Q)=\R\setminus\Q$.
+	
+	\section{Fraction rationnelle à coefficients rationnels}
+	\textcolor{blue}{\hyperref[Fraction rationnelle à coefficients rationnels corrigé]{[Corrigé]}}\\
+	\label{Fraction rationnelle à coefficients rationnels}
+	\begin{enumerate}[leftmargin=*]
+		\item Montrer qu'un polynôme $P\in \C[X]$ vérifiant $P(n)\in \Z$ pour une infinité d'entiers $n\in \N$ est en fait à coefficients rationnels : $P\in \Q[X]$.
+		\item Montrer que le résultat subsiste pour une fraction rationnelle $F\in \C(X)$ : si $F(n)\in \Q$ pour une infinité d'entiers $n\in \N$ alors $F\in \Q(X)$. Pour cela montrer que l'on peut supposer $F=\dfrac{P}{Q}$ avec $\deg(P)\geq \deg(Q)$ et observer que si $n\in \N$ n'est pas un pôle de $F$ alors,
+		$$\frac{F-F(n)}{X-n}=\frac{P_1}{Q}\quad\text{avec}\quad\deg(P_1)<\deg(P)$$
 	\end{enumerate}
 	
 	\section{Résultant et discriminant \ccinp{2}}
@@ -7952,12 +7978,10 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Et donc on déduit de ce qui a été fait précédemment que $P$ se factorise en $P=a_{2n}(X+1)(X^2+b_1X+1)\dots(X^2+b_nX+1)$.
 	\end{enumerate}
 	
-	\subsection{Polynômes surjectifs \etoile{5}}
-	\label{sec:polynomes-surjectifs-etoile5}
-	\textcolor{blue}{\hyperref[polysurj]{[Enoncé]}}\\
-	\begin{enumerate}
-		\item On a déjà $P(\C)\subset \C$. Fixons $a\in \C$.\\
-		Si $P$ n'est pas constant alors $Q=P-a$ n'est pas constant et d'après le théorème de d'Alembert-Gauss, $Q$ s'annule sur $\C$. Il existe donc $z\in \C$ tel que  $P(z)=a$ i.e $a\in P(\C)$. Donc $P(\C)=\C$. De plus si $P$ est constant alors $P(\C)\ne \C$. Les polynômes recherchés sont les polynômes non constants.
+	\subsection{Surjection de $\U$}
+	\label{Surjection de U corrigé}
+	\textcolor{blue}{\hyperref[Surjection de U]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
 		\item Posons pour $Q=\displaystyle\sum\limits_{k=0}^{+\infty}q_kX^k\in \C[X],\ \overline{Q}=\displaystyle\sum\limits_{k=0}^{+\infty}\overline{q_k}X^k$.\\
 		Supposons que $P(\U)=\U$. Tout d'abord, $P$ n'est pas constant.\\
 		Notons $P=\displaystyle\sum\limits_{k=0}^n{a_kX^k}$ avec $n=\deg(P)$.\\
@@ -7972,41 +7996,72 @@ Démontrer l'équivalence des deux affirmations suivantes :
 			(\forall z\in \U,\ |P(z)|=|\alpha||z|^n=1)\implies P(\U)\subset \U\\
 			\left(\forall z\in \U,\ P\left(e^{i\displaystyle\frac{\arg(z)-\arg(\alpha)}{n}}\right)=z\right)\implies \U\subset P(\U)
 		\end{cases}$
-		\item Tout d'abord, si $P$ est à coefficients réels alors $P(\R)\subset \R$. Si de plus $P$ est de degré impair alors $\lim\limits_{x\to +\infty}{P(x)}=\pm\infty=-\lim\limits_{x\to -\infty}{P(x)}$. Donc comme $x\mapsto P(x)$ est continue sur $\R$, d'après le TVI $P(\R)=\R$.\\
-		Réciproquement, supposons que $P=\displaystyle\sum\limits_{k=0}^{+\infty}{a_kX^k}\in \C[X]$ vérifie $P(\R)=\R$. On note $\overline{P}=\displaystyle\sum\limits_{k=0}^{+\infty}{\overline{a_k}X^k}$. $\forall x\in \R,\ P(x)=\overline{P(x)}=\overline{P}(x)$. $P$ et $\overline{P}$ coïncident sur une infinité de points, ils sont donc égaux.\\
-		Donc $\forall k\in \N,\ \overline{a_k}=a_k$ i.e $\forall k\in \N,\ a_k\in \R$ i.e $P\in \R[X]$.\\
-		De plus si $P$ est de degré pair alors $\lim\limits_{|x|\to +\infty}{P(x)}=\pm\infty$. Supposons que $\lim\limits_{|x|\to +\infty}{P(x)}=+\infty$. Alors $\exists r\in \R^+,\ |x|> r\implies P(x)>P(0)$. De plus, $f_P:x\mapsto P(x)$ est continue sur $[-r,r]$ donc d'après le théorème des bornes atteintes $f_P$ admet un minimum $m$ sur $[-r,r]$. Par définition, $m\leq P(0)$. Ainsi, $m$ est un minimum global de $f_P$ et donc $m-1$ par exemple n'est pas dans $P(\R)$.\\
-		Similairement, si $\lim\limits_{|x|\to +\infty}{P(x)}=-\infty$ alors $f_P$ admet un maximum $M$ sur $\R$ et donc $M+1$ par exemple n'est pas dans $P(\R)$. Ainsi $P$ est de degré impair.\\
-		On conclut que $P(\R)=\R$ si et seulement si $P\in \R[X]$ et est de degré impair.
-		\item Supposons que $P(\Q)=\Q$. Notons $d=\deg(P)$ et $(L_0,\dots,L_d)$ la base de Lagrange aux points $0,\dots,d$.\\
-		On sait que $P=\displaystyle\sum\limits_{k=0}^d{P(k)L_k}$. Or pour tout $k\in \crblanc{0}{d},\ P(k)\in \Q$ et $L_k=\displaystyle\prod\limits_{\substack{0\leq i\leq d\\i\ne k}}{\displaystyle\frac{X-i}{k-i}}\in \Q[X]$. Donc $P\in \Q[X]$.\\
-		Si $P$ est constant alors $P(\Q)\ne \Q$.\\
-		Si $d=1$ alors on peut écrire $P(X)=aX+b$ avec $(a,b)\in \Q^*\times \Q$. Dans ce cas pour tout $c\in \Q$, l'équation $P(x)=c$ admet une (unique) solution $x=\displaystyle\frac{c-b}{a}\in \Q$.\\
-		Enfin si $d\geq 2$ on écrit $P=\displaystyle\sum\limits_{k=0}^d{\displaystyle\frac{a_k}{b_k}X^k}$ avec $(a_k,b_k)\in \Z^2$ pour tout $k\in \crblanc{0}{d}$. Posons $Q=\ppcm(b_0,\dots,b_d)P$ et pour tout $k\in \crblanc{0}{d},\ c_k=\ppcm(b_0,\dots,b_d)\displaystyle\frac{a_k}{b_k}$ de sorte que $Q=\displaystyle\sum\limits_{k=0}^d{c_kX^k}\in \Z[X]$ et $Q(\Q)=P(\Q)=\Q$.
-		Soit $p$ un nombre premier strictement supérieur à $|c_d|$. $\displaystyle\frac{1}{p}\in Q(\Q)$ donc il existe $a$ et $b$ deux entiers premiers entre eux tels que $x=\displaystyle\frac{a}{b}$ vérifie $Q(x)=\displaystyle\frac{1}{p}$. On a alors
-		$$Q(x)=\displaystyle\frac{1}{p}=\displaystyle\sum\limits_{k=0}^d{c_kb^{-k}a^k}$$
-		c'est à dire
-		$$b^d=p\displaystyle\sum\limits_{k=0}^d{c_kb^{d-k}a^k}$$
-		Donc $p|b^d$, puis par le lemme d'Euclide, $p|b$. Ecrivons $b=p^{\nu}b'$ avec $\nu$ la valuation $p$-adique de $b$. On reprend:
-		\begin{align*}
-			b^d&=p\displaystyle\sum\limits_{k=0}^d{c_kb^{d-k}a^k}\\
-			\iff p^{\nu d-1}(b')^d&=\displaystyle\sum\limits_{k=0}^d{c_k(b')^{d-k}p^{\nu(d-k)}a^k}\\
-			\implies 0&\equiv c_da^d [p]\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\nu\geq 1,d\geq 2)
-		\end{align*}
-		Or $a$ et $b$ sont premiers entre eux donc $p|b\implies p\not |\ a$ et donc d'après le lemme d'Euclide, $p|c_d$. Ceci est absurde car $p>|c_d|$.\\\\
-		Finalement on conclut que $P(\Q)=\Q \iff \exists a,b\in \Q^*\times \Q,\ P(X)=aX+b$.
-		\item Soit $P$ un tel polynôme. Le raisonnement que l'on va utiliser fonctionne avec les seules hypothèses $P(\R\backslash\Q)\subset\R\backslash\Q$ et $P$ non constant (ce qui est évident avec l'inclusion réciproque).\\
-		Tout d'abord $P$ est à valeurs réelles car $\R\backslash\Q$ est infini (question 3).\\
-		Ensuite, montrons que $P$ est à coefficients rationnels. On a vu dans la question précédente qu'il suffit que $P$ soit à valeur rationnelle sur une partie infini de $\Q$. Supposons que ce n'est pas le cas. Alors il existe une partie finie $A$ de $\Q$ telle que $P(\Q\backslash A)\subset \R\backslash\Q$. Par conséquent $P(\R)\subset\R\backslash\Q\cup P(A)$ d'où $\widering{P(\R)}=\emptyset$ ce qui contredit le fait que $P$ n'est pas constant.\\
-		Ainsi $P$ est à coefficients rationnels. On en déduit alors $P(\Q)\subset\Q\subset\R\backslash P(\R\backslash\Q)$ et par conséquent l'égalité :
-		$$P(\Q)\sqcup P(\R\backslash\Q)=P(\R)=(P(\R)\cap\Q)\sqcup(P(\R)\cap\R\backslash\Q)$$
-		Cela impose que les inclusions $P(\Q)\subset P(\R)\cap\Q$ et $P(\R\backslash\Q)\subset P(\R)\cap\R\backslash\Q$ sont en fait des égalités.\\
-		Or $P(\R)$ est un intervalle non borné (TVI + $P$ non constant). Quitte à prendre $-P$ il n'est pas majoré et quitte à prendre $P-q$ pour $q\in \Q$ supérieur à l'inf de $P$ sur $\R_+$, il contient $\R_+$ (ces opérations conserve l'hypothèse $P(\R\backslash\Q)=\R\backslash\Q$. Enfin, quitte à multiplier $P$ par le ppcm des dénominateurs de ses coefficients, $P\in \Z[X]$. Ainsi si $p$ est un nombre premier, $\dfrac{1}{p}\in P(\Q)$ et on en déduit comme dans la question précédente que si $P$ est de degré au moins $2$ alors $p|\lambda$ avec $\lambda$ le coefficient dominant de $P$. Pour $p>|\lambda|$ ceci est absurde donc $\exists a,b\in \Q,\ P(X)=aX+b$.\\
-		Ces polynômes sont bien solutions puisque pour $\alpha\in\R\backslash\Q,\ P(\alpha)\in\R\backslash\Q$ et $P\left(\dfrac{\alpha-b}{a}\right)=\alpha$ avec $\dfrac{\alpha-b}{a}\in \R\backslash\Q$.
 		\item 
 	\end{enumerate}
 	
-	\subsection{Résultant et discriminant \ccinp{2}}\label{sec:resultant-et-discriminant-etoile2}
+	\subsection{Surjection de $\C$ et $\R$}
+	\label{Surjection de C et R corrigé}
+	\textcolor{blue}{\hyperref[Surjection de C et R]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item On a déjà $P(\C)\subset \C$. Fixons $a\in \C$.\\
+		Si $P$ n'est pas constant alors $Q=P-a$ n'est pas constant et d'après le théorème de d'Alembert-Gauss, $Q$ s'annule sur $\C$. Il existe donc $z\in \C$ tel que  $P(z)=a$ i.e $a\in P(\C)$. Donc $P(\C)=\C$. De plus si $P$ est constant alors $P(\C)\ne \C$. Les polynômes recherchés sont les polynômes non constants.
+		\item Tout d'abord, si $P$ est à coefficients réels alors $P(\R)\subset \R$.\\
+		Réciproquement, supposons que $P=\displaystyle\sum\limits_{k=0}^{+\infty}{a_kX^k}\in \C[X]$ vérifie $P(\R)\subset \R$. On note $\overline{P}=\displaystyle\sum\limits_{k=0}^{+\infty}{\overline{a_k}X^k}$. $\forall x\in \R,\ P(x)=\overline{P(x)}=\overline{P}(x)$. Les polynômes $P$ et $\overline{P}$ coïncident sur une infinité de points, ils sont donc égaux.\\
+		Donc $\forall k\in \N,\ \overline{a_k}=a_k$ i.e $\forall k\in \N,\ a_k\in \R$ i.e $P\in \R[X]$.
+		\item Soit $P$ un tel polynôme. D'après la question précédente $P\in \R[X]$.\\
+		Si $P$ est de degré impair alors $\lim\limits_{x\to +\infty}{P(x)}=\pm\infty=-\lim\limits_{x\to -\infty}{P(x)}$. Donc comme $x\mapsto P(x)$ est continue sur $\R$, d'après le TVI $P(\R)=\R$.\\
+		De plus, si $P$ est de degré pair alors $\lim\limits_{|x|\to +\infty}{P(x)}=\pm\infty$. Supposons que $\lim\limits_{|x|\to +\infty}{P(x)}=+\infty$. Alors $\exists r\in \R^+,\ |x|> r\implies P(x)>P(0)$. De plus, $P$ est continu sur $[-r,r]$ donc d'après le théorème des bornes atteintes $P$ admet un minimum $m$ sur $[-r,r]$. Par définition, $m\leq P(0)$. Ainsi, $m$ est un minimum global de $P$ et donc $m-1$ par exemple n'est pas dans $P(\R)$.\\
+		Similairement, si $\lim\limits_{|x|\to +\infty}{P(x)}=-\infty$ alors $P$ admet un maximum $M$ sur $\R$ et donc $M+1$ par exemple n'est pas dans $P(\R)$. Ainsi $P$ est de degré impair.\\
+		On conclut que $P(\R)=\R$ si et seulement si $P\in \R[X]$ et est de degré impair.
+	\end{enumerate}
+	
+	\subsection{Surjection de $\Q$}
+	\label{Surjection de Q corrigé}
+	\textcolor{blue}{\hyperref[Surjection de Q]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item Notons $d=\deg(P)$ et $(L_0,\dots,L_d)$ la base de Lagrange de $\C_d[X]$ aux points $0,\dots,d$.\\
+		On sait que $P=\displaystyle\sum_{k=0}^dP(k)L_k$. Or pour tout $k\in \crblanc{0}{d},\ P(k)\in \Q$ et $L_k=\displaystyle\prod_{\substack{0\leq i\leq d\\i\ne k}}{\frac{X-i}{k-i}}\in \Q[X]$. Donc $P\in \Q[X]$.
+		\item Notons $P=\displaystyle\sum_{k=0}^dc_kX^k$. L'hypothèse de l'énoncé se traduit par : $$\frac{1}{p}=\sum_{k=0}^dc_kb^{-k}a^k$$
+		c'est à dire en ramenant l'équation dans $\Z$ :
+		$$b^d=p\sum_{k=0}^d{c_kb^{d-k}a^k}$$
+		Donc $p|b^d$, puis par le lemme d'Euclide, $p|b$. Ecrivons $b=pb'$ avec $b'\in \Z$. On reprend :
+		\begin{align*}
+			b^d&=p\sum_{k=0}^d{c_kb^{d-k}a^k}\\
+			\iff p^{d-1}(b')^d&=\sum_{k=0}^d{c_kp^{d-k}(b')^{d-k}a^k}\\
+			\implies 0&\equiv c_da^d [p]\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (d\geq 2)
+		\end{align*}
+		Or $a$ et $b$ sont premiers entre eux donc $p|b\implies p\not |\ a$ et donc d'après le lemme d'Euclide, $p|c_d$.
+		\item Si $P$ est constant alors $P(\Q)\ne \Q$.\\
+		Si $d=1$ alors on peut écrire $P(X)=aX+b$ avec $(a,b)\in \Q^*\times \Q$. Dans ce cas pour tout $c\in \Q$, l'équation $P(x)=c$ admet une (unique) solution $x=\displaystyle\frac{c-b}{a}\in \Q$.\\
+		Enfin si $d\geq 2$ on écrit $P=\displaystyle\sum\limits_{k=0}^d{\displaystyle\frac{a_k}{b_k}X^k}$ avec $(a_k,b_k)\in \Z^2$ pour tout $k\in \crblanc{0}{d}$. Posons $Q=\ppcm(b_0,\dots,b_d)P$ et pour tout $k\in \crblanc{0}{d},\ c_k=\ppcm(b_0,\dots,b_d)\displaystyle\frac{a_k}{b_k}$ de sorte que $Q=\displaystyle\sum_{k=0}^d{c_kX^k}\in \Z[X]$ et $Q(\Q)=P(\Q)=\Q$.
+		D'après la question précédente $p$ divise le coefficient dominant de $Q$ ce qui est absurde pour $p$ assez grand (plus grand que la valeur absolue de ce coefficient).\\
+		Finalement on conclut que $P(\Q)=\Q \iff \exists a,b\in \Q^*\times \Q,\ P(X)=aX+b$.
+	\end{enumerate}
+	
+	\subsection{Surjection de $\R\setminus\Q$ \xens{5}}
+	\label{Surjection de R-Q corrigé}
+	\textcolor{blue}{\hyperref[Surjection de R-Q]{[Enoncé]}}\\
+	Soit $P$ un tel polynôme. Le raisonnement que l'on va utiliser fonctionne avec les seules hypothèses $P(\R\backslash\Q)\subset\R\backslash\Q$ et $P$ non constant (ce qui est évident avec l'inclusion réciproque).\\\\
+	\underline{Lemme :} Soit $K$ un sous-corps de $\C$. Alors pour tout polynôme $P\in \C[X]$, s'il existe une infinité d'éléments $x\in K$ tels que $P(x)\in K$ alors $P\in K[X]$.\\
+	En effet si $P\in \C[X]$ vérifie l'hypothèse alors on peut se donner $x_0,\dots,x_d\in K$ avec $d=\deg(P)$. On note $(L_0,\dots,L_d)$ la base de Lagrange de $\C_d[X]$ correspondant aux points $x_0,\dots,x_d$. L'expression $L_j=\displaystyle\prod_{\substack{0\leq i\leq d\\i\ne j}}\frac{X-x_i}{x_j-x_i}$ montre, comme $K$ est un corps, que $L_j\in K[X]$. Donc $P=\displaystyle\sum_{j=0}^dP(x_j)L_j\in K[X]$.\\\\
+	On déduit du lemme que $P$ est à valeurs réelles car $\R\backslash\Q\subset \R$ est infini.\\
+	Ensuite, montrons que $P$ est à coefficients rationnels. D'après le lemme il suffit que $P$ soit à valeurs rationnelles sur une partie infinie de $\Q$. Supposons que ce n'est pas le cas. Alors il existe une partie finie $A$ de $\Q$ telle que $P(\Q\backslash A)\subset \R\backslash\Q$. Par conséquent $P(\R)\subset\R\backslash\Q\cup P(A)$ d'où $\widering{P(\R)}=\emptyset$ ce qui contredit le fait que $P$ n'est pas constant.\\
+	Ainsi $P$ est à coefficients rationnels. On en déduit alors $P(\Q)\subset\Q\subset\R\backslash P(\R\backslash\Q)$ et par conséquent l'égalité :
+	$$P(\Q)\sqcup P(\R\backslash\Q)=P(\R)=(P(\R)\cap\Q)\sqcup(P(\R)\cap\R\backslash\Q)$$
+	Cela impose que les inclusions $P(\Q)\subset P(\R)\cap\Q$ et $P(\R\backslash\Q)\subset P(\R)\cap\R\backslash\Q$ sont en fait des égalités.\\
+	Or $P(\R)$ est un intervalle non borné (TVI + $P$ non constant). Quitte à prendre $-P$ il n'est pas majoré et quitte à prendre $P-q$ pour $q\in \Q$ supérieur à l'inf de $P$ sur $\R_+$, il contient $\R_+$. Enfin, quitte à multiplier $P$ par le ppcm des dénominateurs de ses coefficients, $P\in \Z[X]$ (ces opérations préservent l'égalité $P(\R\backslash\Q)=\R\backslash\Q$). Ainsi si $p$ est un nombre premier, $\dfrac{1}{p}\in P(\Q)$ et on en déduit (cf. \ref{Surjection de Q}) que si $P$ est de degré au moins $2$ alors $p|\lambda$ avec $\lambda$ le coefficient dominant de $P$. Pour $p>|\lambda|$ ceci est absurde donc $\exists (a,b)\in \Q^*\times \Q,\ P(X)=aX+b$.\\
+	Ces polynômes sont bien solutions puisque pour $\alpha\in\R\backslash\Q,\ P(\alpha)\in\R\backslash\Q$ et $P\left(\dfrac{\alpha-b}{a}\right)=\alpha$ avec $\dfrac{\alpha-b}{a}\in \R\backslash\Q$.
+	
+	\subsection{Fraction rationnelle à coefficients rationnels}
+	\label{Fraction rationnelle à coefficients rationnels corrigé}
+	\textcolor{blue}{\hyperref[Fraction rationnelle à coefficients rationnels]{[Enoncé]}}\\
+	\begin{enumerate}[leftmargin=*]
+		\item 
+		\item 
+	\end{enumerate}
+	
+	\subsection{Résultant et discriminant \ccinp{2}}
+	\label{sec:resultant-et-discriminant-etoile2}
 	\textcolor{blue}{\hyperref[Résultant]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item On sait que $(1,X,\dots,X^{m-1})$ et $(1,X,\dots,X^{n-1})$ sont des bases de $\K_{m-1}[X]$ et $\K_{n-1}[X]$ respectivement. Ainsi d'après le cours, la famille $\B=((1,0),(X,0),\dots,(X^{m-1},0),(0,1),(0,X),\dots, (0,X^{n-1}))$ est une base de l'espace vectoriel produit $\K_{m-1}[X]\times\K_{n-1}[X]$.
