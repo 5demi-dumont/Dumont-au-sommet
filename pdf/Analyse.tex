@@ -2113,23 +2113,24 @@
 		\\Que peut-on dire si le degré de $P$ est impair ?
 	\end{enumerate}
 	
-	\section{Surjection de $\U$}
+	\section{Surjection de $\U$ \xens{3}}
 	\textcolor{blue}{\hyperref[Surjection de U corrigé]{[Corrigé]}}\\
 	\label{Surjection de U}
 	\begin{enumerate}[leftmargin=*]
 		\item Déterminer les polynômes $P\in \C[X]$ tels que $P(\U)=\U$.
-		\item Déterminer les fractions rationnelles $F\in \C(X)$ telles que $F(\U)=\U$.
+		\item Déterminer les fractions rationnelles $F\in \C(X)$ telles que $F(\U)\subset \U$.
 	\end{enumerate}
 	
-	\section{Surjection de $\C$ et $\R$}
+	\section{Surjection de $\C$ et $\R$ \centraleponts{3}}
 	\textcolor{blue}{\hyperref[Surjection de C et R corrigé]{[Corrigé]}}\\
 	\label{Surjection de C et R}
 	\begin{enumerate}[leftmargin=*]
 		\item Déterminer les polynômes $P\in \C[X]$ tels que $P(\C)=\C$.
+		\item Déterminer les polynômes $P\in \C[X]$ tels que $P(\R)\subset \R$.
 		\item Déterminer les polynômes $P\in \C[X]$ tels que $P(\R)=\R$.
 	\end{enumerate}
 	
-	\section{Surjection de $\Q$}
+	\section{Surjection de $\Q$ \centraleponts{4}}
 	\textcolor{blue}{\hyperref[Surjection de Q corrigé]{[Corrigé]}}\\
 	\label{Surjection de Q}
 	\begin{enumerate}[leftmargin=*]
@@ -2139,12 +2140,12 @@
 		\item Conclure que, pour tout $P\in \C[X]$, $P(\Q)=\Q\iff \exists (\alpha,\beta)\in \Q^*\times \Q,\ P=\alpha X+\beta$.
 	\end{enumerate}
 	
-	\section{Surjection de $\R\setminus\Q$}
+	\section{Surjection de $\R\setminus\Q$ \xens{5}}
 	\textcolor{blue}{\hyperref[Surjection de R-Q corrigé]{[Corrigé]}}\\
 	\label{Surjection de R-Q}
 	Déterminer les polynômes $P\in \C[X]$ tels que $P(\R\setminus\Q)=\R\setminus\Q$.
 	
-	\section{Fraction rationnelle à coefficients rationnels}
+	\section{Fraction rationnelle à coefficients rationnels \centraleponts{4}}
 	\textcolor{blue}{\hyperref[Fraction rationnelle à coefficients rationnels corrigé]{[Corrigé]}}\\
 	\label{Fraction rationnelle à coefficients rationnels}
 	\begin{enumerate}[leftmargin=*]
@@ -2174,7 +2175,7 @@
 	\\On note $\B_c$ la base canonique de $\K_{n+m-1}[X]$.
 	\begin{enumerate}
 		\item Montrer que $\B=((1,0),(X,0),\dots,(X^{m-1},0),(0,1),(0,X),\dots, (0,X^{n-1}))$ est une base de $\K_{m-1}[X]\times\K_{n-1}[X]$
-		\item On pose l'application $\fonction{\varphi}{\K_{m-1}[X]\times\K_{n-1}[X]}{\K_{n+m-1}[X]}{(U,V)}{PU+QV}$
+		\item On pose l'application $\fonction{\varphi}{\K_{m-1}[X]\times\K_{n-1}[X]}{\K_{m+n-1}[X]}{(U,V)}{PU+QV}$
 		\\Montrer que $\varphi$ est une application linéaire. 
 		\item Expliciter sa matrice $M$ relativement aux bases $\B$ et $\B_c$
 		\item Montrer que $P\land Q=1\iff\operatorname{Res}(P,Q)\ne 0$.
@@ -2185,8 +2186,20 @@
 		\item On suppose ici que $\K=\C$ et par conséquent que $P\in\C[X]$. Montrer que $P$ est scindé à racines simples si et seulement $\Delta(P)\ne 0$
 	\end{enumerate}
 	
+	\section{Courbe polynomiale}
+	\textcolor{blue}{\hyperref[Courbe polynomiale corrigé]{[Corrigé]}}\\
+	\label{Courbe polynomiale}
+	Soient $m,n\in \N^*$ et $F,Q\in \C[X]$ tels que $\deg F=n$ et $\deg Q=m$. On pose $$\fonction{\varphi}{\C_{m-1}[X]\times \C_{n-1}[X]}{\C_{m+n-1}[X]}{(U,V)}{UP+VQ}$$
+	\begin{enumerate}
+		\item Montrer que $\varphi$ est une application linéaire. Donner une condition nécessaire et suffisante pour qu'elle soit injective.
+		\item Donner la matrice de $\varphi$ relative aux bases canoniques de $\C_{m-1}[X]\times \C_{n-1}[X]$ et $\C_{m+n-1}[X]$.
+		\item On pose $\Gamma=\{(P(t),Q(t)),\ t\in \C\}$. On note $\C[X,Y]$ l'ensemble des polynômes à coefficients complexes en deux indéterminés.\\
+		Montrer que
+		$$\exists R\in \C[X,Y],\ \Gamma=R^{-1}(\{0\})$$
+	\end{enumerate}
+	
 	\section{Théorème de Liouville : Fermat pour les polynômes \xens{4}}
-	\textcolor{blue}{\hyperref[sec:theoreme-de-liouville--fermat-pour-les-polynomes]{[Corrigé]}}\\
+	\textcolor{blue}{\hyperref[Théorème de Liouville : Fermat pour les polynômes corrigé]{[Corrigé]}}\\
 	\label{Théorème de Liouville : Fermat pour les polynômes}
 	Soit $n$ un entier supérieur ou égal à $3$. On souhaite montrer que si $(P,Q,R)\in \C[X]^3$ tel que $P^n+Q^n=R^n$ alors $P,Q,R$ sont égaux à une constante multiplicative près. On se donne $(P,Q,R)$ un tel triplet.
 	\begin{enumerate}
@@ -7991,12 +8004,21 @@ Démontrer l'équivalence des deux affirmations suivantes :
 		Or $X^n\overline{P}\left(\displaystyle\frac{1}{X}\right)=\overline{X^nP\left(\displaystyle\frac{1}{X}\right)}=\displaystyle\sum\limits_{k=0}^n{\overline{a_{n-k}}X^k}$ est un polynôme. Donc comme $\U$ est infini on a l'égalité entre polynômes:
 		$$P(X)\cdot X^n\overline{P}\left(\displaystyle\frac{1}{X}\right)=X^n$$
 		Ainsi $P|X^n$. De plus $\deg(P)=n=\deg(X^n)$ donc $P(X)=a_nX^n$. Enfin, $1=|P(1)|=|a_n|$ c'est à dire $a_n\in \U$.\\
-		Réciproquement, si il existe $\alpha\in \U$ et $n\in \N^*$ tel que $P(X)=\alpha X^n$ alors:\\
+		Réciproquement, si il existe $a\in \U$ et $n\in \N^*$ tel que $P(X)=\alpha X^n$ alors:\\
 		$\begin{cases}
-			(\forall z\in \U,\ |P(z)|=|\alpha||z|^n=1)\implies P(\U)\subset \U\\
-			\left(\forall z\in \U,\ P\left(e^{i\displaystyle\frac{\arg(z)-\arg(\alpha)}{n}}\right)=z\right)\implies \U\subset P(\U)
+			(\forall z\in \U,\ |P(z)|=|a||z|^n=1)\implies P(\U)\subset \U\\
+			\left(\forall z\in \U,\ P\left(e^{i\dfrac{\arg(z)-\arg(a)}{n}}\right)=z\right)\implies \U\subset P(\U)
 		\end{cases}$
-		\item 
+		\item Commençons par remarquer que si $F\in \C(X)$ est solution alors $F$ est non nulle et $\dfrac{1}{F}$ ainsi que $X^kF$ pour tout $k\in \Z$ sont aussi solutions. Par conséquent quitte à prendre $\dfrac{1}{F}$, on peut supposer $\deg(P)\leq \deg(Q)$, et quitte à prendre $X^{q-p}F$ où $Q=X^q\tilde Q$ avec $\tilde Q(0)\ne 0$ et $P=X^p\tilde P$ avec $\tilde P(0)\ne 0$, on peut supposer $P(0),Q(0)\ne 0$.\\
+		Soit $F\in \C(X)$ une fraction rationnelle solution. On écrit $F=\dfrac{P}{Q}$ avec $P\wedge Q=1$.\\
+		$\forall z\in \U,\ \dfrac{Q(z)}{P(z)}=\dfrac{1}{F(z)}=\overline{F(z)}=\dfrac{\overline P(\overline z)}{\overline Q(\overline z)}$, i.e $\overline Q\left(\dfrac{1}{z}\right)Q(z)=\overline P\left(\dfrac{1}{z}\right)P(z)$. Puis en multipliant par $z^n$ avec $n=\deg Q$ on obtient une égalité entre polynôme (puisque $\U$ est infini) :
+		$$X^n\overline Q\left(\frac{1}{X}\right)Q(X)=X^n\overline P\left(\frac{1}{X}\right)P(X)$$
+		Donc $Q|X^n\overline P\left(\dfrac{1}{X}\right)P(X)$ puis comme $P\wedge Q=1$ par le lemme de Gauss $Q|X^n\overline P\left(\dfrac{1}{X}\right)$. Or puisque $P(0)\ne 0$ le terme dominant de $X^n\overline P\left(\dfrac{1}{X}\right)$ est $\overline{P(0)}X^n$, autrement dit $\deg Q=n=\deg X^n\overline P\left(\dfrac{1}{X}\right)$.\\
+		On en déduit qu'il existe $a\in \C^*$ tel que $Q=aX^n\overline P\left(\dfrac{1}{X}\right)$.\\
+		Enfin $1=|F(1)|=|a|$ donc $a\in \U$.
+		Réciproquement, donnons-nous un polynôme non nul $P\in \C[X]$ de degré $n$ et $a\in \U$. On pose $F(X)=\dfrac{aP(X)}{X^n\overline P(\frac{1}{X})}$.\\
+		$\forall z\in \U,\ |F(z)|=\dfrac{|P(z)|}{|\overline P(\frac{1}{z})|}=\dfrac{|P(z)|}{|\overline P(\overline z)|}=\dfrac{|P(z)|}{|\overline{P(z)}|}=1$.\\
+		Ainsi les fractions rationnelles solutions sont celle de la forme $F(X)=aX^k\dfrac{P(X)}{\overline P(\frac{1}{X})}$ avec $a\in \U,\ k\in \Z$ et $P\in \C[X]\setminus\{0\}$ (et qui ne s'annule pas sur $\U$).
 	\end{enumerate}
 	
 	\subsection{Surjection de $\C$ et $\R$}
@@ -8052,17 +8074,25 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	Or $P(\R)$ est un intervalle non borné (TVI + $P$ non constant). Quitte à prendre $-P$ il n'est pas majoré et quitte à prendre $P-q$ pour $q\in \Q$ supérieur à l'inf de $P$ sur $\R_+$, il contient $\R_+$. Enfin, quitte à multiplier $P$ par le ppcm des dénominateurs de ses coefficients, $P\in \Z[X]$ (ces opérations préservent l'égalité $P(\R\backslash\Q)=\R\backslash\Q$). Ainsi si $p$ est un nombre premier, $\dfrac{1}{p}\in P(\Q)$ et on en déduit (cf. \ref{Surjection de Q}) que si $P$ est de degré au moins $2$ alors $p|\lambda$ avec $\lambda$ le coefficient dominant de $P$. Pour $p>|\lambda|$ ceci est absurde donc $\exists (a,b)\in \Q^*\times \Q,\ P(X)=aX+b$.\\
 	Ces polynômes sont bien solutions puisque pour $\alpha\in\R\backslash\Q,\ P(\alpha)\in\R\backslash\Q$ et $P\left(\dfrac{\alpha-b}{a}\right)=\alpha$ avec $\dfrac{\alpha-b}{a}\in \R\backslash\Q$.
 	
-	\subsection{Fraction rationnelle à coefficients rationnels}
+	\subsection{Fraction rationnelle à coefficients rationnels \centraleponts{4}}
 	\label{Fraction rationnelle à coefficients rationnels corrigé}
 	\textcolor{blue}{\hyperref[Fraction rationnelle à coefficients rationnels]{[Enoncé]}}\\
 	\begin{enumerate}[leftmargin=*]
-		\item 
-		\item 
+		\item Soit $P\in \C[X]$ tel qu'il existe une suite d'entiers naturels $(n_k)_{k\geq 0}$ pour laquelle $\forall k\in \N,\ P(n_k)\in \Z$.\\
+		Notons $d=\deg(P)$ et $(L_0,\dots,L_d)$ la base de Lagrange de $\C_d[X]$ aux points $n_0,\dots,n_d$.\\
+		On sait que $P=\displaystyle\sum_{k=0}^dP(n_k)L_k$. Or pour tout $k\in \crblanc{0}{d},\ P(n_k)\in \Q$ et $L_k=\displaystyle\prod_{\substack{0\leq j\leq d\\j\ne k}}{\frac{X-n_j}{n_k-n_j}}\in \Q[X]$. Donc $P\in \Q[X]$.
+		\item Supposons $F\ne 0$. On remarque que $F\in \Q(X)\iff \dfrac{1}{F}\in \Q(X)$. On peut donc supposer quitte à les échanger que $\deg P\geq \deg Q$. Soit maintenant $n\in \N$ qui n'est pas un pôle de $F$.\\
+		Alors $\displaystyle\frac{F-F(n)}{X-n}=\frac{P-F(n)Q}{(X-n)Q}$. Posons $\tilde P_1=P-F(n)Q$. $\tilde P_1(n)=0$ donc $P_1=\dfrac{\tilde P_1}{X-n}\in \C[X]$. On a donc bien écrit $\displaystyle\frac{F-F(n)}{X-n}=\frac{P_1}{Q}$ avec $P_1$ un polynôme tel que $\deg(P_1)=\deg(\tilde P_1)-1\leq \max(\deg P,\deg Q)-1=\deg P-1<\deg P$.\\
+		On va faire une preuve par récurrence sur $d(F)=\deg P+\deg Q$ (on peut aussi fixer $Q$ est faire une récurrence sur le degré de $P$).\\
+		Si $d(F)=0$ alors $P$ et $Q$ sont constants et donc $F=F(n_1)\in \Q(X)$.\\
+		Supposons le résultat vrai pour tout $k<d$ pour un certain $d\in \N^*$. Soit $F\in \C(X)$ telle que $d(F)=d$ et telle qu'il existe une suite d'entiers naturels distincts $(n_k)_{k\geq 0}$ pour laquelle $\forall k\in \N,\ F(n_k)\in \Q$.\\
+		Il existe un entier naturel $p\in \N$ tel que $n_p$ n'est pas un pôle de $F$. Alors la fraction rationnelle $F_1=\dfrac{F-F(n_p)}{X-n_p}$ vérifie $d(F_1)<d(F)=d$ et $\forall k\ne p,\ F_1(n_k)\in \Q$.\\
+		Donc par l'hypothèse de récurrence $F_1\in \Q(X)$ puis par suite $F=(X-n_p)F_1+F(n_p)\in \Q(X)$.
 	\end{enumerate}
 	
 	\subsection{Résultant et discriminant \ccinp{2}}
-	\label{sec:resultant-et-discriminant-etoile2}
-	\textcolor{blue}{\hyperref[Résultant]{[Enoncé]}}\\
+	\label{Résultant et discriminant corrigé}
+	\textcolor{blue}{\hyperref[Résultant et discriminant]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item On sait que $(1,X,\dots,X^{m-1})$ et $(1,X,\dots,X^{n-1})$ sont des bases de $\K_{m-1}[X]$ et $\K_{n-1}[X]$ respectivement. Ainsi d'après le cours, la famille $\B=((1,0),(X,0),\dots,(X^{m-1},0),(0,1),(0,X),\dots, (0,X^{n-1}))$ est une base de l'espace vectoriel produit $\K_{m-1}[X]\times\K_{n-1}[X]$.
 		\item Soit $((U_1,V_1),(U_2,V_2),\lambda)\in (\K_{m-1}[X]\times\K_{n-1}[X])^2\times\K$.\\
@@ -8092,8 +8122,12 @@ Démontrer l'équivalence des deux affirmations suivantes :
 	\end{enumerate}
 	\textit{Le résultant est un outil intéressant sur certains problèmes car il permet de mettre en évidence une sorte de "continuité" des racines d'un polynôme via le déterminant, qui est lui continu.}
 	
+	\subsection{Courbe polynomiale}
+	\label{Courbe polynomiale corrigé}
+	\textcolor{blue}{\hyperref[Courbe polynomiale]{[Enoncé]}}\\
+	
 	\subsection{Théorème de Liouville : Fermat pour les polynômes \xens{4}}
-	\label{sec:theoreme-de-liouville--fermat-pour-les-polynomes}
+	\label{Théorème de Liouville : Fermat pour les polynômes corrigé}
 	\textcolor{blue}{\hyperref[Théorème de Liouville : Fermat pour les polynômes]{[Enoncé]}}\\
 	\begin{enumerate}
 		\item Notons $D=P\land Q\land R$.\\
